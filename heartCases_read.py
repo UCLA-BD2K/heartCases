@@ -45,112 +45,7 @@ Records without MeSH terms are not included in the output file or counts.
 Abstracts are saved to files labeled with their corresponding PMIDs
 in the folder training_text. One file contains one abstract with
 MeSH terms, delimited by |, a tab, the abstract text, a tab, and the PMID.
-
-**NEXT STEPS:
-* Set up sentence topic tagger.
-
-* Try alternate MeSH tag expansion with scikit-learn LabelPropagation
-
-* Improve ICD-10 assignment. Would like to use sub-terms where possible.
-  ICD-10 codes are missed/not labeled if:
-   1. Disease Ontology does not include the disease at all
-     e.g. MeSH code D016757 ("Death, Sudden, Cardiac")
-   2. The ICD-10 code is not a disease (so it isn't in DO)
-     e.g. E66.9 ("Obesity, unspecified")
-   3. The ICD-10 code is in R00-R99 (findings not elsewhere classified)
-     e.g. R57.0 ("Cardiogenic shock")
-         DO has a small subset of these (just 20 terms).
-   4. The code refers to findings not present in the abstract or title
-   5. The MeSH term is too specific 
-     e.g. "Anterior Wall Myocardial Infarction" 
-          This should still be matched through its parent, though
-
-  Overall, DO is helpful but limited.
-  
-* Add recall count for newly-labeled records.
-  Want to know how many got new labels,
-  and out of those, how many predicted labels already existed.
-
-* Debug - seems to have trouble when maximum record count is too
-  high (~200000) and random selection is on. Seems like generator
-  hits EOF (since many entries get skipped)
-  
-* Terms seem to have some kind of local minima problem - records often
-  get tagged with the same few tags, e.g. "aged" - possibly if those 
-  tags are very common.
-  
-* Upgrade the MeSH term expansion to online learning method.
-  See http://scikit-learn.org/stable/modules/scaling_strategies.html
-  Try scikit-multilearn as well, though note it requires several
-  additional dependencies.
-  See https://github.com/scikit-multilearn/scikit-multilearn
-  (Specifically needs graphtool - see
-  https://git.skewed.de/count0/graph-tool/wikis/installation-instructions)
-  
-  This may not be entirely necessary for sets of ~5000 abstracts.
-
-* Integrate annotations with c.biothings.io
-
-* Sometimes the ICD-10 annotations are just incorrect, e.g.
-  Aortic Aneurism, Thoracic is D017545 and gets coded as I71.9, or
-  "Aortic aneurysm of unspecified site, without rupture"
-  even if there is, in fact, a rupture
-  Disease ontology actually lists 5 different ICD-10 codes for 
-  aortic aneurism...
-  It also never seems to get age or gender classifications correct.
-  That may be very difficult w/o full texts.
-* Provide annotation for unclassified symptoms as well (ICD-10 chapter R)
-  The circulation-specific codes are R00-R09 but all are possibly useful
-* Improve on existing Substance annotations where possible (i.e., drugs used)
-  Some are present in the MeSH ontology but not in the disease ontology...
-  since they aren't diseases.
-  They could possibly be coded under ICD-10 chapter F.
-  MEDLINE format also stores substances and enzymes under heading RN
-  though it can be one of three different ID formats:
-  10-digit FDA UNIIs,
-  5 to 9-digit CAS numbers
-  or EC numbers for enzymes.
-* Retrieve additional text where possible
-* Find additional relationships between MeSH terms and input references.
-* Filter out non-human records (usu. in the minority anyway)
-* Use the major/minor codes included on the MEDLINE entries
-* Text is stored raw right now. Need to use something more efficient.
-  Probably just dump to JSON.
-* Add ability to sub-filter for specific terms, e.g. "Ischemia"
-  Should search after doing primary filter for efficiency
-
-* Entries frequently do not include any or full abstract text.
-  Potential solutions:
-    Retrieve text from PMC (some are in PMC [Heart], some are not [NEJM]).
-    Retrieve material using MeSH terms instead? (Does not solve the problem.)
-    Is there another way to get something like the full text?
-      Some is through ScienceDirect - they have API for this
-    May need to use DOI/pii code in lieu of PMID
-  In some cases, there is only a PDF scan and no text at all.
-* What is special about articles in a certain category?
-  Can we find a co-association between terms in categories?
-  This is essentially what the CaseOLAP scoring did with disease categories
-  and proteins, but that was with broader literature
-  Either way this is a case for machine learning
-* Need more filtering options
-  Get full texts first so we don't miss any cardiac issues?
-  Example: Article in the journal Heart,
-  titled "42-year-old woman collapses in a park" mentions
-  sudden cardiac death as a specific condition but is not 
-  phrased this way in the title/abstract and MESH terms
-  only get as far as "Acute Coronary Syndrome".
-* Need to remove or label technical articles
-  e.g. "The implantable defibrillator that predicted the future."
-  This isn't as simple as just removing MESH terms as use of a term
-  does not indicate it is the primary focus.
-* Articles do not include details of exact proteins.
-  Will likely have to add these in some novel manner
-  Especially difficult for older papers from before the advent of *omics
-* MeSH terms really aren't used that well. 
-  Would like an automated annotation pipeline which can also handle 
-  ICD-10 codes at the same time. That way, cases can be coded without
-  needing to rely on the inconsistent annotation.
-  
+ 
 '''
 __author__= "Harry Caufield"
 __email__ = "j.harry.caufield@gmail.com"
@@ -189,7 +84,7 @@ outfilename = "out_file_medline.txt"
 record_count_cutoff = 1000
 	#The maximum number of records to search.
 	
-random_record_list = True
+random_record_list = False
 	#If True, choose training records at random until hitting
 	#record_count_cutoff value
 	
@@ -215,13 +110,6 @@ sentence_label_filename = "sentence_label_terms.txt"
 sentence_labels = {}
 	#Dict of sentence labels with sets of associated terms as keys.
 	#Expanded later
-	
-unit_terms = {"Heart rate": ["beats/min","bpm"],
-				"Time": ["s","seconds","h","hours"]}
-	#Dict of terms used as unit abbreviations
-	#Measurement is key (e.g. heart rate)
-	#Term is list of values (e.g. beats/min, bpm)
-	#To be stored in a file ASAP
 
 #Classes
 class Record(dict):
@@ -480,10 +368,6 @@ def build_mesh_to_icd10_dict(do_filename):
 				do_xrefs_terms[icd10].append(name)
 		else:
 			do_xrefs_terms[icd10] = [name]
-			
-	#for code in do_xrefs_icd10:
-	#	print("%s: %s" %(code, do_xrefs_icd10[code]))
-	#	print("%s" %(do_xrefs_terms[code]))
 	
 	return do_ids, do_xrefs_icd10, do_xrefs_terms
 
@@ -738,17 +622,6 @@ def label_sentence(sentence):
 	for char in sentence:
 		if char not in ["\"", "-"]:
 			clean_sentence = clean_sentence + char
-			
-	#Check for measurement values before cleaning string more
-	#sent_terms = (sentence.rstrip()).split()
-
-	#i = 0
-	#for term in sent_terms:
-		#for measurement in unit_terms:
-			#if term in unit_terms[measurement]:
-				#print("%s: %s %s" % (measurement, sent_terms[i-1], 
-										#sent_terms[i]))
-		#i = i +1
 	
 	#Convert to stems
 	cleaner_sentence = clean(clean_sentence)
@@ -1065,7 +938,7 @@ def main():
 		print("Did not find MeSH term file. Downloading: ")
 		mo_filename = get_mesh_ontology()
 	elif len(mesh_ofile_list) == 1:
-		print("Found disease ontology file: %s " % mesh_ofile_list[0])
+		print("Found MeSH ontology file: %s " % mesh_ofile_list[0])
 		mo_filename = mesh_ofile_list[0]
 	
 	#Retrieves the list of topic-specific words we're interested in
