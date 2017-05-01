@@ -79,9 +79,7 @@ from sklearn.externals import joblib
 
 #Constants and Options
 					
-outfilename = "out_file_medline.txt"
-
-record_count_cutoff = 1000
+record_count_cutoff = 5000
 	#The maximum number of records to search.
 	
 random_record_list = False
@@ -575,15 +573,18 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 	
 	if cat == "train":
 		tdir = "training_text" #term classifier dir
-		sentence_file = open("training_sentences.txt", "a")
+		sdir = "training_sentences" #sentence classifier dir
+		sentence_filename = "training_sentences.txt"
+		
 	elif cat == "test":
 		tdir = "training_test_text" #term classifier dir
-		sentence_file = open("testing_sentences.txt", "a")
+		sdir = "training_test_sentences" #sentence classifier dir
+		sentence_filename = "testing_sentences.txt"
 		
 	tfile = "%s.txt" % pmid
 	
 	if not os.path.isdir(tdir):
-		#print("Setting up %sing text directory." % cat)
+		#print("Setting up MeSH term classifier %sing directory." % cat)
 		os.mkdir(tdir)
 	os.chdir(tdir)
 	
@@ -599,13 +600,22 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 	sentence_count = 0
 	
 	#print("**DOCUMENT: %s**" % title)
+	
+	if not os.path.isdir(sdir):
+		#print("Setting up sentence classifier %sing directory." % cat)
+		os.mkdir(sdir)
+	os.chdir(sdir)
+	
+	sentence_file = open(sentence_filename, "a")
+	
 	for sentence in sent_tokenize(abst):
-		
 		topic_list = label_sentence(sentence)
 		topic = "|".join(topic_list)
 		sentence_file.write("%s,\"%s\"\n" % (topic, sentence))
 		sentence_count = sentence_count +1
-		
+	
+	os.chdir("..")
+	
 	return sentence_count
 
 def label_sentence(sentence):
@@ -1456,10 +1466,24 @@ def main():
 			if j % 1000 == 0:
 				sys.stdout.write("#")
 	
-	#Output the matching labels, complete with new annotations
+	#Output the matching entries, complete with new annotations
 	#Note that, unlike in original MEDLINE record files,
-	#this output does not place long strings on new lines.
+	#this output does not always place long strings on new lines.
+	
+	if not os.path.isdir("output"):
+		#print("Setting up sentence classifier %sing directory." % cat)
+		os.mkdir("output")
+	os.chdir("output")
+	
+	if len(medline_file_list) == 1:
+		outfilename = (medline_file_list[0])[6:-4] + "_%s_relabeled.txt" \
+						% record_count_cutoff
+	else:
+		outfilename = "medline_entries_%s_relabeled.txt" \
+						% record_count_cutoff
+	
 	print("\nWriting matching, newly annotated records to file.")
+	
 	with open(outfilename, 'w') as outfile:
 		for record in matching_ann_records:
 			for field in record:
