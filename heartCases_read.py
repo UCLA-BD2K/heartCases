@@ -1677,8 +1677,8 @@ def main():
 		os.mkdir("output")
 	os.chdir("output")
 	
-	if record_count < record_count_cutoff:
-		filelabel = record_count
+	if match_record_count < record_count_cutoff:
+		filelabel = match_record_count
 	else:
 		filelabel = record_count_cutoff
 		
