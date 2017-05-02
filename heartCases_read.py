@@ -79,7 +79,7 @@ from sklearn.externals import joblib
 
 #Constants and Options
 					
-record_count_cutoff = 5000
+record_count_cutoff = 3000
 	#The maximum number of records to search.
 	
 random_record_list = False
@@ -667,6 +667,7 @@ def label_sentence(sentence):
 def parse_training_text(tfile):
 	'''
 	Loads a MeSH term-labeled title and abstract.
+	These are currently stored as one per file.
 	Output is a list of MeSH terms, the abstract string, and the PMID.
 	'''
 	labeled_text = []
@@ -680,6 +681,26 @@ def parse_training_text(tfile):
 		labeled_text.append([msh_terms, abst, pmid])
 	
 	return labeled_text
+
+def parse_training_sentences(sfile):
+	'''
+	Loads a file of labelled sentences for classifier training.
+	One file may contain numerous sentences, one per line,
+	with the sentence text in double quotes.
+	Output is a list of labels and the sentence text.
+	'''
+	labeled_sentences = []
+	
+	for line in sfile:
+		labels = []
+		for label in ((line.split(","))[0]).split("|"):
+			labels.append(label)
+		text = ((line.split("\"", 1))[1])[:-1]
+			#Split at the first quote mark, get the text after it,
+			#and remove the final quote mark.
+		labeled_sentences.append([labels, text])
+	
+	return labeled_sentences
 
 def clean(text):
 		'''
@@ -711,12 +732,14 @@ def clean(text):
 		cleanstring = " ".join(words)
 		return cleanstring
 
-def classification():
+def mesh_classification():
 	'''
-	Builds a (multiclass) text classifier using labeled training text.
+	Builds and tests a multilabel text classifier for expanding MeSH
+	terms used on MEDLINE entries. Uses abstract text as training
+	and testing text.
 	Uses scikit's DecisionTree implementation.
 	
-	Looks for a saved (using joblib) classifier first and uses it 
+	Looks for a pickled (using joblib) classifier first and uses it 
 	if present.
 	'''
 	
@@ -890,7 +913,175 @@ def classification():
 			avg_newlabel_count)
 	
 	return classifier, lb
+
+def sent_classification():
+	'''
+	Builds and tests a multilabel text classifier for labelling
+	sentences from abstracts using one of 12 labels. 
+	Uses abstract text, tokenized by sentence and pre-labelled using 
+	general terms (i.e. those in sentence_label_terms.txt) and presence 
+	of named entities from MeSH headings.
+	Uses scikit's DecisionTree implementation.
 	
+	Most of the work is already done in the pre-labelling step,
+	so this classifier is primarily for verification.
+	
+	Looks for a pickled (using joblib) classifier first and uses it 
+	if present.
+	'''
+	
+	def load_training_sents(no_train):
+		
+		all_labeled_text = []
+		all_test_text = []
+		
+		if not no_train:
+			print("Loading labeled sentences for training.") 
+			
+			with open('training_sentences/training_sentences.txt') as sfile:
+				all_labeled_text = parse_training_sentences(sfile)
+			print("Loaded %s labeled sentences." % len(all_labeled_text))
+		
+		print("Loading labeled sentences for testing.") 
+	
+		with open('training_test_sentences/testing_sentences.txt') as sfile:
+			all_test_text = parse_training_sentences(sfile)
+		print("Loaded %s labeled sentences." % len(all_test_text))
+		
+		return all_labeled_text, all_test_text
+	
+	clean_labeled_text = []
+	all_terms = []
+	X_train_pre = [] #Array of text for training
+	X_test_pre = [] #Array of text for testing
+	y_train = [] #List of lists of labels
+	test_labels = [] #List of lists of labels in test set
+	
+	#This is a multilabel classification so we need a 2D array
+	lb = preprocessing.MultiLabelBinarizer()
+	
+	sentence_classifier_name = "sentence_label_classifier.pkl"
+	sentence_classifier_lb_name = "sentence_label_lb.pkl"
+	have_classifier = False
+	
+	if os.path.isfile(sentence_classifier_name):
+		print("Found previously built sentence label classifier.")
+		have_classifier = True
+	
+	#Load the input files
+	labeled_text, test_text = load_training_sents(have_classifier)
+	if len(test_text) == 0:
+		sys.exit("Didn't load any training sentences - " \
+					"please verify they are present and try again.")
+	
+	if not have_classifier:
+		
+		t0 = time.time()
+		
+		#Load sentence labels
+		for label in sentence_labels:
+			all_terms.append(label)
+					
+		print("Setting up input...")
+		#Set up the input set and term vectors
+		for item in labeled_text:
+			clean_text = clean(item[1])
+			clean_labeled_text.append([item[0], clean_text])
+			X_train_pre.append(clean_text)
+			y_train.append(item[0])
+		
+		y_labels = [label for subset in y_train for label in subset]
+		y_labels = set(y_labels)
+		
+		X_train_size = len(X_train_pre)
+		
+		y_train_bin = lb.fit_transform(y_train)
+		
+		X_train = np.array(X_train_pre)
+	
+		#Build the classifier
+		print("Building classifier...")
+			
+		t1 = time.time()
+		'''
+		This is a scikit-learn pipeline of:
+		A vectorizer to extract counts of ngrams, up to 2,
+		a tf-idf transformer, and
+		a DecisionTreeClassifier, used once per label (OneVsRest) to peform multilabel
+		  classification.
+		'''
+		classifier = Pipeline([
+					('vectorizer', CountVectorizer(ngram_range=(1,2), min_df = 5, max_df = 0.5)),
+					('tfidf', TfidfTransformer(norm='l2')),
+					('clf', OneVsRestClassifier(DecisionTreeClassifier(criterion="entropy",
+						class_weight="balanced", max_depth=8), n_jobs=-1))])
+		classifier.fit(X_train, y_train_bin)
+		
+		#Finally, save the classifier
+		print("Saving classifier...")
+		joblib.dump(classifier, sentence_classifier_name)
+		joblib.dump(lb, sentence_classifier_lb_name)
+		
+		t2 = time.time()
+	
+	else:
+		classifier = joblib.load(sentence_classifier_name)
+		lb = joblib.load(sentence_classifier_lb_name)
+		
+	#Test the classifier
+	print("Testing sentence label classifier...")
+	
+	for item in test_text:
+		clean_text = clean(item[1])
+		X_test_pre.append(clean_text)
+		test_labels.append(item[0])
+		
+	X_test = np.array(X_test_pre)
+	
+	predicted = classifier.predict(X_test)
+	all_labels = lb.inverse_transform(predicted)
+	i = 0
+	all_recall = [] #To produce average recall value
+	all_newlabel_counts = [] #To produce average new label count
+	total_new_labels = 0
+	
+	for item, labels in zip(X_test, all_labels):
+		matches = 0
+		recall = 0
+		new_labels_uniq = [] #Any terms which weren't here before
+		#print '%s => %s' % (item, '|'.join(labels))
+		new_labels = list(labels)
+		for label in new_labels:
+			if label in test_labels[i]:
+				matches = matches +1
+			else:
+				new_labels_uniq.append(label)
+		recall = matches / float(len(test_labels[i]))
+		all_recall.append(recall)
+		#print("Recall: %s" % recall)
+		#print("New Terms: %s" % ("|".join(new_labels_uniq)))
+		all_newlabel_counts.append(float(len(new_labels_uniq)))
+		i = i+1
+	
+	t3 = time.time()
+	
+	avg_recall = np.mean(all_recall)
+	avg_newlabel_count = np.mean(all_newlabel_counts)
+	if not have_classifier:
+		print("\nLoaded dictionary of %s terms in %.2f seconds." %
+				(len(all_terms), (t1 -t0)))
+		print("Taught classifier with %s sentences in %.2f seconds." %
+				(X_train_size, (t2 -t1)))
+		print("Overall process required %.2f seconds to complete." %
+				((t3 -t0)))
+		print("Count of labels (including NONE) used in the " \ 
+				"training set = %s" % len(y_labels))
+				
+	print("Average Recall = %s" % avg_recall)
+	print("Average new labels added to each test record = %s" % 
+			avg_newlabel_count)
+	
+	return classifier, lb
 	
 #Main
 def main():
@@ -1324,14 +1515,13 @@ def main():
 	else:
 		print("\nStarting to build term classifier for all terms "
 				"used in the training abstracts...")
-	abst_classifier, lb = classification()
+	abst_classifier, lb = mesh_classification()
 	#Also returns the label binarizer, lb
 	#So labels can be reproduced
 	
 	#This is the point where we need to add the new MeSH terms
 	#and *then* search for new matching ICD-10 codes
-	#Denote both with some kind of modifier to show
-	#they may not be fully accurate
+	#Denote newly-added terms with ^
 
 	matching_ann_records = []
 
@@ -1351,12 +1541,14 @@ def main():
 	j = 0
 	
 	for record in matching_orig_records:
-		#use classifier on abstract to get new MeSH terms
-		#append new terms to record["MH"] but add ^ to denote new term
-		#add new ICD-10 codes
-		#Ensure new ICD-10 codes also get ^ modifier if based on new MeSH term
-		
-		#This step can be very slow - mostly due to classifier predictions
+		'''
+		Use classifier on abstract to get new MeSH terms,
+		append new terms to record["MH"], and
+		add new ICD-10 codes.
+		Ensure new terms are denoted properly as above.	
+		This step can be very slow - 
+		mostly due to classifier predictions.
+		'''
 		
 		these_mesh_terms = []
 		these_other_terms = []
@@ -1466,21 +1658,36 @@ def main():
 			if j % 1000 == 0:
 				sys.stdout.write("#")
 	
-	#Output the matching entries, complete with new annotations
-	#Note that, unlike in original MEDLINE record files,
-	#this output does not always place long strings on new lines.
+	'''
+	Output the matching entries, complete with new annotations
+	Note that, unlike in original MEDLINE record files,
+	this output does not always place long strings on new lines.
+	'''
+	
+	#Now labeled sentences are used to build a classifier
+	#so newly provided sentences can be labelled.
+	#Unlike MeSH terms, sentence labels are all new.
+	print("\n\nStarting to build sentence label classifier.")
+	sent_classifier = sent_classification()
+	#Don't need the label binarizer for this one since we already
+	#know what the labels are.
 	
 	if not os.path.isdir("output"):
 		#print("Setting up sentence classifier %sing directory." % cat)
 		os.mkdir("output")
 	os.chdir("output")
 	
+	if record_count < record_count_cutoff:
+		filelabel = record_count
+	else:
+		filelabel = record_count_cutoff
+		
 	if len(medline_file_list) == 1:
 		outfilename = (medline_file_list[0])[6:-4] + "_%s_relabeled.txt" \
-						% record_count_cutoff
+						% filelabel
 	else:
 		outfilename = "medline_entries_%s_relabeled.txt" \
-						% record_count_cutoff
+						% filelabel
 	
 	print("\nWriting matching, newly annotated records to file.")
 	
