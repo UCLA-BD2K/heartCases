@@ -79,7 +79,7 @@ from sklearn.externals import joblib
 
 #Constants and Options
 					
-record_count_cutoff = 3000
+record_count_cutoff = 100000
 	#The maximum number of records to search.
 	
 random_record_list = False
@@ -1751,13 +1751,17 @@ def main():
 				if field == 'AB':
 					abstract = record[field]
 					labeled_abstract = []
-					for sentence in sent_tokenize(abstract):
-						clean_string = clean(sentence)
-						clean_array = np.array([clean_string])
-						predicted = sent_classifier.predict(clean_array)
-						labels = slb.inverse_transform(predicted)
-						flatlabels = [label for labeltuple in labels for label in labeltuple]
-						labeled_abstract.append([sentence, '|'.join(flatlabels)])
+					try:
+						sentence_list = sent_tokenize(abstract)
+						for sentence in sentence_list:
+							clean_string = clean(sentence)
+							clean_array = np.array([clean_string])
+							predicted = sent_classifier.predict(clean_array)
+							labels = slb.inverse_transform(predicted)
+							flatlabels = [label for labeltuple in labels for label in labeltuple]
+							labeled_abstract.append([sentence, '|'.join(flatlabels)])
+					except UnicodeDecodeError:
+						labeled_abstract = "UNLABELED ABSTRACT: %s" % abstract
 			outstring = "%s\n%s\n%s\n\n" % (title, pmid, labeled_abstract)
 			outfile.write(outstring)
 				
