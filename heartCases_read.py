@@ -1074,7 +1074,7 @@ def sent_classification():
 				(X_train_size, (t2 -t1)))
 		print("Overall process required %.2f seconds to complete." %
 				((t3 -t0)))
-		print("Count of labels (including NONE) used in the " \ 
+		print("Count of labels (including NONE) used in the " \
 				"training set = %s" % len(y_labels))
 				
 	print("Average Recall = %s" % avg_recall)
@@ -1668,9 +1668,7 @@ def main():
 	#so newly provided sentences can be labelled.
 	#Unlike MeSH terms, sentence labels are all new.
 	print("\n\nStarting to build sentence label classifier.")
-	sent_classifier = sent_classification()
-	#Don't need the label binarizer for this one since we already
-	#know what the labels are.
+	sent_classifier, slb = sent_classification()
 	
 	if not os.path.isdir("output"):
 		#print("Setting up sentence classifier %sing directory." % cat)
@@ -1687,6 +1685,13 @@ def main():
 						% filelabel
 	else:
 		outfilename = "medline_entries_%s_relabeled.txt" \
+						% filelabel
+	
+	if len(medline_file_list) == 1:
+		sent_outfilename = (medline_file_list[0])[6:-4] + "_%s_sentences.txt" \
+						% filelabel
+	else:
+		sent_outfilename = "medline_entries_%s_sentences.txt" \
 						% filelabel
 	
 	print("\nWriting matching, newly annotated records to file.")
@@ -1730,7 +1735,32 @@ def main():
 						outfile.write("%s- %s\n" % (formfield, record[field]))
 					
 			outfile.write("\n")
-		
+	
+	#Labeling sentences and writing them both happen at the same time here
+	print("\nWriting labeled sentences from all matching records to file.")
+	
+	with open(sent_outfilename, 'w') as outfile:
+		for record in matching_ann_records:
+			title = "NO TITLE"
+			labeled_abstract = "NO ABSTRACT"
+			for field in record:
+				if field == 'TI':
+					title = record[field]
+				if field == 'PMID':
+					pmid = record[field]
+				if field == 'AB':
+					abstract = record[field]
+					labeled_abstract = []
+					for sentence in sent_tokenize(abstract):
+						clean_string = clean(sentence)
+						clean_array = np.array([clean_string])
+						predicted = sent_classifier.predict(clean_array)
+						labels = slb.inverse_transform(predicted)
+						flatlabels = [label for labeltuple in labels for label in labeltuple]
+						labeled_abstract.append([sentence, '|'.join(flatlabels)])
+			outstring = "%s\n%s\n%s\n\n" % (title, pmid, labeled_abstract)
+			outfile.write(outstring)
+				
 	#Now provide some summary statistics	
 	high_match_terms = sorted(matched_mesh_terms.items(), key=operator.itemgetter(1),
 								reverse=True)[0:15]
