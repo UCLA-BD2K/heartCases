@@ -79,7 +79,7 @@ from sklearn.externals import joblib
 
 #Constants and Options
 					
-record_count_cutoff = 100000
+record_count_cutoff = 1000
 	#The maximum number of records to search.
 	
 random_record_list = False
@@ -926,6 +926,11 @@ def sent_classification():
 	Most of the work is already done in the pre-labelling step,
 	so this classifier is primarily for verification.
 	
+	The classifier may add NONE as its own label though this is
+	a unique label class denoting no match. This is useful as a
+	diagnostic so it is kept at this stage but removed before
+	producing the output file.
+	
 	Looks for a pickled (using joblib) classifier first and uses it 
 	if present.
 	'''
@@ -1759,7 +1764,17 @@ def main():
 							predicted = sent_classifier.predict(clean_array)
 							labels = slb.inverse_transform(predicted)
 							flatlabels = [label for labeltuple in labels for label in labeltuple]
-							labeled_abstract.append([sentence, '|'.join(flatlabels)])
+							cleanlabels = []
+							
+							#Ensure that NONE is used properly
+							if len(flatlabels) > 1:
+								for label in flatlabels:
+									if label != "NONE":
+										cleanlabels.append(label)
+							else:
+								cleanlabels = flatlabels
+								
+							labeled_abstract.append([sentence, '|'.join(cleanlabels)])
 					except UnicodeDecodeError:
 						labeled_abstract = "UNLABELED ABSTRACT: %s" % abstract
 			outstring = "%s\n%s\n%s\n\n" % (title, pmid, labeled_abstract)
@@ -1806,7 +1821,10 @@ def main():
 	else:
 		sys.exit("Found no matching references.")
 	
-	print("\nDone - see %s for list of matching records." % outfilename)
+	print("\nDone - see the following files in the output folder:\n"
+			"%s for list of matching records,\n"
+			"and %s for labeled abstract sentences." % 
+			(sent_outfilename, outfilename))
 	
 if __name__ == "__main__":
 	sys.exit(main())
