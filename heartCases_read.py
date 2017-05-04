@@ -1698,6 +1698,13 @@ def main():
 	else:
 		sent_outfilename = "medline_entries_%s_sentences.txt" \
 						% filelabel
+						
+	if len(medline_file_list) == 1:
+		topic_outfilename = (medline_file_list[0])[6:-4] + "_%s_topics.txt" \
+						% filelabel
+	else:
+		topic_outfilename = "medline_entries_%s_topics.txt" \
+						% filelabel
 	
 	print("\nWriting matching, newly annotated records to file.")
 	
@@ -1741,45 +1748,70 @@ def main():
 					
 			outfile.write("\n")
 	
-	#Labeling sentences and writing them both happen at the same time here
-	print("\nWriting labeled sentences from all matching records to file.")
+	#Labeling sentences within the matching records
+	labeled_ann_records = []
+	for record in matching_ann_records:
+		labeled_record = {}
+		labeled_record['TI'] = "NO TITLE"
+		labeled_record['labstract'] = [["NO ABSTRACT","NONE"]]
+		for field in record:
+			if field == 'TI':
+				labeled_record['TI'] = record[field]
+			if field == 'PMID':
+				labeled_record['PMID'] = record[field]
+			if field == 'AB':
+				abstract = record[field]
+				labeled_abstract = []
+				try:
+					sentence_list = sent_tokenize(abstract)
+					for sentence in sentence_list:
+						clean_string = clean(sentence)
+						clean_array = np.array([clean_string])
+						predicted = sent_classifier.predict(clean_array)
+						labels = slb.inverse_transform(predicted)
+						flatlabels = [label for labeltuple in labels for label in labeltuple]
+						cleanlabels = []
+						
+						#Ensure that NONE is used properly
+						if len(flatlabels) > 1:
+							for label in flatlabels:
+								if label != "NONE":
+									cleanlabels.append(label)
+						else:
+							cleanlabels = flatlabels
+							
+						labeled_abstract.append([sentence, cleanlabels])
+				except UnicodeDecodeError:
+					labeled_abstract = "UNLABELED ABSTRACT: %s" % abstract
+				
+				labeled_record['labstract'] = labeled_abstract
+			
+		labeled_ann_records.append(labeled_record)
+					
+	#Writing labeled abstracts to files
+	print("\nWriting labeled sentences from all matching records.")
 	
 	with open(sent_outfilename, 'w') as outfile:
-		for record in matching_ann_records:
-			title = "NO TITLE"
-			labeled_abstract = "NO ABSTRACT"
-			for field in record:
-				if field == 'TI':
-					title = record[field]
-				if field == 'PMID':
-					pmid = record[field]
-				if field == 'AB':
-					abstract = record[field]
-					labeled_abstract = []
-					try:
-						sentence_list = sent_tokenize(abstract)
-						for sentence in sentence_list:
-							clean_string = clean(sentence)
-							clean_array = np.array([clean_string])
-							predicted = sent_classifier.predict(clean_array)
-							labels = slb.inverse_transform(predicted)
-							flatlabels = [label for labeltuple in labels for label in labeltuple]
-							cleanlabels = []
-							
-							#Ensure that NONE is used properly
-							if len(flatlabels) > 1:
-								for label in flatlabels:
-									if label != "NONE":
-										cleanlabels.append(label)
-							else:
-								cleanlabels = flatlabels
-								
-							labeled_abstract.append([sentence, '|'.join(cleanlabels)])
-					except UnicodeDecodeError:
-						labeled_abstract = "UNLABELED ABSTRACT: %s" % abstract
-			outstring = "%s\n%s\n%s\n\n" % (title, pmid, labeled_abstract)
+		for record in labeled_ann_records:
+			outstring = "%s\n%s\n%s\n\n" % \
+						(record['TI'], record['PMID'], record['labstract'])
 			outfile.write(outstring)
-				
+			
+	#Writing topics to files
+	#For now, this is just a filter/rearrangement of the labeled sentences
+	print("\nWriting topics for all matching records.")
+	
+	with open(topic_outfilename, 'w') as outfile:
+		for record in labeled_ann_records:
+			topics = []
+			for labeled_sentence in record['labstract']:
+				if labeled_sentence[1] != ['NONE']:
+					topic = "%s: %s" % (labeled_sentence[1], labeled_sentence[0])
+					topics.append(topic)
+			outstring = "%s\n%s\n%s\n\n" % \
+						(record['TI'], record['PMID'], '\n'.join(topics))
+			outfile.write(outstring)
+	
 	#Now provide some summary statistics	
 	high_match_terms = sorted(matched_mesh_terms.items(), key=operator.itemgetter(1),
 								reverse=True)[0:15]
@@ -1823,8 +1855,9 @@ def main():
 	
 	print("\nDone - see the following files in the output folder:\n"
 			"%s for list of matching records,\n"
-			"and %s for labeled abstract sentences." % 
-			(sent_outfilename, outfilename))
+			"%s for labeled abstract sentences, and\n"
+			"%s for topics within each entry." %
+			(outfilename, sent_outfilename, topic_outfilename))
 	
 if __name__ == "__main__":
 	sys.exit(main())
