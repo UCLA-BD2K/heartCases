@@ -1753,7 +1753,7 @@ def main():
 	for record in matching_ann_records:
 		labeled_record = {}
 		labeled_record['TI'] = "NO TITLE"
-		labeled_record['labstract'] = [["NO ABSTRACT","NONE"]]
+		labeled_record['labstract'] = [["NO ABSTRACT",["NONE"]]]
 		for field in record:
 			if field == 'TI':
 				labeled_record['TI'] = record[field]
@@ -1806,8 +1806,9 @@ def main():
 			topics = []
 			for labeled_sentence in record['labstract']:
 				if labeled_sentence[1] != ['NONE']:
-					topic = "%s: %s" % (labeled_sentence[1], labeled_sentence[0])
-					topics.append(topic)
+					for label in labeled_sentence[1]:
+						topic = "%s: %s" % (label, labeled_sentence[0])
+						topics.append(topic)
 			outstring = "%s\n%s\n%s\n\n" % \
 						(record['TI'], record['PMID'], '\n'.join(topics))
 			outfile.write(outstring)
