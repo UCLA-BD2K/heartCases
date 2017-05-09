@@ -36,7 +36,16 @@ A separate classifier is then used to determine medically-relevant content withi
 
 #### Input
 Text files containing literature references in MEDLINE format.
-Files to process must be placed in the "input" folder.
+Files to process should be placed in the "input" folder.
+
+Alternatively, provide the input file as an argument:
+  `--inputfile INPUT_FILE_NAME`
+
+where INPUT_FILE_NAME is a text file containing one or more documents in MEDLINE format.
+
+Input may also be provided as a text file of PubMed IDs, with one ID per line, using the argument:
+  `--pmids INPUT_FILE_OF_PMIDS`
+
 
 #### Output
 Outputs are saved to the "output" folder at the end of each run.
