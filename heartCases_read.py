@@ -10,42 +10,6 @@ and in MeSH terms.
 
 Requires numpy, nltk, and sklearn.
 
-Uses the Disease Ontology project database; see
-http://www.disease-ontology.org/ or Kibbe et al. (2015) NAR.
-
-Uses the 2017 MeSH Data Files provided by the NIH NLM.
-These files are used without modification.
-
-This script attempts to expand on existing MeSH annotations by performing
-tag classification with MeSH terms and adding terms to records where
-appropriate. These terms can optionally include just those used to search
-records (e.g., if only terms related to heart disease are provided,
-a classifier will be trained only to add those terms when missing.)
-Similar approaches have been employed by Huang et al. (2011) JAMIA:
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3168302/
-(Huang et al. used a k-nearest neighbors approach to get related articles
-and their highest-ranking MeSH terms. They achieved ~71% recall on 
-average.)
-
-Both previously present and newly added annotations
-are used to further annotate records with relevant ICD-10 disease codes.
-
-**INPUT:
-Text files containing literature references in MEDLINE format.
-Files to process must be placed in the "input" folder.
-
-**OUTPUT:
-A text file (out_file_medline.txt) containing literature references 
-in MEDLINE format, such that all references match the given 
-search terms. 
-The output file includes ICD-10 codes added as Other Terms (OT)
-where possible.
-Counts of matched MeSH terms are also provided.
-Records without MeSH terms are not included in the output file or counts.
-Abstracts are saved to files labeled with their corresponding PMIDs
-in the folder training_text. One file contains one abstract with
-MeSH terms, delimited by |, a tab, the abstract text, a tab, and the PMID.
- 
 '''
 __author__= "Harry Caufield"
 __email__ = "j.harry.caufield@gmail.com"
