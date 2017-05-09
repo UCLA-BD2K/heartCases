@@ -696,7 +696,7 @@ def clean(text):
 		cleanstring = " ".join(words)
 		return cleanstring
 
-def mesh_classification():
+def mesh_classification(testing):
 	'''
 	Builds and tests a multilabel text classifier for expanding MeSH
 	terms used on MEDLINE entries. Uses abstract text as training
@@ -724,14 +724,15 @@ def mesh_classification():
 					all_labeled_text = all_labeled_text + labeled_text
 			print("Loaded %s labeled abstracts." % len(train_file_list))
 		
-		print("Loading labeled abstracts for testing.") 
-		test_file_list = glob.glob('training_test_text/*.txt')
-	
-		for test_file in test_file_list:
-			with open(test_file) as tfile:
-				labeled_text = parse_training_text(tfile)
-				all_test_text = all_test_text + labeled_text
-		print("Loaded %s labeled abstracts." % len(test_file_list))
+		if testing:
+			print("Loading labeled abstracts for testing.") 
+			test_file_list = glob.glob('training_test_text/*.txt')
+		
+			for test_file in test_file_list:
+				with open(test_file) as tfile:
+					labeled_text = parse_training_text(tfile)
+					all_test_text = all_test_text + labeled_text
+			print("Loaded %s labeled abstracts." % len(test_file_list))
 		
 		return train_file_list, test_file_list, \
 				all_labeled_text, all_test_text
@@ -817,51 +818,50 @@ def mesh_classification():
 		t2 = time.time()
 	
 	else:
-		
+		print("Loading previous classifier...")
 		classifier = joblib.load(mesh_term_classifier_name)
 		lb = joblib.load(mesh_term_lb_name)
 		
 	#Test the classifier
-	print("Testing classifier...")
-	
-	for item in test_text:
-		clean_text = clean(item[1])
-		X_test_pre.append(clean_text)
-		test_labels.append(item[0])
-		pmids.append(item[2])
+	if testing:
+		print("Testing classifier...")
 		
-	X_test = np.array(X_test_pre)
-	
-	predicted = classifier.predict(X_test)
-	all_labels = lb.inverse_transform(predicted)
-	i = 0
-	all_recall = [] #To produce average recall value
-	all_newlabel_counts = [] #To produce average new label count
-	total_new_labels = 0
-	
-	for item, labels in zip(X_test, all_labels):
-		matches = 0
-		recall = 0
-		new_labels_uniq = [] #Any terms which weren't here before
-		#print '%s => %s' % (item, '|'.join(labels))
-		new_labels = list(labels)
-		for label in new_labels:
-			if label in test_labels[i]:
-				matches = matches +1
-			else:
-				new_labels_uniq.append(label)
-		recall = matches / float(len(test_labels[i]))
-		all_recall.append(recall)
-		#print("Recall: %s" % recall)
-		#print("New Terms: %s" % ("|".join(new_labels_uniq)))
-		all_newlabel_counts.append(float(len(new_labels_uniq)))
-		#print(pmids[i])
-		i = i+1
+		for item in test_text:
+			clean_text = clean(item[1])
+			X_test_pre.append(clean_text)
+			test_labels.append(item[0])
+			pmids.append(item[2])
+			
+		X_test = np.array(X_test_pre)
+		
+		predicted = classifier.predict(X_test)
+		all_labels = lb.inverse_transform(predicted)
+		i = 0
+		all_recall = [] #To produce average recall value
+		all_newlabel_counts = [] #To produce average new label count
+		total_new_labels = 0
+		
+		for item, labels in zip(X_test, all_labels):
+			matches = 0
+			recall = 0
+			new_labels_uniq = [] #Any terms which weren't here before
+			#print '%s => %s' % (item, '|'.join(labels))
+			new_labels = list(labels)
+			for label in new_labels:
+				if label in test_labels[i]:
+					matches = matches +1
+				else:
+					new_labels_uniq.append(label)
+			recall = matches / float(len(test_labels[i]))
+			all_recall.append(recall)
+			#print("Recall: %s" % recall)
+			#print("New Terms: %s" % ("|".join(new_labels_uniq)))
+			all_newlabel_counts.append(float(len(new_labels_uniq)))
+			#print(pmids[i])
+			i = i+1
 	
 	t3 = time.time()
 	
-	avg_recall = np.mean(all_recall)
-	avg_newlabel_count = np.mean(all_newlabel_counts)
 	if not have_classifier:
 		print("\nLoaded dictionary of %s terms in %.2f seconds." %
 				(len(all_terms), (t1 -t0)))
@@ -871,14 +871,17 @@ def mesh_classification():
 				((t3 -t0)))
 		print("Count of labels used in the training set = %s" % 
 				len(y_labels))
-				
-	print("Average Recall = %s" % avg_recall)
-	print("Average new labels added to each test record = %s" % 
-			avg_newlabel_count)
+	
+	if testing:
+		avg_recall = np.mean(all_recall)
+		avg_newlabel_count = np.mean(all_newlabel_counts)
+		print("Average Recall = %s" % avg_recall)
+		print("Average new labels added to each test record = %s" % 
+				avg_newlabel_count)
 	
 	return classifier, lb
 
-def sent_classification():
+def sent_classification(testing):
 	'''
 	Builds and tests a multilabel text classifier for labelling
 	sentences from abstracts using one of 12 labels. 
@@ -911,11 +914,11 @@ def sent_classification():
 				all_labeled_text = parse_training_sentences(sfile)
 			print("Loaded %s labeled sentences." % len(all_labeled_text))
 		
-		print("Loading labeled sentences for testing.") 
-	
-		with open('training_test_sentences/testing_sentences.txt') as sfile:
-			all_test_text = parse_training_sentences(sfile)
-		print("Loaded %s labeled sentences." % len(all_test_text))
+		if testing:
+			print("Loading labeled sentences for testing.") 
+			with open('training_test_sentences/testing_sentences.txt') as sfile:
+				all_test_text = parse_training_sentences(sfile)
+			print("Loaded %s labeled sentences." % len(all_test_text))
 		
 		return all_labeled_text, all_test_text
 	
@@ -939,7 +942,8 @@ def sent_classification():
 	
 	#Load the input files
 	labeled_text, test_text = load_training_sents(have_classifier)
-	if len(test_text) == 0:
+	
+	if testing and len(test_text) == 0:
 		sys.exit("Didn't load any training sentences - " \
 					"please verify they are present and try again.")
 	
@@ -998,44 +1002,43 @@ def sent_classification():
 		lb = joblib.load(sentence_classifier_lb_name)
 		
 	#Test the classifier
-	print("Testing sentence label classifier...")
-	
-	for item in test_text:
-		clean_text = clean(item[1])
-		X_test_pre.append(clean_text)
-		test_labels.append(item[0])
+	if testing:
+		print("Testing sentence label classifier...")
 		
-	X_test = np.array(X_test_pre)
-	
-	predicted = classifier.predict(X_test)
-	all_labels = lb.inverse_transform(predicted)
-	i = 0
-	all_recall = [] #To produce average recall value
-	all_newlabel_counts = [] #To produce average new label count
-	total_new_labels = 0
-	
-	for item, labels in zip(X_test, all_labels):
-		matches = 0
-		recall = 0
-		new_labels_uniq = [] #Any terms which weren't here before
-		#print '%s => %s' % (item, '|'.join(labels))
-		new_labels = list(labels)
-		for label in new_labels:
-			if label in test_labels[i]:
-				matches = matches +1
-			else:
-				new_labels_uniq.append(label)
-		recall = matches / float(len(test_labels[i]))
-		all_recall.append(recall)
-		#print("Recall: %s" % recall)
-		#print("New Terms: %s" % ("|".join(new_labels_uniq)))
-		all_newlabel_counts.append(float(len(new_labels_uniq)))
-		i = i+1
+		for item in test_text:
+			clean_text = clean(item[1])
+			X_test_pre.append(clean_text)
+			test_labels.append(item[0])
+			
+		X_test = np.array(X_test_pre)
+		
+		predicted = classifier.predict(X_test)
+		all_labels = lb.inverse_transform(predicted)
+		i = 0
+		all_recall = [] #To produce average recall value
+		all_newlabel_counts = [] #To produce average new label count
+		total_new_labels = 0
+		
+		for item, labels in zip(X_test, all_labels):
+			matches = 0
+			recall = 0
+			new_labels_uniq = [] #Any terms which weren't here before
+			#print '%s => %s' % (item, '|'.join(labels))
+			new_labels = list(labels)
+			for label in new_labels:
+				if label in test_labels[i]:
+					matches = matches +1
+				else:
+					new_labels_uniq.append(label)
+			recall = matches / float(len(test_labels[i]))
+			all_recall.append(recall)
+			#print("Recall: %s" % recall)
+			#print("New Terms: %s" % ("|".join(new_labels_uniq)))
+			all_newlabel_counts.append(float(len(new_labels_uniq)))
+			i = i+1
 	
 	t3 = time.time()
 	
-	avg_recall = np.mean(all_recall)
-	avg_newlabel_count = np.mean(all_newlabel_counts)
 	if not have_classifier:
 		print("\nLoaded dictionary of %s terms in %.2f seconds." %
 				(len(all_terms), (t1 -t0)))
@@ -1045,10 +1048,13 @@ def sent_classification():
 				((t3 -t0)))
 		print("Count of labels (including NONE) used in the " \
 				"training set = %s" % len(y_labels))
-				
-	print("Average Recall = %s" % avg_recall)
-	print("Average new labels added to each test record = %s" % 
-			avg_newlabel_count)
+	
+	if testing:
+		avg_recall = np.mean(all_recall)
+		avg_newlabel_count = np.mean(all_newlabel_counts)
+		print("Average Recall = %s" % avg_recall)
+		print("Average new labels added to each test record = %s" % 
+				avg_newlabel_count)
 	
 	return classifier, lb
 	
@@ -1083,6 +1089,7 @@ def main():
 	parser.add_argument('--pmids', help="name of a text file containing "
 						"a list of PubMed IDs to retrieve MEDLINE "
 						"records for")
+	parser.add_argument('--testing', help="if FALSE, do not test classifiers")
 	args = parser.parse_args()
 	
 	#Get the disease ontology file if it isn't present
@@ -1117,7 +1124,6 @@ def main():
 	for word in raw_heart_word_list:
 		heart_word_list.append(clean(word))
 	print("Loaded %s topic-specific words." % len(heart_word_list))
-	
 	
 	#Now we retrieve MeSH terms so they can be used as IDs
 	#AND so terms can be searched for filtering by topic
@@ -1484,7 +1490,15 @@ def main():
 	else:
 		print("\nStarting to build term classifier for all terms "
 				"used in the training abstracts...")
-	abst_classifier, lb = mesh_classification()
+	
+	#Argument tells us if we should not test the classifier
+	#This saves some time.
+	testing = True
+	if args.testing:
+		if args.testing == "FALSE":
+			testing = False
+
+	abst_classifier, lb = mesh_classification(testing)
 	#Also returns the label binarizer, lb
 	#So labels can be reproduced
 	
@@ -1637,7 +1651,7 @@ def main():
 	#so newly provided sentences can be labelled.
 	#Unlike MeSH terms, sentence labels are all new.
 	print("\n\nStarting to build sentence label classifier.")
-	sent_classifier, slb = sent_classification()
+	sent_classifier, slb = sent_classification(testing)
 	
 	if not os.path.isdir("output"):
 		#print("Setting up sentence classifier %sing directory." % cat)
