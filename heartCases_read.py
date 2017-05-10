@@ -33,6 +33,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import CountVectorizer
 
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.linear_model import SGDClassifier
 
 from sklearn.svm import *
 from sklearn.feature_extraction.text import TfidfTransformer
@@ -987,10 +988,10 @@ def sent_classification(testing):
 		  classification.
 		'''
 		classifier = Pipeline([
-					('vectorizer', CountVectorizer(ngram_range=(1,2), min_df = 5, max_df = 0.5)),
+					('vectorizer', CountVectorizer(ngram_range=(1,3), min_df = 5, max_df = 0.5)),
 					('tfidf', TfidfTransformer(norm='l2')),
-					('clf', OneVsRestClassifier(DecisionTreeClassifier(criterion="entropy",
-						class_weight="balanced", max_depth=8), n_jobs=-1))])
+					('clf', OneVsRestClassifier(SGDClassifier(loss="perceptron", eta0=1,
+						learning_rate="constant", penalty='l1', n_jobs=4)))])
 		classifier.fit(X_train, y_train_bin)
 		
 		#Finally, save the classifier
@@ -1843,4 +1844,3 @@ def main():
 	
 if __name__ == "__main__":
 	sys.exit(main())
-
