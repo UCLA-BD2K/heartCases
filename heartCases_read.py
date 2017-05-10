@@ -600,14 +600,17 @@ def label_sentence(sentence):
 	#Convert to stems
 	cleaner_sentence = clean(clean_sentence)
 	
-	#Do basic labeling with words and bigrams
+	#Do basic labeling with n-grams where n is 1, 2, or 3
 	sent_terms = cleaner_sentence.split()
+	
+	#Fun list comprehension n-gram approach c/o Scott Triglia; see
+	#http://locallyoptimal.com/blog/2013/01/20/elegant-n-gram-generation-in-python/
 	more_sent_terms = []
-	i = 0
-	for term in sent_terms[:-1]:
-		more_sent_terms.append("%s %s" % \
-								(sent_terms[i], sent_terms[i+1]))
-		i = i +1
+	for n in [2,3]:
+		n_grams = zip(*[sent_terms[i:] for i in range(n)])
+		for gram in n_grams:
+			more_sent_terms.append(" ".join(gram))
+	
 	for term in more_sent_terms:
 		sent_terms.append(term)
 	
