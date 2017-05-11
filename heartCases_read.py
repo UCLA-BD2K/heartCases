@@ -82,7 +82,7 @@ sentence_labels = {}
 	
 data_locations = {"do": ("http://ontologies.berkeleybop.org/","doid.obo"),
 					"mo": ("ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/asciimesh/","d2017.bin"),
-					"sl": ("https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lexicon/2017/release/", "LEX.tgz")}
+					"sl": ("https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lexicon/2017/release/LEX/ASCII/", "LEXICON.ascii")}
 	#Dict of locations of the external data sets used by this project.
 
 #Classes
@@ -211,42 +211,21 @@ def get_data_files(name):
 	baseURL, filename = data_locations[name]
 	filepath = baseURL + filename
 	outfilepath = filename
-	
-	dl_dbfile = True	#We need to download
-	decompress_file = False #We don't need to decompress
-	
-	if name == "sl" and os.path.isfile(filename): 
-		#Already have the compressed file, don't download
-		print("Found compressed SPECIALIST file on disk: %s" % filename)
-		decompress_file = True
-		dl_dbfile = False
 		
-	if dl_dbfile:
-		print("Downloading from %s" % filepath)
-		response = urllib2.urlopen(filepath)
-		out_file = open(os.path.basename(filename), "w+b")
-		chunk = 1048576
-		while 1:
-			data = (response.read(chunk)) #Read one Mb at a time
-			out_file.write(data)
-			if not data:
-				print("\n%s file download complete." % filename)
-				out_file.close()
-				break
-			sys.stdout.flush()
-			sys.stdout.write(".")
+	print("Downloading from %s" % filepath)
+	response = urllib2.urlopen(filepath)
+	out_file = open(os.path.basename(filename), "w+b")
+	chunk = 1048576
+	while 1:
+		data = (response.read(chunk)) #Read one Mb at a time
+		out_file.write(data)
+		if not data:
+			print("\n%s file download complete." % filename)
+			out_file.close()
+			break
+		sys.stdout.flush()
+		sys.stdout.write(".")
 	
-	if name == "sl":
-		decompress_file = True
-		
-	if decompress_file:
-		print("Decompressing %s." % filename)
-		with tarfile.open(filename) as compfile:
-			compfile.extractall()
-		print("Removing compressed file.")
-		os.remove(filename) 
-		filename = "LEX" #The name of the folder should remain consistent
-		
 	return filename
 	
 def build_mesh_to_icd10_dict(do_filename):
@@ -1137,12 +1116,17 @@ def main():
 		mo_filename = mesh_ofile_list[0]
 	
 	#Get the SPECIALIST lexicon if it isn't present
-	sl_dir = "LEX"
-	if os.path.isdir(sl_dir):
-		print("Found directory for SPECIALIST Lexicon.")
-	else:
-		print("Did not find SPECIALIST Lexicon. Downloading: ")
-		sl_dir = get_data_files("sl")
+	sl_file_list = glob.glob('LEXICON.*')
+	if len(sl_file_list) >1:
+		print("Found multiple possible SPECIALIST Lexicon files. "
+				"Using the preferred one.")
+		sl_filename = "LEXICON.ascii"
+	elif len(sl_file_list) == 0 :
+		print("Did not find SPECIALIST Lexicon file. Downloading: ")
+		sl_filename = get_data_files("sl")
+	elif len(sl_file_list) == 1:
+		print("Found SPECIALIST Lexicon file: %s " % mesh_ofile_list[0])
+		sl_filename = sl_file_list[0]
 		
 	#Retrieves the list of topic-specific words we're interested in
 	heart_word_list = []
