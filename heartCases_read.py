@@ -323,9 +323,43 @@ def build_mesh_to_icd10_dict(do_filename):
 
 def load_slexicon(sl_filename):
 	#Loads the terms in the SPECIALIST lexicon.
+	#Does not process all fields
 	
 	lexicon = {}
 	
+	with open(sl_filename) as sl_file:
+		for line in sl_file:
+			
+			if line[:1] == "{":	#this is a new entry
+				base = ""
+				cat = ""
+				spelling_variant = []
+				variants = []
+				acronym_of = []
+				abbreviation_of = []
+				
+			if line[:1] == "}": #close entry, add to dict
+				base_details = {"cat": cat,
+								"spelling_variant": spelling_variant,
+								"variants": variants,
+								"acronym_of": acronym_of,
+								"abbreviation_of": abbreviation_of}
+				lexicon[base] = base_details
+				continue
+				
+			splitline = (line.strip()).split("=")
+			if splitline[0] == "{base":
+				base = splitline[1]
+			if splitline[0] == "cat":
+				cat = splitline[1]
+			if splitline[0] == "spelling_variant":
+				spelling_variant.append(splitline[1])
+			if splitline[0] == "variants":
+				variants.append(splitline[1])
+			if splitline[0] == "acronym_of":
+				acronym_of.append((splitline[1].split("|"))[0])
+			if splitline[0] == "abbreviation_of":
+				abbreviation_of.append((splitline[1].split("|"))[0])	
 	return lexicon
 
 def build_mesh_dict(mo_filename):
@@ -1156,7 +1190,8 @@ def main():
 		
 	#Load the SPECIALIST lexicon
 	print("Loading SPECIALIST lexicon...")
-	slexicon = load_slexicon(sl_filename) 
+	slexicon = load_slexicon(sl_filename)
+	print("Loaded %s lexicon entries." % len(slexicon))
 	
 	#Load the sentence labels and vocabulary here.
 	#Most of the vocabulary is inherited from MeSH terms.
