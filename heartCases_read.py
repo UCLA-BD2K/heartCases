@@ -8,7 +8,7 @@ This part of the system is intended for parsing MEDLINE format files
 and specifically isolating those relevant to CVD using terms in titles 
 and in MeSH terms.
 
-Requires numpy, nltk, and sklearn.
+Requires numpy, nltk, sklearn, and bs4 (BeautifulSoup).
 
 Uses the Disease Ontology project, the 2017 MeSH Ontology,
 and the 2017 SPECIALIST Lexicon. 
@@ -25,11 +25,6 @@ import urllib, urllib2
 
 import nltk
 from nltk.stem.snowball import SnowballStemmer 
-'''
-Testing this one due to recent bugs in Porter stemmer
-Otherwise use this:
-'''
-#from nltk.stem.porter import *
 from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize
 
@@ -46,7 +41,6 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn import metrics, preprocessing
 from sklearn.externals import joblib
-
 
 #Constants and Options
 					
@@ -82,7 +76,7 @@ sentence_labels = {}
 	
 data_locations = {"do": ("http://ontologies.berkeleybop.org/","doid.obo"),
 					"mo": ("ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/asciimesh/","d2017.bin"),
-					"sl": ("https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lexicon/2017/release/LEX/ASCII/", "LEXICON.xml")}
+					"sl": ("https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lexicon/2017/release/LEX/", "LEXICON")}
 	#Dict of locations of the external data sets used by this project.
 
 #Classes
@@ -329,7 +323,9 @@ def build_mesh_to_icd10_dict(do_filename):
 
 def load_slexicon(sl_filename):
 	#Loads the terms in the SPECIALIST lexicon.
+	
 	lexicon = {}
+	
 	return lexicon
 
 def build_mesh_dict(mo_filename):
@@ -1121,16 +1117,16 @@ def main():
 		mo_filename = mesh_ofile_list[0]
 	
 	#Get the SPECIALIST lexicon if it isn't present
-	sl_file_list = glob.glob('LEXICON.*')
+	sl_file_list = glob.glob('LEXICON*')
 	if len(sl_file_list) >1:
 		print("Found multiple possible SPECIALIST Lexicon files. "
 				"Using the preferred one.")
-		sl_filename = "LEXICON.xml"
+		sl_filename = "LEXICON"
 	elif len(sl_file_list) == 0 :
 		print("Did not find SPECIALIST Lexicon file. Downloading: ")
 		sl_filename = get_data_files("sl")
 	elif len(sl_file_list) == 1:
-		print("Found SPECIALIST Lexicon file: %s " % mesh_ofile_list[0])
+		print("Found SPECIALIST Lexicon file: %s " % sl_file_list[0])
 		sl_filename = sl_file_list[0]
 		
 	#Retrieves the list of topic-specific words we're interested in
@@ -1159,6 +1155,7 @@ def main():
 		build_mesh_to_icd10_dict(do_filename)
 		
 	#Load the SPECIALIST lexicon
+	print("Loading SPECIALIST lexicon...")
 	slexicon = load_slexicon(sl_filename) 
 	
 	#Load the sentence labels and vocabulary here.
