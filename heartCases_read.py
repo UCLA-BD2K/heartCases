@@ -82,7 +82,7 @@ sentence_labels = {}
 	
 data_locations = {"do": ("http://ontologies.berkeleybop.org/","doid.obo"),
 					"mo": ("ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/asciimesh/","d2017.bin"),
-					"sl": ("https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lexicon/2017/release/LEX/ASCII/", "LEXICON.ascii")}
+					"sl": ("https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lexicon/2017/release/LEX/ASCII/", "LEXICON.xml")}
 	#Dict of locations of the external data sets used by this project.
 
 #Classes
@@ -326,6 +326,11 @@ def build_mesh_to_icd10_dict(do_filename):
 			do_xrefs_terms[icd10] = [name]
 	
 	return do_ids, do_xrefs_icd10, do_xrefs_terms
+
+def load_slexicon(sl_filename):
+	#Loads the terms in the SPECIALIST lexicon.
+	lexicon = {}
+	return lexicon
 
 def build_mesh_dict(mo_filename):
 	#Sets up the dict of MeSH terms, specific to the chosen topic.
@@ -1120,7 +1125,7 @@ def main():
 	if len(sl_file_list) >1:
 		print("Found multiple possible SPECIALIST Lexicon files. "
 				"Using the preferred one.")
-		sl_filename = "LEXICON.ascii"
+		sl_filename = "LEXICON.xml"
 	elif len(sl_file_list) == 0 :
 		print("Did not find SPECIALIST Lexicon file. Downloading: ")
 		sl_filename = get_data_files("sl")
@@ -1152,6 +1157,9 @@ def main():
 	#Build the MeSH to ICD-10 dictionary
 	do_ids, do_xrefs_icd10, do_xrefs_terms = \
 		build_mesh_to_icd10_dict(do_filename)
+		
+	#Load the SPECIALIST lexicon
+	slexicon = load_slexicon(sl_filename) 
 	
 	#Load the sentence labels and vocabulary here.
 	#Most of the vocabulary is inherited from MeSH terms.
