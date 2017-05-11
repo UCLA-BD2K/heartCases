@@ -22,6 +22,8 @@ These files are used without modification.
 Uses the [2017 SPECIALIST Lexicon](https://lexsrv3.nlm.nih.gov/Specialist/Summary/lexicon.html).
 See SPECIALIST.txt for terms and conditions regarding the use of the SPECIALIST NLP tools (don't worry, they're short).
 
+The three data sets listed above are downloaded if not present locally. All together, these sets require ~1.8 Gb of disk space, most of which is for SPECIALIST. 
+
 ### Usage
 This script attempts to expand on existing MeSH annotations by performing
 tag classification with MeSH terms and adding terms to records where
