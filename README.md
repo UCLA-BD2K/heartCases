@@ -19,6 +19,9 @@ http://www.disease-ontology.org/ or [Kibbe et al. (2015) NAR.](https://www.ncbi.
 Uses the [2017 MeSH Data Files provided by the NIH NLM](https://www.nlm.nih.gov/mesh/filelist.html).
 These files are used without modification.
 
+Uses the [2017 SPECIALIST Lexicon](https://lexsrv3.nlm.nih.gov/Specialist/Summary/lexicon.html).
+See SPECIALIST.txt for terms and conditions regarding the use of the SPECIALIST NLP tools (don't worry, they're short).
+
 ### Usage
 This script attempts to expand on existing MeSH annotations by performing
 tag classification with MeSH terms and adding terms to records where
