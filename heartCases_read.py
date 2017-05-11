@@ -19,7 +19,8 @@ SPECIALIST.txt.
 __author__= "Harry Caufield"
 __email__ = "j.harry.caufield@gmail.com"
 
-import argparse, glob, operator, os, random, re, string, sys, time
+import argparse, glob, operator, os, random, re, string
+import sys, tarfile, time
 import urllib, urllib2
 
 import nltk
@@ -204,26 +205,47 @@ def get_data_files(name):
 	#the Disease Ontology database,
 	#the 2017 MeSH term file from NLM,
 	#or the 2017 SPECIALIST Lexicon from NLM.
-	#The last of these requires decompression.
+	#The last of these requires decompression and returns a directory.
+	#The others return a filename.
 
 	baseURL, filename = data_locations[name]
 	filepath = baseURL + filename
 	outfilepath = filename
 	
-	print("Downloading from %s" % filepath)
+	dl_dbfile = True	#We need to download
+	decompress_file = False #We don't need to decompress
 	
-	response = urllib2.urlopen(filepath)
-	out_file = open(os.path.basename(filename), "w+b")
-	chunk = 1048576
-	while 1:
-		data = (response.read(chunk)) #Read one Mb at a time
-		out_file.write(data)
-		if not data:
-			print("\n%s file download complete." % filename)
-			out_file.close()
-			break
-		sys.stdout.flush()
-		sys.stdout.write(".")
+	if name == "sl" and os.path.isfile(filename): 
+		#Already have the compressed file, don't download
+		print("Found compressed SPECIALIST file on disk: %s" % filename)
+		decompress_file = True
+		dl_dbfile = False
+		
+	if dl_dbfile:
+		print("Downloading from %s" % filepath)
+		response = urllib2.urlopen(filepath)
+		out_file = open(os.path.basename(filename), "w+b")
+		chunk = 1048576
+		while 1:
+			data = (response.read(chunk)) #Read one Mb at a time
+			out_file.write(data)
+			if not data:
+				print("\n%s file download complete." % filename)
+				out_file.close()
+				break
+			sys.stdout.flush()
+			sys.stdout.write(".")
+	
+	if name == "sl":
+		decompress_file = True
+		
+	if decompress_file:
+		print("Decompressing %s." % filename)
+		with tarfile.open(filename) as compfile:
+			compfile.extractall()
+		print("Removing compressed file.")
+		os.remove(filename) 
+		filename = "LEX" #The name of the folder should remain consistent
 		
 	return filename
 	
@@ -1114,6 +1136,14 @@ def main():
 		print("Found MeSH ontology file: %s " % mesh_ofile_list[0])
 		mo_filename = mesh_ofile_list[0]
 	
+	#Get the SPECIALIST lexicon if it isn't present
+	sl_dir = "LEX"
+	if os.path.isdir(sl_dir):
+		print("Found directory for SPECIALIST Lexicon.")
+	else:
+		print("Did not find SPECIALIST Lexicon. Downloading: ")
+		sl_dir = get_data_files("sl")
+		
 	#Retrieves the list of topic-specific words we're interested in
 	heart_word_list = []
 	raw_heart_word_list = get_heart_words()
