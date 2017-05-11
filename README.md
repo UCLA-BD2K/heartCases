@@ -10,21 +10,6 @@ This system includes several different modules.
 This part of the system is intended for parsing MEDLINE format files 
 and specifically isolating those relevant to cardiovascular disease (CVD).
 
-### Requirements 
-Requires numpy, nltk, and sklearn.
-
-Uses the Disease Ontology project database; see
-http://www.disease-ontology.org/ or [Kibbe et al. (2015) NAR.](https://www.ncbi.nlm.nih.gov/pubmed/25348409)
-
-Uses the [2017 MeSH Data Files provided by the NIH NLM](https://www.nlm.nih.gov/mesh/filelist.html).
-These files are used without modification.
-
-Uses the [2017 SPECIALIST Lexicon](https://lexsrv3.nlm.nih.gov/Specialist/Summary/lexicon.html).
-See SPECIALIST.txt for terms and conditions regarding the use of the SPECIALIST NLP tools (don't worry, they're short).
-
-The three data sets listed above are downloaded if not present locally. All together, these sets require ~1.8 Gb of disk space, most of which is for SPECIALIST. 
-
-### Usage
 This script attempts to expand on existing MeSH annotations by performing
 tag classification with MeSH terms and adding terms to records where
 appropriate. These terms can optionally include just those used to search
@@ -38,6 +23,24 @@ average.)
 Both previously present and newly added annotations are used to further annotate records with relevant ICD-10 disease codes.
 
 A separate classifier is then used to determine medically-relevant content within abstracts, including demographic details, symptoms, and lab values, among other features.
+
+### Requirements 
+Requires [numpy](http://www.numpy.org/), [nltk](http://www.nltk.org/), and [scikit-learn](http://scikit-learn.org/stable/).
+
+Uses the Disease Ontology project database; see
+http://www.disease-ontology.org/ or [Kibbe et al. (2015) NAR.](https://www.ncbi.nlm.nih.gov/pubmed/25348409)
+
+Uses the [2017 MeSH Data Files provided by the NIH NLM](https://www.nlm.nih.gov/mesh/filelist.html).
+These files are used without modification.
+
+Uses the [2017 SPECIALIST Lexicon](https://lexsrv3.nlm.nih.gov/Specialist/Summary/lexicon.html).
+See SPECIALIST.txt for terms and conditions regarding the use of the SPECIALIST NLP tools (don't worry, they're short).
+
+The three data sets listed above are downloaded if not present locally. All together, these sets require ~1.8 Gb of disk space, most of which is for SPECIALIST. 
+
+### Usage
+Run as:
+`python heartCases_read.py`
 
 #### Input
 Text files containing literature references in MEDLINE format.
