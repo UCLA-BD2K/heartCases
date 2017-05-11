@@ -10,6 +10,11 @@ and in MeSH terms.
 
 Requires numpy, nltk, and sklearn.
 
+Uses the Disease Ontology project, the 2017 MeSH Ontology,
+and the 2017 SPECIALIST Lexicon. 
+The SPECIALIST tools come with their own terms and conditions: see
+SPECIALIST.txt.
+
 '''
 __author__= "Harry Caufield"
 __email__ = "j.harry.caufield@gmail.com"
@@ -73,6 +78,11 @@ sentence_label_filename = "sentence_label_terms.txt"
 sentence_labels = {}
 	#Dict of sentence labels with sets of associated terms as keys.
 	#Expanded later
+	
+data_locations = {"do": ("http://ontologies.berkeleybop.org/","doid.obo"),
+					"mo": ("ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/asciimesh/","d2017.bin"),
+					"sl": ("https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lexicon/2017/release/", "LEX.tgz")}
+	#Dict of locations of the external data sets used by this project.
 
 #Classes
 class Record(dict):
@@ -188,53 +198,35 @@ def get_heart_words(): #Reads a file of topic-specific vocabulary
 		for line in heart_word_file:
 			word_list.append(line.rstrip())
 	return word_list
-	
-def get_disease_ontology(): #Retrieves the Disease Ontology database
-	baseURL = "http://ontologies.berkeleybop.org/"
-	ofilename = "doid.obo"
-	ofilepath = baseURL + ofilename
-	outfilepath = ofilename
-	
-	print("Downloading from %s" % ofilepath)
-	
-	response = urllib2.urlopen(ofilepath)
-	out_file = open(os.path.basename(ofilename), "w+b")
-	chunk = 1048576
-	while 1:
-		data = (response.read(chunk)) #Read one Mb at a time
-		out_file.write(data)
-		if not data:
-			print("\n%s file download complete." % ofilename)
-			out_file.close()
-			break
-		sys.stdout.flush()
-		sys.stdout.write(".")
-		
-	return ofilename
-	
-def get_mesh_ontology(): #Retrieves the 2017 MeSH term file from NLM
-	baseURL = "ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/asciimesh/"
-	mfilename = "d2017.bin"
-	mfilepath = baseURL + mfilename
-	outfilepath = mfilename
-	
-	print("Downloading from %s" % mfilepath)
-	
-	response = urllib2.urlopen(mfilepath)
-	out_file = open(os.path.basename(mfilename), "w+b")
-	chunk = 1048576
-	while 1:
-		data = (response.read(chunk)) #Read one Mb at a time
-		out_file.write(data)
-		if not data:
-			print("\n%s file download complete." % mfilename)
-			out_file.close()
-			break
-		sys.stdout.flush()
-		sys.stdout.write(".")
-		
-	return mfilename
 
+def get_data_files(name):
+	#Retrieves one of the following:
+	#the Disease Ontology database,
+	#the 2017 MeSH term file from NLM,
+	#or the 2017 SPECIALIST Lexicon from NLM.
+	#The last of these requires decompression.
+
+	baseURL, filename = data_locations[name]
+	filepath = baseURL + filename
+	outfilepath = filename
+	
+	print("Downloading from %s" % filepath)
+	
+	response = urllib2.urlopen(filepath)
+	out_file = open(os.path.basename(filename), "w+b")
+	chunk = 1048576
+	while 1:
+		data = (response.read(chunk)) #Read one Mb at a time
+		out_file.write(data)
+		if not data:
+			print("\n%s file download complete." % filename)
+			out_file.close()
+			break
+		sys.stdout.flush()
+		sys.stdout.write(".")
+		
+	return filename
+	
 def build_mesh_to_icd10_dict(do_filename):
 	#Build the MeSH ID to ICD-10 dictionary
 	#the relevant IDs are xrefs in no particular order
@@ -1104,7 +1096,7 @@ def main():
 		do_filename = "doid.obo"
 	elif len(disease_ofile_list) == 0 :
 		print("Did not find disease ontology file. Downloading: ")
-		do_filename = get_disease_ontology()
+		do_filename = get_data_files("do")
 	elif len(disease_ofile_list) == 1:
 		print("Found disease ontology file: %s " % disease_ofile_list[0])
 		do_filename = disease_ofile_list[0]
@@ -1117,7 +1109,7 @@ def main():
 		mo_filename = "d2017.bin"
 	elif len(mesh_ofile_list) == 0 :
 		print("Did not find MeSH term file. Downloading: ")
-		mo_filename = get_mesh_ontology()
+		mo_filename = get_data_files("mo")
 	elif len(mesh_ofile_list) == 1:
 		print("Found MeSH ontology file: %s " % mesh_ofile_list[0])
 		mo_filename = mesh_ofile_list[0]
