@@ -184,7 +184,6 @@ def find_more_record_text(rec_ids):
 		print("No PubMed Central IDs found and/or all records with" \
 				" PMC IDs already have abstracts.")
 		
-	
 def get_heart_words(): #Reads a file of topic-specific vocabulary
 	#In this case, the topic is heart disease.
 	word_list = []
@@ -576,7 +575,6 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 	tfile = "%s.txt" % pmid
 	
 	if not os.path.isdir(tdir):
-		#print("Setting up MeSH term classifier %sing directory." % cat)
 		os.mkdir(tdir)
 	os.chdir(tdir)
 	
@@ -590,8 +588,6 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 	#and do some basic pre-labeling with terms we know should be 
 	#associated with labels (performed by label_sentence).
 	sentence_count = 0
-	
-	#print("**DOCUMENT: %s**" % title)
 	
 	if not os.path.isdir(sdir):
 		#print("Setting up sentence classifier %sing directory." % cat)
@@ -650,7 +646,6 @@ def label_sentence(sentence):
 				and term in sent_terms \
 				and label not in label_list:
 				label_list.append(label)
-				#print("%s = [%s] in %s" % (label, term, sentence))
 				break #May not actually want to break if we want greedy matches
 	if len(label_list) == 0:
 		label_list.append("NONE")
@@ -665,7 +660,6 @@ def parse_training_text(tfile):
 	'''
 	labeled_text = []
 	
-	#print("Reading %s" % (tfile.name))
 	for line in tfile: #should only be one line anyway
 		splitline = line.split("\t")
 		abst = splitline[1].strip()
@@ -699,10 +693,9 @@ def clean(text):
 		'''
 		Pre-processing for a string to ensure it lacks stopwords, etc.
 		Also removes punctuation.
-		Uses NLTK Snowball stemmmer which is essentially the Porter stemmer.
+		Uses NLTK Snowball stemmmer.
 		Returns the input string as a processed raw string.
 		'''
-		#stemmer = PorterStemmer()
 		stemmer = SnowballStemmer("english")
 		stopword_set = set(stopwords.words('english'))
 		words = []
@@ -874,7 +867,6 @@ def mesh_classification(testing):
 			matches = 0
 			recall = 0
 			new_labels_uniq = [] #Any terms which weren't here before
-			#print '%s => %s' % (item, '|'.join(labels))
 			new_labels = list(labels)
 			for label in new_labels:
 				if label in test_labels[i]:
@@ -883,10 +875,7 @@ def mesh_classification(testing):
 					new_labels_uniq.append(label)
 			recall = matches / float(len(test_labels[i]))
 			all_recall.append(recall)
-			#print("Recall: %s" % recall)
-			#print("New Terms: %s" % ("|".join(new_labels_uniq)))
 			all_newlabel_counts.append(float(len(new_labels_uniq)))
-			#print(pmids[i])
 			i = i+1
 	
 	t3 = time.time()
@@ -1029,7 +1018,7 @@ def sent_classification(testing):
 	else:
 		classifier = joblib.load(sentence_classifier_name)
 		lb = joblib.load(sentence_classifier_lb_name)
-		
+	
 	#Test the classifier
 	if testing:
 		print("Testing sentence label classifier...")
@@ -1052,7 +1041,6 @@ def sent_classification(testing):
 			matches = 0
 			recall = 0
 			new_labels_uniq = [] #Any terms which weren't here before
-			#print '%s => %s' % (item, '|'.join(labels))
 			new_labels = list(labels)
 			for label in new_labels:
 				if label in test_labels[i]:
@@ -1061,8 +1049,6 @@ def sent_classification(testing):
 					new_labels_uniq.append(label)
 			recall = matches / float(len(test_labels[i]))
 			all_recall.append(recall)
-			#print("Recall: %s" % recall)
-			#print("New Terms: %s" % ("|".join(new_labels_uniq)))
 			all_newlabel_counts.append(float(len(new_labels_uniq)))
 			i = i+1
 	
@@ -1490,9 +1476,6 @@ def main():
 							sent_count = sent_count + this_sent_count
 							ti = ti+1
 							
-					#else:
-					#	print("\nNOT MATCHING: %s" % record['PMID'])
-							
 					fileindex = fileindex +1
 					
 					sys.stdout.flush()
@@ -1506,8 +1489,6 @@ def main():
 	if len(fetch_rec_ids) > 0:
 		print("\nFinding additional abstract text for records.")
 		new_abstracts = find_more_record_text(fetch_rec_ids)
-		#broken right now
-		#new_abstracts = {}
 		try:
 			new_abstract_count = len(new_abstracts)
 			have_new_abstracts = True
