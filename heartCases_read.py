@@ -614,10 +614,8 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 def label_sentence(sentence):
 	#Takes a string (usually of multiple words) as input.
 	#Labels the string using labels and terms in sentence_labels.
-	#Returns a list of matching labels.
-	
-	#Eventually will also extract numerical values, e.g. lab results.
-	
+	#Returns a list of matching labels
+		
 	label_list = []
 					
 	#Remove quote marks and hypens
@@ -1833,7 +1831,10 @@ def main():
 		for record in labeled_ann_records:
 			topics = []
 			for labeled_sentence in record['labstract']:
-				if labeled_sentence[1] != ['NONE']:
+				started = False	#The first few lines usually aren't useful
+				if 'STRT' in labeled_sentence[1]:
+					started = True
+				if started and labeled_sentence[1] != ['NONE']:
 					for label in labeled_sentence[1]:
 						topic = "%s: %s" % (label, labeled_sentence[0])
 						topics.append(topic)
