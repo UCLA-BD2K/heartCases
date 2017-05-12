@@ -184,14 +184,6 @@ def find_more_record_text(rec_ids):
 		print("No PubMed Central IDs found and/or all records with" \
 				" PMC IDs already have abstracts.")
 		
-def get_heart_words(): #Reads a file of topic-specific vocabulary
-	#In this case, the topic is heart disease.
-	word_list = []
-	with open("heart_dis_vocab.txt") as heart_word_file:
-		for line in heart_word_file:
-			word_list.append(line.rstrip())
-	return word_list
-
 def get_data_files(name):
 	#Retrieves one of the following:
 	#the Disease Ontology database,
@@ -1146,13 +1138,6 @@ def main():
 		print("Found SPECIALIST Lexicon file: %s " % sl_file_list[0])
 		sl_filename = sl_file_list[0]
 		
-	#Retrieves the list of topic-specific words we're interested in
-	heart_word_list = []
-	raw_heart_word_list = get_heart_words()
-	for word in raw_heart_word_list:
-		heart_word_list.append(clean(word))
-	print("Loaded %s topic-specific words." % len(heart_word_list))
-	
 	#Now we retrieve MeSH terms so they can be used as IDs
 	#AND so terms can be searched for filtering by topic
 	#AND so terms can be used for sentence labeling tasks
@@ -1214,7 +1199,6 @@ def main():
 			sentence_labels["DEMO"].append(term)
 	
 	#Clean up the sentence labels a bit and stem
-	
 	for label in sentence_labels:
 		for term in sentence_labels[label]:
 			sentence_labels[label].remove(term)
@@ -1228,6 +1212,17 @@ def main():
 		label_term_count = label_term_count + len(sentence_labels[label])
 	print("Sentence label dictionary includes %s terms." % \
 			label_term_count)
+	
+	#Get CVD-specific MeSH terms
+	#These will be used to filter for on-topic documents.
+	domain_word_list = []
+	raw_domain_word_list = []
+	for cat in ["A07","C14"]:
+		for term in mo_cats[cat]:
+			raw_domain_word_list.append(term)
+	for word in raw_domain_word_list:
+		domain_word_list.append(clean(word))
+	print("Loaded %s domain-specific terms." % len(domain_word_list))
 	
 	#Check if PMID list was provided.
 	#If so, download records for all of them.
@@ -1294,9 +1289,6 @@ def main():
 			sys.stdout.flush()
 			sys.stdout.write("\b" * (prog_width+1))
 			
-			#for word in mesh_term_list:
-			#	heart_word_list.append(word)
-			
 			have_records = True
 			
 			while record_count < record_count_cutoff \
@@ -1323,7 +1315,7 @@ def main():
 					except KeyError:
 						split_title = ["NA"]
 					
-					for word in heart_word_list:
+					for word in domain_word_list:
 						if word in split_title:
 							found = 1
 							break
