@@ -1815,22 +1815,33 @@ def main():
 			outfile.write(outstring)
 			
 	#Writing topics to files
-	#For now, this is just a filter/rearrangement of the labeled sentences
 	print("\nWriting topics for all matching records.")
 	
 	with open(topic_outfilename, 'w') as outfile:
 		for record in labeled_ann_records:
-			topics = []
+			topics_and_sents = []
 			started = False	#The first few lines usually aren't useful
 			for labeled_sentence in record['labstract']:
+				labels_and_terms = label_sentence(labeled_sentence[0])
+					#This just uses the pre-labeler to identify clearly 
+					#matching entries and highlight them. Note that the 
+					#labeled_sentence here is from the classifier and not 
+					#the pre-labeler alone.
 				if 'STRT' in labeled_sentence[1]:
 					started = True
 				if started and labeled_sentence[1] != ['NONE']:
 					for label in labeled_sentence[1]:
-						topic = "%s: %s" % (label, labeled_sentence[0])
-						topics.append(topic)
+						if label in labels_and_terms:
+							terms = labels_and_terms[label]
+						else:
+							terms = []
+						topic_and_sent = "%s (%s): %s" % (label,
+												",".join(terms),
+												labeled_sentence[0])
+						topics_and_sents.append(topic_and_sent)
+						
 			outstring = "%s\n%s\n%s\n\n" % \
-						(record['TI'], record['PMID'], '\n'.join(topics))
+						(record['TI'], record['PMID'], '\n'.join(topics_and_sents))
 			outfile.write(outstring)
 	
 	#Now provide some summary statistics	
