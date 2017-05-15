@@ -25,7 +25,7 @@ Both previously present and newly added annotations are used to further annotate
 A separate classifier is then used to determine medically-relevant content within abstracts, including demographic details, symptoms, and lab values, among other features.
 
 ### Requirements 
-Requires [numpy](http://www.numpy.org/), [nltk](http://www.nltk.org/), and [scikit-learn](http://scikit-learn.org/stable/).
+Requires [bokeh](http://bokeh.pydata.org), [numpy](http://www.numpy.org/), [nltk](http://www.nltk.org/), and [scikit-learn](http://scikit-learn.org/stable/).
 
 Uses the Disease Ontology project database; see
 http://www.disease-ontology.org/ or [Kibbe et al. (2015) NAR.](https://www.ncbi.nlm.nih.gov/pubmed/25348409)
