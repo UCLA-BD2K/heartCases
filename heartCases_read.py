@@ -543,8 +543,11 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 	 
 	For the sentence topic classifier training:
 	 Calls label_sentence() on each sentence to do pre-labeling.
-	 Saves labeled sentences to a comma-delimited file of two columns.
-	 One or more labels, separated by |, are in the first column.
+	 Saves labeled sentences to a tab-delimited file of two columns.
+	 One or more labels are in the first column;
+	 labels are provided along with their matching terms and
+	 separated by pipe symbols, e.g.:
+	 DEMO,woman|SYMP,cough,dizziness
 	 A single sentence per row is in the second column.
 	 The sentence begins and end with double quotation marks.
 	 Any existing quotation marks are removed from the sentence.
@@ -589,9 +592,12 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 	sentence_file = open(sentence_filename, "a")
 	
 	for sentence in sent_tokenize(abst):
-		topic_list = label_sentence(sentence)
-		topic = "|".join(topic_list)
-		sentence_file.write("%s,\"%s\"\n" % (topic, sentence))
+		labels_and_terms = []
+		topic_dict = label_sentence(sentence)
+		for label in topic_dict:
+			labels_and_terms.append("%s,%s" % (label, ",".join(topic_dict[label])))
+		labels_out = "|".join(labels_and_terms)
+		sentence_file.write("%s\t\"%s\"\n" % (labels_out, sentence))
 		sentence_count = sentence_count +1
 	
 	os.chdir("..")
@@ -601,9 +607,10 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 def label_sentence(sentence):
 	#Takes a string (usually of multiple words) as input.
 	#Labels the string using labels and terms in sentence_labels.
-	#Returns a list of matching labels
+	#Returns a dict of matching labels and their corresponding matches
 		
-	label_list = []
+	label_dict = {} #Keys are labels, values are lists of matching terms
+	#Only labels applying to the input are included.
 					
 	#Remove quote marks and hypens
 	clean_sentence = ""
@@ -633,16 +640,17 @@ def label_sentence(sentence):
 	
 	for label in sentence_labels:
 		for term in sentence_labels[label]:
-			if len(term) > 2 \
-				and term not in ["parent","patient"] \
-				and term in sent_terms \
-				and label not in label_list:
-				label_list.append(label)
-				break #May not actually want to break if we want greedy matches
-	if len(label_list) == 0:
-		label_list.append("NONE")
+			if len(term) > 2 and term not in ["parent","patient"]:
+				#These terms are very common and not useful for labels
+				if term in sent_terms:
+					if label not in label_dict:
+						label_dict[label] = [term]
+					else:
+						label_dict[label].append(term)
+	if len(label_dict.keys()) == 0:
+		label_dict["NONE"] = []
 	
-	return label_list
+	return label_dict
 
 def parse_training_text(tfile):
 	'''
@@ -666,18 +674,27 @@ def parse_training_sentences(sfile):
 	Loads a file of labelled sentences for classifier training.
 	One file may contain numerous sentences, one per line,
 	with the sentence text in double quotes.
-	Output is a list of labels and the sentence text.
+	Sentences are preceded by labels and corresponding matched terms.
+	Output is a dict of labels and matching terms and the sentence text.
 	'''
 	labeled_sentences = []
 	
 	for line in sfile:
-		labels = []
-		for label in ((line.split(","))[0]).split("|"):
-			labels.append(label)
-		text = ((line.split("\"", 1))[1])[:-1]
+		splitline = (line.rstrip()).split("\t")
+		labels_and_terms = {}
+		for label_and_terms in splitline[0].split("|"):
+			split_terms = label_and_terms.split(",")
+			label = split_terms[0]
+			terms = []
+			for term in split_terms[:1]:
+				terms.append(term)
+		
+			labels_and_terms[label] = terms
+			
+		text = splitline[1][1:-1]
 			#Split at the first quote mark, get the text after it,
-			#and remove the final quote mark.
-		labeled_sentences.append([labels, text])
+			#and remove the quote marks.
+		labeled_sentences.append([labels_and_terms, text])
 	
 	return labeled_sentences
 
@@ -969,7 +986,8 @@ def sent_classification(testing):
 		#Set up the input set and term vectors
 		for item in labeled_text:
 			clean_text = clean(item[1])
-			clean_labeled_text.append([item[0], clean_text])
+			labels = item[0].keys()
+			clean_labeled_text.append([labels, clean_text])
 			X_train_pre.append(clean_text)
 			y_train.append(item[0])
 		
@@ -1018,7 +1036,8 @@ def sent_classification(testing):
 		for item in test_text:
 			clean_text = clean(item[1])
 			X_test_pre.append(clean_text)
-			test_labels.append(item[0])
+			labels = item[0].keys()
+			test_labels.append(labels)
 			
 		X_test = np.array(X_test_pre)
 		
