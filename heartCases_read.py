@@ -8,7 +8,7 @@ This part of the system is intended for parsing MEDLINE format files
 and specifically isolating those relevant to CVD using terms in titles 
 and in MeSH terms.
 
-Requires numpy, nltk, sklearn, and bs4 (BeautifulSoup).
+Requires bokeh, numpy, nltk, and sklearn.
 
 Uses the Disease Ontology project, the 2017 MeSH Ontology,
 and the 2017 SPECIALIST Lexicon. 
@@ -22,6 +22,9 @@ __email__ = "j.harry.caufield@gmail.com"
 import argparse, glob, operator, os, random, re, string
 import sys, tarfile, time
 import urllib, urllib2
+
+from bokeh.layouts import column
+from bokeh.plotting import figure, output_file, show
 
 import nltk
 from nltk.stem.snowball import SnowballStemmer 
@@ -1084,6 +1087,55 @@ def sent_classification(testing):
 	
 	return classifier, lb
 	
+def plot_those_counts(all_matches, outfilename):
+	'''
+	Given a list of dicts of categories and counts,
+	produces a simple bar plot of the counts for each.
+	Produces plots using Bokeh - produces .html and opens browser
+	'''
+	all_plots = []
+	
+	for matches in all_matches:
+		#Sort categories and make table-like dict
+		sort_matches = sorted(matches.items(), key=operator.itemgetter(1))
+		
+		cats = [] #Y axis labels
+		catvalues = [] #Y axis
+		counts = [] #X axis
+		
+		randcol = ('#%06X' % random.randint(0,256**3-1)) #A random plot color
+	
+		i = 0
+		for key, value in sort_matches:
+			cats.append(key)
+			catvalues.append(i)
+			counts.append(value)
+			i = i +1
+			
+		match_table = {"Terms": cats, "counts": counts}
+		
+		if len(sort_matches) > 60:
+			height = 10*len(sort_matches)
+		elif len(sort_matches) < 5:
+			height = 300
+		else:
+			height = 600
+				
+		plot = figure(plot_width=600, plot_height=height, 
+						title="Counts of Matches", x_axis_label="Counts")
+		plot.hbar(y = catvalues, left=0, right=counts, height=0.5, color=randcol)
+		plot.text(counts, catvalues, text=[i for i in cats], text_font_size="8pt",
+					text_baseline="middle")
+		
+		all_plots.append(plot)
+	
+	output_file(outfilename, mode="inline", title="heartCases")
+	
+	#For gridding
+	layout = column(all_plots)
+	show(layout)
+	#show(plot)	
+	
 #Main
 def main():
 	
@@ -1705,23 +1757,21 @@ def main():
 	if len(medline_file_list) == 1:
 		outfilename = (medline_file_list[0])[6:-4] + "_%s_relabeled.txt" \
 						% filelabel
+		sent_outfilename = (medline_file_list[0])[6:-4] + "_%s_sentences.txt" \
+						% filelabel
+		topic_outfilename = (medline_file_list[0])[6:-4] + "_%s_topics.txt" \
+						% filelabel
+		viz_outfilename = (medline_file_list[0])[6:-4] + "_%s_plots.html" \
+						% filelabel
 	else:
 		outfilename = "medline_entries_%s_relabeled.txt" \
 						% filelabel
-	
-	if len(medline_file_list) == 1:
-		sent_outfilename = (medline_file_list[0])[6:-4] + "_%s_sentences.txt" \
-						% filelabel
-	else:
 		sent_outfilename = "medline_entries_%s_sentences.txt" \
 						% filelabel
-						
-	if len(medline_file_list) == 1:
-		topic_outfilename = (medline_file_list[0])[6:-4] + "_%s_topics.txt" \
-						% filelabel
-	else:
 		topic_outfilename = "medline_entries_%s_topics.txt" \
 						% filelabel
+		viz_outfilename = "medline_entries_%s_plots.html" \
+						% filelabel 
 	
 	print("\nWriting matching, newly annotated records to file.")
 	
@@ -1844,23 +1894,31 @@ def main():
 						(record['TI'], record['PMID'], '\n'.join(topics_and_sents))
 			outfile.write(outstring)
 	
-	#Now provide some summary statistics	
-	high_match_terms = sorted(matched_mesh_terms.items(), key=operator.itemgetter(1),
-								reverse=True)[0:15]
-	
-	high_terms_in_matched = sorted(all_terms_in_matched.items(), key=operator.itemgetter(1),
-								reverse=True)[0:15]
-	
-	high_match_journals = sorted(matched_journals.items(), key=operator.itemgetter(1),
-								reverse=True)[0:15]
-								
-	high_match_years = sorted(matched_years.items(), key=operator.itemgetter(1),
-								reverse=True)[0:10]
-								
-	high_rn_codes = sorted(rn_codes.items(), key=operator.itemgetter(1),
-								reverse=True)[0:10]
-	
 	if record_count > 0:
+		
+		#Plot first.
+		all_matches = [matched_mesh_terms, all_terms_in_matched,
+						matched_journals, matched_years,
+						rn_codes]
+						
+		plot_those_counts(all_matches, viz_outfilename)
+		
+		#Now provide some summary statistics	
+		high_match_terms = sorted(matched_mesh_terms.items(), key=operator.itemgetter(1),
+									reverse=True)[0:15]
+		
+		high_terms_in_matched = sorted(all_terms_in_matched.items(), key=operator.itemgetter(1),
+									reverse=True)[0:15]
+		
+		high_match_journals = sorted(matched_journals.items(), key=operator.itemgetter(1),
+									reverse=True)[0:15]
+									
+		high_match_years = sorted(matched_years.items(), key=operator.itemgetter(1),
+									reverse=True)[0:10]
+									
+		high_rn_codes = sorted(rn_codes.items(), key=operator.itemgetter(1),
+									reverse=True)[0:10]
+		
 		print("\nTotal records: %s" % record_count)
 		print("\nRecords with matched term in the title or MeSH terms: %s" % 
 				match_record_count)
