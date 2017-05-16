@@ -1171,7 +1171,7 @@ def plot_those_counts(counts, all_matches, outfilename):
 #Main
 def main():
 	
-	record_count = 0 #Total number of records searched
+	record_count = 0 #Total number of records searched, across all files
 	match_record_count = 0 #Total number of records matching search terms
 							#For now that is keywords in title or MeSH
 	abstract_count = 0 #Number of abstracts among the matching records
@@ -1349,17 +1349,17 @@ def main():
 	matching_orig_records = []
 	
 	for medline_file in medline_file_list:
-		print("Loading %s..." % medline_file)
+		print("\nLoading %s..." % medline_file)
 		with open(medline_file) as this_medline_file:
 			
-			filereccount = 0
+			filereccount = 0 #Total number of record in this file
 
-			fileindex = 0
+			fileindex = 0 #Index of records in this file (starting at 0)
 			
 			#Count entries in file first so we know when to stop
 			#Could just get length of records but that's too slow
 			#So just count entries by PMID
-			filereccount = 0
+
 			for line in this_medline_file:
 				if line[:6] == "PMID- ":
 					filereccount = filereccount +1
@@ -1394,9 +1394,7 @@ def main():
 			
 			have_records = True
 			
-			while record_count < record_count_cutoff \
-					and record_count < filereccount \
-					and fileindex <= filereccount:
+			while record_count < record_count_cutoff and fileindex < filereccount:
 				
 				for record in records:
 					
@@ -1570,7 +1568,7 @@ def main():
 													"train")
 							sent_count = sent_count + this_sent_count
 							ti = ti+1
-							
+					
 					fileindex = fileindex +1
 					
 					sys.stdout.flush()
