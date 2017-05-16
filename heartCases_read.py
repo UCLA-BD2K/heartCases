@@ -25,6 +25,7 @@ import urllib, urllib2
 
 from bokeh.layouts import column
 from bokeh.plotting import figure, output_file, show
+from bokeh.models import Label
 
 import nltk
 from nltk.stem.snowball import SnowballStemmer 
@@ -1087,23 +1088,61 @@ def sent_classification(testing):
 	
 	return classifier, lb
 	
-def plot_those_counts(all_matches, outfilename):
+def plot_those_counts(counts, all_matches, outfilename):
 	'''
-	Given a list of dicts of categories and counts,
+	Given a dict (with names as values) 
+	of dicts of categories and counts,
 	produces a simple bar plot of the counts for each.
-	Produces plots using Bokeh - produces .html and opens browser
+	Produces plots using Bokeh - produces .html and opens browser.
 	'''
 	all_plots = []
 	
-	for matches in all_matches:
+	#Plot simple counts first
+	textplot = figure(plot_width=800, plot_height=700, 
+					title="Summary Counts")
+	textplot.axis.visible = False
+	
+	i = 100
+	for count_name in counts:
+		this_count = counts[count_name]
+		
+		plot_string = "%s: %s" % (count_name, str(this_count))
+		
+		count_label = Label(x=100, y=i, text=plot_string,
+						x_units="screen", y_units="screen",
+						border_line_color="white",
+						text_font_size="16pt")
+		
+		textplot.add_layout(count_label)
+		
+		i = i +100
+	
+	all_plots.append(textplot)
+	
+	#Now plot bars for match counts
+	for match_name in all_matches:
+		matches = all_matches[match_name]
 		#Sort categories and make table-like dict
-		sort_matches = sorted(matches.items(), key=operator.itemgetter(1))
+		sort_matches = sorted(matches.items(), key=operator.itemgetter(1),
+						reverse=True)
 		
 		cats = [] #Y axis labels
 		catvalues = [] #Y axis
 		counts = [] #X axis
 		
 		randcol = ('#%06X' % random.randint(0,256**3-1)) #A random plot color
+	
+		#Truncate to top 50 entries
+		height = 600
+		if len(sort_matches) > 50:
+			temp_matches = sort_matches[:50]
+			sort_matches = temp_matches
+			text_size= "8pt"
+		elif len(sort_matches) < 5:
+			height = 300
+			text_size= "14pt"
+		else:
+			text_size= "10pt"
 	
 		i = 0
 		for key, value in sort_matches:
@@ -1114,18 +1153,11 @@ def plot_those_counts(all_matches, outfilename):
 			
 		match_table = {"Terms": cats, "counts": counts}
 		
-		if len(sort_matches) > 60:
-			height = 10*len(sort_matches)
-		elif len(sort_matches) < 5:
-			height = 300
-		else:
-			height = 600
-				
 		plot = figure(plot_width=600, plot_height=height, 
-						title="Counts of Matches", x_axis_label="Counts")
+						title=match_name, x_axis_label="Counts")
 		plot.hbar(y = catvalues, left=0, right=counts, height=0.5, color=randcol)
-		plot.text(counts, catvalues, text=[i for i in cats], text_font_size="8pt",
-					text_baseline="middle")
+		plot.text(counts, catvalues, text=[i for i in cats], 
+					text_font_size=text_size, text_baseline="middle")
 		
 		all_plots.append(plot)
 	
@@ -1897,57 +1929,43 @@ def main():
 	if record_count > 0:
 		
 		#Plot first.
-		all_matches = [matched_mesh_terms, all_terms_in_matched,
-						matched_journals, matched_years,
-						rn_codes]
+		#Then provide some summary statistics.
+		counts = {"Total records": record_count,
+					"Records with matched term in the title or MeSH term": match_record_count,
+					"Number of records with abstracts": abstract_count,
+					"Number of records with material codes": rn_counts,
+					"Total unique material codes used": len(rn_codes)}
+		all_matches = {"Most frequently matched MeSH terms": matched_mesh_terms,
+						"Most common MeSH terms in matched records": all_terms_in_matched,
+						"Most records are from these journals": matched_journals, 
+						"Most records were published in these years": matched_years,
+						"Most frequently used material codes": rn_codes}
 						
-		plot_those_counts(all_matches, viz_outfilename)
+		plot_those_counts(counts, all_matches, viz_outfilename)
 		
-		#Now provide some summary statistics	
-		high_match_terms = sorted(matched_mesh_terms.items(), key=operator.itemgetter(1),
+		all_matches_high = {}
+		for entry in all_matches:
+			all_matches_high[entry] = sorted(all_matches[entry].items(), key=operator.itemgetter(1),
 									reverse=True)[0:15]
 		
-		high_terms_in_matched = sorted(all_terms_in_matched.items(), key=operator.itemgetter(1),
-									reverse=True)[0:15]
+		for entry in counts:
+			print("\n%s:\n %s" % (entry, counts[entry]))
 		
-		high_match_journals = sorted(matched_journals.items(), key=operator.itemgetter(1),
-									reverse=True)[0:15]
-									
-		high_match_years = sorted(matched_years.items(), key=operator.itemgetter(1),
-									reverse=True)[0:10]
-									
-		high_rn_codes = sorted(rn_codes.items(), key=operator.itemgetter(1),
-									reverse=True)[0:10]
-		
-		print("\nTotal records: %s" % record_count)
-		print("\nRecords with matched term in the title or MeSH terms: %s" % 
-				match_record_count)
-		print("\nNumber of records with abstracts: %s" % abstract_count)
-		print("\nNumber of records with material codes: %s" % rn_counts)
-		print("\nTotal unique material codes used: %s" % len(rn_codes))
-		print("\nMost frequently matched MeSH terms:")
-		for match_count in high_match_terms:
-			print(match_count)
-		print("\nMost common MeSH terms in matched records:")
-		for match_count in high_terms_in_matched:
-			print(match_count)
-		print("\nMost records are from these journals:")
-		for match_count in high_match_journals:
-			print(match_count)
-		print("\nMost records were published in these years:")
-		for match_count in high_match_years:
-			print(match_count)
-		print("\nMost frequently used material codes:")
-		for code in high_rn_codes:
-			print(code)
+		for entry in all_matches_high:
+			print("\n%s:\n" % entry)
+			for match_count in all_matches_high[entry]:
+				print("%s\t\t%s" % (match_count[0], match_count[1]))
+				
 	else:
 		sys.exit("Found no matching references.")
 	
 	print("\nDone - see the following files in the output folder:\n"
 			"%s for list of matching records,\n"
-			"%s for labeled abstract sentences, and\n"
-			"%s for topics within each entry." %
-			(outfilename, sent_outfilename, topic_outfilename))
+			"%s for labeled abstract sentences,\n"
+			"%s for topics within each entry, and\n"
+			"%s for plots." %
+			(outfilename, sent_outfilename, 
+			topic_outfilename, viz_outfilename))
 	
 if __name__ == "__main__":
 	sys.exit(main())
