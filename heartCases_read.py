@@ -1167,7 +1167,40 @@ def plot_those_counts(counts, all_matches, outfilename):
 	layout = column(all_plots)
 	show(layout)
 	#show(plot)	
+
+def simplify_string(inputstring, keyterms):
+	'''
+	Given a string and a list of terms (of one or more words),
+	returns a list of potentially relevant phrases containing
+	the terms.
+	e.g., for the input string
+	"A 53 year old man underwent repeat coronary artery bypass graft 
+	surgery after presenting with unstable angina."
+	and the key terms
+	["unstabl angina","present"]
+	the output will be
+	["presenting with unstable angina",...]
+
+	'''
+	phrases = []
+	keyterm_locs = {}
 	
+	#Use string find to locate keyterms
+	#this is necessary as keyterms may be stems
+	#but we don't want to stem the input.
+	#Plus, keyterms may include multiple words.
+	
+	for term in keyterms:
+		keyterm_locs[term] = inputstring.find(term)
+	
+	for term in keyterm_locs:
+		loc = keyterm_locs[term]
+		phrase = inputstring[loc:]
+		phrases.append(phrase)
+		
+	return phrases
+	
+
 #Main
 def main():
 	
@@ -1890,9 +1923,13 @@ def main():
 	
 	with open(sent_outfilename, 'w') as outfile:
 		for record in labeled_ann_records:
-			outstring = "%s\n%s\n%s\n\n" % \
-						(record['TI'], record['PMID'], record['labstract'])
-			outfile.write(outstring)
+			outfile.write("%s\n" % record['TI'])
+			outfile.write("%s\n" % record['PMID'])
+			for sentence in record['labstract']:
+				labels = sentence[1]
+				text = sentence[0]
+				outfile.write("%s %s\n" % (labels, text))
+			outfile.write("\n\n")
 			
 	#Writing topics to files
 	print("\nWriting topics for all matching records.")
@@ -1915,14 +1952,20 @@ def main():
 							terms = labels_and_terms[label]
 						else:
 							terms = []
-						topic_and_sent = "%s (%s): %s" % (label,
-												",".join(terms),
-												labeled_sentence[0])
+						topic_and_sent = [label, labeled_sentence[0],
+											terms]
 						topics_and_sents.append(topic_and_sent)
-						
-			outstring = "%s\n%s\n%s\n\n" % \
-						(record['TI'], record['PMID'], '\n'.join(topics_and_sents))
-			outfile.write(outstring)
+			
+			outfile.write("%s\n" % record['TI'])
+			outfile.write("%s\n" % record['PMID'])
+			
+			for topic_and_sent in topics_and_sents:
+				out_phrases = simplify_string(topic_and_sent[1], 
+												topic_and_sent[2])
+				outfile.write("%s: %s\n" % (topic_and_sent[0], 
+											out_phrases))
+				
+			outfile.write("\n\n")
 	
 	if record_count > 0:
 		
