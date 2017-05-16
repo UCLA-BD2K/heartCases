@@ -47,14 +47,14 @@ from sklearn.externals import joblib
 
 #Constants and Options
 					
-record_count_cutoff = 1000
+record_count_cutoff = 100000
 	#The maximum number of records to search.
 	
 random_record_list = False
 	#If True, choose training records at random until hitting
 	#record_count_cutoff value
 	
-abst_len_cutoff = 200
+abst_len_cutoff = 140
 	#Abstracts less than this number of characters are considered
 	#too short to use for classifier training or re-labeling.
 	
@@ -894,7 +894,7 @@ def mesh_classification(testing):
 	t3 = time.time()
 	
 	if not have_classifier:
-		print("\nLoaded dictionary of %s terms in %.2f seconds." %
+		print("\nLoaded dictionary of %s MeSH terms in %.2f seconds." %
 				(len(all_terms), (t1 -t0)))
 		print("Taught classifier with %s texts in %.2f seconds." %
 				(X_train_size, (t2 -t1)))
@@ -1070,7 +1070,7 @@ def sent_classification(testing):
 	t3 = time.time()
 	
 	if not have_classifier:
-		print("\nLoaded dictionary of %s terms in %.2f seconds." %
+		print("\nLoaded dictionary of %s labels in %.2f seconds." %
 				(len(all_terms), (t1 -t0)))
 		print("Taught classifier with %s sentences in %.2f seconds." %
 				(X_train_size, (t2 -t1)))
@@ -1188,6 +1188,10 @@ def simplify_string(inputstring, keyterms):
 	#this is necessary as keyterms may be stems
 	#but we don't want to stem the input.
 	#Plus, keyterms may include multiple words.
+	
+	#Handle any encoding problems first
+	inputstring = inputstring.decode('utf8')
+	inputstring = inputstring.encode('ascii','ignore')
 	
 	for term in keyterms:
 		keyterm_locs[term] = inputstring.find(term)
