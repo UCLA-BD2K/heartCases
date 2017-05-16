@@ -1178,8 +1178,7 @@ def simplify_string(inputstring, keyterms):
 	surgery after presenting with unstable angina."
 	and the key terms
 	["unstabl angina","present"]
-	the output will be
-	["presenting with unstable angina",...]
+	the output will be a list of phrases including the term.
 
 	'''
 	phrases = []
@@ -1194,9 +1193,23 @@ def simplify_string(inputstring, keyterms):
 		keyterm_locs[term] = inputstring.find(term)
 	
 	for term in keyterm_locs:
+		
 		loc = keyterm_locs[term]
-		phrase = inputstring[loc:]
-		phrases.append(phrase)
+		
+		if loc > -1:
+			phrase = ""
+			
+			phrase = phrase + "**"
+			highlight = False
+			for char in inputstring[loc:]:
+				
+				if char in [" ","."] and not highlight:
+					phrase = phrase + "**"
+					highlight = True
+					
+				phrase = phrase + char
+			
+			phrases.append(phrase)
 		
 	return phrases
 	
