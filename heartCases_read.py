@@ -47,7 +47,7 @@ from sklearn.externals import joblib
 
 #Constants and Options
 					
-record_count_cutoff = 1000
+record_count_cutoff = 30000
 	#The maximum number of records to search.
 	
 random_record_list = False
@@ -1189,7 +1189,6 @@ def simplify_string(inputstring, keyterms):
 	and the key terms
 	["unstabl angina","present"]
 	the output will be a list of phrases including the term.
-
 	'''
 	phrases = []
 	keyterm_locs = {}
@@ -1891,7 +1890,7 @@ def main():
 		viz_outfilename = "medline_entries_%s_plots.html" \
 						% filelabel 
 	
-	print("\nWriting matching, newly annotated records to file.")
+	print("\nWriting matching, newly annotated records to file...")
 	
 	with open(outfilename, 'w') as outfile:
 		for record in matching_ann_records:
@@ -1975,9 +1974,9 @@ def main():
 				labeled_record['labstract'] = labeled_abstract
 			
 		labeled_ann_records.append(labeled_record)
-					
+			
 	#Writing labeled abstracts to files
-	print("\nWriting labeled sentences from all matching records.")
+	print("\nWriting labeled sentences from all matching records...")
 	
 	with open(sent_outfilename, 'w') as outfile:
 		for record in labeled_ann_records:
@@ -1995,12 +1994,11 @@ def main():
 			outfile.write("\n\n")
 			
 	#Writing topics to files
-	print("\nWriting topics for all matching records.")
+	print("\nWriting topics for all matching records...")
 	
 	with open(topic_outfilename, 'w') as outfile:
 		for record in labeled_ann_records:
 			topics_and_sents = []
-			started = False	#The first few lines usually aren't useful
 			for labeled_sentence in record['labstract']:
 				labels_and_terms = label_sentence(labeled_sentence[0])
 					#This just uses the pre-labeler to identify clearly 
@@ -2008,9 +2006,7 @@ def main():
 					#labeled_sentence here is from the classifier and not 
 					#the pre-labeler alone.
 				if len(labeled_sentence) > 1:
-					if 'STRT' in labeled_sentence[1]:
-						started = True
-					if started and labeled_sentence[1] != ['NONE']:
+					if labeled_sentence[1] != ['NONE']:
 						for label in labeled_sentence[1]:
 							if label in labels_and_terms:
 								terms = labels_and_terms[label]
@@ -2035,7 +2031,7 @@ def main():
 		
 		#Plot first.
 		#Then provide some summary statistics.
-		counts = {"Total records": record_count,
+		counts = {"Total searched records": record_count,
 					"Records with matched term in the title or MeSH term": match_record_count,
 					"Number of records with abstracts": abstract_count,
 					"Number of records with material codes": rn_counts,
