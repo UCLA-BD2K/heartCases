@@ -1943,7 +1943,12 @@ def main():
 			outfile.write("%s\n" % record['TI'])
 			outfile.write("%s\n" % record['PMID'])
 			for sentence in record['labstract']:
-				labels = sentence[1]
+				#A sentence may not have a label if something went wrong
+				#during labeling.
+				if len(sentence) > 1:
+					labels = sentence[1]
+				else:
+					labels = ["NONE"]
 				text = sentence[0]
 				outfile.write("%s %s\n" % (labels, text))
 			outfile.write("\n\n")
