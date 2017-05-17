@@ -1214,6 +1214,10 @@ def simplify_string(inputstring, keyterms):
 				phrase = phrase + char
 			
 			phrases.append(phrase)
+	
+	#If we end up with no simplified phrases, just return input string
+	if len(phrases) == 0:
+		phrases.append(inputstring)	
 		
 	return phrases
 	
@@ -1948,10 +1952,10 @@ def main():
 			for sentence in record['labstract']:
 				#A sentence may not have a label if something went wrong
 				#during labeling.
+				labels = ["NONE"]
 				if len(sentence) > 1:
-					labels = sentence[1]
-				else:
-					labels = ["NONE"]
+					if len(sentence[1]) > 0:
+						labels = sentence[1]	
 				text = sentence[0]
 				outfile.write("%s %s\n" % (labels, text))
 			outfile.write("\n\n")
@@ -1977,7 +1981,7 @@ def main():
 							if label in labels_and_terms:
 								terms = labels_and_terms[label]
 							else:
-								terms = []
+								terms = ["NONE"]
 							topic_and_sent = [label, labeled_sentence[0],
 												terms]
 							topics_and_sents.append(topic_and_sent)
