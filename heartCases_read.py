@@ -1929,6 +1929,8 @@ def main():
 							
 						labeled_abstract.append([sentence, cleanlabels])
 				except UnicodeDecodeError:
+					abstract = abstract.decode('utf8')
+					abstract = abstract.encode('ascii','ignore')
 					labeled_abstract = "UNLABELED ABSTRACT: %s" % abstract
 				
 				labeled_record['labstract'] = labeled_abstract
@@ -1966,17 +1968,18 @@ def main():
 					#matching entries and highlight them. Note that the 
 					#labeled_sentence here is from the classifier and not 
 					#the pre-labeler alone.
-				if 'STRT' in labeled_sentence[1]:
-					started = True
-				if started and labeled_sentence[1] != ['NONE']:
-					for label in labeled_sentence[1]:
-						if label in labels_and_terms:
-							terms = labels_and_terms[label]
-						else:
-							terms = []
-						topic_and_sent = [label, labeled_sentence[0],
-											terms]
-						topics_and_sents.append(topic_and_sent)
+				if len(labeled_sentence) > 1:
+					if 'STRT' in labeled_sentence[1]:
+						started = True
+					if started and labeled_sentence[1] != ['NONE']:
+						for label in labeled_sentence[1]:
+							if label in labels_and_terms:
+								terms = labels_and_terms[label]
+							else:
+								terms = []
+							topic_and_sent = [label, labeled_sentence[0],
+												terms]
+							topics_and_sents.append(topic_and_sent)
 			
 			outfile.write("%s\n" % record['TI'])
 			outfile.write("%s\n" % record['PMID'])
