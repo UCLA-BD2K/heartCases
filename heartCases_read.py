@@ -47,7 +47,7 @@ from sklearn.externals import joblib
 
 #Constants and Options
 					
-record_count_cutoff = 100000
+record_count_cutoff = 30000
 	#The maximum number of records to search.
 	
 random_record_list = False
@@ -1911,27 +1911,28 @@ def main():
 				labeled_abstract = []
 				try:
 					sentence_list = sent_tokenize(abstract)
-					for sentence in sentence_list:
-						clean_string = clean(sentence)
-						clean_array = np.array([clean_string])
-						predicted = sent_classifier.predict(clean_array)
-						labels = slb.inverse_transform(predicted)
-						flatlabels = [label for labeltuple in labels for label in labeltuple]
-						cleanlabels = []
-						
-						#Ensure that NONE is used properly
-						if len(flatlabels) > 1:
-							for label in flatlabels:
-								if label != "NONE":
-									cleanlabels.append(label)
-						else:
-							cleanlabels = flatlabels
-							
-						labeled_abstract.append([sentence, cleanlabels])
 				except UnicodeDecodeError:
 					abstract = abstract.decode('utf8')
 					abstract = abstract.encode('ascii','ignore')
-					labeled_abstract = "UNLABELED ABSTRACT: %s" % abstract
+					sentence_list = sent_tokenize(abstract)
+					
+				for sentence in sentence_list:
+					clean_string = clean(sentence)
+					clean_array = np.array([clean_string])
+					predicted = sent_classifier.predict(clean_array)
+					labels = slb.inverse_transform(predicted)
+					flatlabels = [label for labeltuple in labels for label in labeltuple]
+					cleanlabels = []
+					
+					#Ensure that NONE is used properly
+					if len(flatlabels) > 1:
+						for label in flatlabels:
+							if label != "NONE":
+								cleanlabels.append(label)
+					else:
+						cleanlabels = flatlabels
+						
+					labeled_abstract.append([sentence, cleanlabels])
 				
 				labeled_record['labstract'] = labeled_abstract
 			
