@@ -47,14 +47,14 @@ from sklearn.externals import joblib
 
 #Constants and Options
 					
-record_count_cutoff = 30000
+record_count_cutoff = 1000
 	#The maximum number of records to search.
 	
 random_record_list = False
 	#If True, choose training records at random until hitting
 	#record_count_cutoff value
 	
-abst_len_cutoff = 140
+abst_len_cutoff = 200
 	#Abstracts less than this number of characters are considered
 	#too short to use for classifier training or re-labeling.
 	
@@ -62,9 +62,11 @@ train_on_target = True
 	#If True, trains the classifier to label only the focus search terms.
 	#If False, trains classifier on all terms used in training data.
 
-mesh_topic_heading = ["C14"]
-mesh_topic_tree = ["240", "260","280", "583", "907"]
-	#Lists of codes to include among the MeSH terms used.
+mesh_topic_tree = { "A07":["025","030","035","037","040","045","231","500","541"],
+					"C14":["240", "260","280", "583", "907"],
+					"G09":["188","330"]}
+	#Lists of codes to include among the MeSH terms used to search
+	#documents with and to label with.
 	#Corresponds to MeSH ontology codes.
 	#See MN headings in the ontology file.
 	#e.g. a heading of C14 and codes of 240 and 280 will include all
@@ -358,10 +360,13 @@ def load_slexicon(sl_filename):
 
 def build_mesh_dict(mo_filename):
 	#Sets up the dict of MeSH terms, specific to the chosen topic.
-	
 	#The subset of terms to select (the topic) is defined by global 
-	#variable mesh_topic_tree above
-	mesh_term_list = []
+	#variable mesh_topic_tree above.
+	
+	mesh_term_list = [] #All terms to be used for document filtering
+						#and term expansion.
+						#Note that this does NOT include ALL terms
+						#in the MeSH ontology.
 	
 	mo_ids = {}	#MeSH terms are keys, IDs (UI in term ontology file) 
 				#are values
@@ -372,36 +377,38 @@ def build_mesh_dict(mo_filename):
 	mo_cats = {} #MeSH tree headings (categories) are keys, 
 				#values are sets of terms and synonyms
 				
-	these_synonyms = [] #Synonymous terms for teach MeSH term
+	these_synonyms = [] #Full list of synonymous terms for each MeSH term
 	
 	with open(mo_filename) as mo_file:
 		
 		for line in mo_file:	#UI is always listed after MH
-			if line[0:3] == "MH ":
+			if line[0:3] == "MH ": 
+				#The main MeSH term (heading)
 				term = ((line.split("="))[1].strip()).lower()
 				these_synonyms = [term]
 			elif line[0:5] == "ENTRY" or line[0:11] == "PRINT ENTRY":
+				#Synonymous terms
 				entry = (line.split("="))[1].strip()
 				synonym = (entry.split("|"))[0].lower()
 				these_synonyms.append(synonym)
 			elif line[0:3] == "MN ":
+				#Location in the MeSH tree. May have multiple locations
 				code = (line.split("="))[1].strip()
 				codetree = code.split(".")
 				tree_cat = codetree[0]
 				
-				if codetree[0] in mesh_topic_heading:
-					if len(codetree) == 1:
+				if codetree[0] in mesh_topic_tree:
+					if len(codetree) == 1: #This is a category root.
 						for synonym in these_synonyms:
 							if synonym not in mesh_term_list:
 								mesh_term_list.append(synonym)
-					elif codetree[1] in mesh_topic_tree: 
-						#This will select term subsets 
+					elif codetree[1] in mesh_topic_tree[codetree[0]]:  
 						for synonym in these_synonyms:
 							if synonym not in mesh_term_list:
 								mesh_term_list.append(synonym)
-				codetree = ""
+				codetree = [""]
 			
-			#this indicates the end of an entry.
+			#This indicates the end of an entry.
 			elif line[0:3] == "UI ":
 				clean_id = ((line.split("="))[1].strip())
 				mo_ids[term] = clean_id
@@ -415,6 +422,9 @@ def build_mesh_dict(mo_filename):
 					mo_ids[synonym] = clean_id
 				mo_cats[tree_cat].update(these_synonyms)
 				these_synonyms = []
+				
+		#Ensure there are no duplicates.
+		mesh_term_list = set(mesh_term_list)
 				
 	return mo_ids, mo_cats, mesh_term_list
 
@@ -1303,11 +1313,22 @@ def main():
 	#chosen topic. The list includes synonymous terms listed under 
 	#ENTRY in the ontology, specific to the chosen topic
 	print("Building MeSH ID dictionary and topic-based term list.")
+	print("For topic-based terms, using the following MeSH headings "
+			"and subheadings:")
+	for tree_cat in mesh_topic_tree:
+		print("%s (%s)" % (tree_cat, ",".join(mesh_topic_tree[tree_cat])))
+		
 	mo_ids, mo_cats, mesh_term_list = build_mesh_dict(mo_filename) 
-			
-	print("Loaded %s MeSH terms and %s topic-relevant terms + variants." % \
-			(len(mo_ids), len(mesh_term_list)))
 	
+	unique_term_count = len(set(mo_ids.values()))
+	synonym_count = len(mo_ids) - unique_term_count
+	print("Loaded %s unique MeSH terms and %s synonyms "
+			"across %s categories." % \
+			(unique_term_count, synonym_count, len(mo_cats)))
+	
+	print("Loaded %s topic-relevant terms + synonyms." % \
+			(len(mesh_term_list)))
+			
 	print("Building MeSH ID to ICD-10 dictionary.")
 	#Build the MeSH to ICD-10 dictionary
 	do_ids, do_xrefs_icd10, do_xrefs_terms = \
@@ -1322,7 +1343,10 @@ def main():
 	#Most of the vocabulary is inherited from MeSH terms.
 	#Clean terms to produce stems
 	print("Loading sentence classification labels and terms.")
+	
 	global sentence_labels
+	
+	#Set up the vocabulary and add a few initial label-associated terms
 	with open(sentence_label_filename) as sentence_label_file:
 		for line in sentence_label_file:
 			splitline = (line.rstrip()).split(",")
@@ -1335,51 +1359,61 @@ def main():
 	
 	#Most sentence label terms are populated from MeSH terms
 	#using the MeSH tree structure and its categories
-	for cat in ["D03","D04","D25","D26","D27"]:
-		for term in mo_cats[cat]:
-			sentence_labels["DRUG"].append(term)
-	for cat in ["C23"]:
-		for term in mo_cats[cat]:
-			sentence_labels["SYMP"].append(term)
-		sentence_labels["SYMP"].remove("death") #Death is not a symptom.
-	for cat in ["E01"]:
-		for term in mo_cats[cat]:
-			sentence_labels["PROC"].append(term)
-	for cat in ["E02","E04"]:
-		for term in mo_cats[cat]:
-			sentence_labels["TREA"].append(term)
-	for cat in ["F01","F03"]:
-		for term in mo_cats[cat]:
-			sentence_labels["LIFE"].append(term)
-	for cat in ["M01"]:
-		for term in mo_cats[cat]:
-			sentence_labels["DEMO"].append(term)
+	for cat in mo_cats:
+		if cat in ["E01"]:
+			for term in mo_cats[cat]:
+				sentence_labels["DIAG"].append(term)
+		if cat in ["D03","D04","D25","D26","D27"]:
+			for term in mo_cats[cat]:
+				sentence_labels["DRUG"].append(term)
+		if cat in ["C23"]:
+			for term in mo_cats[cat]:
+				sentence_labels["SYMP"].append(term)
+		if cat in ["E03"]:
+			for term in mo_cats[cat]:
+				sentence_labels["PROC"].append(term)
+		if cat in ["E02","E04","E05"]:
+			for term in mo_cats[cat]:
+				sentence_labels["TREA"].append(term)
+		if cat in ["F01","F03", "N06","D20"]:
+			for term in mo_cats[cat]:
+				sentence_labels["LIFE"].append(term)
+		if cat in ["M01", "N01", "Z01"]:
+			for term in mo_cats[cat]:
+				sentence_labels["DEMO"].append(term)
 	
-	#Clean up the sentence labels a bit and stem
+	#Convert list items in sentence_labels to sets for efficiency.
 	for label in sentence_labels:
-		for term in sentence_labels[label]:
-			sentence_labels[label].remove(term)
-			clean_term = clean(term)
-			sentence_labels[label].append(clean_term)
-			if len(clean_term) < 3:
-				sentence_labels[label].remove(clean_term)
 		sentence_labels[label] = set(sentence_labels[label])
+		
+	#Then clean up terms and stem them with clean()
+	#Ignore some terms we know are not useful for labeling.
+	new_sentence_labels = {}
+	
+	stop_terms = ["death"]
+	
+	for label in sentence_labels:
+		new_terms = set()
+		for term in sentence_labels[label]:
+			if term not in stop_terms:
+				clean_term = clean(term)
+				if len(clean_term) > 3:
+					new_terms.add(clean_term)
+		new_sentence_labels[label] = new_terms
+		
+	sentence_labels = new_sentence_labels
 			
 	for label in sentence_labels:
 		label_term_count = label_term_count + len(sentence_labels[label])
 	print("Sentence label dictionary includes %s terms." % \
 			label_term_count)
 	
-	#Get CVD-specific MeSH terms
+	#Process CVD-specific MeSH terms produced above
 	#These will be used to filter for on-topic documents.
+	print("Processing topic-relevant terms.")
 	domain_word_list = []
-	raw_domain_word_list = []
-	for cat in ["A07","C14"]:
-		for term in mo_cats[cat]:
-			raw_domain_word_list.append(term)
-	for word in raw_domain_word_list:
-		domain_word_list.append(clean(word))
-	print("Loaded %s domain-specific terms." % len(domain_word_list))
+	for term in mesh_term_list:
+		domain_word_list.append(clean(term))
 	
 	#Check if PMID list was provided.
 	#If so, download records for all of them.
