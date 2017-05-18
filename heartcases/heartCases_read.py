@@ -66,18 +66,15 @@ mesh_topic_tree = { "A07":["025","030","035","037","040","045","231","500","541"
 					"C14":["240", "260","280", "583", "907"],
 					"G09":["188","330"]}
 	#Lists of codes to include among the MeSH terms used to search
-	#documents with and to label with.
+	#documents with (these are domain-specific).
 	#Corresponds to MeSH ontology codes.
 	#See MN headings in the ontology file.
 	#e.g. a heading of C14 and codes of 240 and 280 will include all
 	#terms under C14 (Cardiovascular Diseases) and two of the subheadings. 
 
-sentence_label_filename = "sentence_label_terms.txt"
-	#Contains of labels and vocabulary used to pre-classify sentences.
-
-sentence_labels = {}
-	#Dict of sentence labels with sets of associated terms as keys.
-	#Expanded later
+named_entities = {}
+	#Dict of named entities with entity types as keys and sets
+	#of terms as values.
 	
 data_locations = {"do": ("http://ontologies.berkeleybop.org/","doid.obo"),
 					"mo": ("ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/asciimesh/","d2017.bin"),
@@ -555,32 +552,14 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 	 Appends title to the beginning of the abstract text.
 	 Creates folder if not present already.
 	 
-	For the sentence topic classifier training:
-	 Calls label_sentence() on each sentence to do pre-labeling.
-	 Saves labeled sentences to a tab-delimited file of two columns.
-	 One or more labels are in the first column;
-	 labels are provided along with their matching terms and
-	 separated by pipe symbols, e.g.:
-	 DEMO,woman|SYMP,cough,dizziness
-	 A single sentence per row is in the second column.
-	 The sentence begins and end with double quotation marks.
-	 Any existing quotation marks are removed from the sentence.
-	 Unlike the term classifier, this produces only two files,
-	 one for both testing and training.
-	 
-	 Returns count of all training sentences (training + testing).
 	'''
 	
 	if cat == "train":
 		tdir = "training_text" #term classifier dir
-		sdir = "training_sentences" #sentence classifier dir
-		sentence_filename = "training_sentences.txt"
 		
 	elif cat == "test":
 		tdir = "training_test_text" #term classifier dir
-		sdir = "training_test_sentences" #sentence classifier dir
-		sentence_filename = "testing_sentences.txt"
-		
+
 	tfile = "%s.txt" % pmid
 	
 	if not os.path.isdir(tdir):
@@ -592,39 +571,23 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 		outfile.write("%s\t%s %s\t%s" % (flat_terms, title, abst, pmid))
 			
 	os.chdir("..")
-	
-	#Now append sentences to the sentence topic training file
-	#and do some basic pre-labeling with terms we know should be 
-	#associated with labels (performed by label_sentence).
-	sentence_count = 0
-	
-	if not os.path.isdir(sdir):
-		#print("Setting up sentence classifier %sing directory." % cat)
-		os.mkdir(sdir)
-	os.chdir(sdir)
-	
-	sentence_file = open(sentence_filename, "a")
-	
-	for sentence in sent_tokenize(abst):
-		labels_and_terms = []
-		topic_dict = label_sentence(sentence)
-		for label in topic_dict:
-			labels_and_terms.append("%s,%s" % (label, ",".join(topic_dict[label])))
-		labels_out = "|".join(labels_and_terms)
-		sentence_file.write("%s\t\"%s\"\n" % (labels_out, sentence))
-		sentence_count = sentence_count +1
-	
-	os.chdir("..")
-	
-	return sentence_count
 
-def label_sentence(sentence):
-	#Takes a string (usually of multiple words) as input.
-	#Labels the string using labels and terms in sentence_labels.
-	#Returns a dict of matching labels and their corresponding matches
+def read_sentence(sentence):
+	'''
+	Takes a string (usually a sentence) as input.
+	Identifies named entities within the string.
+	Returns a tuple of:
+	* A dict with matched entity types as keys
+	  and terms (named entities) as values.
+	  If no entities are found then the dict is {"NONE":[]}.
+	* and the original string with all named entities highlighted and 
+	  tagged with their corresponding
+	  types, in the format 
+	  I had some ~~chest pain~~[SYMPTOM]
+	'''
 		
-	label_dict = {} #Keys are labels, values are lists of matching terms
-	#Only labels applying to the input are included.
+	ne_dict = {} #Keys are entity types, 
+				#values are lists of matching terms
 					
 	#Remove quote marks and hypens
 	clean_sentence = ""
@@ -652,20 +615,24 @@ def label_sentence(sentence):
 	#Convert to a set for efficiency
 	sent_terms = set(sent_terms)
 	
-	for label in sentence_labels:
-		for term in sentence_labels[label]:
-			if len(term) > 2 and term not in ["parent","patient"]:
-				#These terms are very common and not useful for labels
-				if term in sent_terms:
-					if label not in label_dict:
-						label_dict[label] = [term]
-					else:
-						label_dict[label].append(term)
-	if len(label_dict.keys()) == 0:
-		label_dict["NONE"] = []
-	
-	return label_dict
-
+	for ne_type in named_entities:
+		for term in named_entities[ne_type]:
+			if term in sent_terms:
+				if ne_type not in ne_dict:
+					ne_dict[ne_type] = [term]
+				else:
+					ne_dict[ne_type].append(term)
+	if len(ne_dict.keys()) == 0:
+		ne_dict["NONE"] = []
+		
+	for ne_type in ne_dict:
+		for term in ne_dict[ne_type]:
+			pattern = re.compile(re.escape(term), re.I)
+			highlight = "~~\g<0>~~[%s]" % ne_type
+			sentence = re.sub(pattern, highlight, sentence)
+			
+	return (ne_dict, sentence)
+		
 def parse_training_text(tfile):
 	'''
 	Loads a MeSH term-labeled title and abstract.
@@ -682,35 +649,6 @@ def parse_training_text(tfile):
 		labeled_text.append([msh_terms, abst, pmid])
 	
 	return labeled_text
-
-def parse_training_sentences(sfile):
-	'''
-	Loads a file of labelled sentences for classifier training.
-	One file may contain numerous sentences, one per line,
-	with the sentence text in double quotes.
-	Sentences are preceded by labels and corresponding matched terms.
-	Output is a dict of labels and matching terms and the sentence text.
-	'''
-	labeled_sentences = []
-	
-	for line in sfile:
-		splitline = (line.rstrip()).split("\t")
-		labels_and_terms = {}
-		for label_and_terms in splitline[0].split("|"):
-			split_terms = label_and_terms.split(",")
-			label = split_terms[0]
-			terms = []
-			for term in split_terms[:1]:
-				terms.append(term)
-		
-			labels_and_terms[label] = terms
-			
-		text = splitline[1][1:-1]
-			#Split at the first quote mark, get the text after it,
-			#and remove the quote marks.
-		labeled_sentences.append([labels_and_terms, text])
-	
-	return labeled_sentences
 
 def clean(text):
 		'''
@@ -922,182 +860,6 @@ def mesh_classification(testing):
 	
 	return classifier, lb
 
-def sent_classification(testing):
-	'''
-	Builds and tests a multilabel text classifier for labelling
-	sentences from abstracts using one of 12 labels. 
-	Uses abstract text, tokenized by sentence and pre-labelled using 
-	general terms (i.e. those in sentence_label_terms.txt) and presence 
-	of named entities from MeSH headings.
-	Uses scikit's DecisionTree implementation.
-	
-	Most of the work is already done in the pre-labelling step,
-	so this classifier is primarily for verification.
-	
-	The classifier may add NONE as its own label though this is
-	a unique label class denoting no match. This is useful as a
-	diagnostic so it is kept at this stage but removed before
-	producing the output file.
-	
-	Looks for a pickled (using joblib) classifier first and uses it 
-	if present.
-	'''
-	
-	def load_training_sents(no_train):
-		
-		all_labeled_text = []
-		all_test_text = []
-		
-		if not no_train:
-			print("Loading labeled sentences for training.") 
-			
-			with open('training_sentences/training_sentences.txt') as sfile:
-				all_labeled_text = parse_training_sentences(sfile)
-			print("Loaded %s labeled sentences." % len(all_labeled_text))
-		
-		if testing:
-			print("Loading labeled sentences for testing.") 
-			with open('training_test_sentences/testing_sentences.txt') as sfile:
-				all_test_text = parse_training_sentences(sfile)
-			print("Loaded %s labeled sentences." % len(all_test_text))
-		
-		return all_labeled_text, all_test_text
-	
-	clean_labeled_text = []
-	all_terms = []
-	X_train_pre = [] #Array of text for training
-	X_test_pre = [] #Array of text for testing
-	y_train = [] #List of lists of labels
-	test_labels = [] #List of lists of labels in test set
-	
-	#This is a multilabel classification so we need a 2D array
-	lb = preprocessing.MultiLabelBinarizer()
-	
-	sentence_classifier_name = "sentence_label_classifier.pkl"
-	sentence_classifier_lb_name = "sentence_label_lb.pkl"
-	have_classifier = False
-	
-	if os.path.isfile(sentence_classifier_name):
-		print("Found previously built sentence label classifier.")
-		have_classifier = True
-	
-	#Load the input files
-	labeled_text, test_text = load_training_sents(have_classifier)
-	
-	if testing and len(test_text) == 0:
-		sys.exit("Didn't load any training sentences - " \
-					"please verify they are present and try again.")
-	
-	if not have_classifier:
-		
-		t0 = time.time()
-		
-		#Load sentence labels
-		for label in sentence_labels:
-			all_terms.append(label)
-					
-		print("Setting up input...")
-		#Set up the input set and term vectors
-		for item in labeled_text:
-			clean_text = clean(item[1])
-			labels = item[0].keys()
-			clean_labeled_text.append([labels, clean_text])
-			X_train_pre.append(clean_text)
-			y_train.append(item[0])
-		
-		y_labels = [label for subset in y_train for label in subset]
-		y_labels = set(y_labels)
-		
-		X_train_size = len(X_train_pre)
-		
-		y_train_bin = lb.fit_transform(y_train)
-		
-		X_train = np.array(X_train_pre)
-	
-		#Build the classifier
-		print("Building classifier...")
-			
-		t1 = time.time()
-		'''
-		This is a scikit-learn pipeline of:
-		A vectorizer to extract counts of ngrams, up to 2,
-		a tf-idf transformer, and
-		a DecisionTreeClassifier, used once per label (OneVsRest) to peform multilabel
-		  classification.
-		'''
-		classifier = Pipeline([
-					('vectorizer', CountVectorizer(ngram_range=(1,3), min_df = 5, max_df = 0.5)),
-					('tfidf', TfidfTransformer(norm='l2')),
-					('clf', OneVsRestClassifier(DecisionTreeClassifier(criterion="entropy",
-						class_weight="balanced"), n_jobs = -1))])
-		classifier.fit(X_train, y_train_bin)
-		
-		#Finally, save the classifier
-		print("Saving classifier...")
-		joblib.dump(classifier, sentence_classifier_name)
-		joblib.dump(lb, sentence_classifier_lb_name)
-		
-		t2 = time.time()
-	
-	else:
-		classifier = joblib.load(sentence_classifier_name)
-		lb = joblib.load(sentence_classifier_lb_name)
-	
-	#Test the classifier
-	if testing:
-		print("Testing sentence label classifier...")
-		
-		for item in test_text:
-			clean_text = clean(item[1])
-			X_test_pre.append(clean_text)
-			labels = item[0].keys()
-			test_labels.append(labels)
-			
-		X_test = np.array(X_test_pre)
-		
-		predicted = classifier.predict(X_test)
-		all_labels = lb.inverse_transform(predicted)
-		i = 0
-		all_recall = [] #To produce average recall value
-		all_newlabel_counts = [] #To produce average new label count
-		total_new_labels = 0
-		
-		for item, labels in zip(X_test, all_labels):
-			matches = 0
-			recall = 0
-			new_labels_uniq = [] #Any terms which weren't here before
-			new_labels = list(labels)
-			for label in new_labels:
-				if label in test_labels[i]:
-					matches = matches +1
-				else:
-					new_labels_uniq.append(label)
-			recall = matches / float(len(test_labels[i]))
-			all_recall.append(recall)
-			all_newlabel_counts.append(float(len(new_labels_uniq)))
-			i = i+1
-	
-	t3 = time.time()
-	
-	if not have_classifier:
-		print("\nLoaded dictionary of %s labels in %.2f seconds." %
-				(len(all_terms), (t1 -t0)))
-		print("Taught classifier with %s sentences in %.2f seconds." %
-				(X_train_size, (t2 -t1)))
-		print("Overall process required %.2f seconds to complete." %
-				((t3 -t0)))
-		print("Count of labels (including NONE) used in the " \
-				"training set = %s" % len(y_labels))
-	
-	if testing:
-		avg_recall = np.mean(all_recall)
-		avg_newlabel_count = np.mean(all_newlabel_counts)
-		print("Average Recall = %s" % avg_recall)
-		print("Average new labels added to each test record = %s" % 
-				avg_newlabel_count)
-	
-	return classifier, lb
-	
 def plot_those_counts(counts, all_matches, outfilename):
 	'''
 	Given a dict (with names as values) 
@@ -1178,25 +940,6 @@ def plot_those_counts(counts, all_matches, outfilename):
 	show(layout)
 	#show(plot)	
 
-def highlight_string(inputstring, keyterms):
-	'''
-	Given a string and a list of terms (of one or more words),
-	returns a string in which the terms have been highlighted
-	in double tildes (~~term~~).
-	Terms may be more than one word.
-	'''
-	#Find and highlight terms
-	for term in keyterms:
-		pattern = re.compile(re.escape(term), re.I)
-		highlight = "~~\g<0>~~"
-		inputstring = re.sub(pattern, highlight, inputstring)
-	
-	#Now move highlight if it's splitting words	
-	
-	outputstring = inputstring	
-	return outputstring
-	
-
 #Main
 def main():
 	
@@ -1217,9 +960,7 @@ def main():
 						#or, if no PMC ID available, PMC ID is "NA"
 	new_abstract_count = 0 #Number of records with abstracts not directly
 							#available through PubMed
-	sent_count = 0 #Number of sentences saved for training a sentence
-					#classifier
-	label_term_count = 0 #Count of all terms in sentence_labels
+	ne_count = 0 #Count of all terms in named_entities
 	
 	#Set up parser
 	parser = argparse.ArgumentParser()
@@ -1304,74 +1045,65 @@ def main():
 	slexicon = load_slexicon(sl_filename)
 	print("Loaded %s lexicon entries." % len(slexicon))
 	
-	#Load the sentence labels and vocabulary here.
+	#Load the named entities here.
 	#Most of the vocabulary is inherited from MeSH terms.
-	#Clean terms to produce stems
-	print("Loading sentence classification labels and terms.")
+	#Clean terms to produce stems.
+	print("Loading named entities:")
 	
-	global sentence_labels
+	global named_entities
 	
-	#Set up the vocabulary and add a few initial label-associated terms
-	with open(sentence_label_filename) as sentence_label_file:
-		for line in sentence_label_file:
-			splitline = (line.rstrip()).split(",")
-			label = splitline[0]
-			terms = splitline[1].split("|")
-			clean_terms = []
-			for term in terms:
-				clean_terms.append(clean(term))
-			sentence_labels[label] = clean_terms
+	#Set up the named entity types
+	entity_types = []
 	
-	#Most sentence label terms are populated from MeSH terms
-	#using the MeSH tree structure and its categories
+	with open("entity_types.txt") as entity_types_file:
+		for line in entity_types_file:
+			entity_types.append(line.rstrip())
+	
+	for ne_type in entity_types:
+		named_entities[ne_type] = []
+	
+	#Populate named entities using the MeSH tree structure
+	#as this provides context for terms
+	
 	for cat in mo_cats:
-		if cat in ["E01"]:
-			for term in mo_cats[cat]:
-				sentence_labels["DIAG"].append(term)
 		if cat in ["D03","D04","D25","D26","D27"]:
 			for term in mo_cats[cat]:
-				sentence_labels["DRUG"].append(term)
+				named_entities["drug"].append(term)
 		if cat in ["C23"]:
 			for term in mo_cats[cat]:
-				sentence_labels["SYMP"].append(term)
-		if cat in ["E03"]:
-			for term in mo_cats[cat]:
-				sentence_labels["PROC"].append(term)
-		if cat in ["E02","E04","E05"]:
-			for term in mo_cats[cat]:
-				sentence_labels["TREA"].append(term)
-		if cat in ["F01","F03", "N06","D20"]:
-			for term in mo_cats[cat]:
-				sentence_labels["LIFE"].append(term)
-		if cat in ["M01", "N01", "Z01"]:
-			for term in mo_cats[cat]:
-				sentence_labels["DEMO"].append(term)
+				named_entities["symptom"].append(term)
 	
-	#Convert list items in sentence_labels to sets for efficiency.
-	for label in sentence_labels:
-		sentence_labels[label] = set(sentence_labels[label])
-		
+	#Add more terms from other sources at this point...
+	#
+	#
+	#
+	
+	#Convert list items in named_entities to sets for efficiency.
+	for ne_type in named_entities:
+		named_entities[ne_type] = set(named_entities[ne_type])
+	
 	#Then clean up terms and stem them with clean()
 	#Ignore some terms we know are not useful for labeling.
-	new_sentence_labels = {}
+	new_named_entities = {}
 	
-	stop_terms = ["death"]
+	stop_terms = ["report"]
 	
-	for label in sentence_labels:
+	for ne_type in named_entities:
 		new_terms = set()
-		for term in sentence_labels[label]:
+		for term in named_entities[ne_type]:
 			if term not in stop_terms:
 				clean_term = clean(term)
 				if len(clean_term) > 3:
 					new_terms.add(clean_term)
-		new_sentence_labels[label] = new_terms
+		new_named_entities[ne_type] = new_terms
 		
-	sentence_labels = new_sentence_labels
-			
-	for label in sentence_labels:
-		label_term_count = label_term_count + len(sentence_labels[label])
-	print("Sentence label dictionary includes %s terms." % \
-			label_term_count)
+	named_entities = new_named_entities
+	
+	for ne_type in named_entities:
+		ne_count = ne_count + len(named_entities[ne_type])
+	ne_type_count = len(named_entities)
+	print("Named entity dictionary includes %s terms across %s entity types." % \
+			(ne_count, ne_type_count))
 	
 	#Process CVD-specific MeSH terms produced above
 	#These will be used to filter for on-topic documents.
@@ -1586,12 +1318,6 @@ def main():
 						 *MeSH terms* specifically and *only* those
 						 terms will be used as labels.
 						 
-						 Also save the sentences in each 
-						 abstract to a different file set (train + test)
-						 for sentence classification purposes.
-						 This is handled by the same function as
-						 that used to save tag classifier training
-						 text (save_train_or_test_text).
 						'''
 						if train_on_target:
 							these_temp_mesh_terms = []
@@ -1606,20 +1332,17 @@ def main():
 							#Doesn't include newly-added abstracts yet
 							
 							if ti % 10 == 0:
-								this_sent_count = \
 								save_train_or_test_text(these_clean_mesh_terms,
 													record['TI'],
 													record['AB'],
 													record['PMID'],
 													"test")
 							else:
-								this_sent_count = \
 								save_train_or_test_text(these_clean_mesh_terms, 
 													record['TI'],
 													record['AB'],
 													record['PMID'],
 													"train")
-							sent_count = sent_count + this_sent_count
 							ti = ti+1
 					
 					fileindex = fileindex +1
@@ -1652,8 +1375,6 @@ def main():
 			"(%s abstracts retrieved from additional sources.)"
 			% (record_count, match_record_count, abstract_count,
 				new_abstract_count))
-	
-	print("Saved %s sentences for the sentence classifier." % sent_count)
 	
 	#MeSH terms are often incomplete, so here they are used
 	#to train a classifier and identify associations
@@ -1821,14 +1542,9 @@ def main():
 	this output does not always place long strings on new lines.
 	'''
 	
-	#Now labeled sentences are used to build a classifier
-	#so newly provided sentences can be labelled.
-	#Unlike MeSH terms, sentence labels are all new.
-	print("\n\nStarting to build sentence label classifier.")
-	sent_classifier, slb = sent_classification(testing)
+	#Now abstract text is searched for named entities
 	
 	if not os.path.isdir("output"):
-		#print("Setting up sentence classifier %sing directory." % cat)
 		os.mkdir("output")
 	os.chdir("output")
 	
@@ -1838,25 +1554,25 @@ def main():
 		filelabel = record_count_cutoff
 		
 	if len(medline_file_list) == 1:
-		outfilename = (medline_file_list[0])[6:-4] + "_%s_relabeled.txt" \
+		outfilename = (medline_file_list[0])[6:-4] + "_%s_out.txt" \
 						% filelabel
-		sent_outfilename = (medline_file_list[0])[6:-4] + "_%s_sentences.txt" \
+		raw_ne_outfilename = (medline_file_list[0])[6:-4] + "_%s_raw_ne.txt" \
 						% filelabel
-		topic_outfilename = (medline_file_list[0])[6:-4] + "_%s_topics.txt" \
+		labeled_outfilename = (medline_file_list[0])[6:-4] + "_%s_labeled.txt" \
 						% filelabel
 		viz_outfilename = (medline_file_list[0])[6:-4] + "_%s_plots.html" \
 						% filelabel
 	else:
-		outfilename = "medline_entries_%s_relabeled.txt" \
+		outfilename = "medline_entries_%s_out.txt" \
 						% filelabel
-		sent_outfilename = "medline_entries_%s_sentences.txt" \
+		raw_ne_outfilename = "medline_entries_%s_raw_ne.txt" \
 						% filelabel
-		topic_outfilename = "medline_entries_%s_topics.txt" \
+		labeled_outfilename = "medline_entries_%s_labeled.txt" \
 						% filelabel
 		viz_outfilename = "medline_entries_%s_plots.html" \
 						% filelabel 
 	
-	print("\nWriting matching, newly annotated records to file...")
+	print("\nWriting matching, newly annotated full records to file...")
 	
 	with open(outfilename, 'w') as outfile:
 		for record in matching_ann_records:
@@ -1899,6 +1615,7 @@ def main():
 			outfile.write("\n")
 	
 	#Labeling sentences within the matching records
+	#using the read_sentence function
 	labeled_ann_records = []
 	for record in matching_ann_records:
 		labeled_record = {}
@@ -1920,77 +1637,39 @@ def main():
 					sentence_list = sent_tokenize(abstract)
 					
 				for sentence in sentence_list:
-					clean_string = clean(sentence)
-					clean_array = np.array([clean_string])
-					predicted = sent_classifier.predict(clean_array)
-					labels = slb.inverse_transform(predicted)
-					flatlabels = [label for labeltuple in labels for label in labeltuple]
-					cleanlabels = []
-					
-					#Ensure that NONE is used properly
-					if len(flatlabels) > 1:
-						for label in flatlabels:
-							if label != "NONE":
-								cleanlabels.append(label)
-					else:
-						cleanlabels = flatlabels
-						
-					labeled_abstract.append([sentence, cleanlabels])
+					lsentence = read_sentence(sentence)
+					labeled_abstract.append(lsentence)
 				
 				labeled_record['labstract'] = labeled_abstract
 			
 		labeled_ann_records.append(labeled_record)
 			
-	#Writing labeled abstracts to files
-	print("\nWriting labeled sentences from all matching records...")
+	#Writing abstract with labeled entities to files
 	
-	with open(sent_outfilename, 'w') as outfile:
+	print("\nWriting raw entities found in abstracts...")
+	
+	with open(raw_ne_outfilename, 'w') as outfile:
 		for record in labeled_ann_records:
+			
 			outfile.write("%s\n" % record['TI'])
 			outfile.write("%s\n" % record['PMID'])
-			for sentence in record['labstract']:
-				#A sentence may not have a label if something went wrong
-				#during labeling.
-				labels = ["NONE"]
-				if len(sentence) > 1:
-					if len(sentence[1]) > 0:
-						labels = sentence[1]	
-				text = sentence[0]
-				outfile.write("%s %s\n" % (labels, text))
+			for lsentence in record['labstract']:
+				ne = str(lsentence[0])
+				outfile.write("%s\n" % ne)
+			
 			outfile.write("\n\n")
 			
-	#Writing topics to files
-	print("\nWriting topics for all matching records...")
+	print("\nWriting text with labeled entities for matching records...")
 	
-	with open(topic_outfilename, 'w') as outfile:
+	with open(labeled_outfilename, 'w') as outfile:
 		for record in labeled_ann_records:
-			topics_and_sents = []
-			for labeled_sentence in record['labstract']:
-				labels_and_terms = label_sentence(labeled_sentence[0])
-					#This just uses the pre-labeler to identify clearly 
-					#matching entries and highlight them. Note that the 
-					#sentence here includes labels c/o classifier and not 
-					#the pre-labeler alone.
-				if len(labeled_sentence) > 1:
-					if labeled_sentence[1] != ['NONE']:
-						for label in labeled_sentence[1]:
-							if label in labels_and_terms:
-								terms = labels_and_terms[label]
-							else:
-								terms = ["NONE"]
-							topic_and_sent = [label, labeled_sentence[0],
-												terms]
-							topics_and_sents.append(topic_and_sent)
 			
 			outfile.write("%s\n" % record['TI'])
 			outfile.write("%s\n" % record['PMID'])
+			for lsentence in record['labstract']:
+				sentence = lsentence[1]
+				outfile.write("%s\n" % sentence)
 			
-			for topic_and_sent in topics_and_sents:
-				out_phrases = highlight_string(topic_and_sent[1], 
-												topic_and_sent[2])
-				outfile.write("%s: %s\n" % (topic_and_sent[0], 
-											out_phrases))
-				
 			outfile.write("\n\n")
 	
 	if record_count > 0:
@@ -2027,12 +1706,12 @@ def main():
 		sys.exit("Found no matching references.")
 	
 	print("\nDone - see the following files in the output folder:\n"
-			"%s for list of matching records,\n"
-			"%s for labeled abstract sentences,\n"
-			"%s for topics within each entry, and\n"
+			"%s for the full matching records with MEDLINE headings,\n"
+			"%s for raw entities found in abstracts,\n"
+			"%s for entity-labeled abstract sentences, and\n"
 			"%s for plots." %
-			(outfilename, sent_outfilename, 
-			topic_outfilename, viz_outfilename))
+			(outfilename, raw_ne_outfilename, 
+			labeled_outfilename, viz_outfilename))
 	
 if __name__ == "__main__":
 	sys.exit(main())
