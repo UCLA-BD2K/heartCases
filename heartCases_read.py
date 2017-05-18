@@ -1178,57 +1178,23 @@ def plot_those_counts(counts, all_matches, outfilename):
 	show(layout)
 	#show(plot)	
 
-def simplify_string(inputstring, keyterms):
+def highlight_string(inputstring, keyterms):
 	'''
 	Given a string and a list of terms (of one or more words),
-	returns a list of potentially relevant phrases containing
-	the terms.
-	e.g., for the input string
-	"A 53 year old man underwent repeat coronary artery bypass graft 
-	surgery after presenting with unstable angina."
-	and the key terms
-	["unstabl angina","present"]
-	the output will be a list of phrases including the term.
+	returns a string in which the terms have been highlighted
+	in double tildes (~~term~~).
+	Terms may be more than one word.
 	'''
-	phrases = []
-	keyterm_locs = {}
-	
-	#Use string find to locate keyterms
-	#this is necessary as keyterms may be stems
-	#but we don't want to stem the input.
-	#Plus, keyterms may include multiple words.
-	
-	#Handle any encoding problems first
-	inputstring = inputstring.decode('utf8')
-	inputstring = inputstring.encode('ascii','ignore')
-	
+	#Find and highlight terms
 	for term in keyterms:
-		keyterm_locs[term] = inputstring.find(term)
+		pattern = re.compile(re.escape(term), re.I)
+		highlight = "~~\g<0>~~"
+		inputstring = re.sub(pattern, highlight, inputstring)
 	
-	for term in keyterm_locs:
-		
-		loc = keyterm_locs[term]
-		
-		if loc > -1:
-			phrase = ""
-			
-			phrase = phrase + "**"
-			highlight = False
-			for char in inputstring[loc:]:
-				
-				if char in [" ","."] and not highlight:
-					phrase = phrase + "**"
-					highlight = True
-					
-				phrase = phrase + char
-			
-			phrases.append(phrase)
+	#Now move highlight if it's splitting words	
 	
-	#If we end up with no simplified phrases, just return input string
-	if len(phrases) == 0:
-		phrases.append(inputstring)	
-		
-	return phrases
+	outputstring = inputstring	
+	return outputstring
 	
 
 #Main
@@ -2003,7 +1969,7 @@ def main():
 				labels_and_terms = label_sentence(labeled_sentence[0])
 					#This just uses the pre-labeler to identify clearly 
 					#matching entries and highlight them. Note that the 
-					#labeled_sentence here is from the classifier and not 
+					#sentence here includes labels c/o classifier and not 
 					#the pre-labeler alone.
 				if len(labeled_sentence) > 1:
 					if labeled_sentence[1] != ['NONE']:
@@ -2020,7 +1986,7 @@ def main():
 			outfile.write("%s\n" % record['PMID'])
 			
 			for topic_and_sent in topics_and_sents:
-				out_phrases = simplify_string(topic_and_sent[1], 
+				out_phrases = highlight_string(topic_and_sent[1], 
 												topic_and_sent[2])
 				outfile.write("%s: %s\n" % (topic_and_sent[0], 
 											out_phrases))
