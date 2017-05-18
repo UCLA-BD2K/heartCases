@@ -940,6 +940,60 @@ def plot_those_counts(counts, all_matches, outfilename):
 	show(layout)
 	#show(plot)	
 
+def populate_named_entities(named_entities, mo_cats):
+	#Sets up the named entity vocabulary.
+	#Set up the named entity types
+	entity_types = []
+	
+	with open("entity_types.txt") as entity_types_file:
+		for line in entity_types_file:
+			entity_types.append(line.rstrip())
+	
+	for ne_type in entity_types:
+		named_entities[ne_type] = []
+	
+	#Populate named entities using the MeSH tree structure
+	#as this provides context for terms
+	
+	for cat in mo_cats:
+		if cat[:1] == "A" and cat not in ["A18","A19","A20","A21",]:
+			for term in mo_cats[cat]:
+				named_entities["body_part"].append(term)
+		if cat in ["D03","D04","D25","D26","D27"]:
+			for term in mo_cats[cat]:
+				named_entities["drug"].append(term)
+		if cat in ["C23"]:
+			for term in mo_cats[cat]:
+				named_entities["symptom"].append(term)
+	
+	#Add more terms from other sources at this point...
+	#
+	#
+	#
+	
+	#Convert list items in named_entities to sets for efficiency.
+	for ne_type in named_entities:
+		named_entities[ne_type] = set(named_entities[ne_type])
+	
+	#Then clean up terms and stem them with clean()
+	#Ignore some terms we know are not useful for labeling.
+	new_named_entities = {}
+	
+	stop_terms = ["report"]
+	
+	for ne_type in named_entities:
+		new_terms = set()
+		for term in named_entities[ne_type]:
+			if term not in stop_terms:
+				clean_term = clean(term)
+				if len(clean_term) > 3:
+					new_terms.add(clean_term)
+		new_named_entities[ne_type] = new_terms
+		
+	named_entities = new_named_entities
+	
+	return named_entities
+	
 #Main
 def main():
 	
@@ -1052,52 +1106,7 @@ def main():
 	
 	global named_entities
 	
-	#Set up the named entity types
-	entity_types = []
-	
-	with open("entity_types.txt") as entity_types_file:
-		for line in entity_types_file:
-			entity_types.append(line.rstrip())
-	
-	for ne_type in entity_types:
-		named_entities[ne_type] = []
-	
-	#Populate named entities using the MeSH tree structure
-	#as this provides context for terms
-	
-	for cat in mo_cats:
-		if cat in ["D03","D04","D25","D26","D27"]:
-			for term in mo_cats[cat]:
-				named_entities["drug"].append(term)
-		if cat in ["C23"]:
-			for term in mo_cats[cat]:
-				named_entities["symptom"].append(term)
-	
-	#Add more terms from other sources at this point...
-	#
-	#
-	#
-	
-	#Convert list items in named_entities to sets for efficiency.
-	for ne_type in named_entities:
-		named_entities[ne_type] = set(named_entities[ne_type])
-	
-	#Then clean up terms and stem them with clean()
-	#Ignore some terms we know are not useful for labeling.
-	new_named_entities = {}
-	
-	stop_terms = ["report"]
-	
-	for ne_type in named_entities:
-		new_terms = set()
-		for term in named_entities[ne_type]:
-			if term not in stop_terms:
-				clean_term = clean(term)
-				if len(clean_term) > 3:
-					new_terms.add(clean_term)
-		new_named_entities[ne_type] = new_terms
-		
-	named_entities = new_named_entities
+	named_entities = populate_named_entities(named_entities, mo_cats)
 	
 	for ne_type in named_entities:
 		ne_count = ne_count + len(named_entities[ne_type])
