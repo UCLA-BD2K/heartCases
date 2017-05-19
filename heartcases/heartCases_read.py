@@ -583,55 +583,35 @@ def read_sentence(sentence):
 	* and the original string with all named entities highlighted and 
 	  tagged with their corresponding
 	  types, in the format 
-	  I had some ~~chest pain~~[SYMPTOM]
+	  I had some ~~chest pain~~[symptom]
+	  
+	Should find entities up to 5 words long -
+	but only does single words at the moment.
+	Look ahead to find n-grams -
+	this way, we find specific terms ("right heart bypass")
+	and not just "heart"
 	'''
 		
 	ne_dict = {} #Keys are entity types, 
 				#values are lists of matching terms
-					
-	#Remove quote marks and hypens
-	clean_sentence = ""
-	for char in sentence:
-		if char not in ["\"", "-"]:
-			clean_sentence = clean_sentence + char
 	
-	#Convert to stems
-	cleaner_sentence = clean(clean_sentence)
-	
-	#Do basic labeling with n-grams where n is 1, 2, or 3
-	sent_terms = cleaner_sentence.split()
-	
-	#Fun list comprehension n-gram approach c/o Scott Triglia; see
-	#http://locallyoptimal.com/blog/2013/01/20/elegant-n-gram-generation-in-python/
-	more_sent_terms = []
-	for n in [2,3]:
-		n_grams = zip(*[sent_terms[i:] for i in range(n)])
-		for gram in n_grams:
-			more_sent_terms.append(" ".join(gram))
-	
-	for term in more_sent_terms:
-		sent_terms.append(term)
-	
-	#Convert to a set for efficiency
-	sent_terms = set(sent_terms)
-	
-	for ne_type in named_entities:
-		for term in named_entities[ne_type]:
-			if term in sent_terms:
-				if ne_type not in ne_dict:
-					ne_dict[ne_type] = [term]
-				else:
-					ne_dict[ne_type].append(term)
-	if len(ne_dict.keys()) == 0:
-		ne_dict["NONE"] = []
-		
-	for ne_type in ne_dict:
-		for term in ne_dict[ne_type]:
-			pattern = re.compile(re.escape(term), re.I)
-			highlight = "~~\g<0>~~[%s]" % ne_type
-			sentence = re.sub(pattern, highlight, sentence)
+	new_sentence = []
 			
-	return (ne_dict, sentence)
+	split_sentence = sentence.split()
+	for word in split_sentence:
+		cleanword = clean(word)
+		for ne_type in named_entities:
+			if word in named_entities[ne_type]:
+				if ne_type not in ne_dict:
+					ne_dict[ne_type] = [word]
+				else:
+					 ne_dict[ne_type].append(word)
+				word = "~~%s~~[%s]" % (word, ne_type)
+		new_sentence.append(word)
+	
+	new_sentence = " ".join(new_sentence)
+	
+	return (ne_dict, new_sentence)
 		
 def parse_training_text(tfile):
 	'''
@@ -959,12 +939,32 @@ def populate_named_entities(named_entities, mo_cats):
 		if cat[:1] == "A" and cat not in ["A18","A19","A20","A21",]:
 			for term in mo_cats[cat]:
 				named_entities["body_part"].append(term)
+		if cat[:1] == "C":
+			if cat not in ["C23","C26"]:
+				for term in mo_cats[cat]:
+					named_entities["disease"].append(term)
+			elif cat == "C23":
+				for term in mo_cats[cat]:
+					named_entities["symptom"].append(term)
+			elif cat == "C26":
+				for term in mo_cats[cat]:
+					named_entities["wound"].append(term)
 		if cat in ["D03","D04","D25","D26","D27"]:
 			for term in mo_cats[cat]:
 				named_entities["drug"].append(term)
-		if cat in ["C23"]:
+		if cat in ["E04","E05"]:
 			for term in mo_cats[cat]:
-				named_entities["symptom"].append(term)
+				named_entities["technique"].append(term)
+		if cat in ["E07"]:
+			for term in mo_cats[cat]:
+				named_entities["equipment"].append(term)
+		if cat in ["J02"]:
+			for term in mo_cats[cat]:
+				named_entities["food"].append(term)
+		if cat in ["M01"]:
+			for term in mo_cats[cat]:
+				named_entities["person_detail"].append(term)
+		
 	
 	#Add more terms from other sources at this point...
 	#
@@ -992,6 +992,13 @@ def populate_named_entities(named_entities, mo_cats):
 		
 	named_entities = new_named_entities
 	
+	ne_dump_filename = "NE_dump.tsv"
+	with open(ne_dump_filename, 'w') as outfile:
+		print("Dumping named entities to file: %s" % ne_dump_filename) 
+		for ne_type in named_entities:
+			for term in named_entities[ne_type]:
+				outfile.write("%s\t%s\n" % (ne_type, term))
+				
 	return named_entities
 	
 #Main
@@ -1102,7 +1109,7 @@ def main():
 	#Load the named entities here.
 	#Most of the vocabulary is inherited from MeSH terms.
 	#Clean terms to produce stems.
-	print("Loading named entities:")
+	print("Loading named entities...")
 	
 	global named_entities
 	
