@@ -217,7 +217,7 @@ def get_data_files(name):
 	
 	return filename
 	
-def build_mesh_to_icd10_dict(do_filename):
+def parse_disease_ontology(do_filename):
 	#Build the MeSH ID to ICD-10 dictionary
 	#the relevant IDs are xrefs in no particular order
 	#Also, terms differ in the xrefs provided (e.g., a MeSH but no ICD-10)
@@ -585,7 +585,7 @@ def read_sentence(sentence):
 	* and the original string with all named entities provided in a list
 	preceding the sentence, along with their corresponding types.
 
-	Finds entities up to 5 words long.
+	Finds entities up to 6 words long.
 	Because it uses a sliding window to search, also extracts phrases,
 	so the lists will include phrases like 
 	"of atrioventricular nodal reentrant tachycardia"
@@ -615,7 +615,7 @@ def read_sentence(sentence):
 	#We just want largest matches so we save ranges of matched indices
 	#and then don't search those again with any frame.
 	
-	for frame_length in range(5,0,-1): 
+	for frame_length in range(6,0,-1): 
 		#Count backwards as we want largest matches first
 		i = 0 #This iterator refers to the beginning of the current frame
 				#AND to the index of the split sentence list.
@@ -637,7 +637,7 @@ def read_sentence(sentence):
 			
 			framestring = " ".join(frame)
 			cleanframestring = clean(framestring)
-			shortframestring = clean(framestring, stop_only=True)
+			shortframestring = clean(framestring, no_stem=True)
 			for ne_type in named_entities:
 				if cleanframestring in named_entities[ne_type]:
 					matched_ne_type = ne_type
@@ -680,14 +680,14 @@ def parse_training_text(tfile):
 	
 	return labeled_text
 
-def clean(text, stop_only=False):
+def clean(text, no_stem=False):
 		'''
 		Pre-processing for a string to ensure it lacks stopwords, etc.
 		Also removes punctuation.
 		Uses NLTK Snowball stemmmer.
 		Returns the input string as a processed raw string.
 		
-		If stop_only is True, then the string only gets stopwords removed.
+		If no_stem is True, then the string is not stemmed.
 		'''
 		stemmer = SnowballStemmer("english")
 		stopword_set = set(stopwords.words('english'))
@@ -699,18 +699,15 @@ def clean(text, stop_only=False):
 			#Just to handle Unicode first
 				#This may still have an error if there's undecodable
 				#Unicode chars, but hopefully those are rare
-			if not stop_only:
+			if not no_stem:
 				word = stemmer.stem(word)
 			if word.lower() not in stopword_set: #No stopwords
-				if not stop_only:
-					cleanword = ""
-					word = word.lower()
-					for char in word:
-						if char not in string.punctuation: #No punctuation
-							cleanword = cleanword + char
-					words.append(cleanword)
-				else:
-					words.append(word)
+				cleanword = ""
+				word = word.lower()
+				for char in word:
+					if char not in string.punctuation: #No punctuation
+						cleanword = cleanword + char
+				words.append(cleanword)
 					
 		cleanstring = " ".join(words)
 		return cleanstring
@@ -976,7 +973,7 @@ def plot_those_counts(counts, all_matches, outfilename):
 	show(layout)
 	#show(plot)	
 
-def populate_named_entities(named_entities, mo_cats):
+def populate_named_entities(named_entities, mo_cats, do_xrefs_terms):
 	#Sets up the named entity vocabulary.
 	#Set up the named entity types
 	entity_types = []
@@ -1008,12 +1005,18 @@ def populate_named_entities(named_entities, mo_cats):
 		if cat in ["D03","D04","D25","D26","D27"]:
 			for term in mo_cats[cat]:
 				named_entities["drug"].append(term)
-		if cat in ["E04","E05"]:
+		if cat in ["E01","E04","E05"]:
 			for term in mo_cats[cat]:
 				named_entities["technique"].append(term)
 		if cat in ["E07"]:
 			for term in mo_cats[cat]:
 				named_entities["equipment"].append(term)
+		if cat in ["G09"]:
+			for term in mo_cats[cat]:
+				named_entities["cardio_phenomenon"].append(term)
+		if cat in ["I03"]:
+			for term in mo_cats[cat]:
+				named_entities["activity"].append(term)
 		if cat in ["J02"]:
 			for term in mo_cats[cat]:
 				named_entities["food"].append(term)
@@ -1021,28 +1024,28 @@ def populate_named_entities(named_entities, mo_cats):
 			for term in mo_cats[cat]:
 				named_entities["person_detail"].append(term)
 		
-	
-	#Add more terms from other sources at this point...
-	#
-	#
-	#
-	
+	#Add disease names from the Disease Ontology
+	for code in do_xrefs_terms:
+		for term in code:
+			named_entities["disease"].append(term)
+
 	#Convert list items in named_entities to sets for efficiency.
 	for ne_type in named_entities:
 		named_entities[ne_type] = set(named_entities[ne_type])
 	
 	#Then clean up terms and stem them with clean()
-	#Ignore some terms we know are not useful for labeling.
+	#Ignore some terms we know are not useful for labeling
+	#or are frequently mis-labeled
 	new_named_entities = {}
 	
-	stop_terms = ["report"]
+	stop_terms = ["extremity","report"]
 	
 	for ne_type in named_entities:
 		new_terms = set()
 		for term in named_entities[ne_type]:
 			if term not in stop_terms:
 				clean_term = clean(term)
-				if len(clean_term) > 3:
+				if len(clean_term) > 2:
 					new_terms.add(clean_term)
 		new_named_entities[ne_type] = new_terms
 		
@@ -1152,10 +1155,10 @@ def main():
 	print("Loaded %s topic-relevant terms + synonyms." % \
 			(len(mesh_term_list)))
 			
-	print("Building MeSH ID to ICD-10 dictionary.")
+	print("Building MeSH ID to ICD-10 dictionary using Disease Ontology.")
 	#Build the MeSH to ICD-10 dictionary
 	do_ids, do_xrefs_icd10, do_xrefs_terms = \
-		build_mesh_to_icd10_dict(do_filename)
+		parse_disease_ontology(do_filename)
 		
 	#Load the SPECIALIST lexicon
 	print("Loading SPECIALIST lexicon...")
@@ -1169,13 +1172,15 @@ def main():
 	
 	global named_entities
 	
-	named_entities = populate_named_entities(named_entities, mo_cats)
+	named_entities = populate_named_entities(named_entities, mo_cats, do_xrefs_terms)
 	
 	for ne_type in named_entities:
 		ne_count = ne_count + len(named_entities[ne_type])
-	ne_type_count = len(named_entities)
-	print("Named entity dictionary includes %s terms across %s entity types." % \
-			(ne_count, ne_type_count))
+
+	print("Named entity dictionary includes %s terms across these entity types:" % \
+			ne_count)
+	for ne_type in named_entities:
+		print("%s\t\t\t\t%s" % (ne_type, len(named_entities[ne_type])))
 	
 	#Process CVD-specific MeSH terms produced above
 	#These will be used to filter for on-topic documents.
@@ -1772,7 +1777,7 @@ def main():
 		for entry in all_matches_high:
 			print("\n%s:\n" % entry)
 			for match_count in all_matches_high[entry]:
-				print("%s\t\t%s" % (match_count[0], match_count[1]))
+				print("%s\t\t\t\t%s" % (match_count[0], match_count[1]))
 				
 	else:
 		sys.exit("Found no matching references.")
