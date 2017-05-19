@@ -23,6 +23,8 @@ import argparse, glob, operator, os, random, re, string
 import sys, tarfile, time
 import urllib, urllib2
 
+from itertools import tee, izip
+
 from bokeh.layouts import column
 from bokeh.plotting import figure, output_file, show
 from bokeh.models import Label
@@ -580,36 +582,84 @@ def read_sentence(sentence):
 	* A dict with matched entity types as keys
 	  and terms (named entities) as values.
 	  If no entities are found then the dict is {"NONE":[]}.
-	* and the original string with all named entities highlighted and 
-	  tagged with their corresponding
-	  types, in the format 
-	  I had some ~~chest pain~~[symptom]
-	  
-	Should find entities up to 5 words long -
-	but only does single words at the moment.
-	Look ahead to find n-grams -
-	this way, we find specific terms ("right heart bypass")
-	and not just "heart"
+	* and the original string with all named entities provided in a list
+	preceding the sentence, along with their corresponding types.
+
+	Finds entities up to 5 words long.
+	Because it uses a sliding window to search, also extracts phrases,
+	so the lists will include phrases like 
+	"of atrioventricular nodal reentrant tachycardia"
+	even if just "tachycardia" was found.
 	'''
-		
+	
+	#Function for getting frames from lists
+	def frames(iterable, size):
+		iters = tee(iterable, size)
+		for i in xrange(1, size):
+			for each in iters[i:]:
+				next(each, None)
+		return izip(*iters)
+
 	ne_dict = {} #Keys are entity types, 
-				#values are lists of matching terms
+				#values are lists of matching clean terms
+	ne_phrases = {} #Keys are entity types,
+					#values are lists of matching phrases
+	marked_ranges = [] #A list of ranges of indices of the split
+						#sentence where phrase matches have been made
 	
-	new_sentence = []
-			
 	split_sentence = sentence.split()
-	for word in split_sentence:
-		cleanword = clean(word)
-		for ne_type in named_entities:
-			if word in named_entities[ne_type]:
-				if ne_type not in ne_dict:
-					ne_dict[ne_type] = [word]
-				else:
-					 ne_dict[ne_type].append(word)
-				word = "~~%s~~[%s]" % (word, ne_type)
-		new_sentence.append(word)
 	
-	new_sentence = " ".join(new_sentence)
+	#Iterate through the string as a sliding window, for windows of
+	#each n-gram size.
+	#Search named entities for matches in the frame.
+	#We just want largest matches so we save ranges of matched indices
+	#and then don't search those again with any frame.
+	
+	for frame_length in range(5,0,-1): 
+		#Count backwards as we want largest matches first
+		i = 0 #This iterator refers to the beginning of the current frame
+				#AND to the index of the split sentence list.
+		for frame in frames(split_sentence, frame_length):
+			
+			end = min((i+(frame_length-1)),(len(split_sentence)-1))
+			  #The index of the end of the frame or the end of the sentence.
+			
+			skip_frame = False
+			
+			for marked_range in marked_ranges:
+				if i in marked_range:
+					skip_frame = True
+					break
+			
+			if skip_frame:
+				i = i +1
+				continue		
+			
+			framestring = " ".join(frame)
+			cleanframestring = clean(framestring)
+			shortframestring = clean(framestring, stop_only=True)
+			for ne_type in named_entities:
+				if cleanframestring in named_entities[ne_type]:
+					matched_ne_type = ne_type
+					if matched_ne_type in ne_dict:
+						if cleanframestring not in ne_dict[matched_ne_type]:
+							ne_dict[matched_ne_type].append(cleanframestring)
+					else:
+						ne_dict[matched_ne_type] = [cleanframestring]
+					if matched_ne_type in ne_phrases:
+						if shortframestring not in ne_phrases[matched_ne_type]:
+							ne_phrases[matched_ne_type].append(shortframestring)
+					else:
+						ne_phrases[matched_ne_type] = [shortframestring]
+					marked_ranges.append(range(i,end+1))
+					break
+			else:
+				i = i +1
+				
+	new_sentence = "%s|%s" % (ne_phrases, sentence)
+						
+	if len(ne_dict) == 0:
+		ne_dict["NONE"] = []
 	
 	return (ne_dict, new_sentence)
 		
@@ -630,12 +680,14 @@ def parse_training_text(tfile):
 	
 	return labeled_text
 
-def clean(text):
+def clean(text, stop_only=False):
 		'''
 		Pre-processing for a string to ensure it lacks stopwords, etc.
 		Also removes punctuation.
 		Uses NLTK Snowball stemmmer.
 		Returns the input string as a processed raw string.
+		
+		If stop_only is True, then the string only gets stopwords removed.
 		'''
 		stemmer = SnowballStemmer("english")
 		stopword_set = set(stopwords.words('english'))
@@ -647,18 +699,22 @@ def clean(text):
 			#Just to handle Unicode first
 				#This may still have an error if there's undecodable
 				#Unicode chars, but hopefully those are rare
-			word = stemmer.stem(word)
-			if word not in stopword_set: #No stopwords
-				cleanword = ""
-				word = word.lower()
-				for char in word:
-					if char not in string.punctuation: #No punctuation
-						cleanword = cleanword + char
-				words.append(cleanword)
-		
+			if not stop_only:
+				word = stemmer.stem(word)
+			if word.lower() not in stopword_set: #No stopwords
+				if not stop_only:
+					cleanword = ""
+					word = word.lower()
+					for char in word:
+						if char not in string.punctuation: #No punctuation
+							cleanword = cleanword + char
+					words.append(cleanword)
+				else:
+					words.append(word)
+					
 		cleanstring = " ".join(words)
 		return cleanstring
-
+		
 def mesh_classification(testing):
 	'''
 	Builds and tests a multilabel text classifier for expanding MeSH
