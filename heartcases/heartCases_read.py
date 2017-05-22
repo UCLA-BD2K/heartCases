@@ -49,7 +49,7 @@ from sklearn.externals import joblib
 
 #Constants and Options
 					
-record_count_cutoff = 500
+record_count_cutoff = 1000000
 	#The maximum number of records to search.
 	
 random_record_list = False
@@ -116,6 +116,12 @@ def find_more_record_text(rec_ids):
 	efetch = "efetch.fcgi?db=pmc"
 	efetch_options = "&usehistory=y&retmode=text&rettype=medline"
 	
+	outfilepath = "output"
+	
+	if not os.path.isdir(outfilepath):
+		os.mkdir(outfilepath)
+	os.chdir(outfilepath)
+	
 	for pmid in rec_ids:
 		pmc_id = rec_ids[pmid]
 		if pmc_id != "NA": 
@@ -169,11 +175,8 @@ def find_more_record_text(rec_ids):
 				i = i + batch_size 
 			out_file.close()
 			
-			if not os.path.isdir("output"):
-				os.mkdir("output")
-			os.chdir("output")
-			
 			records = medline_parse(open(outfilepath))
+			
 			os.chdir("..")
 			
 			for record in records:
