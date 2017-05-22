@@ -49,7 +49,7 @@ from sklearn.externals import joblib
 
 #Constants and Options
 					
-record_count_cutoff = 30000
+record_count_cutoff = 500
 	#The maximum number of records to search.
 	
 random_record_list = False
@@ -168,8 +168,13 @@ def find_more_record_text(rec_ids):
 					
 				i = i + batch_size 
 			out_file.close()
-				
+			
+			if not os.path.isdir("output"):
+				os.mkdir("output")
+			os.chdir("output")
+			
 			records = medline_parse(open(outfilepath))
+			os.chdir("..")
 			
 			for record in records:
 				if 'AB' in record.keys() and 'PMID' in record.keys():
@@ -1051,13 +1056,18 @@ def populate_named_entities(named_entities, mo_cats, do_xrefs_terms):
 		
 	named_entities = new_named_entities
 	
+	if not os.path.isdir("output"):
+		os.mkdir("output")
+	os.chdir("output")
+	
 	ne_dump_filename = "NE_dump.tsv"
 	with open(ne_dump_filename, 'w') as outfile:
 		print("Dumping named entities to file: %s" % ne_dump_filename) 
 		for ne_type in named_entities:
 			for term in named_entities[ne_type]:
 				outfile.write("%s\t%s\n" % (ne_type, term))
-				
+	os.chdir("..")
+		
 	return named_entities
 	
 #Main
@@ -1180,7 +1190,8 @@ def main():
 	print("Named entity dictionary includes %s terms across these entity types:" % \
 			ne_count)
 	for ne_type in named_entities:
-		print("%s\t\t\t\t%s" % (ne_type, len(named_entities[ne_type])))
+		print("%s %s" % (str(ne_type).ljust(30, ' '),
+						len(named_entities[ne_type])))
 	
 	#Process CVD-specific MeSH terms produced above
 	#These will be used to filter for on-topic documents.
@@ -1621,10 +1632,6 @@ def main():
 	
 	#Now abstract text is searched for named entities
 	
-	if not os.path.isdir("output"):
-		os.mkdir("output")
-	os.chdir("output")
-	
 	if match_record_count < record_count_cutoff:
 		filelabel = match_record_count
 	else:
@@ -1649,8 +1656,25 @@ def main():
 		viz_outfilename = "medline_entries_%s_plots.html" \
 						% filelabel 
 	
+	if not os.path.isdir("output"):
+		os.mkdir("output")
+	os.chdir("output")
+	
 	print("\nWriting matching, newly annotated full records to file...")
 	
+	#Progbar setup
+	prog_width = len(matching_ann_records) 
+	if prog_width < 5000:
+		prog_width = prog_width / 100
+		shortbar = True
+	else:
+		prog_width = prog_width / 1000
+		shortbar = False
+	sys.stdout.write("[%s]" % (" " * prog_width))
+	sys.stdout.flush()
+	sys.stdout.write("\b" * (prog_width+1))
+	j = 0
+			
 	with open(outfilename, 'w') as outfile:
 		for record in matching_ann_records:
 			for field in record:
@@ -1690,9 +1714,34 @@ def main():
 						outfile.write("%s- %s\n" % (formfield, record[field]))
 					
 			outfile.write("\n")
+			
+			j = j+1
+		
+			sys.stdout.flush()
+			if shortbar:
+				if j % 100 == 0:
+					sys.stdout.write("#")
+			else:
+				if j % 1000 == 0:
+					sys.stdout.write("#")
 	
 	#Labeling sentences within the matching records
 	#using the read_sentence function
+	print("\nTagging entities within results...")
+	
+	#Progbar setup
+	prog_width = len(matching_ann_records) 
+	if prog_width < 5000:
+		prog_width = prog_width / 100
+		shortbar = True
+	else:
+		prog_width = prog_width / 1000
+		shortbar = False
+	sys.stdout.write("[%s]" % (" " * prog_width))
+	sys.stdout.flush()
+	sys.stdout.write("\b" * (prog_width+1))
+	j = 0
+	
 	labeled_ann_records = []
 	for record in matching_ann_records:
 		labeled_record = {}
@@ -1720,6 +1769,16 @@ def main():
 				labeled_record['labstract'] = labeled_abstract
 			
 		labeled_ann_records.append(labeled_record)
+		
+		j = j+1
+		
+		sys.stdout.flush()
+		if shortbar:
+			if j % 100 == 0:
+				sys.stdout.write("#")
+		else:
+			if j % 1000 == 0:
+				sys.stdout.write("#")
 			
 	#Writing abstract with labeled entities to files
 	
@@ -1772,12 +1831,12 @@ def main():
 									reverse=True)[0:15]
 		
 		for entry in counts:
-			print("\n%s:\n %s" % (entry, counts[entry]))
+			print("\n%s:\t%s" % (entry, counts[entry]))
 		
 		for entry in all_matches_high:
 			print("\n%s:\n" % entry)
 			for match_count in all_matches_high[entry]:
-				print("%s\t\t\t\t%s" % (match_count[0], match_count[1]))
+				print("%s\t\t\t\t%s" % (str(match_count[0]).ljust(40, ' '), match_count[1]))
 				
 	else:
 		sys.exit("Found no matching references.")
