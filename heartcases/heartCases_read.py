@@ -116,11 +116,12 @@ def find_more_record_text(rec_ids):
 	efetch = "efetch.fcgi?db=pmc"
 	efetch_options = "&usehistory=y&retmode=text&rettype=medline"
 	
-	outfilepath = "output"
+	outfiledir = "output"
+	outfilename = "Additional_PMC_entries.txt"
 	
-	if not os.path.isdir(outfilepath):
-		os.mkdir(outfilepath)
-	os.chdir(outfilepath)
+	if not os.path.isdir(outfiledir):
+		os.mkdir(outfiledir)
+	os.chdir(outfiledir)
 	
 	for pmid in rec_ids:
 		pmc_id = rec_ids[pmid]
@@ -162,7 +163,7 @@ def find_more_record_text(rec_ids):
 				#print(queryURL)
 				response = urllib2.urlopen(queryURL)
 				
-				out_file = open(outfilepath, "a")
+				out_file = open(outfilename, "a")
 				chunk = 1048576
 				while 1:
 					data = (response.read(chunk)) #Read one Mb at a time
@@ -175,7 +176,7 @@ def find_more_record_text(rec_ids):
 				i = i + batch_size 
 			out_file.close()
 			
-			records = medline_parse(open(outfilepath))
+			records = medline_parse(open(outfilename))
 			
 			os.chdir("..")
 			
