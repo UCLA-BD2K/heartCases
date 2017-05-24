@@ -1649,8 +1649,10 @@ def main():
 		totaltime = t2 - t0
 		
 		if verbose:
-			print("Processed record %s in %.2f sec total (%.2f for classifier)" 
-					% (record['PMID'], totaltime, classtime))
+			print("Processed record %s (%s out of %s) in %.2f sec total " \
+					"(%.2f for classifier)"
+					% (record['PMID'], j, len(matching_orig_records), 
+						totaltime, classtime))
 		else:
 			sys.stdout.flush()
 			if shortbar:
