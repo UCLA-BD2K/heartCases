@@ -49,9 +49,6 @@ from sklearn.externals import joblib
 
 #Constants and Options
 					
-record_count_cutoff = 1000000
-	#The maximum number of records to search.
-	
 random_record_list = False
 	#If True, choose training records at random until hitting
 	#record_count_cutoff value
@@ -747,8 +744,11 @@ def mesh_classification(testing):
 				with open(train_file) as tfile:
 					labeled_text = parse_training_text(tfile)
 					all_labeled_text = all_labeled_text + labeled_text
-			print("Loaded %s labeled abstracts." % len(train_file_list))
-		
+			if len(train_file_list) > 0:
+				print("Loaded %s labeled abstracts." % len(train_file_list))
+			else:
+				sys.exit("No labeled abstracts found for training. Exiting...")
+			
 		if testing:
 			print("Loading labeled abstracts for testing.") 
 			test_file_list = glob.glob('training_test_text/*.txt')
@@ -757,7 +757,10 @@ def mesh_classification(testing):
 				with open(test_file) as tfile:
 					labeled_text = parse_training_text(tfile)
 					all_test_text = all_test_text + labeled_text
-			print("Loaded %s labeled abstracts." % len(test_file_list))
+			if len(test_file_list) > 0:
+				print("Loaded %s labeled abstracts." % len(test_file_list))
+			else:
+				sys.exit("No labeled abstracts found for testing. Exiting...")
 		
 		return train_file_list, test_file_list, \
 				all_labeled_text, all_test_text
@@ -1104,8 +1107,15 @@ def main():
 						"a list of PubMed IDs to retrieve MEDLINE "
 						"records for")
 	parser.add_argument('--testing', help="if FALSE, do not test classifiers")
+	parser.add_argument('--recordlimit', help="The maximum number of records to search")
+	parser.add_argument('--verbose', help="if TRUE, provide verbose output")
 	args = parser.parse_args()
 	
+	verbose = False
+	if args.verbose:
+		if args.verbose == "TRUE":
+			verbose = True
+			
 	#Get the disease ontology file if it isn't present
 	disease_ofile_list = glob.glob('doid.*')
 	if len(disease_ofile_list) >1:
@@ -1182,7 +1192,7 @@ def main():
 	#Load the named entities here.
 	#Most of the vocabulary is inherited from MeSH terms.
 	#Clean terms to produce stems.
-	print("Loading named entities...")
+	print("Loading named entity dictionary...")
 	
 	global named_entities
 	
@@ -1220,7 +1230,13 @@ def main():
 		medline_file_list = glob.glob('input/*.txt')
 		if len(medline_file_list) == 0:
 			sys.exit("Found no input files. Exiting.")
-		
+	
+	#Check if a recordlimit has been set.
+	if args.recordlimit:
+		record_count_cutoff = int(args.recordlimit)
+	else:
+		record_count_cutoff = 9999999
+	
 	ti = 0
 	
 	matching_orig_records = []
@@ -1615,18 +1631,20 @@ def main():
 			except KeyError:
 				record['OT'] = [("ICD10CM:%s" % code)]
 		
-				
 		matching_ann_records.append(record)
 		
 		j = j+1
 		
-		sys.stdout.flush()
-		if shortbar:
-			if j % 100 == 0:
-				sys.stdout.write("#")
+		if verbose:
+			print("Processed %s" % record['PMID'])
 		else:
-			if j % 1000 == 0:
-				sys.stdout.write("#")
+			sys.stdout.flush()
+			if shortbar:
+				if j % 100 == 0:
+					sys.stdout.write("#")
+			else:
+				if j % 1000 == 0:
+					sys.stdout.write("#")
 	
 	'''
 	Output the matching entries, complete with new annotations
