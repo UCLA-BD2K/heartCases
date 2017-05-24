@@ -1512,18 +1512,22 @@ def main():
 	matching_ann_records = []
 
 	print("\nAdding new terms and codes to records.")
+	if len(matching_orig_records) > 10000:
+		print("This may take a while.")
 	
 	#Progbar setup
-	prog_width = len(matching_orig_records) 
-	if prog_width < 5000:
-		prog_width = prog_width / 100
-		shortbar = True
-	else:
-		prog_width = prog_width / 1000
-		shortbar = False
-	sys.stdout.write("[%s]" % (" " * prog_width))
-	sys.stdout.flush()
-	sys.stdout.write("\b" * (prog_width+1))
+	if not verbose:
+		prog_width = len(matching_orig_records) 
+		if prog_width < 5000:
+			prog_width = prog_width / 100
+			shortbar = True
+		else:
+			prog_width = prog_width / 1000
+			shortbar = False
+		sys.stdout.write("[%s]" % (" " * prog_width))
+		sys.stdout.flush()
+		sys.stdout.write("\b" * (prog_width+1))
+		
 	j = 0
 	
 	for record in matching_orig_records:
@@ -1547,10 +1551,13 @@ def main():
 		
 		#We may have an abstract retrieved from somewhere else
 		#if so, add it first
+		t0 = time.time()
 		if 'AB' not in record.keys() and have_new_abstracts:
 			if record['PMID'] in new_abstracts:
 				record['AB'] = new_abstracts[record['PMID']]
 		
+		#Now use MeSH term classifier to predict all possible 
+		#associated terms
 		if 'AB' in record.keys() and len(record['AB']) > abst_len_cutoff:
 			titlestring = record['TI']
 			abstring = record['AB']
@@ -1559,7 +1566,9 @@ def main():
 			predicted = abst_classifier.predict(clean_array)
 			all_labels = lb.inverse_transform(predicted)
 			have_more_terms = True
-
+		
+		t1 = time.time()
+		
 		try:	
 			#If record has no MeSH terms, try the Other Terms
 			these_mesh_terms = record['MH']
@@ -1635,8 +1644,13 @@ def main():
 		
 		j = j+1
 		
+		t2 = time.time()
+		classtime = t1 - t0
+		totaltime = t2 - t0
+		
 		if verbose:
-			print("Processed %s" % record['PMID'])
+			print("Processed record %s in %.2f sec total (%.2f for classifier)" 
+					% (record['PMID'], totaltime, classtime))
 		else:
 			sys.stdout.flush()
 			if shortbar:
