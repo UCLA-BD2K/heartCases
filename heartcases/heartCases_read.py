@@ -559,7 +559,6 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 	 Terms are listed first, separated by |.
 	 Appends title to the beginning of the abstract text.
 	 Creates folder if not present already.
-	 
 	'''
 	
 	if cat == "train":
@@ -1076,6 +1075,26 @@ def populate_named_entities(named_entities, mo_cats, do_xrefs_terms):
 	os.chdir("..")
 		
 	return named_entities
+
+def parse_args():
+	#Parse command line arguments for heartCases_read
+	
+	parser = argparse.ArgumentParser()
+	parser.add_argument('--inputfile', help="name of a text file containing "
+						"MEDLINE records")
+	parser.add_argument('--pmids', help="name of a text file containing "
+						"a list of PubMed IDs to retrieve MEDLINE "
+						"records for")
+	parser.add_argument('--testing', help="if FALSE, do not test classifiers")
+	parser.add_argument('--recordlimit', help="The maximum number of records to search")
+	parser.add_argument('--verbose', help="if TRUE, provide verbose output")
+	
+	try:
+		args = parser.parse_args()
+	except:
+		sys.exit(parser.print_help())
+	
+	return args
 	
 #Main
 def main():
@@ -1100,16 +1119,7 @@ def main():
 	ne_count = 0 #Count of all terms in named_entities
 	
 	#Set up parser
-	parser = argparse.ArgumentParser()
-	parser.add_argument('--inputfile', help="name of a text file containing "
-						"MEDLINE records")
-	parser.add_argument('--pmids', help="name of a text file containing "
-						"a list of PubMed IDs to retrieve MEDLINE "
-						"records for")
-	parser.add_argument('--testing', help="if FALSE, do not test classifiers")
-	parser.add_argument('--recordlimit', help="The maximum number of records to search")
-	parser.add_argument('--verbose', help="if TRUE, provide verbose output")
-	args = parser.parse_args()
+	args = parse_args()
 	
 	verbose = False
 	if args.verbose:
