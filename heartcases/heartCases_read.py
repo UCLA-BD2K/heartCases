@@ -177,7 +177,7 @@ def find_more_record_text(rec_ids):
 			
 			records = medline_parse(open(outfilename))
 			
-			os.chdir("..")
+			
 			
 			for record in records:
 				if 'AB' in record.keys() and 'PMID' in record.keys():
@@ -196,6 +196,8 @@ def find_more_record_text(rec_ids):
 	else:
 		print("No PubMed Central IDs found and/or all records with" \
 				" PMC IDs already have abstracts.")
+	
+	os.chdir("..")
 		
 def get_data_files(name):
 	#Retrieves one of the following:
@@ -610,34 +612,49 @@ def label_this_text(text, verbose=False):
 	split_text = []
 	i = 0
 	word = ""
+	endi = len(text) -1
 	for char in text:
 		word = word + char
-		if char in [" ","\n"]:
+		if char in [" ","\n"] or i == endi:
 			split_text.append([i - (len(word) - 1) , word, i])
 			word = ""
 		i = i+1
+		
+	string_word_count = len(split_text)
 	
 	#Now add frames for n-grams
-	#This is hanging up for some reason.
+	#Just 2-grams for right now
 	
 	#new_split_text = split_text
+	#split_text2 = split_text
+	#i = 0
+	#frame_length = 2
+	#endi = len(split_text) -1 #Index of the last word in split_text
 	
-	#for frame_length in range(2,7):
-		#i = 0
-		#for start_word_and_index in split_text:
-			##Before we do anything, check if we're near the end
-			#if i + (frame_length -1) < (len(split_text) -1):
-				#ngram = ""
-				#for word_and_index in split_text[i:(i+ (frame_length -1))]:
-					#ngram = ngram + " %s" % word_and_index[1] #String of all words in the ngram
-				#start = start_word_and_index[0] #Start of the first word in the ngram
-				#end = split_text[(i+ (frame_length -1))][2] #End of the last word in the ngram
-				#new_word_and_index = [start, ngram, end]
-				#new_split_text.append(new_word_and_index)
-				#i = i +1
-			
-	#split_text = new_split_text
+	#for start_word_and_index in split_text:
+		#endframe = (i + frame_length) -1
+		##Before we do anything, check if we're near the end
+		#if endframe <= endi:
+			#ngram = ""
+			#for word_and_index in split_text2[i:endframe+1]:
+				#ngram = ngram + "%s" % word_and_index[1] #String of all words in the ngram
+			#start = start_word_and_index[0] #Start of the first word in the ngram
+			#end = split_text[endframe][2] #End of the last word in the ngram
+			#new_word_and_index = [start, ngram, end]
+			#print(new_word_and_index)
+			#new_split_text.append(new_word_and_index)
+			#i = i +1
 	
+	##Check for duplicate entries before adding new ones
+	#for word_and_index in new_split_text:
+		#duplicate = False
+		#for word_and_index2 in split_text2:
+			#if word_and_index[1] == word_and_index2[1]:
+				#duplicate = True
+		#if not duplicate:
+			#split_text.append(word_and_index)
+	
+	#Now add labels from named_entities set
 	for word_and_index in split_text:
 		for ne_type in named_entities:
 			word = word_and_index[1]
@@ -653,9 +670,11 @@ def label_this_text(text, verbose=False):
 	t1 = time.time()
 	totaltime = t1 - t0
 	
+	
 	if verbose:
-		print("Labeled text with %s labels in %.2f sec."
-					% (len(labels), totaltime))
+		print("Labeled text of %s words and %s tokens with %s labels in %.2f sec."
+					% (string_word_count, len(split_text), len(labels), 
+						totaltime))
 	
 	return labels
 		
@@ -1063,6 +1082,7 @@ def populate_named_entities(named_entities, mo_cats, do_xrefs_terms):
 		for ne_type in named_entities:
 			for term in named_entities[ne_type]:
 				outfile.write("%s\t%s\n" % (ne_type, term))
+				
 	os.chdir("..")
 		
 	return named_entities
