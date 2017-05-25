@@ -581,7 +581,7 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 			
 	os.chdir("..")
 
-def label_this_text(text):
+def label_this_text(text, verbose=False):
 	'''
 	Takes a string (usually a sentence or abstract) as input.
 	Labels named entities within the string using the term dictionary.
@@ -602,15 +602,9 @@ def label_this_text(text):
 	even if just "tachycardia" was found.
 	'''
 	
-	#Function for getting frames from lists
-	def frames(iterable, size):
-		iters = tee(iterable, size)
-		for i in xrange(1, size):
-			for each in iters[i:]:
-				next(each, None)
-		return izip(*iters)
-	
 	labels = []
+	
+	t0 = time.time()
 	
 	#Manually split text in order to preserve index
 	split_text = []
@@ -623,19 +617,26 @@ def label_this_text(text):
 			word = ""
 		i = i+1
 	
-	#For testing purposes, just using single words right now.
-	#But want to do the following:
+	#Now add frames for n-grams
+	#This is hanging up for some reason.
 	
-	#Iterate through the string as a sliding window, for windows of
-	#each n-gram size.
-	#Search named entities for matches in the frame.
-	#We just want largest matches so we save ranges of matched indices
-	#and then don't search those again with any frame.
+	#new_split_text = split_text
 	
-	#for frame_length in range(6,0,-1): 
-	#	these_frames = frames(split_text, frame_length)
-	#	
-	#	labels.append([ne_type, start, end, match])
+	#for frame_length in range(2,7):
+		#i = 0
+		#for start_word_and_index in split_text:
+			##Before we do anything, check if we're near the end
+			#if i + (frame_length -1) < (len(split_text) -1):
+				#ngram = ""
+				#for word_and_index in split_text[i:(i+ (frame_length -1))]:
+					#ngram = ngram + " %s" % word_and_index[1] #String of all words in the ngram
+				#start = start_word_and_index[0] #Start of the first word in the ngram
+				#end = split_text[(i+ (frame_length -1))][2] #End of the last word in the ngram
+				#new_word_and_index = [start, ngram, end]
+				#new_split_text.append(new_word_and_index)
+				#i = i +1
+			
+	#split_text = new_split_text
 	
 	for word_and_index in split_text:
 		for ne_type in named_entities:
@@ -648,6 +649,13 @@ def label_this_text(text):
 	#Labels need to be sorted by starting character
 	sortedlabels = sorted(labels, key=itemgetter(1))
 	labels = sortedlabels
+	
+	t1 = time.time()
+	totaltime = t1 - t0
+	
+	if verbose:
+		print("Labeled text with %s labels in %.2f sec."
+					% (len(labels), totaltime))
 	
 	return labels
 		
@@ -1813,7 +1821,7 @@ def main():
 				abstract = record[field]
 				labeled_abstract = {'text':"",'labels':[]}
 				labeled_abstract['text'] = abstract
-				labeled_abstract['labels'] = label_this_text(abstract)
+				labeled_abstract['labels'] = label_this_text(abstract, verbose)
 				
 				labeled_record['labstract'] = labeled_abstract
 			
