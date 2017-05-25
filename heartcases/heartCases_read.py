@@ -25,6 +25,8 @@ import urllib, urllib2
 
 from itertools import tee, izip
 
+from operator import itemgetter
+
 from bokeh.layouts import column
 from bokeh.plotting import figure, output_file, show
 from bokeh.models import Label
@@ -579,16 +581,19 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 			
 	os.chdir("..")
 
-def read_sentence(sentence):
+def label_this_text(text):
 	'''
-	Takes a string (usually a sentence) as input.
-	Identifies named entities within the string.
-	Returns a tuple of:
-	* A dict with matched entity types as keys
-	  and terms (named entities) as values.
-	  If no entities are found then the dict is {"NONE":[]}.
-	* and the original string with all named entities provided in a list
-	preceding the sentence, along with their corresponding types.
+	Takes a string (usually a sentence or abstract) as input.
+	Labels named entities within the string using the term dictionary.
+	Returns a list of lists of the form:
+	[label_name, start, end, text]
+	where
+	label_name is the name of the corresponding named entity
+	start is the position of the character where the label begins
+	end is the position of the character where the label ends
+	text is the full text of the labeled entity.
+	
+	If no entities are found then the list is [["NONE",0,0,"NA"]].
 
 	Finds entities up to 6 words long.
 	Because it uses a sliding window to search, also extracts phrases,
@@ -604,15 +609,22 @@ def read_sentence(sentence):
 			for each in iters[i:]:
 				next(each, None)
 		return izip(*iters)
-
-	ne_dict = {} #Keys are entity types, 
-				#values are lists of matching clean terms
-	ne_phrases = {} #Keys are entity types,
-					#values are lists of matching phrases
-	marked_ranges = [] #A list of ranges of indices of the split
-						#sentence where phrase matches have been made
 	
-	split_sentence = sentence.split()
+	labels = []
+	
+	#Manually split text in order to preserve index
+	split_text = []
+	i = 0
+	word = ""
+	for char in text:
+		word = word + char
+		if char in [" ","\n"]:
+			split_text.append([i, word, i + (len(word)-1)])
+			word = ""
+		i = i+1
+	
+	#For testing purposes, just using single words right now.
+	#But want to do the following:
 	
 	#Iterate through the string as a sliding window, for windows of
 	#each n-gram size.
@@ -620,53 +632,24 @@ def read_sentence(sentence):
 	#We just want largest matches so we save ranges of matched indices
 	#and then don't search those again with any frame.
 	
-	for frame_length in range(6,0,-1): 
-		#Count backwards as we want largest matches first
-		i = 0 #This iterator refers to the beginning of the current frame
-				#AND to the index of the split sentence list.
-		for frame in frames(split_sentence, frame_length):
-			
-			end = min((i+(frame_length-1)),(len(split_sentence)-1))
-			  #The index of the end of the frame or the end of the sentence.
-			
-			skip_frame = False
-			
-			for marked_range in marked_ranges:
-				if i in marked_range:
-					skip_frame = True
-					break
-			
-			if skip_frame:
-				i = i +1
-				continue		
-			
-			framestring = " ".join(frame)
-			cleanframestring = clean(framestring)
-			shortframestring = clean(framestring, no_stem=True)
-			for ne_type in named_entities:
-				if cleanframestring in named_entities[ne_type]:
-					matched_ne_type = ne_type
-					if matched_ne_type in ne_dict:
-						if cleanframestring not in ne_dict[matched_ne_type]:
-							ne_dict[matched_ne_type].append(cleanframestring)
-					else:
-						ne_dict[matched_ne_type] = [cleanframestring]
-					if matched_ne_type in ne_phrases:
-						if shortframestring not in ne_phrases[matched_ne_type]:
-							ne_phrases[matched_ne_type].append(shortframestring)
-					else:
-						ne_phrases[matched_ne_type] = [shortframestring]
-					marked_ranges.append(range(i,end+1))
-					break
-			else:
-				i = i +1
-				
-	new_sentence = "%s|%s" % (ne_phrases, sentence)
-						
-	if len(ne_dict) == 0:
-		ne_dict["NONE"] = []
+	#for frame_length in range(6,0,-1): 
+	#	these_frames = frames(split_text, frame_length)
+	#	
+	#	labels.append([ne_type, start, end, match])
 	
-	return (ne_dict, new_sentence)
+	for word_and_index in split_text:
+		for ne_type in named_entities:
+			word = word_and_index[1]
+			if clean(word) in named_entities[ne_type]:
+				start = word_and_index[0]
+				end = word_and_index[2]
+				labels.append([ne_type, start, end, word])
+		
+	#Labels need to be sorted by starting character
+	sortedlabels = sorted(labels, key=itemgetter(1))
+	labels = sortedlabels
+	
+	return labels
 		
 def parse_training_text(tfile):
 	'''
@@ -1095,7 +1078,33 @@ def parse_args():
 		sys.exit(parser.print_help())
 	
 	return args
+
+def setup_labeledfiledir(named_entities):
+	#Prepares configuration documents for BRAT format NER label files.
+	ann_conf_filename = "annotation.conf"
+	vis_conf_filename = "visual.conf"
 	
+	#Set up entity names
+	if not os.path.isfile(ann_conf_filename):
+		with open(ann_conf_filename, 'w') as outfile:
+			outfile.write("[entities]\n\n")
+			for ne in named_entities:
+				outfile.write("%s\n" % ne)
+			outfile.write("\n")
+			outfile.write("[attributes]\n\n") #These are just placeholders for now
+			outfile.write("[relations]\n\n")
+			outfile.write("[events]\n\n")
+	
+	#Set up visual properties for labels		
+	if not os.path.isfile(vis_conf_filename):
+		with open(vis_conf_filename, 'w') as outfile:
+			outfile.write("[labels]\n\n")
+			for ne in named_entities:
+				outfile.write("%s\n" % ne)
+			outfile.write("[drawing]\n\n")
+			for ne in named_entities:
+				outfile.write("%s fgColor:black, bgColor:#00d87a, borderColor:darken\n" % ne)
+
 #Main
 def main():
 	
@@ -1774,7 +1783,7 @@ def main():
 					sys.stdout.write("#")
 	
 	#Labeling sentences within the matching records
-	#using the read_sentence function
+	#using the label_this_text function
 	print("\nTagging entities within results...")
 	
 	#Progbar setup
@@ -1794,7 +1803,7 @@ def main():
 	for record in matching_ann_records:
 		labeled_record = {}
 		labeled_record['TI'] = "NO TITLE"
-		labeled_record['labstract'] = [["NO ABSTRACT",["NONE"]]]
+		labeled_record['labstract'] = {'text':"NO ABSTRACT",'labels':[["NONE"]]}
 		for field in record:
 			if field == 'TI':
 				labeled_record['TI'] = record[field]
@@ -1802,17 +1811,9 @@ def main():
 				labeled_record['PMID'] = record[field]
 			if field == 'AB':
 				abstract = record[field]
-				labeled_abstract = []
-				try:
-					sentence_list = sent_tokenize(abstract)
-				except UnicodeDecodeError:
-					abstract = abstract.decode('utf8')
-					abstract = abstract.encode('ascii','ignore')
-					sentence_list = sent_tokenize(abstract)
-					
-				for sentence in sentence_list:
-					lsentence = read_sentence(sentence)
-					labeled_abstract.append(lsentence)
+				labeled_abstract = {'text':"",'labels':[]}
+				labeled_abstract['text'] = abstract
+				labeled_abstract['labels'] = label_this_text(abstract)
 				
 				labeled_record['labstract'] = labeled_abstract
 			
@@ -1828,33 +1829,50 @@ def main():
 			if j % 1000 == 0:
 				sys.stdout.write("#")
 			
-	#Writing abstract with labeled entities to files
+	#Writing abstracts with labeled entities to files
+	#both as one file with all labels
+	#and as one file per document, with labels in BRAT format
 	
-	print("\nWriting raw entities found in abstracts...")
+	print("\nWriting raw entities and text found in abstracts...")
 	
 	with open(raw_ne_outfilename, 'w') as outfile:
 		for record in labeled_ann_records:
 			
 			outfile.write("%s\n" % record['TI'])
 			outfile.write("%s\n" % record['PMID'])
-			for lsentence in record['labstract']:
-				ne = str(lsentence[0])
-				outfile.write("%s\n" % ne)
-			
+			outfile.write(str(record['labstract']))
 			outfile.write("\n\n")
-			
-	print("\nWriting text with labeled entities for matching records...")
 	
-	with open(labeled_outfilename, 'w') as outfile:
-		for record in labeled_ann_records:
+	print("\nWriting text with NER labels in BRAT format...")
+	
+	labeled_filedir = "brat"
+	
+	if not os.path.isdir(labeled_filedir):
+		os.mkdir(labeled_filedir)
+	os.chdir(labeled_filedir)
+	
+	setup_labeledfiledir(named_entities)
+	
+	for record in labeled_ann_records:
+		
+		txt_outfilename = "%s.txt" % record['PMID']
+		with open(txt_outfilename, 'w') as outfile:
+			labeled_abstract = record['labstract']
+			outfile.write(labeled_abstract['text'])
 			
-			outfile.write("%s\n" % record['TI'])
-			outfile.write("%s\n" % record['PMID'])
-			for lsentence in record['labstract']:
-				sentence = lsentence[1]
-				outfile.write("%s\n" % sentence)
-			
-			outfile.write("\n\n")
+		ann_outfilename = "%s.ann" % record['PMID']
+		with open(ann_outfilename, 'w') as outfile:
+			i = 1
+			for label in record['labstract']['labels']:
+				label_name = label[0]
+				if label_name != "NONE":
+					start = label[1]
+					end = label[2]
+					text = label[3]
+					outfile.write("T%s\t%s\t%s\t%s\t%s\n" % (i, label_name, start, end, text))
+					i = i+1
+				
+	os.chdir("..")
 	
 	if record_count > 0:
 		
@@ -1892,10 +1910,10 @@ def main():
 	print("\nDone - see the following files in the output folder:\n"
 			"%s for the full matching records with MEDLINE headings,\n"
 			"%s for raw entities found in abstracts,\n"
-			"%s for entity-labeled abstract sentences, and\n"
+			"%s directory for labeled documents in BRAT format, and\n"
 			"%s for plots." %
 			(outfilename, raw_ne_outfilename, 
-			labeled_outfilename, viz_outfilename))
+			labeled_filedir, viz_outfilename))
 	
 if __name__ == "__main__":
 	sys.exit(main())
