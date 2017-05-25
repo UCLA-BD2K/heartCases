@@ -619,7 +619,7 @@ def label_this_text(text):
 	for char in text:
 		word = word + char
 		if char in [" ","\n"]:
-			split_text.append([i, word, i + (len(word)-1)])
+			split_text.append([i - (len(word) - 1) , word, i])
 			word = ""
 		i = i+1
 	
@@ -1869,7 +1869,7 @@ def main():
 					start = label[1]
 					end = label[2]
 					text = label[3]
-					outfile.write("T%s\t%s\t%s\t%s\t%s\n" % (i, label_name, start, end, text))
+					outfile.write("T%s\t%s %s %s\t%s\n" % (i, label_name, start, end, text))
 					i = i+1
 				
 	os.chdir("..")
