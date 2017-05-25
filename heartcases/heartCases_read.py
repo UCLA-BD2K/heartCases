@@ -608,18 +608,30 @@ def label_this_text(text, verbose=False):
 	
 	t0 = time.time()
 	
-	#Manually split text in order to preserve index
+	#Manually split and has text to get index of word start and end
 	split_text = []
+	hash_text = {}
 	i = 0
-	word = ""
-	endi = len(text) -1
 	for char in text:
-		word = word + char
-		if char in [" ","\n"] or i == endi:
-			split_text.append([i - (len(word) - 1) , word, i])
-			word = ""
+		hash_text[i] = char
 		i = i+1
-		
+	
+	word = ""
+	start = 0
+	for index in hash_text:
+		if hash_text[index] in [" ","\n"]:
+			end = index
+			split_text.append([start, word, end])
+			word = ""
+			start = index +1
+		elif hash_text[index] in [",","."]:
+			end = index
+			split_text.append([start, word, end])
+			word = ""
+			start = index +2
+		else:
+			word = word + hash_text[index]
+	
 	string_word_count = len(split_text)
 	
 	#Now add frames for n-grams
@@ -669,7 +681,6 @@ def label_this_text(text, verbose=False):
 	
 	t1 = time.time()
 	totaltime = t1 - t0
-	
 	
 	if verbose:
 		print("Labeled text of %s words and %s tokens with %s labels in %.2f sec."
