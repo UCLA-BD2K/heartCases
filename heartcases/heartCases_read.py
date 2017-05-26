@@ -597,71 +597,97 @@ def label_this_text(text, verbose=False):
 	
 	If no entities are found then the list is [["NONE",0,0,"NA"]].
 
-	Finds entities up to 6 words long.
-	Because it uses a sliding window to search, also extracts phrases,
-	so the lists will include phrases like 
-	"of atrioventricular nodal reentrant tachycardia"
-	even if just "tachycardia" was found.
+	Labels terms up to n words long, without splitting terms
+	across punctuation.
+	
+	Stopwords are not included unless they are within an n-gram,
+	e.g. "inflammation of the esophagus" is OK but "inflammation of"
+	is not.
 	'''
 	
+	stopword_set = set(stopwords.words('english'))
+	
+	n = 6
+	
+	split_text = [] 
 	labels = []
+	
+	string_word_count = len(text.split())
 	
 	t0 = time.time()
 	
-	#Manually split and has text to get index of word start and end
-	split_text = []
-	hash_text = {}
+	'''
+	Populate split_text with lists, where each list is a n-gram
+	of size between 1 and n, inclusive,
+	and the start and end indices of the n-gram,
+	 of the form [start, n_gram, end].
+	Note that start is the first character index
+	and end is the index after the final character.
+	'''
+	
+	#Get single terms first
 	i = 0
-	for char in text:
-		hash_text[i] = char
-		i = i+1
-	
-	#Add single terms
-	word = ""
 	start = 0
-	for index in hash_text:
-		if hash_text[index] in [" ","\n"]:
-			end = index
-			split_text.append([start, word, end])
+	end = 0
+	word = ""
+	for char in text:
+		if char in [" ","\n",",",".",";"]:
+			end = i
+			if len(word) > 0 and word.lower() not in stopword_set:
+				split_text.append([start,word,end])
 			word = ""
-			start = index +1
-		elif hash_text[index] in [",",".",";"]:
-			end = index
-			split_text.append([start, word, end])
-			word = ""
-			start = index +2
+			start = i+1
 		else:
-			word = word + hash_text[index]
-	
-	string_word_count = len(split_text)
-	
-	##Add n_grams
-	#word = ""
-	#start = 0
-	#for index in hash_text:
-		#if hash_text[index] in [" ","\n"]:
-			#end = index
-			#split_text.append([start, word, end])
-			#word = ""
-			#start = index +1
-		#elif hash_text[index] in [",",".",";"]:
-			#end = index
-			#split_text.append([start, word, end])
-			#word = ""
-			#start = index +2
-		#else:
-			#word = word + hash_text[index]
+			word = word + char
+			
+		i = i+1
+		
+	#Continue with n-grams where n>1
+	for ngram_size in range(2,n+1):
+		i = 0
+		start = 0
+		end = 0
+		ngram = []
+		word = ""
+		for char in text:
+			if char in ["\n",",",".",";"]:
+				ngram = []
+				word = ""
+				start = i+1
+			elif char in [" "]:
+				ngram.append(word)
+				word = ""
+				if len(ngram) == ngram_size:
+					end = i
+					ngram_string = " ".join(ngram)
+					start = i - len(ngram_string)
+					if ngram[0].lower() not in stopword_set:
+						if ngram[-1].lower() not in stopword_set:
+							split_text.append([start,ngram_string,end])
+					del ngram[0]
+			else:
+				word = word + char
+				
+			i = i+1
 	
 	#Now add labels from named_entities set
-	for word_and_index in split_text:
-		for ne_type in named_entities:
-			word = word_and_index[1]
-			if clean(word) in named_entities[ne_type]:
-				start = word_and_index[0]
-				end = word_and_index[2]
-				labels.append([ne_type, start, end, word])
+	#Ignore functionally identical labels in the same local area
+	#That is, those matching the same single entity and entitiy type
+	for ne_type in named_entities:
+		local_start = 0
+		local_end = 0
 		
-	#Labels need to be sorted by starting character
+		for ngram_and_index in split_text:
+		
+			ngram = ngram_and_index[1]
+			clean_ngram = clean(ngram)
+			
+			if clean_ngram in named_entities[ne_type]:
+				start = ngram_and_index[0]
+				end = ngram_and_index[2]
+				labels.append([ne_type, start, end, ngram])
+
+	#Labels are sorted by starting character
 	sortedlabels = sorted(labels, key=itemgetter(1))
 	labels = sortedlabels
 	
@@ -1120,15 +1146,27 @@ def setup_labeledfiledir(named_entities):
 			outfile.write("[relations]\n\n")
 			outfile.write("[events]\n\n")
 	
-	#Set up visual properties for labels		
+	#Set up visual properties for labels
+	#Assigns random colors for now just to distinguish	
+	ne_label_colors = {}
+	for ne in named_entities:
+		bgColor = ('#%06X' % random.randint(0,256**3-1))
+		ne_label_colors[ne] = {"fgColor":"black", 
+									"bgColor":bgColor, 
+									"borderColor":"darken"}
+							
 	if not os.path.isfile(vis_conf_filename):
 		with open(vis_conf_filename, 'w') as outfile:
 			outfile.write("[labels]\n\n")
 			for ne in named_entities:
 				outfile.write("%s\n" % ne)
-			outfile.write("[drawing]\n\n")
-			for ne in named_entities:
-				outfile.write("%s fgColor:black, bgColor:#00d87a, borderColor:darken\n" % ne)
+			outfile.write("\n\n[drawing]\n\n")
+			for ne in ne_label_colors:
+				outfile.write("%s fgColor:%s, bgColor:%s, borderColor:%s\n" 
+								% (ne, 
+									ne_label_colors[ne]["fgColor"],
+									ne_label_colors[ne]["bgColor"],
+									ne_label_colors[ne]["borderColor"]))
 
 #Main
 def main():
