@@ -1522,15 +1522,15 @@ def main():
 								all_terms_in_matched[term] = all_terms_in_matched[term] +1
 						
 						'''
-						Save 90 percent of matching abstracts to 
+						Save 80 percent of matching abstracts to 
 						training files in the folder "training_text" and
-						10 percent of matching abstracts to testing
+						20 percent of matching abstracts to testing
 						files in the folder "training_test_text".
 						 Each file in these folders is one set of 
 						 training text from one abstract. Each line of 
 						 each file is one set of MeSH terms separated 
-						 by |. The terms are followed by a tab and 
-						 then the full abstract text.
+						 by |. The terms are followed by a tab, 
+						 the full abstract text, and the PMID.
 						 
 						 If train_on_target is True,
 						 these files are only those containing matching
@@ -1554,7 +1554,7 @@ def main():
 						if have_abst == 1:
 							#Doesn't include newly-added abstracts yet
 							
-							if ti % 10 == 0:
+							if ti % 5 == 0:
 								save_train_or_test_text(these_clean_mesh_terms,
 													record['TI'],
 													record['AB'],
@@ -1625,8 +1625,11 @@ def main():
 	#Denote newly-added terms with ^
 
 	matching_ann_records = []
-
-	print("\nAdding new terms and codes to records.")
+	
+	if matching_orig_records > 0:
+		print("\nAdding new terms and codes to records.")
+	else:
+		sys.exit("\nNo matching records found in the input.")
 	if len(matching_orig_records) > 10000:
 		print("This may take a while.")
 	
