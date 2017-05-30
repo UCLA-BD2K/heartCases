@@ -71,7 +71,9 @@ mesh_topic_tree = { "A07":["025","030","035","037","040","045","231","500","541"
 	#Corresponds to MeSH ontology codes.
 	#See MN headings in the ontology file.
 	#e.g. a heading of C14 and codes of 240 and 280 will include all
-	#terms under C14 (Cardiovascular Diseases) and two of the subheadings. 
+	#terms under C14 (Cardiovascular Diseases) and two of the subheadings.
+	#This set of terms is still used for term labeling if a custom MeSH 
+	#search term list is provided.
 
 named_entities = {}
 	#Dict of named entities with entity types as keys and sets
@@ -469,6 +471,18 @@ def get_medline_from_pubmed(pmid_list):
 		sys.stdout.write(".")
 		
 	return outfilepath
+
+def get_mesh_terms(terms_list):
+	#Given a file containing a list of MeSH terms, one per line.
+	#Returns a list of terms. Pretty simple.
+	
+	terms = []
+	
+	with open(terms_list) as infile:
+		for line in infile:
+			terms.append((line.rstrip()).lower())
+	
+	return terms
 	
 def medline_parse(medline):
 	#Parses a MEDLINE file by heading
@@ -1117,8 +1131,11 @@ def parse_args():
 	parser.add_argument('--inputfile', help="name of a text file containing "
 						"MEDLINE records")
 	parser.add_argument('--pmids', help="name of a text file containing "
-						"a list of PubMed IDs to retrieve MEDLINE "
-						"records for")
+						"a list of PubMed IDs, one per line, to retrieve "
+						"MEDLINE records for")
+	parser.add_argument('--terms', help="name of a text file containing "
+						"a list of MeSH terms, one per line, to search for. "
+						"Will also search titles for terms")
 	parser.add_argument('--testing', help="if FALSE, do not test classifiers")
 	parser.add_argument('--recordlimit', help="The maximum number of records to search")
 	parser.add_argument('--verbose', help="if TRUE, provide verbose output")
@@ -1258,9 +1275,23 @@ def main():
 			"across %s categories." % \
 			(unique_term_count, synonym_count, len(mo_cats)))
 	
-	print("Loaded %s topic-relevant terms + synonyms." % \
+	#Check if custom MeSH search term list was provided.
+	#If so, just search for these
+	#Otherwise, just use CVD-specific MeSH terms produced above
+	#to filter for on-topic documents.
+	if args.terms:
+		terms_file = str(args.terms)
+		print("Using MeSH terms in the following file to search records: "
+				"%s" % terms_file)
+		custom_mesh_terms = get_mesh_terms(terms_file)
+		have_custom_terms = True
+		print("File contains %s terms." % len(custom_mesh_terms))
+	else:
+		print("Searching documents using all domain-related terms.")
+		print("List includes %s topic-relevant terms + synonyms." % \
 			(len(mesh_term_list)))
-			
+		have_custom_terms = False
+		
 	print("Building MeSH ID to ICD-10 dictionary using Disease Ontology.")
 	#Build the MeSH to ICD-10 dictionary
 	do_ids, do_xrefs_icd10, do_xrefs_terms = \
@@ -1288,13 +1319,6 @@ def main():
 	for ne_type in named_entities:
 		print("%s %s" % (str(ne_type).ljust(30, ' '),
 						len(named_entities[ne_type])))
-	
-	#Process CVD-specific MeSH terms produced above
-	#These will be used to filter for on-topic documents.
-	print("Processing topic-relevant terms.")
-	domain_word_list = []
-	for term in mesh_term_list:
-		domain_word_list.append(clean(term))
 	
 	#Check if PMID list was provided.
 	#If so, download records for all of them.
@@ -1391,8 +1415,13 @@ def main():
 					except KeyError:
 						split_title = ["NA"]
 					
-					for word in domain_word_list:
-						if word in split_title:
+					if have_custom_terms:
+						search_term_list = custom_mesh_terms
+					else:
+						search_term_list = mesh_term_list
+						
+					for word in search_term_list:
+						if clean(word) in split_title:
 							found = 1
 							break
 					
@@ -1431,7 +1460,7 @@ def main():
 					
 					#Check for matching MeSH terms and other terms
 					if found == 0:
-						for term in mesh_term_list:
+						for term in search_term_list:
 							if term in these_clean_mesh_terms:
 								found = 1
 								if term not in matched_mesh_terms:
@@ -1507,6 +1536,10 @@ def main():
 						 these files are only those containing matching
 						 *MeSH terms* specifically and *only* those
 						 terms will be used as labels.
+						 
+						 Otherwise, ALL MeSH terms will be used to
+						 train the classifier. This gets very large
+						 and unwieldy very quickly.
 						 
 						'''
 						if train_on_target:
