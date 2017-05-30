@@ -179,15 +179,13 @@ def find_more_record_text(rec_ids):
 			
 			records = medline_parse(open(outfilename))
 			
-			
-			
 			for record in records:
 				if 'AB' in record.keys() and 'PMID' in record.keys():
 					pmid = record['PMID']
 					ab = record['AB']
 					newtext_dict[pmid] = ab 
 	
-			print("Retrieved %s new abstracts from PubMed Central." \
+			print("\nRetrieved %s new abstracts from PubMed Central." \
 					% len(newtext_dict))
 			
 			return newtext_dict
@@ -200,6 +198,95 @@ def find_more_record_text(rec_ids):
 				" PMC IDs already have abstracts.")
 	
 	os.chdir("..")
+	
+def find_citation_counts(pmids):
+	#Given a list of PMIDs, return counts of PMC citation counts
+	#(e.g., 150 documents have 0 citations, 20 documents have 1, etc.)
+	#Also produces a file containing one PMID and its corresponding
+	#citation count per line.
+	
+	#This list may be long, so makes a POST to the History server first.
+	
+	counts = {}
+
+	baseURL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
+	epost = "epost.fcgi"
+	esummary = "esummary.fcgi?db=pubmed"
+	esummary_options = "&usehistory=y&retmode=xml&version=2.0"
+	
+	outfiledir = "output"
+	outfilename = "citation_counts.txt"
+	
+	if not os.path.isdir(outfiledir):
+		os.mkdir(outfiledir)
+	os.chdir(outfiledir)
+	
+	if len(pmids) > 0:
+		
+		try:
+			#POST using epost first, with all PMIDs
+			idstring = ",".join(pmids)
+			queryURL = baseURL + epost
+			args = urllib.urlencode({"db":"pubmed","id":idstring})
+			response = urllib2.urlopen(queryURL, args)
+			
+			response_text = (response.read()).splitlines()
+			
+			webenv_value = (response_text[3].strip())[8:-9]
+			webenv = "&WebEnv=" + webenv_value
+			querykey_value = (response_text[2].strip())[10:-11]
+			querykey = "&query_key=" + querykey_value
+			
+			batch_size = 500
+			
+			i = 0
+			while i <= len(pmids):
+				retstart = "&retstart=" + str(i)
+				retmax = "&retmax=" + str(i + batch_size)
+				queryURL = baseURL + esummary + querykey + webenv \
+							+ retstart + retmax + esummary_options
+				
+				response = urllib2.urlopen(queryURL)
+				
+				out_file = open(outfilename, "a+")
+				chunk = 1048576
+				while 1:
+					data = (response.read(chunk)) #Read one Mb at a time
+					out_file.write(data)
+					if not data:
+						break
+					sys.stdout.flush()
+					sys.stdout.write(".")
+					
+				i = i + batch_size
+				
+			#Now that the file is complete, parse it and get the counts
+			out_file.seek(0)
+			for line in out_file:
+				if not line.strip():
+					continue
+				splitline = line.split("<")
+				if splitline[1][0:12] == "PmcRefCount>":
+					this_count = str(splitline[1][12])
+					if this_count not in counts:
+						counts[this_count] = 1
+					else:
+						counts[this_count] = counts[this_count] + 1
+						
+			out_file.close()
+			
+			print("\nRetrieved citation counts for %s records." \
+					% len(pmids))
+		
+		except urllib2.HTTPError as e:
+			print("Couldn't complete PubMed search: %s" % e)
+	
+	else:
+		print("No IDs provided to find citation counts for.")
+	
+	os.chdir("..")
+	
+	return counts, outfilename
 		
 def get_data_files(name):
 	#Retrieves one of the following:
@@ -471,7 +558,7 @@ def get_medline_from_pubmed(pmid_list):
 		sys.stdout.write(".")
 		
 	return outfilepath
-
+	
 def get_mesh_terms(terms_list):
 	#Given a file containing a list of MeSH terms, one per line.
 	#Returns a list of terms. Pretty simple.
@@ -1136,6 +1223,8 @@ def parse_args():
 	parser.add_argument('--terms', help="name of a text file containing "
 						"a list of MeSH terms, one per line, to search for. "
 						"Will also search titles for terms")
+	parser.add_argument('--citation_counts', help="if TRUE, retrieve "
+						"citation counts for matching records")
 	parser.add_argument('--testing', help="if FALSE, do not test classifiers")
 	parser.add_argument('--recordlimit', help="The maximum number of records to search")
 	parser.add_argument('--verbose', help="if TRUE, provide verbose output")
@@ -1143,7 +1232,7 @@ def parse_args():
 	try:
 		args = parser.parse_args()
 	except:
-		sys.exit(parser.print_help())
+		sys.exit()
 	
 	return args
 
@@ -1197,8 +1286,13 @@ def main():
 	matched_mesh_terms = {} #Keys are terms, values are counts
 	matched_journals = {} #Keys are journal titles, values are counts
 	matched_years = {} #Keys are years, values are counts
+	citation_counts = {} #Keys are citation counts (where 0 is no
+							#citations, 1 is 1 citation, etc)
+							#and values are counts of that citation count
 	all_terms_in_matched = {} #Counts of all MeSH terms in matched records
 								#Keys are terms, values are counts
+	all_pmids = []		#A list of all PMIDs in matched records
+						#Used to look up summary details from Pubmed
 	fetch_rec_ids = {} #A dict of record IDs for those records
 						#to be searched for additional text retrieval
 						#PMIDs are keys, PMC IDs are values
@@ -1214,6 +1308,11 @@ def main():
 	if args.verbose:
 		if args.verbose == "TRUE":
 			verbose = True
+			
+	get_citation_counts = False
+	if args.citation_counts:
+		if args.citation_counts == "TRUE":
+			get_citation_counts = True
 			
 	#Get the disease ontology file if it isn't present
 	disease_ofile_list = glob.glob('doid.*')
@@ -1489,14 +1588,20 @@ def main():
 						else:
 							matched_years[pubyear] = matched_years[pubyear] +1
 						
+						#Get the Pubmed ID
+						pmid = record['PMID']
+						all_pmids.append(pmid)
+						
 						#Check if there's an abstract
 						#and ensure it's not too short - very short
 						#abstracts are not informative for the classifier.
+						#If there's no abstract, store PMC ID for this 
+						#so we may retrieve abstract from there, if
+						#possible
 						if 'AB' in record.keys() and len(record['AB']) > abst_len_cutoff:
 							abstract_count = abstract_count +1
 							have_abst = 1
-						else: #add IDs for this 
-							pmid = record['PMID']
+						else: 
 							if 'PMC' in record.keys():
 								pmc_id = record['PMC']
 								fetch_rec_ids[pmid] = pmc_id
@@ -1578,6 +1683,8 @@ def main():
 	
 	have_new_abstracts = False
 	
+	#Retrieve additional abstracts from PMC for all PMC IDs
+	#Note that only a subset of records will have PMC IDs
 	if len(fetch_rec_ids) > 0:
 		print("\nFinding additional abstract text for records.")
 		new_abstracts = find_more_record_text(fetch_rec_ids)
@@ -1598,6 +1705,10 @@ def main():
 			"(%s abstracts retrieved from additional sources.)"
 			% (record_count, match_record_count, abstract_count,
 				new_abstract_count))
+				
+	if get_citation_counts:
+		print("\nFinding citation counts.")
+		citation_counts, citation_count_filename = find_citation_counts(all_pmids)
 	
 	#MeSH terms are often incomplete, so here they are used
 	#to train a classifier and identify associations
@@ -1630,8 +1741,12 @@ def main():
 		print("\nAdding new terms and codes to records.")
 	else:
 		sys.exit("\nNo matching records found in the input.")
+		
 	if len(matching_orig_records) > 10000:
 		print("This may take a while.")
+		
+	if get_citation_counts:
+		print("Will also retrieve citation counts for matched records.")
 	
 	#Progbar setup
 	if not verbose:
@@ -1987,6 +2102,9 @@ def main():
 						"Most records are from these journals": matched_journals, 
 						"Most records were published in these years": matched_years,
 						"Most frequently used material codes": rn_codes}
+		
+		if get_citation_counts:
+			all_matches["Citation counts"] = citation_counts
 						
 		plot_those_counts(counts, all_matches, viz_outfilename)
 		
@@ -2013,6 +2131,9 @@ def main():
 			"%s for plots." %
 			(outfilename, raw_ne_outfilename, 
 			labeled_filedir, viz_outfilename))
+	
+	if get_citation_counts:
+		("\nSee %s for PMIDs and citation counts." % citation_count_filename)
 	
 if __name__ == "__main__":
 	sys.exit(main())
