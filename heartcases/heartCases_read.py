@@ -188,26 +188,31 @@ def find_more_record_text(rec_ids):
 			print("\nRetrieved %s new abstracts from PubMed Central." \
 					% len(newtext_dict))
 			
+			os.chdir("..")
+			
 			return newtext_dict
 		
 		except urllib2.HTTPError as e:
 			print("Couldn't complete PubMed Central search: %s" % e)
+			os.chdir("..")
 	
 	else:
 		print("No PubMed Central IDs found and/or all records with" \
 				" PMC IDs already have abstracts.")
-	
-	os.chdir("..")
+		os.chdir("..")
 	
 def find_citation_counts(pmids):
 	#Given a list of PMIDs, return counts of PMC citation counts
 	#(e.g., 150 documents have 0 citations, 20 documents have 1, etc.)
-	#Also produces a file containing one PMID and its corresponding
+	#Also produces two files:
+	#the raw output of the Pubmed search in XML 
+	#and a file containing one PMID and its corresponding
 	#citation count per line.
 	
 	#This list may be long, so makes a POST to the History server first.
 	
-	counts = {}
+	counts = {} #Counts of citation counts
+	counts_by_pmid = {} #Citation counts for each PMID (IDs are keys)
 
 	baseURL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 	epost = "epost.fcgi"
@@ -215,7 +220,8 @@ def find_citation_counts(pmids):
 	esummary_options = "&usehistory=y&retmode=xml&version=2.0"
 	
 	outfiledir = "output"
-	outfilename = "citation_counts.txt"
+	outfilename = "searched_documents.xml"
+	countsfilename = "citation_counts.tsv"
 	
 	if not os.path.isdir(outfiledir):
 		os.mkdir(outfiledir)
@@ -266,14 +272,24 @@ def find_citation_counts(pmids):
 				if not line.strip():
 					continue
 				splitline = line.split("<")
+				if splitline[1][0:19] == "DocumentSummary uid":
+					this_pmid = str((splitline[1].split("\""))[1])
 				if splitline[1][0:12] == "PmcRefCount>":
 					this_count = str(splitline[1][12])
 					if this_count not in counts:
 						counts[this_count] = 1
 					else:
 						counts[this_count] = counts[this_count] + 1
+					
+					counts_by_pmid[this_pmid] = this_count
 						
 			out_file.close()
+			
+			#Write the counts to file, too
+			with open(countsfilename, 'wb') as countsfile:
+				for pmid in counts_by_pmid:
+					outstring = "%s\t%s\n" % (pmid, counts_by_pmid[pmid])
+					countsfile.write(outstring)
 			
 			print("\nRetrieved citation counts for %s records." \
 					% len(pmids))
@@ -955,6 +971,9 @@ def mesh_classification(testing):
 		if X_train_size > 10000:
 			print("NOTE: This is a large set and may take a while.")
 			
+		if X_train_size < 5:
+			sys.exit("Not enough abstracts to train classifier. Exiting...")
+			
 		t1 = time.time()
 		'''
 		This is a scikit-learn pipeline of:
@@ -992,7 +1011,11 @@ def mesh_classification(testing):
 			X_test_pre.append(clean_text)
 			test_labels.append(item[0])
 			pmids.append(item[2])
-			
+		
+		X_test_size = len(X_test_pre)
+		if X_test_size < 5:
+			sys.exit("Not enough abstracts to test classifier. Exiting...")
+		
 		X_test = np.array(X_test_pre)
 		
 		predicted = classifier.predict(X_test)
@@ -1518,12 +1541,13 @@ def main():
 						search_term_list = custom_mesh_terms
 					else:
 						search_term_list = mesh_term_list
-						
+					
 					for word in search_term_list:
 						if word in split_title:
 							found = 1
 							break
-					
+						#May raise UnicodeWarnings sometimes
+
 					these_mesh_terms = []
 					these_other_terms = []
 					try:	
@@ -1693,7 +1717,7 @@ def main():
 			have_new_abstracts = True
 		except TypeError:
 			print("Found no new abstracts.")
-
+			
 	#Really, new abstracts should get added earlier so they can be used
 	#as part of the classifier, but mostly we need them for
 	#term expansion
@@ -1705,7 +1729,7 @@ def main():
 			"(%s abstracts retrieved from additional sources.)"
 			% (record_count, match_record_count, abstract_count,
 				new_abstract_count))
-				
+	
 	if get_citation_counts:
 		print("\nFinding citation counts.")
 		citation_counts, citation_count_filename = find_citation_counts(all_pmids)
