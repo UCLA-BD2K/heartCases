@@ -1364,6 +1364,9 @@ def main():
 	else:
 		record_count_cutoff = 9999999
 	
+	if get_citation_counts:
+		print("Will retrieve citation counts for matched records.")
+	
 	ti = 0
 	
 	matching_orig_records = []
@@ -1667,9 +1670,6 @@ def main():
 		
 	if len(matching_orig_records) > 10000:
 		print("This may take a while.")
-		
-	if get_citation_counts:
-		print("Will also retrieve citation counts for matched records.")
 	
 	#Progbar setup
 	if not verbose:

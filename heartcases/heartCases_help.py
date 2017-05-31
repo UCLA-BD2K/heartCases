@@ -83,11 +83,11 @@ def find_citation_counts(pmids):
 					continue
 				splitline = line.split("<")
 				if splitline[1][0:19] == "DocumentSummary uid":
-					this_pmid = str((splitline[1].split("\""))[1])
+					this_pmid = (splitline[1].split("\""))[1]
 				if splitline[1][0:7] == "Source>":
-					this_pub = str((splitline[1].split(">"))[1])
+					this_pub = (splitline[1].split(">"))[1]
 				if splitline[1][0:12] == "PmcRefCount>":
-					this_count = str(splitline[1][12])
+					this_count = (splitline[1].split(">"))[1]
 					counts_by_pmid[this_pmid] = (this_count, this_pub)
 						
 			out_file.close()
