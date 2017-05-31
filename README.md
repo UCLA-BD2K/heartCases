@@ -10,7 +10,7 @@ This system includes several different modules.
 This part of the system is intended for parsing MEDLINE format files and specifically isolating those relevant to cardiovascular disease (CVD).
 
 This script attempts to expand on existing MeSH annotations by performing tag classification with MeSH terms and adding terms to records where appropriate. These terms can optionally include just those used to search records (e.g., if only terms related to heart disease are provided, a classifier will be trained only to add those terms when missing.)
-Similar approaches have been employed by [Huang et al. (2011) JAMIA. (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3168302/) (Huang et al. used a k-nearest neighbors approach to get related articles and their highest-ranking MeSH terms. They achieved ~71% recall on average.)
+Similar approaches have been employed by [Huang et al. (2011) JAMIA.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3168302/) (Huang et al. used a k-nearest neighbors approach to get related articles and their highest-ranking MeSH terms. They achieved ~71% recall on average.)
 
 Both previously present and newly added annotations are used to further annotate records with relevant ICD-10 disease codes.
 
@@ -35,6 +35,8 @@ The three data sets listed above are downloaded if not present locally.
 ### Usage
 Run as:
 `python heartCases_read.py`
+
+Run with the `-h` option to see additional arguments.
 
 #### Input
 Text files containing literature references in MEDLINE format.
@@ -62,7 +64,11 @@ and one of the following:
 * _raw_ne.txt - all document titles, PMIDs, and the raw dictionary
 	of abstract text and NER labels (labels include entity types and locations).
 
-Output is also provided in BRAT-compatible format in the "brat" folder within "output". Each abstract text is provided as [PMID].txt, while annotations are provided in [PMID].ann. The corresponding annotation.conf and visual.conf files are also generated.
+Output of labeled abstracts is also provided in BRAT-compatible format in the "brat" folder within "output". Each abstract text is provided as [PMID].txt, while annotations are provided in [PMID].ann. The corresponding annotation.conf and visual.conf files are also generated.
+
+Named entities used for abstract labeling are written to the file NE_dump.tsv.
+
+Citation counts, if requested using the argument `--citation_counts TRUE`, are provided in citation_counts.tsv (as one record per line, including PMID, PMC citation count, and publication name) and in searched_documents.xml (including the raw XML record source of citation counts, as provided by PubMed).
 
 ## heartCases_learn.py
 
