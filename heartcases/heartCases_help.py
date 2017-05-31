@@ -93,14 +93,25 @@ def find_citation_counts(pmids):
 			out_file.close()
 			
 			#Get counts of counts
+			#Discretize to make counts more informative
 			#Write the counts to file, too
 			with open(countsfilename, 'wb') as countsfile:
 				for pmid in counts_by_pmid:
-					count_num = counts_by_pmid[pmid][0]
+					count_num = int(counts_by_pmid[pmid][0])
+
+					if count_num == 0:
+						count_num_str = str(count_num)
+					elif count_num in [1,2,3,4,5]:
+						count_num_str = "1-5"
+					elif count_num in [6,7,8,9,10]:
+						count_num_str = "6-10"
+					elif count_num > 10:
+						count_num_str = ">10"
+					
 					pub_name = counts_by_pmid[pmid][1]
 					outstring = "%s\t%s\t%s\n" % (pmid, count_num, pub_name)
 					countsfile.write(outstring)
-					count_num_str = str(count_num)
+					
 					if count_num_str not in counts:
 						counts[count_num_str] = 1
 					else:
@@ -117,4 +128,4 @@ def find_citation_counts(pmids):
 	
 	os.chdir("..")
 	
-	return counts, outfilename
+	return counts, countsfilename
