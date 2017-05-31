@@ -206,13 +206,14 @@ def find_citation_counts(pmids):
 	#(e.g., 150 documents have 0 citations, 20 documents have 1, etc.)
 	#Also produces two files:
 	#the raw output of the Pubmed search in XML 
-	#and a file containing one PMID and its corresponding
-	#citation count per line.
+	#and a file containing a PMID, its corresponding
+	#citation count, and its publication, one per line.
 	
 	#This list may be long, so makes a POST to the History server first.
 	
 	counts = {} #Counts of citation counts
-	counts_by_pmid = {} #Citation counts for each PMID (IDs are keys)
+	counts_by_pmid = {} #Citation counts and pubs for each PMID 
+						#(IDs are keys)
 
 	baseURL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 	epost = "epost.fcgi"
@@ -274,22 +275,27 @@ def find_citation_counts(pmids):
 				splitline = line.split("<")
 				if splitline[1][0:19] == "DocumentSummary uid":
 					this_pmid = str((splitline[1].split("\""))[1])
+				if splitline[1][0:7] == "Source>":
+					this_pub = str((splitline[1].split(">"))[1])
 				if splitline[1][0:12] == "PmcRefCount>":
 					this_count = str(splitline[1][12])
-					if this_count not in counts:
-						counts[this_count] = 1
-					else:
-						counts[this_count] = counts[this_count] + 1
-					
-					counts_by_pmid[this_pmid] = this_count
+					counts_by_pmid[this_pmid] = (this_count, this_pub)
 						
 			out_file.close()
 			
+			#Get counts of counts
 			#Write the counts to file, too
 			with open(countsfilename, 'wb') as countsfile:
 				for pmid in counts_by_pmid:
-					outstring = "%s\t%s\n" % (pmid, counts_by_pmid[pmid])
+					count_num = counts_by_pmid[pmid][0]
+					pub_name = counts_by_pmid[pmid][1]
+					outstring = "%s\t%s\t%s\n" % (pmid, count_num, pub_name)
 					countsfile.write(outstring)
+					count_num_str = str(count_num)
+					if count_num_str not in counts:
+						counts[count_num_str] = 1
+					else:
+						counts[count_num_str] = counts[count_num_str] +1
 			
 			print("\nRetrieved citation counts for %s records." \
 					% len(pmids))
