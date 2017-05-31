@@ -1520,7 +1520,7 @@ def main():
 						search_term_list = mesh_term_list
 						
 					for word in search_term_list:
-						if clean(word) in split_title:
+						if word in split_title:
 							found = 1
 							break
 					
