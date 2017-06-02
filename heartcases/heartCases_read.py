@@ -438,7 +438,7 @@ def build_mesh_dict(mo_filename):
 				
 		#Ensure there are no duplicates.
 		mesh_term_list = set(mesh_term_list)
-				
+			
 	return mo_ids, mo_cats, mesh_term_list
 
 def get_medline_from_pubmed(pmid_list):
@@ -640,25 +640,9 @@ def label_this_text(text, verbose=False):
 	Note that start is the first character index
 	and end is the index after the final character.
 	'''
-	
-	#Get single terms first
-	i = 0
-	start = 0
-	end = 0
-	word = ""
-	for char in text:
-		if char in [" ","\n",",",".",";"]:
-			end = i
-			if len(word) > 0 and word.lower() not in stopword_set:
-				split_text.append([start,word,end])
-			word = ""
-			start = i+1
-		else:
-			word = word + char
-			
-		i = i+1
-		
-	#Continue with n-grams where n>1
+
+	#Start with n-grams where n>1
+	#As these will take precedence
 	for ngram_size in range(2,n+1):
 		i = 0
 		start = 0
@@ -686,23 +670,49 @@ def label_this_text(text, verbose=False):
 				
 			i = i+1
 	
-	#Now add labels from named_entities set
-	#Ignore functionally identical labels in the same local area
-	#That is, those matching the same single entity and entitiy type
+	#Now single terms
+	i = 0
+	start = 0
+	end = 0
+	word = ""
+	for char in text:
+		if char in [" ","\n",",",".",";"]:
+			end = i
+			if len(word) > 0 and word.lower() not in stopword_set:
+				split_text.append([start,word,end])
+			word = ""
+			start = i+1
+		else:
+			word = word + char
+			
+		i = i+1
+		
+	#Add labels from named_entities set
+	#Check for overlap
+	#If two labels share a beginning or an end, the larger label is
+	#retained and the smaller label is not
 	for ne_type in named_entities:
-		local_start = 0
-		local_end = 0
-		
+
 		for ngram_and_index in split_text:
-		
+			add_this_label = False
+			
 			ngram = ngram_and_index[1]
 			clean_ngram = clean(ngram)
 			
 			if clean_ngram in named_entities[ne_type]:
+				add_this_label = True
 				start = ngram_and_index[0]
 				end = ngram_and_index[2]
-				labels.append([ne_type, start, end, ngram])
-
+				label_size = end - start
+				for label in labels:
+					if start == label[1] or end == label[2]:
+						other_label_size = label[2] - label[1]
+						if label_size < other_label_size:
+							add_this_label = False
+						break
+				if add_this_label:
+					labels.append([ne_type, start, end, ngram])
+	
 	#Labels are sorted by starting character
 	sortedlabels = sorted(labels, key=itemgetter(1))
 	labels = sortedlabels
