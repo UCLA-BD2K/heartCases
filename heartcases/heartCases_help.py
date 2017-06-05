@@ -20,7 +20,10 @@ def find_citation_counts(pmids):
 	
 	#This list may be long, so makes a POST to the History server first.
 	
-	counts = {} #Counts of citation counts
+	counts = {} #Counts of citation counts by publication
+				#A dict of dicts, with pub name as first key,
+				#group as second key, and group count as value
+				#e.g. {"Med Journal" :{"6-10": 5}}
 	counts_by_pmid = {} #Citation counts and pubs for each PMID 
 						#(IDs are keys)
 
@@ -105,21 +108,24 @@ def find_citation_counts(pmids):
 						count_num_str = "1-5"
 					elif count_num in [6,7,8,9,10]:
 						count_num_str = "6-10"
-					elif count_num > 10:
+					elif count_num > 9:
 						count_num_str = ">10"
 					
 					pub_name = counts_by_pmid[pmid][1]
+					if pub_name not in counts:
+						counts[pub_name] = {}
+					
+					if count_num_str not in counts[pub_name]:
+						counts[pub_name][count_num_str] = 1
+					else:
+						counts[pub_name][count_num_str] = counts[pub_name][count_num_str] +1
+						
 					outstring = "%s\t%s\t%s\n" % (pmid, count_num, pub_name)
 					countsfile.write(outstring)
-					
-					if count_num_str not in counts:
-						counts[count_num_str] = 1
-					else:
-						counts[count_num_str] = counts[count_num_str] +1
 			
 			print("\nRetrieved citation counts for %s records." \
 					% len(pmids))
-		
+			
 		except urllib2.HTTPError as e:
 			print("Couldn't complete PubMed search: %s" % e)
 	

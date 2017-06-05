@@ -984,7 +984,8 @@ def plot_those_counts(counts, all_matches, outfilename):
 	all_plots = []
 	
 	#Plot simple counts first
-	textplot = figure(plot_width=800, plot_height=700, 
+	height = (len(counts)*100) + 200
+	textplot = figure(plot_width=700, plot_height=height, 
 					title="Summary Counts")
 	textplot.axis.visible = False
 	
@@ -994,7 +995,7 @@ def plot_those_counts(counts, all_matches, outfilename):
 		
 		plot_string = "%s: %s" % (count_name, str(this_count))
 		
-		count_label = Label(x=100, y=i, text=plot_string,
+		count_label = Label(x=25, y=i, text=plot_string,
 						x_units="screen", y_units="screen",
 						border_line_color="white",
 						text_font_size="16pt")
@@ -1041,8 +1042,9 @@ def plot_those_counts(counts, all_matches, outfilename):
 		
 		plot = figure(plot_width=600, plot_height=height, 
 						title=match_name, x_axis_label="Counts")
-		plot.hbar(y = catvalues, left=0, right=counts, height=0.5, color=randcol)
-		plot.text(counts, catvalues, text=[i for i in cats], 
+		plot.hbar(y = catvalues, left=0, right=counts, height=0.66, color=randcol)
+		
+		plot.text(0, catvalues, text=[i for i in cats], 
 					text_font_size=text_size, text_baseline="middle")
 		
 		all_plots.append(plot)
@@ -1863,7 +1865,7 @@ def main():
 		labeled_outfilename = "medline_entries_%s_labeled.txt" \
 						% filelabel
 		viz_outfilename = "medline_entries_%s_plots.html" \
-						% filelabel 
+						% filelabel
 	
 	if not os.path.isdir("output"):
 		os.mkdir("output")
@@ -2040,10 +2042,7 @@ def main():
 						"Most records are from these journals": matched_journals, 
 						"Most records were published in these years": matched_years,
 						"Most frequently used material codes": rn_codes}
-		
-		if get_citation_counts:
-			all_matches["Citation counts"] = citation_counts
-						
+							
 		plot_those_counts(counts, all_matches, viz_outfilename)
 		
 		all_matches_high = {}
@@ -2058,7 +2057,15 @@ def main():
 			print("\n%s:\n" % entry)
 			for match_count in all_matches_high[entry]:
 				print("%s\t\t\t\t%s" % (str(match_count[0]).ljust(40, ' '), match_count[1]))
-				
+		
+		#Citation report plots go in their own file.
+		if get_citation_counts:
+			cite_counts = {"Total searched records": record_count,
+							"Records with matched term in the title or MeSH term": match_record_count}
+					  
+			cite_viz_outfilename = "citation_count_report.html"
+			plot_those_counts(cite_counts, citation_counts, cite_viz_outfilename)
+			
 	else:
 		sys.exit("Found no matching references.")
 	
