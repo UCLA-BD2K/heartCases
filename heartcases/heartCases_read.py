@@ -22,6 +22,7 @@ __email__ = "j.harry.caufield@gmail.com"
 import argparse, glob, operator, os, random, re, string
 import sys, tarfile, time
 import urllib, urllib2
+import warnings
 
 from itertools import tee, izip
 
@@ -39,7 +40,7 @@ from nltk.tokenize import sent_tokenize
 import numpy as np
 
 from sklearn.pipeline import Pipeline
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import HashingVectorizer
 
 from sklearn.tree import DecisionTreeClassifier
 
@@ -850,8 +851,8 @@ def mesh_classification(testing):
 		
 		t0 = time.time()
 		
-		print("Learning term dictionary...")
-		#Get all terms in use in the training set (the dictionary)
+		print("Learning MeSH term dictionary...")
+		#Get all MeSH terms in use in the training set
 		for item in labeled_text:
 			for term in item[0]:
 				if term not in all_terms:
@@ -892,7 +893,10 @@ def mesh_classification(testing):
 		  classification.
 		'''
 		classifier = Pipeline([
-					('vectorizer', CountVectorizer(ngram_range=(1,4), min_df = 5, max_df = 0.5)),
+					('vectorizer', HashingVectorizer(analyzer='word',
+									ngram_range=(1,3),
+									stop_words = 'english',
+									norm='l2')),
 					('tfidf', TfidfTransformer(norm='l2')),
 					('clf', OneVsRestClassifier(DecisionTreeClassifier(criterion="entropy",
 						class_weight="balanced", max_depth=8), n_jobs=-1))])
@@ -1209,6 +1213,8 @@ def setup_labeledfiledir(named_entities):
 #Main
 def main():
 	
+	warnings.simplefilter("ignore", UnicodeWarning)
+	
 	record_count = 0 #Total number of records searched, across all files
 	match_record_count = 0 #Total number of records matching search terms
 							#For now that is keywords in title or MeSH
@@ -1458,7 +1464,6 @@ def main():
 						if word in split_title:
 							found = 1
 							break
-						#May raise UnicodeWarnings sometimes
 
 					these_mesh_terms = []
 					these_other_terms = []
