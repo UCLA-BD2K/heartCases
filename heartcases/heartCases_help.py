@@ -95,6 +95,10 @@ def find_citation_counts(pmids):
 						
 			out_file.close()
 			
+			raw_cite_counts = {}
+			for pmid in counts_by_pmid:
+				raw_cite_counts[pmid] = counts_by_pmid[pmid][0]
+			
 			#Get counts of counts
 			#Discretize to make counts more informative
 			#Write the counts to file, too
@@ -134,4 +138,4 @@ def find_citation_counts(pmids):
 	
 	os.chdir("..")
 	
-	return counts, countsfilename
+	return counts, raw_cite_counts, countsfilename
