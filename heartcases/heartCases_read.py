@@ -1163,6 +1163,10 @@ def parse_args():
 						"Will also search titles for terms")
 	parser.add_argument('--citation_counts', help="if TRUE, retrieve "
 						"citation counts for matching records")
+	parser.add_argument('--citation_limit', help="all matched records "
+						"will have at least the specified (integer) number of "
+						"citations from PubMed Central entries. "
+						"Requires citation_counts option.")
 	parser.add_argument('--testing', help="if FALSE, do not test classifiers")
 	parser.add_argument('--recordlimit', help="The maximum number of records to search")
 	parser.add_argument('--verbose', help="if TRUE, provide verbose output")
@@ -1250,9 +1254,13 @@ def main():
 			verbose = True
 			
 	get_citation_counts = False
+	use_citation_limit = False
 	if args.citation_counts:
 		if args.citation_counts == "TRUE":
 			get_citation_counts = True
+			if args.citation_limit > 0:
+				use_citation_limit = True
+				citation_limit = args.citation_limit
 			
 	#Get the disease ontology file if it isn't present
 	disease_ofile_list = glob.glob('doid.*')
@@ -1385,6 +1393,11 @@ def main():
 	if get_citation_counts:
 		print("Will retrieve citation counts for matched records.")
 	
+	if use_citation_limit:
+		print("Will return matches only for documents with at least "
+				"%s citations from PubMed Central entries." %
+				citation_limit)
+	
 	ti = 0
 	
 	matching_orig_records = []
@@ -1397,6 +1410,9 @@ def main():
 
 			fileindex = 0 #Index of records in this file (starting at 0)
 			
+			filtered_count = 0 #If filters in use, count how many records
+								#get filtered out
+			
 			#Count entries in file first so we know when to stop
 			#Could just get length of records but that's too slow
 			#So just count entries by PMID
@@ -1405,6 +1421,14 @@ def main():
 				if line[:6] == "PMID- ":
 					filereccount = filereccount +1
 			print("\tFile contains %s records." % filereccount)
+			
+			##Retrieve citation counts from PubMed, now that we have 
+			##PMIDs to work with
+			##Not functional yet
+			#if get_citation_counts:
+				#print("\nFinding citation counts.")
+				#citation_counts, raw_cite_counts, citation_count_filename = \
+					#find_citation_counts(all_pmids)
 			
 			if filereccount > record_count_cutoff:
 				print("\tWill only search %s records." % record_count_cutoff)
@@ -1649,10 +1673,6 @@ def main():
 			% (record_count, match_record_count, abstract_count,
 				new_abstract_count))
 	
-	if get_citation_counts:
-		print("\nFinding citation counts.")
-		citation_counts, citation_count_filename = find_citation_counts(all_pmids)
-	
 	#MeSH terms are often incomplete, so here they are used
 	#to train a classifier and identify associations
 	#which can then be used to extend the existing annotations.
@@ -1711,6 +1731,8 @@ def main():
 		Ensure new terms are denoted properly as above.	
 		This step can be very slow - 
 		mostly due to classifier predictions.
+		
+		Some records may be filtered out at this point as well.
 		'''
 		
 		these_mesh_terms = []
@@ -1834,6 +1856,7 @@ def main():
 			else:
 				if j % 1000 == 0:
 					sys.stdout.write("#")
+	
 	
 	'''
 	Output the matching entries, complete with new annotations
@@ -2033,7 +2056,6 @@ def main():
 		#Plot first.
 		#Then provide some summary statistics.
 		counts = {"Total searched records": record_count,
-					"Records with matched term in the title or MeSH term": match_record_count,
 					"Number of records with abstracts": abstract_count,
 					"Number of records with material codes": rn_counts,
 					"Total unique material codes used": len(rn_codes)}
@@ -2042,6 +2064,13 @@ def main():
 						"Most records are from these journals": matched_journals, 
 						"Most records were published in these years": matched_years,
 						"Most frequently used material codes": rn_codes}
+		
+		if filtered_count > 0:
+			counts["Matched records after term matching and filtering"] = \
+					match_record_count
+		else:
+			counts["Records with matched term in the title or MeSH term"] = \
+					match_record_count	
 							
 		plot_those_counts(counts, all_matches, viz_outfilename)
 		
@@ -2077,8 +2106,8 @@ def main():
 			(outfilename, raw_ne_outfilename, 
 			labeled_filedir, viz_outfilename))
 	
-	if get_citation_counts:
-		("\nSee %s for PMIDs and citation counts." % citation_count_filename)
+	#if get_citation_counts:
+	#	("\nSee %s for PMIDs and citation counts." % citation_count_filename)
 	
 if __name__ == "__main__":
 	sys.exit(main())
