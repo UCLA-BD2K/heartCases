@@ -1437,8 +1437,12 @@ def main():
 				print("\nFinding citation counts for this file.")
 				citation_counts, raw_cite_counts, citation_count_filename = \
 					find_citation_counts(these_pmids)
-				all_citation_counts.update(citation_counts)
-				all_raw_cite_counts.update(raw_cite_counts)
+				if len(raw_cite_counts) == 0:
+					print("WARNING: No citation counts found!")
+				all_citation_counts.update(citation_counts) 
+					#Cite counts by pub name and bin
+				all_raw_cite_counts.update(raw_cite_counts) 
+					#Cite counts by PMID
 			
 			if filereccount > record_count_cutoff:
 				print("\tWill only search %s records." % record_count_cutoff)
