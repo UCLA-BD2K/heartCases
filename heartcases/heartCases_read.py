@@ -1391,7 +1391,7 @@ def main():
 		record_count_cutoff = 9999999
 	
 	if get_citation_counts:
-		print("Will retrieve citation counts for matched records.")
+		print("Will retrieve citation counts prior to searching records.")
 	
 	if use_citation_limit:
 		print("Will return matches only for documents with at least "
@@ -1402,16 +1402,22 @@ def main():
 	
 	matching_orig_records = []
 	
+	filtered_count = 0 #If filters in use, count how many records
+								#get filtered out
+	
+	all_citation_counts = {}
+	
+	all_raw_cite_counts = {}
+	
 	for medline_file in medline_file_list:
 		print("\nLoading %s..." % medline_file)
 		with open(medline_file) as this_medline_file:
 			
-			filereccount = 0 #Total number of record in this file
+			filereccount = 0 #Total number of records in this file
 
 			fileindex = 0 #Index of records in this file (starting at 0)
-			
-			filtered_count = 0 #If filters in use, count how many records
-								#get filtered out
+								
+			these_pmids = []
 			
 			#Count entries in file first so we know when to stop
 			#Could just get length of records but that's too slow
@@ -1420,15 +1426,19 @@ def main():
 			for line in this_medline_file:
 				if line[:6] == "PMID- ":
 					filereccount = filereccount +1
+					splitline = (line.rstrip()).split("-")
+					these_pmids.append(splitline[1].lstrip())
 			print("\tFile contains %s records." % filereccount)
 			
-			##Retrieve citation counts from PubMed, now that we have 
-			##PMIDs to work with
-			##Not functional yet
-			#if get_citation_counts:
-				#print("\nFinding citation counts.")
-				#citation_counts, raw_cite_counts, citation_count_filename = \
-					#find_citation_counts(all_pmids)
+			#Retrieve citation counts from PubMed, now that we have 
+			#PMIDs to work with
+			#This may take a while.
+			if get_citation_counts:
+				print("\nFinding citation counts for this file.")
+				citation_counts, raw_cite_counts, citation_count_filename = \
+					find_citation_counts(these_pmids)
+				all_citation_counts.update(citation_counts)
+				all_raw_cite_counts.update(raw_cite_counts)
 			
 			if filereccount > record_count_cutoff:
 				print("\tWill only search %s records." % record_count_cutoff)
@@ -1473,6 +1483,20 @@ def main():
 					
 					found = 0
 					have_abst = 0
+					
+					#Get the Pubmed ID
+					pmid = record['PMID']
+					all_pmids.append(pmid)
+					
+					#If this PMID doesn't pass the filter (if any filters)
+					#just move ahead
+					if use_citation_limit:
+						if pmid in all_raw_cite_counts:
+							this_cite_count = raw_cite_counts[pmid]
+							if this_cite_count < citation_limit:
+								filtered_count = filtered_count +1
+								fileindex = fileindex +1
+								continue
 					
 					try:
 						#Some records don't have titles. Not sure why.
@@ -1554,10 +1578,6 @@ def main():
 							matched_years[pubyear] = 1
 						else:
 							matched_years[pubyear] = matched_years[pubyear] +1
-						
-						#Get the Pubmed ID
-						pmid = record['PMID']
-						all_pmids.append(pmid)
 						
 						#Check if there's an abstract
 						#and ensure it's not too short - very short
@@ -2068,6 +2088,8 @@ def main():
 		if filtered_count > 0:
 			counts["Matched records after term matching and filtering"] = \
 					match_record_count
+			counts["Records not included due to filtering"] = \
+					filtered_count
 		else:
 			counts["Records with matched term in the title or MeSH term"] = \
 					match_record_count	
@@ -2090,10 +2112,10 @@ def main():
 		#Citation report plots go in their own file.
 		if get_citation_counts:
 			cite_counts = {"Total searched records": record_count,
-							"Records with matched term in the title or MeSH term": match_record_count}
+							"Matched records after term matching and filtering": match_record_count}
 					  
 			cite_viz_outfilename = "citation_count_report.html"
-			plot_those_counts(cite_counts, citation_counts, cite_viz_outfilename)
+			plot_those_counts(cite_counts, all_citation_counts, cite_viz_outfilename)
 			
 	else:
 		sys.exit("Found no matching references.")
@@ -2106,8 +2128,8 @@ def main():
 			(outfilename, raw_ne_outfilename, 
 			labeled_filedir, viz_outfilename))
 	
-	#if get_citation_counts:
-	#	("\nSee %s for PMIDs and citation counts." % citation_count_filename)
+	if get_citation_counts:
+		("\nSee %s for PMIDs and citation counts." % citation_count_filename)
 	
 if __name__ == "__main__":
 	sys.exit(main())

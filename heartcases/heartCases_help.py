@@ -26,6 +26,7 @@ def find_citation_counts(pmids):
 				#e.g. {"Med Journal" :{"6-10": 5}}
 	counts_by_pmid = {} #Citation counts and pubs for each PMID 
 						#(IDs are keys)
+	raw_cite_counts = {}
 
 	baseURL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 	epost = "epost.fcgi"
@@ -40,47 +41,58 @@ def find_citation_counts(pmids):
 		os.mkdir(outfiledir)
 	os.chdir(outfiledir)
 	
+	need_file = True
+	
 	if len(pmids) > 0:
 		
-		try:
-			#POST using epost first, with all PMIDs
-			idstring = ",".join(pmids)
-			queryURL = baseURL + epost
-			args = urllib.urlencode({"db":"pubmed","id":idstring})
-			response = urllib2.urlopen(queryURL, args)
-			
-			response_text = (response.read()).splitlines()
-			
-			webenv_value = (response_text[3].strip())[8:-9]
-			webenv = "&WebEnv=" + webenv_value
-			querykey_value = (response_text[2].strip())[10:-11]
-			querykey = "&query_key=" + querykey_value
-			
-			batch_size = 500
-			
-			i = 0
-			while i <= len(pmids):
-				retstart = "&retstart=" + str(i)
-				retmax = "&retmax=" + str(i + batch_size)
-				queryURL = baseURL + esummary + querykey + webenv \
-							+ retstart + retmax + esummary_options
+		if need_file: #Go get records from PubMed
+			try:
+				#POST using epost first, with all PMIDs
+				idstring = ",".join(pmids)
+				queryURL = baseURL + epost
+				args = urllib.urlencode({"db":"pubmed","id":idstring})
+				response = urllib2.urlopen(queryURL, args)
 				
-				response = urllib2.urlopen(queryURL)
+				response_text = (response.read()).splitlines()
 				
-				out_file = open(outfilename, "a+")
-				chunk = 1048576
-				while 1:
-					data = (response.read(chunk)) #Read one Mb at a time
-					out_file.write(data)
-					if not data:
-						break
-					sys.stdout.flush()
-					sys.stdout.write(".")
+				webenv_value = (response_text[3].strip())[8:-9]
+				webenv = "&WebEnv=" + webenv_value
+				querykey_value = (response_text[2].strip())[10:-11]
+				querykey = "&query_key=" + querykey_value
+				
+				batch_size = 500
+				
+				i = 0
+				
+				while i <= len(pmids):
+					retstart = "&retstart=" + str(i)
+					retmax = "&retmax=" + str(i + batch_size)
+					queryURL = baseURL + esummary + querykey + webenv \
+								+ retstart + retmax + esummary_options
 					
-				i = i + batch_size
+					response = urllib2.urlopen(queryURL)
+					
+					out_file = open(outfilename, "a+")
+					chunk = 1048576
+					while 1:
+						data = (response.read(chunk)) #Read one Mb at a time
+						out_file.write(data)
+						if not data:
+							break
+						sys.stdout.flush()
+						sys.stdout.write(".")
+						
+					i = i + batch_size
+					
+			except urllib2.HTTPError as e:
+				print("Couldn't complete PubMed search: %s" % e)
 				
-			#Now that the file is complete, parse it and get the counts
-			out_file.seek(0)
+		need_file = False
+		out_file.seek(0)
+			
+		#Now that the file is complete, parse it and get the counts
+		if not need_file:
+		
 			for line in out_file:
 				if not line.strip():
 					continue
@@ -94,18 +106,19 @@ def find_citation_counts(pmids):
 					counts_by_pmid[this_pmid] = (this_count, this_pub)
 						
 			out_file.close()
-			
+				
 			raw_cite_counts = {}
+			
 			for pmid in counts_by_pmid:
 				raw_cite_counts[pmid] = counts_by_pmid[pmid][0]
 			
 			#Get counts of counts
 			#Discretize to make counts more informative
 			#Write the counts to file, too
-			with open(countsfilename, 'wb') as countsfile:
+			with open(countsfilename, 'a+') as countsfile:
 				for pmid in counts_by_pmid:
 					count_num = int(counts_by_pmid[pmid][0])
-
+	
 					if count_num == 0:
 						count_num_str = str(count_num)
 					elif count_num in [1,2,3,4,5]:
@@ -129,12 +142,10 @@ def find_citation_counts(pmids):
 			
 			print("\nRetrieved citation counts for %s records." \
 					% len(pmids))
-			
-		except urllib2.HTTPError as e:
-			print("Couldn't complete PubMed search: %s" % e)
 	
 	else:
 		print("No IDs provided to find citation counts for.")
+		
 	
 	os.chdir("..")
 	
