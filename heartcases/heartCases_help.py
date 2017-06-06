@@ -19,7 +19,6 @@ def get_file_and_append(pmids, filename):
 	epost = "epost.fcgi"
 	esummary = "esummary.fcgi?db=pubmed"
 	esummary_options = "&usehistory=y&retmode=xml&version=2.0"
-	batch_size = 500
 	
 	print("Retrieving records for %s PMIDs..." % len(pmids))
 	
@@ -40,26 +39,39 @@ def get_file_and_append(pmids, filename):
 		#Now we have a search on the history server, so get batches
 		i = 0
 		
-		pbar = tqdm(total=len(pmids))
+		pmid_count = len(pmids)
 		
-		while i <= len(pmids):
-			retstart = "&retstart=" + str(i)
-			retmax = "&retmax=" + str(i + batch_size)
-			queryURL = baseURL + esummary + querykey + webenv \
-						+ retstart + retmax + esummary_options
-			
-			response = urllib2.urlopen(queryURL)
-			
-			with open(filename, "a+") as out_file:
-				chunk = 1048576
-				while 1:
+		pbar = tqdm(total=pmid_count)
+		
+		with open(filename, "ab") as out_file:
+			chunk = 1048576
+			batch_size = 10000 #Should be < 100,000
+				#see https://www.ncbi.nlm.nih.gov/books/NBK25499/
+				#Note that retmax is the total record count we want,
+				#not an index value
+			last_batch = False
+			while True:
+				retstart = "&retstart=" + str(i)
+				if i + batch_size > pmid_count:
+					batch_size = pmid_count - i
+					last_batch = True
+				retmax = "&retmax=" + str(batch_size)
+				queryURL = baseURL + esummary + querykey + webenv \
+							+ retstart + retmax + esummary_options
+				
+				response = urllib2.urlopen(queryURL)
+				
+				while True:
 					data = (response.read(chunk)) #Read one Mb at a time
 					out_file.write(data)
 					if not data:
-						break			
+						break
+								
 				i = i + batch_size
 				pbar.update(batch_size)
-		
+				if last_batch:
+					break
+					
 		pbar.close()
 		print("Retreived records and saved to %s." % filename)
 			
@@ -91,6 +103,7 @@ def find_citation_counts(pmids):
 		pbar = tqdm(total=len(pmids))
 		
 		with open(searchfilename) as searchfile:
+			get_info = False
 			for line in searchfile:
 				if not line.strip(): #Skip blank lines
 					continue
@@ -116,12 +129,15 @@ def find_citation_counts(pmids):
 		for pmid in counts_by_pmid:
 			raw_cite_counts[pmid] = counts_by_pmid[pmid][0]
 		
+		print("Found citation counts for %s records." \
+				% len(raw_cite_counts))
+		
 		#Get counts of counts
 		#Discretize to make counts more informative
 		#Write the counts to file, too
 		#Append counts as we may be searching more than one
 		#set of IDs
-		with open(countsfilename, 'a+') as countsfile:
+		with open(countsfilename, 'ab') as countsfile:
 			for pmid in counts_by_pmid:
 				count_num = int(counts_by_pmid[pmid][0])
 	
@@ -146,8 +162,6 @@ def find_citation_counts(pmids):
 				outstring = "%s\t%s\t%s\n" % (pmid, count_num, pub_name)
 				countsfile.write(outstring)
 		
-		print("\nRetrieved citation counts for %s records." \
-				% len(pmids))
 				
 		return counts, raw_cite_counts
 	
@@ -162,7 +176,7 @@ def find_citation_counts(pmids):
 	countsfilename = "citation_counts.tsv"
 	
 	if len(pmids) > 0:
-		print("Searching for citation counts for %s records in total." %
+		print("Searching for citation counts for %s records." %
 				len(pmids))
 	else:
 		print("No IDs provided to find citation counts for.")
@@ -185,10 +199,11 @@ def find_citation_counts(pmids):
 		found_pmids = set(raw_cite_counts.keys())
 		remaining_pmids = orig_pmids.difference(found_pmids)
 		pmids = list(remaining_pmids)
-	
+	else:
+		print("No local file found.")
+		
 	if len(pmids) > 0: #Go get records from PubMed if we still need any
-		print("Retrieving records for PMIDs not in local file "
-				"or no local file found...")
+		print("Retrieving records for PMIDs from PubMed...")
 		get_file_and_append(pmids, searchfilename)
 		
 		more_counts, more_raw_counts = \
@@ -196,7 +211,7 @@ def find_citation_counts(pmids):
 				
 		#Now update the lists with any new results
 		counts.update(more_counts)
-		raw_cite_counts.update(more_raw_counts) 
+		raw_cite_counts.update(more_raw_counts)
 
 	os.chdir("..")
 	

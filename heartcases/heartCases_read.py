@@ -1443,6 +1443,7 @@ def main():
 					#Cite counts by pub name and bin
 				all_raw_cite_counts.update(raw_cite_counts) 
 					#Cite counts by PMID
+				print("Now loading file...")
 			
 			if filereccount > record_count_cutoff:
 				print("\tWill only search %s records." % record_count_cutoff)
