@@ -1163,10 +1163,12 @@ def parse_args():
 						"Will also search titles for terms")
 	parser.add_argument('--citation_counts', help="if TRUE, retrieve "
 						"citation counts for matching records")
-	parser.add_argument('--citation_limit', help="all matched records "
-						"will have at least the specified (integer) number of "
-						"citations from PubMed Central entries. "
-						"Requires citation_counts option.")
+	parser.add_argument('--citation_range', help="Takes two integers. All "
+						"matched records will have at least the first "
+						"specified number of citations from PubMed Central "
+						"entries and no more than the second number."
+						"Requires citation_counts option to be TRUE.",
+						nargs = 2)
 	parser.add_argument('--testing', help="if FALSE, do not test classifiers")
 	parser.add_argument('--recordlimit', help="The maximum number of records to search")
 	parser.add_argument('--verbose', help="if TRUE, provide verbose output")
@@ -1245,6 +1247,8 @@ def main():
 							#available through PubMed
 	ne_count = 0 #Count of all terms in named_entities
 	
+	citation_range = [0,9999] #Default citation range
+	
 	#Set up parser
 	args = parse_args()
 	
@@ -1254,13 +1258,13 @@ def main():
 			verbose = True
 			
 	get_citation_counts = False
-	use_citation_limit = False
+	use_citation_range = False
 	if args.citation_counts:
 		if args.citation_counts == "TRUE":
 			get_citation_counts = True
-			if args.citation_limit > 0:
-				use_citation_limit = True
-				citation_limit = args.citation_limit
+			if args.citation_range != citation_range:
+				use_citation_range = True
+				citation_range = args.citation_range
 			
 	#Get the disease ontology file if it isn't present
 	disease_ofile_list = glob.glob('doid.*')
@@ -1393,10 +1397,11 @@ def main():
 	if get_citation_counts:
 		print("Will retrieve citation counts prior to searching records.")
 	
-	if use_citation_limit:
-		print("Will return matches only for documents with at least "
-				"%s citations from PubMed Central entries." %
-				citation_limit)
+	if use_citation_range:
+		print("Will return matches only for documents with citation "
+				"counts from PubMed Central entries of at least "
+				"%s and no more than %s." % (citation_range[0], 
+				citation_range[1]))
 	
 	ti = 0
 	
@@ -1495,10 +1500,12 @@ def main():
 					
 					#If this PMID doesn't pass the filter (if any filters)
 					#just move ahead
-					if use_citation_limit:
+					if use_citation_range:
 						if pmid in all_raw_cite_counts:
 							this_cite_count = raw_cite_counts[pmid]
-							if this_cite_count < citation_limit:
+							if citation_range[0] <= this_cite_count <= citation_range[1]:
+								pass
+							else:
 								filtered_count = filtered_count +1
 								fileindex = fileindex +1
 								continue
