@@ -1163,12 +1163,12 @@ def parse_args():
 						"Will also search titles for terms")
 	parser.add_argument('--citation_counts', help="if TRUE, retrieve "
 						"citation counts for matching records")
-	parser.add_argument('--citation_range', help="Takes two integers. All "
+	parser.add_argument('--citation_range', nargs = 2,
+						type=int, help="Takes two integers. All "
 						"matched records will have at least the first "
 						"specified number of citations from PubMed Central "
 						"entries and no more than the second number."
-						"Requires citation_counts option to be TRUE.",
-						nargs = 2)
+						"Requires citation_counts option to be TRUE.")
 	parser.add_argument('--testing', help="if FALSE, do not test classifiers")
 	parser.add_argument('--recordlimit', help="The maximum number of records to search")
 	parser.add_argument('--verbose', help="if TRUE, provide verbose output")
@@ -1265,7 +1265,7 @@ def main():
 			if args.citation_range != citation_range:
 				use_citation_range = True
 				citation_range = args.citation_range
-			
+
 	#Get the disease ontology file if it isn't present
 	disease_ofile_list = glob.glob('doid.*')
 	if len(disease_ofile_list) >1:
@@ -2123,10 +2123,10 @@ def main():
 		
 		#Citation report plots go in their own file.
 		if get_citation_counts:
-			cite_counts = {"Total searched records": record_count,
-							"Matched records after term matching and filtering": match_record_count}
+			cite_counts = {"Total records in input": record_count,
+							"Different journals in input": len(all_citation_counts)}
 					  
-			cite_viz_outfilename = "citation_count_report.html"
+			cite_viz_outfilename = "citations_by_journal_report.html"
 			plot_those_counts(cite_counts, all_citation_counts, cite_viz_outfilename)
 			
 	else:
