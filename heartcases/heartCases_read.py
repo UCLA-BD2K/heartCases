@@ -974,19 +974,23 @@ def mesh_classification(testing):
 	
 	return classifier, lb
 
-def plot_those_counts(counts, all_matches, outfilename):
+def plot_those_counts(counts, all_matches, outfilename, ptitle):
 	'''
-	Given a dict (with names as values) 
+	Given a dict (with names as values) - all_matches here - 
 	of dicts of categories and counts,
 	produces a simple bar plot of the counts for each.
-	Produces plots using Bokeh - produces .html and opens browser.
+	Also takes simple counts to be provided as numbers
+	rather than plots (in the counts variable here).
+	Produces plots using Bokeh - produces .html with outfilename
+	as title and opens browser.
+	Title variable provides plot title.
 	'''
 	all_plots = []
 	
 	#Plot simple counts first
 	height = (len(counts)*100) + 200
 	textplot = figure(plot_width=700, plot_height=height, 
-					title="Summary Counts")
+					title=ptitle)
 	textplot.axis.visible = False
 	
 	i = 100
@@ -1501,14 +1505,21 @@ def main():
 					#If this PMID doesn't pass the filter (if any filters)
 					#just move ahead
 					if use_citation_range:
+						filter_record = False
 						if pmid in all_raw_cite_counts:
-							this_cite_count = raw_cite_counts[pmid]
-							if citation_range[0] <= this_cite_count <= citation_range[1]:
-								pass
+							this_cite_count = int(raw_cite_counts[pmid])
+							if citation_range[0] == citation_range[1]:
+								#We're just checking for identity.
+								if this_cite_count != citation_range[0]:
+									filter_record = True
 							else:
-								filtered_count = filtered_count +1
-								fileindex = fileindex +1
-								continue
+								#We're checking for counts in range.
+								if not citation_range[0] <= this_cite_count <= citation_range[1]:
+									filter_record = True
+						if filter_record:		
+							filtered_count = filtered_count +1
+							fileindex = fileindex +1
+							continue
 					
 					try:
 						#Some records don't have titles. Not sure why.
@@ -1679,6 +1690,8 @@ def main():
 						sys.stdout.write("#")
 					if record_count == record_count_cutoff:
 						break
+	
+	print("Done loading input file.")
 	
 	have_new_abstracts = False
 	
@@ -2106,7 +2119,7 @@ def main():
 			counts["Records with matched term in the title or MeSH term"] = \
 					match_record_count	
 							
-		plot_those_counts(counts, all_matches, viz_outfilename)
+		plot_those_counts(counts, all_matches, viz_outfilename, "Summary Counts")
 		
 		all_matches_high = {}
 		for entry in all_matches:
@@ -2127,7 +2140,8 @@ def main():
 							"Different journals in input": len(all_citation_counts)}
 					  
 			cite_viz_outfilename = "citations_by_journal_report.html"
-			plot_those_counts(cite_counts, all_citation_counts, cite_viz_outfilename)
+			plot_those_counts(cite_counts, all_citation_counts, cite_viz_outfilename,
+								"Citation counts by journal")
 			
 	else:
 		sys.exit("Found no matching references.")
