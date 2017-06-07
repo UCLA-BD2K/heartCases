@@ -45,8 +45,10 @@ def get_file_and_append(pmids, filename):
 		
 		with open(filename, "ab") as out_file:
 			chunk = 1048576
-			batch_size = 10000 #Should be < 100,000
+			batch_size = 1000 #Should be < 100,000
 				#see https://www.ncbi.nlm.nih.gov/books/NBK25499/
+				#Also if batch is bad (e.g. timeout) 
+				#we lose the whole thing. So keep it fairly small.
 				#Note that retmax is the total record count we want,
 				#not an index value
 			last_batch = False
@@ -108,6 +110,9 @@ def find_citation_counts(pmids):
 				if not line.strip(): #Skip blank lines
 					continue
 				splitline = line.split("<")
+				if len(splitline) < 2: #Skip any other non-field lines
+					#This may happen if download(s) fail
+					continue
 				if splitline[1][0:19] == "DocumentSummary uid":
 					this_pmid = (splitline[1].split("\""))[1]
 					if this_pmid in pmids:
@@ -147,7 +152,7 @@ def find_citation_counts(pmids):
 					count_num_str = "1-5"
 				elif count_num in [6,7,8,9,10]:
 					count_num_str = "6-10"
-				elif count_num > 9:
+				elif count_num > 10:
 					count_num_str = ">10"
 				
 				pub_name = counts_by_pmid[pmid][1]
