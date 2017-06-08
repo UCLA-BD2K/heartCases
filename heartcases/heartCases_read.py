@@ -2096,7 +2096,37 @@ def main():
 				
 	os.chdir("..")
 	
-	if record_count > 0:
+	if record_count > 0: #We can provide output
+		
+		output_file_dict = {outfilename: "full matching records with MEDLINE headings",
+						raw_ne_outfilename: "raw named entities found in abstracts",
+						labeled_filedir: "directory for labeled documents in BRAT format",
+						viz_outfilename: "plots of metadata for matching records"}
+		
+		#Save some of the metadata counts to files.
+		with open("matched_mesh_terms.txt", "w+") as mtermfile:
+			for item in matched_mesh_terms:
+				outline = "%s\t%s\n" % (item, matched_mesh_terms[item])
+				mtermfile.write(outline)
+			output_file_dict[mtermfile] = "counts of matching MeSH terms from the search terms"
+			
+		with open("all_terms_in_matched.txt", "w+") as atermfile:
+			for item in all_terms_in_matched:
+				outline = "%s\t%s\n" % (item, all_terms_in_matched[item])
+				atermfile.write(outline)
+			output_file_dict[atermfile] = "counts of all MeSH terms in the documents"
+		
+		with open("matched_years.txt", "w+") as yearfile:
+			for item in matched_years:
+				outline = "%s\t%s\n" % (item, matched_years[item])
+				yearfile.write(outline)
+			output_file_dict[yearfile] = "counts of all publication years among the documents"
+				
+		with open("rn_codes.txt", "w+") as rnfile:
+			for item in rn_codes:
+				outline = "%s\t%s\n" % (item, rn_codes[item])
+				rnfile.write(outline)
+			output_file_dict[rnfile] = "counts of all material codes among the documents"
 		
 		#Plot first.
 		#Then provide some summary statistics.
@@ -2142,17 +2172,14 @@ def main():
 			cite_viz_outfilename = "citations_by_journal_report.html"
 			plot_those_counts(cite_counts, all_citation_counts, cite_viz_outfilename,
 								"Citation counts by journal")
+			output_file_dict[cite_viz_outfilename] = "plots of citation counts by journal"
 			
 	else:
 		sys.exit("Found no matching references.")
 	
-	print("\nDone - see the following files in the output folder:\n"
-			"%s for the full matching records with MEDLINE headings,\n"
-			"%s for raw entities found in abstracts,\n"
-			"%s directory for labeled documents in BRAT format, and\n"
-			"%s for plots." %
-			(outfilename, raw_ne_outfilename, 
-			labeled_filedir, viz_outfilename))
+	print("\nDone - see the following files in the output folder:\n")
+	for item in output_file_dict:
+		print("%s - %s\n" % (item, output_file_dict[item]))
 	
 	if get_citation_counts:
 		("\nSee %s for PMIDs and citation counts." % citation_count_filename)
