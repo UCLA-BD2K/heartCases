@@ -1157,14 +1157,6 @@ def parse_args():
 	#Parse command line arguments for heartCases_read
 	
 	parser = argparse.ArgumentParser()
-	parser.add_argument('--inputfile', help="name of a text file containing "
-						"MEDLINE records")
-	parser.add_argument('--pmids', help="name of a text file containing "
-						"a list of PubMed IDs, one per line, to retrieve "
-						"MEDLINE records for")
-	parser.add_argument('--terms', help="name of a text file containing "
-						"a list of MeSH terms, one per line, to search for. "
-						"Will also search titles for terms")
 	parser.add_argument('--citation_counts', help="if TRUE, retrieve "
 						"citation counts for matching records")
 	parser.add_argument('--citation_range', nargs = 2,
@@ -1173,8 +1165,20 @@ def parse_args():
 						"specified number of citations from PubMed Central "
 						"entries and no more than the second number."
 						"Requires citation_counts option to be TRUE.")
-	parser.add_argument('--testing', help="if FALSE, do not test classifiers")
+	parser.add_argument('--inputfile', help="name of a text file containing "
+						"MEDLINE records")
+	parser.add_argument('--mesh_expand', help="if FALSE, do not perform "
+						"MeSH term expansion. Can save time.")
+	parser.add_argument('--ner_label', help="if FALSE, do not perform "
+						"NER labeling on any documents. Can save time.")
+	parser.add_argument('--pmids', help="name of a text file containing "
+						"a list of PubMed IDs, one per line, to retrieve "
+						"MEDLINE records for")
 	parser.add_argument('--recordlimit', help="The maximum number of records to search")
+	parser.add_argument('--terms', help="name of a text file containing "
+						"a list of MeSH terms, one per line, to search for. "
+						"Will also search titles for terms")
+	parser.add_argument('--testing', help="if FALSE, do not test classifiers")
 	parser.add_argument('--verbose', help="if TRUE, provide verbose output")
 	
 	try:
@@ -1256,6 +1260,7 @@ def main():
 	#Set up parser
 	args = parse_args()
 	
+	#Parse some arguments provided
 	verbose = False
 	if args.verbose:
 		if args.verbose == "TRUE":
@@ -1269,7 +1274,24 @@ def main():
 			if args.citation_range != citation_range:
 				use_citation_range = True
 				citation_range = args.citation_range
+	
+	mesh_expand = True
+	if args.mesh_expand:
+		if args.mesh_expand == "FALSE":
+			mesh_expand = False
 
+	#Argument tells us if we should not test the classifier
+	#This saves some time.
+	testing = True
+	if args.testing:
+		if args.testing == "FALSE":
+			testing = False
+			
+	ner_label = True
+	if args.ner_label:
+		if args.ner_label == "FALSE":
+			ner_label = False
+			
 	#Get the disease ontology file if it isn't present
 	disease_ofile_list = glob.glob('doid.*')
 	if len(disease_ofile_list) >1:
@@ -1352,28 +1374,30 @@ def main():
 	do_ids, do_xrefs_icd10, do_xrefs_terms = \
 		parse_disease_ontology(do_filename)
 		
-	#Load the SPECIALIST lexicon
-	print("Loading SPECIALIST lexicon...")
-	slexicon = load_slexicon(sl_filename)
-	print("Loaded %s lexicon entries." % len(slexicon))
+	#Load the SPECIALIST lexicon if needed
+	if ner_label:
+		print("Loading SPECIALIST lexicon...")
+		slexicon = load_slexicon(sl_filename)
+		print("Loaded %s lexicon entries." % len(slexicon))
 	
-	#Load the named entities here.
+	#Load the named entities here if needed
 	#Most of the vocabulary is inherited from MeSH terms.
 	#Clean terms to produce stems.
-	print("Loading named entity dictionary...")
+	if ner_label:
+		print("Loading named entity dictionary...")
+		
+		global named_entities
+		
+		named_entities = populate_named_entities(named_entities, mo_cats, do_xrefs_terms)
+		
+		for ne_type in named_entities:
+			ne_count = ne_count + len(named_entities[ne_type])
 	
-	global named_entities
-	
-	named_entities = populate_named_entities(named_entities, mo_cats, do_xrefs_terms)
-	
-	for ne_type in named_entities:
-		ne_count = ne_count + len(named_entities[ne_type])
-
-	print("Named entity dictionary includes %s terms across these entity types:" % \
-			ne_count)
-	for ne_type in named_entities:
-		print("%s %s" % (str(ne_type).ljust(30, ' '),
-						len(named_entities[ne_type])))
+		print("Named entity dictionary includes %s terms across these entity types:" % \
+				ne_count)
+		for ne_type in named_entities:
+			print("%s %s" % (str(ne_type).ljust(30, ' '),
+							len(named_entities[ne_type])))
 	
 	#Check if PMID list was provided.
 	#If so, download records for all of them.
@@ -1656,32 +1680,34 @@ def main():
 						 train the classifier. This gets very large
 						 and unwieldy very quickly.
 						 
+						 This is all skipped if mesh_expand is False.
 						'''
-						if train_on_target:
-							these_temp_mesh_terms = []
-							for term in mesh_term_list:
-								if term in these_clean_mesh_terms and term not in these_temp_mesh_terms:
-									these_temp_mesh_terms.append(term)
-							these_clean_mesh_terms = these_temp_mesh_terms
-							if len(these_clean_mesh_terms) == 0:
-								have_abst = 0
-							
-						if have_abst == 1:
-							#Doesn't include newly-added abstracts yet
-							
-							if ti % 5 == 0:
-								save_train_or_test_text(these_clean_mesh_terms,
-													record['TI'],
-													record['AB'],
-													record['PMID'],
-													"test")
-							else:
-								save_train_or_test_text(these_clean_mesh_terms, 
-													record['TI'],
-													record['AB'],
-													record['PMID'],
-													"train")
-							ti = ti+1
+						if mesh_expand:
+							if train_on_target:
+								these_temp_mesh_terms = []
+								for term in mesh_term_list:
+									if term in these_clean_mesh_terms and term not in these_temp_mesh_terms:
+										these_temp_mesh_terms.append(term)
+								these_clean_mesh_terms = these_temp_mesh_terms
+								if len(these_clean_mesh_terms) == 0:
+									have_abst = 0
+								
+							if have_abst == 1:
+								#Doesn't include newly-added abstracts yet
+								
+								if ti % 5 == 0:
+									save_train_or_test_text(these_clean_mesh_terms,
+														record['TI'],
+														record['AB'],
+														record['PMID'],
+														"test")
+								else:
+									save_train_or_test_text(these_clean_mesh_terms, 
+														record['TI'],
+														record['AB'],
+														record['PMID'],
+														"train")
+								ti = ti+1
 					
 					fileindex = fileindex +1
 					
@@ -1721,30 +1747,24 @@ def main():
 	#MeSH terms are often incomplete, so here they are used
 	#to train a classifier and identify associations
 	#which can then be used to extend the existing annotations.
-	if train_on_target:
-		print("\nStarting to build term classifier with target "
-				"terms only...")
-	else:
-		print("\nStarting to build term classifier for all terms "
-				"used in the training abstracts...")
+	if mesh_expand:
+		if train_on_target:
+			print("\nStarting to build term classifier with target "
+					"terms only...")
+		else:
+			print("\nStarting to build term classifier for all terms "
+					"used in the training abstracts...")
 	
-	#Argument tells us if we should not test the classifier
-	#This saves some time.
-	testing = True
-	if args.testing:
-		if args.testing == "FALSE":
-			testing = False
-
-	abst_classifier, lb = mesh_classification(testing)
-	#Also returns the label binarizer, lb
-	#So labels can be reproduced
+		abst_classifier, lb = mesh_classification(testing)
+		#Also returns the label binarizer, lb
+		#So labels can be reproduced
+		
+		#This is the point where we need to add the new MeSH terms
+		#and *then* search for new matching ICD-10 codes
+		#Denote newly-added terms with ^
 	
-	#This is the point where we need to add the new MeSH terms
-	#and *then* search for new matching ICD-10 codes
-	#Denote newly-added terms with ^
-
 	matching_ann_records = []
-	
+		
 	if matching_orig_records > 0:
 		print("\nAdding new terms and codes to records.")
 	else:
@@ -1767,11 +1787,12 @@ def main():
 		sys.stdout.write("\b" * (prog_width+1))
 		
 	j = 0
-	
+		
 	for record in matching_orig_records:
 		'''
-		Use classifier on abstract to get new MeSH terms,
-		append new terms to record["MH"], and
+		Use classifier on abstract to get new MeSH terms if
+		mesh_expand is True,
+		append any new terms to record["MH"], and
 		add new ICD-10 codes.
 		Ensure new terms are denoted properly as above.	
 		This step can be very slow - 
@@ -1798,14 +1819,15 @@ def main():
 		
 		#Now use MeSH term classifier to predict all possible 
 		#associated terms
-		if 'AB' in record.keys() and len(record['AB']) > abst_len_cutoff:
-			titlestring = record['TI']
-			abstring = record['AB']
-			clean_string = "%s %s" % (clean(titlestring), clean(abstring))
-			clean_array = np.array([clean_string])
-			predicted = abst_classifier.predict(clean_array)
-			all_labels = lb.inverse_transform(predicted)
-			have_more_terms = True
+		if mesh_expand:
+			if 'AB' in record.keys() and len(record['AB']) > abst_len_cutoff:
+				titlestring = record['TI']
+				abstring = record['AB']
+				clean_string = "%s %s" % (clean(titlestring), clean(abstring))
+				clean_array = np.array([clean_string])
+				predicted = abst_classifier.predict(clean_array)
+				all_labels = lb.inverse_transform(predicted)
+				have_more_terms = True
 		
 		t1 = time.time()
 		
@@ -1846,7 +1868,6 @@ def main():
 		these_mesh_codes = set(these_mesh_codes)
 				
 		#Find and add the new ICD-10 codes using ID x-refs
-		
 		for msh in these_mesh_codes:
 			predicted = False
 			if msh[-1:] == "^": #This means it's predicted
@@ -1908,8 +1929,6 @@ def main():
 	Note that, unlike in original MEDLINE record files,
 	this output does not always place long strings on new lines.
 	'''
-	
-	#Now abstract text is searched for named entities
 	
 	if match_record_count < record_count_cutoff:
 		filelabel = match_record_count
@@ -2006,102 +2025,106 @@ def main():
 	
 	#Labeling sentences within the matching records
 	#using the label_this_text function
-	print("\nTagging entities within results...")
-	
-	#Progbar setup
-	prog_width = len(matching_ann_records) 
-	if prog_width < 5000:
-		prog_width = prog_width / 100
-		shortbar = True
-	else:
-		prog_width = prog_width / 1000
-		shortbar = False
-	sys.stdout.write("[%s]" % (" " * prog_width))
-	sys.stdout.flush()
-	sys.stdout.write("\b" * (prog_width+1))
-	j = 0
-	
-	labeled_ann_records = []
-	for record in matching_ann_records:
-		labeled_record = {}
-		labeled_record['TI'] = "NO TITLE"
-		labeled_record['labstract'] = {'text':"NO ABSTRACT",'labels':[["NONE"]]}
-		for field in record:
-			if field == 'TI':
-				labeled_record['TI'] = record[field]
-			if field == 'PMID':
-				labeled_record['PMID'] = record[field]
-			if field == 'AB':
-				abstract = record[field]
-				labeled_abstract = {'text':"",'labels':[]}
-				labeled_abstract['text'] = abstract
-				labeled_abstract['labels'] = label_this_text(abstract, verbose)
-				
-				labeled_record['labstract'] = labeled_abstract
-			
-		labeled_ann_records.append(labeled_record)
+	#unless ner_label is False
+	if ner_label:
+		print("\nTagging entities within results...")
 		
-		j = j+1
-		
-		sys.stdout.flush()
-		if shortbar:
-			if j % 100 == 0:
-				sys.stdout.write("#")
+		#Progbar setup
+		prog_width = len(matching_ann_records) 
+		if prog_width < 5000:
+			prog_width = prog_width / 100
+			shortbar = True
 		else:
-			if j % 1000 == 0:
-				sys.stdout.write("#")
+			prog_width = prog_width / 1000
+			shortbar = False
+		sys.stdout.write("[%s]" % (" " * prog_width))
+		sys.stdout.flush()
+		sys.stdout.write("\b" * (prog_width+1))
+		j = 0
+		
+		labeled_ann_records = []
+		for record in matching_ann_records:
+			labeled_record = {}
+			labeled_record['TI'] = "NO TITLE"
+			labeled_record['labstract'] = {'text':"NO ABSTRACT",'labels':[["NONE"]]}
+			for field in record:
+				if field == 'TI':
+					labeled_record['TI'] = record[field]
+				if field == 'PMID':
+					labeled_record['PMID'] = record[field]
+				if field == 'AB':
+					abstract = record[field]
+					labeled_abstract = {'text':"",'labels':[]}
+					labeled_abstract['text'] = abstract
+					labeled_abstract['labels'] = label_this_text(abstract, verbose)
+					
+					labeled_record['labstract'] = labeled_abstract
+				
+			labeled_ann_records.append(labeled_record)
 			
-	#Writing abstracts with labeled entities to files
-	#both as one file with all labels
-	#and as one file per document, with labels in BRAT format
-	
-	print("\nWriting raw entities and text found in abstracts...")
-	
-	with open(raw_ne_outfilename, 'w') as outfile:
+			j = j+1
+			
+			sys.stdout.flush()
+			if shortbar:
+				if j % 100 == 0:
+					sys.stdout.write("#")
+			else:
+				if j % 1000 == 0:
+					sys.stdout.write("#")
+				
+		#Writing abstracts with labeled entities to files
+		#both as one file with all labels
+		#and as one file per document, with labels in BRAT format
+		
+		print("\nWriting raw entities and text found in abstracts...")
+		
+		with open(raw_ne_outfilename, 'w') as outfile:
+			for record in labeled_ann_records:
+				
+				outfile.write("%s\n" % record['TI'])
+				outfile.write("%s\n" % record['PMID'])
+				outfile.write(str(record['labstract']))
+				outfile.write("\n\n")
+		
+		print("\nWriting text with NER labels in BRAT format...")
+		
+		labeled_filedir = "brat"
+		
+		if not os.path.isdir(labeled_filedir):
+			os.mkdir(labeled_filedir)
+		os.chdir(labeled_filedir)
+		
+		setup_labeledfiledir(named_entities)
+		
 		for record in labeled_ann_records:
 			
-			outfile.write("%s\n" % record['TI'])
-			outfile.write("%s\n" % record['PMID'])
-			outfile.write(str(record['labstract']))
-			outfile.write("\n\n")
-	
-	print("\nWriting text with NER labels in BRAT format...")
-	
-	labeled_filedir = "brat"
-	
-	if not os.path.isdir(labeled_filedir):
-		os.mkdir(labeled_filedir)
-	os.chdir(labeled_filedir)
-	
-	setup_labeledfiledir(named_entities)
-	
-	for record in labeled_ann_records:
-		
-		txt_outfilename = "%s.txt" % record['PMID']
-		with open(txt_outfilename, 'w') as outfile:
-			labeled_abstract = record['labstract']
-			outfile.write(labeled_abstract['text'])
-			
-		ann_outfilename = "%s.ann" % record['PMID']
-		with open(ann_outfilename, 'w') as outfile:
-			i = 1
-			for label in record['labstract']['labels']:
-				label_name = label[0]
-				if label_name != "NONE":
-					start = label[1]
-					end = label[2]
-					text = label[3]
-					outfile.write("T%s\t%s %s %s\t%s\n" % (i, label_name, start, end, text))
-					i = i+1
+			txt_outfilename = "%s.txt" % record['PMID']
+			with open(txt_outfilename, 'w') as outfile:
+				labeled_abstract = record['labstract']
+				outfile.write(labeled_abstract['text'])
 				
+			ann_outfilename = "%s.ann" % record['PMID']
+			with open(ann_outfilename, 'w') as outfile:
+				i = 1
+				for label in record['labstract']['labels']:
+					label_name = label[0]
+					if label_name != "NONE":
+						start = label[1]
+						end = label[2]
+						text = label[3]
+						outfile.write("T%s\t%s %s %s\t%s\n" % (i, label_name, start, end, text))
+						i = i+1
+					
 	os.chdir("..")
 	
 	if record_count > 0: #We can provide output
 		
 		output_file_dict = {outfilename: "full matching records with MEDLINE headings",
-						raw_ne_outfilename: "raw named entities found in abstracts",
-						labeled_filedir: "directory for labeled documents in BRAT format",
 						viz_outfilename: "plots of metadata for matching records"}
+		
+		if ner_label:
+			output_file_dict[raw_ne_outfilename] = "raw named entities found in abstracts"
+			output_file_dict[labeled_filedir] = "directory for labeled documents in BRAT format"
 		
 		#Save some of the metadata counts to files.
 		mtermfilename = "matched_mesh_terms.txt"
