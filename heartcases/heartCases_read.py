@@ -2104,29 +2104,33 @@ def main():
 						viz_outfilename: "plots of metadata for matching records"}
 		
 		#Save some of the metadata counts to files.
-		with open("matched_mesh_terms.txt", "w+") as mtermfile:
+		mtermfilename = "matched_mesh_terms.txt"
+		with open(mtermfilename, "w+") as mtermfile:
 			for item in matched_mesh_terms:
 				outline = "%s\t%s\n" % (item, matched_mesh_terms[item])
 				mtermfile.write(outline)
-			output_file_dict[mtermfile] = "counts of matching MeSH terms from the search terms"
-			
-		with open("all_terms_in_matched.txt", "w+") as atermfile:
+			output_file_dict[mtermfilename] = "counts of matching MeSH terms from the search terms"
+		
+		atermfilename = "all_terms_in_matched.txt"	
+		with open(atermfilename, "w+") as atermfile:
 			for item in all_terms_in_matched:
 				outline = "%s\t%s\n" % (item, all_terms_in_matched[item])
 				atermfile.write(outline)
-			output_file_dict[atermfile] = "counts of all MeSH terms in the documents"
+			output_file_dict[atermfilename] = "counts of all MeSH terms in the documents"
 		
-		with open("matched_years.txt", "w+") as yearfile:
+		yearfilename = "matched_years.txt"
+		with open(yearfilename, "w+") as yearfile:
 			for item in matched_years:
 				outline = "%s\t%s\n" % (item, matched_years[item])
 				yearfile.write(outline)
-			output_file_dict[yearfile] = "counts of all publication years among the documents"
-				
-		with open("rn_codes.txt", "w+") as rnfile:
+			output_file_dict[yearfilename] = "counts of all publication years among the documents"
+		
+		rnfilename = "rn_codes.txt"	
+		with open(rnfilename, "w+") as rnfile:
 			for item in rn_codes:
 				outline = "%s\t%s\n" % (item, rn_codes[item])
 				rnfile.write(outline)
-			output_file_dict[rnfile] = "counts of all material codes among the documents"
+			output_file_dict[rnfilename] = "counts of all material codes among the documents"
 		
 		#Plot first.
 		#Then provide some summary statistics.
@@ -2179,7 +2183,7 @@ def main():
 	
 	print("\nDone - see the following files in the output folder:\n")
 	for item in output_file_dict:
-		print("%s - %s\n" % (item, output_file_dict[item]))
+		print("%s\t\t%s" % (item.ljust(40, ' '), output_file_dict[item]))
 	
 	if get_citation_counts:
 		("\nSee %s for PMIDs and citation counts." % citation_count_filename)
