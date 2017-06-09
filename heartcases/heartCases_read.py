@@ -50,6 +50,8 @@ from sklearn.multiclass import OneVsRestClassifier
 from sklearn import metrics, preprocessing
 from sklearn.externals import joblib
 
+from tqdm import *
+
 from heartCases_help import find_citation_counts
 
 #Constants and Options
@@ -1384,6 +1386,7 @@ def main():
 	#Most of the vocabulary is inherited from MeSH terms.
 	#Clean terms to produce stems.
 	if ner_label:
+		
 		print("Loading named entity dictionary...")
 		
 		global named_entities
@@ -1491,20 +1494,10 @@ def main():
 			
 			#Progbar setup
 			if filereccount < record_count_cutoff:
-				prog_width = filereccount
+				pbar = tqdm(total=filereccount)
 			else:
-				prog_width = record_count_cutoff
-			if prog_width < 5000:
-				fract = 100
-			elif prog_width > 50000:
-				fract = 5000
-			else:
-				fract = 1000
-			prog_width = prog_width / fract
-			sys.stdout.write("[%s]" % (" " * prog_width))
-			sys.stdout.flush()
-			sys.stdout.write("\b" * (prog_width+1))
-			
+				pbar = tqdm(total=record_count_cutoff)
+
 			have_records = True
 			
 			while record_count < record_count_cutoff and fileindex < filereccount:
@@ -1711,11 +1704,12 @@ def main():
 					
 					fileindex = fileindex +1
 					
-					sys.stdout.flush()
-					if record_count % fract == 0:
-						sys.stdout.write("#")
+					pbar.update(1)
+
 					if record_count == record_count_cutoff:
 						break
+	
+	pbar.close()
 	
 	print("Done loading input file.")
 	
@@ -1775,16 +1769,7 @@ def main():
 	
 	#Progbar setup
 	if not verbose:
-		prog_width = len(matching_orig_records) 
-		if prog_width < 5000:
-			prog_width = prog_width / 100
-			shortbar = True
-		else:
-			prog_width = prog_width / 1000
-			shortbar = False
-		sys.stdout.write("[%s]" % (" " * prog_width))
-		sys.stdout.flush()
-		sys.stdout.write("\b" * (prog_width+1))
+		pbar = tqdm(total=len(matching_orig_records))
 		
 	j = 0
 		
@@ -1915,14 +1900,9 @@ def main():
 					% (record['PMID'], j, len(matching_orig_records), 
 						totaltime, classtime))
 		else:
-			sys.stdout.flush()
-			if shortbar:
-				if j % 100 == 0:
-					sys.stdout.write("#")
-			else:
-				if j % 1000 == 0:
-					sys.stdout.write("#")
-	
+			pbar.update(1)
+
+	pbar.close()
 	
 	'''
 	Output the matching entries, complete with new annotations
@@ -1961,16 +1941,7 @@ def main():
 	print("\nWriting matching, newly annotated full records to file...")
 	
 	#Progbar setup
-	prog_width = len(matching_ann_records) 
-	if prog_width < 5000:
-		prog_width = prog_width / 100
-		shortbar = True
-	else:
-		prog_width = prog_width / 1000
-		shortbar = False
-	sys.stdout.write("[%s]" % (" " * prog_width))
-	sys.stdout.flush()
-	sys.stdout.write("\b" * (prog_width+1))
+	pbar = tqdm(total=len(matching_ann_records))
 	j = 0
 			
 	with open(outfilename, 'w') as outfile:
@@ -2015,13 +1986,9 @@ def main():
 			
 			j = j+1
 		
-			sys.stdout.flush()
-			if shortbar:
-				if j % 100 == 0:
-					sys.stdout.write("#")
-			else:
-				if j % 1000 == 0:
-					sys.stdout.write("#")
+			pbar.update(1)
+
+	pbar.close()
 	
 	#Labeling sentences within the matching records
 	#using the label_this_text function
@@ -2030,16 +1997,9 @@ def main():
 		print("\nTagging entities within results...")
 		
 		#Progbar setup
-		prog_width = len(matching_ann_records) 
-		if prog_width < 5000:
-			prog_width = prog_width / 100
-			shortbar = True
-		else:
-			prog_width = prog_width / 1000
-			shortbar = False
-		sys.stdout.write("[%s]" % (" " * prog_width))
-		sys.stdout.flush()
-		sys.stdout.write("\b" * (prog_width+1))
+		if not verbose:
+			pbar = tqdm(total=len(matching_ann_records))
+
 		j = 0
 		
 		labeled_ann_records = []
@@ -2064,13 +2024,11 @@ def main():
 			
 			j = j+1
 			
-			sys.stdout.flush()
-			if shortbar:
-				if j % 100 == 0:
-					sys.stdout.write("#")
-			else:
-				if j % 1000 == 0:
-					sys.stdout.write("#")
+			if not verbose:
+				pbar.update(1)
+		
+		if not verbose:
+			pbar.close()
 				
 		#Writing abstracts with labeled entities to files
 		#both as one file with all labels
