@@ -65,21 +65,42 @@ abst_len_cutoff = 200
 	#too short to use for classifier training or re-labeling.
 	
 train_on_target = True
-	#If True, trains the classifier to label only the focus search terms.
-	#If False, trains classifier on all terms used in training data.
+'''
+If True, trains the classifier to label only the search terms
+included in mesh_topic_tree below.
+If False, trains classifier on *all* terms used in training data.
+This usually means too many different labels will be included
+in the classification task and it will be very inefficient.
+'''
 
-mesh_topic_tree = { "A07":["025","030","035","037","040","045","231","500","541"],
-					"C14":["240", "260","280", "583", "907"],
-					"G09":["188","330"]}
-	#Lists of codes to include among the MeSH terms used to search
-	#documents with (these are domain-specific).
-	#Corresponds to MeSH ontology codes.
-	#See MN headings in the ontology file.
-	#e.g. a heading of C14 and codes of 240 and 280 will include all
-	#terms under C14 (Cardiovascular Diseases) and two of the subheadings.
-	#This set of terms is still used for term labeling if a custom MeSH 
-	#search term list is provided.
+topic_trees = {}
+with open("topic_headings.txt") as headings_file:
+	for line in headings_file:
+		splitline = (line.rstrip()).split("\t")
+		topic_name = splitline[0]
+		topic_heading = splitline[1]
+		topic_subheadings = splitline[2:]
+		if topic_name not in topic_trees:
+			topic_trees[topic_name] = {topic_heading:topic_subheadings}
+		else:
+			topic_trees[topic_name].update({topic_heading:topic_subheadings})
+			
+'''
+File contains sets of codes to include as MeSH terms used to 
+search documents with. Each set (actually a dict) is topic-specific.
+These topics are also used to train label expansion classifier(s).
+e.g. a heading of C14 and codes of 240 and 280 will include all
+terms under C14 (Cardiovascular Diseases) and two of the subheadings.
+Subheadings may be more specific: e.g. use 907.253.535 rather than 907
+to select only that subheading.
 
+To specify individual search terms rather than topics, see the
+--terms argument.
+
+Here, the all_cardiovascular term set is the default topic.
+See topic_headings.txt for others.
+'''
+	
 named_entities = {}
 	#Dict of named entities with entity types as keys and sets
 	#of terms as values.
@@ -374,7 +395,7 @@ def load_slexicon(sl_filename):
 				abbreviation_of.append((splitline[1].split("|"))[0])	
 	return lexicon
 
-def build_mesh_dict(mo_filename):
+def build_mesh_dict(mo_filename, mesh_topic_tree):
 	#Sets up the dict of MeSH terms, specific to the chosen topic.
 	#The subset of terms to select (the topic) is defined by global 
 	#variable mesh_topic_tree above.
@@ -408,20 +429,28 @@ def build_mesh_dict(mo_filename):
 				synonym = (entry.split("|"))[0].lower()
 				these_synonyms.append(synonym)
 			elif line[0:3] == "MN ":
+				add_synonyms = False
 				#Location in the MeSH tree. May have multiple locations
 				code = (line.split("="))[1].strip()
 				codetree = code.split(".")
 				tree_cat = codetree[0]
 				
 				if codetree[0] in mesh_topic_tree:
-					if len(codetree) == 1: #This is a category root.
-						for synonym in these_synonyms:
-							if synonym not in mesh_term_list:
-								mesh_term_list.append(synonym)
-					elif codetree[1] in mesh_topic_tree[codetree[0]]:  
-						for synonym in these_synonyms:
-							if synonym not in mesh_term_list:
-								mesh_term_list.append(synonym)
+
+					if len(codetree) > 1: 
+						#This is any set of secondary subheadings
+						#e.g if tree is C14.907.253.061
+						#this may match 907 or 907.253
+						if codetree[1] in mesh_topic_tree[codetree[0]]:
+							add_synonyms = True
+						elif ".".join(codetree[1:]) in mesh_topic_tree[codetree[0]]:
+							add_synonyms = True
+						
+				if add_synonyms:
+					for synonym in these_synonyms:
+						if synonym not in mesh_term_list:
+							mesh_term_list.append(synonym)	
+							
 				codetree = [""]
 			
 			#This indicates the end of an entry.
@@ -1177,6 +1206,10 @@ def parse_args():
 						"a list of PubMed IDs, one per line, to retrieve "
 						"MEDLINE records for")
 	parser.add_argument('--recordlimit', help="The maximum number of records to search")
+	parser.add_argument('--search_topic', help="Select a pre-curated set of "
+						"MeSH terms to search with and to use for term "
+						"expansion. See topic_headings.txt for topic "
+						"names and corresponding headings.")
 	parser.add_argument('--terms', help="name of a text file containing "
 						"a list of MeSH terms, one per line, to search for. "
 						"Will also search titles for terms")
@@ -1281,6 +1314,14 @@ def main():
 	if args.mesh_expand:
 		if args.mesh_expand == "FALSE":
 			mesh_expand = False
+	
+	mesh_topic_tree = topic_trees["all_cardiovascular"]		
+	if args.search_topic:
+		try:
+			mesh_topic_tree = topic_trees[args.search_topic]
+		except KeyError:
+			print("Couldn't find requested search topic. Using default.")
+			mesh_topic_tree = topic_trees["all_cardiovascular"]
 
 	#Argument tells us if we should not test the classifier
 	#This saves some time.
@@ -1346,12 +1387,13 @@ def main():
 	for tree_cat in mesh_topic_tree:
 		print("%s (%s)" % (tree_cat, ",".join(mesh_topic_tree[tree_cat])))
 		
-	mo_ids, mo_cats, mesh_term_list = build_mesh_dict(mo_filename) 
+	mo_ids, mo_cats, mesh_term_list = build_mesh_dict(mo_filename, mesh_topic_tree) 
 	
 	unique_term_count = len(set(mo_ids.values()))
 	synonym_count = len(mo_ids) - unique_term_count
-	print("Loaded %s unique MeSH terms and %s synonyms "
-			"across %s categories." % \
+	print("Full MeSH ontology includes:\n"
+			"%s unique MeSH terms and %s synonyms \n"
+			"across %s primary subheadings." % \
 			(unique_term_count, synonym_count, len(mo_cats)))
 	
 	#Check if custom MeSH search term list was provided.
@@ -1366,7 +1408,7 @@ def main():
 		have_custom_terms = True
 		print("File contains %s terms." % len(custom_mesh_terms))
 	else:
-		print("Searching documents using all domain-related terms.")
+		print("Searching documents using all topic-related terms.")
 		print("List includes %s topic-relevant terms + synonyms." % \
 			(len(mesh_term_list)))
 		have_custom_terms = False
