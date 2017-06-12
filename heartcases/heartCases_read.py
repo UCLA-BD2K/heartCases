@@ -2073,7 +2073,7 @@ def main():
 						outfile.write("T%s\t%s %s %s\t%s\n" % (i, label_name, start, end, text))
 						i = i+1
 					
-	os.chdir("..")
+	
 	
 	if record_count > 0: #We can provide output
 		
@@ -2158,6 +2158,8 @@ def main():
 			plot_those_counts(cite_counts, all_citation_counts, cite_viz_outfilename,
 								"Citation counts by journal")
 			output_file_dict[cite_viz_outfilename] = "plots of citation counts by journal"
+		
+		os.chdir("..")
 			
 	else:
 		sys.exit("Found no matching references.")
