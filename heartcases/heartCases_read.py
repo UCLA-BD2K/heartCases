@@ -1314,14 +1314,15 @@ def main():
 	if args.mesh_expand:
 		if args.mesh_expand == "FALSE":
 			mesh_expand = False
-	
-	mesh_topic_tree = topic_trees["all_cardiovascular"]		
+			
 	if args.search_topic:
 		try:
 			mesh_topic_tree = topic_trees[args.search_topic]
 		except KeyError:
 			print("Couldn't find requested search topic. Using default.")
-			mesh_topic_tree = topic_trees["all_cardiovascular"]
+			mesh_topic_tree = topic_trees["cardiovascular"]
+	else:
+		mesh_topic_tree = topic_trees["cardiovascular"]
 
 	#Argument tells us if we should not test the classifier
 	#This saves some time.
