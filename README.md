@@ -19,7 +19,13 @@ A separate classifier is then used to determine medically-relevant content withi
 Matching abstracts are labeled as part of a NER system. Labels may be visualized using the BRAT environment (http://brat.nlplab.org/).
 
 ### Requirements 
-Requires [bokeh](http://bokeh.pydata.org), [numpy](http://www.numpy.org/), [nltk](http://www.nltk.org/), and [scikit-learn](http://scikit-learn.org/stable/).
+Requires [bokeh](http://bokeh.pydata.org), [numpy](http://www.numpy.org/), [nltk](http://www.nltk.org/), and [scikit-learn](http://scikit-learn.org/stable/), as well as [tqdm](https://pypi.python.org/pypi/tqdm).  All packaged may be installed using *pip*.
+
+NLTK will require its stopwords corpus to be downloaded. This can be done within a Python session; enter the following, followed by 'stopwords' at the Downloader prompt.
+
+`import nltk`
+
+`nltk.download()`
 
 Uses the Disease Ontology project database; see
 http://www.disease-ontology.org/ or [Kibbe et al. (2015) NAR.](https://www.ncbi.nlm.nih.gov/pubmed/25348409)
