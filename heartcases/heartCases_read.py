@@ -2134,7 +2134,7 @@ def main():
 						outfile.write("T%s\t%s %s %s\t%s\n" % (i, label_name, start, end, text))
 						i = i+1
 					
-	
+		os.chdir("..")
 	
 	if record_count > 0: #We can provide output
 		
