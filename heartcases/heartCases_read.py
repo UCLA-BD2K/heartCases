@@ -24,6 +24,17 @@ import sys, tarfile, time
 import urllib, urllib2
 import warnings
 
+import pip #Just using it to check on installed packages
+installed = pip.get_installed_distributions()
+install_list = [item.project_name for item in installed]
+need_install = []
+for name in ["bokeh", "nltk", "sklearn","tqdm"]:
+	if name not in install_list:
+		need_install.append(name)
+if len(need_install) > 0:
+	sys.exit("Please install these Python packages first:\n%s" 
+				% "\n".join(need_install))
+
 from itertools import tee, izip
 
 from operator import itemgetter
@@ -444,6 +455,7 @@ def build_mesh_dict(mo_filename, mesh_topic_tree):
 						if codetree[1] in mesh_topic_tree[codetree[0]]:
 							add_synonyms = True
 						elif ".".join(codetree[1:]) in mesh_topic_tree[codetree[0]]:
+							#Note that this requires an exact match
 							add_synonyms = True
 						
 				if add_synonyms:
@@ -1292,6 +1304,8 @@ def main():
 	
 	citation_range = [0,9999] #Default citation range
 	
+	print("*** heartCases - read module ***")
+	
 	#Set up parser
 	args = parse_args()
 	
@@ -1335,7 +1349,24 @@ def main():
 	if args.ner_label:
 		if args.ner_label == "FALSE":
 			ner_label = False
-			
+	
+	#Check if PMID list was provided.
+	#If so, download records for all of them.
+	if args.pmids:
+		pmid_file = str(args.pmids)
+		print("Retrieving MEDLINE records for all PMIDs listed in "
+				"%s" % pmid_file)
+		inputfile = get_medline_from_pubmed(pmid_file)
+		medline_file_list = [inputfile]		
+	#Check if input file name was provided
+	elif args.inputfile:
+		medline_file_list = [args.inputfile]
+	#otherwise, load all files from input folder
+	else:
+		medline_file_list = glob.glob('input/*.txt')
+		if len(medline_file_list) == 0:
+			sys.exit("Found no input files. Exiting.")
+	
 	#Get the disease ontology file if it isn't present
 	disease_ofile_list = glob.glob('doid.*')
 	if len(disease_ofile_list) >1:
@@ -1425,6 +1456,10 @@ def main():
 		slexicon = load_slexicon(sl_filename)
 		print("Loaded %s lexicon entries." % len(slexicon))
 	
+	#Check for and download NLTK corpus if needed
+	print("Checking for NLTK resources...")
+	nltk.download('stopwords')
+	
 	#Load the named entities here if needed
 	#Most of the vocabulary is inherited from MeSH terms.
 	#Clean terms to produce stems.
@@ -1444,23 +1479,6 @@ def main():
 		for ne_type in named_entities:
 			print("%s %s" % (str(ne_type).ljust(30, ' '),
 							len(named_entities[ne_type])))
-	
-	#Check if PMID list was provided.
-	#If so, download records for all of them.
-	if args.pmids:
-		pmid_file = str(args.pmids)
-		print("Retrieving MEDLINE records for all PMIDs listed in "
-				"%s" % pmid_file)
-		inputfile = get_medline_from_pubmed(pmid_file)
-		medline_file_list = [inputfile]		
-	#Check if input file name was provided
-	elif args.inputfile:
-		medline_file_list = [args.inputfile]
-	#otherwise, load all files from input folder
-	else:
-		medline_file_list = glob.glob('input/*.txt')
-		if len(medline_file_list) == 0:
-			sys.exit("Found no input files. Exiting.")
 	
 	#Check if a recordlimit has been set.
 	if args.recordlimit:
