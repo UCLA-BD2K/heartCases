@@ -19,7 +19,15 @@ A separate classifier is then used to determine medically-relevant content withi
 Matching abstracts are labeled as part of a NER system. Labels may be visualized using the BRAT environment (http://brat.nlplab.org/).
 
 ### Requirements 
-Requires [bokeh](http://bokeh.pydata.org), [numpy](http://www.numpy.org/), [nltk](http://www.nltk.org/), and [scikit-learn](http://scikit-learn.org/stable/), as well as [tqdm](https://pypi.python.org/pypi/tqdm).  All packaged may be installed using *pip*.
+Requires the following packages. All packaged may be installed using *pip*.
+* [bokeh](http://bokeh.pydata.org)
+* [numpy](http://www.numpy.org/)
+* [nltk](http://www.nltk.org/)
+* [scikit-learn](http://scikit-learn.org/stable/)
+* [scipy](https://www.scipy.org/) *
+* [tqdm](https://pypi.python.org/pypi/tqdm).  
+
+*Note that scipy can be difficult to set up in some environments (e.g. Windows) so using a system like [Anaconda](https://www.continuum.io/downloads) may help. Or, [find directions and Windows binaries for scipy here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy).
 
 NLTK will require its stopwords corpus to be downloaded. This can be done within a Python session; enter the following, followed by 'stopwords' at the Downloader prompt.
 
