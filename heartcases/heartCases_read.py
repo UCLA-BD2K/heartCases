@@ -44,9 +44,9 @@ from bokeh.plotting import figure, output_file, show
 from bokeh.models import Label
 
 import nltk
-from nltk.stem.snowball import SnowballStemmer 
+from nltk.stem.snowball import SnowballStemmer
 from nltk.corpus import stopwords
-from nltk.tokenize import sent_tokenize
+from nltk.tokenize import sent_tokenize, MWETokenizer, WhitespaceTokenizer
 
 import numpy as np
 
@@ -643,7 +643,7 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 			
 	os.chdir("..")
 
-def label_this_text(text, verbose=False):
+def label_this_text(text, mwe_tokenizer, verbose=False):
 	'''
 	Takes a string (usually a sentence or abstract) as input.
 	Labels named entities within the string using the term dictionary.
@@ -667,8 +667,8 @@ def label_this_text(text, verbose=False):
 	
 	stopword_set = set(stopwords.words('english'))
 	
-	n = 6
-	
+	spans = []
+	tokens = []
 	split_text = [] 
 	labels = []
 	
@@ -684,57 +684,28 @@ def label_this_text(text, verbose=False):
 	Note that start is the first character index
 	and end is the index after the final character.
 	'''
-
-	#Start with n-grams where n>1
-	#As these will take precedence
-	for ngram_size in range(2,n+1):
-		i = 0
-		start = 0
-		end = 0
-		ngram = []
-		word = ""
-		for char in text:
-			if char in ["\n",",",".",";"]:
-				ngram = []
-				word = ""
-				start = i+1
-			elif char in [" "]:
-				ngram.append(word)
-				word = ""
-				if len(ngram) == ngram_size:
-					end = i
-					ngram_string = " ".join(ngram)
-					start = i - len(ngram_string)
-					if ngram[0].lower() not in stopword_set:
-						if ngram[-1].lower() not in stopword_set:
-							split_text.append([start,ngram_string,end])
-					del ngram[0]
-			else:
-				word = word + char
-				
-			i = i+1
 	
-	#Now single terms
+	'''
+	Still need to add multi-word tokens by combining existing spans and tokens.
+	Should also handle overlaps before they are added to split_text.
+	'''
+	
+	span_gen = WhitespaceTokenizer().span_tokenize(text)
+	single_spans = [span for span in span_gen]
+	single_words = WhitespaceTokenizer().tokenize(text)
+	spans = spans + single_spans
+	tokens = tokens + single_words
+	
 	i = 0
-	start = 0
-	end = 0
-	word = ""
-	for char in text:
-		if char in [" ","\n",",",".",";"]:
-			end = i
-			if len(word) > 0 and word.lower() not in stopword_set:
-				split_text.append([start,word,end])
-			word = ""
-			start = i+1
-		else:
-			word = word + char
-			
-		i = i+1
-		
+	for span in spans:
+		start = span[0]
+		end = span[1]
+		word = tokens[i]
+		i = i +1
+		split_text.append([start,word,end])
+	
 	#Add labels from named_entities set
 	#Check for overlap
-	#If two labels share a beginning or an end, the larger label is
-	#retained and the smaller label is not
 	for ne_type in named_entities:
 
 		for ngram_and_index in split_text:
@@ -751,11 +722,12 @@ def label_this_text(text, verbose=False):
 				for label in labels:
 					if start == label[1] or end == label[2]:
 						other_label_size = label[2] - label[1]
-						if label_size < other_label_size:
+						if label_size <= other_label_size:
 							add_this_label = False
 						break
 				if add_this_label:
 					labels.append([ne_type, start, end, ngram])
+					
 	
 	#Labels are sorted by starting character
 	sortedlabels = sorted(labels, key=itemgetter(1))
@@ -2060,7 +2032,7 @@ def main():
 		#Progbar setup
 		if not verbose:
 			pbar = tqdm(total=len(matching_ann_records))
-
+		
 		j = 0
 		
 		labeled_ann_records = []
@@ -2077,7 +2049,8 @@ def main():
 					abstract = record[field]
 					labeled_abstract = {'text':"",'labels':[]}
 					labeled_abstract['text'] = abstract
-					labeled_abstract['labels'] = label_this_text(abstract, verbose)
+					labeled_abstract['labels'] = label_this_text(abstract, 
+																verbose)
 					
 					labeled_record['labstract'] = labeled_abstract
 				
