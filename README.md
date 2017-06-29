@@ -29,12 +29,6 @@ Requires the following packages. All packaged may be installed using *pip*.
 
 *Note that numpy and scipy can be difficult to set up in some environments (e.g. Windows) so using a system like [Anaconda](https://www.continuum.io/downloads) may help. Or, find directions and Windows binaries for [scipy here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy) and for [numpy here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy).
 
-NLTK will require its stopwords corpus to be downloaded. This can be done within a Python session; enter the following, followed by 'stopwords' at the Downloader prompt.
-
-`import nltk`
-
-`nltk.download()`
-
 Uses the Disease Ontology project database; see
 http://www.disease-ontology.org/ or [Kibbe et al. (2015) NAR.](https://www.ncbi.nlm.nih.gov/pubmed/25348409)
 
