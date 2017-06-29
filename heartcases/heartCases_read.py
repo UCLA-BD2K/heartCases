@@ -697,27 +697,51 @@ def label_this_text(text, mwe_tokenizer, verbose=False):
 	tokens = tokens + single_words
 	
 	i = 0
-	for span in spans:
+	for span in spans: #Add span indices and contents
 		start = span[0]
 		end = span[1]
 		word = tokens[i]
 		i = i +1
 		split_text.append([start,word,end])
 	
+	split_text_multiword = []
+	for n in range(1, 6): #Add multiword tokens, up to 6 words
+		i = 0
+		for token_and_index in split_text:
+			token_ok = True
+			try:
+				start = split_text[i][0]
+				end = split_text[i+n][2]
+				token = ""
+				for text in split_text[i:i+n+1]:
+					word = text[1]
+					if word.lower() in stopword_set: #Don't extend spans with stopwords alone
+						token_ok = False
+						break
+					token = token + " " + text[1]
+				if token_ok:
+					token = token.strip()
+					split_text_multiword.append([start,token,end])
+				i = i +1
+			except IndexError:
+				break
+	
+	split_text = split_text + split_text_multiword
+				
 	#Add labels from named_entities set
 	#Check for overlap
 	for ne_type in named_entities:
 
-		for ngram_and_index in split_text:
+		for token_and_index in split_text:
 			add_this_label = False
 			
-			ngram = ngram_and_index[1]
-			clean_ngram = clean(ngram)
+			token = token_and_index[1]
+			clean_token = clean(token)
 			
-			if clean_ngram in named_entities[ne_type]:
+			if clean_token in named_entities[ne_type]:
 				add_this_label = True
-				start = ngram_and_index[0]
-				end = ngram_and_index[2]
+				start = token_and_index[0]
+				end = token_and_index[2]
 				label_size = end - start
 				for label in labels:
 					if start == label[1] or end == label[2]:
@@ -726,7 +750,7 @@ def label_this_text(text, mwe_tokenizer, verbose=False):
 							add_this_label = False
 						break
 				if add_this_label:
-					labels.append([ne_type, start, end, ngram])
+					labels.append([ne_type, start, end, token])
 					
 	
 	#Labels are sorted by starting character
