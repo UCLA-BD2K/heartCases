@@ -48,7 +48,7 @@ Run with the `-h` option to see additional arguments.
 
 #### Input
 Text files containing literature references in MEDLINE format.
-Files to process should be placed in the "input" folder.
+Files to process should be placed in the "input" folder - create this folder in the same location as the heartCases modules if it does not exist.
 
 Alternatively, provide the input file as an argument:
   `--inputfile INPUT_FILE_NAME`
