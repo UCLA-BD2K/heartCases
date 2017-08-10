@@ -1316,10 +1316,11 @@ def main():
 	if args.citation_counts:
 		if args.citation_counts == "TRUE":
 			get_citation_counts = True
-			if args.citation_range != citation_range:
-				use_citation_range = True
-				citation_range = args.citation_range
-	
+			if args.citation_range:
+				if args.citation_range != citation_range:
+					use_citation_range = True
+					citation_range = args.citation_range
+		
 	mesh_expand = True
 	if args.mesh_expand:
 		if args.mesh_expand == "FALSE":
