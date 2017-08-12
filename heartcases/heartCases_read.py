@@ -1223,6 +1223,9 @@ def parse_args():
 						"Will also search titles for terms")
 	parser.add_argument('--testing', help="if FALSE, do not test classifiers")
 	parser.add_argument('--verbose', help="if TRUE, provide verbose output")
+	parser.add_argument('--first_match', help="if TRUE, filter input based on first match "
+						"but do not count all matches. Can save time.")
+	parser.add_argument('--search_doc_titles', help="if FALSE, do not search document titles.")
 	
 	try:
 		args = parser.parse_args()
@@ -1346,6 +1349,19 @@ def main():
 	if args.ner_label:
 		if args.ner_label == "FALSE":
 			ner_label = False
+			
+	#Argument tells us if we should count all MeSH term matches
+	#in title and terms or just the first one.
+	#This saves time if there are many documents or search terms.
+	first_match_only = False
+	if args.first_match:
+		if args.first_match == "TRUE":
+			first_match_only = True
+			
+	search_title = True
+	if args.search_doc_titles:
+		if args.search_doc_titles == "FALSE":
+			search_title = False
 	
 	#Check if PMID list was provided.
 	#If so, download records for all of them.
@@ -1608,10 +1624,11 @@ def main():
 					else:
 						search_term_list = mesh_term_list
 					
-					for word in search_term_list:
-						if word in split_title:
-							found = 1
-							break
+					if search_title:
+						for word in search_term_list:
+							if word in split_title:
+								found = 1
+								break
 
 					these_mesh_terms = []
 					these_other_terms = []
@@ -1655,8 +1672,12 @@ def main():
 									matched_mesh_terms[term] = 1
 								else:
 									matched_mesh_terms[term] = matched_mesh_terms[term] +1
+								if first_match_only:
+									break
 							if term in these_clean_other_terms:
 								found = 1
+								if first_match_only:
+									break
 					
 					if found == 1:
 							
@@ -1972,6 +1993,10 @@ def main():
 		filelabel = match_record_count
 	else:
 		filelabel = record_count_cutoff
+	
+	#If this is a topic-based search, add corresponding topic name
+	if args.search_topic:
+		filelabel = filelabel + "_" + args.search_topic
 		
 	if len(medline_file_list) == 1:
 		outfilename = (medline_file_list[0])[6:-4] + "_%s_out.txt" \
