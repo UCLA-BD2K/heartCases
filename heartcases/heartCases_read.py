@@ -1996,7 +1996,7 @@ def main():
 	
 	#If this is a topic-based search, add corresponding topic name
 	if args.search_topic:
-		filelabel = filelabel + "_" + args.search_topic
+		filelabel = "%s_%s" % (filelabel, args.search_topic)
 		
 	if len(medline_file_list) == 1:
 		outfilename = (medline_file_list[0])[6:-4] + "_%s_out.txt" \
