@@ -19,11 +19,6 @@ SPECIALIST.txt.
 __author__= "Harry Caufield"
 __email__ = "j.harry.caufield@gmail.com"
 
-import argparse, glob, operator, os, random, re, string
-import sys, tarfile, time
-import urllib, urllib2
-import warnings
-
 import pip #Just using it to check on installed packages
 installed = pip.get_installed_distributions()
 install_list = [item.project_name for item in installed]
@@ -35,8 +30,11 @@ if len(need_install) > 0:
 	sys.exit("Please install these Python packages first:\n%s" 
 				% "\n".join(need_install))
 
-from itertools import tee, izip
+import argparse, glob, operator, os, random, re, string, sys, time
+import urllib, urllib2
+import warnings
 
+from itertools import tee, izip
 from operator import itemgetter
 
 from bokeh.layouts import column
@@ -46,16 +44,13 @@ from bokeh.models import Label
 import nltk
 from nltk.stem.snowball import SnowballStemmer
 from nltk.corpus import stopwords
-from nltk.tokenize import sent_tokenize, MWETokenizer, WhitespaceTokenizer
+from nltk.tokenize import sent_tokenize, WhitespaceTokenizer
 
 import numpy as np
 
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import HashingVectorizer
-
 from sklearn.tree import DecisionTreeClassifier
-
-from sklearn.svm import *
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn import metrics, preprocessing
@@ -66,11 +61,7 @@ from tqdm import *
 from heartCases_help import find_citation_counts
 
 #Constants and Options
-					
-random_record_list = False
-	#If True, choose training records at random until hitting
-	#record_count_cutoff value
-	
+						
 abst_len_cutoff = 200
 	#Abstracts less than this number of characters are considered
 	#too short to use for classifier training or re-labeling.
@@ -119,7 +110,9 @@ named_entities = {}
 data_locations = {"do": ("http://ontologies.berkeleybop.org/","doid.obo"),
 					"mo": ("ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/asciimesh/","d2017.bin"),
 					"sl": ("https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lexicon/2017/release/LEX/", "LEXICON")}
-	#Dict of locations of the external data sets used by this project.
+	#Dict of locations of the external data sets used by this project:
+	#Disease Ontology (do), MeSH Ontology (mo), and SPECIALIST lexicon 
+	#(sl).
 
 #Classes
 class Record(dict):
@@ -643,7 +636,7 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 			
 	os.chdir("..")
 
-def label_this_text(text, mwe_tokenizer, verbose=False):
+def label_this_text(text, verbose=False):
 	'''
 	Takes a string (usually a sentence or abstract) as input.
 	Labels named entities within the string using the term dictionary.
@@ -1213,19 +1206,26 @@ def parse_args():
 	parser.add_argument('--pmids', help="name of a text file containing "
 						"a list of PubMed IDs, one per line, to retrieve "
 						"MEDLINE records for")
-	parser.add_argument('--recordlimit', help="The maximum number of records to search")
+	parser.add_argument('--recordlimit', help="The maximum number of "
+						"records to search.")
 	parser.add_argument('--search_topic', help="Select a pre-curated set of "
 						"MeSH terms to search with and to use for term "
 						"expansion. See topic_headings.txt for topic "
 						"names and corresponding headings.")
 	parser.add_argument('--terms', help="name of a text file containing "
 						"a list of MeSH terms, one per line, to search for. "
-						"Will also search titles for terms")
+						"Will also search titles for terms, unless "
+						"--search_doc_titles is set to FALSE.")
 	parser.add_argument('--testing', help="if FALSE, do not test classifiers")
 	parser.add_argument('--verbose', help="if TRUE, provide verbose output")
-	parser.add_argument('--first_match', help="if TRUE, filter input based on first match "
-						"but do not count all matches. Can save time.")
-	parser.add_argument('--search_doc_titles', help="if FALSE, do not search document titles.")
+	parser.add_argument('--first_match', help="if TRUE, filter input "
+						"based on first match but do not count all "
+						"matches. Can save time.")
+	parser.add_argument('--search_doc_titles', help="if FALSE, do not "
+						"search document titles.")
+	parser.add_argument('--random_records', help="if TRUE, choose "
+						"training records at random until hitting "
+						"value specified by --recordlimit argument.")
 	
 	try:
 		args = parser.parse_args()
@@ -1362,6 +1362,13 @@ def main():
 	if args.search_doc_titles:
 		if args.search_doc_titles == "FALSE":
 			search_title = False
+	
+	#If True, choose training records at random until hitting
+	#record_count_cutoff value
+	random_record_list = False
+	if args.random_records:
+		if args.random_records == "TRUE":
+			random_record_list = True
 	
 	#Check if PMID list was provided.
 	#If so, download records for all of them.
