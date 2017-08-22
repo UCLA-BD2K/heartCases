@@ -15,6 +15,22 @@ and the 2017 SPECIALIST Lexicon.
 The SPECIALIST tools come with their own terms and conditions: see
 SPECIALIST.txt.
 
+The topic_headings.txt file contains sets of codes to include as MeSH 
+terms used to search documents with. Each set (actually a dict) is 
+topic-specific. These topics are also used to train the label expansion 
+classifier. For example, a heading of C14 and codes of 240 and 280 will 
+include all terms under the heading C14 (Cardiovascular Diseases) but
+only under its subheadings 240 and 260. For more specific subheadings,
+these codes must be more specific as well: e.g. use 907.253.535 to only
+use MeSH terms related to statins, use the heading D27 and the code
+505.519.186.071.202.370 (corresponding to the full MeSH tree number of
+D27.505.519.186.071.202.370).
+
+To specify individual search terms rather than topics, see the
+--terms argument.
+
+Here, the all_cardiovascular term set is the default topic.
+See topic_headings.txt for others.
 '''
 __author__= "Harry Caufield"
 __email__ = "j.harry.caufield@gmail.com"
@@ -88,19 +104,7 @@ with open("topic_headings.txt") as headings_file:
 			topic_trees[topic_name].update({topic_heading:topic_subheadings})
 			
 '''
-File contains sets of codes to include as MeSH terms used to 
-search documents with. Each set (actually a dict) is topic-specific.
-These topics are also used to train label expansion classifier(s).
-e.g. a heading of C14 and codes of 240 and 280 will include all
-terms under C14 (Cardiovascular Diseases) and two of the subheadings.
-Subheadings may be more specific: e.g. use 907.253.535 rather than 907
-to select only that subheading.
 
-To specify individual search terms rather than topics, see the
---terms argument.
-
-Here, the all_cardiovascular term set is the default topic.
-See topic_headings.txt for others.
 '''
 	
 named_entities = {}
