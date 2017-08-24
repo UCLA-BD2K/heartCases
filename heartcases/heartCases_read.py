@@ -103,20 +103,9 @@ with open("topic_headings.txt") as headings_file:
 		else:
 			topic_trees[topic_name].update({topic_heading:topic_subheadings})
 			
-'''
-
-'''
-	
 named_entities = {}
 	#Dict of named entities with entity types as keys and sets
 	#of terms as values.
-	
-data_locations = {"do": ("http://ontologies.berkeleybop.org/","doid.obo"),
-					"mo": ("ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/asciimesh/","d2017.bin"),
-					"sl": ("https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lexicon/2017/release/LEX/", "LEXICON")}
-	#Dict of locations of the external data sets used by this project:
-	#Disease Ontology (do), MeSH Ontology (mo), and SPECIALIST lexicon 
-	#(sl).
 
 #Classes
 class Record(dict):
@@ -127,20 +116,21 @@ class Record(dict):
 #Functions
 
 def find_more_record_text(rec_ids):
-	#Retrieves abstract text (or more, if possible)
-	#for records lacking abstracts.
-	#Takes dict with pmids as keys and pmc_ids as values as input.
-	#Returns dict pmids as keys and abstract texts as values.
+	'''
+	Retrieves abstract text (or more, if possible) for records lacking 
+	abstracts. Takes dict with pmids as keys and pmc_ids as values as 
+	input. Returns dict pmids as keys and abstract texts as values.
 	
-	#Retrieves abstracts from PubMed Central if available.
-	#Doesn't search anything else yet.
+	Retrieves abstracts from PubMed Central if available.
+	Doesn't search anything else yet.
 	
-	#This list is processed all at once in order to control
-	#the number of requests made through NCBI resources.
-	#As this may still involve >500 IDs then NCBI requires
-	#call to the History server first as per this link:
-	#https://www.ncbi.nlm.nih.gov/books/NBK25499/
-	#Note this needs to be a POST request, not a GET
+	This list is processed all at once in order to control
+	the number of requests made through NCBI resources.
+	As this may still involve >500 IDs then NCBI requires
+	call to the History server first as per this link:
+	https://www.ncbi.nlm.nih.gov/books/NBK25499/
+	Note this needs to be a POST request, not a GET
+	'''
 	
 	pmc_ids_to_search = []
 	newtext_dict = {} #PubMed IDs are keys, abstracts are values
@@ -178,7 +168,6 @@ def find_more_record_text(rec_ids):
 			args = "?db=pmc" + idstring
 			args = urllib.urlencode({"db":"pmc","id":idstring})
 			response = urllib2.urlopen(queryURL, args)
-			#print(queryURL+args)
 			
 			response_text = (response.read()).splitlines()
 			
@@ -236,13 +225,19 @@ def find_more_record_text(rec_ids):
 		os.chdir("..")
 			
 def get_data_files(name):
-	#Retrieves one of the following:
-	#the Disease Ontology database,
-	#the 2017 MeSH term file from NLM,
-	#or the 2017 SPECIALIST Lexicon from NLM.
-	#The last of these requires decompression and returns a directory.
-	#The others return a filename.
-
+	'''
+	Retrieves one of the following:
+	the Disease Ontology database (do),
+	the 2017 MeSH term file from NLM (mo),
+	or the 2017 SPECIALIST Lexicon from NLM (sl).
+	The last of these requires decompression and returns a directory.
+	The others return a filename.
+	'''
+	
+	data_locations = {"do": ("http://ontologies.berkeleybop.org/","doid.obo"),
+					"mo": ("ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/asciimesh/","d2017.bin"),
+					"sl": ("https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lexicon/2017/release/LEX/", "LEXICON")}
+	
 	baseURL, filename = data_locations[name]
 	filepath = baseURL + filename
 	outfilepath = filename
@@ -251,23 +246,26 @@ def get_data_files(name):
 	response = urllib2.urlopen(filepath)
 	out_file = open(os.path.basename(filename), "w+b")
 	chunk = 1048576
+	pbar = tqdm(unit="Mb")
 	while 1:
 		data = (response.read(chunk)) #Read one Mb at a time
 		out_file.write(data)
 		if not data:
+			pbar.close()
 			print("\n%s file download complete." % filename)
 			out_file.close()
 			break
-		sys.stdout.flush()
-		sys.stdout.write(".")
+		pbar.update(1)
 	
 	return filename
 	
 def parse_disease_ontology(do_filename):
-	#Build the MeSH ID to ICD-10 dictionary
-	#the relevant IDs are xrefs in no particular order
-	#Also, terms differ in the xrefs provided (e.g., a MeSH but no ICD-10)
-	#So, re-assemble the entries first and remove those without both refs
+	'''
+	Build the MeSH ID to ICD-10 dictionary
+	the relevant IDs are xrefs in no particular order
+	Also, terms differ in the xrefs provided (e.g., a MeSH but no ICD-10)
+	So, re-assemble the entries first and remove those without both refs
+	'''
 	do_ids = {}	#Internal DOIDs are keys, lists of xrefs are values
 				#MeSH ID is always first xref, ICD-10 code is 2nd
 				#List also stores parent DOID, if available, in 3rd value
@@ -363,8 +361,11 @@ def parse_disease_ontology(do_filename):
 	return do_ids, do_xrefs_icd10, do_xrefs_terms
 
 def load_slexicon(sl_filename):
-	#Loads the terms in the SPECIALIST lexicon.
-	#Does not process all fields
+	'''
+	Loads the terms in the SPECIALIST lexicon.
+	Does not process all fields.
+	Not currently used.
+	'''
 	
 	lexicon = {}
 	
@@ -400,13 +401,16 @@ def load_slexicon(sl_filename):
 			if splitline[0] == "acronym_of":
 				acronym_of.append((splitline[1].split("|"))[0])
 			if splitline[0] == "abbreviation_of":
-				abbreviation_of.append((splitline[1].split("|"))[0])	
+				abbreviation_of.append((splitline[1].split("|"))[0])
+					
 	return lexicon
 
 def build_mesh_dict(mo_filename, mesh_topic_tree):
-	#Sets up the dict of MeSH terms, specific to the chosen topic.
-	#The subset of terms to select (the topic) is defined by global 
-	#variable mesh_topic_tree above.
+	'''
+	Sets up the dict of MeSH terms, specific to the chosen topic.
+	The subset of terms to select (the topic) is defined by global 
+	variable mesh_topic_tree above.
+	'''
 	
 	mesh_term_list = [] #All terms to be used for document filtering
 						#and term expansion.
@@ -483,8 +487,12 @@ def build_mesh_dict(mo_filename, mesh_topic_tree):
 	return mo_ids, mo_cats, mesh_term_list
 
 def get_medline_from_pubmed(pmid_list):
-	#Given a file containing a list of PMIDs, one per line.
-	#Returns a file containing one MEDLINE record for each PMID.
+	'''
+	Given a file containing a list of PMIDs, one per line.
+	Creates a file containing one MEDLINE record for each PMID.
+	Returns name of this file.
+	'''
+	
 	outfilepath = pmid_list[:-4] + "_MEDLINE.txt"  
 	baseURL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed"
 	idstring = "&id=" # to be followed by PubMed IDs, comma-delimited
@@ -503,21 +511,24 @@ def get_medline_from_pubmed(pmid_list):
 	response = urllib2.urlopen(queryURL)
 	out_file = open(outfilepath, "w+b")
 	chunk = 1048576
+	pbar = tqdm(unit="Mb")
 	while 1:
 		data = (response.read(chunk)) #Read one Mb at a time
 		out_file.write(data)
 		if not data:
+			pbar.close()
 			print("\nRecords retrieved - see %s" % outfilepath)
 			out_file.close()
 			break
-		sys.stdout.flush()
-		sys.stdout.write(".")
+		pbar.update(1)
 		
 	return outfilepath
 	
 def get_mesh_terms(terms_list):
-	#Given a file containing a list of MeSH terms, one per line.
-	#Returns a list of terms. Pretty simple.
+	'''
+	Given a file containing a list of MeSH terms, one per line.
+	Returns a list of terms. Pretty simple.
+	'''
 	
 	terms = []
 	
@@ -528,53 +539,23 @@ def get_mesh_terms(terms_list):
 	return terms
 	
 def medline_parse(medline):
-	#Parses a MEDLINE file by heading
-	#Returns fields out of order, unfortunately
-	#Also squishes records if they have the same key value.
-	#e.g. all "AD" values end up in one long string
+	'''
+	Parses a MEDLINE file by heading
+	Returns fields (out of order, unfortunately)
+	Also squishes records if they have the same key value.
+	e.g. all "AD" values end up in one long string
 	
-	#yields a dict object from a generator object
+	Yields a dict object from a generator object.
 	
-	#These are NOT all the keys in a MEDLINE file,
-	#these are just the keys to treat as strings rather than 
-	#as lists.
-	strkeys = ("ID",
-			 "AB",
-			 "AD",
-			 "CA",
-			 "CY",
-			 "DA",
-			 "DCOM",
-			 "DEP",
-			 "DP",
-			 "EA",
-			 "EDAT",
-			 "IP",
-			 "IS",
-			 "JC",
-			 "JID",
-			 "JT",
-			 "LID",
-			 "LR",
-			 "MHDA",
-			 "NI",
-			 "OAB",
-			 "OWN",
-			 "PG",
-			 "PL",
-			 "PMC",
-			 "PMID",
-			 "PST",
-			 "PUBM",
-			 "RF",
-			 "SB",
-			 "SO",
-			 "STAT",
-			 "TA",
-			 "TI",
-			 "TT",
-			 "VI",
-			 "YR")
+	'''
+	
+	strkeys = ("AB","AD","CA","CY","DA","DCOM","DEP","DP","EA","EDAT",
+				"ID","IP","IS","JC","JID","JT","LID","LR","MHDA","NI",
+				"OAB","OWN","PG","PL","PMC","PMID","PST","PUBM","RF",
+				"SB","SO","STAT","TA","TI","TT","VI","YR")
+				#These are NOT all the keys in a MEDLINE file,
+				#these are just the keys to treat as strings rather than 
+				#as lists.
 			 
 	medline = iter(medline)
 	key = ""
@@ -613,10 +594,8 @@ def medline_parse(medline):
 def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 	'''
 	Saves the MeSH terms, title, and abstract from a single record
-	for training or testing a classifier for both MeSH term
-	annotation and sentence topic comprehension.
+	for training or testing a classifier for MeSH term expansion.
 	
-	For the term classifier training:
 	 Terms are listed first, separated by |.
 	 Appends title to the beginning of the abstract text.
 	 Creates folder if not present already.
@@ -642,6 +621,8 @@ def save_train_or_test_text(msh_terms, title, abst, pmid, cat):
 
 def label_this_text(text, verbose=False):
 	'''
+	The NER labeler.
+	
 	Takes a string (usually a sentence or abstract) as input.
 	Labels named entities within the string using the term dictionary.
 	Returns a list of lists of the form:
@@ -680,11 +661,6 @@ def label_this_text(text, verbose=False):
 	 of the form [start, n_gram, end].
 	Note that start is the first character index
 	and end is the index after the final character.
-	'''
-	
-	'''
-	Still need to add multi-word tokens by combining existing spans and tokens.
-	Should also handle overlaps before they are added to split_text.
 	'''
 	
 	span_gen = WhitespaceTokenizer().span_tokenize(text)
@@ -818,7 +794,7 @@ def mesh_classification(testing):
 	Builds and tests a multilabel text classifier for expanding MeSH
 	terms used on MEDLINE entries. Uses abstract text as training
 	and testing text.
-	Uses scikit's DecisionTree implementation.
+	Uses scikit-learn's DecisionTree implementation.
 	
 	Looks for a pickled (using joblib) classifier first and uses it 
 	if present.
@@ -869,6 +845,7 @@ def mesh_classification(testing):
 	pmids = [] #List of PMIDs so original records can be retrieved
 	
 	#This is a multilabel classification so we need a 2D array
+	#and we need to convert labels to binary values
 	lb = preprocessing.MultiLabelBinarizer()
 	
 	mesh_term_classifier_name = "mesh_term_classifier.pkl"
@@ -925,8 +902,8 @@ def mesh_classification(testing):
 		This is a scikit-learn pipeline of:
 		A vectorizer to extract counts of ngrams, up to 3,
 		a tf-idf transformer, and
-		a DecisionTreeClassifier, used once per label (OneVsRest) to peform multilabel
-		  classification.
+		a DecisionTreeClassifier, used once per label (OneVsRest) to 
+		perform multilabel classification.
 		'''
 		classifier = Pipeline([
 					('vectorizer', HashingVectorizer(analyzer='word',
@@ -1312,6 +1289,10 @@ def main():
 	#Set up parser
 	args = parse_args()
 	
+	#Create input folder if it doesn't exist
+	if not os.path.isdir("input"):
+		os.mkdir("input")
+	
 	#Parse some arguments provided
 	verbose = False
 	if args.verbose:
@@ -1475,10 +1456,11 @@ def main():
 		parse_disease_ontology(do_filename)
 		
 	#Load the SPECIALIST lexicon if needed
-	if ner_label:
-		print("Loading SPECIALIST lexicon...")
-		slexicon = load_slexicon(sl_filename)
-		print("Loaded %s lexicon entries." % len(slexicon))
+	#Not currently in use, however.
+	#if ner_label:
+	#	print("Loading SPECIALIST lexicon...")
+	#	slexicon = load_slexicon(sl_filename)
+	#	print("Loaded %s lexicon entries." % len(slexicon))
 	
 	#Check for and download NLTK corpus if needed
 	print("Checking for NLTK resources...")
@@ -2226,8 +2208,12 @@ def main():
 			counts["Records not included due to filtering"] = \
 					filtered_count
 		else:
-			counts["Records with matched term in the title or MeSH term"] = \
-					match_record_count	
+			if search_doc_titles:
+				counts["Records with matched term in the title or MeSH terms"] = \
+						match_record_count	
+			else:
+				counts["Records with matched term among MeSH terms"] = \
+						match_record_count
 							
 		plot_those_counts(counts, all_matches, viz_outfilename, "Summary Counts")
 		
