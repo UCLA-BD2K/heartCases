@@ -81,3 +81,28 @@ Citation counts, if requested using the argument `--citation_counts TRUE`, are p
 ## heartCases_learn.py
 
 Work in progress.
+
+
+
+
+# heartCases2
+A medical language processing system to extract lab values with their associated measured substances from full texts.
+
+## caseReport_classify.py
+
+This system is intended to classify whether or not a case report is about a single patient or multiple patients.
+
+### Usage
+Run as:
+`python caseReport_classify.py`
+
+Run with the `-h` option to see additional arguments.
+
+#### Input
+This program can take 3 types of inputs:
+- Run the program as `python caseReport_classify.py --folder FOLDERNAME` if using a folder containing MEDLINE files as input.
+- Run the program as `python caseReport_classify.py --pmids PMIDS` if using a .txt file of PubMed IDs as input.
+- Run the program as `python caseReport_classify.py --medline MEDLINE` if using .txt file containing MEDLINE files as input.
+
+#### Output
+Lab values for each case report will be stored as a table in a text file called `Classification_Results.txt` containing the PubMed IDs as the first column and single/multiple as the second column.
