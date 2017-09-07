@@ -131,17 +131,10 @@ Run with the '-h' option to see additional arguments.
 The results will be stored in `Lab Values.txt` with double new line separating the results for each case report in the following format:
 
 PMID: ########
-
 lab value:	LAB VALUE
-
 measured:	ENTITY
-
 lab value:	LAB VALUE
-
 measured:	ENTITY
-
 lab value:	LAB VALUE
-
 measured:	ENTITY
-
 ...
