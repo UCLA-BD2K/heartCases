@@ -117,8 +117,7 @@ A medical language processing system that parses through full texts of case repo
 Running this file extracts the lab values of the passed in XML files of case reports and stores the results in `Lab Values.txt`.
 
 ### Usage
-###### IMPORTANT!!! 
-First UNZIP the files in the `word_embedding.syn1neg.zip` and `word_embedding.wv.syn0.zip` from the folder `files_to_be_loaded` and store them in the folder `files_to_be_loaded` as their own indepedent .npy files.
+##### IMPORTANT!!! First UNZIP the files in the `word_embedding.syn1neg.zip` and `word_embedding.wv.syn0.zip` from the folder `files_to_be_loaded` and store them in the folder `files_to_be_loaded` as their own indepedent .npy files.
 
 Run as:
 `python extractLabValue.py --extract FOLDERNAME`
