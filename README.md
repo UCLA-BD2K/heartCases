@@ -84,9 +84,8 @@ Work in progress.
 
 
 
-
-# heartCases2
-A medical language processing system to extract lab values with their associated measured substances from full texts.
+# caseReportClassification
+A medical language processing system that classifies case reports into single or multiple patient categories using their abstracts and MeSH terms.
 
 ## caseReport_classify.py
 
@@ -100,9 +99,42 @@ Run with the `-h` option to see additional arguments.
 
 #### Input
 This program can take 3 types of inputs:
-- Run the program as `python caseReport_classify.py --folder FOLDERNAME` if using a folder containing MEDLINE files as input.
-- Run the program as `python caseReport_classify.py --pmids PMIDS` if using a .txt file of PubMed IDs as input.
-- Run the program as `python caseReport_classify.py --medline MEDLINE` if using .txt file containing MEDLINE files as input.
+- Run the program as `python caseReport_classify.py --folder FOLDERNAME` if using a folder containing MEDLINE files as input (see `example_FOLDER_format` for reference).
+- Run the program as `python caseReport_classify.py --pmids PMIDS` if using a .txt file of PubMed IDs as input (see `example_PMIDS_format.txt` for reference).
+- Run the program as `python caseReport_classify.py --medline MEDLINE` if using .txt file containing MEDLINE files as input (see `example_MEDLINE_format.txt` for reference).
+The files must be in the same location as caseReport_classify.py
 
 #### Output
-Lab values for each case report will be stored as a table in a text file called `Classification_Results.txt` containing the PubMed IDs as the first column and single/multiple as the second column.
+The results will be stored as a tab separated .txt file called `Classification_Results.txt` containing the PubMed IDs as the first column and single/multiple as the second column.
+
+
+
+# labValueExtraction
+A medical language processing system that parses through full texts of case reports, retrieves the lab values, and finds the entity being measured by each lab value.
+
+## extractLabValue.py
+
+Running this file extracts the lab values of the passed in XML files of case reports and stores the results in `Lab Values.txt`.
+
+### Usage
+IMPORTANT!!! First UNZIP the files in the `word_embedding.syn1neg.zip` and `word_embedding.wv.syn0.zip` from the folder `files_to_be_loaded` and store them in the folder `files_to_be_loaded` as their own indepedent .npy files.
+
+Run as:
+`python extractLabValue.py --extract FOLDERNAME`
+
+Run with the '-h' option to see additional arguments.
+
+#### Input
+- You will need a folder containing XML formatted full texts of case reports (see `example_FOLDERNAME_format` for reference).  Once you have the folder stored in the same location as `extractLabValue.py`, run `python extractLabValue.py --folder FOLDERNAME`
+
+#### Output
+The results will be stored in `Lab Values.txt` with double new line separating the results for each case report in the following format:
+
+PMID: ########
+lab value:	LAB VALUE
+measured:	ENTITY
+lab value:	LAB VALUE
+measured:	ENTITY
+lab value:	LAB VALUE
+measured:	ENTITY
+...
