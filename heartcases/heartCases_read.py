@@ -1343,10 +1343,10 @@ def main():
 		if args.first_match == "TRUE":
 			first_match_only = True
 			
-	search_title = True
+	search_doc_titles = True
 	if args.search_doc_titles:
 		if args.search_doc_titles == "FALSE":
-			search_title = False
+			search_doc_titles = False
 	
 	#If True, choose training records at random until hitting
 	#record_count_cutoff value
