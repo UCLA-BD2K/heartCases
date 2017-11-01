@@ -1617,7 +1617,7 @@ def main():
 					else:
 						search_term_list = mesh_term_list
 					
-					if search_title:
+					if search_doc_titles:
 						for word in search_term_list:
 							if word in split_title:
 								found = 1
