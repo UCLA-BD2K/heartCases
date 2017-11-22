@@ -1,4 +1,6 @@
 # heartCases
+
+<img src="https://github.com/caufieldjh/heartCases/blob/master/heartcases_icon_1.png" alt="heartCases logo" width="100">
 A medical language processing system for case reports involving cardiovascular disease.
 
 (Work in progress.)
