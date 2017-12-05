@@ -228,14 +228,14 @@ def get_data_files(name):
 	'''
 	Retrieves one of the following:
 	the Disease Ontology database (do),
-	the 2017 MeSH term file from NLM (mo),
+	the 2018 MeSH term file from NLM (mo),
 	or the 2017 SPECIALIST Lexicon from NLM (sl).
 	The last of these requires decompression and returns a directory.
 	The others return a filename.
 	'''
 	
 	data_locations = {"do": ("http://ontologies.berkeleybop.org/","doid.obo"),
-					"mo": ("ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/asciimesh/","d2017.bin"),
+					"mo": ("ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/asciimesh/","d2018.bin"),
 					"sl": ("https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lexicon/2017/release/LEX/", "LEXICON")}
 	
 	baseURL, filename = data_locations[name]
