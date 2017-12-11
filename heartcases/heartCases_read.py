@@ -243,19 +243,22 @@ def get_data_files(name):
 	outfilepath = filename
 		
 	print("Downloading from %s" % filepath)
-	response = urllib2.urlopen(filepath)
-	out_file = open(os.path.basename(filename), "w+b")
-	chunk = 1048576
-	pbar = tqdm(unit="Mb")
-	while 1:
-		data = (response.read(chunk)) #Read one Mb at a time
-		out_file.write(data)
-		if not data:
-			pbar.close()
-			print("\n%s file download complete." % filename)
-			out_file.close()
-			break
-		pbar.update(1)
+	try:
+		response = urllib2.urlopen(filepath)
+		out_file = open(os.path.basename(filename), "w+b")
+		chunk = 1048576
+		pbar = tqdm(unit="Mb")
+		while 1:
+			data = (response.read(chunk)) #Read one Mb at a time
+			out_file.write(data)
+			if not data:
+				pbar.close()
+				print("\n%s file download complete." % filename)
+				out_file.close()
+				break
+			pbar.update(1)
+	except urllib2.URLError as e:
+		sys.exit("Encountered an error while downloading %s: %s" % (filename, e))
 	
 	return filename
 	
@@ -1386,11 +1389,11 @@ def main():
 		do_filename = disease_ofile_list[0]
 		
 	#Get the MeSH file if it isn't present
-	mesh_ofile_list = glob.glob('d2017.*')
+	mesh_ofile_list = glob.glob('d2018.*')
 	if len(mesh_ofile_list) >1:
 		print("Found multiple possible MeSH term files. "
 				"Using the preferred one.")
-		mo_filename = "d2017.bin"
+		mo_filename = "d2018.bin"
 	elif len(mesh_ofile_list) == 0 :
 		print("Did not find MeSH term file. Downloading: ")
 		mo_filename = get_data_files("mo")
