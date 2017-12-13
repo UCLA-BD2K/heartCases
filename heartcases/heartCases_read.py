@@ -1572,6 +1572,8 @@ def main():
 			
 			while record_count < record_count_cutoff and fileindex < filereccount:
 				
+				missing_code_terms = []
+				
 				for record in records:
 					
 					#If searching randomly, skip some records
@@ -1647,14 +1649,24 @@ def main():
 					these_clean_other_terms = []
 					these_mesh_codes = []
 					these_icd10s = []
+					
 					for term in these_mesh_terms:
 						clean_term = term.replace("*","")
 						clean_term2 = (clean_term.split("/"))[0]
 						clean_term3 = (clean_term2.lower())
 						these_clean_mesh_terms.append(clean_term3)
 						
-						these_mesh_codes.append(mo_ids[clean_term3])
-					
+						try: 
+							#Some terms may be missing from MeSH if
+							#they've been changed between versions.
+							#These should still be rare,
+							#so they are ignored for now
+							#and the user is notified.
+							these_mesh_codes.append(mo_ids[clean_term3])
+						except KeyError:
+							if clean_term2 not in missing_code_terms:
+								missing_code_terms.append(clean_term2)
+										
 					for ot in these_other_terms:
 						clean_ot = (ot.lower())
 						these_clean_other_terms.append(clean_ot)
@@ -1786,6 +1798,8 @@ def main():
 	
 	pbar.close()
 	
+	print("Can't find code for MeSH term(s): %s" % clean_term2)
+	
 	print("Done loading input file.")
 	
 	have_new_abstracts = False
@@ -1910,7 +1924,14 @@ def main():
 			clean_term2 = (clean_term.split("/"))[0]
 			clean_term3 = (clean_term2.lower())
 			these_clean_mesh_terms.append(clean_term3)
-			these_mesh_codes.append(mo_ids[clean_term3])
+			try:
+				#Account for terms potentially missing codes,
+				#usually due to MeSH version differences.
+				#These are mostly handled when loading input
+				#so those codes are ignored here
+				these_mesh_codes.append(mo_ids[clean_term3])
+			except KeyError:
+				continue
 		
 		these_clean_mesh_terms = set(these_clean_mesh_terms)
 		
