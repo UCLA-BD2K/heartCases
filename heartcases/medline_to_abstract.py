@@ -104,7 +104,10 @@ def main():
 		outfile = open(outfilename, 'w')
 		for record in records:
 			pmid = record['PMID']
-			pmc_id = record['PMC']
+			try:
+				pmc_id = record['PMC']
+			except KeyError:
+				pmc_id = "NA"
 			try:
 				abst = record['AB']
 				have_abst = True
