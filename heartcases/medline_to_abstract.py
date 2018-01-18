@@ -7,7 +7,7 @@ Given a text file containing literature records in MEDLINE format,
 __author__= "Harry Caufield"
 __email__ = "j.harry.caufield@gmail.com"
 
-import argparse, sys
+import argparse, re, sys
 
 #Classes
 class Record(dict):
@@ -102,6 +102,9 @@ def main():
 		print("Reading entries...")
 		records = medline_parse(this_medline_file)
 		outfile = open(outfilename, 'w')
+		
+		token_count = 0
+		
 		for record in records:
 			pmid = record['PMID']
 			try:
@@ -111,12 +114,14 @@ def main():
 			try:
 				abst = record['AB']
 				have_abst = True
+				token_count = token_count + len(re.findall(r'\w+', abst))
 			except KeyError:
 				have_abst = False
 			if have_abst:
 				outstring = "%s\t%s\t%s\n" % (pmid, pmc_id, abst)
 				outfile.write(outstring)
 				
+	print("Found %s 1-gram tokens." % token_count)
 	print("Wrote output to %s." % outfilename)
 			
 if __name__ == "__main__":
