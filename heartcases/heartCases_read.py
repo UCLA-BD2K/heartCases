@@ -262,10 +262,10 @@ def get_data_files(name):
 	
 	return filename
 	
-def parse_disease_ontology(do_filename):
+def build_mesh_to_icd10_dict(do_filename):
 	'''
 	Build the MeSH ID to ICD-10 dictionary.
-	This is build on the Disease Ontology ID maps, so
+	This is built on the Disease Ontology ID maps, so
 	the dictionary is limited to disease codes at this time.
 	Terms without direct cross-references inherit their parental xrefs.
 	
@@ -1458,9 +1458,9 @@ def main():
 		have_custom_terms = False
 		
 	print("Building MeSH ID to ICD-10 dictionary using Disease Ontology.")
-	#Build the MeSH to ICD-10 dictionary
+	#Build the MeSH to ICD-10-CM dictionary
 	do_ids, do_xrefs_icd10, do_xrefs_terms = \
-		parse_disease_ontology(do_filename)
+		build_mesh_to_icd10_dict(do_filename)
 		
 	#Load the SPECIALIST lexicon if needed
 	#Not currently in use, however.
