@@ -1099,6 +1099,8 @@ def parse_args():
 						"a list of MeSH terms, one per line, to search for. "
 						"Will also search titles for terms, unless "
 						"--search_doc_titles is set to FALSE.")
+	parser.add_argument('--this_term', help="a single MeSH term to search for."
+						"The --terms argument takes precedence.")
 	parser.add_argument('--testing', help="if FALSE, do not test classifiers")
 	parser.add_argument('--verbose', help="if TRUE, provide verbose output")
 	parser.add_argument('--first_match', help="if TRUE, filter input "
@@ -1335,8 +1337,8 @@ def main():
 			"across %s primary subheadings." % \
 			(unique_term_count, synonym_count, len(mo_cats)))
 	
-	#Check if custom MeSH search term list was provided.
-	#If so, just search for these
+	#Check if custom MeSH search term or list was provided.
+	#If so, just search using input
 	#Otherwise, just use CVD-specific MeSH terms produced above
 	#to filter for on-topic documents.
 	if args.terms:
@@ -1346,6 +1348,10 @@ def main():
 		custom_mesh_terms = get_mesh_terms(terms_file)
 		have_custom_terms = True
 		print("File contains %s terms." % len(custom_mesh_terms))
+	elif args.this_term:
+		print("Using this MeSH term to search: %s" % str(args.this_term))
+		custom_mesh_terms = [str(args.this_term)]
+		have_custom_terms = True
 	else:
 		print("Searching documents using all topic-related terms.")
 		print("List includes %s topic-relevant terms + synonyms." % \
