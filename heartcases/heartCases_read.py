@@ -1349,8 +1349,9 @@ def main():
 		have_custom_terms = True
 		print("File contains %s terms." % len(custom_mesh_terms))
 	elif args.this_term:
-		print("Using this MeSH term to search: %s" % str(args.this_term))
-		custom_mesh_terms = [str(args.this_term)]
+		clean_term = str(args.this_term).lower()
+		print("Using this MeSH term to search: %s" % clean_term)
+		custom_mesh_terms = [clean_term]
 		have_custom_terms = True
 	else:
 		print("Searching documents using all topic-related terms.")
@@ -2082,7 +2083,7 @@ def main():
 					
 		os.chdir("..")
 	
-	if record_count > 0: #We can provide output
+	if record_count > 0 and match_record_count > 0: #We can provide output
 		
 		output_file_dict = {outfilename: "full matching records with MEDLINE headings",
 						viz_outfilename: "plots of metadata for matching records"}
