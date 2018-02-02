@@ -11,12 +11,14 @@ This part of the system includes helper functions.
 import os, sys, urllib, urllib2
 from tqdm import *
 
-def build_mesh_to_icd10_dict(do_filename):
+def build_mesh_to_icd10_dict(icd10_map_files):
 	'''
 	Build the MeSH ID to ICD-10 dictionary.
-	This is built on the Disease Ontology ID maps, so
-	the dictionary is limited to disease codes at this time.
+	This is built on the Disease Ontology ID maps at the moment -
+	provided through the icd10_map_files value (a list).
 	Terms without direct cross-references inherit their parental xrefs.
+	
+	A second map may be provided - this is a WIP.
 	
 	The relevant IDs are xrefs in no particular order.
 	Also, terms differ in the xrefs provided (e.g., a MeSH but no ICD-10)
@@ -34,6 +36,8 @@ def build_mesh_to_icd10_dict(do_filename):
 						#Used as fallback in xrefs don't match.
 						#As above, one ICD-10 code may match multiple terms,
 						#plus these aren't MeSH terms so they may not match
+	
+	do_filename = icd10_map_files[0]
 	
 	with open(do_filename) as do_file:
 		

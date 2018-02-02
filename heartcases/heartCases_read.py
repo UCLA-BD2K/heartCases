@@ -1351,11 +1351,12 @@ def main():
 		print("List includes %s topic-relevant terms + synonyms." % \
 			(len(mesh_term_list)))
 		have_custom_terms = False
-		
-	print("Building MeSH ID to ICD-10 dictionary using Disease Ontology.")
+	
 	#Build the MeSH to ICD-10-CM dictionary
+	print("Building MeSH ID to ICD-10 mappings.")
+	icd10_map_files = [do_filename]
 	do_ids, do_xrefs_icd10, do_xrefs_terms = \
-		build_mesh_to_icd10_dict(do_filename)
+		build_mesh_to_icd10_dict(icd10_map_files)
 		
 	#Load the SPECIALIST lexicon if needed
 	#Not currently in use, however.
