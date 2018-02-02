@@ -264,10 +264,14 @@ def get_data_files(name):
 	
 def parse_disease_ontology(do_filename):
 	'''
-	Build the MeSH ID to ICD-10 dictionary
-	the relevant IDs are xrefs in no particular order
+	Build the MeSH ID to ICD-10 dictionary.
+	This is build on the Disease Ontology ID maps, so
+	the dictionary is limited to disease codes at this time.
+	Terms without direct cross-references inherit their parental xrefs.
+	
+	The relevant IDs are xrefs in no particular order.
 	Also, terms differ in the xrefs provided (e.g., a MeSH but no ICD-10)
-	So, re-assemble the entries first and remove those without both refs
+	so, re-assemble the entries first and remove those without both refs.
 	'''
 	do_ids = {}	#Internal DOIDs are keys, lists of xrefs are values
 				#MeSH ID is always first xref, ICD-10 code is 2nd
