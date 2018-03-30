@@ -410,20 +410,24 @@ def get_medline_from_pubmed(pmid_list):
 	idstring = idstring + ",".join(pmids)
 	queryURL = baseURL + idstring + options
 	
-	response = urllib2.urlopen(queryURL)
 	out_file = open(outfilepath, "w+b")
-	chunk = 1048576
-	pbar = tqdm(unit="Mb")
-	while 1:
-		data = (response.read(chunk)) #Read one Mb at a time
-		out_file.write(data)
-		if not data:
-			pbar.close()
-			print("\nRecords retrieved - see %s" % outfilepath)
-			out_file.close()
-			break
-		pbar.update(1)
-		
+	
+	try:
+		response = urllib2.urlopen(queryURL)
+		chunk = 1048576
+		pbar = tqdm(unit="Mb")
+		while 1:
+			data = (response.read(chunk)) #Read one Mb at a time
+			out_file.write(data)
+			if not data:
+				pbar.close()
+				print("\nRecords retrieved - see %s" % outfilepath)
+				out_file.close()
+				break
+			pbar.update(1)
+	except urllib2.HTTPError as e:
+		print("Encountered an error: %s" % e)
+			
 	return outfilepath
 	
 def get_mesh_terms(terms_list):
