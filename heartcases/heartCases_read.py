@@ -1093,6 +1093,10 @@ def parse_args():
 	parser.add_argument('--pmids', help="name of a text file containing "
 						"a list of PubMed IDs, one per line, to retrieve "
 						"MEDLINE records for")
+	parser.add_argument('--print_query', help="if TRUE, output all "
+						"query MeSH terms to command line. Note "
+						"that this may include several thousand "
+						"terms.")
 	parser.add_argument('--recordlimit', help="The maximum number of "
 						"records to search.")
 	parser.add_argument('--search_topic', help="Select a pre-curated set of "
@@ -1115,6 +1119,7 @@ def parse_args():
 	parser.add_argument('--random_records', help="if TRUE, choose "
 						"training records at random until hitting "
 						"value specified by --recordlimit argument.")
+
 	
 	try:
 		args = parser.parse_args()
@@ -1263,6 +1268,13 @@ def main():
 		if args.random_records == "TRUE":
 			random_record_list = True
 	
+	#Argument tells us if MeSH terms in use should be printed
+	#If True, print all MeSH terms + subheading terms to be used as query
+	print_query_terms = False
+	if args.print_query:
+		if args.print_query == "TRUE":
+			print_query_terms = True	
+	
 	#Check if PMID list was provided.
 	#If so, download records for all of them.
 	if args.pmids:
@@ -1362,6 +1374,10 @@ def main():
 		print("List includes %s topic-relevant terms + synonyms." % \
 			(len(mesh_term_list)))
 		have_custom_terms = False
+	if print_query_terms:
+		print("Full query term list follows:\n")
+		for term in mesh_term_list:
+			print(term)
 	
 	#Build the MeSH to ICD-10-CM dictionary
 	print("Building MeSH ID to ICD-10 mappings.")
