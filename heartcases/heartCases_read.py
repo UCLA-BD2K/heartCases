@@ -426,7 +426,7 @@ def get_medline_from_pubmed(pmid_list):
 		querykey_value = (response_text[2].strip())[10:-11]
 		querykey = "&query_key=" + querykey_value
 		
-		batch_size = len(pmids) #This can, in theory, be up to 100,000
+		batch_size = 1000 #This can, in theory, be up to 100,000
 								#before batches should be iterated through
 								#by increasing the retstart value.
 		i = 0
@@ -457,7 +457,7 @@ def get_medline_from_pubmed(pmid_list):
 		return outfilepath
 		
 	except urllib2.HTTPError as e:
-		print("Couldn't complete PubMed entry retrieval: %s" % e)
+		print("\nCouldn't complete PubMed entry retrieval: %s" % e)
 	
 def get_mesh_terms(terms_list):
 	'''
