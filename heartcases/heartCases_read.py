@@ -393,42 +393,70 @@ def get_medline_from_pubmed(pmid_list):
 	Given a file containing a list of PMIDs, one per line.
 	Creates a file containing one MEDLINE record for each PMID.
 	Returns name of this file.
+	Uses the History server to account for large PMID lists.
 	'''
 	
 	outfilepath = pmid_list[:-4] + "_MEDLINE.txt"  
-	baseURL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed"
-	idstring = "&id=" # to be followed by PubMed IDs, comma-delimited
-	options = "&retmode=text&rettype=medline"
+	baseURL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
+	epost = "epost.fcgi"
+	efetch = "efetch.fcgi?db=pubmed"
+	options = "&usehistory=y&retmode=text&rettype=medline"
 	
 	pmids = []
+	
+	out_file = open(outfilepath, "w+b")
 	
 	with open(pmid_list) as infile:
 		for line in infile:
 			pmids.append(line.rstrip())
 	
 	print("Retrieving %s records from PubMed." % len(pmids))
-	idstring = idstring + ",".join(pmids)
-	queryURL = baseURL + idstring + options
-	
-	out_file = open(outfilepath, "w+b")
 	
 	try:
-		response = urllib2.urlopen(queryURL)
-		chunk = 1048576
+		#POST using epost first, with all PMIDs
+		idstring = ",".join(pmids)
+		queryURL = baseURL + epost
+		args = urllib.urlencode({"db":"pubmed","id":idstring})
+		response = urllib2.urlopen(queryURL, args)
+		
+		response_text = (response.read()).splitlines()
+		
+		webenv_value = (response_text[3].strip())[8:-9]
+		webenv = "&WebEnv=" + webenv_value
+		querykey_value = (response_text[2].strip())[10:-11]
+		querykey = "&query_key=" + querykey_value
+		
+		batch_size = 250
+		
+		i = 0
+		
+		#Now retrieve entries
 		pbar = tqdm(unit="Mb")
-		while 1:
-			data = (response.read(chunk)) #Read one Mb at a time
-			out_file.write(data)
-			if not data:
-				pbar.close()
-				print("\nRecords retrieved - see %s" % outfilepath)
-				out_file.close()
-				break
-			pbar.update(1)
-	except urllib2.HTTPError as e:
-		print("Encountered an error: %s" % e)
+		while i <= len(pmids):
+			retstart = "&retstart=" + str(i)
+			retmax = "&retmax=" + str(i + batch_size)
+			queryURL = baseURL + efetch + querykey + webenv \
+						+ retstart + retmax + options
+			response = urllib2.urlopen(queryURL)
 			
-	return outfilepath
+			out_file = open(outfilepath, "a")
+			chunk = 1048576
+			while 1:
+				data = (response.read(chunk)) #Read one Mb at a time
+				out_file.write(data)
+				if not data:
+					break
+				pbar.update(1)
+			i = i + batch_size 
+		pbar.close()
+		out_file.close()
+		
+		print("\nRetrieved PubMed entries and wrote to %s" % outfilepath)
+		
+		return outfilepath
+		
+	except urllib2.HTTPError as e:
+		print("Couldn't complete PubMed entry retrieval: %s" % e)
 	
 def get_mesh_terms(terms_list):
 	'''
@@ -1092,7 +1120,8 @@ def parse_args():
 						"NER labeling on any documents. Can save time.")
 	parser.add_argument('--pmids', help="name of a text file containing "
 						"a list of PubMed IDs, one per line, to retrieve "
-						"MEDLINE records for")
+						"MEDLINE records for. Note that lists of several "
+						"thousand PMIDs or more may fail with an error.")
 	parser.add_argument('--print_query', help="if TRUE, output all "
 						"query MeSH terms to command line. Note "
 						"that this may include several thousand "
