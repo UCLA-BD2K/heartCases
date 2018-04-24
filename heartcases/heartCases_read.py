@@ -426,7 +426,7 @@ def get_medline_from_pubmed(pmid_list):
 		querykey_value = (response_text[2].strip())[10:-11]
 		querykey = "&query_key=" + querykey_value
 		
-		batch_size = 250
+		batch_size = 4000
 		
 		i = 0
 		
@@ -447,7 +447,7 @@ def get_medline_from_pubmed(pmid_list):
 				if not data:
 					break
 				pbar.update(1)
-			i = i + batch_size 
+			i = i + batch_size
 		pbar.close()
 		out_file.close()
 		
