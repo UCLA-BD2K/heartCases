@@ -426,15 +426,16 @@ def get_medline_from_pubmed(pmid_list):
 		querykey_value = (response_text[2].strip())[10:-11]
 		querykey = "&query_key=" + querykey_value
 		
-		batch_size = 4000
-		
+		batch_size = len(pmids) #This can, in theory, be up to 100,000
+								#before batches should be iterated through
+								#by increasing the retstart value.
 		i = 0
 		
 		#Now retrieve entries
 		pbar = tqdm(unit="Mb")
 		while i <= len(pmids):
 			retstart = "&retstart=" + str(i)
-			retmax = "&retmax=" + str(i + batch_size)
+			retmax = "&retmax=" + str(batch_size)
 			queryURL = baseURL + efetch + querykey + webenv \
 						+ retstart + retmax + options
 			response = urllib2.urlopen(queryURL)
