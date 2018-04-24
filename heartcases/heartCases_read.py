@@ -1545,7 +1545,12 @@ def main():
 					have_abst = 0
 					
 					#Get the Pubmed ID
-					pmid = record['PMID']
+					#There is a chance it won't have one if the entry
+					#isn't available. 
+					try:
+						pmid = record['PMID']
+					except KeyError:
+						print(record)
 					all_pmids.append(pmid)
 					
 					#If this PMID doesn't pass the filter (if any filters)
