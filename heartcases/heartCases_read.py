@@ -1671,7 +1671,10 @@ def main():
 							matched_journals[jtitle] = matched_journals[jtitle] +1
 							
 						#Count the publication year
-						pubdate = record['EDAT']
+						try:
+							pubdate = record['EDAT']
+						except KeyError: #If the EDAT field isn't available
+							pubdate = record['DP']
 						pubyear = pubdate[:4]
 						if pubyear not in matched_years:
 							matched_years[pubyear] = 1
