@@ -938,7 +938,6 @@ def plot_those_counts(counts, all_matches, outfilename, ptitle):
 	#Define palette 
 	colorset = ['#8D72D8','#D6B559','#FA540A','#2599E9','#7B9FB3',
 				'#F489B3','#F94730','#D9EDBF','#FBBD11','#B094B0']
-	used_colorset = []
 	
 	#Plot simple counts first
 	height = (len(counts)*100) + 200
@@ -979,7 +978,7 @@ def plot_those_counts(counts, all_matches, outfilename, ptitle):
 		choicecol = random.choice(colorset) #Choose a color from the predefined set
 		if choicecol not in used_colorset:
 			randcol = choicecol
-			used_colorset.append(choicecol)
+			colorset.remove(choicecol)
 	
 		#Truncate to top 50 entries
 		height = 600
