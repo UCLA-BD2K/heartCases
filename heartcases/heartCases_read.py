@@ -935,6 +935,11 @@ def plot_those_counts(counts, all_matches, outfilename, ptitle):
 	'''
 	all_plots = []
 	
+	#Define palette 
+	colorset = ['#8D72D8','#D6B559','#FA540A','#2599E9','#7B9FB3',
+				'#F489B3','#F94730','#D9EDBF','#FBBD11','#B094B0']
+	used_colorset = []
+	
 	#Plot simple counts first
 	height = (len(counts)*100) + 200
 	textplot = figure(plot_width=700, plot_height=height, 
@@ -969,7 +974,12 @@ def plot_those_counts(counts, all_matches, outfilename, ptitle):
 		catvalues = [] #Y axis
 		counts = [] #X axis
 		
-		randcol = ('#%06X' % random.randint(0,256**3-1)) #A random plot color
+		#randcol = ('#%06X' % random.randint(0,256**3-1)) #A random plot color
+		
+		choicecol = random.choice(colorset) #Choose a color from the predefined set
+		if choicecol not in used_colorset:
+			randcol = choicecol
+			used_colorset.append(choicecol)
 	
 		#Truncate to top 50 entries
 		height = 600
