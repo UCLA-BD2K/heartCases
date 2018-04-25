@@ -976,9 +976,8 @@ def plot_those_counts(counts, all_matches, outfilename, ptitle):
 		#randcol = ('#%06X' % random.randint(0,256**3-1)) #A random plot color
 		
 		choicecol = random.choice(colorset) #Choose a color from the predefined set
-		if choicecol not in used_colorset:
-			randcol = choicecol
-			colorset.remove(choicecol)
+		randcol = choicecol
+		colorset.remove(choicecol)
 	
 		#Truncate to top 50 entries
 		height = 600
