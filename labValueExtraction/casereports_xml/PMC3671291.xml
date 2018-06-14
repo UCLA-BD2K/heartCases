@@ -1,0 +1,1383 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Comput Math Methods Med</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Comput Math Methods Med</journal-id>
+      <journal-id journal-id-type="publisher-id">CMMM</journal-id>
+      <journal-title-group>
+        <journal-title>Computational and Mathematical Methods in Medicine</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1748-670X</issn>
+      <issn pub-type="epub">1748-6718</issn>
+      <publisher>
+        <publisher-name>Hindawi Publishing Corporation</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">23762183</article-id>
+      <article-id pub-id-type="pmc">3671291</article-id>
+      <article-id pub-id-type="doi">10.1155/2013/347238</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Fractal Analysis of Elastographic Images for Automatic Detection of Diffuse Diseases of Salivary Glands: Preliminary Results</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Badea</surname>
+            <given-names>Alexandru Florin</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">
+<sup>1</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lupsor Platon</surname>
+            <given-names>Monica</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">
+<sup>2</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Crisan</surname>
+            <given-names>Maria</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">
+<sup>3</sup>
+</xref>
+          <xref ref-type="corresp" rid="cor1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Cattani</surname>
+            <given-names>Carlo</given-names>
+          </name>
+          <xref ref-type="aff" rid="I4">
+<sup>4</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Badea</surname>
+            <given-names>Iulia</given-names>
+          </name>
+          <xref ref-type="aff" rid="I5">
+<sup>5</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pierro</surname>
+            <given-names>Gaetano</given-names>
+          </name>
+          <xref ref-type="aff" rid="I6">
+<sup>6</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sannino</surname>
+            <given-names>Gianpaolo</given-names>
+          </name>
+          <xref ref-type="aff" rid="I7">
+<sup>7</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Baciut</surname>
+            <given-names>Grigore</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">
+<sup>1</sup>
+</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><sup>1</sup>Department of Cranio-Maxillo-Facial Surgery, University of Medicine and Pharmacy &#x201C;Iuliu Ha&#x163;ieganu&#x201D;, Cardinal Hossu Street 37, 400 029 Cluj-Napoca, Romania</aff>
+      <aff id="I2"><sup>2</sup>Department of Clinical Imaging, University of Medicine and Pharmacy &#x201C;Iuliu Ha&#x163;ieganu&#x201D;, Croitorilor Street 19-21, 400 162 Cluj-Napoca, Romania</aff>
+      <aff id="I3"><sup>3</sup>Department of Histology, Pasteur 5-6 University of Medicine and Pharmacy &#x201C;Iuliu Ha&#x163;ieganu&#x201D;, 400 349 Cluj-Napoca, Romania</aff>
+      <aff id="I4"><sup>4</sup>Department of Mathematics, University of Salerno, Via Ponte Don Melillo, 84084 Fisciano, Italy</aff>
+      <aff id="I5"><sup>5</sup>Department of Dental Prevention, University of Medicine Pharmacy &#x201C;Iuliu Ha&#x163;ieganu&#x201D;, Victor Babes Street, 400 012 Cluj-Napoca, Romania</aff>
+      <aff id="I6"><sup>6</sup>Department of System Biology, Phd School, University of Salerno, Via Ponte Don Melillo, 84084 Fisciano, Italy</aff>
+      <aff id="I7"><sup>7</sup>Department of Oral Health, University of Rome Tor Vergata, Viale Oxford, 00100 Rome, Italy</aff>
+      <author-notes>
+        <corresp id="cor1">*Maria Crisan: <email>mcrisan7@yahoo.com</email></corresp>
+        <fn fn-type="other">
+          <p>Academic Editor: Shengyong Chen</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="ppub">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>16</day>
+        <month>5</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>2013</volume>
+      <elocation-id>347238</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>10</day>
+          <month>3</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>12</day>
+          <month>4</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2013 Alexandru Florin Badea et al.</copyright-statement>
+        <copyright-year>2013</copyright-year>
+        <license license-type="open-access">
+          <license-p>This is an open access article distributed under the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>The geometry of some medical images of tissues, obtained by elastography and ultrasonography, is characterized in terms of complexity parameters such as the fractal dimension (FD). It is well known that in any image there are very subtle details that are not easily detectable by the human eye. However, in many cases like medical imaging diagnosis, these details are very important since they might contain some hidden information about the possible existence of certain pathological lesions like tissue degeneration, inflammation, or tumors. Therefore, an automatic method of analysis could be an expedient tool for physicians to give a faultless diagnosis. The fractal analysis is of great importance in relation to a quantitative evaluation of &#x201C;real-time&#x201D; elastography, a procedure considered to be operator dependent in the current clinical practice. Mathematical analysis reveals significant discrepancies among normal and pathological image patterns. The main objective of our work is to demonstrate the clinical utility of this procedure on an ultrasound image corresponding to a submandibular diffuse pathology.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec1">
+      <title>1. Introduction</title>
+      <p>In some recent papers [<xref ref-type="bibr" rid="B1">1</xref>&#x2013;<xref ref-type="bibr" rid="B4">4</xref>], the fractal nature of nucleotide distribution in DNA has been investigated in order to classify and compare DNA sequences and to single out some particularities in the nucleotide distribution, sometimes in order to be used as markers for the existence of certain pathologies [<xref ref-type="bibr" rid="B5">5</xref>&#x2013;<xref ref-type="bibr" rid="B9">9</xref>]. Almost all these papers are motivated by the hypothesis that changes in the fractal dimension might be taken as markers for the existence of pathologies since it is universally accepted nowadays that bioactivity and the biological systems are based on some fractal nature organization [<xref ref-type="bibr" rid="B3">3</xref>, <xref ref-type="bibr" rid="B4">4</xref>, <xref ref-type="bibr" rid="B10">10</xref>&#x2013;<xref ref-type="bibr" rid="B13">13</xref>]. From a mathematical point of view, this could be explained by the fact that the larger the number of interacting individuals, the more complex the corresponding system of interactions is. These hidden rules that lead to this complex fractal topology could be some simple recursive rules, typical of any fractal-like structure, which usually requires a large number of recursions in order to fill the space. </p>
+      <p>In recent years, many papers [<xref ref-type="bibr" rid="B3">3</xref>&#x2013;<xref ref-type="bibr" rid="B6">6</xref>, <xref ref-type="bibr" rid="B9">9</xref>, <xref ref-type="bibr" rid="B14">14</xref>, <xref ref-type="bibr" rid="B15">15</xref>] have investigated the multi-fractality of biological signals such as DNA and the possible influence of the fractal geometry on the functionality of DNA from a biological-chemical point of view. Almost all these papers concerning the multifractality of biological signals are based on the hypothesis that the functionality and the evolution of tissues/cells/DNA are related to and measured by the evolving fractal geometry (complexity), so that malfunctions and pathologies can be linked with the degeneracy of the geometry during its evolution time [<xref ref-type="bibr" rid="B5">5</xref>&#x2013;<xref ref-type="bibr" rid="B7">7</xref>, <xref ref-type="bibr" rid="B16">16</xref>&#x2013;<xref ref-type="bibr" rid="B18">18</xref>].</p>
+      <p>From a mathematical point of view, a fractal is a geometric object mainly characterized by the noninteger dimension and self-similarity so that a typical pattern repeats itself cyclically at different scales. A more complex definition of a fractal is based on the four properties: self-similarity, fine structure, irregularities, and noninteger dimension [<xref ref-type="bibr" rid="B19">19</xref>]. The fractal dimension is a parameter which measures the relationship between the geometric un-smoothness of the object and its underlying metric space. Since it is a noninteger value, it is usually taken as a measure of the unsmoothness, thus being improperly related to the level of complexity or disorder. Fractality has been observed and measured in several fields of specialization in biology, similar to those in pathology and cancer models [<xref ref-type="bibr" rid="B20">20</xref>, <xref ref-type="bibr" rid="B21">21</xref>]. However, only recently have been made some attempts to investigate the structural importance of the &#x201C;fractal nature&#x201D; of the DNA. It has been observed in some recent papers that the higher FD corresponds to the higher information complexity and thus to the evolution towards a pathological state [<xref ref-type="bibr" rid="B3">3</xref>, <xref ref-type="bibr" rid="B4">4</xref>].</p>
+      <p>In the following, we will analyse the particularities of the fractal dimension focused on the pathological aspects of some tissues, more specific those belonging to a submandibular gland. For the first time, the FD is computed on images obtained by the new technology of elastographic imaging focused on this salivary gland. </p>
+    </sec>
+    <sec id="sec2">
+      <title>2. Materials and Methods</title>
+      <sec id="sec2.1">
+        <title>2.1. Material</title>
+        <p>A 55-year-old woman presented herself in the emergency room of the Maxilo-Facial Surgery Department for acute pain and enlargement of the left submandibular gland and was selected for ultrasound evaluation. The ultrasound examination was performed using the ACUSON S2000 (Siemens) ultrasound equipment, where the ARFI (acoustic radiation force impulse) and real-time elastography technique were implemented. The ACUSON S2000 is a powerful, non-invasive, ultrasound based device, which gives very accurate B mode and Doppler images of tissues. It has been profitably used for the analysis of abdominal, breast, cardiac, obstetrical, and gynaecological imaging and also for small parts such as thyroid and vascular imaging. </p>
+        <p>The patient was placed laying down and facing up, while the transducer was placed in contact with skin on the area of the right and then the left submandibular gland successively. The shear wave velocity within the right and the left submandibular gland parenchyma was determined for each submandibular gland (in meters/second); colour elastographic images were also acquired. A colour map was used where stiff tissues were coded in blue and soft tissues in red. These images were studied afterwards for fractal analysis.</p>
+        <p>
+<xref ref-type="fig" rid="fig1">Figure 1</xref> represents a 2D ultrasound evaluation in a &#x201C;grey scale&#x201D; mode, and <xref ref-type="fig" rid="fig2">Figure 2</xref> represents a combination between 2D ultrasonography and &#x201C;colour flow map&#x201D; (CFM, or &#x201C;duplex sonography&#x201D;). From the first viewing, we can easily detect, by its enlargement, the gland swelling (<xref ref-type="fig" rid="fig1">Figure 1</xref>) and the hyper vascular pattern (<xref ref-type="fig" rid="fig2">Figure 2</xref>), both of these pieces of information being highly suggestive for the inflammation diagnosis. The combined clinical and ultrasound evaluation is conclusive for an acute inflammation of the submandibular gland. Figures <xref ref-type="fig" rid="fig3">3</xref> and <xref ref-type="fig" rid="fig5">5</xref> (obtained on the right salivary swollen gland) and Figures <xref ref-type="fig" rid="fig4">4</xref> and <xref ref-type="fig" rid="fig6">6</xref> (obtained on the left side, normal gland) represent elastography in quantitative mode (Figures <xref ref-type="fig" rid="fig3">3</xref> and <xref ref-type="fig" rid="fig4">4</xref>), color mode (Figures <xref ref-type="fig" rid="fig5">5</xref> and <xref ref-type="fig" rid="fig6">6</xref>) (ARFI tissue imaging mapping color). </p>
+      </sec>
+      <sec id="sec2.2">
+        <title>2.2. Methods</title>
+        <p>Concerning the fractal analysis in this section, we will summarize some definitions already given in [<xref ref-type="bibr" rid="B3">3</xref>].</p>
+      </sec>
+      <sec id="sec2.3">
+        <title>2.3. Parameters for the Analysis of Complexity and Fractal Geometry</title>
+        <p>As a measure of the complexity and fractal geometry, we will consider only the fractal dimension and regression analysis (Shannon information entropy, lacunarity, and succolarity will be considered in a forthcoming paper).</p>
+        <p>Let <italic>p</italic><sub><italic>x</italic></sub>(<italic>n</italic>) be the probability to find the value <italic>x</italic> at the position <italic>n</italic>, the fractal dimension is given by [<xref ref-type="bibr" rid="B3">3</xref>, <xref ref-type="bibr" rid="B4">4</xref>, <xref ref-type="bibr" rid="B22">22</xref>]
+<disp-formula id="EEq1"><label>(1)</label><mml:math id="M1"><mml:mtable><mml:mtr><mml:mtd><mml:mi>D</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mn mathvariant="normal">1</mml:mn></mml:mrow><mml:mrow><mml:mi>N</mml:mi></mml:mrow></mml:mfrac><mml:mrow><mml:munderover><mml:mo stretchy="false">&#x2211;</mml:mo><mml:mrow><mml:mi>n</mml:mi><mml:mo>=</mml:mo><mml:mn mathvariant="normal">2</mml:mn></mml:mrow><mml:mrow><mml:mi>N</mml:mi></mml:mrow></mml:munderover><mml:mrow><mml:mfrac><mml:mrow><mml:mi>log</mml:mi><mml:mo>&#x2061;</mml:mo><mml:mo>&#x2009;</mml:mo><mml:msub><mml:mrow><mml:mi>p</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi>log</mml:mi><mml:mo>&#x2061;</mml:mo><mml:mo>&#x2009;</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:mrow><mml:mo>.</mml:mo></mml:mtd></mml:mtr></mml:mtable></mml:math></disp-formula>
+In order to compute the FD, we will make use of the gliding box method on a converted black and white image. Let <italic>S</italic><sub><italic>N</italic></sub> be a given black and white image (BW) with 1 and 0 in correspondence with respectively, black and white pixels, we can consider a gliding box of <italic>r</italic>-length, so that
+<disp-formula id="EEq2"><label>(2)</label><mml:math id="M2"><mml:mtable><mml:mtr><mml:mtd><mml:msub><mml:mrow><mml:mi>&#x3BC;</mml:mi></mml:mrow><mml:mrow><mml:mi>r</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>k</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mrow><mml:munderover><mml:mo stretchy="false">&#x2211;</mml:mo><mml:mrow><mml:mi>s</mml:mi><mml:mo>=</mml:mo><mml:mi>k</mml:mi></mml:mrow><mml:mrow><mml:mi>k</mml:mi><mml:mo>+</mml:mo><mml:mi>r</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mn mathvariant="normal">1</mml:mn></mml:mrow></mml:munderover><mml:mrow><mml:msubsup><mml:mrow><mml:mi>v</mml:mi></mml:mrow><mml:mrow><mml:mtext>sh</mml:mtext></mml:mrow><mml:mrow><mml:mi>&#x2217;</mml:mi></mml:mrow></mml:msubsup></mml:mrow></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></disp-formula>
+is the frequency of &#x201C;1&#x201D; within the box. The corresponding probability is
+<disp-formula id="EEq3"><label>(3)</label><mml:math id="M3"><mml:mtable><mml:mtr><mml:mtd><mml:msub><mml:mrow><mml:mi>p</mml:mi></mml:mrow><mml:mrow><mml:mi>r</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>k</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>r</mml:mi></mml:mrow></mml:mfrac><mml:mrow><mml:munderover><mml:mo stretchy="false">&#x2211;</mml:mo><mml:mrow><mml:mi>s</mml:mi><mml:mo>=</mml:mo><mml:mi>k</mml:mi></mml:mrow><mml:mrow><mml:mi>k</mml:mi><mml:mo>+</mml:mo><mml:mi>r</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mn mathvariant="normal">1</mml:mn></mml:mrow></mml:munderover><mml:mrow><mml:msubsup><mml:mrow><mml:mi>v</mml:mi></mml:mrow><mml:mrow><mml:mtext>sh</mml:mtext></mml:mrow><mml:mrow><mml:mi>&#x2217;</mml:mi></mml:mrow></mml:msubsup><mml:mo>.</mml:mo></mml:mrow></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></disp-formula>
+Then the box moves to the next position <italic>k</italic> + 1 so that we obtain the probability distribution
+<disp-formula id="eq4"><label>(4)</label><mml:math id="M4"><mml:mtable><mml:mtr><mml:mtd><mml:msub><mml:mrow><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>p</mml:mi></mml:mrow><mml:mrow><mml:mi>r</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>k</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>}</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mn mathvariant="normal">1</mml:mn><mml:mo>,</mml:mo><mml:mo>&#x2026;</mml:mo><mml:mo>,</mml:mo><mml:mi>N</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo></mml:mtd></mml:mtr></mml:mtable></mml:math></disp-formula>
+so that we can compute the frequency of &#x201C;1&#x201D; within the box. The FD is computed on such gliding boxes through (<xref ref-type="disp-formula" rid="EEq1">1</xref>).</p>
+      </sec>
+    </sec>
+    <sec id="sec3">
+      <title>3. Results</title>
+      <sec id="sec3.1">
+        <title>3.1. Fractal Dimension for 2D Ultrasound and Elastographic Images</title>
+        <p>Concerning the fractal dimension of the elastographic images, as given by (<xref ref-type="disp-formula" rid="EEq1">1</xref>), we can see (<xref ref-type="table" rid="tab1">Table 1</xref>) that the highest FD is shown by <xref ref-type="fig" rid="fig7">Figure 7</xref> and lowest by the <xref ref-type="fig" rid="fig8">Figure 8</xref>.</p>
+        <p>The images were analyzed in 8-bit using the Image J software (tools box counting). </p>
+        <p>The figures are referred to a patient with an acute inflammation of the submandibular gland.</p>
+        <p>
+<xref ref-type="fig" rid="fig1">Figure 1</xref> shows a 2D ultrasound evaluation in grey scale. <xref ref-type="fig" rid="fig2">Figure 2</xref> shows a 2D colour flow map evaluation (duplex sonography). Figures <xref ref-type="fig" rid="fig3">3</xref> and <xref ref-type="fig" rid="fig4">4</xref> were obtained by using the method elastography ARFI-Siemens, and they display quantitative information. The values of fractal dimension (FD) of Figures <xref ref-type="fig" rid="fig3">3</xref> and <xref ref-type="fig" rid="fig4">4</xref> are similar, and it is not possible to distinguish between pathological (<xref ref-type="fig" rid="fig3">Figure 3</xref>) and normal (<xref ref-type="fig" rid="fig4">Figure 4</xref>) states. The Figures <xref ref-type="fig" rid="fig5">5</xref> and <xref ref-type="fig" rid="fig6">6</xref> are obtained through elastography ARFI with qualitative information. From the fractal analysis by the box counting method, we have noticed that the value of Fd is lower (1.650) in <xref ref-type="fig" rid="fig5">Figure 5</xref> (pathological condition) than <xref ref-type="fig" rid="fig6">Figure 6</xref> (normal state). Figures <xref ref-type="fig" rid="fig7">7</xref> (pathological state) and <xref ref-type="fig" rid="fig8">8</xref> (normal state) were obtained through real time elastography.</p>
+        <p>From the computations, we can note that the higher value of Fd belongs to the pathological state (1.907), thus suggesting that the Fd increases during the evolution of the pathology (increasing degeneracy). Therefore, from Fd, analysis is possible to distinguish between pathological state and normal state of tissues by real time elastography because it is the better method to discriminate Fd values in a clear, sharp way.</p>
+      </sec>
+    </sec>
+    <sec id="sec4">
+      <title>4. Discussion</title>
+      <p>Elastography is an ultrasonographic technique which appreciates tissue stiffness either by evaluating a colour map [<xref ref-type="bibr" rid="B23">23</xref>, <xref ref-type="bibr" rid="B24">24</xref>] or by quantifying the shear wave velocity generated by the transmission of an acoustic pressure into the parenchyma (ARFI technique) [<xref ref-type="bibr" rid="B25">25</xref>&#x2013;<xref ref-type="bibr" rid="B27">27</xref>]. In the first situation, the visualization of the tissue stiffness implies a &#x201C;real-time&#x201D; representation of the colour mode elastographic images overlapped on the conventional gray-scale images, each value (from 1 to 255) being attached to a color. The system uses a color map (red-green-blue) in which stiff tissues are coded in dark blue, intermediate ones in shades of green, softer tissues in yellow and the softest in red, but the color scale may be reversed in relation to how the equipment is calibrated. Depending on the color and with the help of a special software, several elasticity scores that correlate with the degree of tissue stiffness can be calculated [<xref ref-type="bibr" rid="B23">23</xref>]. Numerous clinical applications using these procedures were introduced into routine practice, many of them being focused on the detection of tumoral tissue in breast, thyroid, and prostate.</p>
+      <p>In the last years, a new elastographic method, based on the ARFI technique (acoustic radiation force impulse imaging), is available on modern ultrasound equipment. The ARFI technique consists in a mechanical stimulation of the tissue on which it is applied by the transmission of a short time acoustic wave (&lt;1&#x2009;ms) in a region of interest, determined by the examiner, perpendicular on the direction of the pressure waves, and leading to a micronic scale &#x201C;dislocation&#x201D; of the tissues. Therefore, in contrast with the usual ultrasonographic examination, where the sound waves have an axial orientation, the shear waves do not interact directly with the transducer. Furthermore, the shear waves are attenuated 10.000 faster than the conventional ultrasound waves and therefore need a higher sensitivity in order to be measured [<xref ref-type="bibr" rid="B25">25</xref>&#x2013;<xref ref-type="bibr" rid="B29">29</xref>]. Detection waves, which are simultaneously generated, have a much lower intensity than the pressure acoustic wave (1&#x2009;:&#x2009;1000). The moment when the detection waves interact with the shear waves represents the time passed from the moment the shear waves were generated until they crossed the region of interest. The shear waves are registered in different locations at various moments and thus the shear wave velocity is automatically calculated, the stiffer the organ the higher the velocity of the shear waves. Therefore, the shear wave velocity is actually considered to be an intrinsic feature of the tissue [<xref ref-type="bibr" rid="B25">25</xref>&#x2013;<xref ref-type="bibr" rid="B29">29</xref>]. In current clinical practice, the same transducer is used both to generate the pressure acoustic wave and to register the tissue dislocation. Since the technique is implemented in the ultrasound equipment through software changes, B mode ultrasound examination, color Doppler interrogation and ARFI images are all possible on the same machine [<xref ref-type="bibr" rid="B30">30</xref>].</p>
+      <p>Currently, elastography is widely studied in relation to different clinical applications: breast, thyroid, liver, colon and prostate [<xref ref-type="bibr" rid="B29">29</xref>, <xref ref-type="bibr" rid="B31">31</xref>&#x2013;<xref ref-type="bibr" rid="B36">36</xref>]. The application in salivary gland pathology has been singularly considered at least in our literature database. Some reports present the utility of elastography in a better delineation of tumors of these glands. Applications on diffuse disease are few although the importance of this kind of pathology is important! Inflammations of salivary glands occur in many conditions and the incidence is significant. There is a need for accurate diagnosis, staging, and prognosis. The occurrence of complications is also very important! Elastography represents a &#x201C;virtual&#x201D; way of palpation reproductive and with possibility of quantification. </p>
+      <p>Although there are several improvements, the main limitation of elastography is the dependency of the procedure to the operator's experience. This characteristic makes elastography vulnerable with a quite high amount of variations of elastographic results and interpretation. A more accurate analysis of the elastographic picture based on very precise evaluation as fractal analysis is an obvious step forward. In our preliminary study, the difference between normal and pathologic submandibular tissue using the fractal analysis was demonstrated. Because of the very new technologies accessible in practice as elastography is, and because of the mathematical instruments available as fractal analysis of the pictures, we are encouraged to believe that the ultrasound procedure might become operator independent and more confident for subtle diagnosis. However, a higher number of pictures coming from different patients with diffuse diseases in different stages of evolution are needed.</p>
+    </sec>
+    <sec id="sec5">
+      <title>5. Conclusion</title>
+      <p>In this work, the multi-fractality of 2D and elastographic images of diffuse pathological states in submandibular glands has been investigated. The corresponding FD has been computed and has shown that images with the highest FD correspond to the existence of pathology. The extension of this study with incrementing the number of ultrasound images and patients is needed to demonstrate the practical utility of this procedure.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <title>Conflict of Interests</title>
+      <p>The authors declare that there is no conflict of interests concerning the validity of this research with respect to some possible financial gain.</p>
+    </ack>
+    <ref-list>
+      <ref id="B1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Anh</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Zhi-Min</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Shun-Chao</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Fractals in DNA sequence analysis</article-title>
+          <source>
+            <italic>Chinese Physics</italic>
+          </source>
+          <year>2002</year>
+          <volume>11</volume>
+          <issue>12</issue>
+          <fpage>1313</fpage>
+          <lpage>1318</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Buldyrev</surname>
+              <given-names>SV</given-names>
+            </name>
+            <name>
+              <surname>Dokholyan</surname>
+              <given-names>NV</given-names>
+            </name>
+            <name>
+              <surname>Goldberger</surname>
+              <given-names>AL</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Analysis of DNA sequences using methods of statistical physics</article-title>
+          <source>
+            <italic>Physica A</italic>
+          </source>
+          <year>1998</year>
+          <volume>249</volume>
+          <issue>1&#x2013;4</issue>
+          <fpage>430</fpage>
+          <lpage>438</lpage>
+          <pub-id pub-id-type="other">2-s2.0-0031996849</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B3">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cattani</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Fractals and hidden symmetries in DNA</article-title>
+          <source>
+            <italic>Mathematical Problems in Engineering</italic>
+          </source>
+          <year>2010</year>
+          <volume>2010</volume>
+          <fpage>31 pages</fpage>
+          <pub-id pub-id-type="other">2-s2.0-77954525762</pub-id>
+          <pub-id pub-id-type="publisher-id">507056</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pierro</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Sequence complexity of Chromosome 3 in Caenorhabditis elegans</article-title>
+          <source>
+            <italic>Advances in Bioinformatics</italic>
+          </source>
+          <year>2012</year>
+          <volume>2012</volume>
+          <fpage>12 pages</fpage>
+          <pub-id pub-id-type="publisher-id">287486</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bedin</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Adam</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>de S&#xE1;</surname>
+              <given-names>BCS</given-names>
+            </name>
+            <name>
+              <surname>Landman</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Metze</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Fractal dimension of chromatin is an independent prognostic factor for survival in melanoma</article-title>
+          <source>
+            <italic>BMC Cancer</italic>
+          </source>
+          <year>2010</year>
+          <volume>10, article 260</volume>
+          <pub-id pub-id-type="other">2-s2.0-77953073626</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ferro</surname>
+              <given-names>DP</given-names>
+            </name>
+            <name>
+              <surname>Falconi</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Adam</surname>
+              <given-names>RL</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Fractal characteristics of May-Gr&#xFC;nwald-Giemsa stained chromatin are independent prognostic factors for survival in multiple myeloma</article-title>
+          <source>
+            <italic>PLoS ONE</italic>
+          </source>
+          <year>2011</year>
+          <volume>6</volume>
+          <issue>6</issue>
+          <pub-id pub-id-type="other">2-s2.0-79959279611</pub-id>
+          <pub-id pub-id-type="publisher-id">e20706</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Metze</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Adam</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Ferreira</surname>
+              <given-names>RC</given-names>
+            </name>
+          </person-group>
+          <article-title>Robust variables in texture analysis</article-title>
+          <source>
+            <italic>Pathology</italic>
+          </source>
+          <year>2010</year>
+          <volume>42</volume>
+          <issue>6</issue>
+          <fpage>609</fpage>
+          <lpage>610</lpage>
+          <pub-id pub-id-type="other">2-s2.0-77956921005</pub-id>
+          <pub-id pub-id-type="pmid">20854091</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Metze</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Fractal characteristics of May Grunwald Giemsa stained chromatin are independent prognostic factors for survival in multiple myeloma</article-title>
+          <source>
+            <italic>PLoS One</italic>
+          </source>
+          <year>2011</year>
+          <volume>6</volume>
+          <issue>6</issue>
+          <fpage>1</fpage>
+          <lpage>8</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dey</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Banik</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Fractal dimension of chromatin texture of squamous intraepithelial lesions of cervix</article-title>
+          <source>
+            <italic>Diagnostic Cytopathology</italic>
+          </source>
+          <year>2012</year>
+          <volume>40</volume>
+          <issue>2</issue>
+          <fpage>152</fpage>
+          <lpage>154</lpage>
+          <pub-id pub-id-type="pmid">22246932</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Voss</surname>
+              <given-names>RF</given-names>
+            </name>
+          </person-group>
+          <article-title>Evolution of long-range fractal correlations and 1/f noise in DNA base sequences</article-title>
+          <source>
+            <italic>Physical Review Letters</italic>
+          </source>
+          <year>1992</year>
+          <volume>68</volume>
+          <issue>25</issue>
+          <fpage>3805</fpage>
+          <lpage>3808</lpage>
+          <pub-id pub-id-type="other">2-s2.0-0000204878</pub-id>
+          <pub-id pub-id-type="pmid">10045801</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Voss</surname>
+              <given-names>RF</given-names>
+            </name>
+          </person-group>
+          <article-title>Long-range fractal correlations in DNA introns and exons</article-title>
+          <source>
+            <italic>Fractals</italic>
+          </source>
+          <year>1992</year>
+          <volume>2</volume>
+          <issue>1</issue>
+          <fpage>1</fpage>
+          <lpage>6</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chatzidimitriou-Dreismann</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Larhammar</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Long-range correlations in DNA</article-title>
+          <source>
+            <italic>Nature</italic>
+          </source>
+          <year>1993</year>
+          <volume>361</volume>
+          <issue>6409</issue>
+          <fpage>212</fpage>
+          <lpage>213</lpage>
+          <pub-id pub-id-type="other">2-s2.0-0027459684</pub-id>
+          <pub-id pub-id-type="pmid">8423849</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fukushima</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kinouchi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kanaya</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kudo</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ikemura</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Statistical analysis of genomic information: long-range correlation in DNA sequences</article-title>
+          <source>
+            <italic>Genome Informatics</italic>
+          </source>
+          <year>2000</year>
+          <volume>11</volume>
+          <fpage>315</fpage>
+          <lpage>3316</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Fractal time series-a tutorial review</article-title>
+          <source>
+            <italic>Mathematical Problems in Engineering</italic>
+          </source>
+          <year>2010</year>
+          <volume>2010</volume>
+          <fpage>26 pages</fpage>
+          <pub-id pub-id-type="other">2-s2.0-77951489276</pub-id>
+          <pub-id pub-id-type="publisher-id">157264</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Quantitatively investigating locally weak stationarity of modified multifractional Gaussian noise</article-title>
+          <source>
+            <italic>Physica A</italic>
+          </source>
+          <year>2012</year>
+          <volume>391</volume>
+          <issue>24</issue>
+          <fpage>6268</fpage>
+          <lpage>6278</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>D&#x2019;Anselmi</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Valerio</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Cucina</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Metabolism and cell shape in cancer: a fractal analysis</article-title>
+          <source>
+            <italic>International Journal of Biochemistry and Cell Biology</italic>
+          </source>
+          <year>2011</year>
+          <volume>43</volume>
+          <issue>7</issue>
+          <fpage>1052</fpage>
+          <lpage>1058</lpage>
+          <pub-id pub-id-type="other">2-s2.0-79958109352</pub-id>
+          <pub-id pub-id-type="pmid">20460170</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pantic</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Harhaji-Trajkovic</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Pantovic</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Milosevic</surname>
+              <given-names>NT</given-names>
+            </name>
+            <name>
+              <surname>Trajkovic</surname>
+              <given-names>V</given-names>
+            </name>
+          </person-group>
+          <article-title>Changes in fractal dimension and lacunarity as early markers of UV-induced apoptosis</article-title>
+          <source>
+            <italic>Journal of Theoretical Biology</italic>
+          </source>
+          <year>2012</year>
+          <volume>303</volume>
+          <issue>21</issue>
+          <fpage>87</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="pmid">22763132</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vasilescu</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Giza</surname>
+              <given-names>DE</given-names>
+            </name>
+            <name>
+              <surname>Petrisor</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Dobrescu</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Popescu</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Herlea</surname>
+              <given-names>V</given-names>
+            </name>
+          </person-group>
+          <article-title>Morphometrical differences between resectable and non-resectable pancreatic cancer: a fractal analysis</article-title>
+          <source>
+            <italic>Hepatogastroentology</italic>
+          </source>
+          <year>2012</year>
+          <volume>59</volume>
+          <issue>113</issue>
+          <fpage>284</fpage>
+          <lpage>288</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B19">
+        <label>19</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mandelbrot</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <source>
+            <italic>The Fractal Geometry of Nature</italic>
+          </source>
+          <year>1982</year>
+          <publisher-loc>New York, NY, USA</publisher-loc>
+          <publisher-name>W. H. Freeman</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="B20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baish</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Jain</surname>
+              <given-names>RK</given-names>
+            </name>
+          </person-group>
+          <article-title>Fractals and cancer</article-title>
+          <source>
+            <italic>Cancer Research</italic>
+          </source>
+          <year>2000</year>
+          <volume>60</volume>
+          <issue>14</issue>
+          <fpage>3683</fpage>
+          <lpage>3688</lpage>
+          <pub-id pub-id-type="other">2-s2.0-0034660890</pub-id>
+          <pub-id pub-id-type="pmid">10919633</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B21">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cross</surname>
+              <given-names>SS</given-names>
+            </name>
+          </person-group>
+          <article-title>Fractals in pathology</article-title>
+          <source>
+            <italic>Journal of Pathology</italic>
+          </source>
+          <year>1997</year>
+          <volume>182</volume>
+          <issue>1</issue>
+          <fpage>1</fpage>
+          <lpage>18</lpage>
+          <pub-id pub-id-type="pmid">9227334</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B22">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Backes</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Bruno</surname>
+              <given-names>OM</given-names>
+            </name>
+          </person-group>
+          <article-title>Segmenta&#xE7;&#xE3;o de texturas por an&#xE1;lise de complexidade</article-title>
+          <source>
+            <italic>Journal of Computer Science</italic>
+          </source>
+          <year>2006</year>
+          <volume>5</volume>
+          <issue>1</issue>
+          <fpage>87</fpage>
+          <lpage>95</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B23">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friedrich-Rust</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ong</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Herrmann</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Real-time elastography for noninvasive assessment of liver fibrosis in chronic viral hepatitis</article-title>
+          <source>
+            <italic>American Journal of Roentgenology</italic>
+          </source>
+          <year>2007</year>
+          <volume>188</volume>
+          <issue>3</issue>
+          <fpage>758</fpage>
+          <lpage>764</lpage>
+          <pub-id pub-id-type="other">2-s2.0-33847202224</pub-id>
+          <pub-id pub-id-type="pmid">17312065</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B24">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>S&#x1CE;ftoui</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Gheonea</surname>
+              <given-names>DI</given-names>
+            </name>
+            <name>
+              <surname>Ciurea</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Hue histogram analysis of real-time elastography images for noninvasive assessment of liver fibrosis</article-title>
+          <source>
+            <italic>American Journal of Roentgenology</italic>
+          </source>
+          <year>2007</year>
+          <volume>189</volume>
+          <issue>4</issue>
+          <fpage>W232</fpage>
+          <lpage>W233</lpage>
+          <pub-id pub-id-type="other">2-s2.0-35348853175</pub-id>
+          <pub-id pub-id-type="pmid">17885039</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B25">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dumont</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Behler</surname>
+              <given-names>RH</given-names>
+            </name>
+            <name>
+              <surname>Nichols</surname>
+              <given-names>TC</given-names>
+            </name>
+            <name>
+              <surname>Merricks</surname>
+              <given-names>EP</given-names>
+            </name>
+            <name>
+              <surname>Gallippi</surname>
+              <given-names>CM</given-names>
+            </name>
+          </person-group>
+          <article-title>ARFI imaging for noninvasive material characterization of atherosclerosis</article-title>
+          <source>
+            <italic>Ultrasound in Medicine and Biology</italic>
+          </source>
+          <year>2006</year>
+          <volume>32</volume>
+          <issue>11</issue>
+          <fpage>1703</fpage>
+          <lpage>1711</lpage>
+          <pub-id pub-id-type="other">2-s2.0-33750913519</pub-id>
+          <pub-id pub-id-type="pmid">17112956</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B26">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhai</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Palmeri</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Bouchard</surname>
+              <given-names>RR</given-names>
+            </name>
+            <name>
+              <surname>Nightingale</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name>
+              <surname>Nightingale</surname>
+              <given-names>KR</given-names>
+            </name>
+          </person-group>
+          <article-title>An integrated indenter-ARFI imaging system for tissue stiffness quantification</article-title>
+          <source>
+            <italic>Ultrasonic Imaging</italic>
+          </source>
+          <year>2008</year>
+          <volume>30</volume>
+          <issue>2</issue>
+          <fpage>95</fpage>
+          <lpage>111</lpage>
+          <pub-id pub-id-type="other">2-s2.0-52749084578</pub-id>
+          <pub-id pub-id-type="pmid">18939611</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B27">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Behler</surname>
+              <given-names>RH</given-names>
+            </name>
+            <name>
+              <surname>Nichols</surname>
+              <given-names>TC</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Merricks</surname>
+              <given-names>EP</given-names>
+            </name>
+            <name>
+              <surname>Gallippi</surname>
+              <given-names>CM</given-names>
+            </name>
+          </person-group>
+          <article-title>ARFI imaging for noninvasive material characterization of atherosclerosis part II: toward in vivo characterization</article-title>
+          <source>
+            <italic>Ultrasound in Medicine and Biology</italic>
+          </source>
+          <year>2009</year>
+          <volume>35</volume>
+          <issue>2</issue>
+          <fpage>278</fpage>
+          <lpage>295</lpage>
+          <pub-id pub-id-type="other">2-s2.0-58349097873</pub-id>
+          <pub-id pub-id-type="pmid">19026483</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B28">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nightingale</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Soo</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Nightingale</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Trahey</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Acoustic radiation force impulse imaging: in vivo demonstration of clinical feasibility</article-title>
+          <source>
+            <italic>Ultrasound in Medicine and Biology</italic>
+          </source>
+          <year>2002</year>
+          <volume>28</volume>
+          <issue>2</issue>
+          <fpage>227</fpage>
+          <lpage>235</lpage>
+          <pub-id pub-id-type="other">2-s2.0-0036218695</pub-id>
+          <pub-id pub-id-type="pmid">11937286</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B29">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lupsor</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Badea</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Stefanescu</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Performance of a new elastographic method (ARFI technology) compared to unidimensional transient elastography in the noninvasive assessment of chronic hepatitis C. Preliminary results</article-title>
+          <source>
+            <italic>Journal of Gastrointestinal and Liver Diseases</italic>
+          </source>
+          <year>2009</year>
+          <volume>18</volume>
+          <issue>3</issue>
+          <fpage>303</fpage>
+          <lpage>310</lpage>
+          <pub-id pub-id-type="other">2-s2.0-73949123503</pub-id>
+          <pub-id pub-id-type="pmid">19795024</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B30">
+        <label>30</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fahey</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Nightingale</surname>
+              <given-names>KR</given-names>
+            </name>
+            <name>
+              <surname>Nelson</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Palmeri</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Trahey</surname>
+              <given-names>GE</given-names>
+            </name>
+          </person-group>
+          <article-title>Acoustic radiation force impulse imaging of the abdomen: demonstration of feasibility and utility</article-title>
+          <source>
+            <italic>Ultrasound in Medicine and Biology</italic>
+          </source>
+          <year>2005</year>
+          <volume>31</volume>
+          <issue>9</issue>
+          <fpage>1185</fpage>
+          <lpage>1198</lpage>
+          <pub-id pub-id-type="other">2-s2.0-24944480766</pub-id>
+          <pub-id pub-id-type="pmid">16176786</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B31">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Goertz</surname>
+              <given-names>RS</given-names>
+            </name>
+            <name>
+              <surname>Amann</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Heide</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bernatik</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Neurath</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Strobel</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>An abdominal and thyroid status with acoustic radiation force impulse elastometry&#x2014;a feasibility study: acoustic radiation force impulse elastometry of human organs</article-title>
+          <source>
+            <italic>European Journal of Radiology</italic>
+          </source>
+          <year>2011</year>
+          <volume>80</volume>
+          <issue>3</issue>
+          <fpage>e226</fpage>
+          <lpage>e230</lpage>
+          <pub-id pub-id-type="pmid">20971591</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B32">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rafaelsen</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Vagn-Hansen</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>S&#xF8;rensen</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Lindebjerg</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Pl&#xF8;en</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Jakobsen</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Ultrasound elastography in patients with rectal cancer treated with chemoradiation</article-title>
+          <source>
+            <italic>European Journal of Radiology</italic>
+          </source>
+          <year>2013</year>
+        </element-citation>
+      </ref>
+      <ref id="B33">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Taverna</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Magnoni</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Giusti</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Impact of real-time elastography versus systematic prostate biopsy method on cancer detection rate in men with a serum prostate-specific antigen between 2.5 and 10&#x2009;ng/mL</article-title>
+          <source>
+            <italic>ISRN Oncology</italic>
+          </source>
+          <year>2013</year>
+          <volume>2013</volume>
+          <fpage>5 pages</fpage>
+          <pub-id pub-id-type="publisher-id">584672</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B34">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rizzo</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Nunnari</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Berretta</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Cacopardo</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Acoustic radial force impulse as an effective tool for a prompt and reliable diagnosis of hepatocellular carcinoma&#x2014;preliminary data</article-title>
+          <source>
+            <italic>European Review for Medical and Pharmacological Sciences</italic>
+          </source>
+          <year>2012</year>
+          <volume>16</volume>
+          <issue>11</issue>
+          <fpage>1596</fpage>
+          <lpage>1598</lpage>
+          <pub-id pub-id-type="pmid">23111977</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B35">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>YF</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>HX</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Virtual touch tissue quantification of acoustic radiation force impulse: a new ultrasound elastic imaging in the diagnosis of thyroid nodules</article-title>
+          <source>
+            <italic>PLoS One</italic>
+          </source>
+          <year>2012</year>
+          <volume>7</volume>
+          <issue>11</issue>
+          <pub-id pub-id-type="publisher-id">e49094</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B36">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dighe</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Luo</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Cuevas</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Efficacy of thyroid ultrasound elastography in differential diagnosis of small thyroid nodules</article-title>
+          <source>
+            <italic>European Journal of Radiology</italic>
+          </source>
+          <year>2013</year>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="fig1" orientation="portrait" position="float">
+      <label>Figure 1</label>
+      <caption>
+        <p>Gray scale ultrasonography of the submandibular gland (right side). The gland is enlarged (total volume around 12 cmc) with well-defined delineation, inhomogeneous structure, hypoechoic area in the center (belongs to the hilum of the gland), and hyperechoic areas under the capsule (belong to the parenchyma).</p>
+      </caption>
+      <graphic xlink:href="CMMM2013-347238.001"/>
+    </fig>
+    <fig id="fig2" orientation="portrait" position="float">
+      <label>Figure 2</label>
+      <caption>
+        <p>Colour coded Doppler ultrasonography (same case as <xref ref-type="fig" rid="fig1">Figure 1</xref>). In the central part of the gland there are vessels (blue and red according to the direction of the blood flow in relation to the transducer). The amplitude and extension of the colour signal are suggestive of hyperaemia (in this case it was an acute inflammation of the submandibular salivary gland). </p>
+      </caption>
+      <graphic xlink:href="CMMM2013-347238.002"/>
+    </fig>
+    <fig id="fig3" orientation="portrait" position="float">
+      <label>Figure 3</label>
+      <caption>
+        <p>Elastogram of the submandibular gland (on the right side, inflamed gland) using the ARFI procedure. The measurements are made in an area of glandular parenchyma, in a predefined rectangular area, vessel free. The ultrasound speed is 2,55&#x2009;m/sec.</p>
+      </caption>
+      <graphic xlink:href="CMMM2013-347238.003"/>
+    </fig>
+    <fig id="fig4" orientation="portrait" position="float">
+      <label>Figure 4</label>
+      <caption>
+        <p>Elastogram of the submandibular gland (left side, normal gland) by means of ARFI procedure. The sample rectangle is positioned subscapular, in a similar position as it was on the right side gland. The ultrasound speed in the measured area is 1,36&#x2009;m/sec.</p>
+      </caption>
+      <graphic xlink:href="CMMM2013-347238.004"/>
+    </fig>
+    <fig id="fig5" orientation="portrait" position="float">
+      <label>Figure 5</label>
+      <caption>
+        <p>Qualitative (black and white coded; black is rigid; white is soft) elastogram (ARFI procedure) of the submandibular inflamed gland (right side). The pathological area inside the gland is well defined. This area presents a high rigidity index in relation to the amplitude of the pathological process. </p>
+      </caption>
+      <graphic xlink:href="CMMM2013-347238.005"/>
+    </fig>
+    <fig id="fig6" orientation="portrait" position="float">
+      <label>Figure 6</label>
+      <caption>
+        <p>Qualitative (black and white coded; black is rigid; white is soft) elastogram (ARFI procedure) of the normal gland (considered to be the &#x201C;witness,&#x201D; on the left side). The dispersion of the vectors of speed is obvious. There is no obvious compact hard parenchyma as in the right pathological gland (<xref ref-type="fig" rid="fig5">Figure 5</xref>).</p>
+      </caption>
+      <graphic xlink:href="CMMM2013-347238.006"/>
+    </fig>
+    <fig id="fig7" orientation="portrait" position="float">
+      <label>Figure 7</label>
+      <caption>
+        <p>Real-time elastography (qualitative colour coded elastography; blue is rigid; red is soft) obtained by the compression of the right submandibular gland. The blue colour is in direct relation to the rigid parenchyma which is considered to be pathological.</p>
+      </caption>
+      <graphic xlink:href="CMMM2013-347238.007"/>
+    </fig>
+    <fig id="fig8" orientation="portrait" position="float">
+      <label>Figure 8</label>
+      <caption>
+        <p>Real-time elastography (qualitative colour coded elastography; blue is rigid; red is soft) obtained by the compression of the left submandibular gland (normal). This is a normal pattern for the gland, suggestive of parts of different elasticity. </p>
+      </caption>
+      <graphic xlink:href="CMMM2013-347238.008"/>
+    </fig>
+    <table-wrap id="tab1" orientation="portrait" position="float">
+      <label>Table 1</label>
+      <caption>
+        <p>Fractal values. </p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="left" rowspan="1" colspan="1">Type of image</th>
+            <th align="center" rowspan="1" colspan="1">Fractal value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">2D evaluation ultrasound grey scale</td>
+            <td align="center" rowspan="1" colspan="1">1.777</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Duplex sonography</td>
+            <td align="center" rowspan="1" colspan="1">1.754</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">ARFI (quantitative)&#x2014;Ps </td>
+            <td align="center" rowspan="1" colspan="1">1.771</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">ARFI (quantitative)&#x2014;Ns</td>
+            <td align="center" rowspan="1" colspan="1">1.796</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">ARFI (qualitative)&#x2014;Ps </td>
+            <td align="center" rowspan="1" colspan="1">1.650</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">ARFI (qualitative)&#x2014;Ns</td>
+            <td align="center" rowspan="1" colspan="1">1.701</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Real-time elastography&#x2014;Ps </td>
+            <td align="center" rowspan="1" colspan="1">1.907</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Real-time elastography&#x2014;Ns</td>
+            <td align="center" rowspan="1" colspan="1">1.543</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn>
+          <p>
+Ps: pathological state, Ns: normal situation.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>
+</pmc-articleset>

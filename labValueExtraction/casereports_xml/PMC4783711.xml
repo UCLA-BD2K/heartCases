@@ -1,0 +1,520 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Sci Rep</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Sci Rep</journal-id>
+      <journal-title-group>
+        <journal-title>Scientific Reports</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2045-2322</issn>
+      <publisher>
+        <publisher-name>Nature Publishing Group</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">26957324</article-id>
+      <article-id pub-id-type="pmc">4783711</article-id>
+      <article-id pub-id-type="pii">srep23000</article-id>
+      <article-id pub-id-type="doi">10.1038/srep23000</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>All together now: Analogies between chimera state collapses and epileptic seizures</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Andrzejak</surname>
+            <given-names>Ralph G.</given-names>
+          </name>
+          <xref ref-type="corresp" rid="c1">a</xref>
+          <xref ref-type="aff" rid="a1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rummel</surname>
+            <given-names>Christian</given-names>
+          </name>
+          <xref ref-type="aff" rid="a2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mormann</surname>
+            <given-names>Florian</given-names>
+          </name>
+          <xref ref-type="aff" rid="a3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Schindler</surname>
+            <given-names>Kaspar</given-names>
+          </name>
+          <xref ref-type="aff" rid="a4">4</xref>
+        </contrib>
+        <aff id="a1"><label>1</label><institution>Universitat Pompeu Fabra, Department of Information and Communication Technologies</institution>, Barcelona, <country>Spain</country></aff>
+        <aff id="a2"><label>2</label><institution>Support Center for Advanced Neuroimaging, University Institute for Diagnostic and Interventional Neuroradiology, Inselspital, Bern University Hospital, University of Bern</institution>, Bern, <country>Switzerland</country></aff>
+        <aff id="a3"><label>3</label><institution>Department of Epileptology, University of Bonn</institution>, Bonn, <country>Germany</country></aff>
+        <aff id="a4"><label>4</label><institution>Schlaf-Wach-Epilepsie-Zentrum (SWEZ), Department of Neurology, Inselspital, Bern University Hospital, University of Bern</institution>, Bern, <country>Switzerland</country></aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="c1">
+          <label>a</label>
+          <email>ralph.andrzejak@upf.edu</email>
+        </corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>09</day>
+        <month>03</month>
+        <year>2016</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2016</year>
+      </pub-date>
+      <volume>6</volume>
+      <elocation-id>23000</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>25</day>
+          <month>09</month>
+          <year>2015</year>
+        </date>
+        <date date-type="accepted">
+          <day>26</day>
+          <month>02</month>
+          <year>2016</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2016, Macmillan Publishers Limited</copyright-statement>
+        <copyright-year>2016</copyright-year>
+        <copyright-holder>Macmillan Publishers Limited</copyright-holder>
+        <license xmlns:xlink="http://www.w3.org/1999/xlink" license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <!--author-paid-->
+          <license-p>This work is licensed under a Creative Commons Attribution 4.0 International License. The images or other third party material in this article are included in the article&#x2019;s Creative Commons license, unless indicated otherwise in the credit line; if the material is not included under the Creative Commons license, users will need to obtain permission from the license holder to reproduce the material. To view a copy of this license, visit <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link></license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Conceptually and structurally simple mathematical models of coupled oscillator networks can show a rich variety of complex dynamics, providing fundamental insights into many real-world phenomena. A recent and not yet fully understood example is the collapse of coexisting synchronous and asynchronous oscillations into a globally synchronous motion found in networks of identical oscillators. Here we show that this sudden collapse is promoted by a further decrease of synchronization, rather than by critically high synchronization. This strikingly counterintuitive mechanism can be found also in nature, as we demonstrate on epileptic seizures in humans. Analyzing spatiotemporal correlation profiles derived from intracranial electroencephalographic recordings (EEG) of seizures in epilepsy patients, we found a pronounced decrease of correlation at the seizure onsets. Applying our findings in a closed-loop control scheme to models of coupled oscillators in chimera states, we succeed in both provoking and preventing outbreaks of global synchronization. Our findings not only advance the understanding of networks of coupled dynamics but can open new ways to control them, thus offering a vast range of potential new applications.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <p>Synchrony and asynchrony coexist in a multitude of natural and man-made systems where they play key roles in their functions and dysfunctions<xref ref-type="bibr" rid="b1">1</xref><xref ref-type="bibr" rid="b2">2</xref><xref ref-type="bibr" rid="b3">3</xref><xref ref-type="bibr" rid="b4">4</xref><xref ref-type="bibr" rid="b5">5</xref><xref ref-type="bibr" rid="b6">6</xref><xref ref-type="bibr" rid="b7">7</xref><xref ref-type="bibr" rid="b8">8</xref>. The mechanism underlying this coexistence can be studied in models of coupled oscillator networks, simple in their structure yet complex in their dynamics. Even networks of identical coupled oscillators can segregate into two subpopulations, one with synchronous oscillations and the other with an irregular asynchronous motion<xref ref-type="bibr" rid="b9">9</xref>. Such so-called chimera states<xref ref-type="bibr" rid="b10">10</xref><xref ref-type="bibr" rid="b11">11</xref> have been studied analytically<xref ref-type="bibr" rid="b9">9</xref><xref ref-type="bibr" rid="b10">10</xref><xref ref-type="bibr" rid="b12">12</xref><xref ref-type="bibr" rid="b13">13</xref><xref ref-type="bibr" rid="b14">14</xref><xref ref-type="bibr" rid="b15">15</xref><xref ref-type="bibr" rid="b16">16</xref><xref ref-type="bibr" rid="b17">17</xref><xref ref-type="bibr" rid="b18">18</xref><xref ref-type="bibr" rid="b19">19</xref><xref ref-type="bibr" rid="b20">20</xref><xref ref-type="bibr" rid="b21">21</xref>, numerically<xref ref-type="bibr" rid="b9">9</xref><xref ref-type="bibr" rid="b10">10</xref><xref ref-type="bibr" rid="b12">12</xref><xref ref-type="bibr" rid="b13">13</xref><xref ref-type="bibr" rid="b14">14</xref><xref ref-type="bibr" rid="b15">15</xref><xref ref-type="bibr" rid="b16">16</xref><xref ref-type="bibr" rid="b17">17</xref><xref ref-type="bibr" rid="b18">18</xref><xref ref-type="bibr" rid="b19">19</xref><xref ref-type="bibr" rid="b20">20</xref><xref ref-type="bibr" rid="b21">21</xref><xref ref-type="bibr" rid="b22">22</xref><xref ref-type="bibr" rid="b23">23</xref><xref ref-type="bibr" rid="b24">24</xref><xref ref-type="bibr" rid="b25">25</xref><xref ref-type="bibr" rid="b26">26</xref><xref ref-type="bibr" rid="b27">27</xref><xref ref-type="bibr" rid="b28">28</xref><xref ref-type="bibr" rid="b29">29</xref><xref ref-type="bibr" rid="b30">30</xref> and experimentally<xref ref-type="bibr" rid="b13">13</xref><xref ref-type="bibr" rid="b24">24</xref><xref ref-type="bibr" rid="b25">25</xref><xref ref-type="bibr" rid="b26">26</xref><xref ref-type="bibr" rid="b27">27</xref><xref ref-type="bibr" rid="b28">28</xref>. While chimera states are stable in the thermodynamic limit of infinitely many oscillators<xref ref-type="bibr" rid="b11">11</xref><xref ref-type="bibr" rid="b18">18</xref>, a recent study has shown that for networks of finite size they can collapse into a fully synchronized state<xref ref-type="bibr" rid="b23">23</xref>. The exact mechanisms that trigger this seemingly sudden collapse, however, remain unknown.</p>
+    <p>To address this open problem, we studied the dynamics of a ring of identical phase oscillators with nonlocal coupling. Mutually close oscillators are connected by a high coupling, and with increasing distance between oscillators, the coupling strength decreases to zero. The dynamics of such networks depends in a nontrivial way on its parameters<xref ref-type="bibr" rid="b11">11</xref>, such as the number of oscillators and the range of the coupling. We fixed the parameters such that for most random initial conditions, the network entered into a chimera state and the mean lifetime prior to the chimera collapse was comparable to the maximal lifetimes reported in previous studies<xref ref-type="bibr" rid="b15">15</xref><xref ref-type="bibr" rid="b23">23</xref><xref ref-type="bibr" rid="b24">24</xref><xref ref-type="bibr" rid="b25">25</xref>. We here use a data-driven approach to study the dynamics of the network model. In particular, we use signal analysis to evaluate the instantaneous coherence and temporal evolution of the oscillator phases. Apart from the ring topology, no further knowledge about the network structure is used.</p>
+    <sec disp-level="1">
+      <title>Results</title>
+      <sec disp-level="2">
+        <title>The network model</title>
+        <p>Our model consists of <italic>N</italic>&#x2009;=&#x2009;51 identical nonlocally coupled oscillators assumed to be placed equidistantly on a ring with circumference 51. Accordingly, all indices, sums and differences of indices are understood as modulo <italic>N</italic>. For <italic>j</italic>&#x2009;=&#x2009;1, &#x2026;, 51, the phases of the oscillators are governed by:</p>
+        <p>
+          <disp-formula id="eq1">
+            <inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e201" xlink:href="srep23000-m1.jpg"/>
+          </disp-formula>
+        </p>
+        <p>Here <italic>&#x3C9;</italic> is the natural frequency which is set to zero, and <italic>&#x3B1;</italic> is the phase lag parameter which is set to 1.46 rad (see<xref ref-type="bibr" rid="b22">22</xref><xref ref-type="bibr" rid="b23">23</xref>). The coupling kernel function <italic>G</italic> is described in the Methods section.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Formation and collapse of chimera states</title>
+        <p><xref ref-type="fig" rid="f1">Figure 1</xref> and <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 1</xref> show different stages of the network dynamics obtained from numerical integration of the network model (see Methods). Shortly after the network is initialized with uniform random phases the chimera state is established. The network is divided into two distinct groups, i.e. the spatial symmetry of the network structure does not result in a spatial symmetry in its dynamics&#x2019; states. Instead this symmetry is broken in the way described in the following. In the <italic>high-coherence group</italic> (HCG), all nodes are locked to a narrow range of phases and jointly oscillate at an almost constant phase velocity. The nodes of the complementary group, in contrast, are dispersed and behave in an irregular way, including intermittent changes of the sense of rotation<xref ref-type="bibr" rid="b23">23</xref>. This second group is commonly referred to as incoherent. However, we here refer to it as <italic>low-coherence group</italic> (LCG) since its local order parameter (see Methods) reveals a low but non-negligible coherence (see also<xref ref-type="bibr" rid="b26">26</xref>). Oscillators at the borders between the HCG and LCG frequently switch sides. They lock onto the HCG or get disconnected from it. Therefore, the HCG group slowly drifts across the network<xref ref-type="bibr" rid="b22">22</xref>. More than a million HCG oscillation periods past its formation, the chimera state shown in <xref ref-type="fig" rid="f1">Fig. 1</xref> suddenly collapses, and the network switches to the fully synchronized state<xref ref-type="bibr" rid="b23">23</xref>. After the last irregularities have faded out, the phases of all nodes become completely locked and oscillate at constant phase velocity. The translational symmetry of the network structure is eventually also reflected by the dynamics&#x2019; states.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Hypo-coherence events</title>
+        <p>Sieber <italic>et al</italic>.<xref ref-type="bibr" rid="b15">15</xref> conjectured that the seemingly sudden collapse of the chimera state occurs when finite-size fluctuations allow the network dynamics to pass through the barrier of an unstable chimera state solution to the fully synchronized stable state (see also<xref ref-type="bibr" rid="b29">29</xref>). It has not been studied so far, however, whether a specific network state facilitates this process. A priori, one might expect that the finite-size fluctuations lead to a critical number of HCG nodes or some critically high LCG coherence. Such a critical mass might initiate positive feedback, triggering a transition to the fully synchronized state. This notion is further supported by the unstable chimera state solution residing at high values of the global order parameter<xref ref-type="bibr" rid="b15">15</xref>. However, our network shows no evidence for such critical-mass mechanisms. Instead we find that the chimera collapse is typically preceded by a <italic>hypo-coherence event</italic> in the LCG. This seemingly counterintuitive mechanism is reflected in a prominent drop in the spatiotemporal profile of the LCG order parameter (<xref ref-type="fig" rid="f1">Fig. 1c&#x2013;e</xref>). Only subsequent to this hypo-coherence event do positive feedback mechanisms take over. This positive feedback, in the sense that a high synchronization leads to a further increase of synchronization, then drives the network to the fully synchronized state. We quantify these hypo-coherence events by the last prominent minimum of the LCG order parameter prior to the collapse (<xref ref-type="fig" rid="f1">Fig. 1d,e</xref>). Last prominent minima determined in the same way but not followed by any collapse serve as controls. Across independent realizations of the network, minima preceding collapses are significantly lower than the controls (<xref ref-type="fig" rid="f2">Fig. 2</xref>).</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Different pathways to full synchronization and their lifetimes</title>
+        <p>How does a drop in the already low coherence of the LCG promote the onset of the fully synchronized state? When the network is initiated with random phases, it will always end up in the fully synchronized state. There are, however, two distinct pathways to this final stable state. So far we have treated the chimera pathway. In a second pathway the network synchronizes directly, without ever forming a chimera state (<xref ref-type="supplementary-material" rid="S1">Supplementary Fig. S2</xref>). For our network this immediate-collapse pathway was observed in 4,848 of 100,000 independent realizations (~5%). For this pathway the distribution of lifetimes, i.e., the times from the initiation to the fully synchronized state, is right-skewed and has a mean of 162&#x2009;&#xB1;&#x2009;2.33 time units (mean&#x2009;&#xB1;&#x2009;standard error of mean). The maximum observed lifetime in the immediate-collapse pathway was 693 time units (<xref ref-type="fig" rid="f3">Fig. 3</xref>). Out of the remaining 95,152 realizations that formed a chimera state (~95%), we continued to integrate a randomly selected subsample of 2,000 realizations until they collapsed. The resulting lifetime distribution is exponential<xref ref-type="bibr" rid="b23">23</xref><xref ref-type="bibr" rid="b25">25</xref><xref ref-type="bibr" rid="b28">28</xref> (<xref ref-type="fig" rid="f3">Fig. 3</xref>), implying that the collapse is a Poisson process<xref ref-type="bibr" rid="b25">25</xref>. Accordingly, the instantaneous probability that a collapse occurs is time-independent, the chimera state is not ageing. Using the empirical distribution mean of (2.5&#x2009;&#xB1;&#x2009;0.05)&#x2009;&#x22C5;&#x2009;10<sup>6</sup> time units, we can thus determine the probability that a chimera collapses within 693 time units, i.e. within the longest lifetime observed in the immediate-collapse pathway. It is as small as 2.8&#x2009;&#x22C5;&#x2009;10<sup>&#x2212;4</sup>.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Hypo-coherence events trigger the collapse of chimera states</title>
+        <p>Hence, for our network the transition rate from chimera states to the fully synchronized state is orders of magnitude lower than the one from the initial random, fully incoherent state. At first sight, this might again seem counterintuitive since for the chimera state the HCG nodes are already oscillating almost synchronously. Therefore, a first step towards full synchronization is already taken, and only the LCG nodes remain to be recruited. We conjecture that the low coherence of the LCG is non-negligible in the sense that it is protective against this recruitment. As long as the LCG has its own mean field, it is less vulnerable to be absorbed by the HCG. Once this opposition is weakened during a hypo-coherence event, the HCG can impose its rhythm and rapidly recruit all oscillators in the network. This has to be understood in a probabilistic sense. Hypo-coherence events are not fully sensitive and specific for the chimera collapse (distributions in <xref ref-type="fig" rid="f2">Fig. 2</xref> overlap), but they do render the network susceptible to suffer an immediate chimera collapse.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Closed-loop control schemes</title>
+        <p>Results of two different closed-loop feedback schemes corroborate this interpretation. In these simulations, based on 500 independent realizations each, we transiently changed the phase lag coupling parameter <italic>&#x3B1;</italic> (see also<xref ref-type="bibr" rid="b15">15</xref><xref ref-type="bibr" rid="b21">21</xref><xref ref-type="bibr" rid="b29">29</xref>) whenever the LCG order parameter entered the range found for hypo-coherence events. Importantly, we changed <italic>&#x3B1;</italic> exclusively in couplings between LCG oscillators. In the first scheme we set <italic>&#x3B1;</italic> so as to cause a further decrease of the LCG coherence. This decreased the mean chimera lifetime from (2.5&#x2009;&#xB1;&#x2009;0.05)&#x2009;&#x22C5;&#x2009;10<sup>6</sup> to (2.6&#x2009;&#xB1;&#x2009;0.1)&#x2009;&#x22C5;&#x2009;10<sup>5</sup> time units. In the second scheme, an <italic>&#x3B1;</italic> counteracting the hypo-coherence event increased the lifetime to (7.4&#x2009;&#xB1;&#x2009;0.3)&#x2009;&#x22C5;&#x2009;10<sup>6</sup> time units. As controls we used two corresponding open-loop feedback schemes. Here changes of <italic>&#x3B1;</italic> were not triggered by hypo-coherence events but were applied periodically, matching in both frequency and duration the respective closed-loop feedback scheme. The effects were much smaller with resulting mean lifetimes of (2.6&#x2009;&#xB1;&#x2009;0.1)&#x2009;&#x22C5;&#x2009;10<sup>6</sup> and (2.9&#x2009;&#xB1;&#x2009;0.1)&#x2009;&#x22C5;&#x2009;10<sup>6</sup> time units, respectively.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Decrease of correlation at the onsets of epileptic seizures in humans</title>
+        <p>Do chimera states bear any relevance for real-world phenomena? We use an example from neurology to show that phenomena analogous to hypo-coherence events preceding chimera state collapses indeed exist. Analyzing spatiotemporal correlation profiles derived from intracranial EEG recordings of seizures, we found a pronounced decrease of correlation at the seizure onsets (Early localized blue areas in <xref ref-type="fig" rid="f4">Fig. 4</xref>). This decrease is most prominent for signals recorded either from within, or close to, brain regions that show the first electrographical signs of seizure activity. The subsequent spread of the seizure activity to extended brain regions is accompanied by a global increase in correlation which outlasts the actual seizure (Extended red areas in <xref ref-type="fig" rid="f4">Fig. 4</xref>). We found similar patterns across further seizures from the patients shown in <xref ref-type="fig" rid="f4">Fig. 4</xref> and analogous patterns in seizures from other patients. Nevertheless, our intention is not to suggest that transient correlation decreases at seizure onsets can be found for all types of seizures in all patients or that they can be used for a reliable early detection or even prediction of epileptic seizures. To stress this point<xref ref-type="bibr" rid="b31">31</xref>, we show a sample seizure onset not exhibiting any correlation decrease in <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. S5</xref>.</p>
+      </sec>
+    </sec>
+    <sec disp-level="1">
+      <title>Discussion</title>
+      <p>The key analogy across our findings is that an outbreak of global synchronization is preceded by a transient decrease of synchronization in a subpopulation of the network. We anticipate that this represents only a first link between chimera collapses and epileptic seizures. Functions of the brain are complex and diverse and so are its dysfunctions, several of which can manifest themselves in epileptic seizures. Likewise the dynamics of coupled oscillator networks are very rich. Chimera states and chimera-like phenomena arise in a multitude of coupled systems<xref ref-type="bibr" rid="b11">11</xref>. However, they exist only for limited ranges of the network parameters<xref ref-type="bibr" rid="b11">11</xref>. Within these ranges their characteristics, stability, and mean lifetimes<xref ref-type="bibr" rid="b23">23</xref><xref ref-type="bibr" rid="b24">24</xref> are influenced by the network topography, type of oscillator, and features of the coupling. In a pre-analysis, we found hypo-coherence events for extended network parameter ranges within the limits for which chimera states exist. As stated above, we fixed these parameters such that for most random initial conditions, the network entered into a chimera state and the mean chimera state lifetime was comparable to the maximal lifetimes reported in previous studies<xref ref-type="bibr" rid="b15">15</xref><xref ref-type="bibr" rid="b23">23</xref><xref ref-type="bibr" rid="b24">24</xref><xref ref-type="bibr" rid="b25">25</xref>. None of the network parameters were optimized with regard to the results shown herein. By narrowing the kernel and thus approaching a kernel broadness for which chimera states do not exist, we found chimera states of significantly shorter lifetimes that resemble so-called breathing chimeras<xref ref-type="bibr" rid="b12">12</xref><xref ref-type="bibr" rid="b14">14</xref>, characterized by a waxing and waning of the LCG (<xref ref-type="supplementary-material" rid="S1">Supplementary Figs 3 and 4</xref>). Here the collapse occurs in a particularly deep breathing cycle. Accordingly, apart from hypo-coherence events, further intriguing mechanisms can underlie the collapse of chimera states. As a further example, consider a system of globally coupled oscillators with internal delayed feedback which was recently reported to show chimera-like states<xref ref-type="bibr" rid="b32">32</xref>. In contrast to our network, the fully synchronized state of this network incorporating delays is not stable. Is the healthy brain using similar mechanism not to have seizures? Along these lines, instead of contradicting our findings, the counterexamples provided in <xref ref-type="supplementary-material" rid="S1">Supplementary Figs S4&#x2013;S5</xref> are promising candidates for which one can seek real-world and model counterparts, respectively.</p>
+      <p>It is important to emphasize at which conceptual level we establish a link between chimera collapses and epileptic seizures. Certainly a ring of nonlocally coupled identical phase oscillators is not a realistic model of the brain. Furthermore, our analysis cannot provide evidence that the chimera collapses and epileptic seizures are caused by the same dynamical scenario such as specific types of bifurcations. What we do show is that from the perspective of a data-driven approach both systems exhibit an analogous phenomenon, namely a transient decrease of synchronization in a subpopulation of the network which precedes an outbreak of global synchronization.</p>
+      <p>While epileptic seizures are classically considered to reflect abnormal excessive or synchronous neuronal activity<xref ref-type="bibr" rid="b33">33</xref>, our findings support the emerging view that apart from synchronization also de-synchronization is important for seizures dynamics<xref ref-type="bibr" rid="b34">34</xref><xref ref-type="bibr" rid="b35">35</xref><xref ref-type="bibr" rid="b36">36</xref><xref ref-type="bibr" rid="b37">37</xref><xref ref-type="bibr" rid="b38">38</xref>. Furthermore, there is growing evidence that brain regions showing the first electrographical signs of seizure activity at seizure onset are characterized by an elevated level of neuronal synchronization during the seizure-free interval (see<xref ref-type="bibr" rid="b4">4</xref><xref ref-type="bibr" rid="b39">39</xref> and references therein). Given this prominent role that alterations of neuronal synchronization play in epilepsy, changes in synchronization are regarded as a promising feature for seizure prediction. Mormann and coworkers<xref ref-type="bibr" rid="b40">40</xref> used the mean phase coherence<xref ref-type="bibr" rid="b41">41</xref> as an estimate for neuronal synchronization to analyze intracranial EEG recordings from epilepsy patients. They found that the large majority of the investigated seizures were preceded by a decrease of synchronization lasting from several minutes up to a few hours. These decreases were not confined to the seizure onset zone but often involved more distant, even contralateral, areas of the brain but were not found in recordings from the seizure-free interval. Feldt and coworkers<xref ref-type="bibr" rid="b42">42</xref> used a straightforward model of two interacting populations of integrate-and-fire neurons to explain these results of Mormann <italic>et al</italic>.<xref ref-type="bibr" rid="b40">40</xref>. Subsequent studies investigated whether spatiotemporal changes of neuronal synchronization, as estimated by the mean phase coherence or other quantitative EEG analysis measures, can be used to predict epileptic seizures (see<xref ref-type="bibr" rid="b43">43</xref><xref ref-type="bibr" rid="b44">44</xref><xref ref-type="bibr" rid="b45">45</xref><xref ref-type="bibr" rid="b46">46</xref><xref ref-type="bibr" rid="b47">47</xref> for recent examples). It remains subject of an ongoing debate whether the sensitivity and specificity of current quantitative EEG analysis based seizure prediction approaches is sufficient for implementation in therapeutic devices (see<xref ref-type="bibr" rid="b48">48</xref>). On the other hand, their sensitivity and specificity are often reported to be higher than the values expected under the null hypothesis that the predictions are raised at random by a Poisson process (see<xref ref-type="bibr" rid="b49">49</xref>). However, due to the temporal correlations of the quantitative EEG analysis measure profiles from which the predictions are extracted, the memoryless Poisson process might not provide a plausible null hypothesis<xref ref-type="bibr" rid="b31">31</xref>. We emphasize that our study of EEG recordings does not aim at the prediction of epileptic seizures. We only report transient correlation decreases at seizure onsets, not prior to seizure onsets. The analogy of these transient correlation decreases at seizure onsets with hypo-coherence events prior to chimera collapse can, however, contribute to the understanding of the mechanisms underlying seizure onsets.</p>
+      <p>Results of our closed-loop feedback scheme add to previous work on the control of chimera states<xref ref-type="bibr" rid="b15">15</xref><xref ref-type="bibr" rid="b20">20</xref><xref ref-type="bibr" rid="b21">21</xref><xref ref-type="bibr" rid="b29">29</xref><xref ref-type="bibr" rid="b30">30</xref>. Sieber and colleagues<xref ref-type="bibr" rid="b15">15</xref> introduced a time-dependence into the phase lag parameter as a function of the global order parameter. This closed-loop control scheme allowed stabilizing chimera states and suppressing the chimera collapse. Wolfrum and colleagues<xref ref-type="bibr" rid="b29">29</xref> further studied the dynamical phenomena in this feedback system with particular emphasis on networks of a small number of oscillators. Bick and Martens<xref ref-type="bibr" rid="b20">20</xref> implemented a closed-loop between the gradient of a local order parameter and an asymmetry in the coupling kernel function to suppress the drifting motion of the chimeras (see<xref ref-type="bibr" rid="b22">22</xref>). This allowed the authors to fix the position of chimera states at any desired target position on the ring. Isele <italic>et al</italic>.<xref ref-type="bibr" rid="b30">30</xref> achieved to stabilize chimera states and to control their position by including excitable units in a network of otherwise oscillatory nodes. Omelchenko <italic>et al</italic>.<xref ref-type="bibr" rid="b21">21</xref> stabilized chimera states and fixed their position in particularly small networks. For this purpose they introduced an oscillator-position dependence into the phase lag parameter as a function of the sum and difference of two local order parameters.</p>
+      <p>Our control scheme was restricted to the oscillators of the LCG. Whenever the LCG order parameter fell below a threshold, reflecting an imminent hypo-coherence event, we changed the phase lag parameter exclusively for couplings between LCG oscillators. Adjusting this intra LCG phase lag parameter to either counteract or enhance the hypo-coherence event allowed us to, respectively, suppress or promote the collapse of the chimera state. In other words, counteracting or enhancing a loss of coherence in the already weakly coherent subpopulation of oscillators can, respectively, suppress or promote the outbreak of synchronization across all oscillators. On the one hand, this supports our conclusion that the chimera state collapse is indeed triggered by hypo-coherence events. On the other hand, this is in keeping with the hypothesis that methods directed at increasing synchronization might help to control epileptic seizures<xref ref-type="bibr" rid="b34">34</xref><xref ref-type="bibr" rid="b35">35</xref>. To exploit the principles of our closed-loop schemes to control epileptic seizures will require identifying and precisely targeting the brain regions corresponding to the low-coherence group, for example by intracranial focal electrical neurostimulation<xref ref-type="bibr" rid="b50">50</xref>. Notwithstanding these challenges, the prospect of control can have far-reaching implications, beyond epileptic seizures. In the brain, a balanced coexistence of synchrony and asynchrony plays key roles in cognitive functions<xref ref-type="bibr" rid="b2">2</xref>. A disturbance of this balance can manifest itself not only in epilepsy<xref ref-type="bibr" rid="b4">4</xref> but in further neurological disorders such as Parkinson&#x2019;s disease<xref ref-type="bibr" rid="b5">5</xref> or schizophrenia<xref ref-type="bibr" rid="b3">3</xref>.</p>
+    </sec>
+    <sec disp-level="1">
+      <title>Methods</title>
+      <sec disp-level="2">
+        <title>The coupling kernel</title>
+        <p>We constructed the coupling kernel <italic>G</italic>(&#x2009;<italic>j</italic>&#x2009;&#x2212;&#x2009;<italic>k</italic>) by placing a Tukey window of width <italic>B</italic>&#x2009;=&#x2009;44.8 and parameter <italic>r</italic>&#x2009;=&#x2009;0.45 centered at |&#x2009;<italic>j</italic>&#x2009;&#x2212;&#x2009;<italic>k</italic>|&#x2009;=&#x2009;0. The remaining part (23&#x2009;&#x2264;&#x2009;|&#x2009;<italic>j</italic>&#x2009;&#x2212;&#x2009;<italic>k</italic>|&#x2009;&#x2264;&#x2009;25) was padded with zeros. Then, <italic>G</italic>(&#x2009;<italic>j</italic>&#x2009;&#x2212;&#x2009;<italic>k</italic>) was normalized to have integral of one along the ring of 51 oscillators. Accordingly, the kernel has a constant value of 0.0228 in the center, is zero at both tails, and decays like a cosine kernel in between (<xref ref-type="supplementary-material" rid="S1">Supplementary Fig. S3</xref>). The parameters <italic>B</italic> and <italic>r</italic> allow adjusting the broadness and steepness of the kernel. The higher <italic>B</italic>, the narrower the tails of value zero. The higher <italic>r</italic>, the broader the cosine part and the narrower the center of constant value. The values of <italic>B</italic>&#x2009;=&#x2009;44.8 and <italic>r</italic>&#x2009;=&#x2009;0.45 were used throughout this study. Exclusively for the simulation shown in <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. S4</xref>, we set <italic>B</italic>&#x2009;=&#x2009;39.6 and <italic>r</italic>&#x2009;=&#x2009;0.45.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Choice of evaluation parameters</title>
+        <p>The procedures described below require determining several thresholds, time constants, minimal number of oscillators, etc. All values were set in an empirical manner. We adapted them to our particular network taking into account its size, typical time scales and dynamics by exploring in detail the influence of the parameters based on a small number of exemplary realizations. Importantly, our results do not depend in a sensitive way on any of these evaluation parameters. In particular, none of the values were optimized with regard to the results presented here.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Numerical integration and initial conditions</title>
+        <p>We integrated <xref ref-type="disp-formula" rid="eq1">equation (1)</xref> using a Runge-Kutta scheme of order four with fixed step size of <italic>dt</italic>&#x2009;=&#x2009;0.01 dimensionless time units. Using this integration step, one obtains on the order of 800 samples per oscillation period of the coherent oscillators during the existence of the chimera state. Hence, we have a sufficiently small integration step size with regard to the dominant time scale of the dynamics. As start time we defined <italic>t</italic><sub>ST</sub>&#x2009;=&#x2009;0 time units. As initial conditions we used random phases <italic>&#x3C6;</italic><sub><italic>j</italic></sub>(<italic>t</italic><sub>ST</sub>) that were uniformly distributed between [0, 2<italic>&#x3C0;</italic>] for <italic>j</italic>&#x2009;=&#x2009;1, &#x2026;, <italic>N</italic>.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Order parameters</title>
+        <p>To monitor the state of the network we represent the phases in the complex domain and use the length of the complex Kuramoto order parameter:</p>
+        <p>
+          <disp-formula id="eq2">
+            <inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e579" xlink:href="srep23000-m2.jpg"/>
+          </disp-formula>
+        </p>
+        <p>where <italic>i</italic> is the imaginary unit. The angular brackets &lt;&#x2009;&gt; indicate the mean value in the complex plane taken across the set of indices given in curly brackets {&#x2009;}. The bars |&#x2009;&#x22C5;&#x2009;| indicate the absolute value, which here corresponds to the Euclidean norm of the complex number to which it is applied. This order parameter assesses the instantaneous coherence of the subpopulation {<italic>m</italic>} of phase oscillators at time <italic>t</italic>. The subpopulations were adapted to the problem at hand, resulting in three different variants of the order parameter. The first variant is the global order parameter across all phases, which we use to detect the initial formation of the chimera state and the onset of the fully synchronized state:</p>
+        <p>
+          <disp-formula id="eq3">
+            <inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e593" xlink:href="srep23000-m3.jpg"/>
+          </disp-formula>
+        </p>
+        <p>(We here write out the mean only to further illustrate the definition of <xref ref-type="disp-formula" rid="eq2">Equation (2)</xref>.)</p>
+        <p>The time of the initial formation of the chimera state, denoted by <italic>t</italic><sub>IF</sub>, was defined by the smallest time <italic>t</italic> for which <italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>)&#x2009;&gt;&#x2009;0.7. This threshold is close to the mean of <italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>) during the existence of the chimera state. The time of the onset of the fully synchronized state, <italic>t</italic><sub>FS</sub>, was defined by the smallest time <italic>t</italic> for which <italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>)&#x2009;&gt;&#x2009;0.99999 was found. We convinced ourselves that after crossing this threshold, the value of <italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>) always converged to one, hence this threshold is beyond the point of no return to full synchronization.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Definition of high-coherence and low-coherence group</title>
+        <p>We use pair-wise order parameters to define the two complementary groups of oscillators, namely the high-coherence group (HCG) and the low-coherence group (LCG). To be included in the HCG, oscillators must belong to at least one group of at least five neighboring oscillators for which all pair-wise order parameters exceed a pre-defined threshold: If <italic>R</italic><sub>{<italic>j</italic>+2,<italic>j</italic>+1}</sub>&#x2009;&gt;&#x2009;0.995 and <italic>R</italic><sub>{<italic>j</italic>+1,<italic>j</italic>}</sub>&#x2009;&gt;&#x2009;0.995 and <italic>R</italic><sub>{<italic>j</italic>,<italic>j</italic>&#x2212;1}</sub>&#x2009;&gt;&#x2009;0.995 and <italic>R</italic><sub>{<italic>j</italic>&#x2212;1,<italic>j</italic>&#x2212;2}</sub>&#x2009;&gt;&#x2009;0.995, then the oscillators with indices <inline-formula id="d33e713"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e714" xlink:href="srep23000-m4.jpg"/></inline-formula> are included in the HCG. This criterion is tested for <italic>j</italic>&#x2009;=&#x2009;1, &#x2026;, <italic>N</italic>. Accordingly, the tested groups overlap, and oscillators can qualify up to five times to be included in the HCG. The number of times an oscillator qualifies is not taken into account. All oscillators that never qualify for any <italic>j</italic> are included in the LCG. We found that the threshold value 0.995 and the group size of five is necessary and sufficient to avoid that islands in the middle of the LCG are erroneously defined as members of the HCG. By construction, both groups cannot intersect and their union fills the entire ring of all <italic>N</italic>&#x2009;=&#x2009;51 oscillators. Typically, during the existence of the chimera state, the ring of oscillators was split in one non-fragmented HCG and the complementary non-fragmented LCG. Only during the initial formation and collapse of the chimera state a fragmentation of these two groups was typically found (see <xref ref-type="fig" rid="f1">Fig. 1</xref> and <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. S4</xref>).</p>
+      </sec>
+      <sec disp-level="2">
+        <title>LCG order parameter</title>
+        <p>To assess the spatial-temporal coherence profile of the LCG (see also<xref ref-type="bibr" rid="b10">10</xref><xref ref-type="bibr" rid="b32">32</xref>), we adapted the order parameter to be restricted to the 20 nearest neighbors of an individual oscillator <italic>j</italic> in the LCG: <italic>R</italic><sub>LCG</sub>(<italic>j, t</italic>)&#x2009;=&#x2009;<italic>R</italic><sub>{<italic>m</italic>}</sub>(<italic>t</italic>) for <inline-formula id="d33e765"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e766" xlink:href="srep23000-m5.jpg"/></inline-formula>. To further condense this information, we took the average <inline-formula id="d33e768"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e769" xlink:href="srep23000-m6.jpg"/></inline-formula>. Here the angular brackets &lt;&#x2009;&gt; indicate the mean value in the real-valued domain of the order parameter.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Last pronounced minima, originals and controls</title>
+        <p>To quantify the hypo-coherence events, we determined the last prominent minimum of the LCG order parameter <italic>R</italic><sub>LCG</sub>(<italic>t</italic>) prior to the onset of full synchronization. We denote this last prominent minimum by <inline-formula id="d33e784"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e785" xlink:href="srep23000-m7.jpg"/></inline-formula>. To determine it, we at first estimated the median of <italic>R</italic><sub>LCG</sub>(<italic>t</italic>) across the chimera lifetime. We then went to the last time instant <italic>t</italic><sub>ON</sub> prior to the onset time of the fully synchronized state <italic>t</italic><sub>FS</sub> at which <italic>R</italic><sub>LCG</sub>(<italic>t</italic>) crossed its median from above and the number of oscillators in the LCG was at least 21. This median value was used to initialize <inline-formula id="d33e815"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e816" xlink:href="srep23000-m8.jpg"/></inline-formula>. The jump backwards from <italic>t</italic><sub>FS</sub> to <italic>t</italic><sub>ON</sub> is necessary in order not to get trapped in the prominent fluctuations of <italic>R</italic><sub><italic>LCG</italic></sub>(<italic>t</italic>) observed during the acute break-down of the LCG (see right end of <xref ref-type="fig" rid="f1">Fig. 1d,e</xref>). From <italic>t</italic><sub>ON</sub>, we went gradually backward in time. Whenever the value of <italic>R</italic><sub><italic>LCG</italic></sub>(<italic>t</italic>) was smaller than the current value of <inline-formula id="d33e856"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e857" xlink:href="srep23000-m9.jpg"/></inline-formula>, this value was stored as new value of <inline-formula id="d33e859"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e860" xlink:href="srep23000-m10.jpg"/></inline-formula>. This process was stopped as soon as no new minimum was found within 10 time units after the last update of <inline-formula id="d33e862"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e863" xlink:href="srep23000-m11.jpg"/></inline-formula> This value of <inline-formula id="d33e865"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e866" xlink:href="srep23000-m12.jpg"/></inline-formula> yields the last prominent minimum of the LCG order parameter <italic>R</italic><sub>LCG</sub>(<italic>t</italic>).</p>
+        <p>To estimate the null distribution of <inline-formula id="d33e879"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e880" xlink:href="srep23000-m13.jpg"/></inline-formula>, we repeated the exact same process using as initial times <inline-formula id="d33e882"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e883" xlink:href="srep23000-m14.jpg"/></inline-formula> random time instants during the lifetime of chimera states at which no chimera collapse and no onset of full synchronization took place for the next 2,500 time units.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Detection of immediate decay</title>
+        <p>After the initial formation of the chimera state, the HCG and the LCG coexist (see <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. S1</xref>). This formation process can be traced in the global order parameter <italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>). It rises quickly, crosses the threshold used to define the initial formation time (<italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>)&#x2009;&gt;&#x2009;0.7, see above), and then fluctuates around a stable mean value of <italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>) &#x2248; 0.7. In contrast, in the immediate decay pathway (see <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. S2</xref>), a chimera state is never formed. This immediate decay can be detected readily in <italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>). It rises quickly, crosses the threshold of <italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>)&#x2009;&gt;&#x2009;0.7, but never stabilizes around a mean value. Rather it directly approaches and crosses the threshold of full synchronization (<italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>)&#x2009;&gt;&#x2009;0.99999, see above). Accordingly, an immediate decay was detected whenever <italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>) went directly from <italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>)&#x2009;&gt;&#x2009;0.7 to <italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>)&#x2009;&gt;&#x2009;0.99999. Conversely, we discarded an immediate decay if at any time after <italic>t</italic><sub>IF</sub> we found <italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>&#x2009;+&#x2009;40)&#x2009;&lt;&#x2009;0.9<italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>). This latter exclusion criterion is fulfilled shortly after <italic>R</italic><sub>{1,&#x2026;,<italic>N</italic>}</sub>(<italic>t</italic>) starts to fluctuate around its mean, i.e., once the chimera state is consolidated.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Definition of lifetimes</title>
+        <p>The lifetime in the immediate decay pathway is defined as the length of the time interval between the initialization of the network with random phases and the onset of the fully synchronized state: <italic>t</italic><sub>FS</sub>&#x2009;&#x2212;&#x2009;<italic>t</italic><sub>ST</sub>&#x2009;=&#x2009;<italic>t</italic><sub>FS</sub>. The lifetime of the chimera state is defined as the length of the time interval between the formation of the chimera state and the onset of the fully synchronized state: <italic>t</italic><sub>FS</sub>&#x2009;&#x2212;&#x2009;<italic>t</italic><sub>IF</sub>. For practical purposes, this coincides with the length of the time interval between the initialization of the network with random phases and the onset of the fully synchronized state, since the lifetime of the chimera state is orders of magnitude longer than the time needed for the initial formation of this state.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Closed- and open-loop control schemes</title>
+        <p>We used two closed-loop control schemes to either provoke or counteract collapses of chimera states. In both schemes, the control was activated whenever the LCG order parameter fell below a predefined threshold: <italic>R</italic><sub>LCG</sub>(<italic>t</italic>)&#x2009;&lt;&#x2009;0.45, i.e. when this order parameter entered the range typically covered by hypo-coherence events (see <xref ref-type="fig" rid="f2">Fig. 2</xref>). In both schemes, the control consisted of a change of the phase lag parameter <italic>&#x3B1;</italic> from its otherwise fixed value of 1.46 rad (see <xref ref-type="disp-formula" rid="eq1">Equation 1</xref>). A similar control strategy was applied in refs <xref ref-type="bibr" rid="b15">15</xref>, <xref ref-type="bibr" rid="b21">21</xref> and <xref ref-type="bibr" rid="b29">29</xref>. In contrast to this previous work, however, we exclusively changed the phase lag parameter for couplings between pairs of oscillators both belonging to the LCG. The <italic>&#x3B1;</italic> of couplings between pairs of HCG oscillators and between LCG and HCG oscillators was never changed. In the scheme that was used to provoke chimera collapses, we increased the intra-LCG phase lag parameter to <inline-formula id="d33e1104"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1105" xlink:href="srep23000-m15.jpg"/></inline-formula> rad&#x2009;&gt;&#x2009;1.46 rad. The effect of this increase is a further reduction of the coherence of the LCG oscillators. In the scheme used to counteract chimera collapses, we used <inline-formula id="d33e1107"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1108" xlink:href="srep23000-m16.jpg"/></inline-formula> rad &lt;1.46 rad. The effect of this decrease in turn is a recovery of the LCG oscillator coherence. In both schemes, the control was turned off five time units after its activation or once <italic>R</italic><sub>LCG</sub>(<italic>t</italic>)&#x2009;&gt;&#x2009;0.45. No control was applied prior to the initial formation of the chimera state or when the number of LCG oscillators dropped below 21, a characteristics of an already ongoing chimera collapse (see <xref ref-type="fig" rid="f1">Fig. 1</xref>).</p>
+        <p>To test whether this closed-loop control is indeed more effective when triggered by hypo-coherence events, we used two corresponding open-loop control schemes. These followed the same steps as their corresponding closed-loop counterparts. In the open-loop schemes, however, the control was activated and deactivated periodically regardless of the LCG order parameter. The inter-control-interval and duration of individual controls was adjusted to match the respective means of the corresponding closed-loop schemes.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Electroencephalographic recordings (EEG) - Recording techniques and clinical data</title>
+        <p>Electroencephalography is a key diagnostic tool in epilepsy patients suffering from pharmacoresistent epilepsies and who are potential candidates for epilepsy surgery. When extracranial surface (&#x201C;scalp&#x201D;) EEG is insufficient to precisely localize the epileptogenic regions of the brain, EEG can also be recorded intracranially from preselected brain regions using implanted strip, grid and depth electrodes. We here analyze intracranial EEG recorded at the Inselspital Bern, Switzerland, from three patients before, during and after seizures.</p>
+        <p>For data acquisition AdTech electrodes (Wisconsin, USA) and a NicoletOneTM recording system (VIASYS Healthcare Inc., Wisconsin, USA) were used. Before analysis EEG signals were down-sampled to a sampling time of &#x394;t&#x2009;=&#x2009;1.953&#x2009;ms, re-referenced against the median of all the channels free of permanent artifacts as judged by visual inspection by an experienced epileptologist (K.S.) and digitally band-pass filtered between 0.5 and 150&#x2009;Hz using a fourth-order Butterworth filter. Forward and backward filtering was applied to minimize phase distortions. All EEG recordings were carried out prior to and independently from our retrospective analysis of the data. Importantly, these recordings are not experimental but were recorded for clinical diagnostics and treatment of each individual patient only. In accordance with approved guidelines, the EEG recordings and additional information (age, localization of seizure onset, etiology and postsurgical outcome) was anonymized prior to our analysis. In addition, all patients had given written informed consent that their data from long-term EEG might be used for research purposes.</p>
+        <p>Patient A is a 27 year old male patient who suffered from lateral temporal lobe epilepsy (LTLE) with seizures starting in the left hemisphere. After resection of parts of the left temporal lobe he became completely seizure free with follow up of one year. Patient B is a 49 year old female frontal lobe epilepsy patient with focal cortical dysplasia in the right middle frontal gyrus. Resection of the dysplasia led to significant reduction of the seizure rate (follow up four years). Patient C is a 20 year old male LTLE patient. Seizures started in the right anterior temporal lobe though with fast bilateral spreading. Seizure rate was significantly reduced after surgical removal of the right temporal pole (follow up three years).</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Normalized slope cross correlation from EEG recordings</title>
+        <p>We here follow Rummel and coworkers<xref ref-type="bibr" rid="b37">37</xref> and apply the zero-lag linear cross correlation of the EEG signal slopes. We measure time <italic>t</italic> in seconds relative to the visually determined electroencephalographic seizure onset. Let <italic>EL</italic> be the name of a recording electrode carrying a total of <italic>c</italic> individual recording contacts. Furthermore, let <italic>x</italic>(<italic>EL</italic><sub><italic>i</italic></sub>, <italic>t</italic>) denote the slope of the EEG signal, defined by the difference between the EEG signal amplitude measured at time <italic>t</italic> and <italic>t</italic>&#x2009;&#x2212;&#x2009;&#x394;<italic>t</italic> at the <italic>i</italic>-th contact. Then we denote by <italic>C</italic>(<italic>EL</italic><sub><italic>i</italic></sub>, <italic>t</italic>) the zero-lag linear cross correlation between the slope <italic>x</italic>(<italic>EL</italic><sub><italic>i</italic></sub>, <italic>t</italic>) and the slope of the adjacent contact <italic>x</italic>(<italic>EL</italic><sub><italic>i</italic>+1</sub>, <italic>t</italic>), for <inline-formula id="d33e1215"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1216" xlink:href="srep23000-m17.jpg"/></inline-formula>. The correlation between non-neighboring channels on individual electrodes or across electrodes was not considered. <italic>C</italic>(<italic>EL</italic><sub><italic>i</italic></sub>, <italic>t</italic>) was determined in a moving window analysis with a window length of 5 seconds and 90% overlap between subsequent windows. For each individual signal pair, <italic>C</italic>(<italic>EL</italic><sub><italic>i</italic></sub>, <italic>t</italic>) was normalized using its mean &#x2329;&#x22C5;&#x232A; and standard deviation <italic>&#x3C3;</italic>(&#x22C5;) both taken across a reference interval <inline-formula id="d33e1246"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1247" xlink:href="srep23000-m18.jpg"/></inline-formula>:</p>
+        <p>
+          <disp-formula id="eq19">
+            <inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1251" xlink:href="srep23000-m19.jpg"/>
+          </disp-formula>
+        </p>
+        <p>Accordingly, <inline-formula id="d33e1254"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1255" xlink:href="srep23000-m20.jpg"/></inline-formula> or <inline-formula id="d33e1257"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1258" xlink:href="srep23000-m21.jpg"/></inline-formula> indicates that the <italic>C</italic>(<italic>EL</italic><sub><italic>i</italic></sub>, <italic>t</italic>) is 4 standard deviations lower or higher, respectively, than during the reference interval <italic>I</italic>. Temporal differentiation is equivalent to multiplying the amplitude of the Fourier transform at any frequency with the value of the frequency. For typical EEG power spectra this is equivalent to whitening the signals. Thus, by using the slope of the EEG signals rather than directly the EEG signals, we focus on the correlation in the faster oscillations.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Normalized absolute slope of EEG signals</title>
+        <p>We follow Schindler and coworkers<xref ref-type="bibr" rid="b35">35</xref> and define seizure activity by using the normalized absolute slope of the EEG. This is defined for <inline-formula id="d33e1283"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1284" xlink:href="srep23000-m22.jpg"/></inline-formula> as:</p>
+        <p>
+          <disp-formula id="eq23">
+            <inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1288" xlink:href="srep23000-m23.jpg"/>
+          </disp-formula>
+        </p>
+        <p>Here |&#x22C5;| denotes the absolute value. All other quantities, including the parameters of the moving window analysis, are defined as in the previous section. The normalized absolute slope of the EEG is large for both high-amplitude slow activity and low-amplitude fast activity, which are both typically observed at the onset and during intracranially recorded epileptic seizures.</p>
+      </sec>
+    </sec>
+    <sec disp-level="1">
+      <title>Additional Information</title>
+      <p><bold>How to cite this article</bold>: Andrzejak, R. G. <italic>et al</italic>. All together now: Analogies between chimera state collapses and epileptic seizures. <italic>Sci. Rep.</italic>
+<bold>6</bold>, 23000; doi: 10.1038/srep23000 (2016).</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="S1">
+      <title>Supplementary Material</title>
+      <supplementary-material id="d33e52" content-type="local-data">
+        <caption>
+          <title>Supplementary Information</title>
+        </caption>
+        <media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="srep23000-s1.pdf"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>The authors are grateful to Ernest Montbri&#xF3; and Arkady Pikovsky for useful discussion. R.G.A. and F.M. acknowledge funding from the Volkswagen foundation. R.G.A was supported by the Spanish Ministry of Economy and Competitiveness (Grant FIS2014-54177-R). This project has received funding from the European Union&#x2019;s Horizon 2020 research and innovation programme under the Marie Sklodowska-Curie grant agreement No 642563 (R.G.A.). F.M. acknowledges support from the German Research Council (DFG, MO 930/4-1 and SFB 1089) and the European Commission (FP7 602102 EPITARGET). K.S. and C.R. are grateful for support by the Swiss National Science Foundation (Projects No. SNF 320030_122010, No. 33CM30-140332, No. 32003B_155950).</p>
+    </ack>
+    <ref-list>
+      <ref id="b1">
+        <mixed-citation publication-type="journal"><name><surname>Sch&#xE4;fer</surname><given-names>C.</given-names></name>, <name><surname>Rosenblum</surname><given-names>M. G.</given-names></name>, <name><surname>Kurths</surname><given-names>J.</given-names></name> &amp; <name><surname>Abel</surname><given-names>H. H.</given-names></name>
+<article-title>Heartbeat synchronized with ventilation</article-title>. <source>Nature</source>, <volume>392</volume>, <fpage>239</fpage>&#x2013;<lpage>240</lpage> (<year>1998</year>).<pub-id pub-id-type="pmid">9521318</pub-id></mixed-citation>
+      </ref>
+      <ref id="b2">
+        <mixed-citation publication-type="journal"><name><surname>Varela</surname><given-names>F.</given-names></name>, <name><surname>Lachaux</surname><given-names>J. P.</given-names></name>, <name><surname>Rodriguez</surname><given-names>E.</given-names></name> &amp; <name><surname>Martinerie</surname><given-names>J.</given-names></name>
+<article-title>The brainweb: phase synchronization and large-scale integration</article-title>. <source>Nature Rev. Neurosci.</source>
+<volume>2</volume>, <fpage>229</fpage>&#x2013;<lpage>239</lpage> (<year>2001</year>).<pub-id pub-id-type="pmid">11283746</pub-id></mixed-citation>
+      </ref>
+      <ref id="b3">
+        <mixed-citation publication-type="journal"><name><surname>Uhlhaas</surname><given-names>P. J.</given-names></name> &amp; <name><surname>Singer</surname><given-names>W.</given-names></name>
+<article-title>Abnormal neural oscillations and synchrony in schizophrenia</article-title>. <source>Nat. Rev. Neurosci.</source>
+<volume>11</volume>, <fpage>100</fpage>&#x2013;<lpage>113</lpage> (<year>2010</year>).<pub-id pub-id-type="pmid">20087360</pub-id></mixed-citation>
+      </ref>
+      <ref id="b4">
+        <mixed-citation publication-type="journal"><name><surname>Andrzejak</surname><given-names>R. G.</given-names></name>, <name><surname>Schindler</surname><given-names>K.</given-names></name> &amp; <name><surname>Rummel</surname><given-names>C.</given-names></name>
+<article-title>Nonrandomness, nonlinear dependence, and nonstationarity of electroencephalographic recordings from epilepsy patients</article-title>. <source>Phys. Rev. E</source>. <volume>86</volume>, <fpage>046206</fpage> (<year>2012</year>).</mixed-citation>
+      </ref>
+      <ref id="b5">
+        <mixed-citation publication-type="journal"><name><surname>Malkki</surname><given-names>H.</given-names></name>
+<article-title>Parkinson disease: Deep brain stimulation might alleviate parkinsonism by reducing excessive synchronization in primary motor cortex</article-title>. <source>Nat. Rev. Neurol.</source>
+<volume>11</volume>, <fpage>246</fpage>&#x2013;<lpage>246</lpage> (<year>2015</year>).<pub-id pub-id-type="pmid">25896086</pub-id></mixed-citation>
+      </ref>
+      <ref id="b6">
+        <mixed-citation publication-type="journal"><name><surname>Motter</surname><given-names>A. E.</given-names></name>, <name><surname>Myers</surname><given-names>S. A.</given-names></name>, <name><surname>Anghel</surname><given-names>M.</given-names></name> &amp; <name><surname>Nishikawa</surname><given-names>T.</given-names></name>
+<article-title>Spontaneous synchrony in power-grid networks</article-title>. <source>Nat. Phys</source>. <volume>9</volume>, <fpage>191</fpage>&#x2013;<lpage>197</lpage> (<year>2013</year>).</mixed-citation>
+      </ref>
+      <ref id="b7">
+        <mixed-citation publication-type="journal"><name><surname>Pecora</surname><given-names>L. M.</given-names></name>, <name><surname>Sorrentino</surname><given-names>F.</given-names></name>, <name><surname>Hagerstrom</surname><given-names>A. M.</given-names></name>, <name><surname>Murphy</surname><given-names>T. E.</given-names></name> &amp; <name><surname>Roy</surname><given-names>R.</given-names></name>
+<article-title>Cluster synchronization and isolated desynchronization in complex networks with symmetries</article-title>. <source>Nat Commun.</source>
+<volume>5</volume>, <fpage>4079</fpage>, doi: <pub-id pub-id-type="doi">10.1038/ncomms5079</pub-id> (<year>2014</year>).<pub-id pub-id-type="pmid">24923317</pub-id></mixed-citation>
+      </ref>
+      <ref id="b8">
+        <mixed-citation publication-type="journal"><name><surname>Danino</surname><given-names>T.</given-names></name>, <name><surname>Mondrag&#xF3;n-Palomino</surname><given-names>O.</given-names></name>, <name><surname>Tsimring</surname><given-names>L.</given-names></name> &amp; <name><surname>Hasty</surname><given-names>J.</given-names></name>
+<article-title>A synchronized quorum of genetic clocks</article-title>. <source>Nature</source>. <volume>463</volume>, <fpage>326</fpage>&#x2013;<lpage>330</lpage> (<year>2010</year>).<pub-id pub-id-type="pmid">20090747</pub-id></mixed-citation>
+      </ref>
+      <ref id="b9">
+        <mixed-citation publication-type="journal"><name><surname>Kuramoto</surname><given-names>Y.</given-names></name> &amp; <name><surname>Battogtokh</surname><given-names>D.</given-names></name>
+<article-title>Coexistence of Coherence and Incoherence in Nonlocally Coupled Phase Oscillators</article-title>. <source>Nonlinear Phenomena in Complex Systems</source>. <volume>5</volume>, <fpage>380</fpage>&#x2013;<lpage>385</lpage> (<year>2002</year>).</mixed-citation>
+      </ref>
+      <ref id="b10">
+        <mixed-citation publication-type="journal"><name><surname>Abrams</surname><given-names>D. M.</given-names></name> &amp; <name><surname>Strogatz</surname><given-names>S. H.</given-names></name>
+<article-title>Chimera states for coupled oscillators</article-title>. <source>Phys. Rev. Lett.</source>
+<volume>93</volume>, <fpage>174102</fpage> (<year>2004</year>).<pub-id pub-id-type="pmid">15525081</pub-id></mixed-citation>
+      </ref>
+      <ref id="b11">
+        <mixed-citation publication-type="journal"><name><surname>Panaggio</surname><given-names>M. J.</given-names></name> &amp; <name><surname>Abrams</surname><given-names>D. M.</given-names></name>
+<article-title>Chimera states: coexistence of coherence and incoherence in networks of coupled oscillators</article-title>. <source>Nonlinearity</source>. <volume>28</volume>, <fpage>R67</fpage>&#x2013;<lpage>R87</lpage> (<year>2015</year>).</mixed-citation>
+      </ref>
+      <ref id="b12">
+        <mixed-citation publication-type="journal"><name><surname>Abrams</surname><given-names>D. M.</given-names></name>, <name><surname>Mirollo</surname><given-names>R.</given-names></name>, <name><surname>Strogatz</surname><given-names>S. H.</given-names></name> &amp; <name><surname>Wiley</surname><given-names>D. A.</given-names></name>
+<article-title>Solvable model for chimera states of coupled oscillators</article-title>. <source>Phys. Rev. Lett.</source>
+<volume>101</volume>, <fpage>084103</fpage> (<year>2008</year>).<pub-id pub-id-type="pmid">18764617</pub-id></mixed-citation>
+      </ref>
+      <ref id="b13">
+        <mixed-citation publication-type="journal"><name><surname>Hagerstrom</surname><given-names>A. M.</given-names></name>
+<etal/>. <article-title>Experimental observation of chimeras in coupled-map lattices</article-title>. <source>Nat. Phys</source>. <volume>8</volume>, <fpage>658</fpage>&#x2013;<lpage>661</lpage> (<year>2012</year>).</mixed-citation>
+      </ref>
+      <ref id="b14">
+        <mixed-citation publication-type="journal"><name><surname>Yao</surname><given-names>N.</given-names></name>, <name><surname>Huang</surname><given-names>Z. G.</given-names></name>, <name><surname>Lai</surname><given-names>Y. C.</given-names></name> &amp; <name><surname>Zheng</surname><given-names>Z. G.</given-names></name>
+<article-title>Robustness of chimera states in complex dynamical systems</article-title>. <source>Scientific Rep</source>. <volume>3</volume>, <fpage>3522</fpage>, doi: <pub-id pub-id-type="doi">10.1038/srep03522</pub-id> (<year>2013</year>).</mixed-citation>
+      </ref>
+      <ref id="b15">
+        <mixed-citation publication-type="journal"><name><surname>Sieber</surname><given-names>J.</given-names></name>, <name><surname>Omel&#x2019;chenko</surname><given-names>O. E.</given-names></name> &amp; <name><surname>Wolfrum</surname><given-names>M.</given-names></name>
+<article-title>Controlling unstable chaos: stabilizing chimera states by feedback</article-title>. <source>Phys. Rev. Lett.</source>
+<volume>112</volume>, <fpage>054102</fpage> (<year>2014</year>).<pub-id pub-id-type="pmid">24580597</pub-id></mixed-citation>
+      </ref>
+      <ref id="b16">
+        <mixed-citation publication-type="journal"><name><surname>Paz&#xF3;</surname><given-names>D.</given-names></name> &amp; <name><surname>Montbri&#xF3;</surname><given-names>E.</given-names></name>
+<article-title>Low-dimensional dynamics of populations of pulse-coupled oscillators</article-title>. <source>Phys. Rev. X</source>. <volume>4</volume>, <fpage>011009</fpage> (<year>2014</year>).</mixed-citation>
+      </ref>
+      <ref id="b17">
+        <mixed-citation publication-type="journal"><name><surname>Laing</surname><given-names>C. R.</given-names></name>
+<article-title>The dynamics of chimera states in heterogeneous Kuramoto networks</article-title>. <source>Physica D: Nonlinear Phenomena</source>. <volume>238</volume>, <fpage>1569</fpage>&#x2013;<lpage>1588</lpage> (<year>2009</year>).</mixed-citation>
+      </ref>
+      <ref id="b18">
+        <mixed-citation publication-type="journal"><name><surname>Omel&#x2019;chenko</surname><given-names>O. E.</given-names></name>
+<article-title>Coherence&#x2013;incoherence patterns in a ring of non-locally coupled phase oscillators</article-title>. <source>Nonlinearity</source>. <volume>26</volume>, <fpage>2469</fpage>&#x2013;<lpage>2498</lpage> (<year>2013</year>).</mixed-citation>
+      </ref>
+      <ref id="b19">
+        <mixed-citation publication-type="journal"><name><surname>Laing</surname><given-names>C. R.</given-names></name>
+<article-title>Chimeras in networks with purely local coupling</article-title>. <source>Phys. Rev. E</source>. <volume>92</volume>, <fpage>050904</fpage> (<year>2015</year>).</mixed-citation>
+      </ref>
+      <ref id="b20">
+        <mixed-citation publication-type="journal"><name><surname>Bick</surname><given-names>C.</given-names></name> &amp; <name><surname>Martens</surname><given-names>E. A.</given-names></name>
+<article-title>Controlling chimeras</article-title>. <source>New J Phys</source>, <volume>17</volume>, <fpage>033030</fpage> (<year>2015</year>).</mixed-citation>
+      </ref>
+      <ref id="b21">
+        <mixed-citation publication-type="other"><name><surname>Omelchenko</surname><given-names>I.</given-names></name>, <name><surname>Omel&#x2019;chenko</surname><given-names>O. E.</given-names></name>, <name><surname>Zakharova</surname><given-names>A.</given-names></name>, <name><surname>Wolfrum</surname><given-names>M.</given-names></name> &amp; <name><surname>Schoell</surname><given-names>E.</given-names></name> A Tweezer for Chimeras in Small Networks. arXiv preprint, arXiv:1512.04275 (<year>2015</year>).</mixed-citation>
+      </ref>
+      <ref id="b22">
+        <mixed-citation publication-type="journal"><name><surname>Omel&#x2019;chenko</surname><given-names>O. E.</given-names></name>, <name><surname>Wolfrum</surname><given-names>M.</given-names></name> &amp; <name><surname>Maistrenko</surname><given-names>Y. L.</given-names></name>
+<article-title>Chimera states as chaotic spatiotemporal patterns</article-title>. <source>Phys. Rev. E</source>. <volume>81</volume>, <fpage>065201</fpage> (<year>2010</year>).</mixed-citation>
+      </ref>
+      <ref id="b23">
+        <mixed-citation publication-type="journal"><name><surname>Wolfrum</surname><given-names>M.</given-names></name> &amp; <name><surname>Omel&#x2019;chenko</surname><given-names>O. E.</given-names></name>
+<article-title>Chimera states are chaotic transients</article-title>. <source>Phys. Rev. E</source>. <volume>84</volume>, <fpage>015201</fpage> (<year>2011</year>).</mixed-citation>
+      </ref>
+      <ref id="b24">
+        <mixed-citation publication-type="journal"><name><surname>Tinsley</surname><given-names>M. R.</given-names></name>, <name><surname>Nkomo</surname><given-names>S.</given-names></name> &amp; <name><surname>Showalter</surname><given-names>K.</given-names></name>
+<article-title>Chimera and phase-cluster states in populations of coupled chemical oscillators</article-title>. <source>Nat. Phys</source>. <volume>8</volume>, <fpage>662</fpage>&#x2013;<lpage>665</lpage> (<year>2012</year>).</mixed-citation>
+      </ref>
+      <ref id="b25">
+        <mixed-citation publication-type="journal"><name><surname>Rosin</surname><given-names>D. P.</given-names></name>, <name><surname>Rontani</surname><given-names>D.</given-names></name>, <name><surname>Haynes</surname><given-names>N. D.</given-names></name>, <name><surname>Sch&#xF6;ll</surname><given-names>E.</given-names></name> &amp; <name><surname>Gauthier</surname><given-names>D. J.</given-names></name>
+<article-title>Transient scaling and resurgence of chimera states in networks of Boolean phase oscillators</article-title>. <source>Phys. Rev. E</source>. <volume>90</volume>, <fpage>030902</fpage> (<year>2014</year>).</mixed-citation>
+      </ref>
+      <ref id="b26">
+        <mixed-citation publication-type="journal"><name><surname>Nkomo</surname><given-names>S.</given-names></name>, <name><surname>Tinsley</surname><given-names>M. R.</given-names></name> &amp; <name><surname>Showalter</surname><given-names>K.</given-names></name>
+<article-title>Chimera states in populations of nonlocally coupled chemical oscillators</article-title>. <source>Phys. Rev. Lett.</source>
+<volume>110</volume>, <fpage>244102</fpage> (<year>2013</year>).<pub-id pub-id-type="pmid">25165927</pub-id></mixed-citation>
+      </ref>
+      <ref id="b27">
+        <mixed-citation publication-type="journal"><name><surname>Martens</surname><given-names>E. A.</given-names></name>, <name><surname>Thutupalli</surname><given-names>S.</given-names></name>, <name><surname>Fourri&#xE8;re</surname><given-names>A.</given-names></name> &amp; <name><surname>Hallatschek</surname><given-names>O.</given-names></name>
+<article-title>Chimera states in mechanical oscillator networks</article-title>. <source>Proc. Natl. Acad. Sci. USA</source>
+<volume>110</volume>, <fpage>10563</fpage>&#x2013;<lpage>10567</lpage> (<year>2013</year>).<pub-id pub-id-type="pmid">23759743</pub-id></mixed-citation>
+      </ref>
+      <ref id="b28">
+        <mixed-citation publication-type="journal"><name><surname>Olmi</surname><given-names>S.</given-names></name>, <name><surname>Martens</surname><given-names>E. A.</given-names></name>, <name><surname>Thutupalli</surname><given-names>S.</given-names></name> &amp; <name><surname>Torcini</surname><given-names>A.</given-names></name>
+<article-title>Intermittent chaotic chimeras for coupled rotators</article-title>. <source>Phys. Rev. E</source>. <volume>92</volume>, <fpage>030</fpage> (<year>2015</year>).</mixed-citation>
+      </ref>
+      <ref id="b29">
+        <mixed-citation publication-type="journal"><name><surname>Wolfrum</surname><given-names>M. E.</given-names></name>, <name><surname>Omel&#x2019;chenko</surname><given-names>O. E.</given-names></name> &amp; <name><surname>Sieber</surname><given-names>J.</given-names></name>
+<article-title>Regular and irregular patterns of self-localized excitation in arrays of coupled phase oscillators</article-title>. <source>Chaos</source>. <volume>25</volume>, <fpage>053113</fpage> (<year>2015</year>).<pub-id pub-id-type="pmid">26026325</pub-id></mixed-citation>
+      </ref>
+      <ref id="b30">
+        <mixed-citation publication-type="other"><name><surname>Isele</surname><given-names>T.</given-names></name>, <name><surname>Hizanidis</surname><given-names>J.</given-names></name>, <name><surname>Provata</surname><given-names>A.</given-names></name> &amp; <name><surname>H&#xF6;vel</surname><given-names>P.</given-names></name> Controlling Chimera States-The influence of excitable units. arXiv preprint arXiv:1510.01227 (<year>2015</year>).</mixed-citation>
+      </ref>
+      <ref id="b31">
+        <mixed-citation publication-type="journal"><name><surname>Andrzejak</surname><given-names>R. G.</given-names></name>, <name><surname>Chicharro</surname><given-names>D.</given-names></name>, <name><surname>Elger</surname><given-names>C. E.</given-names></name> &amp; <name><surname>Mormann</surname><given-names>F.</given-names></name>
+<article-title>Seizure prediction: any better than chance?</article-title>
+<source>Clin. Neurophysiol.</source>
+<volume>120</volume>, <fpage>1465</fpage>&#x2013;<lpage>1478</lpage> (<year>2009</year>).<pub-id pub-id-type="pmid">19576849</pub-id></mixed-citation>
+      </ref>
+      <ref id="b32">
+        <mixed-citation publication-type="journal"><name><surname>Yeldesbay</surname><given-names>A.</given-names></name>, <name><surname>Pikovsky</surname><given-names>A.</given-names></name> &amp; <name><surname>Rosenblum</surname><given-names>M.</given-names></name>
+<article-title>Chimeralike States in an Ensemble of Globally Coupled Oscillators</article-title>. <source>Phys. Rev. Lett.</source>
+<volume>112</volume>, <fpage>144103</fpage> (<year>2014</year>).<pub-id pub-id-type="pmid">24765969</pub-id></mixed-citation>
+      </ref>
+      <ref id="b33">
+        <mixed-citation publication-type="journal"><name><surname>Fisher</surname><given-names>R. S.</given-names></name>
+<etal/>. <article-title>Epileptic Seizures and Epilepsy: Definitions Proposed by the International League Against Epilepsy (ILAE) and the International Bureau for Epilepsy (IBE)</article-title>. <source>Epilepsia</source>. <volume>46</volume>, <fpage>470</fpage> (<year>2005</year>).<pub-id pub-id-type="pmid">15816939</pub-id></mixed-citation>
+      </ref>
+      <ref id="b34">
+        <mixed-citation publication-type="journal"><name><surname>Netoff</surname><given-names>T. I.</given-names></name> &amp; <name><surname>Schiff</surname><given-names>S. J.</given-names></name>
+<article-title>Decreased neuronal synchronization during experimental seizures</article-title>. <source>J. Neurosci.</source>
+<volume>22</volume>, <fpage>7297</fpage>&#x2013;<lpage>7307</lpage> (<year>2002</year>).<pub-id pub-id-type="pmid">12177225</pub-id></mixed-citation>
+      </ref>
+      <ref id="b35">
+        <mixed-citation publication-type="journal"><name><surname>Schindler</surname><given-names>K.</given-names></name>, <name><surname>Leung</surname><given-names>H.</given-names></name>, <name><surname>Elger</surname><given-names>C. E.</given-names></name> &amp; <name><surname>Lehnertz</surname><given-names>K.</given-names></name>
+<article-title>Assessing seizure dynamics by analysing the correlation structure of multichannel intracranial EEG</article-title>. <source>Brain</source>. <volume>130</volume>, <fpage>65</fpage>&#x2013;<lpage>77</lpage> (<year>2007</year>).<pub-id pub-id-type="pmid">17082199</pub-id></mixed-citation>
+      </ref>
+      <ref id="b36">
+        <mixed-citation publication-type="journal"><name><surname>Jiruska</surname><given-names>P.</given-names></name>
+<etal/>. <article-title>Synchronization and desynchronization in epilepsy: controversies and hypotheses</article-title>. <source>J. Physiol.</source>
+<volume>591</volume>, <fpage>787</fpage>&#x2013;<lpage>797</lpage> (<year>2013</year>).<pub-id pub-id-type="pmid">23184516</pub-id></mixed-citation>
+      </ref>
+      <ref id="b37">
+        <mixed-citation publication-type="journal"><name><surname>Rummel</surname><given-names>C.</given-names></name>
+<etal/>. <article-title>A systems-level approach to human epileptic seizures</article-title>. <source>Neuroinformatics</source>. <volume>11</volume>, <fpage>159</fpage>&#x2013;<lpage>173</lpage> (<year>2013</year>).<pub-id pub-id-type="pmid">22961601</pub-id></mixed-citation>
+      </ref>
+      <ref id="b38">
+        <mixed-citation publication-type="journal"><name><surname>Truccolo</surname><given-names>W.</given-names></name>
+<etal/>. <article-title>Single-neuron dynamics in human focal epilepsy</article-title>. <source>Nat. Neurosci.</source>
+<volume>14</volume>, <fpage>635</fpage>&#x2013;<lpage>641</lpage> (<year>2011</year>).<pub-id pub-id-type="pmid">21441925</pub-id></mixed-citation>
+      </ref>
+      <ref id="b39">
+        <mixed-citation publication-type="journal"><name><surname>Andrzejak</surname><given-names>R. G.</given-names></name>, <name><surname>Chicharro</surname><given-names>D.</given-names></name>, <name><surname>Lehnertz</surname><given-names>K.</given-names></name> &amp; <name><surname>Mormann</surname><given-names>F.</given-names></name>
+<article-title>Using bivariate signal analysis to characterize the epileptic focus: The benefit of surrogates</article-title>. <source>Phys. Rev. E</source>. <volume>83</volume>, <fpage>046203</fpage> (<year>2011</year>).</mixed-citation>
+      </ref>
+      <ref id="b40">
+        <mixed-citation publication-type="journal"><name><surname>Mormann</surname><given-names>F.</given-names></name>, <name><surname>Kreuz</surname><given-names>T.</given-names></name>, <name><surname>Andrzejak</surname><given-names>R. G.</given-names></name>, <name><surname>David</surname><given-names>P.</given-names></name>, <name><surname>Lehnertz</surname><given-names>K.</given-names></name> &amp; <name><surname>Elger</surname><given-names>C. E.</given-names></name>
+<article-title>Epileptic seizures are preceded by a decrease in synchronization</article-title>. <source>Epilepsy Res.</source>
+<volume>53</volume>, <fpage>173</fpage>&#x2013;<lpage>185</lpage> (<year>2003</year>).<pub-id pub-id-type="pmid">12694925</pub-id></mixed-citation>
+      </ref>
+      <ref id="b41">
+        <mixed-citation publication-type="journal"><name><surname>Mormann</surname><given-names>F.</given-names></name>, <name><surname>Lehnertz</surname><given-names>K.</given-names></name>, <name><surname>David</surname><given-names>P.</given-names></name> &amp; <name><surname>Elger</surname><given-names>C. E.</given-names></name>
+<article-title>Mean phase coherence as a measure for phase synchronization and its application to the EEG of epilepsy patients</article-title>. <source>Physica D: Nonlinear Phenomena</source>. <volume>144</volume>, <fpage>358</fpage>&#x2013;<lpage>369</lpage> (<year>2000</year>).</mixed-citation>
+      </ref>
+      <ref id="b42">
+        <mixed-citation publication-type="journal"><name><surname>Feldt</surname><given-names>S.</given-names></name>, <name><surname>Osterhage</surname><given-names>H.</given-names></name>, <name><surname>Mormann</surname><given-names>F.</given-names></name>, <name><surname>Lehnertz</surname><given-names>K.</given-names></name> &amp; <name><surname>&#x17B;ochowski</surname><given-names>M.</given-names></name>
+<article-title>Internetwork and intranetwork communications during bursting dynamics: applications to seizure prediction</article-title>. <source>Phys. Rev. E</source>. <volume>76</volume>, <fpage>021920</fpage> (<year>2007</year>).</mixed-citation>
+      </ref>
+      <ref id="b43">
+        <mixed-citation publication-type="journal"><name><surname>Mirowski</surname><given-names>P.</given-names></name>, <name><surname>Madhavan</surname><given-names>D.</given-names></name>, <name><surname>Lecun</surname><given-names>Y.</given-names></name> &amp; <name><surname>Kuzniecky</surname><given-names>R.</given-names></name>
+<article-title>Classification of patterns of EEG synchronization for seizure prediction</article-title>. <source>Clin. Neurophysiol.</source>
+<volume>120</volume>, <fpage>1927</fpage>&#x2013;<lpage>1940</lpage> (<year>2009</year>).<pub-id pub-id-type="pmid">19837629</pub-id></mixed-citation>
+      </ref>
+      <ref id="b44">
+        <mixed-citation publication-type="journal"><name><surname>Kuhlmann</surname><given-names>L.</given-names></name>
+<etal/>. <article-title>Patient-specific bivariate-synchrony-based seizure prediction for short prediction horizons</article-title>. <source>Epilepsy Res</source>. <volume>91</volume>, <fpage>214</fpage>&#x2013;<lpage>231</lpage> (<year>2010</year>).<pub-id pub-id-type="pmid">20724110</pub-id></mixed-citation>
+      </ref>
+      <ref id="b45">
+        <mixed-citation publication-type="journal"><name><surname>Aarabi</surname><given-names>A.</given-names></name> &amp; <name><surname>He</surname><given-names>B.</given-names></name>
+<article-title>A rule-based seizure prediction method for focal neocortical epilepsy</article-title>. <source>Clin. Neurophysiol.</source>
+<volume>123</volume>, <fpage>1111</fpage>&#x2013;<lpage>1122</lpage> (<year>2012</year>).<pub-id pub-id-type="pmid">22361267</pub-id></mixed-citation>
+      </ref>
+      <ref id="b46">
+        <mixed-citation publication-type="journal"><name><surname>Williamson</surname><given-names>J. R.</given-names></name>, <name><surname>Bliss</surname><given-names>D. W.</given-names></name>, <name><surname>Browne</surname><given-names>D. W.</given-names></name> &amp; <name><surname>Narayanan</surname><given-names>J. T.</given-names></name>
+<article-title>Seizure prediction using EEG spatiotemporal correlation structure</article-title>. <source>Epilepsy Behav.</source>
+<volume>25</volume>, <fpage>230</fpage>&#x2013;<lpage>238</lpage> (<year>2012</year>).<pub-id pub-id-type="pmid">23041171</pub-id></mixed-citation>
+      </ref>
+      <ref id="b47">
+        <mixed-citation publication-type="journal"><name><surname>Zheng</surname><given-names>Y.</given-names></name>, <name><surname>Wang</surname><given-names>G.</given-names></name>, <name><surname>Li</surname><given-names>K.</given-names></name>, <name><surname>Bao</surname><given-names>G.</given-names></name> &amp; <name><surname>Wang</surname><given-names>J.</given-names></name>
+<article-title>Epileptic seizure prediction using phase synchronization based on bivariate empirical mode decomposition</article-title>. <source>Clin. Neurophysiol.</source>
+<volume>125</volume>, <fpage>1104</fpage>&#x2013;<lpage>1111</lpage> (<year>2014</year>).<pub-id pub-id-type="pmid">24296277</pub-id></mixed-citation>
+      </ref>
+      <ref id="b48">
+        <mixed-citation publication-type="journal"><name><surname>Gadhoumi</surname><given-names>K.</given-names></name>, <name><surname>Lina</surname><given-names>J. M.</given-names></name>, <name><surname>Mormann</surname><given-names>F.</given-names></name> &amp; <name><surname>Gotman</surname><given-names>J.</given-names></name>
+<article-title>Seizure prediction for therapeutic devices: a review</article-title>. <source>J. Neurosci. Meth.</source>
+<volume>260</volume>, <fpage>270</fpage>&#x2013;<lpage>282</lpage> (<year>2016</year>).</mixed-citation>
+      </ref>
+      <ref id="b49">
+        <mixed-citation publication-type="journal"><name><surname>Schelter</surname><given-names>B.</given-names></name>
+<etal/>. <article-title>Testing statistical significance of multivariate time series analysis techniques for epileptic seizure prediction</article-title>. <source>Chaos</source>. <volume>16</volume>, <fpage>013108</fpage> (<year>2006</year>).<pub-id pub-id-type="pmid">16599739</pub-id></mixed-citation>
+      </ref>
+      <ref id="b50">
+        <mixed-citation publication-type="journal"><name><surname>Salam</surname><given-names>M. T.</given-names></name>, <name><surname>Kassiri</surname><given-names>H.</given-names></name>, <name><surname>Genov</surname><given-names>R.</given-names></name> &amp; <name><surname>Perez Velazquez</surname><given-names>J. L.</given-names></name>
+<article-title>Rapid brief feedback intracerebral stimulation based on real&#x2010;time desynchronization detection preceding seizures stops the generation of convulsive paroxysms</article-title>. <source>Epilepsia</source>. <volume>56</volume>, <fpage>1227</fpage>&#x2013;<lpage>1238</lpage> (<year>2015</year>).<pub-id pub-id-type="pmid">26119887</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+    <fn-group>
+      <fn>
+        <p><bold>Author Contributions</bold> R.G.A. devised the analysis and control of the coupled oscillator network and carried out the numerical data analysis. R.G.A., C.R. and K.S. devised the analysis of the EEG recordings. K.S. carried out the clinical evaluation of the EEG recordings. R.G.A., C.R., F.M. and K.S. discussed the results and wrote the paper.</p>
+      </fn>
+    </fn-group>
+  </back>
+  <floats-group>
+    <fig id="f1">
+      <label>Figure 1</label>
+      <caption>
+        <title>Chimera state collapses are typically preceded by hypo-coherence events.</title>
+        <p>Temporal evolution of phases <italic>&#x3C6;</italic><sub><italic>j</italic></sub>(<italic>t</italic>) (<bold>a</bold>) and phase velocities <inline-formula id="d33e1332"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1333" xlink:href="srep23000-m24.jpg"/></inline-formula> (<bold>b</bold>) of the network oscillators indexed by <italic>j</italic> show the dynamics of a chimera state collapse. Time <italic>t</italic> is relative to the onset of full synchronization at <italic>t</italic><sub>FS</sub>&#x2009;=&#x2009;0. This chimera state collapse took place more than a million HCG oscillation periods after the formation of the chimera state. Accordingly, this figure displays only the very end of the chimera state. Due to the ring topology, oscillators at the upper and lower boundaries are neighbors. We use different time scales to optimally visualize the different quantities. Black and green abscissa segments indicate the correspondence of intervals between panels. LCG order parameter <italic>R</italic><sub>LCG</sub>(&#x2009;<italic>j, t</italic>) (<bold>c</bold>) and its spatial average <italic>R</italic><sub>LCG</sub>(&#x2009;<italic>t</italic>) on a short (<bold>d</bold>) and long timescale (<bold>e</bold>) show the hypo-coherence event at <italic>t</italic>&#x2009;=&#x2009;&#x2212;113 time units marked by the star and dashed line. <italic>R</italic><sub>LCG</sub>(&#x2009;<italic>t</italic>) is plotted in orange for times at which the LCG has less than 21 oscillators. Gray areas in (<bold>c</bold>) correspond to HCG oscillators.</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="srep23000-f1"/>
+    </fig>
+    <fig id="f2">
+      <label>Figure 2</label>
+      <caption>
+        <title>Hypo-coherence events prior to chimera collapses are significantly more prominent than controls.</title>
+        <p>Probability density distribution of the depth of the last prominent minimum <inline-formula id="d33e1397"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1398" xlink:href="srep23000-m25.jpg"/></inline-formula> of <italic>R</italic><sub>LCG</sub>(<italic>t</italic>). Distributions were estimated from 2,000 independent realizations of the network prior to the chimera collapse (red) and prior to times without collapse as control (blue). The distributions are significantly different (Wilcoxon rank sum test score: <italic>Z</italic>&#x2009;=&#x2009;42.42; <italic>p</italic>&#x2009;&#x226A;&#x2009;10<sup>&#x2212;15</sup>). Error bars show &#xB1; one square root of the count underlying the histograms used to estimate the probability densities.</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="srep23000-f2"/>
+    </fig>
+    <fig id="f3">
+      <label>Figure 3</label>
+      <caption>
+        <title>The mean lifetime of chimera states is orders of magnitudes longer than the one of immediate decays.</title>
+        <p>(<bold>a</bold>) Probability density distribution of lifetimes in the immediate decay pathway estimated from 4,848 realizations. Here the lifetime is defined as the time between the initialization of the network with random phases at <italic>t</italic><sub>ST</sub> and the onset of the fully synchronized state at <italic>t</italic><sub>FS</sub>. The black line connects data points to guide the eye. (<bold>b</bold>) Probability density distribution of chimera state lifetimes estimated from 2,000 independent realizations. Here the lifetime is defined as the time between the formation <italic>t</italic><sub>IF</sub> of the chimera state and the collapse to the fully synchronized state at <italic>t</italic><sub>FS</sub>. The longest lifetime we observed across all 2,000 independent realizations of the network was 1.7&#x2009;&#x22C5;&#x2009;10<sup>7</sup> time units. The black line corresponds to an exponential distribution with a mean of 2.5&#x2009;&#x22C5;&#x2009;10<sup>6</sup> time units. Given these long lifetimes the computational load to follow all 95,152 realizations that entered into the chimera pathway was prohibitive, even using massive distributed long-term computing. In both panels error bars show &#xB1; one square root of the count underlying the histograms from which we estimated the probability densities.</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="srep23000-f3"/>
+    </fig>
+    <fig id="f4">
+      <label>Figure 4</label>
+      <caption>
+        <title>Localized decrease of correlation at the onset of epileptic seizures.</title>
+        <p>Color-coded normalized slope cross correlation <inline-formula id="d33e1463"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1464" xlink:href="srep23000-m26.jpg"/></inline-formula> for epileptic seizures of patient A (<bold>a</bold>) and B (<bold>b</bold>). Gray is used for the last contacts on individual electrodes (having no next neighbor to calculate <inline-formula id="d33e1472"><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="d33e1473" xlink:href="srep23000-m27.jpg"/></inline-formula> with). Ordinate labels indicate electrode names and every second recording contact number. Black bars mark electrode contacts that were located in brain tissue subsequently resected in epilepsy surgery. Green lines mark the visually detected electroencephalographic seizure onset (at <italic>t</italic>&#x2009;=&#x2009;0) and offset times. Black contour lines mark the electrode-temporal range showing prominent seizure activity, assessed by thresholding the normalized absolute EEG signals slope: S(<italic>EL</italic><sub><italic>i</italic></sub>, <italic>t</italic>)&#x2009;&gt;&#x2009;7.</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="srep23000-f4"/>
+    </fig>
+  </floats-group>
+</article>
+</pmc-articleset>

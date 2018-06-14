@@ -1,0 +1,723 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">mBio</journal-id>
+      <journal-id journal-id-type="iso-abbrev">MBio</journal-id>
+      <journal-id journal-id-type="hwp">mbio</journal-id>
+      <journal-id journal-id-type="pmc">mbio</journal-id>
+      <journal-id journal-id-type="publisher-id">mBio</journal-id>
+      <journal-title-group>
+        <journal-title>mBio</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2150-7511</issn>
+      <publisher>
+        <publisher-name>American Society of Microbiology</publisher-name>
+        <publisher-loc>1752 N St., N.W., Washington, DC</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">23572555</article-id>
+      <article-id pub-id-type="pmc">3622935</article-id>
+      <article-id pub-id-type="publisher-id">mBio00595-12</article-id>
+      <article-id pub-id-type="doi">10.1128/mBio.00595-12</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Predicting the Next Eye Pathogen: Analysis of a Novel Adenovirus</article-title>
+        <alt-title>Predicting the Next Pathogen</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Robinson</surname>
+            <given-names>Christopher M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>a</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhou</surname>
+            <given-names>Xiaohong</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>a</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rajaiya</surname>
+            <given-names>Jaya</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>a</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yousuf</surname>
+            <given-names>Mohammad A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>a</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Singh</surname>
+            <given-names>Gurdeep</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>a</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>DeSerres</surname>
+            <given-names>Joshua J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>b</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Walsh</surname>
+            <given-names>Michael P.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>c</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wong</surname>
+            <given-names>Sallene</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>b</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Seto</surname>
+            <given-names>Donald</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>c</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dyer</surname>
+            <given-names>David W.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>d</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chodosh</surname>
+            <given-names>James</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>a</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Jones</surname>
+            <given-names>Morris S.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>c</sup>
+          </xref>
+        </contrib>
+        <aff id="aff1">Department of Ophthalmology, Howe Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School, Boston, Massachusetts, USA<label><sup>a</sup></label>; </aff>
+        <aff id="aff2">Provincial Laboratory for Public Health, Calgary, Alberta, Canada<label><sup>b</sup></label>; </aff>
+        <aff id="aff3">School of Systems Biology, George Mason University, Manassas, Virginia, USA<label><sup>c</sup></label>; </aff>
+        <aff id="aff4">Department of Microbiology and Immunology, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, USA<label><sup>d</sup></label></aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="cor1">Address correspondence to James Chodosh, <email>james_chodosh@meei.harvard.edu</email>, or Morris S.Jones, <email>mjones30@gmu.edu</email>. C.M.R. and X.Z. contributed equally to this work.</corresp>
+        <fn fn-type="edited-by">
+          <p><bold>Invited Editor</bold> Mathew Weitzmann, University of Pennsylvania <bold>Editor</bold> Herbert Virgin, Washington University School of Medicine </p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>9</day>
+        <month>4</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <season>Mar-Apr</season>
+        <year>2013</year>
+      </pub-date>
+      <volume>4</volume>
+      <issue>2</issue>
+      <elocation-id>e00595-12</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>12</day>
+          <month>12</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>12</day>
+          <month>3</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2013 Robinson et al.</copyright-statement>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Robinson et al.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+          <license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-Noncommercial-ShareAlike 3.0 Unported</ext-link> license, which permits unrestricted noncommercial use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <title>ABSTRACT</title>
+        <p>For DNA viruses, genetic recombination, addition, and deletion represent important evolutionary mechanisms. Since these genetic alterations can lead to new, possibly severe pathogens, we applied a systems biology approach to study the pathogenicity of a novel human adenovirus with a naturally occurring deletion of the canonical penton base Arg-Gly-Asp (RGD) loop, thought to be critical to cellular entry by adenoviruses. Bioinformatic analysis revealed a new highly recombinant species D human adenovirus (HAdV-D60). A synthesis of <italic>in silico</italic> and laboratory approaches revealed a potential ocular tropism for the new virus. <italic>In vivo</italic>, inflammation induced by the virus was dramatically greater than that by adenovirus type 37, a major eye pathogen, possibly due to a novel alternate ligand, Tyr-Gly-Asp (YGD), on the penton base protein. The combination of bioinformatics and laboratory simulation may have important applications in the prediction of tissue tropism for newly discovered and emerging viruses.</p>
+      </abstract>
+      <abstract abstract-type="executive-summary">
+        <title>IMPORTANCE</title>
+        <p>The ongoing dance between a virus and its host distinctly shapes how the virus evolves. While human adenoviruses typically cause mild infections, recent reports have described newly characterized adenoviruses that cause severe, sometimes fatal human infections. Here, we report a systems biology approach to show how evolution has affected the disease potential of a recently identified novel human adenovirus. A comprehensive understanding of viral evolution and pathogenicity is essential to our capacity to foretell the potential impact on human disease for new and emerging viruses.</p>
+      </abstract>
+      <counts>
+        <page-count count="7"/>
+      </counts>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>cover-date</meta-name>
+          <meta-value>March/April 2013</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="h0.0">
+      <title>Introduction</title>
+      <p>Infection entails complex and functionally integrated relationships between pathogen and host (<xref ref-type="bibr" rid="B1">1</xref>, <xref ref-type="bibr" rid="B2">2</xref>). The synthesis of genomic, bioinformatic, cellular, and molecular methodologies permits a systems biology approach to predict the emergence of new and severe infectious agents. Human adenoviruses (HAdV) are ubiquitous, cause infections in the respiratory, gastrointestinal, genitourinary, and ocular mucosas, can be opportunistic in the immune-compromised host, and have been associated with obesity (<xref ref-type="bibr" rid="B3">3</xref>&#x2013;<xref ref-type="bibr" rid="B8">8</xref>). Adenoviruses also are common choices for gene therapy vectors (<xref ref-type="bibr" rid="B9">9</xref>, <xref ref-type="bibr" rid="B10">10</xref>). Thus, while adenoviruses continue to cause significant morbidity and mortality in the human population, their existence also provides a potential benefit for the treatment of patients with an even broader range of ailments.</p>
+      <p>Since the first adenovirus was characterized in 1953 (<xref ref-type="bibr" rid="B11">11</xref>, <xref ref-type="bibr" rid="B12">12</xref>), over 60 human adenoviruses have been recognized as unique types. Analysis of whole-genome sequence data for existing and new HAdVs confirmed a critical role for homologous recombination in adenovirus evolution, leading to new and sometimes serious human infections (<xref ref-type="bibr" rid="B13">13</xref>&#x2013;<xref ref-type="bibr" rid="B18">18</xref>). The emergence of new HAdV types, with several associated with severe eye infection (<xref ref-type="bibr" rid="B13">13</xref>, <xref ref-type="bibr" rid="B16">16</xref>, <xref ref-type="bibr" rid="B18">18</xref>), prompted us to apply a systems biology approach to try to predict the ocular tropism of a previously uncharacterized and highly novel HAdV, isolated by nasopharyngeal swab from a 4-month-old boy with severe bronchiolitis. A combined genomic, bioinformatic, and biological analysis identified a unique deletion in a key protein of the viral capsid and further suggested the potential of this virus to cause significant ocular infection. These results point toward a possible approach for predicting pathogenicity for newly identified and recently emergent human pathogens.</p>
+    </sec>
+    <sec sec-type="results" id="h1">
+      <title>RESULTS</title>
+      <sec id="h1.1">
+        <title>The HAdV-D60 penton base gene has a unique deletion of the hypervariable RGD loop.</title>
+        <p>Viral cultures were obtained by nasopharyngeal swab from a male child with bronchiolitis. Initial testing suggested a mixed infection with adenovirus and human metapneumovirus. Limited genomic sequencing of the adenovirus suggested a unique adenovirus type. Subsequent whole-genome sequencing, phylogenetic analysis, and viral neutralization assays for the adenovirus in the specimen revealed the novel adenovirus to be a recombinant of several human adenoviruses, with sequence contributions from HAdV-D20 (hexon gene) and HAdV-D37 (penton base gene) but with a unique fiber gene (<xref ref-type="fig" rid="fig1">Fig.&#xA0;1A</xref>; see also <xref ref-type="supplementary-material" rid="figS1">Fig.&#xA0;S1</xref> to S3 in the supplemental material). Thus, this new human adenovirus species D type (HAdV-D) was designated HAdV-D60, based on current typing criteria (<xref ref-type="bibr" rid="B19">19</xref>). Unexpectedly, sequence analysis revealed deletion of the Arg-Gly-Asp (RGD) loop (amino acids [aa] 294 to 319) in the predicted penton base protein (<xref ref-type="fig" rid="fig1">Fig.&#xA0;1B and D</xref>), which is normally highly conserved and thought to mediate an interaction with host cell integrins critical to viral entry, e.g., &#x3B1;<sub>v</sub>&#x3B2;<sub>3</sub> (<xref ref-type="bibr" rid="B20">20</xref>). HAdV-D60 is the first virus within the species HAdV-D that was found to lack an RGD loop or similar motif. Despite the deleted RGD loop, SimPlot analysis of the entire penton base gene confirmed extensive identity between HAdV-D60 and HAdV-D37 (<xref ref-type="fig" rid="fig1">Fig.&#xA0;1C</xref>; <xref ref-type="supplementary-material" rid="figS1">Fig.&#xA0;S1 and S3A</xref>), the latter a major cause of epidemic keratoconjunctivitis.</p>
+        <fig id="fig1" position="float">
+          <label>FIG&#xA0;1&#xA0;</label>
+          <caption>
+            <p>Genomic analysis of HAdV-D60. (A) Whole-genome phylogenetic analysis of HAdV-D60. (B) Multisequence alignment of the penton base protein from a representative type from each HAdV species. The highly conserved RGD sequence is bolded and boxed in red. (C) SimPlot analysis of the HAdV-D60 penton base gene queried against all completely sequenced HAdV-D penton base genes. The location, in relation to the nucleotide sequence, of the two major hypervariable loop (HVL1 and RGD) domains of the protein are presented above the graph. HAdV-D37 sequence similarity is presented in red. (D) Predicted protein model of the HAdV-D60 penton base based on homology modeling of the crystal structure of HAdV-C2. The absence of the RGD loop in HAdV-D60 is shown in red (arrow). The RGD loop for HAdV-C2 was not resolved in crystal structure and was modeled and added (arrow and in red).</p>
+          </caption>
+          <graphic xlink:href="mbo0021314840001"/>
+        </fig>
+      </sec>
+      <sec id="h1.2">
+        <title>HAdV-D60 infects the ocular surface epithelium.</title>
+        <p>We recently demonstrated that entry of a human adenovirus into human corneal epithelial cells <italic>in vitro</italic> can differentiate a corneal pathogen (<xref ref-type="bibr" rid="B21">21</xref>). The absence of the RGD loop in the penton base protein in HAdV-D60, with otherwise high similarity to HAdV-D37 throughout the rest of the gene, led us to test whether HAdV-D60 would infect ocular surface epithelial cells. By confocal microscopy with Cy3-labeled virus, HAdV-D60 enters both corneal (THE) and conjunctival (Chang) epithelial cells by 1&#xA0;h postinfection. This was compared to the 30-minute entry seen with HAdV-D37 (<xref ref-type="fig" rid="fig2">Fig.&#xA0;2A</xref>; see also <xref ref-type="supplementary-material" rid="figS4 figS5">Fig.&#xA0;S4 and S5</xref> in the supplemental material). Viral replication (<xref ref-type="fig" rid="fig2">Fig.&#xA0;2B</xref>) and E1A transcription (<xref ref-type="fig" rid="fig2">Fig.&#xA0; 2C</xref>; <xref ref-type="supplementary-material" rid="figS6">Fig.&#xA0;S6</xref>) for HAdV-D60 also occurred but were delayed compared to those for HAdV-D37. Together, these data demonstrate that HAdV-D60 infects and replicates in ocular surface epithelial cells, albeit more slowly than HAdV-D37.</p>
+        <fig id="fig2" position="float">
+          <label>FIG&#xA0;2&#xA0;</label>
+          <caption>
+            <p>Entry, replication, and inflammation of HAdV-D60. (A) Entry of Cy3-labeled HAdV-D60 in human lung (A549), conjunctival (Chang), and corneal (THE) epithelial cells. (B) Growth of HAdV-D37 (black) and HAdV-D60 (red) in A549 (squares), Chang (circles), and THE (triangle) cells <italic>in vitro</italic>. (C) Viral gene expression of HAdV-D37 and HAdV-D60 E1A 13S in Chang cells. (D) <italic>In vivo</italic> infection of HAdV-D37 and HAdV-D60 at various titers. Clinical pictures represent inflammation at 4&#xA0;days postinfection. (E) Flow cytometry analysis of CD45<sup>+</sup> events following <italic>in vivo</italic> infection of HAdV-D37 (black) and HAdV-D60 (red). (F) ELISA analysis of the cytokines IL-6, CXCL1, and CXCL10 16&#xA0;h after <italic>in vivo</italic> infections of HAdV-D37 (black) and HAdV-D60 (red). Error bars represent standard deviations. <italic>n</italic> = 3 for all experiments. *, <italic>P</italic> &lt; 0.05 (two-way ANOVA).</p>
+          </caption>
+          <graphic xlink:href="mbo0021314840002"/>
+        </fig>
+      </sec>
+      <sec id="h1.3">
+        <title>HAdV-D60 infects the cornea <italic>in vivo</italic> and is hyperinflammatory.</title>
+        <p>Since <italic>in vitro</italic> infection of ocular surface epithelial cells was consistent with corneal tropism, we examined the capacity of HAdV-D60 to induce corneal inflammation <italic>in vivo</italic> by testing various titers of the virus in an adenovirus keratitis mouse model (<xref ref-type="bibr" rid="B22">22</xref>, <xref ref-type="bibr" rid="B23">23</xref>). Surprisingly, HAdV-D60 induced threshold clinical inflammation at an infectious dose considerably (~100-fold) lower than that for HAdV-D37 (<xref ref-type="fig" rid="fig2">Fig.&#xA0;2D</xref>; see also <xref ref-type="supplementary-material" rid="figS7">Fig.&#xA0;S7A</xref> in the supplemental material). By flow cytometry, roughly 4-fold more infiltrating CD45<sup>+</sup> cells infiltrated the HAdV-D60-infected cornea than infiltrated corneas with similar titers of HAdV-D37 (<xref ref-type="fig" rid="fig2">Fig.&#xA0; 2E</xref>). Consistent with increased infiltration by leukocytes, cytokine levels of interleukin 6 (IL-6), CXCL1, CXCL10, alpha interferon (IFN-&#x3B1;), and IFN-&#x3B2; in the corneas of HAdV-D60-injected mice were significantly elevated compared to those in mice with control HAdV-D37 infection (<xref ref-type="fig" rid="fig2">Fig.&#xA0;2F</xref>; <xref ref-type="supplementary-material" rid="figS7">Fig.&#xA0;S7B</xref>). These results show that HAdV-D60 capably induces keratitis in the mouse.</p>
+      </sec>
+      <sec id="h1.4">
+        <title>HAdV-D60 contains a novel potential integrin binding motif.</title>
+        <p>We previously showed that administration of an RGD 15-mer identical to the RGD loop in HAdV-D37, when coinjected with HAdV-D37, reduced resultant inflammation compared to a KGE-containing control 15-mer otherwise identical to the RGD peptide (<xref ref-type="bibr" rid="B23">23</xref>). Because HAdV-D60 lacks the penton base protein RGD motif thought essential for viral internalization via binding to and aggregation of host cellular integrins, we predicted that a similar experiment performed with HAdV-D60 would show no suppression of corneal inflammation by either the RGD 15-mer or its KGE control. Surprisingly, administration of the RGD 15-mer identical to the RGD loop in HAdV-D37, when coinjected with HAdV-D60, reduced resultant inflammation compared to the KGE-containing control (<xref ref-type="fig" rid="fig3">Fig.&#xA0;3A</xref>), suggesting that integrin binding remained an important element in the pathogenesis of infection or, less likely, suggesting a direct effect of the RGD ligand on the immune response (<xref ref-type="bibr" rid="B24">24</xref>). Protein modeling of the HAdV-D60 penton base illustrated the RGD loop deletion, but also identified a Tyr-Gly-Asp (YGD) motif (<xref ref-type="fig" rid="fig3">Fig.&#xA0;3B</xref>), on the outer upper region of the modeled penton base protein. This motif was found to be conserved in all known HAdV-D penton base genes, suggesting novel and redundant strategies for penton-mediated integrin binding and aggregation (<xref ref-type="bibr" rid="B25">25</xref>). Notably, a YGD 15-mer identical to the amino acid sequence surrounding YGD in the HAdV-D60 penton base protein prevented binding of HAdV-D60 to cultured human corneal fibroblasts (<xref ref-type="fig" rid="fig3">Fig.&#xA0;3C</xref>). Previous work demonstrated a key role for downstream expression of CXCL8 in human adenovirus keratitis (<xref ref-type="bibr" rid="B26">26</xref>). Treatment of human corneal fibroblasts with the YGD 15-mer also reduced CXCL8 expression in HAdV-D60 infection (<xref ref-type="fig" rid="fig3">Fig.&#xA0;3D</xref>) and abrogated clinical and histological keratitis in the HAdV-D60-infected mouse cornea compared to those in the KGE control (<xref ref-type="fig" rid="fig3">Fig.&#xA0;3E</xref>), suggesting a possible role for the YGD motif on the penton base. No other potential integrin ligand was found on the HAdV-D60 penton base protein.</p>
+        <fig id="fig3" position="float">
+          <label>FIG&#xA0;3&#xA0;</label>
+          <caption>
+            <p>HAdV-D60 interaction with host cellular integrins. (A) <italic>In vivo</italic> infection of HAdV-D60 in the presence of either a 15mer peptide containing Arg-Gly-Asp (RGD) motif or a control 15mer peptide containing Lys-Gly-Glu (KGE). Clinical pictures represent inflammation at 4&#xA0;days postinfection. (B) Homology modeling of the pentameric structure of the HAdV-D60 penton base. The location of a Tyr-Gly-Asp (YGD) motif on the putative structure is identified in red. (C) <italic>In vitro</italic> entry of HAdV-D60 into human corneal fibroblasts in the presence of a 15mer peptide containing YGD or KGE. (D) CXCL8 expression in human corneal fibroblasts at 4&#xA0;h after infection <italic>in vitro</italic> with HAdV-D60 in the presence of peptide containing either RGD, YGD, or KGE. (E) <italic>In vivo</italic> infection of HAdV-D60 in the presence of peptide containing either YGD or KGE. Clinical pictures (top) and hematoxylin and eosin (H&amp;E)-stained tissue sections (bottom) show inflammation at 4&#xA0;days postinfection. Error bars represent standard deviations. <italic>n</italic> = 3 for all experiments. *, <italic>P</italic> &lt; 0.05 (ANOVA with preplanned contrasts).</p>
+          </caption>
+          <graphic xlink:href="mbo0021314840003"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="h2">
+      <title>DISCUSSION</title>
+      <p>Here, we report the identification of a novel human adenovirus and possible bronchial pathogen, HAdV-D60, which is partially recombinant with HAdV-D37, a known eye pathogen, and we describe an approach to test its potential to cause severe eye infections. Whole-genome sequencing revealed a recombinant genome with a recombined and RGD loop-deleted HAdV-D37 penton base. This was surprising, as the RGD or similar motif is thought to enable viral entry via host cellular integrins for all human adenoviruses (<xref ref-type="bibr" rid="B20">20</xref>, <xref ref-type="bibr" rid="B27">27</xref>). HAdV-D60 represents the first reported HAdV within species D lacking the specific RGD motif, and this is the first report of any HAdV missing the RGD loop in its entirety. Notably among previously known HAdVs, HAdV-F40 and HAdV-F41 express an external penton base loop with a modified integrin binding motif (<xref ref-type="bibr" rid="B28">28</xref>, <xref ref-type="bibr" rid="B29">29</xref>); the loop on HAdV-F40 penton base protein expresses RGAD, while HAdV-F41&#x2019;s penton base loop has IGDD.</p>
+      <p>The capacity of HAdV-D60, with a penton base protein similar to that of HAdV-D37, to infect the ocular surface epithelium and induce keratitis despite the absence of an RGD loop suggests that other components of the penton base protein may play a role in tissue tropism. It is known that the fiber protein (see <xref ref-type="supplementary-material" rid="figS3">Fig.&#xA0;S3B</xref> in the supplemental material), in particular, the fiber knob, is an important determinant of tropism for the ocular surface epithelium. A single amino acid change in the knob domain of the fiber protein was implicated in conjunctival tropism (<xref ref-type="bibr" rid="B30">30</xref>). The fiber of HAdV-D60 was most similar to that of HAdV-D20, a virus not known to infect the ocular surface. Therefore, we predict effects on viral tropism also by other viral components beyond the fiber and penton base. Interestingly, in the absence of the RGD-containing penton base loop, HAdV-D60 infection of conjunctival and corneal cells <italic>in vitro</italic> appeared to be slowed relative to that with HAdV-D37 and viral gene expression was considerably delayed. Thus, the RGD loop appears to be important but dispensable for viral entry, possibly due to a surrogate YGD integrin binding motif on the virus. It is intriguing that HAdV-F40 and -F41, which are relatively fastidious enteric viruses (<xref ref-type="bibr" rid="B28">28</xref>, <xref ref-type="bibr" rid="B31">31</xref>), also lack the penton base protein RGD motif and express the penton base YGD motif (<xref ref-type="bibr" rid="B28">28</xref>, <xref ref-type="bibr" rid="B29">29</xref>). It is unknown at present whether the YGD on the adenovirus penton base protein is exposed sufficiently to interact with cellular integrins during virus attachment and entry. Crystallization of the HAdV-D60 penton base protein is in progress and may help resolve this question. Alternatively, free or altered penton base capsomer due to partial virus uncoating at the cell surface may aggregate cellular integrins and assist in viral entry after fiber knob binding (<xref ref-type="bibr" rid="B32">32</xref>, <xref ref-type="bibr" rid="B33">33</xref>). Future work is needed to identify whether YGD represents a novel and redundant motif for adenovirus internalization. If inflammation is initiated by virus binding to its cellular receptor(s), then perhaps delayed internalization by HAdV-D60 is, in part, responsible for its substantially greater inflammatory capacity in the cornea <italic>in vivo</italic>.</p>
+      <p>Our data suggest that HAdV-D60 may cause ocular infection, but our synthesis can only predict, not foretell with certainty. Further, it is unclear to what degree HAdV-D60 is currently or might in the future become prevalent in the community. At present, the population distribution of HAdV-D60 is unknown, but another virus identical to HAdV-D60 with the exception of a recombined E3 transcription unit was recently isolated from the gastrointestinal tract of an HIV-infected patient in England (GenBank accession number JN162672) (<xref ref-type="bibr" rid="B34">34</xref>), suggesting that genome variants of HAdV-D60 may be in circulation outside Canada. Whole-genome sequencing recently identified 10 new or previously unidentified HAdV types, and surprisingly, three of these were isolated from patients with epidemic keratoconjunctivitis (<xref ref-type="bibr" rid="B13">13</xref>, <xref ref-type="bibr" rid="B16">16</xref>, <xref ref-type="bibr" rid="B18">18</xref>). Until or unless HAdV-D60 is identified in an outbreak of ocular infection, the true ocular pathogenicity of HAdV-D60 will remain unknown. The synthesis of <italic>in silico</italic>, <italic>in vitro</italic>, and <italic>in vivo</italic> experimental approaches, here applied to a novel virus in a hypothesized ocular infection, represents one potential means to predict tropism and pathogenicity for new or emerging infectious agents before they cause serious outbreaks of disease.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="h3">
+      <title>MATERIALS AND METHODS</title>
+      <sec id="h3.1">
+        <title>Virus, cells, and animals.</title>
+        <p>HAdV-D60 (GenBank accession number HQ007053) was cultured from a 4-month-old male infant with bronchiolitis in Edmonton, Canada. Respiratory virus testing was performed at the Provincial Laboratory for Public Health, Calgary, Canada. Nasopharyngeal swab test results for influenza A virus, influenza B virus, parainfluenza (types 1, 2, 3, and 4), and respiratory syncytial virus A and B were negative, but testing results for adenovirus and human metapneumovirus were positive. Blood and urine cultures were negative. HAdV-D60 was cultured directly from a nasopharyngeal swab using A549 cell culture and identified as a potentially novel virus on the basis of limited Sanger sequencing of the virus capsid hexon gene. Subsequent whole-genome sequencing led to typing of the virus as HAdV-D60, the next available type number in GenBank, on the basis of its unique genome and phylogenetic analysis, as approved by the Human Adenovirus Working Group (<uri xlink:type="simple" xlink:href="http://hadvwg.gmu.edu/">http://hadvwg.gmu.edu/</uri>) (<xref ref-type="bibr" rid="B19">19</xref>), a collaboration between the adenovirology community and the National Center for Biotechnology Information (NCBI, Bethesda, MD). HAdV-D37 (GenBank accession number DQ900900) was obtained from the American Type Culture Collection (ATCC, Manassas, VA). For use in these studies, HAdV-D37 and HAdV-D60 stocks were grown in A549 cells and purified by a cesium chloride gradient.</p>
+        <p>Human lung carcinoma cell line A549 (CCL-185), a human alveolar epithelial cell line that was previously shown to support HAdV virion production (<xref ref-type="bibr" rid="B35">35</xref>), was obtained from ATCC. Telomerase-immortalized human corneal epithelial (THE) cells were the kind gift of Jerry Shay (University of Texas&#x2014;Southwestern Medical Center) and were cultured in defined keratinocyte serum-free medium with supplements (Gibco, Grand Island, NY). Human conjunctival epithelial (Chang) cells were obtained from the ATCC. Primary human corneal fibroblasts (HCF) were isolated from human donor corneas as previously described (<xref ref-type="bibr" rid="B26">26</xref>). Cells were maintained in Dulbecco&#x2019;s modified Eagle&#x2019;s medium containing 10% heat-inactivated fetal bovine serum. Eight- to 12-week-old wild-type female C57BL/6J mice were purchased from Jackson Laboratories (Bar Harbor, ME).</p>
+        <p>The research described in this study conformed to the tenets of the Declaration of Helsinki. The virus studied was cultured from a human patient as part of routine clinical care, deemed necessary by the clinical provider. The virus isolate would otherwise have been discarded and was deidentified for analysis and was therefore determined to be exempt from review by the Human Studies Committee at the Massachusetts Eye and Ear Infirmary, a Harvard Medical School affiliate. All animals used in this study were treated humanely and in full agreement with the Association for Research in Vision and Ophthalmology resolution on usage and treatment of animals in research. Approval for the use of animals in this study was obtained from the Massachusetts Eye and Ear Infirmary Animal Care Committee.</p>
+      </sec>
+      <sec id="h3.2">
+        <title>Genome sequencing, annotation, and analysis.</title>
+        <p>Purified HAdV-D60 DNA was sequenced on a Roche 454 DNA sequencer (Branford, CT) by Eurofins MWG Operon (Huntsville, AL). Gaps, ambiguous sequences, and the inverted terminal repeats were sequenced using an ABI 3130xl (Applied Biosystems, Carlsbad, CA) via PCR amplification. Quality control included sequence annotation and comparison with HAdV genome landmarks. Data were assembled using CLC Genomics software (CLC bio; Cambridge, MA), with an <italic>N</italic><sub>50</sub> average of 5,260. Minimal sequence coverages were 8-fold (Sanger chemistry) and 17- to 20-fold (Next Gen), with the Next Gen data noted by Operon at an accuracy of greater than 99% (Q20 or better).</p>
+        <p>The software programs mVISTA Limited Area Global Alignment of Nucleotides (LAGAN; <uri xlink:type="simple" xlink:href="http://genome.lbl.gov/vista/lagan/submit.shtml">http://genome.lbl.gov/vista/lagan/submit.shtml</uri>) and Molecular Evolutionary Genetics Analysis (MEGA) version 4.0.2 (<uri xlink:type="simple" xlink:href="http://www.megasoftware.net">http://www.megasoftware.net</uri>) were used for global pairwise sequence alignment and phylogenetic analysis as previously described (<xref ref-type="bibr" rid="B14">14</xref>, <xref ref-type="bibr" rid="B15">15</xref>, <xref ref-type="bibr" rid="B18">18</xref>, <xref ref-type="bibr" rid="B36">36</xref>&#x2013;<xref ref-type="bibr" rid="B41">41</xref>). For phylogenetic trees, branches with bootstrap values below 70 (indicative of low confidence) were collapsed. DNA sequence recombination analysis was performed with SimPlot 3.5.1 software (<uri xlink:type="simple" xlink:href="http://sray.med.som.jhmi.edu/scroftware/simplot/">http://sray.med.som.jhmi.edu/SCRoftware/simplot/</uri>), including the options of Bootscan and SimPlot analysis, to identify possible recombination sites (<xref ref-type="bibr" rid="B42">42</xref>). Default settings were used, and HAdV-D60 was used as the reference sequence for analysis.</p>
+      </sec>
+      <sec id="h3.3">
+        <title>Protein analysis and modeling.</title>
+        <p>Multisequence amino acid alignment was performed using CLC sequence viewer 6 (<uri xlink:type="simple" xlink:href="http://www.clcbio.com/index.php?id=28">http://www.clcbio.com/index.php?id=28</uri>). A model of the HAdV-D60 penton base was constructed using Swiss-Model (<uri xlink:type="simple" xlink:href="http://swissmodel.expasy.org/">http://swissmodel.expasy.org/</uri>) for homology modeling (<xref ref-type="bibr" rid="B43">43</xref>, <xref ref-type="bibr" rid="B44">44</xref>). The crystal structure of HAdV-C2 (<xref ref-type="bibr" rid="B45">45</xref>) (Protein Data Bank [PDB] no. 1X9T) was used as a template for the model. The identity between the HAdV-C2 penton base and the HAdV-D60 penton base was 77%. The model generated by Swiss-Model was evaluated by PROCHECK (<uri xlink:type="simple" xlink:href="http://www.ebi.ac.uk/thornton-srv/software/procheck/">http://www.ebi.ac.uk/thornton-srv/software/PROCHECK/</uri>) and a Ramachandran plot, which identified 82.7% of residues in most-favored regions and 14.9% in additional allowed regions. To model the missing RGD loop from the crystal structure of the HAdV-C2 penton base, the RGD loop consisting of 78&#xA0;amino acids was modeled using the Robetta Server (<uri xlink:type="simple" xlink:href="http://robetta.bakerlab.org/">http://robetta.bakerlab.org/</uri>). Robetta provides both <italic>ab initio</italic> and comparative models of protein domains and uses the Rosetta fragment insertion method. Five PDB files were generated for the structure of the hypervariable RGD loop of HAdV-C2. One model was chosen and fit by DeepView software (<uri xlink:type="simple" xlink:href="http://spdbv.vital-it.ch/">http://spdbv.vital-it.ch/</uri>) on the crystal structure of HAdV-C2 to get the full penton protein. UCSF Chimera software (<uri xlink:type="simple" xlink:href="http://www.cgl.ucsf.edu/chimera">http://www.cgl.ucsf.edu/chimera</uri>) (<xref ref-type="bibr" rid="B46">46</xref>) was used for visualization and analysis.</p>
+      </sec>
+      <sec id="h3.4">
+        <title>Experimental infections.</title>
+        <p>Cells grown to 80 to 90% confluence were infected in triplicate with virus at a multiplicity of infection (MOI) of 5 or mock infected with virus-free dialysis buffer, and virus-infected cells and/or supernatants were harvested at indicated time points and assayed, as described below. For some infections, HAdV-37 and HAdV-D60 were conjugated with Cy3 dye (GE Healthcare, Piscataway, NJ) according to the methods of Leopold et al. (<xref ref-type="bibr" rid="B47">47</xref>). One&#xA0;milligram of Cy3 dye was reconstituted in 1&#xA0;ml of 0.1&#xA0;M sodium bicarbonate (pH&#xA0;9.3). Labeling was performed by conjugating Cy3 dye to virus at a concentration approximately equal to 10<sup>12</sup> AdV particles/ml, where reconstituted Cy3 dye was 20% of the final solution. The mixture was allowed to incubate for 30&#xA0;min in the dark with gentle mixing every 10&#xA0;min, followed by overnight dialysis to remove the excess Cy3 dye.</p>
+        <p>Mice were anesthetized by intramuscular injection of ketamine (85&#xA0;mg/kg of body weight) and xylazine (14&#xA0;mg/kg). Anesthetic drops (0.5% proparacaine hydrochloride; Alcon, Fort Worth, TX) were applied topically to each eye before injections. One&#xA0;microliter of virus (10<sup>3</sup> to 10<sup>5</sup> tissue culture infective dose [TCID]) or virus-free dialysis buffer was injected into the central corneal stroma with a glass micropipette needle fitted with a gas-powered microinjection system (MDI, South Plainfield, NJ) under an ophthalmic surgical microscope (Carl Zeiss Meditec, Inc., Thornwood, NY). At indicated time points, mouse corneas were photographed and mice were euthanized using CO<sub>2</sub> inhalation prior to removal of corneas for histology and other studies.</p>
+      </sec>
+      <sec id="h3.5">
+        <title>Viral growth curve.</title>
+        <p>A549, Chang, and THE cells were grown in 6-well plates and infected in triplicate with virus at a MOI of 1. Following a 1-h incubation period to allow viral absorption, cells were washed twice with phosphate-buffered saline (PBS) to remove unbound virus and fresh medium was added. Cells and supernatants were collected together at 1, 2, 3, and 7&#xA0;days postinfection and freeze thawed. Supernatants were collected after centrifugation (5,000&#xA0;rpm for 5&#xA0;min), and titers of samples were determined on A549 cells.</p>
+      </sec>
+      <sec id="h3.6">
+        <title>RT-PCR analysis of E1A 13S expression.</title>
+        <p>A549, Chang, and THE cells were infected with virus at an MOI of 5. Following a 1-h incubation, cells were washed twice with PBS and fresh medium was added. Total RNA was isolated with Trizol (Invitrogen, Eugene, OR) according to the manufacturer&#x2019;s instructions at indicated time points. To eliminate any contamination by genomic DNA, RNA samples were treated with Turbo&#xA0;DNase&#xA0;(Ambion, Austin, TX). RNA samples were analyzed on a Bio-Rad SmartSpec&#xA0;Plus (Bio-Rad, Hercules, CA) spectrophotometer for concentration and purity. Elimination of DNA was confirmed by absence of visible bands for&#xA0;DNase-treated RNA used as a template (no reverse transcriptase [*Cm5: Zehava Robbins: Is &#x201C;RT&#x201D; correctly defined as &#x201C;reverse transcriptase,&#x201D; implying that &#x201C;RT-PCR&#x201D; is &#x201C;reverse transcriptase PCR&#x201D;? Or should it be &#x201C;reverse transcription-PCR&#x201D;?RT] control). RT-PCR was preformed on the samples as described previously (<xref ref-type="bibr" rid="B48">48</xref>).</p>
+      </sec>
+      <sec id="h3.7">
+        <title>Confocal microscopy.</title>
+        <p>For confocal microscopy,&#xA0;A549, THE, and Chang cells were grown on slide chambers (Nunc, Rochester, NY) and infected with Cy3-labeled virus for 30&#xA0;min and 1&#xA0;h. HCF were pretreated with RGD, YGD, or their control 15-mers (see below) for 30&#xA0;min prior to infection with Cy3-labeled virus. Cells were then partially fixed in 0.05% paraformaldehyde for 10&#xA0;min, washed in PBS containing 2% fetal bovine serum (FBS), and permeabilized in solution containing 0.1% Triton X-100 in 2% bovine serum albumin (BSA) for 10&#xA0;min. After 30&#xA0;min blocking in 2% BSA-PBS, the cells were incubated in 5&#xA0;&#xB5;g/ml of 488-conjugated phalloidin (Invitrogen, Eugene, OR) for 1&#xA0;h at room temperature. Cells were then washed, fixed in 2% paraformaldehyde for 10&#xA0;min at 25&#xB0;C, and coverslipped using mounting medium containing DAPI (4`,6-diamidino-2-phenylindole; Vectashield; Vector Laboratories, Burlingame, CA). Samples were scanned with a confocal laser scanning microscope (TCS SP5; Leica, Heidelberg, Germany).</p>
+      </sec>
+      <sec id="h3.8">
+        <title>Inhibition of infection by adenoviral penton base peptides.</title>
+        <p>Synthetic 15-mer peptides were obtained from GenScript Corporation (Piscataway, NJ). The sequence of the HAdV-D37 wild-type penton base peptide including the RGD loop was DAVPRGDNYASAAEA, and the negative-control peptide, with KGE in place of RGD, was DAVPKGENYASAAEA. The sequence of the HAdV-D60 wild-type penton base peptide including YGD was LSYTYGDPEKGVQSW, and the negative-control peptide with KGE instead of YGD was LSYTKGEPEKGVQSW. The peptides were dissolved in water and diluted in phosphate-buffered saline (PBS), used at 1&#xA0;mM to pretreat human cell lines for 30&#xA0;min prior to <italic>in vitro</italic> infection. In experimental mouse infections, 0.5&#xA0;&#xB5;l of peptide (2&#xA0;mM) was mixed with 0.5&#xA0;&#xB5;l virus (2 &#xD7; 10<sup>5</sup> TCID) or virus-free dialysis buffer and injected into the corneal stroma of wild-type mice as described above. Mouse corneas were photographed at 4&#xA0;days postinfection and removed for histology. Both the RGD- and YGD-containing 15-mers&#x2014;but not their KGD-containing controls&#x2014;had reduced adhesion when mixed with epithelial cells and fibroblasts on plastic tissue culture plates; adhesion was also restricted by EDTA.</p>
+      </sec>
+      <sec id="h3.9">
+        <title>ELISA.</title>
+        <p>Human cells were infected in triplicate with either HAdV-D60, HAdV-D37, or virus-free dialysis buffer and supernatants harvested for an enzyme-linked immunosorbent assay (ELISA) at 4&#xA0;h postinfection for protein detection. Mouse corneas were removed at 16&#xA0;h postinfection (<italic>n</italic> = 3/time point/group) and flash frozen in liquid nitrogen. Corneas were then homogenized in 400&#xA0;&#xB5;l of PBS with 1&#xA0;mM phenylmethylsulfonyl fluoride (PMSF), 1&#xA0;&#xB5;g/ml aprotinin, and 10&#xA0;&#xB5;g/ml leupeptin (Sigma-Aldrich, St. Louis, MO). The lysates were centrifuged at 10,000 &#xD7; <italic>g</italic> for 10&#xA0;min at 4&#xB0;C, and the supernatants were used for analysis. ELISAs for human CXCL-8 and mouse CXCL1, IL-6, CXCL10, IFN-&#x3B1;, and IFN-&#x3B2; (all from R&amp;D Systems, Minneapolis, MN) were performed according to the manufacturer&#x2019;s instructions. Each sample and standard was analyzed in duplicate. The plates were read on a microplate reader (Molecular Devices, Sunnyvale, CA) and analyzed (SoftMax software; Molecular Devices).</p>
+      </sec>
+      <sec id="h3.10">
+        <title>Flow cytometry.</title>
+        <p>Corneas were dissected from mouse eyes at 4&#xA0;days postinfection and cut into small (1- to 2-mm-diameter) fragments for subsequent digestion with 1&#xA0;mg/ml collagenase type I and 0.5&#xA0;mg/ml DNase (Sigma Chemical Co., St. Louis, MO) (<xref ref-type="bibr" rid="B13">13</xref>, <xref ref-type="bibr" rid="B23">23</xref>). Single-cell suspensions were washed twice (300 &#xD7; <italic>g</italic>, 5&#xA0;min/wash) in PBS and then incubated on ice for 15&#xA0;min with 2&#xA0;&#xB5;l anti-mouse Fc block (BD Pharmingen, San Diego, CA) in a total volume of 100&#xA0;&#xB5;l PBS-1% BSA. Following incubation, cells were centrifuged (300 &#xD7; <italic>g</italic>, 5&#xA0;min) and resuspended in 5% normal rat serum (Jackson ImmunoResearch Inc., West Grove, PA) for an additional 15&#xA0;min on ice. Cells were then labeled with 4&#xA0;&#xB5;l anti-mouse fluorescein isothiocyanate (FITC)-conjugated anti-CD45 (clone 30-F11; BD Pharmingen, San Diego, CA) and incubated in the dark on ice for 30&#xA0;min. Following incubation, the cells were washed 3 times with PBS-1% BSA (300 &#xD7; <italic>g</italic>, 5&#xA0;min/wash) and resuspended in PBS containing 1% paraformaldehyde. After overnight fixation at 4&#xB0;C in the dark, cells were pelleted and resuspended in PBS-1% BSA and flow cytometry was performed using a Cytomics FC500 (Beckman Coulter, Brea, CA) for CD45<sup>+</sup> events, representing the numbers of leukocytes present in infected and control corneas.</p>
+      </sec>
+      <sec id="h3.11">
+        <title>Statistical analysis.</title>
+        <p>ELISAs and flow cytometry experiments were each performed at least three times. Means of observations were compared by analysis of variance (ANOVA) or Student&#x2019;s <italic>t</italic>&#xA0;test, as indicated in each figure legend, using statistical analysis software (SAS Institute Inc., Cary, NC). Statistical significance was set at a <italic>P</italic> value of &#x2264;0.05.</p>
+      </sec>
+      <sec id="h3.12">
+        <title>Nucleotide sequence accession number.</title>
+        <p>The full genomic sequence of HAdV-D60 is archived at GenBank (accession no. HQ007053).</p>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="h4"><title>SUPPLEMENTAL MATERIAL</title><supplementary-material id="figS1"><label>Figure&#xA0;S1&#xA0;</label><caption><p>Global pairwise sequence alignment of HAdV-D60 with 18 other HAdV-D types. Percent sequence conservation is reflected in the height of each data point along the <italic>y</italic>&#xA0;axis. Deletion of the RGD loop is reflected in the drop in sequence conservation in the HAdV-D37 penton base (designated by an asterisk). Download </p></caption><media xlink:href="mbo002131484sf01.tif" mimetype="image" mime-subtype="tiff"><caption><p>Figure&#xA0;S1, TIF file, 1.4 MB</p></caption></media></supplementary-material>
+<supplementary-material id="figS2"><label>Figure&#xA0;S2&#xA0;</label><caption><p>Serological and phylogenetic analysis of HAdV-D60. (A) Viral neutralization test of HAdV-D60 compared to human sera collected for every HAdV-D serotype. (B) Phylogenetic analysis of the complete hexon gene (arrow, HAdV-D60). Cladogram branches with bootstrap values below 70 (indicative of low confidence) were collapsed. (C) Phylogenetic analysis of the combined hypervariable loop 1 and 2 regions of the hexon gene where serum neutralization occurs (arrow, HAdV-D60). (D) SimPlot analysis of the HAdV-D60 hexon gene compared to all HAdV hexon genes deposited in GenBank. Download </p></caption><media xlink:href="mbo002131484sf02.tif" mimetype="image" mime-subtype="tiff"><caption><p>Figure&#xA0;S2, TIF file, 1.9 MB</p></caption></media></supplementary-material>
+<supplementary-material id="figS3"><label>Figure&#xA0;S3&#xA0;</label><caption><p>Phylogenetic analysis of the complete penton base (A) and fiber (B) genes (arrow, HAdV-D60). Cladogram branches with bootstrap values below 70 (indicative of low confidence) were collapsed. Download </p></caption><media xlink:href="mbo002131484sf03.tif" mimetype="image" mime-subtype="tiff"><caption><p>Figure&#xA0;S3, TIF file, 0.5 MB</p></caption></media></supplementary-material>
+<supplementary-material id="figS4"><label>Figure&#xA0;S4&#xA0;</label><caption><p>Cy3-labeled HAdV-D60 viral entry. Lung (A549), corneal (THE), or conjunctival (Chang) epithelial cells were grown on glass chamber slides, infected with HAdV-D60, and analyzed at 30&#xA0;min and 1&#xA0;h postinfection. Original magnification, &#xD7;63. Download </p></caption><media xlink:href="mbo002131484sf04.tif" mimetype="image" mime-subtype="tiff"><caption><p>Figure&#xA0;S4, TIF file, 2.7 MB</p></caption></media></supplementary-material>
+<supplementary-material id="figS5"><label>Figure&#xA0;S5&#xA0;</label><caption><p>Cy3-labeled HAdV-D37 viral entry. Lung (A549), corneal (THE), or conjunctival (Chang) epithelial cells were grown on glass chamber slides, infected with HAdV-D37, and analyzed at 30&#xA0;min and 1&#xA0;h postinfection. Original magnification, &#xD7;63. Download </p></caption><media xlink:href="mbo002131484sf05.tif" mimetype="image" mime-subtype="tiff"><caption><p>Figure&#xA0;S5, TIF file, 3 MB</p></caption></media></supplementary-material>
+<supplementary-material id="figS6"><label>Figure&#xA0;S6&#xA0;</label><caption><p>Comparative expression of E1A 13S transcripts in corneal epithelial (THE) cells over time for HAdV-D37 and HAdV-D60. Total RNA was collected at indicated time points, and viral E1A gene expression was determined. GAPDH (glyceraldehyde-3-phosphate dehydrogenase) was used as a positive control. Download </p></caption><media xlink:href="mbo002131484sf06.tif" mimetype="image" mime-subtype="tiff"><caption><p>Figure&#xA0;S6, TIF file, 0.2 MB</p></caption></media></supplementary-material>
+<supplementary-material id="figS7"><label>Figure&#xA0;S7&#xA0;</label><caption><p><italic>In vivo</italic> inflammation from HAdV-D60. (A) Histological analysis of various titers of HAdV-D60 injected into the mouse cornea. (B) ELISA analysis of IFN-&#x3B1; and IFN-&#x3B2; 16&#xA0;h postinfection with either HAdV-D37 (black) or HAdV-D60 (red). Error bars represent standard deviations. <italic>n</italic> = 3 for all experiments. *, <italic>P</italic> &lt; 0.05 (Student&#x2019;s <italic>t</italic>&#xA0;test). Download </p></caption><media xlink:href="mbo002131484sf07.tif" mimetype="image" mime-subtype="tiff"><caption><p>Figure&#xA0;S7, TIF file, 2.3 MB</p></caption></media></supplementary-material>
+</sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn fn-type="other">
+        <p><bold>Citation</bold> Robinson CM, Zhou X, Rajaiya J, Yousuf MA, Singh G, DeSerres JJ, Walsh MP, Wong S, Seto D, Dyer DW, Chodosh J, Jones MS. 2013. Predicting the next eye pathogen: analysis of a novel adenovirus. mBio 4(2):e00595-12. doi:10.1128/mBio.00595-12.</p>
+      </fn>
+    </fn-group>
+    <ack>
+      <title>ACKNOWLEDGMENTS</title>
+      <p>This study was supported by <funding-source>NIH</funding-source> grants <award-id>EY013124</award-id>, <award-id>EY021558</award-id>, and <award-id>EY014104</award-id>, a Research to Prevent Blindness Senior Scientific Investigator Award (to J.C.), the Falk Foundation, and the Massachusetts Lions Eye Research Fund.</p>
+    </ack>
+    <ref-list>
+      <title>REFERENCES</title>
+      <ref id="B1">
+        <label>1.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Vidal</surname><given-names>M</given-names></name></person-group>
+<year>2009</year>
+<article-title>A unifying view of 21st century systems biology</article-title>. <source>FEBS Lett.</source>
+<volume>583</volume>:<fpage>3891</fpage>&#x2013;<lpage>3894</lpage><pub-id pub-id-type="pmid">19913537</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <label>2.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rosslenbroich</surname><given-names>B</given-names></name></person-group>
+<year>2011</year>
+<article-title>Outline of a concept for organismic systems biology</article-title>. <source>Semin. Cancer Biol.</source>
+<volume>21</volume>:<fpage>156</fpage>&#x2013;<lpage>164</lpage><pub-id pub-id-type="pmid">21729754</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <label>3.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chu</surname><given-names>W</given-names></name><name><surname>Pavan-Langston</surname><given-names>D</given-names></name></person-group>
+<year>1979</year>
+<article-title>Ocular surface manifestations of the major viruses</article-title>. <source>Int. Ophthalmol. Clin.</source>
+<volume>19</volume>:<fpage>135</fpage>&#x2013;<lpage>167</lpage><pub-id pub-id-type="pmid">222704</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <label>4.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dhurandhar</surname><given-names>NV</given-names></name><name><surname>Kulkarni</surname><given-names>P</given-names></name><name><surname>Ajinkya</surname><given-names>SM</given-names></name><name><surname>Sherikar</surname><given-names>A</given-names></name></person-group>
+<year>1992</year>
+<article-title>Effect of adenovirus infection on adiposity in chicken</article-title>. <source>Vet. Microbiol.</source>
+<volume>31</volume>:<fpage>101</fpage>&#x2013;<lpage>107</lpage><pub-id pub-id-type="pmid">1320784</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <label>5.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dingle</surname><given-names>JH</given-names></name><name><surname>Langmuir</surname><given-names>AD</given-names></name></person-group>
+<year>1968</year>
+<article-title>Epidemiology of acute, respiratory disease in military recruits</article-title>. <source>Am. Rev. Respir. Dis.</source>
+<volume>97</volume>:<fpage>1</fpage>&#x2013;<lpage>65</lpage><pub-id pub-id-type="pmid">4869845</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <label>6.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kojaoghlanian</surname><given-names>T</given-names></name><name><surname>Flomenberg</surname><given-names>P</given-names></name><name><surname>Horwitz</surname><given-names>MS</given-names></name></person-group>
+<year>2003</year>
+<article-title>The impact of adenovirus infection on the immunocompromised host</article-title>. <source>Rev. Med. Virol.</source>
+<volume>13</volume>:<fpage>155</fpage>&#x2013;<lpage>171</lpage><pub-id pub-id-type="pmid">12740831</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <label>7.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wood</surname><given-names>DJ</given-names></name></person-group>
+<year>1988</year>
+<article-title>Adenovirus gastroenteritis</article-title>. <source>Br. Med. J. (Clin. Res. Ed.)</source>
+<volume>296</volume>:<fpage>229</fpage>&#x2013;<lpage>230</lpage></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <label>8.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Arnold</surname><given-names>J</given-names></name><name><surname>J&#xE1;noska</surname><given-names>M</given-names></name><name><surname>Kajon</surname><given-names>AE</given-names></name><name><surname>Metzgar</surname><given-names>D</given-names></name><name><surname>Hudson</surname><given-names>NR</given-names></name><name><surname>Torres</surname><given-names>S</given-names></name><name><surname>Harrach</surname><given-names>B</given-names></name><name><surname>Seto</surname><given-names>D</given-names></name><name><surname>Chodosh</surname><given-names>J</given-names></name><name><surname>Jones</surname><given-names>MS</given-names></name></person-group>
+<year>2010</year>
+<article-title>Genomic characterization of human adenovirus 36, a putative obesity agent</article-title>. <source>Virus Res.</source>
+<volume>149</volume>:<fpage>152</fpage>&#x2013;<lpage>161</lpage><pub-id pub-id-type="pmid">20109503</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <label>9.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Thirion</surname><given-names>C</given-names></name><name><surname>Lochm&#xFC;ller</surname><given-names>H</given-names></name><name><surname>Ruzsics</surname><given-names>Z</given-names></name><name><surname>Boelhauve</surname><given-names>M</given-names></name><name><surname>K&#xF6;nig</surname><given-names>C</given-names></name><name><surname>Thedieck</surname><given-names>C</given-names></name><name><surname>Kutik</surname><given-names>S</given-names></name><name><surname>Geiger</surname><given-names>C</given-names></name><name><surname>Kochanek</surname><given-names>S</given-names></name><name><surname>Volpers</surname><given-names>C</given-names></name><name><surname>Burgert</surname><given-names>HG</given-names></name></person-group>
+<year>2006</year>
+<article-title>Adenovirus vectors based on human adenovirus type 19a have high potential for human muscle-directed gene therapy</article-title>. <source>Hum. Gene Ther.</source>
+<volume>17</volume>:<fpage>193</fpage>&#x2013;<lpage>205</lpage><pub-id pub-id-type="pmid">16454653</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <label>10.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jager</surname><given-names>L</given-names></name><name><surname>Ehrhardt</surname><given-names>A</given-names></name></person-group>
+<year>2007</year>
+<article-title>Emerging adenoviral vectors for stable correction of genetic disorders</article-title>. <source>Curr. Gene Ther.</source>
+<volume>7</volume>:<fpage>272</fpage>&#x2013;<lpage>283</lpage><pub-id pub-id-type="pmid">17969560</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <label>11.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rowe</surname><given-names>WP</given-names></name><name><surname>Huebner</surname><given-names>RJ</given-names></name><name><surname>Gilmore</surname><given-names>LK</given-names></name><name><surname>Parrott</surname><given-names>RH</given-names></name><name><surname>Ward</surname><given-names>TG</given-names></name></person-group>
+<year>1953</year>
+<article-title>Isolation of a cytopathogenic agent from human adenoids undergoing spontaneous degeneration in tissue culture</article-title>. <source>Proc. Soc. Exp. Biol. Med.</source>
+<volume>84</volume>:<fpage>570</fpage>&#x2013;<lpage>573</lpage><pub-id pub-id-type="pmid">13134217</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <label>12.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hilleman</surname><given-names>MR</given-names></name><name><surname>Werner</surname><given-names>JH</given-names></name></person-group>
+<year>1954</year>
+<article-title>Recovery of new agent from patients with acute respiratory illness</article-title>. <source>Proc. Soc. Exp. Biol. Med.</source>
+<volume>85</volume>:<fpage>183</fpage>&#x2013;<lpage>188</lpage><pub-id pub-id-type="pmid">13134329</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <label>13.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Walsh</surname><given-names>MP</given-names></name><name><surname>Chintakuntlawar</surname><given-names>A</given-names></name><name><surname>Robinson</surname><given-names>CM</given-names></name><name><surname>Madisch</surname><given-names>I</given-names></name><name><surname>Harrach</surname><given-names>B</given-names></name><name><surname>Hudson</surname><given-names>NR</given-names></name><name><surname>Schnurr</surname><given-names>D</given-names></name><name><surname>Heim</surname><given-names>A</given-names></name><name><surname>Chodosh</surname><given-names>J</given-names></name><name><surname>Seto</surname><given-names>D</given-names></name><name><surname>Jones</surname><given-names>MS</given-names></name></person-group>
+<year>2009</year>
+<article-title>Evidence of molecular evolution driven by recombination events influencing tropism in a novel human adenovirus that causes epidemic keratoconjunctivitis</article-title>. <source>PLoS One</source>
+<volume>4</volume>:<fpage>e5635</fpage>
+<pub-id pub-id-type="pmid">19492050</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <label>14.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Robinson</surname><given-names>CM</given-names></name><name><surname>Rajaiya</surname><given-names>J</given-names></name><name><surname>Walsh</surname><given-names>MP</given-names></name><name><surname>Seto</surname><given-names>D</given-names></name><name><surname>Dyer</surname><given-names>DW</given-names></name><name><surname>Jones</surname><given-names>MS</given-names></name><name><surname>Chodosh</surname><given-names>J</given-names></name></person-group>
+<year>2009</year>
+<article-title>Computational analysis of human adenovirus type 22 provides evidence for recombination among species D human adenoviruses in the penton base gene</article-title>. <source>J. Virol.</source>
+<volume>83</volume>:<fpage>8980</fpage>&#x2013;<lpage>8985</lpage><pub-id pub-id-type="pmid">19553309</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <label>15.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Robinson</surname><given-names>CM</given-names></name><name><surname>Shariati</surname><given-names>F</given-names></name><name><surname>Gillaspy</surname><given-names>AF</given-names></name><name><surname>Dyer</surname><given-names>DW</given-names></name><name><surname>Chodosh</surname><given-names>J</given-names></name></person-group>
+<year>2008</year>
+<article-title>Genomic and bioinformatics analysis of human adenovirus type 37: new insights into corneal tropism</article-title>. <source>BMC Genomics</source>
+<volume>9</volume>:<fpage>213</fpage><pub-id pub-id-type="pmid">18471294</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <label>16.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kaneko</surname><given-names>H</given-names></name><name><surname>Iida</surname><given-names>T</given-names></name><name><surname>Ishiko</surname><given-names>H</given-names></name><name><surname>Ohguchi</surname><given-names>T</given-names></name><name><surname>Ariga</surname><given-names>T</given-names></name><name><surname>Tagawa</surname><given-names>Y</given-names></name><name><surname>Aoki</surname><given-names>K</given-names></name><name><surname>Ohno</surname><given-names>S</given-names></name><name><surname>Suzutani</surname><given-names>T</given-names></name></person-group>
+<year>2009</year>
+<article-title>Analysis of the complete genome sequence of epidemic keratoconjunctivitis-related human adenovirus type 8, 19, 37 and a novel serotype</article-title>. <source>J. Gen. Virol.</source>
+<volume>90</volume>:<fpage>1471</fpage>&#x2013;<lpage>1476</lpage><pub-id pub-id-type="pmid">19264666</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <label>17.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Walsh</surname><given-names>MP</given-names></name><name><surname>Seto</surname><given-names>J</given-names></name><name><surname>Jones</surname><given-names>MS</given-names></name><name><surname>Chodosh</surname><given-names>J</given-names></name><name><surname>Xu</surname><given-names>W</given-names></name><name><surname>Seto</surname><given-names>D</given-names></name></person-group>
+<year>2010</year>
+<article-title>Computational analysis identifies human adenovirus type 55 as a re-emergent acute respiratory disease pathogen</article-title>. <source>J. Clin. Microbiol.</source>
+<volume>48</volume>:<fpage>991</fpage>&#x2013;<lpage>993</lpage><pub-id pub-id-type="pmid">20042633</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <label>18.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Robinson</surname><given-names>CM</given-names></name><name><surname>Singh</surname><given-names>G</given-names></name><name><surname>Henquell</surname><given-names>C</given-names></name><name><surname>Walsh</surname><given-names>MP</given-names></name><name><surname>Peigue-Lafeuille</surname><given-names>H</given-names></name><name><surname>Seto</surname><given-names>D</given-names></name><name><surname>Jones</surname><given-names>MS</given-names></name><name><surname>Dyer</surname><given-names>DW</given-names></name><name><surname>Chodosh</surname><given-names>J</given-names></name></person-group>
+<year>2011</year>
+<article-title>Computational analysis and identification of an emergent human adenovirus pathogen implicated in a respiratory fatality</article-title>. <source>Virology</source>
+<volume>409</volume>:<fpage>141</fpage>&#x2013;<lpage>147</lpage><pub-id pub-id-type="pmid">21056888</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <label>19.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Seto</surname><given-names>D</given-names></name><name><surname>Chodosh</surname><given-names>J</given-names></name><name><surname>Brister</surname><given-names>JR</given-names></name><name><surname>Jones</surname><given-names>MS</given-names></name></person-group>
+<year>2011</year>
+<article-title>Using the whole genome sequence to characterize and name human adenoviruses</article-title>. <source>J. Virol.</source>
+<volume>85</volume>:<fpage>5701</fpage>&#x2013;<lpage>5702</lpage><pub-id pub-id-type="pmid">21450823</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <label>20.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wickham</surname><given-names>TJ</given-names></name><name><surname>Mathias</surname><given-names>P</given-names></name><name><surname>Cheresh</surname><given-names>DA</given-names></name><name><surname>Nemerow</surname><given-names>GR</given-names></name></person-group>
+<year>1993</year>
+<article-title>Integrins &#x3B1;<sub>v</sub>&#x3B2;<sub>3</sub> and &#x3B1;<sub>v</sub>&#x3B2;<sub>5</sub> promote adenovirus internalization but not virus attachment</article-title>. <source>Cell</source>
+<volume>73</volume>:<fpage>309</fpage>&#x2013;<lpage>319</lpage><pub-id pub-id-type="pmid">8477447</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <label>21.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhou</surname><given-names>X</given-names></name><name><surname>Robinson</surname><given-names>CM</given-names></name><name><surname>Rajaiya</surname><given-names>J</given-names></name><name><surname>Dehghan</surname><given-names>S</given-names></name><name><surname>Seto</surname><given-names>D</given-names></name><name><surname>Jones</surname><given-names>MS</given-names></name><name><surname>Dyer</surname><given-names>DW</given-names></name><name><surname>Chodosh</surname><given-names>J</given-names></name></person-group>
+<year>2012</year>
+<article-title>Analysis of human adenovirus type 19 associated with epidemic keratoconjunctivitis and its reclassification as adenovirus type 64</article-title>. <source>Invest. Ophthalmol. Vis. Sci.</source>
+<volume>53</volume>:<fpage>2804</fpage>&#x2013;<lpage>2811</lpage><pub-id pub-id-type="pmid">22467570</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <label>22.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chintakuntlawar</surname><given-names>AV</given-names></name><name><surname>Astley</surname><given-names>R</given-names></name><name><surname>Chodosh</surname><given-names>J</given-names></name></person-group>
+<year>2007</year>
+<article-title>Adenovirus type 37 keratitis in the C57BL/6J mouse</article-title>. <source>Invest. Ophthalmol. Vis. Sci.</source>
+<volume>48</volume>:<fpage>781</fpage>&#x2013;<lpage>788</lpage><pub-id pub-id-type="pmid">17251478</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <label>23.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chintakuntlawar</surname><given-names>AV</given-names></name><name><surname>Zhou</surname><given-names>X</given-names></name><name><surname>Rajaiya</surname><given-names>J</given-names></name><name><surname>Chodosh</surname><given-names>J</given-names></name></person-group>
+<year>2010</year>
+<article-title>Viral capsid is a pathogen-associated molecular pattern in adenovirus keratitis</article-title>. <source>PLoS Pathog.</source>
+<volume>6</volume>:<fpage>e1000841</fpage>
+<pub-id pub-id-type="pmid">20419141</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <label>24.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Barja-Fidalgo</surname><given-names>C</given-names></name><name><surname>Coelho</surname><given-names>AL</given-names></name><name><surname>Saldanha-Gama</surname><given-names>R</given-names></name><name><surname>Helal-Neto</surname><given-names>E</given-names></name><name><surname>Mariano-Oliveira</surname><given-names>A</given-names></name><name><surname>Freitas</surname><given-names>MS</given-names></name></person-group>
+<year>2005</year>
+<article-title>Disintegrins: integrin selective ligands which activate integrin-coupled signaling and modulate leukocyte functions</article-title>. <source>Braz. J. Med. Biol. Res.</source>
+<volume>38</volume>:<fpage>1513</fpage>&#x2013;<lpage>1520</lpage><pub-id pub-id-type="pmid">16172744</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <label>25.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Underwood</surname><given-names>PA</given-names></name><name><surname>Bennett</surname><given-names>FA</given-names></name><name><surname>Kirkpatrick</surname><given-names>A</given-names></name><name><surname>Bean</surname><given-names>PA</given-names></name><name><surname>Moss</surname><given-names>BA</given-names></name></person-group>
+<year>1995</year>
+<article-title>Evidence for the location of a binding sequence for the alpha 2 beta 1 integrin of endothelial cells, in the beta 1 subunit of laminin</article-title>. <source>Biochem. J.</source>
+<volume>309</volume>:<fpage>765</fpage>&#x2013;<lpage>771</lpage><pub-id pub-id-type="pmid">7639691</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <label>26.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Natarajan</surname><given-names>K</given-names></name><name><surname>Rajala</surname><given-names>MS</given-names></name><name><surname>Chodosh</surname><given-names>J</given-names></name></person-group>
+<year>2003</year>
+<article-title>Corneal IL-8 expression following adenovirus infection is mediated by c-Src activation in human corneal fibroblasts</article-title>. <source>J. Immunol.</source>
+<volume>170</volume>:<fpage>6234</fpage>&#x2013;<lpage>6243</lpage><pub-id pub-id-type="pmid">12794155</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <label>27.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cheresh</surname><given-names>DA</given-names></name><name><surname>Spiro</surname><given-names>RC</given-names></name></person-group>
+<year>1987</year>
+<article-title>Biosynthetic and functional properties of an Arg-Gly-Asp-directed receptor involved in human melanoma cell attachment to vitronectin, fibrinogen, and von Willebrand factor</article-title>. <source>J. Biol. Chem.</source>
+<volume>262</volume>:<fpage>17703</fpage>&#x2013;<lpage>17711</lpage><pub-id pub-id-type="pmid">2447074</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <label>28.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Albinsson</surname><given-names>B</given-names></name><name><surname>Kidd</surname><given-names>AH</given-names></name></person-group>
+<year>1999</year>
+<article-title>Adenovirus type 41 lacks an RGD alpha(v)-integrin binding motif on the penton base and undergoes delayed uptake in A549 cells</article-title>. <source>Virus Res.</source>
+<volume>64</volume>:<fpage>125</fpage>&#x2013;<lpage>136</lpage><pub-id pub-id-type="pmid">10518709</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <label>29.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Davison</surname><given-names>AJ</given-names></name><name><surname>Telford</surname><given-names>EA</given-names></name><name><surname>Watson</surname><given-names>MS</given-names></name><name><surname>McBride</surname><given-names>K</given-names></name><name><surname>Mautner</surname><given-names>V</given-names></name></person-group>
+<year>1993</year>
+<article-title>The DNA sequence of adenovirus type 40</article-title>. <source>J. Mol. Biol.</source>
+<volume>234</volume>:<fpage>1308</fpage>&#x2013;<lpage>1316</lpage><pub-id pub-id-type="pmid">8263936</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <label>30.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Huang</surname><given-names>S</given-names></name><name><surname>Reddy</surname><given-names>V</given-names></name><name><surname>Dasgupta</surname><given-names>N</given-names></name><name><surname>Nemerow</surname><given-names>GR</given-names></name></person-group>
+<year>1999</year>
+<article-title>A single amino acid in the adenovirus type 37 fiber confers binding to human conjunctival cells</article-title>. <source>J. Virol.</source>
+<volume>73</volume>:<fpage>2798</fpage>&#x2013;<lpage>2802</lpage><pub-id pub-id-type="pmid">10074127</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <label>31.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ujfalusi</surname><given-names>MJ</given-names></name><name><surname>Kidd</surname><given-names>AH</given-names></name><name><surname>Schoub</surname><given-names>BD</given-names></name></person-group>
+<year>1984</year>
+<article-title>EM study of fastidious adenovirus type 40 replication in vitro</article-title>. <source>Arch. Virol.</source>
+<volume>79</volume>:<fpage>307</fpage>&#x2013;<lpage>309</lpage><pub-id pub-id-type="pmid">6696637</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <label>32.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Burckhardt</surname><given-names>CJ</given-names></name><name><surname>Suomalainen</surname><given-names>M</given-names></name><name><surname>Schoenenberger</surname><given-names>P</given-names></name><name><surname>Boucke</surname><given-names>K</given-names></name><name><surname>Hemmi</surname><given-names>S</given-names></name><name><surname>Greber</surname><given-names>UF</given-names></name></person-group>
+<year>2011</year>
+<article-title>Drifting motions of the adenovirus receptor CAR and immobile integrins initiate virus uncoating and membrane lytic protein exposure</article-title>. <source>Cell Host Microbe</source>
+<volume>10</volume>:<fpage>105</fpage>&#x2013;<lpage>117</lpage><pub-id pub-id-type="pmid">21843868</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <label>33.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nakano</surname><given-names>MY</given-names></name><name><surname>Boucke</surname><given-names>K</given-names></name><name><surname>Suomalainen</surname><given-names>M</given-names></name><name><surname>Stidwill</surname><given-names>RP</given-names></name><name><surname>Greber</surname><given-names>UF</given-names></name></person-group>
+<year>2000</year>
+<article-title>The first step of adenovirus type 2 disassembly occurs at the cell surface, independently of endocytosis and escape to the cytosol</article-title>. <source>J. Virol.</source>
+<volume>74</volume>:<fpage>7085</fpage>&#x2013;<lpage>7095</lpage><pub-id pub-id-type="pmid">10888649</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <label>34.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Al Qurashi</surname><given-names>YM</given-names></name><name><surname>Alkhalaf</surname><given-names>MA</given-names></name><name><surname>Lim</surname><given-names>L</given-names></name><name><surname>Guiver</surname><given-names>M</given-names></name><name><surname>Cooper</surname><given-names>RJ</given-names></name></person-group>
+<year>2012</year>
+<article-title>Sequencing and phylogenetic analysis of the hexon, fiber, and penton regions of adenoviruses isolated from AIDS patients</article-title>. <source>J. Med. Virol.</source>
+<volume>84</volume>:<fpage>1157</fpage>&#x2013;<lpage>1165</lpage><pub-id pub-id-type="pmid">22711343</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <label>35.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lauer</surname><given-names>KP</given-names></name><name><surname>Llorente</surname><given-names>I</given-names></name><name><surname>Blair</surname><given-names>E</given-names></name><name><surname>Seto</surname><given-names>J</given-names></name><name><surname>Krasnov</surname><given-names>V</given-names></name><name><surname>Purkayastha</surname><given-names>A</given-names></name><name><surname>Ditty</surname><given-names>SE</given-names></name><name><surname>Hadfield</surname><given-names>TL</given-names></name><name><surname>Buck</surname><given-names>C</given-names></name><name><surname>Tibbetts</surname><given-names>C</given-names></name><name><surname>Seto</surname><given-names>D</given-names></name></person-group>
+<year>2004</year>
+<article-title>Natural variation among human adenoviruses: genome sequence and annotation of human adenovirus serotype 1</article-title>. <source>J. Gen. Virol.</source>
+<volume>85</volume>:<fpage>2615</fpage>&#x2013;<lpage>2625</lpage><pub-id pub-id-type="pmid">15302955</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <label>36.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Larkin</surname><given-names>MA</given-names></name><name><surname>Blackshields</surname><given-names>G</given-names></name><name><surname>Brown</surname><given-names>NP</given-names></name><name><surname>Chenna</surname><given-names>R</given-names></name><name><surname>McGettigan</surname><given-names>PA</given-names></name><name><surname>McWilliam</surname><given-names>H</given-names></name><name><surname>Valentin</surname><given-names>F</given-names></name><name><surname>Wallace</surname><given-names>IM</given-names></name><name><surname>Wilm</surname><given-names>A</given-names></name><name><surname>Lopez</surname><given-names>R</given-names></name><name><surname>Thompson</surname><given-names>JD</given-names></name><name><surname>Gibson</surname><given-names>TJ</given-names></name><name><surname>Higgins</surname><given-names>DG</given-names></name></person-group>
+<year>2007</year>
+<article-title>Clustal W and Clustal X version 2.0</article-title>. <source>Bioinformatics</source>
+<volume>23</volume>:<fpage>2947</fpage>&#x2013;<lpage>2948</lpage><pub-id pub-id-type="pmid">17846036</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <label>37.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Brudno</surname><given-names>M</given-names></name><name><surname>Do</surname><given-names>CB</given-names></name><name><surname>Cooper</surname><given-names>GM</given-names></name><name><surname>Kim</surname><given-names>MF</given-names></name><name><surname>Davydov</surname><given-names>E</given-names></name><name><surname>NISC</surname></name><collab>Comparative Sequencing Program</collab><name><surname>Green</surname><given-names>ED</given-names></name><name><surname>Sidow</surname><given-names>A</given-names></name><name><surname>Batzoglou</surname><given-names>S</given-names></name><name><surname>Batzoglou</surname><given-names>S</given-names></name></person-group>
+<year>2003</year>
+<article-title>Lagan and multi-Lagan: efficient tools for large-scale multiple alignment of genomic DNA</article-title>. <source>Genome Res.</source>
+<volume>13</volume>:<fpage>721</fpage>&#x2013;<lpage>731</lpage><pub-id pub-id-type="pmid">12654723</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <label>38.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mayor</surname><given-names>C</given-names></name><name><surname>Brudno</surname><given-names>M</given-names></name><name><surname>Schwartz</surname><given-names>JR</given-names></name><name><surname>Poliakov</surname><given-names>A</given-names></name><name><surname>Rubin</surname><given-names>EM</given-names></name><name><surname>Frazer</surname><given-names>KA</given-names></name><name><surname>Pachter</surname><given-names>LS</given-names></name><name><surname>Dubchak</surname><given-names>I</given-names></name></person-group>
+<year>2000</year>
+<article-title>VISTA: visualizing global DNA sequence alignments of arbitrary length</article-title>. <source>Bioinformatics</source>
+<volume>16</volume>:<fpage>1046</fpage>&#x2013;<lpage>1047</lpage><pub-id pub-id-type="pmid">11159318</pub-id></mixed-citation>
+      </ref>
+      <ref id="B39">
+        <label>39.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Frazer</surname><given-names>KA</given-names></name><name><surname>Pachter</surname><given-names>L</given-names></name><name><surname>Poliakov</surname><given-names>A</given-names></name><name><surname>Rubin</surname><given-names>EM</given-names></name><name><surname>Dubchak</surname><given-names>I</given-names></name></person-group>
+<year>2004</year>
+<article-title>VISTA: computational tools for comparative genomics</article-title>. <source>Nucleic Acids Res.</source>
+<volume>32</volume>:<fpage>W273</fpage>&#x2013;<lpage>W279</lpage><pub-id pub-id-type="pmid">15215394</pub-id></mixed-citation>
+      </ref>
+      <ref id="B40">
+        <label>40.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Robinson</surname><given-names>CM</given-names></name><name><surname>Shariati</surname><given-names>F</given-names></name><name><surname>Zaitshik</surname><given-names>J</given-names></name><name><surname>Gillaspy</surname><given-names>AF</given-names></name><name><surname>Dyer</surname><given-names>DW</given-names></name><name><surname>Chodosh</surname><given-names>J</given-names></name></person-group>
+<year>2009</year>
+<article-title>Human adenovirus type 19: genomic and bioinformatics analysis of a keratoconjunctivitis isolate</article-title>. <source>Virus Res.</source>
+<volume>139</volume>:<fpage>122</fpage>&#x2013;<lpage>126</lpage><pub-id pub-id-type="pmid">19000724</pub-id></mixed-citation>
+      </ref>
+      <ref id="B41">
+        <label>41.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tamura</surname><given-names>K</given-names></name><name><surname>Dudley</surname><given-names>J</given-names></name><name><surname>Nei</surname><given-names>M</given-names></name><name><surname>Kumar</surname><given-names>S</given-names></name></person-group>
+<year>2007</year>
+<article-title>MEGA4: molecular evolutionary genetics analysis (MEGA) software version 4.0</article-title>. <source>Mol. Biol. Evol.</source>
+<volume>24</volume>:<fpage>1596</fpage>&#x2013;<lpage>1599</lpage><pub-id pub-id-type="pmid">17488738</pub-id></mixed-citation>
+      </ref>
+      <ref id="B42">
+        <label>42.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lole</surname><given-names>KS</given-names></name><name><surname>Bollinger</surname><given-names>RC</given-names></name><name><surname>Paranjape</surname><given-names>RS</given-names></name><name><surname>Gadkari</surname><given-names>D</given-names></name><name><surname>Kulkarni</surname><given-names>SS</given-names></name><name><surname>Novak</surname><given-names>NG</given-names></name><name><surname>Ingersoll</surname><given-names>R</given-names></name><name><surname>Sheppard</surname><given-names>HW</given-names></name><name><surname>Ray</surname><given-names>SC</given-names></name></person-group>
+<year>1999</year>
+<article-title>Full-length human immunodeficiency virus type 1 genomes from subtype C-infected seroconverters in India, with evidence of intersubtype recombination</article-title>. <source>J. Virol.</source>
+<volume>73</volume>:<fpage>152</fpage>&#x2013;<lpage>160</lpage><pub-id pub-id-type="pmid">9847317</pub-id></mixed-citation>
+      </ref>
+      <ref id="B43">
+        <label>43.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kiefer</surname><given-names>F</given-names></name><name><surname>Arnold</surname><given-names>K</given-names></name><name><surname>K&#xFC;nzli</surname><given-names>M</given-names></name><name><surname>Bordoli</surname><given-names>L</given-names></name><name><surname>Schwede</surname><given-names>T</given-names></name></person-group>
+<year>2009</year>
+<article-title>The SWISS-MODEL Repository and associated resources</article-title>. <source>Nucleic Acids Res.</source>
+<volume>37</volume>:<fpage>D387</fpage>&#x2013;<lpage>D392</lpage><pub-id pub-id-type="pmid">18931379</pub-id></mixed-citation>
+      </ref>
+      <ref id="B44">
+        <label>44.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Arnold</surname><given-names>K</given-names></name><name><surname>Bordoli</surname><given-names>L</given-names></name><name><surname>Kopp</surname><given-names>J</given-names></name><name><surname>Schwede</surname><given-names>T</given-names></name></person-group>
+<year>2006</year>
+<article-title>The SWISS-MODEL workspace: a web-based environment for protein structure homology modelling</article-title>. <source>Bioinformatics</source>
+<volume>22</volume>:<fpage>195</fpage>&#x2013;<lpage>201</lpage><pub-id pub-id-type="pmid">16301204</pub-id></mixed-citation>
+      </ref>
+      <ref id="B45">
+        <label>45.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Burmeister</surname><given-names>WP</given-names></name><name><surname>Guilligay</surname><given-names>D</given-names></name><name><surname>Cusack</surname><given-names>S</given-names></name><name><surname>Wadell</surname><given-names>G</given-names></name><name><surname>Arnberg</surname><given-names>N</given-names></name></person-group>
+<year>2004</year>
+<article-title>Crystal structure of species D adenovirus fiber knobs and their sialic acid binding sites</article-title>. <source>J. Virol.</source>
+<volume>78</volume>:<fpage>7727</fpage>&#x2013;<lpage>7736</lpage><pub-id pub-id-type="pmid">15220447</pub-id></mixed-citation>
+      </ref>
+      <ref id="B46">
+        <label>46.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pettersen</surname><given-names>EF</given-names></name><name><surname>Goddard</surname><given-names>TD</given-names></name><name><surname>Huang</surname><given-names>CC</given-names></name><name><surname>Couch</surname><given-names>GS</given-names></name><name><surname>Greenblatt</surname><given-names>DM</given-names></name><name><surname>Meng</surname><given-names>EC</given-names></name><name><surname>Ferrin</surname><given-names>TE</given-names></name></person-group>
+<year>2004</year>
+<article-title>UCSF Chimera&#x2014;a visualization system for exploratory research and analysis</article-title>. <source>J. Comput. Chem.</source>
+<volume>25</volume>:<fpage>1605</fpage>&#x2013;<lpage>1612</lpage><pub-id pub-id-type="pmid">15264254</pub-id></mixed-citation>
+      </ref>
+      <ref id="B47">
+        <label>47.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Leopold</surname><given-names>PL</given-names></name><name><surname>Ferris</surname><given-names>B</given-names></name><name><surname>Grinberg</surname><given-names>I</given-names></name><name><surname>Worgall</surname><given-names>S</given-names></name><name><surname>Hackett</surname><given-names>NR</given-names></name><name><surname>Crystal</surname><given-names>RG</given-names></name></person-group>
+<year>1998</year>
+<article-title>Fluorescent virions: dynamic tracking of the pathway of adenoviral gene transfer vectors in living cells</article-title>. <source>Hum. Gene Ther.</source>
+<volume>9</volume>:<fpage>367</fpage>&#x2013;<lpage>378</lpage><pub-id pub-id-type="pmid">9508054</pub-id></mixed-citation>
+      </ref>
+      <ref id="B48">
+        <label>48.</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Robinson</surname><given-names>CM</given-names></name><name><surname>Rajaiya</surname><given-names>J</given-names></name><name><surname>Zhou</surname><given-names>X</given-names></name><name><surname>Singh</surname><given-names>G</given-names></name><name><surname>Dyer</surname><given-names>DW</given-names></name><name><surname>Chodosh</surname><given-names>J</given-names></name></person-group>
+<year>2011</year>
+<article-title>The E3 CR1-gamma gene in human adenoviruses associated with epidemic keratoconjunctivitis</article-title>. <source>Virus Res.</source>
+<volume>160</volume>:<fpage>120</fpage>&#x2013;<lpage>127</lpage><pub-id pub-id-type="pmid">21683743</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

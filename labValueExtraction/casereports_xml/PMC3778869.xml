@@ -1,0 +1,2175 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Neuroimage</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Neuroimage</journal-id>
+      <journal-title-group>
+        <journal-title>Neuroimage</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1053-8119</issn>
+      <issn pub-type="epub">1095-9572</issn>
+      <publisher>
+        <publisher-name>Academic Press</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">22634857</article-id>
+      <article-id pub-id-type="pmc">3778869</article-id>
+      <article-id pub-id-type="publisher-id">S1053-8119(12)00541-1</article-id>
+      <article-id pub-id-type="doi">10.1016/j.neuroimage.2012.05.053</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Dynamic Causal Modelling of epileptic seizure propagation pathways: A combined EEG&#x2013;fMRI study</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Murta</surname>
+            <given-names>Teresa</given-names>
+          </name>
+          <xref rid="af0005" ref-type="aff">a</xref>
+          <xref rid="af0010" ref-type="aff">b</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Leal</surname>
+            <given-names>Alberto</given-names>
+          </name>
+          <xref rid="af0015" ref-type="aff">c</xref>
+          <xref rid="af0020" ref-type="aff">d</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Garrido</surname>
+            <given-names>Marta I.</given-names>
+          </name>
+          <xref rid="af0025" ref-type="aff">e</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Figueiredo</surname>
+            <given-names>Patr&#xED;cia</given-names>
+          </name>
+          <email>patricia.figueiredo@ist.utl.pt</email>
+          <xref rid="af0005" ref-type="aff">a</xref>
+          <xref rid="af0010" ref-type="aff">b</xref>
+          <xref rid="cr0005" ref-type="corresp">&#x204E;</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="af0005"><label>a</label>Department of Bioengineering, Instituto Superior T&#xE9;cnico, Technical University of Lisbon, Lisbon, Portugal</aff>
+      <aff id="af0010"><label>b</label>Institute for Systems and Robotics, Lisbon, Portugal</aff>
+      <aff id="af0015"><label>c</label>Centro de Investiga&#xE7;&#xE3;o e Interven&#xE7;&#xE3;o Social, Lisbon, Portugal</aff>
+      <aff id="af0020"><label>d</label>Department of Neurophysiology, Centro Hospitalar Psiqui&#xE1;trico de Lisboa, Lisbon, Portugal</aff>
+      <aff id="af0025"><label>e</label>Wellcome Centre for Neuroimaging, UCL, UK</aff>
+      <author-notes>
+        <corresp id="cr0005"><label>&#x204E;</label>Corresponding author at: Institute for Systems and Robotics, Department of Bioengineering, Instituto Superior T&#xE9;cnico, Av. Rovisco Pais, 1, 1049&#x2010;001 Lisboa, Portugal. Fax: +&#xA0;351 218418291. <email>patricia.figueiredo@ist.utl.pt</email></corresp>
+      </author-notes>
+      <pub-date pub-type="pmc-release">
+        <day>1</day>
+        <month>9</month>
+        <year>2012</year>
+      </pub-date>
+      <!-- PMC Release delay is 0 months and 0 days and was based on <pub-date
+						pub-type="ppub">.-->
+      <pub-date pub-type="ppub">
+        <month>9</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>62</volume>
+      <issue>3</issue>
+      <fpage>1634</fpage>
+      <lpage>1642</lpage>
+      <history>
+        <date date-type="accepted">
+          <day>21</day>
+          <month>5</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2012 Elsevier Inc.</copyright-statement>
+        <copyright-year>2012</copyright-year>
+        <copyright-holder>Elsevier Inc.</copyright-holder>
+        <license xlink:href="https://creativecommons.org/licenses/by/3.0/">
+          <license-p>Open Access under <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</ext-link> license</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Simultaneous EEG&#x2013;fMRI offers the possibility of non-invasively studying the spatiotemporal dynamics of epileptic activity propagation from the focus towards an extended brain network, through the identification of the haemodynamic correlates of ictal electrical discharges. In epilepsy associated with hypothalamic hamartomas (HH), seizures are known to originate in the HH but different propagation pathways have been proposed. Here, Dynamic Causal Modelling (DCM) was employed to estimate the seizure propagation pathway from fMRI data recorded in a HH patient, by testing a set of clinically plausible network connectivity models of discharge propagation. The model consistent with early propagation from the HH to the temporal&#x2013;occipital lobe followed by the frontal lobe was selected as the most likely model to explain the data. Our results demonstrate the applicability of DCM to investigate patient-specific effective connectivity in epileptic networks identified with EEG&#x2013;fMRI. In this way, it is possible to study the propagation pathway of seizure activity, which has potentially great impact in the decision of the surgical approach for epilepsy treatment.</p>
+      </abstract>
+      <abstract abstract-type="graphical">
+        <title>Highlights</title>
+        <p>&#x25BA; Seizure EEG&#x2013;fMRI data of a hypothalamic hamartoma epileptic patient was analysed. &#x25BA; Two competing hypotheses for seizure propagation pathways were tested. &#x25BA; DCM was used to estimate all plausible connectivity models of seizure propagation. &#x25BA; Bayesian model selection yielded a model consistent with previous evidence. &#x25BA; This study provides the first application of DCM to EEG&#x2013;fMRI data of human seizures.</p>
+      </abstract>
+      <kwd-group>
+        <title>Keywords</title>
+        <kwd>Epilepsy</kwd>
+        <kwd>Seizure</kwd>
+        <kwd>EEG&#x2013;fMRI</kwd>
+        <kwd>DCM</kwd>
+        <kwd>Effective connectivity</kwd>
+        <kwd>Hypothalamic hamartoma</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="s0005">
+      <title>Introduction</title>
+      <p>Hypothalamic hamartomas (HH) are benign brain tumours located near the hypothalamus. Epileptic patients with HHs often experience gelastic or dacrystic seizures, which typically involve sudden bursts of energy in the form of laughing or weeping, not accompanied by the usual emotional sense of amusement or sadness, respectively (<xref rid="bb0015" ref-type="bibr">Berkovic et al., 1988</xref>). Previous studies have pointed towards HHs as the source of pathological activity (<xref rid="bb0040 bb0080 bb0110 bb0125 bb0165 bb0180" ref-type="bibr">DiFazio and Davis, 2000; Fukuda et al., 1999; Kahane et al., 2003; Kuzniecky et al., 1997; Munari et al., 1995; Palmini et al., 2005</xref>). The complete control of seizures and improvement on behavioural disturbances can be achieved by resecting the HH, which is a reasonable choice compared to the relatively severe evolution of medically-treated HH associated epilepsy (<xref rid="bb0015 bb0215" ref-type="bibr">Berkovic et al., 1988; Tassinari et al., 1997</xref>). In an unsuccessful HH resection, the interruption of seizure propagation through disconnection of the underlying pathways is an alternative surgical approach (<xref rid="bb0050" ref-type="bibr">Fohlen et al., 2003</xref>). However, the exact pathway is not known in general and it must be investigated in each patient.</p>
+      <p>Two alternative seizure propagation pathways have previously been described in HH patients: through the left fornix to the temporal lobe (<xref rid="bb0140" ref-type="bibr">Leal et al., 2003</xref>), or through the mammillo&#x2013;thalamo&#x2013;cingulate pathway to the frontal lobe (<xref rid="bb0110" ref-type="bibr">Kahane et al., 2003</xref>). The existence of these two pathways was proposed in one study, based on the observation of a consistent clinical and neurophysiologic pattern of either temporal or frontal lobe cortical secondary involvement, depending on whether the HH is connected to the mammillary bodies (temporal lobe cases) or to the medial hypothalamus (frontal lobe cases) (<xref rid="bb0140" ref-type="bibr">Leal et al., 2003</xref>). Another study reporting depth electrode recordings found an early propagation from the HH to the cingulate gyrus, probably mediated by the mammillo&#x2013;thalamo&#x2013;cingulate pathway (<xref rid="bb0110" ref-type="bibr">Kahane et al., 2003</xref>). These results would therefore be consistent with a frontal lobe pattern and associated propagation pathway. In contrast, in the study of a patient with a giant HH, an event-related synchronization/desynchronization (ERS/ERD) analysis of the electroencephalogram (EEG) suggested propagation from the HH directly to the left hippocampus and occipital lobe, and only later to the left cingulate gyrus and dorsal&#x2013;lateral frontal lobe (<xref rid="bb0135" ref-type="bibr">Leal et al., 2009</xref>). This case study would therefore be consistent with a temporal lobe pattern and associated propagation pathway.</p>
+      <p>Simultaneous EEG correlated functional magnetic resonance imaging (EEG&#x2013;fMRI) recordings have been successfully used to localise epileptic brain networks, through the identification of the blood oxygenation level dependent (BOLD) correlates of interictal (between seizures) and ictal (during seizures) electrical discharges (<xref rid="bb0045 bb0090 bb0200" ref-type="bibr">Donaire et al., 2009; Gotman et al., 2006; Salek-Haddadi et al., 2002</xref>). Characterisation of the BOLD signal spatial&#x2013;temporal dynamics during seizures can be important for the identification of the epileptic focus and the direction of information flow within the network of functionally connected brain areas (<xref rid="bb0045 bb0210 bb0230" ref-type="bibr">Donaire et al., 2009; Szaflarski et al., 2010; Tyvaert et al., 2009</xref>). Dynamic Causal Modelling (DCM) is a biophysically informed framework suitable to study the influence that a neural system exerts over another (<xref rid="bb0060" ref-type="bibr">Friston et al., 1998</xref>). In the formulation of DCM for fMRI (<xref rid="bb0065" ref-type="bibr">Friston et al., 2003</xref>), the measured brain responses are integrated into a generative model that incorporates a dynamic model of interacting cortical regions, and a forward model of how the neuronal activity is transformed into the measured haemodynamic response. Non-biophysically inspired methodologies based on General Linear Modelling (GLM) have also been adopted to study seizure dynamics (<xref rid="bb0045 bb0210 bb0230" ref-type="bibr">Donaire et al., 2009; Szaflarski et al., 2010; Tyvaert et al., 2009</xref>).</p>
+      <p>In an outstanding study, <xref rid="bb0030" ref-type="bibr">David et al. (2008)</xref> employed DCM to study the propagation of excitation in a genetic rat model of absence epilepsy from EEG-correlated fMRI data, and compared the results with direct measures derived from subsequent intracerebral EEG recordings in regions strongly activated in fMRI. DCM was able to correctly predict the neural driver of generalized spike-and-wave discharges, despite considerable differences between haemodynamic delays among brain regions. So far, this work is the most direct experimental assessment of the validity of DCM for inferring network structure from fMRI data. Only two studies have previously employed DCM to study the dynamics of epileptic activity based on simultaneous EEG&#x2013;fMRI recordings of human patients (<xref rid="bb0100 bb0235" ref-type="bibr">Hamandi et al., 2008; Vaudano et al., 2009</xref>). In both studies, interictal activity was recorded and DCM was employed to identify the epileptic focus, through the comparison of competing connectivity models with different neural drivers. To the best of our knowledge, DCM has not been previously used to study seizure propagation in humans.</p>
+      <p>In this paper, we aimed to investigate the seizure propagation pathway in a medication-refractory epileptic patient with a giant HH using connectivity measures obtained from EEG-correlated fMRI data. DCM was applied and two competing hypotheses of seizure propagation were compared in terms of their capability to explain the data. A General Linear Model (GLM) methodology based on analysing the data at different time lags relative to the seizure onset was also employed.</p>
+    </sec>
+    <sec sec-type="methods" id="s0010">
+      <title>Methods</title>
+      <sec id="s0015">
+        <title>Patient</title>
+        <sec id="s0020">
+          <title>General clinical characterisation</title>
+          <p>Our study focused on a patient with a giant HH undergoing pre-surgical evaluation in the scope of the Epilepsy Surgery Program of Hospital Egas Moniz, Lisbon (see <xref rid="bb0135" ref-type="bibr">Leal et al., 2009</xref> for a related case report). The patient was a 2-year old boy whose first seizure occurred before the first year of life. His seizure semiology consists in motor arrest, rhythmic eyelid movements, fearful face, and occasional laughter. Seizures last less than 20&#xA0;s and have a frequency of more than 50 daily. Background desynchronization, rhythmic spikes in left occipital lobe and later build up of rhythmic spikes in the left frontal lobe are characteristic of his ictal EEG recordings. Normal background with focal slow activity associated with abundant spikes over left occipital lobe is characteristic of his interictal EEG recordings. The patient was submitted to a two-stage HH disconnection. One year after the surgery, the frequency of seizures was reduced to 1&#x2013;3 daily.</p>
+        </sec>
+        <sec id="s0025">
+          <title>Seizure propagation pathway hypotheses</title>
+          <p>We assumed that the epileptic focus was known to be the HH (a well established finding in the HH literature and also in this case) and aimed to test the two previously proposed seizure propagation hypotheses: (I) from HH to the temporal&#x2013;occipital, posterior region (PR) through the left fornix and from here to the frontal, anterior region (AR) through the left cingulate fasciculus (<italic>HH</italic> to <italic>PR</italic> to <italic>AR</italic>); and (II) from HH to the frontal, anterior region (AR) through the mammillo&#x2013;thalamo&#x2013;cingulate pathway and from here to the temporal&#x2013;occipital, posterior region (PR) through the cingulate gyrus (<italic>HH to AR to PR</italic>).</p>
+        </sec>
+      </sec>
+      <sec id="s0030">
+        <title>EEG&#x2013;fMRI acquisition</title>
+        <p>The patient underwent a 1-hour simultaneous EEG&#x2013;fMRI recording on a 1.5T GE Cvi/NVi MRI scanner. Six functional BOLD sequences were acquired using echo planar imaging (EPI) (TE/TR&#xA0;=&#xA0;50/2275&#xA0;ms, voxel size 3.75&#xA0;&#xD7;&#xA0;3.75&#xA0;&#xD7;&#xA0;5&#xA0;mm<sup>3</sup>), each comprising 154 brain volumes (approximately 6&#xA0;min), 150 of which were analysed after removal of the first 4. A structural T<sub>1</sub>-weighted image was also acquired using a 3D SPGR sequence for subsequent image registration.</p>
+        <p>The EEG was recorded using a 37-channel system (Maglink, Neuroscan, Charlotte, USA), with a sampling rate of 1&#xA0;kHz and processed using a low-pass filter set at 70&#xA0;Hz. Light anaesthesia using 1% sevoflurane (Abbott Laboratories, Abbott Park, IL, USA) was applied through a mask, in accordance to the MRI centre protocol for small children and uncooperative patients. A 5-minutes EEG was also recorded outside the scanner and before anaesthesia.</p>
+        <p>The EEG recordings inside the scanner were processed using the Scan 4.3 software (Maglink, Neuroscan, Charllote, USA) for removal of bad channels and artefact correction. These recordings were compared with the ones outside the scanner (<xref rid="f0005" ref-type="fig">Fig.1</xref>) for cross-validation, and the ictal events were then identified by visual inspection of the artefact-corrected recordings. The EEG recordings of the seizure inside the scanner are not exactly identical to the ones recorded outside the scanner. However, we have evidence that all of the patient's seizures are similar and therefore the discrepancies likely explained by contamination with scanner artefact. Two seizures occurred (6.8 to 9.1&#xA0;s durations) in BOLD <italic>Sequence 1</italic> and five seizures occurred (9.1 to 18.2&#xA0;s durations) in BOLD <italic>Sequence 2</italic>.</p>
+      </sec>
+      <sec id="s0035">
+        <title>Seizure-related haemodynamic changes</title>
+        <p>Pre-processing of BOLD data was performed using FSL (<ext-link ext-link-type="uri" xlink:href="http://www.fmrib.ox.ac.uk/fsl/">www.fmrib.ox.ac.uk/fsl/</ext-link>) and included: motion correction; slice timing correction; non-brain removal; spatial smoothing (8&#xA0;mm FWHM Gaussian kernel); and high-pass temporal filtering (100&#xA0;s cut-off).</p>
+        <p>The GLM analysis was performed using SPM8 (<ext-link ext-link-type="uri" xlink:href="http://www.fil.ion.ucl.ac.uk/spm/software/spm8/">www.fil.ion.ucl.ac.uk/spm/software/spm8/</ext-link>). The square waveforms corresponding to the periods of ictal activity were convolved with a single-gamma haemodynamic response function (HRF) to build the regressor describing ictal-related BOLD signal changes. The corresponding temporal derivative was also considered as a regressor and motion parameters were further added as regressors of no interest. The GLM parameters were estimated using classical restricted maximum likelihood (ReML) estimation (<xref rid="bb0070" ref-type="bibr">Friston et al., 2002</xref>). A t-contrast for the ictal regressor was used to identify significant positive BOLD signal changes correlated with the ictal events. A fixed effects (FFX) high-level analysis was performed on the two data sequences. The resulting statistical parametric maps (SPMs) were thresholded at p&#xA0;&lt;&#xA0;0.001, uncorrected, and clusters with a minimum of 8 contiguous voxels were considered. The high-level SPMs are shown in <xref rid="f0010" ref-type="fig">Fig.&#xA0;2</xref>.</p>
+      </sec>
+      <sec id="s0040">
+        <title>Definition of anatomical regions of interest (ROIs)</title>
+        <p>In order to test the competing hypotheses of seizure propagation, and based on the regions found to exhibit seizure-related BOLD signal increases, three anatomical regions of interest (ROIs) were defined, as highlighted in <xref rid="f0010" ref-type="fig">Fig.&#xA0;2</xref>: the hypothalamic hamartoma (HH); an anterior region corresponding to the left frontal lobe (AR); and a posterior region including the left hippocampus, left occipital lobe, precuneus and posterior division of cingulate gyrus (PR).</p>
+        <p>The PR and AR anatomical masks were obtained in standard MNI space (<xref rid="bb0130" ref-type="bibr">Lancaster et al., 2007</xref>) using the atlases included in the FSL tool. The HH, a focal malformation, was visually identified on the high-resolution T<sub>1</sub>-weighted image and the associated anatomic mask was manually designed to specifically match its form. The <italic>Sequence 1</italic> images were registered to the <italic>Sequence 2</italic> images, and these were registered to the T<sub>1</sub>-weighted image, which was in turn registered to the MNI standard space. All registrations were performed with the FSL tool FLIRT (<xref rid="bb0105" ref-type="bibr">Jenkinson and Smith, 2001</xref>). Applying the transformation matrices, the anatomical masks were then registered into the functional imaging space.</p>
+      </sec>
+      <sec id="s0045">
+        <title>DCM analysis</title>
+        <p>A space of sixteen connectivity models describing the two competing hypothesis for seizure propagation (I) and (II) was defined, as shown in <xref rid="f0015" ref-type="fig">Fig.&#xA0;3</xref>.</p>
+        <p>The DCM analysis was performed using the DCM8 module included in SPM8. For this purpose, HH, AR, and PR functional ROIs were defined, for each sequence, based on the intersection of the respective SPMs of seizure-related BOLD increases, with the corresponding anatomical masks. For each ROI, a representative time-series was computed as the first eigenvector of all super-threshold voxel time-series within the ROI, in order to include the functionally relevant voxels.</p>
+        <p>In DCM for fMRI, the neuronal activity in each region, <italic>z</italic>, is described by the state equation:<disp-formula id="fo0010"><label>(1)</label><mml:math id="M1" altimg="si1.gif" overflow="scroll"><mml:mrow><mml:mover accent="true"><mml:mi>z</mml:mi><mml:mo>&#x2D9;</mml:mo></mml:mover><mml:mo mathvariant="monospace">=</mml:mo><mml:mi>A</mml:mi><mml:mi>z</mml:mi><mml:mo mathvariant="monospace">+</mml:mo><mml:mi>&#x3A3;</mml:mi><mml:msub><mml:mi>u</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:msup><mml:mi>B</mml:mi><mml:mi>j</mml:mi></mml:msup><mml:mi>z</mml:mi><mml:mo mathvariant="monospace">+</mml:mo><mml:mi>C</mml:mi><mml:mi>u</mml:mi></mml:mrow></mml:math></disp-formula></p>
+        <p>where <italic>u</italic> is the external input to the region; matrix <italic>A</italic> is the latent connectivity, i.e., the intrinsic coupling in the absence of an extrinsic input; matrices <italic>B</italic><sup><italic>j</italic></sup> represent the modulation of connectivity by the external inputs <italic>u</italic><sub><italic>j</italic></sub>, i.e., the change in coupling induced by the <italic>j</italic><sup><italic>th</italic></sup> input; and <italic>C</italic> embodies the influence of the extrinsic input to the region on its neuronal activity. In this study, a single driving region (the epileptic focus) was considered in all models, which means that the system's input <italic>u</italic> was exclusively fed to the HH node. The square waveforms corresponding to the periods of ictal activity were used as the system's input. Two possible directionalities were considered for each connection, unidirectional or bidirectional, which yielded a total of four connectivity structures consistent with each seizure propagation hypothesis. For each of these connectivity structures, two types of connectivity models were then considered: the linear models, which had only linear terms (<italic>A</italic> parameters); and the bilinear models, which had linear and bilinear terms (<italic>A</italic> and <italic>B</italic> parameters).</p>
+        <p>Firstly, inference on model structure was performed using Fixed Effects Bayesian Model Selection (FFX BMS) (<xref rid="bb0185" ref-type="bibr">Penny et al., 2004</xref>), in order to compare the individual models over the two BOLD sequences of interest (<italic>Sequence 1</italic> and <italic>Sequence 2</italic>). We used a FFX BMS over the two BOLD sequences because all seizures from the patient are comparable and therefore we expect that the model generating the data in each sequence should be the same. The model's Free Energy, F, a lower bound of the model's log-evidence, accounting for model complexity as well as data fit, was used to compare the likelihood of the different models to explain the data. Relative log-evidences, or differences in F, were converted into model/family posterior probabilities, p, indicating that the respective model/family has a probability p of being the best model/family explaining the data amongst all considered. Evidence was &#x201C;strong&#x201D; if p&#xA0;&gt;&#xA0;0.95, which stands for a difference in F greater than 3, and &#x201C;positive&#x201D; if 0.75&#xA0;&lt;&#xA0;p&#xA0;&lt;&#xA0;0.95, which stands for a difference of F between 1 and 3 (<xref rid="bb0185 bb0190" ref-type="bibr">Penny et al., 2004, 2010</xref>).</p>
+        <p>Secondly, inference on the optimal model parameters was performed. The structure of the connectivity model was assumed to be the same for both sequences and a FFX analysis of the model parameter estimates was performed using Bayesian Parameters Averaging (BPA) (<xref rid="bb0005 bb0085 bb0170" ref-type="bibr">Acs and Greenlee, 2008; Garrido et al., 2007; Neumann and Lohmann, 2003</xref>). Additionally, a FFX family inference analysis (<xref rid="bb0190" ref-type="bibr">Penny et al., 2010</xref>) was performed by grouping the models according to: 1) propagation hypothesis (HH to PR to AR; HH to AR to PR); 2) latent connectivity scheme (each family included the pair of linear and bilinear models with the same scheme of latent connectivity); 3) connection directionality (both unidirectional; one uni- and one bi-directional; both bidirectional); and 4) model's linearity (linear; bilinear).</p>
+        <p>The choice of SPM significance threshold level is not straightforward since there is no universally accepted p value in the literature (the same applies to multiple testing control: FDR, FWE, etc.). On the other hand, the identification of the seizure onset by visual inspection of the EEG is subjective. In order to investigate the sensitivity of the DCM analysis to both factors, additional DCM analyses were performed by varying each of these parameters: three p values (0.05, 0.01, and 0.005) and nine seizure onset times (obtained by shifting the seizure regressor originally defined by the neurophysiologist by multiples of TR between &#x2212;&#xA0;4TR and +&#xA0;4TR).</p>
+      </sec>
+      <sec id="s0050">
+        <title>Lagged GLM analysis</title>
+        <p>The Lagged GLM methodology consisted on analysing the data at different time lags relative to the seizure event (<xref rid="bb0210" ref-type="bibr">Szaflarski et al., 2010</xref>). A total of twenty-two GLMs were defined by shifting the reference seizure regressor, originally defined by the clinical neurophysiologist, by time lags ranging from &#x2212;&#xA0;11.4 to +&#xA0;12.5&#xA0;s in steps of 1.14&#xA0;s (TR/2). Therefore, each GLM yielded the haemodynamic changes associated with a particular time lag relative to seizure onset. Following the methodology as originally proposed (<xref rid="bb0210" ref-type="bibr">Szaflarski et al., 2010</xref>), no further correction of voxel p values were considered to account for the 22 GLMs because no quantitative voxelwise comparisons between maps were being made. In order to observe the relative temporal evolution of haemodynamic changes in each ROI, the signal change associated with the regressor of interest was computed as a function of time lag and averaged within each anatomic ROI.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="s0055">
+      <title>Results</title>
+      <p>The SPM of seizure-related BOLD signal positive changes obtained with the conventional GLM analysis is first presented, followed by the results obtained by the DCM and Lagged GLM analyses.</p>
+      <sec id="s0060">
+        <title>Seizure-related haemodynamic changes</title>
+        <p>The map of seizure-related BOLD signal increases obtained with a FFX conventional GLM high-level analysis is shown in <xref rid="f0010" ref-type="fig">Fig.&#xA0;2</xref>. The movement was negligible in both sequences (absolute mean displacements of 0.05&#xA0;mm). Significant BOLD increases were observed in the HH, precuneus, posterior division of cingulate gyrus, left hippocampus and contiguous left occipital lobe (corresponding to a posterior region, PR), and left frontal lobe (corresponding to an anterior region, AR). The location of seizure-related haemodynamic positive changes was consistent across the two data sequences. A more extensive thresholded SPM was obtained for <italic>Sequence 2</italic> (932 voxels), compared to <italic>Sequence 1</italic> (372 voxels), probably as a consequence of its greater number of ictal events, resulting in higher signal-to-noise ratio (SNR) and detection sensitivity for BOLD increases.</p>
+      </sec>
+      <sec id="s0065">
+        <title>DCM analysis</title>
+        <p>The FFX BMS results (models relative log-evidences) are presented in <xref rid="f0020" ref-type="fig">Fig.&#xA0;4</xref>. The winning model is model 12, with a log-evidence difference relative to any one of the remaining models greater than 2.99. This indicates that model 12 is, with &#x201C;positive&#x201D; evidence, the best model explaining the data. The individual DCM results, obtained by performing BMS using each one of the two sequences separately, were also in agreement, although not conclusive (p&#xA0;=&#xA0;0.33 for sequence 1 and p&#xA0;=&#xA0;0.74 for sequence 2). The winning model is consistent with the seizure propagation hypothesis (I), which indicates that the epileptic activity propagates from the HH to the left hippocampus and contiguous left occipital lobe, to the precuneus and the posterior division of cingulate gyrus (comprising PR), reaching only afterwards the left frontal region (comprising AR). Moreover, the winning model has forward and backward connections between HH and PR and between PR and AR, and these are modulated by seizure activity through bilinear connectivity terms.</p>
+        <p>The winning model FFX BPA results are shown in <xref rid="f0025" ref-type="fig">Fig.&#xA0;5</xref>. With respect to the connectivity modulation by seizure activity, characterised by the bilinear <italic>B</italic> parameters, the values of the average parameters suggested that the strength of connections is enhanced in the directions HH to PR and PR to AR, and it is diminished in the opposite directions PR to HH and AR to PR. The posterior mean values of the estimated haemodynamic parameters, obtained for the winning model in each ROI and BOLD sequence, are presented in <xref rid="t0005" ref-type="table">Table&#xA0;1</xref>. No important differences can be found in the values of each parameter across ROIs or sequences.</p>
+        <p>FFX family inference results are presented in <xref rid="f0030" ref-type="fig">Fig.&#xA0;6</xref>. In terms of the propagation hypothesis, the FFX family inference results support with &#x201C;strong&#x201D; evidence that models corresponding to the HH to PR to AR hypothesis (p&#xA0;=&#xA0;0.99) are more likely than models corresponding to the HH to AR to PR hypothesis (p&#xA0;=&#xA0;0.01). In terms of the latent connectivity structure, the results support, with &#x201C;strong&#x201D; evidence, that models 4 (linear) and 12 (bilinear), which have both forward and backward connections and correspond to propagation hypothesis (I), are more likely (p&#xA0;=&#xA0;0.95) than models 8 (linear) and 16 (bilinear), which have both forward and backward connections and correspond to propagation hypothesis (II) (p&#xA0;=&#xA0;0.01), as well as all of the remaining models. In terms of connection directionality, the family of models with both bidirectional connections was found to be more likely (p&#xA0;=&#xA0;0.98) than the families with either only one or no bidirectional connections. Finally, in terms of model linearity, the results provided &#x201C;strong&#x201D; evidence for the family of bilinear models (p&#xA0;=&#xA0;0.95) relative to its linear counterpart, suggesting that seizure activity modulates the strength of connections between network nodes.</p>
+        <p>The sensitivity study showed that the DCM results were consistent across SPM thresholding p values and seizure onset times, systematically yielding model 12 as the best model explaining the data. As expected, weaker evidence, and eventually inconclusive results or no seizure-related BOLD increases, were obtained as the onset was shifted away from the central onset time. Furthermore, we found that the HRF curves obtained with the haemodynamic parameters estimated for the winning model did not vary significantly across ROIs.</p>
+      </sec>
+      <sec id="s0070">
+        <title>Lagged GLM analysis</title>
+        <p>Lagged GLM results are presented in <xref rid="f0035" ref-type="fig">Fig.&#xA0;7</xref>. The time lag at which the mean signal change reached its maximum was shorter for HH compared to PR, suggesting propagation of pathological activity from HH to PR. However, the peak of the mean signal change in AR was not clear, due to the presence of two local maxima, and hence propagation to AR could not be disentangled. Moreover, the AR and PR peaks are not distinguishable in time, since the maximum signal change in each ROI is not significantly different from its value at the position of the other ROI's peak (p&#xA0;&gt;&#xA0;0.3).</p>
+        <p>The effect of ROI size was investigated by reducing the size of the ROIs through the intersection of the thresholded SPMs (p&#xA0;&lt;&#xA0;0.001, uncorrected, 8 voxels extent) with the anatomical regions. We found that the lagged GLM results are also inconclusive using the smaller ROIs (results not shown).</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="s0075">
+      <title>Discussion</title>
+      <p>Our work represents the first application of DCM to investigate seizure propagation pathways based on EEG-correlated fMRI recorded in humans. Two competing hypotheses for the causal chain leading to epileptic activity propagation in a patient with a giant HH were tested, based on clinically plausible scenarios previously described in the literature. The DCM results yielded propagation from the HH to a temporal&#x2013;occipital, posterior region followed by a frontal, anterior region as the most likely model explaining the data.</p>
+      <p>Although the seizure focus may be the question of interest in most EEG-correlated fMRI studies of epileptic patients, this is not the case in HHs. In fact, the association between gelastic seizures and HHs is one of the strongest anatomical&#x2013;clinical correlations in the field of human epilepsy. This focus location in the HH was also in agreement with the clinical history of our patient, as well as with the seizure reduction observed one year after the surgical two-stage hamartoma disconnection. The question of interest in the case of HHs is concerned with the pathway of seizure propagation from the HH to an extended brain network. Two alternative pathways have been shown in different patients, probably as a function of the exact location of the hamartoma within the hypothalamus (<xref rid="bb0110 bb0140" ref-type="bibr">Kahane et al., 2003; Leal et al., 2003</xref>). The identification of the specific propagation model in individual patients would open surgical alternatives targeting the underlying propagation pathways, instead of the removal of the hamartoma in high-risk patients.</p>
+      <p>The dynamics of the epileptic activity propagation experienced by our patient was previously investigated through an ERS/ERD analysis of the EEG signal recorded during seizures outside the fMRI scanner (<xref rid="bb0135" ref-type="bibr">Leal et al., 2009</xref>). The involvement of the frontal lobe was always limited to the late phases of the EEG seizure event and was always preceded by left side occipital&#x2013;temporal spike activity. It was then proposed that antidromic conduction in the fornix formation projecting to the posterior hippocampus could explain the focal slowing and abundant interictal spike activity over the left occipital and posterior temporal lobes. The left cingulate fasciculus would then conduct activity from posterior temporal to frontal lobe, overlapping the Papez circuit. These findings are therefore consistent with the results we obtained with the DCM analysis of EEG-correlated fMRI data regarding the pathway for seizure propagation, suggesting that the mammillo&#x2013;hippocampus&#x2013;cingulated pathway (hypothesis (I)) provides a better explanation of the data than the alternative mammillo&#x2013;thalamo&#x2013;cingulate pathway (hypothesis (II)).</p>
+      <p>By considering the pool of all plausible latent connectivity schemes within the three node network associated with seizure-related BOLD signal changes, our results indicated that both forward and backward connections played a role in seizure propagation. Besides having bidirectional connections, the winning model integrated bilinear terms describing the modulation of connectivity by seizure activity. Specifically, Bayesian parameter averaging showed an increase in the strength of forward connections and a decrease in the strength of backward connections during seizures. An intensification of the strength of forward connections could be related with seizure propagation through reduction in forward inhibition (<xref rid="bb0125" ref-type="bibr">Kuzniecky et al., 1997</xref>). It should be noted however that, in the DCM for fMRI formulation used here, the coupling parameters should be interpreted as a lumped measure of effective connectivity, and not as separate excitatory and inhibitory connections. This is in contrast with what happens in DCM for ERPs (M/EEG) (<xref rid="bb0035" ref-type="bibr">David et al., 2006</xref>), where excitatory and inhibitory connections are explicitly modelled, as well as in a recent development of DCM for fMRI (<xref rid="bb0160" ref-type="bibr">Marreiros et al., 2008</xref>).</p>
+      <p>In general, model misspecification is a potential problem in a DCM approach because this was designed to test a restricted space of connectivity models (<xref rid="bb0205" ref-type="bibr">Stephan et al., 2010</xref>). Bayesian model selection is strongly hypothesis-driven and the choice of the models to be tested should therefore be strictly based on the postulated hypotheses. Indeed, since no specified model is ever exactly correct (perfect fit to data), the purpose of model selection is to determine which model, from a set of plausible alternatives, best explains the data, i.e., represents the best balance between accuracy and complexity (<xref rid="bb0195" ref-type="bibr">Pitt and Myung, 2002</xref>). The choice of a set of plausible models is therefore critical, and it should be made so as to answer a specific research question. If an implausible model is included in the model space, it is possible that it is found to be the best at explaining the data; however, this result is not useful to answer the question at hand (<xref rid="bb0245" ref-type="bibr">Friston et al., 2011a</xref>). Importantly, all the models must have equal a priori probabilities (or otherwise known ones) in order to ensure BMS validity, since this is based on comparing the likelihood ratio under flat priors on model probabilities (i.e., <inline-formula><mml:math id="M2" altimg="si2.gif" overflow="scroll"><mml:mrow><mml:mi>p</mml:mi><mml:mo mathvariant="monospace" stretchy="true">(</mml:mo><mml:msub><mml:mi>m</mml:mi><mml:mn mathvariant="monospace">1</mml:mn></mml:msub><mml:mo mathvariant="monospace" stretchy="true">)</mml:mo><mml:mo mathvariant="monospace">=</mml:mo><mml:mi>p</mml:mi><mml:mo mathvariant="monospace" stretchy="true">(</mml:mo><mml:msub><mml:mi>m</mml:mi><mml:mn mathvariant="monospace">2</mml:mn></mml:msub><mml:mo mathvariant="monospace" stretchy="true">)</mml:mo></mml:mrow></mml:math></inline-formula>. The Bayes factor is defined as:<disp-formula id="fo0005"><mml:math id="M3" altimg="si3.gif" overflow="scroll"><mml:mrow><mml:mfrac><mml:mrow><mml:mi>p</mml:mi><mml:mo mathvariant="monospace" stretchy="true">(</mml:mo><mml:msub><mml:mi>m</mml:mi><mml:mn mathvariant="monospace">1</mml:mn></mml:msub><mml:mo mathvariant="monospace" stretchy="true">|</mml:mo><mml:mi>y</mml:mi><mml:mo mathvariant="monospace" stretchy="true">)</mml:mo></mml:mrow><mml:mrow><mml:mi>p</mml:mi><mml:mo mathvariant="monospace" stretchy="true">(</mml:mo><mml:msub><mml:mi>m</mml:mi><mml:mn mathvariant="monospace">2</mml:mn></mml:msub><mml:mo mathvariant="monospace" stretchy="true">|</mml:mo><mml:mi>y</mml:mi><mml:mo mathvariant="monospace" stretchy="true">)</mml:mo></mml:mrow></mml:mfrac><mml:mo mathvariant="monospace">=</mml:mo><mml:mfrac><mml:mrow><mml:mi>p</mml:mi><mml:mo mathvariant="monospace" stretchy="true">(</mml:mo><mml:mi>y</mml:mi><mml:mo mathvariant="monospace" stretchy="true">|</mml:mo><mml:msub><mml:mi>m</mml:mi><mml:mn mathvariant="monospace">1</mml:mn></mml:msub><mml:mo mathvariant="monospace" stretchy="true">)</mml:mo><mml:mi>p</mml:mi><mml:mo mathvariant="monospace" stretchy="true">(</mml:mo><mml:msub><mml:mi>m</mml:mi><mml:mn mathvariant="monospace">1</mml:mn></mml:msub><mml:mo mathvariant="monospace" stretchy="true">)</mml:mo></mml:mrow><mml:mrow><mml:mi>p</mml:mi><mml:mo mathvariant="monospace" stretchy="true">(</mml:mo><mml:mi>y</mml:mi><mml:mo mathvariant="monospace" stretchy="true">|</mml:mo><mml:msub><mml:mi>m</mml:mi><mml:mn mathvariant="monospace">2</mml:mn></mml:msub><mml:mo mathvariant="monospace" stretchy="true">)</mml:mo><mml:mi>p</mml:mi><mml:mo mathvariant="monospace" stretchy="true">(</mml:mo><mml:msub><mml:mi>m</mml:mi><mml:mn mathvariant="monospace">2</mml:mn></mml:msub><mml:mo mathvariant="monospace" stretchy="true">)</mml:mo></mml:mrow></mml:mfrac></mml:mrow></mml:math></disp-formula></p>
+      <p>where <italic>y</italic> are the data and <italic>m</italic><sub>1,&#xA0;2</sub> are the competing models 1 and 2. In our case, we wished to find out which one of the two previously proposed pathways was most likely to explain the seizure propagation in this patient. The two competing propagation hypotheses were therefore strongly physiologically sound and with the same a priori likelihood, and the specified three node network allowed us to test them. All the plausible models consistent with each of these two hypotheses were included in the tested model space.</p>
+      <p>The spatial definition of ROIs is also an important step. The connectivity network must be carefully defined based on a clear hypothesis. In our case, the ROIs were defined so as to fully partition the SPMs of seizure-related positive BOLD signal changes, according to the three pre-specified anatomical nodes. Although the identified brain network could be sub-divided in different ways (and eventually into different numbers of ROIs), and additional regions could have a profound impact on the winning model, we believe that the three ROIs considered here clearly allow us to test the two propagation hypotheses.</p>
+      <p>The generalisability of the proposed DCM approach for the study of seizure propagation strongly depends on the size of the brain network of interest and hence the feasibility of testing all possible connectivity models. This problem is common to applications of DCM in general and recent developments have been proposed to address it (<xref rid="bb0075" ref-type="bibr">Friston et al., 2011b</xref>). Moreover, we believe that such a DCM methodology should be well suited whenever well-defined a priori hypotheses regarding seizure propagation are available, which may be used to restrict the number of competing models to a tractable set.</p>
+      <p>One related concern with DCM approaches is that, if the model space does not include the true model, then the results might be biased towards the most complex models. Although the winning model in our case was in fact the most complex model, we have tested all possible, biologically motivated seizure propagation models within the network of seizure-related haemodynamic changes, and model complexity was taken into account in the Bayesian model selection methodology employed here. In any case, regardless of model complexity, the family of models consistent with propagation hypothesis (I) is more likely than the corresponding family consistent with propagation hypothesis (II). Also, the winning model, model 12, is more likely than the model of equal complexity corresponding to the opposite propagation hypothesis, model 16. This constitutes our main result.</p>
+      <p>One limitation of our study is that the implementation of DCM used presumes ictal activity as an extrinsic input, which is obviously not true for such an endogenous type of activity. The recent developments in stochastic DCM (<xref rid="bb0075 bb0150" ref-type="bibr">Friston et al., 2011b; Li et al., 2011</xref>) may provide more suitable approaches for modelling spontaneous epileptic activity. Nevertheless, the system's input can be conceived as a time marker of an initial event taking place within the focus and which perturbs the postulated network. Similarly to previous studies (<xref rid="bb0030 bb0100 bb0235" ref-type="bibr">David et al., 2008; Hamandi et al., 2008; Vaudano et al., 2009</xref>), we have therefore defined the system's input as a square waveform corresponding to the periods of ictal activity identified on the EEG (<xref rid="bb0115 bb0225" ref-type="bibr">Kobayashi et al., 2006; Tyvaert et al., 2008</xref>). Despite being the most common approach, this single-block scalp EEG derived fMRI model has its limitations (<xref rid="bb0220" ref-type="bibr">Thornton et al., 2010</xref>). The seizure onset is not always accurately detected by scalp EEG and may be delayed (<xref rid="bb0020" ref-type="bibr">Binnie and Stefan, 1999</xref>) and a single-block almost certainly does not represent dynamic processes such as seizures (<xref rid="bb0255" ref-type="bibr">Niedermeyer, 1999</xref>). Due to the shape of the input function (blocks), our analysis focused on the dynamics at the onset/offset of ictal events and is not designed to account for the dynamics of seizure evolution, i.e., between onset and offset.</p>
+      <p>The Lagged-GLM results suggested that epileptic activity propagated from the hamartoma to the posterior region, but it was not possible to clearly identify the temporal relation between the BOLD increases in these regions and the frontal lobe. Our results add to previous reports using similar approaches for the identification of the dynamics of seizure propagation (<xref rid="bb0045 bb0210 bb0230" ref-type="bibr">Donaire et al., 2009; Szaflarski et al., 2010; Tyvaert et al., 2009</xref>). The Lagged-GLM methodology has the advantage of accounting for some uncertainty in the definition of the beginning/end of the ictal events, as well as for a potential non-causal relationship between the EEG and BOLD events (<xref rid="bb0095" ref-type="bibr">Grouiller et al., 2010</xref>). However, this methodology lacks a supporting, biophysically informed connectivity model and may be strongly biased by differences in the haemodynamics of different brain regions (see <xref rid="bb0030" ref-type="bibr">David et al., 2008</xref>). In our study, we verified that the HRF curves estimated within the DCM framework showed no significant differences across ROIs. Otherwise, the HRF could have been estimated in each ROI and deconvolved from the respective BOLD time-series, before inclusion in the GLM (<xref rid="bb0030" ref-type="bibr">David et al., 2008</xref>).</p>
+      <p>It should be noted that it is not expectable that the DCM and time-lagged analyses should necessarily agree. In fact, the two methodologies approach causality in two distinct ways. While time-lagged analyses are based on temporal precedence, in which causes precede their consequences, DCM relies on both temporal precedence and physical influence, in which changing causes changes their consequences (<xref rid="bb0275" ref-type="bibr">Valdes-Sosa et al., 2011</xref>). Moreover, it has recently been suggested that time-lag based methods may not be adequate for the study of effective connectivity in fMRI (<xref rid="bb0260" ref-type="bibr">Smith et al., 2011</xref>). Therefore, we do not believe that our lagged GLM analysis should be considered as a standard against which the DCM analysis is compared.</p>
+      <p>Other fMRI data studies have used different methods to model ictal events and study the propagation of epileptic activity. <xref rid="bb0230" ref-type="bibr">Tyvaert et al. (2009)</xref> employed a unique GLM embodying a set of successive gamma function regressors, in order to test the contribution of different brain regions at different periods of time during the seizure. <xref rid="bb0045" ref-type="bibr">Donaire et al. (2009)</xref> divided each seizure epoch into blocks shifted relative to each other and analysed the BOLD changes between two consecutive blocks. <xref rid="bb0010" ref-type="bibr">Bai et al. (2010)</xref> analysed mean fMRI time courses to find maximal signal changes relative to seizure onset across the brain, which allowed them to characterise a complex sequence of early and late fMRI changes not detectable by conventional analysis. <xref rid="bb0145" ref-type="bibr">LeVan et al. (2010)</xref> decomposed the fMRI data by independent component analysis (ICA) to circumvent the predefinition of an HRF and subsequently estimated the HRF peak time in each identified region, in order to distinguish early responses in the onset zone from later propagated activity.</p>
+      <p>One concern in our study arises from the fact that light anaesthesia with sevoflurane was applied during the simultaneous EEG&#x2013;fMRI recording. This procedure was not expected to reduce the epileptic activity significantly (<xref rid="bb0120" ref-type="bibr">Komatsu et al., 1994</xref>). Indeed the interictal and ictal events identified on the EEG acquired under light anaesthesia were comparable, in morphology and topography, to identical events identified on the EEG acquired without anaesthesia. This observation indicates that the seizures recorded using EEG&#x2013;fMRI corresponded to the patient's typical epileptic activity and not to any pharmacologically induced abnormal rhythms. As far as the BOLD effect is concerned, previous studies measuring cerebral blood flow (CBF) and EEG simultaneously in the rat brain found a significant effect of anaesthesia on the HRF (<xref rid="bb0265 bb0270" ref-type="bibr">Martin et al., 2006; Masamoto et al., 2009</xref>). In our study, the regional HRFs were estimated within the DCM framework and therefore our results should not be affected by such effect. Moreover, <xref rid="bb0250" ref-type="bibr">Liu et al. (2011)</xref> found that spontaneous CBF/BOLD fluctuations under unconscious burst-suppression anaesthesia conditions originated mainly from underlying neural activity. In our study, no significant changes in the EEG base rhythms were observed due to the light anaesthesia, and therefore the measured BOLD effects are not expected to be affected by it. One other limitation of the present study was the small number of seizures recorded. In fact, both GLM and DCM analyses were more sensitive for the sequence with more seizures, indicating that the number of interesting events is important.</p>
+      <p>In conclusion, our study indicates that DCM may offer important insights into the identification of patient-specific seizure propagation pathways for pre-surgical evaluation, when a clear set of competing hypotheses exists. Further validation of this methodology could be achieved using more direct techniques such as intracranial recordings (<xref rid="bb0025 bb0240" ref-type="bibr">Carmichael et al., 2010; Vulliemoz et al., 2011</xref>).</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="bb0005">
+        <element-citation publication-type="journal" id="rf0005">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Acs</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Greenlee</surname>
+              <given-names>M.W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Connectivity modulation of early visual processing areas during covert and overt tracking tasks</article-title>
+          <source>Neuroimage</source>
+          <volume>41</volume>
+          <issue>2</issue>
+          <year>2008</year>
+          <fpage>380</fpage>
+          <lpage>388</lpage>
+          <pub-id pub-id-type="pmid">18387824</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0010">
+        <element-citation publication-type="journal" id="rf0010">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bai</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Matthew</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Rachel</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Michiro</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Marisa</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Clemente</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Matthew</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Edward</surname>
+              <given-names>J.N.</given-names>
+            </name>
+            <name>
+              <surname>Robert</surname>
+              <given-names>T.C.</given-names>
+            </name>
+            <name>
+              <surname>Hal</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic time course of typical childhood absence seizures: EEG, behavior, and functional magnetic resonance imaging</article-title>
+          <source>J. Neurosci.</source>
+          <volume>30</volume>
+          <issue>17</issue>
+          <year>2010</year>
+          <fpage>5884</fpage>
+          <lpage>5893</lpage>
+          <pub-id pub-id-type="pmid">20427649</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0015">
+        <element-citation publication-type="journal" id="rf0015">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Berkovic</surname>
+              <given-names>S.F.</given-names>
+            </name>
+            <name>
+              <surname>Andermann</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Melanson</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Ethier</surname>
+              <given-names>R.E.</given-names>
+            </name>
+            <name>
+              <surname>Feindel</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Gloor</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Hypothalamic hamartomas and ictal laughter: evolution of a characteristic epileptic syndrome and diagnostic value of magnetic resonance imaging</article-title>
+          <source>Ann. Neurol.</source>
+          <volume>23</volume>
+          <issue>5</issue>
+          <year>1988</year>
+          <fpage>429</fpage>
+          <lpage>439</lpage>
+          <pub-id pub-id-type="pmid">3389755</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0020">
+        <element-citation publication-type="journal" id="rf0020">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Binnie</surname>
+              <given-names>C.D.</given-names>
+            </name>
+            <name>
+              <surname>Stefan</surname>
+              <given-names>H.</given-names>
+            </name>
+          </person-group>
+          <article-title>Modern electroencephalography: its role in epilepsy management</article-title>
+          <source>Clin. Neurophysiol.</source>
+          <volume>110</volume>
+          <issue>10</issue>
+          <year>1999</year>
+          <fpage>1671</fpage>
+          <lpage>1697</lpage>
+          <pub-id pub-id-type="pmid">10574283</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0025">
+        <element-citation publication-type="journal" id="rf0025">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carmichael</surname>
+              <given-names>D.W.</given-names>
+            </name>
+            <name>
+              <surname>Thornton</surname>
+              <given-names>J.S.</given-names>
+            </name>
+            <name>
+              <surname>Rodionov</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Thornton</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>McEvoy</surname>
+              <given-names>A.W.</given-names>
+            </name>
+            <name>
+              <surname>Ordidge</surname>
+              <given-names>R.J.</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>P.J.</given-names>
+            </name>
+            <name>
+              <surname>Lemieux</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Feasibility of simultaneous intracranial EEG&#x2013;fMRI in humans: a safety study</article-title>
+          <source>Neuroimage</source>
+          <volume>49</volume>
+          <issue>1</issue>
+          <year>2010</year>
+          <fpage>379</fpage>
+          <lpage>390</lpage>
+          <pub-id pub-id-type="pmid">19651221</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0035">
+        <element-citation publication-type="journal" id="rf0035">
+          <person-group person-group-type="author">
+            <name>
+              <surname>David</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Kiebel</surname>
+              <given-names>S.J.</given-names>
+            </name>
+            <name>
+              <surname>Harrison</surname>
+              <given-names>L.M.</given-names>
+            </name>
+            <name>
+              <surname>Mattout</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Kilner</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic causal modeling of evoked responses in EEG and MEG</article-title>
+          <source>Neuroimage</source>
+          <volume>30</volume>
+          <issue>4</issue>
+          <year>2006</year>
+          <fpage>1255</fpage>
+          <lpage>1272</lpage>
+          <pub-id pub-id-type="pmid">16473023</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0030">
+        <element-citation publication-type="journal" id="rf0030">
+          <person-group person-group-type="author">
+            <name>
+              <surname>David</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Guillemain</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Saillet</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Reyt</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Deransart</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Segebarth</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Depaulis</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Identifying neural drivers with functional MRI: an electrophysiological validation</article-title>
+          <source>PLoS Biol.</source>
+          <volume>6</volume>
+          <issue>12</issue>
+          <year>2008</year>
+          <fpage>2683</fpage>
+          <lpage>2697</lpage>
+          <pub-id pub-id-type="pmid">19108604</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0040">
+        <element-citation publication-type="journal" id="rf0040">
+          <person-group person-group-type="author">
+            <name>
+              <surname>DiFazio</surname>
+              <given-names>M.P.</given-names>
+            </name>
+            <name>
+              <surname>Davis</surname>
+              <given-names>R.G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Utility of early single photon emission computed tomography (SPECT) in neonatal gelastic epilepsy associated with hypothalamic hamartoma</article-title>
+          <source>J. Child Neurol.</source>
+          <volume>15</volume>
+          <issue>6</issue>
+          <year>2000</year>
+          <fpage>414</fpage>
+          <lpage>417</lpage>
+          <pub-id pub-id-type="pmid">10868786</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0045">
+        <element-citation publication-type="journal" id="rf0045">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Donaire</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Bargallo</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Falc&#xF3;n</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Maestro</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Carreno</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Setoain</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Rumi&#xE0;</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Fern&#xE1;ndez</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Pintor</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Boget</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Identifying the structures involved in seizure generation using sequential analysis of ictal-fMRI data</article-title>
+          <source>Neuroimage</source>
+          <volume>47</volume>
+          <issue>1</issue>
+          <year>2009</year>
+          <fpage>173</fpage>
+          <lpage>183</lpage>
+          <pub-id pub-id-type="pmid">19345270</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0050">
+        <element-citation publication-type="journal" id="rf0050">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fohlen</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Lellouch</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Delalande</surname>
+              <given-names>O.</given-names>
+            </name>
+          </person-group>
+          <article-title>Hypothalamic hamartoma with refractory epilepsy: surgical procedures and results in 18 patients</article-title>
+          <source>Epileptic Disord.</source>
+          <volume>5</volume>
+          <issue>4</issue>
+          <year>2003</year>
+          <fpage>267</fpage>
+          <lpage>273</lpage>
+          <pub-id pub-id-type="pmid">14975796</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0060">
+        <element-citation publication-type="journal" id="rf0060">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Fletcher</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Josephs</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Holmes</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Rugg</surname>
+              <given-names>M.D.</given-names>
+            </name>
+            <name>
+              <surname>Turner</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Event-related fMRI: characterizing differential responses</article-title>
+          <source>Neuroimage</source>
+          <volume>7</volume>
+          <issue>1</issue>
+          <year>1998</year>
+          <fpage>30</fpage>
+          <lpage>40</lpage>
+          <pub-id pub-id-type="pmid">9500830</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0070">
+        <element-citation publication-type="journal" id="rf0070">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Penny</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Phillips</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Kiebel</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Hinton</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Ashburner</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Classical and Bayesian inference in neuroimaging: theory</article-title>
+          <source>Neuroimage</source>
+          <volume>16</volume>
+          <issue>2</issue>
+          <year>2002</year>
+          <fpage>465</fpage>
+          <lpage>483</lpage>
+          <pub-id pub-id-type="pmid">12030832</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0065">
+        <element-citation publication-type="journal" id="rf0065">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Harrison</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Penny</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic causal modelling</article-title>
+          <source>Neuroimage</source>
+          <volume>19</volume>
+          <issue>4</issue>
+          <year>2003</year>
+          <fpage>1273</fpage>
+          <lpage>1302</lpage>
+          <pub-id pub-id-type="pmid">12948688</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0245">
+        <element-citation publication-type="journal" id="rf0240">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Daunizeau</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Model selection and gobbledygook: response to Lohmann et al.</article-title>
+          <source>NeuroImage</source>
+          <year>2011</year>
+        </element-citation>
+      </ref>
+      <ref id="bb0075">
+        <element-citation publication-type="journal" id="rf0075">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Daunizeau</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Network discovery with DCM</article-title>
+          <source>Neuroimage</source>
+          <volume>56</volume>
+          <issue>3</issue>
+          <year>2011</year>
+          <fpage>1202</fpage>
+          <lpage>1221</lpage>
+          <pub-id pub-id-type="pmid">21182971</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0080">
+        <element-citation publication-type="journal" id="rf0080">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fukuda</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Kameyama</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Wachi</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Tanaka</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Stereotaxy for hypothalamic hamartoma with intractable gelastic seizures: technical case report</article-title>
+          <source>Neurosurgery</source>
+          <volume>44</volume>
+          <issue>6</issue>
+          <year>1999</year>
+          <fpage>1347</fpage>
+          <lpage>1350</lpage>
+          <pub-id pub-id-type="pmid">10371639</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0085">
+        <element-citation publication-type="journal" id="rf0085">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Garrido</surname>
+              <given-names>M.I.</given-names>
+            </name>
+            <name>
+              <surname>Kilner</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Kiebel</surname>
+              <given-names>S.J.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic causal modelling of evoked potentials: a reproducibility study</article-title>
+          <source>Neuroimage</source>
+          <volume>36</volume>
+          <issue>3</issue>
+          <year>2007</year>
+          <fpage>571</fpage>
+          <lpage>580</lpage>
+          <pub-id pub-id-type="pmid">17478106</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0090">
+        <element-citation publication-type="journal" id="rf0090">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gotman</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Kobayashi</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Bagshaw</surname>
+              <given-names>A.P.</given-names>
+            </name>
+            <name>
+              <surname>B&#xE9;nar</surname>
+              <given-names>C.-G.</given-names>
+            </name>
+            <name>
+              <surname>Dubeau</surname>
+              <given-names>F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Combining EEG and fMRI: a multimodal tool for epilepsy research</article-title>
+          <source>J. Magn. Reson. Imaging</source>
+          <volume>23</volume>
+          <issue>6</issue>
+          <year>2006</year>
+          <fpage>906</fpage>
+          <lpage>920</lpage>
+          <pub-id pub-id-type="pmid">16649203</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0095">
+        <element-citation publication-type="journal" id="rf0095">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grouiller</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Vercueil</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Krainik</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Segebarth</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Kahane</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>David</surname>
+              <given-names>O.</given-names>
+            </name>
+          </person-group>
+          <article-title>Characterization of the hemodynamic modes associated with interictal epileptic activity using a deformable model-based analysis of combined EEG and functional MRI recordings</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <volume>31</volume>
+          <issue>8</issue>
+          <year>2010</year>
+          <fpage>1157</fpage>
+          <lpage>1173</lpage>
+          <pub-id pub-id-type="pmid">20063350</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0100">
+        <element-citation publication-type="journal" id="rf0100">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hamandi</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Powell</surname>
+              <given-names>H.W.R.</given-names>
+            </name>
+            <name>
+              <surname>Laufs</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Symms</surname>
+              <given-names>M.R.</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>G.J.</given-names>
+            </name>
+            <name>
+              <surname>Parker</surname>
+              <given-names>G.J.M.</given-names>
+            </name>
+            <name>
+              <surname>Lemieux</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Duncan</surname>
+              <given-names>J.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Combined EEG&#x2013;fMRI and tractography to visualise propagation of epileptic activity</article-title>
+          <source>J. Neurol. Neurosurg. Psychiatry</source>
+          <volume>79</volume>
+          <issue>5</issue>
+          <year>2008</year>
+          <fpage>594</fpage>
+          <lpage>597</lpage>
+          <pub-id pub-id-type="pmid">18096681</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0105">
+        <element-citation publication-type="journal" id="rf0105">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jenkinson</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>A global optimisation method for robust affine registration of brain images</article-title>
+          <source>Med. Image Anal.</source>
+          <volume>5</volume>
+          <issue>2</issue>
+          <year>2001</year>
+          <fpage>143</fpage>
+          <lpage>156</lpage>
+          <pub-id pub-id-type="pmid">11516708</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0110">
+        <element-citation publication-type="journal" id="rf0110">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kahane</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Ryvlin</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Hoffmann</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Minotti</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Benabid</surname>
+              <given-names>A.L.</given-names>
+            </name>
+          </person-group>
+          <article-title>From hypothalamic hamartoma to cortex: what can be learnt from depth recordings and stimulation?</article-title>
+          <source>Epileptic Disord.</source>
+          <volume>5</volume>
+          <issue>4</issue>
+          <year>2003</year>
+          <fpage>205</fpage>
+          <lpage>217</lpage>
+          <pub-id pub-id-type="pmid">14975789</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0115">
+        <element-citation publication-type="journal" id="rf0115">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kobayashi</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Hawco</surname>
+              <given-names>C.S.</given-names>
+            </name>
+            <name>
+              <surname>Grova</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Dubeau</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Gotman</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Widespread and intense BOLD changes during brief focal electrographic seizures</article-title>
+          <source>Neurology</source>
+          <volume>66</volume>
+          <issue>7</issue>
+          <year>2006</year>
+          <fpage>1049</fpage>
+          <lpage>1055</lpage>
+          <pub-id pub-id-type="pmid">16606918</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0120">
+        <element-citation publication-type="journal" id="rf0120">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Komatsu</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Taie</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Endo</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Fukuda</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Ueki</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Nogaya</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Ogli</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Electrical seizures during sevoflurane anesthesia in two pediatric patients with epilepsy</article-title>
+          <source>Anesthesiology</source>
+          <volume>81</volume>
+          <issue>6</issue>
+          <year>1994</year>
+          <fpage>1535</fpage>
+          <lpage>1537</lpage>
+          <pub-id pub-id-type="pmid">7992923</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0125">
+        <element-citation publication-type="journal" id="rf0125">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kuzniecky</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Guthrie</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Mountz</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Bebin</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Faught</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Gilliam</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>H.G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Intrinsic epileptogenesis of hypothalamic hamartomas in gelastic epilepsy</article-title>
+          <source>Ann. Neurol.</source>
+          <volume>42</volume>
+          <issue>1</issue>
+          <year>1997</year>
+          <fpage>60</fpage>
+          <lpage>67</lpage>
+          <pub-id pub-id-type="pmid">9225686</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0130">
+        <element-citation publication-type="journal" id="rf0130">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lancaster</surname>
+              <given-names>J.L.</given-names>
+            </name>
+            <name>
+              <surname>Tordesillas-Guti&#xE9;rrez</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Martinez</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Salinas</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Evans</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Zilles</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Mazziotta</surname>
+              <given-names>J.C.</given-names>
+            </name>
+            <name>
+              <surname>Fox</surname>
+              <given-names>P.T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Bias between MNI and Talairach coordinates analyzed using the ICBM-152 brain template</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <volume>28</volume>
+          <issue>11</issue>
+          <year>2007</year>
+          <fpage>1194</fpage>
+          <lpage>1205</lpage>
+          <pub-id pub-id-type="pmid">17266101</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0140">
+        <element-citation publication-type="journal" id="rf0140">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leal</surname>
+              <given-names>A.J.R.</given-names>
+            </name>
+            <name>
+              <surname>Moreira</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Robalo</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Ribeiro</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Different electroclinical manifestations of the epilepsy associated with hamartomas connecting to the middle or posterior hypothalamus</article-title>
+          <source>Epilepsia</source>
+          <volume>44</volume>
+          <issue>9</issue>
+          <year>2003</year>
+          <fpage>1191</fpage>
+          <lpage>1195</lpage>
+          <pub-id pub-id-type="pmid">12919391</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0135">
+        <element-citation publication-type="journal" id="rf0135">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leal</surname>
+              <given-names>A.J.R.</given-names>
+            </name>
+            <name>
+              <surname>Monteiro</surname>
+              <given-names>J.P.</given-names>
+            </name>
+            <name>
+              <surname>Secca</surname>
+              <given-names>M.F.</given-names>
+            </name>
+            <name>
+              <surname>Jord&#xE3;o</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional brain mapping of ictal activity in gelastic epilepsy associated with hypothalamic hamartoma: a case report</article-title>
+          <source>Epilepsia</source>
+          <volume>50</volume>
+          <issue>6</issue>
+          <year>2009</year>
+          <fpage>1624</fpage>
+          <lpage>1631</lpage>
+          <pub-id pub-id-type="pmid">19183218</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0145">
+        <element-citation publication-type="journal" id="rf0145">
+          <person-group person-group-type="author">
+            <name>
+              <surname>LeVan</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Tyvaert</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Gotman</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Modulation by EEG features of BOLD responses to interictal epileptiform discharges</article-title>
+          <source>Neuroimage</source>
+          <volume>50</volume>
+          <issue>1</issue>
+          <year>2010</year>
+          <fpage>15</fpage>
+          <lpage>26</lpage>
+          <pub-id pub-id-type="pmid">20026222</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0150">
+        <element-citation publication-type="journal" id="rf0150">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Daunizeau</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Penny</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Generalised filtering and stochastic DCM for fMRI</article-title>
+          <source>Neuroimage</source>
+          <volume>58</volume>
+          <issue>2</issue>
+          <year>2011</year>
+          <fpage>442</fpage>
+          <lpage>457</lpage>
+          <pub-id pub-id-type="pmid">21310247</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0250">
+        <element-citation publication-type="journal" id="rf0245">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>X.-H.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Neural origin of spontaneous hemodynamic fluctuations in rats under burst-suppression anesthesia condition</article-title>
+          <source>Cereb. Cortex (New York, N.Y.: 1991)</source>
+          <volume>21</volume>
+          <issue>2</issue>
+          <year>2011</year>
+          <fpage>374</fpage>
+          <lpage>384</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bb0160">
+        <element-citation publication-type="journal" id="rf0155">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marreiros</surname>
+              <given-names>A.C.</given-names>
+            </name>
+            <name>
+              <surname>Kiebel</surname>
+              <given-names>S.J.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic causal modelling for fMRI: a two-state model</article-title>
+          <source>Neuroimage</source>
+          <volume>39</volume>
+          <issue>1</issue>
+          <year>2008</year>
+          <fpage>269</fpage>
+          <lpage>278</lpage>
+          <pub-id pub-id-type="pmid">17936017</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0265">
+        <element-citation publication-type="journal" id="rf9005">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Martin</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Martindale</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Mayhew</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Haemodynamic and neural responses to hypercapnia in the awake rat</article-title>
+          <source>Eur. J. Neurosci.</source>
+          <volume>24</volume>
+          <issue>9</issue>
+          <year>2006</year>
+          <fpage>2601</fpage>
+          <lpage>2610</lpage>
+          <pub-id pub-id-type="pmid">17100848</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0270">
+        <element-citation publication-type="journal" id="rf9010">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Masamoto</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Fukuda</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Vazquez</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>S.G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dose-dependent effect of isoflurane on neurovascular coupling in rat cerebral cortex</article-title>
+          <source>Eur. J. Neurosci.</source>
+          <volume>30</volume>
+          <issue>2</issue>
+          <year>2009</year>
+          <fpage>242</fpage>
+          <lpage>250</lpage>
+          <pub-id pub-id-type="pmid">19659924</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0165">
+        <element-citation publication-type="journal" id="rf0160">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Munari</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Kahane</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Francione</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Hoffmann</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Tassi</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Cusmai</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Vigevano</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Pasquier</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Betti</surname>
+              <given-names>O.O.</given-names>
+            </name>
+          </person-group>
+          <article-title>Role of the hypothalamic hamartoma in the genesis of gelastic fits (a video&#x2013;stereo-EEG study)</article-title>
+          <source>Electroencephalogr. Clin. Neurophysiol.</source>
+          <volume>95</volume>
+          <issue>3</issue>
+          <year>1995</year>
+          <fpage>154</fpage>
+          <lpage>160</lpage>
+          <pub-id pub-id-type="pmid">7555906</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0170">
+        <element-citation publication-type="journal" id="rf0165">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Neumann</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Lohmann</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Bayesian second-level analysis of functional magnetic resonance images</article-title>
+          <source>Neuroimage</source>
+          <volume>20</volume>
+          <issue>2</issue>
+          <year>2003</year>
+          <fpage>1346</fpage>
+          <lpage>1355</lpage>
+          <pub-id pub-id-type="pmid">14568503</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0255">
+        <element-citation publication-type="book" id="rf0250">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Niedermeyer</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <chapter-title>Abnormal EEG patterns: epileptic and paroxysmal</chapter-title>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Niedermeyer</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Lopes da Silva</surname>
+              <given-names>F.H.</given-names>
+            </name>
+          </person-group>
+          <source>Electroencephalography: Basic Principles, Clinical Applications and Related Fields</source>
+          <edition>4th ed.</edition>
+          <year>1999</year>
+          <publisher-name>Lippincott Williams and Wilkins</publisher-name>
+          <publisher-loc>Baltimore</publisher-loc>
+          <fpage>235</fpage>
+          <lpage>260</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bb0180">
+        <element-citation publication-type="journal" id="rf0175">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Palmini</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Van Paesschen</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Dupont</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Van Laere</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Van Driel</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Status gelasticus after temporal lobectomy: ictal FDG-PET findings and the question of dual pathology involving hypothalamic hamartomas</article-title>
+          <source>Epilepsia</source>
+          <volume>46</volume>
+          <issue>8</issue>
+          <year>2005</year>
+          <fpage>1313</fpage>
+          <lpage>1316</lpage>
+          <pub-id pub-id-type="pmid">16060946</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0185">
+        <element-citation publication-type="journal" id="rf0180">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Penny</surname>
+              <given-names>W.D.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Mechelli</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparing dynamic causal models</article-title>
+          <source>Neuroimage</source>
+          <volume>22</volume>
+          <issue>3</issue>
+          <year>2004</year>
+          <fpage>1157</fpage>
+          <lpage>1172</lpage>
+          <pub-id pub-id-type="pmid">15219588</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0190">
+        <element-citation publication-type="journal" id="rf0185">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Penny</surname>
+              <given-names>W.D.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Daunizeau</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Rosa</surname>
+              <given-names>M.J.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Schofield</surname>
+              <given-names>T.M.</given-names>
+            </name>
+            <name>
+              <surname>Leff</surname>
+              <given-names>A.P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparing families of dynamic causal models</article-title>
+          <source>PLoS Comput. Biol.</source>
+          <volume>6</volume>
+          <issue>3</issue>
+          <year>2010</year>
+        </element-citation>
+      </ref>
+      <ref id="bb0195">
+        <element-citation publication-type="journal" id="rf0190">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pitt</surname>
+              <given-names>M.A.</given-names>
+            </name>
+            <name>
+              <surname>Myung</surname>
+              <given-names>I.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>When a good fit can be bad</article-title>
+          <source>Trends Cogn. Sci.</source>
+          <volume>6</volume>
+          <issue>10</issue>
+          <year>2002</year>
+          <fpage>421</fpage>
+          <lpage>425</lpage>
+          <pub-id pub-id-type="pmid">12413575</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0200">
+        <element-citation publication-type="journal" id="rf0195">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Salek-Haddadi</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Merschhemke</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Lemieux</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Fish</surname>
+              <given-names>D.R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Simultaneous EEG-correlated ictal fMRI</article-title>
+          <source>Neuroimage</source>
+          <volume>16</volume>
+          <issue>1</issue>
+          <year>2002</year>
+          <fpage>32</fpage>
+          <lpage>40</lpage>
+          <pub-id pub-id-type="pmid">11969315</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0260">
+        <element-citation publication-type="journal" id="rf9000">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Smith</surname>
+              <given-names>S.M.</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>K.L.</given-names>
+            </name>
+            <name>
+              <surname>Salimi-Khorshidi</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Webster</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Beckmann</surname>
+              <given-names>C.F.</given-names>
+            </name>
+            <name>
+              <surname>Nichols</surname>
+              <given-names>T.E.</given-names>
+            </name>
+            <name>
+              <surname>Ramsey</surname>
+              <given-names>J.D.</given-names>
+            </name>
+            <name>
+              <surname>Woolrich</surname>
+              <given-names>M.W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Network modelling methods for FMRI</article-title>
+          <source>Neuroimage</source>
+          <volume>54</volume>
+          <issue>2</issue>
+          <year>2011</year>
+          <fpage>875</fpage>
+          <lpage>891</lpage>
+          <pub-id pub-id-type="pmid">20817103</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0205">
+        <element-citation publication-type="journal" id="rf0200">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Penny</surname>
+              <given-names>W.D.</given-names>
+            </name>
+            <name>
+              <surname>Moran</surname>
+              <given-names>R.J.</given-names>
+            </name>
+            <name>
+              <surname>den Ouden</surname>
+              <given-names>H.E.M.</given-names>
+            </name>
+            <name>
+              <surname>Daunizeau</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Ten simple rules for dynamic causal modeling</article-title>
+          <source>Neuroimage</source>
+          <volume>49</volume>
+          <issue>4</issue>
+          <year>2010</year>
+          <fpage>3099</fpage>
+          <lpage>3109</lpage>
+          <pub-id pub-id-type="pmid">19914382</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0210">
+        <element-citation publication-type="journal" id="rf0205">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Szaflarski</surname>
+              <given-names>J.P.</given-names>
+            </name>
+            <name>
+              <surname>DiFrancesco</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Hirschauer</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Banks</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Privitera</surname>
+              <given-names>M.D.</given-names>
+            </name>
+            <name>
+              <surname>Gotman</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Holland</surname>
+              <given-names>S.K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Cortical and subcortical contributions to absence seizure onset examined with EEG/fMRI</article-title>
+          <source>Epilepsy Behav.</source>
+          <volume>18</volume>
+          <issue>4</issue>
+          <year>2010</year>
+          <fpage>404</fpage>
+          <lpage>413</lpage>
+          <pub-id pub-id-type="pmid">20580319</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0215">
+        <element-citation publication-type="book" id="rf0210">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tassinari</surname>
+              <given-names>C.A.</given-names>
+            </name>
+            <name>
+              <surname>Riguzzi</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Rizzi</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Passarelli</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Volpi</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <chapter-title>Gelastic seizures</chapter-title>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Tuxhorn</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Holthausen</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Boenigk</surname>
+              <given-names>H.</given-names>
+            </name>
+          </person-group>
+          <source>Paediatric Epilepsy Syndromes and Their Surgical Treatment</source>
+          <year>1997</year>
+          <publisher-name>John Libbey</publisher-name>
+          <publisher-loc>London</publisher-loc>
+          <fpage>429</fpage>
+          <lpage>446</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bb0220">
+        <element-citation publication-type="journal" id="rf0215">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thornton</surname>
+              <given-names>R.C.</given-names>
+            </name>
+            <name>
+              <surname>Rodionov</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Laufs</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Vulliemoz</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Vaudano</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Carmichael</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Cannadathu</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Imaging haemodynamic changes related to seizures: comparison of EEG-based general linear model, independent component analysis of fMRI and intracranial EEG</article-title>
+          <source>Neuroimage</source>
+          <volume>53</volume>
+          <issue>1</issue>
+          <year>2010</year>
+          <fpage>196</fpage>
+          <lpage>205</lpage>
+          <pub-id pub-id-type="pmid">20570736</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0225">
+        <element-citation publication-type="journal" id="rf0220">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tyvaert</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Hawco</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Kobayashi</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>LeVan</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Dubeau</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Gotman</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Different structures involved during ictal and interictal epileptic activity in malformations of cortical development: an EEG&#x2013;fMRI study</article-title>
+          <source>Brain</source>
+          <volume>131</volume>
+          <issue>8</issue>
+          <year>2008</year>
+          <fpage>2042</fpage>
+          <lpage>2060</lpage>
+          <pub-id pub-id-type="pmid">18669486</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0230">
+        <element-citation publication-type="journal" id="rf0225">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tyvaert</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>LeVan</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Dubeau</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Gotman</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Noninvasive dynamic imaging of seizures in epileptic patients</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <volume>30</volume>
+          <issue>12</issue>
+          <year>2009</year>
+          <fpage>3993</fpage>
+          <lpage>4011</lpage>
+          <pub-id pub-id-type="pmid">19507156</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0275">
+        <element-citation publication-type="journal" id="rf9015">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Valdes-Sosa</surname>
+              <given-names>P.A.</given-names>
+            </name>
+            <name>
+              <surname>Roebroeck</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Daunizeau</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Effective connectivity: influence, causality and biophysical modeling</article-title>
+          <source>Neuroimage</source>
+          <volume>58</volume>
+          <issue>2</issue>
+          <year>2011</year>
+          <fpage>339</fpage>
+          <lpage>361</lpage>
+          <pub-id pub-id-type="pmid">21477655</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0235">
+        <element-citation publication-type="journal" id="rf0230">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vaudano</surname>
+              <given-names>A.E.</given-names>
+            </name>
+            <name>
+              <surname>Laufs</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Kiebel</surname>
+              <given-names>J.J.</given-names>
+            </name>
+            <name>
+              <surname>Carmichael</surname>
+              <given-names>D.W.</given-names>
+            </name>
+            <name>
+              <surname>Hamandi</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Guye</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Thornton</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Causal hierarchy within the thalamo-cortical network in spike and wave discharges</article-title>
+          <source>PLoS One</source>
+          <volume>4</volume>
+          <issue>8</issue>
+          <year>2009</year>
+          <fpage>e6475</fpage>
+          <pub-id pub-id-type="pmid">19649252</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0240">
+        <element-citation publication-type="journal" id="rf0235">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vulliemoz</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Carmichael</surname>
+              <given-names>D.W.</given-names>
+            </name>
+            <name>
+              <surname>Rosenkranz</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Diehl</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Rodionov</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Walker</surname>
+              <given-names>M.C.</given-names>
+            </name>
+            <name>
+              <surname>McEvoy</surname>
+              <given-names>A.W.</given-names>
+            </name>
+            <name>
+              <surname>Lemieux</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Simultaneous intracranial EEG and fMRI of interictal epileptic discharges in humans</article-title>
+          <source>Neuroimage</source>
+          <volume>54</volume>
+          <issue>1</issue>
+          <year>2011</year>
+          <fpage>182</fpage>
+          <lpage>190</lpage>
+          <pub-id pub-id-type="pmid">20708083</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <ack>
+      <title>Acknowledgments</title>
+      <p>We are grateful to Prof. Fernando Lopes da Silva and Prof. Louis Lemieux for helpful comments and suggestions. We acknowledge the <funding-source id="gts0005">Portuguese Science Foundation (FCT)</funding-source> for financial support through Project PTDC/SAU-BEB/65977/2006, Project PTDC/SAU-ENB/112294/2009, the ISR/IST plurianual funding through the <funding-source id="gts0010">PIDDAC Program funds</funding-source>, and the <funding-source id="gts0015">Wellcome Trust</funding-source>.</p>
+    </ack>
+  </back>
+  <floats-group>
+    <fig id="f0005">
+      <label>Fig.&#xA0;1</label>
+      <caption>
+        <p>Typical ictal EEG recordings of the patient, obtained inside (above) and outside (below) the scanner. The ictal event is associated with an early central desynchronization, followed by rhythmic left occipital spikes and the build-up of left frontal spikes at later stages. The two traces are aligned with each other and the arrow indicates the seizure onset.</p>
+      </caption>
+      <graphic xlink:href="gr1"/>
+    </fig>
+    <fig id="f0010">
+      <label>Fig.&#xA0;2</label>
+      <caption>
+        <p>High-level t-map of seizure-related positive BOLD signal changes (cluster of 8 voxel minimum extent, voxel p&#xA0;&lt;&#xA0;0.001, uncorrected) overlaid on the T<sub>1</sub>-weighted structural of the patient. The location of three ROI's (HH, PR and AR) is highlighted with dashed circles. A zoom in is included to better demonstrate the overlap of the t-map with the HH.</p>
+      </caption>
+      <graphic xlink:href="gr2"/>
+    </fig>
+    <fig id="f0015">
+      <label>Fig.&#xA0;3</label>
+      <caption>
+        <p>Model space tested with DCM. Each row contains eight models consistent with each propagation hypothesis. Each column corresponds to a different latent connectivity structure. For each latent connectivity structure, the linear model is presented with solid arrows and the bilinear model is presented with solid arrows (intrinsic connections) and dashed arrows (connections' modulation). Seizure activity is fed into the HH network node.</p>
+      </caption>
+      <graphic xlink:href="gr3"/>
+    </fig>
+    <fig id="f0020">
+      <label>Fig.&#xA0;4</label>
+      <caption>
+        <p>DCM Bayesian model selection results. Relative log-evidence for the sixteen models (<xref rid="f0015" ref-type="fig">Fig.&#xA0;3</xref>) compared using FFX BMS. Models are grouped according to the propagation hypothesis, as indicated, and are separated into linear (left) and bilinear (right) models.</p>
+      </caption>
+      <graphic xlink:href="gr4"/>
+    </fig>
+    <fig id="f0025">
+      <label>Fig.&#xA0;5</label>
+      <caption>
+        <p>DCM Bayesian parameter averaging results. Averaged parameters obtained by FFX BPA for model 12, the best model according to FFX BMS. Averaged modulation parameters are indicated with dashed arrows and both intrinsic connectivity and the averaged direct input parameters are indicated with solid arrows.</p>
+      </caption>
+      <graphic xlink:href="gr5"/>
+    </fig>
+    <fig id="f0030">
+      <label>Fig.&#xA0;6</label>
+      <caption>
+        <p>DCM FFX family inference results, according to: seizure propagation hypothesis; latent connectivity structure; connections directionality and model linearity.</p>
+      </caption>
+      <graphic xlink:href="gr6"/>
+    </fig>
+    <fig id="f0035">
+      <label>Fig.&#xA0;7</label>
+      <caption>
+        <p>Lagged GLM analysis results. Normalised mean signal change values within each ROI as function of time lag (seizure onset displacement). Error bars represent standard error of the mean.</p>
+      </caption>
+      <graphic xlink:href="gr7"/>
+    </fig>
+    <table-wrap id="t0005" position="float">
+      <label>Table&#xA0;1</label>
+      <caption>
+        <p>Posterior mean values of the estimated haemodynamic parameters obtained for the winning model in each ROI and BOLD sequence.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="left">BOLD</th>
+            <th align="left">ROI</th>
+            <th colspan="6" align="left">Haemodynamic parameters<xref rid="tf0005" ref-type="table-fn">a</xref><hr/></th>
+          </tr>
+          <tr>
+            <th align="left">&#x3BA;</th>
+            <th align="left">&#x3B3;</th>
+            <th align="left">&#x3C4;</th>
+            <th align="left">&#x3B1;</th>
+            <th align="left">E<sub>0</sub></th>
+            <th align="left">&#x3F5;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left">Sequence 1</td>
+            <td align="left">HH</td>
+            <td align="char">0.671</td>
+            <td align="char">0.413</td>
+            <td align="char">1.024</td>
+            <td align="char">0.323</td>
+            <td align="char">0.341</td>
+            <td align="char">&#x2212;&#xA0;0.026</td>
+          </tr>
+          <tr>
+            <td align="left">PR</td>
+            <td align="char">0.607</td>
+            <td align="char">0.419</td>
+            <td align="char">0.898</td>
+            <td align="char">0.318</td>
+            <td align="char">0.338</td>
+            <td align="char">0.013</td>
+          </tr>
+          <tr>
+            <td align="left">AR</td>
+            <td align="char">0.636</td>
+            <td align="char">0.417</td>
+            <td align="char">0.890</td>
+            <td align="char">0.317</td>
+            <td align="char">0.337</td>
+            <td align="char">0.026</td>
+          </tr>
+          <tr>
+            <td align="left">Sequence 2</td>
+            <td align="left">HH</td>
+            <td align="char">0.651</td>
+            <td align="char">0.415</td>
+            <td align="char">0.977</td>
+            <td align="char">0.321</td>
+            <td align="char">0.340</td>
+            <td align="char">&#x2212;&#xA0;0.011</td>
+          </tr>
+          <tr>
+            <td align="left">PR</td>
+            <td align="char">0.626</td>
+            <td align="char">0.426</td>
+            <td align="char">0.868</td>
+            <td align="char">0.318</td>
+            <td align="char">0.337</td>
+            <td align="char">0.013</td>
+          </tr>
+          <tr>
+            <td align="left">AR</td>
+            <td align="char">0.612</td>
+            <td align="char">0.424</td>
+            <td align="char">0.849</td>
+            <td align="char">0.317</td>
+            <td align="char">0.336</td>
+            <td align="char">0.026</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="tf0005">
+          <label>a</label>
+          <p>&#x3BA; &#x2014; rate constant of the vasodilatory signal decay, &#x3B3; &#x2014; rate constant for auto-regulatory feedback by blood flow, &#x3C4; &#x2014; transit time, &#x3B1; &#x2014; Grubb's vessel stiffness exponent, E<sub>0</sub> &#x2014; capillary resting net oxygen extraction, &#x3F5; &#x2014; ratio of intra-extravascular BOLD signal.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>
+</pmc-articleset>

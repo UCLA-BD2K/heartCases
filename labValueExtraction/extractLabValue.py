@@ -106,7 +106,7 @@ stop_words = set(stopwords.words('english'))
 def RepresentsNum(s):
     """
     Determines whether or not a string represents a pure numeric value.
-    
+
     """
     try:
         float(s.replace('/', '').replace(',', '')) #remove any slashes and commas
@@ -147,9 +147,9 @@ def features_for_training(value, unit):
 def most_similar_to_substance_center(word_list):
     """
     Finds the most similar word to the substance_center vector from a list of words.
-    
+
     "word_list" is a list of words that contains the most similar word to substance_center.
-    
+
     """
     similarities = np.array([])
     for each in word_list:
@@ -163,11 +163,11 @@ def get_lab_values(case_report):
     """
     Returns a list of lab values, their units, and the substances they describe.
     Prints "No lab values found in report" if no lab values are found.
-    
+
     Input "case_report" is an article in a string format or a dictionary with 
     key 'PMID' containing the PubMed ID and key 'text' containing the full_text 
     in string format.
-    
+
     """
     is_dict = isinstance(case_report, dict)     # Check the format of the input
     if is_dict:
@@ -175,7 +175,7 @@ def get_lab_values(case_report):
         report = case_report['text']
     else:
         report = case_report
-    
+
     lab_values = []     # Initialize the object to return
     sentences = [sentence for sentence in sent_tokenize(report) if len(sentence) > 5]   # Split up article into sentences that contain at least 6 characters.
     for sentence in sentences:  # Split case report into sentences, split sentences into phrases, and search for lab values in each phrase
@@ -183,7 +183,7 @@ def get_lab_values(case_report):
         for phrase in phrases:
             lv = [value[0] for value in re.findall(lab_value_regex, phrase) if 
                   lab_value_classifier.classify(classification_features(value[0])) == 'lab value']
-            
+
             if lv:  # Do the following if a lab value is found withing a phrase.
                 lab_value = lv[0]
                 # Narrow down the possible words for what the lab value is measuring
@@ -227,16 +227,19 @@ def get_lab_values(case_report):
         return lab_values
 
 def parse_args():
-    
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--extract', help='EXTRACT is the name of a folder containing '
                         'XML files of case reports to extract lab values from.')
     
+    parser.add_argument('--extracttxt', help='EXTRACTTXT is the name of a folder '
+                        'containing .txt files of case reports to extract lab values '
+                        'from.')
     try:
         args = parser.parse_args()
     except:
         sys.exit()
-    
+
     return args
 
 #Main
@@ -244,44 +247,76 @@ def main():
     args = parse_args()
     if args.extract:
         folder = args.extract
+    elif args.extracttxt:
+        folder = args.extracttxt
     else:
         sys.exit('No folder entered, please provide a folder containing XML files '
                  'in the form of --extract FOLDER_NAME after extract_lab_values.py')
-    
+
     try:
         file_list = os.listdir(folder)
         check_if_folder_contains_file = file_list[0]
     except:
         sys.exit('No such folder found or no files inside folder, exiting.')
-    
+
     os.chdir(folder)
-    xml_files = []
-    print('Reading XML files')
-    for each in tqdm(file_list):
-        xml_files.append(xml_to_text(each))
-    xml_files = [each for each in xml_files if each]
-    os.chdir('..')
-    
-    print('Preparing new files for training')
-    case_report_sentences = [sent_tokenize(each['text']) for each in tqdm(xml_files)]
-    sentences = [sentence for each in case_report_sentences for sentence in each]
-    sentence_words = [word_tokenize(sentence) for sentence in tqdm(sentences)]
-    model.build_vocab(sentence_words, update=True)
-    
-    all_lab_values = []
-    print('extracting lab values\n')
-    for each in tqdm(xml_files):
-        all_lab_values.append(get_lab_values(each))
-    
-    print('writing lab values to file\n')
-    with open('Lab Values.txt', 'w', encoding='utf-8') as f:
-        for each in all_lab_values:
-            f.write('PMID: ' + each[0] + '\n')
-            for value in each[1]:
-                for key, value in value.items():
-                    f.write('%s:\t%s\n' % (key, value))
-            f.write('\n\n')
-    f.close()
+    if args.extract:
+        xml_files = []
+        print('Reading XML files')
+        for each in tqdm(file_list):
+            xml_files.append(xml_to_text(each))
+        xml_files = [each for each in xml_files if each]
+        os.chdir('..')
+
+        print('Preparing new files for training')
+        case_report_sentences = [sent_tokenize(each['text']) for each in tqdm(xml_files)]
+        sentences = [sentence for each in case_report_sentences for sentence in each]
+        sentence_words = [word_tokenize(sentence) for sentence in tqdm(sentences)]
+        model.build_vocab(sentence_words, update=True)
+
+        all_lab_values = []
+        print('extracting lab values\n')
+        for each in tqdm(xml_files):
+            all_lab_values.append(get_lab_values(each))
+
+        print('writing lab values to file\n')
+        with open('Lab Values.txt', 'w', encoding='utf-8') as f:
+            for each in all_lab_values:
+                f.write('PMID: ' + each[0] + '\n')
+                for value in each[1]:
+                    for key, value in value.items():
+                        f.write('%s:\t%s\n' % (key, value))
+                f.write('\n\n')
+        f.close()
+    elif args.extracttxt:
+        txt_files = []
+        print('Reading txt files')
+        for each in tqdm(file_list):
+            with open(each, 'r') as f:
+                f_text = f.read()
+                txt_files.append(f_text)
+            f.close()
+        os.chdir('..')
+
+        print('Preparing new files for training')
+        case_report_sentences = [sent_tokenize(each) for each in tqdm(txt_files)]
+        sentences = [sentence for each in case_report_sentences for sentence in each]
+        sentence_words = [word_tokenize(sentence) for sentence in tqdm(sentences)]
+        model.build_vocab(sentence_words, update=True)
+
+        all_lab_values = []
+        print('extracting lab values\n')
+        for each in tqdm(txt_files):
+            all_lab_values.append(get_lab_values(each))
+
+        print('writing lab values to file\n')
+        with open('Lab Values.txt', 'w', encoding='utf-8') as g:
+            for each in all_lab_values:
+                for value in each:
+                    for key, value in value.items():
+                        g.write('%s:\t%s\n' % (key, value))
+                g.write('\n\n')
+        g.close()
 
 if __name__ == '__main__':
     sys.exit(main())

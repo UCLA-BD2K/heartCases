@@ -1,0 +1,629 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="product-review">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Med Inform Decis Mak</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Medical Informatics and Decision Making</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1472-6947</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">20226035</article-id>
+      <article-id pub-id-type="pmc">2845547</article-id>
+      <article-id pub-id-type="publisher-id">1472-6947-10-14</article-id>
+      <article-id pub-id-type="doi">10.1186/1472-6947-10-14</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Software</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>CASE: a framework for computer supported outbreak detection</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" id="A1">
+          <name>
+            <surname>Cakici</surname>
+            <given-names>Baki</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>baki.cakici@smi.se</email>
+        </contrib>
+        <contrib contrib-type="author" id="A2">
+          <name>
+            <surname>Hebing</surname>
+            <given-names>Kenneth</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>kenneth.hebing@smi.se</email>
+        </contrib>
+        <contrib contrib-type="author" id="A3">
+          <name>
+            <surname>Gr&#xFC;newald</surname>
+            <given-names>Maria</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>maria.grunewald@smi.se</email>
+        </contrib>
+        <contrib contrib-type="author" id="A4">
+          <name>
+            <surname>Saretok</surname>
+            <given-names>Paul</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>paul.saretok@smi.se</email>
+        </contrib>
+        <contrib contrib-type="author" id="A5">
+          <name>
+            <surname>Hulth</surname>
+            <given-names>Anette</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>anette.hulth@smi.se</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Swedish Institute for Infectious Disease Control (SMI), 171 82 Solna, Sweden</aff>
+      <aff id="I2"><label>2</label>Royal Institute of Technology (KTH), 100 44, Stockholm, Sweden</aff>
+      <pub-date pub-type="collection">
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>12</day>
+        <month>3</month>
+        <year>2010</year>
+      </pub-date>
+      <volume>10</volume>
+      <fpage>14</fpage>
+      <lpage>14</lpage>
+      <history>
+        <date date-type="received">
+          <day>11</day>
+          <month>9</month>
+          <year>2009</year>
+        </date>
+        <date date-type="accepted">
+          <day>12</day>
+          <month>3</month>
+          <year>2010</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9;2010 Cakici et al; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2010</copyright-year>
+        <copyright-holder>Cakici et al; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1472-6947/10/14"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>In <italic>computer supported outbreak detection</italic>, a statistical method is applied to a collection of cases to detect any excess cases for a particular disease. Whether a detected aberration is a true outbreak is decided by a human expert. We present a technical framework designed and implemented at the Swedish Institute for Infectious Disease Control for computer supported outbreak detection, where a database of case reports for a large number of infectious diseases can be processed using one or more statistical methods selected by the user.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>Based on case information, such as diagnosis and date, different statistical algorithms for detecting outbreaks can be applied, both on the disease level and the subtype level. The parameter settings for the algorithms can be configured independently for different diagnoses using the provided graphical interface. Input generators and output parsers are also provided for all supported algorithms. If an outbreak signal is detected, an email notification is sent to the persons listed as receivers for that particular disease.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>The framework is available as open source software, licensed under GNU General Public License Version 3. By making the code open source, we wish to encourage others to contribute to the future development of computer supported outbreak detection systems, and in particular to the development of the CASE framework.</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>In this paper, we describe the design and implementation of a <italic>computer supported outbreak detection system </italic>called CASE (named after the protagonist of the William Gibson novel Neuromancer), or Computer Assisted Search for Epidemics. The system is currently in use at the Swedish Institute for Infectious Disease Control (SMI) and performs daily surveillance using data obtained from <italic>SmiNet </italic>[<xref ref-type="bibr" rid="B1">1</xref>], the national notifiable disease database in Sweden.</p>
+      <p>Computer supported outbreak detection is performed in two steps:</p>
+      <p>1 A statistical method is automatically applied to a collection of case reports in order to detect an unusual or unexpected number of cases for a particular disease.</p>
+      <p>2 An investigation by a human expert (an epidemiologist) is performed to determine whether the detected irregularity denotes an actual outbreak.</p>
+      <p>The main function of a computer supported outbreak detection system is to warn for <italic>potential </italic>outbreaks. In some cases, the system might be able to detect outbreaks earlier than human experts. Additionally, it might detect certain outbreaks that human experts would have overlooked. However, the system does not aim to replace human experts (hence the prefix "computer supported"); it should rather be considered a complement to daily surveillance activities. To a smaller extent, the system can also aid less experienced epidemiologists in identifying outbreaks.</p>
+      <p>Systems for outbreak detection which support multiple algorithms include RODS [<xref ref-type="bibr" rid="B2">2</xref>], BioSTORM [<xref ref-type="bibr" rid="B3">3</xref>] and AEGIS [<xref ref-type="bibr" rid="B4">4</xref>]. Additionally, computer supported outbreak detection systems operating on the national level have been used previously in a number of countries, including Germany [<xref ref-type="bibr" rid="B5">5</xref>] and the Netherlands [<xref ref-type="bibr" rid="B6">6</xref>].</p>
+      <sec>
+        <title>Health care in Sweden</title>
+        <p>The health care system in Sweden is governed by 21 county councils. Each county has appointed a medical officer, who is in charge of the regional infectious disease prevention and control. Every confirmed or suspected case of a notifiable disease is reported both to the county medical officer and to SMI. At SMI, the regular national surveillance is currently performed by thirteen epidemiologists, each in charge of a number of different diseases.</p>
+        <p>All 21 county medical officers as well as the majority of the hospitals and the laboratories in Sweden are connected to the SmiNet database. The database collects clinical reports and information on laboratory verified samples. In 2008, a total of 174 811 reports were submitted to SmiNet. 87 per cent of these reports were submitted electronically and those that were not submitted electronically were entered into SmiNet manually. Of the 92 744 lab reports, as much as 97 per cent were submitted electronically and 62 per cent fully automatically. The reports were subsequently merged into 74 367 case reports. These reports form the basis of the data used by CASE to perform outbreak detection.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Implementation</title>
+      <p>CASE is designed to be administered using a graphical interface, and can operate on all of the 63 notifiable diseases in Sweden. One or more statistical detection methods can be applied to each disease. If more than one method is activated, result reports are generated independently. By default, the data are aggregated over all disease subtypes, but the system allows detection of single subtypes as well. When an outbreak signal is generated, an alert is sent by email to all members of the notification list for that particular disease.</p>
+      <p>CASE is composed of three interconnected components for <italic>configuration</italic>, <italic>extraction </italic>and <italic>detection</italic>. The configuration component provides a graphical user interface for modifying detection parameters and editing the list of recipients for generated alerts. The extraction component is used to copy data from the national case database to the local database. The detection component is scheduled to run at regular intervals and automatically applies the chosen statistical methods to the currently selected diseases.</p>
+      <sec>
+        <title>System Description</title>
+        <p>CASE is developed using Java to ensure platform-independence of all components. Currently at SMI all three components run on Ubuntu, a Linux-based operating system. The local database for CASE is MySQL and the national database, SmiNet, is Microsoft SQL Server 2005.</p>
+        <p>Figure <xref ref-type="fig" rid="F1">1</xref> shows the flow of information within the framework. The extraction and detection components are scheduled to run once every 24 hours at midnight using the standard Unix scheduling service <italic>cron</italic>. When the extraction component is executed, it transfers data from SmiNet to the local database. The local database stores the case data and the configuration parameters for all algorithms. The configuration module can be used to view and modify the parameters. The detection component is executed automatically after all required data have been extracted from SmiNet. It applies the detection methods with the given parameters to the case data for the selected diseases, and emails notifications if any alerts are generated. Detailed logs of these processes are generated automatically.</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p><bold>CASE Flowchart</bold>. A flowchart demonstrating the detection process in CASE.</p>
+          </caption>
+          <graphic xlink:href="1472-6947-10-14-1"/>
+        </fig>
+        <sec>
+          <title>Configuration</title>
+          <p>The configuration component is a graphical user interface that allows the administrator to mark diseases for detection, choose the detection methods to be applied to each diagnosis/subtype and manage the list of epidemiologists that will receive alerts in case a warning is generated. The settings are stored in a local database that is also accessed by the other two components. The system can be administered by multiple users who access the same local database.</p>
+          <p>Figure <xref ref-type="fig" rid="F2">2</xref> shows a screenshot of the graphical user interface for the CASE administrator. The notifiable diseases are displayed in the left column. These entries can be expanded using the arrow to display their subtypes. Parameters for the current selection are shown on the right hand side. The <italic>Algorithms </italic>tab lists the available methods. Parameters for the selected method can be modified by double-clicking the name of the method. The <italic>E-mail </italic>tab contains a list of recipients for the selected disease and/or subtype. If an alert is generated after detection, the algorithm that generated the alert is highlighted in red. The flag is automatically cleared every night before a new detection batch is executed.</p>
+          <fig id="F2" position="float">
+            <label>Figure 2</label>
+            <caption>
+              <p><bold>Administrator GUI</bold>. A screenshot of the graphical user interface for the CASE administrator.</p>
+            </caption>
+            <graphic xlink:href="1472-6947-10-14-2"/>
+          </fig>
+        </sec>
+        <sec>
+          <title>Extraction</title>
+          <p>CASE uses data retrieved from SmiNet to perform outbreak detection. A case report is created in SmiNet when a clinical or a laboratory report is received, provided that this patient does not already exist in the database. When additional reports arrive, the original case report is automatically updated with the new information. Depending on the number of days that have elapsed since the last time a patient received a particular diagnosis, a new case report might be created for the same diagnosis and patient. For a detailed technical description of SmiNet, see [<xref ref-type="bibr" rid="B1">1</xref>].</p>
+          <p>The extraction component populates the local database with data from the case reports stored in SmiNet. Diagnosis, lab species, date, and reporting county are copied for every case, except those with infections that are reported to have originated abroad. No information that can reveal a patient's identity is used in the outbreak detection process. There are approximately twenty dates in SmiNet for each case report, ranging from dates that are automatically generated by the system to dates entered by the clinician or the laboratory. There is, however, only one date that is available on all case reports, namely <italic>statistics date</italic>. This automatically set date corresponds to when a patient first appears in SmiNet with a particular diagnosis. The date that would best reflect when a patient fell ill is the date when the sample was taken from the patient. However, many case reports do not contain this date. For example, for 2008 this date is missing in 29 per cent of the case reports. When the case information is copied from SmiNet to the local database, the extraction component fetches the statistics date as the date for the case.</p>
+        </sec>
+        <sec>
+          <title>Detection</title>
+          <p>CASE is developed by the Swedish Institute for Infectious Disease Control, and has a national perspective on outbreaks. Its primary role is to find outbreaks that cover more than one county, especially those with few cases in each affected county, as these might be difficult to detect for the local authorities.</p>
+          <p>The detection component uses the selected statistical method(s) on all activated diseases and sends notification emails if any alerts are raised. If there are too few data points for a detection algorithm to produce a result -- which is often the case for detection on the subtype level -- this information is written to the log file. The system currently supports four different statistical methods for detection: SaTScan Poisson [<xref ref-type="bibr" rid="B7">7</xref>], SaTScan Space-Time Permutation [<xref ref-type="bibr" rid="B8">8</xref>], an algorithm developed by Farrington et al. [<xref ref-type="bibr" rid="B9">9</xref>], and a simple threshold algorithm. The methods are briefly described below. Three of the four methods are freely available implementations, while the fourth was developed within the project and is included in CASE's source code. For the external programs, input generators and output parsers are also contained within the source code. It is possible to extend the system with additional statistical methods, although this requires a certain familiarity with the Java programming language. We are currently in the process of adding the <italic>OutbreakP </italic>method [<xref ref-type="bibr" rid="B10">10</xref>] to the core package.</p>
+          <p>SaTScan is a freely available spatial, temporal and space-time data analysis platform [<xref ref-type="bibr" rid="B11">11</xref>]. Two algorithms from this application are used in CASE: <italic>SaTScan Poisson </italic>which uses the discrete Poisson SaTScan model to search for spatial clusters and <italic>SaTScan Space-Time Permutation</italic>, which searches for spatio-temporal clusters. Both models are applied to data at the county-level resolution. The population data required by SaTScan Poisson are obtained from Statistics Sweden [<xref ref-type="bibr" rid="B12">12</xref>]. The SaTScan Poisson parser, developed specifically for CASE, raises an alert if a detected cluster ends within the last week.</p>
+          <p>The third detection method was developed by, and is in regular use at the Health Protection Agency in England and Wales [<xref ref-type="bibr" rid="B9">9</xref>]. In CASE, we use the surveillance R-package implementation [<xref ref-type="bibr" rid="B13">13</xref>] of the method and we refer to it as the <italic>Farrington algorithm</italic>. The algorithm is used on data aggregated at the national level, to investigate if the current disease incidence exceeds that of the reference data from previous years. The CASE parser for the Farrington output ensures that an alert is sent only if an exceedance occurred during the last two weeks. The required window size is implemented as a sliding window of seven days and detection is performed daily.</p>
+          <p>The <italic>threshold algorithm </italic>is used to generate alerts when the number of cases for a particular disease rises above a manually defined value, with the number of cases aggregated at the national level.</p>
+          <p>For all methods, as long as an outbreak is ongoing according to the results of the statistical analysis, a new alert is raised every night. Figure <xref ref-type="fig" rid="F3">3</xref> shows an alert email that is sent to the recipients of "MRSA infection". The graph is automatically generated by the detection component and shows all computed alarms on the x-axis. The computed threshold is denoted by the blue curve (the graph in Figure <xref ref-type="fig" rid="F3">3</xref> was generated using simulated data). The email also includes a brief description of the algorithm that generated the alarm.</p>
+          <fig id="F3" position="float">
+            <label>Figure 3</label>
+            <caption>
+              <p><bold>Alert Email</bold>. A sample email for a disease alert.</p>
+            </caption>
+            <graphic xlink:href="1472-6947-10-14-3"/>
+          </fig>
+        </sec>
+      </sec>
+    </sec>
+    <sec>
+      <title>Results and Discussion</title>
+      <p>CASE is a technical framework designed to ease the process of connecting a data source with reported cases to various statistical methods requiring different input formats. When using CASE, the user can select the methods that are best suited to the characteristics of a particular disease.</p>
+      <p>CASE can also be used as a platform for comparing different detection algorithms, although that is not its primary purpose. Since all algorithms use the same data, running multiple detection methods on the same disease regularly and comparing the successful detections and the false warnings can provide insights into the accuracy of a certain method for a given disease. Comparisons and evaluations of the statistical methods currently included in CASE can be found in, for example, [<xref ref-type="bibr" rid="B14">14</xref>] and [<xref ref-type="bibr" rid="B15">15</xref>]. Here, the importance of calibrating the parameters for the detection methods must be emphasized, something which is still an ongoing work at SMI.</p>
+      <p>At present, the evaluation of the system is mainly qualitative, consisting of frequent discussions between the epidemiologists and the CASE developers. There is, however, a need for more systematic evaluations of the system, including a questionnaire assessing the users' experience, in addition to quantitative evaluations of the performance of the algorithms and the parameter settings. To facilitate the quantitative evaluations, we plan to extend the functionality of CASE to incorporate an evaluation module allowing the algorithms to be run retrospectively, with analysis carried out for each day in a specified time period. The main objective is not a general comparison of the algorithms, but an assessment of their performance in the specific context of the data they are used on. Where external data telling when actual outbreaks have occurred are available, measures such as sensitivity and specificity can be calculated. The evaluation module would provide valuable guidance in the choice of algorithms and parameter settings for the end user. Another evaluation feature we consider implementing is the possibility to run simulated data in the system.</p>
+      <p>CASE currently uses emails for notification. The advantage of this approach is that it presents information to the users in a familiar way and does not require them to learn how to operate a new interface. The disadvantage, on the other hand, is that the system becomes one-sided if the emails do not include a feedback mechanism. Regardless of the actual implementation, a system for providing feedback from the receivers of the signals is essential. Currently, users who would like to provide feedback on CASE output are instructed to email the administrator.</p>
+      <p>As expected, a relatively simple method operating on accurate and informative data produces better results than a complex method operating on noisy data. Therefore, the most important factor for creating a reliable outbreak detection system is to ensure the quality of the input data. If the input is not reliable, improving the data collection process from local medical centres is a much better investment than trying to perform automatic detection on inaccurate data. Additionally, expectations from an automated detection system must be realistic. For a computer, detecting ongoing outbreaks and seasonal regular outbreaks is possible, but predicting an outbreak at onset is currently not feasible.</p>
+      <p>CASE is designed primarily to analyze case reports and does not provide syndromic surveillance support using external data sources, unlike RODS [<xref ref-type="bibr" rid="B2">2</xref>] or BioSTORM [<xref ref-type="bibr" rid="B3">3</xref>]. The only requirement for the operation of CASE is access to a case database for notifiable diseases. All scripts to create and configure the intermediate local database are included in the software package. The local database is used to selectively copy and store case reports after removing all information that can reveal a patient's identity. We believe that the ease of configuration and maintenance in addition to the possibility of operating without storing highly sensitive data make CASE a strong candidate for use in national infectious disease surveillance.</p>
+    </sec>
+    <sec>
+      <title>Conclusions</title>
+      <p>In this paper we have described the design and implementation of a publicly available technical framework for computer supported outbreak detection. The source code is licensed under GNU GPLv3 [<xref ref-type="bibr" rid="B16">16</xref>] and is available from <ext-link ext-link-type="uri" xlink:href="https://smisvn.smi.se/case">https://smisvn.smi.se/case</ext-link>.</p>
+      <p>The CASE framework is designed to be a complete system for computer supported outbreak detection at the national level. We are aware that any outbreak detection system must always be adapted to a particular context, where national requirements and regulations will affect the implementation of the system. Such adaptations can easily be made within the described framework. By making the code open source, we wish to encourage others to contribute to the future development of computer supported outbreak detection systems, and in particular to the development of the CASE framework.</p>
+    </sec>
+    <sec>
+      <title>Availability and requirements</title>
+      <p>The source code for CASE is licensed under GNU General Public License Version 3 (GPLv3), and is available for download from <ext-link ext-link-type="uri" xlink:href="https://smisvn.smi.se/case">https://smisvn.smi.se/case</ext-link>. The provided documentation and the interface are written in English. The following software must be installed on the target system in order to use CASE:</p>
+      <p>&#x2022; Linux or Windows operating system that can run Sun Java Runtime Environment 6.0 (or higher)</p>
+      <p>&#x2022; MySQL 5.1 (or higher)</p>
+      <p>&#x2022; SaTScan version 8.0.1 (or higher)</p>
+      <p>&#x2022; R version 2.9.1 (or higher)</p>
+      <p>&#x2022; ImageMagick 6.5.4 (or higher)</p>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors declare that they have no competing interests.</p>
+    </sec>
+    <sec>
+      <title>Authors' contributions</title>
+      <p>AH, BC and PS designed and developed the CASE framework. BC, KH and PS implemented the framework. KH and MG worked on improving the application. AH and BC drafted the manuscript. All authors read and approved the final manuscript.</p>
+    </sec>
+    <sec>
+      <title>Pre-publication history</title>
+      <p>The pre-publication history for this paper can be accessed here:</p>
+      <p>
+        <ext-link ext-link-type="uri" xlink:href="http://www.biomedcentral.com/1472-6947/10/14/prepub">http://www.biomedcentral.com/1472-6947/10/14/prepub</ext-link>
+      </p>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgements</title>
+      <p>We would like to thank the epidemiologists at SMI, especially Margareta L&#xF6;fdahl and Tomas S&#xF6;derblom, both enthusiastic recipients of the notifications during the early stages of the project. We also thank Martin Camitz for naming the system. Finally, we would like to thank everyone who provides reports for and works with SmiNet. The project is funded by the Swedish Civil Contingencies Agency (formerly the Swedish Emergency Management Agency).</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rolfhamre</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Janson</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Arneborn</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Ekdahl</surname>
+            <given-names>K</given-names>
+          </name>
+          <article-title>SmiNet-2: Description of an internet-based surveillance system for communicable diseases in Sweden</article-title>
+          <source>Euro Surveill</source>
+          <year>2006</year>
+          <volume>11</volume>
+          <issue>5</issue>
+          <fpage>626</fpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Tsui</surname>
+            <given-names>FC</given-names>
+          </name>
+          <name>
+            <surname>Espino</surname>
+            <given-names>JU</given-names>
+          </name>
+          <name>
+            <surname>Dato</surname>
+            <given-names>VM</given-names>
+          </name>
+          <name>
+            <surname>Gesteland</surname>
+            <given-names>PH</given-names>
+          </name>
+          <name>
+            <surname>Hutman</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Wagner</surname>
+            <given-names>MM</given-names>
+          </name>
+          <article-title>Technical description of RODS: a real-time public health surveillance system</article-title>
+          <source>J Am Med Inform Assoc</source>
+          <year>2003</year>
+          <volume>10</volume>
+          <issue>5</issue>
+          <fpage>399</fpage>
+          <lpage>408</lpage>
+          <pub-id pub-id-type="doi">10.1197/jamia.M1345</pub-id>
+          <pub-id pub-id-type="pmid">12807803</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Crubezy</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>O'Connor</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Buckeridge</surname>
+            <given-names>DL</given-names>
+          </name>
+          <name>
+            <surname>Pincus</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Musen</surname>
+            <given-names>MA</given-names>
+          </name>
+          <article-title>Ontology-Centered Syndromic Surveillance for Bioterrorism</article-title>
+          <source>IEEE Intell Syst</source>
+          <year>2005</year>
+          <volume>20</volume>
+          <issue>5</issue>
+          <fpage>26</fpage>
+          <lpage>35</lpage>
+          <pub-id pub-id-type="doi">10.1109/MIS.2005.91</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Reis</surname>
+            <given-names>BY</given-names>
+          </name>
+          <name>
+            <surname>Kirby</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Hadden</surname>
+            <given-names>LE</given-names>
+          </name>
+          <name>
+            <surname>Olson</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>McMurry</surname>
+            <given-names>AJ</given-names>
+          </name>
+          <name>
+            <surname>Daniel</surname>
+            <given-names>JB</given-names>
+          </name>
+          <name>
+            <surname>Mandl</surname>
+            <given-names>KD</given-names>
+          </name>
+          <article-title>AEGIS: A Robust and Scalable Real-time Public Health Surveillance System</article-title>
+          <source>J Am Med Inform Assoc</source>
+          <year>2007</year>
+          <volume>14</volume>
+          <issue>5</issue>
+          <fpage>581</fpage>
+          <lpage>588</lpage>
+          <pub-id pub-id-type="doi">10.1197/jamia.M2342</pub-id>
+          <pub-id pub-id-type="pmid">17600100</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Krause</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Altmann</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Faensen</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Porten</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Benzler</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Pfoch</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Ammon</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Kramer</surname>
+            <given-names>MH</given-names>
+          </name>
+          <name>
+            <surname>Claus</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>SurvNet electronic surveillance system for infectious disease outbreaks, Germany</article-title>
+          <source>Emerg Infect Dis</source>
+          <year>2007</year>
+          <volume>12</volume>
+          <issue>10</issue>
+          <fpage>1548</fpage>
+          <lpage>55</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Widdowson</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Bosman</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>van Straten</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Tinga</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Chaves</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>van Eerden</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>van Pelt</surname>
+            <given-names>W</given-names>
+          </name>
+          <article-title>Automated, Laboratory-based System Using the Internet for Disease Outbreak Detection, the Netherlands</article-title>
+          <source>Emerg Infect Dis</source>
+          <year>2003</year>
+          <volume>9</volume>
+          <issue>9</issue>
+          <fpage>1046</fpage>
+          <lpage>52</lpage>
+          <pub-id pub-id-type="pmid">14519238</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kulldorff</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>A spatial scan statistic</article-title>
+          <source>Commun Stat Theory Methods</source>
+          <year>1997</year>
+          <volume>26</volume>
+          <fpage>1481</fpage>
+          <lpage>1496</lpage>
+          <pub-id pub-id-type="doi">10.1080/03610929708831995</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kulldorff</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Hartman</surname>
+            <given-names>Heffernan J</given-names>
+          </name>
+          <name>
+            <surname>Assun&#xE7;&#xE3;o</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Mostashari</surname>
+            <given-names>F</given-names>
+          </name>
+          <article-title>A Space-Time Permutation Scan Statistic for Disease Outbreak Detection</article-title>
+          <source>PLoS Med</source>
+          <year>2005</year>
+          <volume>2</volume>
+          <issue>3</issue>
+          <fpage>e59</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pmed.0020059</pub-id>
+          <pub-id pub-id-type="pmid">15719066</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Farrington</surname>
+            <given-names>CP</given-names>
+          </name>
+          <name>
+            <surname>Andrews</surname>
+            <given-names>NJ</given-names>
+          </name>
+          <name>
+            <surname>Beale</surname>
+            <given-names>AD</given-names>
+          </name>
+          <name>
+            <surname>Catchpole</surname>
+            <given-names>MA</given-names>
+          </name>
+          <article-title>A statistical algorithm for the early detection of outbreaks of infectious disease</article-title>
+          <source>J Roy Stat Soc Stat Soc</source>
+          <year>1996</year>
+          <volume>159</volume>
+          <issue>3</issue>
+          <fpage>547</fpage>
+          <lpage>563</lpage>
+          <pub-id pub-id-type="doi">10.2307/2983331</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Fris&#xE9;n</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Andersson</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Schi&#xF6;ler</surname>
+            <given-names>L</given-names>
+          </name>
+          <article-title>Robust outbreak surveillance of epidemics in Sweden</article-title>
+          <source>Stat Med</source>
+          <year>2009</year>
+          <volume>3</volume>
+          <fpage>476</fpage>
+          <lpage>493</lpage>
+          <pub-id pub-id-type="doi">10.1002/sim.3483</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="other">
+          <article-title>SaTScan - Software for the spatial, temporal, and space-time scan statistics</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.satscan.org">http://www.satscan.org</ext-link>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="other">
+          <article-title>Statistics Sweden</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.scb.se">http://www.scb.se</ext-link>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>H&#xF6;hle</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>surveillance: An R package for the monitoring of infectious diseases</article-title>
+          <source>Comput Stat</source>
+          <year>2007</year>
+          <volume>22</volume>
+          <issue>4</issue>
+          <fpage>571</fpage>
+          <lpage>582</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00180-007-0074-8</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rolfhamre</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Ekdahl</surname>
+            <given-names>K</given-names>
+          </name>
+          <article-title>An evaluation and comparison of three commonly used statistical models for automatic detection of outbreaks in epidemiological data of communicable disease</article-title>
+          <source>Epidemiol Infect</source>
+          <year>2005</year>
+          <volume>134</volume>
+          <issue>4</issue>
+          <fpage>863</fpage>
+          <lpage>871</lpage>
+          <pub-id pub-id-type="doi">10.1017/S095026880500573X</pub-id>
+          <pub-id pub-id-type="pmid">16371181</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Aamodt</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Samuelsen</surname>
+            <given-names>SO</given-names>
+          </name>
+          <name>
+            <surname>Skrondal</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>A simulation study of three methods for detecting disease clusters</article-title>
+          <source>Int J Health Geogr</source>
+          <year>2006</year>
+          <volume>5</volume>
+          <issue>15</issue>
+          <pub-id pub-id-type="pmid">16608532</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="other">
+          <article-title>Free Software Foundation - Licenses</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</ext-link>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

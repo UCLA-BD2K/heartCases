@@ -1,0 +1,769 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24950227</article-id>
+      <article-id pub-id-type="pmc">4064965</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-14-08965</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0099439</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Oncology</subject>
+            <subj-group>
+              <subject>Cancers and Neoplasms</subject>
+              <subj-group>
+                <subject>Sarcomas</subject>
+                <subj-group>
+                  <subject>Ewing Sarcoma</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Cancer Detection and Diagnosis</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>The &#x201C;Grep&#x201D; Command But Not FusionMap, FusionFinder or ChimeraScan Captures the <italic>CIC-DUX4</italic> Fusion Gene from Whole Transcriptome Sequencing Data on a Small Round Cell Tumor with t(4;19)(q35;q13)</article-title>
+        <alt-title alt-title-type="running-head">The &#x201C;Grep&#x201D; Command Captures <italic>CIC-DUX4</italic> Chimera from RNA Sequencing Data</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Panagopoulos</surname>
+            <given-names>Ioannis</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gorunova</surname>
+            <given-names>Ludmila</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bjerkehagen</surname>
+            <given-names>Bodil</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Heim</surname>
+            <given-names>Sverre</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Section for Cancer Cytogenetics, Institute for Cancer Genetics and Informatics, The Norwegian Radium Hospital, Oslo University Hospital, Oslo, Norway</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Centre for Cancer Biomedicine, Faculty of Medicine, University of Oslo, Oslo, Norway</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Department of Pathology, The Norwegian Radium Hospital, Oslo University Hospital, Oslo, Norway</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Faculty of Medicine, University of Oslo, Oslo, Norway</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Bertolini</surname>
+            <given-names>Francesco</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>European Institute of Oncology, Italy</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>ioannis.panagopoulos@rr-research.no</email></corresp>
+        <fn fn-type="conflict">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: IP. Performed the experiments: IP LG BB. Analyzed the data: IP. Contributed reagents/materials/analysis tools: BB SH. Wrote the paper: IP SH.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>20</day>
+        <month>6</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>9</volume>
+      <issue>6</issue>
+      <elocation-id>e99439</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>26</day>
+          <month>2</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>14</day>
+          <month>5</month>
+          <year>2014</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2014</copyright-year>
+        <copyright-holder>Panagopoulos et al</copyright-holder>
+        <license>
+          <license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Whole transcriptome sequencing was used to study a small round cell tumor in which a t(4;19)(q35;q13) was part of the complex karyotype but where the initial reverse transcriptase PCR (RT-PCR) examination did not detect a <italic>CIC-DUX4</italic> fusion transcript previously described as the crucial gene-level outcome of this specific translocation. The RNA sequencing data were analysed using the FusionMap, FusionFinder, and ChimeraScan programs which are specifically designed to identify fusion genes. FusionMap, FusionFinder, and ChimeraScan identified 1017, 102, and 101 fusion transcripts, respectively, but <italic>CIC-DUX4</italic> was not among them. Since the RNA sequencing data are in the fastq text-based format, we searched the files using the &#x201C;grep&#x201D; command-line utility. The &#x201C;grep&#x201D; command searches the text for specific expressions and displays, by default, the lines where matches occur. The &#x201C;specific expression&#x201D; was a sequence of 20 nucleotides from the coding part of the last exon 20 of <italic>CIC</italic> (Reference Sequence: NM_015125.3) chosen since all the so far reported <italic>CIC</italic> breakpoints have occurred here. Fifteen chimeric <italic>CIC-DUX4</italic> cDNA sequences were captured and the fusion between the <italic>CIC</italic> and <italic>DUX4</italic> genes was mapped precisely. New primer combinations were constructed based on these findings and were used together with a polymerase suitable for amplification of GC-rich DNA templates to amplify <italic>CIC-DUX4</italic> cDNA fragments which had the same fusion point found with &#x201C;grep&#x201D;. In conclusion, FusionMap, FusionFinder, and ChimeraScan generated a plethora of fusion transcripts but did not detect the biologically important <italic>CIC-DUX4</italic> chimeric transcript; they are generally useful but evidently suffer from imperfect both sensitivity and specificity. The &#x201C;grep&#x201D; command is an excellent tool to capture chimeric transcripts from RNA sequencing data when the pathological and/or cytogenetic information strongly indicates the presence of a specific fusion gene.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work was supported by grants from the Norwegian Cancer Society. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="9"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>The translocation t(4;19)(q35;q13) was described by Richkind et al <xref rid="pone.0099439-Richkind1" ref-type="bibr">[1]</xref> as the sole chromosomal aberration in a tumor diagnosed as poorly differentiated extraskeletal mesenchymal sarcoma in a 12-year-old-boy. The authors mentioned that a similar translocation had also been reported as part of complex karyotype in an embryonal rhabdomyosarcoma (RMS) cell line <xref rid="pone.0099439-Urumov1" ref-type="bibr">[2]</xref> and as part of a three-way translocation t(4;19;12)(q35;q13.1;q13) in an undifferentiated/embryonal RMS <xref rid="pone.0099439-Roberts1" ref-type="bibr">[3]</xref> and suggested that it might be a recurrent chromosomal aberration in malignant primitive mesenchymal stem cells <xref rid="pone.0099439-Richkind1" ref-type="bibr">[1]</xref>. Sommers et al <xref rid="pone.0099439-Somers1" ref-type="bibr">[4]</xref> described a subcutaneous primitive neuroectodermal tumor/Ewing sarcoma without <italic>EWSR1</italic> rearrangement but with a complex karyotype containing a t(4;19)(q33&#x223C;35;q13). Kawamura-Saito et al <xref rid="pone.0099439-KawamuraSaito1" ref-type="bibr">[5]</xref> described two cases of Ewing-like sarcoma which had a t(4;19)(q35;q13) in their karyotypes. They also showed that the translocation resulted in fusion of the capicua transcriptional repressor <italic>CIC</italic> gene on 19q13, which codes for a high mobility group box transcription factor, with the double homeodomain <italic>DUX4</italic> gene on 4q35 <xref rid="pone.0099439-KawamuraSaito1" ref-type="bibr">[5]</xref>.</p>
+      <p><italic>DUX4</italic> is located within a D4Z4 repeat array in the subtelomeric region of chromosome arm 4q <xref rid="pone.0099439-Gabrils1" ref-type="bibr">[6]</xref>. A similar D4Z4 repeat array has been identified on chromosome 10 <xref rid="pone.0099439-vanGeel1" ref-type="bibr">[7]</xref>. Each D4Z4 repeat unit has an open reading frame (named <italic>DUX4</italic>) that encodes two homeoboxes <xref rid="pone.0099439-Gabrils1" ref-type="bibr">[6]</xref>. There is no evidence for transcription of this gene from standard cDNA libraries, but RT-PCR and in vitro expression experiments indicate that the ORF is transcribed <xref rid="pone.0099439-Dixit1" ref-type="bibr">[8]</xref>, <xref rid="pone.0099439-Kowaljow1" ref-type="bibr">[9]</xref>. The encoded protein is located in the nucleus, induces cell death, and has been reported to function as a transcriptional activator of paired-like homeodomain transcription factor 1 (PITX1) <xref rid="pone.0099439-Dixit1" ref-type="bibr">[8]</xref>, <xref rid="pone.0099439-Kowaljow1" ref-type="bibr">[9]</xref>. So far, there are roughly 20 reported cases of sarcoma with the t(4;19)(q35;q13) and/or <italic>CIC-DUX4</italic> fusion <xref rid="pone.0099439-Richkind1" ref-type="bibr">[1]</xref>&#x2013;<xref rid="pone.0099439-KawamuraSaito1" ref-type="bibr">[5]</xref>, <xref rid="pone.0099439-Rakheja1" ref-type="bibr">[10]</xref>&#x2013;<xref rid="pone.0099439-Kajtr1" ref-type="bibr">[15]</xref>. In seven other cases with <italic>CIC-DUX4</italic>, the <italic>DUX4</italic> gene involved in the fusion apparently stems from the locus on 10q26 <xref rid="pone.0099439-Italiano1" ref-type="bibr">[13]</xref>, <xref rid="pone.0099439-Machado1" ref-type="bibr">[16]</xref>. The current data suggest that the <italic>CIC-DUX4</italic> fusion defines a subgroup of primitive round cell sarcomas, different from Ewing sarcoma, with distinctive histopathology and rapid disease progression <xref rid="pone.0099439-Richkind1" ref-type="bibr">[1]</xref>&#x2013;<xref rid="pone.0099439-KawamuraSaito1" ref-type="bibr">[5]</xref>, <xref rid="pone.0099439-Rakheja1" ref-type="bibr">[10]</xref>&#x2013;<xref rid="pone.0099439-Kajtr1" ref-type="bibr">[15]</xref>.</p>
+      <p>Recently, whole transcriptome sequencing (RNA-Seq, RNA sequencing) was shown to be an efficient tool in the detection of fusion genes in cancer <xref rid="pone.0099439-Wang1" ref-type="bibr">[17]</xref>. In short, extracted RNA from cancer cells is massively sequenced, and then the raw data are analyzed with one or more programs specifically dedicated to the task of detecting fusion transcripts such as ChimeraScan <xref rid="pone.0099439-Iyer1" ref-type="bibr">[18]</xref>, FusionMap <xref rid="pone.0099439-Ge1" ref-type="bibr">[19]</xref>, and FusionFinder <xref rid="pone.0099439-Francis1" ref-type="bibr">[20]</xref>. However, the programs typically identify numerous fusion transcripts making the assessment of which of them are important and which are noise extremely difficult. To overcome this challenge, we and others have used combinations of cytogenetics and RNA-Seq to detect the &#x201C;primary&#x201D; fusion genes of neoplasms carrying only one or a few chromosomal rearrangements. A number of fusion genes were found using this approach, among them the recurrent <italic>ZC3H7-BCOR</italic> in endometrial stromal sarcomas <xref rid="pone.0099439-Panagopoulos1" ref-type="bibr">[21]</xref>, <italic>IRF2BP2-CDX1</italic> in a mesenchymal chondrosarcoma <xref rid="pone.0099439-Nyquist1" ref-type="bibr">[22]</xref>, and <italic>EWSR1-YY1</italic> in a subset of mesotheliomas <xref rid="pone.0099439-Panagopoulos2" ref-type="bibr">[23]</xref>. In the present study, we performed whole transcriptome sequencing to study a small round cell tumor in which t(4;19)(q35;q13) was part of a complex karyotype. While the fusion gene detection programs ChimeraScan <xref rid="pone.0099439-Iyer1" ref-type="bibr">[18]</xref>, FusionMap <xref rid="pone.0099439-Ge1" ref-type="bibr">[19]</xref>, and FusionFinder <xref rid="pone.0099439-Francis1" ref-type="bibr">[20]</xref> failed to detected the <italic>CIC-DUX4</italic> fusion transcript, the &#x201C;grep&#x201D; command-line utility captured the cytogenetically indicated <italic>CIC-DUX4</italic> fusion gene.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s2">
+      <title>Materials and Methods</title>
+      <sec id="s2a">
+        <title>Ethics Statement</title>
+        <p>The study was approved by the regional ethics committee (Regional komit&#xE9; for medisinsk forskningsetikk S&#xF8;r-&#xD8;st, Norge, <ext-link ext-link-type="uri" xlink:href="http://helseforskning.etikkom.no">http://helseforskning.etikkom.no</ext-link>). Written informed consent was obtained from the patient prior to her death. The ethics committee approval included a review of the consent procedure and all patient information has been anonymized and de-identified.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Patient</title>
+        <p>A 40-year-old female presented with pain in the lower part of the thoracic wall and imaging showed a tumor in thoracic skeletal muscle with extension into the retroperitoneum and costae. The histological diagnosis was small round cell sarcoma (<xref ref-type="fig" rid="pone-0099439-g001">Figure 1</xref>). Immunohistochemistry demonstrated positive findings for vimentin, AE1/AE3, and CD99, but was negative for WT1, CD56, synaptophysin, chromogranin, MYF4, SMA desmin, CD3, CD20, CD45, CD79a, TdT, S100, and FLI1. RT-PCR did not show gene fusion consistent with Ewing sarcoma (<italic>EWSR1-ERG/FLI1</italic>) or synovial sarcoma (<italic>SS18-SSX1</italic>, <italic>2</italic> or <italic>4</italic>). The patient received preoperative chemotherapy and the resected specimen disclosed a 12 cm large tumor. The patient later developed lung metastasis and a local recurrence and died of sarcoma 10 months after the diagnosis.</p>
+        <fig id="pone-0099439-g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0099439.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Pathologic examination of the tumor.</title>
+            <p>A) The 12 cm large tumour was localized in the skeletal muscle in the thoracic wall with extension to the retroperitoneum and costae. B) HE-stained slides showed a small round cell tumour. C) Immunexpression of CD99.</p>
+          </caption>
+          <graphic xlink:href="pone.0099439.g001"/>
+        </fig>
+      </sec>
+      <sec id="s2c">
+        <title>Chromosome banding analysis and fluorescence in situ hybridization (FISH)</title>
+        <p>A sample from the surgically removed tumor was mechanically and enzymatically disaggregated and short-term cultured as described elsewhere <xref rid="pone.0099439-Mandahl1" ref-type="bibr">[24]</xref>. The cultures were harvested and the chromosomes G-banded using Wright stain. The subsequent cytogenetic analysis and karyotype description followed the recommendations of the ISCN <xref rid="pone.0099439-Schaffer1" ref-type="bibr">[25]</xref>.</p>
+        <p>The BAC clone RP11-556K23 (<ext-link ext-link-type="uri" xlink:href="http://genome.ucsc.edu/cgi-bin/hgTracks?hgsid=360850677&amp;db=hg17&amp;position=chr19%3A47422736-47630224">chr19:47422736&#x2013;47630224</ext-link>), which maps to 19q13.2 and contains the <italic>CIC</italic> gene, was retrieved from the Human genome high-resolution BAC re-arrayed clone set (the &#x201C;32k set&#x201D;; BACPAC Resources, <ext-link ext-link-type="uri" xlink:href="http://bacpac.chori.org/pHumanMinSet.htm">http://bacpac.chori.org/pHumanMinSet.htm</ext-link>). Mapping data for the 32k human re-array are available in an interactive web format (<ext-link ext-link-type="uri" xlink:href="http://bacpac.chori.org/pHumanMinSet.htm">http://bacpac.chori.org/pHumanMinSet.htm</ext-link>, from the <ext-link ext-link-type="uri" xlink:href="http://bacpac.chori.org/genomicRearrays.php">genomic rearrays page</ext-link>) and can be obtained by activation of the ucsc browser track for the hg17 UCSC assembly from the &#x201C;32k set&#x201D; homepage (<ext-link ext-link-type="uri" xlink:href="http://bacpac.chori.org/genomicRearrays.php">http://bacpac.chori.org/genomicRearrays.php</ext-link>). FISH mapping of the clone was performed on normal controls to confirm their chromosomal location. DNA was extracted and probes were labelled and hybridized according to Abbott Molecular recommendations (<ext-link ext-link-type="uri" xlink:href="http://www.abbottmolecular.com/home.html">http://www.abbottmolecular.com/home.html</ext-link>). Chromosome preparations were counterstained with 0.2 &#xB5;g/ml DAPI and overlaid with a 24&#xD7;50 mm<sup>2</sup> coverslip. Fluorescent signals were captured and analyzed using the CytoVision system (Leica Biosystems, Newcastle, UK).</p>
+      </sec>
+      <sec id="s2d">
+        <title>High-throughput paired-end RNA-sequencing</title>
+        <p>Tumor tissue adjacent to that used for cytogenetic analysis and histologic examination had been frozen and stored at &#x2212;80&#xB0;C. Total RNA was extracted from the tumor using Trizol reagent according to the manufacturer's instructions (Invitrogen, Oslo, Norway) and its quality was checked by Experion Automated Electrophoresis System (Bio-Rad Laboratories, Oslo, Norway). Three &#xB5;g of total RNA from the primary tumor were sent for high-throughput paired-end RNA-sequencing at the Genomics Core Facility, The Norwegian Radium Hospital (<ext-link ext-link-type="uri" xlink:href="http://genomics.no/oslo/">http://genomics.no/oslo/</ext-link>). The RNA was sequenced using an Illumina HiSeq 2500 instrument and the Illumina software pipeline was used to process image data into raw sequencing data. Only sequence reads marked as &#x201C;passed filtering&#x201D; were used in the downstream data analysis. A total of 100 million reads were obtained. The softwares FusionMap (<ext-link ext-link-type="uri" xlink:href="http://www.omicsoft.com/fusionmap/">http://www.omicsoft.com/fusionmap/</ext-link>) <xref rid="pone.0099439-Ge1" ref-type="bibr">[19]</xref>, Fusion Finder (<ext-link ext-link-type="uri" xlink:href="http://bioinformatics.childhealthresearch.org.au/software/fusionfinder/">http://bioinformatics.childhealthresearch.org.au/software/fusionfinder/</ext-link>) <xref rid="pone.0099439-Francis1" ref-type="bibr">[20]</xref>, and ChimeraScan (<ext-link ext-link-type="uri" xlink:href="https://code.google.com/p/chimerascan/">https://code.google.com/p/chimerascan/</ext-link>) <xref rid="pone.0099439-Iyer1" ref-type="bibr">[18]</xref> were used for the discovery of fusion transcripts. In addition, the &#x201C;grep&#x201D; command (<ext-link ext-link-type="uri" xlink:href="http://en.wikipedia.org/wiki/Grep">http://en.wikipedia.org/wiki/Grep</ext-link>) was used to search the fastq files of the sequence data (<ext-link ext-link-type="uri" xlink:href="http://en.wikipedia.org/wiki/FASTQ_format">http://en.wikipedia.org/wiki/FASTQ_format</ext-link>) for <italic>CIC</italic> sequence (NM_015125 version 3).</p>
+        <p>FusionMap was run on a PCR with Windows XP professional as the operative system. FusionFinder, ChimeraScan, and &#x201C;grep&#x201D; command were run on a PC with Bio-Linux 7 as the operating system <xref rid="pone.0099439-Field1" ref-type="bibr">[26]</xref>.</p>
+      </sec>
+      <sec id="s2e">
+        <title>PCR</title>
+        <p>The primers used for PCR amplification and sequencing are listed in <xref ref-type="table" rid="pone-0099439-t001">Table 1</xref>.</p>
+        <table-wrap id="pone-0099439-t001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0099439.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Primers used for PCR amplifications and sequencing.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0099439-t001-1" xlink:href="pone.0099439.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Oligo Name</td>
+                  <td align="left" rowspan="1" colspan="1">Sequence (5&#x2032;&#x2192;3&#x2032;)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CIC-4105F</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene">CGAAGAGCGCTTTGCTGAGTTGCC</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CIC-4283F</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene">AGAAGACGCTCCAGCTGCAGCTCG</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CIC-4377F</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene">CCGAGGACGTGCTTGGGGAGCTA</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CIC-4453F</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene">GGCCCTGGTCATGCAGCTCTTTCA</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CIC-4856R</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene">CTCAGGGGTCCCTCACCTGCCTGT</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CIC-4958R</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene">CCCAAACTGGAGAGGACGAAATGGC</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">DUX4-1053R</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene">ACCGAGGAGCCTGAGGGTGGGAG</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">DUX4-1151R</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene">CTTGAGCGGGCCCAGGCTGTG</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">DUX4-1507R</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene">CTTCCAGCGAGGCGGCCTCTTC</named-content>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">DUX4-1538R</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <named-content content-type="gene">GCAGAGCCCGGTATTCTTCCTCGC</named-content>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>One &#xB5;g of tumor total RNA was reverse-transcribed in a 20 &#xB5;L reaction volume using iScript Advanced cDNA Synthesis Kit for RT-qPCR according to the manufacturer's instructions (Bio-Rad Laboratories, Oslo, Norway). Initially, the 25 &#xB5;L PCR-volume contained 12.5 &#xB5;L of Premix Taq (Takara Bio Europe/SAS, Saint-Germain-en-Laye, France), 1 &#xB5;L of the synthesized cDNA, and 0.4 &#xB5;M of each of the forward CIC-4105F and reverse DUX4-1538R primers. One &#xB5;L of the 1<sup>st</sup> PCR amplification was used as template in a nested PCR with the forward CIC-4283F and reverse DUX4-1507R primers. For the quality of the cDNA synthesis the primers CIC-4238F and CIC-4958R were used to amplify a CIC cDNA fragment. The PCRs were run on a C-1000 Thermal cycler (Bio-Rad Laboratories) with the following cycling conditions: an initial denaturation at 94&#xB0;C for 30 sec followed by 35 cycles of 7 sec at 98&#xB0;C and 2 min at 68&#xB0;C, and a final extension for 5 min at 68&#xB0;C.</p>
+        <p>In subsequent PCR amplifications, PrimeSTAR GXL DNA polymerase was used (Takara Bio). According to the company's information this is a high fidelity polymerase suitable for GC-rich templates that are otherwise difficult to amplify. The 25 &#xB5;L PCR volume contained 1&#xD7; PrimeSTAR GXL Buffer (Takara Bio), 1 &#xB5;L of the synthesized cDNA, 200 &#xB5;M of each dNTP, 0.4 &#xB5;M of each of the forward primer CIC-4377F and the reverse primer DUX4-1151R or 0.4 &#xB5;M of each of the primers CIC-4453F and DUX4-1053R. The PCR was run on a C-1000 Thermal cycler (Bio-Rad Laboratories) with an initial denaturation at 94&#xB0;C for 30 sec, followed by 35 cycles of 7 sec at 98&#xB0;C, 2 min at 68&#xB0;C, and a final extension for 5 min at 68&#xB0;C. Three &#xB5;L of the PCR products were stained with GelRed (Biotium, Hayward, CA, USA), analyzed by electrophoresis through 1.0% agarose gel, and photographed.</p>
+        <p>The rest of the amplified PCR products were purified using the NucleoSpin Gel and PCR Clean-up kit (Macherey-Nagel, VWR International, Oslo, Norway). Direct sequencing (Sanger sequencing) was performed using the light run sequencing service of GATC Biotech (<ext-link ext-link-type="uri" xlink:href="http://www.gatc-biotech.com/en/sanger-services/lightrun-sequencing.html">http://www.gatc-biotech.com/en/sanger-services/lightrun-sequencing.html</ext-link>). The BLAST software (<ext-link ext-link-type="uri" xlink:href="http://blast.ncbi.nlm.nih.gov/Blast.cgi">http://blast.ncbi.nlm.nih.gov/Blast.cgi</ext-link>) was used for computer analysis of sequence data. The nucleotide sequence has been deposited in the GenBank with accession number KJ670706.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p>G-banding analysis yielded the diagnostic karyotype 46,XX,del(2)(q13q23),t(4;19)(q35;q13),ins(11;?)(q11;?),der(20)?t(20;20)(p11;q11)[14]/46,XX[3] (<xref ref-type="fig" rid="pone-0099439-g002">Figure 2A</xref>). When metaphase spreads (<xref ref-type="fig" rid="pone-0099439-g002">Figure 2B</xref>) were hybridized with the BAC- RP11-556K23, one split signal was seen, indicating that the translocation breakpoint on chromosome 19 was within the BAC (<xref ref-type="fig" rid="pone-0099439-g002">Figure 2C</xref>). This clone contains, apart from <italic>CIC</italic>, the genes <italic>GSK3A</italic>, <italic>ERF</italic>, <italic>PAFAH1B3</italic>, <italic>PRR19</italic>, <italic>TMEM145</italic>, <italic>MEGF8</italic>, <italic>CNFN</italic>, and <italic>LIPE</italic> (<xref ref-type="fig" rid="pone-0099439-g002">Figure 2D</xref>).</p>
+      <fig id="pone-0099439-g002" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0099439.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>Cytogenetic and FISH analyses of the tumor.</title>
+          <p>A) Karyogram showing chromosome aberrations del(2)(q13q23), t(4;19)(q35;q13), ins(11;?)(q11;?), and der(20)?t(20;20)(p11;q11); breakpoints are indicated by arrows. B) FISH performed on metaphase spread using BAC RP556K23 (green signal) from 19q13 containing the CIC gene. A part from this probe has moved to the derivative chromosome 4. The der(4), der(19), and the normal chromosomes 4 and 19 are indicated by arrows. C) G- banding of the metaphase spread shown in (B). The der(4), der(19) and the normal chromosomes 4 and 19 are indicated by arrows. D) The location of the BAC RP556K23 on chromosome 19 and the genes found in this region. The data obtained from UCSC Genome Browser (<ext-link ext-link-type="uri" xlink:href="http://genome.ucsc.edu/">http://genome.ucsc.edu/</ext-link>).</p>
+        </caption>
+        <graphic xlink:href="pone.0099439.g002"/>
+      </fig>
+      <p>The initial PCR with Premix Taq and the primer set CIC-4105F/DUX4-1538R as well as the nested PCR with the primers CIC-4283F/DUX4-1507R failed to amplify any cDNA fragments. However, the primer set CIC-4238F/CIC-4958R amplified a <italic>CIC</italic> cDNA fragment suggesting that the synthesized cDNA was of good quality (<xref ref-type="fig" rid="pone-0099439-g003">Figure 3A</xref>). Because of the negative RT-PCR results, whole transcriptome sequencing was performed and the sequencing data were analyzed with FusionMap, FusionFinder, and ChimeraScan which are programs designed to detect fusion genes from high throughput sequencing data <xref rid="pone.0099439-Iyer1" ref-type="bibr">[18]</xref>, <xref rid="pone.0099439-Ge1" ref-type="bibr">[19]</xref>, <xref rid="pone.0099439-Francis1" ref-type="bibr">[20]</xref>.</p>
+      <fig id="pone-0099439-g003" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0099439.g003</object-id>
+        <label>Figure 3</label>
+        <caption>
+          <title>RT-PCR results for the expression of CIC-DUX4 in the tumor.</title>
+          <p>A) The initial PCR with Premix Taq and the primer set CIC-4105F/DUX4-1538R (lane 1) as well as the nested PCR with the primers CIC-4283F/DUX4-1507R (lane 2) did not amplify any cDNA fragments. The primer set CIC-4238F/CIC-4958R (lane 3) amplified a CIC cDNA fragment suggesting the good quality of the synthesized cDNA. Lane 4, Blank, no RNA in cDNA synthesis. B) PCR amplifications using the PrimeSTAR GXL DNA polymerase and the primer combinations CIC-4377F/DUX4-1151R (lane 5) and CIC-4453F/DUX4-1053R (lane 6). Lane 7, Blank, no RNA in cDNA synthesis. M, 1 Kb DNA ladder (GeneRuler, Fermentas). C) Partial sequence chromatogram of the amplified cDNA fragment showing that CIC is fused to DUX4.</p>
+        </caption>
+        <graphic xlink:href="pone.0099439.g003"/>
+      </fig>
+      <p>FusionMap identified 1024 potential fusion transcripts (<xref ref-type="supplementary-material" rid="pone.0099439.s001">Table S1</xref>) but <italic>CIC-DUX4</italic> was not among them. Neither <italic>GSK3A</italic>, <italic>ERF</italic>, <italic>PAFAH1B3</italic>, <italic>PRR19</italic>, <italic>TMEM145</italic>, <italic>MEGF8</italic>, <italic>CNFN</italic>, nor <italic>LIPE</italic>, the other genes which are localized on the FISH probe, were found to be partners in the detected fusion transcripts. FusionFinder and ChimeraScan identified 103 and 101 potential fusion transcripts, respectively (<xref ref-type="supplementary-material" rid="pone.0099439.s002">Tables S2</xref> and <xref ref-type="supplementary-material" rid="pone.0099439.s003">S3</xref>), but again <italic>CIC-DUX4</italic> was not among them. Neither <italic>GSK3A</italic>, <italic>ERF</italic>, <italic>PAFAH1B3</italic>, <italic>PRR19</italic>, <italic>TMEM145</italic>, <italic>MEGF8</italic>, <italic>CNFN</italic> nor <italic>LIPE</italic>, the other genes within the BAC, were found to be partners in the detected fusion transcripts.</p>
+      <p>Since fastq is a text-based format of the sequence data, we decided to use the &#x201C;grep&#x201D; command-line utility and search for sequences which contained part of the last exon of <italic>CIC</italic> (exon 20, nucleotides 4500&#x2013;5473 in the sequence with accession number NM_015125 version 3). The search terms were &#x201C;<named-content content-type="gene">GCCGCCTTCCAGGCCCGCTA</named-content>&#x201D; (nt 4511&#x2013;4530) and &#x201C;<named-content content-type="gene">CAGGGGGCCCTGACCCCACC</named-content>&#x201D; (nt 4701&#x2013;4720). The first search term extracted 76 sequences containing <italic>CIC</italic> cDNA fragments (data not shown). The second search term extracted 22 sequences. Blasting of each of these sequences with the human genomic plus transcript database (<ext-link ext-link-type="uri" xlink:href="http://blast.ncbi.nlm.nih.gov/Blast.cgi">http://blast.ncbi.nlm.nih.gov/Blast.cgi</ext-link>), <italic>CIC</italic> mRNA reference sequence NM_015125.3, and <italic>DUX4</italic> mRNA reference sequence NM_033178.4 showed that 15 out of the 22 were chimeric <italic>CIC-DUX4</italic> cDNA fragments (<xref ref-type="table" rid="pone-0099439-t002">Table 2</xref>). The fusion had occurred between nt 4724 of <italic>CIC</italic> mRNA reference sequence NM_015125.3 and nt 771 of <italic>DUX4</italic> mRNA reference sequence NM_033178.4. Using the search term &#x201C;<named-content content-type="gene">CCCACCTCACCGGCAGAGGG</named-content>&#x201D; which is composed of 10 nt of <italic>CIC</italic> (<named-content content-type="gene">CCCACCTCAC</named-content>) and 10 nt (<named-content content-type="gene">CGGCAGAGGG</named-content>) of <italic>DUX4</italic> upstream and downstream of the fusion point, 19 sequences were retrieved, 15 of which were those found with the &#x201C;<named-content content-type="gene">CAGGGGGCCCTGACCCCACC</named-content>&#x201D; search term.</p>
+      <table-wrap id="pone-0099439-t002" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0099439.t002</object-id>
+        <label>Table 2</label>
+        <caption>
+          <title>The 22 sequences with the &#x201C;grep&#x201D; command line utility with the search term &#x201C;<named-content content-type="gene">CAGGGGGCCCTGACCCCACC</named-content>&#x201D; (in bold italics).</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0099439-t002-2" xlink:href="pone.0099439.t002"/>
+          <table frame="hsides" rules="groups">
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>
+                    <bold>Line</bold>
+                  </monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>
+                    <bold>Sequences</bold>
+                  </monospace>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>1</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>
+                    <named-content content-type="gene">CCCACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCACCCAGCTCGGACTCTGGCACGGCCCAGGCTGCCCCGCCACTGCCTCCACCCCCCGAGTCGGG</named-content>
+                  </monospace>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>2</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <named-content content-type="gene">
+                    <monospace>CACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCAC<bold>cggcagagggggtctcccaacctgccccggcgcgcggggatttcgcctacgccgccccggctc</bold></monospace>
+                  </named-content>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>3</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <named-content content-type="gene">
+                    <monospace>CGCCCCCCACTGGCACCGCTGCTGCCCCTGCCCCCACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCAC<bold>cggcagaggggggctcccaacctgccccg</bold></monospace>
+                  </named-content>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>4</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <named-content content-type="gene">
+                    <monospace>CGCTGCTGCCCCTGCCCCCACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCAC<bold>cggcagagggggtctcccaacctgccccggcgcgcggggatttcg</bold></monospace>
+                  </named-content>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>5</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <named-content content-type="gene">
+                    <monospace>CCTGCCCCCACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCAC<bold>cggcagagggggtctcccaacctgccccggcgcgcggggatttcgcctacgccgc</bold></monospace>
+                  </named-content>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>6</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <named-content content-type="gene">
+                    <monospace>CACCGCTGCTGCCCCTGCCCCCACTCCCAGCCCCC<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCAC<bold>cggcagagggggcctcccaacctgccccggcgcgcggggatt</bold></monospace>
+                  </named-content>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>7</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>
+                    <named-content content-type="gene">TGGCACCGCTTCTGCCCCTGCCCCCACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCACCCAGCTCGGACTCTGGCACGGCCCAGGCTGCCCCGCCAC</named-content>
+                  </monospace>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>8</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <named-content content-type="gene">
+                    <monospace>CCTGCCCCCACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCAC<bold>cggcagagggggtctcccaacctgccccggcgcgcggggatttcgcctacgccgc</bold></monospace>
+                  </named-content>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>9</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>
+                    <named-content content-type="gene">CGCTGCTGCCCCTGCCCCCACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCACTTGCAGAGGGGGTCTCCCAACCTGCCCCGGCGCGCGAGAGATCGG</named-content>
+                  </monospace>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>10</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>CCTCTCCCTGTACCGCCCCCCACTGGCACCGCTGCTGCCCCTGCCCCCACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCAC<bold>cggcagagggggtctc</bold></monospace>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>11</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>
+                    <named-content content-type="gene">CCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCACCCAGCTCGGACTCTGGCACGGCCCAGGCTGCCCCGCCACTGCCTCCACCCCCCGAGTCGGGGCCTGG</named-content>
+                  </monospace>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>12</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <named-content content-type="gene">
+                    <monospace>CCTGCCCCCACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCAC<bold>cggcagagggggactcccaacctgccccggcgcgcggggatttcgcctacgccgc</bold></monospace>
+                  </named-content>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>13</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <named-content content-type="gene">
+                    <monospace>CCCCACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCAC<bold>cggcagagggggtctcccaacctgccccggcgcgcggggatttcgcctacgccgccccgg</bold></monospace>
+                  </named-content>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>14</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <named-content content-type="gene">
+                    <monospace>CTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCAC<bold>cggcagagggggtctcccaacctgccccggcgcgcggggatttcgcctacgccgccccggctcct</bold></monospace>
+                  </named-content>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>15</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>
+                    <named-content content-type="gene">CCACTGCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCACCCAGCTCGGACTCTGGCACGGCCCAGGCTGCCCCGCCACTGCCTCCACCCCCCGAGTCGGGG</named-content>
+                  </monospace>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>16</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <named-content content-type="gene">
+                    <monospace>CACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCAC<bold>cggcagagggggtctcccaacctgccccggcgcgcgggggtttcgcctacgccgccccggctc</bold></monospace>
+                  </named-content>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>17</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <named-content content-type="gene">
+                    <monospace>CCCCTGCCCCCACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCAC<bold>cggcagagggggcctcccaacccgcccccgcgcgcgggggctgcgcctacgcc</bold></monospace>
+                  </named-content>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>18</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <named-content content-type="gene">
+                    <monospace>CCCACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCAC<bold>cggcagagggggtctgccaacctgccccggcgcgcggggatttcgcctacgccgccccggc</bold></monospace>
+                  </named-content>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>19</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>
+                    <named-content content-type="gene">CCGCTGCTGCCCCTGCCCCCACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCACCCAGCTCGGACTCTGGCACGGCCCAGGCTGCCCCGCCACTGCCC</named-content>
+                  </monospace>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>20</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>
+                    <named-content content-type="gene">CACCGCTGCTGCCCCTGCCCCCACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCACCGGCAGTGGGGGTCTCCCAACCTGCCCCGGCGCGCGGGGATT</named-content>
+                  </monospace>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>21</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <named-content content-type="gene">
+                    <monospace>GGCACCGCTGCTGCCCCTGCCCCCACTCCCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCAC<bold>cggcagagggggtctcccaacctgccccggcgcgcggggg</bold></monospace>
+                  </named-content>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <monospace>22</monospace>
+                </td>
+                <td align="left" rowspan="1" colspan="1">
+                  <named-content content-type="gene">
+                    <monospace>CCAGCCCCG<bold><italic>CAGGGGGCCCTGACCCCACC</italic></bold>TCAC<bold>cggcagagggggtctcccaacctgccccggcgcgcggggatttcgcctacgccgccccggctcctccc</bold></monospace>
+                  </named-content>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+        <table-wrap-foot>
+          <fn id="nt101">
+            <label/>
+            <p>The CIC sequences are shown in uppercase letters. DUX4 sequences are shown in bold lowercase letters.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>To verify the data obtained with the &#x201C;grep&#x201D; command, PCR amplifications were performed using the PrimeSTAR GXL DNA polymerase. Both primer combinations, CIC-4377F/DUX4-1151R and CIC-4453F/DUX4-1053R, amplified cDNA fragments (<xref ref-type="fig" rid="pone-0099439-g003">Figure 3B</xref>). Sanger sequencing verified that they were <italic>CIC-DUX4</italic> fusion transcripts which had the same fusion point found with the &#x201C;grep&#x201D; command (<xref ref-type="fig" rid="pone-0099439-g003">Figure 3C</xref>).</p>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>Our initial negative result for <italic>CIC-DUX4</italic> fusion with RT-PCR prompted us to investigate the tumor using whole transcriptome sequencing. The small round cell tumor had the t(4;19)(q35;q13) translocation as part of its karyotype and in addition a split signal of the BAC RP11-556K23 (mapped on 19q13), which contains <italic>CIC</italic>, features that led us to nevertheless believe strongly that a <italic>CIC-DUX4</italic> fusion must be present. However, also <italic>GSK3A</italic>, <italic>ERF</italic>, <italic>PAFAH1B3</italic>, <italic>PRR19</italic>, <italic>TMEM145</italic>, <italic>MEGF8</italic>, <italic>CNFN</italic>, and <italic>LIPE</italic> were present in the BAC bridging the breakpoint and could conceivably be the gene-level target of the chromosomal split. It was therefore surprising that no signs of any <italic>CIC-DUX4</italic> were evident when we analyzed the raw sequencing data using ChimeraScan <xref rid="pone.0099439-Iyer1" ref-type="bibr">[18]</xref>, FusionMap <xref rid="pone.0099439-Ge1" ref-type="bibr">[19]</xref>, and FusionFinder <xref rid="pone.0099439-Francis1" ref-type="bibr">[20]</xref>, fusion-finder programs that have all been evaluated recently on a synthetic dataset as well as real datasets that included experimentally validated chimeras <xref rid="pone.0099439-Carrara1" ref-type="bibr">[27]</xref>, <xref rid="pone.0099439-Carrara2" ref-type="bibr">[28]</xref>. All three programs produced a plethora of fusion transcripts but none of them contained <italic>CIC</italic> or any of the other 8 genes found in the split RP11-556K23 FISH probe. We then as a last resort decided to search for <italic>CIC</italic> sequences in the whole transcriptome sequencing data set using the &#x201C;grep&#x201D; command-line utility. The rationale was: 1) the RNA sequencing data are in fastq format files (filename.fastq) and fastq is a text-based format (<ext-link ext-link-type="uri" xlink:href="http://en.wikipedia.org/wiki/FASTQ_format">http://en.wikipedia.org/wiki/FASTQ_format</ext-link>) and 2) the sequence data can be searched using the &#x201C;grep&#x201D; command-line utility (<ext-link ext-link-type="uri" xlink:href="http://en.wikipedia.org/wiki/Grep">http://en.wikipedia.org/wiki/Grep</ext-link>). The &#x201C;grep&#x201D; command-line utility is used for searching text or a file for specific expressions. By default, &#x201C;grep&#x201D; displays the lines where matches occur. Our &#x201C;specific expression&#x201D; was a sequence of 20 nucleotides from the coding part of the last exon (20) of <italic>CIC</italic> (Reference Sequence: NM_015125.3) since all the so far reported <italic>CIC</italic> breakpoints have occurred in that part of the <italic>CIC</italic> gene <xref rid="pone.0099439-KawamuraSaito1" ref-type="bibr">[5]</xref>, <xref rid="pone.0099439-Graham1" ref-type="bibr">[12]</xref>&#x2013;<xref rid="pone.0099439-Choi1" ref-type="bibr">[14]</xref>. The sequences obtained by &#x201C;grep&#x201D; were blasted against the human genomic plus transcript database (<ext-link ext-link-type="uri" xlink:href="http://blast.ncbi.nlm.nih.gov/Blast.cgi">http://blast.ncbi.nlm.nih.gov/Blast.cgi</ext-link>) in order to identify possible chimeric fragments containing part of <italic>CIC</italic> and part of another gene.</p>
+      <p>This approach allowed us to obtain from the RNA sequencing fastq file 15 chimeric <italic>CIC-DUX4</italic> cDNA sequences (<xref ref-type="table" rid="pone-0099439-t002">Table 2</xref>) and to map the fusion between the <italic>CIC</italic> and <italic>DUX4</italic> genes precisely. Subsequently, four more chimeric <italic>CIC-DUX4</italic> sequences were identified using a 20-mer sequence containing the fusion point as &#x201C;specific expression&#x201D; in the &#x201C;grep&#x201D; command-line utility. The fusion occurred between nt 4724 of <italic>CIC</italic> mRNA reference sequence NM_015125.3 and nt 771 of <italic>DUX4</italic> mRNA reference sequence NM_033178.4. This fusion has not been reported before <xref rid="pone.0099439-KawamuraSaito1" ref-type="bibr">[5]</xref>, <xref rid="pone.0099439-Graham1" ref-type="bibr">[12]</xref>&#x2013;<xref rid="pone.0099439-Choi1" ref-type="bibr">[14]</xref>. <italic>CIC</italic> fusions have been reported at nt 4552, 4579, 4740, 4750 <xref rid="pone.0099439-Graham1" ref-type="bibr">[12]</xref>&#x2013;<xref rid="pone.0099439-Choi1" ref-type="bibr">[14]</xref>, <xref rid="pone.0099439-Machado1" ref-type="bibr">[16]</xref> and for <italic>DUX4</italic> at nt 1071, 1078, and 1145 of the reference sequence with accession number NM_033178.4 <xref rid="pone.0099439-KawamuraSaito1" ref-type="bibr">[5]</xref>, <xref rid="pone.0099439-Graham1" ref-type="bibr">[12]</xref>&#x2013;<xref rid="pone.0099439-Choi1" ref-type="bibr">[14]</xref>.</p>
+      <p>An explanation for the failure of the initial PCR is that the target <italic>CIC-DUX4</italic> chimeric sequence between CIC-4105F/DUX4-1538R primers was 1208 bp long with 70% CG content (<xref ref-type="fig" rid="pone-0099439-g004">Figure 4</xref>). The primer combinations CIC-4377F/DUX4-1151R and CIC-4453F/DUX4-1053R together with a PrimeSTAR GXL DNA polymerase, suitable for GC-rich templates, amplified fragments 546 bp long with 70% CG content and 374 bp long with 69% CG content, respectively (<xref ref-type="fig" rid="pone-0099439-g003">Figures 3B</xref> and <xref ref-type="fig" rid="pone-0099439-g004">4</xref>). Sanger sequencing verified that they were <italic>CIC-DUX4</italic> fusion transcripts which had the same fusion point found with the &#x201C;grep&#x201D; command-line utility.</p>
+      <fig id="pone-0099439-g004" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0099439.g004</object-id>
+        <label>Figure 4</label>
+        <caption>
+          <title>A putative 1208-DUX4 fusion transcript which would have been amplified using the the forward CIC-4105F and reverse DUX4-1538R primers.</title>
+          <p>All the primers used in the study are denoting the primers sequences (in box) together with orientation (arrows). The search sequences &#x201C;<named-content content-type="gene">GCCGCCTTCCAGGCCCGCTA</named-content>&#x201D; (&#x201C;grep&#x201D; 1) and &#x201C;<named-content content-type="gene">CAGGGGGCCCTGACCCCACC</named-content>&#x201D; (&#x201C;grep&#x201D; 2) used as search terms in the &#x201C;grep&#x201D; command-line utility are colored yellow and in box. The fusion point between CIC and DUX4 is in red. The part of the protein coded by this CIC-DUX4 fusion transcript fragment is shown under the nucleotide sequence. The nucleotide sequence has been deposited in the GenBank with accession number KJ670706.</p>
+        </caption>
+        <graphic xlink:href="pone.0099439.g004"/>
+      </fig>
+      <p>Current knowledge about the <italic>CIC-DUX4</italic> fusion holds that in the encoding protein CIC is mostly preserved and retains its HMG-box domain fusion, while DUX4 has lost most of its sequence, including its two DNA-binding homeodomains <xref rid="pone.0099439-KawamuraSaito1" ref-type="bibr">[5]</xref>, <xref rid="pone.0099439-Yoshimoto1" ref-type="bibr">[11]</xref>, <xref rid="pone.0099439-Graham1" ref-type="bibr">[12]</xref>, <xref rid="pone.0099439-Choi1" ref-type="bibr">[14]</xref>. As a consequence of the fusion the transcriptional activity of CIC is enhanced, suggesting an abnormal regulation of downstream targets <xref rid="pone.0099439-KawamuraSaito1" ref-type="bibr">[5]</xref>. CIC&#x2013;DUX4 directly binds the ERM promoter by recognizing a novel target sequence and significantly up-regulates its expression <xref rid="pone.0099439-KawamuraSaito1" ref-type="bibr">[5]</xref>. Mashado et al <xref rid="pone.0099439-Machado1" ref-type="bibr">[16]</xref>, on the other hand, described an undifferentiated small round cell sarcoma in which <italic>CIC-DUX4</italic> coded for a putative truncated CIC protein. In that case, the last 104 amino acid residues of CIC protein were deleted and <italic>DUX4</italic> contributed a triplet followed by a stop codon. It is not known whether this truncated CIC protein would have resulted in an enhanced transcriptional activity of CIC.</p>
+      <p>In conclusion, our study showed that the three fusion-finder programs FusionMap <xref rid="pone.0099439-Ge1" ref-type="bibr">[19]</xref>, Fusion Finder <xref rid="pone.0099439-Francis1" ref-type="bibr">[20]</xref>, and ChimeraScan <xref rid="pone.0099439-Iyer1" ref-type="bibr">[18]</xref> generated a plethora of fusion transcripts but not the biologically important and cancer-specific fusion gene, the <italic>CIC-DUX4</italic> chimeric transcript. It was necessary to use the &#x201C;grep&#x201D; command-line utility to sift out the latter from the many data produced by the automated algoritms. Cytogenetic, FISH, and clinico-pathologic tumor features hinted at the presence of the said fusion, but it was eventually found only after the manual &#x201C;grep&#x201D;-function had been used.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0099439.s001">
+        <label>Table S1</label>
+        <caption>
+          <p>Fusion transcripts detected using FusionMap.</p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0099439.s001.xlsx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0099439.s002">
+        <label>Table S2</label>
+        <caption>
+          <p>Fusion transcripts detected using FusionFinder.</p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0099439.s002.xlsx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0099439.s003">
+        <label>Table S3</label>
+        <caption>
+          <p>Fusion transcripts detected using ChimeraScan.</p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0099439.s003.xlsx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0099439-Richkind1">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Richkind</surname><given-names>KE</given-names></name>, <name><surname>Romansky</surname><given-names>SG</given-names></name>, <name><surname>Finklestein</surname><given-names>JZ</given-names></name> (<year>1996</year>) <article-title>t(4;19)(q35;q13.1): a recurrent change in primitive mesenchymal tumors?</article-title><source>Cancer Genet Cytogenet</source><volume>87</volume>: <fpage>71</fpage>&#x2013;<lpage>74</lpage><pub-id pub-id-type="pmid">8646746</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Urumov1">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Urumov</surname><given-names>IJ</given-names></name>, <name><surname>Manolova</surname><given-names>Y</given-names></name> (<year>1992</year>) <article-title>Cytogenetic analysis of an embryonal rhabdomyosarcoma cell line</article-title>. <source>Cancer Genet Cytogenet</source><volume>61</volume>: <fpage>214</fpage>&#x2013;<lpage>215</lpage><pub-id pub-id-type="pmid">1322234</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Roberts1">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Roberts</surname><given-names>P</given-names></name>, <name><surname>Browne</surname><given-names>CF</given-names></name>, <name><surname>Lewis</surname><given-names>IJ</given-names></name>, <name><surname>Bailey</surname><given-names>CC</given-names></name>, <name><surname>Spicer</surname><given-names>RD</given-names></name>, <etal>et al</etal> (<year>1992</year>) <article-title>12q13 abnormality in rhabdomyosarcoma. A nonrandom occurrence?</article-title><source>Cancer Genet Cytogenet</source><volume>60</volume>: <fpage>135</fpage>&#x2013;<lpage>140</lpage><pub-id pub-id-type="pmid">1606556</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Somers1">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Somers</surname><given-names>GR</given-names></name>, <name><surname>Shago</surname><given-names>M</given-names></name>, <name><surname>Zielenska</surname><given-names>M</given-names></name>, <name><surname>Chan</surname><given-names>HS</given-names></name>, <name><surname>Ngan</surname><given-names>BY</given-names></name> (<year>2004</year>) <article-title>Primary subcutaneous primitive neuroectodermal tumor with aggressive behavior and an unusual karyotype: case report</article-title>. <source>Pediatr Dev Pathol</source><volume>7</volume>: <fpage>538</fpage>&#x2013;<lpage>545</lpage><pub-id pub-id-type="pmid">15547779</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-KawamuraSaito1">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Kawamura-Saito</surname><given-names>M</given-names></name>, <name><surname>Yamazaki</surname><given-names>Y</given-names></name>, <name><surname>Kaneko</surname><given-names>K</given-names></name>, <name><surname>Kawaguchi</surname><given-names>N</given-names></name>, <name><surname>Kanda</surname><given-names>H</given-names></name>, <etal>et al</etal> (<year>2006</year>) <article-title>Fusion between CIC and DUX4 up-regulates PEA3 family genes in Ewing-like sarcomas with t(4;19)(q35;q13) translocation</article-title>. <source>Hum Mol Genet</source><volume>15</volume>: <fpage>2125</fpage>&#x2013;<lpage>2137</lpage><pub-id pub-id-type="pmid">16717057</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Gabrils1">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Gabri&#xEB;ls</surname><given-names>J</given-names></name>, <name><surname>Beckers</surname><given-names>MC</given-names></name>, <name><surname>Ding</surname><given-names>H</given-names></name>, <name><surname>De Vriese</surname><given-names>A</given-names></name>, <name><surname>Plaisance</surname><given-names>S</given-names></name>, <etal>et al</etal> (<year>1999</year>) <article-title>Nucleotide sequence of the partially deleted D4Z4 locus in a patient with FSHD identifies a putative gene within each 3.3 kb element</article-title>. <source>Gene</source><volume>236</volume>: <fpage>25</fpage>&#x2013;<lpage>32</lpage><pub-id pub-id-type="pmid">10433963</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-vanGeel1">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>van Geel</surname><given-names>M</given-names></name>, <name><surname>Dickson</surname><given-names>MC</given-names></name>, <name><surname>Beck</surname><given-names>AF</given-names></name>, <name><surname>Bolland</surname><given-names>DJ</given-names></name>, <name><surname>Frants</surname><given-names>RR</given-names></name>, <etal>et al</etal> (<year>2002</year>) <article-title>Genomic analysis of human chromosome 10q and 4q telomeres suggests a common origin</article-title>. <source>Genomics</source><volume>79</volume>: <fpage>210</fpage>&#x2013;<lpage>217</lpage><pub-id pub-id-type="pmid">11829491</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Dixit1">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Dixit</surname><given-names>M</given-names></name>, <name><surname>Ansseau</surname><given-names>E</given-names></name>, <name><surname>Tassin</surname><given-names>A</given-names></name>, <name><surname>Winokur</surname><given-names>S</given-names></name>, <name><surname>Shi</surname><given-names>R</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>DUX4, a candidate gene of facioscapulohumeral muscular dystrophy, encodes a transcriptional activator of PITX1</article-title>. <source>Proc Natl Acad Sci U S A</source><volume>104</volume>: <fpage>18157</fpage>&#x2013;<lpage>18162</lpage><pub-id pub-id-type="pmid">17984056</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Kowaljow1">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Kowaljow</surname><given-names>V</given-names></name>, <name><surname>Marcowycz</surname><given-names>A</given-names></name>, <name><surname>Ansseau</surname><given-names>E</given-names></name>, <name><surname>Conde</surname><given-names>CB</given-names></name>, <name><surname>Sauvage</surname><given-names>S</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>The DUX4 gene at the FSHD1A locus encodes a pro-apoptotic protein</article-title>. <source>Neuromuscul Disord</source><volume>17</volume>: <fpage>611</fpage>&#x2013;<lpage>623</lpage><pub-id pub-id-type="pmid">17588759</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Rakheja1">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Rakheja</surname><given-names>D</given-names></name>, <name><surname>Goldman</surname><given-names>S</given-names></name>, <name><surname>Wilson</surname><given-names>KS</given-names></name>, <name><surname>Lenarsky</surname><given-names>C</given-names></name>, <name><surname>Weinthal</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>Translocation (4;19)(q35;q13.1)-associated primitive round cell sarcoma: report of a case and review of the literature</article-title>. <source>Pediatr Dev Pathol</source><volume>11</volume>: <fpage>239</fpage>&#x2013;<lpage>244</lpage><pub-id pub-id-type="pmid">17990934</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Yoshimoto1">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Yoshimoto</surname><given-names>M</given-names></name>, <name><surname>Graham</surname><given-names>C</given-names></name>, <name><surname>Chilton-MacNeill</surname><given-names>S</given-names></name>, <name><surname>Lee</surname><given-names>E</given-names></name>, <name><surname>Shago</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Detailed cytogenetic and array analysis of pediatric primitive sarcomas reveals a recurrent CIC-DUX4 fusion gene event</article-title>. <source>Cancer Genet Cytogenet</source><volume>195</volume>: <fpage>1</fpage>&#x2013;<lpage>11</lpage><pub-id pub-id-type="pmid">19837261</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Graham1">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Graham</surname><given-names>C</given-names></name>, <name><surname>Chilton-MacNeill</surname><given-names>S</given-names></name>, <name><surname>Zielenska</surname><given-names>M</given-names></name>, <name><surname>Somers</surname><given-names>GR</given-names></name> (<year>2012</year>) <article-title>The CIC-DUX4 fusion transcript is present in a subgroup of pediatric primitive round cell sarcomas</article-title>. <source>Hum Pathol</source><volume>43</volume>: <fpage>180</fpage>&#x2013;<lpage>189</lpage><pub-id pub-id-type="pmid">21813156</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Italiano1">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Italiano</surname><given-names>A</given-names></name>, <name><surname>Sung</surname><given-names>YS</given-names></name>, <name><surname>Zhang</surname><given-names>L</given-names></name>, <name><surname>Singer</surname><given-names>S</given-names></name>, <name><surname>Maki</surname><given-names>RG</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>High prevalence of CIC fusion with double-homeobox (DUX4) transcription factors in EWSR1-negative undifferentiated small blue round cell sarcomas</article-title>. <source>Genes Chromosomes Cancer</source><volume>51</volume>: <fpage>207</fpage>&#x2013;<lpage>218</lpage><pub-id pub-id-type="pmid">22072439</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Choi1">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Choi</surname><given-names>EY</given-names></name>, <name><surname>Thomas</surname><given-names>DG</given-names></name>, <name><surname>McHugh</surname><given-names>JB</given-names></name>, <name><surname>Patel</surname><given-names>RM</given-names></name>, <name><surname>Roulston</surname><given-names>D</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>Undifferentiated small round cell sarcoma with t(4;19)(q35;q13.1) CIC-DUX4 fusion: a novel highly aggressive soft tissue tumor with distinctive histopathology</article-title>. <source>Am J Surg Pathol</source><volume>37</volume>: <fpage>1379</fpage>&#x2013;<lpage>1386</lpage><pub-id pub-id-type="pmid">23887164</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Kajtr1">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Kajt&#xE1;r</surname><given-names>B</given-names></name>, <name><surname>Torn&#xF3;czky</surname><given-names>T</given-names></name>, <name><surname>K&#xE1;lm&#xE1;n</surname><given-names>E</given-names></name>, <name><surname>Kuzsner</surname><given-names>J</given-names></name>, <name><surname>Hogendoorn</surname><given-names>PC</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>CD99-positive undifferentiated round cell sarcoma diagnosed on fine needle aspiration cytology, later found to harbour a CIC-DUX4 translocation: a recently described entity</article-title>. <source>Cytopathology</source><volume>25</volume>: <fpage>129</fpage>&#x2013;<lpage>32</lpage><pub-id pub-id-type="pmid">23834194</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Machado1">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Machado</surname><given-names>I</given-names></name>, <name><surname>Cruz</surname><given-names>J</given-names></name>, <name><surname>Lavernia</surname><given-names>J</given-names></name>, <name><surname>Rubio</surname><given-names>L</given-names></name>, <name><surname>Campos</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>Superficial EWSR1-negative undifferentiated small round cell sarcoma with CIC/DUX4 gene fusion: a new variant of Ewing-like tumors with locoregional lymph node metastasis</article-title>. <source>Virchows Arch</source><volume>463</volume>: <fpage>837</fpage>&#x2013;<lpage>842</lpage><pub-id pub-id-type="pmid">24213312</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Wang1">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>Wang</surname><given-names>Q</given-names></name>, <name><surname>Xia</surname><given-names>J</given-names></name>, <name><surname>Jia</surname><given-names>P</given-names></name>, <name><surname>Pao</surname><given-names>W</given-names></name>, <name><surname>Zhao</surname><given-names>Z</given-names></name> (<year>2012</year>) <article-title>Application of next generation sequencing to human gene fusion detection: computational tools, features and perspectives</article-title>. <source>Brief Bioinform</source><volume>14</volume>: <fpage>506</fpage>&#x2013;<lpage>19</lpage><pub-id pub-id-type="pmid">22877769</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Iyer1">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Iyer</surname><given-names>MK</given-names></name>, <name><surname>Chinnaiyan</surname><given-names>AM</given-names></name>, <name><surname>Maher</surname><given-names>CA</given-names></name> (<year>2011</year>) <article-title>ChimeraScan: a tool for identifying chimeric transcription in sequencing data</article-title>. <source>Bioinformatics</source><volume>27</volume>: <fpage>2903</fpage>&#x2013;<lpage>2904</lpage><pub-id pub-id-type="pmid">21840877</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Ge1">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Ge</surname><given-names>H</given-names></name>, <name><surname>Liu</surname><given-names>K</given-names></name>, <name><surname>Juan</surname><given-names>T</given-names></name>, <name><surname>Fang</surname><given-names>F</given-names></name>, <name><surname>Newman</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>FusionMap: detecting fusion genes from next-generation sequencing data at base-pair resolution</article-title>. <source>Bioinformatics</source><volume>27</volume>: <fpage>1922</fpage>&#x2013;<lpage>1928</lpage><pub-id pub-id-type="pmid">21593131</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Francis1">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Francis</surname><given-names>RW</given-names></name>, <name><surname>Thompson-Wicking</surname><given-names>K</given-names></name>, <name><surname>Carter</surname><given-names>KW</given-names></name>, <name><surname>Anderson</surname><given-names>D</given-names></name>, <name><surname>Kees</surname><given-names>UR</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>FusionFinder: a software tool to identify expressed gene fusion candidates from RNA-Seq data</article-title>. <source>PLoS One</source><volume>7</volume>: <fpage>e39987</fpage><pub-id pub-id-type="pmid">22761941</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Panagopoulos1">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Panagopoulos</surname><given-names>I</given-names></name>, <name><surname>Thorsen</surname><given-names>J</given-names></name>, <name><surname>Gorunova</surname><given-names>L</given-names></name>, <name><surname>Haugom</surname><given-names>L</given-names></name>, <name><surname>Bjerkehagen</surname><given-names>B</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>Fusion of the ZC3H7B and BCOR genes in endometrial stromal sarcomas carrying an X;22-translocation</article-title>. <source>Genes Chromosomes Cancer</source><volume>52</volume>: <fpage>610</fpage>&#x2013;<lpage>618</lpage><pub-id pub-id-type="pmid">23580382</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Nyquist1">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Nyquist</surname><given-names>KB</given-names></name>, <name><surname>Panagopoulos</surname><given-names>I</given-names></name>, <name><surname>Thorsen</surname><given-names>J</given-names></name>, <name><surname>Haugom</surname><given-names>L</given-names></name>, <name><surname>Gorunova</surname><given-names>L</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Whole-Transcriptome Sequencing Identifies Novel IRF2BP2-CDX1 Fusion Gene Brought about by Translocation t(1;5)(q42;q32) in Mesenchymal Chondrosarcoma</article-title>. <source>PLoS One</source><volume>7</volume>: <fpage>e49705</fpage><pub-id pub-id-type="pmid">23185413</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Panagopoulos2">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Panagopoulos</surname><given-names>I</given-names></name>, <name><surname>Thorsen</surname><given-names>J</given-names></name>, <name><surname>Gorunova</surname><given-names>L</given-names></name>, <name><surname>Micci</surname><given-names>F</given-names></name>, <name><surname>Haugom</surname><given-names>L</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>RNA sequencing identifies fusion of the EWSR1 and YY1 genes in mesothelioma with t(14;22)(q32;q12)</article-title>. <source>Genes Chromosomes Cancer</source><volume>52</volume>: <fpage>733</fpage>&#x2013;<lpage>740</lpage><pub-id pub-id-type="pmid">23630070</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Mandahl1">
+        <label>24</label>
+        <mixed-citation publication-type="book">Mandahl N (2001) Methods in solid tumour cytogenetics. In: Rooney DE, editor. Human cytogenetics: malignancy and acquired abnormalities. New York: Oxford University Press. pp. 165&#x2013;203.</mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Schaffer1">
+        <label>25</label>
+        <mixed-citation publication-type="book">Schaffer LG, Slovak ML, Campbell LJ (2009) ISCN 2009: an International System for Human Cytogenetic Nomenclature. Basel: Karger.</mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Field1">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Field</surname><given-names>D</given-names></name>, <name><surname>Tiwari</surname><given-names>B</given-names></name>, <name><surname>Booth</surname><given-names>T</given-names></name>, <name><surname>Houten</surname><given-names>S</given-names></name>, <name><surname>Swan</surname><given-names>D</given-names></name>, <etal>et al</etal> (<year>2006</year>) <article-title>Open software for biologists: from famine to feast</article-title>. <source>Nat Biotechnol</source><volume>24</volume>: <fpage>801</fpage>&#x2013;<lpage>803</lpage><pub-id pub-id-type="pmid">16841067</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Carrara1">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Carrara</surname><given-names>M</given-names></name>, <name><surname>Beccuti</surname><given-names>M</given-names></name>, <name><surname>Lazzarato</surname><given-names>F</given-names></name>, <name><surname>Cavallo</surname><given-names>F</given-names></name>, <name><surname>Cordero</surname><given-names>F</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>State-of-the-art fusion-finder algorithms sensitivity and specificity</article-title>. <source>Biomed Res Int</source><volume>2013</volume>: <fpage>340620</fpage><pub-id pub-id-type="pmid">23555082</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0099439-Carrara2">
+        <label>28</label>
+        <mixed-citation publication-type="journal"><name><surname>Carrara</surname><given-names>M</given-names></name>, <name><surname>Beccuti</surname><given-names>M</given-names></name>, <name><surname>Cavallo</surname><given-names>F</given-names></name>, <name><surname>Donatelli</surname><given-names>S</given-names></name>, <name><surname>Lazzarato</surname><given-names>F</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>State of art fusion-finder algorithms are suitable to detect transcription-induced chimeras in normal tissues?</article-title><source>BMC Bioinformatics</source><volume>14 Suppl 7</volume>: <fpage>S2</fpage><pub-id pub-id-type="pmid">23815381</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

@@ -1,0 +1,994 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24086764</article-id>
+      <article-id pub-id-type="pmc">3785445</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-13-02493</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0076892</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>The Potential of Metatranscriptomics for Identifying Screening Targets for Bacterial Vaginosis</article-title>
+        <alt-title alt-title-type="running-head">Bacterial Vaginosis Metatranscriptome Screening</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Twin</surname>
+            <given-names>Jimmy</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bradshaw</surname>
+            <given-names>Catriona S.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Garland</surname>
+            <given-names>Suzanne M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Fairley</surname>
+            <given-names>Christopher K.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Fethers</surname>
+            <given-names>Katherine</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tabrizi</surname>
+            <given-names>Sepehr N.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Microbiology and Infectious Diseases, The Royal Women's Hospital, Melbourne, Australia</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Murdoch Childrens Research Institute, Melbourne, Australia</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Melbourne Sexual Health Centre, Melbourne, Australia</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Department of Epidemiology and Preventive Medicine, Monash University, Melbourne, Australia</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>Melbourne School of Population Health, University of Melbourne, Melbourne, Australia</addr-line>
+      </aff>
+      <aff id="aff6">
+        <label>6</label>
+        <addr-line>Department of Obstetrics and Gynaecology, University of Melbourne, Melbourne, Australia</addr-line>
+      </aff>
+      <aff id="aff7">
+        <label>7</label>
+        <addr-line>Department of Microbiology, The Royal Children's Hospital, Melbourne, Australia</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Ravel</surname>
+            <given-names>Jacques</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Institute for Genome Sciences, University of Maryland School of Medicine, United States of America</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>jimmy.twin@mcri.edu.au</email></corresp>
+        <fn fn-type="conflict">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: JT CB SG CF KF ST. Performed the experiments: JT. Analyzed the data: JT CB SG CF ST. Contributed reagents/materials/analysis tools: CB SG CF ST. Wrote the paper: JT CB SG CF KF ST. Sample collection: KF.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>27</day>
+        <month>9</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>9</issue>
+      <elocation-id>e76892</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>15</day>
+          <month>1</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>29</day>
+          <month>8</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Twin et al</copyright-holder>
+        <license>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>The ribosomal RNA content of a sample collected from a woman with bacterial vaginosis (BV) was analysed to determine the active microbial community, and to identify potential targets for further screening.</p>
+        </sec>
+        <sec>
+          <title>Methodology/Principal Findings</title>
+          <p>The sample from the BV patient underwent total RNA extraction, followed by physical subtraction of human rRNA and whole transcriptome amplification. The metatranscriptome was sequenced using Roche 454 titanium chemistry. The bioinformatics pipeline MG-RAST and desktop DNA analysis platforms were utilised to analyse results. Bacteria of the genus <italic>Prevotella</italic> (predominately <italic>P. amnii</italic>) constituted 36% of the 16S rRNA reads, followed by <italic>Megasphaera</italic> (19%), <italic>Leptotrichia/Sneathia</italic> (8%) and <italic>Fusobacterium</italic> (8%). Comparison of the abundances of several bacteria to quantitative PCR (qPCR) screening of extracted DNA revealed comparable relative abundances. This suggests a correlation between what was present and transcriptionally active in this sample: however distinct differences were seen when compared to the microbiome determined by 16S rRNA gene amplicon sequencing. To assess the presence of <italic>P. amnii</italic> in a larger pool of samples, 90 sexually active women were screened using qPCR. This bacterium was found to be strongly associated with BV (P&lt;0.001, OR 23.3 (95%CI:2.9&#x2013;190.7)) among the 90 women.</p>
+        </sec>
+        <sec>
+          <title>Conclusions/Significance</title>
+          <p>This study highlighted the potential of metatranscriptomics as a tool for characterising metabolically active microbiota and identifying targets for further screening. <italic>Prevotella amnii</italic> was chosen as an example target, being the most metabolically active species present in the single patient with BV, and was found to be detected at a high concentration by qPCR in 31% of cohort with BV, with an association with both oral and penile-vaginal sex.</p>
+        </sec>
+      </abstract>
+      <funding-group>
+        <funding-statement>This project was funded under the Australian federal government NHMRC program grant 568971. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="8"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>The advent of molecular-based screening utilising massively parallel DNA sequencing has increased our capability to characterise the microbial ecology of human clinical samples, both rapidly and economically <xref ref-type="bibr" rid="pone.0076892-Nakamura1">[1]</xref>. In addition it has allowed a better understanding of the normal endogenous microbiota. The vaginal microbiota is complex, varying at different stages of reproductive life, as well as during the menstrual cycle. Bacterial vaginosis (BV) is a condition affecting the vaginal microbiota where in the childbearing age woman the natural microbiota (typically <italic>Lactobacillus</italic> spp.) is depleted, and replaced by an overgrowth of mixed, primarily anaerobic bacteria <xref ref-type="bibr" rid="pone.0076892-Lamont1">[2]</xref>. This condition has significant associations with miscarriage, premature birth and pelvic infections, and can increase a woman's risk of acquiring sexually transmitted infections and HIV <xref ref-type="bibr" rid="pone.0076892-Turovskiy1">[3]</xref>. No single aetiological agent has been identified yet for BV, and is now generally considered likely to be of polymicrobial aetiology.</p>
+      <p>BV is typically diagnosed using either the Nugent scoring method <xref ref-type="bibr" rid="pone.0076892-Nugent1">[4]</xref> that examines bacterial composition via a Gram smear or the Amsel criteria <xref ref-type="bibr" rid="pone.0076892-Amsel1">[5]</xref> that considers factors such as presence of discharge, amine production, presence of clue cells and a vaginal pH greater than 4.5. Through microbiome studies, the microbiology of BV has been better characterised. These studies have generally been carried out using PCR-derived 16S rRNA gene fragments, using &#x201C;universal&#x201D; bacterial 16S rRNA gene primers <xref ref-type="bibr" rid="pone.0076892-Lamont1">[2]</xref>. While this approach is able to provide a comprehensive understanding of the bacterial community membership, it is not able to determine which members are transcriptionally active.</p>
+      <p>Metatranscriptomics is the analysis of the RNA transcripts being expressed by a community at a given point of time. For bacteria, the predominant RNA classes are ribosomal (primarily 16S rRNA and 23S rRNA), which are able to be used as taxonomic identifiers. The metatranscriptomic screening of clinical samples has been described for gut and dental microbiomes <xref ref-type="bibr" rid="pone.0076892-FriasLopez1">[6]</xref>, <xref ref-type="bibr" rid="pone.0076892-Gosalbes1">[7]</xref>, with only one study to date applying this methodology to BV<xref ref-type="bibr" rid="pone.0076892-Shipitsyna1">[8]</xref>. An important difficulty faced with the application of this technique to clinical samples is the low levels of RNA present in many samples and the overabundance of host RNA. This requires reduction of host RNA and subsequent linear amplification of RNA for transcriptomic analysis <xref ref-type="bibr" rid="pone.0076892-Iscove1">[9]</xref>, <xref ref-type="bibr" rid="pone.0076892-Lin1">[10]</xref>.</p>
+      <p>This study describes a method to analyse microbial rRNA from vaginal samples that is applicable to variety of clinical sample types. It demonstrates how the data gained can provide valuable information for larger qPCR based screening studies.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s2">
+      <title>Materials and Methods</title>
+      <sec id="s2a">
+        <title>Sample collection</title>
+        <p>A 26 year old woman presenting with abnormal vaginal discharge, odour, 4/4 Amsel criteria and a Nugent score of 10 was recruited with written consent from Melbourne Sexual Health Centre (MSHC), Victoria, Australia. This patient reported no recent antibiotic use, had no recent male sexual partner, and reported only having one female partner in the prior 3 months and three in the past 12 months. Vaginal discharge was collected using ten flocked swabs and immediately rotated and pooled in 4 ml RNAlater (Life Technologies, Grand Island, USA). The RNAlater solution was then stored at &#x2212;80&#xB0;C until processing.</p>
+        <p>For the second component of this study, extracted DNA (stored at &#x2212;30&#xB0;C) was utilised from a randomly selected subset of 90 samples obtained from a cross sectional study of sexually active women attending MSHC in 2003/4 <xref ref-type="bibr" rid="pone.0076892-Bradshaw1">[11]</xref>. This set of samples comprised 34 women with normal microbiota (Nugent 0&#x2013;3), 20 with intermediate microbiota (Nugent 4&#x2013;6) and 36 with BV (Nugent 7&#x2013;10). Written consent for all de-identified participants and ethical approval for this study was obtained previously from The Alfred Hospital Human Research Ethics Committee.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Nucleic acid preparation</title>
+        <p><xref ref-type="fig" rid="pone-0076892-g001">Figure 1</xref> provides an overview of the workflow for this study. Initially, total RNA was extracted from 2 ml RNAlater solution <xref ref-type="bibr" rid="pone.0076892-Triant1">[12]</xref>. Total RNA extraction was performed using Trizol (Life Technologies) with use of 1-Bromo-3-chloropropane in place of chloroform followed by RNA purification using a RNeasy column (Qiagen, Hilden, Germany) <xref ref-type="bibr" rid="pone.0076892-Chomczynski1">[13]</xref>. Any remaining DNA was digested using the Turbo DNA-free enzyme (Life Technologies).</p>
+        <fig id="pone-0076892-g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0076892.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Overview of experiment.</title>
+            <p>Flow chart of the work plan for this study.</p>
+          </caption>
+          <graphic xlink:href="pone.0076892.g001"/>
+        </fig>
+        <p>Human ribosomal content was subtracted using the MICROBEnrich Kit (Life Technologies) as per manufacturer instructions followed by removal of small RNAs with the MEGAclear kit (Life Technologies). RNA concentration was determined by Agilent 2100 Bioanalyzer (Agilent Technologies Inc., Santa Clara, USA). To increase the RNA content needed for sequencing, whole transcriptome amplification (WTA) and reverse-transcription using the TransPlex&#xAE; Complete Whole Transcriptome Amplification Kit (Sigma-Aldrich Corporation, St. Louis, USA) was utilized. This resulted in a cDNA concentration of 50 ng/&#xB5;l (from original RNA content of 3.5 ng/&#xB5;l) with 2 &#xB5;g submitted to AGRF (Australian Genome Research Facility Ltd., Brisbane, Australia) for 454 sequencing (FLX titanium chemistry; Roche/454 Life Sciences, Branford, USA).</p>
+        <p>Genomic DNA was precipitated from the remaining Trizol buffer using 0.3 ml of 100% ethanol per 1 ml of Trizol buffer followed by two washes of the DNA pellet with 0.1 M trisodium citrate in 10% ethanol <xref ref-type="bibr" rid="pone.0076892-Chomczynski2">[14]</xref>. An amplicon-based metagenomic library was generated from the extracted DNA using the universal bacterial PCR primers 27F and 338R that target the V1&#x2013;V2 hypervariable regions of the 16S rRNA gene as previously described <xref ref-type="bibr" rid="pone.0076892-Ravel1">[15]</xref>. Both cDNA and 16S rRNA gene amplicon libraries were subsequently bar-coded using MID tags and sequenced together utilising a quarter region of a 454 sequencing plate.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Sequence analysis</title>
+        <p>Subsequent to sequencing, all raw sequencing data was de-multiplexed according to their MID tags and the data obtained from each sample was then imported into Genomics Workbench version 4.5.1 (CLC Bio, Aarhus, Denmark), for removal of WTA primers and random primer sequences from each applicable read and data was filtered (low quality score limit of 0.05; maximum 2 ambiguous nucleotides allowed; minimum sequence length of 100 nt). Each dataset was then screened for chimeric sequences using UCHIME <xref ref-type="bibr" rid="pone.0076892-Edgar1">[16]</xref>, with the trimmed and filtered data submitted to the MG-RAST (<ext-link ext-link-type="uri" xlink:href="http://metagenomics.anl.gov">http://metagenomics.anl.gov</ext-link>) bioinformatics pipeline for analysis (cDNA library MG-RAST ID&#x200A;=&#x200A;4461586.3; DNA amplicon MG-RAST ID&#x200A;=&#x200A;4461792.3) <xref ref-type="bibr" rid="pone.0076892-Meyer1">[17]</xref>. A 90% cut-off was used for database searches within MG-RAST as an arbitrary cut-off for genus identities using the RDP database, and a 98% cut-off was used for species level identification <xref ref-type="bibr" rid="pone.0076892-Lazarevic1">[18]</xref>. MG-RAST generates abundance counts based on the number of unique hits a particular sequence has against a particular database. It is therefore highly likely that a single read may have multiple abundance counts assigned to it if there is an equal relatedness. The identities for each read were sorted using Excel 2007 (Microsoft Corporation, Redmond, USA) to eliminate multiple identical hits for individual reads, with manual analysis being carried out using the BLAST algorithm for discrepant samples. Graphical representation of bacterial abundances was achieved using Krona charts <xref ref-type="bibr" rid="pone.0076892-Ondov1">[19]</xref>. Functional genes from the cDNA library were characterised by SEED analysis within MG-RAST.</p>
+        <p>Reads derived from the cDNA library assigned to each major genus (comprising &gt;10% of total population) using MG-RAST were also imported into Lasergene 8 (DNASTAR Inc., Madison, USA) for manual sequence alignment was carried out using a 98% sequence match cut-off. The consensus sequences of alignments were assigned an identity using the BLAST algorithm with a &#x2265;98% identity required to assign a species name.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Quantitative PCR (qPCR) screening</title>
+        <p>All assays were performed on the LC480 real-time instrument (Roche Diagnostics, Mannheim, Germany) using 5 &#xB5;l DNA in a 20 &#xB5;l reaction. The bacteria targeted were <italic>Atopobium vaginae</italic>, <italic>Leptotrichia</italic>/<italic>Sneathia</italic> spp., <italic>Megasphaera</italic> type I <xref ref-type="bibr" rid="pone.0076892-Fredricks1">[20]</xref>, <italic>Gardnerella vaginalis</italic>
+<xref ref-type="bibr" rid="pone.0076892-Zariffard1">[21]</xref>, and the genera <italic>Prevotella</italic>
+<xref ref-type="bibr" rid="pone.0076892-Furet1">[22]</xref> and <italic>Lactobacillus</italic>
+<xref ref-type="bibr" rid="pone.0076892-Ling1">[23]</xref>. A primer set for <italic>Prevotella amnii</italic> was developed using the forward and reverse primers 27F and 338R <xref ref-type="bibr" rid="pone.0076892-Gupta1">[24]</xref> with the incorporation of a TaqMan probe 5&#x2032;-[6FAM] AAA GTT GGC CTA ATG CCC TAT G[BHQ1]-3&#x2032;, specific to <italic>P. amnii</italic>, based on 454 sequencing data from this study and all available relevant sequences on the Genbank database. The total bacterial content of each sample was determined by the modification of an assay by Nikkari et al. (2002) <xref ref-type="bibr" rid="pone.0076892-Nikkari1">[25]</xref> with the incorporation of a TaqMan probe, 516F (5&#x2032;-[6FAM] <named-content content-type="gene">TGC CAG CAG CCG CGG TAA</named-content> [BHQ1]-3&#x2032;) to calculate relative bacterial abundances and to determine sample adequacy for stored DNA samples.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Statistical analyses</title>
+        <p>Relative bacterial abundances were compared using a paired <italic>t</italic> test or chi square test. The association of <italic>P. amnii</italic> with BV, defined as a Nugent score of 7&#x2013;10, was made using a chi square test, reported with odds ratios (OR) with 95% confidence intervals (CI). All analyses were carried out using Stata version 12 (StataCorp LP, College Station, USA) <xref ref-type="bibr" rid="pone.0076892-StataCorp1">[26]</xref>.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Nugent 10 patients' cDNA library</title>
+        <p>In total, 89969 raw sequencing reads were obtained with an ultimate post data filtration of 78285 reads (average length &#x200A;=&#x200A;268&#xB1;91 bp; GC content &#x200A;=&#x200A;49&#xB1;5%). Overall, this library consisted of 72826 (93%) bacterial reads, 3865 (4.9%) human reads and 34 (0.04%) either plastid, fungal or viral reads (<xref ref-type="table" rid="pone-0076892-t001">Table 1</xref>). Of the bacterial reads, 31857 (43.7%) were of the 16S rRNA gene and 4349 (6.0%) were non-ribosomal RNA (eg. mRNA) with the remaining matching other ribosomal regions such as the 23S rRNA gene and intergenic regions. Of the 16S rRNA gene reads, the most dominant genus identified was <italic>Prevotella</italic> (36% of the reads), followed by the genera <italic>Megasphaera</italic> (19%), <italic>Leptotrichia</italic>/<italic>Sneathia</italic> (8%), <italic>Fusobacterium</italic> (8%), and 9% of the reads matching uncultured members of the Fusobacteriales (<xref ref-type="fig" rid="pone-0076892-g002">Figure 2</xref>). Of the <italic>Prevotella</italic> reads, 78% formed contigs of &#x2265;1000 bp in length that matched <italic>P. amnii</italic>. Analysis of assembly free reads of the <italic>Prevotella</italic> spp. reads at the species level (11725 reads with &#x2265;98% match to the RDP database) showed similar results, however distinction between <italic>P. amnii</italic> and <italic>P. bivia</italic> was not possible for the majority of these sequences (data not shown). The major <italic>Fusobacterium</italic> was <italic>F. nucleatum</italic>, and the majority of <italic>Megasphaera</italic> reads were &#x2265;98% similar to the currently uncharacterised <italic>Veillonellaceae</italic> bacterium S3PF24 (Genbank accession JX104009). The bioinformatics pipeline of MG-RAST was able to annotate 2053/4349 of the non-ribosomal RNA reads, which SEED analysis revealed to consist of genes involved primarily in protein metabolism (20.6%), carbohydrate/lipid utilisation (16.3%) and cluster based subsystems (13%). The most abundant functional gene read identities were primarily represented by genes expressed by the genus <italic>Prevotella</italic> (<xref ref-type="table" rid="pone-0076892-t002">Table 2</xref>).</p>
+        <fig id="pone-0076892-g002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0076892.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Bacterial diversity of cDNA library.</title>
+            <p>Graphical representation of the bacterial genera identified through 16S rRNA gene matches for the Nugent&#x200A;=&#x200A;10 cDNA using the RDP database search tool in MG-RAST.</p>
+          </caption>
+          <graphic xlink:href="pone.0076892.g002"/>
+        </fig>
+        <table-wrap id="pone-0076892-t001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0076892.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Summary of Nugent 10 cDNA 454 sequencing reads analysed by MG-RAST.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0076892-t001-1" xlink:href="pone.0076892.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Summary of MG-RAST reads</td>
+                  <td align="left" rowspan="1" colspan="1">n</td>
+                  <td align="left" rowspan="1" colspan="1">%</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Bacterial</td>
+                  <td align="left" rowspan="1" colspan="1">72826</td>
+                  <td align="left" rowspan="1" colspan="1">93.0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;16S rRNA gene</td>
+                  <td align="left" rowspan="1" colspan="1">31857</td>
+                  <td align="left" rowspan="1" colspan="1">40.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Other ribosomal content<xref ref-type="table-fn" rid="nt101">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">36621</td>
+                  <td align="left" rowspan="1" colspan="1">46.8</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Functional genes</td>
+                  <td align="left" rowspan="1" colspan="1">4348</td>
+                  <td align="left" rowspan="1" colspan="1">5.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Viral<sup>&#x2020;</sup></td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">-</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Fungal<sup>&#x2021;</sup></td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">-</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Plastid</td>
+                  <td align="left" rowspan="1" colspan="1">29</td>
+                  <td align="left" rowspan="1" colspan="1">0.4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Human</td>
+                  <td align="left" rowspan="1" colspan="1">3865</td>
+                  <td align="left" rowspan="1" colspan="1">4.9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Poor quality<sup>&#xA7;</sup></td>
+                  <td align="left" rowspan="1" colspan="1">1560</td>
+                  <td align="left" rowspan="1" colspan="1">2.0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Total</td>
+                  <td align="left" rowspan="1" colspan="1">78285</td>
+                  <td align="left" rowspan="1" colspan="1">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label>*</label>
+              <p>23S rRNA gene and intergenic regions; <sup>&#x2020;</sup> human coronavirus; <sup>&#x2021;</sup> two reads of <italic>Schizophyllum commune</italic> cytochrome oxidase subunit 1 (<italic>cox1</italic>) gene, single reads of <italic>Botryotinia fuckeliana</italic> glycosyl hydrolase gene and Ascomycota hypothetical protein; <sup>&#xA7;</sup> unable to be assigned to any taxonomy</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <table-wrap id="pone-0076892-t002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0076892.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Top 20 Bacterial non-16S/23S gene Nugent 10 cDNA reads using 80% identity with a minimum alignment of 50 amino acid residues (n&#x200A;=&#x200A;1361).</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0076892-t002-2" xlink:href="pone.0076892.t002"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="2" align="left" rowspan="1">All Bacteria</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>Prevotella</italic> spp.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Function</td>
+                  <td align="left" rowspan="1" colspan="1"># reads</td>
+                  <td align="left" rowspan="1" colspan="1">%</td>
+                  <td align="left" rowspan="1" colspan="1">% of reads</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">TonB-dependent receptor plug domain protein</td>
+                  <td align="left" rowspan="1" colspan="1">103</td>
+                  <td align="left" rowspan="1" colspan="1">7.57</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">putative lipoprotein</td>
+                  <td align="left" rowspan="1" colspan="1">76</td>
+                  <td align="left" rowspan="1" colspan="1">5.58</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">glyceraldehyde-3-phosphate dehydrogenase, type I</td>
+                  <td align="left" rowspan="1" colspan="1">57</td>
+                  <td align="left" rowspan="1" colspan="1">4.19</td>
+                  <td align="left" rowspan="1" colspan="1">87.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MotA/TolQ/ExbB proton channel family protein</td>
+                  <td align="left" rowspan="1" colspan="1">40</td>
+                  <td align="left" rowspan="1" colspan="1">2.94</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">translation elongation factor Tu</td>
+                  <td align="left" rowspan="1" colspan="1">39</td>
+                  <td align="left" rowspan="1" colspan="1">2.87</td>
+                  <td align="left" rowspan="1" colspan="1">46.2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">phosphoenolpyruvate carboxykinase (ATP)</td>
+                  <td align="left" rowspan="1" colspan="1">39</td>
+                  <td align="left" rowspan="1" colspan="1">2.87</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">50S ribosomal protein L27</td>
+                  <td align="left" rowspan="1" colspan="1">30</td>
+                  <td align="left" rowspan="1" colspan="1">2.20</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">translation elongation factor G</td>
+                  <td align="left" rowspan="1" colspan="1">32</td>
+                  <td align="left" rowspan="1" colspan="1">2.35</td>
+                  <td align="left" rowspan="1" colspan="1">59.4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">TonB-dependent receptor</td>
+                  <td align="left" rowspan="1" colspan="1">24</td>
+                  <td align="left" rowspan="1" colspan="1">1.76</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">ExbD/TolR family protein</td>
+                  <td align="left" rowspan="1" colspan="1">32</td>
+                  <td align="left" rowspan="1" colspan="1">2.35</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">phosphoenolpyruvate carboxykinase</td>
+                  <td align="left" rowspan="1" colspan="1">19</td>
+                  <td align="left" rowspan="1" colspan="1">1.40</td>
+                  <td align="left" rowspan="1" colspan="1">94.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">ribosomal protein L28</td>
+                  <td align="left" rowspan="1" colspan="1">21</td>
+                  <td align="left" rowspan="1" colspan="1">1.54</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">ribosomal protein S12</td>
+                  <td align="left" rowspan="1" colspan="1">18</td>
+                  <td align="left" rowspan="1" colspan="1">1.32</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">M16 family peptidase</td>
+                  <td align="left" rowspan="1" colspan="1">16</td>
+                  <td align="left" rowspan="1" colspan="1">1.18</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">D-phosphoglycerate dehydrogenase</td>
+                  <td align="left" rowspan="1" colspan="1">15</td>
+                  <td align="left" rowspan="1" colspan="1">1.10</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">glyceraldehyde 3-phosphate dehydrogenase</td>
+                  <td align="left" rowspan="1" colspan="1">26</td>
+                  <td align="left" rowspan="1" colspan="1">1.91</td>
+                  <td align="left" rowspan="1" colspan="1">96.2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">ribosomal protein L6</td>
+                  <td align="left" rowspan="1" colspan="1">14</td>
+                  <td align="left" rowspan="1" colspan="1">1.03</td>
+                  <td align="left" rowspan="1" colspan="1">42.9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">30S ribosomal protein S13</td>
+                  <td align="left" rowspan="1" colspan="1">14</td>
+                  <td align="left" rowspan="1" colspan="1">1.03</td>
+                  <td align="left" rowspan="1" colspan="1">28.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">30S ribosomal protein S9</td>
+                  <td align="left" rowspan="1" colspan="1">13</td>
+                  <td align="left" rowspan="1" colspan="1">0.96</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">chaperone protein DnaK</td>
+                  <td align="left" rowspan="1" colspan="1">13</td>
+                  <td align="left" rowspan="1" colspan="1">0.96</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+      </sec>
+      <sec id="s3b">
+        <title>Comparison of cDNA to DNA from Nugent 10 patient</title>
+        <p>All of the predominant bacteria with &gt;1% total abundance identified in the cDNA library were also detected using the 16S rRNA gene amplicon-based approach on extracted DNA. There was a significant difference in the relative abundances given between both libraries for the most dominant taxa, such as the genus <italic>Lactobacillus</italic> (primarily <italic>L. iners</italic>) that comprised 1.4% of the cDNA reads and 23% of the DNA amplicon library (p&lt;0.0001). Also of particular note were reads pertaining to the genus <italic>Gardnerella</italic> that were present in 7% of the cDNA library, but were nearly non-existent in the DNA amplicon library with only seven reads detected (0.006%). When comparing the relative abundances of the seven taxa screened for using qPCR to the abundances given for the cDNA library, there was no significant difference (p&#x200A;=&#x200A;0.9093). We found that the proportion of <italic>Lactobacillus</italic> spp. determined by qPCR to be 1.9% (cDNA&#x200A;=&#x200A;1.4%; DNA amplicon&#x200A;=&#x200A;23.1%), and the proportion of <italic>Prevotella</italic> spp. was 48% (cDNA&#x200A;=&#x200A;35%; DNA amplicon&#x200A;=&#x200A;11%) (<xref ref-type="table" rid="pone-0076892-t003">Table 3</xref>).</p>
+        <table-wrap id="pone-0076892-t003" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0076892.t003</object-id>
+          <label>Table 3</label>
+          <caption>
+            <title>Comparison between Nugent 10 RNA and DNA bacterial abundances.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0076892-t003-3" xlink:href="pone.0076892.t003"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">RNA</td>
+                  <td colspan="2" align="left" rowspan="1">DNA</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Taxa</td>
+                  <td align="left" rowspan="1" colspan="1">cDNA library</td>
+                  <td align="left" rowspan="1" colspan="1">16S rRNA (454)</td>
+                  <td align="left" rowspan="1" colspan="1">qPCR</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Prevotella</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">35.0%</td>
+                  <td align="left" rowspan="1" colspan="1">11.0%</td>
+                  <td align="left" rowspan="1" colspan="1">47.7%</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Megasphaera</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">18.8%</td>
+                  <td align="left" rowspan="1" colspan="1">8.7%</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Uncultured Fusobacteriales</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">8.3%</td>
+                  <td align="left" rowspan="1" colspan="1">-</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Leptotrichia/Sneathia</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">7.5%</td>
+                  <td align="left" rowspan="1" colspan="1">1.8%</td>
+                  <td align="left" rowspan="1" colspan="1">6.1%</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Fusobacterium</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">7.4%</td>
+                  <td align="left" rowspan="1" colspan="1">2.0%</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Gardnerella spp.</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">6.9%</td>
+                  <td align="left" rowspan="1" colspan="1">&lt;1%</td>
+                  <td align="left" rowspan="1" colspan="1">6.53%</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Clostridiales</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">4.8%</td>
+                  <td align="left" rowspan="1" colspan="1">1.3%</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Atopobium spp.</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">2.4%</td>
+                  <td align="left" rowspan="1" colspan="1">19.0%</td>
+                  <td align="left" rowspan="1" colspan="1">2.0%</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Lactobacillus spp.</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1.4%</td>
+                  <td align="left" rowspan="1" colspan="1">23.1%</td>
+                  <td align="left" rowspan="1" colspan="1">1.9%</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Bacteroides</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1.2%</td>
+                  <td align="left" rowspan="1" colspan="1">2.6%</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Mobiluncus</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.8%</td>
+                  <td align="left" rowspan="1" colspan="1">20.4%</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>TM7 group</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.5%</td>
+                  <td align="left" rowspan="1" colspan="1">5.4%</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Eubacterium</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.4%</td>
+                  <td align="left" rowspan="1" colspan="1">-</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Butyrivibrio/Uncultured Lachnospiraceae</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.3%</td>
+                  <td align="left" rowspan="1" colspan="1">2.8%</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>P. amnii</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>28.06%</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">15.8%</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"><italic>Megasphaera</italic> Type I</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>0.13%</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">0.02%</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+      </sec>
+      <sec id="s3c">
+        <title>qPCR screening of sexually active women</title>
+        <p><italic>P. amnii</italic> was detected in 11/36 (30.6%) women possessing a Nugent score of 7&#x2013;10, whereby nine had a Nugent score of 7 and two with a Nugent score of 10. This bacterium was also detected in a single case possessing intermediate microbiota with a Nugent score of 6, and in none of 34 cases of normal microbiota (Nugent 0&#x2013;3) (p&lt;0.001; <xref ref-type="table" rid="pone-0076892-t004">Table 4</xref>). The bacterial load of <italic>P. amnii</italic> in these 12 positive cases was high, averaging 1.41&#xD7;10<sup>9</sup> copies per swab (range&#x200A;=&#x200A;7.74&#xD7;10<sup>6</sup> to 4.66&#xD7;10<sup>9</sup>). This bacterium was found to be strongly associated with BV (<italic>p</italic>&lt;0.001, OR 23.3 (95%CI:2.9&#x2013;190.7)) among the 90 women. When the 90 women were stratified by different sexual exposures the association between BV and <italic>P. amnii</italic> persisted for different sexual exposures in men. While the associations between BV and <italic>P. amnii</italic> were not significant among women reporting receptive oral sex with a woman or sex with a woman in the last 3 months, these analyses involved only small numbers (<xref ref-type="table" rid="pone-0076892-t004">Table 4</xref>).</p>
+        <table-wrap id="pone-0076892-t004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0076892.t004</object-id>
+          <label>Table 4</label>
+          <caption>
+            <title>Prevalence of <italic>Prevotella amnii</italic> in cohort of sexually active women (n&#x200A;=&#x200A;90).</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0076892-t004-4" xlink:href="pone.0076892.t004"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="3" align="left" rowspan="1">Nugent category</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">0&#x2013;3</td>
+                  <td align="left" rowspan="1" colspan="1">4&#x2013;6</td>
+                  <td align="left" rowspan="1" colspan="1">7&#x2013;10</td>
+                  <td align="left" rowspan="1" colspan="1">Total</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>p</italic> value<xref ref-type="table-fn" rid="nt102">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">OR (Nugent 7&#x2013;10)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Male Sexual Partner (3 months)</td>
+                  <td align="left" rowspan="1" colspan="1">0/25 (ND)</td>
+                  <td align="left" rowspan="1" colspan="1">1/19 (5.3%)</td>
+                  <td align="left" rowspan="1" colspan="1">11/30 (36.7%)</td>
+                  <td align="left" rowspan="1" colspan="1">12/74 (16.2%)</td>
+                  <td align="left" rowspan="1" colspan="1">&lt;0.001</td>
+                  <td align="left" rowspan="1" colspan="1">24.89 (95%CI:3.00&#x2013;206.81)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Vaginal Sex (3 months)</td>
+                  <td align="left" rowspan="1" colspan="1">0/24 (ND)</td>
+                  <td align="left" rowspan="1" colspan="1">1/19 (5.3%)</td>
+                  <td align="left" rowspan="1" colspan="1">11/30 (36.7%)</td>
+                  <td align="left" rowspan="1" colspan="1">12/73 (16.4%)</td>
+                  <td align="left" rowspan="1" colspan="1">&lt;0.001</td>
+                  <td align="left" rowspan="1" colspan="1">24.32 (95%CI:2.93&#x2013;202.10)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Receptive Oral Sex (3 months)</td>
+                  <td align="left" rowspan="1" colspan="1">0/25 (ND)</td>
+                  <td align="left" rowspan="1" colspan="1">1/16 (6.3%)</td>
+                  <td align="left" rowspan="1" colspan="1">11/31 (35.5%)</td>
+                  <td align="left" rowspan="1" colspan="1">12/72 (16.7%)</td>
+                  <td align="left" rowspan="1" colspan="1">0.001</td>
+                  <td align="left" rowspan="1" colspan="1">22.00 (95%CI:2.65&#x2013;182.61)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Receptive Male Oral Sex (3 months)</td>
+                  <td align="left" rowspan="1" colspan="1">0/20 (ND)</td>
+                  <td align="left" rowspan="1" colspan="1">1/15 (6.7%)</td>
+                  <td align="left" rowspan="1" colspan="1">11/30 (36.7%)</td>
+                  <td align="left" rowspan="1" colspan="1">12/65 (18.5%)</td>
+                  <td align="left" rowspan="1" colspan="1">0.002</td>
+                  <td align="left" rowspan="1" colspan="1">19.68 (95%CI:2.36&#x2013;164.44)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Female Sexual Partner (3 months)</td>
+                  <td align="left" rowspan="1" colspan="1">0/11 (ND)</td>
+                  <td align="left" rowspan="1" colspan="1">0/2 (ND)</td>
+                  <td align="left" rowspan="1" colspan="1">2/16 (12.5%)</td>
+                  <td align="left" rowspan="1" colspan="1">2/29 (6.9%)</td>
+                  <td align="left" rowspan="1" colspan="1">0.418</td>
+                  <td align="left" rowspan="1" colspan="1">4.66 (95%CI:0.20&#x2013;106.01)<sup>&#x2020;</sup></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Receptive Female Oral</td>
+                  <td align="left" rowspan="1" colspan="1">0/10 (ND)</td>
+                  <td align="left" rowspan="1" colspan="1">0/2 (ND)</td>
+                  <td align="left" rowspan="1" colspan="1">2/12 (16.7%)</td>
+                  <td align="left" rowspan="1" colspan="1">2/24 (8.3%)</td>
+                  <td align="left" rowspan="1" colspan="1">0.336</td>
+                  <td align="left" rowspan="1" colspan="1">5.95 (95%CI:0.26&#x2013;138.25)<sup>&#x2020;</sup></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Total</td>
+                  <td align="left" rowspan="1" colspan="1">0/34 (ND)</td>
+                  <td align="left" rowspan="1" colspan="1">1/20 (5%)</td>
+                  <td align="left" rowspan="1" colspan="1">11/36 (30.6%)</td>
+                  <td align="left" rowspan="1" colspan="1">12/90 (13.3%)</td>
+                  <td align="left" rowspan="1" colspan="1">&lt;0.001</td>
+                  <td align="left" rowspan="1" colspan="1">23.320 (95%CI:2.85&#x2013;190.74)</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt102">
+              <label>*</label>
+              <p>Chi square for proportion with <italic>Prevotella amnii</italic> in the three Nugent categories; &#x2020;Haldane's estimation; OR&#x200A;=&#x200A; Odds Ratio; ND&#x200A;=&#x200A;Not Detected.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>This study explored the active microbial diversity of a vaginal sample taken from a lesbian woman with symptomatic BV to demonstrate the potential of metatranscriptomics for identifying targets for screening studies. <italic>Prevotella amnii</italic> was found to be the most active species present in this sample and was also detected at a high concentration by qPCR in 30.6% of BV cases in sexually active women. Although we identified <italic>P. amnii</italic> as the predominant <italic>Prevotella</italic> species in this sample (78% of <italic>Prevotella</italic> reads; 28.1% of total bacterial population), there may be a possible overestimation in the cDNA abundance given, as conserved regions shared by multiple <italic>Prevotella</italic> spp. may be involved through chimeric assembly. This must be kept in mind when comparing to qPCR data (33.1% of <italic>Prevotella</italic> reads; 15.8% of total bacterial population) that would otherwise suggest that this species is more active than others in this sample. This bacteria has only recently been associated with BV in the literature <xref ref-type="bibr" rid="pone.0076892-Srinivasan1">[27]</xref>. Its closest relative, <italic>P. bivia</italic>, is highly cited as being associated with this condition, and <italic>in vitro</italic> studies have shown this bacterium to form a symbiotic relationship with <italic>G. vaginali</italic>s <xref ref-type="bibr" rid="pone.0076892-Pybus1">[28]</xref>. These two <italic>Prevotella</italic> spp. share many phenotypic traits and it has been noted that culture-based methodologies may not differentiate between these two species, with full length 16S rRNA gene sequencing recommended for species differentiation <xref ref-type="bibr" rid="pone.0076892-Lawson1">[29]</xref>.</p>
+      <p>The other predominant bacteria in this case were identified through 16S rRNA gene as the currently uncharacterised isolate <italic>Veillonellaceae</italic> bacterium S3PF24 (phylogenetically belonging to the genus <italic>Megasphaera</italic>) that was originally isolated from a vaginal environment, and the bacterium <italic>Fusobacterium nucleatum</italic>. <italic>F. nucleatum</italic> has been described in cases of BV previously <xref ref-type="bibr" rid="pone.0076892-Ling2">[30]</xref>. Interestingly it has been implicated in amniotic infection and pre-term birth in cases where the bacterium was also detected in the patients' oral cavity <xref ref-type="bibr" rid="pone.0076892-Gauthier1">[31]</xref>, <xref ref-type="bibr" rid="pone.0076892-Hay1">[32]</xref>. <italic>F. nucleatum</italic>, as well as both <italic>Prevotella</italic> and <italic>Megasphaera</italic> spp. are regularly associated with periodontal disease <xref ref-type="bibr" rid="pone.0076892-Nadkarni1">[33]</xref>, <xref ref-type="bibr" rid="pone.0076892-Kumar1">[34]</xref>, <xref ref-type="bibr" rid="pone.0076892-Joshi1">[35]</xref>, and it is of interest to note that the single Nugent score 10 participant analysed in this study had a history of recent female-female oral sex. These three bacteria were more abundant than the usual predominant <italic>G. vaginalis</italic> and <italic>A. vaginae</italic> in the cDNA library, which collectively only comprised 10% <xref ref-type="bibr" rid="pone.0076892-Lamont1">[2]</xref>. Further work is warranted to determine the role of these bacteria, in particular <italic>P. amnii</italic>, in the pathogenesis of BV. Of particular interest is whether their association with oral sex represents a possible route of transmission.</p>
+      <p>Although not a focus of this study, mRNA reads were also identified in this study that were primarily associated with protein metabolism and carbohydrate/lipid utilisation pathways of the genus <italic>Prevotella</italic>. The low abundance of mRNA reads (5.6%) was not surprising, given the low general relative abundance of mRNA in relation to total RNA in bacterial cells <xref ref-type="bibr" rid="pone.0076892-Neidhardt1">[36]</xref>. To focus more upon this class of RNA transcripts, an additional enrichment step, such as the removal of bacterial rRNA can be employed <xref ref-type="bibr" rid="pone.0076892-He1">[37]</xref>, in the same manner as human rRNA was reduced in this study.</p>
+      <p>A comparison was made between the cDNA and DNA amplicon libraries to determine what proportion of the microbial community was active, and differences were observed between these libraries. This may suggest that there was a significant difference between what is present and what is transcriptionally active, although these findings are limited by the fact that this is a single sampling point. The broad range amplification of bacterial DNA using the 16S rRNA gene may have potential bias in the community structure, as has been found in numerous studies <xref ref-type="bibr" rid="pone.0076892-Mao1">[38]</xref>, <xref ref-type="bibr" rid="pone.0076892-Winsley1">[39]</xref>, <xref ref-type="bibr" rid="pone.0076892-Sim1">[40]</xref>, <xref ref-type="bibr" rid="pone.0076892-Soergel1">[41]</xref>. Our data suggests that <italic>G. vaginalis</italic> was underrepresented in the DNA amplicon library when compared to the qPCR data from the same DNA sample. Despite being one of the most utilized primers for microbiome analysis, there has been suggestion in the literature that the forward PCR primer 27F may not reliably amplify this species <xref ref-type="bibr" rid="pone.0076892-Srinivasan2">[42]</xref>, and our analysis has demonstrated this similarly through qPCR for <italic>G. vaginalis</italic>. Also, given that <italic>L. iners</italic> was found to be underrepresented in the cDNA library when compared to the DNA amplicon library, we applied a genus-specific <italic>Lactobacillus</italic> qPCR assay to the DNA sample, as well as one that targeted the genus <italic>Prevotella</italic> that was present at a much higher abundance in the cDNA library. We found that there was no statistical difference in the abundances given between qPCR and the cDNA library for these genera. Based on this limited data, we can suggest misrepresentation of several taxa in the DNA amplicon library occurred, and that in this case, the vast majority of the bacteria physically present in this sample were also transcriptionally active. This further highlights the advantage of transcriptomics for such analysis as our data suggest that this analysis gives better representation of bacterial levels across the board.</p>
+      <p>MG-RAST for the analysis of metatranscriptomic work can be carried out using a standard desktop or laptop computer. However, this method may lead to misclassification of certain reads. For example, in this study it was found that many <italic>Gardnerella</italic> reads were being classified as the genus <italic>Bifidobacterium</italic>, <italic>Megasphaera</italic> reads as the genera <italic>Veillonella</italic> and <italic>Dialister</italic>, and those of the genera <italic>Leptrotrichia</italic>/<italic>Sneathia</italic> as <italic>Streptobacillus</italic>. Therefore care must be taken in the interpretation of results, and manual checking of representative reads is required to ensure an accurate identification of sequencing reads to the genus level.</p>
+      <p>In summary, this study has shown how metatranscriptomics can be utilised as a useful tool to carry out an in-depth examination of the active microbial ecology of an environment, and is capable of generating more taxonomic and potential functional data than an amplicon sequencing-based approach alone, and avoid potential misrepresentation issues caused by PCR primer selection. We have demonstrated that this kind of metatranscriptomic approach can be used to identify targets for screening in larger studies. As this study focussed on a single individual, generalisations based on the data are not possible and transcriptomic analyses on a large cohort is warranted. This being said, our limited findings reinforce that <italic>P. amnii</italic> may be an important BV-associated bacterium, and should be included in future studies investigating the pathogenesis of BV. Its previously known association with periodontal disease, and the association with oral sex in this study, make it interesting to speculate about transmission of pathogenic bacteria between the oral and vaginal cavities, and their role in the development of BV.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We would like to thank the staff and students of Melbourne Sexual Health Centre and Women's Centre for Infectious Diseases for their assistance in this study, which was also supported by the Victorian Government's Operational Infrastructure Support Program.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0076892-Nakamura1">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Nakamura</surname><given-names>S</given-names></name>, <name><surname>Nakaya</surname><given-names>T</given-names></name>, <name><surname>Iida</surname><given-names>T</given-names></name> (<year>2011</year>) <article-title>Metagenomic analysis of bacterial infections by means of high-throughput DNA sequencing</article-title>. <source>Exp Biol Med (Maywood)</source><volume>236</volume>: <fpage>968</fpage>&#x2013;<lpage>971</lpage><pub-id pub-id-type="pmid">21737580</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Lamont1">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Lamont</surname><given-names>RF</given-names></name>, <name><surname>Sobel</surname><given-names>JD</given-names></name>, <name><surname>Akins</surname><given-names>RA</given-names></name>, <name><surname>Hassan</surname><given-names>SS</given-names></name>, <name><surname>Chaiworapongsa</surname><given-names>T</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>The vaginal microbiome: new information about genital tract flora using molecular based techniques</article-title>. <source>BJOG</source><volume>118</volume>: <fpage>533</fpage>&#x2013;<lpage>549</lpage><pub-id pub-id-type="pmid">21251190</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Turovskiy1">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Turovskiy</surname><given-names>Y</given-names></name>, <name><surname>Sutyak Noll</surname><given-names>K</given-names></name>, <name><surname>Chikindas</surname><given-names>ML</given-names></name> (<year>2011</year>) <article-title>The aetiology of bacterial vaginosis</article-title>. <source>J Appl Microbiol</source><volume>110</volume>: <fpage>1105</fpage>&#x2013;<lpage>1128</lpage><pub-id pub-id-type="pmid">21332897</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Nugent1">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Nugent</surname><given-names>RP</given-names></name>, <name><surname>Krohn</surname><given-names>MA</given-names></name>, <name><surname>Hillier</surname><given-names>SL</given-names></name> (<year>1991</year>) <article-title>Reliability of diagnosing bacterial vaginosis is improved by a standardized method of gram stain interpretation</article-title>. <source>J Clin Microbiol</source><volume>29</volume>: <fpage>297</fpage>&#x2013;<lpage>301</lpage><pub-id pub-id-type="pmid">1706728</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Amsel1">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Amsel</surname><given-names>R</given-names></name>, <name><surname>Totten</surname><given-names>PA</given-names></name>, <name><surname>Spiegel</surname><given-names>CA</given-names></name>, <name><surname>Chen</surname><given-names>KC</given-names></name>, <name><surname>Eschenbach</surname><given-names>D</given-names></name>, <etal>et al</etal> (<year>1983</year>) <article-title>Nonspecific vaginitis. Diagnostic criteria and microbial and epidemiologic associations</article-title>. <source>Am J Med</source><volume>74</volume>: <fpage>14</fpage>&#x2013;<lpage>22</lpage><pub-id pub-id-type="pmid">6600371</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-FriasLopez1">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Frias-Lopez</surname><given-names>J</given-names></name>, <name><surname>Duran-Pinedo</surname><given-names>A</given-names></name> (<year>2012</year>) <article-title>Effect of periodontal pathogens on the metatranscriptome of a healthy multispecies biofilm model</article-title>. <source>J Bacteriol</source><volume>194</volume>: <fpage>2082</fpage>&#x2013;<lpage>2095</lpage><pub-id pub-id-type="pmid">22328675</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Gosalbes1">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>Gosalbes</surname><given-names>MJ</given-names></name>, <name><surname>Durban</surname><given-names>A</given-names></name>, <name><surname>Pignatelli</surname><given-names>M</given-names></name>, <name><surname>Abellan</surname><given-names>JJ</given-names></name>, <name><surname>Jimenez-Hernandez</surname><given-names>N</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Metatranscriptomic approach to analyze the functional human gut microbiota</article-title>. <source>PLoS One</source><volume>6</volume>: <fpage>e17447</fpage><pub-id pub-id-type="pmid">21408168</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Shipitsyna1">
+        <label>8</label>
+        <mixed-citation publication-type="journal">Shipitsyna E, Roos A, Datcu R, Hallen A, Fredlund H, <etal>et al</etal>. (2013) Composition of the Vaginal Microbiota in Women of Reproductive Age - Sensitive and Specific Molecular Diagnosis of Bacterial Vaginosis Is Possible? PLoS One <volume>8</volume>.</mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Iscove1">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Iscove</surname><given-names>NN</given-names></name>, <name><surname>Barbara</surname><given-names>M</given-names></name>, <name><surname>Gu</surname><given-names>M</given-names></name>, <name><surname>Gibson</surname><given-names>M</given-names></name>, <name><surname>Modi</surname><given-names>C</given-names></name>, <etal>et al</etal> (<year>2002</year>) <article-title>Representation is faithfully preserved in global cDNA amplified exponentially from sub-picogram quantities of mRNA</article-title>. <source>Nat Biotechnol</source><volume>20</volume>: <fpage>940</fpage>&#x2013;<lpage>943</lpage><pub-id pub-id-type="pmid">12172558</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Lin1">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Lin</surname><given-names>B</given-names></name>, <name><surname>Wang</surname><given-names>Z</given-names></name>, <name><surname>Vora</surname><given-names>GJ</given-names></name>, <name><surname>Thornton</surname><given-names>JA</given-names></name>, <name><surname>Schnur</surname><given-names>JM</given-names></name>, <etal>et al</etal> (<year>2006</year>) <article-title>Broad-spectrum respiratory tract pathogen identification using resequencing DNA microarrays</article-title>. <source>Genome Res</source><volume>16</volume>: <fpage>527</fpage>&#x2013;<lpage>535</lpage><pub-id pub-id-type="pmid">16481660</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Bradshaw1">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Bradshaw</surname><given-names>CS</given-names></name>, <name><surname>Morton</surname><given-names>AN</given-names></name>, <name><surname>Garland</surname><given-names>SM</given-names></name>, <name><surname>Morris</surname><given-names>MB</given-names></name>, <name><surname>Moss</surname><given-names>LM</given-names></name>, <etal>et al</etal> (<year>2005</year>) <article-title>Higher-risk behavioral practices associated with bacterial vaginosis compared with vaginal candidiasis</article-title>. <source>Obstet Gynecol</source><volume>106</volume>: <fpage>105</fpage>&#x2013;<lpage>114</lpage><pub-id pub-id-type="pmid">15994624</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Triant1">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Triant</surname><given-names>DA</given-names></name>, <name><surname>Whitehead</surname><given-names>A</given-names></name> (<year>2009</year>) <article-title>Simultaneous extraction of high-quality RNA and DNA from small tissue samples</article-title>. <source>Journal of Heredity</source><volume>100</volume>: <fpage>246</fpage>&#x2013;<lpage>250</lpage><pub-id pub-id-type="pmid">18840898</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Chomczynski1">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Chomczynski</surname><given-names>P</given-names></name>, <name><surname>Mackey</surname><given-names>K</given-names></name> (<year>1995</year>) <article-title>Substitution of chloroform by bromo-chloropropane in the single-step method of RNA isolation</article-title>. <source>Anal Biochem</source><volume>225</volume>: <fpage>163</fpage>&#x2013;<lpage>164</lpage><pub-id pub-id-type="pmid">7539982</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Chomczynski2">
+        <label>14</label>
+        <mixed-citation publication-type="journal">Chomczynski P (1993) A reagent for the single-step simultaneous isolation of RNA, DNA and proteins from cell and tissue samples. Biotechniques <volume>15</volume>: : 532-534, 536&#x2013;537.</mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Ravel1">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Ravel</surname><given-names>J</given-names></name>, <name><surname>Gajer</surname><given-names>P</given-names></name>, <name><surname>Abdo</surname><given-names>Z</given-names></name>, <name><surname>Schneider</surname><given-names>GM</given-names></name>, <name><surname>Koenig</surname><given-names>SS</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Vaginal microbiome of reproductive-age women</article-title>. <source>Proc Natl Acad Sci U S A</source><volume>108</volume> Suppl 1<fpage>4680</fpage>&#x2013;<lpage>4687</lpage><pub-id pub-id-type="pmid">20534435</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Edgar1">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Edgar</surname><given-names>RC</given-names></name>, <name><surname>Haas</surname><given-names>BJ</given-names></name>, <name><surname>Clemente</surname><given-names>JC</given-names></name>, <name><surname>Quince</surname><given-names>C</given-names></name>, <name><surname>Knight</surname><given-names>R</given-names></name> (<year>2011</year>) <article-title>UCHIME improves sensitivity and speed of chimera detection</article-title>. <source>Bioinformatics</source><volume>27</volume>: <fpage>2194</fpage>&#x2013;<lpage>2200</lpage><pub-id pub-id-type="pmid">21700674</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Meyer1">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>Meyer</surname><given-names>F</given-names></name>, <name><surname>Paarmann</surname><given-names>D</given-names></name>, <name><surname>D'Souza</surname><given-names>M</given-names></name>, <name><surname>Olson</surname><given-names>R</given-names></name>, <name><surname>Glass</surname><given-names>EM</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>The metagenomics RAST server - a public resource for the automatic phylogenetic and functional analysis of metagenomes</article-title>. <source>BMC Bioinformatics</source><volume>9</volume>: <fpage>386</fpage><pub-id pub-id-type="pmid">18803844</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Lazarevic1">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Lazarevic</surname><given-names>V</given-names></name>, <name><surname>Whiteson</surname><given-names>K</given-names></name>, <name><surname>Hernandez</surname><given-names>D</given-names></name>, <name><surname>Francois</surname><given-names>P</given-names></name>, <name><surname>Schrenzel</surname><given-names>J</given-names></name> (<year>2010</year>) <article-title>Study of inter- and intra-individual variations in the salivary microbiota</article-title>. <source>BMC Genomics</source><volume>11</volume>: <fpage>523</fpage><pub-id pub-id-type="pmid">20920195</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Ondov1">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Ondov</surname><given-names>BD</given-names></name>, <name><surname>Bergman</surname><given-names>NH</given-names></name>, <name><surname>Phillippy</surname><given-names>AM</given-names></name> (<year>2011</year>) <article-title>Interactive metagenomic visualization in a Web browser</article-title>. <source>BMC Bioinformatics</source><volume>12</volume>: <fpage>385</fpage><pub-id pub-id-type="pmid">21961884</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Fredricks1">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Fredricks</surname><given-names>DN</given-names></name>, <name><surname>Fiedler</surname><given-names>TL</given-names></name>, <name><surname>Thomas</surname><given-names>KK</given-names></name>, <name><surname>Mitchell</surname><given-names>CM</given-names></name>, <name><surname>Marrazzo</surname><given-names>JM</given-names></name> (<year>2009</year>) <article-title>Changes in vaginal bacterial concentrations with intravaginal metronidazole therapy for bacterial vaginosis as assessed by quantitative PCR</article-title>. <source>J Clin Microbiol</source><volume>47</volume>: <fpage>721</fpage>&#x2013;<lpage>726</lpage><pub-id pub-id-type="pmid">19144794</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Zariffard1">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Zariffard</surname><given-names>MR</given-names></name>, <name><surname>Saifuddin</surname><given-names>M</given-names></name>, <name><surname>Sha</surname><given-names>BE</given-names></name>, <name><surname>Spear</surname><given-names>GT</given-names></name> (<year>2002</year>) <article-title>Detection of bacterial vaginosis-related organisms by real-time PCR for Lactobacilli, <italic>Gardnerella vaginalis</italic> and <italic>Mycoplasma hominis</italic></article-title>. <source>FEMS Immunol Med Microbiol</source><volume>34</volume>: <fpage>277</fpage>&#x2013;<lpage>281</lpage><pub-id pub-id-type="pmid">12443827</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Furet1">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Furet</surname><given-names>JP</given-names></name>, <name><surname>Firmesse</surname><given-names>O</given-names></name>, <name><surname>Gourmelon</surname><given-names>M</given-names></name>, <name><surname>Bridonneau</surname><given-names>C</given-names></name>, <name><surname>Tap</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Comparative assessment of human and farm animal faecal microbiota using real-time quantitative PCR</article-title>. <source>FEMS Microbiol Ecol</source><volume>68</volume>: <fpage>351</fpage>&#x2013;<lpage>362</lpage><pub-id pub-id-type="pmid">19302550</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Ling1">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Ling</surname><given-names>Z</given-names></name>, <name><surname>Liu</surname><given-names>X</given-names></name>, <name><surname>Chen</surname><given-names>X</given-names></name>, <name><surname>Zhu</surname><given-names>H</given-names></name>, <name><surname>Nelson</surname><given-names>KE</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Diversity of cervicovaginal microbiota associated with female lower genital tract infections</article-title>. <source>Microb Ecol</source><volume>61</volume>: <fpage>704</fpage>&#x2013;<lpage>714</lpage><pub-id pub-id-type="pmid">21287345</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Gupta1">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Gupta</surname><given-names>K</given-names></name>, <name><surname>Stapleton</surname><given-names>AE</given-names></name>, <name><surname>Hooton</surname><given-names>TM</given-names></name>, <name><surname>Roberts</surname><given-names>PL</given-names></name>, <name><surname>Fennell</surname><given-names>CL</given-names></name>, <etal>et al</etal> (<year>1998</year>) <article-title>Inverse association of H<sub>2</sub>O<sub>2</sub>-producing lactobacilli and vaginal <italic>Escherichia coli</italic> colonization in women with recurrent urinary tract infections</article-title>. <source>J Infect Dis</source><volume>178</volume>: <fpage>446</fpage>&#x2013;<lpage>450</lpage><pub-id pub-id-type="pmid">9697725</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Nikkari1">
+        <label>25</label>
+        <mixed-citation publication-type="journal"><name><surname>Nikkari</surname><given-names>S</given-names></name>, <name><surname>Lopez</surname><given-names>FA</given-names></name>, <name><surname>Lepp</surname><given-names>PW</given-names></name>, <name><surname>Cieslak</surname><given-names>PR</given-names></name>, <name><surname>Ladd-Wilson</surname><given-names>S</given-names></name>, <etal>et al</etal> (<year>2002</year>) <article-title>Broad-range bacterial detection and the analysis of unexplained death and critical illness</article-title>. <source>Emerg Infect Dis</source><volume>8</volume>: <fpage>188</fpage>&#x2013;<lpage>194</lpage><pub-id pub-id-type="pmid">11897072</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-StataCorp1">
+        <label>26</label>
+        <mixed-citation publication-type="other">StataCorp (2011) Stata Statistical Software: Release 12. College Station, TX: StataCorp LP.</mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Srinivasan1">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Srinivasan</surname><given-names>S</given-names></name>, <name><surname>Hoffman</surname><given-names>NG</given-names></name>, <name><surname>Morgan</surname><given-names>MT</given-names></name>, <name><surname>Matsen</surname><given-names>FA</given-names></name>, <name><surname>Fiedler</surname><given-names>TL</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Bacterial communities in women with bacterial vaginosis: high resolution phylogenetic analyses reveal relationships of microbiota to clinical criteria</article-title>. <source>PLoS One</source><volume>7</volume>: <fpage>e37818</fpage><pub-id pub-id-type="pmid">22719852</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Pybus1">
+        <label>28</label>
+        <mixed-citation publication-type="journal"><name><surname>Pybus</surname><given-names>V</given-names></name>, <name><surname>Onderdonk</surname><given-names>AB</given-names></name> (<year>1997</year>) <article-title>Evidence for a commensal, symbiotic relationship between <italic>Gardnerella vaginalis</italic> and <italic>Prevotella bivia</italic> involving ammonia: potential significance for bacterial vaginosis</article-title>. <source>J Infect Dis</source><volume>175</volume>: <fpage>406</fpage>&#x2013;<lpage>413</lpage><pub-id pub-id-type="pmid">9203662</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Lawson1">
+        <label>29</label>
+        <mixed-citation publication-type="journal"><name><surname>Lawson</surname><given-names>PA</given-names></name>, <name><surname>Moore</surname><given-names>E</given-names></name>, <name><surname>Falsen</surname><given-names>E</given-names></name> (<year>2008</year>) <article-title><italic>Prevotella amnii</italic> sp. nov., isolated from human amniotic fluid</article-title>. <source>Int J Syst Evol Microbiol</source><volume>58</volume>: <fpage>89</fpage>&#x2013;<lpage>92</lpage><pub-id pub-id-type="pmid">18175689</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Ling2">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>Ling</surname><given-names>Z</given-names></name>, <name><surname>Kong</surname><given-names>J</given-names></name>, <name><surname>Liu</surname><given-names>F</given-names></name>, <name><surname>Zhu</surname><given-names>H</given-names></name>, <name><surname>Chen</surname><given-names>X</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Molecular analysis of the diversity of vaginal microbiota associated with bacterial vaginosis</article-title>. <source>BMC Genomics</source><volume>11</volume>: <fpage>488</fpage><pub-id pub-id-type="pmid">20819230</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Gauthier1">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>Gauthier</surname><given-names>S</given-names></name>, <name><surname>Tetu</surname><given-names>A</given-names></name>, <name><surname>Himaya</surname><given-names>E</given-names></name>, <name><surname>Morand</surname><given-names>M</given-names></name>, <name><surname>Chandad</surname><given-names>F</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>The origin of <italic>Fusobacterium nucleatum</italic> involved in intra-amniotic infection and preterm birth</article-title>. <source>J Matern Fetal Neonatal Med</source><volume>24</volume>: <fpage>1329</fpage>&#x2013;<lpage>1332</lpage><pub-id pub-id-type="pmid">21314291</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Hay1">
+        <label>32</label>
+        <mixed-citation publication-type="journal"><name><surname>Hay</surname><given-names>PE</given-names></name>, <name><surname>Lamont</surname><given-names>RF</given-names></name>, <name><surname>Taylor-Robinson</surname><given-names>D</given-names></name>, <name><surname>Morgan</surname><given-names>DJ</given-names></name>, <name><surname>Ison</surname><given-names>C</given-names></name>, <etal>et al</etal> (<year>1994</year>) <article-title>Abnormal bacterial colonisation of the genital tract and subsequent preterm delivery and late miscarriage</article-title>. <source>BMJ</source><volume>308</volume>: <fpage>295</fpage>&#x2013;<lpage>298</lpage><pub-id pub-id-type="pmid">8124116</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Nadkarni1">
+        <label>33</label>
+        <mixed-citation publication-type="journal"><name><surname>Nadkarni</surname><given-names>MA</given-names></name>, <name><surname>Browne</surname><given-names>GV</given-names></name>, <name><surname>Chhour</surname><given-names>KL</given-names></name>, <name><surname>Byun</surname><given-names>R</given-names></name>, <name><surname>Nguyen</surname><given-names>KA</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Pattern of distribution of <italic>Prevotella</italic> species/phylotypes associated with healthy gingiva and periodontal disease</article-title>. <source>Eur J Clin Microbiol Infect Dis</source><volume>31</volume>: <fpage>2989</fpage>&#x2013;<lpage>2999</lpage><pub-id pub-id-type="pmid">22684253</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Kumar1">
+        <label>34</label>
+        <mixed-citation publication-type="journal"><name><surname>Kumar</surname><given-names>PS</given-names></name>, <name><surname>Griffen</surname><given-names>AL</given-names></name>, <name><surname>Moeschberger</surname><given-names>ML</given-names></name>, <name><surname>Leys</surname><given-names>EJ</given-names></name> (<year>2005</year>) <article-title>Identification of candidate periodontal pathogens and beneficial species by quantitative 16S clonal analysis</article-title>. <source>J Clin Microbiol</source><volume>43</volume>: <fpage>3944</fpage>&#x2013;<lpage>3955</lpage><pub-id pub-id-type="pmid">16081935</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Joshi1">
+        <label>35</label>
+        <mixed-citation publication-type="journal"><name><surname>Joshi</surname><given-names>VM</given-names></name>, <name><surname>Vandana</surname><given-names>KL</given-names></name> (<year>2007</year>) <article-title>The detection of eight putative periodontal pathogens in adult and rapidly progressive periodontitis patients: an institutional study</article-title>. <source>Indian J Dent Res</source><volume>18</volume>: <fpage>6</fpage>&#x2013;<lpage>10</lpage><pub-id pub-id-type="pmid">17347537</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Neidhardt1">
+        <label>36</label>
+        <mixed-citation publication-type="journal"><name><surname>Neidhardt</surname><given-names>FC</given-names></name> (<year>1996</year>) <article-title>Chemical composition of <italic>Escherichia coli</italic></article-title>. <source><italic>Escherichia coli</italic> and Salmonella: Cellular and Molecular Biology 2nd Edn</source><volume>1</volume>: <fpage>13</fpage>&#x2013;<lpage>17</lpage></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-He1">
+        <label>37</label>
+        <mixed-citation publication-type="journal"><name><surname>He</surname><given-names>S</given-names></name>, <name><surname>Wurtzel</surname><given-names>O</given-names></name>, <name><surname>Singh</surname><given-names>K</given-names></name>, <name><surname>Froula</surname><given-names>JL</given-names></name>, <name><surname>Yilmaz</surname><given-names>S</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Validation of two ribosomal RNA removal methods for microbial metatranscriptomics</article-title>. <source>Nat Methods</source><volume>7</volume>: <fpage>807</fpage>&#x2013;<lpage>812</lpage><pub-id pub-id-type="pmid">20852648</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Mao1">
+        <label>38</label>
+        <mixed-citation publication-type="journal"><name><surname>Mao</surname><given-names>DP</given-names></name>, <name><surname>Zhou</surname><given-names>Q</given-names></name>, <name><surname>Chen</surname><given-names>CY</given-names></name>, <name><surname>Quan</surname><given-names>ZX</given-names></name> (<year>2012</year>) <article-title>Coverage Evaluation of Universal Bacterial Primers using the Metagenomic Datasets</article-title>. <source>BMC Microbiol</source><volume>12</volume>: <fpage>66</fpage><pub-id pub-id-type="pmid">22554309</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Winsley1">
+        <label>39</label>
+        <mixed-citation publication-type="journal"><name><surname>Winsley</surname><given-names>T</given-names></name>, <name><surname>van Dorst</surname><given-names>JM</given-names></name>, <name><surname>Brown</surname><given-names>MV</given-names></name>, <name><surname>Ferrari</surname><given-names>BC</given-names></name> (<year>2012</year>) <article-title>Capturing Greater 16S rRNA Gene Sequence Diversity within the Domain Bacteria</article-title>. <source>Appl Environ Microbiol</source><volume>78</volume>: <fpage>5938</fpage>&#x2013;<lpage>5941</lpage><pub-id pub-id-type="pmid">22685133</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Sim1">
+        <label>40</label>
+        <mixed-citation publication-type="journal"><name><surname>Sim</surname><given-names>K</given-names></name>, <name><surname>Cox</surname><given-names>MJ</given-names></name>, <name><surname>Wopereis</surname><given-names>H</given-names></name>, <name><surname>Martin</surname><given-names>R</given-names></name>, <name><surname>Knol</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Improved detection of bifidobacteria with optimised 16S rRNA-gene based pyrosequencing</article-title>. <source>PLoS One</source><volume>7</volume>: <fpage>e32543</fpage><pub-id pub-id-type="pmid">22470420</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Soergel1">
+        <label>41</label>
+        <mixed-citation publication-type="journal"><name><surname>Soergel</surname><given-names>DAW</given-names></name>, <name><surname>Dey</surname><given-names>N</given-names></name>, <name><surname>Knight</surname><given-names>R</given-names></name>, <name><surname>Brenner</surname><given-names>SE</given-names></name> (<year>2012</year>) <article-title>Selection of primers for optimal taxonomic classification of environmental 16S rRNA gene sequences</article-title>. <source>ISME Journal</source><volume>6</volume>: <fpage>1440</fpage>&#x2013;<lpage>1444</lpage><pub-id pub-id-type="pmid">22237546</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0076892-Srinivasan2">
+        <label>42</label>
+        <mixed-citation publication-type="journal"><name><surname>Srinivasan</surname><given-names>S</given-names></name>, <name><surname>Fredricks</surname><given-names>DN</given-names></name> (<year>2008</year>) <article-title>The human vaginal bacterial biota and bacterial vaginosis</article-title>. <source>Interdiscip Perspect Infect Dis</source><volume>2008</volume>: <fpage>750479</fpage><pub-id pub-id-type="pmid">19282975</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

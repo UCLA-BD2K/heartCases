@@ -1,0 +1,174 @@
+Competing Interests: The authors have declared the following interests: SK and HS are employees of Philips Technologie GmbH; MV is employee
+of Philips Healthcare. There are no patents, products in development or marketed products to declare. This does not alter the authors’
+adherence to all the PLOS ONE policies on sharing data and materials, as detailed online in the guide for authors. Conceived and designed
+the experiments: DM SK PBN EJR AH. Performed the experiments: DM BG VL AH PBN. Analyzed the data: DM MW AAF PBN. Contributed
+reagents/materials/analysis tools: DM SK MV HS PBN. Wrote the paper: DM SK HS MV PBN. To improve image and diagnostic quality in dynamic CT
+myocardial perfusion imaging (MPI) by using motion compensation and a spatio-temporal filter. Dynamic CT MPI was performed using a 256-slice
+multidetector computed tomography scanner (MDCT). Data from two different patients–with and without myocardial perfusion defects–were
+evaluated to illustrate potential improvements for MPI (institutional review board approved). Three datasets for each patient were
+generated: (i) original data (ii) motion compensated data and (iii) motion compensated data with spatio-temporal filtering performed. In
+addition to the visual assessment of the tomographic slices, noise and contrast-to-noise-ratio (CNR) were measured for all data. Perfusion
+analysis was performed using time-density curves with regions-of-interest (ROI) placed in normal and hypoperfused myocardium. Precision in
+definition of normal and hypoperfused areas was determined in corresponding coloured perfusion maps. The use of motion compensation followed
+by spatio-temporal filtering resulted in better alignment of the cardiac volumes over time leading to a more consistent perfusion
+quantification and improved detection of the extend of perfusion defects. Additionally image noise was reduced by 78.5%, with CNR
+improvements by a factor of 4.7. The average effective radiation dose estimate was 7.1±1.1 mSv. The use of motion compensation and spatio-
+temporal smoothing will result in improved quantification of dynamic CT MPI using a latest generation CT scanner. Dynamic contrast enhanced
+CT scans enable collection of kinetic parameters (time-to-peak, mean-transit-time etc.). For instance, dynamic CT myocardial perfusion
+imaging (MPI) could help assess the hemodynamic significance of coronary artery stenosis on the associated myocardial tissue. In the last
+decade, coronary CT angiography (CCTA) has gained increased importance for non-invasive evaluation of the coronary arteries and the
+detection of coronary artery disease (CAD) . For clinical practice the quantification of myocardial perfusion is of high relevance for
+diagnosis, prognosis and therapy of CAD. Initial studies illustrated MPI as a feasible and promising method for the assessment of myocardial
+perfusion deficits . However, there are diagnostic limitations with respect to image quality and radiation exposure. Low tube output
+typically used in MPI to address the issue of radiation dose could result in relatively high image noise. In addition, movement of the heart
+during the scanning procedure could result in spatial mis-alignment of the targeted regions and reduce the accuracy of time- and space-
+dependent evaluation of myocardial perfusion in specific regions of interest (ROI), thus creating a need for motion correction methods. The
+aim of this study was to assess the potential of MPI on a wide detector CT scanner in combination with motion correction and a spatio-
+temporal filter for improved quantification and reduced sampling resulting in radiation dose savings. In this study data from two different
+patients – with and without myocardial perfusion defects – were evaluated to illustrate potential improvements for MPI. Institutional review
+board approval (Klinikum rechts der Isar, Technische Universitaet Muenchen) and written informed consent was obtained from all patients
+before enrollment in the study. Both patients with known CAD underwent magnetic resonance (MR) perfusion imaging and also invasive coronary
+angiography (ICA) within 4 weeks following perfusion imaging. Patient 1 is a 57-year-old male with known coronary atherosclerosis and
+significant (>90%) stenosis of the left circumflex artery (LCA) and the intermedial branch with prior unsuccessful interventional
+recanalization. The distal RCA is functionally occluded. MR imaging showed perfusion deficits in the inferior, inferolateral and lateral
+wall of the left ventricle with accompanying hypokinesia of the left ventricular (LV) wall and a reduced ejection fraction. Patient 2
+(80-year-old, male) has known CAD without interventional therapy in the past. No significant perfusion deficits were seen in MR perfusion
+imaging, and ICA showed coronary atherosclerosis but no significant coronary stenosis. Dynamic MPI was performed using a 256-slice
+multidetector CT scanner (MDCT) scanner with 80 mm z-axis-coverage (Brilliance iCT, Philips Healthcare, Cleveland, OH, USA) at 80 kVp, 250
+mAs, 0.27 sec gantry rotation time and 250 mm field-of-view (FOV), with 360° reconstructions of 3 mm thick slices using the CA (smooth)
+kernel. Data was acquired during pharmacologically induced stress (Adenoscan, Sanofi-Aventis Frankfurt, Germany; 140 µg/kg/min) in end-
+expiratory breath-hold. ECG-triggered axial scans with zero increment were performed at a specific cardiac location following an injection
+of 40 ml contrast medium (4 ml/s, Imeron 400 MCT, Bracco Imaging Deutschland GmbH, Konstanz, Germany) using a dual injector (Stellant,
+MEDRAD, Inc., Indianola, Pennsylvania, USA). Scans were triggered at alternate cardiac cycles at end-systole (40% of the RR interval),
+resulting in 15 acquisitions over a period of 30 cycles. On this note, the option of scanning every alternate cardiac cycle was chosen to
+reduce the radiation exposure to the patient. The aim of motion compensation is to spatially align the entire set of acquisitions such that
+all scans are in the same reference frame. Here, a two-stage approach is chosen: in the first stage, the motion between any two adjacent
+scans (time frames) is estimated resulting in a displacement vector for every single voxel. The second stage concatenates the displacement
+vectors from all time frames in order to transform each scan towards the designated scan . Motion estimation between two scans is also known
+as an “image registration” task. For clarity we define a set of time frames by Given two adjacent frames defined on an image domain (as a
+subset of ) a registration algorithm aims at finding a displacement field such that is most similar to . In mathematical terms, the
+similarity is described by a functional , here chosen as the popular sum of squared differences (SSD),(1) A registration based only on a
+similarity measure may yield a deformed template image which perfectly matches the reference image as long as all gray values are present in
+both images. However, the problem is ill-posed and the underlying deformation does in general may not be applicable in a physical context.
+Therefore, an additional smoothness constraint (or regularizer) is considered which can be chosen to model the application specific physical
+properties. It should be noted that the regularization term prevents the resulting vector field from an unwanted physiologically implausible
+behavior (e.g., strong local expansion or compression or even folding). In addition, by regularization the registration algorithm is less
+affected by image noise, imaging artifacts or abrupt inflow of contrast agent. In this note we employ a regularizer based on the popular
+linear elastic potential(2) Its elastic properties are modeled by Lamé parameters , which can be translated into Young’s modulus (linked to
+tissue stiffness) and Poisson’s ratio (contraction perpendicular to applied stretch). Specifically, is inversely proportional to the elastic
+modulus and is proportional to the incompressibility of the material. To address the heart motion occurring during the scanning procedure on
+the one hand and the inflow of contrast agent on the other hand, a relatively large Young’s modulus (four times higher as for lung
+deformations) as well as a small Poisson’s ratio were chosen. As common to registration algorithms, absolute values from the literature
+cannot be used since their choice depends on the intensity scale of the acquired scans, on the chosen similarity measure as well as on
+implementation issues. By combining the similarity measure and the regularizing term, the problem can be formulated as finding a
+displacement field which minimizes the joint functional.(3) The computation of the Gâteaux derivative of (1) and (2) yields a necessary
+condition for being a minimizer of (3). The outcome is a system of nonlinear partial differential equations,(4)equipped with associated
+boundary conditions. For the discretization of (4) finite differences in conjunction with Neumann boundary conditions have been chosen. The
+resulting system of linear equations consists on one hand of a sparse, symmetric and highly structured matrix arising from the regularizer
+and, on the other hand, of a so-called force vector corresponding to the similarity measure (see for further details). The system of
+equations is then linearized and iteratively solved by a conjugate gradient scheme. The iteration is stopped if the update in is below 0.05
+mm for all positions indicating convergence. To ensure convergence and to increase robustness, the algorithm was embedded into a multi-
+resolution scheme. In the interest of a fast clinical workflow, the original resolution level was skipped from processing. Runtime was
+measured in the range of about one minute. An edge-preserving filter that reduces image noise in homogeneous regions while preserving the
+boundaries between different regions of tissue was used. Three-dimensional spatial smoothing was performed individually on each single time
+frame according to the method described by Isola et al . Following spatial filtering and motion compensation, temporal smoothing was
+implemented as a 3-point weighted moving average filter, and applied individually to each pixel over time. The filter weights were chosen as
+(0.25, 0.5, 0.25). This filter configuration was chosen to ensure a satisfactory tradeoff between noise removal and preservation of the
+shape of the perfusion curves. To emphasize possible improvements three datasets for each patient were generated: (i) original data, with no
+correction, (ii) motion compensated data, and (iii) motion compensated data with spatio-temporal filtering. All images were analyzed on a CT
+workstation (Brilliance Workspace , V4.5.2, Philips Healthcare, Cleveland, OH, USA) equipped with a prototype post-processing application
+(Dynamic Myocardial Perfusion). Image noise was calculated by the standard deviation of the mean CT attenuation values (HU) of the LV
+myocardium. Contrast-to-noise ratio (CNR) was calculated as mean HU within a specific ROI divided by image noise. Therefore, several ROIs of
+area 1 cm2 were manually placed in the hypoperfused areas. As a control, equally sized ROIs were defined in remote myocardium of the lateral
+wall of the left ventricular chamber and the interventricular septum. Precision in definition of normal and hypoperfused areas was evaluated
+by three experienced radiologists (range 5–7 years) in corresponding coloured perfusion maps for peak enhancement (PE). Using the 17 segment
+model recommended by ACC/AHA/ASNC , semi-quantitative visual assessment of myocardial perfusion (normal versus hypoperfusion) was performed.
+Kappa values were calculated to compare interobserver agreement on a per-patient basis for myocardial territories. The effective dose of CT
+perfusion analysis was estimated by the product of the DLP (given by the scanner) and a conversion coefficient for the chest (k = 0.014
+mSv*mGy−1*cm−1) . Image noise was 17.7 HU in standard images, 10.9 HU in motion-corrected images and 3.8 HU in filtered and motion-corrected
+images. Accordingly, CNR within a defined ROI was increased using motion correction and ST-filter with 31.6 versus 6.8 in standard
+reconstructions and 11.7 in motion-corrected images. Figure 1 illustrates a representative example of Patient 1 with a large hypodense
+region in the inferior and inferolateral LV wall. Figure 1a shows the time attenuation plots of the mean CT numbers over time in the post-
+stenotic territory of the lateral LV wall (blue) and the remote myocardium (green) without the use of motion correction, with Figure 1b
+showing the corresponding plots after the use of motion correction and spatio-temporal smoothing. In addition, the CT images before and
+after motion correction and spatio-temporal smoothing are presented in Figures 1c & 1d, respectively. Similar curves are shown for Patient 2
+(Figure 2), who had no significant perfusion deficits detected in CT or MRI perfusion analysis, and also no hemodynamically significant
+coronary stenosis found in interventional angiography performed in the catheter laboratory. In Patient 2, arrhythmia with multiple
+extrasystoles and a mean heart rate of 70 bpm (range 60–110 bpm) caused increased motion of the heart between the individual data
+acquisitions of the perfusion examination. Consequently, a defined ROI may not represent the same area of the myocardium during the course
+of time, but instead cover adjacent tissue or the contrast-filled lumen of the LV during different temporal instances (Figure 2c and d).
+This could help explain the spikes (false peaks) of 170 HU and 240 HU in Figure 2a. However, after motion correction, consistent
+measurements of the same part of the myocardium result in coherent time-density curves for both measurements in the apical and lateral wall.
+From Figures 1 and 2, it is clear that the use of motion correction and spatio-temporal smoothing makes it easier to quantify perfusion
+measurements, especially in smaller regions of interest where it is critical to spatially align structures of interest over time. Hounsfield
+units (HU) of two regions-of-interest (ROI) are plotted against the time after contrast administration with a total of 12 scan cycles. The
+green curve represents the dynamic course of contrast enhancement of the normal apical LV myocardium, and the blue line illustrates delayed
+and decreased contrast enhancement of the hypoperfused myocardium of the inferolateral LV wall. Both curves are smoother with less variation
+after motion correction and spatio-temporal filtering (Fig. 1b). Figs. 1c and d show the axial images (original and motion corrected with
+spatio-temporal smoothing ) with the corresponding ROIs – green for the normal region and blue in the region of decreased contrast
+enhancement. Both CT images are presented using the same window level and window width. Perfusion analysis of original images shows
+irregular zigzag pattern of the resulting curves (a). A continuous run of the time density curves is illustrated after motion correction and
+spatio-temporal filtering (b). Both curves (orange and blue) illustrate normal contrast enhancement of the LV myocardium with no evidence of
+perfusion deficit. Figs. c-f: Shown are the axial images (and the ROIs) at two different instances in time – the original uncorrected (c, d)
+and after motion correction plus spatio-temporal smoothing (e, f). Images c and e are from cardiac cycle 3; d and f are from cardiac cycle
+8. In the original images (c & d), the two ROIs do not cover the same area of the myocardium at both time points, but instead cover adjacent
+tissue and the contrast-filled lumen of the LV, resulting in several spikes in (a). In contrast, consistent measurements of the same part of
+the myocardium after motion correction (e & f) leading to coherent time-density curves (b) for both ROIs. All CT images are presented using
+the same window level and window width. Figure 3 (a–c) shows the color maps for peak enhancement (PE) of Patient 1 in the axial images of
+the original data (3a), motion corrected data (3b) and combined motion-corrected and spatio-temporal filtered data (3c), demonstrating
+better delineation of the transit regions using both post-processing algorithms. Hypoperfusion of the myocardium of the lateral LV wall can
+be detected in all CT images 3a–c. Clearly, in addition to any incremental improvements brought about by the use of motion compensation
+(shown in Figure 3b), the additive use of spatio-temporal filter results in a better visualization of smaller transmural parts within the
+mostly hypoperfused area of the lateral LV wall as demonstrated in Figure 3c in contrast to the original color maps (3a). Figure 3d shows
+the corresponding MRI image (short axis view, late enhancement images) of Patient 1, confirming the myocardial hypoperfusion of the lateral
+LV wall with partly transmural extension. It is not possible to make the diagnosis whether there is a transmural extent of hypoperfusion in
+Figures 3a and b, but there is an excellent analogy of the MRI image (3d) and the color map using both motion compensation and spatio-
+temporal filtering (3c), illustrating a precise delineation of the transmural portion within the hypoperfused area. Accordingly, all three
+radiologists assessed transmurality of ischemia only in motion-compensated and filtered images. Interobserver agreement for segment
+evaluation (hypoperfusion versus normal) was very good with kappa values of 0.90, 0.95, and 0.95, respectively. As a reference, short axis
+view late enhancement MR images are shown (d) presenting partly transmural infarction of the inferolateral wall. LV endocardium and
+epicardium are outlined in red. The perfusion defect of the inferior and lateral LV wall is visible in all CT perfusion images, with
+improved delineation of the hypoperfused and remote myocardium using motion correction (b) and best image quality using combined
+reconstruction algorithm with motion correction and spatio-temporal filtering (c). Thus the transmural extent of the infarction as diagnosed
+in MRI (d) can be distinguished only in combined motion-corrected and spatio-temporal filtered images (c). Mean DLP was 507±77 mGy*cm and
+mean CTDIvol was 63±9 mGy, resulting in an average effective radiation dose in these case studies of 7.1±1.1 mSv. Dynamic CT myocardial
+perfusion imaging is a feasible and promising technique for a quick and noninvasive assessment of myocardial perfusion and the detection of
+perfusion abnormalities. Several studies have shown promising results, offering the ability to evaluate the hemodynamic significance of
+coronary artery stenosis in CT imaging , , . Currently, noninvasive assessment of the hemodynamic significance of coronary artery disease is
+mostly assessed by magnetic resonance imaging (MRI) and single photon emission computed tomography (SPECT) in clinical routine examinations
+of the heart. MRI is a well-established approach for the evaluation of myocardial perfusion deficits, and multiple studies proved a high
+diagnostic accuracy of MRI for the detection of CAD . In addition, SPECT is the most widely used imaging modality for the determination of
+hemodynamic significant stenosis in CAD . However, both techniques have limitations: MRI has a long procedure time, and patients with
+cardiac pacemakers or claustrophobia cannot be examined. SPECT requires injection of a gamma-emitting radionuclide (e.g. Tc-99m sestamibi or
+Tl-201) and exposes patients to a radiation dose in the range of 9–13 mSv or higher . Therefore, an extended approach of CT-based analysis
+of anatomical and functional aspects of CAD is of special interest. In this study, we presented options (post-processing algorithms) to
+improve the quality of dynamic CT of the myocardium in a reduced radiation dose setting. The principal findings of our study have been that
+the use of motion correction and spatio-temporal filter results in: (a) an enhanced image quality, (b) better differentiation between normal
+and hypoperfused areas and (c) improved diagnostic quality of perfusion examinations. Additionally, we limited the radiation exposure by
+scanning every other cardiac cycle. For perfusion analysis, contrast enhancement for each voxel is assessed over a period of time. If the
+target organ (myocardium) shifts over time, standard perfusion evaluation tools cannot identify this discrepancy. As a result such tools are
+prone to including HUs of adjacent tissues that could appear because of spatial mis-alignment. Thus, the non-registered images suffer from
+artifacts caused by motion of the heart and motion of the whole chest e.g. due to breathing, and possible imperfect matching of the scan
+with the ECG interval. Those artifacts distort dynamic volume CT assessment of myocardial perfusion and may lead to misinterpretation of
+assessed values for perfusion measurements, for example in coloured perfusion maps. In this preliminary study, we did not observe any loss
+of diagnostic information with the use of motion compensation and the spatio-temporal filter. Instead, the use of these post-processing
+algorithms actually reduced the blurring of boundaries between normal and small and hypodense regions of the myocardium, thereby improving
+the quality of perfusion maps. For instance, using these algorithms, we were able to better detect the extent of hypoperfused territory
+(endocardial versus transmural, Fig. 3), thus leading to a higher diagnostic confidence. Motion corrected and filtered images clearly depict
+the parts of transmural extent of myocardial infarction of the left lateral myocardial wall, as also shown in the late Gadolinium
+enhancement MR images. Differentiation of subendocardial versus transmural extent of infarction is of special clinical importance as the
+prognosis of restoration of myocardial contractile function depends on the degree of infarct transmurality . Up to now, cardiac MR imaging
+including late enhancement has been established as a standard of reference for the assessment of transmurality of myocardial infarction . In
+this feasibility study we could show that visualization of transmural infarction can be distinguished in CT after motion correction and
+temporal filtering, whereas in raw uncorrected CT data the evaluation of the transmurality of infarction was impaired. With regard to
+z-coverage, compared to the previous generations of MDCT scanners, the increased detector width of 256 or more slices offers also for
+perfusion imaging the possibility to image the whole left ventricular myocardium without table movement. So the complete target volume can
+be imaged within each scanning circle, and there is no need of conjunction of adjacent scan volumes for assessing a complete perfusion scan
+of the heart. This study was designed as a feasibility study for first evaluation of motion compensation and a spatio-temporal filter in CT
+MPI. Therefore, only two patients were included for clinical evaluation. This is a major limitation of our study, and these findings have to
+be proved in a clinical trial with a larger sample size. We demonstrated that dynamic CT MPI is a fast and accurate tool for detection of
+perfusion abnormalities. With the proposed post-processing steps the quality of MPI increases and the accuracy for diagnostics increases. So
+this technique for the first time offers the possibility to differentiate between subendocardial and transmural infarction in patients with
+myocardial ischemia in CT imaging. With this in mind a future step could be to further optimize radiation dose to the patient while using
+the proposed post-processing tools in combination the modern reconstruction algorithms, such as iterative reconstruction techniques. The
+authors would like to thank Alexander Leber and Ellen Hoffmann from the Munich Heart Centre, Klinikum Bogenhausen, for their collaboration.

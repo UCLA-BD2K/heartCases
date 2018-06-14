@@ -1,0 +1,215 @@
+Contaminant transport in subsurface water is the major pathway for contamination spread from contaminated sites to groundwater supplies, to
+remediate a contaminated site. The aim of this paper was to set up the groundwater contaminant transport model for the Wang-Tien landfill
+site, in southwestern Taiwan, which exhibits high contamination of soil and groundwater and therefore represents a potential threat for the
+adjacent Hsu-Hsian Creek. Groundwater Modeling System software, which is the most sophisticated groundwater modeling tool available today,
+was used to numerically model groundwater flow and contaminant transport. In the simulation, the total mass of pollutants in the aquifer
+increased by an average of 72% (65% for ammonium nitrogen and 79% for chloride) after 10 years. The simulation produced a plume of
+contaminated groundwater that extends 80 m in length and 20 m in depth northeastward from the landfill site. Although the results show that
+the concentrations of ammonium nitrogen and chlorides in most parts are low, they are 3.84 and 467 mg/L, respectively, in the adjacent Hsu-
+Hsian Creek. Generally, landfills will cause lots environmental pollution, such as smells in the air, landfill gas combustion, and
+wastewater leakage. Among all these, wastewater leakage affects the surrounding environment the most, especially the groundwater quality
+because wastewater leakage consists of high concentrations of organic compounds, heavy metal ions and toxic hazards. Recently, a large
+number of landfill-caused groundwater pollution cases have been reported around the world (Porowska , Sizirici and Tansel , Baker et al. ,
+Peng et al. , Pleasant et al. , Han et al. , El-Salam and Abu-Zuid , Li et al. , and Zhou et al. ). The contaminants of municipal solid
+waste derived from landfill leaks into groundwater aquifers because of rainfalls, and by groundwater flow they spread into the adjacent
+river system and pollute the ecosystem. However, this mechanism does not stop even after landfills have stopped receiving waste. Therefore,
+it is necessary to keep investigating and monitoring the surroundings of decommissioned landfill sites. Today, many specialized computer
+software packages have been created and used to solve contaminant transport problems in groundwater system. However, Groundwater Modeling
+System (GMS), is the most powerful software package using the modular finite-difference flow model (MODFLOW), the particle-tracking post-
+processing model (MODPATH), the modular three-dimensional transport model (MT3DMS), the multi-species reactive transport model (RT3D), the
+finite element groundwater model (FEMWATER), the two-dimensional finite element model (SPEED2D), the sequential electron acceptor model
+(SEAM3D), the multi-phase flow transport model (UTCHEM), the general purpose parameter estimation (PEST), the various transport tools
+(UCODE) and the transition probability geostatistic software (T-PROGS) to work out groundwater contamination transport and the interaction
+between surface water and groundwater. The purpose of GMS is to predict the spreading of contaminant concentration by inputting initial
+conditions of hydraulic head, groundwater flow direction and the concentration of contaminant. Many studies have shown that the
+contamination transport in groundwater aquifers by using the GMS software package at the present time. (Brigham Young University , Abu-Rukah
+and Al-Kofahi , Al-Yaqout and Hamoda , Babiker et al. , Christensen et al. , Rapti-Caputo and Vaccaro , and Kim et al. ). As GMS is widely
+used to model groundwater flow and simulate contaminant transport in the world, thus in this paper, the authors decided to use GMS to
+perform the simulation work. In this paper, in order to discuss the possibility of the land reusing in the decommissioned landfill site,
+Wang-Tien, the data of geology, hydraulic head, and contamination concentrations, etc. on landfill site were used in GMS to simulate and
+predict the contamination transport status. Decommissioned landfills are generally not protected the leachate spreading to underlying
+aquifers, which are required to be managed and controlled to avoid negative impact on the environment. Numerical method can effectively
+solve not only groundwater flow problem, but also contaminant transport of groundwater. By the rapid development of calculator technology,
+groundwater model has been applied to groundwater resource assessments, predictions and managements. GMS is an advanced and based on concept
+model groundwater aquifers simulation software, which provides lots of methodologies to establish groundwater flow numerical model. The
+following is the simulation process with explanations for each of the steps of this study. The procedure for applying to a groundwater flow
+model includes the following steps (shown in Figure 1). Step 1 Data Collection: During this step, in-situ information collection and
+measurement are necessary to collect information such as the annual rainfall and the annual evaporation from the Central Weather Bureau,
+Taiwan , and the geographic map from a geographic information system (GIS). Other data must be measured, such as geology, hydraulic head,
+groundwater flow velocity from slug tests of drilling bore-hole logs, and topographic elevation from topographic surveying, and groundwater
+sampling chemistry from the laboratory. Step 2 Construction of a Conceptual Model: The conceptual model incorporates the information in Step
+1 to establish a groundwater flow model which can be used to test and verify. Step 3 Simulation and Calibration of Groundwater Flow Model:
+To perform the MODFLOW package to simulate groundwater flow on each month, then to calibrate the groundwater flow directions and the
+hydraulic heads until the simulation matches the in-situ observations to be optimized. Step 4 Simulation and Calibration of the Contaminant
+Transport Model: After the groundwater flow model is calibrated, the contaminant source locations and contaminant concentration values are
+input into the model. Then the MT3DMS package is run to simulate the transport of contaminants in groundwater aquifer and subsequently to
+calibrate contaminant concentrations until the simulation matches in-situ observations to a reasonable degree. Step 5 Predictive
+Simulations: After calibration, the model can be used to predict future groundwater flow and contaminant transport. The model may be used to
+estimate various remediation alternatives, such as risk assessment. The partial differential equations, describing the groundwater flow,
+velocity and contaminant transport, can be expressed as follows (Harbaugh, and Zheng and Wang, ): For the groundwater flow
+model:(1)∂∂x∂ψ∂t±Q For the contaminant transport
+model:(2)∂∂x(θDxx∂C∂x+θDxy∂C∂y+θDxz∂C∂z)+∂∂y(θDyx∂C∂x+θDyy∂C∂y+θDyz∂C∂z)+∂∂z(θDzx∂C∂x+θDzy∂C∂y+θDzz∂C∂z)−=∂∂t(θC)+ρb∂s∂t+kmθCm±Rwhere x, y,
+z are the Cartesian coordinate axes; t is time; kx, ky, kz are the hydraulic conducitcity along the respective Cartesian x, y, and z
+coordinate axes; ψ is the pressure head; θ is the moisture content; n is the effective porosity of the porous media; Ss is the specific
+storage of the porous media; C(ψ) is the specific moisture capacity; Q is a volumetric flux per unit volume representing sources and sinks
+of water; Dij (i,j=x,y,z) is the hydrodynamic dispersion coefficient; C is the concentration of contaminants dissolved in groundwater; νx,
+νy, νz are groundwater velocities in x, y, z directions and νx = −kx∂h∂x, νy = −ky∂h∂y, νz = −kz∂h∂z, h = z′ + ψ is the total head; z′ is
+elevation head; ρb is bulk dry density of the porous media; s is the weight of adsorbed water per unit area of porous media; km is the decay
+coefficient of the contaminant concentration; m is the m−th order of chemical/biological decay; R is the retardation coefficient, define
+as:(3)R=1+ρbnKdwhere Kd is partition coefficient. The components of the hydrodynamic dispersion coefficients are also calculated by Equation
+(4):(4)Dxx=αLνx2|ν|+αTHνy2|ν|+αTVνz2|ν|+D* Dyy=αLνy2|ν|+αTHνx2|ν|+αTVνz2|ν|+D*where αL is the longitudinal dispersivity; αTH is the
+horizontal transverse dispersivity; αTV is the vertical transverse dispersivity; D* is the effective molecular diffusion
+coefficient; |ν|=νx2+νy2+νz2 is the magnitude of the velocity vector. When the velocity vector is aligned with the same coordinate axes, all
+the cross terms become zero. Those governing equations cannot be solved analytically, therefore, they have to be solved by using numerical
+methods. The finite difference method is used in MODFLOW and MT3DMS package for deriving the solution to the governing equation in this
+study. The study site, the Wang-Tien landfill site, is located in the Yong-Kang Municipality of Tainan region as shown in Figure 2. The
+landfill, causing an accumulative amount of solid waste to reach approximately 773,970 m3, started to load municipal solid waste in 1992 and
+was decommissioned in 2002. The location of the study area lies between the longitudes 23°2′29′′ N and 23°2′36′′ N and latitudes 120°16′1′′
+E and 120°16′22′′ E, and it occupies a total area of 39,333 m2. The elevation of the study area ranges between 8.75 and 25 m above mean sea
+level, and with a mean land surface slope of 0.1‰ from southeast to northwest. The landfill site encompasses an area 175 m north-south, and
+225 m east-west, and is currently surrounded by Yong-Kang industrial zone. The site is located within the Hsu-Hsian Creek system which
+drains into the Yan-Shuei Creek. The mean value of precipitation in the Tainan area is 1828.4 mm/year and the mean value of the evaporation
+in the field area is 1476 mm/year. The composition of municipal solid waste in Wang-Tien landfill site is shown in Figure 3, where organic
+waste constitutes 80%, which was mostly household waste without separation or treatment. There are four borehole loggings in Figure 4,
+showing the major geological layers in the study site. Unlike ordinary soil, the filling material layer, which thickness is about 3.8 m, is
+a mixture of municipal solid waste and grains of different sizes from clay to sand, concretes and gravels. After observing carefully the
+four bore-hole loggings, we found that the soil profile arrangement of the N3 located in the central landfill site is quite distinct from
+three others, because there is about 0.6 m thick clay sand layer starts at a depth 3.4 m below ground surface. The Wang-Tien landfill site
+is an older landfill without installing the lining, it was selected to be a landfill site might because the natural clayey sand layer of the
+ground subsurface can prevent leachate spreading to underlying aquifers. The mean hydraulic head of all boreholes was at a depth of about 7
+m below ground surface. The hydraulic heads derived from in-situ borehole data monthly measured in 2013 as shown in Table 1. According to
+the data of Table 1, the annual hydraulic head variations were plotted in Figure 5, and then combined the data of Table 1 with the locations
+of boreholes, the monthly hydraulic heads contour maps of 2013 were drawn in Figure 6. The hydraulic conductivity data of each soil layer
+were taken from in-situ and laboratory hydraulic test as shown in Table 2. By the way, the hydraulic conductivity tensor in the numerical
+model was assumed to be isotropic. In Table 3, it shows contaminant concentration data obtained from a laboratory sampling work carried out
+in November 2013 and the current standards from the Environmental Protection Agency (EPA in Taiwan , current standards given in brackets).
+According to those values of pollutants, we confirmed that groundwater was polluted and considered as serious risks. We also discovered in
+some parts of the site that contaminated the ammonium nitrogen and chlorides were over the Taiwan EPA standard. In addition, the pollutants
+are unevenly distributed. Accordingly, the contaminant of ammonium nitrogen and chlorides, exhibiting the higher concentrations, were chosen
+to simulate and discuss its fate and transport in this study. Since monitoring rainfall data were not available in the Wang-Tien landfill
+area, the data for the Tainan weather station, close to Wang-Tien, should be the second best option. The rainfall data were from the website
+of Central Weather Bureau of Taiwan, which recorded rainfalls for each day, hour by hour, can be found from 1 January 2007, until today.
+From these data, rainfalls have been calculated for each month, in mm/m2/month first, then in mm/m2/day to correspond to the units used in
+GMS modeling. Figure 7 shows the recharge variation in 2013. GMS is a powerful simulator. A great quantity of input data for GMS is
+collected from a literature review, field investigations, and laboratory reports (Mehnert and Hensel, and Bedient et al. ). In order to
+simulate and predict the contamination transport of the surroundings in the decommissioned landfill, Wang-Tien, the information on geology,
+topography, monthly rainfalls, the soil layers, various contamination concentrations and the monthly hydraulic head were taken from in-situ
+bore-holes as shown in Section 3. In the numerical simulation, a correct description of hydrological and geological conditions at the study
+site is necessary which can be used to numerically model the groundwater flow and contaminant transport processes. In the conceptual model
+in which data describing site conditions are assembled in a systematic approach to indicate groundwater flow and simulate contaminant
+transport processes of the ammonium nitrogen and chlorides at the study site. The numerical model of Wang-Tien landfill site was constructed
+by using package MODFLOW in this study. A rectilinear grid pattern was used to divide the model domain both horizontally and vertically into
+rectangular cells in package MODFLOW to calculate groundwater table conditions in each cell of the model domain. To avoid an inaccurate
+simulation from the boundary effect, it is necessary to construct a larger grid model with boundaries far enough from the study site. Thus,
+the model domain boundary is extended about 750 m north-south and about 1000 m east-west and the model domain is discretized into a grid of
+75 rows and 100 columns. Each layer in the numerical model contains 7500 grid cells as shown in Figure 8a. These cells are 20 by 20 m in the
+entire model domain. The vertical domain, about 37 m thick of variable elevation below ground surface, is discretized into 4 layers of
+varying thickness as shown in Figure 8b,c represented the vertical model domain with several approximations due to model cell
+discretization. The depth of the bottom boundary constraints on groundwater flow in the shallow units where the majority of contaminant
+transport congests. The model layer surfaces were developed by interpolation of borehole stratigraphy and ground surface topography, within
+a GIS. The northern (downriver boundaries) and southern boundaries (upriver boundaries) of the model domain were represented as no flow
+boundaries, where the assumption that flow in these outlying areas was generally east-westward and parallel to the Hsu-Hsian creek, due to
+recharge in high elevation areas and discharge to Hsu-Hsian creek and the constant head boundaries (CHB) were applied to the eastern and
+western boundaries of the model domain. The values of the boundary hydraulic head, determined from the topographic survey data, were
+assigned to be a constant with the Hsu-Hsian creek elevations. Average groundwater elevations in the study area are based on in-situ
+measurements from all monitoring boreholes (Figure 5). These boundary values were assigned to all layers of the model domain. The Hsu-Hsian
+creek was assigned in the model as river boundary cells simulating the hydraulic interaction between surface water and groundwater systems
+(Figure 8d). According to the hydrological and the geological setting of the study site, an aquifer system is present. It is an unconfined
+aquifer of one homogenous fine sand layer. Its top is the filling material layer and its bottom is the clayey sand layer. The groundwater
+aquifer recharge is dependent on various factors, including the hydraulic conductivity, topography and amount of rainfall. In the numerical
+model of this study, a surface, the top layer boundary (filling material layer), above the groundwater flow was subjected to a transient
+recharge. The value of transient recharge was based on the variable data of the monthly rainfall in 2013 (Figure 7). In the numerical
+domain, the recharge surface was divided into 30 partial recharge zones, and each borehole was located at different zones as shown in Figure
+9. These partial zones can be adjusted their recharge for calibration work. The mean value of precipitation in the Tainan area is 1828.4
+mm/year and the mean value of the evaporation in the study area was assumed to be 1476 mm/year. Therefore, the recharge for the study site
+is 352.4 mm/year can be estimated. All the aquifer parameters, shown in Table 4, are assumed that the aquifer was contaminated by polluted
+waste water (containing the ammonium nitrogen and chloride) via several injected wells at the speed of 19.2 m3/day with the ammonium
+nitrogen concentration of 35 mg/L and the chloride concentration of 4240 mg/L for contaminant transport simulation. The dispersivity can be
+expressed as follows empirical equation (Wong and Hayduk, ):(5)αL=0.1×Ld, αT=0.2αLwhere αL is longitudinal dispersivity; αT is transverse
+dispersivity; Ld is the highest elevation at the location of the contaminant source. The Wang-Tien landfill, located at the highest
+elevation was 25 m, was the main source consecrating contaminant in the study area. Thus, the longitudinal dispersivity αL is taken as 2.5 m
+and transverse dispersivity transverse dispersivity of the horizontal αTH and the vertical αTV are taken as 0.5 m in this simulation. In
+order to obtain the simulation result more in line with the in-situ conditions, we defined the one year groundwater flow model according to
+varying hydraulic heads with the monthly measurement data from 2013. There are 12 serial simulations indicating the groundwater flow
+situation for each month in this model, and the groundwater flow of those serial simulations is continuously via repeatedly failing the
+calibration process. Furthermore, the one year groundwater flow model was recorded and it can use to simulate and predict the contaminant
+transport in this study. The calibration of the groundwater flow model, constructed in the most time-consuming effort within the modeling
+procedure, is a key to its applicability. The calibration procedure could be done manually by adjusting input variables to find an optimal
+scheme which is the closet agreement between the simulation and measurement. In this study a threshold value for the hydraulic head was
+equal to 2 m. The hydraulic head simulations were considered than ±2 m and the adjusting input variables were hydraulic conductivities and
+recharge rates changing in each partial recharge zone during the calibration process. Comparison between Figure 10a, Figure 11a, Figure 12a,
+Figure 13a, Figure 14a, Figure 15a, Figure 16a, Figure 17a, Figure 18a, Figure 19a, Figure 20a and Figure 21a show that the groundwater flow
+vectors almost all point to the adjacent Hsu-Hsian creek, and compared with the Figure 6 from the in-situ measurement data. A residual is
+the difference between the value of measured and simulated. During the calibration process, several attempts have to be done to minimize
+these differences. The perfect calibrations were shown from Figure 10b, Figure 11b, Figure 12b, Figure 13b, Figure 14b, Figure 15b, Figure
+16b, Figure 17b, Figure 18b, Figure 19b, Figure 20b and Figure 21b, those points are scatting less around the straight line and lying along
+a straight line at 45 degrees angle and the straight line has a geometric slop approximately 1. The MT3DMS simulation was incorporated into
+the transient MODFLOW simulation model by assuming the ammonium nitrogen concentration of 35 mg/L and the chloride concentration of 4240
+mg/L injected according to the one year groundwater flow model described in the transient MODFLOW simulation above. The ammonium nitrogen
+and chloride concentrations detected through sampling and analysis at monitoring boreholes in November 2013 listed in Table 3 were used to
+calibrate the contaminant transport model. The results of the contaminant transport model in November of the one year groundwater flow model
+were presented graphically in Figure 22 and Figure 23. Manual adjustment and inverse modeling were also used in contaminant transport model
+calibration. The perfect calibrations were shown in Figure 22 and Figure 23. After calibration, the contaminant transport model was used to
+predict potential plume movement 10 years into the future. In the simulations, the spreading concentration contour of ammonium nitrogen and
+chlorides were shown in Figure 24 and Figure 25 after 10 years. According to the simulation of the contaminant plume on 10 years, we found
+that the influence of groundwater flow on pollution is much more important than dispersion. Although the model appears to be quite
+realistic, there did not have quantitative validation to be done, because of the lack of data. The predicting results also showed that the
+contamination plume has moved in the direction of the northeast (into the creek which is located in the east of the map) instead of moving
+along with groundwater. The results also gave a plume of contaminated groundwater that extends 80 m in length and 20 m in depth
+northeastward from the landfill site. The results concentration of ammonium nitrogen and chlorides in the Hsu-Hsian Creek of the Wang-Tien
+landfill is 467 mg/L and 3.84 mg/L, respectively, when the Monitoring Standard Value for Taiwan declared by Environmental Protection
+Administration (EPA in Taiwan) is 250 mg/L and 0.05 mg/L, respectively for Class A, which means that the Hsu-Hsian Creek is highly polluted
+and not suitable for drinking. A great number of outputs can be exported into text files. Among the text file data, all concentrations of
+contaminants in the aquifer for each year are available. According to the result, it shows that contaminant transport is a slow process
+because of sorption of pollutants in the soil layer. In 10 years, the total concentration of pollutants in the aquifer has increased by an
+average of 72%, including 65% of the ammonium nitrogen and 79% of the chloride. Since the Hsu-Hsian Creek is the only sink for surface flow,
+the entire injection of increasing concentrations from the Wang-Tien landfill site corresponds to the contaminant discharge to the Hsu-Hsian
+Creek. The contaminant transport toward the Hsu-Hsian Creek could be calculated by dividing the subjoint mass of contaminants with time.
+Figure 26 shows that the concentrations were also increasing with time. It was also expected that the all concentrations of pollutant would
+logically increase with time. Comparing ammonium nitrogen with chloride, the concentration of chloride were increased by 79% in 10 years
+which can explain that the chloride has the lowly partition coefficient Kd value. The chloride is the contaminant that increases faster and
+with higher concentrations. Both contaminant properties of the ammonium nitrogen and chlorides are entirely different, so the results of
+concentration need to be normalized to compare the increasing concentration difference with both. Figure 27 shows the normalized
+concentrations which the concentration of chloride is 1.67 times more than the concentration of ammonium nitrogen in the Hsu-Hsian Creek
+after 10 years. GMS, a numerical calculator for simulation of groundwater flow and contaminant transport, could be used to deal with complex
+groundwater flow problems for contaminant transport predictions which is more convenient and suitable than analytical calculations. In order
+to propose remedial solutions for a decommissioned landfill site, Wang-Tien, this study used GMS to simulate groundwater flow by
+incorporating the information of geology, hydrology and rainfall of the study site, and then combined contaminant transport modeling to
+predict ammonium nitrogen and chlorides of the site for 10 years after spreading. According to the results of contaminant transport
+modeling, not only is the Wang-Tien landfill site heavily polluted both in the soil and groundwater, but also the adjacent Hsu-Hsian Creek
+where its concentration of chlorides is 467 mg/L (1.87 times higher than the water quality standard of EPA in Taiwan) and ammonium nitrogen
+is 3.84 mg/L (76.8 times higher than the water quality standard of EPA in Taiwan). When pollutants in groundwater aquifers spread into
+surface water systems, the contaminant transport velocity changes its speed from slow to fast, which will spread the pollutants more quickly
+from the adjacent river to the whole water system and would cause irreversible damage. In the current situation, nothing has been done to
+the Wang-Tien landfill site where the pollution may be prolonged for centuries. In order to stop the spread of pollution and the ecosystem
+damage, it is obviously necessary to take some remedial actions, such as removing the whole landfill. We are deeply grateful with the
+Environmental Protection Bureau of Tainan city which provided a grant to carry out the research reported here. We also express a profoundly
+gratitude to the Ministry of Science and Technology of Taiwan (104-2221-E-006-268-) for partial support. Chao-Shi Chen designed the study,
+Chia-Huei Tu performed data analysis, drafted and revised the manuscript, Shih-Jen Chen and Cheng-Chung Chen collected the in-situ data and
+performed the in-situ hydraulic test. All authors have read and approved the final version of the manuscript. The authors declare no
+conflict of interest. Flowchart of the modelling process. Location of study area. Composition of municipal solid waste in the Wang-Tien
+landfill site. The major geological layers in the Wang-Tien landfill site. Annual hydraulic heads variation in 2013. Hydraulic head contours
+maps: modeling with, Surfer v9, computer software (ordinary kriging interpolation). The arrows indicate the flow direction of groundwater.
+Transient recharge variation in 2013 (Each point on the curve was plotted by taking the open data of monthly measurements ). The MODFLOW
+flow model meshing. (a) The conceptual model approach using GIS map (the gird of 75 rows and 100 columns); (b) Define the material of
+layers; (c) Vertical model cell discretization; (d) The Hsu-Hsian creek boundary cells simulating. The recharge divisions. Groundwater flow
+vector and hydraulic heads calibration on 26 January 2013. (a) Simulated flow vector; (b) Hydraulic heads calibration. Groundwater flow
+vector and hydraulic heads calibration on 26 February 2013. (a) Simulated flow vector; (b) Hydraulic heads calibration. Groundwater flow
+vector and hydraulic heads calibration on 26 March 2013. (a) Simulated flow vector; (b) Hydraulic heads calibration. Groundwater flow vector
+and hydraulic heads calibration on 26 April 2013. (a) Simulated flow vector; (b) Hydraulic heads calibration. Groundwater flow vector and
+hydraulic heads calibration on 27 May 2013. (a) Simulated flow vector; (b) Hydraulic heads calibration. Groundwater flow vector and
+hydraulic heads calibration on 26 June 2013. (a) Simulated flow vector; (b) Hydraulic heads calibration. Groundwater flow vector and
+hydraulic heads calibration on 26 July 2013. (a) Simulated flow vector; (b) Hydraulic heads calibration. Groundwater flow vector and
+hydraulic heads calibration on 26 August 2013. (a) Simulated flow vector; (b) Hydraulic heads calibration. Groundwater flow vector and
+hydraulic heads calibration on 30 September 2013. (a) Simulated flow vector; (b) Hydraulic heads calibration. Groundwater flow vector and
+hydraulic heads calibration on 25 October 2013. (a) Simulated flow vector; (b) Hydraulic heads calibration. Groundwater flow vector and
+hydraulic heads calibration on 30 November 2013. (a) Simulated flow vector; (b) Hydraulic heads calibration. Groundwater flow vector and
+hydraulic heads calibration on 24 December 2013. (a) Simulated flow vector; (b) Hydraulic heads calibration. Simulation and calibration for
+concentration data of chlorides (November 2013 data). (a) The contaminant transport results of the one year groundwater flow Model; (b) The
+contaminant transport model calibration. Simulation and calibration for concentration data of ammonium nitrogen (November 2013 data). (a)
+The contaminant transport results of the one year groundwater flow Model; (b) The contaminant transport model calibration. Transport
+predicting for chlorides after 10 years. Transport predicting for ammonium nitrogen after 10 years. Concentration toward the Hsu-Hsian Creek
+with time. (a) The concerntration of ammonium nitrogen versus time curve; (b) The concerntration of chloride versus time curve. Normalized
+concentration toward the Hsu-Hsian Creek with time. The hydraulic heads derived from in-situ borehole data monthly measured in 2013. The
+hydraulic conductivity data of each borehole and soil layer. Physico-chemical parameters of water samples around the landfill in 2013. ND:
+Not detected and concentration lower than MDL (Method Detection Limit). Model parameters for contaminant transport modeling.

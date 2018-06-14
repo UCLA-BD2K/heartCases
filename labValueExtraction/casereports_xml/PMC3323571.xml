@@ -1,0 +1,746 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">22506049</article-id>
+      <article-id pub-id-type="pmc">3323571</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-11-20934</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0034764</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Anatomy and Physiology</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Biochemistry</subject>
+            <subj-group>
+              <subject>Proteins</subject>
+              <subj-group>
+                <subject>Protein Structure</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Macromolecular Structure Analysis</subject>
+              <subj-group>
+                <subject>Protein Structure</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Genetic Mutation</subject>
+              <subj-group>
+                <subject>Mutation Types</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Gene Function</subject>
+              <subject>Genetics of Disease</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Anatomy and Physiology</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Nephrology</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>A New Human NHERF1 Mutation Decreases Renal Phosphate Transporter NPT2a Expression by a PTH-Independent Mechanism</article-title>
+        <alt-title alt-title-type="running-head">A Human NHERF1 Mutant Decreases NPT2a Expression</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Courbebaisse</surname>
+            <given-names>Marie</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Leroy</surname>
+            <given-names>Christine</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bakouh</surname>
+            <given-names>Naziha</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sala&#xFC;n</surname>
+            <given-names>Christine</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Beck</surname>
+            <given-names>Laurent</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Grandchamp</surname>
+            <given-names>Bernard</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Planelles</surname>
+            <given-names>Gabrielle</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hall</surname>
+            <given-names>Randy A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Friedlander</surname>
+            <given-names>G&#xE9;rard</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pri&#xE9;</surname>
+            <given-names>Dominique</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Facult&#xE9; de M&#xE9;decine, Universit&#xE9; Paris Descartes, Paris, France</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Research Center, Growth and Signaling, INSERM U845, Paris, France</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Service de Physiologie - Explorations Fonctionnelles, H&#xF4;pital Necker-Enfants Malades, Paris, France</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>H&#xF4;pital Bichat Claude Bernard, Institut F&#xE9;d&#xE9;ratif de Recherche 02, INSERM, Universit&#xE9; Paris Diderot, Paris, France</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>Department of Pharmacology, School of Medicine, Emory University, Atlanta, Georgia, United States of America</addr-line>
+      </aff>
+      <aff id="aff6">
+        <label>6</label>
+        <addr-line>Service de Physiologie - Explorations Fonctionnelles, H&#xF4;pital Europ&#xE9;en Georges Pompidou, Paris, France</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Butterworth</surname>
+            <given-names>Michael</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">University of Pittsburgh, School of Medicine, United States of America</aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>dominique.prie@inserm.fr</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: DP GF BG GP RAH. Performed the experiments: MC NB CS RAH CL LB DP. Analyzed the data: DP BG GF RAH GP MC. Contributed reagents/materials/analysis tools: CL CS LB BG DP RAH. Wrote the paper: DP.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>10</day>
+        <month>4</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>7</volume>
+      <issue>4</issue>
+      <elocation-id>e34764</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>24</day>
+          <month>10</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>5</day>
+          <month>3</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Courbebaisse et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</copyright-statement>
+        <copyright-year>2012</copyright-year>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>The sodium-hydrogen exchanger regulatory factor 1 (NHERF1) binds to the main renal phosphate transporter NPT2a and to the parathyroid hormone (PTH) receptor. We have recently identified mutations in NHERF1 that decrease renal phosphate reabsorption by increasing PTH-induced cAMP production in the renal proximal tubule.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>We compared relevant parameters of phosphate homeostasis in a patient with a previously undescribed mutation in NHERF1 and in control subjects. We expressed the mutant NHERF1 protein in Xenopus Oocytes and in cultured cells to study its effects on phosphate transport and PTH-induced cAMP production.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>We identified in a patient with inappropriate renal phosphate reabsorption a previously unidentified mutation (E68A) located in the PDZ1 domain of NHERF1.We report the consequences of this mutation on NHERF1 function. E68A mutation did not modify cAMP production in the patient. PTH-induced cAMP synthesis and PKC activity were not altered by E68A mutation in renal cells in culture. In contrast to wild-type NHERF1, expression of the E68A mutant in <italic>Xenopus</italic> oocytes and in human cells failed to increase phosphate transport. Pull down experiments showed that E68A mutant did not interact with NPT2a, which robustly interacted with wild type NHERF1 and previously identified mutants. Biotinylation studies revealed that E68A mutant was unable to increase cell surface expression of NPT2a.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>Our results indicate that the PDZ1 domain is critical for NHERF1- NPT2a interaction in humans and for the control of NPT2a expression at the plasma membrane. Thus we have identified a new mechanism of renal phosphate loss and shown that different mutations in NHERF1 can alter renal phosphate reabsorption via distinct mechanisms.</p>
+        </sec>
+      </abstract>
+      <counts>
+        <page-count count="8"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>The maintenance of normal serum phosphate concentration is critical for many biological processes including bone mineralization and cell function. The kidney plays a pivotal role in phosphate homeostasis. It adapts urinary phosphate excretion to balance the quantity of phosphate absorbed by intestine or stored by cells and bone. Phosphate is filtered at the glomerulus and mainly reabsorbed in the renal proximal tubule through the type 2a sodium-phosphate cotransporter (NPT2a) and to a lesser extent through the type 2c sodium-phosphate cotransporter (NPT2c) <xref ref-type="bibr" rid="pone.0034764-Prie1">[1]</xref> . The magnitude of renal phosphate reabsorption relies on the level of expression of NPT2a at the apical plasma membrane of proximal tubular cells. Defects in NPT2a activity, as observed in patients with loss-of-function mutations of NPT2a or in mice with NPT2a gene ablation, results in hypophosphatemia with reduced capacity of the kidney to reabsorb phosphate (TmP/GFR) and increases the risk of renal lithiasis or bone demineralization <xref ref-type="bibr" rid="pone.0034764-Beck1">[2]</xref>, <xref ref-type="bibr" rid="pone.0034764-Chau1">[3]</xref>, <xref ref-type="bibr" rid="pone.0034764-Prie2">[4]</xref>, <xref ref-type="bibr" rid="pone.0034764-Prie3">[5]</xref>. Two hormones reduce NPT2a expression at the plasma membrane: parathyroid hormone (PTH) and fibroblast growth factor 23 (FGF23). PTH removes NPT2a from the apical plasma membrane by stimulating cyclic adenosine monophosphate (cAMP) production through PTH type 1 receptor (PTH1R). The amount of cAMP produced in response to PTH in proximal tubular cells is modulated by the sodium-hydrogen exchanger regulatory factor 1 (NHERF1) <xref ref-type="bibr" rid="pone.0034764-Mahon1">[6]</xref>, <xref ref-type="bibr" rid="pone.0034764-Mahon2">[7]</xref>.</p>
+      <p>NHERF1 is a protein with two structural domains named PDZ1 and PDZ2. These domains bind to the carboxy-terminal parts of transporters or receptors. Hence, NHERF1 binds to the c-terminal extremity of PTH1R and decrease PTH-induced cAMP synthesis <xref ref-type="bibr" rid="pone.0034764-Mahon1">[6]</xref>, <xref ref-type="bibr" rid="pone.0034764-Mahon2">[7]</xref>, <xref ref-type="bibr" rid="pone.0034764-Mahon3">[8]</xref>. We have recently identified mutations of NHERF1 in patients with hypophosphatemia, low TmP/GFR and normal serum PTH and FGF23 concentration <xref ref-type="bibr" rid="pone.0034764-Karim1">[9]</xref>. The mutations were located in the PDZ2 domain of NHERF1 or in the inter-region domain. Contrary to wild type NHERF1 protein, the mutant NHERF1 proteins were unable to control PTH-induced cAMP production in renal cells in culture.</p>
+      <p>Co-immunoprecipitation experiments showed that NHERF1 also binds to the c-terminal part of NPT2a. This binding may preferentially involve the PDZ1 domain of NHERF1 <xref ref-type="bibr" rid="pone.0034764-Gisler1">[10]</xref>, <xref ref-type="bibr" rid="pone.0034764-Biber1">[11]</xref>. Several data suggest that NHERF1-NPT2a interaction is mandatory to maintain a proper expression of NPT2a at the apical domain of proximal tubular cells. Hence, disruption of NHERF1 gene in mice decreased NPT2a expression in renal brush border membranes <xref ref-type="bibr" rid="pone.0034764-Shenolikar1">[12]</xref>. However the complete invalidation of NHERF1 expression abrogates not only the NPT2a-NHERF1 interaction but also the association of NHERF1-PTH1R. Manipulations of NHERF1 that exclusively alter NPT2a-NHERF1 association are lacking to support the physiological importance of this interaction. We report here the characterization of a naturally occurring NHERF1 mutation identified in a patient with a decreased capacity of the renal tubule to reabsorb phosphate. We show that this mutation impinges renal phosphate transport by a mechanism distinct from that reported for previously identified NHERF1 mutants.</p>
+    </sec>
+    <sec sec-type="methods" id="s2">
+      <title>Methods</title>
+      <sec id="s2a">
+        <title>Objectives</title>
+        <p>We described the consequences of a previously unidentified mutation in the PDZ1 domain of NHRF1 gene. We analyzed the mechanism by which this mutation can impair renal phosphate reabsorption.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Participants and ethics</title>
+        <p>The patients provided written informed consents to obtain blood DNA samples for genomic DNA extraction in accordance with French national guidelines. This study was approved by the local ethic comitee: Comit&#xE9; Consultatif de Protection des Personnes en Recherches Biom&#xE9;dicales Bichat Claude Bernard. Sequencing was performed on genomic DNA obtained from patients who were referred to our clinical department for renal assessment before initiating potentially nephrotoxic treatment for psoriasis, or before heminephrectomy for living kidney donation, or for examination of renal lithiasis or bone demineralization. In these subjects we measured serum phosphate and PTH concentrations and calculated the TmP/GFR value using Walton and Bijvoet nomogram <xref ref-type="bibr" rid="pone.0034764-Walton1">[13]</xref>.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Sequencing</title>
+        <p>Both strands of the coding region and the intron-exon junctions of NHERF1 were sequenced by investigators who were unaware of the clinical history and the biological parameters of the patients. The sequences of the intronic primers used for the polymerase chain reaction have already been published <xref ref-type="bibr" rid="pone.0034764-Karim1">[9]</xref>. The PCR products were sequenced with the use of the BigDye Terminator Cycle Sequencing Ready Reaction kit (Perkin Elmer on an ABI PRISM 3100 sequencer (Applied Biosystems). Both strands were analyzed using the software program Sequencing Analysis (Applied Biosystems) and Clustal W (Infobiogen). The nucleotide position was numbered according to the starting point of the ATG codon in the complementary DNA (cDNA) (sequence accession number NM_004252).</p>
+        <p>Biochemical measurements of electrolyte and hormone concentration were based on standard clinical laboratory procedures. Plasma FGF23 concentration was measured with an Elisa assay (Human FGF-23 (C-Term) ELISA Kit, Immutopics, Inc, San Clemente, CA, USA).</p>
+      </sec>
+      <sec id="s2d">
+        <title>Cell culture</title>
+        <p>Opossum kidney (OK) cells and Hela cells were obtained from the American Type Culture Collection. OK cells were cultured in DMEM/Ham's F12 containing sodium bicarbonate, 14 mM; Hepes, 20 mM pH 7.40; sodium selenite, 50 nM; L-glutamine, 2 mM; Insulin, 5 &#xB5;g/ml; 5 mg/ml transferrine; Hydrocortisone; defined bovine serum, 2.5% under a 5% CO2-containing atmosphere.</p>
+        <p>HeLa cells were cultured in DMEM with glucose, 4.5 g/l; Glutamine, 200 mM; Sodium Pyruvate, 1 mM; Hepes 20 mM and defined foetal bovine serum, 5% under a 5% CO2-containing atmosphere.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Plasmid construction</title>
+        <p>Wild type NHERF1 cDNA was inserted into pEF1-B plasmid by PCR amplification, and subcloned into pEF1-B (Invitrogen) plasmid using EcorV-Not1 enzymes. NHERF1 mutants were generated from the wild type cDNA with the use of Quick Change Site-directed Mutagenesis kit (Stratagene). All constructs were verified by sequencing. Flag or GFP tags were inserted at the N-extremity of the protein.</p>
+        <sec id="s2e1">
+          <title>Cell transfections</title>
+          <p>Subconfluent cells were transfected with the lipofectamine reagent and 0.5 &#xB5;g/ml of NHERF1 vectors or 0.25 &#xB5;g/ml of human SLC34A1 plasmid according to manufacturer's instructions (Invitrogen).</p>
+          <p>Expression in Xenopus laevis oocytes, Voltage-Clamp experiments. Oocytes were surgically harvested from Xenopus laevis obtained from Centre de Recherche de Biochimie Mol&#xE9;culaire (CNRS Montpellier, France) with the agreement of the Comit&#xE9; R&#xE9;gional d'Ethique pour l'Exp&#xE9;rimentation Animale Ile de France Paris Descartes. Wild type or mutant NPT2a or NHERF1 cDNAs were introduced in the RNA expression vector pSP64T. RNA was synthesized with the use of the Riboprobe in Vitro Transcription System kit (Promega). Defolliculated oocytes were injected with 10 ng of wild type NPT2a (SLC34A1) RNA and 24 hours later with 10 ng of NHERF1 RNA. Phosphate-induced current was measured as previously described with an imposed holding potential of &#x2212;50 mV <xref ref-type="bibr" rid="pone.0034764-Prie2">[4]</xref>.</p>
+        </sec>
+        <sec id="s2e2">
+          <title>Phosphate uptake experiments</title>
+          <p>Radiolabeled phosphate uptake was measured by incubating cells for 10 min in isoosmotic transport medium containing or not Na and 0,5 mCi/ml <sup>32</sup>P. Cells were washed 3 times with cold medium (pH 7,4) and solubilized with 0,5% triton X-100. The radioactivity of the lysate was counted by liquid scintillation spectroscopy. Each assay was performed in triplicate.</p>
+          <p>Intracellular cAMP content was measured in OK cells pre-incubated for 30 min at 37&#xB0;C, under a 5% CO2-containing atmosphere in culture medium containing 3-isobutyl-1-methyxanthine, 1 mM and exposed afterwards to 10<sup>&#x2212;7</sup> M PTH, diluent (negative control) for 5 min at 37&#xB0;C, under a 5% CO2-containing atmosphere. Total intracellular cAMP quantification was performed using Cyclic AMP Competitive ELISA Kit (Thermo, France) according to manufacturer's instructions.</p>
+          <p>PKC activity was determined using the Promega SignaTECT PKC Assat system, which contains a specific PKC substrate (biotinylated Neurogranin<sub>28&#x2013;43</sub>). This <sup>32</sup>P-labeled substrate was recovered with a streptavidin matrix according to the manufacturer's instructions (Promega Corp. WI, USA).</p>
+          <p>Biotinylation and isolation of cell surface proteins were performed in HeLa cells transfected with pEF1-B empty plasmid, NHERF1 wt or E68A mutant and NPT2a-peGFP, using Cell Surface Protein Isolation Kit (Pierce) according to the manufacturer's instructions.</p>
+          <p>Antibodies used. HRP-conjugated anti Flag M2 antibody was purchased from Sigma chemical co. Anti NHERF1 antibody was purchased from Santa Cruz biotechnology. Anti GFP antibody was purchased from Chemicon (Millipore). Anti Na-K-ATPase was purchased from Abcam.</p>
+        </sec>
+      </sec>
+      <sec id="s2f">
+        <title>Statistical analysis</title>
+        <p>statistical tests used are indicated where appropriate.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Case report</title>
+        <p>The mutation was identified in a 71 year-old patient who was referred to our clinical department for renal calcium lithiasis and serum ionized calcium concentration in the upper normal values, associated with hypercalciuria (<xref ref-type="table" rid="pone-0034764-t001">Table 1</xref>). Serum phosphate concentration and TmP/GFR were below the lower limit of the normal values contrasting with serum PTH concentration within the low normal range (<xref ref-type="table" rid="pone-0034764-t001">Table 1</xref>). The study of the relationship between TmP/GFR and serum PTH values in a group of 112 control subjects clearly showed that TmP/GFR was uncommonly low in face of serum PTH concentration in this patient (<xref ref-type="fig" rid="pone-0034764-g001">Figure 1</xref>). This difference was not explained by serum FGF23 concentration, which was in the low range (Table1). Urinary cyclic AMP excretion was normal. Serum FGF23 concentration was not increased. Plasma concentration of 1,25 (OH)<sub>2</sub> vitamin D was slightly elevated. Thyroid hormone measurement discarded hyperthyroidism. Bone mineralization was normal at the lumbar spine (T-score &#x2212;0.9) and slightly decreased at the radius (T-score &#x2212;1.4) and at the hips (T-score &#x2212;1.6). The patient exhibited no other sign of proximal tubule dysfunction: glycosuria, aminoaciduria was absent and serum bicarbonate concentration was normal. The diagnosis of impaired renal phosphate reabsorption was retained. We sequenced both strands of the genes encoding the renal sodium-phosphate co-transporters SLC34A1 (NPT2a) and SLC34A2 (NPT2c) and found no mutation.</p>
+        <fig id="pone-0034764-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0034764.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Relationship between serum PTH concentration and the capacity of kidney to reabsorb phosphate normalized for the glomerular filtration rate (TmP/GFR) in 112 control subjects (diamonds).</title>
+            <p>The patient with the mutation in NHERF1 gene is represented by a circle.</p>
+          </caption>
+          <graphic xlink:href="pone.0034764.g001"/>
+        </fig>
+        <table-wrap id="pone-0034764-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0034764.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Biochemical data of the patient.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0034764-t001-1" xlink:href="pone.0034764.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Patient</td>
+                  <td align="left" rowspan="1" colspan="1">Normal Range</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Serum Phosphate (mmol/l)</td>
+                  <td align="left" rowspan="1" colspan="1">0.83</td>
+                  <td align="left" rowspan="1" colspan="1">0.85&#x2013;1.40</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">TmP/GFR (mmol/l)</td>
+                  <td align="left" rowspan="1" colspan="1">0.75</td>
+                  <td align="left" rowspan="1" colspan="1">0.75&#x2013;1.40</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Serum ionized calcium (mmol/l)</td>
+                  <td align="left" rowspan="1" colspan="1">1.28</td>
+                  <td align="left" rowspan="1" colspan="1">1.15&#x2013;1.30</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Serum PTH (pg/ml)</td>
+                  <td align="left" rowspan="1" colspan="1">19</td>
+                  <td align="left" rowspan="1" colspan="1">11&#x2013;60</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Serum FGF23 (RU/ml)</td>
+                  <td align="left" rowspan="1" colspan="1">18</td>
+                  <td align="left" rowspan="1" colspan="1">&lt;120</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Serum 1,25-dihydroxyvitamin D (pg/ml)</td>
+                  <td align="left" rowspan="1" colspan="1">48</td>
+                  <td align="left" rowspan="1" colspan="1">16&#x2013;42</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GFR (ml/min)</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;70</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Urine Calcium/creatinine (mmol/mmol)</td>
+                  <td align="left" rowspan="1" colspan="1">0.51</td>
+                  <td align="left" rowspan="1" colspan="1">&lt;0.48</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Urinary cyclic AMP excretion (pmol/min)</td>
+                  <td align="left" rowspan="1" colspan="1">2700</td>
+                  <td align="left" rowspan="1" colspan="1">3200&#xB1;600</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>We sequenced the coding region and the intron-exon junctions of the NHERF1 gene and identified a previously unreported mutation. The patient had a c.203 A &#x2192; C heterozygous transition in exon 1, which substituted alanine for glutamic acid at position 68 (p.E68A) (<xref ref-type="fig" rid="pone-0034764-g002">figure 2 A</xref>). The alignment of the NHERF1 protein sequence showed that glutamic acid 68 was highly conserved in the NHERF1 PDZ1 domain throughout evolution and in the PDZ1 domain of NHERF2 of various species (<xref ref-type="fig" rid="pone-0034764-g002">figure 2 B, C</xref>) suggesting that it plays an important role in the function of this domain. Furthermore this variant was not found in the 1000 genomes database (<ext-link ext-link-type="uri" xlink:href="http://browser.1000genomes.org">http://browser.1000genomes.org</ext-link>).</p>
+        <fig id="pone-0034764-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0034764.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Localization of the mutation.</title>
+            <p>A: Sequence analysis of genomic DNA from the patient with NHERF1 mutation. The upper panel shows the portion of the DNA sequence from the patient with NHERF1 mutation. The sequence can be compared with that obtained in a subject with no mutation (lower panel). The nucleotide and the amino acid sequences (above and below the horizontal line respectively) are indicated. A vertical arrow points the mutation. The patient was heterozygous for the mutation. Conservation of the NHERF1 protein sequence surrounding the mutation site in various species. The amino acid modified by the mutation is highlighted. B: Alignment of human NHERF1 amino acid sequence around the site of mutation with homologous sequences of NHERF1 in various species. C: Alignment of human NHERF1 amino acid sequence around the site of mutation with homologous sequences of NHERF2 in various species.</p>
+          </caption>
+          <graphic xlink:href="pone.0034764.g002"/>
+        </fig>
+        <p>The patient had no relatives alive, consequently we could not study the segregation of the mutation with a low TmP/GFR. However to determine if this mutation could be present in subjects with normal renal reabsorption of phosphate we sequenced NHERF1 in a population of 112 subjects with normal TmP/GFR and we did not find a single example of the E68A mutation.</p>
+        <p>We have previously reported, in patients with impaired renal phosphate reabsorption, mutations in the NHERF1 protein that induced an increase in PTH-induced cAMP production <xref ref-type="bibr" rid="pone.0034764-Karim1">[9]</xref>. We evaluated cAMP production in response to PTH in OK cells, a model of renal proximal tubular cells. OK cells were transfected with a control plasmid or with a plasmid containing either the wild type cDNA, or the mutant E68A, or previously identified mutants (R153Q or E225K). PTH markedly stimulated cAMP synthesis in OK cells expressing the control plasmid. As previously observed, cAMP production was blunted in cells expressing wild type NHERF1 cDNA and this effect was not observed in the presence of R153Q or E225K mutants. By contrast cAMP stimulation was similarly decreased in cells transfected with the E68A mutant or the wild type NHERF1 cDNA (<xref ref-type="fig" rid="pone-0034764-g003">Figure 3A</xref>). Since PTH receptor can also signals through PKC pathway we also compared PTH-stimulated PKC activity in OK cells transfected with empty plasmid or with wild type NHERF1 or the E68A mutant (<xref ref-type="fig" rid="pone-0034764-g003">Figure 3B</xref>). OK cells were stimulated with two concentration of PTH. PTH-induced PKC activity was similar in all conditions (<xref ref-type="fig" rid="pone-0034764-g003">Figure 3B</xref>). To make sure that the E68A mutant did not interfere with another PTH-induced signaling pathway that could inhibit phosphate uptake we compared the inhibitory effect of PTH at two concentrations in OK cells expressing wild type NHERF1 or the E68A mutant (<xref ref-type="fig" rid="pone-0034764-g003">Figure 3C</xref>). As expected PTH inhibited phosphate transport at both concentrations with a similar magnitude under all experimental conditions.</p>
+        <fig id="pone-0034764-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0034764.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Effects of NHERF1 mutations on cAMP production, PKC activity and phosphate uptake in response to PTH stimulation.</title>
+            <p>cAMP accumulation, PKC activity and phosphate uptake inhibition by PTH were measured in opossum kidney (OK) cells transfected with a plasmid alone or containing either the wild type cDNA of NHERF1 or cDNA from mutant NHERF1. The mutant E68A has been identified in the patient reported in the present study, the mutants R153Q and E225K have been characterized in a previous study (9). A: Cells were stimulated with PTH 10<sup>&#x2212;8</sup> M. We present the increase in cAMP synthesis above the values measured in the absence of PTH. Results are means &#xB1; SD of four independent experiments. The groups were compared with the use of Kruskall-Wallis test (overall P&#x200A;=&#x200A;0.001, * p&lt;0.05 compared to condition in the absence of NHERF1). B: PKC activity in cells stimulated with 10<sup>&#x2212;5</sup> M or 10<sup>&#x2212;7</sup> M of PTH. For each PTH concentration used, PTH induced PKC activity did not differ in OK cells expressing wild type NHERF1 or the E68A mutant. Results are means &#xB1; SD of three independent experiments. C: The inhibitory effect of PTH on phosphate uptake was determined at two concentrations of PTH (10<sup>&#x2212;5</sup> M or 10<sup>&#x2212;7</sup> M). For each PTH concentration, the magnitude of the PTH-induced inhibition on phosphate uptake did not differ between OK cells expressing wild type or E68A NHERF1. Results are means &#xB1; SD of three independent experiments.</p>
+          </caption>
+          <graphic xlink:href="pone.0034764.g003"/>
+        </fig>
+        <p>We then asked whether E68A mutant might modify phosphate uptake by the main renal phosphate transporter NPT2a (SLC34A1). Wild type or E68A cDNA were co-expressed with NPT2a in <italic>Xenopus</italic> oocytes and phosphate uptake was assessed by the measurement of sodium-dependent phosphate-induced current. Expression of NPT2a alone markedly increased phosphate-induced current (<xref ref-type="fig" rid="pone-0034764-g004">figure 4A</xref>). Co-expression of NPT2a with wild type NHERF1 further increased phosphate uptake. By contrast the magnitude of phosphate transport in <italic>Xenopus</italic> oocytes expressing the E68A mutant and NPT2a was similar to that measured in the absence of NHERF1 (<xref ref-type="fig" rid="pone-0034764-g004">figure 4A</xref>). We reproduced these experiments in cultured human epithelial cells (Hela cells) in culture that do not express endogenous NPT2a or NHERF1 (see supplementary data). Expression of NPT2a alone in these cells significantly raised sodium-dependent phosphate uptake above basal values (<xref ref-type="fig" rid="pone-0034764-g004">figure 4B</xref>). Expression of wild type NHERF1 produced an additional increase in sodium-dependent phosphate transport. However phosphate uptake was similar in Hela cells expressing NPT2a alone or together with E68A NHERF1 mutant.</p>
+        <fig id="pone-0034764-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0034764.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Measurement of phosphate transport in cells expressing the wild type or the E68A mutant NHERF1 together with the sodium phosphate cotransporter NPT2a.</title>
+            <p>Panel A: Phosphate-induced current recorded in Xenopus oocytes injected with water or with either cRNA of NPT2a alone or in association with the cRNA of the wild type (WT) NHERF1 or the E68A mutant. Results are means &#xB1; SD, n&#x200A;=&#x200A;9. Overall comparison was performed with the use of the Kruskall-Wallis test (P&lt;0.0001) then the group expressing NPT2a alone was compared with other groups with the use of the Mann-Whitney test (p&lt;0.01). Panel B: Sodium-dependent phosphate uptake was measured in Hela cells transfected with empty plasmids or with the plasmid containing the cDNA of NPT2a alone or together with the cDNA of the wild type or the NHERF1 mutant. Results are means &#xB1; SD, n&#x200A;=&#x200A;6. Overall comparison was performed with the use of the Kruskall-Wallis test (P&lt;0.0001) then the group expressing NPT2a alone was compared with the other groups with the use of the Mann-Whitney test (* p&lt;0.01 vs NPT2a+WT NHERF1, # p &lt;0.001 vs NPT2a alone).</p>
+          </caption>
+          <graphic xlink:href="pone.0034764.g004"/>
+        </fig>
+        <p>To determine whether the E68A mutation impinged on the NHERF1-NPT2a interaction we performed co-immunoprecipitation experiments in cells expressing tagged NPT2a and wild-type or mutated NHERF1 proteins. The amount of wild type and mutated NHERF1 proteins and of NPT2a protein did not differ between the various experimental conditions (<xref ref-type="fig" rid="pone-0034764-g005">figure 5</xref> middle and lower panels). Immunoprecipitation of wild-type or mutant R153Q or E225K NHERF1 proteins co-immunoprecipitated similar amounts of NPT2a protein. By contrast, immunoprecipitation of the E68A protein co-immunoprecipitated only faint levels of NPT2a protein (<xref ref-type="fig" rid="pone-0034764-g005">figure 5</xref> upper panel).</p>
+        <fig id="pone-0034764-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0034764.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Co-immunoprecipitation of NHERF1 with NPT2a in Hela cells.</title>
+            <p>Hela cells were transfected with a plasmid containing the cDNA of NPT2a tagged with GFP at its N- extremity. Cells were also transfected with a plasmid containing the wild type cDNA of NHERF1 or one mutant (E68A or R153Q or E225K) tagged with Flag. Upper panel: Flag-tagged-NHERF1 protein was immunoprecipitated by using an anti-Flag antibody and the immunoprecipitates were probed with anti-GFP antibodies to detect GFP-tagged-NPT2a on Western blot. Middle panel: The total expression of GFP-tagged-NPT2a was analyzed in the cell lysates by anti-GFP Western Blot. Lower panel: Wild type and mutant Flag-NHERF1 was immunoprecipitated and probed by using anti-Flag antibodies to compare Flag-NHERF1 immunoprecipitation in the different conditions.</p>
+          </caption>
+          <graphic xlink:href="pone.0034764.g005"/>
+        </fig>
+        <p>We assessed the amount of NPT2a protein present at the plasma membrane by biotinylation experiments in cells transfected with NPT2a cDNA alone or with a plasmid containing wild-type or mutant NHERF1 cDNA. The total amount of NPT2a protein was unchanged by the expression of wild type or E68A mutant NHERF1 (<xref ref-type="fig" rid="pone-0034764-g006">figure 6</xref>). However NPT2a protein abundance at the cell surface differed between the experimental conditions. Expression of the wild type NHERF1 was associated with a significant increase in NPT2a targeting to the plasma membrane compared to cells expressing NPT2a in the absence of NHERF1 (<xref ref-type="fig" rid="pone-0034764-g006">figure 6</xref>). Conversely the expression of the E68A mutant was associated with a decrease in NPT2a levels at the cell surface (<xref ref-type="fig" rid="pone-0034764-g006">figure 6</xref>).</p>
+        <fig id="pone-0034764-g006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0034764.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>Effect of mutant NHERF1 on the cell surface expression of NPT2a assessed by biotinylation experiments.</title>
+            <p>Hela cells were transfected with GFP-tagged-NPT2a alone or together with a plasmid containing the cDNA of the wild type NHERF1 or the E68A mutant. NPT2a proteins labelled with sulfo-NHS-SS-biotin were revealed by using anti-GFP antibodies. Labeled proteins were isolated with avidin-agarose beads according to manufacturer's manual (Pierce). Proteins eluted from the beads and total cell lysate were loaded on a SDS gel. Western blot was probed with anti-GFP antibodies. Na+ K+ APTase was used as a loading control and detected with specific antibodies. The higher panel shows a western blot representative of four experiments. Lower panel: Statistical analyses of the quantification of the western blot (n&#x200A;=&#x200A;4). Results are presented as mean &#xB1;sd. Quantification of the surface expression of NPT2a: Anova p&#x200A;=&#x200A;0.038. Post Hoc test: Tukey-Kramer multiple comparisons test (#: p&lt;0.05; * p&lt;0.01).</p>
+          </caption>
+          <graphic xlink:href="pone.0034764.g006"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>We report here the functional characterization of a previously unknown mutation in the NHERF1 gene identified in a woman who had renal lithiasis and a decreased capacity of kidney to reabsorb phosphate contrasting with serum PTH concentration in the low normal range. Since the patient had no children and no relatives alive, we were not able to study the segregation of the mutation with the phenotype of renal phosphate leak. However the role of the mutation in the phenotype of the patient is supported by several lines of evidence: the absence of this mutation in 224 alleles of subjects with normal TmP/GFR, the uncommon relationship between serum PTH concentration and TmP/GFR value, the conservation of the amino acid throughout the evolution, and, above all, the functional consequences of this mutation on the expression and activity of the major renal sodium-phosphate cotransporter NPT2a when expressed in epithelial cells and in oocytes. The mutated amino acid is strongly conserved in the PDZ1 domain of both NHERF1 and NHERF2 of various species suggesting that it plays a pivotal role in the function of this domain. The E68A mutation differs from those previously identified by its localization in the PDZ1 domain and by the mechanism thorough which it decreases NPT2a expression at the cell surface. The previously reported mutations of NHERF1were located in the PDZ2 domain or in the region between PDZ1 and PDZ2 domains. We have shown that these mutations modify NPT2a expression only in the presence of PTH, by increasing cAMP production by the PTH1R and that urinary cAMP excretion was increased in the patients exhibiting these mutations <xref ref-type="bibr" rid="pone.0034764-Karim1">[9]</xref>. In contrast, urinary cAMP excretion was normal in the patient with the E68A mutation and the mutated protein retained the capacity of decreasing PTH-induced cAMP production similarly to wild-type NHERF1. These results suggest that the PDZ1 domain is not crucial for the interaction between NHERF1 and PTH1R in human. By contrast, our data show that the PDZ1 domain is critical for the interaction between NHERF1 and NPT2a. We found that the expression of the wild-type NHERF1 in human epithelial cells that lack NHERF1 augmented NPT2a location at the plasma membrane. These results are in line with previous reports showing that re-expressing NHERF1 in renal proximal tubular cells of NHERF1 null mice increased NPT2a expression <xref ref-type="bibr" rid="pone.0034764-Cunningham1">[14]</xref>. At variance with wild-type NHERF1, the E68A mutant failed to increase NPT2a expression at the surface of human cultured cells and, consequently, did not enhance phosphate uptake. This lack of effect of the E68A mutant was likely due to a defect in the interaction between NPT2a and E68A NHERF1 as suggested by the lack of co-immunoprecipitation of NPT2a with the E68A mutant. In the present study we did not determine if this interaction was direct or indirect. Experiments performed in yeast <xref ref-type="bibr" rid="pone.0034764-Gisler1">[10]</xref> suggested that the C-terminal part of NPT2a interacts predominantly with the first PDZ domain of NHERF1. Pull down experiments performed in OK cells overexpressing NHERF1-PDZ1 showed an interaction between PDZ1 and NPT2a <xref ref-type="bibr" rid="pone.0034764-Hernando1">[15]</xref>. However it has not been reported that a specific disruption of PDZ1 or a mutation in this domain could alter NPT2a targeting to support the physiological role of PDZ1. Using a non-natural occurring mutation Weinman demonstrated that phosphorylation of ser 77 of NHERF1 was mandatory to release NHERF1 NPT2a interaction, which allows NPT2a internalization <xref ref-type="bibr" rid="pone.0034764-Weinman1">[16]</xref>. We report a naturally occurring mutation of a highly conserved amino acid in PDZ1 that prevents NPT2-NHERF1 binding. The PDZ2 domain might plausibly compensate for an alteration of PDZ1. However our data show that this defect cannot be compensated by the presence of PDZ2. These findings demonstrate that NHERF1 PDZ1 has a central role in the functional interaction between NHERF1 and NPT2a and in controlling phosphate homeostasis in humans.</p>
+      <p>In the present case the data observed in a patient are consistent with those obtained in a knockout animal model. Indeed the phenotype of the patient with the E68A mutation, which associates kidney stones, renal phosphate wasting, a rise in calcitriol concentration, increased urinary calcium excretion, low PTH levels and the absence of modification of PTH signaling by the mutant, is very similar to that observed in NHERF1 knock-out mice <xref ref-type="bibr" rid="pone.0034764-Shenolikar1">[12]</xref>.</p>
+      <p>The patient presented with a defect of renal phosphate transport suggesting that in human renal proximal tubular cells, other proteins with PDZ domains such as NHERF2 cannot compensate for the defect of NHERF1. In the rat, NHERF2 is not present in the proximal tubule <xref ref-type="bibr" rid="pone.0034764-Wade1">[17]</xref>, at variance with the proximal tubule of the mouse, which expresses both NHERF1 and NHERF2 <xref ref-type="bibr" rid="pone.0034764-Wade2">[18]</xref>. Heterozygous and homozygous disruption of the NHERF1 gene in mice has been shown to result in an increase in urinary phosphate excretion suggesting the inability of NHERF2 to compensate for NHERF1 defects. In humans NHERF2 is only weakly detected in the proximal tubule <xref ref-type="bibr" rid="pone.0034764-Weinman2">[19]</xref>. Disruption of NHERF2 gene in mice does not mimic NHERF1 gene disruption confirming that the functions of these two proteins are distinct <xref ref-type="bibr" rid="pone.0034764-Cunningham2">[20]</xref>.</p>
+      <p>Co-immunoprecipitation studies suggest that NPT2c may also interact with NHERF1-PDZ1 in rats. This interaction was not reproduced in renal cells in culture. NPT2c sequence does not contain PDZ binding motifs <xref ref-type="bibr" rid="pone.0034764-VillaBellosta1">[21]</xref>. The mechanism of this interaction is unknown. We cannot exclude that the mutation described here could also alter NPT2c-NHERF1 interaction and NPT2c targeting.</p>
+      <p>These results, together with those of previous studies (9) indicate that mutations in the NHERF1 gene can alter renal phosphate transport by various mechanisms according to the location of the mutation in the functional domains of the protein. The study reported here identifies a new mechanism of renal phosphate loss independent of PTH or FGF23 and establishes the role of the first PDZ domain of NHERF1 in controlling phosphate homeostasis.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding: </bold>This study was supported by grants from Inserm, Universit&#xE9; Paris Descartes, Assistance Publique &#x2013; H&#xF4;pitaux de Paris, Agence Nationale de la Recherche (grant N&#xB0;ANR-07-PHYSIO_017_01) and Association Laboratoire de Recherches Physiologiques. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0034764-Prie1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Prie</surname><given-names>D</given-names></name><name><surname>Urena Torres</surname><given-names>P</given-names></name><name><surname>Friedlander</surname><given-names>G</given-names></name></person-group>
+<year>2009</year>
+<article-title>Latest findings in phosphate homeostasis.</article-title>
+<source>Kidney Int</source>
+<volume>75</volume>
+<fpage>882</fpage>
+<lpage>889</lpage>
+<pub-id pub-id-type="pmid">19190675</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Beck1">
+        <label>2</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Beck</surname><given-names>L</given-names></name><name><surname>Karaplis</surname><given-names>AC</given-names></name><name><surname>Amizuka</surname><given-names>N</given-names></name><name><surname>Hewson</surname><given-names>AS</given-names></name><name><surname>Ozawa</surname><given-names>H</given-names></name><etal/></person-group>
+<year>1998</year>
+<article-title>Targeted inactivation of Npt2 in mice leads to severe renal phosphate wasting, hypercalciuria, and skeletal abnormalities.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>95</volume>
+<fpage>5372</fpage>
+<lpage>5377</lpage>
+<pub-id pub-id-type="pmid">9560283</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Chau1">
+        <label>3</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chau</surname><given-names>H</given-names></name><name><surname>El-Maadawy</surname><given-names>S</given-names></name><name><surname>McKee</surname><given-names>MD</given-names></name><name><surname>Tenenhouse</surname><given-names>HS</given-names></name></person-group>
+<year>2003</year>
+<article-title>Renal calcification in mice homozygous for the disrupted type IIa Na/Pi cotransporter gene Npt2.</article-title>
+<source>J Bone Miner Res</source>
+<volume>18</volume>
+<fpage>644</fpage>
+<lpage>657</lpage>
+<pub-id pub-id-type="pmid">12674325</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Prie2">
+        <label>4</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Prie</surname><given-names>D</given-names></name><name><surname>Huart</surname><given-names>V</given-names></name><name><surname>Bakouh</surname><given-names>N</given-names></name><name><surname>Planelles</surname><given-names>G</given-names></name><name><surname>Dellis</surname><given-names>O</given-names></name><etal/></person-group>
+<year>2002</year>
+<article-title>Nephrolithiasis and osteoporosis associated with hypophosphatemia caused by mutations in the type 2a sodium-phosphate cotransporter.</article-title>
+<source>N Engl J Med</source>
+<volume>347</volume>
+<fpage>983</fpage>
+<lpage>991</lpage>
+<pub-id pub-id-type="pmid">12324554</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Prie3">
+        <label>5</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Prie</surname><given-names>D</given-names></name><name><surname>Ravery</surname><given-names>V</given-names></name><name><surname>Boccon-Gibod</surname><given-names>L</given-names></name><name><surname>Friedlander</surname><given-names>G</given-names></name></person-group>
+<year>2001</year>
+<article-title>Frequency of renal phosphate leak among patients with calcium nephrolithiasis.</article-title>
+<source>Kidney Int</source>
+<volume>60</volume>
+<fpage>272</fpage>
+<lpage>276</lpage>
+<pub-id pub-id-type="pmid">11422761</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Mahon1">
+        <label>6</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mahon</surname><given-names>MJ</given-names></name><name><surname>Donowitz</surname><given-names>M</given-names></name><name><surname>Yun</surname><given-names>CC</given-names></name><name><surname>Segre</surname><given-names>GV</given-names></name></person-group>
+<year>2002</year>
+<article-title>Na(+)/H(+) exchanger regulatory factor 2 directs parathyroid hormone 1 receptor signalling.</article-title>
+<source>Nature</source>
+<volume>417</volume>
+<fpage>858</fpage>
+<lpage>861</lpage>
+<pub-id pub-id-type="pmid">12075354</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Mahon2">
+        <label>7</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mahon</surname><given-names>MJ</given-names></name><name><surname>Segre</surname><given-names>GV</given-names></name></person-group>
+<year>2004</year>
+<article-title>Stimulation by parathyroid hormone of a NHERF-1-assembled complex consisting of the parathyroid hormone I receptor, phospholipase Cbeta, and actin increases intracellular calcium in opossum kidney cells.</article-title>
+<source>J Biol Chem</source>
+<volume>279</volume>
+<fpage>23550</fpage>
+<lpage>23558</lpage>
+<pub-id pub-id-type="pmid">15037630</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Mahon3">
+        <label>8</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mahon</surname><given-names>MJ</given-names></name><name><surname>Cole</surname><given-names>JA</given-names></name><name><surname>Lederer</surname><given-names>ED</given-names></name><name><surname>Segre</surname><given-names>GV</given-names></name></person-group>
+<year>2003</year>
+<article-title>Na+/H+ exchanger-regulatory factor 1 mediates inhibition of phosphate transport by parathyroid hormone and second messengers by acting at multiple sites in opossum kidney cells.</article-title>
+<source>Mol Endocrinol</source>
+<volume>17</volume>
+<fpage>2355</fpage>
+<lpage>2364</lpage>
+<pub-id pub-id-type="pmid">12881509</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Karim1">
+        <label>9</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Karim</surname><given-names>Z</given-names></name><name><surname>Gerard</surname><given-names>B</given-names></name><name><surname>Bakouh</surname><given-names>N</given-names></name><name><surname>Alili</surname><given-names>R</given-names></name><name><surname>Leroy</surname><given-names>C</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>NHERF1 mutations and responsiveness of renal parathyroid hormone.</article-title>
+<source>N Engl J Med</source>
+<volume>359</volume>
+<fpage>1128</fpage>
+<lpage>1135</lpage>
+<pub-id pub-id-type="pmid">18784102</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Gisler1">
+        <label>10</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gisler</surname><given-names>SM</given-names></name><name><surname>Stagljar</surname><given-names>I</given-names></name><name><surname>Traebert</surname><given-names>M</given-names></name><name><surname>Bacic</surname><given-names>D</given-names></name><name><surname>Biber</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2001</year>
+<article-title>Interaction of the type IIa Na/Pi cotransporter with PDZ proteins.</article-title>
+<source>J Biol Chem</source>
+<volume>276</volume>
+<fpage>9206</fpage>
+<lpage>9213</lpage>
+<pub-id pub-id-type="pmid">11099500</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Biber1">
+        <label>11</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Biber</surname><given-names>J</given-names></name><name><surname>Gisler</surname><given-names>SM</given-names></name><name><surname>Hernando</surname><given-names>N</given-names></name><name><surname>Wagner</surname><given-names>CA</given-names></name><name><surname>Murer</surname><given-names>H</given-names></name></person-group>
+<year>2004</year>
+<article-title>PDZ interactions and proximal tubular phosphate reabsorption.</article-title>
+<source>Am J Physiol Renal Physiol</source>
+<volume>287</volume>
+<fpage>F871</fpage>
+<lpage>875</lpage>
+<pub-id pub-id-type="pmid">15475541</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Shenolikar1">
+        <label>12</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shenolikar</surname><given-names>S</given-names></name><name><surname>Voltz</surname><given-names>JW</given-names></name><name><surname>Minkoff</surname><given-names>CM</given-names></name><name><surname>Wade</surname><given-names>JB</given-names></name><name><surname>Weinman</surname><given-names>EJ</given-names></name></person-group>
+<year>2002</year>
+<article-title>Targeted disruption of the mouse NHERF-1 gene promotes internalization of proximal tubule sodium-phosphate cotransporter type IIa and renal phosphate wasting.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>99</volume>
+<fpage>11470</fpage>
+<lpage>11475</lpage>
+<pub-id pub-id-type="pmid">12169661</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Walton1">
+        <label>13</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Walton</surname><given-names>RJ</given-names></name><name><surname>Bijvoet</surname><given-names>OL</given-names></name></person-group>
+<year>1975</year>
+<article-title>Nomogram for derivation of renal threshold phosphate concentration.</article-title>
+<source>Lancet</source>
+<volume>2</volume>
+<fpage>309</fpage>
+<lpage>310</lpage>
+<pub-id pub-id-type="pmid">50513</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Cunningham1">
+        <label>14</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cunningham</surname><given-names>R</given-names></name><name><surname>Steplock</surname><given-names>DEX</given-names></name><name><surname>Biswas</surname><given-names>RS</given-names></name><name><surname>Wang</surname><given-names>F</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Adenoviral expression of NHERF-1 in NHERF-1 null mouse renal proximal tubule cells restores Npt2a regulation by low phosphate media and parathyroid hormone.</article-title>
+<source>Am J Physiol Renal Physiol</source>
+<volume>291</volume>
+<fpage>F896</fpage>
+<lpage>901</lpage>
+<pub-id pub-id-type="pmid">16705152</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Hernando1">
+        <label>15</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hernando</surname><given-names>N</given-names></name><name><surname>Deliot</surname><given-names>N</given-names></name><name><surname>Gisler</surname><given-names>SM</given-names></name><name><surname>Lederer</surname><given-names>E</given-names></name><name><surname>Weinman</surname><given-names>EJ</given-names></name><etal/></person-group>
+<year>2002</year>
+<article-title>PDZ-domain interactions and apical expression of type IIa Na/P(i) cotransporters.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>99</volume>
+<fpage>11957</fpage>
+<lpage>11962</lpage>
+<pub-id pub-id-type="pmid">12192091</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Weinman1">
+        <label>16</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Weinman</surname><given-names>EJ</given-names></name><name><surname>Biswas</surname><given-names>RS</given-names></name><name><surname>Peng</surname><given-names>G</given-names></name><name><surname>Shen</surname><given-names>L</given-names></name><name><surname>Turner</surname><given-names>CL</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Parathyroid hormone inhibits renal phosphate transport by phosphorylation of serine 77 of sodium-hydrogen exchanger regulatory factor-1.</article-title>
+<source>J Clin Invest</source>
+<volume>117</volume>
+<fpage>3412</fpage>
+<lpage>3420</lpage>
+<pub-id pub-id-type="pmid">17975671</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Wade1">
+        <label>17</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wade</surname><given-names>JB</given-names></name><name><surname>Welling</surname><given-names>PA</given-names></name><name><surname>Donowitz</surname><given-names>M</given-names></name><name><surname>Shenolikar</surname><given-names>S</given-names></name><name><surname>Weinman</surname><given-names>EJ</given-names></name></person-group>
+<year>2001</year>
+<article-title>Differential renal distribution of NHERF isoforms and their colocalization with NHE3, ezrin, and ROMK.</article-title>
+<source>Am J Physiol Cell Physiol</source>
+<volume>280</volume>
+<fpage>C192</fpage>
+<lpage>198</lpage>
+<pub-id pub-id-type="pmid">11121391</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Wade2">
+        <label>18</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wade</surname><given-names>JB</given-names></name><name><surname>Liu</surname><given-names>J</given-names></name><name><surname>Coleman</surname><given-names>RA</given-names></name><name><surname>Cunningham</surname><given-names>R</given-names></name><name><surname>Steplock</surname><given-names>DA</given-names></name><etal/></person-group>
+<year>2003</year>
+<article-title>Localization and interaction of NHERF isoforms in the renal proximal tubule of the mouse.</article-title>
+<source>Am J Physiol Cell Physiol</source>
+<volume>285</volume>
+<fpage>C1494</fpage>
+<lpage>1503</lpage>
+<pub-id pub-id-type="pmid">12917102</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Weinman2">
+        <label>19</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Weinman</surname><given-names>EJ</given-names></name><name><surname>Lakkis</surname><given-names>J</given-names></name><name><surname>Akom</surname><given-names>M</given-names></name><name><surname>Wali</surname><given-names>RK</given-names></name><name><surname>Drachenberg</surname><given-names>CB</given-names></name><etal/></person-group>
+<year>2002</year>
+<article-title>Expression of NHERF-1, NHERF-2, PDGFR-alpha, and PDGFR-beta in normal human kidneys and in renal transplant rejection.</article-title>
+<source>Pathobiology</source>
+<volume>70</volume>
+<fpage>314</fpage>
+<lpage>323</lpage>
+<pub-id pub-id-type="pmid">12865627</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-Cunningham2">
+        <label>20</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cunningham</surname><given-names>R</given-names></name><name><surname>Esmaili</surname><given-names>A</given-names></name><name><surname>Brown</surname><given-names>E</given-names></name><name><surname>Biswas</surname><given-names>RS</given-names></name><name><surname>Murtazina</surname><given-names>R</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>Urine electrolyte, mineral, and protein excretion in NHERF-2 and NHERF-1 null mice.</article-title>
+<source>Am J Physiol Renal Physiol</source>
+<volume>294</volume>
+<fpage>F1001</fpage>
+<lpage>1007</lpage>
+<pub-id pub-id-type="pmid">18256311</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0034764-VillaBellosta1">
+        <label>21</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Villa-Bellosta</surname><given-names>R</given-names></name><name><surname>Barac-Nieto</surname><given-names>M</given-names></name><name><surname>Breusegem</surname><given-names>SY</given-names></name><name><surname>Barry</surname><given-names>NP</given-names></name><name><surname>Levi</surname><given-names>M</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>Interactions of the growth-related, type IIc renal sodium/phosphate cotransporter with PDZ proteins.</article-title>
+<source>Kidney Int</source>
+<volume>73</volume>
+<fpage>456</fpage>
+<lpage>464</lpage>
+<pub-id pub-id-type="pmid">18046316</pub-id></element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

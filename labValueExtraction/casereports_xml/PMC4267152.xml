@@ -1,0 +1,3852 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Med Genomics</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Med Genomics</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Medical Genomics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1755-8794</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">25466818</article-id>
+      <article-id pub-id-type="pmc">4267152</article-id>
+      <article-id pub-id-type="publisher-id">64</article-id>
+      <article-id pub-id-type="doi">10.1186/s12920-014-0064-y</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>FLAGS, frequently mutated genes in public exomes</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Shyr</surname>
+            <given-names>Casper</given-names>
+          </name>
+          <address>
+            <email>casper@cmmt.ubc.ca</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+          <xref ref-type="aff" rid="Aff3"/>
+          <xref ref-type="aff" rid="Aff4"/>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Tarailo-Graovac</surname>
+            <given-names>Maja</given-names>
+          </name>
+          <address>
+            <email>maja@cmmt.ubc.ca</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+          <xref ref-type="aff" rid="Aff2"/>
+          <xref ref-type="aff" rid="Aff3"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gottlieb</surname>
+            <given-names>Michael</given-names>
+          </name>
+          <address>
+            <email>mike.m.gottlieb@gmail.com</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lee</surname>
+            <given-names>Jessica JY</given-names>
+          </name>
+          <address>
+            <email>leejae7@interchange.ubc.ca</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+          <xref ref-type="aff" rid="Aff5"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>van Karnebeek</surname>
+            <given-names>Clara</given-names>
+          </name>
+          <address>
+            <email>cvankarnebeek@cw.bc.ca</email>
+          </address>
+          <xref ref-type="aff" rid="Aff3"/>
+          <xref ref-type="aff" rid="Aff6"/>
+          <xref ref-type="aff" rid="Aff7"/>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Wasserman</surname>
+            <given-names>Wyeth W</given-names>
+          </name>
+          <address>
+            <email>wyeth@cmmt.ubc.ca</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+          <xref ref-type="aff" rid="Aff2"/>
+          <xref ref-type="aff" rid="Aff3"/>
+        </contrib>
+        <aff id="Aff1"><label/>Centre for Molecular Medicine and Therapeutics, Child and Family Research Institute, Vancouver, BC Canada </aff>
+        <aff id="Aff2"><label/>Department of Medical Genetics, University of British Columbia, Vancouver, BC Canada </aff>
+        <aff id="Aff3"><label/>Treatable Intellectual Disability Endeavour in British Columbia, Vancouver, Canada </aff>
+        <aff id="Aff4"><label/>Bioinformatics Graduate Program, University of British Columbia, Vancouver, BC Canada </aff>
+        <aff id="Aff5"><label/>Genome Science and Technology Graduate Program, University of British Columbia, Vancouver, BC Canada </aff>
+        <aff id="Aff6"><label/>Division of Biochemical Diseases, BC Children&#x2019;s Hospital, Vancouver, BC Canada </aff>
+        <aff id="Aff7"><label/>Department of Pediatrics, University of British Columbia, Vancouver, BC Canada </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>3</day>
+        <month>12</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>3</day>
+        <month>12</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2014</year>
+      </pub-date>
+      <volume>7</volume>
+      <elocation-id>64</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>16</day>
+          <month>6</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>24</day>
+          <month>10</month>
+          <year>2014</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; Shyr et al.; licensee BioMed Central Ltd. 2014</copyright-statement>
+        <license license-type="open-access">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0">http://creativecommons.org/licenses/by/4.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</ext-link>) applies to the data made available in this article, unless otherwise stated.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <sec>
+          <title>Background</title>
+          <p>Dramatic improvements in DNA-sequencing technologies and computational analyses have led to wide use of whole exome sequencing (WES) to identify the genetic basis of Mendelian disorders. More than 180 novel rare-disease-causing genes with Mendelian inheritance patterns have been discovered through sequencing the exomes of just a few unrelated individuals or family members. As rare/novel genetic variants continue to be uncovered, there is a major challenge in distinguishing true pathogenic variants from rare benign mutations.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>We used publicly available exome cohorts, together with the dbSNP database, to derive a list of genes (n&#x2009;=&#x2009;100) that most frequently exhibit rare (&lt;1%) non-synonymous/splice-site variants in general populations. We termed these genes FLAGS for FrequentLy mutAted GeneS and analyzed their properties.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>Analysis of FLAGS revealed that these genes have significantly longer protein coding sequences, a greater number of paralogs and display less evolutionarily selective pressure than expected. FLAGS are more frequently reported in PubMed clinical literature and more frequently associated with diseased phenotypes compared to the set of human protein-coding genes. We demonstrated an overlap between FLAGS and the rare-disease causing genes recently discovered through WES studies (n&#x2009;=&#x2009;10) and the need for replication studies and rigorous statistical and biological analyses when associating FLAGS to rare disease. Finally, we showed how FLAGS are applied in disease-causing variant prioritization approach on exome data from a family affected by an unknown rare genetic disorder.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>We showed that some genes are frequently affected by rare, likely functional variants in general population, and are frequently observed in WES studies analyzing diverse rare phenotypes. We found that the rate at which genes accumulate rare mutations is beneficial information for prioritizing candidates. We provided a ranking system based on the mutation accumulation rates for prioritizing exome-captured human genes, and propose that clinical reports associating any disease/phenotype to FLAGS be evaluated with extra caution.</p>
+        </sec>
+        <sec>
+          <title>Electronic supplementary material</title>
+          <p>The online version of this article (doi:10.1186/s12920-014-0064-y) contains supplementary material, which is available to authorized users.</p>
+        </sec>
+      </abstract>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>&#xA9; The Author(s) 2014</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1">
+      <title>Background</title>
+      <p>Uncovering the genetic basis of human disease improves care for affected patients and their families by providing a diagnosis, refining genetic counseling, informing clinical management (incl. decision making on appropriate preventive measures and available treatments), and ultimately facilitation of unrelated affected families as well identification of novel targets for treatment [<xref ref-type="bibr" rid="CR1">1</xref>-<xref ref-type="bibr" rid="CR3">3</xref>]. Rare Mendelian diseases are caused by altered function of single genes and individually have a low prevalence (fewer than 200,000 people in the United States, or fewer than 1 in 2,000 people in Europe) [<xref ref-type="bibr" rid="CR4">4</xref>] but collectively these affect millions of individuals worldwide [<xref ref-type="bibr" rid="CR5">5</xref>-<xref ref-type="bibr" rid="CR7">7</xref>]. The current best estimate on the number of rare genetic disorders is between 6,000 to 7,000 [<xref ref-type="bibr" rid="CR7">7</xref>] based on the catalogue Online Mendelian Inheritance in Man (OMIM) [<xref ref-type="bibr" rid="CR8">8</xref>], and a comprehensive reference portal for rare diseases (Orphanet) [<xref ref-type="bibr" rid="CR9">9</xref>]; however, taking into consideration that the human phenome is far from fully characterized [<xref ref-type="bibr" rid="CR10">10</xref>] together with higher estimates on rare-disease-causing genes based on human mutation rate and the number of essential genes [<xref ref-type="bibr" rid="CR11">11</xref>], the number of rare genetic disorders is likely higher.</p>
+      <p>Next-generation sequencing (NGS) high-throughput technologies have revolutionized the discovery of gene defects causing rare human diseases by detecting genetic variations at base-pair resolution within an individual [<xref ref-type="bibr" rid="CR12">12</xref>-<xref ref-type="bibr" rid="CR14">14</xref>]. NGS is widely used to sequence either a portion of the human genome (~1%) by capturing the protein-coding sequences (known as whole exome sequencing, WES), or to sequence the entire human genome (known as whole genome sequencing, WGS). In particular, WES technology had been widely used to identify genetic basis of Mendelian disorders by sequencing the exomes of just a few unrelated individuals or family members, and has led to discovery of more than 180 novel rare-disease-causing genes with Mendelian inheritance patterns, according to the review published in November 2013 [<xref ref-type="bibr" rid="CR7">7</xref>,<xref ref-type="bibr" rid="CR15">15</xref>] (the number continues to increase with some rapidity). Considering the estimates that genetic basis has been determined for about ~3,500 of the rare diseases [<xref ref-type="bibr" rid="CR7">7</xref>], there remain thousands of rare-disease-causing genes to be uncovered.</p>
+      <p>With the increasing rate of the discovery of rare genetic variants, WES has the potential to identify the majority of the remaining rare-disease-causing genes in the near future. A major challenge in identification of the true pathogenic variants lies in the differentiation between a large number of non-pathogenic functional variants and disease-causing sequence variants in a studied family (in this study, the term &#x201C;functional variant&#x201D; is restricted to missense/nonsense and splice site variants). Current WES analyses of rare genetic disorders use similar approaches [<xref ref-type="bibr" rid="CR16">16</xref>] to filter the observed variants to enrich for potential causal genes. Specifically, after the reads are mapped, and variants are called and annotated, the variants are compared against internal exome databases as well as public databases, such as dbSNP [<xref ref-type="bibr" rid="CR17">17</xref>], Exome Variant Server (EVS), 1000 Genomes Project [<xref ref-type="bibr" rid="CR18">18</xref>], and HapMap project [<xref ref-type="bibr" rid="CR19">19</xref>,<xref ref-type="bibr" rid="CR20">20</xref>] to exclude variants that are likely to arise from technological causes and variants that are common (e.g. variants observed in more than 1%) in a population. The variants are further prioritized based on their predicted effect on protein function [<xref ref-type="bibr" rid="CR21">21</xref>,<xref ref-type="bibr" rid="CR22">22</xref>], where silent and non-coding variants (except for splice-site affecting variants) are typically excluded or ranked lower. The still extensive lists of candidate disease-causing variants can be further refined based on the family history and a hypothesized model of inheritance [<xref ref-type="bibr" rid="CR7">7</xref>,<xref ref-type="bibr" rid="CR15">15</xref>]. However, it is well-established that a significant proportion of coding variants in each individual represent rare variants (absent from dbSNP or observed with frequency of &#x2264;1%) [<xref ref-type="bibr" rid="CR17">17</xref>,<xref ref-type="bibr" rid="CR20">20</xref>], and that genomes of healthy individuals contain an average of ~100 loss-of-function variants [<xref ref-type="bibr" rid="CR23">23</xref>]. The analyst must further consider the possibility that non-coding variations (e.g. regulatory alterations) could be involved, thus the filtered results may not contain the causal gene. Thus, for many rare disorders, it is still challenging to separate the real disease-causing variant from the prioritized set of rare, likely functional variants that are not accountable for the investigated phenotype.</p>
+      <p>There are broadly used tools such as SIFT [<xref ref-type="bibr" rid="CR21">21</xref>] and PolyPhen-2 [<xref ref-type="bibr" rid="CR24">24</xref>] that provide an interpretation of mutation impacts. Many of these tools focus on the individual variants. In the variant-focused studies, it has been noted that variants tend to arise more frequently in long genes (e.g. <italic>TTN</italic> and <italic>MUC16</italic>). In considering that researchers often focus their interpretation of exome data on the genic level initially, it might be advantageous to have methods and ranking systems that integrate the individual variants at the genic level more systematically to inform variant prioritization. While there are long-standing methods for ranking a set of genes based on their annotations [<xref ref-type="bibr" rid="CR25">25</xref>], there has been limited work on rankings based on sequencing properties. One ranking system based on the genic level is RVIS [<xref ref-type="bibr" rid="CR26">26</xref>]. RVIS generates a score based on the frequencies of observed common coding variants compared to the total number of observed variants in the same gene.</p>
+      <p>To further help in identification of disease-causing variants from families affected by rare Mendelian disorders, we expanded the current, common prioritization parameters that focus mainly on frequency at which variants themselves are seen in normal population, to include the frequency at which genes are found to be affected by rare, likely functional variants. Using rare variations from dbSNP and EVS, we introduced the concept of FLAGS (FLAGS for FrequentLy mutAted GeneS). We showed that these genes possess characteristics that make them less likely to be critical for disease development, but are more likely to be assigned causality for diseases than expected for protein-coding genes in general. We further demonstrated FLAGS&#x2019; utility via a case study as well as literature review, and application in our in-house database. Finally, we provided a ranking system from FLAGS to assist in the prioritization of genes from exome/whole-genome clinical studies.</p>
+    </sec>
+    <sec id="Sec2" sec-type="methods">
+      <title>Methods</title>
+      <sec id="Sec3">
+        <title>Terminologies used in this study</title>
+        <p>In this study, the term &#x201C;functional variants&#x201D; refers to variants that are missense, nonsense or fall within a splice site window (see below for specifics). The length of a gene is defined to be the longest open reading frame (ORF) of the gene, thus excluding promoters, untranslated regions and introns. All genes are referred to by their HGNC (HUGO Gene Nomenclature Committee) [<xref ref-type="bibr" rid="CR27">27</xref>] official gene symbol.</p>
+      </sec>
+      <sec id="Sec4">
+        <title>Datasets</title>
+        <p>In the following sections, we provide detailed descriptions of how the datasets were obtained or generated. Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref> lists the size and descriptive nature of the datasets used in this study. Each gene list referred to in this report can be found in Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Table S1.<table-wrap id="Tab1"><label>Table 1</label><caption><p>
+<bold>Description of the datasets used in this study</bold>
+</p></caption><table frame="hsides" rules="groups"><thead><tr><th>
+<bold>Name of datasets</bold>
+</th><th>
+<bold>Size</bold>
+</th><th>
+<bold>Description</bold>
+</th></tr></thead><tbody><tr><td>FLAGS</td><td align="left">100</td><td>The top 100 of FrequentLy mutAted GeneS with rare (&lt;1% allelic frequency) functional variants from dbSNPv138 and ESP6500</td></tr><tr valign="top"><td>OMIM</td><td align="left">3099</td><td>The list of protein-coding genes associated with human diseases from Online Mendelian Inheritance in Man [<xref ref-type="bibr" rid="CR8">8</xref>]</td></tr><tr valign="top"><td>HGMD</td><td align="left">2691</td><td>The list of protein-coding genes with damaging mutations (&lt;1% allelic frequency) from Human Gene Mutation Database [<xref ref-type="bibr" rid="CR28">28</xref>].</td></tr><tr valign="top"><td>WES</td><td align="left">300</td><td>Downloaded from Boycott et al. (2013) [<xref ref-type="bibr" rid="CR7">7</xref>] - a list of novel genes implicated in human disorders based on whole exome sequencing studies, or novel/known pathogenic mutations discovered by whole-exome sequencing.</td></tr><tr valign="top"><td>Background</td><td align="left">18580</td><td>The entire set of human protein-coding genes that have complete start and end translation annotations with a specified dN/dS ratio</td></tr></tbody></table></table-wrap><list list-type="alpha-lower"><list-item><p><bold>FrequentLy mutAted GeneS (FLAGS)</bold></p><p>Variations from EVS hosted on the NHLBI Exome Sequencing Project (ESP6500) were downloaded on February 2014. The criteria used to generate the variations are available online (<ext-link ext-link-type="uri" xlink:href="http://evs.gs.washington.edu/EVS/">http://evs.gs.washington.edu/EVS/</ext-link>). Variations from dbSNPv138 [<xref ref-type="bibr" rid="CR17">17</xref>] were downloaded from the NCBI website (version date 20130806). Genomic annotations were assigned to each variation using SNPeff v3.5g [<xref ref-type="bibr" rid="CR29">29</xref>] with the parameter &#x2013;SpliceSiteSize 7 and human genome version GRCh37.75. Variants were filtered for allelic frequency &lt;1% according to dbSNP&#x2019;s overall frequency and EVS&#x2019;s combined population frequency. Where a discrepancy in the reported frequency arose between the two resources, we took the higher frequency. Variants were further filtered for &#x201C;functional&#x201D; coding mutations that result in a change in the amino acid sequence (i.e. missense/nonsense), or mutations that reside within a putative splice site junction (with a window size of 7, as supplied in the parameter for SNPeff). The remaining mutations were excluded if they were observed more than 10 times within our in-house database consisting of 150 exomes and 13 whole genomes (a list of filtered out variants are provided in Additional file <xref rid="MOESM2" ref-type="media">2</xref>: Table S6 as VCF). This last step was included because we noticed it is common to see polymorphic mutations from dbSNPv138 without an allelic frequency attached; filtering against an in-house pipeline allowed us to remove polymorphic variants that do not have an annotated frequency. Among these remaining mutations, for each gene, we counted the number of mutations observed per gene. Only protein-coding genes with a fully annotated translation start and end, and a valid dN/dS ratio are included for consideration (see Methodology section &#x201C;<xref rid="Sec5" ref-type="sec">Gene length and dN/dS ratio</xref>&#x201D;). From this ranked list, we selected the top 100 genes (0.5% of the 19818 genes overlapping between dbSNP and EVS) with the most observed mutations as a focus for this study. This set will be referred throughout the manuscript as &#x201C;FLAGS&#x201D;. The entire ranked list is available in Additional file <xref rid="MOESM3" ref-type="media">3</xref>: Table S4.</p></list-item><list-item><p><bold>Disease genes datasets</bold></p><p>To obtain a list of reliable disease-associated genes, we drew from multiple resources. The first list of disease-associated genes was downloaded from OMIM website on March 2014 using the provided file &#x201C;morbidmap&#x201D;. This list will be referred throughout the manuscript as &#x201C;OMIM genes&#x201D;. A second list contains pathogenic variations downloaded from the HGMG professional version (file date 20130927) [<xref ref-type="bibr" rid="CR28">28</xref>]. To focus on likely high-penetrance pathogenic alleles, we filtered the variations in this file by the same frequency criteria as we performed for obtaining FLAGS (see Methodology section &#x201C;FrequentLy mutated GeneS&#x201D;), and limited to only the mutations annotated as &#x201C;DM&#x201D; (damaging mutations). The affected genes from those remaining variations are compiled, and will be referred throughout this manuscript as &#x201C;HGMD genes&#x201D;. A third disease set was downloaded from the Supplemental file published by Boycott et al. (2013) [<xref ref-type="bibr" rid="CR7">7</xref>], which provided a compiled list of novel genes and/or novel phenotypes associated with known disease-genes discovered through exome sequencing. For all three disease-associated-gene lists, we mapped the gene symbols to their official HGNC gene symbol (and discarded the ones that could not be mapped), retained only protein-coding genes with a fully annotated translation start and end, and a valid dN/dS ratio. OMIM and HGMD (Human Gene Mutation database) overlap with the top 100 FLAGS by 42 and 37 genes respectively (Additional file <xref rid="MOESM4" ref-type="media">4</xref>: Table S2A, S2B).</p></list-item><list-item><p><bold>Background dataset</bold></p><p>The complete list of human-coding genes was downloaded from Ensembl [<xref ref-type="bibr" rid="CR30">30</xref>] Biomart on March 2014 using version Ensembl Genes 75 with genome version GRCh37.p13. Protein-coding genes without HGNC gene symbol, a proper translation start and translation end annotation according to this genome version were discarded. Genes without a valid dN/dS ratio were removed (i.e. without any observed synonymous polymorphisms according to dbSNPv138 and EVS). This last step was done for two reasons: 1) to ensure there is no bias when evaluating dN/dS ratio in our results, 2) to ensure the genes selected in this study have been covered in NGS studies, since any gene without at least one observed synonymous mutation is presumably not sufficiently captured in either exome or whole-genome studies. The Background set overlaps FLAGS completely.</p><p>The comparison analyses in the Results section are done without removing the overlap between the gene datasets.</p></list-item></list></p>
+      </sec>
+      <sec id="Sec5">
+        <title>Gene length and dN/dS ratio</title>
+        <p>We calculated the selection pressures acting on genes by comparing non-synonymous substitution per non-synonymous site (dN) to the synonymous substitutions per synonymous site (dS). This ratio of the number of non-synonymous substitutions per non-synonymous site to the number of synonymous substitutions per synonymous site (dN/dS) was calculated using the formula <inline-formula id="IEq1"><alternatives><tex-math id="M1">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$ \frac{\frac{\#\  of\  observed\ non- synonymous\  substitutions}{\#\  of\  possible\ non- synonymous\  site}}{\frac{\#\  of\  observed\  synonymous\  substitutions}{\#\  of\  possible\  synonymous\  substitutions}} $$\end{document}</tex-math><mml:math id="M2"><mml:mfrac><mml:mfrac><mml:mrow><mml:mo>#</mml:mo><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">of</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">observed</mml:mi><mml:mspace width="0.25em"/><mml:mi>n</mml:mi><mml:mi>o</mml:mi><mml:mi>n</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mi mathvariant="italic">synonymous</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">substitutions</mml:mi></mml:mrow><mml:mrow><mml:mo>#</mml:mo><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">of</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">possible</mml:mi><mml:mspace width="0.25em"/><mml:mi>n</mml:mi><mml:mi>o</mml:mi><mml:mi>n</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mi mathvariant="italic">synonymous</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">site</mml:mi></mml:mrow></mml:mfrac><mml:mfrac><mml:mrow><mml:mo>#</mml:mo><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">of</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">observed</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">synonymous</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">substitutions</mml:mi></mml:mrow><mml:mrow><mml:mo>#</mml:mo><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">of</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">possible</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">synonymous</mml:mi><mml:mspace width="0.25em"/><mml:mi mathvariant="italic">substitutions</mml:mi></mml:mrow></mml:mfrac></mml:mfrac></mml:math><inline-graphic xlink:href="12920_2014_64_Article_IEq1.gif"/></alternatives></inline-formula> [<xref ref-type="bibr" rid="CR31">31</xref>]. The number of possible synonymous and non-synonymous mutations was derived by examining the longest annotated coding transcript per gene (transcript length based upon Ensembl Biomart described above). Only transcripts with annotated start and end positions were considered. The number of observed synonymous and non-synonymous mutations was calculated from the same dbSNPv138 and EVS datasets as described above. We verified that our methodology provides a comparable dN/dS ratios to the ratios reported previously [<xref ref-type="bibr" rid="CR31">31</xref>] (Additional file <xref rid="MOESM5" ref-type="media">5</xref>: Table S5). Gene length was derived by converting the same transcript that was used to calculate the dN/dS ratio into amino acid sequences. In this study, the term &#x201C;gene length&#x201D; is defined to be the ORF of the gene, thus excluding promoters, untranslated regions and introns.</p>
+      </sec>
+      <sec id="Sec6">
+        <title>Paralogs</title>
+        <p>The paralogous relationships for human genes were derived from the Ensembl Comparative Genomics API using version Ensembl Genes 75, GRCh37.p13. A custom Perl script was written to extract the paralogs for every gene.</p>
+      </sec>
+      <sec id="Sec7">
+        <title>Gene-to-disease phenotypic terms</title>
+        <p>We used MeSHOP software [<xref ref-type="bibr" rid="CR32">32</xref>] to identify over-represented disease terms associated with each gene. MeSHOP returns a list of MeSH (Medical Subject Heading) terms for each gene with a p-value for each term. Each p-value was calculated by an over-representation (compared to control) of the MeSH terms assigned to the set of articles within PubMed that are associated with the gene (based on relationships defined in gene2pubmed; articles considered include up to March 2013). From this output, for each gene, the non-disease related MeSH terms were filtered out, and the remaining MeSH terms were selected for significance (using the Bonferroni correction and a significance threshold of 0.05). To derive gene-to-disease relationships with an independent source, we extracted phenotypic diseased terms per gene from Human Phenotype Ontology website [<xref ref-type="bibr" rid="CR33">33</xref>] by downloading the file &#x201C;genes_to_diseases.txt&#x201D; (version April 2014).</p>
+      </sec>
+      <sec id="Sec8">
+        <title>Publication record analysis</title>
+        <p>For our publication analysis on the relationship between a gene and its frequency of citation(s) within biomedical literature, we used Gene Reference into Function (GeneRIF), a manually curated list of experimentally validated gene functions available as part of NCBI&#x2019;s EntrezGene database. Each entry in GeneRIF contains a short description of a gene function and a PubMed identifier for the publication documenting the evidence of the described function. Therefore, we were able to count the number of papers published on a gene&#x2019;s functionality by counting the number of PubMed records associated to the gene. The following are the detailed steps of our publication calculation. First, two flat files necessary for our analysis were downloaded via FTP from NCBI Gene on April 2014: GeneRIF (available at <ext-link ext-link-type="uri" xlink:href="ftp://ftp.ncbi.nih.gov/gene/GeneRIF/generifs_basic.gz">ftp://ftp.ncbi.nih.gov/gene/GeneRIF/generifs_basic.gz</ext-link>) and EntrezGene entries for human (<ext-link ext-link-type="uri" xlink:href="ftp://ftp.ncbi.nih.gov/gene/DATA/Homo_sapiens.gene_info.gz">ftp://ftp.ncbi.nih.gov/gene/DATA/Homo_sapiens.gene_info.gz</ext-link>). Second, because GeneRIF refers to each gene by its EntrezGene ID, we mapped the gene symbol of all genes on our lists (FLAGS, OMIM, HGMD, Background) to EntrezGene ID using EntrezGene entries downloaded in the previous step. Third, for each gene of interest, we counted the number of PubMed IDs (PMIDs) associated with its EntrezGene ID in GeneRIF. Because GeneRIF does not guarantee one-to-one relationship between a GeneRIF entry and a PMID (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/books/NBK3840/#genefaq.Why_does_the_number_of_GeneRIFs">http://www.ncbi.nlm.nih.gov/books/NBK3840/#genefaq.Why_does_the_number_of_GeneRIFs</ext-link>), we filtered out duplicates in the list of PMIDs linked to a gene. Last, to filter the PMIDs by their publication date, we collected the publication date of each PMID via queries into PubMed using the ESummary query provided within the Entrez Programming Utilities (E-utilities).</p>
+      </sec>
+      <sec id="Sec9">
+        <title>Statistical analyses</title>
+        <p>Unless stated otherwise, all statistical analyses and plots were carried out in R [<xref ref-type="bibr" rid="CR34">34</xref>] version 2.15.3. Non-parametric Mann&#x2013;Whitney U one-tailed test was executed by wilcox.test function with parameter exact&#x2009;=&#x2009;TRUE. Violin plots were generated with Vioplot package. The input files to the analyses are available in Additional file <xref rid="MOESM6" ref-type="media">6</xref>: Table S9A and 9B.</p>
+      </sec>
+      <sec id="Sec10">
+        <title>Mutation Detection using WES &#x2013; a case study</title>
+        <p>A 3-year old female patient, born as an only child to non-consanguineous parents of Turkish descent after an uncomplicated pregnancy and delivery, presented with profound early-onset developmental delay, microcephaly, seizures, dysmorphic features, myopia, bone marrow dysplasia with lymphopenia, neutropenia, aplastic anemia and combined immunodeficiency (B and T cell) was enrolled into the TIDEX gene discovery project, approved by the Ethics Board of the Faculty of Medicine of the University of British Columbia (H12-00067).</p>
+        <p>Extensive clinical investigations were performed according to the TIDE diagnostic protocol [<xref ref-type="bibr" rid="CR35">35</xref>] to determine the etiology of patient&#x2019;s condition. These included: chromosome micro array analysis for copy number variants (CNVs) (Affymetrix Genome-Wide Human SNP Array 6.0); telomere length analysis; CT and MRI scans and comprehensive metabolic testing.</p>
+        <p>Genomic DNA was isolated from the peripheral blood of the patient as well as parents using standard techniques. Whole exome sequencing was performed for the index patient and her unaffected parents using the Ion AmpliSeq&#x2122; Exome Kit and Ion Proton&#x2122; System from Life Technologies (Next Generation Sequencing Services, UBC, Vancouver, Canada) at 120X coverage. An in-house designed bioinformatics pipeline (Additional file <xref rid="MOESM7" ref-type="media">7</xref>: Text S3) was used to align the reads to the human reference genome version hg19 and to identify and assess rare variants for their potential to disrupt protein function. The candidate variants were further confirmed using Sanger re-sequencing in all the family members. Primer sequences and PCR conditions are available on request. Deleteriousness of the candidate variants was assessed using Combined Annotation&#x2013;Dependent Depletion (CADD) scores [<xref ref-type="bibr" rid="CR36">36</xref>].</p>
+      </sec>
+    </sec>
+    <sec id="Sec11" sec-type="results">
+      <title>Results</title>
+      <sec id="Sec12">
+        <title>FLAGS: genes frequently affected by rare, likely-functional variants in public exomes</title>
+        <p>It has been previously reported that <italic>TTN</italic> and <italic>MUC16</italic> appear in multiple exome analyses due to their length [<xref ref-type="bibr" rid="CR37">37</xref>-<xref ref-type="bibr" rid="CR41">41</xref>]; researchers are aware of these genes and are cautious when encountering rare likely functional (missense, nonsense, splice site) variants in WES analyses [<xref ref-type="bibr" rid="CR37">37</xref>-<xref ref-type="bibr" rid="CR41">41</xref>]. In a study of 53 independent families suffering from distinct rare inborn errors of metabolism (comprising of 150 whole exomes and 13 whole genomes; <ext-link ext-link-type="uri" xlink:href="http://www.tidebc.org">http://www.tidebc.org</ext-link>; Additional file <xref rid="MOESM8" ref-type="media">8</xref>: Text S4 and Additional file <xref rid="MOESM9" ref-type="media">9</xref>: Table S7), we confirmed that rare/novel, likely functional variants affecting <italic>TTN</italic> and <italic>MUC16</italic> repeatedly passed all the prioritization steps of our pipeline and appeared in ~5% of our candidate disease-gene lists. However, other genes were repeatedly observed in multiple families affected with different phenotypes (e.g. <italic>DST</italic>). This motivated us to compile a set of FLAGS (FrequentLy mutAted GeneS) to understand their properties and facilitate better interpretation of phenotypes associated with these variants. The FLAGS list was generated by ranking genes based on number of rare (&lt;1%) functional variants affecting these genes in general populations (NHLBI Exome Sequencing Project (ESP6500) and dbSNPv138). As expected, <italic>TTN</italic> and <italic>MUC16</italic> are the top two genes based on the number of rare functional variants; however, other genes that were frequently affected by rare, likely functional variants in multiple TIDE families with unrelated phenotypes were also observed to be frequently mutated in general population (Additional file <xref rid="MOESM10" ref-type="media">10</xref>: Table S8). To explore the properties of these frequently mutated genes, we focused our analysis on the top 100 from this ranked list, which we hereafter refer to as FLAGS (Figure&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>).<fig id="Fig1"><label>Figure 1</label><caption><p>
+<bold>The word cloud of FLAGS.</bold> A text file was created using a custom Perl script to reflect the frequency of mutation per gene in FLAGS. The Tagxedo (<ext-link ext-link-type="uri" xlink:href="http://www.tagxedo.com/">http://www.tagxedo.com/</ext-link>) was then used to generate the word cloud. The size of the words reflects how frequently they are found to bear rare, likely functional variants in the general population. As expected <italic>TTN</italic> and <italic>MUC16</italic> are the top two genes.</p></caption><graphic xlink:href="12920_2014_64_Fig1_HTML" id="MO1"/></fig></p>
+      </sec>
+      <sec id="Sec13">
+        <title>FLAGS tend to have longer ORFs</title>
+        <p>In this study, the assignment of gene length refers to the longest open reading frame. Genes with longer ORFs are expected to have more mutations than shorter genes. To confirm this, we determined the distribution of gene lengths based on the longest annotated open reading frame for each gene. FLAGS have an average length of 4653&#x2009;&#xB1;&#x2009;3605 aa (amino acids). The high variance is due to two genes (<italic>TTN</italic> and<italic>MUC16</italic>) having extremely long lengths (35992 and 14508 aa respectively) compared to the rest of the protein coding genes. Excluding the 2 outlying genes, the remaining FLAGS genes (n&#x2009;=&#x2009;98) have an average ORF length of 4233&#x2009;&#xB1;&#x2009;1399 aa. Figure&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>a shows the distribution of ORF lengths across different evaluated datasets (with outliers removed to show the distribution clearer). The entire FLAGS have overall much higher ORF length than HGMD, OMIM and Background (HGMD, OMIM comparisons each yield a p-value &lt;2.2e<sup>&#x2212;16</sup>, Background comparison yields a p-value of 0.00027). This is aligned with our expectation that FLAGS are frequently mutated from exome analysis because they correspond to genes with long coding regions.<fig id="Fig2"><label>Figure 2</label><caption><p>
+<bold>Properties of FLAGS. (a)</bold> Violin distribution of open reading frame lengths across the evaluated gene sets. Y-axis shows the length defined in terms of amino acids for the longest annotated transcript per gene. Outliers are excluded from the plot. <bold>(b)</bold> Distribution of number of paralogs per gene across the evaluated gene sets. Y-axis shows the violin distribution of paralogs based on Ensembl Compara database. Outliers are excluded from the plot. <bold>(c)</bold> Cumulative distribution of dN/dS ratio across the evaluated gene sets. X-axis is limited from 0 to 2, and Y-axis plots the corresponding probability according to the cumulative distribution function.</p></caption><graphic xlink:href="12920_2014_64_Fig2_HTML" id="MO2"/></fig></p>
+      </sec>
+      <sec id="Sec14">
+        <title>FLAGS tend to have paralogs</title>
+        <p>The presence of paralogs may increase tolerance for otherwise phenotype-inducing functional variations due to functional compensation [<xref ref-type="bibr" rid="CR42">42</xref>,<xref ref-type="bibr" rid="CR43">43</xref>]. We calculated the number of paralogs per gene reported by the Ensembl Compara database [<xref ref-type="bibr" rid="CR30">30</xref>], and compared this property between different gene sets. FLAGS overall have an average of 4 paralogs per gene. Figure&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>b shows the distribution of the number of paralogs across the different gene sets. Aligned with our expectation, FLAGS have more paralogs than genes from OMIM, HGMD and Background (OMIM p-value = 7.2e<sup>&#x2212;05</sup>, HGMD p-value = 7.4e<sup>&#x2212;05</sup>, Background p-value = 8.1e<sup>&#x2212;09</sup>). While the existence of paralogs may cause read mapping challenges that leads to an increased frequency of false variant predictions, most of these technical errors will be eliminated by a filter for variant frequency, as they will arise recurrently.</p>
+      </sec>
+      <sec id="Sec15">
+        <title>FLAGS tend to have higher dN/dS ratios</title>
+        <p>Genes which exhibit many functional genetic variations (missense/nonsense/splice site) may have a higher tolerance for variations and thus a reduced likelihood of phenotypes subject to negative selection. For each gene, we calculated the dN/dS ratio as a proxy indicator of the amount of selective pressure acting on protein-coding genes. FLAGS have an average dN/dS ratio of 0.65&#x2009;&#xB1;&#x2009;0.18. Overall these genes have significantly higher ratio compared to genes from HGMD, OMIM, and Background (each individual comparison yields a p-value &lt;0.005). Figure&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>c shows the relative densities from cumulative distribution functions for each gene set. The trend indicates that frequently mutated genes have higher dN/dS ratio on average than expected.</p>
+      </sec>
+      <sec id="Sec16">
+        <title>Variants detected in FLAGS tend to be predicted as less deleterious</title>
+        <p>We explored the possibility that the FLAGS genes are affected by less deleterious rare variants compared to other genes. If the variants in FLAGS are less likely to be involved in diseases, then we would expect the variants to have lower predicted damage scores. To calculate this, we used the Phred-scaled Combined Annotation Dependent Depletion (CADD) score developed by Kircher et al. (2014) to rank the deleteriousness of each single nucleotide variant [<xref ref-type="bibr" rid="CR36">36</xref>]. The method objectively integrates diverse annotations into a single measurement for each variant by training upon ~15 million genetic variants separating humans from chimpanzees against a simulated set of variants not exposed to selection. This method was chosen over other variant prediction tools because of its superior performance [<xref ref-type="bibr" rid="CR36">36</xref>] and its ability to quantify the severity of a variant by a ranking system. This ranking system compares the candidate variant against other possible variants in the genome and assigns it a score based on this comparison; other variant prediction tools do not take into account other possible mutations in the genome [<xref ref-type="bibr" rid="CR44">44</xref>]. Also, the CADD method includes ranking of nonsense and splice site variants, while other tools only handle missense [<xref ref-type="bibr" rid="CR36">36</xref>]. For each gene, we calculated the proportion of variants with CADD Phred-scaled score &lt;10, between 10 and 20, and above 20. We found that FLAGS are more enriched for variants with low scores, compared to OMIM and HGMD (Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>a; p-values = 2.6e<sup>&#x2212;11</sup>, 2.9e<sup>&#x2212;12</sup> respectively). Likewise, OMIM and HGMD are more enriched for variants with high impact score (&gt;20) than FLAGS (Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>b; p-values = 2.4e<sup>&#x2212;09</sup>, and 1.2e<sup>&#x2212;10</sup> respectively). These results are aligned with our expectation. We additionally analyzed the genic tolerance of FLAGS to functional genetic variants, using residual variation intolerance score (RVIS) published by Petrovski et al. (2013) [<xref ref-type="bibr" rid="CR26">26</xref>] and observed trends in the same direction (Additional file <xref rid="MOESM11" ref-type="media">11</xref>: Text S2).<fig id="Fig3"><label>Figure 3</label><caption><p>
+<bold>FLAGS genes are affected by rare variants predicted to be less deleterious than the variants affecting known disease-genes. (a)</bold> A boxplot distribution of proportion of variants with CADD score &lt;10. The Y-axis plots the proportion of variants within each gene set having a Phred-scaled CADD score of &lt;10. The proportion was calculated per individual gene. <bold>(b)</bold> A boxplot distribution of proportion of variants with CADD score &gt;20. The Y-axis plots the proportion of variants within each gene set having a Phred-scaled CADD score of &gt;20. The proportion was calculated per individual gene.</p></caption><graphic xlink:href="12920_2014_64_Fig3_HTML" id="MO3"/></fig></p>
+      </sec>
+      <sec id="Sec17">
+        <title>FLAGS tend to be reported in PubMed and associated with disease phenotypes</title>
+        <p>We sought to determine if there is a publication bias for pathogenic mutations in the frequently mutated genes. For each gene, we calculated the number of publications related to human diseases and biological functions using GeneRIF annotations (Figure&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>). FLAGS have an average of 51 articles per gene, which is lower than for genes from HGMD and OMIM (OMIM p-value = 0.00087, HGMD p-value = 0.0035). However, FLAGS have more publications than the Background set (p-value = 6.3e<sup>&#x2212;12</sup>).<fig id="Fig4"><label>Figure 4</label><caption><p>
+<bold>Cumulative distribution of the number of publications per gene across the evaluated gene sets.</bold> X-axis plots the number of publications from GeneRIF per gene, and Y-axis plots the corresponding probability according to the cumulative distribution function.</p></caption><graphic xlink:href="12920_2014_64_Fig4_HTML" id="MO4"/></fig></p>
+        <p>We next considered if the frequently mutated genes are associated with greater diversity of disease phenotypes compared to disease-associated genes. Our expectation is that if the frequently seen genes are arising as candidates in more studies, and are less likely to be truly pathogenic, then they could be associated to a wider range of phenotypes in the literature (we recognize the association could also be due to pleiotropy [<xref ref-type="bibr" rid="CR45">45</xref>], see Limitations). To analyze if FLAGS have been frequently correlated to human diseases, we used two different computational resources (MeSHOP [<xref ref-type="bibr" rid="CR32">32</xref>], HPO [<xref ref-type="bibr" rid="CR33">33</xref>]) to extract known significant relationship(s) between genes and human disease phenotypes based on published scientific articles. Figures&#xA0;<xref rid="Fig5" ref-type="fig">5</xref>a and b show the distribution of the number of disease terms from HPO and MeSHOP per gene within gene sets. From MeSHOP results, we see that FLAGS have slightly fewer MeSH diseased terms per gene than genes from OMIM (mean 8.1 vs. 10.2; p-value = 0.013), and significantly fewer terms per gene than HGMD genes (mean 8.1 vs. 9.5; p-value = 2.3e<sup>&#x2212;12</sup>). FLAGS have more MeSH terms than Background genes (mean 8.1 vs. 3.1; p-value = 1.3e<sup>&#x2212;15</sup>). These observations are consistent with the results based on HPO annotations, where we again see that while FLAGS have fewer disease phenotypic terms than genes from OMIM and HGMD (mean 2.1 vs. 3.7 and 3.8 respectively; p-values &lt;0.0001), FLAGS exhibit more terms than the Background (mean 2.1 vs. 0.6; p-value = 3.7e<sup>&#x2212;14</sup>). To adjust for the potential bias that genes with more articles are likely to have more MeSH and HPO terms attached, we repeated the analysis by normalizing the MeSH and HPO terms to the number of publications in GeneRIF. The normalized observations are consistent with the results if no normalization was applied (Additional file <xref rid="MOESM12" ref-type="media">12</xref>: Text S5).<fig id="Fig5"><label>Figure 5</label><caption><p>
+<bold>FLAGS tend to be associated with disease phenotypes. (a)</bold> Violin distribution of number of HPO disease terms across the evaluated gene sets. Y-axis is the violin distribution showing the number of HPO terms per gene. Outliers are excluded from the plot. <bold>(b)</bold> Violin distribution of number of MeSH disease terms from program MeSHOP across the evaluated gene sets. Y-axis is the violin distribution showing the number of MeSH terms per gene. Outliers are excluded from the plot.</p></caption><graphic xlink:href="12920_2014_64_Fig5_HTML" id="MO5"/></fig></p>
+      </sec>
+      <sec id="Sec18">
+        <title>FLAGS recently implicated in rare-Mendelian disorders</title>
+        <p>We sought to determine which FLAGS have been reported with pathogenic mutations in NGS clinical studies. Boycott et al. (2013) provided a compilation of 178 novel genes discovered to be disease-associated through exome sequencing [<xref ref-type="bibr" rid="CR7">7</xref>], of which three overlapped with FLAGS (<italic>KMT2D/MLL2</italic>, <italic>HERC2</italic>, and <italic>DST</italic>). To explore the properties of those 3 genes, we analyzed the ratio between number of rare variants and gene length, as well as presence of putative essential protein domains by assessing the distribution of rare variants across the gene. We found that among the FLAGS, <italic>KMT2D</italic> and <italic>HERC2</italic> have the lowest ratios of number of rare variants compared to gene length, while <italic>DST</italic> is one of the three genes among the FLAGS set with significant non-uniform distribution of rare variants across the gene (p-value = 1.2e<sup>-04</sup>; the other two are <italic>EPPK1</italic> and <italic>HRNR</italic>; see Additional file <xref rid="MOESM13" ref-type="media">13</xref>: Text S1 for more details on methodology and rationale). If we were to expand this 178 novel-rare-disease gene list from Boycott et al. (2013) to include the exome studies reporting on already-known disease-associated genes with known/novel pathogenic mutations, then this expanded set (n&#x2009;=&#x2009;300) overlapped FLAGS by an additional 7 genes (<italic>TTN</italic>, <italic>RYR1</italic>, <italic>PKHD1</italic>, <italic>RP1L1</italic>, <italic>ASPM</italic>, <italic>SACS</italic>, <italic>ABCA4</italic>). In the discussion we provide our thoughts and literature analysis on why these genes have been reported as disease-associated despite being among the frequent genes to harbor rare functional variants.</p>
+      </sec>
+      <sec id="Sec19">
+        <title>Applying FLAGS to prioritize candidate variants</title>
+        <sec id="Sec20">
+          <title>Case study</title>
+          <p>To demonstrate a disease-causing variant prioritization approach using FLAGS and whole exome sequencing data, we selected one family from our TIDE cohort affected by an unknown rare genetic disorder. Through WES performed for the index and her unaffected parents (Methodology - Mutation Detection using WES &#x2013; a case study), rare variants were identified and assessed for their potential to disrupt protein function. Only those variants predicted to be functional (missense, nonsense and frameshift changes, as well as in-frame deletions and splice-site effects) were subsequently screened under a series of inheritance models. In total, we identified six rare &#x201C;functional&#x201D; homozygous, and eight rare &#x201C;functional&#x201D; compound heterozygous candidates. Of those, only two genes affected by missense variants were considered functional candidates:<list list-type="order"><list-item><p><italic>VPS13B</italic> gene (MIM 607817) had been found to bear homozygous or compound heterozygous mutations in patients with Cohen syndrome (MIM 216550). Cohen syndrome is characterized by developmental delay/intellectual disability, facial dysmorphism, microcephaly, neutropenia, and weak muscle tone (hypotonia). The features of Cohen syndrome vary widely in presence and severity among affected individuals. Additional features, perhaps patient-specific, appear in the reports; myopia and small hands and feet are observed in our patient. In our WES analysis, we identified two rare variants affecting this gene in the index, suggesting compound heterozygous inheritance. Neither of the variants was found in more than 160 in-house exomes; one of the variants was predicted to be deleterious using the CADD scores [<xref ref-type="bibr" rid="CR36">36</xref>] with a score higher than 20, while the second variant was given the score of less than 5. Sanger re-sequencing confirmed that mother is a carrier of one variant, while the father is the carrier of the second variant and the index is compound heterozygous making the <italic>VPS13B</italic> gene a candidate disease-gene in this family.</p></list-item><list-item><p><italic>SENP1</italic> gene (MIM 612157) product is one of the desumoylating enzymes [<xref ref-type="bibr" rid="CR46">46</xref>] which is important for proper development and survival in mice. SENP1 was found to regulate expression of <italic>GATA1</italic> in mice and subsequent erythropoiesis [<xref ref-type="bibr" rid="CR47">47</xref>]. Furthermore, SENP1 was found to be essential for the development of early T and B cells through regulation of <italic>STAT5</italic> activation [<xref ref-type="bibr" rid="CR48">48</xref>]. To date, germline mutations in <italic>SENP1</italic> had not been described in any human diseases. Our WES analysis identified a rare missense homozygous variant in the index. The variant was not found in more than 160 in-house exomes and was predicted to be the most deleterious of all homozygous variants using the CADD scores [<xref ref-type="bibr" rid="CR36">36</xref>]. The Sanger re-sequencing of the genomic DNA confirmed that index is homozygous for the variant, while both parents are carriers.</p></list-item></list></p>
+          <p>To further prioritize between these two genes, we consider a FLAGS-based approach. The <italic>VPS13B</italic> gene is one of the FLAGS (top 100, rank 67) and is frequently seen to be affected by rare, likely functional variants in general population. On the other hand, <italic>SENP1</italic> is rarely affected by functional variants in the general population (rank 11,947). In addition, <italic>VPS13B</italic> is a frequently seen in the TIDE cohort of patients, 22 of 160 individuals have rare, likely functional alleles in the <italic>VPS13B</italic> gene that pass our prioritization filters. In contrast, the family reported here is the only family from the TIDEX cohort of patients with a rare, likely functional variant affecting the <italic>SENP1</italic>. In none of the other 160 exomes did the variants in <italic>SENP1</italic> pass our prioritization filters for rare, likely functional variants. Together with the fact that <italic>VPS13B</italic> does not fit well to her severe hematologic findings and bone marrow dysplasia, FLAGS helped us select <italic>SENP1</italic> as candidate gene for our experimental validation studies. The case report will be published separately. We further applied prioritization of FLAGS on an in-house WES/WGS database and illustrated how trio-based exome families have Mendelian recessive and dominant candidates overlapping with the FLAGS. The FLAGS ranking can be fed into the candidate identification process and highlight genes that should be considered as high-risk candidates for false positives [Additional file <xref rid="MOESM14" ref-type="media">14</xref>].</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="Sec21" sec-type="discussion">
+      <title>Discussion</title>
+      <p>WES/WGS studies can identify hundreds to thousands of rare protein-coding mutations per individual. Genes vary in their frequency of appearance; genes that are more likely to harbor rare-coding variants by chance are less likely to be involved in human diseases, especially in the context of rare Mendelian disorders. Previous studies have reported that <italic>TTN</italic> and <italic>MUC16</italic>, the two longest genes in the human genome, should be interpreted with care due to their long lengths [<xref ref-type="bibr" rid="CR37">37</xref>-<xref ref-type="bibr" rid="CR41">41</xref>]. In this study, we compiled a list of frequently mutated genes (FLAGS) based upon analysis of rare coding mutations from dbSNP and Exome Variant Server ESP6500. We compared the biological properties of FLAGS against genes from disease databases (HGMD, OMIM) that represent the currently best reliable curated resources for disease-associated genes. We further demonstrated the clinical utilities of FLAGS as a gene prioritization tool. The discussion will illustrate additional clinical benefits of FLAGS, and conclude with ideas for future directions and project limitations.</p>
+      <sec id="Sec22">
+        <title>FLAGS are less likely to be disease-associated</title>
+        <p>Consistent with our expectations, FLAGS have significantly longer coding lengths, higher average dN/dS ratios, and more paralogs than genes from OMIM and HGMD. Paralogs have been cited as capable to partially compensate for the loss of gene function [<xref ref-type="bibr" rid="CR42">42</xref>,<xref ref-type="bibr" rid="CR43">43</xref>], so the greater frequency of paralogs could mean that mutations are less likely to have a critical impact on phenotype. In the examination of the research literature for FLAGS, we observed fewer disease annotations compared to disease genes, but elevated rates compared to background genes, suggesting that FLAGS have been associated to human disease more frequently than the rest of the protein-coding genes.</p>
+      </sec>
+      <sec id="Sec23">
+        <title>Clinical utilization of FLAGS for prioritization</title>
+        <p>Prioritizing candidates in rare disease studies is important; as it takes substantial time of experts to review each gene [<xref ref-type="bibr" rid="CR49">49</xref>], getting better specificity without loss of sensitivity has real value. We demonstrated the utility of FLAGS as a prioritization tool by overlapping FLAGS against candidates from clinical exomes in TIDE, without loss of ultimately identified causal genes. We further illustrated with a single clinical case how when multiple equally attractive candidates are under consideration, FLAGS provide a way for clinicians and researchers to decide which gene to focus on first.</p>
+        <sec id="Sec24">
+          <title>Cautionary indicator</title>
+          <p>While we are not claiming every gene in FLAGS is non-pathogenic, we do wish to make it clear that greater biological evidence is required when interpreting the functional impacts of rare variants in frequently mutated genes. Among the 300 genes with putative pathogenic mutations identified via exome sequencing compiled by Boycott et al. (2013) [<xref ref-type="bibr" rid="CR7">7</xref>], ten genes intersected with FLAGS. We evaluated the gene-level and variant-level evidence for causality based upon the guideline for investigation of causality published by MacArthur et al. (2014) [<xref ref-type="bibr" rid="CR23">23</xref>]. We found that many results are derived based upon single-gene sequencing, rather than taking the less biased exome or whole-genome approach [<xref ref-type="bibr" rid="CR50">50</xref>-<xref ref-type="bibr" rid="CR52">52</xref>]. In addition, many studies reported the mutations as pathogenic simply due to segregation pattern within the family, rare allelic frequency and bioinformatics impact predictions [<xref ref-type="bibr" rid="CR41">41</xref>,<xref ref-type="bibr" rid="CR53">53</xref>-<xref ref-type="bibr" rid="CR55">55</xref>], thus lacking experimental validation at both the variant and gene levels. The screen for rare alleles is further complicated when some of the studies look at minor ethnic populations that are not well represented in the population databases [<xref ref-type="bibr" rid="CR52">52</xref>,<xref ref-type="bibr" rid="CR54">54</xref>,<xref ref-type="bibr" rid="CR55">55</xref>]. The evidence behind missense variants is especially doubtful when many missense variants are predicted by CADD [<xref ref-type="bibr" rid="CR36">36</xref>] to be benign with a lower impact rank than the rare mutations observed from dbSNP and ESP6500. Altogether, these observations could explain why these genes harbor frequent rare functional variations despite being reported in diseases. To avoid false-positive reports of causality, especially for FLAGS, it will be very important for reports to follow the recently published guidelines [<xref ref-type="bibr" rid="CR56">56</xref>] when assigning pathogenicity to new variants identified as well as additional variants identified in genes previously linked to a particular disease. An example of a good paper would be the one where the variant is identified in a genome-wide screening approach with statistical methods applied to compare the distribution of variants in patients against a large matched control cohorts, where the evidence is assessed at both the candidate gene and candidate variant levels, and where the authors recognize the importance of combining both computational comparative approaches and experimental assays for validating the impact of the variant.</p>
+        </sec>
+      </sec>
+      <sec id="Sec25">
+        <title>Going beyond the top 100 and what the future entails</title>
+        <p>Genes with frequent rare variants need to be appropriately ranked in order to reduce false associations and streamline clinical analysis. Our current results are limited to the top 100 frequently mutated genes. While it may be insightful to study the characteristics of the genes at the other end of the spectrum (the bottom 100 or alternatively sets of genes with low mutation rates and gene-focused publications to exclude genes with poor coverage in exome capture kits), we perceive the greatest long-term utility to be in the incorporation of the complete set of rankings into the exome interpretation process. To make our prioritization ranking accessible to the broad research community, we provide the FLAGS ranking for the genes represented in both dbSNP and EVS.</p>
+        <p>The novelty that we bring forth is a ranking that utilizes public control exomes/genomes, which clinicians can readily apply to their clinical cases. As discussed above, the ranking is correlated with gene length, evolutionary constraint, and paralogous gene counts.</p>
+        <p>The high accumulation rate of mutations can be interpreted partially as genes being under less selective constraint. A utility of the FLAGS ranking is that it provides, albeit indirectly, a gene-level indication of the selective constraint upon a gene, while most existing metrics such as phastCons [<xref ref-type="bibr" rid="CR57">57</xref>] or PhyloP [<xref ref-type="bibr" rid="CR58">58</xref>] provide a position-specific value. While the FLAGS ranking is not a substitute for the more direct measures, the genic level information complements them.</p>
+        <p>Current prioritization tools lack the ability to evaluate at both genic and variant level simultaneously. Ultimately, a scoring mechanism integrating biological and technological features at both the genic and variant level should be developed. A future direction is to improve upon methodologies like RVIS [<xref ref-type="bibr" rid="CR26">26</xref>] and expand beyond the rate of mutation by employing statistical machine learning techniques to incorporate the genic and allelic features as highlighted in this study and previous works to summarize them into a single computational score. Such a new quantitative measurement should improve the ranking of pathogenicity for each gene, and highlight skeptical candidates to accelerate the clinical translation of genomic research findings. The mechanism itself (e.g. the weights of features) would also shed light on the exact nature of the causes of excess mutation rates and facilitate better biological understanding.</p>
+        <p>In the long-term, the accumulation of more exomes and whole genomes will provide an increasingly rich body of data for the generation of FLAGS rankings.</p>
+      </sec>
+      <sec id="Sec26">
+        <title>Limitations</title>
+        <p>In the study we relied upon manually-curated GeneRIFs to extract the publications for each gene. One could argue for more sophisticated PubMed queries in combination with semantic rules to increase the sensitivity for assigning human-disease related publications [<xref ref-type="bibr" rid="CR59">59</xref>,<xref ref-type="bibr" rid="CR60">60</xref>]. We also recognize that neither MeSHOP nor HPO capture gene-to-disease terms perfectly. A possible direction is to explore other gene-disease databases such as HuGE Navigator [<xref ref-type="bibr" rid="CR61">61</xref>]. We further acknowledge that the interpretation of MesHOP and HPO could be influenced by pleiotropic genes. Similarly, we used Ensembl for extracting the paralogous relationships for each gene, but there are other available extraction algorithms and databases for inferring paralogy [<xref ref-type="bibr" rid="CR62">62</xref>-<xref ref-type="bibr" rid="CR64">64</xref>]. Additionally, our present study is restricted to genes with both an HGNC symbol and a fully annotated translation start and end. We recognize that not all protein-coding genes fit these criteria, and we are excluding non-coding genes (as well as 5&#x2032; and 3&#x2032; UTRs of coding genes) from this analysis.</p>
+      </sec>
+    </sec>
+    <sec id="Sec27" sec-type="conclusions">
+      <title>Conclusion</title>
+      <p>While most complex disorders generally can confirm the strength of their findings by comparing against a matched background cohort, the nature of studying rare monogenic disorders mean that there is often insufficient sample size to conduct a rigorous statistical analysis on the strength of the finding. In this study, we extracted a list of frequently mutated genes based on rare variants from dbSNP and Exome Variant Server. Our results revealed the biological properties of these genes that could explain why they are frequently mutated, and why extra discretion in statistical and biological interpretation needs to be taken when trying to relate these genes to clinical phenotypes. We propose that the ranking of how frequent a gene is mutated in next-generation sequencing studies is useful for the prioritization of candidate genes.</p>
+    </sec>
+    <sec id="Sec28">
+      <title>Consent</title>
+      <p>Written informed consent was obtained from the patient&#x2019;s guardian/parent/next of kin for the publication of this report.</p>
+    </sec>
+  </body>
+  <back>
+    <app-group>
+      <app id="App1">
+        <sec id="Sec29">
+          <title>Additional files</title>
+          <p>
+            <media position="anchor" xlink:href="12920_2014_64_MOESM1_ESM.pdf" id="MOESM1">
+              <label>Additional file 1: Table S1.</label>
+              <caption>
+                <p>This table lists the five datasets used in this study, and the genes that made up each dataset. The first row in the table shows the names of the datasets referred throughout the manuscript, and each column contains the list of genes, referred to by their official gene symbol.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12920_2014_64_MOESM2_ESM.pdf" id="MOESM2">
+              <label>Additional file 2: Table S6.</label>
+              <caption>
+                <p>A list of variants, in variant call format (VCF), showing the mutations that were observed more than 10 times in our in-house database consisting of 150 exomes and 13 whole genomes, after they were filtered by allelic frequencies according to the annotations from dbSNP and Exome variant server (refer to methodology section for more details).</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12920_2014_64_MOESM3_ESM.pdf" id="MOESM3">
+              <label>Additional file 3: Table S4.</label>
+              <caption>
+                <p>The entire ranked list of FLAGS, with the most frequently mutated genes at the top.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12920_2014_64_MOESM4_ESM.txt" id="MOESM4">
+              <label>Additional file 4: Table S2.</label>
+              <caption>
+                <p>There are two lists in this table. The first is a list of genes that overlapped between FLAGS vs. OMIM (Table S2A), and the second is a list of genes that overlapped between FLAGS vs. HGMD (Table S2B).</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12920_2014_64_MOESM5_ESM.txt" id="MOESM5">
+              <label>Additional file 5: Table S5.</label>
+              <caption>
+                <p>A table showing a comparison of dN/dS ratio between the values we reported with our calculation (see manuscript for methodology), versus a previously published result of a gene set (refer to reference [31] in the manuscript). The results between the two methodologies were highly consistent.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12920_2014_64_MOESM6_ESM.txt" id="MOESM6">
+              <label>Additional file 6: Table S9.</label>
+              <caption>
+                <p>This table shows the two input files that were fed into R for statistical analyses. In the table, the attributes for each gene used in the analysis were described (dN/dS ratio, gene length, # of MeSH terms, # of HPO terms, # of paralogs for table S9A, and # of pathogenic mutations from HGMD for table S9B).</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12920_2014_64_MOESM7_ESM.txt" id="MOESM7">
+              <label>Additional file 7: Text S3.</label>
+              <caption>
+                <p>This section contains a concise description of our in-house bioinformatics pipeline for processing exome and whole-genome datasets.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12920_2014_64_MOESM8_ESM.txt" id="MOESM8">
+              <label>Additional file 8: Text S4.</label>
+              <caption>
+                <p>This section provides a description of the TIDE-BC project.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12920_2014_64_MOESM9_ESM.zip" id="MOESM9">
+              <label>Additional file 9: Table S7.</label>
+              <caption>
+                <p>A summary of the families studied in TIDEX project, and the number of candidate variants remaining after filtering against genetic and allelic frequency thresholds. The results are broken down by family structure and the types of genetic model applied. Refer to www.tidebc.org and additional text S4 for more information on the TIDEX project, and additional text S3 for how the variants were called and filtered.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12920_2014_64_MOESM10_ESM.txt" id="MOESM10">
+              <label>Additional file 10: Table S8.</label>
+              <caption>
+                <p>A table of number of exomes from TIDEX project that lists out the number of rare functional variants for each protein-coding gene captured in the exome capture kits. Please refer to methodology section for how &#x2018;rare&#x2019; and &#x2018;functional&#x2019; descriptors were defined.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12920_2014_64_MOESM11_ESM.txt" id="MOESM11">
+              <label>Additional file 11: Text S2.</label>
+              <caption>
+                <p>A comparison of our FLAGS gene ranking system against another method, residual variation intolerance score (RVIS) that also built upon public genomic datasets and ranked importance of each gene&#x2019;s association to human diseases. Agreements and disagreements between the two methods are discussed.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12920_2014_64_MOESM12_ESM.xlsx" id="MOESM12">
+              <label>Additional file 12: Text S5.</label>
+              <caption>
+                <p>This section describes an analysis looking at the distribution of number of MeSH and HPO terms per gene, after normalizing by the number of biological functionally-related literature published for that gene, as reported in GeneRIF.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12920_2014_64_MOESM13_ESM.txt" id="MOESM13">
+              <label>Additional file 13: Text S1.</label>
+              <caption>
+                <p>This section describes an analysis looking at the uniformity of distribution for rare functional variants across genes. The hypothesis was that genes of less significance to monogenic human diseases would display more uniformity in the occurrences of benign coding mutations across the protein sequence, whereas genes that are more linked to causing penetrating diseases would harbor regions that are more devoid of mutations due to conservation of important protein domains.</p>
+              </caption>
+            </media>
+            <media position="anchor" xlink:href="12920_2014_64_MOESM14_ESM.pdf" id="MOESM14">
+              <label>Additional file 14:</label>
+              <caption>
+                <p>
+<bold>The PDF outlining the supplementary information for this manuscript.</bold>
+</p>
+              </caption>
+            </media>
+          </p>
+        </sec>
+      </app>
+    </app-group>
+    <fn-group>
+      <fn>
+        <p>Casper Shyr and Maja Tarailo-Graovac contributed equally</p>
+      </fn>
+      <fn>
+        <p>
+          <bold>Competing interests</bold>
+        </p>
+        <p>The authors declare that they have no competing interests.</p>
+      </fn>
+      <fn>
+        <p>
+          <bold>Authors&#x2019; contributions</bold>
+        </p>
+        <p>CS, MTG, MG and JJYL generated the data. CS, MTG, MG and JJYL analyzed the data. MTG, CvK and WWW designed the study. MTG and CS wrote the manuscript. All authors read, edited and approved the final manuscript.</p>
+      </fn>
+    </fn-group>
+    <ack>
+      <title>Acknowledgements</title>
+      <p>We are indebted to the patient and her family for participation in this study; Drs. J. Wu, J. Rozmus, S. Vercauteren, K. Hildebrand, T. Dewan and A. Garcera for clinical evaluation and management of the patient; Mrs. X. Han for Sanger sequencing; Mr. B. Sayson for data management; Mrs. M. Higginson for DNA extraction, sample handling and technical data; Dr. C. Vilarino-Guell for timely whole exome sequencing; Dr. W. Cheung for MeSHOP support; Mr. D. Arenillas and Mr. M. Hatas for systems support, and Dora Pak for research management support. This work was supported by funding from the B.C. Children&#x2019;s Hospital Foundation as &#x201C;1<sup>st</sup> Collaborative Area of Innovation&#x201D; (<ext-link ext-link-type="uri" xlink:href="http://www.tidebc.org/">www.tidebc.org</ext-link>); Genome BC (SOF-195 grant); Genome BC and Genome Canada grants 174CDE (ABC4DE Project); and the Canadian Institutes of Health Research #301221 grant. CS is funded by CIHR-CGSD, JJYL is funded by NSERC-CREATE, and MG is funded by CIHR-Computational Biology Undergraduate Summer Student Health Research.</p>
+    </ack>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Green</surname>
+              <given-names>ED</given-names>
+            </name>
+            <name>
+              <surname>Guyer</surname>
+              <given-names>MS</given-names>
+            </name>
+            <collab>National Human Genome Research Institute</collab>
+          </person-group>
+          <article-title>Charting a course for genomic medicine from base pairs to bedside</article-title>
+          <source>Nature</source>
+          <year>2011</year>
+          <volume>470</volume>
+          <fpage>204</fpage>
+          <lpage>213</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature09764</pub-id>
+          <pub-id pub-id-type="pmid">21307933</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McCarthy</surname>
+              <given-names>MI</given-names>
+            </name>
+            <name>
+              <surname>Abecasis</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>Cardon</surname>
+              <given-names>LR</given-names>
+            </name>
+            <name>
+              <surname>Goldstein</surname>
+              <given-names>DB</given-names>
+            </name>
+            <name>
+              <surname>Little</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ioannidis</surname>
+              <given-names>JPA</given-names>
+            </name>
+            <name>
+              <surname>Hirschhorn</surname>
+              <given-names>JN</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome-wide association studies for complex traits: consensus, uncertainty and challenges</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>356</fpage>
+          <lpage>369</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrg2344</pub-id>
+          <pub-id pub-id-type="pmid">18398418</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Van Karnebeek</surname>
+              <given-names>CD</given-names>
+            </name>
+            <name>
+              <surname>Sly</surname>
+              <given-names>WS</given-names>
+            </name>
+            <name>
+              <surname>Ross</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Salvarinova</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Yaplito-Lee</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Santra</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Shyr</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Horvath</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Eydoux</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Lehman</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Bernard</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Newlove</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ukpeh</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Chakrapani</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Preece</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Ball</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Pitt</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Vallance</surname>
+              <given-names>HD</given-names>
+            </name>
+            <name>
+              <surname>Coulter-Mackie</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Nguyen</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>L-H</given-names>
+            </name>
+            <name>
+              <surname>Bhavsar</surname>
+              <given-names>AP</given-names>
+            </name>
+            <name>
+              <surname>Sinclair</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Waheed</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Wasserman</surname>
+              <given-names>WW</given-names>
+            </name>
+            <name>
+              <surname>Stockler-Ipsiroglu</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Mitochondrial carbonic anhydrase VA deficiency resulting from CA5A alterations presents with hyperammonemia in early childhood</article-title>
+          <source>Am J Hum Genet</source>
+          <year>2014</year>
+          <volume>94</volume>
+          <fpage>453</fpage>
+          <lpage>461</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ajhg.2014.01.006</pub-id>
+          <pub-id pub-id-type="pmid">24530203</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Montserrat Moliner</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Walig&#xF3;ra</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>The European union policy in the field of rare diseases</article-title>
+          <source>Public Health Genomics</source>
+          <year>2013</year>
+          <volume>16</volume>
+          <fpage>268</fpage>
+          <lpage>277</lpage>
+          <pub-id pub-id-type="doi">10.1159/000355930</pub-id>
+          <pub-id pub-id-type="pmid">24503587</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carter</surname>
+              <given-names>CO</given-names>
+            </name>
+          </person-group>
+          <article-title>Monogenic disorders</article-title>
+          <source>J Med Genet</source>
+          <year>1977</year>
+          <volume>14</volume>
+          <fpage>316</fpage>
+          <lpage>320</lpage>
+          <pub-id pub-id-type="doi">10.1136/jmg.14.5.316</pub-id>
+          <pub-id pub-id-type="pmid">563465</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baird</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>TW</given-names>
+            </name>
+            <name>
+              <surname>Newcombe</surname>
+              <given-names>HB</given-names>
+            </name>
+            <name>
+              <surname>Lowry</surname>
+              <given-names>RB</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic disorders in children and young adults: a population study</article-title>
+          <source>Am J Hum Genet</source>
+          <year>1988</year>
+          <volume>42</volume>
+          <fpage>677</fpage>
+          <lpage>693</lpage>
+          <pub-id pub-id-type="pmid">3358420</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boycott</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Vanstone</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Bulman</surname>
+              <given-names>DE</given-names>
+            </name>
+            <name>
+              <surname>MacKenzie</surname>
+              <given-names>AE</given-names>
+            </name>
+          </person-group>
+          <article-title>Rare-disease genetics in the era of next-generation sequencing: discovery to translation</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2013</year>
+          <volume>14</volume>
+          <fpage>681</fpage>
+          <lpage>691</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrg3555</pub-id>
+          <pub-id pub-id-type="pmid">23999272</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McKusick</surname>
+              <given-names>VA</given-names>
+            </name>
+          </person-group>
+          <article-title>Mendelian Inheritance in Man and its online version, OMIM</article-title>
+          <source>Am J Hum Genet</source>
+          <year>2007</year>
+          <volume>80</volume>
+          <fpage>588</fpage>
+          <lpage>604</lpage>
+          <pub-id pub-id-type="doi">10.1086/514346</pub-id>
+          <pub-id pub-id-type="pmid">17357067</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Aym&#xE9;</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Urbero</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Oziel</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Lecouturier</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Biscarat</surname>
+              <given-names>AC</given-names>
+            </name>
+          </person-group>
+          <article-title>Information on rare diseases: the Orphanet project</article-title>
+          <source>Rev M&#xE9;decine Interne Fond&#xE9;e Par Soci&#xE9;t&#xE9; Natl Francaise M&#xE9;decine Interne</source>
+          <year>1998</year>
+          <volume>19</volume>
+          <issue>Suppl 3</issue>
+          <fpage>376S</fpage>
+          <lpage>377S</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0248-8663(98)90021-2</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Samuels</surname>
+              <given-names>ME</given-names>
+            </name>
+          </person-group>
+          <article-title>Saturation of the human phenome</article-title>
+          <source>Curr Genomics</source>
+          <year>2010</year>
+          <volume>11</volume>
+          <fpage>482</fpage>
+          <lpage>499</lpage>
+          <pub-id pub-id-type="doi">10.2174/138920210793175886</pub-id>
+          <pub-id pub-id-type="pmid">21532833</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cooper</surname>
+              <given-names>DN</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>J-M</given-names>
+            </name>
+            <name>
+              <surname>Ball</surname>
+              <given-names>EV</given-names>
+            </name>
+            <name>
+              <surname>Howells</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Mort</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Phillips</surname>
+              <given-names>AD</given-names>
+            </name>
+            <name>
+              <surname>Chuzhanova</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Krawczak</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kehrer-Sawatzki</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Stenson</surname>
+              <given-names>PD</given-names>
+            </name>
+          </person-group>
+          <article-title>Genes, mutations, and human inherited disease at the dawn of the age of personalized genomics</article-title>
+          <source>Hum Mutat</source>
+          <year>2010</year>
+          <volume>31</volume>
+          <fpage>631</fpage>
+          <lpage>655</lpage>
+          <pub-id pub-id-type="doi">10.1002/humu.21260</pub-id>
+          <pub-id pub-id-type="pmid">20506564</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bamshad</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Ng</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Bigham</surname>
+              <given-names>AW</given-names>
+            </name>
+            <name>
+              <surname>Tabor</surname>
+              <given-names>HK</given-names>
+            </name>
+            <name>
+              <surname>Emond</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Nickerson</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Shendure</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Exome sequencing as a tool for Mendelian disease gene discovery</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2011</year>
+          <volume>12</volume>
+          <fpage>745</fpage>
+          <lpage>755</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrg3031</pub-id>
+          <pub-id pub-id-type="pmid">21946919</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gilissen</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Hoischen</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Brunner</surname>
+              <given-names>HG</given-names>
+            </name>
+            <name>
+              <surname>Veltman</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <article-title>Unlocking Mendelian disease using exome sequencing</article-title>
+          <source>Genome Biol</source>
+          <year>2011</year>
+          <volume>12</volume>
+          <fpage>228</fpage>
+          <pub-id pub-id-type="doi">10.1186/gb-2011-12-9-228</pub-id>
+          <pub-id pub-id-type="pmid">21920049</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ku</surname>
+              <given-names>C-S</given-names>
+            </name>
+            <name>
+              <surname>Naidoo</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Pawitan</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Revisiting Mendelian disorders through exome sequencing</article-title>
+          <source>Hum Genet</source>
+          <year>2011</year>
+          <volume>129</volume>
+          <fpage>351</fpage>
+          <lpage>370</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00439-011-0964-2</pub-id>
+          <pub-id pub-id-type="pmid">21331778</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rabbani</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Mahdieh</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Hosomichi</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Nakaoka</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Inoue</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <article-title>Next-generation sequencing: impact of exome sequencing in characterizing Mendelian disorders</article-title>
+          <source>J Hum Genet</source>
+          <year>2012</year>
+          <volume>57</volume>
+          <fpage>621</fpage>
+          <lpage>632</lpage>
+          <pub-id pub-id-type="doi">10.1038/jhg.2012.91</pub-id>
+          <pub-id pub-id-type="pmid">22832387</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pabinger</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Dander</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Fischer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Snajder</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Sperk</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Efremova</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Krabichler</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Speicher</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Zschocke</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Trajanoski</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>A survey of tools for variant analysis of next-generation genome sequencing data</article-title>
+          <source>Brief Bioinform</source>
+          <year>2014</year>
+          <volume>15</volume>
+          <fpage>256</fpage>
+          <lpage>278</lpage>
+          <pub-id pub-id-type="doi">10.1093/bib/bbs086</pub-id>
+          <pub-id pub-id-type="pmid">23341494</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sherry</surname>
+              <given-names>ST</given-names>
+            </name>
+            <name>
+              <surname>Ward</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name>
+              <surname>Kholodov</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Baker</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Phan</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Smigielski</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name>
+              <surname>Sirotkin</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>dbSNP: the NCBI database of genetic variation</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2001</year>
+          <volume>29</volume>
+          <fpage>308</fpage>
+          <lpage>311</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/29.1.308</pub-id>
+          <pub-id pub-id-type="pmid">11125122</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <collab>1000 Genomes Project Consortium</collab>
+            <name>
+              <surname>Abecasis</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>Altshuler</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Auton</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Brooks</surname>
+              <given-names>LD</given-names>
+            </name>
+            <name>
+              <surname>Durbin</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Gibbs</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Hurles</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>McVean</surname>
+              <given-names>GA</given-names>
+            </name>
+          </person-group>
+          <article-title>A map of human genome variation from population-scale sequencing</article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>467</volume>
+          <fpage>1061</fpage>
+          <lpage>1073</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature09534</pub-id>
+          <pub-id pub-id-type="pmid">20981092</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <collab>International HapMap Consortium</collab>
+          </person-group>
+          <article-title>A haplotype map of the human genome</article-title>
+          <source>Nature</source>
+          <year>2005</year>
+          <volume>437</volume>
+          <fpage>1299</fpage>
+          <lpage>1320</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature04226</pub-id>
+          <pub-id pub-id-type="pmid">16255080</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <collab>International HapMap Consortium</collab>
+            <name>
+              <surname>Frazer</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>Ballinger</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name>
+              <surname>Cox</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Hinds</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Stuve</surname>
+              <given-names>LL</given-names>
+            </name>
+            <name>
+              <surname>Gibbs</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Belmont</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Boudreau</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hardenbol</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Leal</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Pasternak</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wheeler</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Willis</surname>
+              <given-names>TD</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Zeng</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Gao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Pan</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Q</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A second generation human haplotype map of over 3.1 million SNPs</article-title>
+          <source>Nature</source>
+          <year>2007</year>
+          <volume>449</volume>
+          <fpage>851</fpage>
+          <lpage>861</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature06258</pub-id>
+          <pub-id pub-id-type="pmid">17943122</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kumar</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Henikoff</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ng</surname>
+              <given-names>PC</given-names>
+            </name>
+          </person-group>
+          <article-title>Predicting the effects of coding non-synonymous variants on protein function using the SIFT algorithm</article-title>
+          <source>Nat Protoc</source>
+          <year>2009</year>
+          <volume>4</volume>
+          <fpage>1073</fpage>
+          <lpage>1081</lpage>
+          <pub-id pub-id-type="doi">10.1038/nprot.2009.86</pub-id>
+          <pub-id pub-id-type="pmid">19561590</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Adzhubei</surname>
+              <given-names>IA</given-names>
+            </name>
+            <name>
+              <surname>Schmidt</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Peshkin</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Ramensky</surname>
+              <given-names>VE</given-names>
+            </name>
+            <name>
+              <surname>Gerasimova</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Bork</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Kondrashov</surname>
+              <given-names>AS</given-names>
+            </name>
+            <name>
+              <surname>Sunyaev</surname>
+              <given-names>SR</given-names>
+            </name>
+          </person-group>
+          <article-title>A method and server for predicting damaging missense mutations</article-title>
+          <source>Nat Methods</source>
+          <year>2010</year>
+          <volume>7</volume>
+          <fpage>248</fpage>
+          <lpage>249</lpage>
+          <pub-id pub-id-type="doi">10.1038/nmeth0410-248</pub-id>
+          <pub-id pub-id-type="pmid">20354512</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR23">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>MacArthur</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name>
+              <surname>Balasubramanian</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Frankish</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Morris</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Walter</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Jostins</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Habegger</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Pickrell</surname>
+              <given-names>JK</given-names>
+            </name>
+            <name>
+              <surname>Montgomery</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Albers</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>ZD</given-names>
+            </name>
+            <name>
+              <surname>Conrad</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name>
+              <surname>Lunter</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Zheng</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Ayub</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>DePristo</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Banks</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Handsaker</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>Rosenfeld</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Fromer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Jin</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Mu</surname>
+              <given-names>XJ</given-names>
+            </name>
+            <name>
+              <surname>Khurana</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kay</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Saunders</surname>
+              <given-names>GI</given-names>
+            </name>
+            <name>
+              <surname>Suner</surname>
+              <given-names>M-M</given-names>
+            </name>
+            <name>
+              <surname>Hunt</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A systematic survey of loss-of-function variants in human protein-coding genes</article-title>
+          <source>Science</source>
+          <year>2012</year>
+          <volume>335</volume>
+          <fpage>823</fpage>
+          <lpage>828</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1215040</pub-id>
+          <pub-id pub-id-type="pmid">22344438</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR24">
+        <label>24.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Adzhubei</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Jordan</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Sunyaev</surname>
+              <given-names>SR</given-names>
+            </name>
+          </person-group>
+          <article-title>Predicting functional effect of human missense mutations using PolyPhen-2</article-title>
+          <source>Curr Protoc Hum Genet Editor Board Jonathan Haines Al</source>
+          <year>2013</year>
+        </element-citation>
+      </ref>
+      <ref id="CR25">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gill</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Singh</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Aseri</surname>
+              <given-names>TC</given-names>
+            </name>
+          </person-group>
+          <article-title>Computational disease gene prioritization: an appraisal</article-title>
+          <source>J Comput Biol J Comput Mol Cell Biol</source>
+          <year>2014</year>
+          <volume>21</volume>
+          <fpage>456</fpage>
+          <lpage>465</lpage>
+          <pub-id pub-id-type="doi">10.1089/cmb.2013.0158</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR26">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Petrovski</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Heinzen</surname>
+              <given-names>EL</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>AS</given-names>
+            </name>
+            <name>
+              <surname>Goldstein</surname>
+              <given-names>DB</given-names>
+            </name>
+          </person-group>
+          <article-title>Genic intolerance to functional variation and the interpretation of personal genomes</article-title>
+          <source>PLoS Genet</source>
+          <year>2013</year>
+          <volume>9</volume>
+          <fpage>e1003709</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pgen.1003709</pub-id>
+          <pub-id pub-id-type="pmid">23990802</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR27">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gray</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>Daugherty</surname>
+              <given-names>LC</given-names>
+            </name>
+            <name>
+              <surname>Gordon</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Seal</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Wright</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Bruford EA</surname>
+              <given-names>EA</given-names>
+            </name>
+          </person-group>
+          <article-title>Genenames.org: the HGNC resources in 2013</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2013</year>
+          <volume>41</volume>
+          <issue>Database issue</issue>
+          <fpage>D545</fpage>
+          <lpage>D552</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gks1066</pub-id>
+          <pub-id pub-id-type="pmid">23161694</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR28">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stenson</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Mort</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ball</surname>
+              <given-names>EV</given-names>
+            </name>
+            <name>
+              <surname>Shaw</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Phillips</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Cooper</surname>
+              <given-names>DN</given-names>
+            </name>
+          </person-group>
+          <article-title>The Human Gene Mutation Database: building a comprehensive mutation repository for clinical and molecular genetics, diagnostic testing and personalized genomic medicine</article-title>
+          <source>Hum Genet</source>
+          <year>2014</year>
+          <volume>133</volume>
+          <fpage>1</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00439-013-1358-4</pub-id>
+          <pub-id pub-id-type="pmid">24077912</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR29">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cingolani</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Platts</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>LL</given-names>
+            </name>
+            <name>
+              <surname>Coon</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Nguyen</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Land</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Ruden</surname>
+              <given-names>DM</given-names>
+            </name>
+          </person-group>
+          <article-title>A program for annotating and predicting the effects of single nucleotide polymorphisms, SnpEff: SNPs in the genome of Drosophila melanogaster strain w1118; iso-2; iso-3</article-title>
+          <source>Fly (Austin)</source>
+          <year>2012</year>
+          <volume>6</volume>
+          <fpage>80</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="doi">10.4161/fly.19695</pub-id>
+          <pub-id pub-id-type="pmid">22728672</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR30">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Flicek</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Amode</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Barrell</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Beal</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Billis</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Brent</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Carvalho-Silva</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Clapham</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Coates</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Fitzgerald</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Gil</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Gir&#xF3;n</surname>
+              <given-names>CG</given-names>
+            </name>
+            <name>
+              <surname>Gordon</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Hourlier</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hunt</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Johnson</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Juettemann</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>K&#xE4;h&#xE4;ri</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Keenan</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kulesha</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <name>
+              <surname>Maurel</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>McLaren</surname>
+              <given-names>WM</given-names>
+            </name>
+            <name>
+              <surname>Murphy</surname>
+              <given-names>DN</given-names>
+            </name>
+            <name>
+              <surname>Nag</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Overduin</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Pignatelli</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pritchard</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Pritchard</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Riat</surname>
+              <given-names>HS</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Ensembl 2014</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2014</year>
+          <volume>42</volume>
+          <issue>Database issue</issue>
+          <fpage>D749</fpage>
+          <lpage>D755</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkt1196</pub-id>
+          <pub-id pub-id-type="pmid">24316576</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR31">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Piton</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Redin</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Mandel</surname>
+              <given-names>J-L</given-names>
+            </name>
+          </person-group>
+          <article-title>XLID-causing mutations and associated genes challenged in light of data from large-scale human exome sequencing</article-title>
+          <source>Am J Hum Genet</source>
+          <year>2013</year>
+          <volume>93</volume>
+          <fpage>368</fpage>
+          <lpage>383</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ajhg.2013.06.013</pub-id>
+          <pub-id pub-id-type="pmid">23871722</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR32">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cheung</surname>
+              <given-names>WA</given-names>
+            </name>
+            <name>
+              <surname>Ouellette</surname>
+              <given-names>BFF</given-names>
+            </name>
+            <name>
+              <surname>Wasserman</surname>
+              <given-names>WW</given-names>
+            </name>
+          </person-group>
+          <article-title>Compensating for literature annotation bias when predicting novel drug-disease relationships through Medical Subject Heading Over-representation Profile (MeSHOP) similarity</article-title>
+          <source>BMC Med Genomics</source>
+          <year>2013</year>
+          <volume>6</volume>
+          <issue>Suppl 2</issue>
+          <fpage>S3</fpage>
+          <pub-id pub-id-type="doi">10.1186/1755-8794-6-S2-S3</pub-id>
+          <pub-id pub-id-type="pmid">23819887</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR33">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>K&#xF6;hler</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Doelken</surname>
+              <given-names>SC</given-names>
+            </name>
+            <name>
+              <surname>Mungall</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Bauer</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Firth</surname>
+              <given-names>HV</given-names>
+            </name>
+            <name>
+              <surname>Bailleul-Forestier</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Black</surname>
+              <given-names>GCM</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Brudno</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Campbell</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>FitzPatrick</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Eppig</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Jackson</surname>
+              <given-names>AP</given-names>
+            </name>
+            <name>
+              <surname>Freson</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Girdea</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Helbig</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Hurst</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>J&#xE4;hn</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Jackson</surname>
+              <given-names>LG</given-names>
+            </name>
+            <name>
+              <surname>Kelly</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Ledbetter</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>Mansour</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>CL</given-names>
+            </name>
+            <name>
+              <surname>Moss</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Mumford</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Ouwehand</surname>
+              <given-names>WH</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>S-M</given-names>
+            </name>
+            <name>
+              <surname>Riggs</surname>
+              <given-names>ER</given-names>
+            </name>
+            <name>
+              <surname>Scott</surname>
+              <given-names>RH</given-names>
+            </name>
+            <name>
+              <surname>Sisodiya</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The Human Phenotype Ontology project: linking molecular biology and disease through phenotype data</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2014</year>
+          <volume>42</volume>
+          <issue>Database issue</issue>
+          <fpage>D966</fpage>
+          <lpage>D974</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkt1026</pub-id>
+          <pub-id pub-id-type="pmid">24217912</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR34">
+        <label>34.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>R Development Core Team: R: A Language and Environment for Statistical Computing</collab>
+          </person-group>
+          <source>R Foundation for Statistical Computing</source>
+          <year>2008</year>
+        </element-citation>
+      </ref>
+      <ref id="CR35">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Van Karnebeek</surname>
+              <given-names>CDM</given-names>
+            </name>
+            <name>
+              <surname>Shevell</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Zschocke</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Moeschler</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Stockler</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>The metabolic evaluation of the child with an intellectual developmental disorder: diagnostic algorithm for identification of treatable causes and new digital resource</article-title>
+          <source>Mol Genet Metab</source>
+          <year>2014</year>
+          <volume>111</volume>
+          <fpage>428</fpage>
+          <lpage>438</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ymgme.2014.01.011</pub-id>
+          <pub-id pub-id-type="pmid">24518794</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR36">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kircher</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Witten</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Jain</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>O&#x2019;Roak</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Cooper</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Shendure</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>A general framework for estimating the relative pathogenicity of human genetic variants</article-title>
+          <source>Nat Genet</source>
+          <year>2014</year>
+          <volume>46</volume>
+          <fpage>310</fpage>
+          <lpage>315</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng.2892</pub-id>
+          <pub-id pub-id-type="pmid">24487276</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR37">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sanders</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Murtha</surname>
+              <given-names>MT</given-names>
+            </name>
+            <name>
+              <surname>Gupta</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Murdoch</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Raubeson</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Willsey</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Ercan-Sencicek</surname>
+              <given-names>AG</given-names>
+            </name>
+            <name>
+              <surname>DiLullo</surname>
+              <given-names>NM</given-names>
+            </name>
+            <name>
+              <surname>Parikshak</surname>
+              <given-names>NN</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Walker</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Ober</surname>
+              <given-names>GT</given-names>
+            </name>
+            <name>
+              <surname>Teran</surname>
+              <given-names>NA</given-names>
+            </name>
+            <name>
+              <surname>Song</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>El-Fishawy</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Murtha</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Overton</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Bjornson</surname>
+              <given-names>RD</given-names>
+            </name>
+            <name>
+              <surname>Carriero</surname>
+              <given-names>NJ</given-names>
+            </name>
+            <name>
+              <surname>Meyer</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>Bilguvar</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Mane</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Sestan</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Lifton</surname>
+              <given-names>RP</given-names>
+            </name>
+            <name>
+              <surname>G&#xFC;nel</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Roeder</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Geschwind</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>Devlin</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>State</surname>
+              <given-names>MW</given-names>
+            </name>
+          </person-group>
+          <article-title>De novo mutations revealed by whole-exome sequencing are strongly associated with autism</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>485</volume>
+          <fpage>237</fpage>
+          <lpage>241</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature10945</pub-id>
+          <pub-id pub-id-type="pmid">22495306</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR38">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Neale</surname>
+              <given-names>BM</given-names>
+            </name>
+            <name>
+              <surname>Kou</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Ma&#x2019;ayan</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Samocha</surname>
+              <given-names>KE</given-names>
+            </name>
+            <name>
+              <surname>Sabo</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>C-F</given-names>
+            </name>
+            <name>
+              <surname>Stevens</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>L-S</given-names>
+            </name>
+            <name>
+              <surname>Makarov</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Polak</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Yoon</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Maguire</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Crawford</surname>
+              <given-names>EL</given-names>
+            </name>
+            <name>
+              <surname>Campbell</surname>
+              <given-names>NG</given-names>
+            </name>
+            <name>
+              <surname>Geller</surname>
+              <given-names>ET</given-names>
+            </name>
+            <name>
+              <surname>Valladares</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Schafer</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Cai</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Lihm</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Dannenfelser</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Jabado</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Peralta</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Nagaswamy</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Muzny</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Reid</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name>
+              <surname>Newsham</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Patterns and rates of exonic de novo mutations in autism spectrum disorders</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>485</volume>
+          <fpage>242</fpage>
+          <lpage>245</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature11011</pub-id>
+          <pub-id pub-id-type="pmid">22495311</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR39">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>O&#x2019;Roak</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Vives</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Girirajan</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Karakoc</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Krumm</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Coe</surname>
+              <given-names>BP</given-names>
+            </name>
+            <name>
+              <surname>Levy</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Ko</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Turner</surname>
+              <given-names>EH</given-names>
+            </name>
+            <name>
+              <surname>Stanaway</surname>
+              <given-names>IB</given-names>
+            </name>
+            <name>
+              <surname>Vernot</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Malig</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Baker</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Reilly</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Akey</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Borenstein</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Rieder</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Nickerson</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Bernier</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Shendure</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Eichler</surname>
+              <given-names>EE</given-names>
+            </name>
+          </person-group>
+          <article-title>Sporadic autism exomes reveal a highly interconnected protein network of de novo mutations</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>485</volume>
+          <fpage>246</fpage>
+          <lpage>250</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature10989</pub-id>
+          <pub-id pub-id-type="pmid">22495309</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR40">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Iossifov</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Ronemus</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Levy</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Hakker</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Rosenbaum</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Yamrom</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>Y-H</given-names>
+            </name>
+            <name>
+              <surname>Narzisi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Leotta</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kendall</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Grabowska</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Marks</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Rodgers</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Stepansky</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Troge</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Andrews</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Bekritsky</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pradhan</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Ghiban</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Kramer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Parla</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Demeter</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Fulton</surname>
+              <given-names>LL</given-names>
+            </name>
+            <name>
+              <surname>Fulton</surname>
+              <given-names>RS</given-names>
+            </name>
+            <name>
+              <surname>Magrini</surname>
+              <given-names>VJ</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Darnell</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Darnell</surname>
+              <given-names>RB</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>De novo gene disruptions in children on the autistic spectrum</article-title>
+          <source>Neuron</source>
+          <year>2012</year>
+          <volume>74</volume>
+          <fpage>285</fpage>
+          <lpage>299</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2012.04.009</pub-id>
+          <pub-id pub-id-type="pmid">22542183</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR41">
+        <label>41.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ng</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Bigham</surname>
+              <given-names>AW</given-names>
+            </name>
+            <name>
+              <surname>Buckingham</surname>
+              <given-names>KJ</given-names>
+            </name>
+            <name>
+              <surname>Hannibal</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>McMillin</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Gildersleeve</surname>
+              <given-names>HI</given-names>
+            </name>
+            <name>
+              <surname>Beck</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Tabor</surname>
+              <given-names>HK</given-names>
+            </name>
+            <name>
+              <surname>Cooper</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Mefford</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Turner</surname>
+              <given-names>EH</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Rieder</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Yoshiura</surname>
+              <given-names>K-I</given-names>
+            </name>
+            <name>
+              <surname>Matsumoto</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Ohta</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Niikawa</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Nickerson</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Bamshad</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Shendure</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Exome sequencing identifies MLL2 mutations as a cause of Kabuki syndrome</article-title>
+          <source>Nat Genet</source>
+          <year>2010</year>
+          <volume>42</volume>
+          <fpage>790</fpage>
+          <lpage>793</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng.646</pub-id>
+          <pub-id pub-id-type="pmid">20711175</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR42">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>W-H</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>X-M</given-names>
+            </name>
+            <name>
+              <surname>van Noort</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Bork</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Human monogenic disease genes have frequently functionally redundant paralogs</article-title>
+          <source>PLoS Comput Biol</source>
+          <year>2013</year>
+          <volume>9</volume>
+          <fpage>e1003073</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pcbi.1003073</pub-id>
+          <pub-id pub-id-type="pmid">23696728</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR43">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Diss</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Ascencio</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Deluna</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Landry</surname>
+              <given-names>CR</given-names>
+            </name>
+          </person-group>
+          <article-title>Molecular mechanisms of paralogous compensation and the robustness of cellular networks</article-title>
+          <source>J Exp Zoolog B Mol Dev Evol</source>
+          <year>2014</year>
+          <volume>322</volume>
+          <fpage>488</fpage>
+          <lpage>499</lpage>
+          <pub-id pub-id-type="doi">10.1002/jez.b.22555</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR44">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Castellana</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Mazza</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Congruency in the prediction of pathogenic missense mutations: state-of-the-art web-based tools</article-title>
+          <source>Brief Bioinform</source>
+          <year>2013</year>
+          <volume>14</volume>
+          <fpage>448</fpage>
+          <lpage>459</lpage>
+          <pub-id pub-id-type="doi">10.1093/bib/bbt013</pub-id>
+          <pub-id pub-id-type="pmid">23505257</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR45">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stearns</surname>
+              <given-names>FW</given-names>
+            </name>
+          </person-group>
+          <article-title>One hundred years of pleiotropy: a retrospective</article-title>
+          <source>Genetics</source>
+          <year>2010</year>
+          <volume>186</volume>
+          <fpage>767</fpage>
+          <lpage>773</lpage>
+          <pub-id pub-id-type="doi">10.1534/genetics.110.122549</pub-id>
+          <pub-id pub-id-type="pmid">21062962</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR46">
+        <label>46.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yamaguchi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sharma</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Athanasiou</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kumar</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Yamada</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kuehn</surname>
+              <given-names>MR</given-names>
+            </name>
+          </person-group>
+          <article-title>Mutation of SENP1/SuPr-2 reveals an essential role for desumoylation in mouse development</article-title>
+          <source>Mol Cell Biol</source>
+          <year>2005</year>
+          <volume>25</volume>
+          <fpage>5171</fpage>
+          <lpage>5182</lpage>
+          <pub-id pub-id-type="doi">10.1128/MCB.25.12.5171-5182.2005</pub-id>
+          <pub-id pub-id-type="pmid">15923632</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR47">
+        <label>47.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yu</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Ji</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Renda</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Krause</surname>
+              <given-names>DS</given-names>
+            </name>
+            <name>
+              <surname>Min</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>SENP1-mediated GATA1 deSUMOylation is critical for definitive erythropoiesis</article-title>
+          <source>J Exp Med</source>
+          <year>2010</year>
+          <volume>207</volume>
+          <fpage>1183</fpage>
+          <lpage>1195</lpage>
+          <pub-id pub-id-type="doi">10.1084/jem.20092215</pub-id>
+          <pub-id pub-id-type="pmid">20457756</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR48">
+        <label>48.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Van Nguyen</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Angkasekwinai</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Dou</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>F-M</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>L-S</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Chin</surname>
+              <given-names>YE</given-names>
+            </name>
+            <name>
+              <surname>Dong</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Yeh</surname>
+              <given-names>ETH</given-names>
+            </name>
+          </person-group>
+          <article-title>SUMO-specific protease 1 is critical for early lymphoid development through regulation of STAT5 activation</article-title>
+          <source>Mol Cell</source>
+          <year>2012</year>
+          <volume>45</volume>
+          <fpage>210</fpage>
+          <lpage>221</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.molcel.2011.12.026</pub-id>
+          <pub-id pub-id-type="pmid">22284677</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR49">
+        <label>49.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moreau</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Tranchevent</surname>
+              <given-names>L-C</given-names>
+            </name>
+          </person-group>
+          <article-title>Computational tools for prioritizing candidate genes: boosting disease gene discovery</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <fpage>523</fpage>
+          <lpage>536</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrg3253</pub-id>
+          <pub-id pub-id-type="pmid">22751426</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR50">
+        <label>50.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Micale</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Augello</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Maffeo</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Selicorni</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Zucchetti</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Fusco</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>De Nittis</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Pellico</surname>
+              <given-names>MT</given-names>
+            </name>
+            <name>
+              <surname>Mandriani</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Fischetto</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Boccone</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Silengo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Biamino</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Perria</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Sotgiu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Serra</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Lapi</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Neri</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ferlini</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Cavaliere</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Chiurazzi</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Monica</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Scarano</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Faravelli</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Ferrari</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Mazzanti</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Pilotta</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Patricelli</surname>
+              <given-names>MG</given-names>
+            </name>
+            <name>
+              <surname>Bedeschi</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Benedicenti</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Molecular Analysis, Pathogenic Mechanisms, and Readthrough Therapy on a Large Cohort of Kabuki Syndrome Patients</article-title>
+          <source>Hum Mutat</source>
+          <year>2014</year>
+          <volume>35</volume>
+          <fpage>841</fpage>
+          <lpage>850</lpage>
+          <pub-id pub-id-type="doi">10.1002/humu.22547</pub-id>
+          <pub-id pub-id-type="pmid">24633898</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR51">
+        <label>51.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schulz</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Freese</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>M&#xE4;nz</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zoll</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>V&#xF6;lter</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Brockmann</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>B&#xF6;gershausen</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Becker</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wollnik</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Pauli</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>CHARGE and Kabuki syndromes: a phenotypic and molecular link</article-title>
+          <source>Hum Mol Genet</source>
+          <year>2014</year>
+          <volume>23</volume>
+          <fpage>4396</fpage>
+          <lpage>4405</lpage>
+          <pub-id pub-id-type="doi">10.1093/hmg/ddu156</pub-id>
+          <pub-id pub-id-type="pmid">24705355</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR52">
+        <label>52.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Harlalka</surname>
+              <given-names>GV</given-names>
+            </name>
+            <name>
+              <surname>Baple</surname>
+              <given-names>EL</given-names>
+            </name>
+            <name>
+              <surname>Cross</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>K&#xFC;hnle</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Cubillos-Rojas</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Matentzoglu</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Patton</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Wagner</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Coblentz</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Ford</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Mackay</surname>
+              <given-names>DJG</given-names>
+            </name>
+            <name>
+              <surname>Chioza</surname>
+              <given-names>BA</given-names>
+            </name>
+            <name>
+              <surname>Scheffner</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Rosa</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Crosby</surname>
+              <given-names>AH</given-names>
+            </name>
+          </person-group>
+          <article-title>Mutation of HERC2 causes developmental delay with Angelman-like features</article-title>
+          <source>J Med Genet</source>
+          <year>2013</year>
+          <volume>50</volume>
+          <fpage>65</fpage>
+          <lpage>73</lpage>
+          <pub-id pub-id-type="doi">10.1136/jmedgenet-2012-101367</pub-id>
+          <pub-id pub-id-type="pmid">23243086</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR53">
+        <label>53.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cheon</surname>
+              <given-names>CK</given-names>
+            </name>
+            <name>
+              <surname>Sohn</surname>
+              <given-names>YB</given-names>
+            </name>
+            <name>
+              <surname>Ko</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>YJ</given-names>
+            </name>
+            <name>
+              <surname>Song</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Moon</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>BK</given-names>
+            </name>
+            <name>
+              <surname>Ha</surname>
+              <given-names>IS</given-names>
+            </name>
+            <name>
+              <surname>Bae</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Jin</surname>
+              <given-names>H-S</given-names>
+            </name>
+            <name>
+              <surname>Jeong</surname>
+              <given-names>S-Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification of KMT2D and KDM6A mutations by exome sequencing in Korean patients with Kabuki syndrome</article-title>
+          <source>J Hum Genet</source>
+          <year>2014</year>
+          <volume>59</volume>
+          <fpage>321</fpage>
+          <lpage>325</lpage>
+          <pub-id pub-id-type="doi">10.1038/jhg.2014.25</pub-id>
+          <pub-id pub-id-type="pmid">24739679</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR54">
+        <label>54.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Puffenberger</surname>
+              <given-names>EG</given-names>
+            </name>
+            <name>
+              <surname>Jinks</surname>
+              <given-names>RN</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Xin</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Fiorentini</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Sherman</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name>
+              <surname>Degrazio</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Shaw</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Sougnez</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Cibulskis</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Gabriel</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kelley</surname>
+              <given-names>RI</given-names>
+            </name>
+            <name>
+              <surname>Morton</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>Strauss</surname>
+              <given-names>KA</given-names>
+            </name>
+          </person-group>
+          <article-title>A homozygous missense mutation in HERC2 associated with global developmental delay and autism spectrum disorder</article-title>
+          <source>Hum Mutat</source>
+          <year>2012</year>
+          <volume>33</volume>
+          <fpage>1639</fpage>
+          <lpage>1646</lpage>
+          <pub-id pub-id-type="doi">10.1002/humu.22237</pub-id>
+          <pub-id pub-id-type="pmid">23065719</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR55">
+        <label>55.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>B&#xF6;hm</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Leshinsky-Silver</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Vassilopoulos</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Le Gras</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lerman-Sagie</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ginzberg</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Jost</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Lev</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Laporte</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Samaritan myopathy, an ultimately benign congenital myopathy, is caused by a RYR1 mutation</article-title>
+          <source>Acta Neuropathol (Berl)</source>
+          <year>2012</year>
+          <volume>124</volume>
+          <fpage>575</fpage>
+          <lpage>581</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00401-012-1007-3</pub-id>
+          <pub-id pub-id-type="pmid">22752422</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR56">
+        <label>56.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>MacArthur</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name>
+              <surname>Manolio</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Dimmock</surname>
+              <given-names>DP</given-names>
+            </name>
+            <name>
+              <surname>Rehm</surname>
+              <given-names>HL</given-names>
+            </name>
+            <name>
+              <surname>Shendure</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Abecasis</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>Adams</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Altman</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Antonarakis</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Ashley</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name>
+              <surname>Barrett</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Biesecker</surname>
+              <given-names>LG</given-names>
+            </name>
+            <name>
+              <surname>Conrad</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name>
+              <surname>Cooper</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Cox</surname>
+              <given-names>NJ</given-names>
+            </name>
+            <name>
+              <surname>Daly</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Gerstein</surname>
+              <given-names>MB</given-names>
+            </name>
+            <name>
+              <surname>Goldstein</surname>
+              <given-names>DB</given-names>
+            </name>
+            <name>
+              <surname>Hirschhorn</surname>
+              <given-names>JN</given-names>
+            </name>
+            <name>
+              <surname>Leal</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Pennacchio</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Stamatoyannopoulos</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Sunyaev</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Valle</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Voight</surname>
+              <given-names>BF</given-names>
+            </name>
+            <name>
+              <surname>Winckler</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Gunter</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Guidelines for investigating causality of sequence variants in human disease</article-title>
+          <source>Nature</source>
+          <year>2014</year>
+          <volume>508</volume>
+          <fpage>469</fpage>
+          <lpage>476</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature13127</pub-id>
+          <pub-id pub-id-type="pmid">24759409</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR57">
+        <label>57.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Siepel</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Bejerano</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Pedersen</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Hinrichs</surname>
+              <given-names>AS</given-names>
+            </name>
+            <name>
+              <surname>Hou</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Rosenbloom</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Clawson</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Spieth</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hillier</surname>
+              <given-names>LW</given-names>
+            </name>
+            <name>
+              <surname>Richards</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Weinstock</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>RK</given-names>
+            </name>
+            <name>
+              <surname>Gibbs</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Kent</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Haussler</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Evolutionarily conserved elements in vertebrate, insect, worm, and yeast genomes</article-title>
+          <source>Genome Res</source>
+          <year>2005</year>
+          <volume>15</volume>
+          <fpage>1034</fpage>
+          <lpage>1050</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.3715005</pub-id>
+          <pub-id pub-id-type="pmid">16024819</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR58">
+        <label>58.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pollard</surname>
+              <given-names>KS</given-names>
+            </name>
+            <name>
+              <surname>Hubisz</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Rosenbloom</surname>
+              <given-names>KR</given-names>
+            </name>
+            <name>
+              <surname>Siepel</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Detection of nonneutral substitution rates on mammalian phylogenies</article-title>
+          <source>Genome Res</source>
+          <year>2010</year>
+          <volume>20</volume>
+          <fpage>110</fpage>
+          <lpage>121</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.097857.109</pub-id>
+          <pub-id pub-id-type="pmid">19858363</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR59">
+        <label>59.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jung</surname>
+              <given-names>J-Y</given-names>
+            </name>
+            <name>
+              <surname>DeLuca</surname>
+              <given-names>TF</given-names>
+            </name>
+            <name>
+              <surname>Nelson</surname>
+              <given-names>TH</given-names>
+            </name>
+            <name>
+              <surname>Wall</surname>
+              <given-names>DP</given-names>
+            </name>
+          </person-group>
+          <article-title>A literature search tool for intelligent extraction of disease-associated genes</article-title>
+          <source>J Am Med Inform Assoc JAMIA</source>
+          <year>2014</year>
+          <volume>21</volume>
+          <fpage>399</fpage>
+          <lpage>405</lpage>
+          <pub-id pub-id-type="doi">10.1136/amiajnl-2012-001563</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR60">
+        <label>60.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xu</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Q</given-names>
+            </name>
+          </person-group>
+          <article-title>Towards building a disease-phenotype knowledge base: extracting disease-manifestation relationship from literature</article-title>
+          <source>Bioinforma Oxf Engl</source>
+          <year>2013</year>
+          <volume>29</volume>
+          <fpage>2186</fpage>
+          <lpage>2194</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btt359</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR61">
+        <label>61.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Gwinn</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Clyne</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Yesupriya</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Khoury</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <article-title>A navigator for human genome epidemiology</article-title>
+          <source>Nat Genet</source>
+          <year>2008</year>
+          <volume>40</volume>
+          <fpage>124</fpage>
+          <lpage>125</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng0208-124</pub-id>
+          <pub-id pub-id-type="pmid">18227866</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR62">
+        <label>62.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kocot</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Citarella</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Moroz</surname>
+              <given-names>LL</given-names>
+            </name>
+            <name>
+              <surname>Halanych</surname>
+              <given-names>KM</given-names>
+            </name>
+          </person-group>
+          <article-title>PhyloTreePruner: A Phylogenetic Tree-Based Approach for Selection of Orthologous Sequences for Phylogenomics</article-title>
+          <source>Evol Bioinforma Online</source>
+          <year>2013</year>
+          <volume>9</volume>
+          <fpage>429</fpage>
+          <lpage>435</lpage>
+          <pub-id pub-id-type="doi">10.4137/EBO.S12813</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR63">
+        <label>63.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Altenhoff</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Dessimoz</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Inferring orthology and paralogy</article-title>
+          <source>Methods Mol Biol Clifton NJ</source>
+          <year>2012</year>
+          <volume>855</volume>
+          <fpage>259</fpage>
+          <lpage>279</lpage>
+          <pub-id pub-id-type="doi">10.1007/978-1-61779-582-4_9</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR64">
+        <label>64.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pryszcz</surname>
+              <given-names>LP</given-names>
+            </name>
+            <name>
+              <surname>Huerta-Cepas</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Gabald&#xF3;n</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>MetaPhOrs: orthology and paralogy predictions from multiple phylogenetic evidence using a consistency-based confidence score</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2011</year>
+          <volume>39</volume>
+          <fpage>e32</fpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkq953</pub-id>
+          <pub-id pub-id-type="pmid">21149260</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

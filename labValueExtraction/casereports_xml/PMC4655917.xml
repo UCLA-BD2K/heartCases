@@ -1,0 +1,1793 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Neuroimage</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Neuroimage</journal-id>
+      <journal-title-group>
+        <journal-title>Neuroimage</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1053-8119</issn>
+      <issn pub-type="epub">1095-9572</issn>
+      <publisher>
+        <publisher-name>Academic Press</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">26342528</article-id>
+      <article-id pub-id-type="pmc">4655917</article-id>
+      <article-id pub-id-type="publisher-id">S1053-8119(15)00778-8</article-id>
+      <article-id pub-id-type="doi">10.1016/j.neuroimage.2015.08.057</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Profiling neuronal ion channelopathies with non-invasive brain imaging and dynamic causal models: Case studies of single gene mutations</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gilbert</surname>
+            <given-names>Jessica R.</given-names>
+          </name>
+          <email>jessg@vtc.vt.edu</email>
+          <xref rid="af0005" ref-type="aff">a</xref>
+          <xref rid="cr0005" ref-type="corresp">&#x204E;</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Symmonds</surname>
+            <given-names>Mkael</given-names>
+          </name>
+          <xref rid="af0010" ref-type="aff">b</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hanna</surname>
+            <given-names>Michael G.</given-names>
+          </name>
+          <xref rid="af0015" ref-type="aff">c</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dolan</surname>
+            <given-names>Raymond J.</given-names>
+          </name>
+          <xref rid="af0020" ref-type="aff">d</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Friston</surname>
+            <given-names>Karl J.</given-names>
+          </name>
+          <xref rid="af0025" ref-type="aff">e</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Moran</surname>
+            <given-names>Rosalyn J.</given-names>
+          </name>
+          <xref rid="af0005" ref-type="aff">a</xref>
+          <xref rid="af0030" ref-type="aff">f</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="af0005"><label>a</label>Virginia Tech Carilion Research Institute, Roanoke, VA 24016, USA</aff>
+      <aff id="af0010"><label>b</label>Nuffield Department of Clinical Neurosciences, John Radcliffe Hospital, Oxford University, Oxford OX3 9DU, UK</aff>
+      <aff id="af0015"><label>c</label>Institute of Neurology, University College London, 9 Queen Square, London WC1N 3BG, UK</aff>
+      <aff id="af0020"><label>d</label>Max Planck UCL Centre for Computational Psychiatry and Ageing Research, Russell Square House, 10-12 Russell Square, London WC1B 5EH, UK</aff>
+      <aff id="af0025"><label>e</label>Wellcome Trust Centre for Neuroimaging, Institute of Neurology, University College London, 12 Queen Square, London WC1N 3BG, UK</aff>
+      <aff id="af0030"><label>f</label>Bradley Department of Electrical and Computer Engineering, Virginia Polytechnic Institute and State University, Blacksburg, VA 24061, USA</aff>
+      <author-notes>
+        <corresp id="cr0005"><label>&#x204E;</label>Corresponding author. <email>jessg@vtc.vt.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="pmc-release">
+        <day>01</day>
+        <month>1</month>
+        <year>2016</year>
+      </pub-date>
+      <!-- PMC Release delay is 0 months and 0 days and was based on <pub-date
+						pub-type="ppub">.-->
+      <pub-date pub-type="ppub">
+        <day>01</day>
+        <month>1</month>
+        <year>2016</year>
+      </pub-date>
+      <volume>124</volume>
+      <issue>Pt A</issue>
+      <fpage>43</fpage>
+      <lpage>53</lpage>
+      <history>
+        <date date-type="received">
+          <day>21</day>
+          <month>5</month>
+          <year>2015</year>
+        </date>
+        <date date-type="accepted">
+          <day>25</day>
+          <month>8</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2015 The Authors</copyright-statement>
+        <copyright-year>2015</copyright-year>
+        <license license-type="CC BY" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Clinical assessments of brain function rely upon visual inspection of electroencephalographic waveform abnormalities in tandem with functional magnetic resonance imaging. However, no current technology proffers in vivo assessments of activity at synapses, receptors and ion-channels, the basis of neuronal communication. Using dynamic causal modeling we compared electrophysiological responses from two patients with distinct monogenic ion channelopathies and a large cohort of healthy controls to demonstrate the feasibility of assaying synaptic-level channel communication non-invasively. Synaptic channel abnormality was identified in both patients (100% sensitivity) with assay specificity above 89%, furnishing estimates of neurotransmitter and voltage-gated ion throughput of sodium, calcium, chloride and potassium. This performance indicates a potential novel application as an adjunct for clinical assessments in neurological and psychiatric settings. More broadly, these findings indicate that biophysical models of synaptic channels can be estimated non-invasively, having important implications for advancing human neuroimaging to the level of non-invasive ion channel assays.</p>
+      </abstract>
+      <abstract abstract-type="author-highlights">
+        <title>Highlights</title>
+        <p>
+          <list list-type="simple">
+            <list-item id="u0005">
+              <label>&#x2022;</label>
+              <p>Dynamic causal modeling (DCM) for M/EEG includes ion channel parameter estimates.</p>
+            </list-item>
+            <list-item id="u0010">
+              <label>&#x2022;</label>
+              <p>Parameter estimates from patients with monogenic ion channelopathies were compared.</p>
+            </list-item>
+            <list-item id="u0015">
+              <label>&#x2022;</label>
+              <p>Synaptic channel abnormality was identified in patients, with specificity above 89%.</p>
+            </list-item>
+            <list-item id="u0020">
+              <label>&#x2022;</label>
+              <p>DCM could serve as a platform for non-invasively assaying brain molecular dynamics.</p>
+            </list-item>
+          </list>
+        </p>
+      </abstract>
+      <kwd-group>
+        <title>Keywords</title>
+        <kwd>Channelopathies</kwd>
+        <kwd>Dynamic causal modeling</kwd>
+        <kwd>Magnetoencephalography</kwd>
+        <kwd>Ion channel signaling</kwd>
+        <kwd>Biophysical models</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s0005">
+      <title>Introduction</title>
+      <p>The balanced flow of ions through synapses is integral to the stability and control of neuronal firing and information transmission in the brain. Abnormalities of ion channels and synaptic function are thought to underlie a range of neurological presentations including seizures, migraine and movement disorders (<xref rid="bb0020" ref-type="bibr">Catterall et al., 2008</xref>), and inform pharmacological treatment strategies (<xref rid="bb0230" ref-type="bibr">Yogeeswari et al., 2004</xref>). Furthermore, a growing body of evidence in psychiatry suggests alterations in simple mechanistic principles, like the ratio of neocortical excitation to inhibition or long-range to local synaptic transmission, could underlie complex disorders including social dysfunction (<xref rid="bb0225" ref-type="bibr">Yizhar et al., 2011</xref>), autism (<xref rid="bb0175" ref-type="bibr">Rubenstein and Merzenich, 2003</xref>) and schizophrenia (<xref rid="bb0080" ref-type="bibr">Jardri and Deneve, 2013</xref>). In animal models of these diseases, tools like optogenetics provide a means to manipulate synaptic transmission, providing a platform to test putative pathophysiological mechanisms in neural circuits (<xref rid="bb0220" ref-type="bibr">Tye and Deisseroth, 2012</xref>). However, there are no current technologies for non-invasively measuring brain function at this level in humans. While limited assessments of neurotransmitter and synaptic receptor levels are feasible with magnetic resonance spectroscopy (<xref rid="bb0035" ref-type="bibr">Dager et al., 2008</xref>) and positron emission tomography (<xref rid="bb0105" ref-type="bibr">Lee and Farde, 2006</xref>), these techniques do not directly measure neuronal function and can be applied only to a limited set of molecules. Here we describe how magnetic event-related fields (ERFs), measured at superconducting sensors around the head, can be fit to a biophysical model of neural circuits to recover potential probabilistic markers of an individual's synaptic function.</p>
+      <p>In this work, we utilize the specificity imparted by single-gene mutation neurological channelopathies (<xref rid="bb0020" ref-type="bibr">Catterall et al., 2008</xref>, <xref rid="bb0070" ref-type="bibr">Hanna, 2006</xref>, <xref rid="bb0100" ref-type="bibr">Kullmann, 2010</xref>) to assess the capability of our model-based assay in the context of magnetoencephalography (MEG). These signals are a close analogue of the electroencephalogram (EEG) and provide proof-of-principle for use in clinical settings, where EEG is widely available. Channelopathies, by virtue of their diverse clinical presentations (<xref rid="bb0020" ref-type="bibr">Catterall et al., 2008</xref>), illustrate how the functional consequence of particular ligand or voltage-gated ion channel dysfunction are neither easily predictable nor strictly amenable to diagnosis via clinical examination (<xref rid="bb0075" ref-type="bibr">Helbig et al., 2008</xref>). For example, patients with monogenic causes of epilepsy, such as generalized epilepsy with febrile seizures caused by mutations in neuronal sodium channels, can present with seizures of variable phenotypes and severities at different ages (<xref rid="bb0205" ref-type="bibr">Singh et al., 1999</xref>). In addition, genetic channel mutations can be partially penetrant, leading to differential interaction characteristics with various genes or with the environment (<xref rid="bb0100" ref-type="bibr">Kullmann, 2010</xref>). Outside of acquired (e.g., autoimmune) and single gene mutations, diagnosis of polygenic channel dysfunction (e.g., associated with idiopathic epilepsy (<xref rid="bb0015" ref-type="bibr">Cannon, 2006</xref>, <xref rid="bb0070" ref-type="bibr">Hanna, 2006</xref>)) using genome or exome sequencing suffers from a complex landscape of allelic risk; where non-affected individuals can harbor mutations in known or suspected epilepsy genes (<xref rid="bb0095" ref-type="bibr">Klassen et al., 2011</xref>). Therefore, patients with primary effectors from &#x201C;mixed&#x201D;, as well as classical single-gene channelopathies could benefit diagnostically and prognostically from the in situ characterization of pre and postsynaptic neuronal cell dynamics. Indeed, in silico computational models of channel variation have been proposed as a crucial bridge between genetics and disease risk or drug responsivity (<xref rid="bb0095" ref-type="bibr">Klassen et al., 2011</xref>).</p>
+      <p>Our work &#x2013; based on dynamic causal modeling (DCM) &#x2013; goes a step further by providing a biophysical model of currents produced by interacting ion channels which are then matched to measurable electromagnetic signals. This means that empirical data can be used to test competing models &#x2014; and the winning model can be optimized for a given individual. DCM was originally designed as an analysis framework for imaging network-level communication in functional magnetic resonance imaging (<xref rid="bb0050" ref-type="bibr">Friston et al., 2003</xref>) and has been developed to infer the synaptic basis of measured electrophysiological signals like those from MEG, EEG and intracranial local field potentials (<xref rid="bb0040" ref-type="bibr">David et al., 2006</xref>). Previously, DCM has been applied in healthy human participants to assess putative synaptic changes induced by pharmacological agents like <sc>l</sc>-DOPA (<xref rid="bb0150" ref-type="bibr">Moran et al., 2011c</xref>) and propofol (<xref rid="bb0010" ref-type="bibr">Boly et al., 2012</xref>). It has also been used in patients to test the contribution of long-range and regionally-specific connections to the vegetative state (<xref rid="bb0005" ref-type="bibr">Boly et al., 2011</xref>).</p>
+      <p>Here, we test sensitivity and specificity of the synaptic ion channel inferences available through electrophysiological DCM, utilizing data from two cases of single-gene mutation channelopathies. In order to test these particular patients we augmented a conductance-based neural mass model (<xref rid="bb0150" ref-type="bibr">Moran et al., 2011c</xref>) of regionally specific sources (<xref rid="bb0065" ref-type="bibr">Garrido et al., 2007</xref>) to include ligand-gated sodium, calcium, and chloride channels &#x2014; as well as voltage-gated potassium and calcium channels (<xref rid="f0005" ref-type="fig">Fig.&#xA0;1</xref>). This augmented model was used to explain auditory-evoked ERFs produced by 94 healthy control participants and 2 patients with known mutations causing loss-of-function in the inward-rectifying potassium channel gene KCNJ2 and in the voltage-gated presynaptic calcium channel gene CACNA1A. Our hope was to show a selective abnormality in the inferred model parameters encoding channel function that was consistent with the known channelopathies.</p>
+    </sec>
+    <sec id="s0020">
+      <title>Materials &amp; methods</title>
+      <sec id="s0025">
+        <title>Participants</title>
+        <p>Healthy control cohort: Ninety-four healthy control subjects participated in the experiment. Subjects ranged in age from 20 to 83 (Mean&#xA0;=&#xA0;46.8&#xA0;years), with 42 male participants. All patients were free from neurological or psychiatric disorders. Patients were recruited from the metropolitan London region.</p>
+        <p>Two patients were recruited through the National Hospital for Neurology and Neurosurgery in London. Patient selection was based on a previous diagnostic confirmation of single-gene mutations. Patient 1 (female, 54&#xA0;years) had a mutation of gene KCNJ2. This gene encodes subunit Kir2.1, which is a potassium inward-rectifying channel (<xref rid="bb0100" ref-type="bibr">Kullmann, 2010</xref>). This patient presented with Andersen&#x2013;Tawil syndrome, having a primary phenotype of periodic paralysis. Patient 2 (female, 45&#xA0;years) had a mutation of gene CACNA1A. This gene encodes subunit &#x3B1;1A of Cav2.1, which impacts calcium neurotransmitter release at synapses (<xref rid="bb0100" ref-type="bibr">Kullmann, 2010</xref>). This patient presented with episodic ataxia (EA type 2). All participants were paid for their participation and provided written and informed consent to all procedures, which were conducted in accordance with the Declaration of Helsinki (1991). Protocols were approved by the South-East Strategic Health Authority Regional NHS Ethics Committee.</p>
+      </sec>
+      <sec id="s0030">
+        <title>MEG acquisition &amp; preprocessing</title>
+        <p>MEG recordings were collected using a 275-channel CTF system with SQUID-based axial gradiometers (VSM MedTech Ltd., Couquitlam, BC, Canada). For each participant, two recording sessions were obtained, with a small rest period between sessions. Head localization was performed prior to each recording session using three energized electrical coils attached to fiducial locations (left and right pre-auricular, nasion). During each session, a passive listening auditory oddball paradigm was administered in which standard (i.e., frequent; 88%) tones of duration 70&#xA0;msec (10&#xA0;msec rise/fall times) and frequency 500&#xA0;Hz were pseudo-randomly interspersed with oddball (i.e., infrequent; 12%) tones of frequency 800&#xA0;Hz. A total of 400 trials were presented per session with an inter-trial interval fixed at 1100&#xA0;msec. Participants were instructed to remain still while fixating to a central cross presented on a screen in front of them during the sessions. This paradigm was found to elicit a prominent mismatch negativity (MMN) response in the healthy controls, computed as the difference between standard and oddball evoked fields at around 150&#xA0;msec peristimulus time (<xref rid="bb0140" ref-type="bibr">Moran et al., 2014</xref>).</p>
+        <p>MEG data were first filtered off-line, band-passed from 0.5&#x2013;30&#xA0;Hz, then down-sampled to 200&#xA0;Hz. ERFs were computed for each participant by first epoching from &#x2212;&#xA0;100&#xA0;msec to 350&#xA0;msec peristimulus time. Epochs were baseline corrected against &#x2212;&#xA0;100&#xA0;msec to 0&#xA0;msec peristimulus time, and artifact corrected using a peak-to-peak threshold of 5&#xA0;pF. Finally, the data were averaged to obtain ERFs. For preprocessing we used the analysis routines available in the academic freeware SPM8 (Wellcome Trust Centre for Neuroimaging, London, UK, <ext-link ext-link-type="uri" xlink:href="http://www.fil.ion.ucl.ac.uk/spm/" id="ir0015">http://www.fil.ion.ucl.ac.uk/spm/</ext-link>).</p>
+      </sec>
+      <sec id="s0035">
+        <title>Model of ion channels</title>
+        <p>We used an augmented neural mass model (NMM) that forms part of the DCM modeling options (listed as the NMM (<xref rid="bb0120" ref-type="bibr">Moran et al., 2013a</xref>)). This is a Morris&#x2013;Lecar like model (<xref rid="bb0155" ref-type="bibr">Morris and Lecar, 1981</xref>) designed to generate neuronal population dynamics from large cell assemblies (<xref rid="bb0115" ref-type="bibr">Marreiros et al., 2009</xref>). This model mimics the net synaptic activity at an active neuronal population, which can be summarized as an equivalent current dipole (<xref rid="f0005" ref-type="fig">Fig.&#xA0;1</xref>A). In our previous work (<xref rid="bb0150" ref-type="bibr">Moran et al., 2011c</xref>), we included active neurotransmitter-specific synaptic responses including ligand-gated excitatory (Na<sup>+</sup>) and inhibitory (Cl<sup>&#x2212;</sup>) ion flow mediated by fast glutamatergic (AMPA) and GABAergic (GABA<sub>A</sub>) receptors respectively, as well as sodium (Na<sup>+</sup>) and calcium (Ca<sup>2&#xA0;+</sup>) currents through voltage-gated NMDA receptors. For the present study, our model included these channels as they have been shown to accurately recapitulate the dynamics of the auditory evoked response (<xref rid="bb0140" ref-type="bibr">Moran et al., 2014</xref>). We further included a passive inward-rectifying potassium (K<sup>+</sup>) channel with a nonlinear membrane depolarization dependency (<xref rid="f0005" ref-type="fig">Figs. 1</xref>B, C) in order to capture the potential channel dysfunction in Patient 1. This channel (KIR) was modeled after Nisenbaum &amp; Wilson (<xref rid="bb0160" ref-type="bibr">Nisenbaum and Wilson, 1995</xref>), with a sigmoidal switch function that scaled the conductance to be maximal at hyperpolarized states, zero at depolarized membrane potentials and 50% at &#x2212;&#xA0;75&#xA0;mV (<xref rid="f0005" ref-type="fig">Fig.&#xA0;1</xref>C). Dynamics were governed by ionic reversal potentials V<italic><sub>ion</sub></italic> with prior values: V<italic><sub>NA</sub></italic>&#xA0;=&#xA0;60&#xA0;mV, V<italic><sub>NA/CA</sub></italic>&#xA0;=&#xA0;60&#xA0;mV, V<italic><sub>Cl</sub></italic>&#xA0;=&#xA0;&#x2212;&#xA0;90&#xA0;mV and V<italic><sub>K</sub></italic>&#xA0;=&#xA0;&#x2212;&#xA0;70&#xA0;mV. Channels were considered with particular receptor or voltage-dependent time constants &#x3C4;<italic><sub>channel</sub></italic> with prior values &#x3C4;<italic><sub>AMPA</sub></italic>&#xA0;=&#xA0;4&#xA0;msec, &#x3C4;<italic><sub>NMDA</sub></italic>&#xA0;=&#xA0;100&#xA0;msec, &#x3C4;<italic><sub>GABA</sub></italic>&#xA0;=&#xA0;<italic>16</italic>&#xA0;msec and &#x3C4;<italic><sub>KIR</sub></italic>&#xA0;=&#xA0;18&#xA0;msec. Crucially each of these channels &#x2013; as well as a leaky potassium current (<italic>K<sub>L</sub></italic>) &#x2013; had scale parameters that controlled their relative influence on the polarization of the postsynaptic membrane: <italic>&#x3B1;</italic><sub><italic>NA</italic>,</sub>
+<italic>&#x3B1;</italic><sub><italic>Cl</italic>,</sub>
+<italic>&#x3B1;</italic><sub><italic>CA/NA</italic>,</sub>
+<italic>&#x3B1;</italic><sub><italic>KL</italic>,</sub> and <italic>&#x3B1;<sub>KIR</sub></italic> (<xref rid="f0005" ref-type="fig">Fig.&#xA0;1</xref>C). These scale values were our key (postsynaptic) parameters of interest and were later tested for patient specific effects, compared to controls. Presynaptically, dynamics were coupled to the postsynaptic ensembles via a sigmoidal activation function, <italic>H</italic> (<xref rid="f0005" ref-type="fig">Fig.&#xA0;1</xref>C), which mimics mean afferent firing rates, and depends on the membrane potential of the afferent cell population (V<sub>pre</sub>), the threshold firing potential (V<sub>thresh</sub>, set to &#x2212;&#xA0;40&#xA0;mV), and the distribution of presynaptic firing rate. To capture the potential channel dysfunction in Patient 2; i.e., a presynaptic calcium mutation, we used the inverse of this afferent firing variance (denoted as &#x3C9;, <xref rid="f0005" ref-type="fig">Fig.&#xA0;1</xref>C) as a proxy. For this parameter, large values represented highly synchronized output, which we assume scales linearly with the availability of presynaptic calcium (<xref rid="f0005" ref-type="fig">Fig.&#xA0;1</xref>C). This is consistent with calcium's role in the synchronization of release of neurotransmitter across active zones (<xref rid="bb0190" ref-type="bibr">Sharma and Vijayaraghavan, 2003</xref>).</p>
+        <p>Each (equivalent current dipole) source of electromagnetic signals comprised three distinct cell populations with canonical intrinsic (within source) connectivity (<xref rid="bb0150" ref-type="bibr">Moran et al., 2011c</xref>). These interacting neuronal populations represented pyramidal cells, inhibitory interneurons and granular-layer spiny-stellate cells (<xref rid="f0005" ref-type="fig">Fig.&#xA0;1</xref>A). Sources received extrinsic inputs from other sources according to plausible anatomical criteria; with forward connections driving spiny stellate cells and backward connections driving pyramidal cells and inhibitory interneurons.</p>
+      </sec>
+      <sec id="s0040">
+        <title>Source localization</title>
+        <p>SPM's multiple sparse priors routine was used to identify the sources of activity in each patient's brain from their sensor-level data over the entire post-stimulus event time (0&#x2013;350&#xA0;msec). Specifically, averaged ERFs for standard and deviant trials were localized to 512 potential mesh points using a variational Bayesian approach following co-registration of fiducial points and sensor positions to a canonical template brain. We used the group inversion option in SPM to localize both sessions together, doing this for each patient individually (shown in <xref rid="f0015" ref-type="fig">Fig.&#xA0;3</xref>). This approach has previously been applied to the MMN response (<xref rid="bb0140" ref-type="bibr">Moran et al., 2014</xref>). No prior constraints on source localization were used and the percent variance of sensor-level data was assessed to ensure a localization solution that accurately recapitulated the topography of sensor data (<xref rid="f0015" ref-type="fig">Fig.&#xA0;3</xref>). Source reconstruction and subsequent DCM analysis (below) was performed using SPM12 (Wellcome Trust Centre for Neuroimaging, London, UK, <ext-link ext-link-type="uri" xlink:href="http://www.fil.ion.ucl.ac.uk/spm" id="ir0020">www.fil.ion.ucl.ac.uk/spm</ext-link>).</p>
+      </sec>
+      <sec id="s0045">
+        <title>DCM</title>
+        <p>The MMN paradigm has been extensively studied in the context of DCM, and so sources and connectivity between regions have already been established (<xref rid="bb0060" ref-type="bibr">Garrido et al., 2008</xref>). The healthy controls used here were previously reported (<xref rid="bb0140" ref-type="bibr">Moran et al., 2014</xref>) to show responses in sources commensurate with <xref rid="bb0060" ref-type="bibr">Garrido et al. (2008)</xref>. These included primary and secondary auditory sources as well as a source in the bilateral prefrontal cortex. Given that these sources were also activated in both patients (<xref rid="f0015" ref-type="fig">Fig.&#xA0;3</xref>), a six-source model of the auditory evoked responses was specified, with the same prior locations in patients and controls (<xref rid="f0020" ref-type="fig">Fig.&#xA0;4</xref>A).</p>
+        <p>Thalamic (stimulus bound) input was modeled with a Gaussian bump function that drove activity in bilateral Heschl's gyrus (HG; primary auditory cortex). The prior expectations of the parameters of this input represented a mean onset of 64&#xA0;msec and duration of 16&#xA0;msec; these were free parameters that account for subject specific differences in peripheral auditory processing. From HG, signals were passed via forward connections to superior temporal gyrus (STG), and from here to the inferior frontal gyrus (IFG) (<xref rid="f0020" ref-type="fig">Fig.&#xA0;4</xref>A). Backward connections ensured recurrent extrinsic connections, with top-down inputs from IFG to STG and STG to HG. The source location priors were based on (<xref rid="bb0140" ref-type="bibr">Moran et al., 2014</xref>) as follows: left HG: x&#xA0;=&#xA0;&#x2212;&#xA0;42, y&#xA0;=&#xA0;&#x2212;&#xA0;22, z&#xA0;=&#xA0;7; right HG: x&#xA0;=&#xA0;46, y&#xA0;=&#xA0;&#x2212;&#xA0;14, z&#xA0;=&#xA0;8; left STG: x&#xA0;=&#xA0;&#x2212;&#xA0;61, y&#xA0;=&#xA0;&#x2212;&#xA0;32, z&#xA0;=&#xA0;8; right STG: x&#xA0;=&#xA0;59, y&#xA0;=&#xA0;&#x2212;&#xA0;25, z&#xA0;=&#xA0;8; left IFG: x&#xA0;=&#xA0;&#x2212;&#xA0;46, y&#xA0;=&#xA0;20, z&#xA0;=&#xA0;8; and right IFG: x&#xA0;=&#xA0;46, y&#xA0;=&#xA0;20, z&#xA0;=&#xA0;8.</p>
+        <p>For our DCM analyses, MEG sensor data were fitted over 1&#x2013;250&#xA0;msec peristimulus time. For computation efficiency, DCMs were computed using each individual's sensor data projected using dimensionality reduction to the eight principal modes of a singular value decomposition of the data covariance, to identify the patterns with the greatest prior covariance given the lead field and source locations. This dimensionality reduction is standard in DCM for electrophysiology (cf (<xref rid="bb0110" ref-type="bibr">Litvak et al., 2011</xref>, <xref rid="bb0140" ref-type="bibr">Moran et al., 2014</xref>)). DCM optimizes a posterior density over free parameters (parameterized by its mean and covariance) via a standard variational Bayesian inversion procedure (<xref rid="bb0045" ref-type="bibr">Friston et al., 2007</xref>). In this application, we were particularly interested in the posterior estimates of channel-specific scale parameters and firing precision as proxy for presynaptic calcium.</p>
+        <p>In order to accommodate both standard and deviant conditions, we allowed for modulatory effects on all extrinsic connections (i.e., forward connections and backward connections). This has previously been shown to characterize the differences in source responses between standard and deviant tones (<xref rid="bb0065" ref-type="bibr">Garrido et al., 2007</xref>). These are often the parameters of interest in DCM studies, however here we were interested in the common neural physiology underlying both conditions (i.e., the weights of each channel on each source).</p>
+        <p>To identify parameter starting estimates, an initial DCM optimization was performed for 188 control recording sessions (94 control subjects &#x2014; with 2 recording sessions). These posterior values were then used to compute the average conditional means across control subjects. This average was then used to initialize a second set of optimizations for the estimation of 192 subject-specific DCMs (188 sessions for control subjects, 4 sessions for channelopathy patients). This initialization ensured that the parameter estimate search began in the same part of parameter space for both patients and controls, and gave initial estimates appropriate to the MMN task.</p>
+        <p>We then examined the mean and variance of the estimated channel parameters. In particular, we focused on six parameters: AMPA receptor-mediated postsynaptic sodium connectivity (<italic>&#x3B1;<sub>NA</sub></italic>), NMDA receptor-mediated postsynaptic calcium and sodium (<italic>&#x3B1;<sub>CA/NA</sub></italic>), GABA<sub>A</sub> receptor-mediated postsynaptic chloride (<italic>&#x3B1;<sub>Cl</sub></italic>), postsynaptic potassium leak (<italic>&#x3B1;<sub>KL</sub></italic>), postsynaptic inward-rectifying potassium (<italic>&#x3B1;<sub>KIR</sub></italic>), and presynaptic calcium (&#x3C9;). We hypothesized that Patient 1 (K<sup>+</sup>) would show a decrease in the mean posterior estimates of the inward-rectifying potassium channel and/or potassium leak, compared to the control cohort estimates and that Patient 2 (Ca<sup>2&#xA0;+</sup>) would show a decrease in the mean posterior estimate of their presynaptic calcium channel.</p>
+      </sec>
+    </sec>
+    <sec id="s0010">
+      <title>Results</title>
+      <sec id="s0050">
+        <title>Mismatch negativity results</title>
+        <p>At the MEG sensor level, we examined evoked responses to MMN standard and deviant tones to assess whether our DCM analysis was informed by an appropriate amount of experimental variance (<xref rid="f0010" ref-type="fig">Fig.&#xA0;2</xref>). Grand-averaged data from the control cohort revealed typical differences between evoked responses to standard and deviant tones, with larger negative responses to deviant tones, maximal from 100&#x2013;150&#xA0;msec (<xref rid="f0010" ref-type="fig">Fig.&#xA0;2</xref>A). Topographically, these effects were pronounced around temporal and frontal sensors bilaterally (<xref rid="f0010" ref-type="fig">Fig.&#xA0;2</xref>A). Differences in these responses (defined as absolute deviations&#xA0;&gt;&#xA0;0.1&#xA0;pF), between patients and controls were investigated in terms of topographic and temporal effects. These were found bilaterally at mid-temporal and posterior sensors for Patient 1 (K<sup>+</sup>) (<xref rid="f0010" ref-type="fig">Fig.&#xA0;2</xref>B), with these effects centered on 100&#xA0;msec and larger for deviant trials (<xref rid="f0010" ref-type="fig">Fig.&#xA0;2</xref>B), with late effects observed in the deviant condition (<xref rid="f0010" ref-type="fig">Fig.&#xA0;2</xref>B). Patient 2 (Ca<sup>2&#xA0;+</sup>) exhibited similar differences focused at mid-temporal and frontal sensors, having more distributed differences temporally, with differential responses in both standard and deviant trials from 200&#x2013;250&#xA0;msec (<xref rid="f0010" ref-type="fig">Fig.&#xA0;2</xref>B). In both patients and controls, differences were observed between standard and deviant tones (<xref rid="f0010" ref-type="fig">Fig.&#xA0;2</xref>C), which were modeled as separate conditions in the DCM. In Patient 1 (K<sup>+</sup>) these differences were seen early (~&#xA0;50&#xA0;msec), mid (~&#xA0;150&#xA0;msec) and later (~&#xA0;250&#xA0;msec) in the trial, while in Patient 2 (Ca<sup>2&#xA0;+</sup>) pronounced differences were observed in mid and later evoked components (<xref rid="f0010" ref-type="fig">Fig.&#xA0;2</xref>C).</p>
+      </sec>
+      <sec id="s0055">
+        <title>Source localization and source dynamics</title>
+        <p>To confirm that patient sources were commensurate with neurotypical responses (<xref rid="bb0140" ref-type="bibr">Moran et al., 2014</xref>), we performed a source localization analysis on each patient and condition (i.e., standard/deviant) individually (<xref rid="f0015" ref-type="fig">Fig.&#xA0;3</xref>). This inverse solution produces probabilistic estimates of activity on a cortical mesh. Consistent with responses in normal controls (<xref rid="bb0060" ref-type="bibr">Garrido et al., 2008</xref>), sources for both patients were obtained in bilateral temporal and inferior frontal regions. <xref rid="f0015" ref-type="fig">Fig.&#xA0;3</xref> presents a maximum intensity projection (MIP) image for each patient and each trial for activity at 100&#xA0;msec. Here, for all 4 inverse solutions, a forward mapping to sensor space explained &gt;&#xA0;95% of variance in measured data. Given appropriate source activity, we then proceeded with a six-source DCM, comprising bilateral primary, secondary and inferior frontal regions (<xref rid="f0020" ref-type="fig">Fig.&#xA0;4</xref>A).</p>
+        <p>From the optimized DCMs we examined the MMN response in each source (not shown). Across cell populations (i.e., excitatory spiny stellate, inhibitory interneuron, and excitatory pyramidal cells), there were no differences in the response properties to standard and oddball tones in primary auditory cortex. Consistent with previous source analyses of the MMN (<xref rid="bb0060" ref-type="bibr">Garrido et al., 2008</xref>, <xref rid="bb0140" ref-type="bibr">Moran et al., 2014</xref>), both left and right A1 showed robust responses to auditory stimuli beginning at approximately 50&#xA0;msec post onset, peaking at approximately 65&#xA0;msec post-onset. Within bilateral STG and IFG we found signature MMN responses (i.e., larger amplitude responses to oddball compared with standard tones) across cell population types. Bilateral STG showed robust responses to both standard and deviant tones beginning at approximately 70&#xA0;msec post-onset, peaking at approximately 100&#xA0;msec post-onset. Bilateral IFG followed a pattern similar to STG, though with a later onset of approximately 100&#xA0;msec post-onset, peaking at approximately 150&#xA0;msec post-onset. This pattern was consistent across patients and controls, suggesting that the DCMs captured the dynamic response properties of neuronal populations for patients across sources in the auditory hierarchy.</p>
+      </sec>
+      <sec id="s0060">
+        <title>Optimized DCMs</title>
+        <p>The goodness of our model fits were assessed in terms of percent variance explained. Specifically, we tested the variance explained of our 8-mode, reduced data space. These model fits ranged from 25.5% to 98.1% for control subjects, with an average of 83.2% of the variance explained. Patient 1 had fits of 94.9% and 94.6% of the variance explained for runs 1 and 2 respectively, while patient 2 had fits of 71.1% and 82.9% respectively. In short, the DCMs, recapitulated both healthy and diseased responses using the model described above, with an average percent variance explained amongst controls of 83.2% (SD&#xA0;=&#xA0;0.1%) and patients of 85.8% (SD&#xA0;=&#xA0;11.31%). In <xref rid="f0020" ref-type="fig">Fig.&#xA0;4</xref>B we show the fits to empirical sensor-level data for the patients. These data were corrected using SPM's default detrend option, which applies a mean correction. Given the poorer fit of session 1 for patient 2 (71.1%), we elected to remove this session from further analysis. Thus, for patient 1 and controls we used between-session mean and variance estimates for further analyses, while for patient 2 we used single-session mean and variance estimates for further analyses.</p>
+        <p>DCM estimates a multivariate (Gaussian) posterior density over free parameters, from which we harvested both the posterior mean and variance of those ion channel parameters of interest &#x2014; from both patients and from all control datasets. These included (log scale) parameters that controlled the relative influence of each individual ion channel on postsynaptic membrane depolarization, including an glutamatergic (AMPA)-mediated sodium channel: <italic><bold>&#x3B1;<sub>NA</sub></bold></italic>, a GABAergic (GABA<sub>A</sub>)-mediated chloride channel: <italic><bold>&#x3B1;<sub>Cl</sub></bold></italic>, an NMDA-mediated sodium/calcium channel: <italic><bold>&#x3B1;<sub>CA/NA</sub></bold></italic>, a leaky potassium channel <italic><bold>&#x3B1;<sub>KL</sub></bold></italic>, and an inward-rectifying potassium channel <italic><bold>&#x3B1;<sub>KIR</sub></bold></italic> (<xref rid="f0005" ref-type="fig">Fig.&#xA0;1</xref>C). We also examined the presynaptic calcium parameter, <bold>&#x3C9;</bold>.</p>
+        <p>Using these parameters of interest, we quantified the within-subject stability of controls' parameter estimates from session 1 to session 2 using the intraclass correlation coefficient (ICC). The ICC describes how strongly two measurements in the same grouping (here, within-subject parameter estimates) resemble each other. Therefore, we directly compared session 1 and session 2 parameter estimates. To control for outliers, we measured the maximum posterior covariances between our six parameters of interest and all of the remaining parameters individually. We then removed control subjects whose DCM estimates showed high covariance between the parameter of interest and all other parameters, retaining 90% of control participants' data. Using this criterion, reliable parameter estimates from session 1 to session 2 were found for both the presynaptic calcium (r&#xA0;=&#xA0;0.29, F&#xA0;=&#xA0;1.8, p&#xA0;&lt;&#xA0;0.01) and leaky potassium (r&#xA0;=&#xA0;0.31, F&#xA0;=&#xA0;1.91, p&#xA0;&lt;&#xA0;0.01) parameters. In addition, the inward-rectifying potassium parameter estimate was found to be reliable from session 1 to 2 using a less stringent criterion (r&#xA0;=&#xA0;0.18, F&#xA0;=&#xA0;1.44, p&#xA0;=&#xA0;0.05). The receptor-mediated parameters demonstrated lower between-session stability measures (AMPA-mediated sodium parameter: r&#xA0;=&#xA0;0.05, F&#xA0;=&#xA0;1.11, p&#xA0;=&#xA0;0.12; GABA<sub>A</sub>-mediated chloride parameter: r&#xA0;=&#xA0;0.14, F&#xA0;=&#xA0;1.33, p&#xA0;=&#xA0;0.12; NMDA-mediated sodium/calcium parameter: r&#xA0;=&#xA0;0.144, F&#xA0;=&#xA0;1.34, p&#xA0;=&#xA0;0.11). These findings suggest moderate to high levels of consistency between sessions for our control group.</p>
+        <p>Having established the accuracy of DCM estimates, we then addressed our hypotheses from two points of view. First, we asked whether there were any significant differences between the two patients and the control group using classical inference at the between-subject level. Second, we asked the more pragmatic question of whether the parameter estimates from DCM could be used to classify the patients based upon their known pathophysiology (i.e., Patient 1: K<sup>+</sup> postsynaptic inward-rectifying ion channel mutation; Patient 2: presynaptic Ca<sup>2&#xA0;+</sup> ion channel mutation).</p>
+      </sec>
+      <sec id="s0065">
+        <title>Detecting pathology</title>
+        <p>Our first analysis used the standard summary statistic approach to summarize each participant with the posterior expectations of the parameters of interest (coefficients scaling channel-specific dynamics: <italic><bold>&#x3B1;<sub>NA</sub></bold></italic>, <italic><bold>&#x3B1;<sub>Cl</sub></bold></italic>, <italic><bold>&#x3B1;<sub>CA/NA</sub></bold></italic>, <italic><bold>&#x3B1;<sub>KL</sub></bold></italic>, <italic><bold>&#x3B1;<sub>KIR</sub></bold></italic>, <bold>&#x3C9;</bold>, <xref rid="f0005" ref-type="fig">Fig.&#xA0;1</xref>C). To do this, we averaged the parameter estimates over both sessions (to remove within-subject variance) and used canonical variates analysis (CVA) to test the null hypothesis that the parameter estimates from the patients and control group were drawn from the same distribution. CVA can be thought of as a simple extension of ANOVA that accommodates multivariate response variables; here, the six parameters of interest. Our explanatory variables (or design matrix) included the patient effect relative to the controls, and an average control effect. The significance of differences between patient and control group were assessed for each patient separately using the appropriate transform of Wilks Lambda. Differences between the patient and group were tested with an <italic>F</italic> contrast. This analysis identified two significant canonical variates, confirming a multi-dimensional independence between the control group and patients (Patient 1: r&#xA0;=&#xA0;0.96, p&#xA0;&lt;&#xA0;0.01; Patient 2: r&#xA0;=&#xA0;0.96, p&#xA0;&lt;&#xA0;0.01), i.e., they were not drawn from the same distribution. As a first pass, these findings suggest that the DCM parameter estimates vary between patients and control participants, suggesting unusual signaling dynamics for our two patients.</p>
+        <p>Having determined that the six estimated parameters of interest varied between patients and controls, we then tested specificity for control data across channels using a leave-one-out cross-validation, where a control parameter was removed from the average density and compared to the average density from the remaining participants. This analysis allowed us to determine whether specific channels within our large control sample could be classified as exhibiting unusual ion channel parameter estimates. At a threshold of P&#xA0;&gt;&#xA0;0.90 probable difference level, this procedure yielded a true negative rate of 95.7% for rectifying potassium and 93.6% for our assay of presynaptic calcium. In addition, specificity was tested for the receptor systems of non-assayed channels, and returned a true negative rate of 89.3% for leaky potassium, 96.8% for the NMDA receptor-mediated sodium/calcium channel, 94.6% for the AMPA receptor-mediated sodium channel, and 94.6% for the GABA<sub>A</sub> receptor-mediated chloride channel. Thus, this analysis suggests high specificity rates for detecting negative results in our control group using the posterior estimates from our parameters of interest.</p>
+      </sec>
+      <sec id="s0070">
+        <title>Detecting specific channel mutations</title>
+        <p>We then asked how sensitive the patient estimates from the parameters of interest were in detecting aberrant dynamics. Specifically we computed the average control probability density and compared this to the conditional density from each patient separately. We used the non-overlapping probability density to quantify the difference in parameter estimates. Here, we successfully identified a mutated potassium channel &#x2013; the leak potassium channel (<italic><bold>&#x3B1;<sub>KL</sub></bold></italic>) &#x2013; as abnormal in Patient 1 with a sensitivity of 100%. In addition to this channel, the test also showed abnormality in the AMPA receptor-mediated sodium channel (<italic><bold>&#x3B1;<sub>NA</sub></bold></italic>) and the presynaptic calcium channel (<bold>&#x3C9;</bold>). No other channels showed sensitivity differences for Patient 1. For Patient 2, this same analysis did not identify abnormal parameter estimates in the mutated presynaptic calcium channel, however the GABA<sub>A</sub> receptor-mediated channel parameter estimates (<italic><bold>&#x3B1;<sub>Cl</sub></bold></italic>) were identified as abnormal. No other channels showed sensitivity differences for Patient 2. These findings suggest that the DCM parameter estimates alone point to abnormal ion channel signaling dynamics in both patients. Though there is a stronger case for identification of the pathological channel in Patient 1 than Patient 2, Patient 2 exhibited enhanced hyperpolarizing currents, consistent with reduced synaptic transmission characteristic of this mutation's physiological effect (<xref rid="bb0165" ref-type="bibr">Pietrobon, 2005</xref>). Importantly, Patient 1 had a mutation in their postsynaptic channel, and these dynamics are modeled to a much greater extent than presynaptic dynamics (<xref rid="f0005" ref-type="fig">Fig.&#xA0;1</xref>C). For our analysis, we used a measure of afferent firing variance as a proxy for presynaptic calcium. However, we did not add a specific ion channel denoting presynaptic calcium to our model. This might account for the lack of identification of presynaptic calcium signaling difficulties for Patient 2, though the test did identify differences in at least one ion channel.</p>
+      </sec>
+      <sec id="s0075">
+        <title>Diagnostic implementation</title>
+        <p>As a further analysis strategy, we addressed the utility of the parameter estimates in classifying patients. Although we only had one patient diagnosed with mutations in each ion channel, it was possible to construct receiver&#x2013;operator curves characterizing the sensitivity and specificity of classification. For this we constructed a control average Gaussian probability density function using the overall subject mean and between-subject variability as the mean and variance of the control group respectively. For the patients we used the average within-subject variability from the controls (i.e., variance between the two sessions) as a measure of patient variance, along with the estimated patient mean. These are illustrated for controls versus Patient 1 in <xref rid="f0025" ref-type="fig">Fig.&#xA0;5</xref>A and for controls versus Patient 2 in <xref rid="f0030" ref-type="fig">Fig.&#xA0;6</xref>A. We then computed a receiver operating characteristic (ROC) for the postsynaptic potassium leak parameter, <italic><bold>&#x3B1;<sub>KL</sub></bold></italic>, as well as for the presynaptic calcium parameter, <bold>&#x3C9;</bold>. In other words, we examined sensitivity and specificity for mutated parameter estimates using a decision threshold from the midpoint of controls versus patients and scaled the decision threshold from one tenth to twice this value (<xref rid="bb0085" ref-type="bibr">Johnson, 2004</xref>). The resulting ROC curves were summarized with their area under the curve (AUC). A value of 1 means perfect sensitivity for all levels of specificity, while a value of a half represents a poor test where sensitivity is equal to specificity. The ability of each mutated ion channel parameter to discriminate between patients and controls was assessed separately. For Patient 1 compared to controls, the leaky potassium parameter <italic><bold>&#x3B1;<sub>KL</sub></bold></italic>, produced an AUC of 0.94 (<xref rid="f0025" ref-type="fig">Fig.&#xA0;5</xref>B) and for Patient 2 compared to controls, the presynaptic calcium parameter estimate <bold>&#x3C9;</bold> produced an AUC&#xA0;=&#xA0;0.76 (<xref rid="f0030" ref-type="fig">Fig.&#xA0;6</xref>B). Clearly, these analyses do not represent a true cross-validation (because we only had one patient for each patient group); however they represent a quantitative assessment of the classification performance that could, in principle, be obtained given the within and between-subject variances in parameter estimates.</p>
+        <p>In order to illustrate the selective nature of these parameter differences, we plotted the Bayesian confidence interval (posterior mean plus and minus one standard deviation) as an ellipsoid for three ion channel parameters for every control session set and for each patient (<xref rid="f0025" ref-type="fig">Figs.&#xA0;5</xref>C, <xref rid="f0030" ref-type="fig">6</xref>C). As shown in <xref rid="f0025" ref-type="fig">Figs.&#xA0;5</xref>C and <xref rid="f0030" ref-type="fig">6</xref>C, the patients can be seen as outliers along the potassium dimension for Patient 1 (<italic><bold>&#x3B1;<sub>KL</sub></bold></italic>) (red ellipsoid, <xref rid="f0025" ref-type="fig">Fig.&#xA0;5</xref>C) and along the chloride/presynaptic calcium dimensions for Patient 2 (<bold><italic>&#x3B1;<sub>Cl</sub></italic>/&#x3C9;</bold>) (green ellipsoid, <xref rid="f0030" ref-type="fig">Fig.&#xA0;6</xref>C). The ellipsoid plot for Patient 1 clearly demonstrates that their leaky potassium parameter estimate represents an outlier from controls. The ellipsoid plot of Patient 2 also demonstrates that their GABA<sub>A</sub>-mediated chloride parameter estimate is an outlier, while their presynaptic calcium parameter estimate lies in the negative quartile.</p>
+      </sec>
+    </sec>
+    <sec id="s0015">
+      <title>Discussion</title>
+      <p>These results demonstrate that biophysical models of synaptic channels can be estimated using non-invasive magnetoencephalographic responses to simple auditory stimuli. Moreover these DCM results highlight that the model of synaptic activity has validity in relation to underlying neurobiological processes, with abnormal posterior ranges identified for ion channels concordant with genetic mutations in two patients with distinct channelopathies.</p>
+      <p>At present, the diagnosis, prognosis and treatment of ion channelopathies is impeded by the phenotypic heterogeneity of disease manifestation, the necessity of a high degree of clinical suspicion, and significant time delays associated with confirming test results (<xref rid="bb0015" ref-type="bibr">Cannon, 2006</xref>, <xref rid="bb0070" ref-type="bibr">Hanna, 2006</xref>, <xref rid="bb0100" ref-type="bibr">Kullmann, 2010</xref>). In addition, mounting evidence points to the likelihood that polygenic channel dysfunction underlies disorders considered until now idiopathic (<xref rid="bb0015" ref-type="bibr">Cannon, 2006</xref>, <xref rid="bb0070" ref-type="bibr">Hanna, 2006</xref>). Finally, autoimmune channelopathies, a special case of acquired channelopathies, can present with diverse clinical symptoms, including encephalitis accompanied by psychiatric symptoms (<xref rid="bb0055" ref-type="bibr">Gable et al., 2009</xref>), sleep disturbances (<xref rid="bb0215" ref-type="bibr">Tsutsui et al., 2012</xref>), and even memory impairments (<xref rid="bb0200" ref-type="bibr">Shimazaki et al., 2007</xref>). These diverse clinical presentations render it desirable for clinicians to have an inexpensive tool &#x2014; offering a first-pass means of narrowing the range of diagnoses or directing genetic sequencing efforts. The developments presented here offer promise for such an assay, given that mismatch auditory responses are easily observed in EEG data, collected routinely in clinical settings. Importantly, DCMs with similar ion channel parameterization and regional distribution have previously been applied and tested using EEG-generated auditory evoked responses (<xref rid="bb0005" ref-type="bibr">Boly et al., 2011</xref>). Such an in vivo strategy would also aid in clinical diagnosis by providing a functional assay which incorporates putative compensatory and environmental interactions with the underlying channel dysfunction.</p>
+      <p>DCM is a modeling framework that provides a mechanistic estimation of how measured signals (here, cortical electrophysiological) are generated. To date, clinical assessments of channelopathies in vivo have focused on peripheral electrophysiological abnormalities measured using electromyography and nerve conduction analysis (<xref rid="bb0210" ref-type="bibr">Tomlinson et al., 2009</xref>). Motivated by epilepsy coincidence, the EEG has also been characterized as abnormal in patients similar to our Patient 2, with mutations in CACNA1A gene, where mixed patterns of slowing and spike and wave activity have been observed in scalp potentials (<xref rid="bb0025" ref-type="bibr">Chan et al., 2008</xref>). Our approach differs from these analyses by eschewing examination of morphological characteristics of patient data directly. Indeed, our findings demonstrate that sensor and source-level evoked responses show a characteristic MMN response to standard and deviant tones in patients as well as controls. However DCM models the waveform in its entirety, and does not rest on topological or trial differences. Rather a full generative model &#x2013; designed to capture contributions from different ion channels with distinct time constants and voltage or neurotransmitter gating &#x2014; is applied to explain multichannel responses over all peristimulus time.</p>
+      <p>The models we apply have been motivated by in vitro characterizations of neuronal channel dynamics. As proof-of-principle that DCM can identify abnormal dynamics with some channel specificity, we have applied an augmented neural mass model to patients with known ion channel signaling dysfunction. Previous in vitro characterizations of cells with mutated channels have demonstrated a net loss of function associated with presynaptic calcium and potassium channel gene mutations, leading to impaired high-frequency spiking (<xref rid="bb0170" ref-type="bibr">Plomp et al., 2009</xref>) and impaired repolarization respectively (<xref rid="bb0090" ref-type="bibr">Jongsma and Wilders, 2001</xref>). Importantly, given just ERFs collected from non-invasive electrophysiological recordings our models identify probabilistic abnormalities in estimated parameters encoding these types of cellular mechanisms. While demonstrating exact specificity of the DCM channel estimates will require larger samples, our results demonstrate that different synaptic parameters are associated with distinct mutations in a direction commensurate with physiological effects measured in vitro. Interestingly in Patient 1, our model identified abnormality in the leak potassium (<italic>KL</italic>) rather than the rectifying potassium channel (<italic>KIR</italic>). However, functionally both channels operate with the same basic I&#x2013;V characteristic and with identical reversal potentials but with <italic>KIR</italic> exhibiting higher conductance than <italic>KL</italic> at highly hyperpolarized states (<xref rid="bb0195" ref-type="bibr">Shen et al., 2007</xref>). Our choice of dynamic parameterization &#x2014; which gated this <italic>KIR</italic> channel to operate only at hyperpolarized states (<xref rid="f0005" ref-type="fig">Fig.&#xA0;1</xref>C), may account for this apparent discrepancy since our model weighted contributions from only leak potassium at depolarization above &#x2212;&#xA0;75&#xA0;mV. Put another way, it is likely that both channels have highly similar dynamic characteristics in the voltage range excited by our task, and perhaps cannot be dissociated by the DCM (<xref rid="bb0195" ref-type="bibr">Shen et al., 2007</xref>).</p>
+      <p>While our model of rectifying potassium may be slightly over-constrained, our model's parameterization of presynaptic calcium is most likely under-constrained. This is reflected in its poor performance in terms of diagnostic sensitivity and specificity. Previous work has shown that this parameter can produce profound effects on the characteristics of an evoked response (<xref rid="bb0135" ref-type="bibr">Moran et al., 2011a</xref>) and is also likely to reflect activity of other &#x2018;gain control&#x2019; mechanisms like classical neuromodulatory effects at cholinergic receptors (<xref rid="bb0125" ref-type="bibr">Moran et al., 2013b</xref>). We used the afferent firing variance in our DCM model as a proxy for a measure of presynaptic calcium, and we assumed that highly synchronized values presynaptically would scale linearly with the amount of presynaptic calcium. However, our results indicate that this measure did not show sensitivity in Patient 2. Thus, our model would benefit from more constraints presynaptically, in order to accurately reflect specific ion channel signaling dynamics of the presynaptic membrane. However the physiological loss-of-function seen in genetic CACNA1A knock-out animals is commensurate with the postsynaptic channel effect we observed in this patient (<xref rid="bb0165" ref-type="bibr">Pietrobon, 2005</xref>).</p>
+      <p>In terms of a clinically pragmatic diagnostic test, we tested two 6-minute sessions from each patient. This was important given that one session in Patient 2 produced poor model fits (~&#xA0;70% variance explained). However, considering an either/or approach, at least one session was optimized to levels consistent with those of control DCMs, suggesting there was no bias in model fits due to ion channel signaling differences between groups. Overall, these findings indicate DCM offers an effective tool for determining specific postsynaptic ion channel signaling deficits in vivo, and that more constraints on presynaptic ion channel signaling could lead to a similarly precise measurement. It is important to note that we have modeled pathological ion channel signaling using patients with known genetic defects in specified ion channels. It remains to be seen whether our assay could be applied to patients with potentially unknown ion channel signaling pathology and whether the type of DCMs presented here could be used to identify the underlying abnormalities. For example, heterogeneous channel dysfunction is hypothesized to underlie a range of psychiatric and neurological disorders as diverse as schizophrenia (<xref rid="bb0080" ref-type="bibr">Jardri and Deneve, 2013</xref>) and migraine (<xref rid="bb0025" ref-type="bibr">Chan et al., 2008</xref>). Recent research has applied DCM to measure the role of systemic excitatory and inhibitory intrinsic connectivity in seizures related to NMDA-receptor encephalitis (<xref rid="bb0030" ref-type="bibr">Cooray et al., 2015</xref>). In this autoimmune disorder, symptoms of psychosis often precede seizure activity. However, diagnosis via EEG using traditional metrics does not provide the specificity of a DCM-type investigation. It is conceivable that the type of analysis we demonstrate here could be applied in an ambulatory setting, to test for a pathological antibody cause. In this vein, research using DCM for electrophysiology has begun to explore the role of NMDA and cholinergic channel dysfunction in the development of schizophrenia using a ketamine model in both animal (<xref rid="bb0130" ref-type="bibr">Moran et al., 2015</xref>) and human (<xref rid="bb0130" ref-type="bibr">Moran et al., 2015</xref>, <xref rid="bb0180" ref-type="bibr">Schmidt et al., 2012</xref>, <xref rid="bb0185" ref-type="bibr">Schmidt et al., 2013</xref>) studies. These studies converge on altered plasticity mechanisms related to NMDA receptor activity, and further suggest an aberrancy (hyperexcitability) of fast synaptic responses that may impede learning. Together these studies demonstrate two advantages of DCM. First, they hold promise for uncovering unknown channel pathology in complex diseases. Second, they provide a platform where animal studies can be complemented with human investigations using identical analysis and parametric frameworks. Given the high sensitivity and specificity found here, we are optimistic that the models of synaptic function can be combined with more developed model comparisons to quantify subtle differences in the synaptic effectors of a particular clinical patient presentation. For example, we envision that the parameter setting identified in our control population could serve as a new set of prior parameters for DCM and that single or multiple parameter differences from normal could be tested using Bayesian model comparison and reduced model space.</p>
+      <p>We have illustrated how a biophysically informed analysis like DCM allows for the characterization of recorded signals, in terms of clinically meaningful model parameters, with representations of specific ion channels that mediate neuronal dynamics (<xref rid="bb0150" ref-type="bibr">Moran et al., 2011c</xref>). While we know that &#x2018;ground truth&#x2019; in EEG and MEG are those data recorded directly from electrodes and sensors, a neural mass model analysis like DCM allows a richer characterization of the recorded signal, with representations of specific ion species and the channels by which they subserve neural communication (<xref rid="bb0145" ref-type="bibr">Moran et al., 2011b</xref>). Interrogating data with highly constrained models thus allows an efficient estimation of key model parameters that are potentially very useful in a clinical setting &#x2014; i.e., parameters that can be linked mechanistically to known pathophysiological mechanisms. In conclusion, the refinement of model parameters of ion channel dynamics in DCM for electrophysiology could ultimately lead to the use of EEG or MEG measurements as a novel adjunct in the treatment of patients with suspected ion channel dysfunction.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="bb0005">
+        <element-citation publication-type="journal" id="rf0005">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boly</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Garrido</surname>
+              <given-names>M.I.</given-names>
+            </name>
+            <name>
+              <surname>Gosseries</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Bruno</surname>
+              <given-names>M.A.</given-names>
+            </name>
+            <name>
+              <surname>Boveroux</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Schnakers</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Massimini</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Litvak</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Laureys</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Preserved feedforward but impaired top-down processes in the vegetative state</article-title>
+          <source>Science</source>
+          <volume>332</volume>
+          <year>2011</year>
+          <fpage>858</fpage>
+          <lpage>862</lpage>
+          <pub-id pub-id-type="pmid">21566197</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0010">
+        <element-citation publication-type="journal" id="rf0010">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boly</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Moran</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Murphy</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Boveroux</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Bruno</surname>
+              <given-names>M.A.</given-names>
+            </name>
+            <name>
+              <surname>Noirhomme</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Ledoux</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Bonhomme</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Brichant</surname>
+              <given-names>J.F.</given-names>
+            </name>
+            <name>
+              <surname>Tononi</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Connectivity changes underlying spectral EEG changes during propofol-induced loss of consciousness</article-title>
+          <source>J. Neurosci.</source>
+          <volume>32</volume>
+          <year>2012</year>
+          <fpage>7082</fpage>
+          <lpage>7090</lpage>
+          <pub-id pub-id-type="pmid">22593076</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0015">
+        <element-citation publication-type="journal" id="rf0015">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cannon</surname>
+              <given-names>S.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Pathomechanisms in channelopathies of skeletal muscle and brain</article-title>
+          <source>Annu. Rev. Neurosci.</source>
+          <volume>29</volume>
+          <year>2006</year>
+          <fpage>387</fpage>
+          <lpage>415</lpage>
+          <pub-id pub-id-type="pmid">16776591</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0020">
+        <element-citation publication-type="journal" id="rf0020">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Catterall</surname>
+              <given-names>W.A.</given-names>
+            </name>
+            <name>
+              <surname>Dib-Hajj</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Meisler</surname>
+              <given-names>M.H.</given-names>
+            </name>
+            <name>
+              <surname>Pietrobon</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Inherited neuronal ion channelopathies: new windows on complex neurological diseases</article-title>
+          <source>J. Neurosci.</source>
+          <volume>28</volume>
+          <year>2008</year>
+          <fpage>11768</fpage>
+          <lpage>11777</lpage>
+          <pub-id pub-id-type="pmid">19005038</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0025">
+        <element-citation publication-type="journal" id="rf0025">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chan</surname>
+              <given-names>Y.-C.</given-names>
+            </name>
+            <name>
+              <surname>Burgunder</surname>
+              <given-names>J.-M.</given-names>
+            </name>
+            <name>
+              <surname>Wilder-Smith</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Chew</surname>
+              <given-names>S.-E.</given-names>
+            </name>
+            <name>
+              <surname>Lam-Mok-Sing</surname>
+              <given-names>K.M.</given-names>
+            </name>
+            <name>
+              <surname>Sharma</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Ong</surname>
+              <given-names>B.K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Electroencephalographic changes and seizures in familial hemiplegic migraine patients with the <italic>CACNA1A</italic> gene S218L mutation</article-title>
+          <source>J. Clin. Neurosci.</source>
+          <volume>15</volume>
+          <year>2008</year>
+          <fpage>891</fpage>
+          <lpage>894</lpage>
+          <pub-id pub-id-type="pmid">18313928</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0030">
+        <element-citation publication-type="journal" id="rf0030">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cooray</surname>
+              <given-names>G.K.</given-names>
+            </name>
+            <name>
+              <surname>Sengupta</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Douglas</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Englund</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Wickstrom</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Characterising seizures in anti-NMDA-receptor encephalitis with dynamic causal modelling</article-title>
+          <source>NeuroImage</source>
+          <volume>118</volume>
+          <year>2015</year>
+          <fpage>508</fpage>
+          <lpage>519</lpage>
+          <pub-id pub-id-type="pmid">26032883</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0035">
+        <element-citation publication-type="journal" id="rf0035">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dager</surname>
+              <given-names>S.R.</given-names>
+            </name>
+            <name>
+              <surname>Oskin</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Richards</surname>
+              <given-names>T.L.</given-names>
+            </name>
+            <name>
+              <surname>Posse</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Research applications of magnetic resonance spectroscopy (MRS) to investigate psychiatric disorders</article-title>
+          <source>Top. Magn. Reson. Imaging</source>
+          <volume>19</volume>
+          <year>2008</year>
+          <fpage>81</fpage>
+          <pub-id pub-id-type="pmid">19363431</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0040">
+        <element-citation publication-type="journal" id="rf0040">
+          <person-group person-group-type="author">
+            <name>
+              <surname>David</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Kilner</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Mechanisms of evoked and induced responses in MEG/EEG</article-title>
+          <source>NeuroImage</source>
+          <volume>31</volume>
+          <year>2006</year>
+          <fpage>1580</fpage>
+          <lpage>1591</lpage>
+          <pub-id pub-id-type="pmid">16632378</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0045">
+        <element-citation publication-type="journal" id="rf0045">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Mattout</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Trujillo-Barreto</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Ashburner</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Penny</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Variational free energy and the Laplace approximation</article-title>
+          <source>NeuroImage</source>
+          <volume>34</volume>
+          <year>2007</year>
+          <fpage>220</fpage>
+          <lpage>234</lpage>
+          <pub-id pub-id-type="pmid">17055746</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0050">
+        <element-citation publication-type="journal" id="rf0050">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Harrison</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Penny</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic causal modelling</article-title>
+          <source>NeuroImage</source>
+          <volume>19</volume>
+          <year>2003</year>
+          <fpage>1273</fpage>
+          <lpage>1302</lpage>
+          <pub-id pub-id-type="pmid">12948688</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0055">
+        <element-citation publication-type="journal" id="rf0055">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gable</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Gavali</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Radner</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Tilley</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Dyner</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Collins</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Dengel</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Dalmau</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Glaser</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Anti-NMDA receptor encephalitis: report of ten cases and comparison with viral encephalitis</article-title>
+          <source>Eur. J. Clin. Microbiol. Infect. Dis.</source>
+          <volume>28</volume>
+          <year>2009</year>
+          <fpage>1421</fpage>
+          <lpage>1429</lpage>
+          <pub-id pub-id-type="pmid">19718525</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0060">
+        <element-citation publication-type="journal" id="rf0060">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Garrido</surname>
+              <given-names>M.I.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Kiebel</surname>
+              <given-names>S.J.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Baldeweg</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Kilner</surname>
+              <given-names>J.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>The functional anatomy of the MMN: a DCM study of the roving paradigm</article-title>
+          <source>NeuroImage</source>
+          <volume>42</volume>
+          <year>2008</year>
+          <fpage>936</fpage>
+          <lpage>944</lpage>
+          <pub-id pub-id-type="pmid">18602841</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0065">
+        <element-citation publication-type="journal" id="rf0065">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Garrido</surname>
+              <given-names>M.I.</given-names>
+            </name>
+            <name>
+              <surname>Kilner</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Kiebel</surname>
+              <given-names>S.J.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Evoked brain responses are generated by feedback loops</article-title>
+          <source>Proc. Natl. Acad. Sci. U. S. A.</source>
+          <volume>104</volume>
+          <year>2007</year>
+          <fpage>20961</fpage>
+          <lpage>20966</lpage>
+          <pub-id pub-id-type="pmid">18087046</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0070">
+        <element-citation publication-type="journal" id="rf0070">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hanna</surname>
+              <given-names>M.G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic neurological channelopathies</article-title>
+          <source>Nat. Clin. Pract. Neurol.</source>
+          <volume>2</volume>
+          <year>2006</year>
+          <fpage>252</fpage>
+          <lpage>263</lpage>
+          <pub-id pub-id-type="pmid">16932562</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0075">
+        <element-citation publication-type="journal" id="rf0075">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Helbig</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Scheffer</surname>
+              <given-names>I.E.</given-names>
+            </name>
+            <name>
+              <surname>Mulley</surname>
+              <given-names>J.C.</given-names>
+            </name>
+            <name>
+              <surname>Berkovic</surname>
+              <given-names>S.F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Navigating the channels and beyond: unravelling the genetics of the epilepsies</article-title>
+          <source>Lancet Neurol.</source>
+          <volume>7</volume>
+          <year>2008</year>
+          <fpage>231</fpage>
+          <lpage>245</lpage>
+          <pub-id pub-id-type="pmid">18275925</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0080">
+        <element-citation publication-type="journal" id="rf0080">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jardri</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Deneve</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Circular inferences in schizophrenia</article-title>
+          <source>Brain</source>
+          <volume>136</volume>
+          <year>2013</year>
+          <fpage>3227</fpage>
+          <lpage>3241</lpage>
+          <pub-id pub-id-type="pmid">24065721</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0085">
+        <element-citation publication-type="journal" id="rf0085">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Johnson</surname>
+              <given-names>N.P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Advantages to transforming the receiver operating characteristic (ROC) curve into likelihood ratio co&#x2010;ordinates</article-title>
+          <source>Stat. Med.</source>
+          <volume>23</volume>
+          <year>2004</year>
+          <fpage>2257</fpage>
+          <lpage>2266</lpage>
+          <pub-id pub-id-type="pmid">15236429</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0090">
+        <element-citation publication-type="journal" id="rf0090">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jongsma</surname>
+              <given-names>H.J.</given-names>
+            </name>
+            <name>
+              <surname>Wilders</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Channelopathies: Kir2. 1 mutations jeopardize many cell functions</article-title>
+          <source>Curr. Biol.</source>
+          <volume>11</volume>
+          <year>2001</year>
+          <fpage>R747</fpage>
+          <lpage>R750</lpage>
+          <pub-id pub-id-type="pmid">11566119</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0095">
+        <element-citation publication-type="journal" id="rf0095">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Klassen</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Davis</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Goldman</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Burgess</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Wheeler</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>McPherson</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Bourquin</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Lewis</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Villasana</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Exome sequencing of ion channel genes reveals complex profiles confounding personal risk assessment in epilepsy</article-title>
+          <source>Cell</source>
+          <volume>145</volume>
+          <year>2011</year>
+          <fpage>1036</fpage>
+          <lpage>1048</lpage>
+          <pub-id pub-id-type="pmid">21703448</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0100">
+        <element-citation publication-type="journal" id="rf0100">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kullmann</surname>
+              <given-names>D.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Neurological channelopathies</article-title>
+          <source>Annu. Rev. Neurosci.</source>
+          <volume>33</volume>
+          <year>2010</year>
+          <fpage>151</fpage>
+          <lpage>172</lpage>
+          <pub-id pub-id-type="pmid">20331364</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0105">
+        <element-citation publication-type="journal" id="rf0105">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>C.-M.</given-names>
+            </name>
+            <name>
+              <surname>Farde</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Using positron emission tomography to facilitate CNS drug development</article-title>
+          <source>Trends Pharmacol. Sci.</source>
+          <volume>27</volume>
+          <year>2006</year>
+          <fpage>310</fpage>
+          <lpage>316</lpage>
+          <pub-id pub-id-type="pmid">16678917</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0110">
+        <element-citation publication-type="journal" id="rf0110">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Litvak</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Mattout</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Kiebel</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Phillips</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Henson</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Kilner</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Barnes</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Oostenveld</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Daunizeau</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Flandin</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Penny</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>EEG and MEG data analysis in SPM8</article-title>
+          <source>Comput. Intell. Neurosci.</source>
+          <volume>2011</volume>
+          <year>2011</year>
+          <fpage>852961</fpage>
+          <pub-id pub-id-type="pmid">21437221</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0115">
+        <element-citation publication-type="journal" id="rf0115">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marreiros</surname>
+              <given-names>A.C.</given-names>
+            </name>
+            <name>
+              <surname>Kiebel</surname>
+              <given-names>S.J.</given-names>
+            </name>
+            <name>
+              <surname>Daunizeau</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Harrison</surname>
+              <given-names>L.M.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Population dynamics under the Laplace assumption</article-title>
+          <source>NeuroImage</source>
+          <volume>44</volume>
+          <year>2009</year>
+          <fpage>701</fpage>
+          <lpage>714</lpage>
+          <pub-id pub-id-type="pmid">19013532</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0120">
+        <element-citation publication-type="journal" id="rf0120">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moran</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Pinotsis</surname>
+              <given-names>D.A.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Neural masses and fields in dynamic causal modeling</article-title>
+          <source>Front. Comput. Neurosci.</source>
+          <volume>7</volume>
+          <year>2013</year>
+        </element-citation>
+      </ref>
+      <ref id="bb0125">
+        <element-citation publication-type="journal" id="rf0125">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moran</surname>
+              <given-names>R.J.</given-names>
+            </name>
+            <name>
+              <surname>Campo</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Symmonds</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Dolan</surname>
+              <given-names>R.J.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Free energy, precision and learning: the role of cholinergic neuromodulation</article-title>
+          <source>J. Neurosci.</source>
+          <volume>33</volume>
+          <year>2013</year>
+          <fpage>8227</fpage>
+          <lpage>8236</lpage>
+          <pub-id pub-id-type="pmid">23658161</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0130">
+        <element-citation publication-type="journal" id="rf0130">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moran</surname>
+              <given-names>R.J.</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>M.W.</given-names>
+            </name>
+            <name>
+              <surname>Blockeel</surname>
+              <given-names>A.J.</given-names>
+            </name>
+            <name>
+              <surname>Adams</surname>
+              <given-names>R.A.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Losing control under ketamine: suppressed cortico-hippocampal drive following acute ketamine in rats</article-title>
+          <source>Neuropsychopharmacology</source>
+          <volume>40</volume>
+          <year>2015</year>
+          <fpage>268</fpage>
+          <lpage>277</lpage>
+          <pub-id pub-id-type="pmid">25053181</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0135">
+        <element-citation publication-type="journal" id="rf0135">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moran</surname>
+              <given-names>R.J.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Dolan</surname>
+              <given-names>R.J.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Consistent spectral predictors for dynamic causal models of steady-state responses</article-title>
+          <source>NeuroImage</source>
+          <volume>55</volume>
+          <year>2011</year>
+          <fpage>1694</fpage>
+          <lpage>1708</lpage>
+          <pub-id pub-id-type="pmid">21238593</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0140">
+        <element-citation publication-type="journal" id="rf0140">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moran</surname>
+              <given-names>R.J.</given-names>
+            </name>
+            <name>
+              <surname>Symmonds</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Dolan</surname>
+              <given-names>R.J.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>The brain ages optimally to model its environment: evidence from sensory learning over the adult lifespan</article-title>
+          <source>PLoS Comput. Biol.</source>
+          <volume>10</volume>
+          <year>2014</year>
+          <object-id pub-id-type="publisher-id">e1003422</object-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0145">
+        <element-citation publication-type="journal" id="rf0145">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moran</surname>
+              <given-names>R.J.</given-names>
+            </name>
+            <name>
+              <surname>Symmonds</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Dolan</surname>
+              <given-names>R.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>An in vivo assay of synaptic function mediating human cognition</article-title>
+          <source>Curr. Biol.</source>
+          <volume>21</volume>
+          <year>2011</year>
+          <fpage>1320</fpage>
+          <lpage>1325</lpage>
+          <pub-id pub-id-type="pmid">21802302</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0150">
+        <element-citation publication-type="journal" id="rf0150">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moran</surname>
+              <given-names>R.J.</given-names>
+            </name>
+            <name>
+              <surname>Symmonds</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Dolan</surname>
+              <given-names>R.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>An in vivo assay of synaptic function mediating human cognition</article-title>
+          <source>Curr. Biol.</source>
+          <volume>21</volume>
+          <year>2011</year>
+          <fpage>1320</fpage>
+          <lpage>1325</lpage>
+          <pub-id pub-id-type="pmid">21802302</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0155">
+        <element-citation publication-type="journal" id="rf0155">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Morris</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Lecar</surname>
+              <given-names>H.</given-names>
+            </name>
+          </person-group>
+          <article-title>Voltage oscillations in the barnacle giant muscle fiber</article-title>
+          <source>Biophys. J.</source>
+          <volume>35</volume>
+          <year>1981</year>
+          <fpage>193</fpage>
+          <lpage>213</lpage>
+          <pub-id pub-id-type="pmid">7260316</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0160">
+        <element-citation publication-type="journal" id="rf0160">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nisenbaum</surname>
+              <given-names>E.S.</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>C.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Potassium currents responsible for inward and outward rectification in rat neostriatal spiny projection neurons</article-title>
+          <source>J. Neurosci.</source>
+          <volume>15</volume>
+          <year>1995</year>
+          <fpage>4449</fpage>
+          <lpage>4463</lpage>
+          <pub-id pub-id-type="pmid">7790919</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0165">
+        <element-citation publication-type="journal" id="rf0165">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pietrobon</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Function and dysfunction of synaptic calcium channels: insights from mouse models</article-title>
+          <source>Curr. Opin. Neurobiol.</source>
+          <volume>15</volume>
+          <year>2005</year>
+          <fpage>257</fpage>
+          <lpage>265</lpage>
+          <pub-id pub-id-type="pmid">15922581</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0170">
+        <element-citation publication-type="journal" id="rf0170">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Plomp</surname>
+              <given-names>J.J.</given-names>
+            </name>
+            <name>
+              <surname>van den Maagdenberg</surname>
+              <given-names>A.M.</given-names>
+            </name>
+            <name>
+              <surname>Kaja</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>The ataxic Cacna1a-mutant mouse rolling Nagoya: an overview of neuromorphological and electrophysiological findings</article-title>
+          <source>Cerebellum</source>
+          <volume>8</volume>
+          <year>2009</year>
+          <fpage>222</fpage>
+          <lpage>230</lpage>
+          <pub-id pub-id-type="pmid">19484318</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0175">
+        <element-citation publication-type="journal" id="rf0175">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rubenstein</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Merzenich</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Model of autism: increased ratio of excitation/inhibition in key neural systems</article-title>
+          <source>Genes Brain Behav.</source>
+          <volume>2</volume>
+          <year>2003</year>
+          <fpage>255</fpage>
+          <lpage>267</lpage>
+          <pub-id pub-id-type="pmid">14606691</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0180">
+        <element-citation publication-type="journal" id="rf0180">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schmidt</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Bachmann</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Kometer</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Csomor</surname>
+              <given-names>P.A.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Seifritz</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Vollenweider</surname>
+              <given-names>F.X.</given-names>
+            </name>
+          </person-group>
+          <article-title>Mismatch negativity encoding of prediction errors predicts S-ketamine-induced cognitive impairments</article-title>
+          <source>Neuropsychopharmacology</source>
+          <volume>37</volume>
+          <year>2012</year>
+          <fpage>865</fpage>
+          <lpage>875</lpage>
+          <pub-id pub-id-type="pmid">22030715</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0185">
+        <element-citation publication-type="journal" id="rf0185">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schmidt</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Diaconescu</surname>
+              <given-names>A.O.</given-names>
+            </name>
+            <name>
+              <surname>Kometer</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Vollenweider</surname>
+              <given-names>F.X.</given-names>
+            </name>
+          </person-group>
+          <article-title>Modeling ketamine effects on synaptic plasticity during the mismatch negativity</article-title>
+          <source>Cereb. Cortex</source>
+          <volume>23</volume>
+          <year>2013</year>
+          <fpage>2394</fpage>
+          <lpage>2406</lpage>
+          <pub-id pub-id-type="pmid">22875863</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0190">
+        <element-citation publication-type="journal" id="rf0190">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sharma</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Vijayaraghavan</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Modulation of presynaptic store calcium induces release of glutamate and postsynaptic firing</article-title>
+          <source>Neuron</source>
+          <volume>38</volume>
+          <year>2003</year>
+          <fpage>929</fpage>
+          <lpage>939</lpage>
+          <pub-id pub-id-type="pmid">12818178</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0195">
+        <element-citation publication-type="journal" id="rf0195">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shen</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Tian</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Day</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Ulrich</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Tkatch</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Nathanson</surname>
+              <given-names>N.M.</given-names>
+            </name>
+            <name>
+              <surname>Surmeier</surname>
+              <given-names>D.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Cholinergic modulation of Kir2 channels selectively elevates dendritic excitability in striatopallidal neurons</article-title>
+          <source>Nat. Neurosci.</source>
+          <volume>10</volume>
+          <year>2007</year>
+          <fpage>1458</fpage>
+          <lpage>1466</lpage>
+          <pub-id pub-id-type="pmid">17906621</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0200">
+        <element-citation publication-type="journal" id="rf0200">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shimazaki</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Ando</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Nakano</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Dalmau</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Reversible limbic encephalitis with antibodies against the membranes of neurones of the hippocampus</article-title>
+          <source>J. Neurol. Neurosurg. Psychiatry</source>
+          <volume>78</volume>
+          <year>2007</year>
+          <fpage>324</fpage>
+          <lpage>325</lpage>
+          <pub-id pub-id-type="pmid">17308294</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0205">
+        <element-citation publication-type="journal" id="rf0205">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Singh</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Scheffer</surname>
+              <given-names>I.E.</given-names>
+            </name>
+            <name>
+              <surname>Crossland</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Berkovic</surname>
+              <given-names>S.F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Generalized epilepsy with febrile seizures plus: a common childhood-onset genetic epilepsy syndrome</article-title>
+          <source>Ann. Neurol.</source>
+          <volume>45</volume>
+          <year>1999</year>
+          <fpage>75</fpage>
+          <lpage>81</lpage>
+          <pub-id pub-id-type="pmid">9894880</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0210">
+        <element-citation publication-type="journal" id="rf0210">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tomlinson</surname>
+              <given-names>S.E.</given-names>
+            </name>
+            <name>
+              <surname>Hanna</surname>
+              <given-names>M.G.</given-names>
+            </name>
+            <name>
+              <surname>Kullmann</surname>
+              <given-names>D.M.</given-names>
+            </name>
+            <name>
+              <surname>Veronica Tan</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Burke</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Clinical neurophysiology of the episodic ataxias: Insights into ion channel dysfunction in vivo</article-title>
+          <source>Clin. Neurophysiol.</source>
+          <volume>120</volume>
+          <year>2009</year>
+          <fpage>1768</fpage>
+          <lpage>1776</lpage>
+          <pub-id pub-id-type="pmid">19734086</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0215">
+        <element-citation publication-type="journal" id="rf0215">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tsutsui</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Kanbayashi</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Tanaka</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Boku</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Ito</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Tokunaga</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Mori</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Hishikawa</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Shimizu</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Nishino</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Anti-NMDA-receptor antibody detected in encephalitis, schizophrenia, and narcolepsy with psychotic features</article-title>
+          <source>BMC Psychiatry</source>
+          <volume>12</volume>
+          <year>2012</year>
+          <fpage>37</fpage>
+          <pub-id pub-id-type="pmid">22569157</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0220">
+        <element-citation publication-type="journal" id="rf0220">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tye</surname>
+              <given-names>K.M.</given-names>
+            </name>
+            <name>
+              <surname>Deisseroth</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Optogenetic investigation of neural circuits underlying brain disease in animal models</article-title>
+          <source>Nat. Rev. Neurosci.</source>
+          <volume>13</volume>
+          <year>2012</year>
+          <fpage>251</fpage>
+          <lpage>266</lpage>
+          <pub-id pub-id-type="pmid">22430017</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0225">
+        <element-citation publication-type="journal" id="rf0225">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yizhar</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Fenno</surname>
+              <given-names>L.E.</given-names>
+            </name>
+            <name>
+              <surname>Prigge</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Schneider</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Davidson</surname>
+              <given-names>T.J.</given-names>
+            </name>
+            <name>
+              <surname>O'Shea</surname>
+              <given-names>D.J.</given-names>
+            </name>
+            <name>
+              <surname>Sohal</surname>
+              <given-names>V.S.</given-names>
+            </name>
+            <name>
+              <surname>Goshen</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Finkelstein</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Paz</surname>
+              <given-names>J.T.</given-names>
+            </name>
+            <name>
+              <surname>Stehfest</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Fudim</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Ramakrishnan</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Huguenard</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Hegemann</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Deisseroth</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Neocortical excitation/inhibition balance in information processing and social dysfunction</article-title>
+          <source>Nature</source>
+          <volume>477</volume>
+          <year>2011</year>
+          <fpage>171</fpage>
+          <lpage>178</lpage>
+          <pub-id pub-id-type="pmid">21796121</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bb0230">
+        <element-citation publication-type="journal" id="rf0230">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yogeeswari</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Ragavendran</surname>
+              <given-names>J.V.</given-names>
+            </name>
+            <name>
+              <surname>Thirumurugan</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Saxena</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Sriram</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Ion channels as important targets for antiepileptic drug design</article-title>
+          <source>Curr. Drug Targets</source>
+          <volume>5</volume>
+          <year>2004</year>
+          <fpage>589</fpage>
+          <lpage>602</lpage>
+          <pub-id pub-id-type="pmid">15473249</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <ack id="ac0005">
+      <title>Acknowledgments</title>
+      <p>This work was supported by the <funding-source id="gts0005">Wellcome Trust</funding-source>. RD holds a Senior Investigator Award (098362/Z/12/Z): The Wellcome Trust Centre for Neuroimaging is supported by core funding from the Wellcome Trust (091593/Z/10/Z).</p>
+      <p>MGH is supported by an <funding-source id="gts0010">MRC Centre Grant</funding-source> MR/K000608/1MR/K000608/1 and by the <funding-source id="gts0020">UCLH Biomedical Research Centre</funding-source>. RJM is supported by a <funding-source id="gts0015">VTCRI</funding-source> start-up grant.</p>
+    </ack>
+  </back>
+  <floats-group>
+    <fig id="f0005">
+      <label>Fig.&#xA0;1</label>
+      <caption>
+        <p>Properties of the dynamic causal model.</p>
+        <p>A. For the DCM, three populations of neurons are used to model the activity of a given source of electromagnetic signals. These populations, including spiny stellate cells, pyramidal cells and inhibitory interneurons, are associated with cortical layers by virtue of their intrinsic connectivity &#x2014; where layer IV stellates receive forward inputs, and supra and infragranular pyramidal cells and inhibitory interneurons are the targets of backward connections. B. The population dynamics are approximated by a mean field reduction, where average channel properties control the synaptic activity at each population of cells (<xref rid="bb0115" ref-type="bibr">Marreiros et al., 2009</xref>). This synaptic activity represents neurotransmitter and voltage-gated ion channels with distinct dynamics. C. The channels include a glutamatergic AMPA-mediated sodium channel, a glutamatergic NMDA-mediated sodium and calcium channel, a GABA<sub>A</sub> mediated chloride channel, a leak potassium channel and an inward rectifying potassium channel. C. The dynamics at each population are formally described by a set of coupled differential equations where changes in postsynaptic depolarization (dV/dt) are governed by the dynamics of these channels with weights &#x3B1; and time constants &#x3C4;. Reversal potential (V<sub>ion</sub>) determines the direction of current flow. Channel conductance (<italic>g</italic>) have time constants &#x3C4;, and are dependent on presynaptic firing <italic>H</italic>, which is a function of presynaptic membrane potential (<italic>V<sub>pre</sub></italic>) and the threshold potential (<italic>V<sub>thresh</sub></italic>). The inward rectifying potassium channel (right, in red) is gated to produce maximal conductance at hyperpolarized states.</p>
+      </caption>
+      <graphic xlink:href="gr1"/>
+    </fig>
+    <fig id="f0010">
+      <label>Fig.&#xA0;2</label>
+      <caption>
+        <p>Sensor level responses to auditory tones.</p>
+        <p>A. Grand averaged event related fields from the control group illustrate the mismatch negativity effect. Specifically, larger negative potentials are recorded over temporal (inset) and frontal sites for infrequent deviant tones (ERF in green) compared to responses to frequent standard tones (ERF in blue).</p>
+        <p>B. Deviations from the grand-averaged control data (defined as absolute deviations&#xA0;&gt;&#xA0;0.1&#xA0;pF) were identified for both patients. Differences (greater than 0.1&#xA0;pF) are plotted from 0 to 1 in gray scale (normalized to the maximum difference, illustrated in white) for the standard and deviant tones separately, with topological effects illustrated in the bottom panel and temporal effects in the upper panels. For Patient 1, bilateral differences were observed over temporal and posterior sites around 100&#xA0;msec with extended differences for deviant tones. For Patient 2 bilateral effects extended to frontal regions and were dispersed across the trial for both stimulation types.</p>
+        <p>C. Butterfly plots &#x2013; that show responses over all the sensors &#x2013; demonstrate that controls and patients exhibit differences between standard and deviant event-related responses and were hence modeled as separate trials in the DCM, following (<xref rid="bb0140" ref-type="bibr">Moran et al., 2014</xref>). These responses were detrended using a first order discrete cosine transform.</p>
+      </caption>
+      <graphic xlink:href="gr2"/>
+    </fig>
+    <fig id="f0015">
+      <label>Fig.&#xA0;3</label>
+      <caption>
+        <p>Source localized event related responses.</p>
+        <p>An inverse solution constrained via a multiple sparse priors identified bilateral sources of activity in both patients at temporal and frontal sites for both trial types. Illustrated here are the MIPs (maximum intensity projection images from each subject at 100&#xA0;msec). For Patient 1, 96% of the sensor data variance (jet-scale insert) was explained for both trial types using a 512-dipole mesh. For Patient 2, 95% of the sensor data was explained for both trial types using a 512-dipole mesh.</p>
+      </caption>
+      <graphic xlink:href="gr3"/>
+    </fig>
+    <fig id="f0020">
+      <label>Fig.&#xA0;4</label>
+      <caption>
+        <p>Fig.&#xA0;4 optimized dynamic causal models.</p>
+        <p>A. The event related fields were modeled in source space using a DCM that comprised 6 sources. These were bilateral Heschl's gyrus (HG), bilateral superior temporal gyrus (STG), and bilateral inferior frontal gyrus (IFG). Sources were connected reciprocally with forward connections from HG to STG and STG to IFG and backward connections from IFG to STG and STG to HG within-hemisphere. B. Two dimensional images representing the sensor based data. Data are adjusted using SPM's standard confounds (spm/toolbox/dcm_meeg/spm_dcm_erp_data.m), i.e., we removed the first component of a discrete cosine transform basis set, effectively mean correcting the sensor data. On the right panels are the optimized DCM-based fits. The model recapitulated the topography and temporal features in each patient's trial-specific response.</p>
+      </caption>
+      <graphic xlink:href="gr4"/>
+    </fig>
+    <fig id="f0025">
+      <label>Fig.&#xA0;5</label>
+      <caption>
+        <p>Patient 1 (K<sup>+</sup>) vs. Controls, DCM conditional parameter estimates.</p>
+        <p>A. DCM channel estimates: illustrated are the controls' average Gaussian probability density function (PDF) &#x2014; computed using the overall subject mean and between-subject variability as the mean and variance of the control group respectively. Individual channel estimates are plotted against the average estimate of Patient 1, where the patient PDF used the average within-subject variability from the controls as a measure of patient variance. B. Receiver operating characteristic demonstrating the sensitivity and specificity of the test on the potassium leak parameter. By altering the decision threshold from the midpoint of the population means (from one-tenth to twice this value), the area under the curve (AUC) was found to be 0.94. C. Ellipsoids (Bayesian confidence regions) drawn to represent three posterior channel weights (AMPA mediated sodium, NMDA mediated sodium/calcium and leak potassium) from each DCM with Patient 1 (K&#xA0;+) in red. Consistent with the average probability statistic in A, the patient is an outlier on the negative side of the potassium channel axis (red).</p>
+      </caption>
+      <graphic xlink:href="gr5"/>
+    </fig>
+    <fig id="f0030">
+      <label>Fig.&#xA0;6</label>
+      <caption>
+        <p>Patient 2 (Ca<sup>2&#xA0;+</sup>) vs. Controls, DCM conditional parameter estimates.</p>
+        <p>A. As in <xref rid="f0025" ref-type="fig">Fig.&#xA0;5</xref>, we compared the average probability density across channel parameters from the control cohort (dashed lines) to the second calcium channelopathy patient with a presynaptic calcium mutation (full lines). B. Receiver operating characteristic demonstrating the sensitivity and specificity of the test on the presynaptic calcium channel parameter with an AUC&#xA0;=&#xA0;0.76. C. Ellipsoids (Bayesian confidence intervals) drawn to represent three posterior channel weights (AMPA-mediated sodium, GABA-mediated chloride and presynaptic calcium) from each DCM with Patient 2 (Ca<sup>2&#xA0;+</sup>) identified in green. This patient was classified as abnormal along the chloride channel dimension.</p>
+      </caption>
+      <graphic xlink:href="gr6"/>
+    </fig>
+  </floats-group>
+</article>
+</pmc-articleset>

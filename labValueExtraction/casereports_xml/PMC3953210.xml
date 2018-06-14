@@ -1,0 +1,999 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24625750</article-id>
+      <article-id pub-id-type="pmc">3953210</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-13-44973</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0090894</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Genomics</subject>
+              <subj-group>
+                <subject>Genome Sequencing</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Genetic Mutation</subject>
+              <subj-group>
+                <subject>Mutation Types</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Human Genetics</subject>
+              <subj-group>
+                <subject>Chromosomal Disorders</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Cytogenetics</subject>
+              <subject>Genetics of Disease</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genomics</subject>
+            <subj-group>
+              <subject>Genomic Medicine</subject>
+              <subj-group>
+                <subject>Genetic Testing</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Genome Sequencing</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Neuroscience</subject>
+            <subj-group>
+              <subject>Developmental Neuroscience</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Clinical Genetics</subject>
+            <subj-group>
+              <subject>Chromosomal Disorders</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Neurology</subject>
+            <subj-group>
+              <subject>Developmental and Pediatric Neurology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Pediatrics</subject>
+            <subj-group>
+              <subject>Developmental and Pediatric Neurology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Sequencing of a Patient with Balanced Chromosome Abnormalities and Neurodevelopmental Disease Identifies Disruption of Multiple High Risk Loci by Structural Variation</article-title>
+        <alt-title alt-title-type="running-head">Multiple High Risk Loci Disrupted in Patient with NDD</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Blake</surname>
+            <given-names>Jonathon</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Riddell</surname>
+            <given-names>Andrew</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="fn1">
+            <sup>&#xA4;</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Theiss</surname>
+            <given-names>Susanne</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gonzalez</surname>
+            <given-names>Alexis Perez</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Haase</surname>
+            <given-names>Bettina</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Jauch</surname>
+            <given-names>Anna</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Janssen</surname>
+            <given-names>Johannes W. G.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ibberson</surname>
+            <given-names>David</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pavlinic</surname>
+            <given-names>Dinko</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Moog</surname>
+            <given-names>Ute</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Benes</surname>
+            <given-names>Vladimir</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Runz</surname>
+            <given-names>Heiko</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Genomics Core Facility, EMBL Heidelberg, Heidelberg, Germany</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Flow Cytometry Core Facility, EMBL Heidelberg, Heidelberg, Germany</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Institute of Human Genetics, University of Heidelberg, Heidelberg, Germany</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>CellNetworks Sequencing Core Facility, University of Heidelberg, Heidelberg, Germany</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>Molecular Medicine Partnership Unit (MMPU), University of Heidelberg/EMBL, Heidelberg, Germany</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>El-Maarri</surname>
+            <given-names>Osman</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>University of Bonn, Institute of Experimental Hematology and Transfusion Medicine, Germany</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>runz@uni-heidelberg.de</email></corresp>
+        <fn fn-type="conflict">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: JB HR AR VB. Performed the experiments: JB HR AR AG DP BH DI JJ ST. Analyzed the data: JB HR. Contributed reagents/materials/analysis tools: HR VB UM AJ. Wrote the paper: HR JB.</p>
+        </fn>
+        <fn id="fn1" fn-type="current-aff">
+          <label>&#xA4;</label>
+          <p>Current address: Wellcome Trust-MRC Stem Cell Institute, University of Cambridge, Cambridge, United Kingdom</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>13</day>
+        <month>3</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>9</volume>
+      <issue>3</issue>
+      <elocation-id>e90894</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>3</day>
+          <month>11</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>6</day>
+          <month>2</month>
+          <year>2014</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2014</copyright-year>
+        <copyright-holder>Blake et al</copyright-holder>
+        <license>
+          <license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Balanced chromosome abnormalities (BCAs) occur at a high frequency in healthy and diseased individuals, but cost-efficient strategies to identify BCAs and evaluate whether they contribute to a phenotype have not yet become widespread. Here we apply genome-wide mate-pair library sequencing to characterize structural variation in a patient with unclear neurodevelopmental disease (NDD) and complex <italic>de novo</italic> BCAs at the karyotype level. Nucleotide-level characterization of the clinically described BCA breakpoints revealed disruption of at least three NDD candidate genes (<italic>LINC00299</italic>, <italic>NUP205</italic>, <italic>PSMD14</italic>) that gave rise to abnormal mRNAs and could be assumed as disease-causing. However, unbiased genome-wide analysis of the sequencing data for cryptic structural variation was key to reveal an additional submicroscopic inversion that truncates the schizophrenia- and bipolar disorder-associated brain transcription factor <italic>ZNF804A</italic> as an equally likely NDD-driving gene. Deep sequencing of fluorescent-sorted wild-type and derivative chromosomes confirmed the clinically undetected BCA. Moreover, deep sequencing further validated a high accuracy of mate-pair library sequencing to detect structural variants larger than 10 kB, proposing that this approach is powerful for clinical-grade genome-wide structural variant detection. Our study supports previous evidence for a role of <italic>ZNF804A</italic> in NDD and highlights the need for a more comprehensive assessment of structural variation in karyotypically abnormal individuals and patients with neurocognitive disease to avoid diagnostic deception.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>The study was supported through project no. A28 of the European Union-supported programme INTERREG IV. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="11"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Structural variants (SVs) including copy-number variants (CNVs), inversions and translocations are a major contributor to human genetic variation and neurodevelopmental disease (NDD). <xref rid="pone.0090894-Currall1" ref-type="bibr">[1]</xref> Among the most frequent SVs are <italic>de novo</italic> balanced chromosome rearrangements (BCAs) that occur in approximately 0.2% of all newborns and in most cases are unrelated to clinical phenotypes. <xref rid="pone.0090894-Ravel1" ref-type="bibr">[2]</xref>&#x2013;<xref rid="pone.0090894-Gardner1" ref-type="bibr">[3]</xref> However, <italic>de novo</italic> BCA carriers show an about 2-fold increased risk to develop intellectual disability, multiple congenital anomalies, and autism spectrum disorders as in many instances BCAs disrupt genes with important roles in neurodevelopment and brain function. <xref rid="pone.0090894-Marshall1" ref-type="bibr">[4]</xref>&#x2013;<xref rid="pone.0090894-Talkowski1" ref-type="bibr">[5]</xref> With this, BCAs pose a particular challenge to prenatal genetic counselling <xref rid="pone.0090894-Talkowski2" ref-type="bibr">[6]</xref> and diagnostics of NDD.</p>
+      <p>It is generally assumed that the contribution of BCAs to neurocognitive disease could prove to be considerably higher if routine clinical procedures allowed for an easy BCA detection. Yet, BCAs are typically identified by laborious low-resolution methods such as karyotyping and fluorescence <italic>in situ</italic> hybridization (FISH). Recently, mate-pair library sequencing has been introduced as a powerful approach to characterize the breakpoints of clinically-identified BCAs at nucleotide resolution or query the genome for submicroscopic SVs. <xref rid="pone.0090894-Talkowski1" ref-type="bibr">[5]</xref>&#x2013;<xref rid="pone.0090894-Kloosterman1" ref-type="bibr">[10]</xref> Genome-wide mate-pair library sequencing relies on the joining and capture of distant sequences on the identical DNA-strand, followed by paired-end sequencing of the joined chimeric fragments. The resulting high spanning coverage of the entire genome enables SV detection with a high sensitivity and at moderate sequencing costs. <xref rid="pone.0090894-Talkowski3" ref-type="bibr">[9]</xref> Importantly, application of genome-wide mate-pair library sequencing to individuals with BCAs and NDD revealed a previously unknown complexity of chromosome rearrangements in the vicinity of the breakpoints and beyond. <xref rid="pone.0090894-Talkowski1" ref-type="bibr">[5]</xref>, <xref rid="pone.0090894-Kloosterman1" ref-type="bibr">[10]</xref> This suggests that in some patients disruption of genes outside the clinically described BCAs could contribute to their respective neurodevelopmental phenotype.</p>
+      <p>Here we describe a patient where complex BCAs disrupt at least six genes, several of which are candidates for NDD. Of these, we show that the brain transcription factor and likely disease-relevant gene <italic>ZNF804A</italic> resides in a cryptic inversion that was beneath the resolution of routine clinical analyses and was only identified by sequencing. Our study demonstrates the power of genome-wide mate-pair library sequencing to derive reliable catalogues of clinically undetected SVs. It further highlights the need for a more comprehensive assessment of structural variation in individuals with chromosome aberrations and/or neurocognitive disorders to avoid diagnostic deception.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <p>We applied genome-wide mate-pair library sequencing to characterize structural variation in a male patient with neurodevelopmental disabilities and apparently balanced <italic>de novo</italic> chromosomal rearrangements (see Methods for clinical details). Karyotyping of chromosomes isolated from the patient&#x2019;s blood lymphocytes identified two major <italic>de novo</italic> and apparently balanced chromosome rearrangements: a reciprocal translocation between chromosomes 2 and 7 involving bands p25.1 and q32 respectively; and a large pericentric inversion on the derivative chromosome 2 [der(2)] (<xref ref-type="fig" rid="pone-0090894-g001"><bold>Figure 1A</bold></xref>), without signs of additional numerical or structural aberrations [46,XY,t(2;7)(p25.1;q32)inv(2)(p25q31)dn] (<bold><xref ref-type="supplementary-material" rid="pone.0090894.s001">Figure S1</xref></bold>). Comparative genome-hybridization analysis using Affymetrix 6.0 SNP-arrays (Affymetrix, Santa Clara, CA, USA) excluded CNVs larger than 100 kB, suggesting that the chromosome rearrangements observed at karyotypic resolution were apparently balanced.</p>
+      <fig id="pone-0090894-g001" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0090894.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Base-pair level characterization of clinically-identified <italic>de novo</italic> balanced chromosome abnormality (BCAs).</title>
+          <p>(A) Chromosomes 2 and 7 of the patient as visualized by GTG-banding. Breakpoint positions of BCAs reported from clinical analyses at karyotype level are indicated in red. (B,C) Graphical representation of anomalous-read (red dots) fusion positions for t(2;7) (B) and the paracentric inv(2) (C). Based on mate-pair library sequencing-identified gap positions primers were designed to amplify and validate anomalous regions by PCR and capillary sequencing at base-pair level. (D) Validation of re-annotated t(2;7) breakpoint positions by FISH with BAC-probes binding immediately adjacent to re-defined translocation sites.</p>
+        </caption>
+        <graphic xlink:href="pone.0090894.g001"/>
+      </fig>
+      <p>In order to evaluate disease-relevance of these SVs we mapped the breakpoints at higher resolution using genome-wide mate-pair library sequencing <xref rid="pone.0090894-Korbel1" ref-type="bibr">[7]</xref>, <xref rid="pone.0090894-Talkowski3" ref-type="bibr">[9]</xref>. Patient recruitment protocols were approved by the institutional review board of Heidelberg University and the family&#x2019;s informed consent was obtained. Genomic DNA of the patient was captured using Illumina 5 kb mate-pair sample prep kits according to the manufacturer&#x2019;s instructions (Illumina, San Diego, CA, USA). In brief, distant sequences on the same DNA-strand were joined by circularization, and the purified joined fragments were paired-end sequenced on a single lane of Genome Analyzer IIx (Illumina). With median insert sizes of 5,012 bp this protocol generated 28.2 million read-pairs, resulting in a theoretical genome-wide spanning read-depth of 25.9-fold that enabled detection of SVs with a high sensitivity (see Methods for details on sequence analysis).</p>
+      <p>A total of 30 discordant reads allowed us to narrow the breakpoints of the reciprocal translocation t(2;7) to 1,393 bp on der(2) and 970 bp on der(7) (<xref ref-type="fig" rid="pone-0090894-g001"><bold>Figure 1B</bold></xref>). PCR amplification of the chimeric regions followed by capillary sequencing validated the mate-pair data and revealed breakpoints at positions chr2&#x2236;8,181,790 and chr7&#x2236;135,245,984 (GRCh37/hg19). Both breakpoints carried the adenine at position chr2&#x2236;8,181,790 while the cytosine on chr7&#x2236;135,245,985 was lost. Apart from this 1 bp indel the rearrangements were balanced, with no signs of further SVs in the proximity of the breakpoints. The pericentric inversion inv(2) was successfully identified by 22 centromere-spanning discordant reads that localized the breakpoints within 4,703 bp on the p-arm and 3,490 bp on the q-arm of der(2) (<xref ref-type="fig" rid="pone-0090894-g001"><bold>Figure 1C</bold></xref>). Capillary sequencing confirmed 1 bp insertions both at chr2&#x2236;162,196,595 and chr2&#x2236;22,350,265, with the adenines at the respective positions present at either side of the inversion. Again, no evidence was found for further rearrangements at or near the inversion sites. Overall, the pericentric inversion encompassed a genomic region of 139,846,330 bp.</p>
+      <p>Failure to amplify the chimeric fragments in DNA from the patient&#x2019;s parents confirmed that both, the translocation as well as the pericentric inversion had occurred <italic>de novo</italic> (<xref ref-type="fig" rid="pone-0090894-g001"><bold>Figure 1B,C</bold></xref>). As observed previously <xref rid="pone.0090894-Talkowski1" ref-type="bibr">[5]</xref>, sequencing considerably revised the clinically predicted karyotype (<xref ref-type="table" rid="pone-0090894-t001"><bold>Table 1</bold></xref>). FISH analysis with BAC-probes binding immediately adjacent to the newly-identified translocation breakpoints confirmed that the revised translocation sites were correct (<xref ref-type="fig" rid="pone-0090894-g001"><bold>Figure 1D</bold></xref>). Taken together, even at a low sequencing read-depth as applied here, mate-pair library sequencing permitted us to unambiguously map four cytogenetically predicted breakpoints at a resolution high enough to correctly describe the exact nature of the underlying SVs.</p>
+      <table-wrap id="pone-0090894-t001" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0090894.t001</object-id>
+        <label>Table 1</label>
+        <caption>
+          <title>Genes disrupted by validated structural rearrangements (&gt;10 kb) in the patient.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0090894-t001-1" xlink:href="pone.0090894.t001"/>
+          <table frame="hsides" rules="groups">
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">SV no.</td>
+                <td align="left" rowspan="1" colspan="1">revised karyotype<xref ref-type="table-fn" rid="nt101">#</xref></td>
+                <td align="left" rowspan="1" colspan="1">breakpoint start</td>
+                <td align="left" rowspan="1" colspan="1">disrupted gene<xref ref-type="table-fn" rid="nt102">$</xref></td>
+                <td align="left" rowspan="1" colspan="1">RefSeq transcript position</td>
+                <td align="left" rowspan="1" colspan="1">exon count</td>
+                <td align="left" rowspan="1" colspan="1">proposed functions</td>
+                <td align="left" rowspan="1" colspan="1">disease link</td>
+                <td align="left" rowspan="1" colspan="1">ref.</td>
+                <td align="left" rowspan="1" colspan="1">con-firmed</td>
+                <td align="left" rowspan="1" colspan="1">mRNA levels</td>
+                <td align="left" rowspan="1" colspan="1">fusion mRNA</td>
+                <td align="left" rowspan="1" colspan="1">brain expressed</td>
+                <td align="left" rowspan="1" colspan="1">patient<xref ref-type="table-fn" rid="nt103">&amp;</xref></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1"><bold>t(2;7)(p25.1;q33</bold>)</td>
+                <td align="left" rowspan="1" colspan="1">chr7&#x2236;135,245,984</td>
+                <td align="left" rowspan="1" colspan="1">NUP205</td>
+                <td align="left" rowspan="1" colspan="1">chr7&#x2236;135,242,662&#x2013;135,333,499</td>
+                <td align="left" rowspan="1" colspan="1">43</td>
+                <td align="left" rowspan="1" colspan="1">nuclear-cytoplasmic transport</td>
+                <td align="left" rowspan="1" colspan="1">Paget&#x2019;s disease (assoc.)</td>
+                <td align="left" rowspan="1" colspan="1"><xref rid="pone.0090894-Galy1" ref-type="bibr">[15]</xref>&#x2013;<xref rid="pone.0090894-Hachet1" ref-type="bibr">[16]</xref></td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">normal</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">1.9%</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">chr2&#x2236;8,181,790</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>LINC00299</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">chr2&#x2236;8,347,273&#x2013;8,468,549</td>
+                <td align="left" rowspan="1" colspan="1">8</td>
+                <td align="left" rowspan="1" colspan="1">unknown</td>
+                <td align="left" rowspan="1" colspan="1">NDD, neurodegeneration</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <xref rid="pone.0090894-Talkowski4" ref-type="bibr">[11]</xref>
+                </td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">possibly increased</td>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">2</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>inv(2)(p24.1q24.2)</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">chr2&#x2236;22,350,265</td>
+                <td align="left" rowspan="1" colspan="1">AC068490.2</td>
+                <td align="left" rowspan="1" colspan="1">chr2&#x2236;22,156,208&#x2013;22,753,977</td>
+                <td align="left" rowspan="1" colspan="1">5</td>
+                <td align="left" rowspan="1" colspan="1">unknown</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">n.d.</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">chr2&#x2236;162,196,595</td>
+                <td align="left" rowspan="1" colspan="1">PSMD14</td>
+                <td align="left" rowspan="1" colspan="1">chr2&#x2236;162,164,786&#x2013;162,268,228</td>
+                <td align="left" rowspan="1" colspan="1">12</td>
+                <td align="left" rowspan="1" colspan="1">protein degradation</td>
+                <td align="left" rowspan="1" colspan="1">2q24.2 syndrome (assoc.)</td>
+                <td align="left" rowspan="1" colspan="1"><xref rid="pone.0090894-Burrage1" ref-type="bibr">[12]</xref>&#x2013;<xref rid="pone.0090894-Byrne1" ref-type="bibr">[13]</xref></td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">normal</td>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">1.8%</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">3</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>inv(2)(q32.1q32.1)</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">chr2&#x2236;185,679,985</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>ZNF804A</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">chr2&#x2236;185,463,093&#x2013;185,804,214</td>
+                <td align="left" rowspan="1" colspan="1">4</td>
+                <td align="left" rowspan="1" colspan="1">transcription factor</td>
+                <td align="left" rowspan="1" colspan="1">NDD, schizophrenia/bipolar disorder (assoc.)</td>
+                <td align="left" rowspan="1" colspan="1"><xref rid="pone.0090894-Talkowski1" ref-type="bibr">[5]</xref>, <xref rid="pone.0090894-ODonovan1" ref-type="bibr">[23]</xref></td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">reduced</td>
+                <td align="left" rowspan="1" colspan="1">no</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">38.7%</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">chr2&#x2236;188,161,779</td>
+                <td align="left" rowspan="1" colspan="1">AC007319.1</td>
+                <td align="left" rowspan="1" colspan="1">chr2&#x2236;187,868,001&#x2013;188,419,120</td>
+                <td align="left" rowspan="1" colspan="1">4</td>
+                <td align="left" rowspan="1" colspan="1">unknown</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">n.d.</td>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">4</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>del(19)(q13.4)</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">chr19&#x2236;54,800,252</td>
+                <td align="left" rowspan="1" colspan="1">LILRA3</td>
+                <td align="left" rowspan="1" colspan="1">chr19&#x2236;54,799,855&#x2013;54,804,221</td>
+                <td align="left" rowspan="1" colspan="1">7</td>
+                <td align="left" rowspan="1" colspan="1">immuno-receptor</td>
+                <td align="left" rowspan="1" colspan="1">prostate cancer/HDL-c (assoc.)</td>
+                <td align="left" rowspan="1" colspan="1"><xref rid="pone.0090894-MacArthur1" ref-type="bibr">[30]</xref>&#x2013;<xref rid="pone.0090894-Edmondson1" ref-type="bibr">[31]</xref></td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">n.d.</td>
+                <td align="left" rowspan="1" colspan="1">N/A</td>
+                <td align="left" rowspan="1" colspan="1">no/low</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">chr19&#x2236;54,809,071</td>
+                <td align="left" rowspan="1" colspan="1">N/A</td>
+                <td align="left" rowspan="1" colspan="1">N/A</td>
+                <td align="left" rowspan="1" colspan="1">N/A</td>
+                <td align="left" rowspan="1" colspan="1">N/A</td>
+                <td align="left" rowspan="1" colspan="1">N/A</td>
+                <td align="left" rowspan="1" colspan="1">N/A</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">n.d.</td>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">N/A</td>
+                <td align="left" rowspan="1" colspan="1">N/A</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+        <table-wrap-foot>
+          <fn id="nt101">
+            <label>#</label>
+            <p>revision to clinical diagnostic reports in bold;</p>
+          </fn>
+          <fn id="nt102">
+            <label>$</label>
+            <p>reported neurodevelopmental disease (NDD) genes in bold;</p>
+          </fn>
+          <fn id="nt103">
+            <label>&amp;</label>
+            <p>acc. to Huang et al., 2010 <xref rid="pone.0090894-Huang1" ref-type="bibr">[28]</xref>.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>We next were interested whether the clinically-observed BCAs could explain the patient&#x2019;s symptoms. Importantly, all four clinically predicted breakpoints disrupted annotated genes (<xref ref-type="table" rid="pone-0090894-t001"><bold>Table 1</bold></xref>). Specifically, chr2&#x2236;8,181,790 resides within intron7 of <italic>LINC00299</italic>, while chr7&#x2236;135,245,984 locates to intron1 of <italic>NUP205</italic>. Balanced reciprocal exchange at these positions suggested creation of two abnormal coding fusion products, one expressing exon1 of <italic>NUP205</italic> fused to exon8 of <italic>LINC00299</italic>, the other expressing exons1-7 of <italic>LINC00299</italic> fused to exons2-43 of <italic>NUP205</italic>. Indeed, mRNA of the NUP205ex1_LINC00299ex8 fusion was expressed in significant amounts in lymphoblasts (<xref ref-type="fig" rid="pone-0090894-g002"><bold>Figure 2A</bold></xref>) and fibroblasts (not shown) of the patient, but not in cells of a healthy male control. Cellular levels of the combined wild-type and posttranslocation NUP205 transcripts (as amplified by primers targeting exons2-8) were not different from controls, while expression of wild-type and pretranslocation LINC00299 transcripts (as amplified by primers targeting exons2-6) appeared to be slightly increased. Consistently, quantitiative RT-PCR indicated 6.7-fold (relative to housekeeping gene beta-actin) to 9.4-fold (relative to RPL19) increased mRNA-levels of pre-translocation LINC00299 in patient relative to control cells (not shown). Similarly, the pericentric inversion resulted in fusion of exons1-3 of <italic>PSMD14</italic> with exons3-4 of <italic>AC068490.2</italic> (<xref ref-type="fig" rid="pone-0090894-g002"><bold>Figure 2B</bold></xref>). In addition to this, the PSMD14ex3_AC068490.2ex3, but not the reciprocal fusion mRNA were observed at low levels in the patient&#x2019;s cells, while PSMD14 wild-type and postinversion transcript levels (as amplified by primers targeting exons 4&#x2013;5) remained unchanged.</p>
+      <fig id="pone-0090894-g002" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0090894.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>Nucleotide-level characterization of cytogenetically visible breakpoints identifies gene fusions that encode for abnormal transcripts.</title>
+          <p>(A,B) Graphical representation of the four genes within the cytogenetically visible reciprocal translocation t(2;7)(2p25.1;q33) and the pericentric inversion inv(2)(p24.1q24.2) in which structural variants disrupt protein-coding gene regions in the patient. Sites of breakpoints are denoted by arrows. (C,D) To monitor whether predicted SV-induced fusion transcripts resulted in abnormal transcripts, total RNA from three biological replicates per proband was isolated from lymphoblasts of the patient (46,XY,t(2;7); lanes 4&#x2013;6) and a healthy male control individual (46,XY; lanes 1&#x2013;3). For each site of structural rearrangement mRNA-levels of both, the wildtype and/or pre&#x2212;/post rearrangement transcript, as well as the predicted fusion transcript were amplified with target-specific primers by RT-PCR.</p>
+        </caption>
+        <graphic xlink:href="pone.0090894.g002"/>
+      </fig>
+      <p>Of the four disrupted genes, truncation of the brain-expressed large intergenic non-coding (linc) RNA LINC00299 was recently proposed as causative for neurodevelopmental disability of varying severity <xref rid="pone.0090894-Talkowski4" ref-type="bibr">[11]</xref>. Notably, also in that study&#x2019;s patient, wild-type and pretranslocation LINC00299 transcript levels were increased and some of the clinical symptoms &#x2013; including impaired speech, coordination deficits, otitis media and oligohydramnios &#x2013; overlapped with the patient described here (<xref ref-type="table" rid="pone-0090894-t002"><bold>Table 2</bold></xref>), suggesting disruption of <italic>LINC00299</italic> as potentially causative. However, also <italic>PSMD14</italic> and <italic>NUP205</italic> proved to be attractive candidate genes: The human deubiquitinase and constituent of the proteasome complex PSMD14 was previously found to be one of three candidate genes within a critical region on 2q24 where CNVs have been linked to intellectual disability <xref rid="pone.0090894-Burrage1" ref-type="bibr">[12]</xref> and - like multiple other genes associated with autism-like phenotypes &#x2013; might have a role in proteasome-mediated synapse elimination. <xref rid="pone.0090894-Byrne1" ref-type="bibr">[13]</xref>&#x2013;<xref rid="pone.0090894-Tsai1" ref-type="bibr">[14]</xref> Conversely, <italic>NUP205</italic> encodes for a soluble component of the nuclear pore complex (NPC) machinery that contributes to cargo selection during nuclear-cytoplasmic transport. Cells deficient for NUP205 fail to exclude nonnuclear macromolecules, amongst others vital transcription factors, from entering the nucleus <xref rid="pone.0090894-Galy1" ref-type="bibr">[15]</xref> and exhibit an accelerated entry into mitosis, possibly due to local destabilization of NPCs facing centrosomes <xref rid="pone.0090894-Hachet1" ref-type="bibr">[16]</xref>.</p>
+      <table-wrap id="pone-0090894-t002" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0090894.t002</object-id>
+        <label>Table 2</label>
+        <caption>
+          <title>Phenotypic comparison of the patient to previously described individuals with structural variants affecting <italic>ZNF804A</italic> or <italic>LINC00299</italic>.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0090894-t002-2" xlink:href="pone.0090894.t002"/>
+          <table frame="hsides" rules="groups">
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">symptom</td>
+                <td align="left" rowspan="1" colspan="1">patient</td>
+                <td colspan="4" align="left" rowspan="1">ZNF804A</td>
+                <td colspan="2" align="left" rowspan="1">LINC00299</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td colspan="3" align="left" rowspan="1">Talkowski et al., 2012a <xref rid="pone.0090894-Talkowski1" ref-type="bibr">[5]</xref></td>
+                <td align="left" rowspan="1" colspan="1">DECIPHER CNV cases (n&#x200A;=&#x200A;7)</td>
+                <td colspan="2" align="left" rowspan="1">Talkowski et al., 2012b <xref rid="pone.0090894-Talkowski4" ref-type="bibr">[11]</xref></td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">DGAP180</td>
+                <td align="left" rowspan="1" colspan="1">father of DGAP180</td>
+                <td align="left" rowspan="1" colspan="1">CNV cases (n&#x200A;=&#x200A;7)</td>
+                <td align="left" rowspan="1" colspan="1"/>
+                <td align="left" rowspan="1" colspan="1">DGAP162</td>
+                <td align="left" rowspan="1" colspan="1">CNV case L1</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>gene disruption</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1"><italic>ZNF804A</italic> truncated; breakin <italic>LINC00299</italic> intron 7</td>
+                <td colspan="2" align="left" rowspan="1">complex chromosomal rearrangementstarting 229 kb downstream of 3&#x2032;UTR</td>
+                <td align="left" rowspan="1" colspan="1">CNVs comprising multiple genes at 2q31.1&#x2013;2q33.1</td>
+                <td align="left" rowspan="1" colspan="1">CNVs comprising multiple genes at 2q31.2&#x2013;2q32.3</td>
+                <td align="left" rowspan="1" colspan="1">break in intron 6;exons 7&#x2013;8 missing</td>
+                <td align="left" rowspan="1" colspan="1">deletion ofexons 7&#x2013;8</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>developmental delay</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes (n&#x200A;=&#x200A;4)</td>
+                <td align="left" rowspan="1" colspan="1">yes (n&#x200A;=&#x200A;7)</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>cognitive impairment</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes (n&#x200A;=&#x200A;7)</td>
+                <td align="left" rowspan="1" colspan="1">yes (n&#x200A;=&#x200A;6)</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>autistic/abnorm. behavior</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes (n&#x200A;=&#x200A;1)</td>
+                <td align="left" rowspan="1" colspan="1">yes (n&#x200A;=&#x200A;3)</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>anxiety</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>expressive speech impaired</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes (n&#x200A;=&#x200A;1)</td>
+                <td align="left" rowspan="1" colspan="1">yes (n&#x200A;=&#x200A;2)</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>coord. deficits/ataxia</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">yes (n&#x200A;=&#x200A;1)</td>
+                <td align="left" rowspan="1" colspan="1">yes (progressive)</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>arachnoidal cysts</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">yes (axial, tectum)</td>
+                <td align="left" rowspan="1" colspan="1">yes (axial, Sylvianfissure)</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">no (partial agenesisof corpus callosum)</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>recurrent otits media</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>dysmorphism</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">no</td>
+                <td align="left" rowspan="1" colspan="1">no</td>
+                <td align="left" rowspan="1" colspan="1">no</td>
+                <td align="left" rowspan="1" colspan="1">yes (n&#x200A;=&#x200A;3)</td>
+                <td align="left" rowspan="1" colspan="1">yes (n&#x200A;=&#x200A;7)</td>
+                <td align="left" rowspan="1" colspan="1">no</td>
+                <td align="left" rowspan="1" colspan="1">no</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>muscle hypotonia</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">yes</td>
+                <td align="left" rowspan="1" colspan="1">no</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">yes (n&#x200A;=&#x200A;1)</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">no</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>other</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">oligohydramnios</td>
+                <td align="left" rowspan="1" colspan="1">IUGR, prematurity, pneumonia</td>
+                <td align="left" rowspan="1" colspan="1">tics</td>
+                <td align="left" rowspan="1" colspan="1">cleft palate,microcephalus, &#x2026;</td>
+                <td align="left" rowspan="1" colspan="1">cleft palate, seizures, micrognathia,&#x2026;</td>
+                <td align="left" rowspan="1" colspan="1">oligohydramnios, dilated fetal kidneys, seizures, disinhibition</td>
+                <td align="left" rowspan="1" colspan="1">seizures, treated for bipolar disorder</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>family history</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">consanguinity</td>
+                <td colspan="2" align="left" rowspan="1">family members with cognitive andspeech impairment, tics, anxiety</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+                <td align="left" rowspan="1" colspan="1">n.r.</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <p>Conjoint disruption of at least three NDD candidate genes by apparently balanced SVs in one individual motivated us to investigate whether further genes in the patient&#x2019;s genome could be disrupted by SVs. For this, we queried the mate-pair library sequencing data for &#x201C;incidental&#x201D; SVs below the cytogenetic resolution limit. As expected, the source data suggested multiple additional SVs of varying size in the patient&#x2019;s genome. For instance, by setting a read-depth cut-off of six supporting discordant reads that aligned within 2x median library size (approximately 10 kb) of each other (see Methods), a total of 80 gene-affecting intrachromosomal rearrangements with &gt;10 kb in size were called (<bold><xref ref-type="supplementary-material" rid="pone.0090894.s003">Table S1</xref></bold>). The overall 70 deletions and 10 inversions were located within or nearby a total of 129 annotated genes, of which 94 encode for proteins, 14 are untranslated transcripts, and 21 are pseudogenes. For the majority of these regions (n&#x200A;=&#x200A;116; 89.9%) SV-boundaries could be reliably predicted. Of these, 112 were non-protein-coding, localized within intergenic regions or were confined to single introns, thus excluding disruption of coding elements. Apart from disruption of <italic>NUP205</italic> and <italic>PSMD14</italic>, a single deletion of &#x223C;10 kb in size within the patient&#x2019;s genome disrupted exons 1&#x2013;6 of one allele of <italic>LILRA3</italic> (<xref ref-type="fig" rid="pone-0090894-g003"><bold>Figure 3A</bold></xref>; <xref ref-type="table" rid="pone-0090894-t001"><bold>Table 1</bold></xref>). Most importantly, however, sequencing revealed a third major genomic rearrangement on chr2 below the cytogenetic resolution limit. Specifically, a cluster of 24 discordant reads suggested a paracentric inversion of 2.49 Mb on 2q32.1, with breakpoints residing within gaps of 396 bp and 2,947 bp. This previously undetected BCA also proved to be <italic>de novo</italic> and gene disrupting. Importantly, it fused two further genes: the processed transcript <italic>AC007319.1</italic> and the transcription factor <italic>ZNF804A</italic>. Position of both breakpoints within intron2 of <italic>AC007319.1</italic> and intron1 of <italic>ZNF804A</italic>, respectively, proposed significantly shorter or entirely absent gene products (<xref ref-type="fig" rid="pone-0090894-g003"><bold>Figure 3B,C</bold></xref>; <xref ref-type="table" rid="pone-0090894-t001"><bold>Table 1</bold></xref>). Consistent with this, ZNF804A mRNA levels were reduced to 40% in the patient&#x2019;s fibroblasts (<xref ref-type="fig" rid="pone-0090894-g003"><bold>Figure 3D</bold></xref>). Due to the orientation of both genes no fusion mRNA was expected to result from the paracentric inversion.</p>
+      <fig id="pone-0090894-g003" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0090894.g003</object-id>
+        <label>Figure 3</label>
+        <caption>
+          <title>Genome-wide analysis for cryptic SVs identifies disruption of further neurodevelopmental disease candidate genes and demonstrates reduced expression of ZNF804A in patient cells.</title>
+          <p>(A,B) Graphical representation of the three genes disrupted by an &#x223C;10 kB deletion on chr 19 [del(19q13.4)] (A) and the cryptic paracentric inversion inv(2)(p32.1q32.1) in the patient. Sites of breakpoints are denoted by arrows. (C) Graphical representation of anomalous-read (red dots) fusion positions for the cryptic 2.49 Mb paracentric inversion on chromosome 2. Mate-pair library sequencing-predicted breakpoints 5&#x2032; and 3&#x2032; of the inversion were amplified with breakpoint-specific primers and validated at base-pair level by PCR and capillary sequencing. (D) mRNA-levels of ZNF804A and the housekeeping gene RPL19 were quantified by qRT-PCR from total RNA isolated from fibroblasts of the patient or a healthy male control and normalized to expression of beta-actin.</p>
+        </caption>
+        <graphic xlink:href="pone.0090894.g003"/>
+      </fig>
+      <p>Remarkably, several points of evidence suggest this cryptic paracentric inversion as at least equally likely to explain the patient&#x2019;s phenotype than disruption of any of the NDD candidate genes within the cytogenetically visible BCAs: A recent study in a large cohort of individuals with NDD and autism spectrum disorders <xref rid="pone.0090894-Talkowski1" ref-type="bibr">[5]</xref> identified two symptomatic carriers, father and son, of a reciprocal translocation that truncated <italic>ZNF804A</italic> 229 kb downstream of the end of its 3&#x2032;-untranslated region. As with the patient described here, symptoms of these individuals included neurodevelopmental and behavioural deficits, ataxia, recurrent otitis media, and notably severe expressive speech delay and arachnoidal cysts (<xref ref-type="table" rid="pone-0090894-t002"><bold>Table 2</bold></xref>). With a frequency of &lt;1% <xref rid="pone.0090894-Stevenson1" ref-type="bibr">[17]</xref> and 2.6% <xref rid="pone.0090894-AlHolou1" ref-type="bibr">[18]</xref>, respectively, expressive speech delay and arachnoidal cysts are relatively rare in paediatric patients. Several further NDD individuals with CNVs at this locus have been reported as aphasic or showing severe speech impairment (<xref ref-type="table" rid="pone-0090894-t002"><bold>Table 2</bold></xref>) <xref rid="pone.0090894-Cocchella1" ref-type="bibr">[19]</xref>, indicating that ZNF804A might have a role in language acquisition or initiation. The gene encodes for a zinc-finger binding transcription factor that interacts with ataxin-1 <xref rid="pone.0090894-Lim1" ref-type="bibr">[20]</xref> and regulates expression of genes involved in neurotransmitter signalling and cell adhesion, which proposes a reduction in ZNF804A as relevant for neuronal morphology and/or synaptic transmission. <xref rid="pone.0090894-Girgenti1" ref-type="bibr">[21]</xref>&#x2013;<xref rid="pone.0090894-Hill1" ref-type="bibr">[22]</xref> Importantly, genome-wide association studies have identified ZNF804A as one of the most compelling loci associated with schizophrenia and bipolar disorder <xref rid="pone.0090894-ODonovan1" ref-type="bibr">[23]</xref>&#x2013;<xref rid="pone.0090894-Williams1" ref-type="bibr">[25]</xref>. As carriers of the most strongly associated risk allele show increased ZNF804A expression <xref rid="pone.0090894-Riley1" ref-type="bibr">[26]</xref>, it has been hypothesized that altered levels of ZNF804A could cause pleiotropic effects, resulting in neuropsychiatric disease of variable manifestation <xref rid="pone.0090894-Talkowski1" ref-type="bibr">[5]</xref>, <xref rid="pone.0090894-Walter1" ref-type="bibr">[27]</xref>. Our identification of the, to our knowledge, first indvidual with NDD where the coding sequence of one almost entire <italic>ZNF804A</italic> allele is specifically disrupted now strongly supports this assumption.</p>
+      <p>Consistent with previous knowledge <xref rid="pone.0090894-Talkowski3" ref-type="bibr">[9]</xref> and known for the mate-pair sequencing protocol applied (that requires genome assembly from 36 bp reads) we considered that several of the SVs predicted from sequencing could be false-positives, and that deeper, more costly sequencing would be required to unambiguously demonstrate the presence or absence of SVs at a genome-wide scale. Therefore, to gain a more systematic insight into how accurately mate-pair sequencing describes submicroscopic structural variation in an NDD patient with complex BCAs, and also to validate the exact nature of the novel paracentric inversion, we subjected chr2 and der(2) to deep sequencing. For this, fluorescent-labelled chromosomes were separated from the patient and a male control individual&#x2019;s lymphoblasts by flow-cytometry <xref rid="pone.0090894-Chen1" ref-type="bibr">[8]</xref>. This allowed us to enrich both, chr2 and der(2) by 4.99- and 4.10-fold, respectively, over all other chromosomes, and to sequence the enriched fractions at a mean read-depth of 20.7 for chr2 and 18.7 for der(2) using a single lane of HiSeq2000 (Illumina) per chromosome fraction (<bold><xref ref-type="supplementary-material" rid="pone.0090894.s002">Figure S2</xref></bold>; for experimental details see Methods). Indeed, deep sequencing confirmed 10 of the 11 SVs larger than 10 kb predicted for chr2 from the mate-pair data, among them all 6 SVs within or nearby annotated genes (<bold><xref ref-type="supplementary-material" rid="pone.0090894.s003">Table S1</xref></bold>). Of these, the 2.49 Mb paracentric inversion, like the clinically described BCAs, localized to der(2), while the additional validated SVs evenly distributed on chr2 and der(2). The discrete, balanced nature of the chromosomal abnormalities were dissimilar to previously reported chromothripsis related complex rearrangements <xref rid="pone.0090894-Kloosterman1" ref-type="bibr">[10]</xref>. Therefore chromothripsis was considered unlikely as a possible reason for NDD in this patient. Taken together, the validation rate of 91% for SVs called on chromosome 2 and the high resolution of the breakpoint discovery and localization provide strong arguments that mate-pair sequencing as applied here has the potential to outcompete routine approaches for clinical-grade genome-wide SV detection.</p>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>In summary, our study has identified at least four NDD candidate genes in the patient&#x2019;s genome that are disrupted by BCAs. Of these, a very compelling candidate, <italic>ZNF804A</italic>, locates to a cryptic rearrangement that had been missed by clinical procedures. The results of this study are noteworthy for four reasons: First, we demonstrate that genome-wide mate-pair library sequencing using an off-the-shelf enrichment kit is a powerful strategy to not only robustly characterize complex BCAs predicted from prior cytogenetic information; but also to discover cryptic SVs of probable relevance to a patient&#x2019;s phenotype. Arguably, large-insert library sequencing is challenged by repetitive regions in the genome that interfere with correct alignment of the short discordant reads, resulting in high false-discovery rates <xref rid="pone.0090894-Talkowski3" ref-type="bibr">[9]</xref>. Also, in relation to deep sequencing of the whole genome, the sensitivity to detect small insertions and deletions may be suboptimal using the mate-pair approach as libraries may be contaminated with non-mate paired reads still present after mate-pair enrichment. However, in this study only one of 11 SVs predicted for the studied patient&#x2019;s chr2 and der(2) by mate-pair library sequencing failed to be validated by deep sequencing of flow-sorted chromosomes. Deep sequencing further confirmed that with stringent analysis settings and manual curation of the mate-pair sequencing data as applied here it is possible to almost eliminate falsely called intrachromosomal SVs larger than 10 kb. This strongly suggests that in a genome with an only moderate SV-burden as analyzed here, the specificity of mate-pair library sequencing for genome-wide <italic>de novo</italic> SV detection could be considerably higher than the 68% validation rate reported from a patient with chromosomes fragmented by chromothripsis <xref rid="pone.0090894-Kloosterman1" ref-type="bibr">[10]</xref>. In conclusion, the ability to identify and characterize multiple small SVs at near-to nucleotide resolution, the moderate costs, and the short turn-around time that enable reliable breakpoint characterization even in a prenatal diagnostic setting <xref rid="pone.0090894-Talkowski2" ref-type="bibr">[6]</xref> predispose genome-wide mate-pair library sequencing as a versatile and robust analytical tool for next-generation cytogenetic diagnostics.</p>
+      <p>Second, our study confirms previous reports hinting at a surprising structural variability in BCA carriers <xref rid="pone.0090894-Talkowski1" ref-type="bibr">[5]</xref>, <xref rid="pone.0090894-Talkowski3" ref-type="bibr">[9]</xref>&#x2013;<xref rid="pone.0090894-Kloosterman1" ref-type="bibr">[10]</xref> and for the first time identifies a previously undetected &#x201C;incidental&#x201D; BCA as a very likely contributor to disease. Based on a certain phenotypic overlap with two previously reported individuals <xref rid="pone.0090894-Talkowski4" ref-type="bibr">[11]</xref>, restriction of our analyses to selected chromosomes and clinically described translocation breakpoints would have most likely resulted in imprecisely reporting disruption of the known NDD gene <italic>LINC00299</italic> as the most probable cause for the patient&#x2019;s neurocognitive disorder. Instead, our data strongly argue that an individual undergoing diagnostic evaluation for NDD should be characterized for structural variation at a genome-wide level and as comprehensively as possible. This is strongly supported by a recent study where 12 of 36 NDD patients with clinically known BCAs showed unexpected additional chromosome rearrangements in the proximity or distant from the predicted breakpoints that clinical routines had failed to identify <xref rid="pone.0090894-Talkowski1" ref-type="bibr">[5]</xref>. It will be interesting to further evaluate how such &#x201C;incidental&#x201D; SVs contribute to the respective clinical phenotypes, and if they could be one factor that drive the pronounced clinical variability of neurocognitive disease.</p>
+      <p>A third insight from our study is that SVs, and in particular <italic>de novo</italic> BCAs, should not be neglected as a cause for disease in individuals with an independently increased likelihood for inherited disorders. Due to consanguinity of the parents we expected a high degree of homozygosity in the studied patient. This is supported by a total of 154 homozygous coding missense variants on the patient&#x2019;s chr2 and der(2), none of which, however, is likely to be deleterious (<bold><xref ref-type="supplementary-material" rid="pone.0090894.s004">Table S2</xref></bold>). While we cannot fully exclude a yet unknown autosomal-recessive contribution to the patient&#x2019;s NDD phenotype elsewhere in his genome, it is interesting to note that none of the multiple SVs discovered here would likely have been identified by analyzing the patient&#x2019;s exome. Mate-pair library sequencing thus could ideally complement exome profiling to more comprehensively assess variation in an individual&#x2019;s genome and clarify the cause of disease in patients where exome sequencing fails.</p>
+      <p>Finally, the importance of systematically acquiring such data together with adequate phenotypic information is highlighted by the challenge to weigh the contribution of each of the four disrupted NDD candidate genes (<italic>LINC00299</italic>, <italic>NUP205</italic>, <italic>PSMD14</italic> and <italic>ZNF804A</italic>) to the patient&#x2019;s phenotype. Huang et al. predicted the probability of haploinsufficiency for <italic>ZNF804A</italic> (38.7%) as considerably higher than for <italic>NUP205</italic> (1.9%) or <italic>PSMD14</italic> (1.8%) <xref rid="pone.0090894-Huang1" ref-type="bibr">[28]</xref>. This, together with the patient&#x2019;s phenotypic similarity to previously described individuals with impaired ZNF804A function <xref rid="pone.0090894-Talkowski1" ref-type="bibr">[5]</xref>, supports the assumption that monoallelic disruption of <italic>ZNF804A</italic> could be the predominant driver of symptom constellation in this patient. One possibility to further clarify this, which in this case was declined by the patient&#x2019;s family, could be functional MRI, as adult carriers of the common ZNF804A schizophrenia risk allele show reduced cortical thickness and connectivity between and within the dorsolateral prefrontal cortex <xref rid="pone.0090894-Esslinger1" ref-type="bibr">[29]</xref>. Alternatively to monogenic impediment of ZNF804A, the concerted loss-of-function of several SV-disrupted genes with relevant roles in neurodevelopment could generate a genomic disorder unique to the studied patient. While this is an attractive hypothesis that may well explain the pleiotropy seen in many NDDs, it will be almost impossible to further characterize such level of complexity in animal or cellular models. Instead, a concerted initiative to obtain high-resolution structural together with phenotypic information in large enough numbers of healthy and diseased individuals, as exemplified for coding variation <xref rid="pone.0090894-MacArthur1" ref-type="bibr">[30]</xref>, may help to not only distinguish damaging from neutral SVs, but reveal fascinating insights into brain function in health and disease.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s4">
+      <title>Materials and Methods</title>
+      <sec id="s4a">
+        <title>Ethics Statement</title>
+        <p>The study and consent procedure was approved by the institutional review board of Heidelberg University Medical Faculty. The study protocol conformed to the ethical guidelines of the 1975 Declaration of Helsinki in its latest version. The parents provided written informed consent on behalf of their child to participate in this study and to publish potentially identifying information on the index case. Parents and the healthy control provided written informed consent for themselves.</p>
+      </sec>
+      <sec id="s4b">
+        <title>Clinical Protocols</title>
+        <p>Clinical information was obtained from structured interviews and medical records. Routine laboratory measurements and screening for metabolic causes of intellectual impairment from blood and urine were obtained from a certified clinical diagnostic laboratory at Heidelberg University.</p>
+      </sec>
+      <sec id="s4c">
+        <title>Patient</title>
+        <p>The patient is the single child of healthy parents originating from Western Afghanistan that are consanguineous as 1<sup>st</sup> degree cousins. Family history was reported as unremarkable despite further consanguineous marriages. Oligohydramnios was noted during the last trimenon of pregnancy, but birth occurred spontaneously, at term and with normal parameters. Walking was achieved by 22 months. At 3&#xBD; years expressive speech delay (ten active words), clumsiness, atactic gait and generalized mild muscular hypotonia were noted. There were no dysmorphic signs except for a hypopigmented skin area of 20&#xD7;20 mm at the thoracal wall. Cranial MRI was unremarkable apart from an axial arachnoidal cyst of 29&#xD7;18 mm in cisterna quadrigemina. Follow-up visits at 5&#xBD; and 6&#xBC; years confirmed persistence of developmental, speech (&#x223C;60 active words, 2-word sentences) and coordination deficits. Recurrent otitis media was noted, but hearing tests were in the normal range. SON-R 2&#xBD;-7 non-verbal intelligence testing revealed an overall IQ of 51 (CI:48&#x2013;65) consistent with moderate mental retardation. The parents characterized the patient as showing low social competence, extensive fear towards novel situations and a preference for repetitive behaviors. Blood parameters indicative of metabolic causes of intellectual disability were in the normal range.</p>
+      </sec>
+      <sec id="s4d">
+        <title>Cell Culture</title>
+        <p>Peripheral venous blood lymphocytes from the patient, parents and a healthy male control were obtained, EBV-immortalized lymphoblasts generated and skin fibroblasts cultures (from the patient) generated according to routine protocols. In brief, lymphocytes and lymphoblastoid cell lines were maintained in RPMI 1640 culture medium (Gibco) supplemented with 10% heat-inactivated fetal bovine serum (Invitrogen), L-glutamine (Gibco), penicillin/streptomycin mix (Gibco), and non-essential amino acid solution (Gibco), until just before the medium was exhausted with around 75% confluence. Cells were then placed in fresh media and arrested in metaphase with 0.05 &#xB5;g/ml colcemid (Invitrogen) [for karyotyping] or 0.1 &#xB5;g/ml demecolcine (Sigma) [for flow cytometry] for 6 hours or overnight before harvesting.</p>
+      </sec>
+      <sec id="s4e">
+        <title>Cytogenetic and CNV Analyses</title>
+        <p>Chromosomes were obtained according to routine procedures and based on previously published protocols. <xref rid="pone.0090894-Ng1" ref-type="bibr">[32]</xref>&#x2013;<xref rid="pone.0090894-Gribble1" ref-type="bibr">[33]</xref> FISH analyses for fine mapping of chromosomal breakpoints were performed on 5&#x2013;10 mitotic cells/marker using the following markers: SE7, CUTL1, D7S1503/D7S688/D7S1541, BAC3K23, pcp7q, YAC761H5, wcp2, wcp7, PAC892G20, RP11_542B5, RP11_16D24, RP1188K4, PR11_371N6. Genome-wide CNV analyses in a routine setting were performed using the Human Mapping 6.0 SNP-array (Affymetrix) according to established protocols.</p>
+      </sec>
+      <sec id="s4f">
+        <title>Chromosome Sorting and Flow Cytometry Analysis</title>
+        <p>Metaphase-blocked suspensions of cultured lymphoblasts were centrifuged at 1500 rpm at room temperature for 5 min. Cells were swollen by incubation for 10 min in 5 ml of hypotonic solution [75 mM KCl (Sigma), 0.5 mM spermidine (Sigma), 0.2 mM spermine (Sigma), 10 mM MgSO4.7H20, pH8.0]. Cell suspensions were centrifuged for 5 min at 1500 rpm. The cell pellet was carefully re-suspended in 3 ml of ice-cold polyamine isolation buffer [800 mM KCl, 5 mM EGTA (Sigma), 20 mM EDTA (Sigma), 150 mM Tris (Sigma), pH7.5]. After 15 min incubation on ice, the suspensions were vigorously vortexed for 10 s. Quality of chromosomes was evaluated by fluorescence microscopy after staining a small sample aliquot with DAPI (Invitrogen). Chromosome suspensions were briefly centrifuged for 3 min at 1200 rpm. Supernatants were collected for overnight staining at 4&#xB0;C with 5 &#xB5;g/ml Hoechst 33358 (Sigma) and 50 &#xB5;g/ml chromomycin A3 (Sigma) in the presence of 10 mM MgSO4.7H2O, 10 mM sodium citrate and 25 mM sodium sulphite. Staining preparations were then filtered through a 20-&#xB5;m filter (Celltrics, Partec) prior to analysis and sorting.</p>
+        <p>Stained chromosomes were analysed and sorted on a modified Moflo High Speed Sorter (Beckman Coulter) equipped with Coherent Sabre Argon and Krypton lasers. The Krypton laser configured to multiline UV (1W) was placed at the first laser tower and used as the MoFlo&#x2019;s trigger beam. The Sabre Argon laser was configured to 457 nm (1W) and placed in the second laser position. A 351/20 nm bandpass filter (Semrock) was placed in front of the Moflo&#x2019;s diode FSC detector. The Moflo&#x2019;s optical bench was reconfigured with a &#x2212;15PMT (Beckman Coulter) in the side scatter detector position of the L-configuration to collect the Hoechst fluorescence. A large width band pass was constructed in front of this detector by sandwiching a 364 nm RazonEdge longpass filter (Semrock) with a 439/154 nm BrightLine bandpass filter (Semrock). For the second laser position a 488 nm EdgeBasic long wave pass filter (Semrock) was placed in front of a &#x2212;15PMT for the Chromomycin A3 fluorescence collection. The Moflo&#x2019;s fluidics were fitted with a 70 &#xB5;m nozzle using FACSFlow (BD Biosciences) as sheath fluid. The instrument was aligned using Flow-Check Fluorospheres (Beckman Coulter) and then fine aligned with the chromosomes. Offline analysis was performed using FlowJo (Treestar Inc.). Chromosomes were sorted into 1.5 ml low DNA binding Eppendorf tubes and stored at &#x2212;20&#xB0;C.</p>
+      </sec>
+      <sec id="s4g">
+        <title>Mate-pair and Paired-end Library Preparation and Next-generation Sequencing</title>
+        <p>DNA and RNA were extracted from blood lymphocytes according to routine protocols. DNA libraries for mate-pair sequencing were prepared according to Illumina protocol 1005363 Rev.B. using the Illumina 5 kb mate-pair sample prep kits (Illumina Cat# PE-112-2002). In short, 10 &#xB5;g of genomic DNA was sheared into 5 kb fragment length using a Hydroshear (GeneMachines). Fragments were end repaired, biotin labelled and then size selected by gel electrophoresis to 5 kb after which they were circularized overnight. Linear DNA was removed by enzymatic digestion. The circularized DNA was then fragmented to produce ligated mate pair fragments which were isolated by Streptavidin-purification of the biotinylated DNA. Isolated fragments were end repaired, A-tailed and library adaptors were ligated. The adapter modified fragments were then enriched by PCR amplification (18 cycles). After amplification a further size selection step (to 500 bp) was performed to extract the correctly modified fragments. Mate-pair libraries of the patient were sequenced on an Illumina GAIIx for 2&#xD7;36 cycles.</p>
+        <p>For high-resolution analysis of chromosomes 2 and der(2) of the patient, 1 &#xB5;g of each of the two FACS-enriched DNA fractions (isolated according to above protocol) were prepared for paired-end library sequencing using Illumina paired-end library preparation kits according to the manufacturer&#x2019;s instructions (Illumina). Sufficient quality of all libraries was ensured using an Agilent Bioanalyser 2100 (Agilent Technologies, Boeblingen, Germany). Chromosome 2 and der(2) enriched samples were sequenced on a HiSeq2000 for 1&#xD7;103 read cycles (read 1) and 79 cycles (read 2).</p>
+      </sec>
+      <sec id="s4h">
+        <title>Data Analysis and Confirmation</title>
+        <p>All resulting sequence data were aligned to the hg19 build of the human reference genome using the ELAND aligner algorithm (Illumina). Mate-pair reads were analysed using custom-generated Perl scripts. In order to identify potential breakpoints of inter-chromosomal translocations, sequence read pairs were filtered for read pairs where individual reads aligned to different chromosomes. Intra-chromosomal inversions and deletions were identified by querying the mate-pair read data for read pairs aligning with cut-offs at 10 kb (2&#xD7; library insert size). Read pairs which fell into the above categories were clustered together. Clusters containing at least six overlapping read pairs where considered as potentially real and manually curated. Curated clusters were mapped to gene coordinates of the Ensembl human reference genome build 72 (<ext-link ext-link-type="uri" xlink:href="http://www.ensembl.org">www.ensembl.org</ext-link>). Regions overlapping with HGNC-annotated genes where structural variation was expected to impact on respective gene products were PCR-amplified and PCR amplicons were Sanger sequenced (GATC, Konstanz, Germany). Presence of abnormal gene products was validated by amplifying proposed fusion mRNAs isolated from patient and control lymphoblasts by quantitative-reverse polymerase chain reaction (qRT-PCR) using SYBR Green Supermix (Bio-Rad, Hercules, CA) according to established protocols. Primer sequences are available on request. Position of potentially clinically relevant SVs and phenotype information on the index patient have been submitted to the European Bioinformatics Institute&#x2019;s Database of Genomic Variants archive (<ext-link ext-link-type="uri" xlink:href="http://www.ebi.ac.uk/dgva">http://www.ebi.ac.uk/dgva</ext-link>), accession number estd210. Further data can be made available to researchers on request to the authors.</p>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0090894.s001">
+        <label>Figure S1</label>
+        <caption>
+          <p>(EPS)</p>
+        </caption>
+        <media xlink:href="pone.0090894.s001.eps">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0090894.s002">
+        <label>Figure S2</label>
+        <caption>
+          <p>(EPS)</p>
+        </caption>
+        <media xlink:href="pone.0090894.s002.eps">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0090894.s003">
+        <label>Table S1</label>
+        <caption>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0090894.s003.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0090894.s004">
+        <label>Table S2</label>
+        <caption>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0090894.s004.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We are grateful to the family for participating in this study. We acknowledge K. Hinderhofer, K. Huellen, R. Zinsen, U. Grasshoff and S. Karch for support in DNA extraction, cell culture, FACS analysis and/or providing access to clinical information, T. Rausch for helpful discussions on data analysis, N. Bee and N. Carter for advice on chromosome preparation for FACS-sorting and L. Ettwiller for critical comments on the manuscript.</p>
+      <p>Web Resources.</p>
+      <p>This study makes use of data generated by the DECIPHER Consortium funded by the Wellcome Trust (<ext-link ext-link-type="uri" xlink:href="http://decipher.sanger.ac.uk">http://decipher.sanger.ac.uk</ext-link>). Reference: Firth, H.V. et al. (2009). DECIPHER: Database of chromosomal imbalance and phenotype in humans using Ensembl resources. Am. J. Hum. Genet. <italic>84</italic>, 524&#x2013;533.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0090894-Currall1">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Currall</surname><given-names>BB</given-names></name>, <name><surname>Chiang</surname><given-names>C</given-names></name>, <name><surname>Talkowski</surname><given-names>ME</given-names></name>, <name><surname>Morton</surname><given-names>CC</given-names></name> (<year>2013</year>) <article-title>Mechanisms for Structural Variation in the Human Genome</article-title>. <source>Curr Genet Med Rep</source><volume>1</volume>: <fpage>81</fpage>&#x2013;<lpage>90</lpage><pub-id pub-id-type="pmid">23730541</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Ravel1">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Ravel</surname><given-names>C</given-names></name>, <name><surname>Berthaut</surname><given-names>I</given-names></name>, <name><surname>Bresson</surname><given-names>JL</given-names></name>, <name><surname>Siffroi</surname><given-names>JP</given-names></name> (<year>2006</year>) <collab>Genetics Commission of the French Federation of CECOS</collab> (<year>2006</year>) <article-title>Prevalence of chromosomal abnormalities in phenotypically normal and fertile adult males: large-scale survey of over 10,000 sperm donor karyotypes</article-title>. <source>Hum Reprod</source><volume>21</volume>: <fpage>1484</fpage>&#x2013;<lpage>1489</lpage><pub-id pub-id-type="pmid">16484311</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Gardner1">
+        <label>3</label>
+        <mixed-citation publication-type="other">Gardner RJM, Sutherland GR, Shaffer LG (2012) Chromosome abnormalities and genetic counseling. 4<sup>th</sup> ed. (New York: Oxford University Press).</mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Marshall1">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Marshall</surname><given-names>CR</given-names></name>, <name><surname>Noor</surname><given-names>A</given-names></name>, <name><surname>Vincent</surname><given-names>JB</given-names></name>, <name><surname>Lionel</surname><given-names>AC</given-names></name>, <name><surname>Feuk</surname><given-names>L</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>Structural variation of chromosomes in autism spectrum disorder</article-title>. <source>Am J Hum Genet</source><volume>82</volume>: <fpage>477</fpage>&#x2013;<lpage>488</lpage><pub-id pub-id-type="pmid">18252227</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Talkowski1">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Talkowski</surname><given-names>ME</given-names></name>, <name><surname>Rosenfeld</surname><given-names>JA</given-names></name>, <name><surname>Blumenthal</surname><given-names>I</given-names></name>, <name><surname>Pillalamarri</surname><given-names>V</given-names></name>, <name><surname>Chiang</surname><given-names>C</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Sequencing chromosomal abnormalities reveals neurodevelopmental loci that confer risk across diagnostic boundaries</article-title>. <source>Cell</source><volume>149</volume>: <fpage>525</fpage>&#x2013;<lpage>537</lpage><pub-id pub-id-type="pmid">22521361</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Talkowski2">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Talkowski</surname><given-names>ME</given-names></name>, <name><surname>Ordulu</surname><given-names>Z</given-names></name>, <name><surname>Pillalamarri</surname><given-names>V</given-names></name>, <name><surname>Benson</surname><given-names>CB</given-names></name>, <name><surname>Blumenthal</surname><given-names>I</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Clinical diagnosis by whole-genome sequencing of a prenatal sample</article-title>. <source>N Engl J Med</source><volume>367</volume>: <fpage>2226</fpage>&#x2013;<lpage>2232</lpage><pub-id pub-id-type="pmid">23215558</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Korbel1">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>Korbel</surname><given-names>JO</given-names></name>, <name><surname>Urban</surname><given-names>AE</given-names></name>, <name><surname>Affourtit</surname><given-names>JP</given-names></name>, <name><surname>Godwin</surname><given-names>B</given-names></name>, <name><surname>Grubert</surname><given-names>F</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>Paired-end mapping reveals extensive structural variation in the human genome</article-title>. <source>Science</source><volume>318</volume>: <fpage>420</fpage>&#x2013;<lpage>426</lpage><pub-id pub-id-type="pmid">17901297</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Chen1">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Chen</surname><given-names>W</given-names></name>, <name><surname>Kalscheuer</surname><given-names>V</given-names></name>, <name><surname>Tzschach</surname><given-names>A</given-names></name>, <name><surname>Menzel</surname><given-names>C</given-names></name>, <name><surname>Ullmann</surname><given-names>R</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>Mapping translocation breakpoints by next-generation sequencing</article-title>. <source>Genome Res</source><volume>18</volume>: <fpage>1143</fpage>&#x2013;<lpage>1149</lpage><pub-id pub-id-type="pmid">18326688</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Talkowski3">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Talkowski</surname><given-names>ME</given-names></name>, <name><surname>Ernst</surname><given-names>C</given-names></name>, <name><surname>Heilbut</surname><given-names>A</given-names></name>, <name><surname>Chiang</surname><given-names>C</given-names></name>, <name><surname>Hanscom</surname><given-names>C</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Next-generation sequencing strategies enable routine detection of balanced chromosome rearrangements for clinical diagnostics and genetic research</article-title>. <source>Am J Hum Genet</source><volume>88</volume>: <fpage>469</fpage>&#x2013;<lpage>481</lpage><pub-id pub-id-type="pmid">21473983</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Kloosterman1">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Kloosterman</surname><given-names>WP</given-names></name>, <name><surname>Guryev</surname><given-names>V</given-names></name>, <name><surname>van Roosmalen</surname><given-names>M</given-names></name>, <name><surname>Duran</surname><given-names>KJ</given-names></name>, <name><surname>de Bruijn</surname><given-names>E</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Chromothripsis as a mechanism driving complex de novo structural rearrangements in the germline</article-title>. <source>Hum Mol Genet</source><volume>20</volume>: <fpage>1916</fpage>&#x2013;<lpage>1924</lpage><pub-id pub-id-type="pmid">21349919</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Talkowski4">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Talkowski</surname><given-names>ME</given-names></name>, <name><surname>Maussion</surname><given-names>G</given-names></name>, <name><surname>Crapper</surname><given-names>L</given-names></name>, <name><surname>Rosenfeld</surname><given-names>JA</given-names></name>, <name><surname>Blumenthal</surname><given-names>I</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Disruption of a large intergenic noncoding RNA in subjects with neurodevelopmental disabilities</article-title>. <source>Am J Hum Genet</source><volume>91</volume>: <fpage>1128</fpage>&#x2013;<lpage>1134</lpage><pub-id pub-id-type="pmid">23217328</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Burrage1">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Burrage</surname><given-names>LC</given-names></name>, <name><surname>Eble</surname><given-names>TN</given-names></name>, <name><surname>Hixson</surname><given-names>PM</given-names></name>, <name><surname>Roney</surname><given-names>EK</given-names></name>, <name><surname>Cheung</surname><given-names>SW</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>A mosaic 2q24.2 deletion narrows the critical region to a 0.4 Mb interval that includes TBR1, TANK, and PSMD14</article-title>. <source>Am J Med Genet A</source><volume>161</volume>: <fpage>841</fpage>&#x2013;<lpage>844</lpage><pub-id pub-id-type="pmid">23444363</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Byrne1">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Byrne</surname><given-names>A</given-names></name>, <name><surname>McLaren</surname><given-names>RP</given-names></name>, <name><surname>Mason</surname><given-names>P</given-names></name>, <name><surname>Chai</surname><given-names>L</given-names></name>, <name><surname>Dufault</surname><given-names>MR</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Knockdown of human deubiquitinase PSMD14 induces cell cycle arrest and senescence</article-title>. <source>Exp Cell Res</source><volume>316</volume>: <fpage>258</fpage>&#x2013;<lpage>271</lpage><pub-id pub-id-type="pmid">19732767</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Tsai1">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Tsai</surname><given-names>NP</given-names></name>, <name><surname>Wilkerson</surname><given-names>JR</given-names></name>, <name><surname>Guo</surname><given-names>W</given-names></name>, <name><surname>Maksimova</surname><given-names>MA</given-names></name>, <name><surname>DeMartino</surname><given-names>GN</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Multiple autism-linked genes mediate synapse elimination via proteasomal degradation of a synaptic scaffold PSD-95</article-title>. <source>Cell</source><volume>151</volume>: <fpage>1581</fpage>&#x2013;<lpage>1594</lpage><pub-id pub-id-type="pmid">23260144</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Galy1">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Galy</surname><given-names>V</given-names></name>, <name><surname>Mattaj</surname><given-names>IW</given-names></name>, <name><surname>Askjaer</surname><given-names>P</given-names></name> (<year>2003</year>) <article-title>Caenorhabditis elegans nucleoporins Nup93 and Nup205 determine the limit of nuclear pore complex size exclusion in vivo</article-title>. <source>Mol Biol Cell</source><volume>14</volume>: <fpage>5104</fpage>&#x2013;<lpage>5115</lpage><pub-id pub-id-type="pmid">12937276</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Hachet1">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Hachet</surname><given-names>V</given-names></name>, <name><surname>Busso</surname><given-names>C</given-names></name>, <name><surname>Toya</surname><given-names>M</given-names></name>, <name><surname>Sugimoto</surname><given-names>A</given-names></name>, <name><surname>Askjaer</surname><given-names>P</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>The nucleoporin Nup205/NPP-3 is lost near centrosomes at mitotic onset and can modulate the timing of this process in Caenorhabditis elegans embryos</article-title>. <source>Mol Biol Cell</source><volume>23</volume>: <fpage>3111</fpage>&#x2013;<lpage>3121</lpage><pub-id pub-id-type="pmid">22740626</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Stevenson1">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>Stevenson</surname><given-names>J</given-names></name>, <name><surname>Richman</surname><given-names>N</given-names></name> (<year>1976</year>) <article-title>The prevalence of language delay in a population of three-year-old children and its association with general retardation</article-title>. <source>Dev Med Child Neurol</source><volume>18</volume>: <fpage>431</fpage>&#x2013;<lpage>441</lpage><pub-id pub-id-type="pmid">955307</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-AlHolou1">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Al-Holou</surname><given-names>WN</given-names></name>, <name><surname>Yew</surname><given-names>AY</given-names></name>, <name><surname>Boomsaad</surname><given-names>ZE</given-names></name>, <name><surname>Garton</surname><given-names>HJ</given-names></name>, <name><surname>Muraszko</surname><given-names>KM</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Prevalence and natural history of arachnoid cysts in children</article-title>. <source>J Neurosurg Pediatr</source><volume>5</volume>: <fpage>578</fpage>&#x2013;<lpage>585</lpage><pub-id pub-id-type="pmid">20515330</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Cocchella1">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Cocchella</surname><given-names>A</given-names></name>, <name><surname>Malacarne</surname><given-names>M</given-names></name>, <name><surname>Forzano</surname><given-names>F</given-names></name>, <name><surname>Marciano</surname><given-names>C</given-names></name>, <name><surname>Pierluigi</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>The refinement of the critical region for the 2q31.2q32.3 deletion syndrome indicates candidate genes for mental retardation and speech impairment</article-title>. <source>Am J Med Genet B Neuropsychiatr Genet</source><volume>153B</volume>: <fpage>1342</fpage>&#x2013;<lpage>1346</lpage><pub-id pub-id-type="pmid">20552675</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Lim1">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Lim</surname><given-names>J</given-names></name>, <name><surname>Hao</surname><given-names>T</given-names></name>, <name><surname>Shaw</surname><given-names>C</given-names></name>, <name><surname>Patel</surname><given-names>AJ</given-names></name>, <name><surname>Szab&#xF3;</surname><given-names>G</given-names></name>, <etal>et al</etal> (<year>2006</year>) <article-title>A protein-protein interaction network for human inherited ataxias and disorders of Purkinje cell degeneration</article-title>. <source>Cell</source><volume>125</volume>: <fpage>801</fpage>&#x2013;<lpage>814</lpage><pub-id pub-id-type="pmid">16713569</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Girgenti1">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Girgenti</surname><given-names>MJ</given-names></name>, <name><surname>LoTurco</surname><given-names>JJ</given-names></name>, <name><surname>Maher</surname><given-names>BJ</given-names></name> (<year>2012</year>) <article-title>ZNF804a regulates expression of the schizophrenia-associated genes PRSS16, COMT, PDE4B, and DRD2</article-title>. <source>PLoS One</source><volume>7</volume>: <fpage>e32404</fpage><pub-id pub-id-type="pmid">22384243</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Hill1">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Hill</surname><given-names>MJ</given-names></name>, <name><surname>Jeffries</surname><given-names>AR</given-names></name>, <name><surname>Dobson</surname><given-names>RJ</given-names></name>, <name><surname>Price</surname><given-names>J</given-names></name>, <name><surname>Bray</surname><given-names>NJ</given-names></name> (<year>2012</year>) <article-title>Knockdown of the psychosis susceptibility gene ZNF804A alters expression of genes involved in cell adhesion</article-title>. <source>Hum Mol Genet</source><volume>21</volume>: <fpage>1018</fpage>&#x2013;<lpage>1024</lpage><pub-id pub-id-type="pmid">22080834</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-ODonovan1">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>O&#x2019;Donovan</surname><given-names>MC</given-names></name>, <name><surname>Craddock</surname><given-names>N</given-names></name>, <name><surname>Norton</surname><given-names>N</given-names></name>, <name><surname>Williams</surname><given-names>H</given-names></name>, <name><surname>Peirce</surname><given-names>T</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>Identification of loci associated with schizophrenia by genome-wide association and follow-up</article-title>. <source>Nat Genet</source><volume>40</volume>: <fpage>1053</fpage>&#x2013;<lpage>1055</lpage><pub-id pub-id-type="pmid">18677311</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Steinberg1">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Steinberg</surname><given-names>S</given-names></name>, <name><surname>Mors</surname><given-names>O</given-names></name>, <name><surname>B&#xF8;rglum</surname><given-names>AD</given-names></name>, <name><surname>Gustafsson</surname><given-names>O</given-names></name>, <name><surname>Werge</surname><given-names>T</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Expanding the range of ZNF804A variants conferring risk of psychosis</article-title>. <source>Mol Psychiatry</source><volume>16</volume>: <fpage>59</fpage>&#x2013;<lpage>66</lpage><pub-id pub-id-type="pmid">20048749</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Williams1">
+        <label>25</label>
+        <mixed-citation publication-type="journal"><name><surname>Williams</surname><given-names>HJ</given-names></name>, <name><surname>Norton</surname><given-names>N</given-names></name>, <name><surname>Dwyer</surname><given-names>S</given-names></name>, <name><surname>Moskvina</surname><given-names>V</given-names></name>, <name><surname>Nikolov</surname><given-names>I</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Fine mapping of ZNF804A and genome-wide significant evidence for its involvement in schizophrenia and bipolar disorder</article-title>. <source>Mol Psychiatry</source><volume>16</volume>: <fpage>429</fpage>&#x2013;<lpage>441</lpage><pub-id pub-id-type="pmid">20368704</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Riley1">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Riley</surname><given-names>B</given-names></name>, <name><surname>Thiselton</surname><given-names>D</given-names></name>, <name><surname>Maher</surname><given-names>BS</given-names></name>, <name><surname>Bigdeli</surname><given-names>T</given-names></name>, <name><surname>Wormley</surname><given-names>B</given-names></name> (<year>2010</year>) <article-title>Replication of association between schizophrenia and ZNF804A in the Irish Case-Control Study of Schizophrenia sample</article-title>. <source>Mol Psychiatry</source><volume>15</volume>: <fpage>29</fpage>&#x2013;<lpage>37</lpage><pub-id pub-id-type="pmid">19844207</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Walter1">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Walter</surname><given-names>H</given-names></name>, <name><surname>Schnell</surname><given-names>K</given-names></name>, <name><surname>Erk</surname><given-names>S</given-names></name>, <name><surname>Arnold</surname><given-names>C</given-names></name>, <name><surname>Kirsch</surname><given-names>P</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Effects of a genome-wide supported psychosis risk variant on neural activation during a theory-of-mind task</article-title>. <source>Mol Psychiatry</source><volume>16</volume>: <fpage>462</fpage>&#x2013;<lpage>470</lpage><pub-id pub-id-type="pmid">20231838</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Huang1">
+        <label>28</label>
+        <mixed-citation publication-type="journal"><name><surname>Huang</surname><given-names>N</given-names></name>, <name><surname>Lee</surname><given-names>I</given-names></name>, <name><surname>Marcotte</surname><given-names>EM</given-names></name>, <name><surname>Hurles</surname><given-names>ME</given-names></name> (<year>2010</year>) <article-title>Characterising and predicting haploinsufficiency in the human genome</article-title>. <source>PLoS Genet</source><volume>6</volume>: <fpage>e1001154</fpage><pub-id pub-id-type="pmid">20976243</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Esslinger1">
+        <label>29</label>
+        <mixed-citation publication-type="journal"><name><surname>Esslinger</surname><given-names>C</given-names></name>, <name><surname>Walter</surname><given-names>H</given-names></name>, <name><surname>Kirsch</surname><given-names>P</given-names></name>, <name><surname>Erk</surname><given-names>S</given-names></name>, <name><surname>Schnell</surname><given-names>K</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Neural mechanisms of a genome-wide supported psychosis variant</article-title>. <source>Science</source><volume>324</volume>: <fpage>605</fpage><pub-id pub-id-type="pmid">19407193</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-MacArthur1">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>MacArthur</surname><given-names>DG</given-names></name>, <name><surname>Balasubramanian</surname><given-names>S</given-names></name>, <name><surname>Frankish</surname><given-names>A</given-names></name>, <name><surname>Huang</surname><given-names>N</given-names></name>, <name><surname>Morris</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>A systematic survey of loss-of-function variants in human protein-coding genes</article-title>. <source>Science</source><volume>335</volume>: <fpage>823</fpage>&#x2013;<lpage>828</lpage><pub-id pub-id-type="pmid">22344438</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Edmondson1">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>Edmondson</surname><given-names>AC</given-names></name>, <name><surname>Braund</surname><given-names>PS</given-names></name>, <name><surname>Stylianou</surname><given-names>IM</given-names></name>, <name><surname>Khera</surname><given-names>AV</given-names></name>, <name><surname>Nelson</surname><given-names>CP</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Dense genotyping of candidate gene loci identifies variants associated with high-density lipoprotein cholesterol</article-title>. <source>Circ Cardiovasc Genet</source><volume>4</volume>: <fpage>145</fpage>&#x2013;<lpage>155</lpage><pub-id pub-id-type="pmid">21303902</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Ng1">
+        <label>32</label>
+        <mixed-citation publication-type="journal"><name><surname>Ng</surname><given-names>BL</given-names></name>, <name><surname>Carter</surname><given-names>NP</given-names></name> (<year>2006</year>) <article-title>Factors Affecting Flow Karyotype Resolution</article-title>. <source>Cytometry Part A</source><volume>69</volume>: <fpage>1028</fpage>&#x2013;<lpage>1036</lpage></mixed-citation>
+      </ref>
+      <ref id="pone.0090894-Gribble1">
+        <label>33</label>
+        <mixed-citation publication-type="journal"><name><surname>Gribble</surname><given-names>SM</given-names></name>, <name><surname>Ng</surname><given-names>BL</given-names></name>, <name><surname>Prigmore</surname><given-names>E</given-names></name>, <name><surname>Fitzgerald</surname><given-names>T</given-names></name>, <name><surname>Carter</surname><given-names>NP</given-names></name> (<year>2009</year>) <article-title>Array painting: a protocol for the rapid analysis of aberrant chromosomes using DNA microarrays</article-title>. <source>Nat Protocols</source><volume>4</volume>: <fpage>1722</fpage>&#x2013;<lpage>1736</lpage></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

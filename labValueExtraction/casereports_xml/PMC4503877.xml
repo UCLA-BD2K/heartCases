@@ -1,0 +1,763 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">J Neurol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">J. Neurol</journal-id>
+      <journal-title-group>
+        <journal-title>Journal of Neurology</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0340-5354</issn>
+      <issn pub-type="epub">1432-1459</issn>
+      <publisher>
+        <publisher-name>Springer Berlin Heidelberg</publisher-name>
+        <publisher-loc>Berlin/Heidelberg</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">25957632</article-id>
+      <article-id pub-id-type="pmc">4503877</article-id>
+      <article-id pub-id-type="publisher-id">7755</article-id>
+      <article-id pub-id-type="doi">10.1007/s00415-015-7755-y</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Original Communication</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Whole exome sequencing and the clinician: we need clinical skills and functional validation in variant filtering</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Daud</surname>
+            <given-names>Daniyal</given-names>
+          </name>
+          <address>
+            <email>dbdaud@gmail.com</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Griffin</surname>
+            <given-names>Helen</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Douroudis</surname>
+            <given-names>Konstantinos</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kleinle</surname>
+            <given-names>Stephanie</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff3"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Eglon</surname>
+            <given-names>Gail</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pyle</surname>
+            <given-names>Angela</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chinnery</surname>
+            <given-names>Patrick F.</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Horvath</surname>
+            <given-names>Rita</given-names>
+          </name>
+          <address>
+            <phone>+44 (0) 191 2418855</phone>
+            <email>rita.horvath@ncl.ac.uk</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <aff id="Aff1"><label/>Wellcome Trust Centre for Mitochondrial Research, Institute of Genetic Medicine, Newcastle University, Central Parkway, Newcastle upon Tyne, NE1 3BZ UK </aff>
+        <aff id="Aff2"><label/>Department of Medicine, James Cook University Hospital, Middlesbrough, TS4 3BW UK </aff>
+        <aff id="Aff3"><label/>Medical Genetic Center, 80336 Munich, Germany </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>10</day>
+        <month>5</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>10</day>
+        <month>5</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <year>2015</year>
+      </pub-date>
+      <volume>262</volume>
+      <issue>7</issue>
+      <fpage>1673</fpage>
+      <lpage>1677</lpage>
+      <history>
+        <date date-type="received">
+          <day>8</day>
+          <month>3</month>
+          <year>2015</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>11</day>
+          <month>4</month>
+          <year>2015</year>
+        </date>
+        <date date-type="accepted">
+          <day>12</day>
+          <month>4</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; The Author(s) 2015</copyright-statement>
+        <license license-type="OpenAccess">
+          <license-p>
+<bold>Open Access</bold>This article is distributed under the terms of the Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <p>Whole exome sequencing (WES) is a recently developed technique in genetics research that attempts to identify causative mutations in complex, undiagnosed genetic conditions. Causative mutations are usually identified after filtering the hundreds of variants on WES from an individual&#x2019;s DNA selected by the phenotype. We investigated a patient with a slowly progressive chronic axonal distal motor neuropathy and extrapyramidal syndrome using WES, in whom common genetic mutations had been excluded. Variant filtering identified potentially deleterious mutations in three known disease genes: <italic>DCTN1</italic>, <italic>KIF5A</italic> and <italic>NEFH</italic>, which have been all associated with similar clinical presentations of amyotrophic lateral sclerosis, Parkinsonism and/or hereditary spastic paraplegia. Predicting the functional effect of the mutations were analysed in parallel with detailed clinical investigations. This case highlights the difficulties and pitfalls of applying WES in patients with complex neurological diseases and serves as an instructive tale.</p>
+      </abstract>
+      <kwd-group xml:lang="en">
+        <title>Keywords</title>
+        <kwd>Genetics</kwd>
+        <kwd>Whole exome sequencing</kwd>
+        <kwd>Spastic paraplegia</kwd>
+        <kwd>Motor neuropathy</kwd>
+      </kwd-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>&#xA9; Springer-Verlag Berlin Heidelberg 2015</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1" sec-type="intro">
+      <title>Introduction</title>
+      <p>Whole exome sequencing (WES) is an increasingly available second-generation sequencing technique that identifies variants in the coding regions of the human genome [<xref ref-type="bibr" rid="CR1">1</xref>]. In the field of neurology, it has helped patients by elucidating the cause of their often long-standing symptoms, and many previously undiagnosed patients with a range of neurological syndromes which can now be given the name of the causative gene and counselled appropriately. For researchers, WES has led to the rapid rise in the discovery of novel mutations in both known and novel disease genes, further unravelling the cellular function and relationships of various genes with human disease. However, one of the many limitations of WES is in its application to single patients with late-onset disease. WES of one individual&#x2019;s DNA can identify up to 20,000 variants [<xref ref-type="bibr" rid="CR1">1</xref>]. Even in patients with a characteristic clinical phenotype choosing the causative mutation remain a challenge if DNA from other affected or healthy relatives is not available to determine which variant segregates with the phenotype [<xref ref-type="bibr" rid="CR2">2</xref>].</p>
+      <p>Here we describe a case wherein, we used WES to guide diagnosis in a patient with complex neurodegenerative disease.</p>
+    </sec>
+    <sec id="Sec2" sec-type="methods">
+      <title>Methods</title>
+      <p>We assessed the patient&#x2019;s clinical history, examination and serological, neurophysiological, radiological and histological investigations. Exome sequencing was carried out using genomic blood DNA by Illumina Truseq&#x2122; 62&#xA0;Mb exome capture. We used our in-house bioinformatics pipeline to align data to the reference human genome (UCSC hg19), remove duplicate sequence reads (Picard v1.85) and variant detection (Varscan v2.29, Dindel v1.0110). Results were filtered for variants with a minor allele frequency less than 0.01 in several databases: dbSNP135, 1000 genomes (February 2012 data release), the National Heart, Lung and Blood Institute (NHLBI, NIH, Bethesda, MD) Exome Sequencing Project (ESP) 6500 exomes, and 238 unrelated in-house controls. Rare homozygous and compound heterozygous variants were defined, and protein altering and/or putative &#x2018;disease-causing&#x2019; mutations, along with their functional annotation, were identified using ANNOVAR. Further filtering has been performed by gene ontology (GO) terms associated with neuronal function, and Online Mendelian Inheritance in Man (OMIM) disease descriptions related to neuropathy, ataxia or extrapyramidal disorders (i.e., the patient&#x2019;s clinical phenotype). We carried out PCR (IMMOLASE&#x2122; DNA Polymerase, Bioline UK) and Sanger sequencing (BigDye<sup>&#xAE;</sup> Terminator v3.1) of variants predicted to be deleterious by five online prediction tools (MutationTaster, SIFT, Polyphen2, A-GVGD, and LRT).</p>
+    </sec>
+    <sec id="Sec3" sec-type="results">
+      <title>Results</title>
+      <sec id="Sec4">
+        <title>Case report</title>
+        <p>A 74-year-old left-handed man originally presented at the age of 45 with right-sided back pain and sciatica as well as bilateral grip weakness. His gait had also changed but he was able to walk and play sports. Past medical history included poliomyelitis at the age of ten, during the 1950s epidemic.</p>
+        <p>Both of his parents died at age 88 and 72, and had no neuromuscular symptoms. He has one son and four daughters (28&#x2013;36&#xA0;years of age), and one daughter was recently diagnosed with multiple sclerosis. He has a 71-year-old healthy brother who was not available for testing.</p>
+        <p>At age 45, examination revealed wasting and weakness of the right sternocleidomastoid muscle, bilateral wasting of thenar and intrinsic hand muscles (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>a). In particular, the abductor pollicis brevis was weak bilaterally. There was distal lower limb weakness with foot drop but no pes cavus. Tone and reflexes were normal.<fig id="Fig1"><label>Fig.&#xA0;1</label><caption><p>
+<bold>a</bold> Photographs of the patient demonstrating a partially treated torticollis, a broad-based stance, distal upper and lower limb atrophy as well as bilateral pes cavus. <bold>b</bold> MRI of the patient&#x2019;s brain demonstrating cerebellar atrophy</p></caption><graphic xlink:href="415_2015_7755_Fig1_HTML" id="MO1"/></fig></p>
+        <p>He was seen again at the age of 64 with worsening torticollis. He had jerky ocular pursuit movements and bilateral wasting of the tongue. His previous weakness had persisted with additional weakness in the shoulders. He had developed pes cavus bilaterally (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>a), brisk upper limb and knee reflexes with absent ankle reflexes bilaterally. He progressed to develop dysmetria and dysdiadochokinesis but no dysarthria.</p>
+        <p>More recent examination at 74&#xA0;years revealed progression of the complex movement disorder with facial dystonia, head tremor, distal amyotrophy, ataxia and some rigidity at the wrists. He had a wide-based steppage gait with reduced arm swing.</p>
+      </sec>
+      <sec id="Sec5">
+        <title>Investigations</title>
+        <p>Basic haematological and biochemical investigations were normal except for gamma-glutamyl transferase (83 units/L, normal &lt;70), creatine kinase (193 and 215&#xA0;U/L, normal 10&#x2013;190), random glucose (8.3&#xA0;mmol/L), cholesterol (7.9&#xA0;mmol/L, normal &lt;5.2) and triglycerides (6.1&#xA0;mmol/L, normal fasting level &lt;1.8). Thyroid function tests, auto-antibodies, Vitamin E, 24-h urinary copper, alpha-fetoprotein, lysosomal enzymes, hexosaminidase A were all within normal limits.</p>
+        <p>Brain MRI revealed marked cerebellar atrophy and mild cortical atrophy without signal change (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>b). Cervical MRI showed mild spondylotic changes at C5/6 and C6/7. DatScan showed no abnormalities in dopamine metabolism. Nerve conduction studies demonstrated preserved sensory nerve action potentials, sensory and motor conduction velocities but symmetrically diminished compound motor potentials in all four limbs, suggesting that the syndrome could not be attributed to previous poliomyelitis. Electromyography revealed chronic neurogenic changes, suggesting spinal muscular atrophy or distal spinal muscular atrophy. With electromyography, unstable polyphasic units were observed with reduced interference and amplitudes up to 10&#xA0;mV, confirming a chronic progressive anterior horn cell disease. Muscle biopsy showed only neurogenic changes.</p>
+      </sec>
+      <sec id="Sec6">
+        <title>Genetic analysis</title>
+        <p>Genetic tests performed before WES excluded Huntington&#x2019;s disease (<italic>IT15</italic>), spinal muscular atrophy (<italic>SMN1</italic>), spinal bulbar muscular atrophy (AR), primary torsion dystonia (<italic>DYT1</italic>), and the common forms of spastic paraplegias (<italic>SPG4, REEP1, ATL1, SPG7</italic>). No mtDNA deletions were detected in his muscle DNA. Rare, potentially disease-causing variants found in filtered WES data are listed in Tables&#xA0;<xref rid="Tab1" ref-type="table">1</xref> and <xref rid="Tab2" ref-type="table">2</xref>; we could confirm all variants in heterozygous state in the patient&#x2019;s DNA by Sanger sequencing. No further mutations were detected in any of the known disease genes involved in inherited movement disorders, neuropathies or spastic paraplegias and no further family members were available for genetic analysis.<table-wrap id="Tab1"><label>Table&#xA0;1</label><caption><p>Predicted deleterious variants filtered from whole exome sequencing data</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left">Gene</th><th align="left">Position</th><th align="left">Variant</th><th align="left">Bioinformatic score</th><th align="left">Disease association</th></tr></thead><tbody><tr><td align="left">DCTN1</td><td align="left">Chr2:g.74588640 C</td><td align="left">NM_004082.4: c.3823 C&#xA0;&gt;&#xA0;T, p.Arg1275Cys</td><td align="left">5</td><td align="left">ALS, Perry syndrome</td></tr><tr><td align="left">KIF5A</td><td align="left">Chr12:g.57965854 C</td><td align="left">NM_004984.2: c.1373 C&#xA0;&gt;&#xA0;T, p.Ser458Phe</td><td align="left">3.5</td><td align="left">HSP, CMT</td></tr><tr><td align="left">NEFH</td><td align="left">Chr22:g.29885580_2988 603</td><td align="left">NM_021076.3: c.1965 1988del, p.Glu658_Lys665del</td><td align="left">N/A</td><td align="left">ALS</td></tr></tbody></table><table-wrap-foot><p>Scores were calculated from the output of five mutation deleteriousness prediction programmes: SIFT (score 1 for prediction of &#x2018;Deleterious&#x2019;, 0 for others), LRT (score 1 for prediction of &#x2018;Deleterious&#x2019;), Polyphen2 (score 1 for &#x2018;probably damaging&#x2019; prediction, 0.5 for &#x2018;possibly damaging&#x2019; prediction, 0 for &#x2018;benign&#x2019;), Align-GVGD (score 1 for predictions C55 or C66, score 0 for other predictions) and MutationTaster (score 1 for &#x2018;disease-causing&#x2019; prediction, 0 for &#x2018;polymorphism). Predictions were not available for the deletion in the NEFH gene</p></table-wrap-foot></table-wrap><table-wrap id="Tab2"><label>Table&#xA0;2</label><caption><p>Coverage and depth statistics of exome sequencing for the patient</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left">Mean target base coverage</th><th align="left">Number of bases covered 20-fold</th><th align="left">% Bases covered 20-fold</th><th align="left">Number of bases covered tenfold</th><th align="left">% Bases covered tenfold</th><th align="left">Number of bases covered fivefold</th><th align="left">% Bases covered fivefold</th><th align="left">Number of bases covered onefold</th><th align="left">% Bases covered onefold</th></tr></thead><tbody><tr><td align="left">88.23</td><td align="left">29129128</td><td align="left">91.21</td><td align="left">30151406</td><td align="left">94.41</td><td align="left">30585401</td><td align="left">95.77</td><td align="left">31131999</td><td align="left">97.49</td></tr></tbody></table><table-wrap-foot><p>Coverage calculated for Consensus Coding Sequence (CCDS) bases (31,935,069&#xA0;bp)</p></table-wrap-foot></table-wrap></p>
+      </sec>
+    </sec>
+    <sec id="Sec7" sec-type="discussion">
+      <title>Discussion</title>
+      <p>We have found novel, potentially pathogenic mutations in the patient in multiple genes (<italic>DCTN1</italic>, <italic>KIF5A</italic>, <italic>NEFH</italic>) associated with various neurological syndromes. Based on previous reports, heterozygous mutations in all three genes can be associated with similar clinical presentation observed in our case. In further support of the pathogenic role, the selected variants have not been reported previously at all (<italic>KIF5A</italic>) or are extremely rare (one single heterozygous <italic>DCTN1</italic> and <italic>NEFH</italic> variant in 65,000 exomes (<ext-link ext-link-type="uri" xlink:href="http://exac.broadinstitute.org/">http://exac.broadinstitute.org/</ext-link>).</p>
+      <p><italic>DCTN1</italic> mutations have been associated with a familial form of ALS (p.Gly59Ser) [<xref ref-type="bibr" rid="CR3">3</xref>], familial progressive supranuclear palsy [<xref ref-type="bibr" rid="CR4">4</xref>], Perry syndrome (p.Gly71Ala/Glu/Arg, p.Thr72Pro, and p.Gln74Pro) which is characterized by central hypoventilation and parkinsonism [<xref ref-type="bibr" rid="CR5">5</xref>]. Our patient exhibited a distal motor neuropathy with ataxia and an extrapyramidal syndrome of tremor and focal dystonia&#x2014;an inexact fit with the previously described phenotypes of <italic>DCTN1</italic>. However, the involvement of the spinal motor neurones in combination with a movement disorder resembles <italic>DCTN1</italic>-related disease and our patient may represent a new phenotype associated with <italic>DCTN1</italic> mutation.</p>
+      <p><italic>DCTN1</italic> codes for the p150<sup>glued</sup> subunit of the dynactin complex, which together with dynein is responsible for retrograde transport of vesicle cargo in axons [<xref ref-type="bibr" rid="CR6">6</xref>]. The C-terminal region of p150<sup>glued</sup> has been shown in <italic>N. crassa</italic> to be responsible for the interaction of the dynactin complex with membranous cargo [<xref ref-type="bibr" rid="CR7">7</xref>]. However, previous work in HeLA and COS7 cells could not confirm that mutations in the C-terminal region of DCTN1 (Arg1101Lys and Thr1249Ile) are functionally pathogenic [<xref ref-type="bibr" rid="CR8">8</xref>]. Our patient&#x2019;s <italic>DCTN1</italic> mutation is located to this region; nevertheless, this variant has not been reported previously and no functional data are available on it to date. However, functional in vivo imaging studies in patients possessing the variants associated with Perry syndrome, have demonstrated a reduced uptake of FDOPA, a marker of dopamine synthesis and storage [<xref ref-type="bibr" rid="CR9">9</xref>].</p>
+      <p>Mutations in <italic>KIF5A</italic> are associated with spastic paraplegia (<italic>SPG10</italic>), and can also cause peripheral neuropathy, parkinsonism, retinitis pigmentosa and behavioural problems [<xref ref-type="bibr" rid="CR10">10</xref>, <xref ref-type="bibr" rid="CR11">11</xref>]. Therefore, the pyramidal signs in our patient may also represent a <italic>KIF5A</italic>-related disease. <italic>KIF5A</italic> codes for the kinesin heavy chain which is responsible for anterograde transport of cargo (thought to be neurofilaments) towards the synapse [<xref ref-type="bibr" rid="CR12">12</xref>]. The <italic>KIF5A</italic> mutation in our patient occurs in the neck region that links two domains in the protein [<xref ref-type="bibr" rid="CR10">10</xref>]. To our knowledge, only one mutation (p. Ala361Val) has previously been reported in the neck region in spastic paraplegia [<xref ref-type="bibr" rid="CR13">13</xref>]; however, its pathogenic role has not been confirmed in functional studies [<xref ref-type="bibr" rid="CR14">14</xref>].</p>
+      <p>WES also detected a heterozygous 24-base pair deletion in the neurofilament heavy chain (<italic>NEFH</italic>) gene in our patient. Such deletions of a lysine-serine-proline unit, that shorten the repetitive tail region of the NEFH protein, have been associated with an increased risk of developing ALS [<xref ref-type="bibr" rid="CR15">15</xref>], but no highly penetrant causative alleles have been described in this gene.</p>
+      <p>Another intriguing point is the poliomyelitis in our patient&#x2019;s previous history. Whether the childhood neuropathy was indeed poliomyelitis, and coupled with a potentially deleterious mutation contributed to the development of a slowly progressive predominantly distal motor neuropathy, or the childhood onset polio-like neuropathy represents the first manifestation of a genetic condition remains unclear.</p>
+      <p>This case illustrates the problems that can be encountered in using next generation sequencing to guide the diagnosis of sporadic cases. Despite having confirmed potentially disease-causing mutations in <italic>DCTN1</italic> and <italic>KIF5A</italic>, as well as a genetic predisposing variant in <italic>NEFH</italic>, we cannot surely prove that they are the cause for the patient&#x2019;s phenotype without an informative family history, which is often not available in late-onset disease. The absence of clinical signs and symptoms in younger family members may simply reflect a later disease onset or low penetrance of the mutation rather than its non-pathogenicity. Moreover, we cannot exclude the possibility that more than one of the variants are relevant, and the different aspects of the patient&#x2019;s condition potentially may have independent causes.</p>
+      <p>The case also highlights the importance of clinical history and examination in filtering through the enormous number of possible diagnoses generated by the results of next generation sequencing, and the need for functional studies at a molecular level to identify which mutation contributes to the cellular dysfunction. The overlapping phenotypes of genetic forms of ALS, HSP and dystonia highlight the importance of an unbiased testing approach, but also illustrate the difficulties of confirming the genetic diagnosis and functional tests provided evidence for the pathogenicity of these mutations are still lacking.</p>
+      <p>In conclusion, we present a patient with a complex neurological phenotype including predominantly distal motor neuropathy, extrapyramidal and cerebellar signs for whom we have identified a number of potentially pathogenic candidate mutations.</p>
+    </sec>
+  </body>
+  <back>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>ALS</term>
+          <def>
+            <p>Amyotrophic lateral sclerosis</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>HSP</term>
+          <def>
+            <p>Hereditary spastic paraplegia</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>CMT</term>
+          <def>
+            <p>Charcot&#x2013;Marie&#x2013;Tooth disease</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    <ack>
+      <p>RH is supported by the Medical Research Council (UK) (G1000848) and the European Research Council (309548). PFC is a Wellcome Trust Senior Fellow in Clinical Science and National Institute for Health Research Senior Investigator. He receives funding from the Medical Research Council and the National Institute for Health Research Biomedical Research Centre for Ageing and Age-Related Disease award to the Newcastle upon Tyne Foundation Hospitals National Health Service Trust.</p>
+      <sec id="d30e708">
+        <title>Conflicts of interest</title>
+        <p>On behalf of all authors, the corresponding author states that there is no conflict of interest.</p>
+      </sec>
+      <sec id="d30e713">
+        <title>Ethical standard</title>
+        <p>Ethical approval has been obtained from local ethics committee and the patient gave written consent for the study.</p>
+      </sec>
+    </ack>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bras</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Guerreiro</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Hardy</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Use of next-generation sequencing and other whole-genome strategies to dissect neurological disease</article-title>
+          <source>Nat Rev Neurosci</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <issue>7</issue>
+          <fpage>453</fpage>
+          <lpage>464</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrn3271</pub-id>
+          <pub-id pub-id-type="pmid">22714018</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yuan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Higuchi</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Nagado</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Nozuma</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Nakamura</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Matsuura</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Novel mutation in the replication focus targeting sequence domain of DNMT1 causes hereditary sensory and autonomic neuropathy IE</article-title>
+          <source>J Peripher Nerv Syst</source>
+          <year>2013</year>
+          <volume>18</volume>
+          <issue>1</issue>
+          <fpage>89</fpage>
+          <lpage>93</lpage>
+          <pub-id pub-id-type="doi">10.1111/jns5.12012</pub-id>
+          <pub-id pub-id-type="pmid">23521649</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Puls</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Jonnakuty</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>LaMonte</surname>
+              <given-names>BH</given-names>
+            </name>
+            <name>
+              <surname>Holzbaur</surname>
+              <given-names>ELF</given-names>
+            </name>
+            <name>
+              <surname>Tokito</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Mann</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Mutant dynactin in motor neuron disease</article-title>
+          <source>Nat Genet</source>
+          <year>2003</year>
+          <volume>33</volume>
+          <issue>4</issue>
+          <fpage>455</fpage>
+          <lpage>456</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng1123</pub-id>
+          <pub-id pub-id-type="pmid">12627231</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Caroppo</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Le Ber</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Clot</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>DCtn1 mutation analysis in families with progressive supranuclear palsy&#x2014;like phenotypes</article-title>
+          <source>JAMA Neurol</source>
+          <year>2014</year>
+          <volume>71</volume>
+          <issue>2</issue>
+          <fpage>208</fpage>
+          <lpage>215</lpage>
+          <pub-id pub-id-type="doi">10.1001/jamaneurol.2013.5100</pub-id>
+          <pub-id pub-id-type="pmid">24343258</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wider</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Dachsel</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Farrer</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Dickson</surname>
+              <given-names>DW</given-names>
+            </name>
+            <name>
+              <surname>Tsuboi</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Wszolek</surname>
+              <given-names>ZK</given-names>
+            </name>
+          </person-group>
+          <article-title>Elucidating the genetics and pathology of Perry syndrome</article-title>
+          <source>J Neurol Sci</source>
+          <year>2010</year>
+          <volume>289</volume>
+          <issue>1&#x2013;2</issue>
+          <fpage>149</fpage>
+          <lpage>154</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jns.2009.08.044</pub-id>
+          <pub-id pub-id-type="pmid">19732908</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moughamian</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Holzbaur</surname>
+              <given-names>ELF</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynactin is required for transport initiation from the distal axon</article-title>
+          <source>Neuron</source>
+          <year>2012</year>
+          <volume>74</volume>
+          <issue>2</issue>
+          <fpage>331</fpage>
+          <lpage>343</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2012.02.025</pub-id>
+          <pub-id pub-id-type="pmid">22542186</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kumar</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Plamann</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynactin-membrane interaction is regulated by the C-terminal domains of p150Glued</article-title>
+          <source>EMBO Rep</source>
+          <year>2001</year>
+          <volume>2</volume>
+          <issue>10</issue>
+          <fpage>939</fpage>
+          <lpage>944</lpage>
+          <pub-id pub-id-type="doi">10.1093/embo-reports/kve202</pub-id>
+          <pub-id pub-id-type="pmid">11571270</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dixit</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Levy</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Tokito</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ligon</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Holzbaur</surname>
+              <given-names>ELF</given-names>
+            </name>
+          </person-group>
+          <article-title>Regulation of dynactin through the differential expression of p150Glued isoforms</article-title>
+          <source>J Biol Chem</source>
+          <year>2008</year>
+          <volume>283</volume>
+          <issue>48</issue>
+          <fpage>33611</fpage>
+          <lpage>33619</lpage>
+          <pub-id pub-id-type="doi">10.1074/jbc.M804840200</pub-id>
+          <pub-id pub-id-type="pmid">18812314</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Felicio</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Dinelle</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Agarwal</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>McKenzie</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Heffernan</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Road</surname>
+              <given-names>JD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>In vivo dopaminergic and serotonergic dysfunction in DCTN1 gene mutation carriers</article-title>
+          <source>Mov Disord</source>
+          <year>2014</year>
+          <volume>29</volume>
+          <issue>9</issue>
+          <fpage>1197</fpage>
+          <lpage>1201</lpage>
+          <pub-id pub-id-type="doi">10.1002/mds.25893</pub-id>
+          <pub-id pub-id-type="pmid">24797316</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kawaguchi</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Role of kinesin-1 in the pathogenesis of SPG10, a rare form of hereditary spastic paraplegia</article-title>
+          <source>Neurosci</source>
+          <year>2013</year>
+          <volume>19</volume>
+          <issue>4</issue>
+          <fpage>336</fpage>
+          <lpage>344</lpage>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>Y-T</given-names>
+            </name>
+            <name>
+              <surname>Laur&#xE1;</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hersheson</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Horga</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Jaunmuktane</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Brandner</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Extended phenotypic spectrum of KIF5A mutations: From spastic paraplegia to axonal neuropathy</article-title>
+          <source>Neurology</source>
+          <year>2014</year>
+          <volume>83</volume>
+          <issue>7</issue>
+          <fpage>612</fpage>
+          <lpage>619</lpage>
+          <pub-id pub-id-type="doi">10.1212/WNL.0000000000000691</pub-id>
+          <pub-id pub-id-type="pmid">25008398</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xia</surname>
+              <given-names>C-H</given-names>
+            </name>
+            <name>
+              <surname>Roberts</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name>
+              <surname>Her</surname>
+              <given-names>L-S</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>DS</given-names>
+            </name>
+            <name>
+              <surname>Cleveland</surname>
+              <given-names>DW</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Abnormal neurofilament transport caused by targeted disruption of neuronal kinesin heavy chain KIF5A</article-title>
+          <source>J Cell Biol</source>
+          <year>2003</year>
+          <volume>161</volume>
+          <issue>1</issue>
+          <fpage>55</fpage>
+          <lpage>66</lpage>
+          <pub-id pub-id-type="doi">10.1083/jcb.200301026</pub-id>
+          <pub-id pub-id-type="pmid">12682084</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>LoGiudice</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Neri</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Falco</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A missense mutation in the coiled-coil domain of the kif5a gene and late-onset hereditary spastic paraplegia</article-title>
+          <source>Arch Neurol</source>
+          <year>2006</year>
+          <volume>63</volume>
+          <issue>2</issue>
+          <fpage>284</fpage>
+          <lpage>287</lpage>
+          <pub-id pub-id-type="doi">10.1001/archneur.63.2.284</pub-id>
+          <pub-id pub-id-type="pmid">16476820</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ebbing</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Mann</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Starosta</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Jaud</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Sch&#xF6;ls</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Sch&#xFC;le</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Effect of spastic paraplegia mutations in KIF5A kinesin on transport activity</article-title>
+          <source>Hum Mol Genet</source>
+          <year>2008</year>
+          <volume>17</volume>
+          <issue>9</issue>
+          <fpage>1245</fpage>
+          <lpage>1252</lpage>
+          <pub-id pub-id-type="doi">10.1093/hmg/ddn014</pub-id>
+          <pub-id pub-id-type="pmid">18203753</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Al-Chalabi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Andersen</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Nilsson</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Chioza</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Andersson</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Russ</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Deletions of the heavy neurofilament subunit tail in amyotrophic lateral sclerosis</article-title>
+          <source>Hum Mol Genet</source>
+          <year>1999</year>
+          <volume>8</volume>
+          <issue>2</issue>
+          <fpage>157</fpage>
+          <lpage>164</lpage>
+          <pub-id pub-id-type="doi">10.1093/hmg/8.2.157</pub-id>
+          <pub-id pub-id-type="pmid">9931323</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

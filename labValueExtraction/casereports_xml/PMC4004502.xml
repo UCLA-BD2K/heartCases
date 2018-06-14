@@ -1,0 +1,2535 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Med Inform Decis Mak</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Med Inform Decis Mak</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Medical Informatics and Decision Making</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1472-6947</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24721489</article-id>
+      <article-id pub-id-type="pmc">4004502</article-id>
+      <article-id pub-id-type="publisher-id">1472-6947-14-32</article-id>
+      <article-id pub-id-type="doi">10.1186/1472-6947-14-32</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Influence of data quality on computed Dutch hospital quality indicators: a case study in colorectal cancer surgery</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" id="A1">
+          <name>
+            <surname>Dentler</surname>
+            <given-names>Kathrin</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>k.dentler@vu.nl</email>
+        </contrib>
+        <contrib contrib-type="author" id="A2">
+          <name>
+            <surname>Cornet</surname>
+            <given-names>Ronald</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>r.cornet@amc.uva.nl</email>
+        </contrib>
+        <contrib contrib-type="author" id="A3">
+          <name>
+            <surname>Teije</surname>
+            <given-names>Annette ten</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>annette@cs.vu.nl</email>
+        </contrib>
+        <contrib contrib-type="author" id="A4">
+          <name>
+            <surname>Tanis</surname>
+            <given-names>Pieter</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>p.j.tanis@amc.uva.nl</email>
+        </contrib>
+        <contrib contrib-type="author" id="A5">
+          <name>
+            <surname>Klinkenbijl</surname>
+            <given-names>Jean</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>j.h.klinkenbijl@amc.uva.nl</email>
+        </contrib>
+        <contrib contrib-type="author" id="A6">
+          <name>
+            <surname>Tytgat</surname>
+            <given-names>Kristien</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>k.m.tytgat@amc.uva.nl</email>
+        </contrib>
+        <contrib contrib-type="author" id="A7">
+          <name>
+            <surname>Keizer</surname>
+            <given-names>Nicolette de</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>n.f.keizer@amc.uva.nl</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Department of Computer Science, VU University Amsterdam, Amsterdam, Netherlands</aff>
+      <aff id="I2"><label>2</label>Department of Medical Informatics, Academic Medical Centre, University of Amsterdam, Amsterdam, The Netherlands</aff>
+      <aff id="I3"><label>3</label>Gastrointestinal Oncology Centre Amsterdam, Academic Medical Centre, University of Amsterdam, Amsterdam, The Netherlands</aff>
+      <aff id="I4"><label>4</label>Department of Biomedical Engineering, Link&#xF6;ping University, Link&#xF6;ping, Sweden</aff>
+      <pub-date pub-type="collection">
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>11</day>
+        <month>4</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>14</volume>
+      <fpage>32</fpage>
+      <lpage>32</lpage>
+      <history>
+        <date date-type="received">
+          <day>24</day>
+          <month>6</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>27</day>
+          <month>3</month>
+          <year>2014</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2014 Dentler et al.; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2014</copyright-year>
+        <copyright-holder>Dentler et al.; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License(<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1472-6947/14/32"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>Our study aims to assess the influence of data quality on computed Dutch hospital quality indicators, and whether colorectal cancer surgery indicators can be computed reliably based on routinely recorded data from an electronic medical record (EMR).</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>Cross-sectional study in a department of gastrointestinal oncology in a university hospital, in which a set of 10 indicators is computed (1) based on data abstracted manually for the national quality register Dutch Surgical Colorectal Audit (DSCA) as reference standard and (2) based on routinely collected data from an EMR. All 75 patients for whom data has been submitted to the DSCA for the reporting year 2011 and all 79 patients who underwent a resection of a primary colorectal carcinoma in 2011 according to structured data in the EMR were included. Comparison of results, investigating the causes for any differences based on data quality analysis. Main outcome measures are the computability of quality indicators, absolute percentages of indicator results, data quality in terms of availability in a structured format, completeness and correctness.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>All indicators were fully computable based on the DSCA dataset, but only three based on EMR data, two of which were percentages. For both percentages, the difference in proportions computed based on the two datasets was significant.</p>
+          <p>All required data items were available in a structured format in the DSCA dataset. Their average completeness was 86%, while the average completeness of these items in the EMR was 50%. Their average correctness was 87%.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>Our study showed that data quality can significantly influence indicator results, and that our EMR data was not suitable to reliably compute quality indicators. EMRs should be designed in a way so that the data required for audits can be entered directly in a structured and coded format.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>Data quality</kwd>
+        <kwd>Clinical quality indicators</kwd>
+        <kwd>Electronic medical record</kwd>
+        <kwd>Clinical audit</kwd>
+        <kwd>Patient data</kwd>
+        <kwd>Reuse</kwd>
+        <kwd>Secondary use</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>Over the last decades, it became possible and increasingly interesting to measure the quality of health care to implement quality improvement activities and to strengthen both transparency and accountability [<xref ref-type="bibr" rid="B1">1</xref>]. In this context, both legally mandatory and voluntary quality indicators [<xref ref-type="bibr" rid="B2">2</xref>] for various kinds of diseases and interventions have been released by governments, patient and scientific associations as well as insurance companies. The computed results are used for performance comparisons between health care institutions. As such comparisons have potentially serious implications, including influencing the choices of patients and insurance companies, indicator results should be reliable.</p>
+      <p>Ideally, clinical quality indicators are computed inside hospitals based on data recorded during the care process and stored in the Electronic Medical Record (EMR). In the United States, the meaningful use [<xref ref-type="bibr" rid="B3">3</xref>] of EMRs is put forward as a national goal, which includes the electronic exchange of health information as well as the computation and reporting of clinical quality measures [<xref ref-type="bibr" rid="B4">4</xref>]. This meaningful use reduces the registration burden for care providers and furthermore enables the unobtrusive measuring and monitoring of indicators in real-time, allowing for timely intervention.</p>
+      <p>Next to this development, national and international medical data registries proliferate [<xref ref-type="bibr" rid="B5">5</xref>], which are frequently used to quantitatively compare performance between health-care institutions. Due to various barriers that impede the reuse of data [<xref ref-type="bibr" rid="B6">6</xref>], many care organisations still collect the data for quality registers manually [<xref ref-type="bibr" rid="B7">7</xref>]. This labour-intensive process might lead to the undesirable situation that the data in registers differs from source data in an EMR.</p>
+      <p>In the Netherlands, &#x201C;Zichtbare Zorg&#x201D; [<xref ref-type="bibr" rid="B8">8</xref>] developed amongst others a set of 11 evidence-based colorectal cancer surgery indicators, which is computed based on the register of the Dutch Surgical Colorectal Audit (DSCA) [<xref ref-type="bibr" rid="B9">9</xref>]. The DSCA has been set up in 2009 to measure and to improve the quality of colorectal cancer surgery, serving as both national and international role model. All Dutch hospitals that perform colorectal cancer surgery submit data to the DSCA register. Ideally, data should be submitted (semi-)automatically, but in practice surgeons often enter it manually via a web form. The data is often submitted at the end of a reporting year, impeding timely feedback.</p>
+      <p>This study aims to assess whether the set of quality indicators can be computed automatically based on EMR data and to investigate barriers to succeed. Hence, we compared quality indicators computed based on our EMR data to the same indicators computed based on manually abstracted data for the DSCA register, and performed a data quality analysis to explain any differences.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>Patient data</title>
+        <p>We used two data sources of a department of colorectal cancer surgery in a university hospital: manually abstracted data for the DSCA register and structured data from the EMR.</p>
+        <p>The DSCA dataset consists of 212 variables, including demographic information, diagnoses, procedures, results of pathological examinations and clinical outcome. Attending surgeons enter the required data, either manually with the help of a web form, which takes 15 to 20 minutes per patient, or with a spreadsheet. In most hospitals the data is entered via the web form. In our hospital, the responsible surgeon preselects the patients for whom to submit data from the database containing all surgical procedures. He then browses structured and unstructured data such as pathology reports for the respective patients to identify as many of the required variables as possible. All patients of our hospital for whom data has been submitted to the DSCA in 2011 were included.</p>
+        <p>For this study, we regarded the DSCA dataset as the current reference standard. We deliberately do not refer to it as gold standard because we cannot exclude all possibility of errors due to manual data entry. However, surgeons have reported to enter the data carefully. Also, the data is monitored by the DSCA by an annual comparison to the dataset of the Dutch Cancer Registry. Its reliability seems to be high: A recent comparison showed that data has been submitted to the DSCA register for 94% of the patients in the Dutch Cancer Registry. Most data items correspond well, with discrepancies being mainly due to differing interpretations and definitions [<xref ref-type="bibr" rid="B10">10</xref>]. For example, anastomotic leakages are only registered in the DSCA if they caused a re-intervention, while the Dutch Cancer Registry handles a broader definition.</p>
+        <p>Regarding our EMR, several source systems that contain information on patients, diagnoses, operations, admissions, encounters, pathology reports, endoscopies and medications periodically insert data into our data warehouse. Diagnoses are encoded in ICD-9-CM, and surgical procedures in codes from a Dutch procedure classification consisting of nearly 40,000 codes. All patients who had an operation in 2011 have been extracted from the data warehouse. In the following, we refer to this dataset as EMR. All patients from the EMR who seemingly should have been submitted to the DSCA in the reporting year 2011 due to a recorded surgical resection of a primary colorectal carcinoma were included.</p>
+        <sec>
+          <title>Patient matching</title>
+          <p>In absence of patient identifiers, the patients for whom data has been submitted by our hospital to the DSCA in 2011 are matched with the patients from the EMR based on their gender, year of birth and operation date as well as sets of procedures that they underwent.</p>
+          <p>The Institutional review board of the Academic Medical Centre at the University of Amsterdam waived the need for informed consent, as individual patients were not directly involved. The use of the data is officially registered according to the Dutch Personal Data Protection Act.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Quality indicators and their computation</title>
+        <p>We used the set of colorectal quality indicators released by a governmental quality of care program called &#x201C;Zichtbare Zorg&#x201D; for the reporting year 2011. The set consists of 8 thematic indicators, 3 of which comprise two related indicators denoted as e.g. 8a and 8b, resulting in a total of 11 indicators: 9 process indicators, 1 structure indicator and 1 outcome indicator (see Table <xref ref-type="table" rid="T1">1</xref>). The process and outcome indicators are percentages computed based on the definitions for numerators and denominators of each indicator. The structure indicator 8a (&#x201C;How many surgeons does the team include and how many of these surgeons carry out resections on primary colonic carcinoma patients?&#x201D;) is not designed to be computable based on the EMR. Therefore, we did not include it in our study. Of the remaining 10 indicators, the DSCA indicator 1 and the circumferential resection margin indicator 6a measure the percentage of patients for whom data has been submitted to the DSCA. As we do not expect submission of data to the DSCA to be recorded in the EMR, we exclude the numerators of these indicators. The 8 fully and 2 partially (i.e. only the denominator) included indicators have been formalised with our previously developed indicator formalisation method CLIF [<xref ref-type="bibr" rid="B11">11</xref>] to enable their automated computation, for which the obtained queries are run against the respective datasets. The queries are published on figshare [<xref ref-type="bibr" rid="B12">12</xref>].</p>
+        <table-wrap position="float" id="T1">
+          <label>Table 1</label>
+          <caption>
+            <p>Zichtbare Zorg indicators for 2011 translated from Dutch to English</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">
+                  <bold>1.</bold>
+                </th>
+                <th align="left">
+                  <bold>Dutch Surgical Colorectal Audit (Process)</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Numerator</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of surgical resections of colorectal carcinomas located in colon or rectum (only count resections for primary carcinomas)<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">for which data has been submitted to the Dutch Surgical Colorectal Audit<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Denominator</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of surgical resections of colorectal carcinomas located in colon or rectum (only count resections for primary carcinomas)<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Inclusion</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Primary carcinomas<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Exclusion</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Recurrent colorectal carcinomas; TEM-resection (transanal endoscopic microsurgery)<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <bold>2.</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">
+                  <bold>Number of lymph nodes examined after resection (Process)</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Numerator</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients who had 10 or more lymph nodes examined after resection of a primary colonic carcinoma<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Denominator</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients who underwent resection of a primary colonic carcinoma<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Inclusion</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">All primary carcinomas, for which a part of the colon has been resected via open or laparoscopic surgery<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Exclusion</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">1) patients who had a &#x2018;resection&#x2019; via colonoscopy; 2) patients with previous radiotherapy; 3) patients with a recurrent carcinoma<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <bold>3.</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">
+                  <bold>Patients with rectum carcinoma discussed in multidisciplinary meeting before surgery (Process)</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Numerator</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients with rectum carcinoma who have been discussed in a multidisciplinary meeting before the surgery<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Denominator</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients with rectum carcinoma operated in reporting year<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Inclusion</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">All patients who underwent a resection of rectum due to a primary rectum carcinoma in the reporting year, via open or<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">laparoscopic surgery<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Exclusion</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">TEM-resections and recurrent rectum carcinoma<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <bold>4.</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">
+                  <bold>Preoperative imaging colon (Process)</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Numerator</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients with diagnosed colorectal carcinoma which has been resected electively en whose colon has been imaged<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">completely before the surgery<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Denominator</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients with diagnosed colorectal carcinoma which has been resected electively<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Inclusion</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">All primary carcinomas, for which a part of the colon has been resected via open or laparoscopic surgery<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Exclusion</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">1) patients who had a &#x2018;resection&#x2019; via colonoscopy; 2) patients with previous radiotherapy; 3) patients with a recurrent carcinoma<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <bold>5.</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">
+                  <bold>Adjuvant chemotherapy colonic carcinoma (Process)</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Numerator 5a</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients &lt; 75 years old with a resected stage III (N1-2 M0) colonic carcinoma who received adjuvant chemotherapy<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Denominator 5a</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients &lt; 75 years old with a resected stage III colonic carcinoma<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Numerator 5b</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients &#x2265; 75 years old with a resected stage III (N1-2 M0) colonic carcinoma who received adjuvant chemotherapy<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Denominator 5b</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients &#x2265; 75 years old with a resected stage III colonic carcinoma<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Inclusion</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">All primary carcinomas, for which a part of the colon has been resected via open or laparoscopic surgery, and which have been<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">classified as stage III in an postoperative pathology examination<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Exclusion</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">1) patients who had a &#x2018;resection&#x2019; via colonoscopy; 2) patients with a recurrent carcinoma<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <bold>6.</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">
+                  <bold>CRM rectum carcinoma (6a: Process, 6b: Outcome)</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Numerator 6a</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients with a resected primary rectum carcinoma for which the CRM (circumferential resection margin) has been<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">included in the pathology report and registered in the DSCA<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Denominator 6a</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients with a resected primary rectum carcinoma<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Numerator 6b</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients with rectum carcinoma with a CRM of 1 mm or less (tumor positive)<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Denominator 6b</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients with a resected primary rectum carcinoma<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Inclusion</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">All patients who underwent a resection of rectum due to a primary rectum carcinoma in the reporting year, via open or<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">laparoscopic surgery<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Exclusion</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">TEM-resections and recurrent rectum carcinoma<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <bold>7.</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">
+                  <bold>Preoperative radiotherapy rectum carcinoma (Process)</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Numerator</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients with T3 or T4 rectum carcinoma who received preoperative radiotherapy<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Denominator</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of patients with T3 or T4 rectum carcinoma<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Inclusion</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Exclusion</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <bold>8.</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">
+                  <bold>Volume (8a: Structure, 8b: Process)</bold>
+                  <hr/>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Indicator 8a</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">How many surgeons does the team include and how many of these surgeons carry out resections on primary colonic carcinoma<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">patients?<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Indicator 8b</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">Number of resections of primary colonic carcinomas<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <italic>Inclusion</italic>
+                  <hr/>
+                </td>
+                <td align="left" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">
+                  <italic>Exclusion</italic>
+                </td>
+                <td align="left">-</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </sec>
+      <sec>
+        <title>Outcome measures</title>
+        <sec>
+          <title>Quality indicators</title>
+          <p>The first outcome measure is the <italic>computability</italic> of quality indicators, and the corresponding results. Numerators and denominators of indicators are computable if all required items are available in a structured format.</p>
+          <p>As in [<xref ref-type="bibr" rid="B13">13</xref>] and [<xref ref-type="bibr" rid="B4">4</xref>], we analysed the accuracy of quality indicator results computed based on EMR data by measuring <italic>sensitivity</italic> and <italic>specificity</italic>. We also measure the <italic>positive predictive value</italic> (PPV) and the <italic>negative predictive value</italic> (NPV) as well as the <italic>positive likelihood ratio</italic> (PLR) and the <italic>negative likelihood ratio</italic> (NLR).</p>
+          <p>Whether the difference in proportions was significant has been tested with Bland&#x2019;s and Butland&#x2019;s method to compare proportions in overlapping samples [<xref ref-type="bibr" rid="B14">14</xref>]. A p-value &lt; 0.05 was considered significant.</p>
+        </sec>
+        <sec>
+          <title>Data quality</title>
+          <p>We analysed the quality of the 14 data items required to compute the set of quality indicators (Operation date, Year of birth, Procedure, Operation urgency, Primary location/Diagnosis, cT score, pN stage, pM stage, Examined lymph nodes, Circumferential margin, Colonoscopy, Chemotherapy/Medication, Meeting date and Radiotherapy start date). The first quality dimension we analysed is <italic>availability in a structured format</italic>, as unstructured data cannot be used directly to automatically compute quality indicators. For data items that are available in a structured format, we focus on the quality dimensions <italic>completeness</italic> and <italic>correctness</italic>[<xref ref-type="bibr" rid="B15">15</xref>]. Completeness is measured as the percentage of items that should be recorded for each patient (such as the operation urgency, as all included patients have been operated) that are indeed available in the respective dataset. Items that do not necessarily apply to all patients, such as the start date of preoperative radiotherapy, are excluded, as a missing value might be due to the fact that the patient was indeed not treated with previous radiotherapy, but it might also be the case that the start date has not been recorded. Items explicitly recorded as &#x2018;unknown&#x2019; are regarded as absent, diminishing completeness.</p>
+          <p>We measure <italic>correctness</italic> by checking whether data items recorded in the EMR are consistent with the corresponding items in the DSCA dataset with regard to the indicator definitions, i.e. whether they have the same effect on the indicator results. For example, a date for a multidisciplinary meeting is considered correct if both dates are before or both dates are after the operation.</p>
+          <p>Finally, encountered problems regarding data quality are categorised.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec sec-type="results">
+      <title>Results</title>
+      <sec>
+        <title>Patient matching</title>
+        <p>As shown in Figure <xref ref-type="fig" rid="F1">1</xref>, 75 patients are included for the reporting year 2011 in the DSCA dataset, and 79 in the EMR. Following the matching strategy, it was possible to match all 75 DSCA patients with patients in the EMR. Sixty-three of these patients were also selected by the query to compute the indicators based on the EMR dataset, while 12 patients were not selected. Manual inspection showed that 4 of these 12 patients had no relevant diagnosis recorded in the EMR. A fifth patient was recorded with a colonic carcinoma and a resection of rectum, but the query against the data warehouse selected patients with a colonic carcinoma and colectomy or a rectum carcinoma and resection of rectum. For the remaining 7 patients, the diagnosis date was after the (elective) operation date, so that a relationship between diagnosis and operation could not be assumed.</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p>Matching of patients included in the DSCA dataset, selected from the EMR and included in the EMR.</p>
+          </caption>
+          <graphic xlink:href="1472-6947-14-32-1"/>
+        </fig>
+        <p>Sixteen patients from our EMR dataset could not be matched to the DSCA dataset because they were selected incorrectly due to incorrect (e.g. tumours that were classified as non-malignant based on the pathology examination) or imprecise (e.g. recurrent carcinomas) diagnosis codes or despite missing relations between the diagnosis and the procedure in the EMR dataset.</p>
+      </sec>
+      <sec>
+        <title>Computation of quality indicators</title>
+        <p>Table <xref ref-type="table" rid="T2">2</xref> shows the indicator results computed based on the DSCA dataset, as well as fully computable indicators and denominators based on the EMR data. The chemotherapy indicators 5a and 5b as well as the radiotherapy indicator 7 could not be computed, as the required carcinoma&#x2019;s stage was not available in a structured format.</p>
+        <table-wrap position="float" id="T2">
+          <label>Table 2</label>
+          <caption>
+            <p>Indicator results based on both datasets</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">
+                  <bold>Indicator</bold>
+                </th>
+                <th align="right">
+                  <bold>DSCA</bold>
+                </th>
+                <th align="right">
+                  <bold>EMR</bold>
+                </th>
+                <th align="right">
+                  <bold>Sensitivity</bold>
+                </th>
+                <th align="right">
+                  <bold>Specificity</bold>
+                </th>
+                <th align="right">
+                  <bold>PPV</bold>
+                </th>
+                <th align="right">
+                  <bold>NPV</bold>
+                </th>
+                <th align="right">
+                  <bold>PLR</bold>
+                </th>
+                <th align="right">
+                  <bold>NLR</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">
+                  <bold>1 DSCA</bold>
+                  <hr/>
+                </td>
+                <td align="right" valign="bottom">(75/-)<hr/></td>
+                <td align="right" valign="bottom">(-/79)<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">2 lymph nodes<hr/></td>
+                <td align="right" valign="bottom">85% (39/46)<hr/></td>
+                <td align="right" valign="bottom">(-/36)<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">3 meeting<hr/></td>
+                <td align="right" valign="bottom">100% (29/29)<hr/></td>
+                <td align="right" valign="bottom">70% (23/33)<hr/></td>
+                <td align="right" valign="bottom">79% (23/29)<hr/></td>
+                <td align="right" valign="bottom">- (0/0)<hr/></td>
+                <td align="right" valign="bottom">100% (23/23)<hr/></td>
+                <td align="right" valign="bottom">0% (0/10)<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">4 imaging<hr/></td>
+                <td align="right" valign="bottom">88% (36/41)<hr/></td>
+                <td align="right" valign="bottom">58% (31/53)<hr/></td>
+                <td align="right" valign="bottom">58% (21/36)<hr/></td>
+                <td align="right" valign="bottom">60% (3/5)<hr/></td>
+                <td align="right" valign="bottom">67% (21/31)<hr/></td>
+                <td align="right" valign="bottom">14% (3/44)<hr/></td>
+                <td align="right" valign="bottom">1,45<hr/></td>
+                <td align="right" valign="bottom">0,7<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">5a chemotherapy<hr/></td>
+                <td align="right" valign="bottom">80% (8/10)<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">5b chemotherapy<hr/></td>
+                <td align="right" valign="bottom">17% (1/6)<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">
+                  <bold>6a CRM</bold>
+                  <hr/>
+                </td>
+                <td align="right" valign="bottom">62% (18/29)<hr/></td>
+                <td align="right" valign="bottom">(-/33)<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">6b CRM<hr/></td>
+                <td align="right" valign="bottom">14% (4/29)<hr/></td>
+                <td align="right" valign="bottom">(-/33)<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">7 radiotherapy<hr/></td>
+                <td align="right" valign="bottom">92% (22/24)<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+                <td align="right" valign="bottom">-<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">8b volume</td>
+                <td align="right">46</td>
+                <td align="right">37</td>
+                <td align="right">-</td>
+                <td align="right">-</td>
+                <td align="right">-</td>
+                <td align="right">-</td>
+                <td align="right">-</td>
+                <td align="right">-</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>Percentages are denoted as % (numerator/denominator). The bold indicators are those for which only the denominator has been included.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <sec>
+          <title>Comparison of selected patients</title>
+          <p>Table <xref ref-type="table" rid="T3">3</xref> shows the comparison of selected patients for all fully computable indicator elements.</p>
+          <table-wrap position="float" id="T3">
+            <label>Table 3</label>
+            <caption>
+              <p>Patients selected based on the two datasets</p>
+            </caption>
+            <table frame="hsides" rules="groups" border="1">
+              <colgroup>
+                <col align="left"/>
+                <col align="center"/>
+                <col align="center"/>
+                <col align="center"/>
+                <col align="center"/>
+                <col align="center"/>
+                <col align="center"/>
+              </colgroup>
+              <thead valign="top">
+                <tr>
+                  <th align="left" valign="bottom">
+                    <bold>Indicator</bold>
+                    <hr/>
+                  </th>
+                  <th align="left" valign="bottom">
+                    <bold>Element</bold>
+                    <hr/>
+                  </th>
+                  <th align="left" valign="bottom">
+                    <bold>DSCA</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="4" align="center" valign="bottom">
+                    <bold>EMR</bold>
+                    <hr/>
+                  </th>
+                </tr>
+                <tr>
+                  <th align="left">&#xA0;</th>
+                  <th align="left">&#xA0;</th>
+                  <th align="left">&#xA0;</th>
+                  <th align="center">
+                    <bold>EMR</bold>
+                  </th>
+                  <th align="center">
+                    <bold>TP (DSCA and EMR)</bold>
+                  </th>
+                  <th align="center">
+                    <bold>FP (DSCA only)</bold>
+                  </th>
+                  <th align="center">
+                    <bold>FN (EMR only)</bold>
+                  </th>
+                </tr>
+              </thead>
+              <tbody valign="top">
+                <tr>
+                  <td align="left" valign="bottom">1 DSCA<hr/></td>
+                  <td align="left" valign="bottom">Num/denom<hr/></td>
+                  <td align="left" valign="bottom">75<hr/></td>
+                  <td align="center" valign="bottom">79<hr/></td>
+                  <td align="center" valign="bottom">63<hr/></td>
+                  <td align="center" valign="bottom">12<hr/></td>
+                  <td align="center" valign="bottom">16<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">2 nodes<hr/></td>
+                  <td align="left" valign="bottom">Denominator<hr/></td>
+                  <td align="left" valign="bottom">46<hr/></td>
+                  <td align="center" valign="bottom">36<hr/></td>
+                  <td align="center" valign="bottom">28<hr/></td>
+                  <td align="center" valign="bottom">18<hr/></td>
+                  <td align="center" valign="bottom">8<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">3 meeting<hr/></td>
+                  <td align="left" valign="bottom">Numerator<hr/></td>
+                  <td align="left" valign="bottom">29<hr/></td>
+                  <td align="center" valign="bottom">23<hr/></td>
+                  <td align="center" valign="bottom">23<hr/></td>
+                  <td align="center" valign="bottom">6<hr/></td>
+                  <td align="center" valign="bottom">0<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">3 meeting<hr/></td>
+                  <td align="left" valign="bottom">Denominator<hr/></td>
+                  <td align="left" valign="bottom">29<hr/></td>
+                  <td align="center" valign="bottom">33<hr/></td>
+                  <td align="center" valign="bottom">25<hr/></td>
+                  <td align="center" valign="bottom">4<hr/></td>
+                  <td align="center" valign="bottom">8<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">4 imaging<hr/></td>
+                  <td align="left" valign="bottom">Numerator<hr/></td>
+                  <td align="left" valign="bottom">36<hr/></td>
+                  <td align="center" valign="bottom">31<hr/></td>
+                  <td align="center" valign="bottom">21<hr/></td>
+                  <td align="center" valign="bottom">15<hr/></td>
+                  <td align="center" valign="bottom">10<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">4 imaging<hr/></td>
+                  <td align="left" valign="bottom">Denominator<hr/></td>
+                  <td align="left" valign="bottom">41<hr/></td>
+                  <td align="center" valign="bottom">53<hr/></td>
+                  <td align="center" valign="bottom">31<hr/></td>
+                  <td align="center" valign="bottom">10<hr/></td>
+                  <td align="center" valign="bottom">22<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">6a and 6b CRM<hr/></td>
+                  <td align="left" valign="bottom">Denominator<hr/></td>
+                  <td align="left" valign="bottom">29<hr/></td>
+                  <td align="center" valign="bottom">33<hr/></td>
+                  <td align="center" valign="bottom">25<hr/></td>
+                  <td align="center" valign="bottom">4<hr/></td>
+                  <td align="center" valign="bottom">8<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left">8b volume</td>
+                  <td align="left">-</td>
+                  <td align="left">46</td>
+                  <td align="center">37</td>
+                  <td align="center">28</td>
+                  <td align="center">18</td>
+                  <td align="center">9</td>
+                </tr>
+              </tbody>
+            </table>
+            <table-wrap-foot>
+              <p>TP stands for True Positives, FP for False Positives and FN for False Negatives.</p>
+            </table-wrap-foot>
+          </table-wrap>
+        </sec>
+      </sec>
+      <sec>
+        <title>Outcome measures</title>
+        <sec>
+          <title>Quality indicators</title>
+          <p>All 10 indicators were fully computable based on the DSCA dataset. Eight of these indicators should in principle be fully computable based on EMR data, but in practice this was the case for only three indicators. For the two indicators (multidisciplinary meeting and imaging) that are percentages, the difference in proportions computed based on the two datasets was significant.</p>
+          <p>For 4 indicators, only the denominators were fully computable, because the data items defining the quality of care measured in the numerator, such as the number of examined lymph nodes, were not available in a structured format.</p>
+        </sec>
+        <sec>
+          <title>Data quality</title>
+          <p>The results of the data quality analysis are given in Table <xref ref-type="table" rid="T4">4</xref>. Fourteen data items are required to compute the set of quality indicators. All of these items are available in the DSCA register, and 8 in the EMR, with the remaining 6 only being available in free text. The pathology reports contained in the EMR comprise required data such as the number of examined lymph nodes, the circumferential margin and the pathological stage of the carcinoma only in free text. The clinical stage of the carcinoma is equally unavailable, although it might be present in free text sources that we did not have at our disposal, such as conclusions of physical or radiologic examinations or endoscopies, or contained in referral letters. It is contained in a structured format in the Dutch Cancer Registry, but the goal of our study was to focus on the data in our EMR.</p>
+          <table-wrap position="float" id="T4">
+            <label>Table 4</label>
+            <caption>
+              <p>Data quality</p>
+            </caption>
+            <table frame="hsides" rules="groups" border="1">
+              <colgroup>
+                <col align="left"/>
+                <col align="center"/>
+                <col align="center"/>
+                <col align="center"/>
+              </colgroup>
+              <thead valign="top">
+                <tr>
+                  <th align="left">
+                    <bold>Item</bold>
+                  </th>
+                  <th align="right">
+                    <bold>Completeness DSCA</bold>
+                  </th>
+                  <th align="right">
+                    <bold>Completeness EMR</bold>
+                  </th>
+                  <th align="right">
+                    <bold>Correctness</bold>
+                  </th>
+                </tr>
+              </thead>
+              <tbody valign="top">
+                <tr>
+                  <td align="left" valign="bottom">Operation date<hr/></td>
+                  <td align="right" valign="bottom">100% (75)<hr/></td>
+                  <td align="right" valign="bottom">100% (75)<hr/></td>
+                  <td align="right" valign="bottom">100% (75)<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Year of birth<hr/></td>
+                  <td align="right" valign="bottom">100% (75)<hr/></td>
+                  <td align="right" valign="bottom">100% (75)<hr/></td>
+                  <td align="right" valign="bottom">100% (75)<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Procedure<hr/></td>
+                  <td align="right" valign="bottom">100% (75)<hr/></td>
+                  <td align="right" valign="bottom">100% (75)<hr/></td>
+                  <td align="right" valign="bottom">97% (73/75)<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Operation urgency<hr/></td>
+                  <td align="right" valign="bottom">100% (75)<hr/></td>
+                  <td align="right" valign="bottom">100% (75)<hr/></td>
+                  <td align="right" valign="bottom">95% (71/75)<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Primary location/Diagnosis<hr/></td>
+                  <td align="right" valign="bottom">100% (75)<hr/></td>
+                  <td align="right" valign="bottom">100% (75)<hr/></td>
+                  <td align="right" valign="bottom">91% (68/75)<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">cT score<hr/></td>
+                  <td align="right" valign="bottom">39% (29)<hr/></td>
+                  <td align="right" valign="bottom">0% (unavailable)<hr/></td>
+                  <td align="right" valign="bottom">-<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">pN stage<hr/></td>
+                  <td align="right" valign="bottom">100% (75)<hr/></td>
+                  <td align="right" valign="bottom">0% (unavailable)<hr/></td>
+                  <td align="right" valign="bottom">-<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">pM stage<hr/></td>
+                  <td align="right" valign="bottom">100% (75)<hr/></td>
+                  <td align="right" valign="bottom">0% (unavailable)<hr/></td>
+                  <td align="right" valign="bottom">-<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Examined lymph nodes<hr/></td>
+                  <td align="right" valign="bottom">99% (74)<hr/></td>
+                  <td align="right" valign="bottom">0% (unavailable)<hr/></td>
+                  <td align="right" valign="bottom">-<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Circumferential margin<hr/></td>
+                  <td align="right" valign="bottom">24% (18)<hr/></td>
+                  <td align="right" valign="bottom">0% (unavailable)<hr/></td>
+                  <td align="right" valign="bottom">-<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">[Colonoscopy]<hr/></td>
+                  <td align="right" valign="bottom">[100% (75)]<hr/></td>
+                  <td align="right" valign="bottom">[80% (60)]<hr/></td>
+                  <td align="right" valign="bottom">83% (50/60)<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">[Chemotherapy/Medication]<hr/></td>
+                  <td align="right" valign="bottom">[99% (74)]<hr/></td>
+                  <td align="right" valign="bottom">[97% (73)]<hr/></td>
+                  <td align="right" valign="bottom">21% (15/73)<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">[Meeting date]<hr/></td>
+                  <td align="right" valign="bottom">[85% (64)]<hr/></td>
+                  <td align="right" valign="bottom">[79% (59)]<hr/></td>
+                  <td align="right" valign="bottom">98% (57/58)<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">[Radiotherapy start date]<hr/></td>
+                  <td align="right" valign="bottom">[33% (25)]<hr/></td>
+                  <td align="right" valign="bottom">[24% (18)]<hr/></td>
+                  <td align="right" valign="bottom">100% (18/18)<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left">Average of available items</td>
+                  <td align="right">86%</td>
+                  <td align="right">50%</td>
+                  <td align="right">87%</td>
+                </tr>
+              </tbody>
+            </table>
+            <table-wrap-foot>
+              <p>Elements enclosed by square brackets are not supposed to be available for each patient.</p>
+            </table-wrap-foot>
+          </table-wrap>
+          <p>For data items that should be recorded for each patient, the average completeness is 86% for the register&#x2019;s dataset and 50% for the EMR. The average correctness of data items in the EMR is 87%.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Catalogue of encountered problems</title>
+        <p>In our case study, quality indicators could not be computed reliably based on the EMR data due to the general problems as enlisted in Table <xref ref-type="table" rid="T5">5</xref>.</p>
+        <table-wrap position="float" id="T5">
+          <label>Table 5</label>
+          <caption>
+            <p>Catalogue of encountered problems</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left">
+                  <bold>Problem</bold>
+                </th>
+                <th align="left">
+                  <bold>Explanation</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">Data not available in<hr/></td>
+                <td align="left" valign="bottom">Data items required to compute many of the indicators, such as those contained in the pathology reports, were only<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">structured format<hr/></td>
+                <td align="left" valign="bottom">available in non-structured free text, and therefore not directly (re)usable. Also structured data to exclude patients based on<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">the exclusion criteria <italic>recurrent carcinoma</italic> and <italic>TEM-resection</italic> as well as <italic>&#x2018;resection&#x2019; via colonoscopy</italic> was not available in our EMR<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">nor in the DSCA dataset. Non-recorded exclusion criteria can lead to lower indicator results, wrongly underestimating the<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">quality of care for indicators whose percentages are to be maximised [<xref ref-type="bibr" rid="B16">16</xref>,<xref ref-type="bibr" rid="B17">17</xref>].<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Incorrect data items<hr/></td>
+                <td align="left" valign="bottom">The double data entry in our case study helped us to discover incorrect data items. Furthermore, we identified imprecise<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">and/or incorrect diagnosis codes in our EMR.<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Incomplete view of<hr/></td>
+                <td align="left" valign="bottom">Hospitals throughout the country refer patients to our hospital, which specialises in gastro-intestinal oncology. Some of<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">patient history<hr/></td>
+                <td align="left" valign="bottom">these patients are only treated for a short time, and then referred back. Likewise, our hospital maintains an alliance with a<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">nearby hospital. Referral letters are typically posted as physical letters, making a complete, consistent view on a patient&#x2019;s<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">history difficult to obtain. For example, it is hard to retrace whether preoperative imaging of the colon has taken place in<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">another hospital.<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Lack of relations<hr/></td>
+                <td align="left" valign="bottom">Our EMR does not store any relations between diagnoses and procedures, making it impossible to select the diagnosis that<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">between data items<hr/></td>
+                <td align="left" valign="bottom">was the underlying reason for a procedure. For example, the lymph node indicator should only select lymph node<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">examinations that have been carried out in the context of a primary colonic carcinoma, and not, for example, a previous<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">mamma carcinoma. As a partial solution, we imposed the constraint that the diagnosis should have been established before<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">the related operation was carried out, which resulted in some missed patients.<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Lack of detail<hr/></td>
+                <td align="left" valign="bottom">None of the diagnoses in the EMR was detailed enough to meet the information required by the indicators, which include<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">patients with <italic>primary</italic> colonic and rectum carcinomas. The only relevant diagnoses in the EMR were malignant neoplasm<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">of colon, rectum and rectosigmoid junction. Therefore, the concepts employed in the queries to compute the indicators<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">had to be generalised. Furthermore, only the type of endoscopies is registered, such as colonoscopy, but not whether the<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">complete colon is affected.<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Lack of standardisation<hr/></td>
+                <td align="left" valign="bottom">For example, the urgency of an operation is defined in the EMR according to 8 categories, but the DSCA dataset only<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">&#xA0;<hr/></td>
+                <td align="left" valign="bottom">differentiates urgencies according to 4 categories. It was not clear how these categories should be mapped, as their<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">&#xA0;</td>
+                <td align="left">meaning was not unambiguously described (for example, one of the categories was called &#x201C;extra&#x201D;).</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </sec>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Discussion</title>
+      <p>Our results show that EMR-based indicator results significantly underestimate the quality of care compared to the same indicators computed based on manually abstracted data for a national quality register. Reasons were unavailable, incomplete and incorrect data items as well as missing relationships between diagnoses and procedures in the EMR. In particular, detailed data that reflects whether a patient&#x2019;s treatment met the ideal standard of care was often incomplete in the EMR.</p>
+      <sec>
+        <title>Comparison with other studies</title>
+        <p>The use of EMRs has increased rapidly in the recent years, making trustworthy reuse of data [<xref ref-type="bibr" rid="B18">18</xref>] an important challenge and research question. Worldwide, EMR-based quality measures [<xref ref-type="bibr" rid="B19">19</xref>] are increasingly employed, and new standards [<xref ref-type="bibr" rid="B20">20</xref>] such as <italic>eMeasures</italic> to automatically derive quality measures from EMRs are introduced.</p>
+        <p>Many researchers have compared results computed based on different data sources. Both Kerr et al. [<xref ref-type="bibr" rid="B21">21</xref>] and Parsons et al. [<xref ref-type="bibr" rid="B22">22</xref>] found that EMR-derived measures can underestimate performance in comparison to manual abstraction. Kern et al. [<xref ref-type="bibr" rid="B4">4</xref>] found that a &#x201C;wide measure-by-measure variation in accuracy threatens the validity of electronic reporting&#x201D;. Likewise, results of quality indicators computed based on administrative data have been compared to results computed based on manually abstracted EMR data. MacLean et al. [<xref ref-type="bibr" rid="B23">23</xref>] found that the EMR allows for a greater spectrum of measurable quality indicators, while summary estimates computed based on both data sources did not differ substantially. Tang et al. [<xref ref-type="bibr" rid="B24">24</xref>] found a significantly higher percentage of patients that have been identified to be relevant by manual selection.</p>
+        <p>Ancker et al. observed that &#x201C;secondary use of data [&#x2026;] requires a generally higher degree of data integrity than required for the original primary use&#x201D; [<xref ref-type="bibr" rid="B25">25</xref>]. It has been suggested that reliable and valid quality indicator results are only achievable based on accessible and high-quality data [<xref ref-type="bibr" rid="B26">26</xref>-<xref ref-type="bibr" rid="B33">33</xref>]. Likewise, it has been shown that data quality issues are common in data warehouses and electronic patient records [<xref ref-type="bibr" rid="B34">34</xref>-<xref ref-type="bibr" rid="B36">36</xref>].</p>
+      </sec>
+      <sec>
+        <title>Limitations of this study</title>
+        <p>Our case study included one hospital and one year of data with a relatively small sample size, and it is questionable to what extent the situation in our hospital is generalisable to other hospitals. However, the sample size was sufficient to show that data quality can significantly influence computed quality indicator results, which should be independent from the respective location.</p>
+      </sec>
+      <sec>
+        <title>Recommendations/future work</title>
+        <p>Based on the encountered problems, we compiled a set of recommendations to improve the quality and (re)usability of EMR data.</p>
+        <sec>
+          <title>Availability of structured data</title>
+          <p>Data to determine the quality of care is particularly valuable, and hospital information systems should be set up in such a way that this data is available, accessible and usable for quality measurement and further use-cases. To obtain structured data, synoptic reports, i.e. predefined computer-based forms to record relevant procedures and findings in a structured, standardised format, have been shown to be advantageous [<xref ref-type="bibr" rid="B37">37</xref>-<xref ref-type="bibr" rid="B39">39</xref>]. A standard way to encode medical free text is the use of Natural Language Processing tools. However, as most tools are developed for English, further research is required to handle Dutch [<xref ref-type="bibr" rid="B40">40</xref>].</p>
+        </sec>
+        <sec>
+          <title>Correctness of data items</title>
+          <p>Multiple data entry is unnecessary, error-prone, tedious and time-consuming. Data should be recorded only once, in an adequate quality. The quality might be risen by making those entering data aware of its possible reuses. Also, local quality improvement strategies from the literature [<xref ref-type="bibr" rid="B7">7</xref>,<xref ref-type="bibr" rid="B41">41</xref>] could be applied. To submit data to the DSCA under such improved circumstances, required items could be preselected automatically from the EMR, checked by the one responsible and be submitted to quality registers or other authorised parties. If the data needs to be edited, changes should be applied locally before the data is shared with external parties.</p>
+        </sec>
+        <sec>
+          <title>Longitudinal view of patient history</title>
+          <p>As patient referrals are common and hospital alliances are likewise to proliferate in the future, it must become common practice to exchange data securely and automatically. Patients are likely to become active managers of their health, increasingly enabled to share their data with their caregivers.</p>
+        </sec>
+        <sec>
+          <title>Relations between diagnoses and procedures</title>
+          <p>To reuse clinical data, the relations between diagnoses and procedures must be traceable. To be able to automatically select only examinations that have been carried out in the context of a certain diagnosis, such relations should be recorded.</p>
+        </sec>
+        <sec>
+          <title>Level of detail</title>
+          <p>Patient data should be recorded as detailed as necessary for quality indicator computation and further foreseeable use-cases, such as the recruitment of patients for clinical trials, decision support, the early detection of epidemics or general clinical research. This might seem time-consuming, but will likely reduce the workload in the long term, as each data item has to be recorded only once. To further reduce the workload, the process should be supported by advanced data entry methods and interfaces.</p>
+        </sec>
+        <sec>
+          <title>Standardisation</title>
+          <p>Only data that is represented meaningfully - ideally in standard codes from comprehensive controlled clinical terminologies - can be reused automatically. Terminologies such as SNOMED CT can support the &#x201C;Collect once - use many times&#x201D; paradigm [<xref ref-type="bibr" rid="B42">42</xref>], which stands for the idea that data is captured only once and can be reused thereafter for a variety of purposes. Controlled terminologies can allow for meaning-based retrieval, for example by aggregation along hierarchical structures, or based on relationships between codes. An advantage of standard terminologies is that they are integrated in the National Library of Medicine&#x2019;s Unified Medical Language System Metathesaurus, which contains mappings between terms across multiple terminologies.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>This study showed that data quality can significantly influence indicator results, and that our routinely recorded EMR data was not suitable to reliably compute quality indicators. To support primary and secondary uses of data, EMRs should be designed so that a core dataset consisting of relevant items is entered directly and timely in a structured, sufficiently detailed and standardised format. Furthermore, awareness about the (re)use of data could be risen to ensure the quality of required data, and local data quality improvement strategies could be applied. Data could then be aggregated for different uses, according to various definitions. This strategy likely leads to an increased volume of high-quality data, which can ultimately serve as a basis for physicians not only to monitor but also to deliver the best possible quality of care.</p>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors declare that they have no competing interests.</p>
+    </sec>
+    <sec>
+      <title>Authors&#x2019; contributions</title>
+      <p>KD, RC, AtT and NdK conceived and designed the study. KD conducted the analysis and wrote the first draft of the paper. PT entered and interpreted the data. All authors reviewed the manuscript and approved the final version. KD is guarantor for the study.</p>
+    </sec>
+    <sec>
+      <title>Pre-publication history</title>
+      <p>The pre-publication history for this paper can be accessed here:</p>
+      <p>
+        <ext-link ext-link-type="uri" xlink:href="http://www.biomedcentral.com/1472-6947/14/32/prepub">http://www.biomedcentral.com/1472-6947/14/32/prepub</ext-link>
+      </p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Brook</surname>
+            <given-names>RH</given-names>
+          </name>
+          <name>
+            <surname>McGlynn</surname>
+            <given-names>EA</given-names>
+          </name>
+          <name>
+            <surname>Cleary</surname>
+            <given-names>PD</given-names>
+          </name>
+          <article-title>
+            <bold>Measuring quality of care</bold>
+          </article-title>
+          <source>N Engl J Med</source>
+          <year>1996</year>
+          <volume>335</volume>
+          <issue>13</issue>
+          <fpage>966</fpage>
+          <lpage>970</lpage>
+          <pub-id pub-id-type="doi">10.1056/NEJM199609263351311</pub-id>
+          <pub-id pub-id-type="pmid">8782507</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Campbell</surname>
+            <given-names>SM</given-names>
+          </name>
+          <name>
+            <surname>Braspenning</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Hutchinson</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Marshall</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>
+            <bold>Research methods used in developing and applying quality indicators in primary care</bold>
+          </article-title>
+          <source>Qual Saf Health Care</source>
+          <year>2002</year>
+          <volume>11</volume>
+          <issue>4</issue>
+          <fpage>358</fpage>
+          <lpage>364</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://qshc.bmj.com/content/11/4/358.full">http://qshc.bmj.com/content/11/4/358.full</ext-link>]</comment>
+          <pub-id pub-id-type="doi">10.1136/qhc.11.4.358</pub-id>
+          <pub-id pub-id-type="pmid">12468698</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Blumenthal</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Tavenner</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>
+            <bold>The &#x201C;Meaningful Use&#x201D; regulation for electronic health records</bold>
+          </article-title>
+          <source>N Engl J Med</source>
+          <year>2010</year>
+          <volume>363</volume>
+          <fpage>501</fpage>
+          <lpage>504</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.nejm.org/doi/full/10.1056/nejmp1006114">http://www.nejm.org/doi/full/10.1056/nejmp1006114</ext-link>]</comment>
+          <pub-id pub-id-type="doi">10.1056/NEJMp1006114</pub-id>
+          <pub-id pub-id-type="pmid">20647183</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kern</surname>
+            <given-names>LM</given-names>
+          </name>
+          <name>
+            <surname>Malhotra</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Barron</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Quaresimo</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Dhopeshwarkar</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Pichardo</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Edwards</surname>
+            <given-names>AM</given-names>
+          </name>
+          <name>
+            <surname>Kaushal</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>
+            <bold>Accuracy of electronically reported &#x201C;Meaningful Use&#x201D; clinical quality measures</bold>
+          </article-title>
+          <source>Ann Intern Med</source>
+          <year>2013</year>
+          <volume>158</volume>
+          <fpage>77</fpage>
+          <lpage>83</lpage>
+          <pub-id pub-id-type="doi">10.7326/0003-4819-158-2-201301150-00001</pub-id>
+          <pub-id pub-id-type="pmid">23318309</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Drolet</surname>
+            <given-names>BC</given-names>
+          </name>
+          <name>
+            <surname>Johnson</surname>
+            <given-names>KB</given-names>
+          </name>
+          <article-title>
+            <bold>Categorizing the world of registries</bold>
+          </article-title>
+          <source>J Biomed Inform</source>
+          <year>2008</year>
+          <volume>41</volume>
+          <issue>6</issue>
+          <fpage>1009</fpage>
+          <lpage>1020</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18329960">http://www.ncbi.nlm.nih.gov/pubmed/18329960</ext-link>]</comment>
+          <pub-id pub-id-type="doi">10.1016/j.jbi.2008.01.009</pub-id>
+          <pub-id pub-id-type="pmid">18329960</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="other">
+          <name>
+            <surname>Dentler</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>ten Teije</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>de Keizer</surname>
+            <given-names>NF</given-names>
+          </name>
+          <name>
+            <surname>Cornet</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>
+            <bold>Barriers to the reuse of routinely recorded clinical data: a field report</bold>
+          </article-title>
+          <source>Studies in Health Technology and Informatics</source>
+          <year>2013</year>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/23920567">http://www.ncbi.nlm.nih.gov/pubmed/23920567</ext-link>]</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Arts</surname>
+            <given-names>DGT</given-names>
+          </name>
+          <name>
+            <surname>de Keizer</surname>
+            <given-names>NF</given-names>
+          </name>
+          <name>
+            <surname>Scheffer</surname>
+            <given-names>GJ</given-names>
+          </name>
+          <article-title>
+            <bold>Defining and improving data quality in medical registries: a literature review, case study, and generic framework</bold>
+          </article-title>
+          <source>J Am Med Inform Assoc</source>
+          <year>2002</year>
+          <volume>9</volume>
+          <fpage>600</fpage>
+          <lpage>611</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://jamia.bmj.com/content/9/6/600.short">http://jamia.bmj.com/content/9/6/600.short</ext-link>]</comment>
+          <pub-id pub-id-type="doi">10.1197/jamia.M1087</pub-id>
+          <pub-id pub-id-type="pmid">12386111</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="other">
+          <collab>Zichtbare Zorg</collab>
+          <article-title>
+            <bold>Kwaliteitsindicatoren</bold>
+          </article-title>
+          <year>2012</year>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>van Gijn</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>van de Velde</surname>
+            <given-names>CJH</given-names>
+          </name>
+          <article-title>
+            <bold>Improving quality of cancer care through surgical audit</bold>
+          </article-title>
+          <source>Eur J Surg Oncol (EJSO)</source>
+          <year>2010</year>
+          <volume>36 Suppl 1</volume>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20615648">http://www.ncbi.nlm.nih.gov/pubmed/20615648</ext-link>]</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="book">
+          <collab>Dutch Institute for Clinical Auditing</collab>
+          <source>DICA-Rapportages 2011: transparantie, keuzes en verbetering van zorg</source>
+          <year>2011</year>
+          <publisher-name>Leiden: DICA</publisher-name>
+          <comment><ext-link ext-link-type="uri" xlink:href="http://www.clinicalaudit.nl/jaarrapportage/archief/DICA">http://www.clinicalaudit.nl/jaarrapportage/archief/DICA</ext-link>\%20Jaarrapportage\%202011.pdf</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Dentler</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>ten Teije</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Cornet</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>de Keizer</surname>
+            <given-names>NF</given-names>
+          </name>
+          <article-title>
+            <bold>Towards the automated calculation of clinical quality indicators</bold>
+          </article-title>
+          <source>Knowledge Representation Health-Care</source>
+          <year>2012</year>
+          <volume>LNCS 6924</volume>
+          <fpage>51</fpage>
+          <lpage>64</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="other">
+          <name>
+            <surname>Dentler</surname>
+            <given-names>K</given-names>
+          </name>
+          <article-title>
+            <bold>Formalised colorectal cancer surgery quality indicators</bold>
+          </article-title>
+          <year>2014</year>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.6084/m9.figshare.913576">http://dx.doi.org/10.6084/m9.figshare.913576</ext-link>]</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Romano</surname>
+            <given-names>PS</given-names>
+          </name>
+          <name>
+            <surname>Mull</surname>
+            <given-names>HJ</given-names>
+          </name>
+          <name>
+            <surname>Rivard</surname>
+            <given-names>PE</given-names>
+          </name>
+          <name>
+            <surname>Zhao</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Henderson</surname>
+            <given-names>WG</given-names>
+          </name>
+          <name>
+            <surname>Loveland</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Tsilimingras</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Christiansen</surname>
+            <given-names>CL</given-names>
+          </name>
+          <name>
+            <surname>Rosen</surname>
+            <given-names>AK</given-names>
+          </name>
+          <article-title>
+            <bold>Validity of selected AHRQ patient safety indicators based on VA national surgical quality improvement program data</bold>
+          </article-title>
+          <source>Health Serv Res</source>
+          <year>2009</year>
+          <volume>44</volume>
+          <fpage>182</fpage>
+          <lpage>204</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2669628&amp;tool=pmcentrez&amp;rendertype=abstract">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2669628&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>]</comment>
+          <pub-id pub-id-type="doi">10.1111/j.1475-6773.2008.00905.x</pub-id>
+          <pub-id pub-id-type="pmid">18823449</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="other">
+          <name>
+            <surname>Bland</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Butland</surname>
+            <given-names>BK</given-names>
+          </name>
+          <article-title>
+            <bold>Comparing proportions in overlapping samples</bold>
+          </article-title>
+          <year>Tech. rep. 2011</year>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www-users.york.ac.uk/~mb55/overlap.pdf">http://www-users.york.ac.uk/~mb55/overlap.pdf</ext-link>]</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Weiskopf</surname>
+            <given-names>NG</given-names>
+          </name>
+          <name>
+            <surname>Weng</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>
+            <bold>Methods and dimensions of electronic health record data quality assessment: enabling reuse for clinical research</bold>
+          </article-title>
+          <source>J Am Med Inform Assoc</source>
+          <year>2012</year>
+          <volume>20</volume>
+          <issue>144&#x2013;151</issue>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22733976">http://www.ncbi.nlm.nih.gov/pubmed/22733976</ext-link>]</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Persell</surname>
+            <given-names>SD</given-names>
+          </name>
+          <name>
+            <surname>Wright</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Thompson</surname>
+            <given-names>JA</given-names>
+          </name>
+          <name>
+            <surname>Kmetik</surname>
+            <given-names>KS</given-names>
+          </name>
+          <name>
+            <surname>Baker</surname>
+            <given-names>DW</given-names>
+          </name>
+          <article-title>
+            <bold>166</bold>
+          </article-title>
+          <source>Arch Intern Med</source>
+          <year>2006</year>
+          <volume>20</volume>
+          <fpage>2272</fpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://archinte.ama-assn.org/cgi/content/abstract/166/20/2272">http://archinte.ama-assn.org/cgi/content/abstract/166/20/2272</ext-link>]</comment>
+          <pub-id pub-id-type="pmid">17101947</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Baker</surname>
+            <given-names>DW</given-names>
+          </name>
+          <name>
+            <surname>Persell</surname>
+            <given-names>SD</given-names>
+          </name>
+          <name>
+            <surname>Thompson</surname>
+            <given-names>JA</given-names>
+          </name>
+          <name>
+            <surname>Soman</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Burgner</surname>
+            <given-names>KM</given-names>
+          </name>
+          <name>
+            <surname>Liss</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Kmetik</surname>
+            <given-names>KS</given-names>
+          </name>
+          <article-title>
+            <bold>Automated review of electronic health records to assess quality of care for outpatients with heart failure</bold>
+          </article-title>
+          <source>Ann Intern Med</source>
+          <year>2006</year>
+          <volume>146</volume>
+          <issue>4</issue>
+          <fpage>270</fpage>
+          <lpage>277</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://ukpmc.ac.uk/abstract/MED/17310051">http://ukpmc.ac.uk/abstract/MED/17310051</ext-link>]</comment>
+          <pub-id pub-id-type="pmid">17310051</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Geissbuhler</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Safran</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Buchan</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Bellazzi</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Labkoff</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Eilenberg</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Leese</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Richardson</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Mantas</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Murray</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>De Moor</surname>
+            <given-names>G</given-names>
+          </name>
+          <article-title>
+            <bold>Trustworthy reuse of health data: a transnational perspective</bold>
+          </article-title>
+          <source>Int J Med Inform</source>
+          <year>2013</year>
+          <volume>82</volume>
+          <issue>1</issue>
+          <fpage>1</fpage>
+          <lpage>9</lpage>
+          <comment>doi:10.1016/j.ijmedinf.2012.11.003</comment>
+          <pub-id pub-id-type="doi">10.1016/j.ijmedinf.2012.11.003</pub-id>
+          <pub-id pub-id-type="pmid">23182430</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Weiner</surname>
+            <given-names>JP</given-names>
+          </name>
+          <name>
+            <surname>Fowles</surname>
+            <given-names>JB</given-names>
+          </name>
+          <name>
+            <surname>Chan</surname>
+            <given-names>KS</given-names>
+          </name>
+          <article-title>
+            <bold>New paradigms for measuring clinical performance using electronic health records</bold>
+          </article-title>
+          <source>Int J Qual Health Care</source>
+          <year>2012</year>
+          <volume>24</volume>
+          <issue>3</issue>
+          <fpage>200</fpage>
+          <lpage>205</lpage>
+          <pub-id pub-id-type="doi">10.1093/intqhc/mzs011</pub-id>
+          <pub-id pub-id-type="pmid">22490301</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Fu</surname>
+            <given-names>PC</given-names>
+          </name>
+          <name>
+            <surname>Rosenthal</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Pevnick</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Eisenberg</surname>
+            <given-names>F</given-names>
+          </name>
+          <article-title>
+            <bold>The impact of emerging standards adoption on automated quality reporting</bold>
+          </article-title>
+          <source>J Biomed Inform</source>
+          <year>2012</year>
+          <volume>45</volume>
+          <issue>4</issue>
+          <fpage>772</fpage>
+          <lpage>781</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22820003">http://www.ncbi.nlm.nih.gov/pubmed/22820003</ext-link>]</comment>
+          <pub-id pub-id-type="doi">10.1016/j.jbi.2012.06.002</pub-id>
+          <pub-id pub-id-type="pmid">22820003</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kerr</surname>
+            <given-names>EA</given-names>
+          </name>
+          <name>
+            <surname>Smith</surname>
+            <given-names>DM</given-names>
+          </name>
+          <name>
+            <surname>Hogan</surname>
+            <given-names>MM</given-names>
+          </name>
+          <name>
+            <surname>Krein</surname>
+            <given-names>SL</given-names>
+          </name>
+          <name>
+            <surname>Pogach</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Hofer</surname>
+            <given-names>TP</given-names>
+          </name>
+          <name>
+            <surname>Hayward</surname>
+            <given-names>RA</given-names>
+          </name>
+          <article-title>
+            <bold>Comparing clinical automated, medical record, and hybrid data sources for diabetes quality measures</bold>
+          </article-title>
+          <source>J Qual Improv</source>
+          <year>2002</year>
+          <volume>28</volume>
+          <issue>10</issue>
+          <fpage>555</fpage>
+          <lpage>565</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/12369158">http://www.ncbi.nlm.nih.gov/pubmed/12369158</ext-link>] [<ext-link ext-link-type="uri" xlink:href="http://www.ingentaconnect.com/content/jcaho/jcjqs/2002/00000028/00000010/art00003">http://www.ingentaconnect.com/content/jcaho/jcjqs/2002/00000028/00000010/art00003</ext-link>]</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Parsons</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>McCullough</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Shih</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>
+            <bold>Validity of electronic health record-derived quality measurement for performance monitoring</bold>
+          </article-title>
+          <source>J Am Med Inform Assoc</source>
+          <year>2012</year>
+          <volume>19</volume>
+          <issue>4</issue>
+          <fpage>604</fpage>
+          <lpage>609</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3384112&amp;tool=pmcentrez&amp;rendertype=abstract">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3384112&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>]</comment>
+          <pub-id pub-id-type="doi">10.1136/amiajnl-2011-000557</pub-id>
+          <pub-id pub-id-type="pmid">22249967</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>MacLean</surname>
+            <given-names>CH</given-names>
+          </name>
+          <name>
+            <surname>Louie</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Shekelle</surname>
+            <given-names>PG</given-names>
+          </name>
+          <name>
+            <surname>Roth</surname>
+            <given-names>CP</given-names>
+          </name>
+          <name>
+            <surname>Saliba</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Higashi</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Adams</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Chang</surname>
+            <given-names>JT</given-names>
+          </name>
+          <name>
+            <surname>Kamberg</surname>
+            <given-names>CJ</given-names>
+          </name>
+          <name>
+            <surname>Solomon</surname>
+            <given-names>DH</given-names>
+          </name>
+          <name>
+            <surname>Young</surname>
+            <given-names>RT</given-names>
+          </name>
+          <name>
+            <surname>Wenger</surname>
+            <given-names>NS</given-names>
+          </name>
+          <article-title>
+            <bold>Comparison of administrative data and medical records to measure the quality of medical care provided to vulnerable older patients</bold>
+          </article-title>
+          <source>Med Care</source>
+          <year>2006</year>
+          <volume>44</volume>
+          <issue>2</issue>
+          <fpage>141</fpage>
+          <lpage>148</lpage>
+          <comment>[http: //journals.lww.com/lww-medicalcare/Abstract/2006/02000/Comparison_of_Administrative_Data_and_Medical.7.aspx]</comment>
+          <pub-id pub-id-type="doi">10.1097/01.mlr.0000196960.12860.de</pub-id>
+          <pub-id pub-id-type="pmid">16434913</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Tang</surname>
+            <given-names>PC</given-names>
+          </name>
+          <name>
+            <surname>Ralston</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Arrigotti</surname>
+            <given-names>MF</given-names>
+          </name>
+          <name>
+            <surname>Qureshi</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Graham</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>
+            <bold>Comparison of methodologies for calculating quality measures based on administrative data versus clinical data from an electronic health record system: implications for performance measures</bold>
+          </article-title>
+          <source>J Am Med Inform Assoc</source>
+          <year>2007</year>
+          <volume>14</volume>
+          <fpage>10</fpage>
+          <lpage>15</lpage>
+          <comment>[[<ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2215069&amp;tool=pmcentrez&amp;rendertype=abstract">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2215069&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>]]</comment>
+          <pub-id pub-id-type="pmid">17068349</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="other">
+          <name>
+            <surname>Ancker</surname>
+            <given-names>JS</given-names>
+          </name>
+          <name>
+            <surname>Shih</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Singh</surname>
+            <given-names>MP</given-names>
+          </name>
+          <name>
+            <surname>Snyder</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>
+            <bold>Root causes underlying challenges to secondary use of data</bold>
+          </article-title>
+          <source>AMIA Symposium Proceedings</source>
+          <year>2011</year>
+          <fpage>57</fpage>
+          <lpage>62</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3243274/">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3243274/</ext-link>]</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Brook</surname>
+            <given-names>RH</given-names>
+          </name>
+          <name>
+            <surname>McGlynn</surname>
+            <given-names>EA</given-names>
+          </name>
+          <name>
+            <surname>Shekelle</surname>
+            <given-names>PG</given-names>
+          </name>
+          <article-title>
+            <bold>Defining and measuring quality of care: a perspective from US researchers</bold>
+          </article-title>
+          <source>Int J Qual Health Care</source>
+          <year>2000</year>
+          <volume>12</volume>
+          <issue>4</issue>
+          <fpage>281</fpage>
+          <lpage>295</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/10985266">http://www.ncbi.nlm.nih.gov/pubmed/10985266</ext-link>]</comment>
+          <pub-id pub-id-type="doi">10.1093/intqhc/12.4.281</pub-id>
+          <pub-id pub-id-type="pmid">10985266</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Powell</surname>
+            <given-names>AE</given-names>
+          </name>
+          <name>
+            <surname>Davies</surname>
+            <given-names>HTO</given-names>
+          </name>
+          <name>
+            <surname>Thomson</surname>
+            <given-names>RG</given-names>
+          </name>
+          <article-title>
+            <bold>Using routine comparative data to assess the quality of health care: understanding and avoiding common pitfalls</bold>
+          </article-title>
+          <source>Qual Saf Health Care</source>
+          <year>2003</year>
+          <volume>12</volume>
+          <issue>122&#x2013;128</issue>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1743685&amp;tool=pmcentrez&amp;rendertype=abstract">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1743685&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>]</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="other">
+          <name>
+            <surname>Fowles</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Kind</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Awwad</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Weiner</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Chan</surname>
+            <given-names>K</given-names>
+          </name>
+          <article-title>
+            <bold>Performance measures using electronic health records: five case studies</bold>
+          </article-title>
+          <year>2008</year>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.commonwealthfund.org/usr_doc/Briggs_Fowles_perfmeasEHRs5casestudies_1132.pdf">http://www.commonwealthfund.org/usr_doc/Briggs_Fowles_perfmeasEHRs5casestudies_1132.pdf</ext-link>]</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Roth</surname>
+            <given-names>CP</given-names>
+          </name>
+          <name>
+            <surname>Lim</surname>
+            <given-names>YW</given-names>
+          </name>
+          <name>
+            <surname>Pevnick</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Asch</surname>
+            <given-names>SM</given-names>
+          </name>
+          <name>
+            <surname>McGlynn</surname>
+            <given-names>EA</given-names>
+          </name>
+          <article-title>
+            <bold>The challenge of measuring quality of care from the electronic health record</bold>
+          </article-title>
+          <source>Am J Med Qual</source>
+          <year>2009</year>
+          <volume>24</volume>
+          <issue>5</issue>
+          <fpage>385</fpage>
+          <lpage>394</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19482968">http://www.ncbi.nlm.nih.gov/pubmed/19482968</ext-link>]</comment>
+          <pub-id pub-id-type="doi">10.1177/1062860609336627</pub-id>
+          <pub-id pub-id-type="pmid">19482968</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Abernethy</surname>
+            <given-names>AP</given-names>
+          </name>
+          <name>
+            <surname>Herndon</surname>
+            <given-names>JEII</given-names>
+          </name>
+          <name>
+            <surname>Wheeler</surname>
+            <given-names>JL</given-names>
+          </name>
+          <name>
+            <surname>Rowe</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Marcello</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Meenal</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>
+            <bold>Poor documentation prevents adequate assessment of quality metrics in colorectal cancer</bold>
+          </article-title>
+          <source>J Oncol</source>
+          <year>2009</year>
+          <volume>5</volume>
+          <issue>4</issue>
+          <fpage>167</fpage>
+          <lpage>174</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2795422&amp;tool=pmcentrez&amp;rendertype=abstract">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2795422&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>] [<ext-link ext-link-type="uri" xlink:href="http://jop.ascopubs.org/content/5/4/167.short">http://jop.ascopubs.org/content/5/4/167.short</ext-link>]</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Chan</surname>
+            <given-names>KS</given-names>
+          </name>
+          <name>
+            <surname>Fowles</surname>
+            <given-names>JB</given-names>
+          </name>
+          <name>
+            <surname>Weiner</surname>
+            <given-names>JP</given-names>
+          </name>
+          <article-title>
+            <bold>Electronic health records and the reliability and validity of quality measures: a review of the literature</bold>
+          </article-title>
+          <source>Med Care Res Rev</source>
+          <year>2010</year>
+          <volume>67</volume>
+          <issue>5</issue>
+          <fpage>503</fpage>
+          <lpage>527</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20150441">http://www.ncbi.nlm.nih.gov/pubmed/20150441</ext-link>]</comment>
+          <pub-id pub-id-type="doi">10.1177/1077558709359007</pub-id>
+          <pub-id pub-id-type="pmid">20150441</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Burns</surname>
+            <given-names>EM</given-names>
+          </name>
+          <name>
+            <surname>Bottle</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Aylin</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Darzi</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Nicholls</surname>
+            <given-names>RJ</given-names>
+          </name>
+          <name>
+            <surname>Faiz</surname>
+            <given-names>O</given-names>
+          </name>
+          <article-title>
+            <bold>Variation in reoperation after colorectal surgery in England as an indicator of surgical performance: retrospective analysis of Hospital Episode Statistics</bold>
+          </article-title>
+          <source>BMJ</source>
+          <year>2011</year>
+          <volume>343</volume>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.bmj.com/cgi/doi/10.1136/bmj.d4836">http://www.bmj.com/cgi/doi/10.1136/bmj.d4836</ext-link>]</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Anema</surname>
+            <given-names>HA</given-names>
+          </name>
+          <name>
+            <surname>van der Veer</surname>
+            <given-names>SN</given-names>
+          </name>
+          <name>
+            <surname>Kievit</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Krol-Warmerdam</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Fischer</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Steyerberg</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Dongelmans</surname>
+            <given-names>DA</given-names>
+          </name>
+          <name>
+            <surname>Reidinga</surname>
+            <given-names>AC</given-names>
+          </name>
+          <name>
+            <surname>Klazinga</surname>
+            <given-names>NS</given-names>
+          </name>
+          <name>
+            <surname>de Keizer</surname>
+            <given-names>NF</given-names>
+          </name>
+          <article-title>
+            <bold>Influences of definition ambiguity on hospital performance indicator scores: examples from The Netherlands</bold>
+          </article-title>
+          <source>Eur J Public Health</source>
+          <year>2013</year>
+          <volume>Dmv</volume>
+          <fpage>1</fpage>
+          <lpage>6</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/23543677">http://www.ncbi.nlm.nih.gov/pubmed/23543677</ext-link>]</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Warsi</surname>
+            <given-names>AA</given-names>
+          </name>
+          <name>
+            <surname>White</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>McCulloch</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>
+            <bold>Completeness of data entry in three cancer surgery databases</bold>
+          </article-title>
+          <source>Eur J Surg Oncol (EJSO)</source>
+          <year>2002</year>
+          <volume>28</volume>
+          <issue>8</issue>
+          <fpage>850</fpage>
+          <lpage>856</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://linkinghub.elsevier.com/retrieve/pii/S0748798302912837">http://linkinghub.elsevier.com/retrieve/pii/S0748798302912837</ext-link>]</comment>
+          <pub-id pub-id-type="doi">10.1053/ejso.2002.1283</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Botsis</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Hartvigsen</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Weng</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>
+            <bold>Secondary use of EHR: data quality issues and informatics opportunities</bold>
+          </article-title>
+          <source>AMIA Summits Transl Sci</source>
+          <year>2010</year>
+          <volume>2010</volume>
+          <fpage>1</fpage>
+          <lpage>5</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3041534&amp;tool=pmcentrez&amp;rendertype=abstract">http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3041534&amp;tool=pmcentrez&amp;rendertype=abstract</ext-link>]</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hripcsak</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Albers</surname>
+            <given-names>DJ</given-names>
+          </name>
+          <article-title>
+            <bold>Next-generation phenotyping of electronic health records</bold>
+          </article-title>
+          <source>J Am Med Inform Assoc</source>
+          <year>2013</year>
+          <volume>20</volume>
+          <issue>1</issue>
+          <fpage>117</fpage>
+          <lpage>121</lpage>
+          <comment>doi:10.1136/amiajnl-2012-001145</comment>
+          <pub-id pub-id-type="doi">10.1136/amiajnl-2012-001145</pub-id>
+          <pub-id pub-id-type="pmid">22955496</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Edhemovic</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Temple</surname>
+            <given-names>WJ</given-names>
+          </name>
+          <name>
+            <surname>de Gara</surname>
+            <given-names>CJ</given-names>
+          </name>
+          <name>
+            <surname>Stuart</surname>
+            <given-names>GCE</given-names>
+          </name>
+          <article-title>
+            <bold>The computer synoptic operative report&#x2014;leap forward in the science of surgery</bold>
+          </article-title>
+          <source>Ann Surg Oncol</source>
+          <year>2004</year>
+          <volume>11</volume>
+          <issue>10</issue>
+          <fpage>941</fpage>
+          <lpage>947</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15466354">http://www.ncbi.nlm.nih.gov/pubmed/15466354</ext-link>] [<ext-link ext-link-type="uri" xlink:href="http://www.springerlink.com/index/CG6A4TQ38T54LP7L.pdf">http://www.springerlink.com/index/CG6A4TQ38T54LP7L.pdf</ext-link>]</comment>
+          <pub-id pub-id-type="doi">10.1245/ASO.2004.12.045</pub-id>
+          <pub-id pub-id-type="pmid">15466354</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mack</surname>
+            <given-names>LA</given-names>
+          </name>
+          <name>
+            <surname>Bathe</surname>
+            <given-names>OF</given-names>
+          </name>
+          <name>
+            <surname>Hebert</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Tamano</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Buie</surname>
+            <given-names>WD</given-names>
+          </name>
+          <name>
+            <surname>Fields</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Temple</surname>
+            <given-names>WJ</given-names>
+          </name>
+          <article-title>
+            <bold>Opening the black box of cancer surgery quality: WebSMR and the Alberta experience</bold>
+          </article-title>
+          <source>J Surg Oncol</source>
+          <year>2009</year>
+          <volume>99</volume>
+          <issue>9</issue>
+          <fpage>525</fpage>
+          <lpage>530</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19338026">http://www.ncbi.nlm.nih.gov/pubmed/19338026</ext-link>]</comment>
+          <pub-id pub-id-type="pmid">19338026</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Park</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Pillarisetty</surname>
+            <given-names>VG</given-names>
+          </name>
+          <name>
+            <surname>Brennan</surname>
+            <given-names>MF</given-names>
+          </name>
+          <name>
+            <surname>Jarnagin</surname>
+            <given-names>WR</given-names>
+          </name>
+          <name>
+            <surname>D&#x2019;Angelica</surname>
+            <given-names>MI</given-names>
+          </name>
+          <name>
+            <surname>Dematteo</surname>
+            <given-names>RP</given-names>
+          </name>
+          <name>
+            <surname>Coit</surname>
+            <given-names>DG</given-names>
+          </name>
+          <name>
+            <surname>Janakos</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Allen</surname>
+            <given-names>PJ</given-names>
+          </name>
+          <article-title>
+            <bold>Electronic synoptic operative reporting: assessing the reliability and completeness of synoptic reports for pancreatic resection</bold>
+          </article-title>
+          <source>J Am Coll Surg</source>
+          <year>2010</year>
+          <volume>211</volume>
+          <issue>3</issue>
+          <fpage>308</fpage>
+          <lpage>315</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20800186">http://www.ncbi.nlm.nih.gov/pubmed/20800186</ext-link>]</comment>
+          <pub-id pub-id-type="doi">10.1016/j.jamcollsurg.2010.05.008</pub-id>
+          <pub-id pub-id-type="pmid">20800186</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cornet</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Van Eldik</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>De Keizer</surname>
+            <given-names>N</given-names>
+          </name>
+          <article-title>
+            <bold>Inventory of tools for dutch clinical language processing</bold>
+          </article-title>
+          <source>Stud Health Technol Inform</source>
+          <year>2012</year>
+          <volume>180</volume>
+          <fpage>245</fpage>
+          <pub-id pub-id-type="pmid">22874189</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wyatt</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>
+            <bold>Acquisition and use of clinical data for audit and research</bold>
+          </article-title>
+          <source>J Eval Clin Pract</source>
+          <year>1995</year>
+          <volume>1</volume>
+          <fpage>15</fpage>
+          <lpage>27</lpage>
+          <comment>[<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/9238554">http://www.ncbi.nlm.nih.gov/pubmed/9238554</ext-link>]</comment>
+          <pub-id pub-id-type="doi">10.1111/j.1365-2753.1995.tb00004.x</pub-id>
+          <pub-id pub-id-type="pmid">9238554</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cimino</surname>
+            <given-names>JJ</given-names>
+          </name>
+          <article-title>
+            <bold>Collect once, use many: enabling the reuse of clinical data through controlled terminologies</bold>
+          </article-title>
+          <source>J AHIMA</source>
+          <year>2007</year>
+          <volume>78</volume>
+          <issue>2</issue>
+          <fpage>24</fpage>
+          <lpage>29</lpage>
+          <pub-id pub-id-type="pmid">17366990</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

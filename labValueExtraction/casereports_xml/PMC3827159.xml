@@ -1,0 +1,695 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24265796</article-id>
+      <article-id pub-id-type="pmc">3827159</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-13-32237</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0080106</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Image Quality Improvement in Adaptive Optics Scanning Laser Ophthalmoscopy Assisted Capillary Visualization Using B-spline-based Elastic Image Registration </article-title>
+        <alt-title alt-title-type="running-head">Elastic Image Registration for AO-SLO</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Uji</surname>
+            <given-names>Akihito</given-names>
+          </name>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ooto</surname>
+            <given-names>Sotaro</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hangai</surname>
+            <given-names>Masanori</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Arichika</surname>
+            <given-names>Shigeta</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yoshimura</surname>
+            <given-names>Nagahisa</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <addr-line>Department of Ophthalmology and Visual Sciences, Kyoto University Graduate School of Medicine, Kyoto, Japan</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Coles</surname>
+            <given-names>Jonathan&#xA0;A</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Glasgow University, United Kingdom</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>akihito1@kuhp.kyoto-u.ac.jp</email></corresp>
+        <fn fn-type="conflict">
+          <p><bold>Competing Interests: </bold>This study was supported in part by Canon Inc.. Canon Inc. has provided a prototype of AO-SLO system to the authors' institution. This does not alter the authors' adherence to all the PLOS ONE policies on sharing data and materials.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: AU SO. Performed the experiments: AU SA. Analyzed the data: AU SO MH. Contributed reagents/materials/analysis tools: AU SA. Wrote the manuscript: AU SO MH SA NY. </p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>12</day>
+        <month>11</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>11</issue>
+      <elocation-id>e80106</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>3</day>
+          <month>8</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>6</day>
+          <month>10</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Uji et al</copyright-holder>
+        <license>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec sec-type="headed">
+          <title>Purpose</title>
+          <p>To investigate the effect of B-spline-based elastic image registration on adaptive optics scanning laser ophthalmoscopy (AO-SLO)-assisted capillary visualization.</p>
+        </sec>
+        <sec sec-type="headed">
+          <title>Methods</title>
+          <p>AO-SLO videos were acquired from parafoveal areas in the eyes of healthy subjects and patients with various diseases. After nonlinear image registration, the image quality of capillary images constructed from AO-SLO videos using motion contrast enhancement was compared before and after B-spline-based elastic (nonlinear) image registration performed using ImageJ. For objective comparison of image quality, contrast-to-noise ratios (CNRS) for vessel images were calculated. For subjective comparison, experienced ophthalmologists ranked images on a 5-point scale.</p>
+        </sec>
+        <sec sec-type="headed">
+          <title>Results</title>
+          <p>All AO-SLO videos were successfully stabilized by elastic image registration. CNR was significantly higher in capillary images stabilized by elastic image registration than in those stabilized without registration. The average ratio of CNR in images with elastic image registration to CNR in images without elastic image registration was 2.10 &#xB1; 1.73, with no significant difference in the ratio between patients and healthy subjects. Improvement of image quality was also supported by expert comparison.</p>
+        </sec>
+        <sec sec-type="headed">
+          <title>Conclusions</title>
+          <p>Use of B-spline-based elastic image registration in AO-SLO-assisted capillary visualization was effective for enhancing image quality both objectively and subjectively.</p>
+        </sec>
+      </abstract>
+      <funding-group>
+        <funding-statement>This study was supported in part by the Innovative Techno-Hub for Integrated Medical Bio-imaging of the Project for Developing Innovation Systems, from the Ministry of Education, Culture, Sports, Science and Technology (MEXT), Japan, and Canon Inc. No additional external funding received for this study. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+</funding-statement>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Imaging technology in optical coherence tomography (OCT) has advanced rapidly and contributed greatly to progress in ophthalmology during this decade[<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B2">2</xref>]. Improvement of OCT image quality has been achieved not only by increased retinal scan speed, as represented by the advancement of OCT generations from time-domain OCT to spectral-domain OCT (SD-OCT)[<xref ref-type="bibr" rid="B3">3</xref>&#x2013;<xref ref-type="bibr" rid="B7">7</xref>], but also by image processing techniques to reduce speckle noise using multiple-aligned OCT scans[<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B9">9</xref>]. Although multiple B-scan averaging can visualize microstructure in OCT more clearly than single B-scans, this technique is based on high-speed SD-OCT scanning, by which B-scans are generated with minimal scanning distortion variation from one scan to another.</p>
+      <p> More recently, confocal adaptive optics scanning laser ophthalmoscopy (AO-SLO) has enabled imaging of retinal cells such as photoreceptors and blood cells[<xref ref-type="bibr" rid="B10">10</xref>&#x2013;<xref ref-type="bibr" rid="B12">12</xref>]. Adaptive optics (AO) can compensate for aberrations in ocular optics, allowing clear visualization of individual cone photoreceptors in the living eye. As in OCT, multiple scan averaging has been reported as useful in AO-SLO imaging, with averaged AO-SLO images demonstrating photoreceptor microstructure more clearly than single scans[<xref ref-type="bibr" rid="B13">13</xref>&#x2013;<xref ref-type="bibr" rid="B15">15</xref>]. However, unlike SD-OCT, averaging of AO-SLO images is challenged by the relatively narrow and magnified scanning area. An interframe position gap produced by eye motion exists between scan frames, and intraframe eye motion produces distortions in frames[<xref ref-type="bibr" rid="B16">16</xref>]. Thus, averaging often results in blurry images. To overcome these issues, hardware and software for eye tracking have been developed that can stabilize the frames, such as cross-correlation methods[<xref ref-type="bibr" rid="B17">17</xref>] and the KLT (Kanade-Lucas-Tomasi)-SIFT (Scale-invariant feature transform) algorithm[<xref ref-type="bibr" rid="B14">14</xref>], and excellent photoreceptor imaging results have been reported using these systems[<xref ref-type="bibr" rid="B18">18</xref>].</p>
+      <p>In addition to photoreceptor observation, AO-SLO video allows noninvasive monitoring of the movement of blood components without contrast dyes[<xref ref-type="bibr" rid="B11">11</xref>,<xref ref-type="bibr" rid="B19">19</xref>]. Noninvasive visualization of retinal capillaries using stabilized AO-SLO videos was very effective in analyzing the parafoveal capillary network of diabetic patients[<xref ref-type="bibr" rid="B20">20</xref>&#x2013;<xref ref-type="bibr" rid="B22">22</xref>]. Because the technique requires no contrast dyes, angiogram can be safely obtained even in patients with minimal changes of that retina, which would be helpful in the early detection of retinal diseases and may also be a powerful tool for researching the pathogenic mechanisms of retinal diseases. Although the effect of video stabilization on vessel visualization was not analyzed in these studies, it was thought to be profound because the capillary image was constructed as a trajectory of small blood cells using multiple frames.</p>
+      <p>In this study, we applied B-spline-based elastic image registration on AO-SLO videos to interpolate the images for AO-SLO video stabilization using public domain software ImageJ. B-splines have proven very useful in modeling deformations in many biomedical imaging problems and ensure high-quality interpolation[<xref ref-type="bibr" rid="B23">23</xref>&#x2013;<xref ref-type="bibr" rid="B27">27</xref>]. The effect of elastic image registration on AO-SLO-assisted capillary visualization in normal eyes and various retinal diseases was then evaluated objectively and subjectively.</p>
+    </sec>
+    <sec sec-type="methods" id="s2">
+      <title>Methods</title>
+      <p>This study was approved by the Institutional Review Board and the Ethics Committee at Kyoto University Graduate School of Medicine and performed in accordance with the tenets of the Declaration of Helsinki. Written informed consent was obtained from each participant after a detailed explanation of the nature and possible consequences of the study procedures. </p>
+      <sec id="s2.1">
+        <title>Subjects</title>
+        <p>Twenty-four healthy subjects with no history of ocular or systemic diseases (mean &#xB1; standard deviation [SD] age, 35.2 &#xB1; 8.1 y) and 25 patients (mean age &#xB1; SD, 56.7 &#xB1; 13.1 y) diagnosed with various eye diseases at Kyoto University Hospital (5 patients each with diabetic retinopathy [DR], idiopathic macular telangiectasia [MacTel], epiretinal membrane [ERM], central serous chorioretinopathy [CSC], and glaucoma) were recruited in this prospective cross-sectional study.</p>
+      </sec>
+      <sec id="s2.2">
+        <title>Adaptive Optics Scanning Laser Ophthalmoscopy Imaging</title>
+        <p>The AO-SLO system developed by Canon Inc. was employed for this study[<xref ref-type="bibr" rid="B28">28</xref>], with 840-nm imaging light wavelength and 32-Hz frame rate. The imaging light exposure level was set to less than the maximum permissible exposure indicated by the American National Standards Institute[<xref ref-type="bibr" rid="B29">29</xref>]. The scan area at the retina was 2.8 &#xD7; 2.8&#xB0; and sampled at 400 &#xD7; 400 pixels. AO-SLO videos were acquired randomly from 1 eye of each subject after pupil dilation with one combined application of tropicamide (0.5%) and phenylephrine hydrochloride (0.5%) and recorded for 2 s per scan area; 6&#x2013;12 scan areas were collected per subject to cover the parafoveal area. AO-SLO imaging was focused on the photoreceptor layer to enable detection of moving bright objects in the capillaries, which may correspond to leukocytes or plasma gaps as described previously[<xref ref-type="bibr" rid="B30">30</xref>].</p>
+      </sec>
+      <sec id="s2.3">
+        <title>Video Processing</title>
+        <p>Prior to linear and nonlinear registrations, all images were desinusoided in preprocessing to cancel the difference in reflective values between the center and near edge of each image caused by sinusoidal movement of the resonant scanner. </p>
+        <sec id="s2.3.1">
+          <title>Video Stabilization</title>
+          <p>For each subject, a 2-s video was randomly chosen for analysis. All videos were first stabilized by linear image registration to align frames, followed by nonlinear image registration to correct image distortion produced by intraframe eye motion. The image quality of constructed capillary images was compared before and after nonlinear image registration. All digital images were processed by a single operator (A.U.) using ImageJ (developed by Wayne Rasband, National Institutes of Health, Bethesda, MD; available at <ext-link ext-link-type="uri" xlink:href="http://rsb.info.nih.gov/ij/index.html">http://rsb.info.nih.gov/ij/index.html</ext-link>). Grayscale ranged from 0 (black) to 255 (white).</p>
+        </sec>
+        <sec id="s2.3.2">
+          <title>Linear Image Registration</title>
+          <p>To align position gaps induced by eye motion across sequential frames, the Stackreg plug-in for ImageJ was used[<xref ref-type="bibr" rid="B31">31</xref>]. Stackreg is based on an automatic sub-pixel registration algorithm that minimizes the mean square difference of intensities between a reference image and source images. Rigid-body transformation, by which source images are transformed with translation and rotation to match a reference image while maintaining the distance between any pair of landmark points in the images, was applied to all videos. After registration, videos were cropped to eliminate the margin lacking a retinal image, which was a by-product of registration. </p>
+        </sec>
+        <sec id="s2.3.3">
+          <title>Elastic (Nonlinear) Image Registration</title>
+          <p>After linear image registration, videos were corrected for scanning distortions that were uncorrectable by linear registration and stabilized using the ImageJ plug-in bUnwarpJ, an algorithm for elastic and consistent image registration (<xref ref-type="fig" rid="pone-0080106-g001">Figure 1</xref> and the text of Digital Content S1, which describes the development of the bUnwarpJ algorithm as an ImageJ Plug-in in detail)[<xref ref-type="bibr" rid="B32">32</xref>,<xref ref-type="bibr" rid="B33">33</xref>]. Deformation of bUnwarpJ was based on B-spline models, and the source image was elastically deformed in order to look as similar as possible to the target (reference) image. Because the bUnwarpJ plug-in was designed for registration between just 2 images and does not perform consecutive processing for registration between the reference image and other remaining frames, bUnwarpJ was run 63 times to analyze each 64-frame (2-s) video. We then created a macro that automates a series of ImageJ commands, and videos were registered automatically (Digital Content S2). Our macro was programmed to use the first frame as a fixed reference frame for image warping by bUnwarpJ.</p>
+          <fig id="pone-0080106-g001" orientation="portrait" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0080106.g001</object-id>
+            <label>Figure 1</label>
+            <caption>
+              <title>Elastic and Consistent Image Registration.</title>
+              <p>(A) Source image. (B) Deformation grids on (A). Deformation of bUnwarpJ is based on B-spline models. Source image is elastically deformed in order to look as similar as possible to target (reference) image (D). (C) Registered source image. (D) Target (reference) image. (E) Deformation grids on (D). Simultaneously, target image (D) is elastically deformed in order to look as similar as possible to source image (A) to reduce registration error and obtain better correspondence compared to registration without the consistency factor.</p>
+            </caption>
+            <graphic xlink:href="pone.0080106.g001"/>
+          </fig>
+        </sec>
+        <sec id="s2.3.4">
+          <title>Capillary Visualization</title>
+          <p>The capillary images were constructed as projections of the moving objects in sequential frames using the motion contrast-enhancement technique reported by Tam et al.[<xref ref-type="bibr" rid="B20">20</xref>] Pixels were divided between sequential frames, and the variance of pixels among all division images in each x-y position was calculated to visualize contrast-enhanced capillary images. For each video processed by linear image registration, capillary visualization was performed both before and after elastic image registration, classified as the E(-) and E(+) groups, respectively, for comparison. A macro was also created to facilitate capillary visualization (Digital Content S3).</p>
+        </sec>
+      </sec>
+      <sec id="s2.4">
+        <title>Assessment of the Effect of Elastic Registration on Capillary Visualization</title>
+        <p>The effect of elastic image registration on capillary visualization was assessed by comparing the quality of visualized capillary images between the E(-) and E(+) groups objectively and subjectively.</p>
+        <sec id="s2.4.1">
+          <title>Contrast-to-Noise Ratio Comparison</title>
+          <p>To objectively compare image quality, contrast-to-noise ratio (CNR) was calculated for regions of interest (ROI) and compared between pairs of E(-) and E(+)-group images[<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B34">34</xref>]. ROIs examined in this study consisted of a line selected on the vessel and areas selected in space surrounding the vessel. To match the position of ROIs between E(-) and E(+) images, we established ROIs on the first frame of the registered videos and copied them to the images with capillary visualization (<xref ref-type="fig" rid="pone-0080106-g002">Figure 2</xref>). Briefly, the line was established along a vessel shadow. Six 20 &#xD7; 20-pixel areas were selected adjacent to the selected capillary shadow on the cone mosaic pattern and then copied to the brightly visualized capillary image using ROI Manager, a built-in function of ImageJ that records the exact location of the ROIs, and the mean gray values of the selected capillary and vessel free space were calculated. CNR was calculated as follows:</p>
+          <p><inline-formula><mml:math id="m1"><mml:mrow><mml:mi>C</mml:mi><mml:mi>N</mml:mi><mml:mi>R</mml:mi><mml:mo>=</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>f</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mi>b</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>/</mml:mo><mml:msqrt><mml:mrow><mml:msubsup><mml:mi>&#x3B4;</mml:mi><mml:mi>f</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>+</mml:mo><mml:msubsup><mml:mi>&#x3B4;</mml:mi><mml:mi>b</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:msqrt></mml:mrow></mml:math></inline-formula> (1), </p>
+          <fig id="pone-0080106-g002" orientation="portrait" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0080106.g002</object-id>
+            <label>Figure 2</label>
+            <caption>
+              <title>Calculation of Contrast-to-noise Ratio.</title>
+              <p>(A) First frame of video obtained using adaptive optics scanning laser ophthalmoscopy (AO-SLO). Regions of interests (ROI) were set on the first frame of the video. ROIs examined in this study were a line selected on the vessel shadow (yellow dotted line) and areas selected on space surrounding the vessel (white squares) for each subject. Scale bar, 100 &#x3BC;m. (B) Capillary image constructed from the video in (A) after elastic registration. ROIs on (A) were copied to the image with capillary visualization.</p>
+            </caption>
+            <graphic xlink:href="pone.0080106.g002"/>
+          </fig>
+          <p>where <italic>f</italic> and <italic>b</italic> are the mean gray values of the ROI set on visualized capillary (foreground) and the 6 ROIs set on vessel free space (background), respectively, and <italic>&#x3B4;</italic><sub><italic>f</italic></sub> and <italic>&#x3B4;</italic><sub><italic>b</italic></sub> are the standard deviation from the foreground and background mean values, respectively.</p>
+        </sec>
+        <sec id="s2.4.2">
+          <title>Expert Comparison</title>
+          <p>For subjective comparison, 6 experienced ophthalmologists masked to image information performed independent expert comparisons of pairs of E(-) and E(+) images[<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B35">35</xref>]. A comparative image quality score for clarity of capillary images was assigned to each image pair as follows: 5 = markedly better capillary image in E(+); 4 = slightly better capillary image in E(+); 3 = equal capillary images in E(+) and E(-); 2 = slightly better capillary image in E(-); and 1 = markedly better capillary image in E(-).</p>
+        </sec>
+      </sec>
+      <sec id="s2.5">
+        <title>Measurement of Processing Time Required for Elastic Image Registration</title>
+        <p>The processing time required for elastic image registration using bUnwarpJ was measured to assess its ease of use and future applicability. Image processing was performed using a Microsoft Windows 7 64-bit operating system with 64-bit central processing unit (Corei7, 2.80 GHz).</p>
+      </sec>
+      <sec id="s2.6">
+        <title>Statistical Analysis</title>
+        <p>Statistical analysis was performed using StatView version 5.0 (SAS Inc., Cary, NC). All values are presented as the mean &#xB1; standard deviation. Paired <italic>t</italic> tests were used to determine CNR differences between the E(-) and E(+) groups. Comparison of the ratio of CNR values in the E(+) and E(-) groups and the mean score assigned by experts between patients and normal subjects was performed using one-way analysis of variance, with post-hoc comparisons tested by the Scheffe procedure. <italic>P</italic> values &lt; 0.05 were considered statistically significant.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="s3">
+      <title>Results</title>
+      <sec id="s3.1">
+        <title>Effect of Elastic Registration on Capillary Visualization</title>
+        <p>All AO-SLO videos tested in this study were successfully stabilized by elastic image registration with ImageJ, and distortion that was wavy and uncorrectable by linear image registration was considerably diminished (<xref ref-type="fig" rid="pone-0080106-g003">Figure 3</xref> and Digital Content S4). Bright moving objects in the shadows of capillaries on the cone mosaic pattern, considered to be leukocytes or plasma gaps, were easier to observe in stabilized videos than in videos only subjected to linear image registration.</p>
+        <fig id="pone-0080106-g003" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0080106.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Effect of B-spline-based Elastic Registration on Capillary Visualization.</title>
+            <p>(A) Color fundus photograph of the right eye of a 34-year-old woman with no history of ocular or systemic diseases. (B, C) Two consecutive frames obtained by adaptive optics scanning laser ophthalmoscopy (AO-SLO), which correspond to the area outlined in white in (A) showing scanning distortions that were uncorrectable by linear registration. High-intensity dots representing the cone mosaic pattern and dark shadow of the vessels are observed. Although the squares outlined by a dashed line in (B) and (C) indicate an identical area of the retina, the area in (B) appears to be wider than the area in (C). Scale bar, 100 &#x3BC;m. (D) Registered image of (C), which was elastically deformed to appear as similar as possible to (B). (E, F) Deformation grids on (B) and (C), respectively. (G) Capillary image constructed from unregistered AO-SLO video recorded for 2 s. (H) Capillary image constructed from AO-SLO video after B-spline-based elastic registration. The capillary is more brilliant than that of (G) constructed without registration.</p>
+          </caption>
+          <graphic xlink:href="pone.0080106.g003"/>
+        </fig>
+        <p><xref ref-type="table" rid="pone-0080106-t001">Table 1</xref> shows CNRs for ROIs set on pairs of E(-) and E(+) capillary visualized images in normal subjects and patients with various disease. CNR was significantly higher (<italic>P</italic> &lt; 0.0001) in the E(+) group than the E(-) group (1.92 &#xB1; 0.57 vs. 1.24 &#xB1; 0.59, respectively) overall. CNR was also significantly higher in the E(+) group than in the E(-) group in normal subjects and each disease group. In no pair of ROIs was the CNR lower in the E(+) group than in the E(-) group. The average ratio of CNR in the E(+) group to CNR in the E(-) group was 2.10 &#xB1; 1.73 overall, and no significant difference in this ratio was observed between patients or normal subjects (<italic>P</italic> = 0.379). </p>
+        <table-wrap id="pone-0080106-t001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0080106.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Differences in Contrast-to-noise Ratio between Images Constructed with or without Elastic Image Registration.</title>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <colgroup span="1">
+              <col span="1"/>
+              <col span="1"/>
+              <col span="1"/>
+              <col span="1"/>
+              <col span="1"/>
+              <col span="1"/>
+              <col span="1"/>
+              <col span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th rowspan="1" colspan="1">Characteristic</th>
+                <th rowspan="1" colspan="1">Normal</th>
+                <th rowspan="1" colspan="1">DR</th>
+                <th rowspan="1" colspan="1">MacTel</th>
+                <th rowspan="1" colspan="1">ERM</th>
+                <th rowspan="1" colspan="1">CSC</th>
+                <th rowspan="1" colspan="1">Glaucoma</th>
+                <th rowspan="1" colspan="1">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="1" colspan="1">No. eyes</td>
+                <td rowspan="1" colspan="1">24</td>
+                <td rowspan="1" colspan="1">5</td>
+                <td rowspan="1" colspan="1">5</td>
+                <td rowspan="1" colspan="1">5</td>
+                <td rowspan="1" colspan="1">5</td>
+                <td rowspan="1" colspan="1">5</td>
+                <td rowspan="1" colspan="1">49</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1">Men/women</td>
+                <td rowspan="1" colspan="1">14/10</td>
+                <td rowspan="1" colspan="1">3/2</td>
+                <td rowspan="1" colspan="1">3/2</td>
+                <td rowspan="1" colspan="1">3/2</td>
+                <td rowspan="1" colspan="1">5/0</td>
+                <td rowspan="1" colspan="1">5/0</td>
+                <td rowspan="1" colspan="1">33/16</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1">Age (y)</td>
+                <td rowspan="1" colspan="1">35.2 &#xB1; 8.1</td>
+                <td rowspan="1" colspan="1">50.2 &#xB1; 7.0 </td>
+                <td rowspan="1" colspan="1">59.4 &#xB1; 10.6</td>
+                <td rowspan="1" colspan="1">65.2 &#xB1; 10.6</td>
+                <td rowspan="1" colspan="1">50.2 &#xB1; 12.7</td>
+                <td rowspan="1" colspan="1">56.6 &#xB1; 20.6</td>
+                <td rowspan="1" colspan="1">46.2 &#xB1; 15.4</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1">Processing time (s)</td>
+                <td rowspan="1" colspan="1">614 &#xB1; 198</td>
+                <td rowspan="1" colspan="1">667 &#xB1; 41</td>
+                <td rowspan="1" colspan="1">530 &#xB1; 240</td>
+                <td rowspan="1" colspan="1">794 &#xB1; 211</td>
+                <td rowspan="1" colspan="1">654 &#xB1; 180</td>
+                <td rowspan="1" colspan="1">544 &#xB1; 106</td>
+                <td rowspan="1" colspan="1">626 &#xB1; 190</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1">CNR (E-)</td>
+                <td rowspan="1" colspan="1">1.30 &#xB1; 0.57</td>
+                <td rowspan="1" colspan="1">1.86 &#xB1; 0.37</td>
+                <td rowspan="1" colspan="1">0.90 &#xB1; 0.48</td>
+                <td rowspan="1" colspan="1">1.02 &#xB1; 0.55</td>
+                <td rowspan="1" colspan="1">1.28 &#xB1; 0.62</td>
+                <td rowspan="1" colspan="1">0.84 &#xB1; 0.64</td>
+                <td rowspan="1" colspan="1">1.24 &#xB1; 0.59</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1">CNR (E+)</td>
+                <td rowspan="1" colspan="1">1.98 &#xB1; 0.56</td>
+                <td rowspan="1" colspan="1">2.18 &#xB1; 0.44</td>
+                <td rowspan="1" colspan="1">1.90 &#xB1; 0.52</td>
+                <td rowspan="1" colspan="1">1.66 &#xB1; 0.50</td>
+                <td rowspan="1" colspan="1">1.98 &#xB1; 0.93</td>
+                <td rowspan="1" colspan="1">1.53 &#xB1; 0.31</td>
+                <td rowspan="1" colspan="1">1.92 &#xB1; 0.57</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"><italic>P</italic> value</td>
+                <td rowspan="1" colspan="1">&lt; 0.0001</td>
+                <td rowspan="1" colspan="1">0.0331</td>
+                <td rowspan="1" colspan="1">0.0113</td>
+                <td rowspan="1" colspan="1">0.0279</td>
+                <td rowspan="1" colspan="1">0.0428</td>
+                <td rowspan="1" colspan="1">0.0164</td>
+                <td rowspan="1" colspan="1">&lt;0.0001</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1">CNR(E+)/CNR(E-)</td>
+                <td rowspan="1" colspan="1">1.95 &#xB1; 1.55</td>
+                <td rowspan="1" colspan="1">1.17 &#xB1; 0.14</td>
+                <td rowspan="1" colspan="1">2.93 &#xB1; 1.96</td>
+                <td rowspan="1" colspan="1">2.36 &#xB1; 2.07</td>
+                <td rowspan="1" colspan="1">1.57 &#xB1; 0.35</td>
+                <td rowspan="1" colspan="1">3.21 &#xB1; 3.16</td>
+                <td rowspan="1" colspan="1">2.10 &#xB1; 1.73</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1">Expert score</td>
+                <td rowspan="1" colspan="1">4.21 &#xB1; 0.69</td>
+                <td rowspan="1" colspan="1">3.92 &#xB1; 0.58</td>
+                <td rowspan="1" colspan="1">3.88 &#xB1; 0.87</td>
+                <td rowspan="1" colspan="1">3.40 &#xB1; 0.59</td>
+                <td rowspan="1" colspan="1">3.72 &#xB1; 0.42</td>
+                <td rowspan="1" colspan="1">3.96 &#xB1; 0.79</td>
+                <td rowspan="1" colspan="1">3.99 &#xB1; 0.69</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>DR = diabetic retinopathy; MacTel = idiopathic macular telangiectasia; ERM = epiretinal membrane; CSC = central serous chorioretinopathy; CNR (E-) = contrast-to-noise ratio of images constructed without elastic registration; CNR (E+) = contrast-to-noise ratio of images constructed with elastic registration.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p> The mean score assigned by experts was 3.99 &#xB1; 0.69 overall, 4.21 &#xB1; 0.69 in normal subjects, 3.92 &#xB1; 0.58 in DR patients, 3.88 &#xB1; 0.87 in MacTel patients, 3.40 &#xB1; 0.59 in ERM patients, 3.72 &#xB1; 0.42 in CSC patients, and 3.96 &#xB1; 0.79 in glaucoma patients, and the mean score did not significantly differ between patients and normal subjects (<italic>P</italic> = 0.306) (<xref ref-type="table" rid="pone-0080106-t001">Table 1</xref>). </p>
+      </sec>
+      <sec id="s3.2">
+        <title>Processing Time Required for Elastic Image Registration</title>
+        <p>Mean processing time required for elastic image registration was 626 &#xB1; 190 s in total, with no significant difference between patients and normal subjects (<italic>P</italic> = 0.258). Mean processing time was correlated with the area (R = 0.385; <italic>P</italic> = 0.006) and width (R = 0.399; <italic>P</italic> = 0.004) of cropped videos, but not their vertical length (R = 0.169; <italic>P</italic> = 0.248).</p>
+      </sec>
+      <sec id="s3.3">
+        <title>Case 1</title>
+        <p>The parafoveal area of the left eye of a 53-year-old man with no history of ocular or systemic diseases was examined by AO-SLO, and capillary image was constructed from video recorded for 2 s (<xref ref-type="fig" rid="pone-0080106-g004">Figure 4</xref>). Capillaries were brilliantly visualized using elastic image registration (<xref ref-type="fig" rid="pone-0080106-g004">Figure 4F</xref>), comparably to early-phase fluorescein angiography (FA) images obtained using Heidelberg Retinal Angiography 2 (Heidelberg Engineering) (<xref ref-type="fig" rid="pone-0080106-g004">Figure 4D</xref>), while capillary images constructed without elastic registration were rather noisy and blurred (<xref ref-type="fig" rid="pone-0080106-g004">Figure 4E</xref>). </p>
+        <fig id="pone-0080106-g004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0080106.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Imaging Results from Case 1.</title>
+            <p>(A) Color fundus photograph. (B) Early-phase fluorescein angiography (FA) image. (C) First frame of the adaptive optics scanning laser ophthalmoscopy (AO-SLO) video, which corresponds to the area outlined in white in (B). (D) FA image. Magnified view of the area outlined in white in (B). (E) Capillary image constructed from unregistered AO-SLO video. (F) Capillary image constructed from AO-SLO video after B-spline-based elastic registration. Scale bar, 100 &#x3BC;m. Note that the capillary image is brilliantly visualized and comparable to early-phase FA image, while the capillary image constructed without elastic registration (E) is rather noisy and blurred.</p>
+          </caption>
+          <graphic xlink:href="pone.0080106.g004"/>
+        </fig>
+      </sec>
+      <sec id="s3.4">
+        <title>Case 2</title>
+        <p>A 44-year-old woman with proliferative diabetic retinopathy was referred to us. Panretinal photocoagulation was performed 10 y previously. Her visual acuity was 20/20 in her right eye and 20/20 in her left eye. Parafoveal area of the right eye was scanned by AO-SLO, and capillary image was constructed with and without elastic image registration (<xref ref-type="fig" rid="pone-0080106-g005">Figure 5</xref>). In the registered capillary image, microaneurysm as well as caliber variation was depicted clearly in the registered capillary image, and the same findings were also detected in FA.</p>
+        <fig id="pone-0080106-g005" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0080106.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Imaging Results from Case 2.</title>
+            <p>(A) Color fundus photograph. (B) Early-phase fluorescein angiography (FA) image. Microaneurysms are seen as hyperfluorescent dots. (C) Montage of adaptive optics scanning laser ophthalmoscopy (AO-SLO) images overlaid on magnified color fundus photograph corresponding to the area outlined in green in (A). (D) First frame of the AO-SLO video, which corresponds to the area outlined in white in (B) and (C). Scale bar, 100 &#x3BC;m. (E) Capillary image constructed from unregistered AO-SLO video recorded for 2 s. (F) Capillary image constructed from AO-SLO video after B-spline-based elastic registration. Microaneurysm (yellow arrow) as well as caliber variation (yellow arrowhead) are clearly depicted. (G) FA image. Magnified view of the area outlined in white in (B).</p>
+          </caption>
+          <graphic xlink:href="pone.0080106.g005"/>
+        </fig>
+      </sec>
+      <sec id="s3.5">
+        <title>Case 3</title>
+        <p>A 46-year-old man with a 6-year history of mild blurring of vision in the right eye was diagnosed with MacTel type 1 (<xref ref-type="fig" rid="pone-0080106-g006">Figure 6</xref>). Visual acuity was 20/20 in his right eye. Photocoagulation scar was observed temporal to the fovea. The OCT scan showed intraretinal cystoid spaces[<xref ref-type="bibr" rid="B36">36</xref>,<xref ref-type="bibr" rid="B37">37</xref>]. AO-SLO video was successfully registered, and the constructed capillary image showed microaneurysm. Capillary was visualized more clearly and sharply in images constructed with elastic registration than in images without elastic registration.</p>
+        <fig id="pone-0080106-g006" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0080106.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>Imaging Results from Case 3.</title>
+            <p>(A) Color fundus photograph. (B) Montage of adaptive optics scanning laser ophthalmoscopy (AO-SLO) images overlaid on magnified color fundus photograph corresponding to the area outlined in white in (A). (C) The optical coherence tomographic scan shows intraretinal cystoid spaces. (D) First frame of the AO-SLO video, which corresponds to the area outlined in white in (B). Dark regions that may correspond to the shadow of microaneurysm on the cone mosaic could be seen along the vessel shadow (arrows). Scale bar, 100 &#x3BC;m. (E) Capillary image constructed from unregistered AO-SLO video. (F) Capillary image constructed from AO-SLO video after B-spline-based elastic registration showing microaneurysm (arrows). The capillary was visualized more clearly and sharply in the image constructed with elastic registration than in the image without elastic registration.</p>
+          </caption>
+          <graphic xlink:href="pone.0080106.g006"/>
+        </fig>
+      </sec>
+      <sec id="s3.6">
+        <title>Case 4</title>
+        <p>A 65-year-old woman with mild ERM had visual acuity of 20/20 in the right eye (<xref ref-type="fig" rid="pone-0080106-g007">Figure 7</xref>). AO-SLO image showed "microfolds" (multiple thin, straight, hyporeflective lines in the photoreceptor layer) as previously reported by Ooto et al.[<xref ref-type="bibr" rid="B38">38</xref>] The capillary image was rather noisy in the unregistered image and visible more clearly in the registered image. In both registered and unregistered images, vessel images overlapping with microfolds were obscured by white striped artifacts. These artifacts were not detected in images from patients other than ERM patients and were considered unique to ERM. </p>
+        <fig id="pone-0080106-g007" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0080106.g007</object-id>
+          <label>Figure 7</label>
+          <caption>
+            <title>Imaging Results from Case 4.</title>
+            <p>(A) Color fundus photograph. (B) Montage of adaptive optics scanning laser ophthalmoscopy (AO-SLO) images overlaid on magnified color fundus photograph corresponding to the area outlined in white in (A). (C) The optical coherence tomographic scan shows thin epiretinal membrane and retinal folds. (D) First frame of the AO-SLO video, which corresponds to the area outlined in white in (B), shows "microfolds" (arrows). Scale bar, 100 &#x3BC;m. (E) Capillary image constructed from unregistered AO-SLO video. (F) Capillary image constructed from AO-SLO video after B-spline-based elastic registration. (G, H) Magnified view of the area outlined in yellow in (E) and (F). Scale bar, 100 &#x3BC;m. The capillary image was rather noisy in (G), and visible more clearly in (H). Note that vessel images overlapping with microfolds were obscured by white striped artifacts (arrowheads) in both images.</p>
+          </caption>
+          <graphic xlink:href="pone.0080106.g007"/>
+        </fig>
+      </sec>
+      <sec id="s3.7">
+        <title>Case 5</title>
+        <p>CSC was diagnosed in the left eye of a 42-year-old man. Visual acuity was 20/50 in the left eye (<xref ref-type="fig" rid="pone-0080106-g008">Figure 8</xref>). OCT showed serous retinal detachment and irregularity of the retinal pigment epithelium at the fovea. AO-SLO image of the fovea showed a dark area and many dark patches representing lost or damaged cones, and the pattern of remaining cones was irregular[<xref ref-type="bibr" rid="B39">39</xref>]. Vessel shadows near the fovea assimilated into the dark area and were not visible. Capillary images constructed from the video were clearer in the registered image than in the unregistered image, especially in the area with dark patches. A spotty area was seen in the region containing dark patches, and these spots might be due to imperfect alignment.</p>
+        <fig id="pone-0080106-g008" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0080106.g008</object-id>
+          <label>Figure 8</label>
+          <caption>
+            <title>Imaging Results from Case 5.</title>
+            <p>(A) Color fundus photograph. (B) Montage of adaptive optics scanning laser ophthalmoscopy (AO-SLO) images overlaid on magnified color fundus photograph corresponding to the area outlined in white in (A). (C) The optical coherence tomographic scan shows serous retinal detachment and irregularity of the retinal pigment epithelium at the fovea. (D) First frame of the AO-SLO video, which corresponds to the area outlined in white in (B). A dark area is noted on the fovea (asterisk), and many dark patches (arrowheads) representing lost or damaged cones are detected around the dark area. Vessel shadows near the fovea assimilated into the dark area and were not visible. Scale bar, 100 &#x3BC;m. (E) Capillary image constructed from unregistered AO-SLO video. A spotty area was seen in the region containing dark patches (arrowheads). These spots may be due to imperfect alignment. (F) Capillary image constructed from AO-SLO video after B-spline-based elastic registration. The spotty area seen in (E) is not detected.</p>
+          </caption>
+          <graphic xlink:href="pone.0080106.g008"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="s4">
+      <title>Discussion</title>
+      <p>In this study, we applied B-spline-based elastic registration to AO-SLO videos and demonstrated that the registration enhanced the quality of capillary images constructed from AO-SLO video both subjectively and objectively in normal eyes and eyes with various retinal diseases. CNRs for ROIs set on capillary visualized images were approximately twice as high in the E(+) group as in the E(-) group, and the mean score assigned by experts was 3.97 &#xB1; 0.70, suggesting that the registration played an important role in capillary visualization. Visualization of retinal capillaries using AO-SLO was very effective in analyzing microstructures such as microaneurysm and neovascularization, and it may be useful for early detection in patients with diabetes and other retinal vascular disorders[<xref ref-type="bibr" rid="B21">21</xref>,<xref ref-type="bibr" rid="B22">22</xref>]. The technique requires no contrast dyes, and angiograms can be obtained from the patient without adverse effects. Therefore, it enables frequent acquisition of capillary images from the same patient and may be useful in the evaluation of ophthalmologic or medical treatments in the future.</p>
+      <p>Capillaries were visualized using motion contrast enhancement as previously reported[<xref ref-type="bibr" rid="B20">20</xref>]. Because the technique is based on calculating sequential division images, which are obtained by dividing the gray values of pixels between successive frames, precise registration is required to cancel the image of the mosaic pattern outside of the vessel shadow and extract only the motion of blood cells. In our protocol for capillary visualization, comparatively short (2-s) recording time and wide recording field (2.8 &#xD7; 2.8&#xB0;) were adopted to minimize the inter-frame position gap between scan frames produced by eye motion. Although the protocol was also convenient for simultaneous acquisition of the wide-field capillary network, inadequate registration would fail to cancel the background mosaic pattern by pixel and result in spotty areas on the image as in the example shown in <xref ref-type="fig" rid="pone-0080106-g008">Figure 8</xref>. </p>
+      <p> B-spline-based deformation models are control grids composed of B-spline curves, which are smooth curves defined by the given control points[<xref ref-type="bibr" rid="B32">32</xref>,<xref ref-type="bibr" rid="B33">33</xref>]. Using the deformation models, pixels in an image from AO-SLO video can be matched to pixels on the reference image to obtain interpolated images warped by a spline function. B-spline-based elastic image registrations have been utilized widely in many biomedical imaging problems and have proven suitable for the type of deformations encountered with magnetic resonance imaging[<xref ref-type="bibr" rid="B23">23</xref>,<xref ref-type="bibr" rid="B24">24</xref>,<xref ref-type="bibr" rid="B26">26</xref>,<xref ref-type="bibr" rid="B27">27</xref>,<xref ref-type="bibr" rid="B40">40</xref>]. Other than the registration method applied here, several approaches have been reported to date. Arathorn et al. reported cross-correlation methods, whereby the frames were cut in rectangles and displaced in the x and y directions to correlate them to a reference frame[<xref ref-type="bibr" rid="B17">17</xref>,<xref ref-type="bibr" rid="B18">18</xref>]. Since the distortions created by intraframe eye motion are mainly due to the raster pattern of scanning, which is relatively slower than scanning line, breaking up the frames into strips parallel to the fast scanning mirror direction is reasonable. In fact, our results on the processing time required for elastic image registration support the adequacy of cross-correlation methods. The mean processing time was correlated with the width but not vertical length of cropped videos, suggesting that many more distortions are present in the horizontal direction, which is perpendicular to the fast scanning mirror direction in our system, than in the vertical. In the KLT-SIFT algorithm[<xref ref-type="bibr" rid="B14">14</xref>], stable point features were extracted from AO-SLO images using the SIFT algorithm[<xref ref-type="bibr" rid="B41">41</xref>], and features were tracked from frame to frame using the KLT algorithm, which has low computational complexity and is considered faster than traditional techniques[<xref ref-type="bibr" rid="B42">42</xref>], followed by second-order polynomial transformation to remove distortions. Using KLT-SIFT, features on 30-Hz AO-SLO video can be tracked in real-time. </p>
+      <p>Mean processing time required for elastic image registration was approximately 20 s per frame in this study. Compared to the 2 above-mentioned registration methods, which can compute registration on a millisecond time scale per frame, the registration method tested here required substantial computing time. Although our goal is not to track single cones or stabilized stimulus delivery to the living retina in real-time, 10-min processing time to register a 2-s video is considered to be too long for applying the method widely to future investigations of AO-SLO-assisted blood flow analysis. The use of general-purpose software and the consistent image registration that is included in the energy function of the registration software appeared to factor in the long processing time. However, putting aside the issue of processing time, B-spline-based elastic image registration provides high-quality interpolation because of its precise pixel-wise registration and enables capillary visualization constructed from short-term recording. Development of special tools to integrate software, applications, and systems from different vendors may improve availability and speed.</p>
+      <p>Public domain software ImageJ and associated plug-ins were used for image processing including image registration and capillary visualization in the current study based on their ready availability[<xref ref-type="bibr" rid="B31">31</xref>,<xref ref-type="bibr" rid="B32">32</xref>]. Anyone wishing to try the registration and capillary visualization described here need only download the software and macro texts. Currently, AO-SLO machines are being developed by researchers in many countries, and more groups will participate in this new area of research in the future. We believe that the information described in this paper will support the quick initiation of research on AO-SLO-assisted blood flow analysis, which will in turn facilitate investigations of retinal microcirculation. Using B-spline-based elastic image registration, capillaries were visualized well without contrast dyes, similar to FA, in all diseased eyes except cases of ERM and CSC. In ERM, vessel images overlapping with &#x201C;microfolds&#x201D; were obscured by white cloud-like artifacts[<xref ref-type="bibr" rid="B38">38</xref>]. In CSC, vessel shadows near the fovea assimilated into the dark area and were not visible[<xref ref-type="bibr" rid="B39">39</xref>]. Ultimately, capillaries in these areas could not be visualized. Because AO-SLO was focused on the photoreceptor layer and blood cells were observed as shadings on the shadows of the bright cone mosaic patterns of photoreceptors, this focusing may be the cause of these artifacts and loss of capillary images[<xref ref-type="bibr" rid="B30">30</xref>]. As previously described, the characteristics of the reflected AO-SLO laser from photoreceptors are affected by blood cells because of their different scattering coefficients[<xref ref-type="bibr" rid="B43">43</xref>]. When the scanning is focused on the photoreceptor layer, leukocytes and blood plasma are candidates for the bright particles moving in the dark vessel shadows due to the low absorptivity of the AO-SLO laser, and erythrocytes are candidates for the region that is darker than the vessel shadow because they block the AO-SLO lasers. Accordingly, the presence of structures that can block the laser or absences of photoreceptors that can reflect the laser as in the case of microfolds and loss of cone mosaic pattern will lead to the failure of blood flow detection. Although a possible solution to the problem may be focusing the scanning layer on the capillary layer, further investigation is needed to assess the optimal focus for capillary visualization using AO-SLO.</p>
+      <p>Our study has several limitations: (1) Because the registration was computed after video recording without real time eye-tracking, video recording was limited to a short duration to minimize the inter-frame position gap between scan frames. Longer-duration video recording may fail to construct adequately wide-area capillary images (2). The first frame of the video was used as a fixed reference frame for image warping. Because the reference frame itself can contain substantial distortions produced by intraframe eye movement, subsequent source frames and constructed capillary images will contain the same distortions. To overcome this issue, registration methods may be altered in the future to adopt a method based on analysis of eye movement, which has the potential to select a reference frame with minimum distortion [<xref ref-type="bibr" rid="B44">44</xref>].</p>
+      <p>In conclusion, use of B-spline-based elastic image registration in AO-SLO-assisted capillary visualization was found to be both objectively and subjectively effective for enhancing image quality. Its high-quality interpolation and ready availability may further facilitate the application of AO-SLO for the study of retinal microcirculation.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0080106.s001">
+        <label>Digital Content S1</label>
+        <caption>
+          <p>
+            <bold>Detailed description of the algorithm of bUnwarpJ Developed as an ImageJ Plug-in.</bold>
+          </p>
+          <p>(DOCX)</p>
+        </caption>
+        <media xlink:href="pone.0080106.s001.docx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0080106.s002">
+        <label>Digital Content S2</label>
+        <caption>
+          <p><bold>Macro for Continuous Elastic Image Registration Using bUnwarpJ Developed as an ImageJ Plug-in.</bold> Before elastic image registration, videos were cropped to eliminate the margin without retinal image, which was a by-product of registration. Our macro was programmed to use the first frame as a fixed reference frame for image warping by bUnwarpJ. Note that the advanced setting of bUnwarpJ was modified to function successfully in our AO-SLO images.</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0080106.s002.tif">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0080106.s003">
+        <label>Digital Content S3</label>
+        <caption>
+          <p><bold>Macro for Capillary Visualization.</bold> The capillary images were constructed as projections of the moving objects in sequential frames using the motion contrast enhancement with this macro. In accordance with the total frame number of the video, the original data for frame number, indicated as 64 on the second line and the fifth line from the top, need to be rewritten.</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0080106.s003.tif">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0080106.s004">
+        <label>Digital Content S4</label>
+        <caption>
+          <p><bold>Movies with and without Elastic Image Registration.</bold> The video field size is 674 &#xD7; 705 &#x3BC;m<sup>2</sup> each, and the frame rate is 32 fps. Distortion that was wavy and uncorrectable by linear image registration was considerably diminished in the video with elastic image registration (right side) compared to video without elastic image registration (Left Side).</p>
+          <p>(MOV)</p>
+        </caption>
+        <media xlink:href="pone.0080106.s004.mov">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Huang</surname><given-names>D</given-names></name>, <name><surname>Swanson</surname><given-names>EA</given-names></name>, <name><surname>Lin</surname><given-names>CP</given-names></name>, <name><surname>Schuman</surname><given-names>JS</given-names></name>, <name><surname>Stinson</surname><given-names>WG</given-names></name><etal>et al.</etal> (<year>1991</year>) <article-title>Optical coherence tomography</article-title>. <source>Science</source><volume>254</volume>: <fpage>1178</fpage>-<lpage>1181</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1957169">10.1126/science.1957169</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/1957169">1957169</ext-link><pub-id pub-id-type="pmid">1957169</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Gupta</surname><given-names>V</given-names></name>, <name><surname>Gupta</surname><given-names>P</given-names></name>, <name><surname>Singh</surname><given-names>R</given-names></name>, <name><surname>Dogra</surname><given-names>MR</given-names></name>, <name><surname>Gupta</surname><given-names>A</given-names></name> (<year>2008</year>) <article-title>Spectral-domain Cirrus high-definition optical coherence tomography is better than time-domain Stratus optical coherence tomography for evaluation of macular pathologic features in uveitis</article-title>. <source>Am J Ophthalmol</source><volume>145</volume>: <fpage>1018</fpage>-<lpage>1022</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ajo.2008.01.021">10.1016/j.ajo.2008.01.021</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18343349">18343349</ext-link><pub-id pub-id-type="pmid">18343349</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Chang</surname><given-names>RT</given-names></name>, <name><surname>Knight</surname><given-names>OJ</given-names></name>, <name><surname>Feuer</surname><given-names>WJ</given-names></name>, <name><surname>Budenz</surname><given-names>DL</given-names></name> (<year>2009</year>) <article-title>Sensitivity and specificity of time-domain versus spectral-domain optical coherence tomography in diagnosing early to moderate glaucoma</article-title>. <source>Ophthalmology</source><volume>116</volume>: <fpage>2294</fpage>-<lpage>2299</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ophtha.2009.06.012">10.1016/j.ophtha.2009.06.012</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19800694">19800694</ext-link><pub-id pub-id-type="pmid">19800694</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Forooghian</surname><given-names>F</given-names></name>, <name><surname>Cukras</surname><given-names>C</given-names></name>, <name><surname>Meyerle</surname><given-names>CB</given-names></name>, <name><surname>Chew</surname><given-names>EY</given-names></name>, <name><surname>Wong</surname><given-names>WT</given-names></name> (<year>2008</year>) <article-title>Evaluation of time domain and spectral domain optical coherence tomography in the measurement of diabetic macular edema</article-title>. <source>Invest Ophthalmol Vis Sci</source><volume>49</volume>: <fpage>4290</fpage>-<lpage>4296</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.08-2113">10.1167/iovs.08-2113</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18515567">18515567</ext-link><pub-id pub-id-type="pmid">18515567</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Kim</surname><given-names>JS</given-names></name>, <name><surname>Ishikawa</surname><given-names>H</given-names></name>, <name><surname>Gabriele</surname><given-names>ML</given-names></name>, <name><surname>Wollstein</surname><given-names>G</given-names></name>, <name><surname>Bilonick</surname><given-names>RA</given-names></name><etal>et al.</etal> (<year>2010</year>) <article-title>Retinal nerve fiber layer thickness measurement comparability between time domain optical coherence tomography (OCT) and spectral domain OCT</article-title>. <source>Invest Ophthalmol Vis Sci</source><volume>51</volume>: <fpage>896</fpage>-<lpage>902</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.09-4110">10.1167/iovs.09-4110</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19737886">19737886</ext-link><pub-id pub-id-type="pmid">19737886</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Uji</surname><given-names>A</given-names></name>, <name><surname>Murakami</surname><given-names>T</given-names></name>, <name><surname>Nishijima</surname><given-names>K</given-names></name>, <name><surname>Akagi</surname><given-names>T</given-names></name>, <name><surname>Horii</surname><given-names>T</given-names></name><etal>et al.</etal> (<year>2012</year>) <article-title>Association between hyperreflective foci in the outer retina, status of photoreceptor layer, and visual acuity in diabetic macular edema</article-title>. <source>Am J Ophthalmol</source><volume>153</volume>: <fpage>710</fpage>-<lpage>717</lpage>10.1016/j.ajo.2011.08.041. PubMed 22137207.<pub-id pub-id-type="pmid">22137207</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>Yamaike</surname><given-names>N</given-names></name>, <name><surname>Tsujikawa</surname><given-names>A</given-names></name>, <name><surname>Ota</surname><given-names>M</given-names></name>, <name><surname>Sakamoto</surname><given-names>A</given-names></name>, <name><surname>Kotera</surname><given-names>Y</given-names></name><etal>et al.</etal> (<year>2008</year>) <article-title>Three-dimensional imaging of cystoid macular edema in retinal vein occlusion</article-title>. <source>Ophthalmology</source><volume>115</volume>: <fpage>355</fpage>-<lpage>362</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ophtha.2007.04.052">10.1016/j.ophtha.2007.04.052</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17675242">17675242</ext-link><pub-id pub-id-type="pmid">17675242</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Sakamoto</surname><given-names>A</given-names></name>, <name><surname>Hangai</surname><given-names>M</given-names></name>, <name><surname>Yoshimura</surname><given-names>N</given-names></name> (<year>2008</year>) <article-title>Spectral-domain optical coherence tomography with multiple B-scan averaging for enhanced imaging of retinal diseases</article-title>. <source>Ophthalmology</source><volume>115</volume>: <fpage>1071</fpage>-<lpage>1078</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ophtha.2007.09.001">10.1016/j.ophtha.2007.09.001</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18061270">18061270</ext-link><pub-id pub-id-type="pmid">18061270</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Hangai</surname><given-names>M</given-names></name>, <name><surname>Yamamoto</surname><given-names>M</given-names></name>, <name><surname>Sakamoto</surname><given-names>A</given-names></name>, <name><surname>Yoshimura</surname><given-names>N</given-names></name> (<year>2009</year>) <article-title>Ultrahigh-resolution versus speckle noise-reduction in spectral-domain optical coherence tomography</article-title>. <source>Opt Express</source><volume>17</volume>: <fpage>4221</fpage>-<lpage>4235</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1364/OE.17.004221">10.1364/OE.17.004221</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19259257">19259257</ext-link><pub-id pub-id-type="pmid">19259257</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Roorda</surname><given-names>A</given-names></name>, <name><surname>Romero-Borja</surname><given-names>F</given-names></name>, <collab>Donnelly</collab> Iii , Queener H, Hebert T et al. (<year>2002</year>) <article-title>Adaptive optics scanning laser ophthalmoscopy</article-title>. <source>Opt Express</source><volume>10</volume>: <fpage>405</fpage>-<lpage>412</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1364/OE.10.000405">10.1364/OE.10.000405</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19436374">19436374</ext-link><pub-id pub-id-type="pmid">19436374</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Martin</surname><given-names>JA</given-names></name>, <name><surname>Roorda</surname><given-names>A</given-names></name> (<year>2005</year>) <article-title>Direct and noninvasive assessment of parafoveal capillary leukocyte velocity</article-title>. <source>Ophthalmology</source><volume>112</volume>: <fpage>2219</fpage>-<lpage>2224</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ophtha.2005.06.033">10.1016/j.ophtha.2005.06.033</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16257054">16257054</ext-link><pub-id pub-id-type="pmid">16257054</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Tam</surname><given-names>J</given-names></name>, <name><surname>Tiruveedhula</surname><given-names>P</given-names></name>, <name><surname>Roorda</surname><given-names>A</given-names></name> (<year>2011</year>) <article-title>Characterization of single-file flow through human retinal parafoveal capillaries using an adaptive optics scanning laser ophthalmoscope</article-title><source>Biomed Opt Express</source><volume>2</volume>: <fpage>781</fpage>-<lpage>793</lpage> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21483603">21483603</ext-link><pub-id pub-id-type="pmid">21483603</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Vogel</surname><given-names>CR</given-names></name>, <name><surname>Arathorn</surname><given-names>DW</given-names></name>, <name><surname>Roorda</surname><given-names>A</given-names></name>, <name><surname>Parker</surname><given-names>A</given-names></name> (<year>2006</year>) <article-title>Retinal motion estimation in adaptive optics scanning laser ophthalmoscopy</article-title>. <source>Opt Express</source><volume>14</volume>: <fpage>487</fpage>-<lpage>497</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1364/OPEX.14.000487">10.1364/OPEX.14.000487</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19503363">19503363</ext-link><pub-id pub-id-type="pmid">19503363</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Li</surname><given-names>H</given-names></name>, <name><surname>Lu</surname><given-names>J</given-names></name>, <name><surname>Shi</surname><given-names>G</given-names></name>, <name><surname>Zhang</surname><given-names>Y</given-names></name> (<year>2010</year>) <article-title>Tracking features in retinal images of adaptive optics confocal scanning laser ophthalmoscope using KLT-SIFT algorithm</article-title><source>Biomed Opt Express</source><volume>1</volume>: <fpage>31</fpage>-<lpage>40</lpage> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21258443">21258443</ext-link><pub-id pub-id-type="pmid">21258443</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Merino</surname><given-names>D</given-names></name>, <name><surname>Duncan</surname><given-names>JL</given-names></name>, <name><surname>Tiruveedhula</surname><given-names>P</given-names></name>, <name><surname>Roorda</surname><given-names>A</given-names></name> (<year>2011</year>) <article-title>Observation of cone and rod photoreceptors in normal subjects and patients using a new generation adaptive optics scanning laser ophthalmoscope. Biomedical</article-title>. <source>Opt Express</source><volume>2</volume>: <fpage>2189</fpage>-<lpage>2201</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1364/BOE.2.002189">10.1364/BOE.2.002189</ext-link></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Sheehy</surname><given-names>CK</given-names></name>, <name><surname>Yang</surname><given-names>Q</given-names></name>, <name><surname>Arathorn</surname><given-names>DW</given-names></name>, <name><surname>Tiruveedhula</surname><given-names>P</given-names></name>, <name><surname>de Boer</surname><given-names>JF</given-names></name><etal>et al.</etal> (<year>2012</year>) <article-title>High-speed, image-based eye tracking with a scanning laser ophthalmoscope</article-title><source>Biomed Opt Express</source><volume>3</volume>: <fpage>2611</fpage>-<lpage>2622</lpage> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/23082300">23082300</ext-link><pub-id pub-id-type="pmid">23082300</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>Arathorn</surname><given-names>DW</given-names></name>, <name><surname>Yang</surname><given-names>Q</given-names></name>, <name><surname>Vogel</surname><given-names>CR</given-names></name>, <name><surname>Zhang</surname><given-names>Y</given-names></name>, <name><surname>Tiruveedhula</surname><given-names>P</given-names></name><etal>et al.</etal> (<year>2007</year>) <article-title>Retinally stabilized cone-targeted stimulus delivery</article-title>. <source>Opt Express</source><volume>15</volume>: <fpage>13731</fpage>-<lpage>13744</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1364/OE.15.013731">10.1364/OE.15.013731</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19550644">19550644</ext-link><pub-id pub-id-type="pmid">19550644</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Yang</surname><given-names>Q</given-names></name>, <name><surname>Arathorn</surname><given-names>DW</given-names></name>, <name><surname>Tiruveedhula</surname><given-names>P</given-names></name>, <name><surname>Vogel</surname><given-names>CR</given-names></name>, <name><surname>Roorda</surname><given-names>A</given-names></name> (<year>2010</year>) <article-title>Design of an integrated hardware interface for AOSLO image capture and cone-targeted stimulus delivery</article-title>. <source>Opt Express</source><volume>18</volume>: <fpage>17841</fpage>-<lpage>17858</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1364/OE.18.017841">10.1364/OE.18.017841</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20721171">20721171</ext-link><pub-id pub-id-type="pmid">20721171</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Martin</surname><given-names>JA</given-names></name>, <name><surname>Roorda</surname><given-names>A</given-names></name> (<year>2009</year>) <article-title>Pulsatility of parafoveal capillary leukocytes</article-title>. <source>Exp Eye Res</source><volume>88</volume>: <fpage>356</fpage>-<lpage>360</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.exer.2008.07.008">10.1016/j.exer.2008.07.008</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18708051">18708051</ext-link><pub-id pub-id-type="pmid">18708051</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Tam</surname><given-names>J</given-names></name>, <name><surname>Martin</surname><given-names>JA</given-names></name>, <name><surname>Roorda</surname><given-names>A</given-names></name> (<year>2010</year>) <article-title>Noninvasive visualization and analysis of parafoveal capillaries in humans</article-title>. <source>Invest Ophthalmol Vis Sci</source><volume>51</volume>: <fpage>1691</fpage>-<lpage>1698</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.09-4483">10.1167/iovs.09-4483</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19907024">19907024</ext-link><pub-id pub-id-type="pmid">19907024</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Tam</surname><given-names>J</given-names></name>, <name><surname>Dhamdhere</surname><given-names>KP</given-names></name>, <name><surname>Tiruveedhula</surname><given-names>P</given-names></name>, <name><surname>Manzanera</surname><given-names>S</given-names></name>, <name><surname>Barez</surname><given-names>S</given-names></name><etal>et al.</etal> (<year>2011</year>) <article-title>Disruption of the retinal parafoveal capillary network in type 2 diabetes before the onset of diabetic retinopathy</article-title>. <source>Invest Ophthalmol Vis Sci</source><volume>52</volume>: <fpage>9257</fpage>-<lpage>9266</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.11-8481">10.1167/iovs.11-8481</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22039250">22039250</ext-link><pub-id pub-id-type="pmid">22039250</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Tam</surname><given-names>J</given-names></name>, <name><surname>Dhamdhere</surname><given-names>KP</given-names></name>, <name><surname>Tiruveedhula</surname><given-names>P</given-names></name>, <name><surname>Lujan</surname><given-names>BJ</given-names></name>, <name><surname>Johnson</surname><given-names>RN</given-names></name><etal>et al.</etal> (<year>2012</year>) <article-title>Subclinical capillary changes in non-proliferative diabetic retinopathy</article-title>. <source>Optom Vis Sci</source><volume>89</volume>: <fpage>E692</fpage>-<lpage>E703</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/OPX.0b013e3182548b07">10.1097/OPX.0b013e3182548b07</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22525131">22525131</ext-link><pub-id pub-id-type="pmid">22525131</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Chiang</surname><given-names>P</given-names></name>, <name><surname>Cai</surname><given-names>Y</given-names></name>, <name><surname>Mak</surname><given-names>KH</given-names></name>, <name><surname>Zheng</surname><given-names>J</given-names></name> (<year>2012</year>) <article-title>A B-spline approach to phase unwrapping in tagged cardiac MRI for motion tracking</article-title>. <source>Magn Reson Med</source>.</mixed-citation>
+      </ref>
+      <ref id="B24">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Feng</surname><given-names>W</given-names></name>, <name><surname>Reeves</surname><given-names>SJ</given-names></name>, <name><surname>Denney</surname><given-names>TS</given-names></name>, <name><surname>Lloyd</surname><given-names>S</given-names></name>, <name><surname>Dell'Italia</surname><given-names>L</given-names></name><etal>et al.</etal> (<year>2009</year>) <article-title>A New Consistent Image Registration Formulation with a B-Spline Deformation Model</article-title>. <source>2009 Ieee International Symposium on Biomedical Imaging: From Nano to Macro</source>, Vols <volume>1</volume><comment>and 2: 979-982</comment></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <label>25</label>
+        <mixed-citation publication-type="journal"><name><surname>Lee</surname><given-names>ETY</given-names></name> (<year>1982</year>) <article-title>A Simplified B-Spline Computation Routine</article-title>. <source>Computing</source><volume>29</volume>: <fpage>365</fpage>-<lpage>371</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/BF02246763">10.1007/BF02246763</ext-link></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Oguro</surname><given-names>S</given-names></name>, <name><surname>Tokuda</surname><given-names>J</given-names></name>, <name><surname>Elhawary</surname><given-names>H</given-names></name>, <name><surname>Haker</surname><given-names>S</given-names></name>, <name><surname>Kikinis</surname><given-names>R</given-names></name><etal>et al.</etal> (<year>2009</year>) <article-title>MRI signal intensity based B-spline nonrigid registration for pre- and intraoperative imaging during prostate brachytherapy</article-title>. <source>J Magn Reson Imaging</source><volume>30</volume>: <fpage>1052</fpage>-<lpage>1058</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/jmri.21955">10.1002/jmri.21955</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19856437">19856437</ext-link><pub-id pub-id-type="pmid">19856437</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Rogers</surname><given-names>JM</given-names></name> (<year>2000</year>) <article-title>Modeling the cardiac action potential using B-spline surfaces</article-title>. <source>IEEE Trans Biomed Eng</source><volume>47</volume>: <fpage>784</fpage>-<lpage>791</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/10.844229">10.1109/10.844229</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/10833853">10833853</ext-link><pub-id pub-id-type="pmid">10833853</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <label>28</label>
+        <mixed-citation publication-type="confproc"><name><surname>Hirose</surname><given-names>F</given-names></name>, <name><surname>Nozato</surname><given-names>K</given-names></name>, <name><surname>Saito</surname><given-names>K</given-names></name>, <name><surname>Numajiri</surname><given-names>Y</given-names></name> (<year>2011</year>) <article-title>A compact adaptive optics scanning laser ophthalmoscope with high-efficiency wavefront correction using dual liquid crystal on silicon - spatial light modulator</article-title>. <source>Proc of SPIE</source>.</mixed-citation>
+      </ref>
+      <ref id="B29">
+        <label>29</label>
+        <mixed-citation publication-type="book"><source>Lasers ANSftSUo (2007) ANSI</source><volume>Z136</volume><fpage>1</fpage>-<year>2007</year>
+<publisher-loc>New York</publisher-loc>: <publisher-name>American National Standards Institute</publisher-name></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>Uji</surname><given-names>A</given-names></name>, <name><surname>Hangai</surname><given-names>M</given-names></name>, <name><surname>Ooto</surname><given-names>S</given-names></name>, <name><surname>Takayama</surname><given-names>K</given-names></name>, <name><surname>Arakawa</surname><given-names>N</given-names></name><etal>et al.</etal> (<year>2012</year>) <article-title>The source of moving particles in parafoveal capillaries detected by adaptive optics scanning laser ophthalmoscopy</article-title>. <source>Invest Ophthalmol Vis Sci</source><volume>53</volume>: <fpage>171</fpage>-<lpage>178</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.11-8192">10.1167/iovs.11-8192</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22159004">22159004</ext-link><pub-id pub-id-type="pmid">22159004</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>Th&#xE9;venaz</surname><given-names>P</given-names></name>, <name><surname>Ruttimann</surname><given-names>UE</given-names></name>, <name><surname>Unser</surname><given-names>M</given-names></name> (<year>1998</year>) <article-title>A pyramid approach to subpixel registration based on intensity</article-title>. <source>IEEE Trans Image Process</source><volume>7</volume>: <fpage>27</fpage>-<lpage>41</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/83.650848">10.1109/83.650848</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18267377">18267377</ext-link><pub-id pub-id-type="pmid">18267377</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <label>32</label>
+        <mixed-citation publication-type="book"><name><surname>Arganda-Carreras</surname><given-names>I</given-names></name>, <name><surname>Sorzano</surname><given-names>C</given-names></name>, <name><surname>Marabini</surname><given-names>R</given-names></name>, <name><surname>Carazo</surname><given-names>J</given-names></name>, <name><surname>Ortiz-De-Solorzano</surname><given-names>C</given-names></name><etal>et al.</etal> (<year>2006</year>) <source>Consistent and Elastic Registration of Histological Sections using Vector-Spline Regularization</source>. <publisher-loc>Berlin / Heidelberg</publisher-loc>: <publisher-name>Springer Verlag</publisher-name></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <label>33</label>
+        <mixed-citation publication-type="journal"><name><surname>Sorzano</surname><given-names>CO</given-names></name>, <name><surname>Th&#xE9;venaz</surname><given-names>P</given-names></name>, <name><surname>Unser</surname><given-names>M</given-names></name> (<year>2005</year>) <article-title>Elastic registration of biological images using vector-spline regularization</article-title>. <source>IEEE Trans Biomed Eng</source><volume>52</volume>: <fpage>652</fpage>-<lpage>663</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/TBME.2005.844030">10.1109/TBME.2005.844030</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15825867">15825867</ext-link><pub-id pub-id-type="pmid">15825867</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <label>34</label>
+        <mixed-citation publication-type="journal"><name><surname>Stetson</surname><given-names>PF</given-names></name>, <name><surname>Sommer</surname><given-names>FG</given-names></name>, <name><surname>Macovski</surname><given-names>A</given-names></name> (<year>1997</year>) <article-title>Lesion contrast enhancement in medical ultrasound imaging</article-title>. <source>IEEE Trans Med Imaging</source><volume>16</volume>: <fpage>416</fpage>-<lpage>425</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/42.611351">10.1109/42.611351</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/9262999">9262999</ext-link><pub-id pub-id-type="pmid">9262999</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <label>35</label>
+        <mixed-citation publication-type="journal"><name><surname>Takayama</surname><given-names>K</given-names></name>, <name><surname>Ooto</surname><given-names>S</given-names></name>, <name><surname>Hangai</surname><given-names>M</given-names></name>, <name><surname>Arakawa</surname><given-names>N</given-names></name>, <name><surname>Oshima</surname><given-names>S</given-names></name><etal>et al.</etal> (<year>2012</year>) <article-title>High-resolution imaging of the retinal nerve fiber layer in normal eyes using adaptive optics scanning laser ophthalmoscopy</article-title>. <source>PLOS ONE</source><volume>7</volume>: <fpage>e33158</fpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0033158">10.1371/journal.pone.0033158</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22427978">22427978</ext-link><pub-id pub-id-type="pmid">22427978</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <label>36</label>
+        <mixed-citation publication-type="journal"><name><surname>Takayama</surname><given-names>K</given-names></name>, <name><surname>Ooto</surname><given-names>S</given-names></name>, <name><surname>Tamura</surname><given-names>H</given-names></name>, <name><surname>Yamashiro</surname><given-names>K</given-names></name>, <name><surname>Otani</surname><given-names>A</given-names></name><etal>et al.</etal> (<year>2010</year>) <article-title>Intravitreal bevacizumab for type 1 idiopathic macular telangiectasia</article-title>. <source>Eye (Lond)</source><volume>24</volume>: <fpage>1492</fpage>-<lpage>1497</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/eye.2010.61">10.1038/eye.2010.61</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20431610">20431610</ext-link><pub-id pub-id-type="pmid">20431610</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <label>37</label>
+        <mixed-citation publication-type="journal"><name><surname>Yannuzzi</surname><given-names>LA</given-names></name>, <name><surname>Bardal</surname><given-names>AM</given-names></name>, <name><surname>Freund</surname><given-names>KB</given-names></name>, <name><surname>Chen</surname><given-names>KJ</given-names></name>, <name><surname>Eandi</surname><given-names>CM</given-names></name><etal>et al.</etal> (<year>2006</year>) <article-title>Idiopathic macular telangiectasia</article-title>. <source>Arch Ophthalmol</source><volume>124</volume>: <fpage>450</fpage>-<lpage>460</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1001/archopht.124.4.450">10.1001/archopht.124.4.450</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16606869">16606869</ext-link><pub-id pub-id-type="pmid">16606869</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <label>38</label>
+        <mixed-citation publication-type="journal"><name><surname>Ooto</surname><given-names>S</given-names></name>, <name><surname>Hangai</surname><given-names>M</given-names></name>, <name><surname>Takayama</surname><given-names>K</given-names></name>, <name><surname>Sakamoto</surname><given-names>A</given-names></name>, <name><surname>Tsujikawa</surname><given-names>A</given-names></name><etal>et al.</etal> (<year>2011</year>) <article-title>High-resolution imaging of the photoreceptor layer in epiretinal membrane using adaptive optics scanning laser ophthalmoscopy</article-title>. <source>Ophthalmology</source><volume>118</volume>: <fpage>873</fpage>-<lpage>881</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ophtha.2010.08.032">10.1016/j.ophtha.2010.08.032</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21074858">21074858</ext-link><pub-id pub-id-type="pmid">21074858</pub-id></mixed-citation>
+      </ref>
+      <ref id="B39">
+        <label>39</label>
+        <mixed-citation publication-type="journal"><name><surname>Ooto</surname><given-names>S</given-names></name>, <name><surname>Hangai</surname><given-names>M</given-names></name>, <name><surname>Sakamoto</surname><given-names>A</given-names></name>, <name><surname>Tsujikawa</surname><given-names>A</given-names></name>, <name><surname>Yamashiro</surname><given-names>K</given-names></name><etal>et al.</etal> (<year>2010</year>) <article-title>High-resolution imaging of resolved central serous chorioretinopathy using adaptive optics scanning laser ophthalmoscopy</article-title>. <source>Ophthalmology</source><volume>117</volume>: <fpage>1800</fpage>-<lpage>1809</lpage><ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ophtha.2010.01.042">10.1016/j.ophtha.2010.01.042</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20673590">20673590</ext-link><pub-id pub-id-type="pmid">20673590</pub-id></mixed-citation>
+      </ref>
+      <ref id="B40">
+        <label>40</label>
+        <mixed-citation publication-type="journal"><name><surname>Deng</surname><given-names>X</given-names></name>, <name><surname>Denney</surname><given-names>TS</given-names><suffix>Jr.</suffix></name> (<year>2004</year>) <article-title>Three-dimensional myocardial strain reconstruction from tagged MRI using a cylindrical B-spline model</article-title>. <source>IEEE Trans Med Imaging</source><volume>23</volume>: <fpage>861</fpage>-<lpage>867</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/TMI.2004.827961">10.1109/TMI.2004.827961</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15250638">15250638</ext-link><pub-id pub-id-type="pmid">15250638</pub-id></mixed-citation>
+      </ref>
+      <ref id="B41">
+        <label>41</label>
+        <mixed-citation publication-type="journal"><name><surname>Lowe</surname><given-names>DG</given-names></name> (<year>2004</year>) <article-title>Distinctive image features from scale-invariant keypoints</article-title>. <source>Int J Comput Vis</source><volume>60</volume>: <fpage>91</fpage>-<lpage>110</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1023/B:VISI.0000029664.99615.94">10.1023/B:VISI.0000029664.99615.94</ext-link></mixed-citation>
+      </ref>
+      <ref id="B42">
+        <label>42</label>
+        <mixed-citation publication-type="other"><name><surname>Shi</surname><given-names>JB</given-names></name>, <name><surname>Tomasi</surname><given-names>C</given-names></name> (<year>1994</year>) <article-title>Good Features to Track. 1994 Ieee Computer Society Conference on Computer Vision and Pattern Recognition, Proceedings: 593-600</article-title>.</mixed-citation>
+      </ref>
+      <ref id="B43">
+        <label>43</label>
+        <mixed-citation publication-type="journal"><name><surname>Meinke</surname><given-names>M</given-names></name>, <name><surname>M&#xFC;ller</surname><given-names>G</given-names></name>, <name><surname>Helfmann</surname><given-names>J</given-names></name>, <name><surname>Friebel</surname><given-names>M</given-names></name> (<year>2007</year>) <article-title>Optical properties of platelets and blood plasma and their influence on the optical behavior of whole blood in the visible to near infrared wavelength range</article-title>. <source>J Biomed Opt</source><volume>12</volume>: <fpage>014024</fpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1117/1.2435177">10.1117/1.2435177</ext-link> PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17343499">17343499</ext-link><pub-id pub-id-type="pmid">17343499</pub-id></mixed-citation>
+      </ref>
+      <ref id="B44">
+        <label>44</label>
+        <mixed-citation publication-type="journal"><name><surname>Dubra</surname><given-names>A</given-names></name>, <name><surname>Harvey</surname><given-names>Z</given-names></name> (<year>2010</year>) <article-title>Registration of 2D Images from Fast Scanning Ophthalmic Instruments</article-title>. <source>Biomedical Images Registration</source><volume>6204</volume>: <fpage>60</fpage>-<lpage>71</lpage>.<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/978-3-642-14366-3_6">10.1007/978-3-642-14366-3_6</ext-link></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

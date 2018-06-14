@@ -1,0 +1,476 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">23785480</article-id>
+      <article-id pub-id-type="pmc">3681964</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-13-04234</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0066145</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Genomics</subject>
+              <subj-group>
+                <subject>Genome Analysis Tools</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Human Genetics</subject>
+              <subj-group>
+                <subject>Autosomal Recessive</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Genetics of Disease</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Clinical Genetics</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Diagnostic Medicine</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Neurology</subject>
+            <subj-group>
+              <subject>Cerebellar Disorders</subject>
+              <subject>Epilepsy</subject>
+              <subject>Movement Disorders</subject>
+              <subject>Neuroimaging</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Novel <italic>SACS</italic> Mutations Identified by Whole Exome Sequencing in a Norwegian Family with Autosomal Recessive Spastic Ataxia of Charlevoix-Saguenay</article-title>
+        <alt-title alt-title-type="running-head">Novel Sacsin Mutations by Exome Sequencing</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tzoulis</surname>
+            <given-names>Charalampos</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Johansson</surname>
+            <given-names>Stefan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Haukanes</surname>
+            <given-names>Bj&#xF8;rn Ivar</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Boman</surname>
+            <given-names>Helge</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Knappskog</surname>
+            <given-names>Per Morten</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bindoff</surname>
+            <given-names>Laurence A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Neurology, Haukeland University Hospital, Bergen, Norway</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Department of Clinical Medicine, University of Bergen, Bergen, Norway</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Centre for Medical Genetics and Molecular Medicine, Haukeland University Hospital, Bergen, Norway</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Department of Biomedicine, University of Bergen, Bergen, Norway</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>K.G. Jebsen Centre for Research on Neuropsychiatric Disorders, University of Bergen, Bergen, Norway</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Toft</surname>
+            <given-names>Mathias</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Oslo University Hospital, Norway</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>laurence.bindoff@helse-bergen.no</email></corresp>
+        <fn fn-type="conflict">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: CT SJ PK BIH HB LAB. Performed the experiments: SJ PK BIH HB. Analyzed the data: CT SJ PK BIH HB LAB. Contributed reagents/materials/analysis tools: SJ PK BIH HB. Wrote the paper: CT SJ PK BIH HB LAB.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>13</day>
+        <month>6</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>6</issue>
+      <elocation-id>e66145</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>24</day>
+          <month>1</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>1</day>
+          <month>5</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Tzoulis et al</copyright-holder>
+        <license>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>We employed whole exome sequencing to investigate three Norwegian siblings with an autosomal recessive spastic ataxia and epilepsy. All patients were compound heterozygous (c.13352T&gt;C, p.Leu4451Pro; c.6890T&gt;G, p.Leu2297Trp) for mutations in the <italic>SACS</italic> gene establishing the diagnosis of autosomal recessive spastic ataxia of Charlevoix-Saguenay (ARSACS). The clinical features shown by our patients were typical of this disorder with the exception of epilepsy, which is a rare manifestation. This is the first report of ARSACS in Scandinavian patients and our findings expand the genetic and clinical spectrum of this rare disorder. Moreover, we show that exome sequencing is a powerful and cost-effective tool for the diagnosis of genetically heterogeneous disorders such as the hereditary ataxias.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work was supported by grants from the Western Norway Health Trust, University of Bergen. Western Norway Regional Health Authority (Helse Vest). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="5"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Autosomal recessive spastic ataxia of Charlevoix-Saguenay (ARSACS) is caused by mutations of the <italic>SACS</italic> gene, encoding sacsin, a protein that is highly expressed in neurons throughout the central nervous system <xref ref-type="bibr" rid="pone.0066145-Engert1">[1]</xref> and apparently involved in mitochondrial fission <xref ref-type="bibr" rid="pone.0066145-Girard1">[2]</xref>. The disease was first identified in individuals from the Quebec province in Canada where most cases are caused by two founder mutations (c.6594delT and c.5254C&gt;T) <xref ref-type="bibr" rid="pone.0066145-Richter1">[3]</xref>, although other mutations have also been identified in this population <xref ref-type="bibr" rid="pone.0066145-Thiffault1">[4]</xref>. Subsequently, cases have been described in individuals of French <xref ref-type="bibr" rid="pone.0066145-Anheim1">[5]</xref>, Belgian <xref ref-type="bibr" rid="pone.0066145-Ouyang1">[6]</xref>, Tunisian <xref ref-type="bibr" rid="pone.0066145-Mrissa1">[7]</xref>, <xref ref-type="bibr" rid="pone.0066145-ElEuchFayache1">[8]</xref>, Italian <xref ref-type="bibr" rid="pone.0066145-Criscuolo1">[9]</xref>, <xref ref-type="bibr" rid="pone.0066145-Grieco1">[10]</xref>, Spanish <xref ref-type="bibr" rid="pone.0066145-Criscuolo2">[11]</xref>, Turkish <xref ref-type="bibr" rid="pone.0066145-Richter2">[12]</xref>, Dutch <xref ref-type="bibr" rid="pone.0066145-Vermeer1">[13]</xref> and Japanese <xref ref-type="bibr" rid="pone.0066145-Ogawa1">[14]</xref>, <xref ref-type="bibr" rid="pone.0066145-Shimazaki1">[15]</xref> descent.</p>
+      <p>Disease onset is commonly in early childhood, but may also be later in life especially in patients originating outside Quebec. Clinical features include progressive spinocerebellar ataxia, dysarthria, nystagmus, upper motor neuron dysfunction and a distal sensorimotor peripheral neuropathy predominantly affecting the lower limbs. In addition, patients may have retinal hypermyelinated fibres appearing as yellowish retinal streaks on fundoscopy, although these are less common in individuals originating outside the province of Quebec <xref ref-type="bibr" rid="pone.0066145-Mrissa1">[7]</xref>, <xref ref-type="bibr" rid="pone.0066145-Bouchard1">[16]</xref>. A straight dorsal spine with loss of the dorsal kyphosis was recently described in five patients <xref ref-type="bibr" rid="pone.0066145-Gazulla1">[17]</xref>. MRI reveals atrophy of the cerebellum, which is most pronounced in the vermis superior, and spinal cord and linear T2 hypointensities are commonly found in the basis pontis. Cerebral atrophy may also occur later in life <xref ref-type="bibr" rid="pone.0066145-Bouchard2">[18]</xref>, <xref ref-type="bibr" rid="pone.0066145-Martin1">[19]</xref>.</p>
+      <p>Phenotype-genotype correlation in the hereditary spastic ataxias and paraplegias is poor. We decided, therefore, to use whole exome sequencing to establish the diagnosis in a family with a recessive spastic ataxia. We found that all three affected siblings had the same two novel heterozygous mutations in the <italic>SACS</italic> gene thus establishing them as the first cases of ARSACS in Scandinavia.</p>
+    </sec>
+    <sec sec-type="methods" id="s2">
+      <title>Patients and Methods</title>
+      <p>The three affected siblings (one male and two females) belonged to a family that came from a small coastal community of western Norway. Neither their other 4 siblings nor their parents were reported as having any neurological disease. Printed local histories and church records covering nine generations from the parental generation were used to look for consanguinity in the family. Genome wide SNP genotyping was performed with the Genome Wide Human SNP array 6.0 (Affymetrix, Santa Clara, USA) and analysed using PLINK v1.07 <xref ref-type="bibr" rid="pone.0066145-Purcell1">[20]</xref>. For homozygozity mapping, we searched for any region &gt;3 Mb, with minimum of 30 SNPs and less than four heterozygous calls. Whole exome sequencing was performed at HudsonAlpha Institute for Biotechnology (Huntsville,AL) using Roche-NimbleGen Sequence Capture EZ Exome v2 kit and paired-end 100nt sequencing on the Illumina HiSeq <xref ref-type="bibr" rid="pone.0066145-Haugarvoll1">[21]</xref>. The 8.9 Giga-bases of aligned sequence data resulted in 100X median coverage of the target capture regions with more than 97% of target bases covered at least 8X. Our study was approved by the Regional Committee for Medical and Health Research Ethics, Western Norway (IRB00001872). All study participants provided written informed consent.</p>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Clinical Features</title>
+        <p>All three patients were born after normal pregnancies and uncomplicated deliveries. The index case, now a sixty-five year old man, had delayed motor milestones and first walked at the age of two years. Subsequently he developed progressive lower limb stiffness, gait unsteadiness, dysarthria, dysphagia, urge urinary incontinence and cognitive decline. He became wheel-chair bound in his teens. He developed complex partial motor seizures (CPM) consisting of jerking of the right upper limb; electroencephalography (EEG) data were not available. He was treated with phenytoin and later phenobarbital and remained seizure-free from his mid-twenties.</p>
+        <p>Clinical examination at the age of 54 years revealed severe dysarthria and horizontal gaze nystagmus. He had cerebellar ataxia, spastic paraparesis and a peripheral sensorimotor neuropathy with distal loss of superficial and deep sensory modalities and amyotrophy in the lower limbs. He had normal optic fundi. Electromyography (EMG) and nerve conduction velocity (NCV) studies were consistent with a predominantly axonal sensorimotor peripheral neuropathy.</p>
+        <p>MRI showed cerebral and cerebellar atrophy, particularly in the vermis superior and moderate atrophy of the spinal cord. There were linear T2 hypointensities in the basis pontis and T2 signal prolongation in the dentate nuclei. MRI of the spine showed a straight dorsal spine with loss of the dorsal kyphosis (<xref ref-type="fig" rid="pone-0066145-g001">Figure 1</xref>).</p>
+        <fig id="pone-0066145-g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0066145.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>MRI of the index patient at the age of 54 years.</title>
+            <p>A. Sagital T1 weighted MRI of the brain showing atrophy of the cerebellar midline, particularly the vermis superior. B&amp;C. Axial T2 weighted MRI showing linear T2 hypointensities in the pons. C. Axial T2 weighted MRI showing prolongation of T2 signal in the dentate nuclei. D. Sagital T2 weighted MRI showing atrophy of the cord, straight dorsal spine and loss of the dorsal kyphosis.</p>
+          </caption>
+          <graphic xlink:href="pone.0066145.g001"/>
+        </fig>
+        <p>The index patient&#x2019;s older sister, who is currently sixty-eight years old, experienced progressive gait difficulties in early childhood and went on to develop a progressive spastic ataxia with identical clinical and electrophysiological features as the index case. She developed epilepsy from the age of six years also with CPM seizures consisting of jerking of the right limbs and facial muscles. She was treated with phenytoin and phenobarbital and she remains seizure free since the age of 51 years. EEG at the age of 57 showed slow-wave (delta) activity bilaterally in the frontotemporal area, but with a significant left dominance.</p>
+        <p>The oldest affected sister, now a seventy-four year old woman, had delayed motor milestones, progressive gait difficulties and epilepsy since early childhood. Her seizures have not been evaluated by the authors, but are described as CPM with left conjugate gaze deviation and turning of the head and neck. EEG showed slow wave activity localised in the left parietotemporal area. Her clinical features and EMG findings are identical to those of her siblings.</p>
+      </sec>
+      <sec id="s3b">
+        <title>Genetic Findings</title>
+        <p>Information obtained from church records revealed several possible consanguineous connections between the proband&#x2019;s parents. Thus, we first searched for regions of shared homozygosity among the patients. Surprisingly, genome wide SNP analysis revealed that the three affected siblings shared no regions of significant homozygosity (&gt;2 MB). Without any candidate regions we therefore decided to sequence the exome.</p>
+        <p>Whole exome sequencing to a median of 100X coverage in the index patient identified 19909 genetic variants of which 9528 were non-synonymous and 206 were not found in 80 Norwegian exomes or in the 1000 Genomes database at &gt;0.5% allele frequency. Further analysis showed that only seven genes contained rare variants consistent with autosomal recessive inheritance and of these, only one gene (<italic>SACS</italic>) was in a region inherited identically by all three affected siblings (<xref ref-type="table" rid="pone-0066145-t001">Table 1</xref>). Two heterozygous mutations were found in the large exon 10 of the <italic>SACS</italic> gene (NCBI reference sequence NM_014363.4) and these were confirmed by Sanger sequencing (<xref ref-type="fig" rid="pone-0066145-g002">Figure 2</xref>). The c.13352T&gt;C is predicted to cause an amino-acid substitution (p.Leu4451Pro) affecting a conserved residue located in the HEPN (Higher Eukaryotes and Prokaryotes Nucleotide-binding) domain (<xref ref-type="fig" rid="pone-0066145-g002">Figure 2</xref>). The c.6890T&gt;G is predicted to cause a substitution at another conserved site, p.Leu2297Trp. Both mutations are predicted to be deleterious by PolyPhen-2, SIFT and MutationTaster, and are not found in the 1000Genomes database or dbSNP, nor in 186 local blood donors. The p.Leu2297Trp change was found in one of the healthy sisters confirming that the two mutations were in trans in our patients.</p>
+        <fig id="pone-0066145-g002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0066145.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Compound heterozygous mutations found in the proband.</title>
+            <p>Upper part, IGV-browser screenshots of the mutations found by exome sequencing and corresponding Sanger sequencing results. Lower part. Protein multiple sequence alignments (PMSA) of the corresponding residues generated by MUSCLE v3.6 (NCBI HomoloGene) including genes conserved in bony vertebrates (Euteleostomi). Residues in red are predicted to be affected by the mutations found in the proband.</p>
+          </caption>
+          <graphic xlink:href="pone.0066145.g002"/>
+        </fig>
+        <table-wrap id="pone-0066145-t001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0066145.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Variant filtration of exome sequencing data from the index case compared with whole genome genotyping data in all three affected siblings.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0066145-t001-1" xlink:href="pone.0066145.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Filter</td>
+                  <td align="left" rowspan="1" colspan="1">Count</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Exomic variants</td>
+                  <td align="left" rowspan="1" colspan="1">19909</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Excluding synonymous</td>
+                  <td align="left" rowspan="1" colspan="1">9528</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Not in 80 Norwegian exomes</td>
+                  <td align="left" rowspan="1" colspan="1">243</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Not in 1000Genomes (0.5% MAF)</td>
+                  <td align="left" rowspan="1" colspan="1">206<xref ref-type="table-fn" rid="nt102">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Putative autosomal recessive genes</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Shared by all three siblings</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <p>Only one gene, <italic>SACS</italic>, harbors variants consistent with autosomal recessive inheritance and shared by all three siblings.</p>
+            </fn>
+            <fn id="nt102">
+              <label>*</label>
+              <p>166 variants were not listed in dbSNP.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>We used exome sequencing to identify the disease causing mutations in this family with an autosomal recessive spinocerebellar ataxia with upper motor neuron dysfunction. This clinical presentation has a broad differential diagnosis including several ataxia and HSP syndromes and with a long list of putative genes, testing them individually by Sanger sequencing would be a lengthy and costly process. By using exome sequencing, we identified the mutations using only a fraction of the time and cost of a conventional analysis approach.</p>
+      <p>Filtering of the exome data against control databases and by phenotype segregation left us with a single gene candidate (<italic>SACS</italic>) in which we found two previously unreported mutations. The patients&#x2019; phenotype is consistent with ARSACS and the mutations are predicted to have a damaging effect on the protein (sacsin). We therefore concluded that the mutations are disease-causing in this family.</p>
+      <p>This is the second report of ARSACS diagnosed by exome sequencing. Our findings, and those of other recently published studies <xref ref-type="bibr" rid="pone.0066145-Sailer1">[22]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0066145-Pyle1">[24]</xref>, show that exome sequencing is an effective diagnostic tool for hereditary ataxias and other Mendelian disorders. The technique does have limitations, however, including not detecting non-coding variants located distant to the exons nor will it detect large deletions and duplications, and repeat expansions. The majority of Mendelian disease appears, however, to be caused by coding point mutations or splice mutations affecting the intronic-exonic boundaries. Therefore, exome sequencing is a powerful and cost-effective tool for the diagnosis of Mendelian disorders with heterogeneous genetic aetiology.</p>
+      <p>This is the first report of ARSACS in a Scandinavian family <xref ref-type="bibr" rid="pone.0066145-Erichsen1">[25]</xref>. Our patients had typical disease traits including early onset, slowly progressive spastic spinocerebellar ataxia and sensorimotor peripheral neuropathy. In addition to these well-known manifestations, all three of our patients had epilepsy with CPM seizures. While EEG abnormalities are common in patients with ARSACS <xref ref-type="bibr" rid="pone.0066145-Bouchard3">[26]</xref>, epilepsy is a rare feature seen in about 7% of the patients <xref ref-type="bibr" rid="pone.0066145-Bouchard2">[18]</xref>.</p>
+      <p>No evidence of retinal hypermyelinated fibres was found in our patients, which is in line with the observation that these are uncommon in individuals originating outside the province of Quebec. MRI findings in the index case were consistent with ARSACS including the straight dorsal spine and loss of the dorsal kyphosis which was recently described in five patients <xref ref-type="bibr" rid="pone.0066145-Gazulla1">[17]</xref>. In addition there was T2 signal prolongation in the dentate nucleus, which has not been previously described in this disorder. The combination of cerebellar cortical atrophy and signal change in the dentate is consistent with cerebellofugal degeneration (i.e. loss of cerebellar efferent connections) and is seen in other disorders with ataxia such as cerebrotendinous xanthomatosis <xref ref-type="bibr" rid="pone.0066145-Vanrietvelde1">[27]</xref> and the syndrome of mitochondrial spinocerebellar ataxia and epilepsy (MSCAE) <xref ref-type="bibr" rid="pone.0066145-Tzoulis1">[28]</xref>. While severe Purkinje cell loss has been found in post-mortem examination of ARSACS patients, it is noteworthy that no pathology has been described in the dentate nucleus. Neuropathological analysis has only been reported in two cases however, both of which originated from the province of Quebec <xref ref-type="bibr" rid="pone.0066145-Bouchard4">[29]</xref>, <xref ref-type="bibr" rid="pone.0066145-Richter3">[30]</xref>. Our findings raise the possibility that dysfunction of the dentate nucleus may also occur and contribute to the pathogenesis of ataxia in patients with ARSACS.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0066145-Engert1">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Engert</surname><given-names>JC</given-names></name>, <name><surname>Berube</surname><given-names>P</given-names></name>, <name><surname>Mercier</surname><given-names>J</given-names></name>, <name><surname>Dore</surname><given-names>C</given-names></name>, <name><surname>Lepage</surname><given-names>P</given-names></name>, <etal>et al</etal> (<year>2000</year>) <article-title>ARSACS, a spastic ataxia common in northeastern Quebec, is caused by mutations in a new gene encoding an 11.5-kb ORF</article-title>. <source>Nature Genetics</source><volume>24</volume>: <fpage>120</fpage>&#x2013;<lpage>125</lpage><pub-id pub-id-type="pmid">10655055</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Girard1">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Girard</surname><given-names>M</given-names></name>, <name><surname>Lariviere</surname><given-names>R</given-names></name>, <name><surname>Parfitt</surname><given-names>DA</given-names></name>, <name><surname>Deane</surname><given-names>EC</given-names></name>, <name><surname>Gaudet</surname><given-names>R</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Mitochondrial dysfunction and Purkinje cell loss in autosomal recessive spastic ataxia of Charlevoix-Saguenay (ARSACS)</article-title>. <source>Proc Natl Acad Sci U S A</source><volume>109</volume>: <fpage>1661</fpage>&#x2013;<lpage>1666</lpage><pub-id pub-id-type="pmid">22307627</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Richter1">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Richter</surname><given-names>A</given-names></name>, <name><surname>Rioux</surname><given-names>JD</given-names></name>, <name><surname>Bouchard</surname><given-names>JP</given-names></name>, <name><surname>Mercier</surname><given-names>J</given-names></name>, <name><surname>Mathieu</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>1999</year>) <article-title>Location score and haplotype analyses of the locus for autosomal recessive spastic ataxia of Charlevoix-Saguenay, in chromosome region 13q11</article-title>. <source>Am J Hum Genet</source><volume>64</volume>: <fpage>768</fpage>&#x2013;<lpage>775</lpage><pub-id pub-id-type="pmid">10053011</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Thiffault1">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Thiffault</surname><given-names>I</given-names></name>, <name><surname>Dicaire</surname><given-names>MJ</given-names></name>, <name><surname>Tetreault</surname><given-names>M</given-names></name>, <name><surname>Huang</surname><given-names>KN</given-names></name>, <name><surname>Demers-Lamarche</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>Diversity of ARSACS mutations in French-Canadians</article-title>. <source>Can J Neurol Sci</source><volume>40</volume>: <fpage>61</fpage>&#x2013;<lpage>66</lpage><pub-id pub-id-type="pmid">23250129</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Anheim1">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Anheim</surname><given-names>M</given-names></name>, <name><surname>Chaigne</surname><given-names>D</given-names></name>, <name><surname>Fleury</surname><given-names>M</given-names></name>, <name><surname>Santorelli</surname><given-names>FM</given-names></name>, <name><surname>De Seze</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>[Autosomal recessive spastic ataxia of Charlevoix-Saguenay: study of a family and review of the literature]</article-title>. <source>Rev Neurol (Paris)</source><volume>164</volume>: <fpage>363</fpage>&#x2013;<lpage>368</lpage><pub-id pub-id-type="pmid">18439928</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Ouyang1">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Ouyang</surname><given-names>Y</given-names></name>, <name><surname>Segers</surname><given-names>K</given-names></name>, <name><surname>Bouquiaux</surname><given-names>O</given-names></name>, <name><surname>Wang</surname><given-names>FC</given-names></name>, <name><surname>Janin</surname><given-names>N</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>Novel SACS mutation in a Belgian family with sacsin-related ataxia</article-title>. <source>J Neurol Sci</source><volume>264</volume>: <fpage>73</fpage>&#x2013;<lpage>76</lpage><pub-id pub-id-type="pmid">17716690</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Mrissa1">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>Mrissa</surname><given-names>N</given-names></name>, <name><surname>Belal</surname><given-names>S</given-names></name>, <name><surname>Hamida</surname><given-names>CB</given-names></name>, <name><surname>Amouri</surname><given-names>R</given-names></name>, <name><surname>Turki</surname><given-names>I</given-names></name>, <etal>et al</etal> (<year>2000</year>) <article-title>Linkage to chromosome 13q11&#x2013;12 of an autosomal recessive cerebellar ataxia in a Tunisian family</article-title>. <source>Neurology</source><volume>54</volume>: <fpage>1408</fpage>&#x2013;<lpage>1414</lpage><pub-id pub-id-type="pmid">10751248</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-ElEuchFayache1">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>El Euch-Fayache</surname><given-names>G</given-names></name>, <name><surname>Lalani</surname><given-names>I</given-names></name>, <name><surname>Amouri</surname><given-names>R</given-names></name>, <name><surname>Turki</surname><given-names>I</given-names></name>, <name><surname>Ouahchi</surname><given-names>K</given-names></name>, <etal>et al</etal> (<year>2003</year>) <article-title>Phenotypic features and genetic findings in sacsin-related autosomal recessive ataxia in Tunisia</article-title>. <source>Arch Neurol</source><volume>60</volume>: <fpage>982</fpage>&#x2013;<lpage>988</lpage><pub-id pub-id-type="pmid">12873855</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Criscuolo1">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Criscuolo</surname><given-names>C</given-names></name>, <name><surname>Banfi</surname><given-names>S</given-names></name>, <name><surname>Orio</surname><given-names>M</given-names></name>, <name><surname>Gasparini</surname><given-names>P</given-names></name>, <name><surname>Monticelli</surname><given-names>A</given-names></name>, <etal>et al</etal> (<year>2004</year>) <article-title>A novel mutation in SACS gene in a family from southern Italy</article-title>. <source>Neurology</source><volume>62</volume>: <fpage>100</fpage>&#x2013;<lpage>102</lpage><pub-id pub-id-type="pmid">14718706</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Grieco1">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Grieco</surname><given-names>GS</given-names></name>, <name><surname>Malandrini</surname><given-names>A</given-names></name>, <name><surname>Comanducci</surname><given-names>G</given-names></name>, <name><surname>Leuzzi</surname><given-names>V</given-names></name>, <name><surname>Valoppi</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2004</year>) <article-title>Novel SACS mutations in autosomal recessive spastic ataxia of Charlevoix-Saguenay type</article-title>. <source>Neurology</source><volume>62</volume>: <fpage>103</fpage>&#x2013;<lpage>106</lpage><pub-id pub-id-type="pmid">14718707</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Criscuolo2">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Criscuolo</surname><given-names>C</given-names></name>, <name><surname>Sacca</surname><given-names>F</given-names></name>, <name><surname>De Michele</surname><given-names>G</given-names></name>, <name><surname>Mancini</surname><given-names>P</given-names></name>, <name><surname>Combarros</surname><given-names>O</given-names></name>, <etal>et al</etal> (<year>2005</year>) <article-title>Novel mutation of SACS gene in a Spanish family with autosomal recessive spastic ataxia</article-title>. <source>Mov Disord</source><volume>20</volume>: <fpage>1358</fpage>&#x2013;<lpage>1361</lpage><pub-id pub-id-type="pmid">16007637</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Richter2">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Richter</surname><given-names>AM</given-names></name>, <name><surname>Ozgul</surname><given-names>RK</given-names></name>, <name><surname>Poisson</surname><given-names>VC</given-names></name>, <name><surname>Topaloglu</surname><given-names>H</given-names></name> (<year>2004</year>) <article-title>Private SACS mutations in autosomal recessive spastic ataxia of Charlevoix-Saguenay (ARSACS) families from Turkey</article-title>. <source>Neurogenetics</source><volume>5</volume>: <fpage>165</fpage>&#x2013;<lpage>170</lpage><pub-id pub-id-type="pmid">15156359</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Vermeer1">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Vermeer</surname><given-names>S</given-names></name>, <name><surname>Meijer</surname><given-names>RP</given-names></name>, <name><surname>Pijl</surname><given-names>BJ</given-names></name>, <name><surname>Timmermans</surname><given-names>J</given-names></name>, <name><surname>Cruysberg</surname><given-names>JR</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>ARSACS in the Dutch population: a frequent cause of early-onset cerebellar ataxia</article-title>. <source>Neurogenetics</source><volume>9</volume>: <fpage>207</fpage>&#x2013;<lpage>214</lpage><pub-id pub-id-type="pmid">18465152</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Ogawa1">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Ogawa</surname><given-names>T</given-names></name>, <name><surname>Takiyama</surname><given-names>Y</given-names></name>, <name><surname>Sakoe</surname><given-names>K</given-names></name>, <name><surname>Mori</surname><given-names>K</given-names></name>, <name><surname>Namekawa</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2004</year>) <article-title>Identification of a SACS gene missense mutation in ARSACS</article-title>. <source>Neurology</source><volume>62</volume>: <fpage>107</fpage>&#x2013;<lpage>109</lpage><pub-id pub-id-type="pmid">14718708</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Shimazaki1">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Shimazaki</surname><given-names>H</given-names></name>, <name><surname>Sakoe</surname><given-names>K</given-names></name>, <name><surname>Niijima</surname><given-names>K</given-names></name>, <name><surname>Nakano</surname><given-names>I</given-names></name>, <name><surname>Takiyama</surname><given-names>Y</given-names></name> (<year>2007</year>) <article-title>An unusual case of a spasticity-lacking phenotype with a novel SACS mutation</article-title>. <source>J Neurol Sci</source><volume>255</volume>: <fpage>87</fpage>&#x2013;<lpage>89</lpage><pub-id pub-id-type="pmid">17349660</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Bouchard1">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Bouchard</surname><given-names>JP</given-names></name>, <name><surname>Barbeau</surname><given-names>A</given-names></name>, <name><surname>Bouchard</surname><given-names>R</given-names></name>, <name><surname>Bouchard</surname><given-names>RW</given-names></name> (<year>1978</year>) <article-title>Autosomal recessive spastic ataxia of Charlevoix-Saguenay</article-title>. <source>Can J Neurol Sci</source><volume>5</volume>: <fpage>61</fpage>&#x2013;<lpage>69</lpage><pub-id pub-id-type="pmid">647499</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Gazulla1">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>Gazulla</surname><given-names>J</given-names></name>, <name><surname>Benavente</surname><given-names>I</given-names></name>, <name><surname>Vela</surname><given-names>AC</given-names></name>, <name><surname>Marin</surname><given-names>MA</given-names></name>, <name><surname>Pablo</surname><given-names>LE</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>New findings in the ataxia of Charlevoix-Saguenay</article-title>. <source>J Neurol</source><volume>259</volume>: <fpage>869</fpage>&#x2013;<lpage>878</lpage><pub-id pub-id-type="pmid">21993619</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Bouchard2">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Bouchard</surname><given-names>JP</given-names></name>, <name><surname>Richter</surname><given-names>A</given-names></name>, <name><surname>Mathieu</surname><given-names>J</given-names></name>, <name><surname>Brunet</surname><given-names>D</given-names></name>, <name><surname>Hudson</surname><given-names>TJ</given-names></name>, <etal>et al</etal> (<year>1998</year>) <article-title>Autosomal recessive spastic ataxia of Charlevoix-Saguenay</article-title>. <source>Neuromuscul Disord</source><volume>8</volume>: <fpage>474</fpage>&#x2013;<lpage>479</lpage><pub-id pub-id-type="pmid">9829277</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Martin1">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Martin</surname><given-names>MH</given-names></name>, <name><surname>Bouchard</surname><given-names>JP</given-names></name>, <name><surname>Sylvain</surname><given-names>M</given-names></name>, <name><surname>St-Onge</surname><given-names>O</given-names></name>, <name><surname>Truchon</surname><given-names>S</given-names></name> (<year>2007</year>) <article-title>Autosomal recessive spastic ataxia of Charlevoix-Saguenay: a report of MR imaging in 5 patients</article-title>. <source>AJNR Am J Neuroradiol</source><volume>28</volume>: <fpage>1606</fpage>&#x2013;<lpage>1608</lpage><pub-id pub-id-type="pmid">17846221</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Purcell1">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Purcell</surname><given-names>S</given-names></name>, <name><surname>Neale</surname><given-names>B</given-names></name>, <name><surname>Todd-Brown</surname><given-names>K</given-names></name>, <name><surname>Thomas</surname><given-names>L</given-names></name>, <name><surname>Ferreira</surname><given-names>MA</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>PLINK: a tool set for whole-genome association and population-based linkage analyses</article-title>. <source>Am J Hum Genet</source><volume>81</volume>: <fpage>559</fpage>&#x2013;<lpage>575</lpage><pub-id pub-id-type="pmid">17701901</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Haugarvoll1">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Haugarvoll</surname><given-names>K</given-names></name>, <name><surname>Johansson</surname><given-names>S</given-names></name>, <name><surname>Tzoulis</surname><given-names>C</given-names></name>, <name><surname>Haukanes</surname><given-names>BI</given-names></name>, <name><surname>Bredrup</surname><given-names>C</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>MRI characterisation of adult onset alpha-methylacyl-coA racemase deficiency diagnosed by exome sequencing</article-title>. <source>Orphanet J Rare Dis</source><volume>8</volume>: <fpage>1</fpage><pub-id pub-id-type="pmid">23286897</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Sailer1">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Sailer</surname><given-names>A</given-names></name>, <name><surname>Scholz</surname><given-names>SW</given-names></name>, <name><surname>Gibbs</surname><given-names>JR</given-names></name>, <name><surname>Tucci</surname><given-names>A</given-names></name>, <name><surname>Johnson</surname><given-names>JO</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Exome sequencing in an SCA14 family demonstrates its utility in diagnosing heterogeneous diseases</article-title>. <source>Neurology</source><volume>79</volume>: <fpage>127</fpage>&#x2013;<lpage>131</lpage><pub-id pub-id-type="pmid">22675081</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Ku1">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Ku</surname><given-names>CS</given-names></name>, <name><surname>Cooper</surname><given-names>DN</given-names></name>, <name><surname>Polychronakos</surname><given-names>C</given-names></name>, <name><surname>Naidoo</surname><given-names>N</given-names></name>, <name><surname>Wu</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Exome sequencing: dual role as a discovery and diagnostic tool</article-title>. <source>Ann Neurol</source><volume>71</volume>: <fpage>5</fpage>&#x2013;<lpage>14</lpage><pub-id pub-id-type="pmid">22275248</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Pyle1">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Pyle</surname><given-names>A</given-names></name>, <name><surname>Horvath</surname><given-names>R</given-names></name>, <name><surname>Chinnery</surname><given-names>PF</given-names></name> (<year>2012</year>) <article-title>Autosomal recessive spastic ataxia of charlevoix-saguenay in the time of next-generation sequencing-reply</article-title>. <source>Arch Neurol</source><volume>69</volume>: <fpage>1661</fpage>&#x2013;<lpage>1662</lpage><pub-id pub-id-type="pmid">23229047</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Erichsen1">
+        <label>25</label>
+        <mixed-citation publication-type="journal"><name><surname>Erichsen</surname><given-names>AK</given-names></name>, <name><surname>Koht</surname><given-names>J</given-names></name>, <name><surname>Stray-Pedersen</surname><given-names>A</given-names></name>, <name><surname>Abdelnoor</surname><given-names>M</given-names></name>, <name><surname>Tallaksen</surname><given-names>CM</given-names></name> (<year>2009</year>) <article-title>Prevalence of hereditary ataxia and spastic paraplegia in southeast Norway: a population-based study</article-title>. <source>Brain</source><volume>132</volume>: <fpage>1577</fpage>&#x2013;<lpage>1588</lpage><pub-id pub-id-type="pmid">19339254</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Bouchard3">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Bouchard</surname><given-names>RW</given-names></name>, <name><surname>Bouchard</surname><given-names>JP</given-names></name>, <name><surname>Bouchard</surname><given-names>R</given-names></name>, <name><surname>Barbeau</surname><given-names>A</given-names></name> (<year>1979</year>) <article-title>Electroencephalographic findings in Friedreich's ataxia and autosomal recessive spastic ataxia of Charlevoix-Saguenay (ARSACS)</article-title>. <source>Can J Neurol Sci</source><volume>6</volume>: <fpage>191</fpage>&#x2013;<lpage>194</lpage><pub-id pub-id-type="pmid">487309</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Vanrietvelde1">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Vanrietvelde</surname><given-names>F</given-names></name>, <name><surname>Lemmerling</surname><given-names>M</given-names></name>, <name><surname>Mespreuve</surname><given-names>M</given-names></name>, <name><surname>Crevits</surname><given-names>L</given-names></name>, <name><surname>De Reuck</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2000</year>) <article-title>MRI of the brain in cerebrotendinous xanthomatosis (van Bogaert-Scherer-Epstein disease)</article-title>. <source>Eur Radiol</source><volume>10</volume>: <fpage>576</fpage>&#x2013;<lpage>578</lpage><pub-id pub-id-type="pmid">10795535</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Tzoulis1">
+        <label>28</label>
+        <mixed-citation publication-type="journal"><name><surname>Tzoulis</surname><given-names>C</given-names></name>, <name><surname>Neckelmann</surname><given-names>G</given-names></name>, <name><surname>Mork</surname><given-names>SJ</given-names></name>, <name><surname>Engelsen</surname><given-names>BE</given-names></name>, <name><surname>Viscomi</surname><given-names>C</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Localized cerebral energy failure in DNA polymerase gamma-associated encephalopathy syndromes</article-title>. <source>Brain</source><volume>133</volume>: <fpage>1428</fpage>&#x2013;<lpage>1437</lpage><pub-id pub-id-type="pmid">20400524</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Bouchard4">
+        <label>29</label>
+        <mixed-citation publication-type="book">Bouchard JP (1991) Recessive Spastic Ataxia Of Charlevoix-Saguenay. Vinken, P J, G W Bruyn and H L Klawans. 451&#x2013;459.</mixed-citation>
+      </ref>
+      <ref id="pone.0066145-Richter3">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>Richter</surname><given-names>A</given-names></name>, <name><surname>Morgan</surname><given-names>K</given-names></name>, <name><surname>Bouchard</surname><given-names>JP</given-names></name>, <name><surname>Mathieu</surname><given-names>J</given-names></name>, <name><surname>Lamarche</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>1996</year>) <article-title>ARSACS: Possibly a lysosomal storage disease?</article-title><source>American Journal of Human Genetics</source><volume>59</volume>: <fpage>A379</fpage></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

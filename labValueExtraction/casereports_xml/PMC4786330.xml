@@ -1,0 +1,981 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, CA USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">26964041</article-id>
+      <article-id pub-id-type="pmc">4786330</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0150944</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-15-37721</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Ophthalmology</subject>
+            <subj-group>
+              <subject>Retinal Disorders</subject>
+              <subj-group>
+                <subject>Retinitis</subject>
+                <subj-group>
+                  <subject>Retinitis Pigmentosa</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Biology and Life Sciences</subject>
+          <subj-group>
+            <subject>Anatomy</subject>
+            <subj-group>
+              <subject>Head</subject>
+              <subj-group>
+                <subject>Eyes</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Anatomy</subject>
+            <subj-group>
+              <subject>Head</subject>
+              <subj-group>
+                <subject>Eyes</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Biology and Life Sciences</subject>
+          <subj-group>
+            <subject>Anatomy</subject>
+            <subj-group>
+              <subject>Ocular System</subject>
+              <subj-group>
+                <subject>Eyes</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Anatomy</subject>
+            <subj-group>
+              <subject>Ocular System</subject>
+              <subj-group>
+                <subject>Eyes</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Biology and Life Sciences</subject>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Genetic Dominance</subject>
+              <subj-group>
+                <subject>Dominant Traits</subject>
+                <subj-group>
+                  <subject>Autosomal Dominant Traits</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Biology and Life Sciences</subject>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Genome Analysis</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Biology and Life Sciences</subject>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Genomics</subject>
+              <subj-group>
+                <subject>Genome Analysis</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Biology and life sciences</subject>
+          <subj-group>
+            <subject>Molecular biology</subject>
+            <subj-group>
+              <subject>Molecular biology techniques</subject>
+              <subj-group>
+                <subject>Sequencing techniques</subject>
+                <subj-group>
+                  <subject>DNA sequencing</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Research and analysis methods</subject>
+          <subj-group>
+            <subject>Molecular biology techniques</subject>
+            <subj-group>
+              <subject>Sequencing techniques</subject>
+              <subj-group>
+                <subject>DNA sequencing</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Biology and life sciences</subject>
+          <subj-group>
+            <subject>Molecular biology</subject>
+            <subj-group>
+              <subject>Molecular biology techniques</subject>
+              <subj-group>
+                <subject>Sequencing techniques</subject>
+                <subj-group>
+                  <subject>DNA sequencing</subject>
+                  <subj-group>
+                    <subject>Gene Sequencing</subject>
+                  </subj-group>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Research and analysis methods</subject>
+          <subj-group>
+            <subject>Molecular biology techniques</subject>
+            <subj-group>
+              <subject>Sequencing techniques</subject>
+              <subj-group>
+                <subject>DNA sequencing</subject>
+                <subj-group>
+                  <subject>Gene Sequencing</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Biology and Life Sciences</subject>
+          <subj-group>
+            <subject>Neuroscience</subject>
+            <subj-group>
+              <subject>Sensory Perception</subject>
+              <subj-group>
+                <subject>Vision</subject>
+                <subj-group>
+                  <subject>Visual Acuity</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Biology and Life Sciences</subject>
+          <subj-group>
+            <subject>Psychology</subject>
+            <subj-group>
+              <subject>Sensory Perception</subject>
+              <subj-group>
+                <subject>Vision</subject>
+                <subj-group>
+                  <subject>Visual Acuity</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Social Sciences</subject>
+          <subj-group>
+            <subject>Psychology</subject>
+            <subj-group>
+              <subject>Sensory Perception</subject>
+              <subj-group>
+                <subject>Vision</subject>
+                <subj-group>
+                  <subject>Visual Acuity</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Biology and life sciences</subject>
+          <subj-group>
+            <subject>Molecular biology</subject>
+            <subj-group>
+              <subject>Molecular biology techniques</subject>
+              <subj-group>
+                <subject>Sequencing techniques</subject>
+                <subj-group>
+                  <subject>Sequence analysis</subject>
+                  <subj-group>
+                    <subject>DNA sequence analysis</subject>
+                  </subj-group>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Research and analysis methods</subject>
+          <subj-group>
+            <subject>Molecular biology techniques</subject>
+            <subj-group>
+              <subject>Sequencing techniques</subject>
+              <subj-group>
+                <subject>Sequence analysis</subject>
+                <subj-group>
+                  <subject>DNA sequence analysis</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title><italic>De Novo</italic> Occurrence of a Variant in <italic>ARL3</italic> and Apparent Autosomal Dominant Transmission of Retinitis Pigmentosa</article-title>
+        <alt-title alt-title-type="running-head">Mutations in <italic>ARL3</italic> Possibly Causing Dominant Retinitis Pigmentosa</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Strom</surname>
+            <given-names>Samuel P.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor001">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Clark</surname>
+            <given-names>Michael J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff002">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Martinez</surname>
+            <given-names>Ariadna</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff003">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Garcia</surname>
+            <given-names>Sarah</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff002">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Abelazeem</surname>
+            <given-names>Amira A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff004">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Matynia</surname>
+            <given-names>Anna</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff005">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Parikh</surname>
+            <given-names>Sachin</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff005">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sullivan</surname>
+            <given-names>Lori S.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff006">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bowne</surname>
+            <given-names>Sara J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff006">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Daiger</surname>
+            <given-names>Stephen P.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff006">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gorin</surname>
+            <given-names>Michael B.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff005">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff001">
+        <label>1</label>
+        <addr-line>Department of Pathology and Laboratory Medicine, University of California Los Angeles, Los Angeles, California, United States of America</addr-line>
+      </aff>
+      <aff id="aff002">
+        <label>2</label>
+        <addr-line>Personalis Inc., Menlo Park, California, United States of America</addr-line>
+      </aff>
+      <aff id="aff003">
+        <label>3</label>
+        <addr-line>Department of Cardiology, Cedars-Sinai Medical Center, Los Angeles, California, United States of America</addr-line>
+      </aff>
+      <aff id="aff004">
+        <label>4</label>
+        <addr-line>Research Institute of Ophthalmology, Cairo, Egypt</addr-line>
+      </aff>
+      <aff id="aff005">
+        <label>5</label>
+        <addr-line>Jules Stein Eye Institute and Department of Ophthalmology, University of California Los Angeles, Los Angeles, California, United States of America</addr-line>
+      </aff>
+      <aff id="aff006">
+        <label>6</label>
+        <addr-line>Human Genetics Center, University of Texas Health Science Center, Houston, Texas, United States of America</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Sharon</surname>
+            <given-names>Dror</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Hadassah-Hebrew University Medical Center, ISRAEL</addr-line>
+      </aff>
+      <author-notes>
+        <fn fn-type="conflict" id="coi001">
+          <p><bold>Competing Interests: </bold>Authors MJC and GS are employees of Personalis Inc. Personalis Inc. did not play a role in the study design, data collection and analysis, decision to publish, or preparation of the manuscript and only provided financial support in the form of authors' salaries and research materials. This does not alter the authors' adherence to PLOS ONE policies on sharing data and materials.</p>
+        </fn>
+        <fn fn-type="con" id="contrib001">
+          <p>Conceived and designed the experiments: SPS MBG MJC. Performed the experiments: SPS MJC LSS AAA SG SJB AM SP. Analyzed the data: SPS MJC AM SG LSS SJB SPD MBG. Contributed reagents/materials/analysis tools: SPS MGB MJC SG SPD. Wrote the paper: SPS AAA.</p>
+        </fn>
+        <corresp id="cor001">* E-mail: <email>sstrom@mednet.ucla.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>10</day>
+        <month>3</month>
+        <year>2016</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2016</year>
+      </pub-date>
+      <volume>11</volume>
+      <issue>3</issue>
+      <elocation-id>e0150944</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>2</day>
+          <month>9</month>
+          <year>2015</year>
+        </date>
+        <date date-type="accepted">
+          <day>22</day>
+          <month>2</month>
+          <year>2016</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2016 Strom et al</copyright-statement>
+        <copyright-year>2016</copyright-year>
+        <copyright-holder>Strom et al</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <self-uri content-type="pdf" xlink:type="simple" xlink:href="pone.0150944.pdf"/>
+      <abstract>
+        <sec id="sec001">
+          <title>Background</title>
+          <p>Retinitis pigmentosa is a phenotype with diverse genetic causes. Due to this genetic heterogeneity, genome-wide identification and analysis of protein-altering DNA variants by exome sequencing is a powerful tool for novel variant and disease gene discovery. In this study, exome sequencing analysis was used to search for potentially causal DNA variants in a two-generation pedigree with apparent dominant retinitis pigmentosa.</p>
+        </sec>
+        <sec id="sec002">
+          <title>Methods</title>
+          <p>Variant identification and analysis of three affected members (mother and two affected offspring) was performed via exome sequencing. Parental samples of the index case were used to establish inheritance. Follow-up testing of 94 additional retinitis pigmentosa pedigrees was performed via retrospective analysis or Sanger sequencing.</p>
+        </sec>
+        <sec id="sec003">
+          <title>Results and Conclusions</title>
+          <p>A total of 136 high quality coding variants in 123 genes were identified which are consistent with autosomal dominant disease. Of these, one of the strongest genetic and functional candidates is a c.269A&gt;G (p.Tyr90Cys) variant in <italic>ARL3</italic>. Follow-up testing established that this variant occurred <italic>de novo</italic> in the index case. No additional putative causal variants in <italic>ARL3</italic> were identified in the follow-up cohort, suggesting that if <italic>ARL3</italic> variants can cause adRP it is an extremely rare phenomenon.</p>
+        </sec>
+      </abstract>
+      <funding-group>
+        <funding-statement>Funding provided by the Harold and Pauline Price Foundation, Foundation Fighting Blindness, and Research to Prevent Blindness. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. Authors MJC and GS are employees of Personalis Inc. Personalis Inc. did not play a role in the study design, data collection and analysis, decision to publish, or preparation of the manuscript and only provided financial support in the form of authors' salaries and research materials.</funding-statement>
+      </funding-group>
+      <counts>
+        <fig-count count="2"/>
+        <table-count count="3"/>
+        <page-count count="9"/>
+      </counts>
+      <custom-meta-group>
+        <custom-meta id="data-availability">
+          <meta-name>Data Availability</meta-name>
+          <meta-value>To preserve patient privacy, data may be obtained for verification purposes only by contacting the authors at the following email address: (<email>sstrom@mednet.ucla.edu</email>).</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+    <notes>
+      <title>Data Availability</title>
+      <p>To preserve patient privacy, data may be obtained for verification purposes only by contacting the authors at the following email address: (<email>sstrom@mednet.ucla.edu</email>).</p>
+    </notes>
+  </front>
+  <body>
+    <sec sec-type="intro" id="sec004">
+      <title>Introduction</title>
+      <p>Retinitis pigmentosa (RP) [MIM: 268000] is a clinical finding defined by peripheral vision loss due to impaired retinal function which affects approximately 1:3,000&#x2013;1:5,000 individuals [<xref rid="pone.0150944.ref001" ref-type="bibr">1</xref>, <xref rid="pone.0150944.ref002" ref-type="bibr">2</xref>]. The genetic basis of RP is highly heterogeneous, with at least fifty genes identified to date as associated with non-syndromic RP [<xref rid="pone.0150944.ref003" ref-type="bibr">3</xref>&#x2013;<xref rid="pone.0150944.ref008" ref-type="bibr">8</xref>]. Most known forms of inheritance have been demonstrated for RP, including single-gene autosomal recessive, autosomal dominant, and X-linked inheritance and digenic inheritance [<xref rid="pone.0150944.ref009" ref-type="bibr">9</xref>&#x2013;<xref rid="pone.0150944.ref011" ref-type="bibr">11</xref>].</p>
+      <p>Due to this extreme heterogeneity, massively parallel DNA sequencing has become an integral part of both clinical diagnostics and research of the genetic basis of RP and other retinal dystrophies [<xref rid="pone.0150944.ref006" ref-type="bibr">6</xref>, <xref rid="pone.0150944.ref010" ref-type="bibr">10</xref>, <xref rid="pone.0150944.ref012" ref-type="bibr">12</xref>&#x2013;<xref rid="pone.0150944.ref017" ref-type="bibr">17</xref>]. Gene panels are now used clinically to identify variants in known retinal dystrophy genes, with a success rate of approximately 20&#x2013;40% [<xref rid="pone.0150944.ref006" ref-type="bibr">6</xref>, <xref rid="pone.0150944.ref016" ref-type="bibr">16</xref>]. Exome sequencing, the genome-wide identification and analysis of DNA variants resulting in a predicted change in any known protein-coding gene, has been particularly powerful for variant and disease gene discovery for retinal dystrophies [<xref rid="pone.0150944.ref012" ref-type="bibr">12</xref>, <xref rid="pone.0150944.ref017" ref-type="bibr">17</xref>] and across nearly all areas of genetics [<xref rid="pone.0150944.ref018" ref-type="bibr">18</xref>&#x2013;<xref rid="pone.0150944.ref021" ref-type="bibr">21</xref>]. These tools provide a cost-effective measure to ending the diagnostic odyssey so often endured in medical genetics.</p>
+      <p>Pedigree RP02 consists of a four-person nuclear family of reported European Caucasian descent. Three individuals in this pedigree are affected with non-syndromic retinitis pigmentosa (<xref ref-type="fig" rid="pone.0150944.g001">Fig 1</xref>). As the trait is observed in the mother and one child of each gender, autosomal dominant inheritance was considered a strong possibility. Given the large number of genes and variants which can cause autosomal dominant retinitis pigmentosa (adRP) [<xref rid="pone.0150944.ref007" ref-type="bibr">7</xref>, <xref rid="pone.0150944.ref008" ref-type="bibr">8</xref>, <xref rid="pone.0150944.ref022" ref-type="bibr">22</xref>], exome sequencing was performed on the three affected individuals to identify possible causal DNA variants.</p>
+      <fig id="pone.0150944.g001" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0150944.g001</object-id>
+        <label>Fig 1</label>
+        <caption>
+          <title>Pedigree of family with apparent autosomal dominant retinitis pigmentosa.</title>
+          <p><italic>De novo</italic> occurrence of a variant in <italic>ARL3</italic> in an individual with retinitis pigmentosa and subsequent transmission to affected offspring.</p>
+        </caption>
+        <graphic xlink:href="pone.0150944.g001"/>
+      </fig>
+      <p>As each individual exome contains 20,000&#x2013;25,000 DNA variants compared to the human genome reference sequence, a series of bioninformatic analyses were performed first to identify variants within known retinal disease genes and then, if negative, to continue the search for potentially novel disease genes.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="sec005">
+      <title>Materials and Methods</title>
+      <sec id="sec006">
+        <title>Patient Samples</title>
+        <p>This study was conducted within an Institutional Review Board (IRB)-approved human subjects research program at the University of California Los Angeles (IRB#11&#x2013;000020, "Genetic Studies in Inherited Ocular Disorders") and the study was conducted in accordance with regulations of the Health Insurance Portability and Accountability Act of 1996 (HIPAA). All three individuals enrolled in the Genetics research study and signed a consent form. The UCLA HIPAA consent form specifies the use of the information for publications and research presentations. DNA samples from the nuclear family were obtained from whole blood specimens using standard protocols. DNA samples from parental samples of the index case were collected and extracted using Oragene DNA Saliva kits (DNA Genotek Inc., Ottowa, Ontario, Canada).</p>
+        <sec id="sec007">
+          <title>Retrospective case report</title>
+          <p>Mother: At 58 years old at presented with difficulty reading with mild decreased visual acuity and bilateral visual field concentric constriction. She has a history of cataract surgery at age 41 years. Her visual acuity measured as 20/60 in the right eye and 20/80 in the left. Intraocular pressures (IOP) were 12 and 10 for the right and left eye respectively. Visual fields were &#x201C;central islands&#x201D; bilaterally, and the retina showed the classic pattern of mid-peripheral pattern of pigmentation with attenuated vessels. Optical coherence tomography (OCT) showed no edema. No other relevant medical problems were reported. Previous genetic testing included mutation screening in the following genes: <italic>CRX</italic>, <italic>PRPH2</italic>, <italic>RP1</italic> and <italic>IMPDH1</italic>. All were negative.</p>
+          <p>Daughter: At 27-years old had late onset nyctalopia, decreased vision with difficulty of reading and driving, flashes and floaters for several years and progressive loss of peripheral vision. She has also medical history of difficulties with gait, headaches, difficulties with balance, increased urinary frequency and severe ankle swelling (partially responsive to Lasix, possibly familial lymphedema).</p>
+          <p>Visual acuity for right and left eyes was 20/80-1 20/60-2. IOP right and left were 13 and 14. Bilateral visual field constriction was observed. A posterior subcapsular cataract (PSC) was identified in the left eye only. Intraocular lens (IOC) noted in the right eye only. Fundus examination revealed vitreous floater in the right eye only. Bilateral attenuation of retinal vessels and bone-spicules were observed in the periphery. OCT showed cystoid macular edema.</p>
+          <p>Son.: At 30 years-old presented with retinitis pigmentosa and related cystoid macular edema. The patient continues to be very bothered by flashes of light that are severe enough to be almost disabling. Also he has floaters and progressive loss of peripheral vision. The patient had different surgical procedures as Lasik OU (2003), cataract removal OD (2008), Yag, strabismus for exotropia 15&#x2013;20&#x394; at 12 and 14 years old. Medical history</p>
+          <p>Visual acuity for right and left eyes was 20/20 and OS: 20/25+2. IOP left and right were 13 and 14. Both visual fields were constricted. A posterior subcapsular cataract PSC was identified in the left eye only and IOC noted in the right eye only, the same pattern as in his sister. No other relevant medical problems were reported.</p>
+        </sec>
+      </sec>
+      <sec id="sec008">
+        <title>Exome Sequencing</title>
+        <p>Exome sequencing was performed using the Accuracy and Enhanced Content Exome (ACE) pipeline developed by Personalis (Menlo Park, CA). This pipeline is a clinically validated and published protocol including all stages of analysis including: library preparation, target capture, sequencing, alignment, variant calling, and variant annotation [<xref rid="pone.0150944.ref023" ref-type="bibr">23</xref>]. This methodology detects single nucleotide variants and small insertions and deletions up to approximately 20 nucleotides in length. Larger genetic changes such as deletions, duplications, and copy-neutral structural rearrangements were not analyzed.</p>
+        <p>The following <italic>in silico</italic> tools were used to predict the likely impact on protein function of observed DNA variants: LRT, PolyPhen2 [<xref rid="pone.0150944.ref024" ref-type="bibr">24</xref>], SIFT [<xref rid="pone.0150944.ref025" ref-type="bibr">25</xref>], MutationTaster [<xref rid="pone.0150944.ref026" ref-type="bibr">26</xref>], and intra-species conservation (GERP, PhyloP, PhastCons).</p>
+      </sec>
+      <sec id="sec009">
+        <title>Variant Filtering</title>
+        <p>Variants were filtered for quality by removing any variant with a VCF flag of anything except &#x201C;PASS&#x201D; and/or having a QUAL score &lt;500. The maximum of 1000 Genomes and Exome Sequencing Project (ESP5400) used as the estimate of minor allele frequency (MAF). Variants below 1% MAF were considered &#x201C;rare&#x201D; while variants &gt; = 1% were filtered out of analysis. Synonymous and intronic variants not known to cause splice defects were also removed during filtering (see <xref ref-type="supplementary-material" rid="pone.0150944.s002">S1 Table</xref> and <xref ref-type="supplementary-material" rid="pone.0150944.s003">S2 Table</xref>).</p>
+      </sec>
+      <sec id="sec010">
+        <title>Protein-Protein Interaction Prediction</title>
+        <p>The predicted impact of candidate variants on protein-protein interactions were estimated using mCSM [<xref rid="pone.0150944.ref027" ref-type="bibr">27</xref>].</p>
+      </sec>
+      <sec id="sec011">
+        <title>Sanger Confirmation and Follow-Up</title>
+        <p>PCR amplification followed by dideoxy capillary electrophoresis DNA sequencing was performed to validate the variant in <italic>ARL3</italic> (<xref ref-type="supplementary-material" rid="pone.0150944.s001">S1 Fig</xref>).Primer sequences are listed in <xref ref-type="supplementary-material" rid="pone.0150944.s004">S3 Table</xref>. Parentage of the grandparents was confirmed by the UCLA Molecular Diagnostics Laboratories via a clinically validated DNA Identity Test.</p>
+        <p>Retrospective exome data from 13 probands of the previously described UT adRP cohort of 265 families with a high likelihood of autosomal inheritance were analyzed for mutations in <italic>ARL3</italic>[<xref rid="pone.0150944.ref028" ref-type="bibr">28</xref>, <xref rid="pone.0150944.ref029" ref-type="bibr">29</xref>]. An additional 47 probands from the UT adRP cohort and 34 adRP probands sent to the Laboratory for the Molecular Diagnosis of Inherited Eye diseases were also tested for mutations using fluorescent di-dexoy sequencing [<xref rid="pone.0150944.ref030" ref-type="bibr">30</xref>&#x2013;<xref rid="pone.0150944.ref032" ref-type="bibr">32</xref>]. All probands had previously tested negative for mutations in known adRP genes. All six coding exons and a minimum of 20bp of flanking intronic sequence were tested for mutations (<xref ref-type="supplementary-material" rid="pone.0150944.s004">S3 Table</xref>).</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="sec012">
+      <title>Results</title>
+      <p>A total of 1,787 rare coding variants were observed in at least one individual (annotated variants in <xref ref-type="supplementary-material" rid="pone.0150944.s003">S2 Table</xref>). Of these, 96 variants in 88 different genes passed all filtering criteria: observed as heterozygous or &#x201C;no call&#x201D; in all three individuals; MAF &lt;0.1%, high sequencing quality; not in a gene known to cause an unrelated condition; not in a likely pseudogene (summary in <xref ref-type="table" rid="pone.0150944.t001">Table 1</xref>; annotated variants list in <xref ref-type="supplementary-material" rid="pone.0150944.s003">S2 Table</xref>).</p>
+      <table-wrap id="pone.0150944.t001" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0150944.t001</object-id>
+        <label>Table 1</label>
+        <caption>
+          <title>Variants meeting various filter criteria.</title>
+          <p>Maximum of 1000 Genomes and Exome Sequencing Project (ESP5400) used as minor allele frequency (MAF). &#x201C;Problematic gene&#x201D; is a gene which is known to be poorly assessed by exome sequencing, such as genes in the mucin family and HLA genes.</p>
+        </caption>
+        <alternatives>
+          <graphic id="pone.0150944.t001g" xlink:href="pone.0150944.t001"/>
+          <table frame="hsides" rules="groups">
+            <colgroup span="1">
+              <col align="left" valign="middle" span="1"/>
+              <col align="left" valign="middle" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th align="left" rowspan="1" colspan="1">Filter</th>
+                <th align="left" rowspan="1" colspan="1"># of variants</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Coding and MAF &lt;1%</td>
+                <td align="left" rowspan="1" colspan="1">1,787</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Het (or &#x201C;no call&#x201D;) in all 3</td>
+                <td align="left" rowspan="1" colspan="1">347</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">High quality (no flags, Q&gt;500) autosomal</td>
+                <td align="left" rowspan="1" colspan="1">187</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Very rare (MAF &lt;0.1%)</td>
+                <td align="left" rowspan="1" colspan="1">135</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Not in unrelated OMIM disease gene or &#x201C;problematic gene&#x201D;</td>
+                <td align="left" rowspan="1" colspan="1">96</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <p>Two variants were identified within genes known to be implicated in retinal degeneration, one each in <italic>RP1L1</italic> and <italic>MFRP</italic>. The c.3978_3979insGAA (p.Lys1326_Thr1327insGlu) variant in <italic>RP1L1</italic> (NM_178857.5) identified as heterozygous in all three individuals has not been previously observed in the general population or in individuals with retinal dystrophy. It is an in-frame insertion of a single amino acid. This variant was considered unlikely to be pathogenic for several reasons. As <italic>RP1L1</italic> has reduced penetrance [<xref rid="pone.0150944.ref010" ref-type="bibr">10</xref>] and a very high non-synonymous rare variant rate in the general population [<xref rid="pone.0150944.ref033" ref-type="bibr">33</xref>], the prior probability of identifying such a variant is quite high regardless of retinal phenotype. Additionally, the age of onset and retinal phenotype are not consistent with occult macular dystrophy, the clinical condition associated with <italic>RP1L1</italic>. At this time, this variant must be considered a variant of uncertain clinical significance. The c.1374G&gt;T (p.Leu458Phe) variant in <italic>MFRP</italic> gene (NM_031433.2) is observed with a minor allele frequency of nearly 1% in Europeans [<xref rid="pone.0150944.ref033" ref-type="bibr">33</xref>], suggesting this variant is unlikely to cause highly penetrant disease in the heterozygous state.</p>
+      <p>Ranking of the 96 variants passing all filters was performed using clinical keywords. Manual interpretation of variants identified one strong candidate: a c.269A&gt;G (p.Tyr90Cys) variant in the <italic>ARL3</italic> (ADP-ribosylation factor-like 3) gene (NM_004311.3, chr10:g.104449696T&gt;C). It's gene product, the Arl3 protein, contains only 182 amino acids, making it a very small target for genetic variation. Likely due to the size of the gene, only 12 out of approximately 6,500 individuals (0.18%) in the Exome Sequencing Project dataset carry a rare heterozygous missense variant in <italic>ARL3</italic> [<xref rid="pone.0150944.ref033" ref-type="bibr">33</xref>]. None of these variants are within 10 amino acids of the p.Tyr90Cys variant identified in this study, suggesting that this interval may be relatively depleted of protein variation due to natural selection. All <italic>in silico</italic> prediction methods used supported the hypothesis that the p.Tyr90Cys variant is likely deleterious to the function of <italic>ARL3</italic> (<xref ref-type="table" rid="pone.0150944.t002">Table 2</xref>). Of the vertebrate species with available data, all organisms (95 species spanning fish to primates) have a tyrosine at this aligned position in <italic>ARL3</italic>, indicating extremely strong evolutionary conservation of this amino acid [as per the Vertebrate Multiz Alignment &amp; Conservation (100 Species) track of the UCSC genome browser accessed November 2015] (<xref ref-type="fig" rid="pone.0150944.g002">Fig 2</xref>). <italic>In silico</italic> analysis of protein-protein interactions between Arl3 and two of its major binding partners&#x2014;RP2 and UNC119&#x2014;predicts that the p.Tyr90Cys variant has a destabilizing effect on heterodimerization (<xref ref-type="table" rid="pone.0150944.t003">Table 3</xref>).</p>
+      <fig id="pone.0150944.g002" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0150944.g002</object-id>
+        <label>Fig 2</label>
+        <caption>
+          <title>Evolutionary conservation of exon 5 of ARL3.</title>
+          <p>Includes the tyrosine (Y) amino acid at position 90 (boxed), across vertebrate species. Representative set of 9 species shown using the UCSC Genome Browser.</p>
+        </caption>
+        <graphic xlink:href="pone.0150944.g002"/>
+      </fig>
+      <table-wrap id="pone.0150944.t002" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0150944.t002</object-id>
+        <label>Table 2</label>
+        <caption>
+          <title><italic>In silico</italic> prediction tests.</title>
+          <p>Results for the p.Tyr90Cys variant in <italic>ARL3</italic>.</p>
+        </caption>
+        <alternatives>
+          <graphic id="pone.0150944.t002g" xlink:href="pone.0150944.t002"/>
+          <table frame="hsides" rules="groups">
+            <colgroup span="1">
+              <col align="left" valign="middle" span="1"/>
+              <col align="left" valign="middle" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th align="center" rowspan="1" colspan="1">Test</th>
+                <th align="center" rowspan="1" colspan="1">Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="center" rowspan="1" colspan="1">LRT Score (prediction)</td>
+                <td align="center" rowspan="1" colspan="1">0 (deleterious)</td>
+              </tr>
+              <tr>
+                <td align="center" rowspan="1" colspan="1">Polyphen2 HumDiv Score (prediction)</td>
+                <td align="center" rowspan="1" colspan="1">1 (probably damaging)</td>
+              </tr>
+              <tr>
+                <td align="center" rowspan="1" colspan="1">SIFT Score (prediction)</td>
+                <td align="center" rowspan="1" colspan="1">0 (probably damaging)</td>
+              </tr>
+              <tr>
+                <td align="center" rowspan="1" colspan="1">MutationTaster Score (Prediction)</td>
+                <td align="center" rowspan="1" colspan="1">0.99 (disease-causing)</td>
+              </tr>
+              <tr>
+                <td align="center" rowspan="1" colspan="1">PhyloP</td>
+                <td align="center" rowspan="1" colspan="1">2.1 (supports conservation)</td>
+              </tr>
+              <tr>
+                <td align="center" rowspan="1" colspan="1">PhastCons</td>
+                <td align="center" rowspan="1" colspan="1">15.5 (supports conservation)</td>
+              </tr>
+              <tr>
+                <td align="center" rowspan="1" colspan="1">GERP</td>
+                <td align="center" rowspan="1" colspan="1">5.3 (supports conservation)</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <table-wrap id="pone.0150944.t003" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0150944.t003</object-id>
+        <label>Table 3</label>
+        <caption>
+          <title>Protein-protein interaction predictions.</title>
+          <p>Results for the p.Tyr90Cys variant in <italic>ARL3</italic>. Calculated using the web tool mCSM [<xref rid="pone.0150944.ref027" ref-type="bibr">27</xref>].</p>
+        </caption>
+        <alternatives>
+          <graphic id="pone.0150944.t003g" xlink:href="pone.0150944.t003"/>
+          <table frame="hsides" rules="groups">
+            <colgroup span="1">
+              <col align="left" valign="middle" span="1"/>
+              <col align="left" valign="middle" span="1"/>
+              <col align="left" valign="middle" span="1"/>
+              <col align="left" valign="middle" span="1"/>
+              <col align="left" valign="middle" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th align="center" rowspan="1" colspan="1">Arl3 Interaction Partner</th>
+                <th align="center" rowspan="1" colspan="1">PDB entry</th>
+                <th align="center" rowspan="1" colspan="1">ARL3 chain</th>
+                <th align="center" rowspan="1" colspan="1">mCSM ddG (Kcal/mol)</th>
+                <th align="center" rowspan="1" colspan="1">mCSM description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="center" rowspan="1" colspan="1">RP2/GDP-AlF4</td>
+                <td align="center" rowspan="1" colspan="1">3BH7</td>
+                <td align="center" rowspan="1" colspan="1">A</td>
+                <td align="center" rowspan="1" colspan="1">-0.719</td>
+                <td align="center" rowspan="1" colspan="1">Destabilizing</td>
+              </tr>
+              <tr>
+                <td align="center" rowspan="1" colspan="1">RP2/GppNHp</td>
+                <td align="center" rowspan="1" colspan="1">3BH6</td>
+                <td align="center" rowspan="1" colspan="1">A</td>
+                <td align="center" rowspan="1" colspan="1">-605</td>
+                <td align="center" rowspan="1" colspan="1">Destabilizing</td>
+              </tr>
+              <tr>
+                <td align="center" rowspan="1" colspan="1">UNC119A</td>
+                <td align="center" rowspan="1" colspan="1">4GOJ</td>
+                <td align="center" rowspan="1" colspan="1">A; B</td>
+                <td align="center" rowspan="1" colspan="1">-0.663; -0.741</td>
+                <td align="center" rowspan="1" colspan="1">Destabilizing; Destabilizing</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <p>The c.269A&gt;G variant was confirmed as heterozygous in the three affected individuals and homozygous reference (&#x201C;wild type&#x201D;) in the unaffected grandparents by Sanger sequencing (<xref ref-type="supplementary-material" rid="pone.0150944.s001">S1 Fig</xref>). No rare coding variants in <italic>ARL3</italic> were found in an additional set of 94 families with RP.</p>
+    </sec>
+    <sec sec-type="conclusions" id="sec013">
+      <title>Discussion</title>
+      <p><italic>ARL3</italic> encodes Arl3, a small GTPase which is a known binding partner of RP2 [<xref rid="pone.0150944.ref034" ref-type="bibr">34</xref>&#x2013;<xref rid="pone.0150944.ref036" ref-type="bibr">36</xref>] and UNC119 [<xref rid="pone.0150944.ref037" ref-type="bibr">37</xref>]. Variants in <italic>RP2</italic> (retinitis pigmentosa 2) which encodes RP2 are associated with X-linked retinitis pigmentosa type 2 [MIM: 312600][<xref rid="pone.0150944.ref038" ref-type="bibr">38</xref>, <xref rid="pone.0150944.ref039" ref-type="bibr">39</xref>]. Model organism work suggests that UNC119 function is critical to the visual system in mice [<xref rid="pone.0150944.ref040" ref-type="bibr">40</xref>]. Other known interaction partners include PDE6D, a protein whose gene is associated with primary cilia function [<xref rid="pone.0150944.ref037" ref-type="bibr">37</xref>] and disruption of which may cause Joubert Syndrome 22 [MIM: 615665][<xref rid="pone.0150944.ref041" ref-type="bibr">41</xref>]. Publicly available microarray data shows that <italic>ARL3</italic> is most highly expressed in the retina and pineal gland (GeneAtlas U133A, gcrma)[<xref rid="pone.0150944.ref042" ref-type="bibr">42</xref>]. These facts are consistent with functional studies demonstrating that the Arl3 protein is involved in protein trafficking of proteins to the outer segment of photoreceptor cells [<xref rid="pone.0150944.ref034" ref-type="bibr">34</xref>, <xref rid="pone.0150944.ref035" ref-type="bibr">35</xref>, <xref rid="pone.0150944.ref043" ref-type="bibr">43</xref>, <xref rid="pone.0150944.ref044" ref-type="bibr">44</xref>]. A biochemical study of the RP2-null mouse model for RP suggests that the disease mechanism includes hyperactivity of Arl3 leading to mistrafficking of prenylated cargo in photoreceptor cells [<xref rid="pone.0150944.ref045" ref-type="bibr">45</xref>]. Given its expression pattern, binding partners, and biochemical, <italic>ARL3</italic> is a strong <italic>a priori</italic> candidate gene for retinitis pigmentosa in humans.</p>
+      <p>This candidacy is strengthened by the fact that the p.Tyr90Cys variant identified in the three affected individuals occurred <italic>de novo</italic> and transmitted with disease to a subsequent generation in a pedigree consistent with dominant RP. The failure to identify additional <italic>ARL3</italic> variants in our follow-up cohort suggests that even if the <italic>ARL3</italic> variant identified in our original family is truly causal for RP, such variants are responsible for only a small fraction of RP cases. Functional studies are merited to assess the biochemical impact of the p.Tyr90Cys variant on the Arl3 protein, and future genome-wide variant identification efforts of RP patients should consider <italic>ARL3</italic> as a gene of interest. Until functional studies are performed or additional families with <italic>ARL3</italic> variants are identified, this gene will remain a candidate for autosomal dominant retinitis pigmentosa.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="sec014">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0150944.s001">
+        <label>S1 Fig</label>
+        <caption>
+          <title>Representative electropherogram results.</title>
+          <p>Positive (top, proband) and negative (bottom, proband's mother) Sanger sequencing traces for the c.269C&gt;A variant in <italic>ARL3</italic>. Arrows point to nucleotide of interest. Full electropherograms for all individuals in this family are available upon request.</p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0150944.s001.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0150944.s002">
+        <label>S1 Table</label>
+        <caption>
+          <title>Description of data columns found in <xref ref-type="supplementary-material" rid="pone.0150944.s004">S3 Table</xref>.</title>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0150944.s002.xls">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0150944.s003">
+        <label>S2 Table</label>
+        <caption>
+          <title>All potentially causative rare coding variants identified in proband.</title>
+          <p>For a description of column headers, please refer to <xref ref-type="supplementary-material" rid="pone.0150944.s002">S1 Table</xref>.</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0150944.s003.xls">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0150944.s004">
+        <label>S3 Table</label>
+        <caption>
+          <title>Primer sequences.</title>
+          <p>Used for <italic>ARL3</italic> coding sequence resequencing</p>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0150944.s004.xlsx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0150944.ref001">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Haim</surname><given-names>M</given-names></name>. <article-title>Epidemiology of retinitis pigmentosa in Denmark</article-title>. <source>Acta ophthalmologica Scandinavica Supplement</source>. <year>2002</year>;(<issue>233</issue>):<fpage>1</fpage>&#x2013;<lpage>34</lpage>. .<pub-id pub-id-type="pmid">11921605</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref002">
+        <label>2</label>
+        <mixed-citation publication-type="book"><name><surname>Fahim</surname><given-names>AT</given-names></name>, <name><surname>Daiger</surname><given-names>SP</given-names></name>, <name><surname>Weleber</surname><given-names>RG</given-names></name>. <source>Retinitis Pigmentosa Overview</source>. In: <name><surname>Pagon</surname><given-names>RA</given-names></name>, <name><surname>Adam</surname><given-names>MP</given-names></name>, <name><surname>Bird</surname><given-names>TD</given-names></name>, <name><surname>Dolan</surname><given-names>CR</given-names></name>, <name><surname>Fong</surname><given-names>CT</given-names></name>, <name><surname>Smith</surname><given-names>RJH</given-names></name>, <etal>et al</etal>, editors. <publisher-name>GeneReviews</publisher-name>
+<publisher-loc>Seattle (WA)</publisher-loc><year>1993</year>.</mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref003">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Sohocki</surname><given-names>MM</given-names></name>, <name><surname>Daiger</surname><given-names>SP</given-names></name>, <name><surname>Bowne</surname><given-names>SJ</given-names></name>, <name><surname>Rodriquez</surname><given-names>JA</given-names></name>, <name><surname>Northrup</surname><given-names>H</given-names></name>, <name><surname>Heckenlively</surname><given-names>JR</given-names></name>, <etal>et al</etal>
+<article-title>Prevalence of mutations causing retinitis pigmentosa and other inherited retinopathies</article-title>. <source>Hum Mutat</source>. <year>2001</year>;<volume>17</volume>(<issue>1</issue>):<fpage>42</fpage>&#x2013;<lpage>51</lpage>. ; PubMed Central PMCID: PMCPMC2585107.<pub-id pub-id-type="pmid">11139241</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref004">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Kawamura</surname><given-names>T</given-names></name>, <name><surname>Ohtsubo</surname><given-names>M</given-names></name>, <name><surname>Mitsuyama</surname><given-names>S</given-names></name>, <name><surname>Ohno-Nakamura</surname><given-names>S</given-names></name>, <name><surname>Shimizu</surname><given-names>N</given-names></name>, <name><surname>Minoshima</surname><given-names>S</given-names></name>. <article-title>KMeyeDB: a graphical database of mutations in genes that cause eye diseases</article-title>. <source>Hum Mutat</source>. <year>2010</year>;<volume>31</volume>(<issue>6</issue>):<fpage>667</fpage>&#x2013;<lpage>74</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/humu.21240">10.1002/humu.21240</ext-link></comment> .<pub-id pub-id-type="pmid">20232414</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref005">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Audo</surname><given-names>I</given-names></name>, <name><surname>Bujakowska</surname><given-names>KM</given-names></name>, <name><surname>Leveillard</surname><given-names>T</given-names></name>, <name><surname>Mohand-Said</surname><given-names>S</given-names></name>, <name><surname>Lancelot</surname><given-names>ME</given-names></name>, <name><surname>Germain</surname><given-names>A</given-names></name>, <etal>et al</etal>
+<article-title>Development and application of a next-generation-sequencing (NGS) approach to detect known and novel gene defects underlying retinal diseases</article-title>. <source>Orphanet J Rare Dis</source>. <year>2012</year>;<volume>7</volume>(<issue>1</issue>):<fpage>8</fpage> .<pub-id pub-id-type="pmid">22277662</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref006">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Shanks</surname><given-names>ME</given-names></name>, <name><surname>Downes</surname><given-names>SM</given-names></name>, <name><surname>Copley</surname><given-names>RR</given-names></name>, <name><surname>Lise</surname><given-names>S</given-names></name>, <name><surname>Broxholme</surname><given-names>J</given-names></name>, <name><surname>Hudspith</surname><given-names>KA</given-names></name>, <etal>et al</etal>
+<article-title>Next-generation sequencing (NGS) as a diagnostic tool for retinal degeneration reveals a much higher detection rate in early-onset disease</article-title>. <source>Eur J Hum Genet</source>. <year>2012</year>;<volume>21</volume>(<issue>3</issue>):<fpage>274</fpage>&#x2013;<lpage>80</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/ejhg.2012.172">10.1038/ejhg.2012.172</ext-link></comment><pub-id pub-id-type="pmid">22968130</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref007">
+        <label>7</label>
+        <mixed-citation publication-type="other">Sullivan LS, Browne SJ, Daiger SP. Retinal Information Network: RETNET [cited 2012 December]. Available from: <ext-link ext-link-type="uri" xlink:href="https://sph.uth.edu/retnet/">https://sph.uth.edu/retnet/</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref008">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Daiger</surname><given-names>SP</given-names></name>, <name><surname>Sullivan</surname><given-names>LS</given-names></name>, <name><surname>Bowne</surname><given-names>SJ</given-names></name>. <article-title>Genes and mutations causing retinitis pigmentosa</article-title>. <source>Clin Genet</source>. <year>2013</year>;<volume>84</volume>(<issue>2</issue>):<fpage>132</fpage>&#x2013;<lpage>41</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/cge.12203">10.1111/cge.12203</ext-link></comment> ; PubMed Central PMCID: PMC3856531.<pub-id pub-id-type="pmid">23701314</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref009">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Keen</surname><given-names>TJ</given-names></name>, <name><surname>Inglehearn</surname><given-names>CF</given-names></name>. <article-title>Mutations and polymorphisms in the human peripherin-RDS gene and their involvement in inherited retinal degeneration</article-title>. <source>Hum Mutat</source>. <year>1996</year>;<volume>8</volume>(<issue>4</issue>):<fpage>297</fpage>&#x2013;<lpage>303</lpage>. .<pub-id pub-id-type="pmid">8956033</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref010">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Davidson</surname><given-names>AE</given-names></name>, <name><surname>Sergouniotis</surname><given-names>PI</given-names></name>, <name><surname>Mackay</surname><given-names>DS</given-names></name>, <name><surname>Wright</surname><given-names>GA</given-names></name>, <name><surname>Waseem</surname><given-names>NH</given-names></name>, <name><surname>Michaelides</surname><given-names>M</given-names></name>, <etal>et al</etal>
+<article-title>RP1L1 Variants are Associated with a Spectrum of Inherited Retinal Diseases Including Retinitis Pigmentosa and Occult Macular Dystrophy</article-title>. <source>Hum Mutat</source>. <year>2013</year>;<volume>34</volume>(<issue>3</issue>):<fpage>506</fpage>&#x2013;<lpage>14</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/humu.22264">10.1002/humu.22264</ext-link></comment> .<pub-id pub-id-type="pmid">23281133</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref011">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Kajiwara</surname><given-names>K</given-names></name>, <name><surname>Berson</surname><given-names>EL</given-names></name>, <name><surname>Dryja</surname><given-names>TP</given-names></name>. <article-title>Digenic retinitis pigmentosa due to mutations at the unlinked peripherin/RDS and ROM1 loci</article-title>. <source>Science</source>. <year>1994</year>;<volume>264</volume>(<issue>5165</issue>):<fpage>1604</fpage>&#x2013;<lpage>8</lpage>. .<pub-id pub-id-type="pmid">8202715</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref012">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Strom</surname><given-names>SP</given-names></name>, <name><surname>Gao</surname><given-names>YQ</given-names></name>, <name><surname>Martinez</surname><given-names>A</given-names></name>, <name><surname>Ortube</surname><given-names>C</given-names></name>, <name><surname>Chen</surname><given-names>Z</given-names></name>, <name><surname>Nelson</surname><given-names>SF</given-names></name>, <etal>et al</etal>
+<article-title>Molecular diagnosis of putative stargardt disease probands by exome sequencing</article-title>. <source>BMC Med Genet</source>. <year>2012</year>;<volume>13</volume>(<issue>1</issue>):<fpage>67</fpage>&#x2013;<lpage>76</lpage>. .<pub-id pub-id-type="pmid">22863181</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref013">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Sikkema-Raddatz</surname><given-names>B</given-names></name>, <name><surname>Johansson</surname><given-names>LF</given-names></name>, <name><surname>de Boer</surname><given-names>EN</given-names></name>, <name><surname>Almomani</surname><given-names>R</given-names></name>, <name><surname>Boven</surname><given-names>LG</given-names></name>, <name><surname>van den Berg</surname><given-names>MP</given-names></name>, <etal>et al</etal>
+<article-title>Targeted next-generation sequencing can replace Sanger sequencing in clinical diagnostics</article-title>. <source>Hum Mutat</source>. <year>2013</year>;<volume>34</volume>(<issue>7</issue>):<fpage>1035</fpage>&#x2013;<lpage>42</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/humu.22332">10.1002/humu.22332</ext-link></comment> .<pub-id pub-id-type="pmid">23568810</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref014">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Ortube</surname><given-names>MC</given-names></name>, <name><surname>Strom</surname><given-names>SP</given-names></name>, <name><surname>Nelson</surname><given-names>SF</given-names></name>, <name><surname>Nusinowitz</surname><given-names>S</given-names></name>, <name><surname>Martinez</surname><given-names>A</given-names></name>, <name><surname>Gorin</surname><given-names>MB</given-names></name>. <article-title>Whole exome sequencing detects homozygosity for ABCA4 p.Arg602Trp missense mutation in a pediatric patient with rapidly progressive retinal dystrophy</article-title>. <source>BMC Med Genet</source>. <year>2014</year>;<volume>15</volume>(<issue>1</issue>):<fpage>11</fpage>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1471-2350-15-11">10.1186/1471-2350-15-11</ext-link></comment> ; PubMed Central PMCID: PMC3905103.<pub-id pub-id-type="pmid">24444108</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref015">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Eisenberger</surname><given-names>T</given-names></name>, <name><surname>Neuhaus</surname><given-names>C</given-names></name>, <name><surname>Khan</surname><given-names>AO</given-names></name>, <name><surname>Decker</surname><given-names>C</given-names></name>, <name><surname>Preising</surname><given-names>MN</given-names></name>, <name><surname>Friedburg</surname><given-names>C</given-names></name>, <etal>et al</etal>
+<article-title>Increasing the yield in targeted next-generation sequencing by implicating CNV analysis, non-coding exons and the overall variant load: the example of retinal dystrophies</article-title>. <source>PLoS One</source>. <year>2013</year>;<volume>8</volume>(<issue>11</issue>):<fpage>e78496</fpage>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0078496">10.1371/journal.pone.0078496</ext-link></comment> ; PubMed Central PMCID: PMC3827063.<pub-id pub-id-type="pmid">24265693</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref016">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Neveling</surname><given-names>K</given-names></name>, <name><surname>Collin</surname><given-names>RW</given-names></name>, <name><surname>Gilissen</surname><given-names>C</given-names></name>, <name><surname>van Huet</surname><given-names>RA</given-names></name>, <name><surname>Visser</surname><given-names>L</given-names></name>, <name><surname>Kwint</surname><given-names>MP</given-names></name>, <etal>et al</etal>
+<article-title>Next-generation genetic testing for retinitis pigmentosa</article-title>. <source>Hum Mutat</source>. <year>2012</year>;<volume>33</volume>(<issue>6</issue>):<fpage>963</fpage>&#x2013;<lpage>72</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/humu.22045">10.1002/humu.22045</ext-link></comment> ; PubMed Central PMCID: PMC3490376.<pub-id pub-id-type="pmid">22334370</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref017">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>Corton</surname><given-names>M</given-names></name>, <name><surname>Nishiguchi</surname><given-names>KM</given-names></name>, <name><surname>Avila-Fernandez</surname><given-names>A</given-names></name>, <name><surname>Nikopoulos</surname><given-names>K</given-names></name>, <name><surname>Riveiro-Alvarez</surname><given-names>R</given-names></name>, <name><surname>Tatu</surname><given-names>SD</given-names></name>, <etal>et al</etal>
+<article-title>Exome sequencing of index patients with retinal dystrophies as a tool for molecular diagnosis</article-title>. <source>PLoS One</source>. <year>2013</year>;<volume>8</volume>(<issue>6</issue>):<fpage>e65574</fpage>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0065574">10.1371/journal.pone.0065574</ext-link></comment> ; PubMed Central PMCID: PMC3683009.<pub-id pub-id-type="pmid">23940504</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref018">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>van Zelst-Stams</surname><given-names>WA</given-names></name>, <name><surname>Scheffer</surname><given-names>H</given-names></name>, <name><surname>Veltman</surname><given-names>JA</given-names></name>. <article-title>Clinical exome sequencing in daily practice: 1,000 patients and beyond</article-title>. <source>Genome Med</source>. <year>2014</year>;<volume>6</volume>(<issue>1</issue>):<fpage>2</fpage>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/gm521">10.1186/gm521</ext-link></comment> .<pub-id pub-id-type="pmid">24456652</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref019">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Levenson</surname><given-names>D</given-names></name>. <article-title>Whole-exome sequencing emerges as clinical diagnostic tool: testing method proves useful for diagnosing wide range of genetic disorders</article-title>. <source>Am J Med Genet A</source>. <year>2014</year>;<volume>164A</volume>(<issue>1</issue>):<fpage>ix</fpage>&#x2013;<lpage>x</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/ajmg.a.36385">10.1002/ajmg.a.36385</ext-link></comment> .<pub-id pub-id-type="pmid">24352919</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref020">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Yang</surname><given-names>Y</given-names></name>, <name><surname>Muzny</surname><given-names>DM</given-names></name>, <name><surname>Reid</surname><given-names>JG</given-names></name>, <name><surname>Bainbridge</surname><given-names>MN</given-names></name>, <name><surname>Willis</surname><given-names>A</given-names></name>, <name><surname>Ward</surname><given-names>PA</given-names></name>, <etal>et al</etal>
+<article-title>Clinical whole-exome sequencing for the diagnosis of mendelian disorders</article-title>. <source>N Engl J Med</source>. <year>2013</year>;<volume>369</volume>(<issue>16</issue>):<fpage>1502</fpage>&#x2013;<lpage>11</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1056/NEJMoa1306555">10.1056/NEJMoa1306555</ext-link></comment> .<pub-id pub-id-type="pmid">24088041</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref021">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Need</surname><given-names>AC</given-names></name>, <name><surname>Shashi</surname><given-names>V</given-names></name>, <name><surname>Hitomi</surname><given-names>Y</given-names></name>, <name><surname>Schoch</surname><given-names>K</given-names></name>, <name><surname>Shianna</surname><given-names>KV</given-names></name>, <name><surname>McDonald</surname><given-names>MT</given-names></name>, <etal>et al</etal>
+<article-title>Clinical application of exome sequencing in undiagnosed genetic conditions</article-title>. <source>J Med Genet</source>. <year>2012</year>;<volume>49</volume>(<issue>6</issue>):<fpage>353</fpage>&#x2013;<lpage>61</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/jmedgenet-2012-100819">10.1136/jmedgenet-2012-100819</ext-link></comment> ; PubMed Central PMCID: PMC3375064.<pub-id pub-id-type="pmid">22581936</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref022">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Strom</surname><given-names>SP</given-names></name>, <name><surname>Gorin</surname><given-names>MB</given-names></name>. <article-title>Evaluation of autosomal dominant retinal dystrophy genes in an unaffected cohort suggests rare or private missense variants may often be benign</article-title>. <source>Molecular vision</source>. <year>2013</year>;<volume>19</volume>:<fpage>980</fpage>&#x2013;<lpage>5</lpage>. ; PubMed Central PMCID: PMC3654847.<pub-id pub-id-type="pmid">23687434</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref023">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Patwardhan</surname><given-names>A</given-names></name>, <name><surname>Harris</surname><given-names>J</given-names></name>, <name><surname>Leng</surname><given-names>N</given-names></name>, <name><surname>Bartha</surname><given-names>G</given-names></name>, <name><surname>Church</surname><given-names>DM</given-names></name>, <name><surname>Luo</surname><given-names>S</given-names></name>, <etal>et al</etal>
+<article-title>Achieving high-sensitivity for clinical applications using augmented exome sequencing</article-title>. <source>Genome Med</source>. <year>2015</year>;<volume>7</volume>(<issue>1</issue>):<fpage>71</fpage>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/s13073-015-0197-4">10.1186/s13073-015-0197-4</ext-link></comment> ; PubMed Central PMCID: PMC4534066.<pub-id pub-id-type="pmid">26269718</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref024">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Andreasen</surname><given-names>C</given-names></name>, <name><surname>Nielsen</surname><given-names>JB</given-names></name>, <name><surname>Refsgaard</surname><given-names>L</given-names></name>, <name><surname>Holst</surname><given-names>AG</given-names></name>, <name><surname>Christensen</surname><given-names>AH</given-names></name>, <name><surname>Andreasen</surname><given-names>L</given-names></name>, <etal>et al</etal>
+<article-title>New population-based exome data are questioning the pathogenicity of previously cardiomyopathy-associated genetic variants</article-title>. <source>Eur J Hum Genet</source>. <year>2013</year> Epub January 9 2013. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/ejhg.2012.283">10.1038/ejhg.2012.283</ext-link></comment> .<pub-id pub-id-type="pmid">23299917</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref025">
+        <label>25</label>
+        <mixed-citation publication-type="journal"><name><surname>Ng</surname><given-names>PC</given-names></name>, <name><surname>Henikoff</surname><given-names>S</given-names></name>. <article-title>SIFT: Predicting amino acid changes that affect protein function</article-title>. <source>Nucleic Acids Res</source>. <year>2003</year>;<volume>31</volume>(<issue>13</issue>):<fpage>3812</fpage>&#x2013;<lpage>4</lpage>. ; PubMed Central PMCID: PMCPMC168916.<pub-id pub-id-type="pmid">12824425</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref026">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Schwarz</surname><given-names>JM</given-names></name>, <name><surname>Rodelsperger</surname><given-names>C</given-names></name>, <name><surname>Schuelke</surname><given-names>M</given-names></name>, <name><surname>Seelow</surname><given-names>D</given-names></name>. <article-title>MutationTaster evaluates disease-causing potential of sequence alterations</article-title>. <source>Nat Methods</source>. <year>2010</year>;<volume>7</volume>(<issue>8</issue>):<fpage>575</fpage>&#x2013;<lpage>6</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nmeth0810-575">10.1038/nmeth0810-575</ext-link></comment> .<pub-id pub-id-type="pmid">20676075</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref027">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Pires</surname><given-names>DE</given-names></name>, <name><surname>Ascher</surname><given-names>DB</given-names></name>, <name><surname>Blundell</surname><given-names>TL</given-names></name>. <article-title>mCSM: predicting the effects of mutations in proteins using graph-based signatures</article-title>. <source>Bioinformatics</source>. <year>2014</year>;<volume>30</volume>(<issue>3</issue>):<fpage>335</fpage>&#x2013;<lpage>42</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bioinformatics/btt691">10.1093/bioinformatics/btt691</ext-link></comment> ; PubMed Central PMCID: PMC3904523.<pub-id pub-id-type="pmid">24281696</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref028">
+        <label>28</label>
+        <mixed-citation publication-type="journal"><name><surname>Bowne</surname><given-names>SJ</given-names></name>, <name><surname>Sullivan</surname><given-names>LS</given-names></name>, <name><surname>Avery</surname><given-names>CE</given-names></name>, <name><surname>Sasser</surname><given-names>EM</given-names></name>, <name><surname>Roorda</surname><given-names>A</given-names></name>, <name><surname>Duncan</surname><given-names>JL</given-names></name>, <etal>et al</etal>
+<article-title>Mutations in the small nuclear riboprotein 200 kDa gene (SNRNP200) cause 1.6% of autosomal dominant retinitis pigmentosa</article-title>. <source>Molecular vision</source>. <year>2013</year>;<volume>19</volume>:<fpage>2407</fpage>&#x2013;<lpage>17</lpage>. ; PubMed Central PMCID: PMC3850977.<pub-id pub-id-type="pmid">24319334</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref029">
+        <label>29</label>
+        <mixed-citation publication-type="journal"><name><surname>Sullivan</surname><given-names>LS</given-names></name>, <name><surname>Koboldt</surname><given-names>DC</given-names></name>, <name><surname>Bowne</surname><given-names>SJ</given-names></name>, <name><surname>Lang</surname><given-names>S</given-names></name>, <name><surname>Blanton</surname><given-names>SH</given-names></name>, <name><surname>Cadena</surname><given-names>E</given-names></name>, <etal>et al</etal>
+<article-title>A dominant mutation in hexokinase 1 (HK1) causes retinitis pigmentosa</article-title>. <source>Invest Ophthalmol Vis Sci</source>. <year>2014</year>;<volume>55</volume>(<issue>11</issue>):<fpage>7147</fpage>&#x2013;<lpage>58</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.14-15419">10.1167/iovs.14-15419</ext-link></comment> ; PubMed Central PMCID: PMC4224580.<pub-id pub-id-type="pmid">25190649</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref030">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>Sullivan</surname><given-names>LS</given-names></name>, <name><surname>Bowne</surname><given-names>SJ</given-names></name>, <name><surname>Birch</surname><given-names>DG</given-names></name>, <name><surname>Hughbanks-Wheaton</surname><given-names>D</given-names></name>, <name><surname>Heckenlively</surname><given-names>JR</given-names></name>, <name><surname>Lewis</surname><given-names>RA</given-names></name>, <etal>et al</etal>
+<article-title>Prevalence of disease-causing mutations in families with autosomal dominant retinitis pigmentosa: a screen of known genes in 200 families</article-title>. <source>Invest Ophthalmol Vis Sci</source>. <year>2006</year>;<volume>47</volume>(<issue>7</issue>):<fpage>3052</fpage>&#x2013;<lpage>64</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.05-1443">10.1167/iovs.05-1443</ext-link></comment> ; PubMed Central PMCID: PMC2585061.<pub-id pub-id-type="pmid">16799052</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref031">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>Sullivan</surname><given-names>LS</given-names></name>, <name><surname>Bowne</surname><given-names>SJ</given-names></name>, <name><surname>Reeves</surname><given-names>MJ</given-names></name>, <name><surname>Blain</surname><given-names>D</given-names></name>, <name><surname>Goetz</surname><given-names>K</given-names></name>, <name><surname>Ndifor</surname><given-names>V</given-names></name>, <etal>et al</etal>
+<article-title>Prevalence of mutations in eyeGENE probands with a diagnosis of autosomal dominant retinitis pigmentosa</article-title>. <source>Invest Ophthalmol Vis Sci</source>. <year>2013</year>;<volume>54</volume>(<issue>9</issue>):<fpage>6255</fpage>&#x2013;<lpage>61</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.13-12605">10.1167/iovs.13-12605</ext-link></comment> ; PubMed Central PMCID: PMC3778873.<pub-id pub-id-type="pmid">23950152</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref032">
+        <label>32</label>
+        <mixed-citation publication-type="journal"><name><surname>Bowne</surname><given-names>SJ</given-names></name>, <name><surname>Sullivan</surname><given-names>LS</given-names></name>, <name><surname>Mortimer</surname><given-names>SE</given-names></name>, <name><surname>Hedstrom</surname><given-names>L</given-names></name>, <name><surname>Zhu</surname><given-names>J</given-names></name>, <name><surname>Spellicy</surname><given-names>CJ</given-names></name>, <etal>et al</etal>
+<article-title>Spectrum and frequency of mutations in IMPDH1 associated with autosomal dominant retinitis pigmentosa and leber congenital amaurosis</article-title>. <source>Invest Ophthalmol Vis Sci</source>. <year>2006</year>;<volume>47</volume>(<issue>1</issue>):<fpage>34</fpage>&#x2013;<lpage>42</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.05-0868">10.1167/iovs.05-0868</ext-link></comment> ; PubMed Central PMCID: PMC2581444.<pub-id pub-id-type="pmid">16384941</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref033">
+        <label>33</label>
+        <mixed-citation publication-type="other">NHLBI Exome Sequencing Project (ESP). Exome Variant Server [cited 2012 December]. Available: <ext-link ext-link-type="uri" xlink:href="http://http://evs.gs.washington.edu/EVS/">http://http://evs.gs.washington.edu/EVS/</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref034">
+        <label>34</label>
+        <mixed-citation publication-type="journal"><name><surname>Schwarz</surname><given-names>N</given-names></name>, <name><surname>Hardcastle</surname><given-names>AJ</given-names></name>, <name><surname>Cheetham</surname><given-names>ME</given-names></name>. <article-title>Arl3 and RP2 mediated assembly and traffic of membrane associated cilia proteins</article-title>. <source>Vision research</source>. <year>2012</year>;<volume>75</volume>:<fpage>2</fpage>&#x2013;<lpage>4</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.visres.2012.07.016">10.1016/j.visres.2012.07.016</ext-link></comment> .<pub-id pub-id-type="pmid">22884633</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref035">
+        <label>35</label>
+        <mixed-citation publication-type="journal"><name><surname>Kuhnel</surname><given-names>K</given-names></name>, <name><surname>Veltel</surname><given-names>S</given-names></name>, <name><surname>Schlichting</surname><given-names>I</given-names></name>, <name><surname>Wittinghofer</surname><given-names>A</given-names></name>. <article-title>Crystal structure of the human retinitis pigmentosa 2 protein and its interaction with Arl3</article-title>. <source>Structure</source>. <year>2006</year>;<volume>14</volume>(<issue>2</issue>):<fpage>367</fpage>&#x2013;<lpage>78</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.str.2005.11.008">10.1016/j.str.2005.11.008</ext-link></comment> .<pub-id pub-id-type="pmid">16472755</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref036">
+        <label>36</label>
+        <mixed-citation publication-type="journal"><name><surname>Hillig</surname><given-names>RC</given-names></name>, <name><surname>Hanzal-Bayer</surname><given-names>M</given-names></name>, <name><surname>Linari</surname><given-names>M</given-names></name>, <name><surname>Becker</surname><given-names>J</given-names></name>, <name><surname>Wittinghofer</surname><given-names>A</given-names></name>, <name><surname>Renault</surname><given-names>L</given-names></name>. <article-title>Structural and biochemical properties show ARL3-GDP as a distinct GTP binding protein</article-title>. <source>Structure</source>. <year>2000</year>;<volume>8</volume>(<issue>12</issue>):<fpage>1239</fpage>&#x2013;<lpage>45</lpage>. .<pub-id pub-id-type="pmid">11188688</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref037">
+        <label>37</label>
+        <mixed-citation publication-type="journal"><name><surname>Wright</surname><given-names>KJ</given-names></name>, <name><surname>Baye</surname><given-names>LM</given-names></name>, <name><surname>Olivier-Mason</surname><given-names>A</given-names></name>, <name><surname>Mukhopadhyay</surname><given-names>S</given-names></name>, <name><surname>Sang</surname><given-names>L</given-names></name>, <name><surname>Kwong</surname><given-names>M</given-names></name>, <etal>et al</etal>
+<article-title>An ARL3-UNC119-RP2 GTPase cycle targets myristoylated NPHP3 to the primary cilium</article-title>. <source>Genes Dev</source>. <year>2011</year>;<volume>25</volume>(<issue>22</issue>):<fpage>2347</fpage>&#x2013;<lpage>60</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1101/gad.173443.111">10.1101/gad.173443.111</ext-link></comment> ; PubMed Central PMCID: PMC3222901.<pub-id pub-id-type="pmid">22085962</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref038">
+        <label>38</label>
+        <mixed-citation publication-type="journal"><name><surname>Schwahn</surname><given-names>U</given-names></name>, <name><surname>Lenzner</surname><given-names>S</given-names></name>, <name><surname>Dong</surname><given-names>J</given-names></name>, <name><surname>Feil</surname><given-names>S</given-names></name>, <name><surname>Hinzmann</surname><given-names>B</given-names></name>, <name><surname>van Duijnhoven</surname><given-names>G</given-names></name>, <etal>et al</etal>
+<article-title>Positional cloning of the gene for X-linked retinitis pigmentosa 2</article-title>. <source>Nat Genet</source>. <year>1998</year>;<volume>19</volume>(<issue>4</issue>):<fpage>327</fpage>&#x2013;<lpage>32</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/1214">10.1038/1214</ext-link></comment> .<pub-id pub-id-type="pmid">9697692</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref039">
+        <label>39</label>
+        <mixed-citation publication-type="journal"><name><surname>Mears</surname><given-names>AJ</given-names></name>, <name><surname>Gieser</surname><given-names>L</given-names></name>, <name><surname>Yan</surname><given-names>D</given-names></name>, <name><surname>Chen</surname><given-names>C</given-names></name>, <name><surname>Fahrner</surname><given-names>S</given-names></name>, <name><surname>Hiriyanna</surname><given-names>S</given-names></name>, <etal>et al</etal>
+<article-title>Protein-truncation mutations in the RP2 gene in a North American cohort of families with X-linked retinitis pigmentosa</article-title>. <source>Am J Hum Genet</source>. <year>1999</year>;<volume>64</volume>(<issue>3</issue>):<fpage>897</fpage>&#x2013;<lpage>900</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1086/302298">10.1086/302298</ext-link></comment> ; PubMed Central PMCID: PMC1377809.<pub-id pub-id-type="pmid">10053026</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref040">
+        <label>40</label>
+        <mixed-citation publication-type="journal"><name><surname>Kobayashi</surname><given-names>A</given-names></name>, <name><surname>Higashide</surname><given-names>T</given-names></name>, <name><surname>Hamasaki</surname><given-names>D</given-names></name>, <name><surname>Kubota</surname><given-names>S</given-names></name>, <name><surname>Sakuma</surname><given-names>H</given-names></name>, <name><surname>An</surname><given-names>W</given-names></name>, <etal>et al</etal>
+<article-title>HRG4 (UNC119) mutation found in cone-rod dystrophy causes retinal degeneration in a transgenic model</article-title>. <source>Invest Ophthalmol Vis Sci</source>. <year>2000</year>;<volume>41</volume>(<issue>11</issue>):<fpage>3268</fpage>&#x2013;<lpage>77</lpage>. .<pub-id pub-id-type="pmid">11006213</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref041">
+        <label>41</label>
+        <mixed-citation publication-type="journal"><name><surname>Thomas</surname><given-names>S</given-names></name>, <name><surname>Wright</surname><given-names>KJ</given-names></name>, <name><surname>Le Corre</surname><given-names>S</given-names></name>, <name><surname>Micalizzi</surname><given-names>A</given-names></name>, <name><surname>Romani</surname><given-names>M</given-names></name>, <name><surname>Abhyankar</surname><given-names>A</given-names></name>, <etal>et al</etal>
+<article-title>A homozygous PDE6D mutation in Joubert syndrome impairs targeting of farnesylated INPP5E protein to the primary cilium</article-title>. <source>Hum Mutat</source>. <year>2014</year>;<volume>35</volume>(<issue>1</issue>):<fpage>137</fpage>&#x2013;<lpage>46</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/humu.22470">10.1002/humu.22470</ext-link></comment> ; PubMed Central PMCID: PMC3946372.<pub-id pub-id-type="pmid">24166846</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref042">
+        <label>42</label>
+        <mixed-citation publication-type="journal"><name><surname>Wu</surname><given-names>C</given-names></name>, <name><surname>Orozco</surname><given-names>C</given-names></name>, <name><surname>Boyer</surname><given-names>J</given-names></name>, <name><surname>Leglise</surname><given-names>M</given-names></name>, <name><surname>Goodale</surname><given-names>J</given-names></name>, <name><surname>Batalov</surname><given-names>S</given-names></name>, <etal>et al</etal>
+<article-title>BioGPS: an extensible and customizable portal for querying and organizing gene annotation resources</article-title>. <source>Genome Biol</source>. <year>2009</year>;<volume>10</volume>(<issue>11</issue>):<fpage>R130</fpage>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/gb-2009-10-11-r130">10.1186/gb-2009-10-11-r130</ext-link></comment> ; PubMed Central PMCID: PMC3091323.<pub-id pub-id-type="pmid">19919682</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref043">
+        <label>43</label>
+        <mixed-citation publication-type="journal"><name><surname>Veltel</surname><given-names>S</given-names></name>, <name><surname>Gasper</surname><given-names>R</given-names></name>, <name><surname>Eisenacher</surname><given-names>E</given-names></name>, <name><surname>Wittinghofer</surname><given-names>A</given-names></name>. <article-title>The retinitis pigmentosa 2 gene product is a GTPase-activating protein for Arf-like 3</article-title>. <source>Nature structural &amp; molecular biology</source>. <year>2008</year>;<volume>15</volume>(<issue>4</issue>):<fpage>373</fpage>&#x2013;<lpage>80</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nsmb.1396">10.1038/nsmb.1396</ext-link></comment> .<pub-id pub-id-type="pmid">18376416</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref044">
+        <label>44</label>
+        <mixed-citation publication-type="journal"><name><surname>Watzlich</surname><given-names>D</given-names></name>, <name><surname>Vetter</surname><given-names>I</given-names></name>, <name><surname>Gotthardt</surname><given-names>K</given-names></name>, <name><surname>Miertzschke</surname><given-names>M</given-names></name>, <name><surname>Chen</surname><given-names>YX</given-names></name>, <name><surname>Wittinghofer</surname><given-names>A</given-names></name>, <etal>et al</etal>
+<article-title>The interplay between RPGR, PDEdelta and Arl2/3 regulate the ciliary targeting of farnesylated cargo</article-title>. <source>EMBO reports</source>. <year>2013</year>;<volume>14</volume>(<issue>5</issue>):<fpage>465</fpage>&#x2013;<lpage>72</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/embor.2013.37">10.1038/embor.2013.37</ext-link></comment> ; PubMed Central PMCID: PMC3642377.<pub-id pub-id-type="pmid">23559067</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0150944.ref045">
+        <label>45</label>
+        <mixed-citation publication-type="journal"><name><surname>Zhang</surname><given-names>H</given-names></name>, <name><surname>Hanke-Gogokhia</surname><given-names>C</given-names></name>, <name><surname>Jiang</surname><given-names>L</given-names></name>, <name><surname>Li</surname><given-names>X</given-names></name>, <name><surname>Wang</surname><given-names>P</given-names></name>, <name><surname>Gerstner</surname><given-names>CD</given-names></name>, <etal>et al</etal>
+<article-title>Mistrafficking of prenylated proteins causes retinitis pigmentosa 2</article-title>. <source>FASEB J</source>. <year>2014</year>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1096/fj.14-257915">10.1096/fj.14-257915</ext-link></comment> .<pub-id pub-id-type="pmid">25422369</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

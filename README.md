@@ -144,6 +144,7 @@ A medical language processing system that parses through full texts of case repo
 
 Running this file extracts the lab values of the passed in XML files of case reports and stores the results in `Lab Values.txt`.
 
+
 #### Usage
 ##### IMPORTANT!!! First UNZIP the files in the `word_embedding.syn1neg.zip` and `word_embedding.wv.syn0.zip` from the folder `files_to_be_loaded` and store them in the folder `files_to_be_loaded` as their own indepedent .npy files.
 
@@ -166,3 +167,35 @@ measured:	ENTITY
 lab value:	LAB VALUE  
 measured:	ENTITY  
 ...
+
+## annotate.py
+
+Running this file will create ANN formatted files with labeled lab items in case reports from .txt files.  This is used to produce annotations for the cardiacbd2k.com interface.
+
+### Usage
+
+Run as:
+`python extractLabValue.py --bart FOLDERNAME`
+
+#### Input
+- You will need a folder containing txt files of case reports
+
+#### Output
+The ANN results will be stored in the same folder as the case reports in txt files.
+
+# outcomes
+
+(In Progress) This program uses machine learning and NLP to determine if the patient(s) in the case report survived, died, or unspecified
+
+## dead_vs_alive.py
+
+This is the main file that contains the classifier and helper functions.
+
+## labeled_data.py
+
+This file is used to manually label the case report outcomes
+
+
+
+# apriori
+This is a pattern mining analysis of MESH terms in 3000 ACCR case reports.  The Apriori algorithm to find frequent occurring sets in case reports and visualizations were made based on the patterns.

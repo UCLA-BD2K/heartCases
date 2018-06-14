@@ -1,0 +1,2260 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Med Inform Decis Mak</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Med Inform Decis Mak</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Medical Informatics and Decision Making</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1472-6947</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24229343</article-id>
+      <article-id pub-id-type="pmc">3833973</article-id>
+      <article-id pub-id-type="publisher-id">1472-6947-13-125</article-id>
+      <article-id pub-id-type="doi">10.1186/1472-6947-13-125</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>The challenges of implementing a telestroke network: a systematic review and case study</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" equal-contrib="yes" id="A1">
+          <name>
+            <surname>French</surname>
+            <given-names>Beverley</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>bfrench1@uclan.ac.uk</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A2">
+          <name>
+            <surname>Day</surname>
+            <given-names>Elaine</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>Elaine.day@csnlc.nhs.uk</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A3">
+          <name>
+            <surname>Watkins</surname>
+            <given-names>Caroline</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>clwatkins@uclan.ac.uk</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A4">
+          <name>
+            <surname>McLoughlin</surname>
+            <given-names>Alison</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>asrmcloughlin1@uclan.ac.uk</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A5">
+          <name>
+            <surname>Fitzgerald</surname>
+            <given-names>Jane</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>jfitzgerald@uclan.ac.uk</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A6">
+          <name>
+            <surname>Leathley</surname>
+            <given-names>Michael</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>mjleathley@uclan.ac.uk</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A7">
+          <name>
+            <surname>Davies</surname>
+            <given-names>Paul</given-names>
+          </name>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>dpaul.davies@ncuh.nhs.uk</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A8">
+          <name>
+            <surname>Emsley</surname>
+            <given-names>Hedley</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>hedley.emsley@lthtr.nhs.uk</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A9">
+          <name>
+            <surname>Ford</surname>
+            <given-names>Gary</given-names>
+          </name>
+          <xref ref-type="aff" rid="I5">5</xref>
+          <email>gary.ford@ncl.ac.uk</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A10">
+          <name>
+            <surname>Jenkinson</surname>
+            <given-names>Damian</given-names>
+          </name>
+          <xref ref-type="aff" rid="I6">6</xref>
+          <email>damian.jenkinson@improvement.nhs.uk</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A11">
+          <name>
+            <surname>May</surname>
+            <given-names>Carl</given-names>
+          </name>
+          <xref ref-type="aff" rid="I7">7</xref>
+          <email>c.r.may@soton.ac.uk</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A12">
+          <name>
+            <surname>O&#x2019;Donnell</surname>
+            <given-names>Mark</given-names>
+          </name>
+          <xref ref-type="aff" rid="I8">8</xref>
+          <email>dr.odonnell@bfwhospitals.nhs.uk</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A13">
+          <name>
+            <surname>Price</surname>
+            <given-names>Christopher</given-names>
+          </name>
+          <xref ref-type="aff" rid="I9">9</xref>
+          <email>c.i.m.price@northumbria-healthcare.nhs.uk</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A14">
+          <name>
+            <surname>Sutton</surname>
+            <given-names>Christopher</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>cjsutton@uclan.ac.uk</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A15">
+          <name>
+            <surname>Lightbody</surname>
+            <given-names>Catherine</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>celightbody@uclan.ac.uk</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>University of Central Lancashire, Preston, UK</aff>
+      <aff id="I2"><label>2</label>Cardiac and Stroke Networks Lancashire and Cumbria, Preston, UK</aff>
+      <aff id="I3"><label>3</label>Lancashire Teaching Hospitals NHS Foundation Trust, Royal Preston Hospital, Preston, UK</aff>
+      <aff id="I4"><label>4</label>North Cumbria University Hospitals NHS Trust, The Cumberland Royal Infirmary, Carlisle, UK</aff>
+      <aff id="I5"><label>5</label>Institute for Ageing and Health, Newcastle University, Royal Victoria Infirmary, Newcastle, UK</aff>
+      <aff id="I6"><label>6</label>NHS Improvement &#x2013; Stroke, St John&#x2019;s House, East Street, Leicester, UK</aff>
+      <aff id="I7"><label>7</label>University of Southampton, Faculty of Health Sciences, Southampton, UK</aff>
+      <aff id="I8"><label>8</label>Blackpool Teaching Hospitals NHS Foundation Trust, Blackpool Victoria Hospital, Blackpool, UK</aff>
+      <aff id="I9"><label>9</label>Wansbeck General Hospital, Ashington, Northumberland, UK</aff>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>14</day>
+        <month>11</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>13</volume>
+      <fpage>125</fpage>
+      <lpage>125</lpage>
+      <history>
+        <date date-type="received">
+          <day>19</day>
+          <month>7</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>13</day>
+          <month>11</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2013 French et al.; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>French et al.; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1472-6947/13/125"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>The use of telemedicine in acute stroke care can facilitate rapid access to treatment, but the work required to embed any new technology into routine practice is often hidden, and can be challenging. We aimed to collate recommendations and resources to support telestroke implementation.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>Systematic search of healthcare databases and the Internet to identify descriptions of the implementation of telestroke projects; interviews with key stakeholders during the development of one UK telestroke network. Supporting documentation from existing projects was analysed to construct a framework of implementation stages and tasks, and a toolkit of documents. Interviews and literature were analysed with other data sources using Normalisation Process Theory as described in the e-Health Implementation Toolkit.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>61 telestroke projects were identified and contacted. Twenty projects provided documents, 13 with published research detailing four stages of telestroke system development, implementation, use, and evaluation. Interviewees identified four main challenges: engaging and maintaining the commitment of a wide range of stakeholders across multiple organisations; addressing clinicians perceptions of evidence, workload, and payback; managing clinical and technical workability across diverse settings; and monitoring how the system is used and reconfigured by users.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>Information to guide telestroke implementation is sparse, but available. By using multiple sources of data, sufficient information was collated to construct a web-based toolkit detailing implementation tasks, resources and challenges in the development of a telestroke system for assessment and thrombolysis delivery in acute care. The toolkit is freely available online.</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>The thrombolytic drug alteplase is the only widely accepted medical treatment for acute ischaemic stroke. It has been licensed for several years in North America and most European countries, for intravenous use within three hours of stroke, but this restriction, and the need for immediate brain scanning, mean that only a small minority of patients receive the treatment. Although this proportion is increasing, recent estimates range from only 1.4% in UK [<xref ref-type="bibr" rid="B1">1</xref>], to 3.7% in USA [<xref ref-type="bibr" rid="B2">2</xref>], and 6.6% in Sweden [<xref ref-type="bibr" rid="B3">3</xref>].</p>
+      <p>As well as urgent neuro-imaging, potential candidates for stroke thrombolysis need rapid specialist assessment, which may be required at any time of the day or night. Telemedicine (&#x201C;telestroke&#x201D;) has been proposed as a means of providing access to such assessment in hospitals where stroke physicians or neurologists are not always available out of hours [<xref ref-type="bibr" rid="B4">4</xref>]. The most common telestroke configuration is a &#x201C;hub-and-spoke&#x201D; model, whereby a central &#x201C;hub&#x201D; organisation provides remote audio-visual access to a stroke specialist for decision support in a number of peripheral hospitals.</p>
+      <p>The use of telestroke systems is increasing. An American Heart Association (AHA) survey in 2009 [<xref ref-type="bibr" rid="B5">5</xref>] identified a total of 33 organisations providing acute telestroke services (USA 22, Canada 3, Europe &amp; UK 7, Asia 1), compared with 12 identified by a Canadian survey in 2006 [<xref ref-type="bibr" rid="B6">6</xref>]. An AHA update in 2012 identified 97 potential telestroke programmes in the USA alone [<xref ref-type="bibr" rid="B7">7</xref>]. Systematic reviews of telestroke systems suggest they can improve time to treatment [<xref ref-type="bibr" rid="B5">5</xref>,<xref ref-type="bibr" rid="B6">6</xref>,<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B9">9</xref>], with regional collaborations able to achieve higher rates of thrombolysis than local services working in isolation [<xref ref-type="bibr" rid="B10">10</xref>]. Minimum standards for the implementation of telemedicine for stroke care have been published [<xref ref-type="bibr" rid="B11">11</xref>], but it is not known how telestroke systems are operationalising this guidance in practice.</p>
+      <p>The UK Medical Research Council (MRC) framework for complex interventions emphasises the importance of evaluating the process of implementation, as well as clinical and cost effectiveness [<xref ref-type="bibr" rid="B12">12</xref>]. This is particularly relevant to telestroke, given the well-known problems of embedding e-health technology initiatives into routine services [<xref ref-type="bibr" rid="B13">13</xref>]. Evidence on the characteristics of successful telemedicine applications relates mainly to their use in managing chronic conditions [<xref ref-type="bibr" rid="B14">14</xref>,<xref ref-type="bibr" rid="B15">15</xref>]. Less is known about systems for emergency care. Recent systematic reviews have pointed to the need for formative methodologies to study telemedicine as a complex and collaborative process [<xref ref-type="bibr" rid="B16">16</xref>,<xref ref-type="bibr" rid="B17">17</xref>].</p>
+      <p>As part of a wider project to improve the delivery of thrombolysis in clinical networks, we aimed to develop a web-based &#x201C;toolkit&#x201D; to support telestroke implementation, by systematic collation of available guidance for best practice. The guiding framework was Normalisation Process Theory (NPT): an evaluation model that asks what people do to make a complex intervention workable, and to integrate it into practice [<xref ref-type="bibr" rid="B18">18</xref>,<xref ref-type="bibr" rid="B19">19</xref>]. NPT has been proposed as a suitable framework for evaluating the implementation of complex interventions [<xref ref-type="bibr" rid="B20">20</xref>-<xref ref-type="bibr" rid="B22">22</xref>], and has previously been used to study the integration of e-health initiatives [<xref ref-type="bibr" rid="B13">13</xref>,<xref ref-type="bibr" rid="B23">23</xref>-<xref ref-type="bibr" rid="B26">26</xref>].</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <p>The study reported here is part of a larger National Institute for Health Research funded project to support telestroke implementation in one UK region. This paper reports the results of:</p>
+      <p>&#x2022;&#x2009;systematic review of the literature to identify good practice recommendations;</p>
+      <p>&#x2022;&#x2009;collation and analysis of implementation resources supporting telestroke;</p>
+      <p>&#x2022;&#x2009;stakeholder interviews in one UK telestroke project to identify implementation challenges.</p>
+      <sec>
+        <title>Systematic review</title>
+        <p>The search targeted telestroke feasibility studies, process evaluations, project descriptions or case studies; qualitative research or surveys of stakeholders; and evaluative or experimental research. We used the short form Cochrane search for stroke, combined with MESH terms and free text words for telemedicine (see Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>). In smaller databases the short search string &#x201C;stroke and tele*&#x201D; was used. The following sources were searched:</p>
+        <p>&#x2022;&#x2009;databases of published studies: The Cochrane Library, MEDLINE, EMBASE, CINAHL, AMED, PsychInfo, Web of Knowledge, International Bibliography of the Social Sciences (IBSS), Health Management Information Consortium (HMIC) from inception to April 2011;</p>
+        <p>&#x2022;&#x2009;<italic>citation searching:</italic> via Web of Knowledge for all included studies;</p>
+        <p>&#x2022;&#x2009;<italic>Conference proceedings and Internet searching</italic>: to identify telestroke systems in operation, but not reported in publications.</p>
+        <p>Two reviewers independently screened records on title and abstract, and filtered all full-text papers for inclusion. The inclusion criteria for papers were:</p>
+        <p>&#x2022;&#x2009;<italic>Types of studies:</italic> Publically available studies (2000&#x2013;2010), containing descriptive, operational, or evaluative data on telestroke systems.</p>
+        <p>&#x2022;&#x2009;<italic>Types of participants:</italic> People with suspected or acute stroke, receiving emergency treatment in a health care setting.</p>
+        <p>&#x2022;&#x2009;<italic>Types of intervention:</italic> Telestroke systems were defined as the use of audio-visual real-time communication for remote consultation with a decision support provider at a site distant from the patient, for diagnosis or treatment of acute stroke.</p>
+        <p>Data to be extracted included: description of development, use, or evaluation of a telestroke system; stakeholders&#x2019; views on barriers and enablers; reference to &#x201C;implementation resources&#x201D; (e.g. standards, policies, specifications, protocols, manuals, memoranda, contracts, decision aids, guidelines, algorithms) to support telestroke system use in acute stroke care; or researcher&#x2019;s comment on recommendations for best practice (i.e. in discussion). Data extraction and coding were undertaken independently by two reviewers, after training and inter-rater reliability checks. Extracted data were analysed using the Normalisation Process Theory framework, detailing the challenges impacting on telestroke during four stages of system: 1) development, 2) implementation, 3) use, and 4) evaluation. We chose NPT because it is available as a structured analytical framework expressly designed to understand the process of embedding technological systems in health care, and the complexity of the interaction between individuals, new technologies, and context [<xref ref-type="bibr" rid="B27">27</xref>]. It comprises 16 dimensions in four categories, illustrated in simplified form from the NPT toolkit [<xref ref-type="bibr" rid="B28">28</xref>] in Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>.</p>
+      </sec>
+      <sec>
+        <title>Collation of implementation resources</title>
+        <p>Identified contacts for telestroke projects were emailed to ask about the public availability of implementation resources referred to in publications or on websites. Content analysis of documents was undertaken to identify the details of discrete implementation tasks.</p>
+      </sec>
+      <sec>
+        <title>Case study of Lancashire and Cumbria telestroke network</title>
+        <p>We chose to study implementation of a telestroke system in Lancashire and Cumbria (L&amp;C), a geographically diverse area in North West England with long travel times between hospital sites and no obvious central hub organisation. A &#x201C;network&#x201D; model, with a roster of specialists from all participating organisations providing out-of-hours clinical decision support, was chosen as the most suitable telestroke service configuration for the area. One organisation was designated lead for governance purposes, and implementation was facilitated by a Cardiac and Stroke Network (CSN): one of 28 regional networks with a remit to support improvement in stroke services in the UK (more information on the features of the telestroke network are provided in Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). Using this network as a case study facilitated real-time access to people with direct experience of managing telestroke implementation across multiple organisations, rather than relying primarily on the perspective of hub organisations; or on evaluative data from end-users.</p>
+        <p>Nine purposively sampled stakeholders were interviewed during the year up to July 2011, when the system went live. These included executive, project, and information technology managers from the regional Strategic Health Authority, the CSN, and lead organisation; and doctors and nurses from participating emergency, neurology, and stroke medicine departments. Semi-structured interviews were conducted in the workplace by trained researchers, audio-taped and transcribed. The study was approved by the University of Central Lancashire School of Health Ethics Committee. Approval was requested from the Ethics Committee for the UK Health Service but was not required.</p>
+        <p>Transcripts were coded using NPT definitions by two trained coders who discussed and agreed final codes. Summaries of key challenges raised were fed back to interviewees (four of whom altered aspects of wording), and were then integrated into an overall summary of challenges within each component of the NPT framework.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results">
+      <title>Results</title>
+      <p>The initial search identified 4,567 records, which were screened and filtered as shown in Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>.</p>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p>Flowchart of included studies.</p>
+        </caption>
+        <graphic xlink:href="1472-6947-13-125-1"/>
+      </fig>
+      <p>Internet searching on <italic>Google</italic> (telestroke or stroke&#x2009;+&#x2009;telemedicine) identified 1,290 hits; 218 sites were selected, and 61 telestroke projects identified. Their Internet sites were searched, if available, and principal contacts emailed to ask about publically available implementation resources.</p>
+      <p>Written information from 20 telestroke projects was located: 13 had published descriptive or evaluative research; and eight projects had resources available on the Internet (Table&#xA0;<xref ref-type="table" rid="T1">1</xref>).</p>
+      <table-wrap position="float" id="T1">
+        <label>Table 1</label>
+        <caption>
+          <p>Type of data available from telemedicine projects</p>
+        </caption>
+        <table frame="hsides" rules="groups" border="1">
+          <colgroup>
+            <col align="left"/>
+            <col align="left"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+          </colgroup>
+          <thead valign="top">
+            <tr>
+              <th align="left">
+                <bold>Country</bold>
+              </th>
+              <th align="left">
+                <bold>Projects</bold>
+              </th>
+              <th align="center">
+                <bold>Process description, evaluation</bold>
+              </th>
+              <th align="center">
+                <bold>Outcomes research</bold>
+              </th>
+              <th align="center">
+                <bold>Internet resources</bold>
+              </th>
+            </tr>
+          </thead>
+          <tbody valign="top">
+            <tr>
+              <td align="left" valign="bottom">
+                <bold>USA</bold>
+                <hr/>
+              </td>
+              <td align="left" valign="bottom">STROKE-DOC<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">REACH, Georgia<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">TELEBAT, Maryland<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">Massachusetts<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">STARR, Arizona<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">SOS, Houston Texas<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">INTEGRIS, Oklahoma<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">
+                <bold>UK</bold>
+                <hr/>
+              </td>
+              <td align="left" valign="bottom">East of England<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">Northumbria<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">Scottish Telestroke<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">Avon, Gloucestershire, Wilts,<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">East Kent<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">
+                <bold>Europe</bold>
+                <hr/>
+              </td>
+              <td align="left" valign="bottom">Finnish Network<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">STENO, Germany<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">TEMPiS, Germany<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">TESS, Germany<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">Barcelona, Spain<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">
+                <bold>Canada</bold>
+                <hr/>
+              </td>
+              <td align="left" valign="bottom">Edmonton<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">Ontario<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">British Columbia<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">x<hr/></td>
+            </tr>
+            <tr>
+              <td align="left">&#xA0;</td>
+              <td align="left">
+                <bold>Totals</bold>
+              </td>
+              <td align="center">
+                <bold>8</bold>
+              </td>
+              <td align="center">
+                <bold>11</bold>
+              </td>
+              <td align="center">
+                <bold>8</bold>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <p>In addition to project-related papers, we identified a policy statement from the American Heart Association [<xref ref-type="bibr" rid="B11">11</xref>,<xref ref-type="bibr" rid="B28">28</xref>]; and a national survey of US stroke and emergency physicians&#x2019; attitudes to telestroke [<xref ref-type="bibr" rid="B29">29</xref>]. Of the eight telestroke projects described, only one (REACH, Georgia) had published a formal process evaluation [<xref ref-type="bibr" rid="B30">30</xref>,<xref ref-type="bibr" rid="B31">31</xref>]: the remainder were descriptive studies or acceptability surveys included with reports of clinical outcomes, with little methodological detail. Critical appraisal was not attempted.</p>
+      <p>For each stage of telestroke system 1) development, 2) use, 3) implementation and 4) evaluation, results are presented from the three different data sources in order:</p>
+      <p>a) research-based recommendations for telestroke implementation;</p>
+      <p>b) implementation tasks and documentary resources from existing telestroke projects;</p>
+      <p>c) implementation challenges extracted from case study interviews (interview number in brackets).</p>
+      <sec>
+        <title>System development</title>
+        <sec>
+          <title>
+            <bold>
+              <italic>a) Research-based recommendations</italic>
+            </bold>
+          </title>
+          <p>Development of a telestroke system involves a large number of stakeholders across organisational and professional boundaries. The process can be hampered by lack of alignment with organisational strategy and business processes. Formal collaboration and good communication are needed to negotiate complex inter-organisational issues, and there needs to be a sustainable, long-term business model for investment of financial and other resources, and sharing of expenses and rewards across participating organisations [<xref ref-type="bibr" rid="B30">30</xref>,<xref ref-type="bibr" rid="B31">31</xref>].</p>
+        </sec>
+        <sec>
+          <title>
+            <bold>
+              <italic>b) Information from existing projects</italic>
+            </bold>
+          </title>
+          <p>Table&#xA0;<xref ref-type="table" rid="T2">2</xref> describes the kinds of tasks and supporting documentary resources used by existing telestroke projects during system development, either in publications or in Internet resources.</p>
+          <table-wrap position="float" id="T2">
+            <label>Table 2</label>
+            <caption>
+              <p>Tasks and resources needed for system development</p>
+            </caption>
+            <table frame="hsides" rules="groups" border="1">
+              <colgroup>
+                <col align="left"/>
+                <col align="left"/>
+              </colgroup>
+              <thead valign="top">
+                <tr>
+                  <th align="left">
+                    <bold>
+<italic>Tasks</italic>
+</bold>
+                  </th>
+                  <th align="left">
+                    <bold>
+<italic>Example documentary resources</italic>
+</bold>
+                  </th>
+                </tr>
+              </thead>
+              <tbody valign="top">
+                <tr>
+                  <td rowspan="4" align="left" valign="top">Develop a case for need, and design a system<hr/></td>
+                  <td align="left" valign="bottom">Business case<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Service and system specifications<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Site readiness assessments<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Eligibility/resource requirements<hr/></td>
+                </tr>
+                <tr>
+                  <td rowspan="3" align="left" valign="top">Involve key individuals and formalise agreement<hr/></td>
+                  <td align="left" valign="bottom">Implementation plans/process guides<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Administrator role/responsibilities<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Minutes of meetings/action plans<hr/></td>
+                </tr>
+                <tr>
+                  <td rowspan="2" align="left" valign="top">Formalise financial and organisational agreements.<hr/></td>
+                  <td align="left" valign="bottom">Letters of co-operation/agreement<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Contracts/accountabilities/liabilities<hr/></td>
+                </tr>
+                <tr>
+                  <td rowspan="3" align="left" valign="top">Facilitate communication and awareness</td>
+                  <td align="left" valign="bottom">Insight days<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Bulletins<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left">Public awareness posters</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </sec>
+        <sec>
+          <title>
+            <bold>
+              <italic>c) Information from case study interviews</italic>
+            </bold>
+          </title>
+          <p>In the NPT framework, &#x201C;coherence&#x201D; refers to the sense-making work that people need to do individually and collectively about the meaning, use, and utility of a new practice. In the case study, this &#x201C;sense-making work&#x201D; involved dealing with the different views of stakeholders on the evidence for the safety, likely costs and benefits of a telestroke system to facilitate thrombolysis.</p>
+          <p>Uncertainty about the evidence made it difficult to convince managers and commissioners of the need to invest in a telestroke system for the potential benefit of a small minority of stroke patients. The development of a business case was crucial to an appreciation of the potential long-term value of the system. At the time, most published information was based on the hub-and-spoke service model, so there was little guidance on developing a network telestroke model. Although the project Steering Group had a clear vision of the potential benefits of a network model: <italic>&#x201C;&#x2026; nothing is disbanded, there is no second class service, everyone is doing thrombolysis,&#x201D; </italic>(6) they were also aware of the need to involve key individuals to reach agreement about clinical protocols, financial and governance arrangements.</p>
+          <p>Initially, some clinicians were sceptical about the value of telestroke because of multiple competing priorities, and the perceived difficulties of coordination across organisations and disciplines. Work to develop consensus across diverse staff groups and organisations included employing a Project Manager and a Communications Manager; holding telemedicine insight days and events; providing extensive training opportunities; identifying and working with opinion leaders, and working with individual clinicians to let them experience using the system. Differing views persisted, but the gradual development of consensus around the need for local stroke teams to be involved in thrombolysis delivery meant that any individual reluctance was muted: <italic>&#x201C;&#x2026;no one is daring to say they are not keen. Everyone feels it is a &#x201C;must do&#x201D;, not for debate, can&#x2019;t stop it as an individual&#x201D;</italic> (1).</p>
+          <p>Communication between organisations was enabled by setting up a Telestroke Executive Group, a Stroke Clinical Advisory Group, and groups of Operational Managers, Continuing Professional Development Leads, Imaging Managers, and Information Technology Leads. Regular meetings of the stroke clinicians were also organised. As well as developing technical and operational specifications, reaching financial agreements was a major challenge. This included negotiating the transfer of responsibilities and costs between different care sectors, all at a time of rapid change in the UK Health Service: <italic>&#x201C;Implementation dates were far too optimistic, and the lesson learned is that you should get finance written down right from the start. Money has been the biggest hold up&#x201D;</italic> (3).</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>System implementation</title>
+        <sec>
+          <title>
+            <bold>
+              <italic>a) Research-based recommendations</italic>
+            </bold>
+          </title>
+          <p>Planners need to assess the compatibility of the telestroke service with existing technical and clinical systems, and agree governance procedures and clinical pathways tailored to local circumstance [<xref ref-type="bibr" rid="B30">30</xref>-<xref ref-type="bibr" rid="B33">33</xref>].</p>
+        </sec>
+        <sec>
+          <title>
+            <bold>
+              <italic>b) Information from existing projects</italic>
+            </bold>
+          </title>
+          <p>Table&#xA0;<xref ref-type="table" rid="T3">3</xref> summarises the tasks and documentary resources identified from other projects to support telestroke system implementation.</p>
+          <table-wrap position="float" id="T3">
+            <label>Table 3</label>
+            <caption>
+              <p>Tasks and resources for system implementation</p>
+            </caption>
+            <table frame="hsides" rules="groups" border="1">
+              <colgroup>
+                <col align="left"/>
+                <col align="left"/>
+              </colgroup>
+              <thead valign="top">
+                <tr>
+                  <th align="left">
+                    <bold>
+<italic>Tasks</italic>
+</bold>
+                  </th>
+                  <th align="left">
+                    <bold>
+<italic>Example documentary resources</italic>
+</bold>
+                  </th>
+                </tr>
+              </thead>
+              <tbody valign="top">
+                <tr>
+                  <td rowspan="4" align="left" valign="top">Develop shared clinical resources<hr/></td>
+                  <td align="left" valign="bottom">Pathway analysis<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Process and value stream maps<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Standards/quality criteria for system use<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Joint clinical pathway<hr/></td>
+                </tr>
+                <tr>
+                  <td rowspan="5" align="left" valign="top">Develop governance procedures<hr/></td>
+                  <td align="left" valign="bottom">Governance policy<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Risk assessment<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Equality &amp; diversity impact assessment<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Privacy impact assessment<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Rotas and job planning<hr/></td>
+                </tr>
+                <tr>
+                  <td rowspan="5" align="left" valign="top">Develop and test the telestroke system</td>
+                  <td align="left" valign="bottom">Walkthrough checklist<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Walkthrough action plan<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">System maintenance guide<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Troubleshooting guide<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left">Operational policy</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </sec>
+        <sec>
+          <title>
+            <bold>
+              <italic>c) Information from case study interviews</italic>
+            </bold>
+          </title>
+          <p>In the NPT framework, &#x201C;cognitive participation&#x201D; refers to the shared work that people need to do to build and sustain a new practice. The main challenge reported during implementation was coordinating shared clinical, technical, and governance procedures across organisations.</p>
+          <p>Extensive work was undertaken to build the new practice in each organisation, which involved pathway mapping, analysis of training needs, interdisciplinary peer review, and links with existing service improvement initiatives. Because of the network structure, all organisations did feel involved: &#x201C;<italic>We feel we own the system, we are part of it, we want it to work&#x201D;</italic> (6). Each organisation had its own key clinicians, who might be neurologists, stroke physicians, or emergency department consultants. Stroke nurse specialists also played a key role in involving other staff in using the system. All participating clinicians had to agree to use standardised policies and recording forms; numerous drafts had to be reviewed within each organisation before final validation: <italic>&#x201C;Don&#x2019;t underestimate the time it takes to set up shared pathways, the need for standardised paperwork works fine in theory, but in reality, each site wants to adapt and there is no central system for changing the shared paperwork&#x201D; </italic>(2).</p>
+          <p>Even though the network used an externally managed system where all equipment and support was provided by a commercial company, there were difficulties with data compatibility between nine organisations using three different CT imaging systems. The solution was to use an external image hosting site, initially funded by the Regional Health Authority. Equipment maintenance and troubleshooting guides were prepared. Walkthroughs at each site highlighted strengths, weaknesses and gaps in the telestroke process: <italic>&#x201C;Walkthroughs have been useful, because communication sometimes hasn&#x2019;t been as good as you thought it was&#x201D;</italic> (3).</p>
+          <p>Agreeing a governance structure to clarify where clinical responsibility lay at each stage of the patient pathway was essential. Clinical workloads had to be adjusted, revised consultant job plans agreed, and concerns about unequal shares of workload among organisations addressed. Despite organisational level agreement, individual clinicians and their managers struggled to adapt workloads to cover the additional sessions as well as on-call responsibilities in their own organisations, and issues remained unresolved even as the system went live: <italic>&#x201C;There are still gaps in the rota, there is still job planning to be sorted out, still areas that have not signed up to it completely</italic>&#x201D; (8).</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>System use</title>
+        <sec>
+          <title>
+            <bold>
+              <italic>a) Research-based recommendations</italic>
+            </bold>
+          </title>
+          <p>Potential barriers to telestroke system use in practice include:</p>
+          <p>&#x2022;&#x2009;Reluctance because of unfamiliarity; low rates of system use; perceptions of treatment delay; overconfidence in decisions; conflict with cultural norms [<xref ref-type="bibr" rid="B34">34</xref>-<xref ref-type="bibr" rid="B36">36</xref>]</p>
+          <p>&#x2022;&#x2009;Technical problems are fairly rare, but can include problems with sound or image quality; or difficulties/delays getting access to equipment or network [<xref ref-type="bibr" rid="B34">34</xref>,<xref ref-type="bibr" rid="B36">36</xref>,<xref ref-type="bibr" rid="B37">37</xref>]</p>
+          <p>&#x2022;&#x2009;Lack of staff confidence or capability in neurological assessment or CT scan reading, fear of clinical complications (e.g. haemorrhage) [<xref ref-type="bibr" rid="B32">32</xref>-<xref ref-type="bibr" rid="B36">36</xref>]</p>
+          <p>&#x2022;&#x2009;Lack of local IT staff to support the technical system [<xref ref-type="bibr" rid="B30">30</xref>,<xref ref-type="bibr" rid="B31">31</xref>]</p>
+          <p>&#x2022;&#x2009;Cultural differences and poor communication routes between disciplines, and centres [<xref ref-type="bibr" rid="B30">30</xref>,<xref ref-type="bibr" rid="B31">31</xref>].</p>
+        </sec>
+        <sec>
+          <title>
+            <bold>
+              <italic>b) Information from existing projects</italic>
+            </bold>
+          </title>
+          <p>Table&#xA0;<xref ref-type="table" rid="T4">4</xref> categorises the tasks and documentary resources referred to by existing projects to provide support for telestroke system use.</p>
+          <table-wrap position="float" id="T4">
+            <label>Table 4</label>
+            <caption>
+              <p>Tasks and resources for system use</p>
+            </caption>
+            <table frame="hsides" rules="groups" border="1">
+              <colgroup>
+                <col align="left"/>
+                <col align="left"/>
+              </colgroup>
+              <thead valign="top">
+                <tr>
+                  <th align="left">
+                    <bold>
+<italic>Tasks</italic>
+</bold>
+                  </th>
+                  <th align="left">
+                    <bold>
+<italic>Example documentary resources</italic>
+</bold>
+                  </th>
+                </tr>
+              </thead>
+              <tbody valign="top">
+                <tr>
+                  <td rowspan="10" align="left" valign="top">Develop clinical, operational, and technical processes<hr/></td>
+                  <td align="left" valign="bottom">Prehospital protocol<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Screen/exclude checklist<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">CT scan protocol<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Thrombolysis pathway<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Nursing care plan<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Teleconsult recording proforma<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Joint decision record/monitoring<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Contingency plan<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Patient information/consent<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Roles, responsibilities and competencies<hr/></td>
+                </tr>
+                <tr>
+                  <td rowspan="4" align="left" valign="top">Develop staff competency and confidence</td>
+                  <td align="left" valign="bottom">Training strategy and needs analysis<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Training priorities, programme objectives<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Training resources<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left">Competency assessments</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </sec>
+        <sec>
+          <title>
+            <bold>
+              <italic>c) Information from case study interviews</italic>
+            </bold>
+          </title>
+          <p>In the NPT framework the term &#x201C;collective action&#x201D; refers to the operational work that people do to enact a new practice, involving whether people are able to do what is required of them; whether they have trust in each other; and the necessary skills and resources. Ensuring this operational &#x201C;workability&#x201D; required tailoring processes to the unique conditions at each site, while developing and maintaining staff confidence with the technical and cultural changes engendered by the new system.</p>
+          <p>The siting of telestroke equipment and the need for an internet connection imposed restrictions on the site of clinical care. Decisions about who would provide care depended on the site layout and the availability of skilled staff at different times of day: &#x201C;<italic>Where are people going to be monitored? and who is going to do it? Accident and Emergency (A&amp;E) staff are used to monitoring, stroke unit staff may not be used to 24&#xA0;hour continuous monitoring. It needs a Band 5 (registered nurse). If thrombolysis is done in A&amp;E, you are taking a nurse out for an hour. The ideal thing is to get the stroke specialist nurse to take them through the system&#x201D;</italic> (2). Most centres chose to initiate thrombolysis in the emergency department followed by transfer to an acute stroke or critical care unit for monitoring. Subsequent care was to be provided by the local stroke team, although specialists providing support for thrombolysis decisions usually checked on patients&#x2019; progress next day.</p>
+          <p>Despite extensive training, staff still needed to gain familiarity and confidence with the new system. The need to work closely with people from different organisations meant establishing and adjusting to new working relationships: <italic>&#x201C;I know how my consultant works, have a pretty good idea the patients he will thrombolyse, the ones he won&#x2019;t, when he will thrombolyse out of licence. I don&#x2019;t know whether the other consultants will be a little more cautious when they are talking to a hospital they don&#x2019;t know with staff they don&#x2019;t know. You know, they&#x2019;re not going to know our pathway inside out. They will probably speak to different staff every time&#x201D;</italic> (7). There was also some concern expressed about whether using the system would affect the quality of the clinical encounter, perhaps reducing the ability to detect subtle clues or to interact meaningfully with the patient and family: <italic>&#x201C;There may be issues related to preserving privacy and dignity that are less well able to be controlled than in face to face consultation&#x201D;</italic> (5). Some clinicians were especially worried about using the technology, and trainers commented on the difficulty of maintaining people&#x2019;s confidence when they might only use the system infrequently.</p>
+          <p>Wider cultural issues surrounded changes in working patterns and relationships between professional groups, such as involving stroke physicians in reading head CT scans. However, most staff comments concerned the perennial issues of time and work pressures, and whether they could cope with yet another demand, especially one relying on complex technology: <italic>&#x201C;&#x2026; in the middle of the night when you&#x2019;re working with maybe one or two trained staff and 30 patients if you&#x2019;ve not used it for two months and suddenly you are trying to remember your password at three o&#x2019;clock in the morning&#x2026;</italic>&#x201D; (8).</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>System evaluation</title>
+        <sec>
+          <title>
+            <bold>
+              <italic>a) Research-based recommendations</italic>
+            </bold>
+          </title>
+          <p>Most published studies on telemedicine system performance have focused on clinical process measures such as: pre-hospital delay; time from admission to initial assessment, specialist consultation, CT scan, blood test results, and initiation of treatment. Other suggestions include monitoring system use, impact on decision making, and acceptability [<xref ref-type="bibr" rid="B34">34</xref>-<xref ref-type="bibr" rid="B38">38</xref>].</p>
+        </sec>
+        <sec>
+          <title>
+            <bold>
+              <italic>b) Information from existing projects</italic>
+            </bold>
+          </title>
+          <p>Table&#xA0;<xref ref-type="table" rid="T5">5</xref> details the implementation tasks and quality indicators identified from other published telestroke projects, and the kinds of documentary resources used to support evaluation.</p>
+          <table-wrap position="float" id="T5">
+            <label>Table 5</label>
+            <caption>
+              <p>Tasks and resources for system evaluation</p>
+            </caption>
+            <table frame="hsides" rules="groups" border="1">
+              <colgroup>
+                <col align="left"/>
+                <col align="left"/>
+              </colgroup>
+              <thead valign="top">
+                <tr>
+                  <th align="left">
+                    <bold>
+<italic>Tasks</italic>
+</bold>
+                  </th>
+                  <th align="left">
+                    <bold>
+<italic>Example documentary resources</italic>
+</bold>
+                  </th>
+                </tr>
+              </thead>
+              <tbody valign="top">
+                <tr>
+                  <td rowspan="3" align="left" valign="top">Monitor clinical processes and outcomes<hr/></td>
+                  <td align="left" valign="bottom">Evaluation data flowchart<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Data collection strategy<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Governance reports<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="bottom">Monitor system use and impact on decision making<hr/></td>
+                  <td align="left" valign="bottom">Decision support log<hr/></td>
+                </tr>
+                <tr>
+                  <td rowspan="2" align="left" valign="top">Monitor fidelity, quality, and acceptability</td>
+                  <td align="left" valign="bottom">Patient satisfaction questionnaire<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left">Staff satisfaction questionnaire</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </sec>
+        <sec>
+          <title>
+            <bold>
+              <italic>c) Information from case study interviews</italic>
+            </bold>
+          </title>
+          <p>In the NPT framework, &#x201C;reflexive monitoring&#x201D; refers to the appraisal work that people do to assess and understand the ways in which a new set of practices affect them and others around them. Not much information related to evaluation was collected because interviews were mainly conducted during the set-up of the telestroke system, but respondents did comment about how the system was being appraised, used, and reconfigured by users.</p>
+          <p>Even in the early stages, people commented on the positive impact on patient outcome compared with existing practice: <italic>&#x201C;I think telemedicine definitely has its place. We&#x2019;ve had two occasions where (the patient) wouldn&#x2019;t have been thrombolysed, and they appear to be having a good outcome&#x201D;</italic> (9). A plan for formal monitoring of care processes and outcomes had been drawn up, but in the first few weeks it was realised that the telestroke system was not only being used for acute stroke diagnosis and treatment, as intended. Clinicians in the A&amp;E department were also using it to seek out-of-hours help for patients with other neurological conditions, so that the demands on the specialist on call were greater than anticipated. Data collection was therefore altered to capture the reasons for telemedicine consultations; and the workload for on-call specialists. This issue was still ongoing when interviews ended.</p>
+          <p>The interviews also illustrated how attitudes and clinical behaviour throughout the stroke service were influenced by the inevitable comparison between centres, prompted by inter-hospital collaboration, interdisciplinary peer review, and pathway mapping. Staff commented on the ability to learn from each other, and gain new ideas for improving their own service. Participants also mentioned unexpected effects such as raising the profile of stroke care that were unlikely to be captured by formal evaluation: <italic>&#x201C;It&#x2019;s really highlighted stroke within our Trust which has been beneficial for the stroke team.&#x201D;</italic> (7) Others commented on the potential for extended use of the system in the future, such as clinic assessment. However, there was also an appreciation of the possibility of failure of technical innovations: <italic>&#x201C;it would be awful for it to fail on the first, second or third attempt because if it was to happen then people would just say what a waste of time put a sheet over it and we&#x2019;ll put in a corner somewhere. That has happened previously in the past with telemedicine video things that have not been used&#x2026; various things that have just been quietly shoved into a corner because they didn&#x2019;t work or they weren&#x2019;t to standard&#x201D;</italic> (8).</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Discussion</title>
+      <p>This study involved a search of the main healthcare databases, analysis of documents from existing telestroke projects, and a longitudinal case study of one UK team developing telestroke. The research literature shows limited process evaluation of telestroke, with most of the barriers identified relating to issues of technical and clinical compatibility, and organisational governance. In contrast, findings from the case study tended to highlight the complex relationships between the technical system, and potential users in diverse contexts. The networked nature of the telestroke case study system emphasised the work needed to develop consensus. Factors influencing network workability included the importance of users&#x2019; perceptions of evidence, workload, potential, and payback; the amount of &#x201C;human&#x201D; work involved in enrolling and maintaining the commitment of a wide range of stakeholders in diverse organisational contexts; and the challenges of managing technical and clinical workability across multiple environments. The facilitating role of the overarching regional Cardiac and Stroke Network was crucial: their actions included pathway mapping, analysis of training needs, providing extensive training opportunities and individualised support, arranging cross-site interdisciplinary peer review and links with existing service improvement initiatives, managing telestroke walkthroughs, and monitoring adjustment of clinical workloads and system use.</p>
+      <p>Only one other telestroke project has published a process evaluation [<xref ref-type="bibr" rid="B30">30</xref>,<xref ref-type="bibr" rid="B31">31</xref>]. Our study confirms the importance of harmonising technical, business, and governance systems across organisations but perhaps places more emphasis on the impact of introducing a telestroke system on professional work patterns and clinical care processes, and the amount of time and attention to detail required for implementation work. This is the first process evaluation of a network telestroke model, and it may be that developing horizontal working relationships across multiple organisations needs more intensive preparation than in a hub and spoke configuration, but it is likely that clinical concerns about establishing and adjusting to new working patterns across professional and organisational boundaries are common to all systems. A recent systematic review identified 145 articles relating to the evaluation of telestroke [<xref ref-type="bibr" rid="B39">39</xref>] compared with our search in 2009 which yielded 88 research articles, but none of the newer articles are process evaluations, so this type of study is under-represented.</p>
+      <p>The strengths of our study include combining information from multiple sources (primary, secondary, grey literature sources) to make the complex and often hidden work of implementation more visible. The limitations of this study are the reliance on single case study for primary data collection. The timeframe of the case study was pre-implementation, but this is also the timeframe least studied. We also limited our collation of research literature and documents from existing telestroke systems to those available in the English language, which means we may not have tapped into literature from the strong tradition of telemedicine innovation in European countries. Much process information came from brief descriptions of system commissioning contained within studies focusing on outcome, or unreferenced reports traceable only via the Internet, so little of it could be critically appraised. The most useful information came from excellent implementation support packs from Ontario and Oklahoma, and the materials to support telestroke evaluation from British Columbia. These provided much of the detail for the tasks and resources listed in the tables above.</p>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>Generic toolkits are available to support the implementation of E-Health initiatives [<xref ref-type="bibr" rid="B40">40</xref>]. This study affirmed the importance of establishing an implementation process to facilitate mutual adaptation and problem solving across organisational and professional boundaries, and dealing with the clinical challenges that occur when adopting a new technology [<xref ref-type="bibr" rid="B15">15</xref>], focusing on the specific example of telestroke. Without published accounts of these formative processes it is not easy to learn from others to proactively design for successful uptake and sustainability of telestroke. To help future projects we have constructed a Standardised Telestroke Toolkit based on the research review, populated with the stroke-specific resources made available by the Lancashire &amp; Cumbria Telestroke Network. It can be accessed at <ext-link ext-link-type="uri" xlink:href="http://www.astute-telestroke.org.uk/">http://www.astute-telestroke.org.uk/</ext-link>[<xref ref-type="bibr" rid="B41">41</xref>]. The website also gives detailed information from the L&amp;C stakeholder interviews, so that others can see the amount of work involved and the kind of challenges that occurred, and how they were tackled by the project team. As one stakeholder said: <italic>&#x201C;I never thought it would take this long &#x2013; it is a complex piece of work!&#x201D; </italic>(4).</p>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors declare that there are no competing interests.</p>
+    </sec>
+    <sec>
+      <title>Authors&#x2019; contributions</title>
+      <p>BF Study design, management of systematic review and NPT data analysis, primary author. ED Telestroke network co-ordinator, toolkit advisor, critical reader. CW Principal Investigator, critical reader. AM Synthesis of systematic review, data collection and analysis for case study. JF Data collection and analysis for case study, manuscript preparation. ML Critical review of research design, report and manuscript. PD Critical review of research design, report and manuscript. HE Critical review of research design, report and manuscript. GF Critical review of research design, report and manuscript. DJ Critical review of research design, report and manuscript. CM Critical review of research design, report and manuscript. MOD Critical review of research design, report and manuscript. CP Critical review of research design, report and manuscript. CS Critical review of research design, report and manuscript. CL Trial Coordinator, study design, data analysis for case study, critical review of manuscript. All authors read and approved the final manuscript.</p>
+    </sec>
+    <sec>
+      <title>Pre-publication history</title>
+      <p>The pre-publication history for this paper can be accessed here:</p>
+      <p>
+        <ext-link ext-link-type="uri" xlink:href="http://www.biomedcentral.com/1472-6947/13/125/prepub">http://www.biomedcentral.com/1472-6947/13/125/prepub</ext-link>
+      </p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="S1">
+        <caption>
+          <title>Additional file 1</title>
+          <p>MEDLINE search for telestroke.</p>
+        </caption>
+        <media xlink:href="1472-6947-13-125-S1.docx">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S2">
+        <caption>
+          <title>Additional file 2</title>
+          <p>Four NPT categories and their dimensions.</p>
+        </caption>
+        <media xlink:href="1472-6947-13-125-S2.docx">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S3">
+        <caption>
+          <title>Additional file 3</title>
+          <p>Details of the Lancashire and Cumbria telestroke network.</p>
+        </caption>
+        <media xlink:href="1472-6947-13-125-S3.docx">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgements</title>
+      <p>We acknowledge the generosity of all of the staff involved in the development of the Lancashire and Cumbria Telestroke Network in sharing their experiences and expertise.</p>
+    </sec>
+    <sec>
+      <title>Funding</title>
+      <p>This paper summarises independent research funded by the National Institute for Health Research (NIHR) under its Research for Patient Benefit Programme (Grant reference number PB-PG-1208-18280). The views expressed are those of the authors and not necessarily those of the NHS, the NIHR or the Department of Health.</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rudd</surname>
+            <given-names>AG</given-names>
+          </name>
+          <name>
+            <surname>Hoffman</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Grant</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Campbell</surname>
+            <given-names>JT</given-names>
+          </name>
+          <name>
+            <surname>Lowe</surname>
+            <given-names>D</given-names>
+          </name>
+          <article-title>Intercollegiate Working Party for Stroke: Stroke thrombolysis in England, Wales and Northern Ireland: how much do we do and how much do we need?</article-title>
+          <source>J Neurol Neurosurg Psychiatry</source>
+          <year>2011</year>
+          <volume>82</volume>
+          <fpage>14</fpage>
+          <lpage>19</lpage>
+          <pub-id pub-id-type="doi">10.1136/jnnp.2009.203174</pub-id>
+          <pub-id pub-id-type="pmid">20581132</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Adeoye</surname>
+            <given-names>O</given-names>
+          </name>
+          <name>
+            <surname>Hornung</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Khatri</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Kleindorfer</surname>
+            <given-names>D</given-names>
+          </name>
+          <article-title>Recombinant tissue-type plasminogen activator use for ischemic stroke in the United States: a doubling of treatment rates over the course of 5&#xA0;years</article-title>
+          <source>Stroke</source>
+          <year>2011</year>
+          <volume>42</volume>
+          <fpage>1952</fpage>
+          <lpage>1955</lpage>
+          <pub-id pub-id-type="doi">10.1161/STROKEAHA.110.612358</pub-id>
+          <pub-id pub-id-type="pmid">21636813</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Eriksson</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Jonsson</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Appelros</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Asberg</surname>
+            <given-names>KH</given-names>
+          </name>
+          <name>
+            <surname>Norrving</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Stegmayr</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Terent</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Asplund</surname>
+            <given-names>K</given-names>
+          </name>
+          <article-title>For the Riks-Stroke Collaboration: Dissemination of Thrombolysis for Acute Ischemic Stroke Across a Nation: Experiences From the Swedish Stroke Register, 2003 to 2008</article-title>
+          <source>Stroke</source>
+          <year>2010</year>
+          <volume>41</volume>
+          <fpage>1115</fpage>
+          <lpage>1122</lpage>
+          <pub-id pub-id-type="doi">10.1161/STROKEAHA.109.577106</pub-id>
+          <pub-id pub-id-type="pmid">20395610</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Levine</surname>
+            <given-names>SR</given-names>
+          </name>
+          <name>
+            <surname>Gorman</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>&#x201C;Telestroke&#x201D; : the application of telemedicine for stroke</article-title>
+          <source>Stroke</source>
+          <year>1999</year>
+          <volume>30</volume>
+          <fpage>464</fpage>
+          <lpage>469</lpage>
+          <pub-id pub-id-type="doi">10.1161/01.STR.30.2.464</pub-id>
+          <pub-id pub-id-type="pmid">9933289</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Schwamm</surname>
+            <given-names>LH</given-names>
+          </name>
+          <name>
+            <surname>Holloway</surname>
+            <given-names>RG</given-names>
+          </name>
+          <name>
+            <surname>Amarenco</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Audebert</surname>
+            <given-names>HJ</given-names>
+          </name>
+          <name>
+            <surname>Bakas</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Chumbler</surname>
+            <given-names>NR</given-names>
+          </name>
+          <name>
+            <surname>Handschu</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Jauch</surname>
+            <given-names>EC</given-names>
+          </name>
+          <name>
+            <surname>Knight</surname>
+            <given-names>WA</given-names>
+          </name>
+          <name>
+            <surname>Levine</surname>
+            <given-names>SR</given-names>
+          </name>
+          <etal/>
+          <article-title>A review of the evidence for the use of telemedicine within stroke systems of care: a scientific statement from the American Heart Association/American Stroke Association</article-title>
+          <source>Stroke</source>
+          <year>2009</year>
+          <volume>40</volume>
+          <fpage>2616</fpage>
+          <lpage>2634</lpage>
+          <pub-id pub-id-type="doi">10.1161/STROKEAHA.109.192360</pub-id>
+          <pub-id pub-id-type="pmid">19423852</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Deshpande</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Khoja</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>McKibbon</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Rizo</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Jadad</surname>
+            <given-names>AR</given-names>
+          </name>
+          <source>Telehealth for Acute Stroke Management (Telestroke): Systematic Review and Environmental Scan (Technology overview 37)</source>
+          <year>2008</year>
+          <publisher-name>Ottawa: Canadian Agency for Drugs and Technologies in Health</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Silva</surname>
+            <given-names>GS</given-names>
+          </name>
+          <name>
+            <surname>Farrell</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Shandra</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Viswanathan</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Schwamm</surname>
+            <given-names>LH</given-names>
+          </name>
+          <article-title>The status of telestroke in the United States: a survey of currently active stroke telemedicine programs</article-title>
+          <source>Stroke</source>
+          <year>2012</year>
+          <volume>43</volume>
+          <fpage>2078</fpage>
+          <lpage>2085</lpage>
+          <pub-id pub-id-type="doi">10.1161/STROKEAHA.111.645861</pub-id>
+          <pub-id pub-id-type="pmid">22700532</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Demaerschalk</surname>
+            <given-names>BM</given-names>
+          </name>
+          <name>
+            <surname>Miley</surname>
+            <given-names>ML</given-names>
+          </name>
+          <name>
+            <surname>Kiernan</surname>
+            <given-names>TE</given-names>
+          </name>
+          <name>
+            <surname>Bobrow</surname>
+            <given-names>BJ</given-names>
+          </name>
+          <name>
+            <surname>Corday</surname>
+            <given-names>DA</given-names>
+          </name>
+          <name>
+            <surname>Wellik</surname>
+            <given-names>KE</given-names>
+          </name>
+          <name>
+            <surname>Aguilar</surname>
+            <given-names>MI</given-names>
+          </name>
+          <name>
+            <surname>Ingall</surname>
+            <given-names>TJ</given-names>
+          </name>
+          <name>
+            <surname>Dodick</surname>
+            <given-names>DW</given-names>
+          </name>
+          <name>
+            <surname>Brazdys</surname>
+            <given-names>K</given-names>
+          </name>
+          <etal/>
+          <article-title>Stroke telemedicine</article-title>
+          <source>Mayo Clin Proc</source>
+          <year>2009</year>
+          <volume>84</volume>
+          <fpage>53</fpage>
+          <lpage>64</lpage>
+          <pub-id pub-id-type="doi">10.4065/84.1.53</pub-id>
+          <pub-id pub-id-type="pmid">19121244</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Johansson</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Wild</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Telemedicine in acute stroke management: systematic review</article-title>
+          <source>Int J Technol Assess Health Care</source>
+          <year>2010</year>
+          <volume>26</volume>
+          <fpage>149</fpage>
+          <lpage>155</lpage>
+          <pub-id pub-id-type="doi">10.1017/S0266462310000139</pub-id>
+          <pub-id pub-id-type="pmid">20392317</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Price</surname>
+            <given-names>CI</given-names>
+          </name>
+          <name>
+            <surname>Clement</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Gray</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Donaldson</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Ford</surname>
+            <given-names>GA</given-names>
+          </name>
+          <article-title>Systematic review of stroke thrombolysis service configuration</article-title>
+          <source>Expert Rev Neurother</source>
+          <year>2009</year>
+          <volume>9</volume>
+          <fpage>211</fpage>
+          <lpage>233</lpage>
+          <pub-id pub-id-type="doi">10.1586/14737175.9.2.211</pub-id>
+          <pub-id pub-id-type="pmid">19210196</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Schwamm</surname>
+            <given-names>LH</given-names>
+          </name>
+          <name>
+            <surname>Audebert</surname>
+            <given-names>HJ</given-names>
+          </name>
+          <name>
+            <surname>Amarenco</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Chumbler</surname>
+            <given-names>NR</given-names>
+          </name>
+          <name>
+            <surname>Frankel</surname>
+            <given-names>MR</given-names>
+          </name>
+          <name>
+            <surname>George</surname>
+            <given-names>MG</given-names>
+          </name>
+          <name>
+            <surname>Gorelick</surname>
+            <given-names>PB</given-names>
+          </name>
+          <name>
+            <surname>Horton</surname>
+            <given-names>KB</given-names>
+          </name>
+          <name>
+            <surname>Kaste</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Lackland</surname>
+            <given-names>DT</given-names>
+          </name>
+          <etal/>
+          <article-title>Recommendations for the implementation of telemedicine within stroke systems of care: a policy statement from the American Heart Association</article-title>
+          <source>Stroke</source>
+          <year>2009</year>
+          <volume>40</volume>
+          <fpage>2635</fpage>
+          <lpage>2660</lpage>
+          <pub-id pub-id-type="doi">10.1161/STROKEAHA.109.192361</pub-id>
+          <pub-id pub-id-type="pmid">19423851</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="book">
+          <collab>Medical Research Council</collab>
+          <source>Developing and Evaluating Complex Interventions: new guidance</source>
+          <year>2008</year>
+          <publisher-name>London: Medical Research Council</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Mair</surname>
+            <given-names>FS</given-names>
+          </name>
+          <name>
+            <surname>May</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Murray</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Finch</surname>
+            <given-names>T</given-names>
+          </name>
+          <source>Understanding the Implementation and Integration of e-Health Services</source>
+          <year>2009</year>
+          <publisher-name>London: National Institute for Health Research Service Delivery and Organisation Programme</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Broens</surname>
+            <given-names>TH</given-names>
+          </name>
+          <name>
+            <surname>Veld RM</surname>
+            <given-names>H i&#x2019;t</given-names>
+          </name>
+          <name>
+            <surname>Vollenbroek-Hutten</surname>
+            <given-names>MM</given-names>
+          </name>
+          <name>
+            <surname>Hermens</surname>
+            <given-names>HJ</given-names>
+          </name>
+          <name>
+            <surname>Van Halteren</surname>
+            <given-names>AT</given-names>
+          </name>
+          <name>
+            <surname>Nieuwenhuis</surname>
+            <given-names>LJ</given-names>
+          </name>
+          <article-title>Determinants of successful telemedicine implementations: a literature study</article-title>
+          <source>Journal Telemed Telecare</source>
+          <year>2007</year>
+          <volume>13</volume>
+          <fpage>303</fpage>
+          <lpage>309</lpage>
+          <pub-id pub-id-type="doi">10.1258/135763307781644951</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Obstfelder</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Engeseth</surname>
+            <given-names>KH</given-names>
+          </name>
+          <name>
+            <surname>Wynn</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>Characteristics of successfully implementing telemedicine applications</article-title>
+          <source>Implement Sci</source>
+          <year>2007</year>
+          <volume>2</volume>
+          <fpage>25</fpage>
+          <pub-id pub-id-type="doi">10.1186/1748-5908-2-25</pub-id>
+          <pub-id pub-id-type="pmid">17662134</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ekeland</surname>
+            <given-names>AG</given-names>
+          </name>
+          <name>
+            <surname>Bowes</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Flottorp</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Effectiveness of telemedicine: a sytematic review of reviews</article-title>
+          <source>Int J Med Inf</source>
+          <year>2010</year>
+          <volume>79</volume>
+          <fpage>736</fpage>
+          <lpage>771</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ijmedinf.2010.08.006</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ekeland</surname>
+            <given-names>AG</given-names>
+          </name>
+          <name>
+            <surname>Bowes</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Flottorp</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Methodologies for assessing telemedicine: a systematic review of reviews</article-title>
+          <source>Int J Med Inf</source>
+          <year>2012</year>
+          <volume>81</volume>
+          <fpage>1</fpage>
+          <lpage>11</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ijmedinf.2011.10.009</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>May</surname>
+            <given-names>CR</given-names>
+          </name>
+          <name>
+            <surname>Finch</surname>
+            <given-names>T</given-names>
+          </name>
+          <article-title>Implementing, embedding and integrating practices: an outline of normalization process theory</article-title>
+          <source>Sociol</source>
+          <year>2009</year>
+          <volume>43</volume>
+          <fpage>535</fpage>
+          <lpage>554</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>May</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Mair</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Finch</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>MacFarlane</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Dowrick</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Treweek</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Rapley</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Ballini</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Ong</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Rogers</surname>
+            <given-names>A</given-names>
+          </name>
+          <etal/>
+          <article-title>Development of a theory of implementation and integration: normalization Process Theory</article-title>
+          <source>Implement Sci</source>
+          <year>2009</year>
+          <volume>4</volume>
+          <fpage>29</fpage>
+          <pub-id pub-id-type="doi">10.1186/1748-5908-4-29</pub-id>
+          <pub-id pub-id-type="pmid">19460163</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>May</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>A rational model for assessing and evaluating complex interventions in health care</article-title>
+          <source>BMC Health Serv Res</source>
+          <year>2006</year>
+          <volume>6</volume>
+          <fpage>86</fpage>
+          <pub-id pub-id-type="doi">10.1186/1472-6963-6-86</pub-id>
+          <pub-id pub-id-type="pmid">16827928</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>May</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Mair</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Dowrick</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Finch</surname>
+            <given-names>T</given-names>
+          </name>
+          <article-title>Process evaluation for complex interventions in primary care: understanding trials using the normalization process model</article-title>
+          <source>BMC Fam Pract</source>
+          <year>2007</year>
+          <volume>8</volume>
+          <fpage>42</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2296-8-42</pub-id>
+          <pub-id pub-id-type="pmid">17650326</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Murray</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Treweek</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Pope</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>MacFarlane</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Ballini</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Dowrick</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Finch</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Kennedy</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Mair</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>O&#x2019;Donnell</surname>
+            <given-names>C</given-names>
+          </name>
+          <etal/>
+          <article-title>Normalisation process theory: a framework for developing, evaluating and implementing complex interventions</article-title>
+          <source>BMC Med</source>
+          <year>2010</year>
+          <volume>8</volume>
+          <fpage>63</fpage>
+          <pub-id pub-id-type="doi">10.1186/1741-7015-8-63</pub-id>
+          <pub-id pub-id-type="pmid">20961442</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Boddy</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>King</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Clark</surname>
+            <given-names>JS</given-names>
+          </name>
+          <name>
+            <surname>Heaney</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Mair</surname>
+            <given-names>F</given-names>
+          </name>
+          <article-title>The influence of context and process when implementing e-health</article-title>
+          <source>BMC Med Inform Decis Mak</source>
+          <year>2009</year>
+          <volume>9</volume>
+          <fpage>9</fpage>
+          <pub-id pub-id-type="doi">10.1186/1472-6947-9-9</pub-id>
+          <pub-id pub-id-type="pmid">19183479</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Elwyn</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Legare</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Van Der</surname>
+            <given-names>WT</given-names>
+          </name>
+          <name>
+            <surname>Edwards</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>May</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Arduous implementation: does the Normalisation Process Model explain why it&#x2019;s so difficult to embed decision support technologies for patients in routine clinical practice</article-title>
+          <source>Implement Sci</source>
+          <year>2008</year>
+          <volume>3</volume>
+          <fpage>57</fpage>
+          <pub-id pub-id-type="doi">10.1186/1748-5908-3-57</pub-id>
+          <pub-id pub-id-type="pmid">19117509</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>May</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Finch</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Cornford</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Exley</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Gately</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Kirk</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Jenkings</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Osbourne</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Robinson</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Rogers</surname>
+            <given-names>A</given-names>
+          </name>
+          <etal/>
+          <article-title>Integrating telecare for chronic disease management in the community: What needs to be done?</article-title>
+          <source>BMC Health Serv Res</source>
+          <year>2011</year>
+          <volume>11</volume>
+          <fpage>131</fpage>
+          <pub-id pub-id-type="doi">10.1186/1472-6963-11-131</pub-id>
+          <pub-id pub-id-type="pmid">21619596</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Murray</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Burns</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>May</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Finch</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>O&#x2019;Donnell</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Wallace</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Mair</surname>
+            <given-names>F</given-names>
+          </name>
+          <article-title>Why is it difficult to implement e-health initiatives? A qualitative study</article-title>
+          <source>Implement Sci</source>
+          <year>2011</year>
+          <volume>6</volume>
+          <fpage>6</fpage>
+          <pub-id pub-id-type="doi">10.1186/1748-5908-6-6</pub-id>
+          <pub-id pub-id-type="pmid">21244714</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Finch</surname>
+            <given-names>TL</given-names>
+          </name>
+          <name>
+            <surname>Mair</surname>
+            <given-names>FS</given-names>
+          </name>
+          <name>
+            <surname>O&#x2019;Donnell</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Murray</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>May</surname>
+            <given-names>CR</given-names>
+          </name>
+          <article-title>From theory to 'measurement&#x2019; in complex interventions: methodological lessons from the development of an e-health normalisation instrument</article-title>
+          <source>BMC Med Res Methodol</source>
+          <year>2012</year>
+          <volume>12</volume>
+          <fpage>69</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2288-12-69</pub-id>
+          <pub-id pub-id-type="pmid">22594537</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>May</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Finch</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Ballini</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>MacFarlane</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Mair</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Murray</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Treweek</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Rapley</surname>
+            <given-names>T</given-names>
+          </name>
+          <article-title>Evaluating complex interventions and health technologies using normalization process theory: development of a simplified approach and web-enabled toolkit</article-title>
+          <source>BMC Health Serv Res</source>
+          <year>2011</year>
+          <volume>11</volume>
+          <fpage>245</fpage>
+          <pub-id pub-id-type="doi">10.1186/1472-6963-11-245</pub-id>
+          <pub-id pub-id-type="pmid">21961827</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Moskowitz</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Chan</surname>
+            <given-names>YF</given-names>
+          </name>
+          <name>
+            <surname>Bruns</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Levine</surname>
+            <given-names>SR</given-names>
+          </name>
+          <article-title>Emergency physician and stroke specialist beliefs and expectations regarding telestroke</article-title>
+          <source>Stroke</source>
+          <year>2010</year>
+          <volume>41</volume>
+          <fpage>805</fpage>
+          <lpage>809</lpage>
+          <pub-id pub-id-type="doi">10.1161/STROKEAHA.109.574137</pub-id>
+          <pub-id pub-id-type="pmid">20167910</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cho</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Khasanshina</surname>
+            <given-names>EV</given-names>
+          </name>
+          <name>
+            <surname>Mathiassen</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Hess</surname>
+            <given-names>DC</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Stachura</surname>
+            <given-names>ME</given-names>
+          </name>
+          <article-title>An analysis of business issues in a telestroke project</article-title>
+          <source>Journal Telemed Telecare</source>
+          <year>2007</year>
+          <volume>13</volume>
+          <fpage>257</fpage>
+          <lpage>262</lpage>
+          <pub-id pub-id-type="doi">10.1258/135763307781458930</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cho</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Mathiassen</surname>
+            <given-names>L</given-names>
+          </name>
+          <article-title>The role of industry infrastructure in telehealth innovations: a multi-leve analysis of a telestroke program</article-title>
+          <source>Eur J Inf Syst</source>
+          <year>2007</year>
+          <volume>16</volume>
+          <fpage>738</fpage>
+          <lpage>750</lpage>
+          <pub-id pub-id-type="doi">10.1057/palgrave.ejis.3000718</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Miley</surname>
+            <given-names>ML</given-names>
+          </name>
+          <name>
+            <surname>Demaerschalk</surname>
+            <given-names>BM</given-names>
+          </name>
+          <name>
+            <surname>Olmstead</surname>
+            <given-names>NL</given-names>
+          </name>
+          <name>
+            <surname>Kiernan</surname>
+            <given-names>TE</given-names>
+          </name>
+          <name>
+            <surname>Corday</surname>
+            <given-names>DA</given-names>
+          </name>
+          <name>
+            <surname>Chikani</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Bobrow</surname>
+            <given-names>BJ</given-names>
+          </name>
+          <article-title>The state of emergency stroke resources and care in rural Arizona: a platform for telemedicine</article-title>
+          <source>Telemed J E Health</source>
+          <year>2009</year>
+          <volume>15</volume>
+          <fpage>691</fpage>
+          <lpage>699</lpage>
+          <pub-id pub-id-type="doi">10.1089/tmj.2009.0018</pub-id>
+          <pub-id pub-id-type="pmid">19694588</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Tatlisumak</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Soinila</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Kaste</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Telestroke networking offers multiple benefits beyond thrombolysis</article-title>
+          <source>Cerebrovasc Dis</source>
+          <year>2009</year>
+          <volume>27</volume>
+          <fpage>21</fpage>
+          <lpage>27</lpage>
+          <pub-id pub-id-type="doi">10.1159/000213055</pub-id>
+          <pub-id pub-id-type="pmid">19546538</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Audebert</surname>
+            <given-names>HJ</given-names>
+          </name>
+          <name>
+            <surname>Kukla</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Vatankhah</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Gotzler</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Schenkel</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Hofer</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Furst</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Haberl</surname>
+            <given-names>RL</given-names>
+          </name>
+          <article-title>Comparison of tissue plasminogen activator administration management between Telestroke Network hospitals and academic stroke centers: the Telemedical Pilot Project for Integrative Stroke Care in Bavaria/Germany</article-title>
+          <source>Stroke</source>
+          <year>2006</year>
+          <volume>37</volume>
+          <fpage>1822</fpage>
+          <lpage>1827</lpage>
+          <pub-id pub-id-type="doi">10.1161/01.STR.0000226741.20629.b2</pub-id>
+          <pub-id pub-id-type="pmid">16763192</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ickenstein</surname>
+            <given-names>GW</given-names>
+          </name>
+          <name>
+            <surname>Horn</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Schenkel</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Vatankhah</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Bogdahn</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Haberl</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Audebert</surname>
+            <given-names>HJ</given-names>
+          </name>
+          <article-title>The use of telemedicine in combination with a new stroke-code-box significantly increases t-PA use in rural communities</article-title>
+          <source>Neurocrit Care</source>
+          <year>2005</year>
+          <volume>3</volume>
+          <fpage>27</fpage>
+          <lpage>32</lpage>
+          <pub-id pub-id-type="doi">10.1385/NCC:3:1:027</pub-id>
+          <pub-id pub-id-type="pmid">16159092</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wiborg</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Widder</surname>
+            <given-names>B</given-names>
+          </name>
+          <article-title>Telemedicine in Stroke in Swabia Project: teleneurology to improve stroke care in rural areas: the Telemedicine in Stroke in Swabia (TESS) Project</article-title>
+          <source>Stroke</source>
+          <year>2003</year>
+          <volume>34</volume>
+          <fpage>2951</fpage>
+          <lpage>2956</lpage>
+          <pub-id pub-id-type="doi">10.1161/01.STR.0000099125.30731.97</pub-id>
+          <pub-id pub-id-type="pmid">14631092</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Demaerschalk</surname>
+            <given-names>BM</given-names>
+          </name>
+          <name>
+            <surname>Bobrow</surname>
+            <given-names>BJ</given-names>
+          </name>
+          <name>
+            <surname>Raman</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Kiernan</surname>
+            <given-names>TE</given-names>
+          </name>
+          <name>
+            <surname>Aguilar</surname>
+            <given-names>MI</given-names>
+          </name>
+          <name>
+            <surname>Ingall</surname>
+            <given-names>TJ</given-names>
+          </name>
+          <name>
+            <surname>Dodick</surname>
+            <given-names>DW</given-names>
+          </name>
+          <name>
+            <surname>Ward</surname>
+            <given-names>MP</given-names>
+          </name>
+          <name>
+            <surname>Richemont</surname>
+            <given-names>PC</given-names>
+          </name>
+          <name>
+            <surname>Brazdys</surname>
+            <given-names>K</given-names>
+          </name>
+          <etal/>
+          <article-title>Stroke team remote evaluation using a digital observation camera in Arizona: the initial mayo clinic experience trial</article-title>
+          <source>Stroke</source>
+          <year>2010</year>
+          <volume>41</volume>
+          <fpage>1251</fpage>
+          <lpage>1258</lpage>
+          <pub-id pub-id-type="doi">10.1161/STROKEAHA.109.574509</pub-id>
+          <pub-id pub-id-type="pmid">20431081</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>LaMonte</surname>
+            <given-names>MP</given-names>
+          </name>
+          <name>
+            <surname>Bahouth</surname>
+            <given-names>MN</given-names>
+          </name>
+          <name>
+            <surname>Hu</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Pathan</surname>
+            <given-names>MY</given-names>
+          </name>
+          <name>
+            <surname>Yarbrough</surname>
+            <given-names>KL</given-names>
+          </name>
+          <name>
+            <surname>Gunawardane</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Crarey</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Page</surname>
+            <given-names>W</given-names>
+          </name>
+          <article-title>Telemedicine for acute stroke: triumphs and pitfalls</article-title>
+          <source>Stroke</source>
+          <year>2003</year>
+          <volume>34</volume>
+          <fpage>725</fpage>
+          <lpage>728</lpage>
+          <pub-id pub-id-type="doi">10.1161/01.STR.0000056945.36583.37</pub-id>
+          <pub-id pub-id-type="pmid">12624298</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rubin</surname>
+            <given-names>MN</given-names>
+          </name>
+          <name>
+            <surname>Wellik</surname>
+            <given-names>KE</given-names>
+          </name>
+          <name>
+            <surname>Channer</surname>
+            <given-names>DD</given-names>
+          </name>
+          <name>
+            <surname>Demaerschalk</surname>
+            <given-names>BM</given-names>
+          </name>
+          <article-title>A systematic review of telestroke</article-title>
+          <source>Postgrad Med</source>
+          <year>2013</year>
+          <volume>125</volume>
+          <fpage>45</fpage>
+          <lpage>50</lpage>
+          <pub-id pub-id-type="doi">10.3810/pgm.2013.01.2623</pub-id>
+          <pub-id pub-id-type="pmid">23391670</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Murray</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>May</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Mair</surname>
+            <given-names>F</given-names>
+          </name>
+          <article-title>Development and formative evaluation of the e-Health Implementation Toolkit (e-HIT)</article-title>
+          <source>BMC Med Inform Decis Mak</source>
+          <year>2010</year>
+          <volume>10</volume>
+          <fpage>61</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1186/1472-6947-10-61</pub-id>
+          <pub-id pub-id-type="pmid">20955594</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="other">
+          <source>Standardised Telemedicine Toolkit 4 Stroke</source>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.astute-telestroke.org.uk">http://www.astute-telestroke.org.uk</ext-link>
+          </comment>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

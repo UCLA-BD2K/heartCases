@@ -1,0 +1,790 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:ali="http://www.niso.org/schemas/ali/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">25392994</article-id>
+      <article-id pub-id-type="pmc">4231049</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-14-35559</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0112747</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology and life sciences</subject>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Genome Analysis</subject>
+              <subj-group>
+                <subject>Transcriptome Analysis</subject>
+                <subj-group>
+                  <subject>Next-Generation Sequencing</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Genomics</subject>
+              <subj-group>
+                <subject>Human Genomics</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Heredity</subject>
+              <subj-group>
+                <subject>Genetic Linkage</subject>
+                <subj-group>
+                  <subject>Autosomal Linkage</subject>
+                </subj-group>
+              </subj-group>
+              <subj-group>
+                <subject>Chromosomal Inheritance</subject>
+                <subject>Homozygosity</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Mutation</subject>
+              <subj-group>
+                <subject>Frameshift Mutation</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Molecular Genetics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Molecular biology</subject>
+            <subj-group>
+              <subject>Molecular biology techniques</subject>
+              <subj-group>
+                <subject>Sequencing techniques</subject>
+                <subj-group>
+                  <subject>DNA sequencing</subject>
+                  <subj-group>
+                    <subject>Dideoxy DNA sequencing</subject>
+                  </subj-group>
+                </subj-group>
+                <subj-group>
+                  <subject>High Throughput Sequencing</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Ophthalmology</subject>
+            <subj-group>
+              <subject>Retinal Disorders</subject>
+              <subj-group>
+                <subject>Retinal Degeneration</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Visual Impairments</subject>
+              <subj-group>
+                <subject>Blindness</subject>
+                <subject>Myopia</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Inherited Eye Disorders</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Homozygosity Mapping and Whole Exome Sequencing Reveal a Novel Homozygous <italic>COL18A1</italic> Mutation Causing Knobloch Syndrome</article-title>
+        <alt-title alt-title-type="running-head">Whole Exome Sequencing and Knobloch Syndrome</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Haghighi</surname>
+            <given-names>Alireza</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Tiwari</surname>
+            <given-names>Amit</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Piri</surname>
+            <given-names>Niloofar</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>N&#xFC;rnberg</surname>
+            <given-names>Gudrun</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Saleh-Gohari</surname>
+            <given-names>Nasrollah</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Haghighi</surname>
+            <given-names>Amirreza</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Neidhardt</surname>
+            <given-names>John</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>N&#xFC;rnberg</surname>
+            <given-names>Peter</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff10">
+            <sup>10</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff11">
+            <sup>11</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Berger</surname>
+            <given-names>Wolfgang</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff8">
+            <sup>8</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff9">
+            <sup>9</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Genetics, Harvard Medical School, Boston, MA, United States of America</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Department of Medicine and the Howard Hughes Medical Institute, Brigham and Women&#x2019;s Hospital, Boston, MA, United States of America</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Institute of Medical Molecular Genetics, University of Zurich Wagistrasse 12, CH-8952 Schlieren, Switzerland</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Kentucky Lions Eye Center, Department of Ophthalmology and Visual Sciences, University of Louisville, Louisville, KY, United States of America</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>Cologne Center for Genomics (CCG), University of Cologne, Weyertal 115b, 50931 Cologne, Germany</addr-line>
+      </aff>
+      <aff id="aff6">
+        <label>6</label>
+        <addr-line>Genetic Department, Kerman University of Medical Sciences, Kerman, Iran</addr-line>
+      </aff>
+      <aff id="aff7">
+        <label>7</label>
+        <addr-line>Toronto General Hospital, University of Toronto, Toronto, Canada</addr-line>
+      </aff>
+      <aff id="aff8">
+        <label>8</label>
+        <addr-line>Zurich Center for Integrative Human Physiology (ZIHP), University of Zurich, Zurich, Switzerland</addr-line>
+      </aff>
+      <aff id="aff9">
+        <label>9</label>
+        <addr-line>Neuroscience Center Zurich (ZNZ), University and ETH Zurich, Zurich, Switzerland</addr-line>
+      </aff>
+      <aff id="aff10">
+        <label>10</label>
+        <addr-line>Center for Molecular Medicine Cologne (CMMC), University of Cologne, Robert-Koch Str. 21, D-50931 Cologne, Germany</addr-line>
+      </aff>
+      <aff id="aff11">
+        <label>11</label>
+        <addr-line>Cologne Excellence Cluster on Cellular Stress Responses in Aging-Associated Diseases (CECAD), University of Cologne, Joseph-Stelzmann-Str. 26, D-50931 Cologne, Germany</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Strau&#xDF;</surname>
+            <given-names>Olaf</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Eye Hospital, Charit&#xE9;, Germany</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>berger@medgen.uzh.ch</email> (MB); <email>haghighimd@yahoo.com</email> (Alireza Haghighi)</corresp>
+        <fn fn-type="conflict">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: Alireza Haghighi WB. Performed the experiments: AT NP GN. Analyzed the data: AT GN PN WB. Contributed reagents/materials/analysis tools: Alireza Haghighi WB PN. Contributed to the writing of the manuscript: Alireza Haghighi AT NP GN Amirreza Haghighi NSG JN PN WB. Patient recruitment, clinical exams, data collection, and clinical interpretation, sample collection and DNA extraction: NP Alireza Haghighi Amirreza Haghighi NSG. Sequencing: AT JN PN GN WB.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>13</day>
+        <month>11</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>9</volume>
+      <issue>11</issue>
+      <elocation-id>e112747</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>7</day>
+          <month>8</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>14</day>
+          <month>10</month>
+          <year>2014</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2014</copyright-year>
+        <copyright-holder>Haghighi et al</copyright-holder>
+        <license>
+          <license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>The aim of this study was to identify the genetic basis of a chorioretinal dystrophy with high myopia of unknown origin in a child of a consanguineous marriage. The proband and ten family members of Iranian ancestry participated in this study. Linkage analysis was carried out with DNA samples of the proband and her parents by using the Human SNP Array 6.0. Whole exome sequencing (WES) was performed with the patients&#x2019; DNA. Specific sequence alterations within the homozygous regions identified by whole exome sequencing were verified by Sanger sequencing. Upon genetic analysis, a novel homozygous frameshift mutation was found in exon 42 of the <italic>COL18A1</italic> gene in the patient. Both parents were heterozygous for this sequence variation. Mutations in <italic>COL18A1</italic> are known to cause Knobloch syndrome (KS). Retrospective analysis of clinical records of the patient revealed surgical removal of a meningocele present at birth. The clinical features shown by our patient were typical of KS with the exception of chorioretinal degeneration which is a rare manifestation. This is the first case of KS reported in a family of Iranian ancestry. We identified a novel disease-causing (deletion) mutation in the <italic>COL18A1</italic> gene leading to a frameshift and premature stop codon in the last exon. The mutation was not present in SNP databases and was also not found in 192 control individuals. Its localization within the endostatin domain implicates a functional relevance of endostatin in KS. A combined approach of linkage analysis and WES led to a rapid identification of the disease-causing mutation even though the clinical description was not completely clear at the beginning.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This study was undertaken as part of GENE-ME (a research initiative for investigation of inherited diseases from the Middle-East). This study was funded by a grant from the Swiss National Science Foundation (Grant number: 320030_138507) to WB and JN and from Velux Stiftung, Switzerland to WB. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="8"/>
+      </counts>
+      <custom-meta-group>
+        <custom-meta id="data-availability">
+          <meta-name>Data Availability</meta-name>
+          <meta-value>The authors confirm that, for approved reasons, some access restrictions apply to the data underlying the findings. All relevant data are within the paper and its Supporting Information files.</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+    <notes>
+      <title>Data Availability</title>
+      <p>The authors confirm that, for approved reasons, some access restrictions apply to the data underlying the findings. All relevant data are within the paper and its Supporting Information files.</p>
+    </notes>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Knobloch syndrome (MIM:267750) (KS) is a very rare autosomal recessive developmental disorder. It is characterized by vitreoretinal degeneration usually with recurrent retinal detachment, retinitis pigmentosa-like features, lens subluxation, congenital high myopia, macular abnormalities and occipital encephalocele. The ocular features of the disease are similar to Stickler syndrome with optically empty vitreous and severe chorioretinal degeneration and high myopia, which is caused by mutations in collagen genes <xref rid="pone.0112747-Seaver1" ref-type="bibr">[1]</xref>, <xref rid="pone.0112747-Sertie1" ref-type="bibr">[2]</xref>.</p>
+      <p>Since its first introduction in 1971 by Knobloch and Layer, more than 50 cases have been reported all over the world. A defect in early cephalic neuroectodermal morphogenesis has also been suggested <xref rid="pone.0112747-Seaver1" ref-type="bibr">[1]</xref>. From 1971 to 1994, three families were reported from Hungary and the US, as well as a large Brazilian family with a history of consanguinity <xref rid="pone.0112747-Seaver1" ref-type="bibr">[1]</xref>, <xref rid="pone.0112747-Czeizel1" ref-type="bibr">[3]</xref>, <xref rid="pone.0112747-PassosBueno1" ref-type="bibr">[4]</xref>, all supporting the autosomal recessive inheritance of this condition. In 1996, homozygosity mapping in the same Brazilian family with 11 affected individuals assigned the KS gene to 21q22.3, close to the marker D21S17 <xref rid="pone.0112747-Sertie1" ref-type="bibr">[2]</xref>. Through a positional cloning approach, Sertie et al. showed that mutations in <italic>COL18A1</italic> are responsible for KS <xref rid="pone.0112747-Sertie2" ref-type="bibr">[5]</xref>. The gene is transcribed by use of two promoters and alternative splicing of the third exon <xref rid="pone.0112747-Saarela1" ref-type="bibr">[6]</xref>. The C-terminal part (183 amino acids), designated endostatin, can be cleaved-off proteolytically <xref rid="pone.0112747-Oreilly1" ref-type="bibr">[7]</xref>. Collagen XVIII, encoded by the <italic>COL18A1</italic> gene, has an important role in determining the retinal structure as well as closure of the neural tube <xref rid="pone.0112747-Sertie2" ref-type="bibr">[5]</xref>. This protein is an essential component of the basement membrane of the iris, vitreous and retina and its presence is critical for normal eye development during embryogenesis. Collagen XVIII also seems to play important functional roles in neuronal cell migration and as a component of the basement membrane of kidney as well as teeth development <xref rid="pone.0112747-OConnell1" ref-type="bibr">[8]</xref>, <xref rid="pone.0112747-PassosBueno2" ref-type="bibr">[9]</xref>. It has been shown in an experimental model that collagen XVIII is also important for maintaining capillary permeability in striated muscle <xref rid="pone.0112747-Rygh1" ref-type="bibr">[10]</xref>. Williams et al. reported a case of KS with bilateral renal anomalies, which implies a role of collagen XVIII in kidney physiology <xref rid="pone.0112747-Williams1" ref-type="bibr">[11]</xref>. In 1998, Wilson et al. reported two siblings from New Zealand and proposed a possible involvement of mesoderm in morphogenesis as those patients had abnormal pulmonary lymphatics <xref rid="pone.0112747-Wilson1" ref-type="bibr">[12]</xref>. Sniderman et al. reported a case with anterior midline scalp defect reflecting further clinical variability in this rare autosomal recessive syndrome <xref rid="pone.0112747-Sniderman1" ref-type="bibr">[13]</xref>.</p>
+      <p>Mutations in <italic>COL18A1</italic> gene can lead to occipital encephalocele and severe ocular alterations <xref rid="pone.0112747-Suzuki1" ref-type="bibr">[14]</xref>. It was also shown that a lack of either the short (NC1-303) or long isoform (NC1-728) of collagen XVIII causes similar phenotypes, but patients lacking all isoforms exhibit increasingly severe ocular alterations. This suggests that both isoforms play critical roles in the maintenance and organization of the human eye <xref rid="pone.0112747-Suzuki1" ref-type="bibr">[14]</xref>. In 2003, Kliemann et al. reported neuronal migration disorders in two Brazilian patients for the first time <xref rid="pone.0112747-Kliemann1" ref-type="bibr">[15]</xref>. This was followed by the report of a case with persistent fetal vasculature and initiated the discussion of a possible role of endostatin in vascular remodeling of the fetal eye <xref rid="pone.0112747-Duh1" ref-type="bibr">[16]</xref>. In two siblings with KS from France, one presented with mental retardation and severe supratentorial CNS anomalies, and a second fetus with severe brain malformations, complete vermian agenesis, and mesencephalic hamartoma, suggested that either endostatin or full-length collagen XVIII play a role in neuronal migration, revealing that CNS anomalies in KS were more severe than initially thought <xref rid="pone.0112747-Keren1" ref-type="bibr">[17]</xref>. In addition, Knobloch syndrome was found to be associated with acute lymphoblastic leukemia in an El Salvadorian patient. The authors proposed that an increased risk of cancer may be an endostatin associated effect and suggested monitoring of KS cases with respect to leukemia or other cancers <xref rid="pone.0112747-Mahajan1" ref-type="bibr">[18]</xref>.</p>
+      <p>Here, we report an Iranian family in which the proband was initially diagnosed with congenital chorioretinal degeneration and myopia. A combination of homozygosity mapping and whole exome sequencing (WES) identified a novel mutation in <italic>COL18A1</italic> and led to the diagnosis of Knobloch syndrome. This is the first case of KS identified using such an approach. It is also the first KS case found in a family of Iranian descent.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s2">
+      <title>Materials and Methods</title>
+      <sec id="s2a">
+        <title>Enrollment of participants and clinical examinations</title>
+        <p>Recruitment of the family was based on interviews, questionnaires, and clinical examination of affected and unaffected individuals by ophthalmologists and geneticists. An informed written consent for clinical and molecular investigation was obtained from all family members. The study was conducted in accordance with the Helsinki Declaration. The approval for genetic testing was awarded to The Institute of Medical Molecular Genetics by the Federal Office of Public Health (FOPH) in Switzerland. Complete ophthalmic examination was performed. Visual acuity was measured using the Snellen chart. Ophthalmological exam was performed using the slit lamp biomicroscope, indirect biomicroscopy and indirect ophthalmoscopy. Intraocular pressure was measured by the Goldman tonometer. Flash ERG was performed to evaluate the overall photoreceptor function.</p>
+      </sec>
+      <sec id="s2b">
+        <title>DNA extraction</title>
+        <p>Peripheral blood samples were collected from all family members. DNA was extracted using QIAamp DNA blood Midi kits (Qiagen, Hilden, Germany).</p>
+      </sec>
+      <sec id="s2c">
+        <title>Genotyping and linkage analysis</title>
+        <p>Whole genome genotyping for the proband and her parents was carried out using the Genome-Wide Human SNP Array 6.0 (Affymetrix, Santa Clara, CA). Data were analyzed using the program Graphical Representation of Relationships (GRR) <xref rid="pone.0112747-Abecasis1" ref-type="bibr">[19]</xref>. Linkage analysis was performed assuming autosomal recessive inheritance, full penetrance, consanguinity and a mutation carrier frequency of 0.0001. Multipoint LOD scores were calculated using the program ALLEGRO <xref rid="pone.0112747-Gudbjartsson1" ref-type="bibr">[20]</xref>. All data handling was done using the graphical user interface ALOHOMORA <xref rid="pone.0112747-Ruschendorf1" ref-type="bibr">[21]</xref>. Homozygous genomic regions restricted to the patient and absent in her parents were identified and a tab-delimited &#x201C;regions of interest&#x201D; file was generated.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Whole exome sequencing analysis</title>
+        <p>Whole exome sequencing was performed using NimbleGen SeqCap EZ Human Exome Library (Roche NimbleGen Inc., Madison, WI) for library preparation and paired-end 100 nt sequencing on Illumina HiSeq Alignment of sequence reads, indexing of the reference genome, variant calling and annotation was done with a pipeline based on BWA <xref rid="pone.0112747-Li1" ref-type="bibr">[22]</xref>, Samtools <xref rid="pone.0112747-Li2" ref-type="bibr">[23]</xref>, Picard and Annovar <xref rid="pone.0112747-Wang1" ref-type="bibr">[24]</xref>. Variants were annotated using Alamut-HT (Interactive Biosoftware, Rouen, France) and filtered against the above described regions of interest file in order to obtain variants within homozygous regions specific to the patient. Variants were visualized on Alamut Viewer 2.2 (Interactive Biosoftware, Rouen, France). A filtering pipeline was established to remove known SNPs or benign polymorphisms. The following variants passed the filter: (a) non-annotated novel SNPs (b) variants with minor allele frequency &#x2264;0.02 (c) variants with a SIFT score of &#x2264;0.05 (deleterious) as well as (d) variants with a MAPP (Multivariate Analysis of Protein Polymorphism) -score (&#x200A;=&#x200A;bad or unknown).</p>
+      </sec>
+      <sec id="s2e">
+        <title>Primer design, PCR amplification and Sanger sequencing</title>
+        <p>Primers were designed using Primer3 software <xref rid="pone.0112747-Untergasser1" ref-type="bibr">[25]</xref> and purchased at Microsynth AG (Balgach, Switzerland). Exon 42 of <italic>COL18A1</italic> was amplified in duplicate from genomic DNA of the patient and available family members using Hot FirePol DNA Polymerase (Solis BioDyne, Tartu, Estonia) and the following primers: forward <named-content content-type="gene">5&#x2032;-GTGTCTGGCAGAAGCAGCAT-3&#x2032;</named-content> and reverse <named-content content-type="gene">5&#x2032;-TCACAGGTCAGGGGAGAGTT-3&#x2032;</named-content>. Sanger sequencing was performed using the Big Dye Terminator Cycle v1.1 Sequencing Kit (Applied Biosystems, Carlsbad, California, USA) and ABI Prism 3730 Genetic Analyzer (Applied Biosystems, Carlsbad, California, USA). 192 randomly collected DNAs from the general population were used to assess the frequency of the mutation. Sanger sequencing data was analyzed using SeqScape v2.6 (Applied Biosystems, Carlsbad, California, USA).</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Clinical Description</title>
+        <p>The female proband (IV-1, <xref ref-type="fig" rid="pone-0112747-g001">Figure 1a</xref>) was examined at 10 years of age. She initially presented at eight months of age with deviation and involuntary eye movements. On physical examination, at the first visit, she had nystagmus and esotropia, and normal anterior segment oculus uterque (both eyes, OU) [specifically speaking iris was normal OU and after pupillary dilation there was no abnormality in lens periphery OU]. Cycloplegic refraction revealed highly myopic refractive error OU (&#x2212;16.00 D). Dilated fundus examination showed waxy optic discs (<xref ref-type="fig" rid="pone-0112747-g001">Figure 1c</xref>-white arrow) with a cup-to-disc ratio of 0.1, arterial narrowing (<xref ref-type="fig" rid="pone-0112747-g001">Figure 1b</xref>-white arrow) and a diffuse chorioretinal atrophy with a well-defined central atrophic lesion in the center of the macula OU (<xref ref-type="fig" rid="pone-0112747-g001">Figure 1c</xref>-arrowhead).</p>
+        <fig id="pone-0112747-g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0112747.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <p>a. Pedigree of a consanguineous family initially diagnosed with chorioretinal degeneration and high myopia (in some family members). b. Color fundus photo OD shows the diffuse chorioretinal atrophy (white arrow points to the arterial narrowing). c. Color fundus photo OS showing the waxy optic disc (white arrow) and the well-circumscribed macular atrophic lesion (arrowhead). d. Flash ERG OU demonstrates severely diminished amplitudes of the a and b waves.</p>
+          </caption>
+          <graphic xlink:href="pone.0112747.g001"/>
+        </fig>
+        <p>Her parents were first cousins and there was no history of any similar condition in the family, apart from the high myopia in two of the aunts (III-10: &#x2212;8.00 D, OU with myopic chorioretinal atrophy and III-11: &#x2212;16.00 D: OD; &#x2212;9.50&#x2013;2.00&#xD7;85&#xB0;:OS with high myopic chorioretinal atrophy) (<xref ref-type="fig" rid="pone-0112747-g001">Figure 1a</xref>).</p>
+        <p>Flash electroretinography (ERG), demonstrated severely diminished amplitude of a and b waves OU which was in favor of both cone and rod dysfunction (<xref ref-type="fig" rid="pone-0112747-g001">Figure 1d</xref>).</p>
+        <p>Based on clinical findings differential diagnosis included the following:</p>
+        <list list-type="order">
+          <list-item>
+            <p>Congenital-onset central chorioretinal dystrophy associated with high myopia <xref rid="pone.0112747-Iqbal1" ref-type="bibr">[26]</xref>, this has been reported in a family in middle east without genotyping; however ocular features are very similar to our patient</p>
+          </list-item>
+          <list-item>
+            <p>Leber&#x2019;s congenital amaurosis type with central macular atrophy (NMNAT1 mutation) <xref rid="pone.0112747-Perrault1" ref-type="bibr">[27]</xref>. Ocular findings of this type of leber&#x2019;s is also very similar to what we saw in our patient</p>
+          </list-item>
+        </list>
+        <p>Eye glasses were prescribed for the patient and she was then followed up somewhere else for seven years. At 8 years of age, her physical and intellectual developments were normal. At school, she maintained good academic standing, with the assistance of low-vision aids such as magnifiers or magnified prints. On ophthalmic examination, nystagmus was apparent. The best corrected visual acuity (BCVA) was 20/400 OU and the refractive error was &#x2212;12.50 D, OU. Dilated fundus examination was remarkable for waxy optic nerve with a cup-to-disc ratio of 0.1, arterial narrowing and diffuse chorioretinal atrophy (myopic changes) with a well-defined central atrophic lesion with prominent underlying large choroidal vessels. The clinical findings were the same as seven years ago.</p>
+        <p>A few months later, she presented with a chief complaint of visual field defect in the left eye for a few days. Fundus examination revealed a superonasal retinal detachment. She underwent 23-gauge pars plana vitrectomy (PPV) and silicone oil injection. After 2 months, she developed cataract (as a consequence of vitrectomy surgery); however, the retina was flat. Cataract surgery and posterior chamber intraocular lens implantation (PC IOL) were performed accompanied with removal of silicone oil through a separate scleral incision. BCVA after the surgery was 20/400. Two years later, she developed posterior capsule opacity, which required YAG laser capsulotomy to restore the vision.</p>
+        <p>Ophthalmic examination of the parents was unremarkable with normal vision and extraocular movements, and normal anterior and posterior segments. The proband&#x2019;s two aunts (III-10 and III-11, <xref ref-type="fig" rid="pone-0112747-g001">Figure 1a</xref>) had high myopia OU. Anterior segments were normal OU. Fundus examination revealed chorioretinal atrophy (myopic changes) without unusual findings.</p>
+      </sec>
+      <sec id="s3b">
+        <title>Genetic Analysis</title>
+        <sec id="s3b1">
+          <title>Genotyping and linkage analysis</title>
+          <p>Genome-wide genotyping of the patient-parent-trio with a high-density SNP array identified19 homozygous regions that were unique to the proband and not observed in her parents (<xref ref-type="supplementary-material" rid="pone.0112747.s002">table S1</xref>, <xref ref-type="supplementary-material" rid="pone.0112747.s001">figure S1</xref>). The LOD (logarithm of odds) scores obtained for these homozygous regions were not higher than 1.8 (<xref ref-type="supplementary-material" rid="pone.0112747.s001">figure S1</xref>) as expected for a trio with consanguineous marriage.</p>
+        </sec>
+        <sec id="s3b2">
+          <title>Whole Exome Sequencing</title>
+          <p>In total, 8.87 Gb of data were obtained upon sequencing that constituted about 9.5*10<sup>7</sup> reads. While mean coverage was 98x, 97% of sequences had at least 10-times coverage and 90% of the sequences were covered at least 30-times. 38276 variants were obtained from the whole-exome sequencing of the patient&#x2019;s DNA and alignment to the reference sequence. Using the &#x201C;regions of interest&#x201D; file (see Materials and Methods), variants were annotated by using Alamut-HT. 2327 variants were obtained in the homozygosity regions of interest with 219 of them being novel (not annotated in dbSNP). Almost one-fifth of the variants were missense mutations, 114 of them predicted to be damaging. <xref ref-type="table" rid="pone-0112747-t001">Table 1</xref> lists the distribution of the sequence variations. We subjected the 2327 variants to our filtering pipeline (described in Materials and Methods) and found a novel deletion in <italic>COL18A1</italic>: NM_130445.2:c.3825_3838del:p.Ser1276Alafs*9. This 14 bp deletion is predicted to cause a frameshift at a highly conserved Serine residue at position 1276 (<xref ref-type="fig" rid="pone-0112747-g002">Figure 2</xref>) and results in a stop codon 9 triplets downstream. Snapshots of Alamut Viewer 2.2 in <xref ref-type="fig" rid="pone-0112747-g002">figure 2</xref> show the bidirectional coverage of the sequencing reads where a deletion in exon 42 of <italic>COL18A1</italic> gene can be clearly seen (upper panel). The deletion is also predicted to lead to strong loss of multiple exonic splicing enhancers (<xref ref-type="fig" rid="pone-0112747-g002">Figure 2</xref>, lower panel).</p>
+          <fig id="pone-0112747-g002" orientation="portrait" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0112747.g002</object-id>
+            <label>Figure 2</label>
+            <caption>
+              <title>Coverage of sequencing reads in <italic>COL18A1</italic> including a 14 bp deletion (NM_130445.2:c.3825_3838del:p.Ser1276Alafs*9&#xA0;(Exon 42) as seen on Alamut Viewer 2.2.0 (Upper panel).</title>
+              <p>A loss of multiple strong ESEs is predicted due to the deletion (Lower panel).</p>
+            </caption>
+            <graphic xlink:href="pone.0112747.g002"/>
+          </fig>
+          <table-wrap id="pone-0112747-t001" orientation="portrait" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0112747.t001</object-id>
+            <label>Table 1</label>
+            <caption>
+              <title>Classification of the type of homozygous variants obtained by linkage analysis and whole exome sequencing.</title>
+            </caption>
+            <alternatives>
+              <graphic id="pone-0112747-t001-1" xlink:href="pone.0112747.t001"/>
+              <table frame="hsides" rules="groups">
+                <colgroup span="1">
+                  <col align="left" span="1"/>
+                  <col align="center" span="1"/>
+                  <col align="center" span="1"/>
+                  <col align="center" span="1"/>
+                  <col align="center" span="1"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">Type of sequence alteration</td>
+                    <td align="left" rowspan="1" colspan="1">SIFT prediction</td>
+                    <td align="left" rowspan="1" colspan="1">Number</td>
+                    <td align="left" rowspan="1" colspan="1">Annotated SNPs</td>
+                    <td align="left" rowspan="1" colspan="1">Novel variants</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>Nonsense (stop) mutation</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">-</td>
+                    <td align="left" rowspan="1" colspan="1">2</td>
+                    <td align="left" rowspan="1" colspan="1">2</td>
+                    <td align="left" rowspan="1" colspan="1">0</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>Amino acid substitution</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">damaging</td>
+                    <td align="left" rowspan="1" colspan="1">114</td>
+                    <td align="left" rowspan="1" colspan="1">82</td>
+                    <td align="left" rowspan="1" colspan="1">28</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>Amino acid substitution</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">tolerated</td>
+                    <td align="left" rowspan="1" colspan="1">378</td>
+                    <td align="left" rowspan="1" colspan="1">357</td>
+                    <td align="left" rowspan="1" colspan="1">21</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>Silent mutation</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">-</td>
+                    <td align="left" rowspan="1" colspan="1">685</td>
+                    <td align="left" rowspan="1" colspan="1">629</td>
+                    <td align="left" rowspan="1" colspan="1">56</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>Intronic or UTR mutation</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">-</td>
+                    <td align="left" rowspan="1" colspan="1">1031</td>
+                    <td align="left" rowspan="1" colspan="1">924</td>
+                    <td align="left" rowspan="1" colspan="1">107</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>Frameshift deletion</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">-</td>
+                    <td align="left" rowspan="1" colspan="1">4</td>
+                    <td align="left" rowspan="1" colspan="1">3</td>
+                    <td align="left" rowspan="1" colspan="1">1</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>Frameshift insertion</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">-</td>
+                    <td align="left" rowspan="1" colspan="1">2</td>
+                    <td align="left" rowspan="1" colspan="1">2</td>
+                    <td align="left" rowspan="1" colspan="1">0</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>In-frame deletion</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">-</td>
+                    <td align="left" rowspan="1" colspan="1">5</td>
+                    <td align="left" rowspan="1" colspan="1">5</td>
+                    <td align="left" rowspan="1" colspan="1">0</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>In-frame duplication</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">-</td>
+                    <td align="left" rowspan="1" colspan="1">4</td>
+                    <td align="left" rowspan="1" colspan="1">3</td>
+                    <td align="left" rowspan="1" colspan="1">1</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>In-frame insertion</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">-</td>
+                    <td align="left" rowspan="1" colspan="1">1</td>
+                    <td align="left" rowspan="1" colspan="1">1</td>
+                    <td align="left" rowspan="1" colspan="1">0</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>Upstream and downstream mutations</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">-</td>
+                    <td align="left" rowspan="1" colspan="1">101</td>
+                    <td align="left" rowspan="1" colspan="1">96</td>
+                    <td align="left" rowspan="1" colspan="1">5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </alternatives>
+          </table-wrap>
+        </sec>
+        <sec id="s3b3">
+          <title>Segregation Analysis</title>
+          <p>The family of the proband spanned four generations and comprises 19 family members. The parents of the index patient were first cousins. The proband and ten other family members were involved in this study (<xref ref-type="fig" rid="pone-0112747-g001">Figure 1a</xref>). Subjects were genotyped by direct Sanger sequencing of the mutation in <italic>COL18A1</italic> (NM_130445.2:c.3825_3838del:p.Ser1276Alafs*9). Sanger sequencing confirmed the exome sequencing results that the proband (IV-1, <xref ref-type="fig" rid="pone-0112747-g001">Figure 1a</xref>) was homozygous for this mutation (<xref ref-type="fig" rid="pone-0112747-g002">Figure 2</xref> and <xref ref-type="fig" rid="pone-0112747-g003">3a</xref>). Parents of the proband (III-7 and III-8, <xref ref-type="fig" rid="pone-0112747-g001">Figure 1a</xref>) were heterozygous for the same mutation (<xref ref-type="fig" rid="pone-0112747-g003">Figure 3a</xref>), so were two uncles (III-3 and III-4) and two aunts (III-5 and III-11) (data not shown). Three uncles (III-6, III-9 and III-12, <xref ref-type="fig" rid="pone-0112747-g001">Figure 1a</xref>) and one aunt (III-10, <xref ref-type="fig" rid="pone-0112747-g001">Figure 1a</xref>) did not carry this mutation (data not shown). This frameshift deletion cosegregated with the phenotype in the family as an autosomal recessive trait as expected for Knobloch syndrome. The mutation was absent in control DNA samples of Caucasian origin from 192 unrelated individuals tested for this mutation (data not shown). Controls from Iranian descent were not available. Two of the aunts (III-10 and III-11, <xref ref-type="fig" rid="pone-0112747-g001">Figure 1a</xref>) also showed high myopia but this condition did not cosegregate with the identified <italic>COL18A1</italic> frameshift deletion. III-10 was homozygous for the reference allele and III-11 was heterozygous for the mutation but both had high-grade myopia.</p>
+          <fig id="pone-0112747-g003" orientation="portrait" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0112747.g003</object-id>
+            <label>Figure 3</label>
+            <caption>
+              <p>a. Sanger sequencing of <italic>COL18A1</italic> mutation NM_130445.2:c.3825_3838del:p.Ser1276Alafs*9&#xA0;(Exon 42) comparing a wild type sequence (top), homozygous deletion in index patient IV-1 (middle) and heterozygous deletion in father of the index patient (bottom). b. Conservation of the deleted nucleotides across various species. c. Alignment of three isoforms of <italic>COL18A1</italic> and endostatin. The highlighted region is deleted in patient IV-1.</p>
+            </caption>
+            <graphic xlink:href="pone.0112747.g003"/>
+          </fig>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>The proband is the first case of Knobloch syndrome in a family of Iranian descent. Twenty mutations leading to KS have been described in the <italic>COL18A1</italic> gene. This includes 5 missense mutations <xref rid="pone.0112747-Wilson1" ref-type="bibr">[12]</xref>, <xref rid="pone.0112747-Suzuki1" ref-type="bibr">[14]</xref>, <xref rid="pone.0112747-Kliemann1" ref-type="bibr">[15]</xref>, <xref rid="pone.0112747-Aldahmesh1" ref-type="bibr">[28]</xref>&#x2013;<xref rid="pone.0112747-Stahl1" ref-type="bibr">[30]</xref>, 3 mutations affecting correct splicing <xref rid="pone.0112747-Sertie2" ref-type="bibr">[5]</xref>, <xref rid="pone.0112747-Keren1" ref-type="bibr">[17]</xref>, <xref rid="pone.0112747-Suzuki2" ref-type="bibr">[31]</xref>, 5 small deletions <xref rid="pone.0112747-Suzuki1" ref-type="bibr">[14]</xref>, <xref rid="pone.0112747-Aldahmesh1" ref-type="bibr">[28]</xref>, <xref rid="pone.0112747-Suzuki2" ref-type="bibr">[31]</xref>, <xref rid="pone.0112747-Joyce1" ref-type="bibr">[32]</xref>, 4 small insertions <xref rid="pone.0112747-Suzuki1" ref-type="bibr">[14]</xref>, <xref rid="pone.0112747-Aldahmesh1" ref-type="bibr">[28]</xref>, <xref rid="pone.0112747-Suzuki2" ref-type="bibr">[31]</xref>, <xref rid="pone.0112747-Menzel1" ref-type="bibr">[33]</xref>, 2 gross deletions <xref rid="pone.0112747-Aldahmesh1" ref-type="bibr">[28]</xref>, <xref rid="pone.0112747-Aldahmesh2" ref-type="bibr">[29]</xref>, <xref rid="pone.0112747-Suzuki2" ref-type="bibr">[31]</xref> and 1 small indel <xref rid="pone.0112747-Aldahmesh2" ref-type="bibr">[29]</xref> (Source: HGMD Professional 2014.2).</p>
+      <p>Since the patient was an offspring of a first cousin marriage, we employed a combined approach of homozygosity mapping and whole exome sequencing and identified the disease-causing mutation using only a fraction of the time and costs in comparison to that required by conventional analysis. By filtering the exome data with our filtering pipeline (described in Materials and Methods), only a single sequence variant in the <italic>COL18A1</italic> gene remained as a mutation candidate associated with the disease.</p>
+      <p>The patient was initially clinically characterized with congenital-onset central chorioretinal dystrophy and myopia. Since we found a mutation in <italic>COL18A1,</italic> a gene that had been previously associated with Knobloch syndrome, we reanalyzed the clinical data in depth. Retrospective evaluation of additional clinical data upon identification of the mutation in <italic>COL18A1</italic> revealed that the patient had a meningocele surgically removed at 6 weeks of age. Thus the clinical picture of the patient is consistent with Knobloch syndrome. Mutations in <italic>COL18A1</italic> are specific to Knobloch Syndrome and no additional gene has been identified so far <xref rid="pone.0112747-Aldahmesh2" ref-type="bibr">[29]</xref>. The phenotype includes retinal detachment, nystagmus and congenital meningocele. While vitreoretinal degeneration is the more common phenotype seen in KS patients, our patient showed chorioretinal degeneration, a rather uncommon phenotype, which has been previously reported by Mahajan et al. 2010 <xref rid="pone.0112747-Mahajan1" ref-type="bibr">[18]</xref>. Two of the family members of the patient had extreme myopia, which is a phenotype frequently observed in KS patients. However, this did not segregate with the <italic>COL18A1</italic> mutation in the family.</p>
+      <p>The spectrum of ophthalmologic findings in KS was documented in a recent report by Khan et al <xref rid="pone.0112747-Khan1" ref-type="bibr">[34]</xref> in eight patients. Six of their patients had ectopia lentis, which was not seen in our case; however their retinal findings are very similar to our case. We suggest that in patients with congenital high myopia, retinitis pigmentosa like chorioretinal atrophy and a well-defined atrophic macular lesion, Knobloch syndrome should be considered as the most likely diagnosis. It seems that anterior segment findings are less consistent. These cases are at a high risk of retinal detachment at young age and should be carefully observed.</p>
+      <p>Collagen XVIII is encoded by three isoforms, each differing in their N-terminal regions. The mutation described in this study, c.3825_3838del, causes a frameshift deletion in the last exon of <italic>COL18A1</italic>, thus leading to an incomplete mRNA. This region of <italic>COL18A1</italic> also encodes for a cleavable protein called endostatin that has been shown to be anti-angiogenic and inhibit tumor formation <xref rid="pone.0112747-Oreilly1" ref-type="bibr">[7]</xref>. The identified mutation causes loss of the terminal 60 amino acids of endostatin (<xref ref-type="fig" rid="pone-0112747-g003">Figure 3c</xref>, truncated amino acids are highlighted in yellow). This immediately points to a role of endostatin in the disease physiology of KS. Endostatin is encoded by all isoforms of <italic>COL18A1</italic>, therefore, a mutation in the domain containing endostatin will affect all isoforms of <italic>COL18A1</italic>. Previous studies have shown a severe loss of endostatin levels in KS patients <xref rid="pone.0112747-Suzuki1" ref-type="bibr">[14]</xref>, <xref rid="pone.0112747-Suzuki2" ref-type="bibr">[31]</xref>. Due to poor health condition of the proband, we could not obtain additional samples for verifying her endostatin levels.</p>
+      <p>Fukai et al. showed that mice lacking collagen XVIII/endostatin manifest developmental eye defects, e.g. lack or abnormal outgrowth of retina, delayed regression of blood vessels in the vitreous along the surface of retina after birth and reduced expression of VEGF (Vascular Endothelial Growth Factor) <xref rid="pone.0112747-Fukai1" ref-type="bibr">[35]</xref>. Persistent fetal vasculature is the other endostatin-deficiency related condition in KS patients. Loss of endostatin or its deficiency might cause delayed or reduced fetal blood vessel regression in the eye. This can cause failure of normal vascular development in the retina <xref rid="pone.0112747-Duh1" ref-type="bibr">[16]</xref>. Endostatin physically interacts with extracellular matrix components such as laminin-1, fibulin-1, fibulin-2, fibronectin, heparin sulfate, nidogen-2 and perlecan <xref rid="pone.0112747-Duh1" ref-type="bibr">[16]</xref>, <xref rid="pone.0112747-Suzuki2" ref-type="bibr">[31]</xref>, <xref rid="pone.0112747-Sasaki1" ref-type="bibr">[36]</xref>, <xref rid="pone.0112747-Sasaki2" ref-type="bibr">[37]</xref>. Mutations in collagen XVIII/endostatin that lead to loss of the protein/protein function might thus cause changes in the overall structural organization and stability of the extracellular matrix. Therefore, phenotypic variations of mutations in collagen XVIII could be either due to reorganization of the ECM (structural changes) or through defects in angiogenesis during eye development.</p>
+      <p>This study describes a novel KS-causing mutation in <italic>COL18A1</italic>. Our results also suggest a role of endostatin in the physiopathology of KS. In the genetic analysis of this case, even though the LOD scores obtained upon linkage analysis were not significant (Significance &#x2265;3, <xref ref-type="supplementary-material" rid="pone.0112747.s001">figure S1</xref>), using the relatively small homozygous regions, we were able to detect the disease-causing mutation upon whole exome analysis. Identification of the mutation using this combined approach can facilitate the confirmation of the clinical diagnosis when the initial clinical picture is not fully clear. In our case, the initial clinical diagnosis was congenital-onset central chorioretinal dystrophy and myopia. Identification of a mutation in <italic>COL18A1</italic> led to a retrospective clinical analysis upon which the clinical diagnosis was confirmed to be Knobloch syndrome. With different medical systems across the world and increased mobility of human beings to different countries and geographical areas, a complete clinical record is not always available to clinicians. Molecular analysis tools such as that described is this study can provide the necessary support for a precise clinical characterization and diagnosis of the disease. This may contribute to application of correct treatment and or medical care regimen. In addition, this approach led to identification of the underlying causative mutation using a fraction of the costs and time in comparison to the conventional candidate gene approaches. Thus, it presents a strong case for using a combined approach of linkage analysis (homozygosity mapping) with exome sequencing for rapid and cost-effective diagnosis of Mendelian diseases.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0112747.s001">
+        <label>Figure S1</label>
+        <caption>
+          <p><bold>Genome-wide linkage analysis: Parametric linkage analysis of the family was performed with 20,044 selected SNP markers from the Affymetrix SNP Array 6.0.</bold> LOD scores (y-axis) were calculated using ALLEGRO and plotted against the genetic distance in cM (centi Morgan) on the x-axis, which is used as a surrogate for the genomic position. Chromosomes are concatenated from p-ter to q-ter from left to right.</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0112747.s001.tif">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0112747.s002">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>Homozygous regions in patient IV-1 obtained by linkage analysis and subtracting common homozygous regions from parents.</bold>
+          </p>
+          <p>(DOCX)</p>
+        </caption>
+        <media xlink:href="pone.0112747.s002.docx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0112747-Seaver1">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Seaver</surname><given-names>LH</given-names></name>, <name><surname>Joffe</surname><given-names>L</given-names></name>, <name><surname>Spark</surname><given-names>RP</given-names></name>, <name><surname>Smith</surname><given-names>BL</given-names></name>, <name><surname>Hoyme</surname><given-names>HE</given-names></name> (<year>1993</year>) <article-title>Congenital scalp defects and vitreoretinal degeneration: redefining the Knobloch syndrome</article-title>. <source>AmJMedGenet</source>
+<volume>46</volume>: <fpage>203</fpage>&#x2013;<lpage>208</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Sertie1">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Sertie</surname><given-names>AL</given-names></name>, <name><surname>Quimby</surname><given-names>M</given-names></name>, <name><surname>Moreira</surname><given-names>ES</given-names></name>, <name><surname>Murray</surname><given-names>J</given-names></name>, <name><surname>Zatz</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>1996</year>) <article-title>A gene which causes severe ocular alterations and occipital encephalocele (Knobloch syndrome) is mapped to 21q22.3</article-title>. <source>HumMolGenet</source>
+<volume>5</volume>: <fpage>843</fpage>&#x2013;<lpage>847</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Czeizel1">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Czeizel</surname><given-names>AE</given-names></name>, <name><surname>Goblyos</surname><given-names>P</given-names></name>, <name><surname>Kustos</surname><given-names>G</given-names></name>, <name><surname>Mester</surname><given-names>E</given-names></name>, <name><surname>Paraicz</surname><given-names>E</given-names></name> (<year>1992</year>) <article-title>The second report of Knobloch syndrome</article-title>. <source>AmJMedGenet</source>
+<volume>42</volume>: <fpage>777</fpage>&#x2013;<lpage>779</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-PassosBueno1">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Passos-Bueno</surname><given-names>MR</given-names></name>, <name><surname>Marie</surname><given-names>SK</given-names></name>, <name><surname>Monteiro</surname><given-names>M</given-names></name>, <name><surname>Neustein</surname><given-names>I</given-names></name>, <name><surname>Whittle</surname><given-names>MR</given-names></name>, <etal>et al</etal> (<year>1994</year>) <article-title>Knobloch syndrome in a large Brazilian consanguineous family: confirmation of autosomal recessive inheritance</article-title>. <source>AmJMedGenet</source>
+<volume>52</volume>: <fpage>170</fpage>&#x2013;<lpage>173</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Sertie2">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Sertie</surname><given-names>AL</given-names></name>, <name><surname>Sossi</surname><given-names>V</given-names></name>, <name><surname>Camargo</surname><given-names>AA</given-names></name>, <name><surname>Zatz</surname><given-names>M</given-names></name>, <name><surname>Brahe</surname><given-names>C</given-names></name>, <etal>et al</etal> (<year>2000</year>) <article-title>Collagen XVIII, containing an endogenous inhibitor of angiogenesis and tumor growth, plays a critical role in the maintenance of retinal structure and in neural tube closure (Knobloch syndrome)</article-title>. <source>HumMolGenet</source>
+<volume>9</volume>: <fpage>2051</fpage>&#x2013;<lpage>2058</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Saarela1">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Saarela</surname><given-names>J</given-names></name>, <name><surname>Ylikarppa</surname><given-names>R</given-names></name>, <name><surname>Rehn</surname><given-names>M</given-names></name>, <name><surname>Purmonen</surname><given-names>S</given-names></name>, <name><surname>Pihlajaniemi</surname><given-names>T</given-names></name> (<year>1998</year>) <article-title>Complete primary structure of two variant forms of human type XVIII collagen and tissue-specific differences in the expression of the corresponding transcripts</article-title>. <source>Matrix Biol</source>
+<volume>16</volume>: <fpage>319</fpage>&#x2013;<lpage>328</lpage>.<pub-id pub-id-type="pmid">9503365</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Oreilly1">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>O'reilly</surname><given-names>MS</given-names></name>, <name><surname>Boehm</surname><given-names>T</given-names></name>, <name><surname>Shing</surname><given-names>Y</given-names></name>, <name><surname>Fukai</surname><given-names>N</given-names></name>, <name><surname>Vasios</surname><given-names>G</given-names></name>, <etal>et al</etal> (<year>1997</year>) <article-title>Endostatin: an endogenous inhibitor of angiogenesis and tumor growth</article-title>. <source>Cell</source>
+<volume>88</volume>: <fpage>277</fpage>&#x2013;<lpage>285</lpage>.<pub-id pub-id-type="pmid">9008168</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0112747-OConnell1">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>O'Connell</surname><given-names>AC</given-names></name>, <name><surname>Toner</surname><given-names>M</given-names></name>, <name><surname>Murphy</surname><given-names>S</given-names></name> (<year>2009</year>) <article-title>Knobloch syndrome: novel intra-oral findings</article-title>. <source>IntJPaediatrDent</source>
+<volume>19</volume>: <fpage>213</fpage>&#x2013;<lpage>215</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-PassosBueno2">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Passos-Bueno</surname><given-names>MR</given-names></name>, <name><surname>Suzuki</surname><given-names>OT</given-names></name>, <name><surname>Armelin-Correa</surname><given-names>LM</given-names></name>, <name><surname>Sertie</surname><given-names>AL</given-names></name>, <name><surname>Errera</surname><given-names>FI</given-names></name>, <etal>et al</etal> (<year>2006</year>) <article-title>Mutations in collagen 18A1 and their relevance to the human phenotype</article-title>. <source>AnAcadBrasCienc</source>
+<volume>78</volume>: <fpage>123</fpage>&#x2013;<lpage>131</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Rygh1">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Rygh</surname><given-names>CB</given-names></name>, <name><surname>Lokka</surname><given-names>G</given-names></name>, <name><surname>Heljasvaara</surname><given-names>R</given-names></name>, <name><surname>Taxt</surname><given-names>T</given-names></name>, <name><surname>Pavlin</surname><given-names>T</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>Image based assessment of microvascular function and structure in Collagen XV and XVIII deficient mice</article-title>. <source>J Physiol</source>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Williams1">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Williams</surname><given-names>TA</given-names></name>, <name><surname>Kirkby</surname><given-names>GR</given-names></name>, <name><surname>Williams</surname><given-names>D</given-names></name>, <name><surname>Ainsworth</surname><given-names>JR</given-names></name> (<year>2008</year>) <article-title>A phenotypic variant of Knobloch syndrome</article-title>. <source>Ophthalmic Genet</source>
+<volume>29</volume>: <fpage>85</fpage>&#x2013;<lpage>86</lpage>.<pub-id pub-id-type="pmid">18484314</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Wilson1">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Wilson</surname><given-names>C</given-names></name>, <name><surname>Aftimos</surname><given-names>S</given-names></name>, <name><surname>Pereira</surname><given-names>A</given-names></name>, <name><surname>McKay</surname><given-names>R</given-names></name> (<year>1998</year>) <article-title>Report of two sibs with Knobloch syndrome (encephalocoele and viteroretinal degeneration) and other anomalies</article-title>. <source>AmJMedGenet</source>
+<volume>78</volume>: <fpage>286</fpage>&#x2013;<lpage>290</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Sniderman1">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Sniderman</surname><given-names>LC</given-names></name>, <name><surname>Koenekoop</surname><given-names>RK</given-names></name>, <name><surname>O'Gorman</surname><given-names>AM</given-names></name>, <name><surname>Usher</surname><given-names>RH</given-names></name>, <name><surname>Sufrategui</surname><given-names>MR</given-names></name>, <etal>et al</etal> (<year>2000</year>) <article-title>Knobloch syndrome involving midline scalp defect of the frontal region</article-title>. <source>AmJMedGenet</source>
+<volume>90</volume>: <fpage>146</fpage>&#x2013;<lpage>149</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Suzuki1">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Suzuki</surname><given-names>OT</given-names></name>, <name><surname>Sertie</surname><given-names>AL</given-names></name>, <name><surname>Der Kaloustian</surname><given-names>VM</given-names></name>, <name><surname>Kok</surname><given-names>F</given-names></name>, <name><surname>Carpenter</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2002</year>) <article-title>Molecular analysis of collagen XVIII reveals novel mutations, presence of a third isoform, and possible genetic heterogeneity in Knobloch syndrome</article-title>. <source>AmJHumGenet</source>
+<volume>71</volume>: <fpage>1320</fpage>&#x2013;<lpage>1329</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Kliemann1">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Kliemann</surname><given-names>SE</given-names></name>, <name><surname>Waetge</surname><given-names>RT</given-names></name>, <name><surname>Suzuki</surname><given-names>OT</given-names></name>, <name><surname>Passos-Bueno</surname><given-names>MR</given-names></name>, <name><surname>Rosemberg</surname><given-names>S</given-names></name> (<year>2003</year>) <article-title>Evidence of neuronal migration disorders in Knobloch syndrome: clinical and molecular analysis of two novel families</article-title>. <source>AmJMedGenetA</source>
+<volume>119A</volume>: <fpage>15</fpage>&#x2013;<lpage>19</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Duh1">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Duh</surname><given-names>EJ</given-names></name>, <name><surname>Yao</surname><given-names>YG</given-names></name>, <name><surname>Dagli</surname><given-names>M</given-names></name>, <name><surname>Goldberg</surname><given-names>MF</given-names></name> (<year>2004</year>) <article-title>Persistence of fetal vasculature in a patient with Knobloch syndrome: potential role for endostatin in fetal vascular remodeling of the eye</article-title>. <source>Ophthalmology</source>
+<volume>111</volume>: <fpage>1885</fpage>&#x2013;<lpage>1888</lpage>.<pub-id pub-id-type="pmid">15465551</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Keren1">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>Keren</surname><given-names>B</given-names></name>, <name><surname>Suzuki</surname><given-names>OT</given-names></name>, <name><surname>Gerard-Blanluet</surname><given-names>M</given-names></name>, <name><surname>Bremond-Gignac</surname><given-names>D</given-names></name>, <name><surname>Elmaleh</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>CNS malformations in Knobloch syndrome with splice mutation in COL18A1 gene</article-title>. <source>AmJMedGenetA</source>
+<volume>143A</volume>: <fpage>1514</fpage>&#x2013;<lpage>1518</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Mahajan1">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Mahajan</surname><given-names>VB</given-names></name>, <name><surname>Olney</surname><given-names>AH</given-names></name>, <name><surname>Garrett</surname><given-names>P</given-names></name>, <name><surname>Chary</surname><given-names>A</given-names></name>, <name><surname>Dragan</surname><given-names>E</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Collagen XVIII mutation in Knobloch syndrome with acute lymphoblastic leukemia</article-title>. <source>AmJMedGenetA</source>
+<volume>152A</volume>: <fpage>2875</fpage>&#x2013;<lpage>2879</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Abecasis1">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Abecasis</surname><given-names>GR</given-names></name>, <name><surname>Cherny</surname><given-names>SS</given-names></name>, <name><surname>Cookson</surname><given-names>WOC</given-names></name>, <name><surname>Cardon</surname><given-names>LR</given-names></name> (<year>2001</year>) <article-title>GRR: graphical representation of relationship errors</article-title>. <source>Bioinformatics</source>
+<volume>17</volume>: <fpage>742</fpage>&#x2013;<lpage>743</lpage>.<pub-id pub-id-type="pmid">11524377</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Gudbjartsson1">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Gudbjartsson</surname><given-names>DF</given-names></name>, <name><surname>Jonasson</surname><given-names>K</given-names></name>, <name><surname>Frigge</surname><given-names>ML</given-names></name>, <name><surname>Kong</surname><given-names>A</given-names></name> (<year>2000</year>) <article-title>Allegro, a new computer program for multipoint linkage analysis</article-title>. <source>Nature Genetics</source>
+<volume>25</volume>: <fpage>12</fpage>&#x2013;<lpage>13</lpage>.<pub-id pub-id-type="pmid">10802644</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Ruschendorf1">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Ruschendorf</surname><given-names>F</given-names></name>, <name><surname>Nurnberg</surname><given-names>P</given-names></name> (<year>2005</year>) <article-title>ALOHOMORA: a tool for linkage analysis using 10K SNP array data</article-title>. <source>Bioinformatics</source>
+<volume>21</volume>: <fpage>2123</fpage>&#x2013;<lpage>2125</lpage>.<pub-id pub-id-type="pmid">15647291</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Li1">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Li</surname><given-names>H</given-names></name>, <name><surname>Durbin</surname><given-names>R</given-names></name> (<year>2009</year>) <article-title>Fast and accurate short read alignment with Burrows-Wheeler transform</article-title>. <source>Bioinformatics</source>
+<volume>25</volume>: <fpage>1754</fpage>&#x2013;<lpage>1760</lpage>.<pub-id pub-id-type="pmid">19451168</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Li2">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Li</surname><given-names>H</given-names></name>, <name><surname>Handsaker</surname><given-names>B</given-names></name>, <name><surname>Wysoker</surname><given-names>A</given-names></name>, <name><surname>Fennell</surname><given-names>T</given-names></name>, <name><surname>Ruan</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>The Sequence Alignment/Map format and SAMtools</article-title>. <source>Bioinformatics</source>
+<volume>25</volume>: <fpage>2078</fpage>&#x2013;<lpage>2079</lpage>.<pub-id pub-id-type="pmid">19505943</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Wang1">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Wang</surname><given-names>K</given-names></name>, <name><surname>Li</surname><given-names>M</given-names></name>, <name><surname>Hakonarson</surname><given-names>H</given-names></name> (<year>2010</year>) <article-title>ANNOVAR: functional annotation of genetic variants from high-throughput sequencing data</article-title>. <source>Nucleic Acids Res</source>
+<volume>38</volume>: <fpage>e164</fpage>.<pub-id pub-id-type="pmid">20601685</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Untergasser1">
+        <label>25</label>
+        <mixed-citation publication-type="other">Untergasser A, Cutcutache I, Koressaar T, Ye J, Faircloth BC, <etal>et al</etal>. (2012) Primer3-new capabilities and interfaces. Nucleic Acids Research 40.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Iqbal1">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Iqbal</surname><given-names>M</given-names></name>, <name><surname>Jalili</surname><given-names>IK</given-names></name> (<year>1998</year>) <article-title>Congenital-onset central chorioretinal dystrophy associated with high myopia</article-title>. <source>Eye (Lond)</source> 12 <volume>(Pt 2)</volume>: <fpage>260</fpage>&#x2013;<lpage>265</lpage>.<pub-id pub-id-type="pmid">9683951</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Perrault1">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Perrault</surname><given-names>I</given-names></name>, <name><surname>Hanein</surname><given-names>S</given-names></name>, <name><surname>Zanlonghi</surname><given-names>X</given-names></name>, <name><surname>Serre</surname><given-names>V</given-names></name>, <name><surname>Nicouleau</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Mutations in NMNAT1 cause Leber congenital amaurosis with early-onset severe macular and optic atrophy</article-title>. <source>Nat Genet</source>
+<volume>44</volume>: <fpage>975</fpage>&#x2013;<lpage>977</lpage>.<pub-id pub-id-type="pmid">22842229</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Aldahmesh1">
+        <label>28</label>
+        <mixed-citation publication-type="journal"><name><surname>Aldahmesh</surname><given-names>MA</given-names></name>, <name><surname>Khan</surname><given-names>AO</given-names></name>, <name><surname>Mohamed</surname><given-names>JY</given-names></name>, <name><surname>Alkuraya</surname><given-names>H</given-names></name>, <name><surname>Ahmed</surname><given-names>H</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Identification of ADAMTS18 as a gene mutated in Knobloch syndrome</article-title>. <source>JMedGenet</source>
+<volume>48</volume>: <fpage>597</fpage>&#x2013;<lpage>601</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Aldahmesh2">
+        <label>29</label>
+        <mixed-citation publication-type="journal"><name><surname>Aldahmesh</surname><given-names>MA</given-names></name>, <name><surname>Khan</surname><given-names>AO</given-names></name>, <name><surname>Mohamed</surname><given-names>JY</given-names></name>, <name><surname>Levin</surname><given-names>AV</given-names></name>, <name><surname>Wuthisiri</surname><given-names>W</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>No evidence for locus heterogeneity in Knobloch syndrome</article-title>. <source>JMedGenet</source>
+<volume>50</volume>: <fpage>565</fpage>&#x2013;<lpage>566</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Stahl1">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>Stahl</surname><given-names>S</given-names></name>, <name><surname>Gaetzner</surname><given-names>S</given-names></name>, <name><surname>Mueller</surname><given-names>TD</given-names></name>, <name><surname>Felbor</surname><given-names>U</given-names></name> (<year>2005</year>) <article-title>Endostatin phenylalanines 31 and 34 define a receptor binding site</article-title>. <source>Genes Cells</source>
+<volume>10</volume>: <fpage>929</fpage>&#x2013;<lpage>939</lpage>.<pub-id pub-id-type="pmid">16115201</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Suzuki2">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>Suzuki</surname><given-names>O</given-names></name>, <name><surname>Kague</surname><given-names>E</given-names></name>, <name><surname>Bagatini</surname><given-names>K</given-names></name>, <name><surname>Tu</surname><given-names>H</given-names></name>, <name><surname>Heljasvaara</surname><given-names>R</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Novel pathogenic mutations and skin biopsy analysis in Knobloch syndrome</article-title>. <source>MolVis</source>
+<volume>15</volume>: <fpage>801</fpage>&#x2013;<lpage>809</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Joyce1">
+        <label>32</label>
+        <mixed-citation publication-type="journal"><name><surname>Joyce</surname><given-names>S</given-names></name>, <name><surname>Tee</surname><given-names>L</given-names></name>, <name><surname>Abid</surname><given-names>A</given-names></name>, <name><surname>Khaliq</surname><given-names>S</given-names></name>, <name><surname>Mehdi</surname><given-names>SQ</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Locus heterogeneity and Knobloch syndrome</article-title>. <source>AmJMedGenetA</source>
+<volume>152A</volume>: <fpage>2880</fpage>&#x2013;<lpage>2881</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Menzel1">
+        <label>33</label>
+        <mixed-citation publication-type="journal"><name><surname>Menzel</surname><given-names>O</given-names></name>, <name><surname>Bekkeheien</surname><given-names>RC</given-names></name>, <name><surname>Reymond</surname><given-names>A</given-names></name>, <name><surname>Fukai</surname><given-names>N</given-names></name>, <name><surname>Boye</surname><given-names>E</given-names></name>, <etal>et al</etal> (<year>2004</year>) <article-title>Knobloch syndrome: novel mutations in COL18A1, evidence for genetic heterogeneity, and a functionally impaired polymorphism in endostatin</article-title>. <source>HumMutat</source>
+<volume>23</volume>: <fpage>77</fpage>&#x2013;<lpage>84</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Khan1">
+        <label>34</label>
+        <mixed-citation publication-type="journal"><name><surname>Khan</surname><given-names>AO</given-names></name>, <name><surname>Aldahmesh</surname><given-names>MA</given-names></name>, <name><surname>Mohamed</surname><given-names>JY</given-names></name>, <name><surname>Al-Mesfer</surname><given-names>S</given-names></name>, <name><surname>Alkuraya</surname><given-names>FS</given-names></name> (<year>2012</year>) <article-title>The distinct ophthalmic phenotype of Knobloch syndrome in children</article-title>. <source>BrJOphthalmol</source>
+<volume>96</volume>: <fpage>890</fpage>&#x2013;<lpage>895</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Fukai1">
+        <label>35</label>
+        <mixed-citation publication-type="journal"><name><surname>Fukai</surname><given-names>N</given-names></name>, <name><surname>Eklund</surname><given-names>L</given-names></name>, <name><surname>Marneros</surname><given-names>AG</given-names></name>, <name><surname>Oh</surname><given-names>SP</given-names></name>, <name><surname>Keene</surname><given-names>DR</given-names></name>, <etal>et al</etal> (<year>2002</year>) <article-title>Lack of collagen XVIII/endostatin results in eye abnormalities</article-title>. <source>EMBO J</source>
+<volume>21</volume>: <fpage>1535</fpage>&#x2013;<lpage>1544</lpage>.<pub-id pub-id-type="pmid">11927538</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Sasaki1">
+        <label>36</label>
+        <mixed-citation publication-type="journal"><name><surname>Sasaki</surname><given-names>T</given-names></name>, <name><surname>Fukai</surname><given-names>N</given-names></name>, <name><surname>Mann</surname><given-names>K</given-names></name>, <name><surname>Gohring</surname><given-names>W</given-names></name>, <name><surname>Olsen</surname><given-names>BR</given-names></name>, <etal>et al</etal> (<year>1998</year>) <article-title>Structure, function and tissue forms of the C-terminal globular domain of collagen XVIII containing the angiogenesis inhibitor endostatin</article-title>. <source>EMBO J</source>
+<volume>17</volume>: <fpage>4249</fpage>&#x2013;<lpage>4256</lpage>.<pub-id pub-id-type="pmid">9687493</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0112747-Sasaki2">
+        <label>37</label>
+        <mixed-citation publication-type="journal"><name><surname>Sasaki</surname><given-names>T</given-names></name>, <name><surname>Larsson</surname><given-names>H</given-names></name>, <name><surname>Tisi</surname><given-names>D</given-names></name>, <name><surname>Claesson-Welsh</surname><given-names>L</given-names></name>, <name><surname>Hohenester</surname><given-names>E</given-names></name>, <etal>et al</etal> (<year>2000</year>) <article-title>Endostatins derived from collagens XV and XVIII differ in structural and binding properties, tissue distribution and anti-angiogenic activity</article-title>. <source>JMolBiol</source>
+<volume>301</volume>: <fpage>1179</fpage>&#x2013;<lpage>1190</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

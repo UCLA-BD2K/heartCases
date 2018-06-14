@@ -1,0 +1,1759 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:ali="http://www.niso.org/schemas/ali/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">J Diabetes Res</journal-id>
+      <journal-id journal-id-type="iso-abbrev">J Diabetes Res</journal-id>
+      <journal-id journal-id-type="publisher-id">JDR</journal-id>
+      <journal-title-group>
+        <journal-title>Journal of Diabetes Research</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">2314-6745</issn>
+      <issn pub-type="epub">2314-6753</issn>
+      <publisher>
+        <publisher-name>Hindawi Publishing Corporation</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">26634215</article-id>
+      <article-id pub-id-type="pmc">4655046</article-id>
+      <article-id pub-id-type="doi">10.1155/2016/6437452</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>New Methods in Exploring Old Topics: Case Studying Brittle Diabetes in the Family Context</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>G&#xFC;nther</surname>
+            <given-names>Moritz Philipp</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">
+<sup>1</sup>
+</xref>
+          <xref ref-type="corresp" rid="cor1">
+<sup>*</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Winker</surname>
+            <given-names>Peter</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">
+<sup>2</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wudy</surname>
+            <given-names>Stefan A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">
+<sup>3</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Brosig</surname>
+            <given-names>Burkhard</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">
+<sup>1</sup>
+</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><sup>1</sup>Psychoanalytic Family Therapy, Center of Child and Adolescent Medicine, Justus-Liebig-University, Feulgenstra&#xDF;e 10-12, 35392 Giessen, Germany</aff>
+      <aff id="I2"><sup>2</sup>Department of Economics, Justus-Liebig-University Giessen, Licher Stra&#xDF;e 64, 35394 Giessen, Germany</aff>
+      <aff id="I3"><sup>3</sup>Pediatric Endocrinology &amp; Diabetology, Center of Child and Adolescent Medicine, Justus-Liebig-University, Feulgenstra&#xDF;e 10-12, 35392 Giessen, Germany</aff>
+      <author-notes>
+        <corresp id="cor1">*Moritz Philipp G&#xFC;nther: <email>Moritz.Guenther@med.uni-giessen.de</email></corresp>
+        <fn fn-type="other">
+          <p>Academic Editor: Sk. Mattoo</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="ppub">
+        <year>2016</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>8</day>
+        <month>11</month>
+        <year>2015</year>
+      </pub-date>
+      <volume>2016</volume>
+      <elocation-id>6437452</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>31</day>
+          <month>10</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>7</day>
+          <month>3</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2016 Moritz Philipp G&#xFC;nther et al.</copyright-statement>
+        <copyright-year>2016</copyright-year>
+        <license license-type="open-access">
+          <license-p>This is an open access article distributed under the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>
+<italic>Background</italic>. In questing for a more refined quantitative research approach, we revisited vector autoregressive (VAR) modeling for the analysis of time series data in the context of the so far poorly explored concept of family dynamics surrounding instable diabetes type 1 (or brittle diabetes). <italic>Method</italic>. We adopted a new approach to VAR analysis from econometrics referred to as the optimized multivariate lag selection process and applied it to a set of raw data previously analyzed through standard approaches. <italic>Results</italic>. We illustrated recurring psychosomatic circles of cause and effect relationships between emotional and somatic parameters surrounding glycemic control of the child's diabetes and the affective states of all family members. <italic>Conclusion</italic>. The optimized multivariate lag selection process allowed for more specific, dynamic, and statistically reliable results (increasing <italic>R</italic><sup>2</sup> tenfold in explaining glycemic variability), which were derived from a larger window of past explanatory variables (lags). Such highly quantitative versus historic more qualitative approaches to case study analysis of psychosomatics surrounding diabetes in adolescents were reflected critically.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec1">
+      <title>1. Introduction</title>
+      <p>Sigmund Freud is rarely mentioned in scientific discourse without also belittling the lack of quantitative statistical evidence for his elaborate models. At the same time, his qualitative case reports and the conclusions he drew from them by far belong to the most well-known research in psychosomatic medicine. Despite all valid critique, one reason, we argue, may very well be the superiority of the single case study in first observing, describing, capturing, evaluating, and creatively reflecting on an infinite set of parameters surrounding any chosen topic. Out of this primary assessment, novel hypotheses and further (more costly) research may emerge.</p>
+      <p>It is our objective to reapply such primary assessment to the case of adolescent brittle diabetes (or more generally speaking, the psychosomatic underpinnings of diabetes type 1 in minors and young adults), while also trying to answer calls for more quantitative and statistically reliable approaches to doing so. This in mind, we have first selected a highly quantitative case study on family dynamics and brittle diabetes [<xref rid="B1" ref-type="bibr">1</xref>] and reviewed and reanalyzed its raw data through implementation of a new statistical procedure increasing the coefficient of determination in the new model by factor ten (while also presenting new and clearer findings), in order to then, in a second step, discuss and compare our results to possibly the historically most well-known set of qualitative case studies on the topic [<xref rid="B2" ref-type="bibr">2</xref>].</p>
+      <p>We will start by briefly revisiting the literature on the psychosomatics of adolescent instable diabetes type 1, present a case vignette and basic data collection method of the original case study we reexamine (which may be skipped by those familiar with the work published by [<xref rid="B1" ref-type="bibr">1</xref>]), followed by a detailed description of our new statistical approach and its results, concluding with a clear clinically oriented graphical presentation of our findings and their discussion in light of Minuchin et al.'s [<xref rid="B2" ref-type="bibr">2</xref>] qualitative findings.</p>
+      <p>
+<italic>The Case of &#x201C;Brittle&#x201D; Diabetes</italic>. One out of 600&#x2009;US or European school-age children suffers from insulin dependent diabetes mellitus [<xref rid="B3" ref-type="bibr">3</xref>, <xref rid="B4" ref-type="bibr">4</xref>]. Just about 33 percent of diabetics between 13 and 19 years of age manage to maintain tolerable glycemic control and a HbA<sub>1c</sub> below 8; 6.3 percent suffered at least one episode of major hypoglycemia within the last three months [<xref rid="B5" ref-type="bibr">5</xref>, <xref rid="B6" ref-type="bibr">6</xref>]. The devastating immediate and long-term effects of poor diabetic control are widely known and feared. 44 percent of the variance in blood glucose control can be statistically explained by psychological variables in these patients and their parents [<xref rid="B7" ref-type="bibr">7</xref>]. A randomized controlled study further demonstrates how an intensive inpatient treatment program including psychoanalytic psychotherapy could effectively improve diabetic control in children [<xref rid="B8" ref-type="bibr">8</xref>]. These cases of glycemic instability with no somatic explanation have been termed &#x201C;brittle diabetes&#x201D; by some authors [<xref rid="B9" ref-type="bibr">9</xref>] and there is no doubt concerning the importance of further exploration of the causes and remedies surrounding this truly psychosomatic disease.</p>
+      <p>While various aspects of brittle diabetes have been explored in recent years, including its exact definition, there seems to be a gap in the literature in exploring how emotional variables of all individuals within the family system may interact to affect glycemic control of the diabetic adolescent, the &#x201C;index patient&#x201D; of a dysfunctional family system. The little research which has sought to fill this gap (i.e., [<xref rid="B2" ref-type="bibr">2</xref>, <xref rid="B10" ref-type="bibr">10</xref>, <xref rid="B11" ref-type="bibr">11</xref>]) is primarily qualitative in nature and must face similar critique as all such work, as will be discussed in the last section of this study.</p>
+      <p>
+<italic>The Case and Its Psychosomatic Background (adopted and revised from [<xref rid="B1" ref-type="bibr">1</xref>])</italic>. The adolescent index patient of this case study was diagnosed with diabetes type 1 at age of four (clinical clues were polyuria, polydipsia, loss of appetite, a fungal infection, HbA<sub>1c</sub> of 9.1 per cent, antibodies against islet cells, and GAD65).</p>
+      <p>Family dynamics surrounding this classic family of three (biological parents, single child) appeared unsuspicious notwithstanding the girl's history of poorly controlled bronchial asthma and allergic diseases.</p>
+      <p>Yet at age of six, nocturnal hypoglycemia with loss of consciousness led to readmission to the hospital, during which another episode of profound hypoglycemia, this time in conjunction with a tonic-clonic seizure, occurred, thus further consolidating her parents' distress concerning hypoglycemia and hospital treatment. Once all educational efforts concerning the diabetic management were exhausted (including individual and family-based counseling, detailed and repetitive disease-specific education, and information about glycemic control mechanisms including the influence of nutrition, sport, and other aspects of blood sugar regulation), but a HbA<sub>1c</sub> below 7 percent was never achieved, the family finally sought for psychosomatic family treatment. Psychodynamically based therapeutic analysis of the family dynamic suggested a conflict between the adolescent and her mother about who had control of the blood sugar levels. The mother's dominance seemed to have negative effects on her daughter's glycemic control. Fears of hypoglycemia were somewhat irrational with all three family members, including the father, who, at first sight, seemed rather more distant to the matter (literature proposes parental hypoglycemia avoidance behaviours to adversely affect glycemic control [<xref rid="B12" ref-type="bibr">12</xref>]).</p>
+      <p>Six family therapy sessions were undertaken on a biweekly schedule. The family's shock in relation to the diagnosis and mistrust of hospital personnel was discussed.</p>
+      <p>Finally, a therapeutic intervention confronted them with their specific type of collusion concerning (in-)dependence, in which both parents, in their manifest statements, advocated for more self-confidence and extended duties on the side of the daughter, but on a more latent level, gave hints to their &#x201C;beloved little girl&#x201D; not being ready to take control over the blood sugar monitoring by herself. This mostly unconscious conflict had culminated in cloudy paths of communication concerning glycemic control, in nebulous distributions of duties within the family members, and, as a result of the arrangement, in deep dissatisfaction over the failure of proper diabetic control.</p>
+    </sec>
+    <sec id="sec2">
+      <title>2. Methods</title>
+      <sec id="sec2.1">
+        <title>2.1. Collecting Quantitative Data</title>
+        <p>While traditional case studies would focus on the qualitative data outlined above, we sought to amend such observations by a highly quantitative approach in order to produce more evidence based and reproducible results. Therefore, we aimed to statistically explore how specific basic affect states of all three individual family members may impact each other and the success of the diabetic management over a period of 120 days. To operationalize this quest, we drew on the standardized self-assessment manikin (SAM), as developed by Bradley and Lang (for details see [<xref rid="B13" ref-type="bibr">13</xref>, <xref rid="B14" ref-type="bibr">14</xref>]), asking all three family members to individually record on a daily basis their valence (mood), arousal (high versus low), and dominance (a sense of presence in the current environment). In addition the index patient was asked to obtain at least three daily blood glucose measurements (or more if required by the disease) over the same period utilizing a common standardized technique. This form of diary based data collection is also referred to as ecological momentary assessment with many benefits in terms of accuracy and validity of measurements [<xref rid="B15" ref-type="bibr">15</xref>].</p>
+        <p>Standard deviations of the daily blood glucose measurements served as an indicator for glycemic variability, a measure which recent research has identified as the most precise predictor of diabetic control, followed by the HbA<sub>1c</sub>-value in second place [<xref rid="B16" ref-type="bibr">16</xref>&#x2013;<xref rid="B19" ref-type="bibr">19</xref>], due to it being the best known predictor for diabetic complications and microvascular derailments in particular [<xref rid="B20" ref-type="bibr">20</xref>].</p>
+        <p>Resulting from this data collection and primary analysis are ten time series: three time series for each of the three family members from the SAM, affective valence (happy, sad), arousal (excited, calm), and dominance (a sense of presence, distance to the current environment), as well as one time series recording glycemic variability (daily standard deviations of measurements). In contrast to G&#xFC;nther et al. [<xref rid="B1" ref-type="bibr">1</xref>], these ten time series were further analyzed by a completely new statistical approach to vector autoregressive (VAR) modeling. While past analysis of this same set of data (see [<xref rid="B1" ref-type="bibr">1</xref>]) has also relied on basic VAR analysis, there had been some common shortcomings to the validity and scope of results, which we were able to remedy here, thus solving statistical shortcomings while also presenting completely new results in a clearer more clinically oriented fashion. How we were able to achieve this, the presentation of a newly developed optimized multivariate lag selection process in VAR analysis, and a comprehensive review of the principles of vector autoregression will be presented next.</p>
+      </sec>
+      <sec id="sec2.2">
+        <title>2.2. Reviewing Vector Autoregression as a Quantitative Approach to Time Series Data</title>
+        <p>The use of vector autoregressive models (VAR) for the analysis of time series data in psychosomatic medicine (also widely used in neuroscience) allows treating a set of variables as jointly driven by the lagged values of all variables in the system with no a priori assignment of dependent and independent status being necessary. This technique seems particularly apt for research in psychosomatic medicine, where [<xref rid="B21" ref-type="bibr">21</xref>], among others, has long called for a more integrated (monistic) view on the complexity of dynamic dependencies and intertemporal reciprocal cause and effect relationships among different psychic as well as somatic variables.</p>
+        <p>Any VAR model requires the user to select a maximum number of lags, which, in more practical terms, refers to how far back in time the user wants to go in the search for past recordings of all variables to predict the present value of one variable. The farther back in time the user decides to go, the more explanatory variables (lags) need to be included in the model because it used to be improper to exclude past recordings of explanatory variables, which lay in-between the present value and the most historic one [<xref rid="B22" ref-type="bibr">22</xref>, <xref rid="B23" ref-type="bibr">23</xref>].</p>
+        <p>Unfortunately including more explanatory variables (going back further in time) is a double edged sword, since this would provide a VAR model more representative of reality (goodness of fit), but would also endorse one with less explanatory power (lower adjusted <italic>R</italic><sup>2</sup>). The latter is due to the tremendous penalty inflicted by the large number of explanatory variables (lags) in the model resulting in high estimation variance [<xref rid="B22" ref-type="bibr">22</xref>, <xref rid="B23" ref-type="bibr">23</xref>]. This substantial drawback weakened the substance of empirical findings derived from VAR models, because researchers would either present results through models with teeth chattering low <italic>R</italic><sup>2</sup> values (see previously published results from the same raw data as one example) or adopt models only incorporating the effects of events preceding the predicted value of a variable by one day/one unit of time in the VAR (e.g., see [<xref rid="B24" ref-type="bibr">24</xref>]).</p>
+        <p>In order to alleviate this shortcoming of low adjusted <italic>R</italic><sup>2</sup> values in the standard vector autoregressive modeling approach, we developed a computer code implementing a statistical procedure recently published in parts in Savin and Winker [<xref rid="B25" ref-type="bibr">25</xref>] and Winker [<xref rid="B26" ref-type="bibr">26</xref>, <xref rid="B27" ref-type="bibr">27</xref>], referred to as the optimized multivariate lag selection process, which allows (contrary to previous practice) excluding such explanatory variables (lags) from the VAR model which add little to its goodness of fit (estimated representativeness of reality) while nonetheless reducing its explanatory power (adjusted <italic>R</italic><sup>2</sup>). This &#x201C;admittance of holes&#x201D; to the lag structure (equations organizing the explanatory variables) allows us to now present an entirely new model exhibiting more detailed dynamics with a smaller number of parameters, for the data in this case resulting in about tenfold increase of the adjusted <italic>R</italic><sup>2</sup> value. Mathematical details of applying the optimized multivariate lag selection process to this VAR analysis of the ten time series of the data set at hand will be presented next (and may be skipped by the more clinically focused researcher).</p>
+      </sec>
+      <sec id="sec2.3">
+        <title>2.3. Applying the Optimized Multivariate Lag Selection Process</title>
+        <p>A standard vector autoregressive (VAR) model was constructed, using EViews 7.1 (QMS, Quantitative Micro Software, Irvine CA), based on the ten time series we mentioned above. In order to focus on the innovative aspects of our methodology we will not delve into the details of VAR model construction, which have been described at length in preceding publications (i.e., [<xref rid="B1" ref-type="bibr">1</xref>, <xref rid="B24" ref-type="bibr">24</xref>]).</p>
+        <p>Given the large number of explanatory variables (the more lags, the more variables) and the limited number of observations, only a very limited number of lags (past days) could be considered while adjusted <italic>R</italic><sup>2</sup> would still be low, if we were to follow the standard modeling approach [<xref rid="B22" ref-type="bibr">22</xref>, <xref rid="B23" ref-type="bibr">23</xref>]. The novel contribution is to maximize the informational content of the model by minimizing an information criterion [<xref rid="B25" ref-type="bibr">25</xref>&#x2013;<xref rid="B27" ref-type="bibr">27</xref>].</p>
+        <p>In more concrete terms, if we assume that any one value within the ten time series may have effects on any of the other values of all-time series with a delay of up to one week, a total of 710 parameters would have to be estimated. Given 120 observations in each time series, this results in tremendous estimation variance (very low <italic>R</italic><sup>2</sup>). Model selection criteria suggest using only one lag (assuming effects will take place within a day instead of within a week, which seems highly unrealistic but is a common approach adopted by other researchers in the field, including Wild et al., 2010) resulting in a total of only 110 parameters to be estimated with a still low <italic>R</italic><sup>2</sup> value of 0.02 for the model explaining glycemic variance [<xref rid="B1" ref-type="bibr">1</xref>].</p>
+        <p>To resolve this dilemma, we drew on Winker [<xref rid="B26" ref-type="bibr">26</xref>, <xref rid="B27" ref-type="bibr">27</xref>] and Savin and Winker [<xref rid="B25" ref-type="bibr">25</xref>] engaging in optimized multivariate lag structure analysis. Given the huge discrete search space of all possible lag structures, for example, for a maximum lag length of seven, heuristic optimization algorithms are used to this end. For this process, a computer code was developed using Matlab R2011b with an interface to EViews 7.1, which implements a Genetic Algorithm for the search of an optimized lag structure making use of information criteria (BIC) as in the standard selection procedure (see for more details [<xref rid="B25" ref-type="bibr">25</xref>]). By providing an approximation to the minimum of the information criterion, the resulting model exhibits an optimized tradeoff between a good fit to the multivariate dynamics of the data and model parsimony.</p>
+        <p>As a result, we obtained a model with only 70 parameters, but still cover effect delays up to one week. Since the maintained lags are selected based on their joint informational content (as measured by the information criteria), the procedure results in a model with much higher explanatory power (for predicting glycemic variability adjusted <italic>R</italic><sup>2</sup> value of 0.20 as opposed to 0.02 for the standard model with only one lag) and a richer dynamic.</p>
+        <p>Given the rich dynamics between all variables of the model, besides considering single equations, the calculation of impulse response functions as in [<xref rid="B1" ref-type="bibr">1</xref>] would be of interest. However, the zero constraints of the VAR model with holes preclude the application of standard methods for the calculation of confidence bands.</p>
+        <p>Similarly, poor glycemic control (high glycemic variability) will correlate with low glycemic variability four days earlier, a calm mother three days earlier, an excited mother seven days earlier, a dominating mother four days earlier, a nondominating mother seven days earlier (although statistically insignificant), a sad father both five and six days earlier, a calm father both three and seven days earlier, and a dominating father both two and five days earlier. High glycemic variability will also correlate with a sad child six days later, an excited mother three days later, and a dominating father one day later. For a graphical representation see <xref ref-type="fig" rid="fig2">Figure 2</xref>.</p>
+      </sec>
+    </sec>
+    <sec id="sec3">
+      <title>3. Results and Discussion</title>
+      <p>The optimized multivariate lag structure selection process provides one equation of seemingly unrelated multiple regression for each of the ten time series to be presented next. Three of them directly involve glycemic variability in addition to the one for glycemic variability itself, which shall be presented last (lags in parentheses):<list list-type="simple"><list-item><label>&#x2009;</label><p>affective valence of the adolescent = <italic>&#x3B1;</italic><sub>1</sub> glycemic variability (&#x2212;6) + <italic>&#x3B1;</italic><sub>2</sub> valence adolescent (&#x2212;1) (<italic>R</italic><sup>2</sup> = 0.25, adj. <italic>R</italic><sup>2</sup> = 0.24);</p></list-item><list-item><label>&#x2009;</label><p>affective valence of the mother = <italic>&#x3B1;</italic><sub>3</sub> dominance adolescent (&#x2212;7) + <italic>&#x3B1;</italic><sub>4</sub> valence mother (&#x2212;5) + <italic>&#x3B1;</italic><sub>5</sub> arousal mother (&#x2212;6) + <italic>&#x3B1;</italic><sub>6</sub> arousal father (&#x2212;4) + <italic>&#x3B1;</italic><sub>7</sub> arousal father (&#x2212;6) (<italic>R</italic><sup>2</sup> = 0.21, adj. <italic>R</italic><sup>2</sup> = 0.18);</p></list-item><list-item><label>&#x2009;</label><p>affective valence of the father = <italic>&#x3B1;</italic><sub>8</sub> valence adolescent (&#x2212;3) + <italic>&#x3B1;</italic><sub>9</sub> valence adolescent (&#x2212;5) + <italic>&#x3B1;</italic><sub>10</sub> arousal mother (&#x2212;5) + <italic>&#x3B1;</italic><sub>11</sub> dominance father (&#x2212;3) (<italic>R</italic><sup>2</sup> = 0.21, adj. <italic>R</italic><sup>2</sup> = 0.18);</p></list-item><list-item><label>&#x2009;</label><p>arousal of the adolescent = <italic>&#x3B1;</italic><sub>12</sub> arousal adolescent (&#x2212;1) + <italic>&#x3B1;</italic><sub>13</sub> arousal adolescent (&#x2212;3) + <italic>&#x3B1;</italic><sub>14</sub> arousal adolescent (&#x2212;7) + <italic>&#x3B1;</italic><sub>15</sub> valence mother (&#x2212;4) + <italic>&#x3B1;</italic><sub>16</sub> arousal mother (&#x2212;3) + <italic>&#x3B1;</italic><sub>17</sub> valence father (&#x2212;2) + <italic>&#x3B1;</italic><sub>18</sub> valence father (&#x2212;6) (<italic>R</italic><sup>2</sup> = 0.30, adj. <italic>R</italic><sup>2</sup> = 0.25);</p></list-item><list-item><label>&#x2009;</label><p>arousal of the mother = <italic>&#x3B1;</italic><sub>19</sub> glycemic variability (&#x2212;3) + <italic>&#x3B1;</italic><sub>20</sub> arousal adolescent (&#x2212;7) + <italic>&#x3B1;</italic><sub>21</sub> dominance adolescent (&#x2212;5) + <italic>&#x3B1;</italic><sub>22</sub> arousal mother (&#x2212;5) + <italic>&#x3B1;</italic><sub>23</sub> arousal mother (&#x2212;7) + <italic>&#x3B1;</italic><sub>24</sub> dominance mother (&#x2212;1) + <italic>&#x3B1;</italic><sub>25</sub> dominance father (&#x2212;6) (<italic>R</italic><sup>2</sup> = 0.29, adj.<italic> R</italic><sup>2</sup> = 0.24);</p></list-item><list-item><label>&#x2009;</label><p>arousal of the father = <italic>&#x3B1;</italic><sub>26</sub> valence mother (&#x2212;4) + <italic>&#x3B1;</italic><sub>27</sub> dominance mother (&#x2212;6) + <italic>&#x3B1;</italic><sub>28</sub> arousal father (&#x2212;1) + <italic>&#x3B1;</italic><sub>29</sub> arousal father (&#x2212;2) + <italic>&#x3B1;</italic><sub>30</sub> arousal father (&#x2212;6) + <italic>&#x3B1;</italic><sub>31</sub> dominance father (&#x2212;1) (<italic>R</italic><sup>2</sup> = 0.19, adj. <italic>R</italic><sup>2</sup> = 0.15);</p></list-item><list-item><label>&#x2009;</label><p>dominance of the adolescent = <italic>&#x3B1;</italic><sub>32</sub> valence adolescent (&#x2212;1) + <italic>&#x3B1;</italic><sub>33</sub> arousal adolescent (&#x2212;5) + <italic>&#x3B1;</italic><sub>34</sub> arousal father (&#x2212;1) + <italic>&#x3B1;</italic><sub>35</sub> dominance father (&#x2212;1) (<italic>R</italic><sup>2</sup> = 0.25, adj. <italic>R</italic><sup>2</sup> = 0.22);</p></list-item><list-item><label>&#x2009;</label><p>dominance of the mother = <italic>&#x3B1;</italic><sub>36</sub> valence mother (&#x2212;7) + <italic>&#x3B1;</italic><sub>37</sub> dominance mother (&#x2212;1) + <italic>&#x3B1;</italic><sub>38</sub> dominance mother (&#x2212;3) + <italic>&#x3B1;</italic><sub>39</sub> dominance father (&#x2212;5) (<italic>R</italic><sup>2</sup> = 0.65, adj. <italic>R</italic><sup>2</sup> = 0.64);</p></list-item><list-item><label>&#x2009;</label><p>dominance of the father = <italic>&#x3B1;</italic><sub>40</sub> glycemic variability (&#x2212;1) + <italic>&#x3B1;</italic><sub>41</sub> dominance child (&#x2212;6) + <italic>&#x3B1;</italic><sub>42</sub> valence mother (&#x2212;5) + <italic>&#x3B1;</italic><sub>43</sub> valence mother (&#x2212;7) + <italic>&#x3B1;</italic><sub>44</sub> dominance mother (&#x2212;4) + <italic>&#x3B1;</italic><sub>45</sub> dominance mother (&#x2212;6) + <italic>&#x3B1;</italic><sub>46</sub> valence father (&#x2212;1) + <italic>&#x3B1;</italic><sub>47</sub> valence father (&#x2212;3) + <italic>&#x3B1;</italic><sub>48</sub> arousal father (&#x2212;3) + <italic>&#x3B1;</italic><sub>49</sub> dominance father (&#x2212;2) (<italic>R</italic><sup>2</sup> = 0.34, adj.<italic> R</italic><sup>2</sup> = 0.27);</p></list-item><list-item><label>&#x2009;</label><p><italic>glycemic variability</italic> = &#xDF;<sub>1</sub> glycemic variability (&#x2212;4) + &#xDF;<sub>2</sub> arousal mother (&#x2212;3) + &#xDF;<sub>3</sub> arousal mother (&#x2212;7) + &#xDF;<sub>4</sub> dominance mother (&#x2212;4) + &#xDF;<sub>5</sub> dominance mother (&#x2212;7) + &#xDF;<sub>6</sub> valence father (&#x2212;5) + &#xDF;<sub>7</sub> valence father (&#x2212;6) + &#xDF;<sub>8</sub> arousal father (&#x2212;3) + &#xDF;<sub>9</sub> arousal father (&#x2212;7) + &#xDF;<sub>10</sub> dominance father (&#x2212;2) + &#xDF;<sub>11</sub> dominance father (&#x2212;5) (<italic>R</italic><sup>2</sup> = 0.28, adj. <italic>R</italic><sup>2</sup> = 0.20).</p></list-item></list></p>
+      <p>The coefficients, their standard error, <italic>t</italic>-statistic, and probability referred to above, can be reviewed in <xref ref-type="table" rid="tab1">Table 1</xref>.</p>
+      <p>The development of a novel statistical methodology allowed us to disentangle the data and generate statistically reliable results in the form of ten equations. The dynamic of the results pertaining to glycemic variability, (thereby, it has to be taken into account that additional dynamic interactions arise due to spillover between equations, which are not considered here), taking into account the direction of coefficients, can be summarized in the following words and graphical representations.</p>
+      <p>
+<italic>Low</italic> glycemic variability and, therefore,<italic> good</italic> diabetic control will correlate with the following: high glycemic variability four days earlier, an excited mother three days earlier, a calm mother seven days earlier, a non-dominating mother four days earlier, a dominating mother seven days earlier (although statistically insignificant), a happy father both five and six days earlier, an excited father both three and seven days earlier, and a non-dominating father both two and five days earlier. Low glycemic variability will also correlate with a happy child six days later, a calm mother three days later, and a non-dominating father one day later. For a graphical representation of this paragraph refer to <xref ref-type="fig" rid="fig1">Figure 1</xref>.</p>
+      <p>Similarly, poor glycemic control (high glycemic variability) will correlate with low glycemic variability four days earlier, a calm mother three days earlier, an excited mother seven days earlier, a dominating mother four days earlier, a non-dominating mother seven days earlier (although statistically insignificant), a sad father both five and six days earlier, a calm father both three and seven days earlier, and a dominating father both two and five days earlier. High glycemic variability will also correlate with a sad child six days later, an excited mother three days later, and a dominating father one day later. A graphical representation of this paragraph is presented in <xref ref-type="fig" rid="fig2">Figure 2</xref></p>
+      <p>In clinical terms, this means, good diabetic control was preceded by attentive and alert (&#x201C;high arousal,&#x201D; excited) parents with a positive attitude (&#x201C;happy father&#x201D;), at the same time refraining from too much overwhelming presence (&#x201C;low dominance&#x201D;). Likewise, phases of good diabetic management were followed by a continuously distant father (&#x201C;low dominance&#x201D;), unfortunately a less alert mother (&#x201C;low arousal&#x201D;), and a content (&#x201C;happy&#x201D;) adolescent index patient.</p>
+      <p>Similarly, mostly self-explanatory, graphical representations were constructed for the effects surrounding the affective valence of all three family members (see Figures <xref ref-type="fig" rid="fig3">3</xref>, <xref ref-type="fig" rid="fig4">4</xref>, and <xref ref-type="fig" rid="fig5">5</xref>). We picked these three timelines for more detailed examination, because the appropriate measurement of depressive symptoms (which at least at a distance somewhat relates to affective valence) in diabetics in general, remains to be a topic of current debate in the literature [<xref rid="B28" ref-type="bibr">28</xref>].</p>
+    </sec>
+    <sec id="sec4">
+      <title>4. Conclusions</title>
+      <p>In comparison to the results derived from the same set of raw data with a different statistical approach in an earlier publication [<xref rid="B1" ref-type="bibr">1</xref>], there are several improvements we were able to achieve:<list list-type="simple"><list-item><label>(i)</label><p>increasing the coefficient of determination <italic>R</italic><sup>2</sup> for the model prediction of glycemic variability by factor ten (adjusted <italic>R</italic><sup>2</sup> value of 0.20 as opposed to 0.02) while incorporating significant effects of explanatory variables (lags) stemming from a longer period of time preceding the predicted event;</p></list-item><list-item><label>(ii)</label><p>presenting a more precise timeline of effects of various variables on each other, including glycemic variability and vice versa (e.g., &#x201C;a nondominating mother four days prior to a set day will increase glycemic control&#x201D; instead of &#x201C;a nondominating mother somewhere up to four days prior to a set day will increase glycemic control&#x201D;);</p></list-item><list-item><label>(iii)</label><p>isolating additional relationships between variables which did not reach statistical significance earlier or took more time to take effect than the time frame of the earlier models allowed for.</p></list-item></list></p>
+      <p>A more substantial contribution of this paper is the demonstration and practical application of the multivariate lag selection process to VAR analysis, resolving an essential shortcoming in VAR analysis of (relatively) small samples. Hence, this contribution to literature will have relevance beyond the case study approach but also to VAR-based studies of larger cohorts of patients (as e.g., [<xref rid="B24" ref-type="bibr">24</xref>]), significantly increasing either the number of effects analyzed (as in [<xref rid="B24" ref-type="bibr">24</xref>]) or the statistical reliability (i.e., the adjusted <italic>R</italic><sup>2</sup>) with which results are presented.</p>
+      <p>All in all, however, mathematically refined quantitative methodological approaches relying on modern computational technology can generate more specific, reproducible, and thus trustworthy results than purely qualitative (narrative) accounts, while still honoring the benefits of the case study approach aiming to explore previously unforeseen avenues fit for further vested inquiry (often costly to perform).</p>
+      <p>Yet, we have to ask ourselves critically if the added mathematical complexity honors the overall value of the results a case study approach can provide. Revisiting the opening comments of this report in the context of brittle diabetes, it seems interesting to note that particularly the most highly acclaimed and clinically widely trusted research on brittle diabetes has also been the most severely and broadly criticized. So, for instance, more than ten years after the initial publication of the pioneering work of Minuchin et al. in 1978 (on what they called &#x201C;psychosomatic diabetes&#x201D;) entitled &#x201C;Psychosomatic families&#x201D; [<xref rid="B2" ref-type="bibr">2</xref>], critics commented as follows: &#x201C;&#x2026;as we conducted research and therapy with the families of diabetic children, we were impressed with both the limit of the formulation of the family's role in diabetes offered in &#x2018;Psychosomatic Families' and the uncritical acceptance that the book continued to enjoy&#x201D; [<xref rid="B29" ref-type="bibr">29</xref>]. In their rather pointed article entitled &#x201C;The &#x2018;psychosomatic family' reconsidered II: recalling a defective model and looking ahead&#x201D; Coyne and Anderson [<xref rid="B29" ref-type="bibr">29</xref>] criticize Minuchin et al. [<xref rid="B2" ref-type="bibr">2</xref>] primarily for their bold, yet statistically (allegedly) poorly supported, statements on the &#x201C;typical psychosomatic family&#x201D; (Minuchin et al. [<xref rid="B2" ref-type="bibr">2</xref>] describe the &#x201C;psychosomatic family&#x201D; as featuring enmeshment, rigidity, overprotectiveness, and lack of conflict resolution and the children affected by brittle diabetes as having difficulty in handling stress, showing a tendency to internalize anger and being somewhat immature in their ability to cope with challenging situations) and their overgeneralizations of these overall &#x201C;weak&#x201D; findings on familial situations in one psychosomatic illness to various psychosomatic illnesses. More specifically, small sample sizes and poor documentation of methodology (or lack thereof) are being highlighted.</p>
+      <p>Reflecting on such valid criticism in light of our own extensive research both on the subject of brittle diabetes in adolescents and on the various shortcomings of contemporary statistical approaches to time series data in psychosomatic medicine, we believe there is a case for both sides. On the one hand, we must vigorously support critics (i.e., [<xref rid="B29" ref-type="bibr">29</xref>]) in their call for much more detailed and sophisticated reports on and publication of statistical methodology in such complex and intricate research situations as are present in multivariate time series analysis. The reason lies in the fact that there is vast room for pitfalls and error with this type of research, if left in the hands of the mathematically inexperienced. On the other hand, however, we found for fact, that with the change of statistical approach, the results drawn from a given set of data may change somewhat, despite both methodologies being perfectly valid and academically accepted. So one wonders how this (agreeably small) imprecision of highly quantitative research is any different from the (possibly but not necessarily larger) inaccuracy of qualitative research due to subjectivity. Noteworthy, and in taking up the cudgels for Minuchin et al. [<xref rid="B2" ref-type="bibr">2</xref>, <xref rid="B11" ref-type="bibr">11</xref>], the one finding which we were able to observe clinically before conducting any statistical testing at all, namely, that of a dominating mother having a negative effect on glycemic control of her child, was also a finding that both of our methodologies were able to report at a high level of significance. (Amusingly, one might find what Minuchin et al. [<xref rid="B2" ref-type="bibr">2</xref>] described as overprotectiveness in families with brittle diabetes is very similar, if not the same, to what we were able to pinpoint in terms of exaggerated control of a mother over her glycemically out of control child.) Additionally, we also fear that critics of primarily qualitative case research (i.e., [<xref rid="B2" ref-type="bibr">2</xref>]) may not have realized the vastness of data inherent even in a small sample in time series analysis, an apprehension possibly supported by the fait accompli of not too many critics providing any statistically evidenced findings on the subject of brittle diabetes themselves (i.e., [<xref rid="B29" ref-type="bibr">29</xref>]). So in conclusion, we believe the careful observation of the clinically experienced therapist to be almost as valuable as the most substantiated and savvy statistical approach.</p>
+    </sec>
+  </body>
+  <back>
+    <app-group>
+      <app>
+        <title>Appendix</title>
+        <p>See <xref ref-type="table" rid="tab1">Table 1</xref>.</p>
+      </app>
+    </app-group>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>VAR:</term>
+          <def>
+            <p>vector autoregression/vector autoregressive.</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    <sec>
+      <title>Consent</title>
+      <p>Consent for the publication of this case report has been obtained from all individuals mentioned in the report (father, mother, and adolescent) as well as all authors of the paper.</p>
+    </sec>
+    <sec sec-type="conflict">
+      <title>Conflict of Interests</title>
+      <p>The authors declare that they have no competing interests.</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>G&#xFC;nther</surname>
+              <given-names>M. P.</given-names>
+            </name>
+            <name>
+              <surname>Winker</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>B&#xF6;ttcher</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Brosig</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Family system dynamics and type 1 diabetic glycemic variability: a vector-auto-regressive model</article-title>
+          <source>
+            <italic>Families, Systems and Health</italic>
+          </source>
+          <year>2013</year>
+          <volume>31</volume>
+          <issue>2</issue>
+          <fpage>194</fpage>
+          <lpage>204</lpage>
+          <pub-id pub-id-type="doi">10.1037/a0032314</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-84880025534</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B2">
+        <label>2</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Minuchin</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Rosman</surname>
+              <given-names>B. L.</given-names>
+            </name>
+            <name>
+              <surname>Baker</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <source>
+            <italic>Psychosomatic Families&#x2014;Anorexia Nervosa in Context</italic>
+          </source>
+          <year>1978</year>
+          <publisher-loc>Cambridge, Mass, USA</publisher-loc>
+          <publisher-name>Harvard University Press</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="B3">
+        <label>3</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ahmed</surname>
+              <given-names>P. I.</given-names>
+            </name>
+            <name>
+              <surname>Ahmed</surname>
+              <given-names>N.</given-names>
+            </name>
+          </person-group>
+          <source>
+            <italic>Coping with Juvenile Diabetes</italic>
+          </source>
+          <year>1985</year>
+          <publisher-loc>Springfield, Ill, USA</publisher-loc>
+          <publisher-name>Charles C. Thomas</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="B4">
+        <label>4</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seiffge-Krenke</surname>
+              <given-names>I.</given-names>
+            </name>
+          </person-group>
+          <source>
+            <italic>Adolescents' Health: A Developmental Perspective</italic>
+          </source>
+          <year>1998</year>
+          <publisher-loc>Mahwah, NJ, USA</publisher-loc>
+          <publisher-name>Erlbaum</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="B5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Swift</surname>
+              <given-names>C. R.</given-names>
+            </name>
+            <name>
+              <surname>Seidman</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>H.</given-names>
+            </name>
+          </person-group>
+          <article-title>Adjustment problems in juvenile diabetes</article-title>
+          <source>
+            <italic>Psychosomatic Medicine</italic>
+          </source>
+          <year>1967</year>
+          <volume>29</volume>
+          <issue>6</issue>
+          <fpage>555</fpage>
+          <lpage>571</lpage>
+          <pub-id pub-id-type="doi">10.1097/00006842-196711000-00001</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-0014154721</pub-id>
+          <pub-id pub-id-type="pmid">5582952</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thomsett</surname>
+              <given-names>M. J.</given-names>
+            </name>
+            <name>
+              <surname>Shield</surname>
+              <given-names>G. J.</given-names>
+            </name>
+            <name>
+              <surname>Batch</surname>
+              <given-names>J. A.</given-names>
+            </name>
+            <name>
+              <surname>Cotterill</surname>
+              <given-names>A. M.</given-names>
+            </name>
+          </person-group>
+          <article-title>How well are we doing? Metabolic control in patients with diabetes</article-title>
+          <source>
+            <italic>Journal of Paediatrics and Child Health</italic>
+          </source>
+          <year>1999</year>
+          <volume>35</volume>
+          <issue>5</issue>
+          <fpage>479</fpage>
+          <lpage>482</lpage>
+          <pub-id pub-id-type="doi">10.1046/j.1440-1754.1999.355424.x</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-0032844876</pub-id>
+          <pub-id pub-id-type="pmid">10571763</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fonagy</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Moran</surname>
+              <given-names>G. S.</given-names>
+            </name>
+            <name>
+              <surname>Lindsay</surname>
+              <given-names>M. K. M.</given-names>
+            </name>
+            <name>
+              <surname>Kurtz</surname>
+              <given-names>A. B.</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Psychological adjustment and diabetic control</article-title>
+          <source>
+            <italic>Archives of Disease in Childhood</italic>
+          </source>
+          <year>1987</year>
+          <volume>62</volume>
+          <issue>10</issue>
+          <fpage>1009</fpage>
+          <lpage>1013</lpage>
+          <pub-id pub-id-type="doi">10.1136/adc.62.10.1009</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-0023617899</pub-id>
+          <pub-id pub-id-type="pmid">3499865</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moran</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Fonagy</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Kurtz</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Bolton</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Brook</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>A controlled study of the psychoanalytic treatment of brittle diabetes</article-title>
+          <source>
+            <italic>Journal of the American Academy of Child and Adolescent Psychiatry</italic>
+          </source>
+          <year>1991</year>
+          <volume>30</volume>
+          <issue>6</issue>
+          <fpage>926</fpage>
+          <lpage>935</lpage>
+          <pub-id pub-id-type="doi">10.1097/00004583-199111000-00010</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-0025719920</pub-id>
+          <pub-id pub-id-type="pmid">1757442</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kent</surname>
+              <given-names>L. A.</given-names>
+            </name>
+            <name>
+              <surname>Gill</surname>
+              <given-names>G. V.</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Mortality and outcome of patients with brittle diabetes and recurrent ketoacidosis</article-title>
+          <source>
+            <italic>The Lancet</italic>
+          </source>
+          <year>1994</year>
+          <volume>344</volume>
+          <issue>8925</issue>
+          <fpage>778</fpage>
+          <lpage>781</lpage>
+          <pub-id pub-id-type="doi">10.1016/s0140-6736(94)92340-x</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-0028144827</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brosig</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Leweke</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Milch</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Eckhard</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Reimer</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Psychosocial predictors of metabolic instability in brittle diabetes&#x2014;a multivariate time series analysis</article-title>
+          <source>
+            <italic>Psychotherapie Psychosomatik Medizinische Psychologie</italic>
+          </source>
+          <year>2001</year>
+          <volume>51</volume>
+          <issue>6</issue>
+          <fpage>232</fpage>
+          <lpage>238</lpage>
+          <pub-id pub-id-type="doi">10.1055/s-2001-14301</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-0034993334</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Minuchin</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Baker</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Rosman</surname>
+              <given-names>B. L.</given-names>
+            </name>
+            <name>
+              <surname>Liebman</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Milman</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Todd</surname>
+              <given-names>T. C.</given-names>
+            </name>
+          </person-group>
+          <article-title>A conceptual model of psychosomatic illness in children. Family organization and family therapy</article-title>
+          <source>
+            <italic>Archives of General Psychiatry</italic>
+          </source>
+          <year>1975</year>
+          <volume>32</volume>
+          <issue>8</issue>
+          <fpage>1031</fpage>
+          <lpage>1038</lpage>
+          <pub-id pub-id-type="other">2-s2.0-0016788754</pub-id>
+          <pub-id pub-id-type="doi">10.1001/archpsyc.1975.01760260095008</pub-id>
+          <pub-id pub-id-type="pmid">808191</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barnard</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Royle</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Noyes</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Waugh</surname>
+              <given-names>N.</given-names>
+            </name>
+          </person-group>
+          <article-title>Fear of hypoglycaemia in parents of young children with type 1 diabetes: a systematic review</article-title>
+          <source>
+            <italic>BMC Pediatrics</italic>
+          </source>
+          <year>2010</year>
+          <volume>10, article 50</volume>
+          <pub-id pub-id-type="doi">10.1186/1471-2431-10-50</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-77954554880</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bradley</surname>
+              <given-names>M. M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Measuring emotion: the self-assessment manikin and the semantic differential</article-title>
+          <source>
+            <italic>Journal of Behavior Therapy and Experimental Psychiatry</italic>
+          </source>
+          <year>1994</year>
+          <volume>25</volume>
+          <issue>1</issue>
+          <fpage>49</fpage>
+          <lpage>59</lpage>
+          <pub-id pub-id-type="doi">10.1016/0005-7916(94)90063-9</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-0028307950</pub-id>
+          <pub-id pub-id-type="pmid">7962581</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14">
+        <label>14</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lang</surname>
+              <given-names>P. J.</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Sidowski</surname>
+              <given-names>J. B.</given-names>
+            </name>
+            <name>
+              <surname>Johnson</surname>
+              <given-names>J. H.</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>T. A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Behavioral treatment and bio-behavioral assessment. Computer applications</article-title>
+          <source>
+            <italic>Technology in Mental Health and Delivery Systems</italic>
+          </source>
+          <year>1980</year>
+          <publisher-loc>Norwood, NJ, USA</publisher-loc>
+          <publisher-name>Ablex</publisher-name>
+          <fpage>119</fpage>
+          <lpage>137</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ebner-Priemer</surname>
+              <given-names>U. W.</given-names>
+            </name>
+            <name>
+              <surname>Trull</surname>
+              <given-names>T. J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Ecological momentary assessment of mood disorders and mood dysregulation</article-title>
+          <source>
+            <italic>Psychological Assessment</italic>
+          </source>
+          <year>2009</year>
+          <volume>21</volume>
+          <issue>4</issue>
+          <fpage>463</fpage>
+          <lpage>475</lpage>
+          <pub-id pub-id-type="other">2-s2.0-72549102504</pub-id>
+          <pub-id pub-id-type="doi">10.1037/a0017075</pub-id>
+          <pub-id pub-id-type="pmid">19947781</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hirsch</surname>
+              <given-names>I. B.</given-names>
+            </name>
+            <name>
+              <surname>Brownlee</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Should minimal blood glucose variability become the gold standard of glycemic control?</article-title>
+          <source>
+            <italic>Journal of Diabetes and Its Complications</italic>
+          </source>
+          <year>2005</year>
+          <volume>19</volume>
+          <issue>3</issue>
+          <fpage>178</fpage>
+          <lpage>181</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jdiacomp.2004.10.001</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-18144415490</pub-id>
+          <pub-id pub-id-type="pmid">15866065</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hirsch</surname>
+              <given-names>I. B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Glycemic variability: it's not just about A1C anymore!</article-title>
+          <source>
+            <italic>Diabetes Technology and Therapeutics</italic>
+          </source>
+          <year>2005</year>
+          <volume>7</volume>
+          <issue>5</issue>
+          <fpage>780</fpage>
+          <lpage>783</lpage>
+          <pub-id pub-id-type="doi">10.1089/dia.2005.7.780</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-27644546482</pub-id>
+          <pub-id pub-id-type="pmid">16241882</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zaccardi</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Pitocco</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Ghirlanda</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Glycemic risk factors of diabetic vascular complications: the role of glycemic variability</article-title>
+          <source>
+            <italic>Diabetes/Metabolism Research and Reviews</italic>
+          </source>
+          <year>2009</year>
+          <volume>25</volume>
+          <issue>3</issue>
+          <fpage>199</fpage>
+          <lpage>207</lpage>
+          <pub-id pub-id-type="doi">10.1002/dmrr.938</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-65649093012</pub-id>
+          <pub-id pub-id-type="pmid">19172575</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B19">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Penckofer</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Quinn</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Byrn</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Ferrans</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Strange</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Does glycemic variability impact mood and quality of life?</article-title>
+          <source>
+            <italic>Diabetes Technology &amp; Therapeutics</italic>
+          </source>
+          <year>2012</year>
+          <volume>14</volume>
+          <issue>4</issue>
+          <fpage>303</fpage>
+          <lpage>310</lpage>
+          <pub-id pub-id-type="doi">10.1089/dia.2011.0191</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-84859348738</pub-id>
+          <pub-id pub-id-type="pmid">22324383</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Risso</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Mercuri</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Quagliaro</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Damante</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Ceriello</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Intermittent high glucose enhances apoptosis in human umbilical vein endothelial cells in culture</article-title>
+          <source>
+            <italic>The American Journal of Physiology&#x2014;Endocrinology and Metabolism</italic>
+          </source>
+          <year>2001</year>
+          <volume>281</volume>
+          <issue>5</issue>
+          <fpage>E924</fpage>
+          <lpage>E930</lpage>
+          <pub-id pub-id-type="other">2-s2.0-0035199659</pub-id>
+          <pub-id pub-id-type="pmid">11595647</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B21">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meissner</surname>
+              <given-names>W. W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Psychoanalysis and the mind-body relation: psychosomatic perspectives</article-title>
+          <source>
+            <italic>Bulletin of the Menninger Clinic</italic>
+          </source>
+          <year>2006</year>
+          <volume>70</volume>
+          <issue>4</issue>
+          <fpage>295</fpage>
+          <lpage>315</lpage>
+          <pub-id pub-id-type="other">2-s2.0-33845564080</pub-id>
+          <pub-id pub-id-type="doi">10.1521/bumc.2006.70.4.295</pub-id>
+          <pub-id pub-id-type="pmid">17166087</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B22">
+        <label>22</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>L&#xFC;tkepohl</surname>
+              <given-names>H.</given-names>
+            </name>
+          </person-group>
+          <source>
+            <italic>New Introduction to Multiple Time Series Analysis</italic>
+          </source>
+          <year>2005</year>
+          <publisher-loc>Berlin , Germany</publisher-loc>
+          <publisher-name>Springer</publisher-name>
+          <pub-id pub-id-type="other">MR2172368</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-84892292648</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B23">
+        <label>23</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>L&#xFC;tkepohl</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Kr&#xE4;tzig</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <source>
+            <italic>Applied Time Series Econometrics</italic>
+          </source>
+          <year>2004</year>
+          <publisher-loc>Cambridge, UK</publisher-loc>
+          <publisher-name>Cambridge University Press</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="B24">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wild</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Eichler</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Friederich</surname>
+              <given-names>H.-C.</given-names>
+            </name>
+            <name>
+              <surname>Hartmann</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Zipfel</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Herzog</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>A graphical vector autoregressive modelling approach to the analysis of electronic diary data</article-title>
+          <source>
+            <italic>BMC Medical Research Methodology</italic>
+          </source>
+          <year>2010</year>
+          <volume>10, article 28</volume>
+          <pub-id pub-id-type="doi">10.1186/1471-2288-10-28</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-77950525351</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B25">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Savin</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Winker</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Heuristic model selection for leading indicators in Russia and Germany</article-title>
+          <source>
+            <italic>Journal of Business Cycle Measurement and Analysis</italic>
+          </source>
+          <year>2013</year>
+          <volume>2012</volume>
+          <issue>2</issue>
+          <fpage>67</fpage>
+          <lpage>89</lpage>
+          <pub-id pub-id-type="doi">10.1787/jbcma-2012-5k49pkpbf76j</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B26">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Winker</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Optimized multivariate lag structure selection</article-title>
+          <source>
+            <italic>Computational Economics</italic>
+          </source>
+          <year>2000</year>
+          <volume>16</volume>
+          <issue>1-2</issue>
+          <fpage>87</fpage>
+          <lpage>103</lpage>
+          <pub-id pub-id-type="doi">10.1023/a:1008757620685</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-16344373184</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B27">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Winker</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification of multivariate AR-models by threshold accepting</article-title>
+          <source>
+            <italic>Computational Statistics and Data Analysis</italic>
+          </source>
+          <year>1995</year>
+          <volume>20</volume>
+          <issue>3</issue>
+          <fpage>295</fpage>
+          <lpage>307</lpage>
+          <pub-id pub-id-type="doi">10.1016/0167-9473(94)00041-G</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-0001567344</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B28">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hofmann</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>K&#xF6;hler</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Leichsenring</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Kruse</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Depression as a risk factor for mortality in individuals with diabetes: a meta-analysis of prospective studies</article-title>
+          <source>
+            <italic>PLoS ONE</italic>
+          </source>
+          <year>2013</year>
+          <volume>8</volume>
+          <issue>11</issue>
+          <pub-id pub-id-type="publisher-id">e79809</pub-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0079809</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-84894368573</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B29">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Coyne</surname>
+              <given-names>J. C.</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>B. J.</given-names>
+            </name>
+          </person-group>
+          <article-title>The &#x2018;psychosomatic family&#x2019; reconsidered II: recalling a defective model and looking ahead</article-title>
+          <source>
+            <italic>Journal of Marital and Family Therapy</italic>
+          </source>
+          <year>1989</year>
+          <volume>15</volume>
+          <issue>2</issue>
+          <fpage>139</fpage>
+          <lpage>148</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1752-0606.1989.tb00793.x</pub-id>
+          <pub-id pub-id-type="other">2-s2.0-0024500602</pub-id>
+          <pub-id pub-id-type="pmid">21118442</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="fig1" orientation="portrait" position="float">
+      <label>Figure 1</label>
+      <caption>
+        <p>Timeline displaying effects correlating with high glycemic control. The graph depicts a psychosomatic cycle in which various emotional states of all involved family members influence glycemic variability of the adolescent patient and vice versa.</p>
+      </caption>
+      <graphic xlink:href="JDR2016-6437452.001"/>
+    </fig>
+    <fig id="fig2" orientation="portrait" position="float">
+      <label>Figure 2</label>
+      <caption>
+        <p>Timeline displaying effects correlating with poor glycemic control. The graph depicts a psychosomatic cycle in which various emotional states of all involved family members influence glycemic variability of the adolescent patient and vice versa.</p>
+      </caption>
+      <graphic xlink:href="JDR2016-6437452.002"/>
+    </fig>
+    <fig id="fig3" orientation="portrait" position="float">
+      <label>Figure 3</label>
+      <caption>
+        <p>Timeline displaying effects correlating with affective valence in the adolescent index patient. The graph depicts a psychosomatic cycle in which various emotional states of all involved family members influence affective valence (pleasure) of the adolescent patient and vice versa.</p>
+      </caption>
+      <graphic xlink:href="JDR2016-6437452.003"/>
+    </fig>
+    <fig id="fig4" orientation="portrait" position="float">
+      <label>Figure 4</label>
+      <caption>
+        <p>Timeline displaying effects correlating with affective valence in the mother of the adolescent index patient. The graph depicts a psychosomatic cycle in which various emotional states of all involved family members influence affective valence (pleasure) of the mother to the adolescent patient and vice versa.</p>
+      </caption>
+      <graphic xlink:href="JDR2016-6437452.004"/>
+    </fig>
+    <fig id="fig5" orientation="portrait" position="float">
+      <label>Figure 5</label>
+      <caption>
+        <p>Timeline displaying effects correlating with affective valence in the father of the adolescent index patient. The graph depicts a psychosomatic cycle in which various emotional states of all involved family members influence affective valence (pleasure) of the father to the adolescent patient and vice versa.</p>
+      </caption>
+      <graphic xlink:href="JDR2016-6437452.005"/>
+    </fig>
+    <table-wrap-group id="tab1" orientation="portrait" position="float">
+      <label>Table 1</label>
+      <caption>
+        <p>Coefficients and their statistical properties.</p>
+      </caption>
+      <table-wrap id="tab1a" orientation="portrait" position="anchor">
+        <label>(a)</label>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th align="left" rowspan="1" colspan="1">&#x2009;</th>
+              <th align="center" rowspan="1" colspan="1">Coefficient</th>
+              <th align="center" rowspan="1" colspan="1">Std. error</th>
+              <th align="center" rowspan="1" colspan="1">
+<italic>t</italic>-statistic</th>
+              <th align="center" rowspan="1" colspan="1">Prob.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>1</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.008371</td>
+              <td align="center" rowspan="1" colspan="1">0.002505</td>
+              <td align="center" rowspan="1" colspan="1">3.341682</td>
+              <td align="center" rowspan="1" colspan="1">0.0009</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>2</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.439050</td>
+              <td align="center" rowspan="1" colspan="1">0.071648</td>
+              <td align="center" rowspan="1" colspan="1">6.127902</td>
+              <td align="center" rowspan="1" colspan="1">0.0000</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>3</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.196661</td>
+              <td align="center" rowspan="1" colspan="1">0.072361</td>
+              <td align="center" rowspan="1" colspan="1">2.717768</td>
+              <td align="center" rowspan="1" colspan="1">0.0067</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>4</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.193472</td>
+              <td align="center" rowspan="1" colspan="1">0.070105</td>
+              <td align="center" rowspan="1" colspan="1">2.759765</td>
+              <td align="center" rowspan="1" colspan="1">0.0059</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>5</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.166062</td>
+              <td align="center" rowspan="1" colspan="1">0.072169</td>
+              <td align="center" rowspan="1" colspan="1">2.301002</td>
+              <td align="center" rowspan="1" colspan="1">0.0216</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>6</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.093081</td>
+              <td align="center" rowspan="1" colspan="1">0.038780</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.400229</td>
+              <td align="center" rowspan="1" colspan="1">0.0166</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>7</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.083885</td>
+              <td align="center" rowspan="1" colspan="1">0.023675</td>
+              <td align="center" rowspan="1" colspan="1">3.543200</td>
+              <td align="center" rowspan="1" colspan="1">0.0004</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>8</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.133217</td>
+              <td align="center" rowspan="1" colspan="1">0.045307</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.940347</td>
+              <td align="center" rowspan="1" colspan="1">0.0033</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>9</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.135556</td>
+              <td align="center" rowspan="1" colspan="1">0.044104</td>
+              <td align="center" rowspan="1" colspan="1">3.073571</td>
+              <td align="center" rowspan="1" colspan="1">0.0022</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>10</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.096673</td>
+              <td align="center" rowspan="1" colspan="1">0.029864</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;3.237170</td>
+              <td align="center" rowspan="1" colspan="1">0.0012</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>11</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.220601</td>
+              <td align="center" rowspan="1" colspan="1">0.061646</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;3.578496</td>
+              <td align="center" rowspan="1" colspan="1">0.0004</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>12</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.083390</td>
+              <td align="center" rowspan="1" colspan="1">0.031821</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.620595</td>
+              <td align="center" rowspan="1" colspan="1">0.0089</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>13</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.167024</td>
+              <td align="center" rowspan="1" colspan="1">0.043985</td>
+              <td align="center" rowspan="1" colspan="1">3.797288</td>
+              <td align="center" rowspan="1" colspan="1">0.0002</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>14</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.499978</td>
+              <td align="center" rowspan="1" colspan="1">0.148744</td>
+              <td align="center" rowspan="1" colspan="1">3.361336</td>
+              <td align="center" rowspan="1" colspan="1">0.0008</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>15</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.235265</td>
+              <td align="center" rowspan="1" colspan="1">0.063599</td>
+              <td align="center" rowspan="1" colspan="1">3.699206</td>
+              <td align="center" rowspan="1" colspan="1">0.0002</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>16</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.118392</td>
+              <td align="center" rowspan="1" colspan="1">0.039810</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.973946</td>
+              <td align="center" rowspan="1" colspan="1">0.0030</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>17</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.177384</td>
+              <td align="center" rowspan="1" colspan="1">0.058985</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;3.007251</td>
+              <td align="center" rowspan="1" colspan="1">0.0027</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>18</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.327619</td>
+              <td align="center" rowspan="1" colspan="1">0.062900</td>
+              <td align="center" rowspan="1" colspan="1">5.208601</td>
+              <td align="center" rowspan="1" colspan="1">0.0000</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>19</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.006755</td>
+              <td align="center" rowspan="1" colspan="1">0.002888</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.339111</td>
+              <td align="center" rowspan="1" colspan="1">0.0195</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>20</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.516945</td>
+              <td align="center" rowspan="1" colspan="1">0.178245</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.900191</td>
+              <td align="center" rowspan="1" colspan="1">0.0038</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>21</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.973039</td>
+              <td align="center" rowspan="1" colspan="1">0.242951</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;4.005083</td>
+              <td align="center" rowspan="1" colspan="1">0.0001</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>22</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.190612</td>
+              <td align="center" rowspan="1" colspan="1">0.063265</td>
+              <td align="center" rowspan="1" colspan="1">3.012915</td>
+              <td align="center" rowspan="1" colspan="1">0.0026</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>23</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.212629</td>
+              <td align="center" rowspan="1" colspan="1">0.060467</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;3.516477</td>
+              <td align="center" rowspan="1" colspan="1">0.0005</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>24</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.560562</td>
+              <td align="center" rowspan="1" colspan="1">0.136662</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;4.101828</td>
+              <td align="center" rowspan="1" colspan="1">0.0000</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>25</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.464339</td>
+              <td align="center" rowspan="1" colspan="1">0.146477</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;3.170045</td>
+              <td align="center" rowspan="1" colspan="1">0.0016</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>26</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.090665</td>
+              <td align="center" rowspan="1" colspan="1">0.041861</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.165871</td>
+              <td align="center" rowspan="1" colspan="1">0.0305</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>27</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.447149</td>
+              <td align="center" rowspan="1" colspan="1">0.069911</td>
+              <td align="center" rowspan="1" colspan="1">6.395994</td>
+              <td align="center" rowspan="1" colspan="1">0.0000</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>28</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.234203</td>
+              <td align="center" rowspan="1" colspan="1">0.065907</td>
+              <td align="center" rowspan="1" colspan="1">3.553560</td>
+              <td align="center" rowspan="1" colspan="1">0.0004</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>29</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.225144</td>
+              <td align="center" rowspan="1" colspan="1">0.058588</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;3.842809</td>
+              <td align="center" rowspan="1" colspan="1">0.0001</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>30</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.129774</td>
+              <td align="center" rowspan="1" colspan="1">0.038175</td>
+              <td align="center" rowspan="1" colspan="1">3.399442</td>
+              <td align="center" rowspan="1" colspan="1">0.0007</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>31</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.182089</td>
+              <td align="center" rowspan="1" colspan="1">0.037975</td>
+              <td align="center" rowspan="1" colspan="1">4.795004</td>
+              <td align="center" rowspan="1" colspan="1">0.0000</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>32</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.077998</td>
+              <td align="center" rowspan="1" colspan="1">0.029281</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.663826</td>
+              <td align="center" rowspan="1" colspan="1">0.0078</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>33</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.325788</td>
+              <td align="center" rowspan="1" colspan="1">0.065003</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;5.011909</td>
+              <td align="center" rowspan="1" colspan="1">0.0000</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>34</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.215753</td>
+              <td align="center" rowspan="1" colspan="1">0.065266</td>
+              <td align="center" rowspan="1" colspan="1">3.305758</td>
+              <td align="center" rowspan="1" colspan="1">0.0010</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>35</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.259613</td>
+              <td align="center" rowspan="1" colspan="1">0.081614</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;3.181004</td>
+              <td align="center" rowspan="1" colspan="1">0.0015</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>36</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.200644</td>
+              <td align="center" rowspan="1" colspan="1">0.061428</td>
+              <td align="center" rowspan="1" colspan="1">3.266334</td>
+              <td align="center" rowspan="1" colspan="1">0.0011</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>37</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.292372</td>
+              <td align="center" rowspan="1" colspan="1">0.060802</td>
+              <td align="center" rowspan="1" colspan="1">4.808558</td>
+              <td align="center" rowspan="1" colspan="1">0.0000</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>38</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.186054</td>
+              <td align="center" rowspan="1" colspan="1">0.064022</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.906069</td>
+              <td align="center" rowspan="1" colspan="1">0.0037</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>39</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.233369</td>
+              <td align="center" rowspan="1" colspan="1">0.086570</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.695740</td>
+              <td align="center" rowspan="1" colspan="1">0.0071</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>40</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.004900</td>
+              <td align="center" rowspan="1" colspan="1">0.001217</td>
+              <td align="center" rowspan="1" colspan="1">4.024947</td>
+              <td align="center" rowspan="1" colspan="1">0.0001</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>41</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.367140</td>
+              <td align="center" rowspan="1" colspan="1">0.102177</td>
+              <td align="center" rowspan="1" colspan="1">3.593182</td>
+              <td align="center" rowspan="1" colspan="1">0.0003</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>42</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.128680</td>
+              <td align="center" rowspan="1" colspan="1">0.045575</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.823477</td>
+              <td align="center" rowspan="1" colspan="1">0.0048</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>43</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.111369</td>
+              <td align="center" rowspan="1" colspan="1">0.043503</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.560006</td>
+              <td align="center" rowspan="1" colspan="1">0.0106</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>44</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.186954</td>
+              <td align="center" rowspan="1" colspan="1">0.067466</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.771067</td>
+              <td align="center" rowspan="1" colspan="1">0.0057</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>45</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.187772</td>
+              <td align="center" rowspan="1" colspan="1">0.065392</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.871465</td>
+              <td align="center" rowspan="1" colspan="1">0.0042</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>46</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.192931</td>
+              <td align="center" rowspan="1" colspan="1">0.048915</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;3.944164</td>
+              <td align="center" rowspan="1" colspan="1">0.0001</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>47</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.201673</td>
+              <td align="center" rowspan="1" colspan="1">0.062378</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;3.233079</td>
+              <td align="center" rowspan="1" colspan="1">0.0013</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>48</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.092639</td>
+              <td align="center" rowspan="1" colspan="1">0.048991</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;1.890956</td>
+              <td align="center" rowspan="1" colspan="1">0.0589</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B1;</italic>
+<sub>49</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">0.154373</td>
+              <td align="center" rowspan="1" colspan="1">0.062922</td>
+              <td align="center" rowspan="1" colspan="1">2.453387</td>
+              <td align="center" rowspan="1" colspan="1">0.0143</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>Determinant residual covariance 9.14<italic>E</italic> &#x2212; 05.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <table-wrap id="tab1b" orientation="portrait" position="anchor">
+        <label>(b)</label>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th align="left" rowspan="1" colspan="1">&#x2009;</th>
+              <th align="center" rowspan="1" colspan="1">Coefficient</th>
+              <th align="center" rowspan="1" colspan="1">Std. error</th>
+              <th align="center" rowspan="1" colspan="1">
+<italic>t</italic>-statistic</th>
+              <th align="center" rowspan="1" colspan="1">Prob.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B2;</italic>
+<sub>1</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;0.197322</td>
+              <td align="center" rowspan="1" colspan="1">0.076111</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.592545</td>
+              <td align="center" rowspan="1" colspan="1">0.0097</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B2;</italic>
+<sub>2</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">3.639513</td>
+              <td align="center" rowspan="1" colspan="1">1.583793</td>
+              <td align="center" rowspan="1" colspan="1">2.297973</td>
+              <td align="center" rowspan="1" colspan="1">0.0218</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B2;</italic>
+<sub>3</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;4.889116</td>
+              <td align="center" rowspan="1" colspan="1">1.647518</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;2.967565</td>
+              <td align="center" rowspan="1" colspan="1">0.0031</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B2;</italic>
+<sub>4</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">22.52994</td>
+              <td align="center" rowspan="1" colspan="1">3.969363</td>
+              <td align="center" rowspan="1" colspan="1">5.675959</td>
+              <td align="center" rowspan="1" colspan="1">0.0000</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B2;</italic>
+<sub>5</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;6.340918</td>
+              <td align="center" rowspan="1" colspan="1">3.554736</td>
+              <td align="center" rowspan="1" colspan="1">&#x2212;1.783794</td>
+              <td align="center" rowspan="1" colspan="1">0.0747</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B2;</italic>
+<sub>6</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">9.565170</td>
+              <td align="center" rowspan="1" colspan="1">3.704850</td>
+              <td align="center" rowspan="1" colspan="1">2.581797</td>
+              <td align="center" rowspan="1" colspan="1">0.0100</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B2;</italic>
+<sub>7</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">9.249940</td>
+              <td align="center" rowspan="1" colspan="1">2.865721</td>
+              <td align="center" rowspan="1" colspan="1">3.227788</td>
+              <td align="center" rowspan="1" colspan="1">0.0013</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B2;</italic>
+<sub>8</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">7.562806</td>
+              <td align="center" rowspan="1" colspan="1">2.651011</td>
+              <td align="center" rowspan="1" colspan="1">2.852801</td>
+              <td align="center" rowspan="1" colspan="1">0.0044</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B2;</italic>
+<sub>9</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">10.96846</td>
+              <td align="center" rowspan="1" colspan="1">2.600148</td>
+              <td align="center" rowspan="1" colspan="1">4.218400</td>
+              <td align="center" rowspan="1" colspan="1">0.0000</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B2;</italic>
+<sub>10</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">13.04606</td>
+              <td align="center" rowspan="1" colspan="1">3.522259</td>
+              <td align="center" rowspan="1" colspan="1">3.703891</td>
+              <td align="center" rowspan="1" colspan="1">0.0002</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">
+<italic>&#x3B2;</italic>
+<sub>11</sub>
+</td>
+              <td align="center" rowspan="1" colspan="1">11.03846</td>
+              <td align="center" rowspan="1" colspan="1">4.583850</td>
+              <td align="center" rowspan="1" colspan="1">2.408120</td>
+              <td align="center" rowspan="1" colspan="1">0.0162</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>Determinant residual covariance&#x2009;&#x2009;9.14<italic>E</italic> &#x2212; 05.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+    </table-wrap-group>
+  </floats-group>
+</article>
+</pmc-articleset>

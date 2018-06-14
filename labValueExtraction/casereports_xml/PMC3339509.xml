@@ -1,0 +1,1282 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Syst Biol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Syst Biol</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Systems Biology</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1752-0509</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">22185482</article-id>
+      <article-id pub-id-type="pmc">3339509</article-id>
+      <article-id pub-id-type="publisher-id">1752-0509-5-200</article-id>
+      <article-id pub-id-type="doi">10.1186/1752-0509-5-200</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Individualized therapy of HHT driven by network analysis of metabolomic profiles</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" id="A1">
+          <name>
+            <surname>Jamshidi</surname>
+            <given-names>Neema</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>njamshidi@mednet.ucla.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A2">
+          <name>
+            <surname>Miller</surname>
+            <given-names>Franklin J</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>fjmiller@ucsd.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A3">
+          <name>
+            <surname>Mandel</surname>
+            <given-names>Jess</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>jmandel@ucsd.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A4">
+          <name>
+            <surname>Evans</surname>
+            <given-names>Timothy</given-names>
+          </name>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>TEvans@fresno.ucsf.edu</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes" id="A5">
+          <name>
+            <surname>Kuo</surname>
+            <given-names>Michael D</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>michaelkuo@mednet.ucla.edu</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Department of Radiological Sciences, University of California, Los Angeles, USA</aff>
+      <aff id="I2"><label>2</label>Department of Radiology, University of California, San Diego, USA</aff>
+      <aff id="I3"><label>3</label>Department of Internal Medicine, University of California, San Diego, USA</aff>
+      <aff id="I4"><label>4</label>Department of Medicine, University of California, San Francisco-Fresno, USA</aff>
+      <pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>20</day>
+        <month>12</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>5</volume>
+      <fpage>200</fpage>
+      <lpage>200</lpage>
+      <history>
+        <date date-type="received">
+          <day>22</day>
+          <month>6</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>20</day>
+          <month>12</month>
+          <year>2011</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9;2011 Jamshidi et al; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2011</copyright-year>
+        <copyright-holder>Jamshidi et al; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1752-0509/5/200"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>Hereditary Hemorrhagic Telangiectasia (HHT) is an autosomal dominant disease with a varying range of phenotypes involving abnormal vasculature primarily manifested as arteriovenous malformations in various organs, including the nose, brain, liver, and lungs. The varied presentation and involvement of different organ systems makes the choice of potential treatment medications difficult.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>A patient with a mixed-clinical presentation and presumed diagnosis of HHT, severe exertional dyspnea, and diffuse pulmonary shunting at the microscopic level presented for treatment. We sought to analyze her metabolomic plasma profile to assist with pharmacologic treatment selection. Fasting serum samples from 5 individuals (4 healthy and 1 with HHT) were metabolomically profiled.</p>
+          <p>A global metabolic network reconstruction, Recon 1, was used to help guide the choice of medication via analysis of the differential metabolism between the patient and healthy controls using metabolomic data. Flux Balance Analysis highlighted changes in metabolic pathway activity, notably in nitric oxide synthase (NOS), which suggested a potential link between changes in vascular endothelial function and metabolism. This finding supported the use of an already approved medication, bevacizumab (Avastin). Following 2 months of treatment, the patient's metabolic profile shifted, becoming more similar to the control subject profiles, suggesting that the treatment was addressing at least part of the pathophysiological state.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>In this 'individualized case study' of personalized medicine, we carry out untargeted metabolomic profiling of a patient and healthy controls. Rather than filtering the data down to a single value, these data are analyzed in the context of a network model of metabolism, in order to simulate the biochemical phenotypic differences between healthy and disease states; the results then guide the therapy. This presents one approach to achieving the goals of individualized medicine through Systems Biology and causal models analysis.</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>Complex diseases with multi-factorial etiologies often have multiple alternative pathways leading to a particular pathophysiological state, with a wide range of resulting phenotypes. Such diseases provide a significant diagnostic and treatment challenge, and will require individual-specific, personalized treatments. Hereditary Hemorrhagic Telangiectasia (HHT) is an example of a Mendelian genetic disease with broad variability in presentation and involvement of different organs. Arteriovenous malformations (AVM) can occur in multiple beds, including the brain, liver, lungs, and nose [<xref ref-type="bibr" rid="B1">1</xref>]. A challenge for treatment of this disease is selecting an appropriate treatment for a given clinical setting. Since many diseases affect metabolism directly or indirectly, the field of metabolomics has rich potential for biomarker applications. A challenge however is that a metabolomic profile alone may not provide any direction for treatment, since there is not biologically coherent integration of these data. Metabolic network reconstructions can provide the framework for integration and analysis of these data [<xref ref-type="bibr" rid="B2">2</xref>-<xref ref-type="bibr" rid="B16">16</xref>]. We considered the treatment of an individual patient and through comparative analysis of her metabolomic profile with non-HHT individuals, differences were identified using constraint-based analysis of a global human metabolic network reconstruction, Recon 1 [<xref ref-type="bibr" rid="B17">17</xref>].</p>
+      <p>The patient in this study is a female who began experiencing syncopal episodes at rest and during exertion at 21 years of age. She was found to have a 28 mm atrial septal defect (ASD), for which percutaneous closure was attempted, but failed, ultimately requiring open heart surgery. The ASD repair resolved the syncopal episodes, however her dyspnea continued unabated to the point where she could not walk her dog without getting chest pain and expectorating small amounts of blood streaked sputum. Further investigation with contrast echocardiography showed she had a large right to left shunt at the pulmonary capillary level but had no treatable AVMs on computed tomography (CT) scan of the chest. Her resting oxygen saturations were 97-99% but with effort could decrease to the high 80's. Her pulse was regular but varied between 90 and 120 beats per minute and variations in blood pressure were also noted and treated medically when elevated. Because of a strong family history cancer of the colon and some occasional blood streaks in her stool, a colonic endoscopy was done revealing several small polyps in her small intestine and telengiectasias in her large intestine that were ablated with laser therapy. Her Endoglin and ALK-1 gene analysis were negative including SMAD-4. Based upon these findings as well as a family history of familial adenomatous polyposis and a sibling with similar diffuse AVMs, a presumed diagnosis of HHT was given based on the Curacao Criteria [<xref ref-type="bibr" rid="B18">18</xref>].</p>
+      <p>In this individual case study, untargeted, quantitative plasma metabolomic profiling is carried out in a patient and healthy controls. We sought to use constraint-based modeling of metabolism on an organism scale to identify potential differences in metabolism between the non-HHT and HHT patient through identification of biomarker signature profiles (as opposed to single biomarkers) that can be linked to different functional states. These differences were then used to support the use of particular drug treatments; post-treatment profiling was carried out to assess whether the treatment revised the biochemical pathways accordingly.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <p>Fasting plasma samples drawn from 5 healthy individuals (no chronic medical conditions, no current daily medications or herbal supplements; ages 21-37) and 1 patient with HHT (age 24) (UCLA Institutional Review Board retrospective case report exemption was obtained). The blood from the healthy volunteers was taken as part of a general protocol for internal standardization/normalization at UCSD. A set of samples from individuals in the study were used and are currently part of an ongoing study that allows acquisition and analysis of blood from healthy individuals as well as HHT patients (UCLA Institutional Review Board Protocol Number 11-000843-AM-00003). Blood draws from two different time points had been previously obtained from two of the healthy individuals and for the patient, resulting in a total of 9 samples. Additionally one individual provided a fasting as well as non-fasting blood sample, which served as a non-fasting positive control. Written informed consent was obtained from the patient for publication of this report. A copy of the written consent is available for review by the Editor-in-Chief. All of the experimental research with volunteers and the patient were performed with the approval of the ethics committees of the institutions where the studies were done.</p>
+      <p>Blood samples were obtained by a licensed health care practitioner and spun down for 10 minutes at approximately 3000 rpm at 20 C. The supernatant was stored in a freezer, and after all samples were obtained, were sent for processing and profiling (Chenomx Inc, Edmonton, Alberta). The samples were filtered using 3 kDa molecular weight cut-off filters (Nanosep 3K Omega microcentrifuge filter tubes). Internal standard solution was added to each sample solution, and the resulting mixture was vortexed for 30s. 600 &#x3BC;L of the mixed solution was transferred to an NMR tube for data acquisition. Spectra were acquired on a 600 MHz Varian INOVA spectrometer with 32 scans per sample at 298 K. Spectra were processed and CNX files were generated using the Processor module in Chenomx NMR Suite 6.0. Metabolites were identified and quantified using the Profiler and Library Manager modules in Chenomx NMR Suite 6.0, using a metabolite reference library of 297 metabolites.</p>
+      <sec>
+        <title>Sample analysis</title>
+        <p>Unsupervised hierarchical clustering showed clear separation between the healthy individuals and the patient. There were not enough replicates to apply conventional statistical tests (seven measurements in one group and two in another), however two-way hierarchical clustering with unweighted average distance linkage of the metabolite profiles demonstrated a clear separation between the patient and healthy individuals, which also drove the separation in the clustergram (Figure <xref ref-type="fig" rid="F1">1</xref>). The distance measure in Figure <xref ref-type="fig" rid="F1">1</xref> is the infinity norm, but similar separations were observed with other norms (e.g. 1- and 2-norms). Separation of the pre-treatment and post-treatment of the HHT patient as well as re-grouping of the post-treatment HHT patient with the non-HHT individuals was observed with Principal Component Analysis as well (see Additional File <xref ref-type="supplementary-material" rid="S1">1</xref>).</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p><bold>Two way clustering of plasma metabolomic profiles of non-HHT patients (N1-N5) and HHT patient (Pre1 and Post)</bold>. All of the blood draws were taken when patients were fasting, except for NF5 which was a non-fasting profile for individual N5. The non-fasting profile is clearly distinguished from the other profiles. Also blood draws for the HHT patient prior to bevacizumab treatment (Pre1) is in a distinct branch from the other profiles. Note that the post-treatment profile (Post) for the HHT patient is concordant with the non-HHT individual's profiles.</p>
+          </caption>
+          <graphic xlink:href="1752-0509-5-200-1"/>
+        </fig>
+        <p>Differences in metabolism between non-HHT individuals and the HHT patient were assessed using the plasma metabolomic profiles. Specific metabolites that were quantitatively and qualitatively different between the non-HHT and HHT patient were determined by identifying those metabolites whose maximum concentration in one group was less than the minimum of the other group or vice versa. This resulted in two sets of metabolites that were different in the two conditions; a high set and a low set. The two general classes of metabolites were labeled the as 'ketone group' and the 'amino acid/carbon rich group' and used to define qualitative metabolic pseudo-reactions.</p>
+      </sec>
+      <sec>
+        <title>Network analysis</title>
+        <p>Recon 1, a global human metabolic network reconstruction [<xref ref-type="bibr" rid="B17">17</xref>], with elementally charge and mass balanced equations can be used for analysis of transcriptomic, proteomic, and metabolomic data [<xref ref-type="bibr" rid="B19">19</xref>] using constraint-based analysis methods [<xref ref-type="bibr" rid="B20">20</xref>,<xref ref-type="bibr" rid="B21">21</xref>].</p>
+        <p>We predicated our approach on the assumptions that following 8 hour fasting overnight, the body is at or moving towards a homeostatic state, the full content of Recon 1 represents the set of metabolic interactions in the human body, and that changes in plasma profile reflect net changes in uptake and/or secretion of different metabolites with the set of all organs. We briefly describe the constraint-based analysis approach for Flux Balance Analysis, noting there is a rich literature on the subject that the interested reader can pursue in greater detail [<xref ref-type="bibr" rid="B9">9</xref>,<xref ref-type="bibr" rid="B20">20</xref>,<xref ref-type="bibr" rid="B21">21</xref>].</p>
+        <p>
+          <disp-formula id="bmcM1">
+            <label>(1)</label>
+            <mml:math id="M1" name="1752-0509-5-200-i1" overflow="scroll">
+              <mml:mrow>
+                <mml:mstyle mathvariant="bold">
+                  <mml:mi>S</mml:mi>
+                </mml:mstyle>
+                <mml:mo class="MathClass-bin">&#x22C5;</mml:mo>
+                <mml:mstyle mathvariant="bold">
+                  <mml:mi>v</mml:mi>
+                </mml:mstyle>
+                <mml:mo class="MathClass-rel">=</mml:mo>
+                <mml:mn>0</mml:mn>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>In which <bold>S </bold>is the mxn stoichiometric matrix with m metabolites, n reactions, with each column representing a metabolic (or transport) reaction and <bold>v </bold>is a vector of fluxes corresponding to each reaction in the network.</p>
+        <p>Constraints area applied to the network as upper and lower bounds on the fluxes,</p>
+        <p>
+          <disp-formula id="bmcM2">
+            <label>(2)</label>
+            <mml:math id="M2" name="1752-0509-5-200-i2" overflow="scroll">
+              <mml:mrow>
+                <mml:mi>&#x3B1;</mml:mi>
+                <mml:mo class="MathClass-rel">&#x2264;</mml:mo>
+                <mml:mstyle mathvariant="bold">
+                  <mml:mi>v</mml:mi>
+                </mml:mstyle>
+                <mml:mo class="MathClass-rel">&#x2264;</mml:mo>
+                <mml:mi>&#x3B2;</mml:mi>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>In which the <bold>&#x3B1; </bold>vector specifies reaction flux lower bounds and the <bold>&#x3B2; </bold>vector specifies reaction flux upper bounds.</p>
+        <p>The next step requires specification of an objective function which will then be minimized or maximized. We consider linear objective functions only in this study, thus,</p>
+        <p>
+          <disp-formula>
+            <mml:math id="M3" name="1752-0509-5-200-i3" overflow="scroll">
+              <mml:mrow>
+                <mml:mo class="qopname">max</mml:mo>
+                <mml:mrow>
+                  <mml:mo class="MathClass-open">(</mml:mo>
+                  <mml:mrow>
+                    <mml:msup>
+                      <mml:mrow>
+                        <mml:mstyle mathvariant="bold">
+                          <mml:mi>c</mml:mi>
+                        </mml:mstyle>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mstyle class="text">
+                          <mml:mtext class="textsf" mathvariant="sans-serif">T</mml:mtext>
+                        </mml:mstyle>
+                      </mml:mrow>
+                    </mml:msup>
+                    <mml:mo class="MathClass-bin">&#x22C5;</mml:mo>
+                    <mml:mstyle mathvariant="bold">
+                      <mml:mi>v</mml:mi>
+                    </mml:mstyle>
+                  </mml:mrow>
+                  <mml:mo class="MathClass-close">)</mml:mo>
+                </mml:mrow>
+                <mml:mspace width="2.77695pt" class="tmspace"/>
+                <mml:mstyle class="text">
+                  <mml:mtext class="textsf" mathvariant="sans-serif">or</mml:mtext>
+                </mml:mstyle>
+                <mml:mspace width="2.77695pt" class="tmspace"/>
+                <mml:mo class="qopname">min</mml:mo>
+                <mml:mrow>
+                  <mml:mo class="MathClass-open">(</mml:mo>
+                  <mml:mrow>
+                    <mml:msup>
+                      <mml:mrow>
+                        <mml:mstyle mathvariant="bold">
+                          <mml:mi>c</mml:mi>
+                        </mml:mstyle>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mstyle class="text">
+                          <mml:mtext class="textsf" mathvariant="sans-serif">T</mml:mtext>
+                        </mml:mstyle>
+                      </mml:mrow>
+                    </mml:msup>
+                    <mml:mo class="MathClass-bin">&#x22C5;</mml:mo>
+                    <mml:mstyle mathvariant="bold">
+                      <mml:mi>v</mml:mi>
+                    </mml:mstyle>
+                  </mml:mrow>
+                  <mml:mo class="MathClass-close">)</mml:mo>
+                </mml:mrow>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>are the objectives, in which <bold>c </bold>is a signed, binary vector. Flux Variability Analysis (FVA) [<xref ref-type="bibr" rid="B22">22</xref>] is a method in which every reaction in a network is maximized and minimized under a specified set of constraints, thus providing a 'bounding box' on the current state. This approach can be useful when one is interested in providing a general characterization of the fluxes in one state and how the extrema change from one condition to another. This method has demonstrated interesting results in the analysis of human metabolism in the general as well as context specific conditions [<xref ref-type="bibr" rid="B23">23</xref>,<xref ref-type="bibr" rid="B24">24</xref>].</p>
+        <p>The intravascular space is available for uptake and secretion of metabolites with all organs of the body, thus changes in metabolomic profiles may be interpreted in the context of a global human metabolic network. Direct flux data for particular reactions were not available, so the two qualitatively different profiles, derived from the quantitative differences in the metabolomic profiles of plasma were used to define two sets of different transport constraints. Changes in the simulation conditions provided information about the changes in the metabolite profiles, and were used to define constraints (see Additional File <xref ref-type="supplementary-material" rid="S2">2</xref>). The changes in metabolite profiles reflect differences in metabolic states between the HHT patient and the non-HHT individuals. While the underlying cellular objectives cannot be directly deciphered from these data, the changes in metabolite profiles can be implemented as a constraint to be satisfied, through formulation of a pseudo-reaction, grossly similar to the use of non-growth associated biomass objectives in bacteria [<xref ref-type="bibr" rid="B25">25</xref>].</p>
+        <p>The COBRA toolbox [<xref ref-type="bibr" rid="B26">26</xref>] was used to carry out calculations in Matlab (The Mathworks, Natick, MA) with GLPK (GNU software, <ext-link ext-link-type="uri" xlink:href="http://www.gnu.org">http://www.gnu.org</ext-link>) for the linear optimization steps, using Recon 1 [<xref ref-type="bibr" rid="B17">17</xref>]. The cytochrome oxidase reactions were adjusted to be completely charge and mass balanced, as previously described [<xref ref-type="bibr" rid="B5">5</xref>,<xref ref-type="bibr" rid="B27">27</xref>] (see Additional File <xref ref-type="supplementary-material" rid="S3">3</xref> for the stoichiometric matrix). FVA was performed on Recon 1 with a 'rich media' set of uptake constraints (permission to uptake 20 amino acids, glucose, palmitate, oxygen and exchange of protons and water). The flux variability results were used to define upper and lower bounds on the reactions for an 'open set' of uptake constraints.</p>
+        <p>The set of metabolites that were elevated in the HHT patient (i.e. whose minimum measured concentrations in the HHT patient were greater than the maximum measured concentrations of all of the non-HHTs) largely consisted of ketones and were dubbed the 'ketone group'. Conversely, the set of metabolites that were decreased in the HHT patient (i.e. whose maximum measured concentrations in the HHT patient were less than the minimum measured concentrations of all of the non-HHTs) primarily were amino acids and were dubbed the 'amino acid group'. The production (i.e. exchange) maxima for the 'ketone group' and 'amino acid group' metabolites were used to specify coefficients for two different pseudo-objective reaction constraints, one representing the HHT patient and the other representing the non-HHT profiles. The 'ketone group' objective was scaled by one-half in order to be able to maintain a feasible solution in the null space (the general set of constraints on the model could not simultaneously satisfy the individual ketone group metabolite maxima). These objectives represent the different non-biomass demands for each condition (using the FVA calculations to avoid setting an infeasible coefficient, see Additional File <xref ref-type="supplementary-material" rid="S2">2</xref>, 'metabolites' tab). The amino acid group included tyrosine, taurine, serine, glycine, alanine, citrate, lactate, methanol, and creatinine. The ketone group included acetone, formate, and acetate. After each model (HHT and non-HHT) was optimized for their respective pseudo-objective and fixed at that value, FVA was again carried out. Subsequently the Flux Span (difference between maximum and minimum flux attainable for all reactions in a particular condition) and the Flux Span Ratio (the reaction-wise ratio of the Flux Span between two conditions) were calculated for comparison.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Results and Discussion</title>
+      <p>As a means to evaluate possible related metabolic derangements, fasting plasma metabolomic profiling was carried out (see METHODS). Fasting blood samples from 4 non-HHT individuals, was obtained and metabolomic profiling carried out as well. Two of the non-HHT individuals provided multiple fasting samples (on two different occasions) and another individual provided a non-fasting sample. The serum samples were analyzed using NMR spectroscopy with subsequent quantification and identification of 30 metabolites.</p>
+      <p>Clustering of the samples demonstrated clear separation of the non-HHT individuals fasting sample, the HTT patient (pre-treatment), and the single non-HHT individual non-fasting sample (Figure <xref ref-type="fig" rid="F1">1</xref>). The trends in the non-fasting sample were in opposite direction in comparison to all of the other samples, consistent with different feeding states. The HHT patient's two fasting blood samples were in a different branch of the clustergram as well (Figure <xref ref-type="fig" rid="F1">1</xref>). Since only two measurements of the patient (pre-treatment) were available, it was not possible to carry out t-tests or ANOVA analyses and a different criterion was required to identify the most distinctive qualitative differences in the profiles. Comparisons between the non-HHT and HHT patient (pre-treatment) were carried out in the following manner: metabolites whose minimum value in the non-HHTs was greater than the maximum value in the HHT patient's measurements or whose maximum value in the non-HHTs was less than the minimum value in the HHT patient's were used to define qualitative transport constraints for a non-HHT and HHT network (Figure <xref ref-type="fig" rid="F2">2</xref>).</p>
+      <fig id="F2" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <p><bold>Metabolites that were relatively increased in non-HHT individuals but decreased in the HHT patient (red arrows) included alanine, glycine, lysine, serine, tyrosine, glutamine, and creatinine</bold>. Metabolites that were relatively increased in the HHT patient (black arrows) included 3-hydroxybutyrate and acetate. Following treatment with bevacizumab, the HHT patient's profile (bottom panel) reversed the trend on the above metabolites, and developed a more 'normal' profile. Metabolite names: 1: 3-Hydroxybutyrate, 2: Acetate, 3: Acetone, 4: Alanine, 5: Arginine, 6: Asparagine, 7: Citrate, 8: Creatinine, 9: Formate, 10: Glucose, 11: Glutamate, 12: Glutamine, 13: Glycerol, 14: Glycine, 15: Glycolate, 16: Isoleucine, 17: Lactate, 18: Leucine, 19: Lysine, 20: Methanol, 21: Methionine, 22: Phenylalanine, 23: Pyruvate, 24: Serine, 25: Succinate, 26: Taurine, 27: Threonine, 28: Tyrosine, 29: Valine, 30: sn-Glycero-3-phosphocholine.</p>
+        </caption>
+        <graphic xlink:href="1752-0509-5-200-2"/>
+      </fig>
+      <p>A global metabolic human network, Recon 1 [<xref ref-type="bibr" rid="B17">17</xref>], was used to analyze the metabolomic data in a biologically germane context [<xref ref-type="bibr" rid="B19">19</xref>]. Since the intravascular compartment interacts with all organs of the body as both a 'source' and 'sink' for nutrients and waste, respectively, the plasma metabolite measurements were used as constraints on the global network, to grossly approximate whole organism metabolism. The two different conditions were used to specify constraints, resulting in two different networks. The two different networks were then globally assessed using FVA and compared for differences in individual reactions and pathways.</p>
+      <p>Comparison of the non-HHT and HHT patient networks using flux span ratios (see METHODS) demonstrated decreased energy production in the HHT patient, reflective of a 'starvation-like' state. Interestingly, there were noted increased flux potentials in nitrogen handling and disposition pathways in the HHT patient, notably with nitric oxide synthase (NOS) (Figure <xref ref-type="fig" rid="F3">3</xref>). This observation brought to light a potential link between vascular endothelial function and the changes in vascularity found in HHT, with connections to metabolism [<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B28">28</xref>,<xref ref-type="bibr" rid="B29">29</xref>]. There has been evidence suggesting that VEGF can decrease blood pressure through increased nitric oxide production and conversely, that inhibition of VEGF can increase blood pressure, at least in part, through the same mechanism [<xref ref-type="bibr" rid="B30">30</xref>-<xref ref-type="bibr" rid="B32">32</xref>]. The potential increase in NOS activity based on the network analysis of the metabolic profile supported the use of bevacizumab (Avastin), an anti-VEGF drug. The HHT patient underwent treatment with bevacizumab at a dose of 5 mg/kg every 2 weeks for 6 total infusions, at which point another fasting blood draw was obtained. The patient had a mild response to therapy which lasted for 2 months. Surprisingly, the patient's profile had changed to become more similar to the control individuals. When clustered with the other samples, the post-treatment profile clustered with the rest of the non-HHT individuals (Figures <xref ref-type="fig" rid="F1">1</xref> and <xref ref-type="fig" rid="F2">2</xref>).</p>
+      <fig id="F3" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <p><bold>Reactions and pathways that were found to be different when comparing FVA profiles for the healthy individuals as compared to the HHT patient (prior to bevacizumab treatment).</bold> Green fluxes represent increased flux span ratios and red fluxes represent decreased flux span ratios, for a non-HTT individual compared to an individual with HHT (e.g. red colored reactions indicate pathways with increased flux spans and maximum fluxes in HHT). Yellow shaded reactions demarcate reactions with intermediate changes in flux span ratios. Abbreviations: NOS1/NOS2: Nitric Oxide Synthase, NO: nitric oxide, arg-L: L-arginine, ser-L: L-serine, gly: glycine (in cytosol), gly[m]: glycine (in mitochondria), glu-L: L-glutamate, gthrd: glutathione (reduced), gthox: glutathione (oxidized).</p>
+        </caption>
+        <graphic xlink:href="1752-0509-5-200-3"/>
+      </fig>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>An individualized case-study is described for a rare disease in which we demonstrate how it is possible to progress from untargeted metabolomic profiling to identify metabolic profiles that can be then used to constrain a mechanistic network model which is then used to direct therapy decisions. Metabolomic data has been recognized as an important 'omic' data type, as it represents a quantitative biochemical phenotype and has potential to serve as a source of diagnostic and therapeutic biomarkers. As with other high-throughput data types however, a challenge with data interpretation remains. In particular, in order to achieve any practical realization of individual specific, personalized therapies, it will be important to move away from strictly statistically driven models towards more mechanistic models.</p>
+      <p>We employed the use of a global human metabolic network to interpret plasma metabolite profiling and help direct the therapy of a patient with a complex disease. Following treatment, the patient's metabolomic profile became more similar to a non-HHT individual's, suggesting the treatment was effective, at least in addressing the metabolic derangements associated with HHT. While the disease stabilized during this treatment, the patient did not undergo further cycles of treatment due to gastrointestinal intolerance of bevacizumab and long-term assessment of disease status could not be carried out. While deeper analysis with more patients are needed to further elucidate the directionality of causation, this 'individual clinical trial' illustrates how metabolomic data analyzed in the context of a network reconstruction can be potentially used to help direct therapy for complex disease states, using complicated metabolomic profiles as opposed to individual biomarkers.</p>
+      <p>One goal of personalized medicine is to analyze the data from a particular individual and determine the appropriate medication or therapeutic intervention. In this individualized case study of personalized medicine, we carry out untargeted metabolomic profiling of a patient and healthy controls. Rather than filtering the data down to a single value, these data are analyzed in the context of a network model of metabolism, in order to simulate the biochemical phenotypic differences between healthy and disease states; the results then guide the therapy. Thus, we have found that one approach to achieving the goals of individualized medicine is to use Systems Biology and causal models to drive the analysis and interpretation of data.</p>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors declare that they have no competing interests.</p>
+    </sec>
+    <sec>
+      <title>Author's contributions</title>
+      <p> FJM, MDK, and NJ conceived of the study. FJM, JM, TE, and MDK provided patient care and treatment management. NJ carried out the data analysis, simulations, and drafted the manuscript. NJ and MDK analyze the results. FJM, MDK, and NJ carried out extensive revisions to the manuscript. All authors read and approved the final content.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="S1">
+        <caption>
+          <title>Additional file 1</title>
+          <p><bold>a summary of the PCA results from the metabolomic concentration measurements</bold>.</p>
+        </caption>
+        <media xlink:href="1752-0509-5-200-S1.PDF" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S2">
+        <caption>
+          <title>Additional file 2</title>
+          <p><bold>An Excel spreadsheet with 5 worksheets including the metabolomic data measurements ('metabolomic_profiles'), FVA results ('simulation_FVA'), FVA summary measures ('simulation_summaries'), the reaction upper and lower bounds ('reactions'), the objective coefficients ('metabolites')</bold>.</p>
+        </caption>
+        <media xlink:href="1752-0509-5-200-S2.XLSX" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S3">
+        <caption>
+          <title>Additional file 3</title>
+          <p><bold>an archive with the Recon 1 stoichiometric matrix (as a text file) used in the analyses</bold>.</p>
+        </caption>
+        <media xlink:href="1752-0509-5-200-S3.ZIP" mimetype="application" mime-subtype="x-zip-compressed">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgements</title>
+      <p>We would like to thank Alex Cherniavsky and David Chang at Chenomx, Inc, where metabolomic profiling measurements, identification, and quantification were carried out. The authors gratefully acknowledge the patient's written consent for publication.</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Sharathkumar</surname>
+            <given-names>AA</given-names>
+          </name>
+          <name>
+            <surname>Shapiro</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Hereditary haemorrhagic telangiectasia</article-title>
+          <source>Haemophilia</source>
+          <year>2008</year>
+          <volume>14</volume>
+          <issue>6</issue>
+          <fpage>1269</fpage>
+          <lpage>1280</lpage>
+          <pub-id pub-id-type="pmid">19141168</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Almaas</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Kovacs</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Vicsek</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Oltvai</surname>
+            <given-names>ZN</given-names>
+          </name>
+          <name>
+            <surname>Barabasi</surname>
+            <given-names>AL</given-names>
+          </name>
+          <article-title>Global organization of metabolic fluxes in the bacterium Escherichia coli</article-title>
+          <source>Nature</source>
+          <year>2004</year>
+          <volume>427</volume>
+          <issue>6977</issue>
+          <fpage>839</fpage>
+          <lpage>843</lpage>
+          <pub-id pub-id-type="pmid">14985762</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Balazsi</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Barabasi</surname>
+            <given-names>AL</given-names>
+          </name>
+          <name>
+            <surname>Oltvai</surname>
+            <given-names>ZN</given-names>
+          </name>
+          <article-title>Topological units of environmental signal processing in the transcriptional regulatory network of Escherichia coli</article-title>
+          <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+          <year>2005</year>
+          <volume>102</volume>
+          <issue>22</issue>
+          <fpage>7841</fpage>
+          <lpage>7846</lpage>
+          <pub-id pub-id-type="pmid">15908506</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Beg</surname>
+            <given-names>QK</given-names>
+          </name>
+          <name>
+            <surname>Vazquez</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Ernst</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>de Menezes</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Bar-Joseph</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Barabasi</surname>
+            <given-names>AL</given-names>
+          </name>
+          <name>
+            <surname>Oltvai</surname>
+            <given-names>ZN</given-names>
+          </name>
+          <article-title>Intracellular crowding defines the mode and sequence of substrate uptake by Escherichia coli and constrains its metabolic activity</article-title>
+          <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+          <year>2007</year>
+          <volume>104</volume>
+          <issue>31</issue>
+          <fpage>12663</fpage>
+          <lpage>12668</lpage>
+          <pub-id pub-id-type="pmid">17652176</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Bordbar</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Lewis</surname>
+            <given-names>NE</given-names>
+          </name>
+          <name>
+            <surname>Schellenberger</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Palsson</surname>
+            <given-names>BO</given-names>
+          </name>
+          <name>
+            <surname>Jamshidi</surname>
+            <given-names>N</given-names>
+          </name>
+          <article-title>Insight into human alveolar macrophage and M. tuberculosis interactions via metabolic reconstructions</article-title>
+          <source>Molecular systems biology</source>
+          <year>2010</year>
+          <volume>6</volume>
+          <fpage>422</fpage>
+          <pub-id pub-id-type="pmid">20959820</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cakir</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Efe</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Dikicioglu</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Hortacsu</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Kirdar</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Oliver</surname>
+            <given-names>SG</given-names>
+          </name>
+          <article-title>Flux balance analysis of a genome-scale yeast model constrained by exometabolomic data allows metabolic system identification of genetically different strains</article-title>
+          <source>Biotechnol Prog</source>
+          <year>2007</year>
+          <volume>23</volume>
+          <issue>2</issue>
+          <fpage>320</fpage>
+          <lpage>326</lpage>
+          <pub-id pub-id-type="pmid">17373823</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Gianchandani</surname>
+            <given-names>EP</given-names>
+          </name>
+          <name>
+            <surname>Oberhardt</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Burgard</surname>
+            <given-names>AP</given-names>
+          </name>
+          <name>
+            <surname>Maranas</surname>
+            <given-names>CD</given-names>
+          </name>
+          <name>
+            <surname>Papin</surname>
+            <given-names>JA</given-names>
+          </name>
+          <article-title>Predicting biological system objectives de novo from internal state measurements</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>43</fpage>
+          <pub-id pub-id-type="pmid">18218092</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jerby</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Shlomi</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Ruppin</surname>
+            <given-names>E</given-names>
+          </name>
+          <article-title>Computational reconstruction of tissue-specific metabolic models: application to human liver metabolism</article-title>
+          <source>Molecular systems biology</source>
+          <year>2010</year>
+          <volume>6</volume>
+          <fpage>401</fpage>
+          <pub-id pub-id-type="pmid">20823844</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Llaneras</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Pico</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Stoichiometric modelling of cell metabolism</article-title>
+          <source>J Biosci Bioeng</source>
+          <year>2008</year>
+          <volume>105</volume>
+          <issue>1</issue>
+          <fpage>1</fpage>
+          <lpage>11</lpage>
+          <pub-id pub-id-type="pmid">18295713</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Manichaikul</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Ghamsari</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Hom</surname>
+            <given-names>EF</given-names>
+          </name>
+          <name>
+            <surname>Lin</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Murray</surname>
+            <given-names>RR</given-names>
+          </name>
+          <name>
+            <surname>Chang</surname>
+            <given-names>RL</given-names>
+          </name>
+          <name>
+            <surname>Balaji</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Hao</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Shen</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Chavali</surname>
+            <given-names>AK</given-names>
+          </name>
+          <etal/>
+          <article-title>Metabolic network analysis integrated with transcript verification for sequenced genomes</article-title>
+          <source>Nat Methods</source>
+          <year>2009</year>
+          <volume>6</volume>
+          <issue>8</issue>
+          <fpage>589</fpage>
+          <lpage>592</lpage>
+          <pub-id pub-id-type="pmid">19597503</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Oberhardt</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Goldberg</surname>
+            <given-names>JB</given-names>
+          </name>
+          <name>
+            <surname>Hogardt</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Papin</surname>
+            <given-names>JA</given-names>
+          </name>
+          <article-title>Metabolic network analysis of Pseudomonas aeruginosa during chronic cystic fibrosis lung infection</article-title>
+          <source>J Bacteriol</source>
+          <year>2010</year>
+          <volume>192</volume>
+          <issue>20</issue>
+          <fpage>5534</fpage>
+          <lpage>5548</lpage>
+          <pub-id pub-id-type="pmid">20709898</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Oberhardt</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Palsson</surname>
+            <given-names>BO</given-names>
+          </name>
+          <name>
+            <surname>Papin</surname>
+            <given-names>JA</given-names>
+          </name>
+          <article-title>Applications of genome-scale metabolic reconstructions</article-title>
+          <source>Molecular systems biology</source>
+          <year>2009</year>
+          <volume>5</volume>
+          <fpage>320</fpage>
+          <pub-id pub-id-type="pmid">19888215</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Patil</surname>
+            <given-names>KR</given-names>
+          </name>
+          <name>
+            <surname>Nielsen</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Uncovering transcriptional regulation of metabolism by using metabolic network topology</article-title>
+          <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+          <year>2005</year>
+          <volume>102</volume>
+          <issue>8</issue>
+          <fpage>2685</fpage>
+          <lpage>2689</lpage>
+          <pub-id pub-id-type="pmid">15710883</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Raghunathan</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Reed</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Shin</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Palsson</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Daefler</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Constraint-based analysis of metabolic capacity of Salmonella typhimurium during host-pathogen interaction</article-title>
+          <source>BMC Syst Biol</source>
+          <year>2009</year>
+          <volume>3</volume>
+          <fpage>38</fpage>
+          <pub-id pub-id-type="pmid">19356237</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Roberts</surname>
+            <given-names>SB</given-names>
+          </name>
+          <name>
+            <surname>Robichaux</surname>
+            <given-names>JL</given-names>
+          </name>
+          <name>
+            <surname>Chavali</surname>
+            <given-names>AK</given-names>
+          </name>
+          <name>
+            <surname>Manque</surname>
+            <given-names>PA</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Lara</surname>
+            <given-names>AM</given-names>
+          </name>
+          <name>
+            <surname>Papin</surname>
+            <given-names>JA</given-names>
+          </name>
+          <name>
+            <surname>Buck</surname>
+            <given-names>GA</given-names>
+          </name>
+          <article-title>Proteomic and network analysis characterize stage-specific metabolism in Trypanosoma cruzi</article-title>
+          <source>BMC Syst Biol</source>
+          <year>2009</year>
+          <volume>3</volume>
+          <fpage>52</fpage>
+          <pub-id pub-id-type="pmid">19445715</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rocha</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Forster</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Nielsen</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Design and application of genome-scale reconstructed metabolic models</article-title>
+          <source>Methods Mol Biol</source>
+          <year>2008</year>
+          <volume>416</volume>
+          <fpage>409</fpage>
+          <lpage>431</lpage>
+          <pub-id pub-id-type="pmid">18392985</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Duarte</surname>
+            <given-names>NC</given-names>
+          </name>
+          <name>
+            <surname>Becker</surname>
+            <given-names>SA</given-names>
+          </name>
+          <name>
+            <surname>Jamshidi</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Thiele</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Mo</surname>
+            <given-names>ML</given-names>
+          </name>
+          <name>
+            <surname>Vo</surname>
+            <given-names>TD</given-names>
+          </name>
+          <name>
+            <surname>Srivas</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Palsson</surname>
+            <given-names>BO</given-names>
+          </name>
+          <article-title>Global reconstruction of the human metabolic network based on genomic and bibliomic data</article-title>
+          <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+          <year>2007</year>
+          <volume>104</volume>
+          <issue>6</issue>
+          <fpage>1777</fpage>
+          <lpage>1782</lpage>
+          <pub-id pub-id-type="pmid">17267599</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Shovlin</surname>
+            <given-names>CL</given-names>
+          </name>
+          <name>
+            <surname>Guttmacher</surname>
+            <given-names>AE</given-names>
+          </name>
+          <name>
+            <surname>Buscarini</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Faughnan</surname>
+            <given-names>ME</given-names>
+          </name>
+          <name>
+            <surname>Hyland</surname>
+            <given-names>RH</given-names>
+          </name>
+          <name>
+            <surname>Westermann</surname>
+            <given-names>CJ</given-names>
+          </name>
+          <name>
+            <surname>Kjeldsen</surname>
+            <given-names>AD</given-names>
+          </name>
+          <name>
+            <surname>Plauchu</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Diagnostic criteria for hereditary hemorrhagic telangiectasia (Rendu-Osler-Weber syndrome)</article-title>
+          <source>American journal of medical genetics</source>
+          <year>2000</year>
+          <volume>91</volume>
+          <issue>1</issue>
+          <fpage>66</fpage>
+          <lpage>67</lpage>
+          <pub-id pub-id-type="pmid">10751092</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mo</surname>
+            <given-names>ML</given-names>
+          </name>
+          <name>
+            <surname>Jamshidi</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Palsson</surname>
+            <given-names>BO</given-names>
+          </name>
+          <article-title>A genome-scale, constraint-based approach to systems biology of human metabolism</article-title>
+          <source>Molecular bioSystems</source>
+          <year>2007</year>
+          <volume>3</volume>
+          <issue>9</issue>
+          <fpage>598</fpage>
+          <lpage>603</lpage>
+          <pub-id pub-id-type="pmid">17700859</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Orth</surname>
+            <given-names>JD</given-names>
+          </name>
+          <name>
+            <surname>Thiele</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Palsson</surname>
+            <given-names>BO</given-names>
+          </name>
+          <article-title>What is flux balance analysis?</article-title>
+          <source>Nature biotechnology</source>
+          <year>2010</year>
+          <volume>28</volume>
+          <issue>3</issue>
+          <fpage>245</fpage>
+          <lpage>248</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Palsson</surname>
+            <given-names>BO</given-names>
+          </name>
+          <source>Systems Biology: Determining the Capabilities of Reconstructed Networks</source>
+          <year>2006</year>
+          <publisher-name>Cambridge: Cambridge Univ Pr</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mahadevan</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Schilling</surname>
+            <given-names>CH</given-names>
+          </name>
+          <article-title>The effects of alternate optimal solutions in constraint-based genome-scale metabolic models</article-title>
+          <source>Metabolic engineering</source>
+          <year>2003</year>
+          <volume>5</volume>
+          <issue>4</issue>
+          <fpage>264</fpage>
+          <lpage>276</lpage>
+          <pub-id pub-id-type="pmid">14642354</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Shlomi</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Cabili</surname>
+            <given-names>MN</given-names>
+          </name>
+          <name>
+            <surname>Ruppin</surname>
+            <given-names>E</given-names>
+          </name>
+          <article-title>Predicting metabolic biomarkers of human inborn errors of metabolism</article-title>
+          <source>Molecular systems biology</source>
+          <year>2009</year>
+          <volume>5</volume>
+          <fpage>263</fpage>
+          <pub-id pub-id-type="pmid">19401675</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Sigurdsson</surname>
+            <given-names>MI</given-names>
+          </name>
+          <name>
+            <surname>Jamshidi</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Jonsson</surname>
+            <given-names>JJ</given-names>
+          </name>
+          <name>
+            <surname>Palsson</surname>
+            <given-names>BO</given-names>
+          </name>
+          <article-title>Genome-scale network analysis of imprinted human metabolic genes</article-title>
+          <source>Epigenetics</source>
+          <year>2009</year>
+          <volume>4</volume>
+          <issue>1</issue>
+          <fpage>43</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="pmid">19218833</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Feist</surname>
+            <given-names>AM</given-names>
+          </name>
+          <name>
+            <surname>Palsson</surname>
+            <given-names>BO</given-names>
+          </name>
+          <article-title>The biomass objective function</article-title>
+          <source>Curr Opin Microbiol</source>
+          <year>2010</year>
+          <volume>13</volume>
+          <issue>3</issue>
+          <fpage>344</fpage>
+          <lpage>349</lpage>
+          <pub-id pub-id-type="pmid">20430689</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Becker</surname>
+            <given-names>SA</given-names>
+          </name>
+          <name>
+            <surname>Feist</surname>
+            <given-names>AM</given-names>
+          </name>
+          <name>
+            <surname>Mo</surname>
+            <given-names>ML</given-names>
+          </name>
+          <name>
+            <surname>Hannum</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Palsson</surname>
+            <given-names>BO</given-names>
+          </name>
+          <name>
+            <surname>Herrgard</surname>
+            <given-names>MJ</given-names>
+          </name>
+          <article-title>Quantitative prediction of cellular metabolism with constraint-based models: the COBRA Toolbox</article-title>
+          <source>Nature protocols</source>
+          <year>2007</year>
+          <volume>2</volume>
+          <issue>3</issue>
+          <fpage>727</fpage>
+          <lpage>738</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Sigurdsson</surname>
+            <given-names>MI</given-names>
+          </name>
+          <name>
+            <surname>Jamshidi</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Steingrimsson</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Thiele</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Palsson</surname>
+            <given-names>BO</given-names>
+          </name>
+          <article-title>A detailed genome-wide reconstruction of mouse metabolism based on human Recon 1</article-title>
+          <source>BMC Syst Biol</source>
+          <year>2010</year>
+          <volume>4</volume>
+          <fpage>140</fpage>
+          <pub-id pub-id-type="pmid">20959003</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kowanetz</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Ferrara</surname>
+            <given-names>N</given-names>
+          </name>
+          <article-title>Vascular endothelial growth factor signaling pathways: therapeutic perspective</article-title>
+          <source>Clin Cancer Res</source>
+          <year>2006</year>
+          <volume>12</volume>
+          <issue>17</issue>
+          <fpage>5018</fpage>
+          <lpage>5022</lpage>
+          <pub-id pub-id-type="pmid">16951216</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Roy</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Bhardwaj</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Yla-Herttuala</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Biology of vascular endothelial growth factors</article-title>
+          <source>FEBS Lett</source>
+          <year>2006</year>
+          <volume>580</volume>
+          <issue>12</issue>
+          <fpage>2879</fpage>
+          <lpage>2887</lpage>
+          <pub-id pub-id-type="pmid">16631753</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Henry</surname>
+            <given-names>TD</given-names>
+          </name>
+          <name>
+            <surname>Rocha-Singh</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Isner</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Kereiakes</surname>
+            <given-names>DJ</given-names>
+          </name>
+          <name>
+            <surname>Giordano</surname>
+            <given-names>FJ</given-names>
+          </name>
+          <name>
+            <surname>Simons</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Losordo</surname>
+            <given-names>DW</given-names>
+          </name>
+          <name>
+            <surname>Hendel</surname>
+            <given-names>RC</given-names>
+          </name>
+          <name>
+            <surname>Bonow</surname>
+            <given-names>RO</given-names>
+          </name>
+          <name>
+            <surname>Eppler</surname>
+            <given-names>SM</given-names>
+          </name>
+          <etal/>
+          <article-title>Intracoronary administration of recombinant human vascular endothelial growth factor to patients with coronary artery disease</article-title>
+          <source>Am Heart J</source>
+          <year>2001</year>
+          <volume>142</volume>
+          <issue>5</issue>
+          <fpage>872</fpage>
+          <lpage>880</lpage>
+          <pub-id pub-id-type="pmid">11685177</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Syrigos</surname>
+            <given-names>KN</given-names>
+          </name>
+          <name>
+            <surname>Karapanagiotou</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Boura</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Manegold</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Harrington</surname>
+            <given-names>K</given-names>
+          </name>
+          <article-title>Bevacizumab-induced hypertension: pathogenesis and management</article-title>
+          <source>BioDrugs</source>
+          <year>2011</year>
+          <volume>25</volume>
+          <issue>3</issue>
+          <fpage>159</fpage>
+          <lpage>169</lpage>
+          <pub-id pub-id-type="pmid">21627340</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Yang</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Thomas</surname>
+            <given-names>GR</given-names>
+          </name>
+          <name>
+            <surname>Bunting</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Ko</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Ferrara</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Keyt</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Ross</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Jin</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Effects of vascular endothelial growth factor on hemodynamics and cardiac performance</article-title>
+          <source>J Cardiovasc Pharmacol</source>
+          <year>1996</year>
+          <volume>27</volume>
+          <issue>6</issue>
+          <fpage>838</fpage>
+          <lpage>844</lpage>
+          <pub-id pub-id-type="pmid">8761851</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

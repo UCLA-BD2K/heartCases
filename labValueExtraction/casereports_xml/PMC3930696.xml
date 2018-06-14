@@ -1,0 +1,936 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24586619</article-id>
+      <article-id pub-id-type="pmc">3930696</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-13-43938</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0089235</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Evolutionary biology</subject>
+            <subj-group>
+              <subject>Evolutionary systematics</subject>
+              <subj-group>
+                <subject>Phylogenetics</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genomics</subject>
+            <subj-group>
+              <subject>Genome sequencing</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Microbiology</subject>
+            <subj-group>
+              <subject>Bacterial pathogens</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Infectious diseases</subject>
+            <subj-group>
+              <subject>Bacterial diseases</subject>
+              <subj-group>
+                <subject>Bacterial pneumonia</subject>
+                <subject>Methicillin-resistant Staphylococcus aureus</subject>
+                <subject>Staphylococcal infection</subject>
+                <subject>Staphylococcus aureus</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Public health</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Whole Genome Analysis of a Community-Associated Methicillin-Resistant <italic>Staphylococcus aureus</italic> ST59 Isolate from a Case of Human Sepsis and Severe Pneumonia in China</article-title>
+        <alt-title alt-title-type="running-head">ST59 CA-MRSA from China</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Qu</surname>
+            <given-names>Tingting</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Feng</surname>
+            <given-names>Ye</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Jiang</surname>
+            <given-names>Yan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhu</surname>
+            <given-names>Peiqiong</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wei</surname>
+            <given-names>Zeqing</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chen</surname>
+            <given-names>Yan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Otto</surname>
+            <given-names>Michael</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yu</surname>
+            <given-names>Yunsong</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>State Key Laboratory for Diagnosis and Treatment of Infectious Disease, First Affiliated Hospital, College of Medicine, Zhejiang University, Hangzhou, Zhejiang, China</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Department of Infectious Diseases, Sir Run Run Shaw Hospital, College of Medicine, Zhejiang University, Hangzhou, Zhejiang, China</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Department of Clinical Medicine, Zhejiang Medical College, Hangzhou, Zhejiang, China</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Pathogen Molecular Genetics Section, Laboratory of Human Bacterial Pathogenesis, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Bethesda, Maryland, United States of America</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>de Lencastre</surname>
+            <given-names>Herminia</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Rockefeller University, United States of America</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>yvys119@163.com</email> (YY); <email>MOtto@niaid.nih.gov</email> (MO)</corresp>
+        <fn fn-type="conflict">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist. Michael Otto is an editorial board member of PLOS ONE. This does not alter the authors&#x2019; adherence to all the PLOS ONE policies on sharing data and materials.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: TQ YY. Performed the experiments: TQ YF YJ PZ ZW YC. Analyzed the data: TQ YF. Wrote the paper: TQ MO YY.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>20</day>
+        <month>2</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>9</volume>
+      <issue>2</issue>
+      <elocation-id>e89235</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>28</day>
+          <month>10</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>16</day>
+          <month>1</month>
+          <year>2014</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2014</copyright-year>
+        <license>
+          <license-p>This is an open-access article, free of all copyright, and may be freely reproduced, distributed, transmitted, modified, built upon, or otherwise used by anyone for any lawful purpose. The work is made available under the Creative Commons CC0 public domain dedication.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>We report a case of necrotizing pneumonia in a young patient caused by community acquired-methicillin resistant <italic>Staphylococcus aureus</italic> (CA-MRSA) in a teaching hospital in the People&#x2019;s Republic of China. The patient had a typical clinical presentation and was successfully treated with antibiotics and intravenous immunoglobulin. A CA-MRSA strain, named SA268, was isolated from the blood of the patient. The isolate was susceptible to most antimicrobial agents, except cephalosporins, penicillins, and &#x3B2;-lactamase inhibitor combinations. Multi-locus sequence typing (MLST) assigned SA268 to ST59, a clone widely spread in eastern Asia. The strain was positive for Panton Valentine Leukocidin (PVL)-encoding genes and SCC<italic>mec</italic> type V. We sequenced the complete genome of the SA268 isolate. The genome of SA268 was almost identical to that of the Taiwanese ST59 CA-MRSA strains M013 and SA957. However, we observed several differences in gene composition, which included differences in the SCC<italic>mec</italic> element and several lipoprotein genes that were present in the Taiwanese strains but absent from SA268.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work was supported by research grants from the National Science and Technology Major Project (2012ZX10004215), the Medicine and Health Research fund of Zhejiang Province (No. 2009A009), the Ministry of Health of the People&#x2019;s Republic of China (no. 201002021), and the Intramural Research Program of the National Institute of Allergy and Infectious Diseases (NIAID), U.S. National Institutes of Health (NIH). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="7"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>While infections with methicillin-resistant <italic>Staphylococcus aureus</italic> (MRSA) have traditionally been limited to hospitals, community-associated cases of MRSA (CA-MRSA) were reported starting in the late 1990s <xref rid="pone.0089235-CDC1" ref-type="bibr">[1]</xref>, <xref rid="pone.0089235-David1" ref-type="bibr">[2]</xref>. CA-MRSA strains have the capacity to infect healthy individuals outside of hospital settings; and CA-MRSA infections are frequently observed in children, young adults, and the elderly. The clinical manifestations of CA-MRSA infections mostly include skin and soft tissue infections (SSTIs) and occasionally life-threatening invasive infections, such as sepsis, necrotizing pneumonia and osteomyelitis <xref rid="pone.0089235-David1" ref-type="bibr">[2]</xref>, <xref rid="pone.0089235-Graves1" ref-type="bibr">[3]</xref>.</p>
+      <p>The first well documented CA-MRSA cases appeared in the upper midwestern United States between 1997 and 1999 in children <xref rid="pone.0089235-CDC1" ref-type="bibr">[1]</xref>. These infections, which were fatal cases of sepsis and severe pneumonia, were mostly caused by strain MW2 (pulsed-field type USA400). Later, strains of pulsed-field type USA300 gradually replaced USA400 strains in the U.S. <xref rid="pone.0089235-Moran1" ref-type="bibr">[4]</xref>, although USA400 CA-MRSA infections can still be observed in Alaska <xref rid="pone.0089235-David2" ref-type="bibr">[5]</xref>. While the U.S. has experienced the most pronounced CA-MRSA epidemic, CA-MRSA has also been a global problem. Currently there are five dominant CA-MRSA lineages: ST1-IV, ST8-IV, ST30-IV, ST59-IV/V, and ST80-IV, each being prevalent in distinct geographical locations <xref rid="pone.0089235-DeLeo1" ref-type="bibr">[6]</xref>. CA-MRSA lineages have generally been characterized by carriage of small-sized staphylococcal cassette chromosome <italic>mec</italic> elements (SCC<italic>mec</italic>) of types IV and V, and in many cases, presence of the genes encoding Panton-Valentine leukocidin (PVL) <xref rid="pone.0089235-Otto1" ref-type="bibr">[7]</xref>.</p>
+      <p>The epidemiological success of CA-MRSA strains is believed to stem from the combination of antibiotic resistance at a low fitness cost with extraordinary virulence, allowing these strains to infect otherwise healthy individuals and spread sustainably in the community <xref rid="pone.0089235-Otto1" ref-type="bibr">[7]</xref>, <xref rid="pone.0089235-Li1" ref-type="bibr">[8]</xref>, <xref rid="pone.0089235-Chambers1" ref-type="bibr">[9]</xref>. However, research on CA-MRSA virulence has been performed largely with the USA300 lineage, whereas our knowledge on virulence of other CA-MRSA lineages is relatively limited.</p>
+      <p>ST59 is a major MRSA clone in eastern Asia <xref rid="pone.0089235-Chuang1" ref-type="bibr">[10]</xref>. CA-MRSA isolates of ST59 have been reported in Taiwan, which can be distinguished from the commensal ST59 Asian-Pacific MRSA clone by the presence of PVL-encoding genes, absence of the prophage that inserts into the &#x3B2;-toxin gene <italic>hlb</italic>, and an increased expression of core genome-encoded virulence factors such as &#x3B1;-toxin <xref rid="pone.0089235-Huang1" ref-type="bibr">[11]</xref>, <xref rid="pone.0089235-Chen1" ref-type="bibr">[12]</xref>. ST59 CA-MRSA isolates thus have an increased virulence potential as compared to their commensal ST59 counterparts. Two genomes of Taiwanese ST59 CA-MRSA isolates, strains SA957 and M013, have been published <xref rid="pone.0089235-Huang1" ref-type="bibr">[11]</xref>, <xref rid="pone.0089235-Chen1" ref-type="bibr">[12]</xref>. In contrast, knowledge on CA-MRSA in the People&#x2019;s Republic of China (mainland China) is limited and has been mostly obtained for infections in children. According to these studies, ST59 is the most frequent clone among Chinese CA-MRSA isolates <xref rid="pone.0089235-Chuang1" ref-type="bibr">[10]</xref>, <xref rid="pone.0089235-Wu1" ref-type="bibr">[13]</xref>, <xref rid="pone.0089235-Li2" ref-type="bibr">[14]</xref>. The complete genome of a CA-MRSA isolate from the People&#x2019;s Republic of China has not been reported yet.</p>
+      <p>In this study, we describe a case of sepsis and severe pneumonia caused by a ST59 CA-MRSA strain in a teaching hospital in the Zhejiang province of China. We sequenced the whole genome of this strain and compared it with other major CA-MRSA lineages focusing on virulence factors and genomic/pathogenicity islands.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s2">
+      <title>Materials and Methods</title>
+      <sec id="s2a">
+        <title>Strain Isolation and Ethics Statement</title>
+        <p>The MRSA strain SA268 was isolated from both the blood and the sputum of a young patient with severe sepsis and acute respiratory failure in March of 2012. Written informed consent was obtained from the patient&#x2019;s mother. The isolate was stored in the Department of Microbiology, the First Affiliated Hospital, College of Medicine, Zhejiang University. We obtained an exempt status from the Institutional Review Board of the First Affiliated Hospital, College of Medicine, Zhejiang University to use the strain for all experiments in this study.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Antibiotic Resistance</title>
+        <p>Susceptibility testing for SA268 was performed using the Etest strip according to the manufacturer&#x2019;s instructions. Results were interpreted according to the recommendations and definitions from the Clinical and Laboratory Standards Institute (CLSI). Antimicrobial agents tested included penicillin G, ampicillin/sulbactam, cefoxitin, gentamicin, vancomycin, teicoplanin, levofloxacin, sulfamethoxazole-trimethoprim, linezolid, tigecycline, daptomycin, tetracycline, fosfomycin and rifampin. ATCC29213 (<italic>S. aureus</italic>) and ATCC29212 (<italic>Enterococcus faecalis</italic>) were used as quality controls.</p>
+      </sec>
+      <sec id="s2c">
+        <title>PFGE and MLST Analysis</title>
+        <p>Bacterial DNA was digested with <italic>Sma</italic>I and the digested DNA was applied to pulsed-field gel electrophoresis (PFGE) on 1.2%-agarose gels, as described previously <xref rid="pone.0089235-BubeckWardenburg1" ref-type="bibr">[34]</xref>. Multi-locus type sequencing (MLST) was performed as described previously comparing sequences of the PCR products against the MLST website (<ext-link ext-link-type="uri" xlink:href="http://saureus.mlst.net">http://saureus.mlst.net</ext-link>) <xref rid="pone.0089235-Enright1" ref-type="bibr">[15]</xref>.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Genome Sequencing and Annotation</title>
+        <p>The genomic DNA of SA268 was extracted using a QIAamp DNA Mini Kit (Qiagen, CA, USA). The TruSeq&#xAE; DNA Sample Preparation Kit was used for constructing the pair-end and mate-pair sequencing library and then the libraries were launched on Illumina&#xAE; Hiseq2000 sequencer (Illumina, CA, USA). The average fragment sizes for the pair-end and mate-pair libraries were 300 bp and 3,000 bp, respectively. The read length was 100 bp. The velvet assembler v1.0 program was used to assemble the Illumina reads <xref rid="pone.0089235-Zerbino1" ref-type="bibr">[16]</xref>. The Columbus module was used and the genome of strain M013 (accession number CP003166.1) was used as the reference sequence.</p>
+        <p>The derived contigs were compared with the genome of strain M013 by MUMmer software <xref rid="pone.0089235-Delcher1" ref-type="bibr">[17]</xref> to determine the relationships between contigs. Gaps between contigs were closed by PCR amplification and sequencing.</p>
+        <p>The genome sequences of the chromosome and the plasmid were submitted to the web service RAST for automatic annotation followed by manual evaluation <xref rid="pone.0089235-Aziz1" ref-type="bibr">[18]</xref>.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Genomic Comparison and Phylogenetic Analysis</title>
+        <p>Similarities of protein-coding sequences were determined using the blastn program of the NCBI Basic Local Alignment Search Tool (BLAST). For a coding sequence to be considered homologous, the DNA identity had to be greater than 80%, the e-value smaller than 1e-10, and the aligned length larger than 80% of the gene sequence.</p>
+        <p>For phylogenetic comparison within ST59, the genome sequences of strains SA268, M013, SA957, MW2, FPR3757 and 11819-97 were imported into the MAUVE program <xref rid="pone.0089235-Darling1" ref-type="bibr">[19]</xref>. The derived backbone regions, namely regions that are conserved in all these strains, were extracted and were further aligned by the MAFFT program <xref rid="pone.0089235-Katoh1" ref-type="bibr">[20]</xref>. The aligned sequences were imported into the PhyML program <xref rid="pone.0089235-Guindon1" ref-type="bibr">[21]</xref>. A maximum likelihood tree was produced based on the JC69 substitution model, and the SH-like support value was calculated. The number of pair-wise single nucleotide substitutions between strains was calculated from the backbone regions with a script made in our institute.</p>
+      </sec>
+      <sec id="s2f">
+        <title>Nucleotide Sequence Accession Number</title>
+        <p>The genome of SA268 was deposited in the NCBI database under the accession number CP006630 (chromosome) and KF471116 (plasmid). The accession numbers for the genomes of strains FPR3757, MW2, 11819-97, M013, SA957 and pPM1 are CP000255.1, BA000033.2, CP003194.1, CP003166.1, CP003603.1, AB699881.1, respectively.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results and Discussion</title>
+      <sec id="s3a">
+        <title>Case Report</title>
+        <p>A 16-year-old, previously healthy, Chinese male presented with severe sepsis and acute respiratory failure. He had never travelled to Taiwan or other countries. In the week before hospitalization, he noted an influenza-like illness. On examination, chest auscultation revealed discrete inspiratory crackles over the lower lung fields. The chest radiograph showed bilateral dense alveolo-interstitial infiltrates predominantly in the middle and lower lobes (<xref ref-type="fig" rid="pone-0089235-g001">Figure 1</xref>). The leukocyte count was 1.2 G/l, with a neutrophil ratio of 72.5%. The C-reactive protein count was 163 mg/l. Other laboratory parameters were normal. Within the first 24 hours, hypoxemia worsened (PaO<sub>2</sub>/FiO<sub>2</sub>&lt;100 mm Hg), profound septic shock developed, and the leukocyte count dropped to 0.82 G/l. Extracorporeal membrane oxygenation was used for six days. Sputum and blood culture both grew MRSA. The HIV test was negative. PCR amplification performed on a throat swab was positive for influenza B. The patient remained febrile, and a computed tomography (CT) scan on the 7<sup>th</sup> day revealed extensive infiltrations with cavitations suggestive of multiple abscesses, pneumothorax and subcutaneous emphysema (<xref ref-type="fig" rid="pone-0089235-g002">Figure 2a</xref>). The patient was treated with teicoplanin (400 mg twice daily for 3 days, followed by 400 mg once daily for 6 days), and then was switched to linezolid (600 mg twice daily). High-dose intravenous immunoglobulin (2 g/kg) was added for four days. The CT scan on the 26<sup>th</sup> day revealed a large abscess cavity with a fluid level (<xref ref-type="fig" rid="pone-0089235-g002">Figure 2b</xref>). The patient required prolonged mechanical ventilation and antibiotic therapy because of abscess development and several episodes of acute respiratory distress. Teicoplanin and linezolid treatment lasted 29 and 15 days, respectively. The patient was successfully weaned after 49 days of mechanical ventilation and was transferred to the medical ward after 76 days in the intensive care unit. He was discharged from the hospital after five months.</p>
+        <fig id="pone-0089235-g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0089235.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Chest radiograph on admission showing bilateral dense infiltrates.</title>
+          </caption>
+          <graphic xlink:href="pone.0089235.g001"/>
+        </fig>
+        <fig id="pone-0089235-g002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0089235.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Lung CT scan on (A) day 7 of hospitalization showing abscess formations and (B) day 26 of hospitalization showing a large abscess cavity with a fluid level in the left lobe.</title>
+          </caption>
+          <graphic xlink:href="pone.0089235.g002"/>
+        </fig>
+      </sec>
+      <sec id="s3b">
+        <title>Genetic Typing and Complete Genome Sequencing</title>
+        <p>The MRSA isolates obtained from the blood and sputum of the patient exhibited the same PFGE pattern (<xref ref-type="supplementary-material" rid="pone.0089235.s001">Figure S1</xref>) and the same MLST type (ST59). These typing results demonstrated that the two isolates belonged to be the same clone. We selected the blood isolate (named SA268) for complete genome sequencing. Sequencing by Illumina Hiseq produced the draft genome, with the average coverage over 500-fold. A total of 17 contigs had their size larger than 1 kb. The maximal contig was 959707 bp long, the N50 size was 854282 bp, and the N90 size was 181768 bp. Gaps between contigs were then closed by PCR amplification and sequencing. Finally, we obtained the complete sequence of a chromosome and a plasmid, the genetic information of which was summarized in <xref ref-type="table" rid="pone-0089235-t001">Table 1</xref>.</p>
+        <table-wrap id="pone-0089235-t001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0089235.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>General features of the CA-MRSA SA268 genome and the pSA268 plasmid.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0089235-t001-1" xlink:href="pone.0089235.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Element and characteristic</td>
+                  <td align="left" rowspan="1" colspan="1">Value</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Chromosome</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Size (bp)</td>
+                  <td align="left" rowspan="1" colspan="1">2,833,899</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Coding regions (%)</td>
+                  <td align="left" rowspan="1" colspan="1">84.2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">G+C content (%)</td>
+                  <td align="left" rowspan="1" colspan="1">32.9</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Protein-coding sequences</td>
+                  <td align="left" rowspan="1" colspan="1">2656</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">tRNA genes</td>
+                  <td align="left" rowspan="1" colspan="1">60</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">rRNA operons</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Plasmid pSA268</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Size (bp)</td>
+                  <td align="left" rowspan="1" colspan="1">20,269</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Coding regions (%)</td>
+                  <td align="left" rowspan="1" colspan="1">67.1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">G+C content (%)</td>
+                  <td align="left" rowspan="1" colspan="1">28.6</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">No. of protein-coding sequences</td>
+                  <td align="left" rowspan="1" colspan="1">22</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+      </sec>
+      <sec id="s3c">
+        <title>Susceptibility Profiles</title>
+        <p>As shown in <xref ref-type="table" rid="pone-0089235-t002">Table 2</xref>, we found that SA268 was resistant to penicillins, &#x3B2;-lactamase inhibitor combinations, and susceptible to aminoglycosides, quinolones, teicoplanin, vancomycin, tetracycline, fosfomycin, rifampicin, trimethoprim/sulfamethoxazole, linezolid, tigecycline and daptomycin.</p>
+        <table-wrap id="pone-0089235-t002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0089235.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Susceptibility of SA268 to antimicrobial agents.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0089235-t002-2" xlink:href="pone.0089235.t002"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Antimicrobial agent</td>
+                  <td align="left" rowspan="1" colspan="1">MIC (&#xB5;g/ml)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Cefoxitin</td>
+                  <td align="left" rowspan="1" colspan="1">32</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Linezolid</td>
+                  <td align="left" rowspan="1" colspan="1">0.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Sulfamethoxazole-trimethoprim</td>
+                  <td align="left" rowspan="1" colspan="1">0.047</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Gentamicin</td>
+                  <td align="left" rowspan="1" colspan="1">0.38</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Vancomycin</td>
+                  <td align="left" rowspan="1" colspan="1">0.75</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Ampicillin/Sulbactam</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">PenicillinG</td>
+                  <td align="left" rowspan="1" colspan="1">16</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Teicoplanin</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Levofloxacin</td>
+                  <td align="left" rowspan="1" colspan="1">0.19</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Tetracycline</td>
+                  <td align="left" rowspan="1" colspan="1">0.38</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Tigecycline</td>
+                  <td align="left" rowspan="1" colspan="1">0.094</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Fosfomycin</td>
+                  <td align="left" rowspan="1" colspan="1">&lt;0.064</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Rifampicin</td>
+                  <td align="left" rowspan="1" colspan="1">0.004</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Daptomycin</td>
+                  <td align="left" rowspan="1" colspan="1">0.125</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+      </sec>
+      <sec id="s3d">
+        <title>Genomic and Pathogenicity Islands</title>
+        <p>A comparison of genomic and pathogenicity islands of strain SA268 to the main global CA-MRSA lineages is shown in <xref ref-type="table" rid="pone-0089235-t003">Table 3</xref>. SA268 harbors &#x3BD;Sa&#x3B1;, &#x3BD;Sa&#x3B2; and &#x3A6;Sa2. The genomic islands &#x3BD;Sa&#x3B1; and &#x3BD;Sa&#x3B2; occur in almost all <italic>S. aureus</italic> strains. Nevertheless, &#x3BD;Sa&#x3B2; of ST59 is different from that found in other <italic>S. aureus</italic> lineages. &#x3BD;Sa&#x3B2; usually contains a type I restriction/modification system and may also carry genes encoding virulence factors, such as the bicomponent leukotoxin LukDE, serine proteases, enterotoxins, and an epidermin-like bacteriocin. However, these virulence genes are absent from ST59 strains. The PVL-encoding prophage &#x3A6;Sa2 is present in all analyzed CA-MRSA strains, including the two previously sequenced ST59 CA-MRSA strains.</p>
+        <table-wrap id="pone-0089235-t003" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0089235.t003</object-id>
+          <label>Table 3</label>
+          <caption>
+            <title>Mobile genetic elements of main CA-MRSA lineages.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0089235-t003-3" xlink:href="pone.0089235.t003"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Genomic and pathogenicity islands</td>
+                  <td align="left" rowspan="1" colspan="1">SA268 (ST59)</td>
+                  <td align="left" rowspan="1" colspan="1">SA957 (ST59)</td>
+                  <td align="left" rowspan="1" colspan="1">M013 (ST59)</td>
+                  <td align="left" rowspan="1" colspan="1">FPR3757 (ST8)</td>
+                  <td align="left" rowspan="1" colspan="1">MW2 (ST1)</td>
+                  <td align="left" rowspan="1" colspan="1">11819-97 (ST80)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x3A6;Sa2 (containing PVL)</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x3BD;Sa3</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x3BD;Sa4</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x3BD;Sa&#x3B1;</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x3BD;Sa&#x3B2;</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x3A6;Sa3 (containing <italic>sak</italic>)</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">ACME</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">SCC<italic>mec</italic></td>
+                  <td align="left" rowspan="1" colspan="1">V</td>
+                  <td align="left" rowspan="1" colspan="1">V(T)</td>
+                  <td align="left" rowspan="1" colspan="1">V(T)</td>
+                  <td align="left" rowspan="1" colspan="1">IV</td>
+                  <td align="left" rowspan="1" colspan="1">IV</td>
+                  <td align="left" rowspan="1" colspan="1">IV</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>As for pathogenicity islands, both strains FPR3757 and MW2 contain the &#x3BD;Sa3 and &#x3BD;Sa4 islands, which are absent from strains SA268, SA957, M013, and 11819-97. &#x3BD;Sa3 contains two enterotoxin genes with unknown function in virulence, and &#x3BD;Sa4 does not comprise known virulence factors.</p>
+        <p>Finally, USA300 strains (such as strain FPR3757) are the only <italic>S. aureus</italic> strains containing the arginine catabolic mobile element (ACME). It was recently reported that the virulence gene <italic>speG</italic> within ACME assists <italic>S. aureus</italic> to circumvent polyamine hypersensitivity and increase survival <xref rid="pone.0089235-Joshi1" ref-type="bibr">[22]</xref>, <xref rid="pone.0089235-Thurlow1" ref-type="bibr">[23]</xref>. The SA268 isolate does not contain ACME, in accordance with absence of this element from other sequenced ST59 strains <xref rid="pone.0089235-Huang1" ref-type="bibr">[11]</xref>, <xref rid="pone.0089235-Chen1" ref-type="bibr">[12]</xref>.</p>
+      </sec>
+      <sec id="s3e">
+        <title>Virulence Gene Analysis</title>
+        <p>We performed a genome-wide analysis to determine differences in virulence factor composition among CA-MRSA strains (<xref ref-type="table" rid="pone-0089235-t004">Table 4</xref>). The overall composition of virulence genes among ST59 strains was identical: Strains SA268, SA957 and M013 all lack the <italic>spl(s), sak, lytN, lukD/E, eta</italic>, and <italic>etb</italic> genes, which encodes serine proteases, staphylokinase, cell wall hydrolase, leukotoxins, and exfoliative toxins, respectively. In contrast, these genes are present in strains FPR3757, MW2 and 11819-97.</p>
+        <table-wrap id="pone-0089235-t004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0089235.t004</object-id>
+          <label>Table 4</label>
+          <caption>
+            <title>Differences in the presence of known virulence genes between ST59 and other CA-MRSA strains.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0089235-t004-4" xlink:href="pone.0089235.t004"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Annotation</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">SA26(ST59)</td>
+                  <td align="left" rowspan="1" colspan="1">SA95(ST59)</td>
+                  <td align="left" rowspan="1" colspan="1">M013(ST59)</td>
+                  <td align="left" rowspan="1" colspan="1">FPR3757(ST8)</td>
+                  <td align="left" rowspan="1" colspan="1">MW(ST1)</td>
+                  <td align="left" rowspan="1" colspan="1">11819-97(ST80)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Serine proteases</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>spl(s)</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Staphylokinase</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>sak</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Cell wall hydrolase</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>lytN</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Leukotoxin LukDE</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>lukD,E</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Lantibiotic biosynthesis genes</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>bsaA-G</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Exfoliative toxins</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>eta,etb</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Collagen adhesion precursor</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>cna</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"><italic>arcA</italic> region of ACME</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>ACME-arcA</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">+</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2212;</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>The genes coding for PVL, <italic>lukS</italic> and l<italic>ukF</italic>, are present in all CA-MRSA strains analyzed in this study. Among several putative determinants of CA-MRSA virulence, PVL has received most attention. It forms pores in the cell and mitochondrial membrane of neutrophils and macrophages and thus provokes cell lysis and apoptosis with subsequent liberation of inflammatory mediators <xref rid="pone.0089235-Lina1" ref-type="bibr">[24]</xref>, <xref rid="pone.0089235-Miles1" ref-type="bibr">[25]</xref>, <xref rid="pone.0089235-Szmigielski1" ref-type="bibr">[26]</xref>, <xref rid="pone.0089235-Vandenesch1" ref-type="bibr">[27]</xref>, <xref rid="pone.0089235-LabandeiraRey1" ref-type="bibr">[28]</xref>. While PVL facilitated experimental CA-MRSA lung and bone infection <xref rid="pone.0089235-Diep1" ref-type="bibr">[29]</xref>, <xref rid="pone.0089235-Cremieux1" ref-type="bibr">[30]</xref>, PVL did not have a significant impact on CA-MRSA virulence in several skin infection models <xref rid="pone.0089235-Otto1" ref-type="bibr">[7]</xref>, <xref rid="pone.0089235-Kobayashi1" ref-type="bibr">[31]</xref>. In addition, cases of PVL-negative CA-MRSA infections have been reported with increasing frequency <xref rid="pone.0089235-Otto1" ref-type="bibr">[7]</xref>. Thus, the role of PVL in CA-MRSA infection remains controversial. Changes in the expression of key genome-encoded toxins such as &#x3B1;-toxin and phenol-soluble modulins (PSMs), were also proposed to have played a role in the evolution of virulence in CA-MRSA strains <xref rid="pone.0089235-Wang1" ref-type="bibr">[32]</xref>, <xref rid="pone.0089235-Li3" ref-type="bibr">[33]</xref>, <xref rid="pone.0089235-BubeckWardenburg1" ref-type="bibr">[34]</xref>. PSMs and &#x3B1;-toxin were shown to contribute significantly to several CA-MRSA disease manifestations, including SSTI, in animal infection models <xref rid="pone.0089235-Peschel1" ref-type="bibr">[35]</xref>, <xref rid="pone.0089235-Berube1" ref-type="bibr">[36]</xref>. As they are genome-encoded, &#x3B1;-toxin and PSM genes are present in all strains analyzed in our study.</p>
+      </sec>
+      <sec id="s3f">
+        <title>SCC<italic>mec</italic> Typing</title>
+        <p>CA-MRSA strains contain the low-fitness cost SCC<italic>mec</italic> elements of types IV or V <xref rid="pone.0089235-David1" ref-type="bibr">[2]</xref>, <xref rid="pone.0089235-DeLeo1" ref-type="bibr">[6]</xref>, <xref rid="pone.0089235-Chuang1" ref-type="bibr">[10]</xref>. The CA-MRSA strains FPR3757, MW2 and 11819-97 all carry SCC<italic>mec</italic> IV. In contrast, SA268 carries SCC<italic>mec</italic> V; and the other sequenced ST59 strains M013 and SA957 carry SCC<italic>mec</italic> V(T). A comparison of SCC<italic>mec</italic> elements of the three ST59 CA-MRSA strains is shown in <xref ref-type="fig" rid="pone-0089235-g003">Figure 3</xref>. The main difference between SCC<italic>mec</italic> V and SCC<italic>mec</italic> V(T) is that the latter possesses two distinct <italic>ccrC</italic> genes (<italic>ccrC</italic>1 allele 2 and allele 8) <xref rid="pone.0089235-Chuang1" ref-type="bibr">[10]</xref>, <xref rid="pone.0089235-BoyleVavra1" ref-type="bibr">[37]</xref>.</p>
+        <fig id="pone-0089235-g003" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0089235.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Structure and comparative analysis of SCC<italic>mec</italic> elements in the ST59 CA-MRSA strains.</title>
+            <p>The SCC<italic>mec</italic> structure [SCC<italic>mec</italic> V(T)] of M013 and SA957 is shown in the upper part, and that of SA268 (SCC<italic>mec</italic> V) is shown in the lower part. Blue arrows, <italic>ccr</italic> operon; yellow arrows, <italic>mec</italic> operon; green arrows, <italic>hsd</italic> operon. Red and blue blocks represent the nucleotide alignment between the two SCC<italic>mec</italic> types.</p>
+          </caption>
+          <graphic xlink:href="pone.0089235.g003"/>
+        </fig>
+      </sec>
+      <sec id="s3g">
+        <title>Comparative Genomics of ST59 CA-MRSA Strains</title>
+        <p>Next, we compared the genome of strain SA268 with those of strains M013 and SA957, which are ST59 CA-MRSA isolates from Taiwan. M013 was isolated from a wound infection <xref rid="pone.0089235-Huang1" ref-type="bibr">[11]</xref> and SA957 from the blood of a patient suffering from a cutaneous abscess and bacteremia <xref rid="pone.0089235-Chen1" ref-type="bibr">[12]</xref>. The three genomes were found to be highly similar to each other in terms of gene content. Nevertheless, SA268 contains specific segments within its SCC<italic>mec</italic> element, while SA957 and M013 have several mobile genetic elements and lipoproteins that are absent from strain SA268. Detailed information of gene difference is given in <xref ref-type="supplementary-material" rid="pone.0089235.s002">Table S1</xref>.</p>
+        <p>To further infer the phylogenetic relationship between the three ST59 isolates, we constructed a Maximum-Likelihood (ML) tree based on conserved genome. The representative CA-MRSA strains, i.e. MW2, FPR3757 and 11819-97, were also included as controls. The regions which are conserved in these genomes total 2509374 bp, ca. 85% of the whole genome. The ML tree shows that SA268 is distinguished from the two Taiwanese isolates but the genetic distance is small (<xref ref-type="fig" rid="pone-0089235-g004">Figure 4</xref>). Within these conserved regions, the three ST59 isolates differs less than 250 Single Nucleotide Polymorphisms (SNPs), but at least 19000 SNPs are present between ST59 and non-ST59 CA-MRSA strains.</p>
+        <fig id="pone-0089235-g004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0089235.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Evolutionary relationship of ST59 CA-MRSA genomes.</title>
+            <p>(A) A Maximum-Likelihood tree was constructed based on conserved sequences in the genomes of ST59 strains SA268, M013 and SA957. The genomes of strains MW2, FPR3757 and 11819-97 were used as outgroups. The numbers near the nodes represent the SH-like support value. The scale bar is shown representing the genetic distance. (B) Number of pair-wise single nucleotide substitutions across the conserved genome.</p>
+          </caption>
+          <graphic xlink:href="pone.0089235.g004"/>
+        </fig>
+      </sec>
+      <sec id="s3h">
+        <title>Plasmids and Resistance Genes</title>
+        <p>SA268 contains one plasmid, named pSA268, which is almost identical to pPM1 from <italic>S. aureus</italic> PM1, a multidrug-resistant ST59 CA-MRSA strain from Taiwan <xref rid="pone.0089235-Hung1" ref-type="bibr">[38]</xref>. A tetracycline resistance determinant, <italic>tet(K)</italic>, encoding a tetracycline efflux pump <xref rid="pone.0089235-Guay1" ref-type="bibr">[39]</xref>, <xref rid="pone.0089235-Schmitz1" ref-type="bibr">[40]</xref>, is located on pSA268. The <italic>tet(K)</italic>-carrying <italic>S. aureus</italic> strains have exclusively been described as tetracycline-resistant and minocycline-susceptible <xref rid="pone.0089235-Guay1" ref-type="bibr">[39]</xref>, <xref rid="pone.0089235-Schmitz1" ref-type="bibr">[40]</xref>. However, strain SA268 was susceptible to tetracycline, which might be due to low-level expression of the <italic>tet(K)</italic> gene.</p>
+      </sec>
+      <sec id="s3i">
+        <title>Concluding Remarks</title>
+        <p>We here report a case of CA-MRSA necrotizing pneumonia and sepsis, severe manifestation of CA-MRSA disease that is still rare in China. We present the first sequenced genome of a PVL-positive ST59 CA-MRSA strain from the People&#x2019;s Republic of China. The SA268 genome is almost identical to that of the major CA-MRSA lineage in Taiwan, which has the same sequence type, ST59. Small but noticeable differences are found in the SCC<italic>me</italic>c element and in gene composition. Notably, some lipoprotein genes found in the Taiwanese ST59 strains are absent from the Chinese ST59 strain. The CA-MRSA isolate from mainland China thus appears to be closely related, but still distinguishable from Taiwanese CA-MRSA strains. According to gene composition analysis, the assumed basis of virulence in the mainland Chinese CA-MRSA strain is to be explained in a similar fashion as reported for the Taiwanese strains, that is, by a combination of acquisition of the CA-MRSA-characteristic genes encoding PVL and SCC<italic>mec</italic> V, and a possibly increased expression of core genome-encoded virulence factors.</p>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="s4">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0089235.s001">
+        <label>Figure S1</label>
+        <caption>
+          <p><bold>PFGE patterns of the blood and sputum isolates.</bold> Marker, <italic>Salmonella enterica</italic> serotype Braenderup strain H9812 DNA digested by XbaI, used as a molecular marker (kb); &#x201C;Blood&#x201D; and &#x201C;Sputum&#x201D; represent the blood isolate and the sputum isolate, respectively.</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0089235.s001.tif">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0089235.s002">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>Comparison of gene content between the three ST59 strains.</bold>
+          </p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0089235.s002.xls">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0089235-CDC1">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><collab>(CDC) CfDCaP</collab> (<year>1999</year>) <article-title>Four pediatric deaths from community-acquired methicillin-resistant <italic>Staphylococcus aureus</italic> - Minnesota and North Dakota, 1997&#x2013;1999</article-title>. <source>MMWR Morb Mortal Wkly Rep</source><volume>48</volume>: <fpage>707</fpage>&#x2013;<lpage>710</lpage><pub-id pub-id-type="pmid">21033181</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-David1">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>David</surname><given-names>MZ</given-names></name>, <name><surname>Daum</surname><given-names>RS</given-names></name> (<year>2010</year>) <article-title>Community-associated methicillin-resistant <italic>Staphylococcus aureus</italic>: epidemiology and clinical consequences of an emerging epidemic</article-title>. <source>Clin Microbiol Rev</source><volume>23</volume>: <fpage>616</fpage>&#x2013;<lpage>687</lpage><pub-id pub-id-type="pmid">20610826</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Graves1">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Graves</surname><given-names>SF</given-names></name>, <name><surname>Kobayashi</surname><given-names>SD</given-names></name>, <name><surname>DeLeo</surname><given-names>FR</given-names></name> (<year>2010</year>) <article-title>Community-associated methicillin-resistant <italic>Staphylococcus aureus</italic> immune evasion and virulence</article-title>. <source>J Mol Med (Berl)</source><volume>88</volume>: <fpage>109</fpage>&#x2013;<lpage>114</lpage><pub-id pub-id-type="pmid">20049412</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Moran1">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Moran</surname><given-names>GJ</given-names></name>, <name><surname>Krishnadasan</surname><given-names>A</given-names></name>, <name><surname>Gorwitz</surname><given-names>RJ</given-names></name>, <name><surname>Fosheim</surname><given-names>GE</given-names></name>, <name><surname>McDougal</surname><given-names>LK</given-names></name>, <etal>et al</etal> (<year>2006</year>) <article-title>Methicillin-resistant S. aureus infections among patients in the emergency department</article-title>. <source>N Engl J Med</source><volume>355</volume>: <fpage>666</fpage>&#x2013;<lpage>674</lpage><pub-id pub-id-type="pmid">16914702</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-David2">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>David</surname><given-names>MZ</given-names></name>, <name><surname>Rudolph</surname><given-names>KM</given-names></name>, <name><surname>Hennessy</surname><given-names>TW</given-names></name>, <name><surname>Boyle-Vavra</surname><given-names>S</given-names></name>, <name><surname>Daum</surname><given-names>RS</given-names></name> (<year>2008</year>) <article-title>Molecular epidemiology of methicillin-resistant <italic>Staphylococcus aureus</italic>, rural southwestern Alaska</article-title>. <source>Emerg Infect Dis</source><volume>14</volume>: <fpage>1693</fpage>&#x2013;<lpage>1699</lpage><pub-id pub-id-type="pmid">18976551</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-DeLeo1">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>DeLeo</surname><given-names>FR</given-names></name>, <name><surname>Otto</surname><given-names>M</given-names></name>, <name><surname>Kreiswirth</surname><given-names>BN</given-names></name>, <name><surname>Chambers</surname><given-names>HF</given-names></name> (<year>2010</year>) <article-title>Community-associated meticillin-resistant <italic>Staphylococcus aureus</italic></article-title>. <source>Lancet</source><volume>375</volume>: <fpage>1557</fpage>&#x2013;<lpage>1568</lpage><pub-id pub-id-type="pmid">20206987</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Otto1">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>Otto</surname><given-names>M</given-names></name> (<year>2010</year>) <article-title>Basis of virulence in community-associated methicillin-resistant <italic>Staphylococcus aureus</italic></article-title>. <source>Annu Rev Microbiol</source><volume>64</volume>: <fpage>143</fpage>&#x2013;<lpage>162</lpage><pub-id pub-id-type="pmid">20825344</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Li1">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Li</surname><given-names>M</given-names></name>, <name><surname>Cheung</surname><given-names>GY</given-names></name>, <name><surname>Hu</surname><given-names>J</given-names></name>, <name><surname>Wang</surname><given-names>D</given-names></name>, <name><surname>Joo</surname><given-names>HS</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Comparative analysis of virulence and toxin expression of global community-associated methicillin-resistant <italic>Staphylococcus aureus</italic> strains</article-title>. <source>J Infect Dis</source><volume>202</volume>: <fpage>1866</fpage>&#x2013;<lpage>1876</lpage><pub-id pub-id-type="pmid">21050125</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Chambers1">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Chambers</surname><given-names>HF</given-names></name> (<year>2005</year>) <article-title>Community-associated MRSA&#x2013;resistance and virulence converge</article-title>. <source>N Engl J Med</source><volume>352</volume>: <fpage>1485</fpage>&#x2013;<lpage>1487</lpage><pub-id pub-id-type="pmid">15814886</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Chuang1">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Chuang</surname><given-names>YY</given-names></name>, <name><surname>Huang</surname><given-names>YC</given-names></name> (<year>2013</year>) <article-title>Molecular epidemiology of community-associated meticillin-resistant <italic>Staphylococcus aureus</italic> in Asia</article-title>. <source>Lancet Infect Dis</source><volume>13</volume>: <fpage>698</fpage>&#x2013;<lpage>708</lpage><pub-id pub-id-type="pmid">23827369</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Huang1">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Huang</surname><given-names>TW</given-names></name>, <name><surname>Chen</surname><given-names>FJ</given-names></name>, <name><surname>Miu</surname><given-names>WC</given-names></name>, <name><surname>Liao</surname><given-names>TL</given-names></name>, <name><surname>Lin</surname><given-names>AC</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Complete genome sequence of <italic>Staphylococcus aureus</italic> M013, a pvl-positive, ST59-SCC<italic>mec</italic> type V strain isolated in Taiwan</article-title>. <source>J Bacteriol</source><volume>194</volume>: <fpage>1256</fpage>&#x2013;<lpage>1257</lpage><pub-id pub-id-type="pmid">22328755</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Chen1">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Chen</surname><given-names>CJ</given-names></name>, <name><surname>Unger</surname><given-names>C</given-names></name>, <name><surname>Hoffmann</surname><given-names>W</given-names></name>, <name><surname>Lindsay</surname><given-names>JA</given-names></name>, <name><surname>Huang</surname><given-names>YC</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>Characterization and Comparison of 2 Distinct Epidemic Community-Associated Methicillin-Resistant <italic>Staphylococcus aureus</italic> Clones of ST59 Lineage</article-title>. <source>PLoS ONE</source><volume>8</volume>: <fpage>e63210</fpage><pub-id pub-id-type="pmid">24039691</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Wu1">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Wu</surname><given-names>D</given-names></name>, <name><surname>Wang</surname><given-names>Q</given-names></name>, <name><surname>Yang</surname><given-names>Y</given-names></name>, <name><surname>Geng</surname><given-names>W</given-names></name>, <name><surname>Wang</surname><given-names>Q</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Epidemiology and molecular characteristics of community-associated methicillin-resistant and methicillin-susceptible <italic>Staphylococcus aureus</italic> from skin/soft tissue infections in a children&#x2019;s hospital in Beijing, China</article-title>. <source>Diagn Microbiol Infect Dis</source><volume>67</volume>: <fpage>1</fpage>&#x2013;<lpage>8</lpage><pub-id pub-id-type="pmid">20227225</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Li2">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Li</surname><given-names>J</given-names></name>, <name><surname>Wang</surname><given-names>L</given-names></name>, <name><surname>Ip</surname><given-names>M</given-names></name>, <name><surname>Sun</surname><given-names>M</given-names></name>, <name><surname>Sun</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>Molecular and Clinical Characteristics of Clonal Complex 59 Methicillin-Resistant <italic>Staphylococcus aureus</italic> Infections in Mainland China</article-title>. <source>PLoS One</source><volume>8</volume>: <fpage>e70602</fpage><pub-id pub-id-type="pmid">23950969</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Enright1">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Enright</surname><given-names>MC</given-names></name>, <name><surname>Day</surname><given-names>NP</given-names></name>, <name><surname>Davies</surname><given-names>CE</given-names></name>, <name><surname>Peacock</surname><given-names>SJ</given-names></name>, <name><surname>Spratt</surname><given-names>BG</given-names></name> (<year>2000</year>) <article-title>Multilocus sequence typing for characterization of methicillin-resistant and methicillin-susceptible clones of <italic>Staphylococcus aureus</italic></article-title>. <source>J Clin Microbiol</source><volume>38</volume>: <fpage>1008</fpage>&#x2013;<lpage>1015</lpage><pub-id pub-id-type="pmid">10698988</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Zerbino1">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Zerbino</surname><given-names>DR</given-names></name>, <name><surname>McEwen</surname><given-names>GK</given-names></name>, <name><surname>Margulies</surname><given-names>EH</given-names></name>, <name><surname>Birney</surname><given-names>E</given-names></name> (<year>2009</year>) <article-title>Pebble and rock band: heuristic resolution of repeats and scaffolding in the velvet short-read de novo assembler</article-title>. <source>PLoS One</source><volume>4</volume>: <fpage>e8407</fpage><pub-id pub-id-type="pmid">20027311</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Delcher1">
+        <label>17</label>
+        <mixed-citation publication-type="other">Delcher AL, Salzberg SL, Phillippy AM (2003) Using MUMmer to identify similar regions in large sequence sets. Curr Protoc Bioinformatics Chapter 10: Unit 10 13.</mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Aziz1">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Aziz</surname><given-names>RK</given-names></name>, <name><surname>Bartels</surname><given-names>D</given-names></name>, <name><surname>Best</surname><given-names>AA</given-names></name>, <name><surname>DeJongh</surname><given-names>M</given-names></name>, <name><surname>Disz</surname><given-names>T</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>The RAST Server: rapid annotations using subsystems technology</article-title>. <source>BMC Genomics</source><volume>9</volume>: <fpage>75</fpage><pub-id pub-id-type="pmid">18261238</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Darling1">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Darling</surname><given-names>AC</given-names></name>, <name><surname>Mau</surname><given-names>B</given-names></name>, <name><surname>Blattner</surname><given-names>FR</given-names></name>, <name><surname>Perna</surname><given-names>NT</given-names></name> (<year>2004</year>) <article-title>Mauve: multiple alignment of conserved genomic sequence with rearrangements</article-title>. <source>Genome Res</source><volume>14</volume>: <fpage>1394</fpage>&#x2013;<lpage>1403</lpage><pub-id pub-id-type="pmid">15231754</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Katoh1">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Katoh</surname><given-names>K</given-names></name>, <name><surname>Kuma</surname><given-names>K</given-names></name>, <name><surname>Toh</surname><given-names>H</given-names></name>, <name><surname>Miyata</surname><given-names>T</given-names></name> (<year>2005</year>) <article-title>MAFFT version 5: improvement in accuracy of multiple sequence alignment</article-title>. <source>Nucleic Acids Res</source><volume>33</volume>: <fpage>511</fpage>&#x2013;<lpage>518</lpage><pub-id pub-id-type="pmid">15661851</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Guindon1">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Guindon</surname><given-names>S</given-names></name>, <name><surname>Gascuel</surname><given-names>O</given-names></name> (<year>2003</year>) <article-title>A simple, fast, and accurate algorithm to estimate large phylogenies by maximum likelihood</article-title>. <source>Syst Biol</source><volume>52</volume>: <fpage>696</fpage>&#x2013;<lpage>704</lpage><pub-id pub-id-type="pmid">14530136</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Joshi1">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Joshi</surname><given-names>GS</given-names></name>, <name><surname>Spontak</surname><given-names>JS</given-names></name>, <name><surname>Klapper</surname><given-names>DG</given-names></name>, <name><surname>Richardson</surname><given-names>AR</given-names></name> (<year>2011</year>) <article-title>Arginine catabolic mobile element encoded <italic>speG</italic> abrogates the unique hypersensitivity of <italic>Staphylococcus aureus</italic> to exogenous polyamines</article-title>. <source>Mol Microbiol</source><volume>82</volume>: <fpage>9</fpage>&#x2013;<lpage>20</lpage><pub-id pub-id-type="pmid">21902734</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Thurlow1">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Thurlow</surname><given-names>LR</given-names></name>, <name><surname>Joshi</surname><given-names>GS</given-names></name>, <name><surname>Clark</surname><given-names>JR</given-names></name>, <name><surname>Spontak</surname><given-names>JS</given-names></name>, <name><surname>Neely</surname><given-names>CJ</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>Functional modularity of the arginine catabolic mobile element contributes to the success of USA300 methicillin-resistant <italic>Staphylococcus aureus</italic></article-title>. <source>Cell Host Microbe</source><volume>13</volume>: <fpage>100</fpage>&#x2013;<lpage>107</lpage><pub-id pub-id-type="pmid">23332159</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Lina1">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Lina</surname><given-names>G</given-names></name>, <name><surname>Piemont</surname><given-names>Y</given-names></name>, <name><surname>Godail-Gamot</surname><given-names>F</given-names></name>, <name><surname>Bes</surname><given-names>M</given-names></name>, <name><surname>Peter</surname><given-names>MO</given-names></name>, <etal>et al</etal> (<year>1999</year>) <article-title>Involvement of Panton-Valentine leukocidin-producing <italic>Staphylococcus aureus</italic> in primary skin infections and pneumonia</article-title>. <source>Clin Infect Dis</source><volume>29</volume>: <fpage>1128</fpage>&#x2013;<lpage>1132</lpage><pub-id pub-id-type="pmid">10524952</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Miles1">
+        <label>25</label>
+        <mixed-citation publication-type="journal"><name><surname>Miles</surname><given-names>G</given-names></name>, <name><surname>Movileanu</surname><given-names>L</given-names></name>, <name><surname>Bayley</surname><given-names>H</given-names></name> (<year>2002</year>) <article-title>Subunit composition of a bicomponent toxin: staphylococcal leukocidin forms an octameric transmembrane pore</article-title>. <source>Protein Sci</source><volume>11</volume>: <fpage>894</fpage>&#x2013;<lpage>902</lpage><pub-id pub-id-type="pmid">11910032</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Szmigielski1">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Szmigielski</surname><given-names>S</given-names></name>, <name><surname>Prevost</surname><given-names>G</given-names></name>, <name><surname>Monteil</surname><given-names>H</given-names></name>, <name><surname>Colin</surname><given-names>DA</given-names></name>, <name><surname>Jeljaszewicz</surname><given-names>J</given-names></name> (<year>1999</year>) <article-title>Leukocidal toxins of staphylococci</article-title>. <source>Zentralbl Bakteriol</source><volume>289</volume>: <fpage>185</fpage>&#x2013;<lpage>201</lpage><pub-id pub-id-type="pmid">10360319</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Vandenesch1">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Vandenesch</surname><given-names>F</given-names></name>, <name><surname>Naimi</surname><given-names>T</given-names></name>, <name><surname>Enright</surname><given-names>MC</given-names></name>, <name><surname>Lina</surname><given-names>G</given-names></name>, <name><surname>Nimmo</surname><given-names>GR</given-names></name>, <etal>et al</etal> (<year>2003</year>) <article-title>Community-acquired methicillin-resistant <italic>Staphylococcus aureus</italic> carrying Panton-Valentine leukocidin genes: worldwide emergence</article-title>. <source>Emerg Infect Dis</source><volume>9</volume>: <fpage>978</fpage>&#x2013;<lpage>984</lpage><pub-id pub-id-type="pmid">12967497</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-LabandeiraRey1">
+        <label>28</label>
+        <mixed-citation publication-type="journal"><name><surname>Labandeira-Rey</surname><given-names>M</given-names></name>, <name><surname>Couzon</surname><given-names>F</given-names></name>, <name><surname>Boisset</surname><given-names>S</given-names></name>, <name><surname>Brown</surname><given-names>EL</given-names></name>, <name><surname>Bes</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title><italic>Staphylococcus aureus</italic> Panton-Valentine leukocidin causes necrotizing pneumonia</article-title>. <source>Science</source><volume>315</volume>: <fpage>1130</fpage>&#x2013;<lpage>1133</lpage><pub-id pub-id-type="pmid">17234914</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Diep1">
+        <label>29</label>
+        <mixed-citation publication-type="journal"><name><surname>Diep</surname><given-names>BA</given-names></name>, <name><surname>Chan</surname><given-names>L</given-names></name>, <name><surname>Tattevin</surname><given-names>P</given-names></name>, <name><surname>Kajikawa</surname><given-names>O</given-names></name>, <name><surname>Martin</surname><given-names>TR</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Polymorphonuclear leukocytes mediate <italic>Staphylococcus aureus</italic> Panton-Valentine leukocidin-induced lung inflammation and injury</article-title>. <source>Proc Natl Acad Sci U S A</source><volume>107</volume>: <fpage>5587</fpage>&#x2013;<lpage>5592</lpage><pub-id pub-id-type="pmid">20231457</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Cremieux1">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>Cremieux</surname><given-names>AC</given-names></name>, <name><surname>Dumitrescu</surname><given-names>O</given-names></name>, <name><surname>Lina</surname><given-names>G</given-names></name>, <name><surname>Vallee</surname><given-names>C</given-names></name>, <name><surname>Cote</surname><given-names>JF</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Panton-valentine leukocidin enhances the severity of community-associated methicillin-resistant <italic>Staphylococcus aureus</italic> rabbit osteomyelitis</article-title>. <source>PLoS One</source><volume>4</volume>: <fpage>e7204</fpage><pub-id pub-id-type="pmid">19779608</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Kobayashi1">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>Kobayashi</surname><given-names>SD</given-names></name>, <name><surname>Malachowa</surname><given-names>N</given-names></name>, <name><surname>Whitney</surname><given-names>AR</given-names></name>, <name><surname>Braughton</surname><given-names>KR</given-names></name>, <name><surname>Gardner</surname><given-names>DJ</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Comparative analysis of USA300 virulence determinants in a rabbit model of skin and soft tissue infection</article-title>. <source>J Infect Dis</source><volume>204</volume>: <fpage>937</fpage>&#x2013;<lpage>941</lpage><pub-id pub-id-type="pmid">21849291</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Wang1">
+        <label>32</label>
+        <mixed-citation publication-type="journal"><name><surname>Wang</surname><given-names>R</given-names></name>, <name><surname>Braughton</surname><given-names>KR</given-names></name>, <name><surname>Kretschmer</surname><given-names>D</given-names></name>, <name><surname>Bach</surname><given-names>TH</given-names></name>, <name><surname>Queck</surname><given-names>SY</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>Identification of novel cytolytic peptides as key virulence determinants for community-associated MRSA</article-title>. <source>Nat Med</source><volume>13</volume>: <fpage>1510</fpage>&#x2013;<lpage>1514</lpage><pub-id pub-id-type="pmid">17994102</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Li3">
+        <label>33</label>
+        <mixed-citation publication-type="journal"><name><surname>Li</surname><given-names>M</given-names></name>, <name><surname>Diep</surname><given-names>BA</given-names></name>, <name><surname>Villaruz</surname><given-names>AE</given-names></name>, <name><surname>Braughton</surname><given-names>KR</given-names></name>, <name><surname>Jiang</surname><given-names>X</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Evolution of virulence in epidemic community-associated methicillin-resistant <italic>Staphylococcus aureus</italic></article-title>. <source>Proc Natl Acad Sci U S A</source><volume>106</volume>: <fpage>5883</fpage>&#x2013;<lpage>5888</lpage><pub-id pub-id-type="pmid">19293374</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-BubeckWardenburg1">
+        <label>34</label>
+        <mixed-citation publication-type="journal"><name><surname>Bubeck Wardenburg</surname><given-names>J</given-names></name>, <name><surname>Bae</surname><given-names>T</given-names></name>, <name><surname>Otto</surname><given-names>M</given-names></name>, <name><surname>DeLeo</surname><given-names>FR</given-names></name>, <name><surname>Schneewind</surname><given-names>O</given-names></name> (<year>2007</year>) <article-title>Poring over pores: alpha-hemolysin and Panton-Valentine leukocidin in <italic>Staphylococcus aureus</italic> pneumonia</article-title>. <source>Nat Med</source><volume>13</volume>: <fpage>1405</fpage>&#x2013;<lpage>1406</lpage><pub-id pub-id-type="pmid">18064027</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Peschel1">
+        <label>35</label>
+        <mixed-citation publication-type="journal"><name><surname>Peschel</surname><given-names>A</given-names></name>, <name><surname>Otto</surname><given-names>M</given-names></name> (<year>2013</year>) <article-title>Phenol-soluble modulins and staphylococcal infection</article-title>. <source>Nat Rev Microbiol</source><volume>11</volume>: <fpage>667</fpage>&#x2013;<lpage>673</lpage><pub-id pub-id-type="pmid">24018382</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Berube1">
+        <label>36</label>
+        <mixed-citation publication-type="journal"><name><surname>Berube</surname><given-names>BJ</given-names></name>, <name><surname>Bubeck Wardenburg</surname><given-names>J</given-names></name> (<year>2013</year>) <article-title><italic>Staphylococcus aureus</italic> alpha-toxin: nearly a century of intrigue</article-title>. <source>Toxins (Basel)</source><volume>5</volume>: <fpage>1140</fpage>&#x2013;<lpage>1166</lpage><pub-id pub-id-type="pmid">23888516</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-BoyleVavra1">
+        <label>37</label>
+        <mixed-citation publication-type="journal"><name><surname>Boyle-Vavra</surname><given-names>S</given-names></name>, <name><surname>Ereshefsky</surname><given-names>B</given-names></name>, <name><surname>Wang</surname><given-names>CC</given-names></name>, <name><surname>Daum</surname><given-names>RS</given-names></name> (<year>2005</year>) <article-title>Successful multiresistant community-associated methicillin-resistant <italic>Staphylococcus aureus</italic> lineage from Taipei, Taiwan, that carries either the novel Staphylococcal chromosome cassette mec (SCCmec) type VT or SCC<italic>mec</italic> type IV</article-title>. <source>J Clin Microbiol</source><volume>43</volume>: <fpage>4719</fpage>&#x2013;<lpage>4730</lpage><pub-id pub-id-type="pmid">16145133</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Hung1">
+        <label>38</label>
+        <mixed-citation publication-type="journal"><name><surname>Hung</surname><given-names>WC</given-names></name>, <name><surname>Takano</surname><given-names>T</given-names></name>, <name><surname>Higuchi</surname><given-names>W</given-names></name>, <name><surname>Iwao</surname><given-names>Y</given-names></name>, <name><surname>Khokhlova</surname><given-names>O</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Comparative genomics of community-acquired ST59 methicillin-resistant <italic>Staphylococcus aureus</italic> in Taiwan: novel mobile resistance structures with IS1216V</article-title>. <source>PLoS One</source><volume>7</volume>: <fpage>e46987</fpage><pub-id pub-id-type="pmid">23071689</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Guay1">
+        <label>39</label>
+        <mixed-citation publication-type="journal"><name><surname>Guay</surname><given-names>GG</given-names></name>, <name><surname>Rothstein</surname><given-names>DM</given-names></name> (<year>1993</year>) <article-title>Expression of the <italic>tetK</italic> gene from <italic>Staphylococcus aureus</italic> in Escherichia coli: comparison of substrate specificities of TetA(B), TetA(C), and TetK efflux proteins</article-title>. <source>Antimicrob Agents Chemother</source><volume>37</volume>: <fpage>191</fpage>&#x2013;<lpage>198</lpage><pub-id pub-id-type="pmid">8452348</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0089235-Schmitz1">
+        <label>40</label>
+        <mixed-citation publication-type="journal"><name><surname>Schmitz</surname><given-names>FJ</given-names></name>, <name><surname>Krey</surname><given-names>A</given-names></name>, <name><surname>Sadurski</surname><given-names>R</given-names></name>, <name><surname>Verhoef</surname><given-names>J</given-names></name>, <name><surname>Milatovic</surname><given-names>D</given-names></name>, <etal>et al</etal> (<year>2001</year>) <article-title>Resistance to tetracycline and distribution of tetracycline resistance genes in European <italic>Staphylococcus aureus</italic> isolates</article-title>. <source>J Antimicrob Chemother</source><volume>47</volume>: <fpage>239</fpage>&#x2013;<lpage>240</lpage><pub-id pub-id-type="pmid">11157916</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

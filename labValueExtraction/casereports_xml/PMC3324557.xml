@@ -1,0 +1,1053 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">22509408</article-id>
+      <article-id pub-id-type="pmc">3324557</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-11-05771</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0035339</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Regulatory Networks</subject>
+              <subject>Systems Biology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Prediction of Phenotype-Associated Genes via a Cellular Network Approach: A <italic>Candida albicans</italic> Infection Case Study</article-title>
+        <alt-title alt-title-type="running-head"><italic>C. albicans</italic> Phenotype-Associated Gene Prediction</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Yu-Chao</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Huang</surname>
+            <given-names>Shin-Hao</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lan</surname>
+            <given-names>Chung-Yu</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chen</surname>
+            <given-names>Bor-Sen</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Laboratory of Control and Systems Biology, Department of Electrical Engineering, National Tsing Hua University, Hsinchu, Taiwan</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Department of Life Science, National Tsing Hua University, Hsinchu, Taiwan</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Institute of Molecular and Cellular Biology, National Tsing Hua University, Hsinchu, Taiwan</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Csermely</surname>
+            <given-names>Peter</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">Semmelweis University, Hungary</aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>bschen@ee.nthu.edu.tw</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: YCW BSC. Performed the experiments: YCW SHH. Analyzed the data: YCW SHH CYL. Contributed reagents/materials/analysis tools: YCW BSC. Wrote the paper: YCW CYL BSC.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>11</day>
+        <month>4</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>7</volume>
+      <issue>4</issue>
+      <elocation-id>e35339</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>30</day>
+          <month>3</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>15</day>
+          <month>3</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Wang et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</copyright-statement>
+        <copyright-year>2012</copyright-year>
+      </permissions>
+      <abstract>
+        <p><italic>Candida albicans</italic> is the most prevalent opportunistic fungal pathogen in humans causing superficial and serious systemic infections. The infection process can be divided into three stages: adhesion, invasion, and host cell damage. To enhance our understanding of these <italic>C. albicans</italic> infection stages, this study aimed to predict phenotype-associated genes involved during these three infection stages and their roles in <italic>C. albicans</italic>&#x2013;host interactions. In light of the principles that proteins that lie closer to one another in a protein interaction network are more likely to have similar functions, and that genes regulated by the same transcription factors tend to have similar functions, a cellular network approach was proposed to predict the phenotype-associated genes in this study. A total of 4, 12, and 3 genes were predicted as adhesion-, invasion-, and damage-associated genes during <italic>C. albicans</italic> infection, respectively. These predicted genes highlight the facts that cell surface components are critical for cell adhesion, and that morphogenesis is crucial for cell invasion. In addition, they provide targets for further investigations into the mechanisms of the three <italic>C. albicans</italic> infection stages. These results give insights into the responses elicited in <italic>C. albicans</italic> during interaction with the host, possibly instrumental in identifying novel therapies to treat <italic>C. albicans</italic> infection.</p>
+      </abstract>
+      <counts>
+        <page-count count="7"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p><italic>Candida albicans</italic> is the most prevalent opportunistic fungal pathogen in humans. It can cause superficial infections in the oral and vaginal mucosa as well as life-threatening systemic infections <xref ref-type="bibr" rid="pone.0035339-Pfaller1">[1]</xref>. Because <italic>C. albicans</italic> is one of the leading causes of hospital-acquired bloodstream infections, a number of its virulence factors have been studied, including the ability to undergo morphogenesis and phenotypic switching, as well as the secretion of adhesins and hydrolytic enzymes <xref ref-type="bibr" rid="pone.0035339-Calderone1">[2]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0035339-Martin1">[4]</xref>. In addition, <italic>in vitro</italic> infection models have demonstrated that the infection process can be divided into three stages: adhesion, invasion, and damage <xref ref-type="bibr" rid="pone.0035339-Zakikhany1">[5]</xref>, <xref ref-type="bibr" rid="pone.0035339-Wachtler1">[6]</xref>. The initial stage of host-pathogen interaction is characterized by the physical attachment of <italic>C. albicans</italic> to host tissues. In the subsequent stage, <italic>C. albicans</italic> enters host cells by active penetration and induced endocytosis <xref ref-type="bibr" rid="pone.0035339-Dalle1">[7]</xref>, <xref ref-type="bibr" rid="pone.0035339-Zhu1">[8]</xref>, known as the invasion stage. The last stage is characterized by substantial cell damage and destruction of host tissues <xref ref-type="bibr" rid="pone.0035339-Zakikhany1">[5]</xref>. W&#xE4;chtler <italic>et al.</italic> used a systematic approach to examine the contribution of 26 selected genes and their mechanistic roles during the three infection stages <xref ref-type="bibr" rid="pone.0035339-Wachtler1">[6]</xref>. Using specific gene deletion mutants, W&#xE4;chtler <italic>et al.</italic> assessed the ability of each mutant to adhere to, invade, and cause damage in host cells. Although they successfully determined the extent of the contribution of each gene in the adhesion, invasion, and damage phenotypes during <italic>C. albicans</italic> infection, the construction of mutant strains is labor-intensive and time-consuming. Therefore, we aimed to predict phenotype-associated genes whose molecular functions may be responsible for the phenotypes of three infection stages in order to enhance our understanding of <italic>C. albicans</italic> infection.</p>
+      <p>The understanding of cells or organisms at the systems level has been a recurrent theme in the biological sciences <xref ref-type="bibr" rid="pone.0035339-Kitano1">[9]</xref>. Although the study of individual genes and proteins remains important, understanding the structure and dynamics of a biological system has become increasingly necessary. An organism is not simply an assembly of genes and proteins, but also the network properties and interconnectivity between genes and proteins, and these, in fact, facilitate the full functionality of a cell <xref ref-type="bibr" rid="pone.0035339-Barabasi1">[10]</xref>, <xref ref-type="bibr" rid="pone.0035339-EmmertStreib1">[11]</xref>. Therefore, key research approaches are using experimental, statistical, and mathematical modeling to investigate these biomolecular networks to discover the basic function of genes and essential mechanisms involved in various biological phenomena <xref ref-type="bibr" rid="pone.0035339-Joyce1">[12]</xref>. Many studies have deduced the functions of various proteins using protein-protein interaction (PPI) networks <xref ref-type="bibr" rid="pone.0035339-Vazquez1">[13]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0035339-Hu1">[15]</xref>. Nevertheless, the protein interaction data collected from published literature and databases include results obtained under different experimental conditions, which may be inappropriate for the characterization of <italic>C. albicans</italic>-host interaction during the infection process, specifically. Recently, we developed a mathematical scheme to construct gene regulatory and protein interaction networks based on the integration of omics data <xref ref-type="bibr" rid="pone.0035339-Wang1">[16]</xref>. The proposed method has been shown to be powerful and widely applicable, usable under different conditions and for different species. In this study, with the help of high-throughput omics data, network construction schemes were employed to construct the cellular networks, i.e., gene regulatory and protein interaction networks, involved in <italic>C. albicans</italic> infection and to predict the infection stage-associated genes in <italic>C. albicans</italic>.</p>
+      <p>The underlying principle of phenotype-associated gene prediction using cellular networks is that the proteins which lie closer to one another in a PPI network are more likely to have similar function <xref ref-type="bibr" rid="pone.0035339-Sharan1">[14]</xref>. Additionally, genes regulated by the same transcription factors (TFs) tend to have similar functions <xref ref-type="bibr" rid="pone.0035339-Lee1">[17]</xref>. Consequently, these concepts are integrated and utilized to predict phenotype-associated genes based on gene regulatory and protein interaction networks as shown in <xref ref-type="fig" rid="pone-0035339-g001">Figure 1</xref>. In this model, some experimentally validated genes whose mutation result in defective adhesion, invasion, and damage phenotypes were first collected. Then, the predicted phenotype-associated genes are regulated by similar TFs that have been found to regulate experimentally validated genes at the gene level, and encode proteins which interact with many experimentally validated proteins at the protein level. In this study, the phenotype-associated genes responsible for the adhesion, invasion, and damage stages of infection were determined and their roles in <italic>C. albicans</italic>-host interactions were further investigated. These results provide insights into the responses of <italic>C. albicans</italic> upon its interactions with the host, possibly facilitating the development of new strategies to prevent and control <italic>C. albicans</italic> infection.</p>
+      <fig id="pone-0035339-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0035339.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Schematic diagram for phenotype-associated gene prediction using cellular network approach.</title>
+          <p>In light of the constructed gene regulatory network and protein interaction network, the predicted phenotype-associated genes are regulated by similar TFs that regulate experimentally validated genes at the gene level, and encode proteins that interact with many experimentally validated proteins at the protein level. The phenotype-associated gene and protein predicted by the cellular network approach is filled with crossed lines in the diagram.</p>
+        </caption>
+        <graphic xlink:href="pone.0035339.g001"/>
+      </fig>
+    </sec>
+    <sec sec-type="methods" id="s2">
+      <title>Methods</title>
+      <sec id="s2a">
+        <title>Method Overview and Data Selection</title>
+        <p>The method used to predict <italic>C. albicans</italic> infection stage-associated genes using cellular networks can be divided into two steps. 1. Construct <italic>C. albicans</italic> gene regulatory and protein interaction networks during infection. 2. Identify the genes regulated by similar TFs that regulate experimentally validated genes at the gene level, and encode proteins that interact with many experimentally validated proteins at the protein level based on the constructed cellular networks (<xref ref-type="fig" rid="pone-0035339-g001">Figure 1</xref>).</p>
+        <p>For the first step of cellular network construction, <italic>C. albicans</italic> TF-gene regulatory associations, <italic>C. albicans</italic> protein-protein interactions, and gene expression profiles during infection were required. However, high-throughput screening such as PPI and ChIP-chip data for <italic>C. albicans</italic> is currently limited. According to the facts that <italic>C. albicans</italic> and <italic>Saccharomyces cerevisiae</italic>, the most well-studied eukaryotic model organism <xref ref-type="bibr" rid="pone.0035339-Jones1">[18]</xref>, <xref ref-type="bibr" rid="pone.0035339-Braun1">[19]</xref>, are closely related (both fall within the hemiascomycete group), and that the <italic>C. albicans</italic> genome sequence is now available, allowing for the identification of orthologs between these two species, potential TF-gene regulatory associations and PPIs in <italic>C. albicans</italic> were inferred from the corresponding information in <italic>S. cerevisiae</italic> using ortholog information <xref ref-type="bibr" rid="pone.0035339-Wang2">[20]</xref>. Regulatory associations between TFs and genes in <italic>S. cerevisiae</italic> were obtained from YEASTRACT database (<ext-link ext-link-type="uri" xlink:href="http://www.yeastract.com/">http://www.yeastract.com/</ext-link>) <xref ref-type="bibr" rid="pone.0035339-Teixeira1">[21]</xref>; protein-protein interaction data in <italic>S. cerevisiae</italic> were extracted from the Biological General Repository for Interaction Datasets (BioGRID) database (<ext-link ext-link-type="uri" xlink:href="http://thebiogrid.org/">http://thebiogrid.org/</ext-link>) <xref ref-type="bibr" rid="pone.0035339-Stark1">[22]</xref>; ortholog information between <italic>C. albicans</italic> and <italic>S. cerevisiae</italic> genes was acquired from the <italic>Candida</italic> Genome Database (CGD) (<ext-link ext-link-type="uri" xlink:href="http://www.candidagenome.org/">http://www.candidagenome.org/</ext-link>) <xref ref-type="bibr" rid="pone.0035339-Arnaud1">[23]</xref>. If there was a regulatory association between TF A and Gene B in <italic>S. cerevisiae</italic> and TF A and Gene B had orthologs in <italic>C. albicans</italic> (TF A&#x2019; and Gene B&#x2019;, respectively), we inferred that TF A&#x2019; potentially regulates Gene B&#x2019; in <italic>C. albicans</italic>, i.e., a potential TF-gene regulatory association exists between TF A&#x2019; and Gene B&#x2019; in <italic>C. albicans</italic>
+<xref ref-type="bibr" rid="pone.0035339-Wang2">[20]</xref>. Potential protein-protein interactions in <italic>C. albicans</italic> could be inferred in a similar way. The inferred TF-gene associations and the currently available ChIP-chip information for <italic>C. albicans</italic> from published literature <xref ref-type="bibr" rid="pone.0035339-Nobile1">[24]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0035339-Askew2">[38]</xref> could then be used for further analysis. In addition, genome-wide microarray data from Zakikhany <italic>et al.</italic>
+<xref ref-type="bibr" rid="pone.0035339-Zakikhany1">[5]</xref>, which profiled time-course gene expression during an experimental <italic>C. albicans</italic> infection in reconstructed human oral epithelium (RHE) over 24 hours (1, 3, 6, 12, 24 hours post-infection with two to five biological replicates), were used in this study. RHE is a three-dimensional organotypic epithelial model of human oral and vaginal mucosa developed by SkinEthic Laboratories (France). As this model expresses all natural major markers of the epithelial basement membrane and epithelial differentiation, and even possesses tissue repair mechanisms, it was utilized to mimic <italic>in vivo C. albicans</italic> infection <xref ref-type="bibr" rid="pone.0035339-Schaller1">[39]</xref>. For the second step of infection stage-associated gene prediction, mutant phenotype data from the CGD <xref ref-type="bibr" rid="pone.0035339-Arnaud1">[23]</xref> and published literature were employed to tally the experimentally validated genes involved in the adhesion, invasion, and damage stages of infection. Subsequently, three pools of infection stage-associated genes were created and used as the starting point for phenotype-associated gene prediction.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Cellular Network Construction</title>
+        <p>The strategy for cellular network construction is to build candidate networks based on TF-gene regulatory associations/PPIs under all possible experimental conditions as reported in the literature and databases, and then to refine the candidate networks for a specific condition with the help of microarray data <xref ref-type="bibr" rid="pone.0035339-Wang1">[16]</xref>. In light of all possible TF-gene regulatory associations/PPIs in <italic>S. cerevisiae</italic> and the ortholog information between <italic>C. albicans</italic> and <italic>S. cerevisiae</italic> genes, we can infer potential TF-gene regulatory associations/PPIs in <italic>C. albicans</italic>
+<xref ref-type="bibr" rid="pone.0035339-Wang2">[20]</xref>. Consequently, the candidate gene regulatory network of <italic>C. albicans</italic> can be easily constructed by linking TFs and genes with potential TF-gene regulatory associations. Similarly, the candidate <italic>C. albicans</italic> protein interaction network can be constructed by linking proteins that potentially interact with each other.</p>
+        <p>Since the candidate gene regulatory and protein interaction networks were constructed using data obtained from literature and various databases where experiments were performed under different conditions, they may not appropriately represent the specific cellular process of interest during <italic>C. albicans</italic> infection. Therefore, it would be indeed tempting to refine these candidate networks using microarray data of RHE infection with <italic>C. albicans</italic>. In this study, dynamic models were employed to describe the dynamic transcriptional regulations between TFs and their target genes in the candidate gene regulatory network as well as dynamic interactions between proteins in the candidate protein interaction network <xref ref-type="bibr" rid="pone.0035339-Wang1">[16]</xref> (see <xref ref-type="supplementary-material" rid="pone.0035339.s001">Text S1</xref> for details). With the help of time-course microarray data, the system parameter estimation method and the model selection measurement Akaike Information Criterion (AIC) were then used to detect significant regulations and interactions in the cellular networks for <italic>C. albicans</italic> infection <xref ref-type="bibr" rid="pone.0035339-Wang1">[16]</xref>, <xref ref-type="bibr" rid="pone.0035339-Johansson1">[40]</xref>, <xref ref-type="bibr" rid="pone.0035339-Akaike1">[41]</xref> (see <xref ref-type="supplementary-material" rid="pone.0035339.s001">Text S1</xref> for details). As a result, the candidate cellular networks were refined and the gene regulatory and protein interaction networks for <italic>C. albicans</italic> infection were constructed.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Infection Stage-associated Gene Prediction</title>
+        <p>In light of mutant phenotype information from the CGD <xref ref-type="bibr" rid="pone.0035339-Arnaud1">[23]</xref> and literature evidence, three pools of experimentally validated genes involved in the adhesion, invasion, and damage stages of infection were specified and used as the starting point for <italic>C. albicans</italic> infection stage-associated gene prediction. Based on the constructed gene regulatory and protein interaction networks in <italic>C. albicans</italic> infection and the experimentally validated genes within, we aimed to find the genes with similar TFs and interacting translated proteins as described previously (<xref ref-type="fig" rid="pone-0035339-g001">Figure 1</xref>).</p>
+        <p>For each infection stage-associated gene pool, we first identified the significant TFs which regulate these experimentally validated genes <xref ref-type="bibr" rid="pone.0035339-Wang2">[20]</xref> and then determined the potential infection stage-associated genes that are regulated by the significant TFs according to the constructed gene regulatory network. In this way, the potential infection stage-associated genes are regulated by similar TFs that regulate experimentally validated genes. For each TF in the constructed gene regulatory network, the quantity of regulations on the experimentally validated genes can be calculated and an empirical <italic>p</italic>-value can be computed to specify whether this TF significantly regulate those experimentally validated genes. If a TF regulates more experimentally validated genes in the constructed gene regulatory network, it is a more significant TF for the specific infection stage. To determine the empirical <italic>p</italic>-value for the observed quantity of regulations of a TF, a null distribution was generated by repeatedly permuting the network structure of the candidate gene regulatory network and computing the number of regulations on the experimentally validated genes for each random network structure. The network structure permutation was performed while keeping the network size constant, i.e., the target genes that a particular TF regulated were permuted without changing the total quantity of TF-gene regulatory associations of the network. The process was repeated 100,000 times and the empirical <italic>p</italic>-value for the observed quantity of regulations was estimated as the fraction of random network structures in which quantity of regulations on the experimentally validated genes of the specific TF was at least as large as the quantity of regulations in the real network structure <xref ref-type="bibr" rid="pone.0035339-Wang2">[20]</xref>. The quantities of regulations with <italic>p</italic>-value &#x2264; 0.05 were determined as significant and the corresponding TFs were identified as the significant TFs for particular infection stages. Following from the significant TFs for each infection stage, the potential infection stage-associated genes were also identified as the ones that are regulated by most of those significant TFs (<italic>p</italic>-value &#x2264; 0.05).</p>
+        <p>For the constructed protein interaction network for <italic>C. albicans</italic> infection, we then identified whether or not the translated proteins of potential infection stage-associated genes lie closer to those proteins that have been experimentally validated. With a similar approach to the permutation of gene regulatory network structure, empirical <italic>p</italic>-values of the quantities of interactions on the experimentally validated proteins were computed for each potential infection stage-associated protein. The proteins with <italic>p</italic>-value &#x2264; 0.05 were determined to interact with many experimentally validated proteins in the PPI network and the corresponding genes were predicted as infection stage-associated genes. Therefore, starting from experimentally validated genes associated with <italic>C. albicans</italic> infection stages we could predict more genes that may be involved in the mechanism responsible for the adhesion, invasion, and damage phenotypes.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Prediction of <italic>C. albicans</italic> Infection Stage-associated Genes</title>
+        <p>The phenotype-associated gene prediction method was applied to predict <italic>C. albicans</italic> infection-stage associated genes and to investigate <italic>C. albicans</italic>-host interactions in the infection process. Based on the microarray data from Zakikhany <italic>et al.</italic>
+<xref ref-type="bibr" rid="pone.0035339-Zakikhany1">[5]</xref> and some database information, the <italic>C. albicans</italic> gene regulatory and protein interaction networks during infection were constructed <xref ref-type="bibr" rid="pone.0035339-Wang1">[16]</xref>. In addition, based on the mutant phenotype information from the CGD and previous literature, three pools of experimentally validated genes, comprising of 55, 43, and 38 genes for the adhesion, invasion, and damage stages of infection respectively, were collected (<xref ref-type="fig" rid="pone-0035339-g002">Figure 2</xref> and <xref ref-type="supplementary-material" rid="pone.0035339.s002">Table S1</xref>). According to the constructed cellular networks and the experimentally validated gene pools, 4, 12, and 3 genes were predicted as adhesion-, invasion-, and damage-associated genes during <italic>C. albicans</italic> infection (<xref ref-type="fig" rid="pone-0035339-g003">Figure 3</xref>). These genes were further investigated to reveal the underlying mechanisms of <italic>C. albicans</italic>-host interactions in the infection process.</p>
+        <fig id="pone-0035339-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0035339.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Venn diagram indicating numbers of experimentally validated genes for the three <italic>C. albicans</italic> infection stages.</title>
+            <p>The diagram shows the numbers of overlapping and non-overlapping experimentally validated genes in each infection stage. There are 55, 43, and 38 genes in the adhesion, invasion, and damage stages of <italic>C. albicans</italic> infection, respectively. The complete lists of experimentally validated genes are shown in <xref ref-type="supplementary-material" rid="pone.0035339.s002">Table S1</xref>.</p>
+          </caption>
+          <graphic xlink:href="pone.0035339.g002"/>
+        </fig>
+        <fig id="pone-0035339-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0035339.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Predicted <italic>C. albicans</italic> infection stage-associated genes.</title>
+            <p>The figure demonstrates this study&#x2019;s predicted <italic>C. albicans</italic> infection stage-associated genes using a cellular network approach. The green, red, and blue circles indicate the adhesion, invasion, and damage stages of <italic>C. albicans</italic> infection, respectively. There are 4, 12, and 3 genes in each respective stage. The gene names are as listed in the CGD database.</p>
+          </caption>
+          <graphic xlink:href="pone.0035339.g003"/>
+        </fig>
+      </sec>
+      <sec id="s3b">
+        <title>Investigation of <italic>C. albicans</italic> Adhesion Stage-associated Genes</title>
+        <p>The initial contact of <italic>C. albicans</italic> to host tissues characterizes the first step of <italic>C. albicans</italic> infection. It is a critical step for the establishment of mucosal infection since physical contact to the host cells is sufficient to trigger <italic>C. albicans</italic> hyphal growth and biofilm development, facilitating invasion and damage of host cells <xref ref-type="bibr" rid="pone.0035339-Martin1">[4]</xref>, <xref ref-type="bibr" rid="pone.0035339-Kumamoto1">[42]</xref>. Adhesion is mediated by the interaction between the fungal cell wall and the surface of host cells. As the composition of <italic>C. albicans</italic> cell surface is continually changing, especially during the yeast-to-hyphal transition, adhesion is anticipated as a multi-factorial process <xref ref-type="bibr" rid="pone.0035339-Naglik1">[43]</xref>. Several proteins have been identified as involved in the adhesion process (<xref ref-type="supplementary-material" rid="pone.0035339.s002">Table S1</xref>). These include the agglutinin-like sequence (Als) family (e.g., Als3), hyphae-associated proteins (Hwp1), cell wall-associated proteins (Eap1, Ecm33, Mp65, Phr1), secreted proteins (Sap10), and some internal proteins (Rsr1, Big1) <xref ref-type="bibr" rid="pone.0035339-Martin1">[4]</xref>, <xref ref-type="bibr" rid="pone.0035339-Zhu1">[8]</xref>, <xref ref-type="bibr" rid="pone.0035339-Naglik1">[43]</xref>, <xref ref-type="bibr" rid="pone.0035339-Sudbery1">[44]</xref>. Although deletion of these genes results in decreased adhesion of <italic>C. albicans</italic> to host cells, the mechanisms by which these genes/proteins mediate adhesion are only partially understood. Further, it may be difficult to determine whether these genes/proteins mediate adhesion directly or indirectly, because many of them have complex functions.</p>
+        <p>In this study, four genes&#x2013;<italic>CHS2, orf19.5627</italic>, <italic>SCS7</italic>, and <italic>UBI4</italic>&#x2013;were predicted as adhesion stage-associated genes during <italic>C. albicans</italic> infection (<xref ref-type="fig" rid="pone-0035339-g003">Figure 3</xref>). <italic>CHS2</italic> encodes one of the four chitin synthases in <italic>C. albicans</italic>, which catalyze the synthesis of chitin. Chitin is an essential structural polysaccharide in the fungal cell wall that is required for cell shape and morphogenesis <xref ref-type="bibr" rid="pone.0035339-Selvaggini1">[45]</xref>. Since adhesion is mediated by the interaction between <italic>C. albicans</italic> cell wall and host cells, it is reasonable to speculate that the synthesis of cell wall components plays a role in adhesion process. In fact, it has been shown that inhibition of chitin synthase activity results in reduced adhesion of <italic>C. albicans</italic> to epithelial cells <xref ref-type="bibr" rid="pone.0035339-Gottlieb1">[46]</xref>. Therefore, mutation of <italic>CHS2</italic> may lead to impaired cell wall construction and thus influence <italic>C. albicans</italic> adhesion to host cells. In addition to chitin, other cell wall components may also affect <italic>C. albicans</italic> adhesion. Tsai <italic>et al.</italic> recently identified the human antimicrobial peptide LL-37, which reduces <italic>C. albicans</italic> infectivity by inhibiting adhesion <xref ref-type="bibr" rid="pone.0035339-Tsai1">[47]</xref>. It has been found that the inhibitory effects of LL-37 on cell adhesion are actualized through interacting with cell wall carbohydrates. Consequently, cell wall components may become potential therapeutic targets for the prevention of <italic>C. albicans</italic> colonization and infection. <italic>SCS7</italic> encodes a putative ceramide hydroxylase and is involved in sphingolipid biosynthesis <xref ref-type="bibr" rid="pone.0035339-Hameed1">[48]</xref>. Sphingolipids are a class of important membrane lipid components that have been shown to play critical roles in the regulation of several pathobiological processes <xref ref-type="bibr" rid="pone.0035339-Heung1">[49]</xref>. However, the roles of sphingolipids in fungal infections are not well characterized since the biological functions of fungal sphingolipids have been studied almost exclusively in nonpathogenic fungi such as <italic>S. cerevisiae</italic>
+<xref ref-type="bibr" rid="pone.0035339-Heung1">[49]</xref>. Although further studies are needed, it has been shown that disruption of sphingolipid synthesis reduces <italic>C. albicans</italic> adhesion <xref ref-type="bibr" rid="pone.0035339-Rouabhia1">[50]</xref>. Therefore, <italic>SCS7</italic> may also play some roles in cell adhesion. In addition, several studies have indicated that <italic>SCS7</italic> is down-regulated by iron deprivation <xref ref-type="bibr" rid="pone.0035339-Hameed1">[48]</xref>, <xref ref-type="bibr" rid="pone.0035339-Lan1">[51]</xref>. Consequently, iron deficiency may affect the remodeling of membrane lipids and sphingolipid homeostasis <xref ref-type="bibr" rid="pone.0035339-Hameed1">[48]</xref>, thereby having an impact on <italic>C. albicans</italic> infections. The <italic>UBI4</italic> gene encodes polyubiquitin, an ubiquitin precursor protein. Ubiquitination, the addition of ubiquitin to a protein substrate, is a fundamental regulatory post-translational modification event. With the combination of molecular, cellular, and proteomic approaches, Leach <italic>et al.</italic> suggested that ubiquitination contributes to the regulation of several key cellular processes in <italic>C. albicans</italic>, including cell cycle progression, morphogenesis, stress adaptation, and metabolic reprogramming <xref ref-type="bibr" rid="pone.0035339-Leach1">[52]</xref>. Further, it has also been shown that <italic>UBI4</italic> inactivation leads to attenuation in virulence of <italic>C. albicans</italic>
+<xref ref-type="bibr" rid="pone.0035339-Leach1">[52]</xref>, highlighting the importance of <italic>UBI4</italic> during <italic>C. albicans</italic> infection. Specifically, <italic>UBI4</italic> mutants displayed higher sensitivity to cell wall stress, such as anti-fungal drugs targeting chitin and glucan biosynthesis, indicating that ubiquitination influences cell wall remodeling <xref ref-type="bibr" rid="pone.0035339-Leach1">[52]</xref>. As a result, cell adhesion of <italic>C. albicans</italic> may be indirectly regulated by ubiquitination. <italic>orf19.5627</italic> is an uncharacterized gene of unknown function. Further research is needed to examine its relation with adhesion.</p>
+      </sec>
+      <sec id="s3c">
+        <title>Investigation of <italic>C. albicans</italic> Invasion Stage-associated Genes</title>
+        <p>During infection, <italic>C. albicans</italic> can utilize two distinct mechanisms to invade host cells: induced endocytosis and active penetration <xref ref-type="bibr" rid="pone.0035339-Martin1">[4]</xref>, <xref ref-type="bibr" rid="pone.0035339-Zhu1">[8]</xref>, <xref ref-type="bibr" rid="pone.0035339-Naglik1">[43]</xref>. Since yeast cells do not appear to induce their own uptake into host cells and apparently not penetrate into host cells <xref ref-type="bibr" rid="pone.0035339-Dalle1">[7]</xref>, it is evident that morphogenesis, or yeast-to-hyphal transition, is a critical attribute of <italic>C. albicans</italic> invasion. Induced endocytosis is the process by which a fungal invasin protein interacts with a host surface protein, triggering pseudopod formation and fungal engulfment into the host cell <xref ref-type="bibr" rid="pone.0035339-Naglik1">[43]</xref>. Two invasins, Als3 and Hsp70, have been identified in <italic>C. albicans</italic>
+<xref ref-type="bibr" rid="pone.0035339-Naglik1">[43]</xref>. The endocytosis process is a host actin-dependent as well as host-driven process, as killed fungal hyphae can be endocytosed <xref ref-type="bibr" rid="pone.0035339-Martin1">[4]</xref>, <xref ref-type="bibr" rid="pone.0035339-Dalle1">[7]</xref>. Unlike induced endocytosis, active penetration, the other mechanism responsible for <italic>C. albicans</italic> invasion, is fungal-driven and results in hyphal penetration either directly into host cells or at intercellular junctions <xref ref-type="bibr" rid="pone.0035339-Martin1">[4]</xref>, <xref ref-type="bibr" rid="pone.0035339-Naglik1">[43]</xref>. However, the process is not well studied, and the question of which particular fungal proteins contribute to the process is still unclear. Further, it should be noted that <italic>C. albicans</italic> invasion also depends on host cell type: while invasion into oral cells occurs via both mechanisms, invasion into intestinal cells occurs only via active penetration <xref ref-type="bibr" rid="pone.0035339-Dalle1">[7]</xref>.</p>
+        <p>A total of 12 genes were predicted as <italic>C. albicans</italic> invasion stage-associated genes in this study (<xref ref-type="fig" rid="pone-0035339-g003">Figure 3</xref>). <italic>CHS2</italic>, <italic>SCS7</italic>, and <italic>UBI4</italic> were predicted as both adhesion and invasion stage-associated genes (<italic>SCS7</italic> and <italic>UBI4</italic> were also identified as damage stage-associated genes). Mutation of <italic>CHS2</italic> has been found to have a profound effect on the chitin content of hyphal cells but not on yeast cells <xref ref-type="bibr" rid="pone.0035339-Gow1">[53]</xref>, indicating that <italic>CHS2</italic> may be involved in hyphal growth. In addition, the blockage of sphingolipid biosynthesis led to abnormal hyphal morphogenesis <xref ref-type="bibr" rid="pone.0035339-Martin2">[54]</xref> and ubiquitination was suggested to regulate morphogenesis in <italic>C. albicans</italic>
+<xref ref-type="bibr" rid="pone.0035339-Leach1">[52]</xref>. Since hyphal growth is crucial for <italic>C. albicans</italic> invasion, <italic>CHS2</italic>, <italic>SCS7</italic>, and <italic>UBI4</italic> may contribute to this process. <italic>CDC20</italic> encodes a protein that is required for the metaphase-to-anaphase transition and mitotic exit during the cell cycle. Depletion of Cdc20 in a mutant strain displaying resulted in highly polarized growth of yeast buds under yeast growth conditions but had no influence on serum-induced hyphal growth <xref ref-type="bibr" rid="pone.0035339-Chou1">[55]</xref>. Further studies are required to investigate the association between Cdc20-mediated cell cycle progression and cell invasion. <italic>HSL1</italic> encodes a protein kinase that has been shown to play a role in the suppression of cell elongation. <italic>HSL1</italic> knockout showed an elongated cell phenotype in both yeast- and hyphae-inducing media <xref ref-type="bibr" rid="pone.0035339-Umeyama1">[56]</xref>. We thus may speculate that mutation of <italic>HSL1</italic> would promote the cell invasion ability during infection due to enhanced hyphal growth. <italic>SMI1</italic> encodes a regulator of glucan synthesis. Mutation of <italic>SMI1</italic> affected biofilm matrix and cell wall &#x3B2;-1,3-glucan production <xref ref-type="bibr" rid="pone.0035339-Nett1">[57]</xref>, which further influenced biofilm-associated drug resistance mechanisms. Kitamura <italic>et al.</italic> have revealed that inhibitors of &#x3B2;-1,6-glucan reduce hyphal elongation during the <italic>C. albicans</italic> invasion process <xref ref-type="bibr" rid="pone.0035339-Kitamura1">[58]</xref>, suggesting a role of <italic>SMI1</italic> in <italic>C. albicans</italic> invasion. <italic>SSN6</italic> encodes a putative transcriptional regulator. Deletion of <italic>SSN6</italic> resulted in defective hyphal development while overexpression of <italic>SSN6</italic> led to enhanced filamentous growth <xref ref-type="bibr" rid="pone.0035339-Hwang1">[59]</xref>, indicating that Ssn6 regulates filamentous growth and thus may regulate cell invasion. <italic>GYP1</italic>, <italic>IRA2</italic>, <italic>MTO1</italic>, <italic>PHO23</italic>, and <italic>orf19.6883</italic> are all uncharacterized genes predicted as <italic>C. albicans</italic> invasion stage-associated genes in this study. Although their functions need to be further characterized, it is likely that they contribute to host cell invasion either directly or indirectly.</p>
+      </sec>
+      <sec id="s3d">
+        <title>Investigation of <italic>C. albicans</italic> Damage Stage-associated Genes</title>
+        <p>The last stage of <italic>C. albicans</italic> infection is characterized by substantial cell damage and destruction of host tissues. However, the mechanism by which <italic>C. albicans</italic> induces host cell damage is poorly understood. It was originally thought that host cell invasion would induce cell damage. Nevertheless, experiments have indicated that some <italic>C. albicans</italic> mutant strains with normal adhesion and endocytosis are unable to induce cell damage <xref ref-type="bibr" rid="pone.0035339-Wachtler1">[6]</xref>. Therefore, active penetration appears to be more essential for the induction of cell damage, yet the hypothesis remains to be validated experimentally. Numerous factors, such as hyphal formation and secreted lytic enzymes <xref ref-type="bibr" rid="pone.0035339-Zhu1">[8]</xref>, <xref ref-type="bibr" rid="pone.0035339-Naglik1">[43]</xref> have been suggested as contributors to host cell damage, but more than just these factors are likely required for tissue destruction. Other fungal factors required for cell damage are as yet unidentified.</p>
+        <p><italic>SSN6</italic>, <italic>SCS7</italic>, and <italic>UBI4</italic> were predicted as <italic>C. albicans</italic> damage stage-associated genes in this study (<xref ref-type="fig" rid="pone-0035339-g003">Figure 3</xref>). Since <italic>SSN6</italic> encodes a putative transcriptional regulator, it may affect cell damage indirectly by regulating damage-associated genes. <italic>SCS7</italic> and <italic>UBI4</italic> were identified as genes associated with adhesion, invasion, and damage. Although there is no clear evidence indicating how sphingolipid biosynthesis and ubiquitination induce host cell damage during <italic>C. albicans</italic> infection, these two cellular processes are worth further investigation.</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p><italic>Candida albicans</italic> infection has emerged as significant cause of mortality in humans. Although several attributes have been associated with <italic>C. albicans</italic> pathogenesis and <italic>C. albicans</italic> infection has been recognized as a complex process, understanding of the underlying molecular mechanisms remains relatively limited. Due to the complexity of the host-pathogen interaction, systems biology approaches are more suitable for investigating the infection process. Unlike traditional biological research, which has intensely focused on individual components (genes/proteins) involved in biological processes, systems biology addresses biological phenomena from the systems perspective <xref ref-type="bibr" rid="pone.0035339-Rizzetto1">[60]</xref>, <xref ref-type="bibr" rid="pone.0035339-Aderem1">[61]</xref>. By integration of high-throughput omics data, mathematical models can be constructed to describe the interactions between the biological components of a complex system. Through model development and system analysis, critical components of a system, such as the complex host-pathogen system, can be discovered. We previously developed a network comparison framework and identified 23 potential transcription factors controlling <italic>C. albicans</italic> biofilm formation <xref ref-type="bibr" rid="pone.0035339-Wang2">[20]</xref>. Further experiments have shown that mutations in some identified genes result in alteration of biofilm formation (unpublished data), validating the proposed systems biology method. In this study, in light of the principles that the proteins that lie closer to one another in the PPI network are more likely to have similar functions, and that genes regulated by the same transcription factors tend to have similar functions, a cellular network approach was proposed to predict phenotype-associated genes that are responsible for the three infection stages. A total of 4, 12, and 3 genes were predicted as adhesion-, invasion-, and damage-associated genes during <italic>C. albicans</italic> infection. Based on the results, we found that the predicted adhesion stage-associated genes all contribute to the regulation or synthesis of cell surface components. Consequently, we concluded that the cell surface components and their related proteins play pivotal roles in cell adhesion. In fact, the targets of existing antifungal agents are mainly located on the cell surface <xref ref-type="bibr" rid="pone.0035339-Odds1">[62]</xref>. Therefore, the newly predicted genes may become promising therapeutic candidates or provide guidance for the discovery of novel therapies. In addition, based on the predicted invasion stage-associated genes, morphogenesis emerged as a critical feature for cell invasion. All predicted genes are associated with morphogenesis directly or indirectly. Although morphogenesis is not necessarily a pathogenicity determinant, it is definitely a key characteristic of host cell invasion. Therefore, pathways that transduce hyphae-inducing signals and regulate downstream transcription factors may be potential candidates for characterizing cell invasion mechanisms and targeted inhibition of the yeast-to-hyphal transition may be attractive options for controlling <italic>C. albicans</italic> infection <xref ref-type="bibr" rid="pone.0035339-Jacobsen1">[63]</xref>. Unlike the adhesion and invasion processes, where mechanisms are partially understood, little is known about the damage mechanism during <italic>C. albicans</italic> infection. If more genes can be experimentally characterized, more damage stage-associated genes could be predicted. Consequently, we might be able to better infer the damage mechanism during <italic>C. albicans</italic> infection.</p>
+      <p>Although there are distinctive characteristics for the three stages of <italic>C. albicans</italic> infection, these processes are not necessarily mutually exclusive and are likely to involve significant overlap in function <xref ref-type="bibr" rid="pone.0035339-Naglik1">[43]</xref>. Based on the experimentally validated and predicted genes examined in this study (<xref ref-type="fig" rid="pone-0035339-g002">Figure 2</xref>, <xref ref-type="fig" rid="pone-0035339-g003">Figure 3</xref>, and <xref ref-type="supplementary-material" rid="pone.0035339.s002">Table S1</xref>), we also found that several genes contribute to more than one stage of <italic>C. albicans</italic> infection. A previous study has indicated that the core elements of the cAMP-PKA pathway are required for all stages of infection <xref ref-type="bibr" rid="pone.0035339-Wachtler1">[6]</xref>. We further speculate that <italic>SCS7</italic> and <italic>UBI4</italic> may be involved in the cAMP-PKA pathway as well since they are predicted to be important in all three stages according to our results. On the other hand, some genes were predicted or verified as stage-specific genes, i.e., they only contribute to one stage of <italic>C. albicans</italic> infection. These stage-specific genes can be used to identify factors specifically involved in a certain infection stage. Using the cellular network approach to predict phenotype-associated genes is not only useful for the investigation of <italic>C. albicans</italic> infection, it can also be employed under different experimental conditions and in different organisms, if the required data are available and provided. While our approach has been shown to be useful, some improvements can be made. An apparent limitation is that some data may be acquired from other organisms different from the organism of interest. In this study, due to a lack of sufficient information in <italic>C. albicans</italic> protein-protein interactions, such information was completely inferred from the model organism <italic>S</italic>. <italic>cerevisiae</italic> with the help of ortholog mapping data. Comparative genomics to <italic>S. cerevisiae</italic> provides an alternative way to infer potential protein-protein interactions in <italic>C. albicans</italic>. However, using information derived from <italic>S</italic>. <italic>cerevisiae</italic> may lead to misinterpretation. Recently, many studies have focused on the development of protein-protein interaction assay tools in <italic>C. albicans</italic>. For instance, Boysen <italic>et al.</italic> developed a vesicle targeting method to detect PPIs in <italic>C. albicans</italic>
+<xref ref-type="bibr" rid="pone.0035339-Boysen1">[64]</xref>. Stynen <italic>et al.</italic> constructed a functional <italic>C. albicans</italic> two-hybrid system <xref ref-type="bibr" rid="pone.0035339-Stynen1">[65]</xref>. With these tools developed, we can expect protein-protein interactions to be massively screened in the near future. Once reliable information regarding <italic>C. albicans</italic> protein-protein interactions becomes available, more accurate cellular networks can be constructed, more significant phenotype-associated genes can be predicted, and so mechanisms of the three <italic>C. albicans</italic> infection stages can be further investigated. This study has emphasized more heavily the pathogen aspect in the host-pathogen interactions during <italic>C. albicans</italic> infection. However, to better comprehend the interactions between the pathogen and the host, it is essential to understand the host defense processes combating the pathogen, especially immune responses. Consequently, if the defensive and invasive mechanisms of such host-pathogen interactions could be elucidated simultaneously, that comprehensive knowledge would be instrumental in the identification of novel therapies to treat <italic>C. albicans</italic> infection.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0035339.s001">
+        <label>Text S1</label>
+        <caption>
+          <p>
+            <bold>Details of cellular network construction.</bold>
+          </p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0035339.s001.pdf" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0035339.s002">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>Experimentally validated genes for the three </bold>
+            <bold>
+              <italic>C. albicans</italic>
+            </bold>
+            <bold> infection stages.</bold>
+          </p>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0035339.s002.pdf" mimetype="application" mime-subtype="pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding: </bold>The work was supported by the National Science Council of Taiwan under grants NSC 99-2745-E-007-001-ASP, NSC 100-2745-E-007-001-ASP (to BSC) and NSC 100-2627-B-007-002 (to CYL). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0035339-Pfaller1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pfaller</surname><given-names>MA</given-names></name><name><surname>Diekema</surname><given-names>DJ</given-names></name></person-group>
+<year>2007</year>
+<article-title>Epidemiology of invasive candidiasis: a persistent public health problem.</article-title>
+<source>Clin Microbiol Rev</source>
+<volume>20</volume>
+<fpage>133</fpage>
+<lpage>163</lpage>
+<pub-id pub-id-type="pmid">17223626</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Calderone1">
+        <label>2</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Calderone</surname><given-names>RA</given-names></name><name><surname>Fonzi</surname><given-names>WA</given-names></name></person-group>
+<year>2001</year>
+<article-title>Virulence factors of Candida albicans.</article-title>
+<source>Trends Microbiol</source>
+<volume>9</volume>
+<fpage>327</fpage>
+<lpage>335</lpage>
+<pub-id pub-id-type="pmid">11435107</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-KarkowskaKuleta1">
+        <label>3</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Karkowska-Kuleta</surname><given-names>J</given-names></name><name><surname>Rapala-Kozik</surname><given-names>M</given-names></name><name><surname>Kozik</surname><given-names>A</given-names></name></person-group>
+<year>2009</year>
+<article-title>Fungi pathogenic to humans: molecular bases of virulence of Candida albicans, Cryptococcus neoformans and Aspergillus fumigatus.</article-title>
+<source>Acta Biochim Pol</source>
+<volume>56</volume>
+<fpage>211</fpage>
+<lpage>224</lpage>
+<pub-id pub-id-type="pmid">19543556</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Martin1">
+        <label>4</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Martin</surname><given-names>R</given-names></name><name><surname>Wachtler</surname><given-names>B</given-names></name><name><surname>Schaller</surname><given-names>M</given-names></name><name><surname>Wilson</surname><given-names>D</given-names></name><name><surname>Hube</surname><given-names>B</given-names></name></person-group>
+<year>2011</year>
+<article-title>Host-pathogen interactions and virulence-associated genes during Candida albicans oral infections.</article-title>
+<source>Int J Med Microbiol</source>
+<volume>301</volume>
+<fpage>417</fpage>
+<lpage>422</lpage>
+<pub-id pub-id-type="pmid">21555244</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Zakikhany1">
+        <label>5</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zakikhany</surname><given-names>K</given-names></name><name><surname>Naglik</surname><given-names>JR</given-names></name><name><surname>Schmidt-Westhausen</surname><given-names>A</given-names></name><name><surname>Holland</surname><given-names>G</given-names></name><name><surname>Schaller</surname><given-names>M</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>In vivo transcript profiling of Candida albicans identifies a gene essential for interepithelial dissemination.</article-title>
+<source>Cell Microbiol</source>
+<volume>9</volume>
+<fpage>2938</fpage>
+<lpage>2954</lpage>
+<pub-id pub-id-type="pmid">17645752</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Wachtler1">
+        <label>6</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wachtler</surname><given-names>B</given-names></name><name><surname>Wilson</surname><given-names>D</given-names></name><name><surname>Haedicke</surname><given-names>K</given-names></name><name><surname>Dalle</surname><given-names>F</given-names></name><name><surname>Hube</surname><given-names>B</given-names></name></person-group>
+<year>2011</year>
+<article-title>From attachment to damage: defined genes of Candida albicans mediate adhesion, invasion and damage during interaction with oral epithelial cells.</article-title>
+<source>PLoS One</source>
+<volume>6</volume>
+<fpage>e17046</fpage>
+<pub-id pub-id-type="pmid">21407800</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Dalle1">
+        <label>7</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dalle</surname><given-names>F</given-names></name><name><surname>Wachtler</surname><given-names>B</given-names></name><name><surname>L'Ollivier</surname><given-names>C</given-names></name><name><surname>Holland</surname><given-names>G</given-names></name><name><surname>Bannert</surname><given-names>N</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>Cellular interactions of Candida albicans with human oral epithelial cells and enterocytes.</article-title>
+<source>Cell Microbiol</source>
+<volume>12</volume>
+<fpage>248</fpage>
+<lpage>271</lpage>
+<pub-id pub-id-type="pmid">19863559</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Zhu1">
+        <label>8</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhu</surname><given-names>W</given-names></name><name><surname>Filler</surname><given-names>SG</given-names></name></person-group>
+<year>2010</year>
+<article-title>Interactions of Candida albicans with epithelial cells.</article-title>
+<source>Cell Microbiol</source>
+<volume>12</volume>
+<fpage>273</fpage>
+<lpage>282</lpage>
+<pub-id pub-id-type="pmid">19919567</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Kitano1">
+        <label>9</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kitano</surname><given-names>H</given-names></name></person-group>
+<year>2001</year>
+<article-title>Foundations of systems biology. Cambridge, Mass.: MIT Press.</article-title>
+<volume>xv</volume>
+<fpage>297</fpage>
+</element-citation>
+      </ref>
+      <ref id="pone.0035339-Barabasi1">
+        <label>10</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Barabasi</surname><given-names>AL</given-names></name><name><surname>Oltvai</surname><given-names>ZN</given-names></name></person-group>
+<year>2004</year>
+<article-title>Network biology: understanding the cell&#x2019;s functional organization.</article-title>
+<source>Nat Rev Genet</source>
+<volume>5</volume>
+<fpage>101</fpage>
+<lpage>113</lpage>
+<pub-id pub-id-type="pmid">14735121</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-EmmertStreib1">
+        <label>11</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Emmert-Streib</surname><given-names>F</given-names></name><name><surname>Glazko</surname><given-names>GV</given-names></name></person-group>
+<year>2011</year>
+<article-title>Network biology: a direct approach to study biological function.</article-title>
+<source>Wiley Interdiscip Rev Syst Biol Med</source>
+<volume>3</volume>
+<fpage>379</fpage>
+<lpage>391</lpage>
+<pub-id pub-id-type="pmid">21197659</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Joyce1">
+        <label>12</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Joyce</surname><given-names>AR</given-names></name><name><surname>Palsson</surname><given-names>BO</given-names></name></person-group>
+<year>2006</year>
+<article-title>The model organism as a system: integrating &#x2018;omics&#x2019; data sets.</article-title>
+<source>Nat Rev Mol Cell Biol</source>
+<volume>7</volume>
+<fpage>198</fpage>
+<lpage>210</lpage>
+<pub-id pub-id-type="pmid">16496022</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Vazquez1">
+        <label>13</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Vazquez</surname><given-names>A</given-names></name><name><surname>Flammini</surname><given-names>A</given-names></name><name><surname>Maritan</surname><given-names>A</given-names></name><name><surname>Vespignani</surname><given-names>A</given-names></name></person-group>
+<year>2003</year>
+<article-title>Global protein function prediction from protein-protein interaction networks.</article-title>
+<source>Nat Biotechnol</source>
+<volume>21</volume>
+<fpage>697</fpage>
+<lpage>700</lpage>
+<pub-id pub-id-type="pmid">12740586</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Sharan1">
+        <label>14</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sharan</surname><given-names>R</given-names></name><name><surname>Ulitsky</surname><given-names>I</given-names></name><name><surname>Shamir</surname><given-names>R</given-names></name></person-group>
+<year>2007</year>
+<article-title>Network-based prediction of protein function.</article-title>
+<source>Mol Syst Biol</source>
+<volume>3</volume>
+<fpage>88</fpage>
+<pub-id pub-id-type="pmid">17353930</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Hu1">
+        <label>15</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hu</surname><given-names>L</given-names></name><name><surname>Huang</surname><given-names>T</given-names></name><name><surname>Liu</surname><given-names>XJ</given-names></name><name><surname>Cai</surname><given-names>YD</given-names></name></person-group>
+<year>2011</year>
+<article-title>Predicting protein phenotypes based on protein-protein interaction network.</article-title>
+<source>PLoS One</source>
+<volume>6</volume>
+<fpage>e17668</fpage>
+<pub-id pub-id-type="pmid">21423698</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Wang1">
+        <label>16</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wang</surname><given-names>YC</given-names></name><name><surname>Chen</surname><given-names>BS</given-names></name></person-group>
+<year>2010</year>
+<article-title>Integrated cellular network of transcription regulations and protein-protein interactions.</article-title>
+<source>BMC Syst Biol</source>
+<volume>4</volume>
+<fpage>20</fpage>
+<pub-id pub-id-type="pmid">20211003</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Lee1">
+        <label>17</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lee</surname><given-names>TI</given-names></name><name><surname>Rinaldi</surname><given-names>NJ</given-names></name><name><surname>Robert</surname><given-names>F</given-names></name><name><surname>Odom</surname><given-names>DT</given-names></name><name><surname>Bar-Joseph</surname><given-names>Z</given-names></name><etal/></person-group>
+<year>2002</year>
+<article-title>Transcriptional regulatory networks in Saccharomyces cerevisiae.</article-title>
+<source>Science</source>
+<volume>298</volume>
+<fpage>799</fpage>
+<lpage>804</lpage>
+<pub-id pub-id-type="pmid">12399584</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Jones1">
+        <label>18</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jones</surname><given-names>T</given-names></name><name><surname>Federspiel</surname><given-names>NA</given-names></name><name><surname>Chibana</surname><given-names>H</given-names></name><name><surname>Dungan</surname><given-names>J</given-names></name><name><surname>Kalman</surname><given-names>S</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>The diploid genome sequence of Candida albicans.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>101</volume>
+<fpage>7329</fpage>
+<lpage>7334</lpage>
+<pub-id pub-id-type="pmid">15123810</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Braun1">
+        <label>19</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Braun</surname><given-names>BR</given-names></name><name><surname>van Het Hoog</surname><given-names>M</given-names></name><name><surname>d'Enfert</surname><given-names>C</given-names></name><name><surname>Martchenko</surname><given-names>M</given-names></name><name><surname>Dungan</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>A human-curated annotation of the Candida albicans genome.</article-title>
+<source>PLoS Genet</source>
+<volume>1</volume>
+<fpage>36</fpage>
+<lpage>57</lpage>
+<pub-id pub-id-type="pmid">16103911</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Wang2">
+        <label>20</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wang</surname><given-names>YC</given-names></name><name><surname>Lan</surname><given-names>CY</given-names></name><name><surname>Hsieh</surname><given-names>WP</given-names></name><name><surname>Murillo</surname><given-names>LA</given-names></name><name><surname>Agabian</surname><given-names>N</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>Global screening of potential Candida albicans biofilm-related transcription factors via network comparison.</article-title>
+<source>BMC Bioinformatics</source>
+<volume>11</volume>
+<fpage>53</fpage>
+<pub-id pub-id-type="pmid">20102611</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Teixeira1">
+        <label>21</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Teixeira</surname><given-names>MC</given-names></name><name><surname>Monteiro</surname><given-names>P</given-names></name><name><surname>Jain</surname><given-names>P</given-names></name><name><surname>Tenreiro</surname><given-names>S</given-names></name><name><surname>Fernandes</surname><given-names>AR</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>The YEASTRACT database: a tool for the analysis of transcription regulatory associations in Saccharomyces cerevisiae.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>34</volume>
+<fpage>D446</fpage>
+<lpage>451</lpage>
+<pub-id pub-id-type="pmid">16381908</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Stark1">
+        <label>22</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stark</surname><given-names>C</given-names></name><name><surname>Breitkreutz</surname><given-names>BJ</given-names></name><name><surname>Reguly</surname><given-names>T</given-names></name><name><surname>Boucher</surname><given-names>L</given-names></name><name><surname>Breitkreutz</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>BioGRID: a general repository for interaction datasets.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>34</volume>
+<fpage>D535</fpage>
+<lpage>539</lpage>
+<pub-id pub-id-type="pmid">16381927</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Arnaud1">
+        <label>23</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Arnaud</surname><given-names>MB</given-names></name><name><surname>Costanzo</surname><given-names>MC</given-names></name><name><surname>Skrzypek</surname><given-names>MS</given-names></name><name><surname>Shah</surname><given-names>P</given-names></name><name><surname>Binkley</surname><given-names>G</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Sequence resources at the Candida Genome Database.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>35</volume>
+<fpage>D452</fpage>
+<lpage>456</lpage>
+<pub-id pub-id-type="pmid">17090582</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Nobile1">
+        <label>24</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nobile</surname><given-names>CJ</given-names></name><name><surname>Nett</surname><given-names>JE</given-names></name><name><surname>Hernday</surname><given-names>AD</given-names></name><name><surname>Homann</surname><given-names>OR</given-names></name><name><surname>Deneault</surname><given-names>JS</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Biofilm matrix regulation by Candida albicans Zap1.</article-title>
+<source>PLoS Biol</source>
+<volume>7</volume>
+<fpage>e1000133</fpage>
+<pub-id pub-id-type="pmid">19529758</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Borneman1">
+        <label>25</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Borneman</surname><given-names>AR</given-names></name><name><surname>Gianoulis</surname><given-names>TA</given-names></name><name><surname>Zhang</surname><given-names>ZD</given-names></name><name><surname>Yu</surname><given-names>H</given-names></name><name><surname>Rozowsky</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Divergence of transcription factor binding sites across related yeast species.</article-title>
+<source>Science</source>
+<volume>317</volume>
+<fpage>815</fpage>
+<lpage>819</lpage>
+<pub-id pub-id-type="pmid">17690298</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Tuch1">
+        <label>26</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tuch</surname><given-names>BB</given-names></name><name><surname>Galgoczy</surname><given-names>DJ</given-names></name><name><surname>Hernday</surname><given-names>AD</given-names></name><name><surname>Li</surname><given-names>H</given-names></name><name><surname>Johnson</surname><given-names>AD</given-names></name></person-group>
+<year>2008</year>
+<article-title>The evolution of combinatorial gene regulation in fungi.</article-title>
+<source>PLoS Biol</source>
+<volume>6</volume>
+<fpage>e38</fpage>
+<pub-id pub-id-type="pmid">18303948</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Lavoie1">
+        <label>27</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lavoie</surname><given-names>H</given-names></name><name><surname>Hogues</surname><given-names>H</given-names></name><name><surname>Mallick</surname><given-names>J</given-names></name><name><surname>Sellam</surname><given-names>A</given-names></name><name><surname>Nantel</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>Evolutionary tinkering with conserved components of a transcriptional regulatory network.</article-title>
+<source>PLoS Biol</source>
+<volume>8</volume>
+<fpage>e1000329</fpage>
+<pub-id pub-id-type="pmid">20231876</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Liu1">
+        <label>28</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Liu</surname><given-names>TT</given-names></name><name><surname>Znaidi</surname><given-names>S</given-names></name><name><surname>Barker</surname><given-names>KS</given-names></name><name><surname>Xu</surname><given-names>L</given-names></name><name><surname>Homayouni</surname><given-names>R</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Genome-wide expression and location analyses of the Candida albicans Tac1p regulon.</article-title>
+<source>Eukaryot Cell</source>
+<volume>6</volume>
+<fpage>2122</fpage>
+<lpage>2138</lpage>
+<pub-id pub-id-type="pmid">17905926</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Znaidi1">
+        <label>29</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Znaidi</surname><given-names>S</given-names></name><name><surname>Weber</surname><given-names>S</given-names></name><name><surname>Al-Abdin</surname><given-names>OZ</given-names></name><name><surname>Bomme</surname><given-names>P</given-names></name><name><surname>Saidane</surname><given-names>S</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>Genomewide location analysis of Candida albicans Upc2p, a regulator of sterol metabolism and azole drug resistance.</article-title>
+<source>Eukaryot Cell</source>
+<volume>7</volume>
+<fpage>836</fpage>
+<lpage>847</lpage>
+<pub-id pub-id-type="pmid">18390649</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Sellam1">
+        <label>30</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sellam</surname><given-names>A</given-names></name><name><surname>Askew</surname><given-names>C</given-names></name><name><surname>Epp</surname><given-names>E</given-names></name><name><surname>Lavoie</surname><given-names>H</given-names></name><name><surname>Whiteway</surname><given-names>M</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Genome-wide mapping of the coactivator Ada2p yields insight into the functional roles of SAGA/ADA complex in Candida albicans.</article-title>
+<source>Mol Biol Cell</source>
+<volume>20</volume>
+<fpage>2389</fpage>
+<lpage>2400</lpage>
+<pub-id pub-id-type="pmid">19279142</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Znaidi2">
+        <label>31</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Znaidi</surname><given-names>S</given-names></name><name><surname>Barker</surname><given-names>KS</given-names></name><name><surname>Weber</surname><given-names>S</given-names></name><name><surname>Alarco</surname><given-names>AM</given-names></name><name><surname>Liu</surname><given-names>TT</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Identification of the Candida albicans Cap1p regulon.</article-title>
+<source>Eukaryot Cell</source>
+<volume>8</volume>
+<fpage>806</fpage>
+<lpage>820</lpage>
+<pub-id pub-id-type="pmid">19395663</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Zordan1">
+        <label>32</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zordan</surname><given-names>RE</given-names></name><name><surname>Miller</surname><given-names>MG</given-names></name><name><surname>Galgoczy</surname><given-names>DJ</given-names></name><name><surname>Tuch</surname><given-names>BB</given-names></name><name><surname>Johnson</surname><given-names>AD</given-names></name></person-group>
+<year>2007</year>
+<article-title>Interlocking transcriptional feedback loops control white-opaque switching in Candida albicans.</article-title>
+<source>PLoS Biol</source>
+<volume>5</volume>
+<fpage>e256</fpage>
+<pub-id pub-id-type="pmid">17880264</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Chen1">
+        <label>33</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chen</surname><given-names>C</given-names></name><name><surname>Pande</surname><given-names>K</given-names></name><name><surname>French</surname><given-names>SD</given-names></name><name><surname>Tuch</surname><given-names>BB</given-names></name><name><surname>Noble</surname><given-names>SM</given-names></name></person-group>
+<year>2011</year>
+<article-title>An iron homeostasis regulatory circuit with reciprocal roles in Candida albicans commensalism and pathogenesis.</article-title>
+<source>Cell Host Microbe</source>
+<volume>10</volume>
+<fpage>118</fpage>
+<lpage>135</lpage>
+<pub-id pub-id-type="pmid">21843869</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Schubert1">
+        <label>34</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schubert</surname><given-names>S</given-names></name><name><surname>Barker</surname><given-names>KS</given-names></name><name><surname>Znaidi</surname><given-names>S</given-names></name><name><surname>Schneider</surname><given-names>S</given-names></name><name><surname>Dierolf</surname><given-names>F</given-names></name><etal/></person-group>
+<year>2011</year>
+<article-title>Regulation of efflux pump expression and drug resistance by the transcription factors Mrr1, Upc2, and Cap1 in Candida albicans.</article-title>
+<source>Antimicrob Agents Chemother</source>
+<volume>55</volume>
+<fpage>2212</fpage>
+<lpage>2223</lpage>
+<pub-id pub-id-type="pmid">21402859</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Sellam2">
+        <label>35</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sellam</surname><given-names>A</given-names></name><name><surname>Tebbji</surname><given-names>F</given-names></name><name><surname>Nantel</surname><given-names>A</given-names></name></person-group>
+<year>2009</year>
+<article-title>Role of Ndt80p in sterol metabolism regulation and azole resistance in Candida albicans.</article-title>
+<source>Eukaryot Cell</source>
+<volume>8</volume>
+<fpage>1174</fpage>
+<lpage>1183</lpage>
+<pub-id pub-id-type="pmid">19542309</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Hogues1">
+        <label>36</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hogues</surname><given-names>H</given-names></name><name><surname>Lavoie</surname><given-names>H</given-names></name><name><surname>Sellam</surname><given-names>A</given-names></name><name><surname>Mangos</surname><given-names>M</given-names></name><name><surname>Roemer</surname><given-names>T</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>Transcription factor substitution during the evolution of fungal ribosome regulation.</article-title>
+<source>Mol Cell</source>
+<volume>29</volume>
+<fpage>552</fpage>
+<lpage>562</lpage>
+<pub-id pub-id-type="pmid">18342603</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Askew1">
+        <label>37</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Askew</surname><given-names>C</given-names></name><name><surname>Sellam</surname><given-names>A</given-names></name><name><surname>Epp</surname><given-names>E</given-names></name><name><surname>Mallick</surname><given-names>J</given-names></name><name><surname>Hogues</surname><given-names>H</given-names></name><etal/></person-group>
+<year>2011</year>
+<article-title>The zinc cluster transcription factor Ahr1p directs Mcm1p regulation of Candida albicans adhesion.</article-title>
+<source>Mol Microbiol</source>
+<volume>79</volume>
+<fpage>940</fpage>
+<lpage>953</lpage>
+<pub-id pub-id-type="pmid">21299649</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Askew2">
+        <label>38</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Askew</surname><given-names>C</given-names></name><name><surname>Sellam</surname><given-names>A</given-names></name><name><surname>Epp</surname><given-names>E</given-names></name><name><surname>Hogues</surname><given-names>H</given-names></name><name><surname>Mullick</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Transcriptional regulation of carbohydrate metabolism in the human pathogen Candida albicans.</article-title>
+<source>PLoS Pathog</source>
+<volume>5</volume>
+<fpage>e1000612</fpage>
+<pub-id pub-id-type="pmid">19816560</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Schaller1">
+        <label>39</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schaller</surname><given-names>M</given-names></name><name><surname>Zakikhany</surname><given-names>K</given-names></name><name><surname>Naglik</surname><given-names>JR</given-names></name><name><surname>Weindl</surname><given-names>G</given-names></name><name><surname>Hube</surname><given-names>B</given-names></name></person-group>
+<year>2006</year>
+<article-title>Models of oral and vaginal candidiasis based on in vitro reconstituted human epithelia.</article-title>
+<source>Nat Protoc</source>
+<volume>1</volume>
+<fpage>2767</fpage>
+<lpage>2773</lpage>
+<pub-id pub-id-type="pmid">17406503</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Johansson1">
+        <label>40</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Johansson</surname><given-names>R</given-names></name></person-group>
+<year>1993</year>
+<article-title>System modeling and identification. Englewood Cliffs, NJ: Prentice Hall.</article-title>
+<volume>xiii</volume>
+<fpage>512</fpage>
+</element-citation>
+      </ref>
+      <ref id="pone.0035339-Akaike1">
+        <label>41</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Akaike</surname><given-names>H</given-names></name></person-group>
+<year>1974</year>
+<article-title>New Look at Statistical-Model Identification.</article-title>
+<source>IEEE Transactions on Automatic Control</source>
+<volume>Ac19</volume>
+<fpage>716</fpage>
+<lpage>723</lpage>
+</element-citation>
+      </ref>
+      <ref id="pone.0035339-Kumamoto1">
+        <label>42</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kumamoto</surname><given-names>CA</given-names></name></person-group>
+<year>2005</year>
+<article-title>A contact-activated kinase signals Candida albicans invasive growth and biofilm development.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>102</volume>
+<fpage>5576</fpage>
+<lpage>5581</lpage>
+<pub-id pub-id-type="pmid">15800048</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Naglik1">
+        <label>43</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Naglik</surname><given-names>JR</given-names></name><name><surname>Moyes</surname><given-names>DL</given-names></name><name><surname>Wachtler</surname><given-names>B</given-names></name><name><surname>Hube</surname><given-names>B</given-names></name></person-group>
+<year>2011</year>
+<article-title>Candida albicans interactions with epithelial cells and mucosal immunity.</article-title>
+<source>Microbes Infect</source>
+<volume>13</volume>
+<fpage>963</fpage>
+<lpage>976</lpage>
+<pub-id pub-id-type="pmid">21801848</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Sudbery1">
+        <label>44</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sudbery</surname><given-names>PE</given-names></name></person-group>
+<year>2011</year>
+<article-title>Growth of Candida albicans hyphae.</article-title>
+<source>Nat Rev Microbiol</source>
+<volume>9</volume>
+<fpage>737</fpage>
+<lpage>748</lpage>
+<pub-id pub-id-type="pmid">21844880</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Selvaggini1">
+        <label>45</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Selvaggini</surname><given-names>S</given-names></name><name><surname>Munro</surname><given-names>CA</given-names></name><name><surname>Paschoud</surname><given-names>S</given-names></name><name><surname>Sanglard</surname><given-names>D</given-names></name><name><surname>Gow</surname><given-names>NA</given-names></name></person-group>
+<year>2004</year>
+<article-title>Independent regulation of chitin synthase and chitinase activity in Candida albicans and Saccharomyces cerevisiae.</article-title>
+<source>Microbiology</source>
+<volume>150</volume>
+<fpage>921</fpage>
+<lpage>928</lpage>
+<pub-id pub-id-type="pmid">15073301</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Gottlieb1">
+        <label>46</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gottlieb</surname><given-names>S</given-names></name><name><surname>Altboum</surname><given-names>Z</given-names></name><name><surname>Savage</surname><given-names>DC</given-names></name><name><surname>Segal</surname><given-names>E</given-names></name></person-group>
+<year>1991</year>
+<article-title>Adhesion of Candida albicans to epithelial cells effect of polyoxin D. Mycopathologia</article-title>
+<volume>115</volume>
+<fpage>197</fpage>
+<lpage>205</lpage>
+</element-citation>
+      </ref>
+      <ref id="pone.0035339-Tsai1">
+        <label>47</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tsai</surname><given-names>PW</given-names></name><name><surname>Yang</surname><given-names>CY</given-names></name><name><surname>Chang</surname><given-names>HT</given-names></name><name><surname>Lan</surname><given-names>CY</given-names></name></person-group>
+<year>2011</year>
+<article-title>Human antimicrobial peptide LL-37 inhibits adhesion of Candida albicans by interacting with yeast cell-wall carbohydrates.</article-title>
+<source>PLoS One</source>
+<volume>6</volume>
+<fpage>e17755</fpage>
+<pub-id pub-id-type="pmid">21448240</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Hameed1">
+        <label>48</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hameed</surname><given-names>S</given-names></name><name><surname>Dhamgaye</surname><given-names>S</given-names></name><name><surname>Singh</surname><given-names>A</given-names></name><name><surname>Goswami</surname><given-names>SK</given-names></name><name><surname>Prasad</surname><given-names>R</given-names></name></person-group>
+<year>2011</year>
+<article-title>Calcineurin signaling and membrane lipid homeostasis regulates iron mediated multidrug resistance mechanisms in Candida albicans.</article-title>
+<source>PLoS One</source>
+<volume>6</volume>
+<fpage>e18684</fpage>
+<pub-id pub-id-type="pmid">21533276</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Heung1">
+        <label>49</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Heung</surname><given-names>LJ</given-names></name><name><surname>Luberto</surname><given-names>C</given-names></name><name><surname>Del Poeta</surname><given-names>M</given-names></name></person-group>
+<year>2006</year>
+<article-title>Role of sphingolipids in microbial pathogenesis.</article-title>
+<source>Infect Immun</source>
+<volume>74</volume>
+<fpage>28</fpage>
+<lpage>39</lpage>
+<pub-id pub-id-type="pmid">16368954</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Rouabhia1">
+        <label>50</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rouabhia</surname><given-names>M</given-names></name><name><surname>Mukherjee</surname><given-names>PK</given-names></name><name><surname>Lattif</surname><given-names>AA</given-names></name><name><surname>Curt</surname><given-names>S</given-names></name><name><surname>Chandra</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2011</year>
+<article-title>Disruption of sphingolipid biosynthetic gene IPT1 reduces Candida albicans adhesion and prevents activation of human gingival epithelial cell innate immune defense.</article-title>
+<source>Med Mycol</source>
+<volume>49</volume>
+<fpage>458</fpage>
+<lpage>466</lpage>
+<pub-id pub-id-type="pmid">21091155</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Lan1">
+        <label>51</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lan</surname><given-names>CY</given-names></name><name><surname>Rodarte</surname><given-names>G</given-names></name><name><surname>Murillo</surname><given-names>LA</given-names></name><name><surname>Jones</surname><given-names>T</given-names></name><name><surname>Davis</surname><given-names>RW</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>Regulatory networks affected by iron availability in Candida albicans.</article-title>
+<source>Mol Microbiol</source>
+<volume>53</volume>
+<fpage>1451</fpage>
+<lpage>1469</lpage>
+<pub-id pub-id-type="pmid">15387822</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Leach1">
+        <label>52</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Leach</surname><given-names>MD</given-names></name><name><surname>Stead</surname><given-names>DA</given-names></name><name><surname>Argo</surname><given-names>E</given-names></name><name><surname>MacCallum</surname><given-names>DM</given-names></name><name><surname>Brown</surname><given-names>AJ</given-names></name></person-group>
+<year>2011</year>
+<article-title>Molecular and proteomic analyses highlight the importance of ubiquitination for the stress resistance, metabolic adaptation, morphogenetic regulation and virulence of Candida albicans.</article-title>
+<source>Mol Microbiol</source>
+<volume>79</volume>
+<fpage>1574</fpage>
+<lpage>1593</lpage>
+<pub-id pub-id-type="pmid">21269335</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Gow1">
+        <label>53</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gow</surname><given-names>NA</given-names></name><name><surname>Robbins</surname><given-names>PW</given-names></name><name><surname>Lester</surname><given-names>JW</given-names></name><name><surname>Brown</surname><given-names>AJ</given-names></name><name><surname>Fonzi</surname><given-names>WA</given-names></name><etal/></person-group>
+<year>1994</year>
+<article-title>A hyphal-specific chitin synthase gene (CHS2) is not essential for growth, dimorphism, or virulence of Candida albicans.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>91</volume>
+<fpage>6216</fpage>
+<lpage>6220</lpage>
+<pub-id pub-id-type="pmid">8016141</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Martin2">
+        <label>54</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Martin</surname><given-names>SW</given-names></name><name><surname>Konopka</surname><given-names>JB</given-names></name></person-group>
+<year>2004</year>
+<article-title>Lipid raft polarization contributes to hyphal growth in Candida albicans.</article-title>
+<source>Eukaryot Cell</source>
+<volume>3</volume>
+<fpage>675</fpage>
+<lpage>684</lpage>
+<pub-id pub-id-type="pmid">15189988</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Chou1">
+        <label>55</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chou</surname><given-names>H</given-names></name><name><surname>Glory</surname><given-names>A</given-names></name><name><surname>Bachewich</surname><given-names>C</given-names></name></person-group>
+<year>2011</year>
+<article-title>Orthologues of the anaphase-promoting complex/cyclosome coactivators Cdc20p and Cdh1p are important for mitotic progression and morphogenesis in Candida albicans.</article-title>
+<source>Eukaryot Cell</source>
+<volume>10</volume>
+<fpage>696</fpage>
+<lpage>709</lpage>
+<pub-id pub-id-type="pmid">21398510</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Umeyama1">
+        <label>56</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Umeyama</surname><given-names>T</given-names></name><name><surname>Kaneko</surname><given-names>A</given-names></name><name><surname>Nagai</surname><given-names>Y</given-names></name><name><surname>Hanaoka</surname><given-names>N</given-names></name><name><surname>Tanabe</surname><given-names>K</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>Candida albicans protein kinase CaHsl1p regulates cell elongation and virulence.</article-title>
+<source>Mol Microbiol</source>
+<volume>55</volume>
+<fpage>381</fpage>
+<lpage>395</lpage>
+<pub-id pub-id-type="pmid">15659158</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Nett1">
+        <label>57</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nett</surname><given-names>JE</given-names></name><name><surname>Sanchez</surname><given-names>H</given-names></name><name><surname>Cain</surname><given-names>MT</given-names></name><name><surname>Ross</surname><given-names>KM</given-names></name><name><surname>Andes</surname><given-names>DR</given-names></name></person-group>
+<year>2011</year>
+<article-title>Interface of Candida albicans biofilm matrix-associated drug resistance and cell wall integrity regulation.</article-title>
+<source>Eukaryot Cell</source>
+<volume>10</volume>
+<fpage>1660</fpage>
+<lpage>1669</lpage>
+<pub-id pub-id-type="pmid">21666076</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Kitamura1">
+        <label>58</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kitamura</surname><given-names>A</given-names></name><name><surname>Higuchi</surname><given-names>S</given-names></name><name><surname>Hata</surname><given-names>M</given-names></name><name><surname>Kawakami</surname><given-names>K</given-names></name><name><surname>Yoshida</surname><given-names>K</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Effect of beta-1,6-glucan inhibitors on the invasion process of Candida albicans: potential mechanism of their in vivo efficacy.</article-title>
+<source>Antimicrob Agents Chemother</source>
+<volume>53</volume>
+<fpage>3963</fpage>
+<lpage>3971</lpage>
+<pub-id pub-id-type="pmid">19596881</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Hwang1">
+        <label>59</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hwang</surname><given-names>CS</given-names></name><name><surname>Oh</surname><given-names>JH</given-names></name><name><surname>Huh</surname><given-names>WK</given-names></name><name><surname>Yim</surname><given-names>HS</given-names></name><name><surname>Kang</surname><given-names>SO</given-names></name></person-group>
+<year>2003</year>
+<article-title>Ssn6, an important factor of morphological conversion and virulence in Candida albicans.</article-title>
+<source>Mol Microbiol</source>
+<volume>47</volume>
+<fpage>1029</fpage>
+<lpage>1043</lpage>
+<pub-id pub-id-type="pmid">12581357</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Rizzetto1">
+        <label>60</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rizzetto</surname><given-names>L</given-names></name><name><surname>Cavalieri</surname><given-names>D</given-names></name></person-group>
+<year>2011</year>
+<article-title>Friend or foe: using systems biology to elucidate interactions between fungi and their hosts.</article-title>
+<source>Trends Microbiol</source>
+<volume>19</volume>
+<fpage>509</fpage>
+<lpage>515</lpage>
+<pub-id pub-id-type="pmid">21871806</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Aderem1">
+        <label>61</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Aderem</surname><given-names>A</given-names></name><name><surname>Adkins</surname><given-names>JN</given-names></name><name><surname>Ansong</surname><given-names>C</given-names></name><name><surname>Galagan</surname><given-names>J</given-names></name><name><surname>Kaiser</surname><given-names>S</given-names></name><etal/></person-group>
+<year>2011</year>
+<article-title>A systems biology approach to infectious disease research: innovating the pathogen-host research paradigm.</article-title>
+<source>MBio</source>
+<volume>2</volume>
+<fpage>e00325</fpage>
+<lpage>00310</lpage>
+<pub-id pub-id-type="pmid">21285433</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Odds1">
+        <label>62</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Odds</surname><given-names>FC</given-names></name><name><surname>Brown</surname><given-names>AJ</given-names></name><name><surname>Gow</surname><given-names>NA</given-names></name></person-group>
+<year>2003</year>
+<article-title>Antifungal agents: mechanisms of action.</article-title>
+<source>Trends Microbiol</source>
+<volume>11</volume>
+<fpage>272</fpage>
+<lpage>279</lpage>
+<pub-id pub-id-type="pmid">12823944</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Jacobsen1">
+        <label>63</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jacobsen</surname><given-names>ID</given-names></name><name><surname>Wilson</surname><given-names>D</given-names></name><name><surname>Wachtler</surname><given-names>B</given-names></name><name><surname>Brunke</surname><given-names>S</given-names></name><name><surname>Naglik</surname><given-names>JR</given-names></name><etal/></person-group>
+<year>2012</year>
+<article-title>Candida albicans dimorphism as a therapeutic target.</article-title>
+<source>Expert Rev Anti Infect Ther</source>
+<volume>10</volume>
+<fpage>85</fpage>
+<lpage>93</lpage>
+<pub-id pub-id-type="pmid">22149617</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Boysen1">
+        <label>64</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Boysen</surname><given-names>JH</given-names></name><name><surname>Fanning</surname><given-names>S</given-names></name><name><surname>Newberg</surname><given-names>J</given-names></name><name><surname>Murphy</surname><given-names>RF</given-names></name><name><surname>Mitchell</surname><given-names>AP</given-names></name></person-group>
+<year>2009</year>
+<article-title>Detection of protein-protein interactions through vesicle targeting.</article-title>
+<source>Genetics</source>
+<volume>182</volume>
+<fpage>33</fpage>
+<lpage>39</lpage>
+<pub-id pub-id-type="pmid">19307607</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0035339-Stynen1">
+        <label>65</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stynen</surname><given-names>B</given-names></name><name><surname>Van Dijck</surname><given-names>P</given-names></name><name><surname>Tournu</surname><given-names>H</given-names></name></person-group>
+<year>2010</year>
+<article-title>A CUG codon adapted two-hybrid system for the pathogenic fungus Candida albicans.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>38</volume>
+<fpage>e184</fpage>
+<pub-id pub-id-type="pmid">20719741</pub-id></element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

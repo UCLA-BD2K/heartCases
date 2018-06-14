@@ -1,0 +1,1493 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Radiat Oncol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Radiat Oncol</journal-id>
+      <journal-title-group>
+        <journal-title>Radiation Oncology (London, England)</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1748-717X</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">25212571</article-id>
+      <article-id pub-id-type="pmc">4262206</article-id>
+      <article-id pub-id-type="publisher-id">1167</article-id>
+      <article-id pub-id-type="doi">10.1186/1748-717X-9-202</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Methodology</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>A single-field integrated boost treatment planning technique for spot scanning proton therapy</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Zhu</surname>
+            <given-names>Xiaorong Ronald</given-names>
+          </name>
+          <address>
+            <email>xrzhu@mdanderson.org</email>
+          </address>
+          <xref ref-type="aff" rid="Aff43"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Poenisch</surname>
+            <given-names>Falk</given-names>
+          </name>
+          <address>
+            <email>fpoenisch@mdanderson.org</email>
+          </address>
+          <xref ref-type="aff" rid="Aff43"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Li</surname>
+            <given-names>Heng</given-names>
+          </name>
+          <address>
+            <email>hengli@mdanderson.org</email>
+          </address>
+          <xref ref-type="aff" rid="Aff43"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Xiaodong</given-names>
+          </name>
+          <address>
+            <email>xizhang@mdanderson.org</email>
+          </address>
+          <xref ref-type="aff" rid="Aff43"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sahoo</surname>
+            <given-names>Narayan</given-names>
+          </name>
+          <address>
+            <email>nsahoo@mdanderson.org</email>
+          </address>
+          <xref ref-type="aff" rid="Aff43"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wu</surname>
+            <given-names>Richard Y</given-names>
+          </name>
+          <address>
+            <email>rywu@mdanderson.org</email>
+          </address>
+          <xref ref-type="aff" rid="Aff43"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Li</surname>
+            <given-names>Xiaoqiang</given-names>
+          </name>
+          <address>
+            <email>xqli@mdanderson.org</email>
+          </address>
+          <xref ref-type="aff" rid="Aff43"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lee</surname>
+            <given-names>Andrew K</given-names>
+          </name>
+          <address>
+            <email>aklee@mdanderson.org</email>
+          </address>
+          <xref ref-type="aff" rid="Aff44"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chang</surname>
+            <given-names>Eric L</given-names>
+          </name>
+          <address>
+            <email>Eric.Chang@health.usc.edu</email>
+          </address>
+          <xref ref-type="aff" rid="Aff44"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Choi</surname>
+            <given-names>Seungtaek</given-names>
+          </name>
+          <address>
+            <email>stchoi@mdanderson.org</email>
+          </address>
+          <xref ref-type="aff" rid="Aff44"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pugh</surname>
+            <given-names>Thomas</given-names>
+          </name>
+          <address>
+            <email>tpugh@mdanderson.org</email>
+          </address>
+          <xref ref-type="aff" rid="Aff44"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Frank</surname>
+            <given-names>Steven J</given-names>
+          </name>
+          <address>
+            <email>sjfrank@mdanderson.org</email>
+          </address>
+          <xref ref-type="aff" rid="Aff44"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gillin</surname>
+            <given-names>Michael T</given-names>
+          </name>
+          <address>
+            <email>mgillin@mdanderson.org</email>
+          </address>
+          <xref ref-type="aff" rid="Aff43"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mahajan</surname>
+            <given-names>Anita</given-names>
+          </name>
+          <address>
+            <email>amahajan@mdanderson.org</email>
+          </address>
+          <xref ref-type="aff" rid="Aff44"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Grosshans</surname>
+            <given-names>David R</given-names>
+          </name>
+          <address>
+            <email>dgrossha@mdanderson.org</email>
+          </address>
+          <xref ref-type="aff" rid="Aff44"/>
+        </contrib>
+        <aff id="Aff43"><label/>Departments of Radiation Physics, The University of Texas MD Anderson Cancer Center, Unit 1150, 1515 Holcombe Boulevard, Houston, TX USA </aff>
+        <aff id="Aff44"><label/>Department of Radiation Oncology, The University of Texas MD Anderson Cancer Center, 1515 Holcombe Boulevard, Houston, TX USA </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>11</day>
+        <month>9</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>11</day>
+        <month>9</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2014</year>
+      </pub-date>
+      <volume>9</volume>
+      <elocation-id>202</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>20</day>
+          <month>11</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>5</day>
+          <month>9</month>
+          <year>2014</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; Zhu et al.; licensee BioMed Central Ltd. 2014</copyright-statement>
+        <license license-type="open-access">
+          <license-p>This article is published under license to BioMed Central Ltd. This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</ext-link>) applies to the data made available in this article, unless otherwise stated.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <sec>
+          <title>Purpose</title>
+          <p>Intensity modulated proton therapy (IMPT) plans are normally generated utilizing multiple field optimization (MFO) techniques. Similar to photon based IMRT, MFO allows for the utilization of a simultaneous integrated boost in which multiple target volumes are treated to discrete doses simultaneously, potentially improving plan quality and streamlining quality assurance and treatment delivery. However, MFO may render plans more sensitive to the physical uncertainties inherent to particle therapy. Here we present clinical examples of a single-field integrated boost (SFIB) technique for spot scanning proton therapy based on single field optimization (SFO) treatment-planning techniques.</p>
+        </sec>
+        <sec>
+          <title>Methods and materials</title>
+          <p>We designed plans of each type for illustrative patients with central nervous system (brain and spine), prostate and head and neck malignancies. SFIB and IMPT plans were constructed to deliver multiple prescription dose levels to multiple targets using SFO or MFO, respectively. Dose and fractionation schemes were based on the current clinical practice using X-ray IMRT in our clinic. For inverse planning, dose constraints were employed to achieve the desired target coverage and normal tissue sparing. Conformality and inhomogeneity indices were calculated to quantify plan quality. We also compared the worst-case robustness of the SFIB, sequential boost SFUD, and IMPT plans.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>The SFIB technique produced more conformal dose distributions than plans generated by sequential boost using a SFUD technique (conformality index for prescription isodose levels; 0.585 &#xB1; 0.30 vs. 0.435 &#xB1; 0.24, SFIB vs. SFUD respectively, Wilcoxon matched-pair signed rank test, p &lt; 0.01). There was no difference in the conformality index between SFIB and IMPT plans (0.638 &#xB1; 0.27 vs. 0.633 &#xB1; 0.26, SFIB vs. IMPT, respectively). Heterogeneity between techniques was not significantly different. With respect to clinical metrics, SFIB plans proved more robust than the corresponding IMPT plans.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>SFIB technique for scanning beam proton therapy (SSPT) is now routinely employed in our clinic. The SFIB technique is a natural application of SFO and offers several advantages over SFUD, including more conformal plans, seamless treatment delivery and more efficient planning and QA. SFIB may be more robust than IMPT and has been the treatment planning technique of choice for some patients.</p>
+        </sec>
+      </abstract>
+      <kwd-group xml:lang="en">
+        <title>Keywords</title>
+        <kwd>Proton therapy</kwd>
+        <kwd>Spot scanning</kwd>
+        <kwd>Single-field optimization</kwd>
+        <kwd>Single field integrated boost</kwd>
+        <kwd>SFIB</kwd>
+      </kwd-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>&#xA9; The Author(s) 2014</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1" sec-type="intro">
+      <title>Introduction</title>
+      <p>In spot scanning proton therapy (SSPT), a pencil beam (spot) is magnetically scanned in both directions lateral to the beam direction to produce a large field without the introduction of scattering elements or range modulation devices into the beam path [<xref ref-type="bibr" rid="CR1">1</xref>&#x2013;<xref ref-type="bibr" rid="CR4">4</xref>]. Monoenergetic pencil beams of different energies are used to produce the desired depth dose distribution. The intensity of each spot can also be modulated to deliver intensity-modulated proton therapy (IMPT) [<xref ref-type="bibr" rid="CR5">5</xref>&#x2013;<xref ref-type="bibr" rid="CR9">9</xref>]. To achieve the desired dose distribution over the target volumes, the weights of individual spots are optimized using an inverse planning process. There are two general approaches to optimizing a SSPT plan. The first is to optimize the weights of all spots in all fields simultaneously to produce the desired dose distribution. This approach is called multiple-field optimization (MFO), and is more commonly known as IMPT [<xref ref-type="bibr" rid="CR5">5</xref>&#x2013;<xref ref-type="bibr" rid="CR10">10</xref>]. The second approach is to optimize the weights on a field-by-field basis, that is, each field is optimized individually to deliver a fraction of the prescribed doses to the entire target volume(s). This method is called single-field optimization (SFO) [<xref ref-type="bibr" rid="CR11">11</xref>]. The most common application of SFO is to produce a uniform dose over the entire target volume by each field, known as single&#x2013;field uniform dose (SFUD) [<xref ref-type="bibr" rid="CR5">5</xref>, <xref ref-type="bibr" rid="CR11">11</xref>&#x2013;<xref ref-type="bibr" rid="CR13">13</xref>].</p>
+      <p>An extension of SFO techniques would allow for the incorporation of a simultaneous integrated boost (SIB), an approach which we have termed, single field integrated boost (SFIB). The concept of SIB was originally proposed for intensity modulated radiation therapy (IMRT) using photons [<xref ref-type="bibr" rid="CR14">14</xref>] and has been widely used since. For a patient with multiple target volumes to be treated at different prescription dose levels, one could develop multiple treatment plans using SFUD to sequentially treat the patient. However, optimizing plans separately may produce inferior results when plans are combined. Moreover, additional time is required for treatment planning as well as quality assurance of individual plans. Like IMRT, IMPT can be naturally used to achieve SIB [<xref ref-type="bibr" rid="CR5">5</xref>&#x2013;<xref ref-type="bibr" rid="CR9">9</xref>]. IMPT is considered more flexible than SFUD and often delivers more conformal dose distribution to target volumes and lower doses to critical structures. However, IMPT plans may be more sensitive to the uncertainties associated with proton therapy and thus less robust than SFUD plans [<xref ref-type="bibr" rid="CR7">7</xref>]. Given the limitations of current commercial treatment planning systems (TPS), at the University of Texas MD Anderson Cancer Center (UTMDACC) Proton Therapy Center, we normally treat our patients with the SFO (either SFUD or SFIB) technique [<xref ref-type="bibr" rid="CR13">13</xref>], unless the IMPT plan is significantly better than the SFO plan. In this work, we present examples of treatment planning techniques of SFIB implemented in our clinic.</p>
+    </sec>
+    <sec id="Sec2" sec-type="materials|methods">
+      <title>Materials and methods</title>
+      <sec id="Sec3">
+        <title>Patients and treatment planning</title>
+        <p>Since April 2010, we have employed an SFIB technique for planning and treatment of patients at the UTMDACC proton therapy center. Diseases planned and treated with this technique include prostate cancer, thoracic tumors, central nervous system tumors (brain and spinal lesions), and head and neck tumors. All patients are enrolled in Institutional Review Board approved prospective studies of proton therapy. To demonstrate the SFIB technique and qualitatively assess it&#x2019;s benefits and versatility, here we present four representative clinical cases each with multiple target volumes requiring different dose levels.</p>
+        <p>We utilized SFO planning with dose constraints employed to achieve the desired coverage of different target volumes by differing dose levels within in a single plan. Target volumes treated with the SFIB technique may include a target within a target, such as for patient 1 and 4; targets located side by side, such as for patient 3; or a combination of these two situations, such as for patient 2 (see below for detailed description of each case).</p>
+        <p>SFIB treatment plans as well as sequential boost SFUD and IMPT plans were generated for comparison. Dose levels for SFUD plans were determined based on the linear quadratic model and the dose levels chosen by the treating physician for the clinically utilized SFIB plan. Doses were rounded to integer number of fractions. IMPT plans used identical dose levels as SFIB plans. Treatment plans for all patients were developed using computed tomography (CT) images obtained using 120-kV X-rays on a 16-slice scanner (LightSpeed RT 16; GE Healthcare, Waukesha, WI). In treatment planning, all proton doses were expressed as Gy(RBE) with a constant RBE factor of 1.1. The Eclipse TPS (version 8.9; Varian Medical Systems, Palo Alto, CA) with a proton module was used. Inverse planning using an SFO and MFO options with simultaneous spot optimization, using constraints for target volumes and critical structures, was used for all patients. The details of our clinical commissioning of the scanning beam dose model in TPS is described separately [<xref ref-type="bibr" rid="CR15">15</xref>]. Each spot&#x2019;s position, energy, and number of monitor units (MUs) were determined using the TPS. Beam parameters for each field are summarized in Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>.<table-wrap id="Tab1"><label>Table 1</label><caption><p>
+<bold>Field parameters</bold>
+</p></caption><table frame="hsides" rules="groups"><thead><tr><th>Patient</th><th>Field</th><th>Gantry/Couch</th><th>Max/Min Energy (MeV)</th><th>Max/Min Range (cm<sup>2</sup>/g)</th><th>&#x3C3;<sub>air</sub>for Max/Min Energy (cm)</th><th>Number of Energy Layers</th><th>Spot spacing (cm)</th></tr></thead><tbody><tr><td align="center" rowspan="3">
+<bold>1</bold>
+</td><td align="center">Left vertex 1</td><td align="center">60&#xB0;/290&#xB0;</td><td align="center">138.1/91.1</td><td align="center">13.3/6.2</td><td align="center">0.80/1.16</td><td align="center">30</td><td align="center">1.2</td></tr><tr><td align="center">Posterior</td><td align="center">180&#xB0;/0&#xB0;</td><td align="center">144.9/106.6</td><td align="center">14.5/8.3</td><td align="center">0.77/1.02</td><td align="center">22</td><td align="center">1.2</td></tr><tr><td align="center">Left vertex 2</td><td align="center">95&#xB0;/290&#xB0;</td><td align="center">134.6/91.9</td><td align="center">12.7/6.3</td><td align="center">0.82/1.16</td><td align="center">29</td><td align="center">1.2</td></tr><tr><td align="center">
+<bold>2</bold>
+</td><td align="center">Posterior</td><td align="center">180&#xB0;/0&#xB0;</td><td align="center">132.8/79.7</td><td align="center">12.4/4.8</td><td align="center">0.83/1.33</td><td align="center">37</td><td align="center">1.1</td></tr><tr><td align="center" rowspan="2">
+<bold>3</bold>
+</td><td align="center">Right lateral</td><td align="center">270&#xB0;/0&#xB0;</td><td align="center">198.3/155.3</td><td align="center">25.2/16.4</td><td align="center">0.59/0.73</td><td align="center">19</td><td align="center">0.64</td></tr><tr><td align="center">Left Lateral</td><td align="center">90&#xB0;/0&#xB0;</td><td align="center">198.3/155.3</td><td align="center">25.2/16.4</td><td align="center">0.59/0.73</td><td align="center">19</td><td align="center">0.64</td></tr><tr><td align="center" rowspan="2">
+<bold>4</bold>
+</td><td align="center">Right anterior</td><td align="center">300&#xB0;/15&#xB0;</td><td align="center">143.2/96.9</td><td align="center">7.5/0.3*</td><td align="center">0.95/1.59</td><td align="center">32</td><td align="center">1.0</td></tr><tr><td align="center">Right lateral</td><td align="center">270&#xB0;/15&#xB0;</td><td align="center">139.8/96.9</td><td align="center">6.9/0.3*</td><td align="center">0.97/1.59</td><td align="center">30</td><td align="center">1.0</td></tr></tbody></table><table-wrap-foot><p>
+<italic>Abbreviations:</italic>
+<italic>Max</italic> maximum, <italic>Min</italic> minimum, <italic>E</italic> energy, <italic>R</italic> range, <italic>&#x3C3;</italic>
+<sub><italic>air</italic></sub> sigma of spot in air at the isocenter. Spot spacing, center-to-center distance of spot. *With a range shifter of 6.7 g/cm<sup>2</sup>.</p></table-wrap-foot></table-wrap></p>
+      </sec>
+      <sec id="Sec4">
+        <title>Patient 1 central nervous system - brain</title>
+        <p>A young patient with a glioma of the tectal plate was treated with SSPT. The patient was immobilized using a Precise Bite positioner attached to a thermoplastic mask with a polyurethane foam headrest (CIVCO Medical Solutions, Orange City, IA). The SFUD, SFIB and IMPT plans used the same three fields: two left oblique superior vertex fields and one posterior&#x2013; anterior (PA) field. For SFIB and IMPT planning, the clinically prescribed doses were 54 and 50&#xA0;Gy(RBE) to the CTV1 and CTV2, respectively, in 30 fractions. The corresponding dose to CTV2 for the SFUD plan was 45&#xA0;Gy(RBE) in 25 fractions, followed by a boost to 54&#xA0;Gy(RBE) for CTV1. The planning target volume (PTV) was defined as a 3-mm expansion of the CTV. Strictly speaking, the PTV concept commonly used in photon therapy cannot be directly used for proton therapy because the range uncertainties are beam-direction-specific. However, beam-specific PTVs (bsPTVs) [<xref ref-type="bibr" rid="CR16">16</xref>] are not available in our clinical TPS. We nevertheless currently use the PTV concept in spot scanning proton therapy to manage delivery uncertainties for plans with a non-parallel-opposed beam arrangements [<xref ref-type="bibr" rid="CR7">7</xref>].</p>
+      </sec>
+      <sec id="Sec5">
+        <title>Patient 2 central nervous system - spine</title>
+        <p>An adult patient with a myxopapillary ependymoma of the spine was treated with SSPT with a single PA field. The patient was immobilized in the supine position with a knee and foot-positioning device (CIVCO Medical Solutions, Orange City, IA). A digital model of the treatment couch with correct water-equivalent thickness was used to replace the CT couch. For SFIB planning and treatment, the prescription doses were 54, 50.4 and 45&#xA0;Gy(RBE) to the CTV1, CTV2, and CTV3, respectively, in 28 fractions. The corresponding doses for the SFUD plan were calculated at 50.2&#xA0;Gy(RBE) to CTV2 in 26 fractions and 42.5&#xA0;Gy(RBE) for CTV3 in 22 fractions. The PTVs were defined as a 3-mm expansion of the CTVs except the anterior expansion of 5&#xA0;mm to account for range uncertainty, but sparing the majority of the vertebral bodies.</p>
+      </sec>
+      <sec id="Sec6">
+        <title>Patient 3 prostate</title>
+        <p>A gentleman with an adenocarcinoma of the prostate was treated with SSPT with two equally weighted, parallel, opposed lateral fields. The simulation and treatment planning technique for prostate patients has been described in detail previously [<xref ref-type="bibr" rid="CR11">11</xref>, <xref ref-type="bibr" rid="CR13">13</xref>, <xref ref-type="bibr" rid="CR17">17</xref>]. PTVs defined for prostate patients may be considered as a simplified version of bsPTV [<xref ref-type="bibr" rid="CR16">16</xref>] and used to account for range and setup uncertainties. For SFIB and IMPT planning, the desired prescription doses were 78 and 60&#xA0;Gy(RBE) to the CTV1 and CTV2, respectively, in 39 fractions. The corresponding dose to CTV2 for the SFUD plan was 54&#xA0;Gy(RBE) in 27 fractions, again followed by a boost to 78&#xA0;Gy(RBE) to CTV1.</p>
+      </sec>
+      <sec id="Sec7">
+        <title>Patient 4 head and neck</title>
+        <p>A patient with an acinic cell carcinoma of the right parotid was treated with SSPT. The patient was immobilized using a Precise Bite positioner attached to a thermoplastic mask with a customized head mold using RediFoam<sup>TM</sup> (RediFoam, CIVCO Medical Solutions, Orange City, IA). The SFUD, SFIB and IMPT plans used the same two fields: two left anterior oblique superior-inferior fields. For SFIB and IMPT planning, the prescription doses were 64, 60 and 54&#xA0;Gy(RBE) to the CTV1, CTV 2 and CTV3 in 30 fractions. The corresponding dose to CTV2 and CTV3 for the SFUD plan was 59.7&#xA0;Gy(RBE) in 28 fractions and 51.2&#xA0;Gy(RBE) in 24 fractions. The planning target volumes (PTVs) was also defined as 3&#xA0;mm expansion of the CTVs.</p>
+      </sec>
+      <sec id="Sec8">
+        <title>Conformality and inhomogeneity indices</title>
+        <p>Isodose distributions were compared visually on axial, sagittal, and coronal slices to assess conformality to the targets and sparing of normal tissues. Target coverage and normal tissue sparing were also compared by dose volume histograms (DVHs). In addition, target coverage was quantitatively assessed by calculation of the conformality index, <inline-formula id="IEq1"><inline-graphic xlink:href="13014_2013_1167_IEq1_HTML.gif"/></inline-formula> and inhomogeneity index <inline-formula id="IEq2"><inline-graphic xlink:href="13014_2013_1167_IEq2_HTML.gif"/></inline-formula> where <italic>PTV</italic> is the planning target volume, <italic>PTV</italic><sub><italic>pre</italic></sub> is the PTV covered by the prescription dose, and <italic>V</italic><sub><italic>pre</italic></sub> is the volume of prescription isodose, <italic>D</italic><sub><italic>5</italic></sub> and <italic>D</italic><sub><italic>95</italic></sub> are the doses to 5% and 95% of the PTV as displayed on the cumulative DVH, respectively, <italic>D</italic><sub><italic>pre</italic></sub> is the prescription dose [<xref ref-type="bibr" rid="CR18">18</xref>]. The larger <italic>COIN</italic> is, the more conformal is the plan. The larger <italic>INH</italic> values indicate a more inhomogeneous dose distribution.</p>
+      </sec>
+      <sec id="Sec9">
+        <title>Comparison of robustness</title>
+        <p>Robustness of the SFUD, SFIB and IMPT plans with respect to setup and range uncertainties was evaluated using a worst-case analysis method [<xref ref-type="bibr" rid="CR19">19</xref>]. A setup uncertainty of 3&#xA0;mm was used for patients 1, 2 and 4 and 5&#xA0;mm for patient 3. The range uncertainty was assumed to be 3.5% of the nominal ranges [<xref ref-type="bibr" rid="CR20">20</xref>]. Introduced perturbations included six spatial shifts along the three major axes (left-right, posterior-anterior, and superior-inferior) and two range shifts &#x2013; for a total of 8 perturbed dose distributions. The highest and lowest dose values in each pixel were extracted from the nominal and the 8 perturbed dose distributions, forming a hot and cold dose distributions with the highest and lowest values, respectively [<xref ref-type="bibr" rid="CR19">19</xref>]. The width of a banded DVH could then be used to qualitatively represent the robustness of the plans for a specific structure. We selected appropriate dosimetric parameters from the DVHs for the hot and cold plans to compare the robustness of SFUD, SFIB and IMPT plans. For target volumes, <italic>D</italic><sub>95</sub> and <italic>D</italic><sub>98</sub> for CTVs and generalized equivalent uniform dose (EUD&#x2009;=&#x2009;(&#x3A3;<italic>v</italic><sub>i</sub><italic>D</italic><sub>i</sub><sup><italic>a</italic></sup>)<sup>1/<italic>a</italic></sup>, where <italic>v</italic><sub>i</sub> is the fractional organ volume receiving a dose <italic>D</italic><sub>i</sub> and <italic>a</italic> is a tissue-specific parameter that describes the volume effect) [<xref ref-type="bibr" rid="CR14">14</xref>, <xref ref-type="bibr" rid="CR21">21</xref>], from the cold plans were used to compare the worst case target coverage. The clinical criteria established in our clinic, are, in the worst case (the cold plan), <italic>D</italic><sub>95</sub>&#x2009;&#x2265;&#x2009;95%, <italic>D</italic><sub>98</sub>&#x2009;&#x2265;&#x2009;90% and EUD &#x2265;100% of the prescription dose. For normal tissues, the maximum dose (<italic>D</italic><sub>max</sub>), mean dose (<italic>D</italic><sub>mean</sub>) or the percent volume, <italic>V</italic><sub><italic>D</italic></sub>, receiving certain dose, <italic>D</italic>, or more and EUD from hot plans were used to compare the worst case sparing. The EUD parameter <italic>a</italic> was collected from literature [<xref ref-type="bibr" rid="CR14">14</xref>, <xref ref-type="bibr" rid="CR21">21</xref>]: for CTVs, <italic>a</italic>&#x2009;=&#x2009;-10; for spinal cord, <italic>a</italic>&#x2009;=&#x2009;20; for brainstem, hippocampus, optic chiasm, cochlea, <italic>a</italic>&#x2009;=&#x2009;16; for femoral heads, <italic>a</italic>&#x2009;=&#x2009;12; for mandible, <italic>a</italic>&#x2009;=&#x2009;10; for bladder, rectum <italic>a</italic>&#x2009;=&#x2009;8; for larynx, <italic>a</italic>&#x2009;=&#x2009;7.4; for kidney, <italic>a</italic>&#x2009;=&#x2009;5; and for submandibular gland and whole brain, <italic>a</italic>&#x2009;=&#x2009;1.</p>
+      </sec>
+      <sec id="Sec10">
+        <title>Statistical analysis</title>
+        <p>The <italic>COIN, INH</italic>, target coverage in terms of <italic>D</italic><sub>95</sub>, <italic>D</italic><sub>98</sub> and <italic>EUD</italic> in the worst case (cold plans) and normal tissues dosimetric parameters in the worst case (hot plans) were compared statistically by the Wilcoxon matched-pairs signed rank test using GraphPad Prim 6 software (GraphPad Software, Inc., La Jolla, CA). A derived value of <italic>p&#x2009;&lt;</italic>&#x2009;0.05 was considered statistically significant.</p>
+      </sec>
+    </sec>
+    <sec id="Sec11" sec-type="results">
+      <title>Results</title>
+      <p>Figure&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>A-D depicts the isodose distributions and DVHs between the SFIB, SFUD and IMPT plans for the glioma patient. The SFIB planning technique produced a more conformal dose distribution than the SFUD. Moreover, the SFIB technique achieved the desired dose coverage for the target volumes and lower doses to critical normal structures including the right and left hippocampus, and whole brain. The IMPT plan had similar target coverage as SFIB plan, however in this case, normal tissues had similar or less dose. Panel <bold>E</bold> illustrates the calculated and measured depth doses of the SFIB plan. Note that the depth dose curves are not flat as would be a typical curve from a passive scattering or SFUD plan. Instead, we observe a rather non-uniform dose profile, as required by the SFIB technique.For the patient treated for a tumor within the spinal canal, a comparison of isodose distributions and DVHs planned with the SFIB and SFUD technique are shown in Figure&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>, respectively and demonstrate that the SFIB plan is qualitatively, more conformal than SFUD plan. Because this patient was treated with a single PA beam, IMPT planning was not applicable.Figure&#xA0;<xref rid="Fig3" ref-type="fig">3</xref> depicts a comparison of the isodose distributions and DVHs between the SFIB, SFUD and IMPT plans for the patient with adenocarcinoma of the prostate. SFIB planning provided a slightly more conformal plan in the region of CTV2 than SFUD. The SFIB technique achieved the desired dose coverage for the target volumes and similar doses to normal structures, including the bladder, rectum, and femoral heads. The IMPT plan had similar target coverage as SFIB plan and a reduced rectum dose but slightly increased femoral head dose.Figure&#xA0;<xref rid="Fig4" ref-type="fig">4</xref> is a comparison of the isodose distributions and DVHs between the SFIB, SFUD and IMPT plans for the head and neck patient. The SFIB technique achieved a conformal dose distribution and met the desired dose coverage for the target volumes while lowering doses to some normal structures, such as the mandible and larynx. The IMPT plans had similar coverage for the target but lower doses to normal tissues.<fig id="Fig1"><label>Figure 1</label><caption><p>
+<bold>Representative isodose distributions on axial CT images for patient 1. (A)</bold> SFIB, <bold>(B)</bold> SFUD sequential boost and <bold>(C)</bold> IMPT treatment plans for a central glioma. Targets and normal tissues are represented as color washes. <bold>(D)</bold> Dose volume histogram for corresponding plans. Solid lines correspond to SFIB, dashed lines to SFUD, and dotted lines to IMPT. Exposure of right and left hippocampi to low and high doses is reduced for SFIB and IMPT plans. <bold>(E)</bold> Comparison of measured (data points) and calculated (blue lines) depth dose curves for each of three beams employed in the treatment of patient 1. Error bars are fixed values of 3% in the vertical axis and 2&#xA0;mm in the horizontal axis to help visualizing the difference between measurements and calculations.</p></caption><graphic xlink:href="13014_2013_1167_Fig1_HTML" id="d30e999"/></fig><fig id="Fig2"><label>Figure 2</label><caption><p>
+<bold>Representative isodose distributions on sagittal CT images for patient 2. (A)</bold> SFIB and <bold>(B)</bold> SFUD treatment plans for a spinal ependymoma. Targets and normal tissues are represented as color washes. <bold>(C)</bold> Dose volume histogram for corresponding plans (solid lines, SFIB; dashed lines, SFUD).</p></caption><graphic xlink:href="13014_2013_1167_Fig2_HTML" id="d30e1017"/></fig><fig id="Fig3"><label>Figure 3</label><caption><p>
+<bold>Representative axial isodose distributions for treatment of a prostatic adenocarcinoma.</bold> Targets and normal tissues are represented as color washes. Slices depicting treatment of CTV2 (seminal vesicles) as well as CTV1 (prostate) are shown in left and right panels for SFIB <bold>(A)</bold>, SFUD with sequential boost <bold>(B)</bold> and IMPT <bold>(C)</bold> plans. The dose volume histogram is shown in <bold>(D)</bold> (solid lines, SFIB; dashed lines, SFUD and dotted lines, IMPT).</p></caption><graphic xlink:href="13014_2013_1167_Fig3_HTML" id="d30e1041"/></fig><fig id="Fig4"><label>Figure 4</label><caption><p>
+<bold>Representative axial, coronal and sagittal (left, middle, and right panels, respectively) CT images for a patient 4. (A)</bold> SFIB, <bold>(B)</bold> SFUD with sequential boost and <bold>(C)</bold> IMPT treatment plans. Targets volumes are represented as color washes. <bold>(D)</bold> Dose volume histogram (solid lines, SFIB; dashed lines, SFUD and dotted line, IMPT).</p></caption><graphic xlink:href="13014_2013_1167_Fig4_HTML" id="d30e1062"/></fig></p>
+      <sec id="Sec12">
+        <title>Conformality index and inhomogeneity indices</title>
+        <p>Table&#xA0;<xref rid="Tab2" ref-type="table">2</xref> lists the <italic>COIN</italic> and <italic>INH</italic> values for PTV1 for SFUD, SFIB and IMPT plans. For all four patients, SFIB plans had larger <italic>COIN</italic> values than SFUD plans (0.585&#x2009;&#xB1;&#x2009;0.300 vs. 0.435&#x2009;&#xB1;&#x2009;0.239, Wilconxon test, <italic>p</italic>&#x2009;&lt;&#x2009;0.01) and thus were more conformal than SFUD plans. However, the difference in <italic>COIN</italic> between SFIB and IMPT was not significant. The inhomogeneity between all three planning techniques was similar (Wilcoxon test, <italic>p</italic>&#x2009;=&#x2009;0.81).<table-wrap id="Tab2"><label>Table 2</label><caption><p>
+<bold>Quantitative comparison of dose conformality and homogeneity</bold>
+</p></caption><table frame="hsides" rules="groups"><thead><tr><th/><th colspan="3">COIN</th><th colspan="3">INH</th></tr><tr><th/><th>SFUD</th><th>SFIB</th><th>IMPT</th><th>SFUD</th><th>SFIB</th><th>IMPT</th></tr></thead><tbody><tr><td>
+<bold>Patient 1</bold>
+</td><td align="center"/><td align="center"/><td align="center"/><td align="center"/><td align="center"/><td align="center"/></tr><tr><td>
+<bold>PTV1</bold>
+</td><td align="center">0.507</td><td align="center">0.867</td><td align="center">0.827</td><td align="center">0.021</td><td align="center">0.063</td><td align="center">0.058</td></tr><tr><td>
+<bold>PTV2</bold>
+</td><td align="center">0.422</td><td align="center">0.857</td><td align="center">0.893</td><td align="center">-</td><td align="center">-</td><td align="center"/></tr><tr><td>
+<bold>Patient 2</bold>
+</td><td align="center"/><td align="center"/><td align="center"/><td align="center"/><td align="center"/><td align="center"/></tr><tr><td>
+<bold>PTV1</bold>
+</td><td align="center">0.771</td><td align="center">0.771</td><td align="center">-</td><td align="center">0.066</td><td align="center">0.056</td><td align="center">-</td></tr><tr><td>
+<bold>PTV2</bold>
+</td><td align="center">0.539</td><td align="center">0.577</td><td align="center">-</td><td align="center">-</td><td align="center">-</td><td align="center">-</td></tr><tr><td>
+<bold>PTV3</bold>
+</td><td align="center">0.026</td><td align="center">0.033</td><td align="center">-</td><td align="center">-</td><td align="center">-</td><td align="center">-</td></tr><tr><td>
+<bold>Patient 3</bold>
+</td><td align="center"/><td align="center"/><td align="center"/><td align="center"/><td align="center"/><td align="center"/></tr><tr><td>
+<bold>PTV1</bold>
+</td><td align="center">0.859</td><td align="center">0.910</td><td align="center">0.851</td><td align="center">0.043</td><td align="center">0.038</td><td align="center">0.057</td></tr><tr><td>
+<bold>PTV2</bold>
+</td><td align="center">0.140</td><td align="center">0.159</td><td align="center">0.154</td><td align="center">-</td><td align="center">-</td><td align="center"/></tr><tr><td>
+<bold>Patient 4</bold>
+</td><td align="center"/><td align="center"/><td align="center"/><td align="center"/><td align="center"/><td align="center"/></tr><tr><td>
+<bold>PTV1</bold>
+</td><td align="center">0.273</td><td align="center">0.427</td><td align="center">0.453</td><td align="center">0.062</td><td align="center">0.089</td><td align="center">0.091</td></tr><tr><td>
+<bold>PTV2</bold>
+</td><td align="center">0.474</td><td align="center">0.613</td><td align="center">0.638</td><td align="center">-</td><td align="center">-</td><td align="center"/></tr><tr><td>
+<bold>PTV3</bold>
+</td><td align="center">0.608</td><td align="center">0.633</td><td align="center">0.613</td><td align="center">-</td><td align="center">-</td><td align="center"/></tr><tr><td>
+<bold>Mean&#x2009;&#xB1;&#x2009;SD (All patients)</bold>
+</td><td align="center">0.435&#x2009;&#xB1;&#x2009;0.239*</td><td align="center">0.585&#x2009;&#xB1;&#x2009;0.300*</td><td align="center">-</td><td align="center">0.048&#x2009;&#xB1;&#x2009;0.021</td><td align="center">0.062&#x2009;&#xB1;&#x2009;0.021</td><td align="center">-</td></tr><tr><td>
+<bold>Mean&#x2009;&#xB1;&#x2009;SD (exclude patient 2)</bold>
+</td><td align="center">0.469&#x2009;&#xB1;&#x2009;0.232</td><td align="center">0.638&#x2009;&#xB1;&#x2009;0.274</td><td align="center">0.633&#x2009;&#xB1;&#x2009;0.263</td><td align="center">0.042&#x2009;&#xB1;&#x2009;0.021</td><td align="center">0.063&#x2009;&#xB1;&#x2009;0.026</td><td align="center">0.069&#x2009;&#xB1;&#x2009;0.019</td></tr></tbody></table><table-wrap-foot><p>
+<italic>Abbreviations</italic>: <italic>COIN</italic> conformal index, <italic>INH</italic> inhomogeneity index, <italic>PTV</italic> planning target volume, <italic>SFIB</italic> single-field integrated boost, <italic>SFUD</italic> single field uniform dose, <italic>IMPT</italic> intensity modulated proton therapy, <italic>SD</italic> standard deviation. *p&#x2009;&lt;&#x2009;0.01, Wilcoxon matched-pairs signed rank test.</p></table-wrap-foot></table-wrap></p>
+      </sec>
+      <sec id="Sec13">
+        <title>Robustness evaluation</title>
+        <p>Shown in Figure&#xA0;<xref rid="Fig5" ref-type="fig">5</xref> is a summary of the comparison of worst case robustness of SFUD, SFIB and IMPT plans in terms of both target coverage and normal tissue sparing in column bar plots. For target coverage of all 4 patients, <italic>D</italic><sub>95</sub>, <italic>D</italic><sub>98</sub> and EUD for the SFIB plans were smaller than SFUD plans in the worst case, cold plans, Table&#xA0;<xref rid="Tab3" ref-type="table">3</xref> (mean&#x2009;&#xB1;&#x2009;standard deviation, <italic>D</italic><sub>95</sub>&#x2009;=&#x2009;100.0&#x2009;&#xB1;&#x2009;1.3 vs. 102.7&#x2009;&#xB1;&#x2009;5.0, <italic>D</italic><sub>98</sub>&#x2009;=&#x2009;98.1&#x2009;&#xB1;&#x2009;2.1 vs. 101.1&#x2009;&#xB1;&#x2009;5.2, EUD&#x2009;=&#x2009;104.6&#x2009;&#xB1;&#x2009;2.8 vs. 108.0&#x2009;&#xB1;&#x2009;6.1, SFIB vs. SFUD, respectively, Wilcoxon test, p&#x2009;&lt;&#x2009;0.05 for <italic>D</italic><sub>95</sub>, <italic>D</italic><sub>98</sub>, and EUD). This is consistent with SFIB plan being more conformal than SFUD plans. Despite the slightly smaller values of <italic>D</italic><sub>95</sub>, <italic>D</italic><sub>98</sub> and EUD, all SFIB plans meet the clinical criteria established in our clinic, that is, in the worst case (the cold plan), <italic>D</italic><sub>95</sub>&#x2009;&#x2265;&#x2009;95%, <italic>D</italic><sub>98</sub>&#x2009;&#x2265;&#x2009;90% and EUD &#x2265;100% of the prescription dose (Table&#xA0;<xref rid="Tab3" ref-type="table">3</xref>).<fig id="Fig5"><label>Figure 5</label><caption><p>
+<bold>Worst case robustness comparison of SFUD, SFIB and IMPT/MFO plans.</bold> The left column (blue) represents SFUD, the middle (red), SFIB, and the right (green), IMPT plans. For target volumes, the cold plans are used to evaluate target coverage in terms of percentage of doses of D<sub>95</sub>, D<sub>98</sub> and EUD relative to the prescription doses. For critical structures, the hot plans are used assess the tissue sparing. <bold>(A)</bold> and <bold>(B)</bold> for patient 1 (BS &#x2013; brain stem, HC &#x2013; hippocampus, OC &#x2013; optical chiasm, PH &#x2013; pituitary and hypothalamus, WB &#x2013; whole brain); <bold>(C)</bold> and <bold>(D)</bold> for patient 2 (SC &#x2013; spinal cord, LK &#x2013; left kidney, RK &#x2013; right kidney); <bold>(E)</bold> and <bold>(F)</bold> for patient 3 (BLD &#x2013; bladder, RET &#x2013; rectum, FH &#x2013; femoral heads); and <bold>(G)</bold> and <bold>(H)</bold> for patient 4 (LNX- larynx, RS &#x2013; right submandibular, RC &#x2013; right cochlea, and MDB &#x2013; mandible).</p></caption><graphic xlink:href="13014_2013_1167_Fig5_HTML" id="d30e1620"/></fig></p>
+        <table-wrap id="Tab3">
+          <label>Table 3</label>
+          <caption>
+            <p>
+<bold>Summary of the worst-case target coverage as percentage of prescription dose</bold>
+</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th/>
+                <th>SFUD% (range)</th>
+                <th>SFIB% (range)</th>
+                <th>IMPT% (range)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">
+<bold>D</bold>
+<sub><bold>95</bold></sub>
+<bold>/D</bold>
+<sub><bold>pre</bold></sub>
+<bold>(All patients)</bold>
+</td>
+                <td align="center">102.7&#x2009;&#xB1;&#x2009;5.0</td>
+                <td align="center">100&#x2009;&#xB1;&#x2009;1.3</td>
+                <td align="center">-</td>
+              </tr>
+              <tr>
+                <td align="center">(97.6-115.9)</td>
+                <td align="center">(97.6-102.5)</td>
+                <td align="center">-</td>
+              </tr>
+              <tr>
+                <td rowspan="2">
+<bold>D</bold>
+<sub><bold>98</bold></sub>
+<bold>/D</bold>
+<sub><bold>pre</bold></sub>
+<bold>(All patients)</bold>
+</td>
+                <td align="center">101.1&#x2009;&#xB1;&#x2009;5.2</td>
+                <td align="center">98.1&#x2009;&#xB1;&#x2009;2.1</td>
+                <td align="center">-</td>
+              </tr>
+              <tr>
+                <td align="center">(95.2-114.2)</td>
+                <td align="center">(95.0-101.2)</td>
+                <td align="center">-</td>
+              </tr>
+              <tr>
+                <td rowspan="2">
+<bold>EUD/D</bold>
+<sub><bold>pre</bold></sub>
+<bold>(All patients)</bold>
+</td>
+                <td align="center">108.0&#x2009;&#xB1;&#x2009;6.1</td>
+                <td align="center">104.6&#x2009;&#xB1;&#x2009;2.8</td>
+                <td align="center">-</td>
+              </tr>
+              <tr>
+                <td align="center">(101.6-120.2)</td>
+                <td align="center">(101.9-108.9)</td>
+                <td align="center">-</td>
+              </tr>
+              <tr>
+                <td rowspan="2">
+<bold>D</bold>
+<sub><bold>95</bold></sub>
+<bold>/D</bold>
+<sub><bold>pre</bold></sub>
+<bold>(exclude patient 2)</bold>
+</td>
+                <td align="center">103.8&#x2009;&#xB1;&#x2009;5.5</td>
+                <td align="center">100.1&#x2009;&#xB1;&#x2009;1.5</td>
+                <td align="center">97.4&#x2009;&#xB1;&#x2009;3.3</td>
+              </tr>
+              <tr>
+                <td align="center">(99.7-115.9)</td>
+                <td align="center">(97.6-102.5)</td>
+                <td align="center">(92.7-101.9)</td>
+              </tr>
+              <tr>
+                <td rowspan="2">
+<bold>D</bold>
+<sub><bold>98</bold></sub>
+<bold>/D</bold>
+<sub><bold>pre</bold></sub>
+<bold>(exclude patient 2)</bold>
+</td>
+                <td align="center">101.9&#x2009;&#xB1;&#x2009;5.9</td>
+                <td align="center">97.9&#x2009;&#xB1;&#x2009;2.4</td>
+                <td align="center">93.6&#x2009;&#xB1;&#x2009;6.1</td>
+              </tr>
+              <tr>
+                <td align="center">(95.2-114.2)</td>
+                <td align="center">(95.0-101.2)</td>
+                <td align="center">(82.4-100.4)</td>
+              </tr>
+              <tr>
+                <td rowspan="2">
+<bold>EUD/D</bold>
+<sub><bold>pre</bold></sub>
+<bold>(exclude patient 2)</bold>
+</td>
+                <td align="center">109.5&#x2009;&#xB1;&#x2009;6.7</td>
+                <td align="center">105.5&#x2009;&#xB1;&#x2009;3.0</td>
+                <td align="center">102.3&#x2009;&#xB1;&#x2009;4.1</td>
+              </tr>
+              <tr>
+                <td align="center">(101.6-120.2)</td>
+                <td align="center">(101.9-108.9)</td>
+                <td align="center">(95.4-106.8)</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>
+<italic>Abbreviations:</italic>
+<italic>D</italic>
+<sub><italic>95</italic></sub> and <italic>D</italic>
+<sub><italic>98</italic></sub>, doses to 95% and 98% of the target volumes as displayed on the cumulative DVH, respectively, <italic>D</italic>
+<sub><italic>pre</italic></sub>, prescription dose, <italic>EUD</italic> equivalent uniform dose, <italic>SFUD</italic> single field uniform dose, <italic>SFIB</italic> single-field integrated boost, <italic>IMPT</italic> intensity modulated proton therapy.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>For target coverage of the three cases with IMPT plans, <italic>D</italic><sub>95</sub>, <italic>D</italic><sub>98</sub> and EUD for the IMPT plans were smaller than SFIB plans in the worst case, cold plans, Table&#xA0;<xref rid="Tab3" ref-type="table">3</xref> (mean&#x2009;&#xB1;&#x2009;standard deviation, <italic>D</italic><sub>95</sub>&#x2009;=&#x2009;97.4&#x2009;&#xB1;&#x2009;3.3 vs. 101.1&#x2009;&#xB1;&#x2009;1.5, <italic>D</italic><sub>98</sub>&#x2009;=&#x2009;93.6&#x2009;&#xB1;&#x2009;6.1 vs. 97.9&#x2009;&#xB1;&#x2009;2.4, EUD&#x2009;=&#x2009;102.3&#x2009;&#xB1;&#x2009;4.1 vs. 105.5&#x2009;&#xB1;&#x2009;3.0, IMPT vs. SFIB, respectively, Wilcoxon test, p&#x2009;&lt;&#x2009;0.05 for <italic>D</italic><sub>95</sub> and EUD, and p&#x2009;=&#x2009;0.078 for <italic>D</italic><sub>98</sub>). However, some IMPT plans failed to meet the clinical criteria in the worst case scenario (the cold plans), with minimum values of <italic>D</italic><sub>95</sub>, <italic>D</italic><sub>98</sub> and EUD of 92.7%, 82.4% and 95.4% of the prescription doses respectively, values below our clinical criteria (Table&#xA0;<xref rid="Tab3" ref-type="table">3</xref>).For normal tissues, SFIB was significant better than SFUD even in the worst case (the hot plans) (dosimetric parameters and EUDs in Figure&#xA0;<xref rid="Fig5" ref-type="fig">5</xref>, SFIB vs. SFUD, Wilcoxon test, p&#x2009;&lt;&#x2009;0.01). One noted exception was the mandible for patient 4 as presented in Figure&#xA0;<xref rid="Fig5" ref-type="fig">5</xref>H. This exception is likely due to the fact that the mandible overlapped with target volume in this case. On the other hand, the difference between IMPT and SFIB in terms of normal tissues in the worst cases (hot plans) was insignificant (Wilcoxon test, p&#x2009;=&#x2009;0.58 and 0.45 for dosimetric parameters and EUDs, respectively).</p>
+      </sec>
+    </sec>
+    <sec id="Sec14" sec-type="discussion">
+      <title>Discussion</title>
+      <p>SSPT employing an SFIB approach is commonly used in our clinical practice. Here, we have presented examples of treatment plans utilizing the SFIB technique. We found in each disease site, the SFIB technique generated more conformal dose distributions than the SFUD technique. Moreover, SFIB plans were robust in the face of uncertainties. For target coverage, all SFIB plans meet clinical criteria even in the worst-case scenario; for normal tissues, the SFIB plans were most often superior to SFUD plans with the exception cases where normal tissues of concern overlapped with the target volume. Our clinical experience suggests that not only does SFIB result in superior treatment plans but also expedites treatment planning and patient specific QA.</p>
+      <p>SSPT offers exciting and challenging new opportunities, such as IMPT. In IMPT, the dose for each individual field is highly inhomogeneous within each target volume. When all fields are combined, the total doses would result in the desired dose distribution for all target volumes. Shown in Figure&#xA0;<xref rid="Fig6" ref-type="fig">6</xref> are the IMPT plan dose distributions from combined and individual fields for patient 4. There is little difference between SFIB and IMPT for the combined dose distributions (Figure&#xA0;<xref rid="Fig6" ref-type="fig">6</xref>A and B), except the IMPT dose distribution is more conformal in certain areas (arrow, Figure&#xA0;<xref rid="Fig6" ref-type="fig">6</xref>B). For both field one or two, the IMPT plan shows much more inhomogenous dose distribution than the SFIB plan. One could consider IMPT as a sophisticated version of the patch/match technique, sometimes used in passively scattered proton beam therapy planning [<xref ref-type="bibr" rid="CR1">1</xref>]. IMPT may produce more conformal dose distributions, but may also be more sensitive to various uncertainties, including setup and range uncertainties.<fig id="Fig6"><label>Figure 6</label><caption><p>
+<bold>Example of dose distributions of SFIB and IMPT for patient 4 in color wash to demonstrate the dose inhomogeneity of individual fields of an IMPT plan. (A)</bold> SFIB and <bold>(B)</bold> IMPT for all fields; <bold>(C)</bold> SFIB and <bold>(D)</bold> IMPT for field one; and <bold>(E)</bold> SFIB and <bold>(F)</bold> IMPT for field two.</p></caption><graphic xlink:href="13014_2013_1167_Fig6_HTML" id="d30e2018"/></fig></p>
+      <p>In the current work, worst case robust analysis showed that IMPT were less robust than SFIB plans in terms of target coverage. It should be pointed out that the optimization phase space of a SFIB plan is a subset of that of IMPT. In other words, it is possible, in theory, to obtain a solution of SFIB with MFO. In practice, however, one would never arrive at a solution of SFIB using MFO due to very large number of degenerated solutions available for MFO. In our clinical practice, we have also found that the robustness of an IMPT plan is optimization technique dependent; that is, IMPT plans generated by some initial conditions are more robust than others. For the examples presented here, the SFIB technique achieved the similar dose conformity and normal tissue sparing to IMPT and yet provided some assurance of robustness of the plan.</p>
+      <p>The SFIB technique may not be ideally applied to all cancer patients who received SSPT and require multiple dose levels. For complex target volumes such as with oropharyngeal and nasopharyngeal tumors requiring treatment of the bilateral neck, it is recommended to use IMPT as the planning method given the complex geometry of the targets [<xref ref-type="bibr" rid="CR19">19</xref>]. Indeed robust optimization, considering various uncertainties, is recommended for general IMPT planning [<xref ref-type="bibr" rid="CR6">6</xref>, <xref ref-type="bibr" rid="CR7">7</xref>, <xref ref-type="bibr" rid="CR22">22</xref>].</p>
+      <p>The SFUD technique produces a flat depth dose profile within the target along the beam direction by the superposition of many spots with different energies. However, a flat depth dose profile is not required with SFO. In fact, the planner has all the degrees of freedom to produce a non-uniform dose distribution along the beam and lateral directions with SFO. SFO is a more general concept than SFUD and may be used to generate either SFUD or SFIB plans on a field-by-field basis. It should be noted that identical beams were used for SFUD primary and boost plans in this work. If different beam angles were used for the boost SFUD plans, the normal tissues might be better spared. However, this was not explored in the current study.</p>
+      <p>In a planning study, Cozzia <italic>et al.</italic> proposed an SIB technique based on SFUD for head and neck cancer patients with two target volumes and two prescription dose levels [<xref ref-type="bibr" rid="CR23">23</xref>]. They optimized fields for each target individually and then summed them to obtain the final plan. In contrast to the SFUD-based SIB technique by Cozzia <italic>et al.</italic>
+[<xref ref-type="bibr" rid="CR23">23</xref>], the SFIB method presented in this work is an integrated approach in terms of both treatment planning and delivery.</p>
+      <p>Compared with the SFUD sequential boost approach, SFIB offers seamless delivery and more efficient treatment planning and patient-specific QA (one plan for SFIB vs. two or three plans for sequential boost SFUD). We estimate that there is a 30% to 50% time saving in both treatment planning and patient specific QA with the SFIB technique. This increased efficiency provides additional logistical and economic reasons for treating patients with SFIB. Currently, proton therapy, especially SSPT, is a limited resource available in the United States and around the world. As the SSPT treatment process becomes more efficient, more patients may benefit from this advanced form of radiation therapy.</p>
+      <p>The plans presented in this work used specific beam settings available in our clinic, as detailed in Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>. If the beam settings were significantly different from these in Table&#xA0;<xref rid="Tab1" ref-type="table">1</xref>, some of the specific results might be different. For example, if the spot size was much smaller, the spot spacing should be smaller to keep the ratio spot spacing to spot size in air&#x2009;&#x2264;&#x2009;1.5. Then the conformal index would be improved for all plans yet the robustness would be reduced with respect to the setup uncertainties due to sharper penumbra associated with smaller spot size. However, one should expect that the SFIB still is a valid planning technique to generate conformal and robust plans for selected patients with relatively simple targets.</p>
+    </sec>
+    <sec id="Sec15" sec-type="conclusions">
+      <title>Conclusion</title>
+      <p>We have successfully implemented an SFIB technique based on SFO for SSPT to treat a variety of cancer types. SFIB is a natural application of SFO. When SFO is used, a uniform dose across the target volume is not required. Therefore, SFO is a general concept and can be used to generate either SFUD or SFIB plans. SFIB often produces more conformal plans compared to those with SFUD. Additional advantages of SFIB are seamless delivery and more efficient treatment planning and patient-specific QA. For relatively simple target volumes presented in this work, we also demonstrated that SFIB may be more robust than IMPT, yet has similar conformity and normal tissue sparing.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn>
+        <p>
+          <bold>Competing interests</bold>
+        </p>
+        <p>The authors declare that they have no competing interests.</p>
+      </fn>
+      <fn>
+        <p>
+          <bold>Authors&#x2019; contributions</bold>
+        </p>
+        <p>XRZ: performed planning study and data analysis. FP: contributed planning study and data analysis. HL: contributed planning study and data analysis. RYW: contributed planning study and data analysis. NS: contributed planning study and data analysis XL: performed some of robust analysis. AKL: contributed the original idea. ELC: contributed evaluation of one of the patients&#x2019; treatment plans. SC: contributed the original idea. TP: contributed evaluation of one of the patients&#x2019; treatment plans. SJF: contributed evaluation of one of the patients&#x2019; treatment plans. MTG: contributed the original idea. AM: contributed the original idea. DRG: contributed the original idea and evaluation of one of the patients&#x2019; treatment plans. All authors read and approved the final manuscript.</p>
+      </fn>
+    </fn-group>
+    <ack>
+      <p>We would like to thank Mayank V Amin and Matthew B Palmer for their assistance with development of some of clinical plans. We greatly appreciate Karen M&#xFC;ller from the Department of Scientific Publications for her editorial review of this manuscript. This research is supported in part by the National Institutes of Health through MD Anderson&#x2019;s Cancer Center Support Grant (CA016672).</p>
+    </ack>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Delaney</surname>
+              <given-names>TF</given-names>
+            </name>
+            <name>
+              <surname>Kooy</surname>
+              <given-names>HM</given-names>
+            </name>
+          </person-group>
+          <source>Proton and Charged Particle Radiotherapy</source>
+          <year>2008</year>
+          <publisher-loc>Philadelphia</publisher-loc>
+          <publisher-name>Wolters Kluwer Lippincott Williams &amp; Wilkins</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Haberer</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Becher</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Schardt</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Kraft</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Magnetic scanning system for heavy ion therapy</article-title>
+          <source>Nucl Instrum Methods Phys Res A</source>
+          <year>1993</year>
+          <volume>330</volume>
+          <fpage>296</fpage>
+          <lpage>305</lpage>
+          <pub-id pub-id-type="doi">10.1016/0168-9002(93)91335-K</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>ICRU</collab>
+          </person-group>
+          <source>Prescribing, Recording, And Reporting Proton-Beam Therapy</source>
+          <year>2007</year>
+          <publisher-loc>Washington DC</publisher-loc>
+          <publisher-name>International Commission on Radiation Units and Measurements</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pedroni</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Bacher</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Blattmann</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Bohringer</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Coray</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Lomax</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Munkel</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Scheib</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Schneider</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Tourovsky</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>The 200-mev proton therapy project at the Paul scherrer institute: conceptual design and practical realization</article-title>
+          <source>Med Phys</source>
+          <year>1995</year>
+          <volume>22</volume>
+          <fpage>37</fpage>
+          <lpage>53</lpage>
+          <pub-id pub-id-type="doi">10.1118/1.597522</pub-id>
+          <pub-id pub-id-type="pmid">7715569</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lomax</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Intensity modulation methods for proton radiotherapy</article-title>
+          <source>Phys Med Biol</source>
+          <year>1999</year>
+          <volume>44</volume>
+          <fpage>185</fpage>
+          <lpage>205</lpage>
+          <pub-id pub-id-type="doi">10.1088/0031-9155/44/1/014</pub-id>
+          <pub-id pub-id-type="pmid">10071883</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lomax</surname>
+              <given-names>AJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Intensity modulated proton therapy and its sensitivity to treatment uncertainties 1: the potential effects of calculational uncertainties</article-title>
+          <source>Phys Med Biol</source>
+          <year>2008</year>
+          <volume>53</volume>
+          <fpage>1027</fpage>
+          <lpage>1042</lpage>
+          <pub-id pub-id-type="doi">10.1088/0031-9155/53/4/014</pub-id>
+          <pub-id pub-id-type="pmid">18263956</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lomax</surname>
+              <given-names>AJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Intensity modulated proton therapy and its sensitivity to treatment uncertainties 2: the potential effects of inter-fraction and inter-field motions</article-title>
+          <source>Phys Med Biol</source>
+          <year>2008</year>
+          <volume>53</volume>
+          <fpage>1043</fpage>
+          <lpage>1056</lpage>
+          <pub-id pub-id-type="doi">10.1088/0031-9155/53/4/015</pub-id>
+          <pub-id pub-id-type="pmid">18263957</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lomax</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Bohringer</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Coray</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Egger</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Goitein</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Grossmann</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Juelke</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Pedroni</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Rohrer</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Roser</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Rossi</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Siegenthaler</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Stadelmann</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Stauble</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Vetter</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Wisser</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Intensity modulated proton therapy: a clinical example</article-title>
+          <source>Med Phys</source>
+          <year>2001</year>
+          <volume>28</volume>
+          <fpage>317</fpage>
+          <lpage>324</lpage>
+          <pub-id pub-id-type="doi">10.1118/1.1350587</pub-id>
+          <pub-id pub-id-type="pmid">11318312</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lomax</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Bohringer</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Bolsi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Coray</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Emert</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Goitein</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Jermann</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Pedroni</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Rutz</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Stadelmann</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Timmermann</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Verwey</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Weber</surname>
+              <given-names>DC</given-names>
+            </name>
+          </person-group>
+          <article-title>Treatment planning and verification of proton therapy using spot scanning: Initial experiences</article-title>
+          <source>Med Phys</source>
+          <year>2004</year>
+          <volume>31</volume>
+          <fpage>3150</fpage>
+          <lpage>3157</lpage>
+          <pub-id pub-id-type="doi">10.1118/1.1779371</pub-id>
+          <pub-id pub-id-type="pmid">15587667</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Smith</surname>
+              <given-names>AR</given-names>
+            </name>
+          </person-group>
+          <article-title>Vision 20/20: proton therapy</article-title>
+          <source>Med Phys</source>
+          <year>2009</year>
+          <volume>36</volume>
+          <fpage>556</fpage>
+          <lpage>568</lpage>
+          <pub-id pub-id-type="doi">10.1118/1.3058485</pub-id>
+          <pub-id pub-id-type="pmid">19291995</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhu</surname>
+              <given-names>XR</given-names>
+            </name>
+            <name>
+              <surname>Sahoo</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Robertson</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>MT</given-names>
+            </name>
+            <name>
+              <surname>Gillin</surname>
+              <given-names>AK</given-names>
+            </name>
+          </person-group>
+          <article-title>Intensity modulated proton therapy treatment planning using single-field optimization: the impact of monitor unit constraints on plan quality</article-title>
+          <source>Med Phys</source>
+          <year>2010</year>
+          <volume>37</volume>
+          <fpage>1210</fpage>
+          <lpage>1219</lpage>
+          <pub-id pub-id-type="doi">10.1118/1.3314073</pub-id>
+          <pub-id pub-id-type="pmid">20384258</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fredriksson</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Forsgren</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hardemark</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Minimax optimization for handling range and setup uncertainties in proton therapy</article-title>
+          <source>Med Phys</source>
+          <year>2011</year>
+          <volume>38</volume>
+          <fpage>1672</fpage>
+          <lpage>1684</lpage>
+          <pub-id pub-id-type="doi">10.1118/1.3556559</pub-id>
+          <pub-id pub-id-type="pmid">21520880</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhu</surname>
+              <given-names>XR</given-names>
+            </name>
+            <name>
+              <surname>Poenisch</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Song</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Johnson</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Ciangaru</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Taylor</surname>
+              <given-names>MB</given-names>
+            </name>
+            <name>
+              <surname>Lii</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Arjomandy</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Nguyen</surname>
+              <given-names>QN</given-names>
+            </name>
+            <name>
+              <surname>Gillin</surname>
+              <given-names>MT</given-names>
+            </name>
+            <name>
+              <surname>Sahoo</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Patient-specific quality assurance for prostate cancer patients receiving spot scanning proton therapy using single-field uniform dose</article-title>
+          <source>Int J Radiat Oncol Biol Phys</source>
+          <year>2011</year>
+          <volume>81</volume>
+          <fpage>552</fpage>
+          <lpage>559</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ijrobp.2010.11.071</pub-id>
+          <pub-id pub-id-type="pmid">21300457</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wu</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Manning</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Schmidt-Ullrich</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Mohan</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>The potential for sparing of parotids and escalation of biologically effective dose with intensity-modulated radiation treatments of head and neck cancers: a treatment design study</article-title>
+          <source>Int J Radiat Oncol Biol Phys</source>
+          <year>2000</year>
+          <volume>46</volume>
+          <fpage>195</fpage>
+          <lpage>205</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0360-3016(99)00304-1</pub-id>
+          <pub-id pub-id-type="pmid">10656393</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhu</surname>
+              <given-names>XR</given-names>
+            </name>
+            <name>
+              <surname>Poenisch</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Lii</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Sawakuchi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Titt</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Bues</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Song</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ciangaru</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Taylor</surname>
+              <given-names>MB</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Mohan</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Gillin</surname>
+              <given-names>MT</given-names>
+            </name>
+            <name>
+              <surname>Sahoo</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Commissioning dose computation models for spot scanning proton beams in water for a commercially available treatment planning system</article-title>
+          <source>Med Phys</source>
+          <year>2013</year>
+          <volume>40</volume>
+          <fpage>041723</fpage>
+          <pub-id pub-id-type="doi">10.1118/1.4798229</pub-id>
+          <pub-id pub-id-type="pmid">23556893</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Park</surname>
+              <given-names>PC</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>XR</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Sahoo</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Melancon</surname>
+              <given-names>AD</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Dong</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>A beam-specific planning target volume (ptv) design for proton therapy to account for setup and range uncertainties</article-title>
+          <source>Int J Radiat Oncol Biol Phys</source>
+          <year>2011</year>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meyer</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Bluett</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Amos</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Levy</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Nguyen</surname>
+              <given-names>QN</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>XR</given-names>
+            </name>
+            <name>
+              <surname>Gillin</surname>
+              <given-names>MT</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>AK</given-names>
+            </name>
+          </person-group>
+          <article-title>Spot scanning proton beam therapy for prostate cancer: treatment planning technique and analysis of consequences of rotational and translational alignment errors</article-title>
+          <source>Int J Radiat Oncol Biol Phys</source>
+          <year>2010</year>
+          <volume>78</volume>
+          <fpage>428</fpage>
+          <lpage>434</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ijrobp.2009.07.1696</pub-id>
+          <pub-id pub-id-type="pmid">20100641</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhu</surname>
+              <given-names>XR</given-names>
+            </name>
+            <name>
+              <surname>Prado</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>HH</given-names>
+            </name>
+            <name>
+              <surname>Guerrero</surname>
+              <given-names>TM</given-names>
+            </name>
+            <name>
+              <surname>Jeter</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Liao</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Rice</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Forster</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Stevens</surname>
+              <given-names>CW</given-names>
+            </name>
+          </person-group>
+          <article-title>Intensity-modulated radiation therapy for mesothelioma: impact of multileaf collimator leaf width and pencil beam size on planning quality and delivery efficiency</article-title>
+          <source>Int J Radiat Oncol Biol Phys</source>
+          <year>2005</year>
+          <volume>62</volume>
+          <fpage>1525</fpage>
+          <lpage>1534</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ijrobp.2005.04.015</pub-id>
+          <pub-id pub-id-type="pmid">16029815</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Quan</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Frank</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>XR</given-names>
+            </name>
+            <name>
+              <surname>Mohan</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Preliminary evaluation of multifield and single-field optimization for the treatment planning of spot-scanning proton therapy of head and neck cancer</article-title>
+          <source>Med Phys</source>
+          <year>2013</year>
+          <volume>40</volume>
+          <fpage>081709</fpage>
+          <pub-id pub-id-type="doi">10.1118/1.4813900</pub-id>
+          <pub-id pub-id-type="pmid">23927306</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yang</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>XR</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>PC</given-names>
+            </name>
+            <name>
+              <surname>Titt</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Mohan</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Virshup</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Clayton</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Dong</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Comprehensive analysis of proton range uncertainties related to patient stopping-power-ratio estimation using the stoichiometric calibration</article-title>
+          <source>Phys Med Biol</source>
+          <year>2012</year>
+          <volume>57</volume>
+          <fpage>4095</fpage>
+          <lpage>4115</lpage>
+          <pub-id pub-id-type="doi">10.1088/0031-9155/57/13/4095</pub-id>
+          <pub-id pub-id-type="pmid">22678123</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>XA</given-names>
+            </name>
+            <name>
+              <surname>Alber</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Deasy</surname>
+              <given-names>JO</given-names>
+            </name>
+            <name>
+              <surname>Jackson</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Ken Jee</surname>
+              <given-names>KW</given-names>
+            </name>
+            <name>
+              <surname>Marks</surname>
+              <given-names>LB</given-names>
+            </name>
+            <name>
+              <surname>Martel</surname>
+              <given-names>MK</given-names>
+            </name>
+            <name>
+              <surname>Mayo</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Moiseenko</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Nahum</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Niemierko</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Semenenko</surname>
+              <given-names>VA</given-names>
+            </name>
+            <name>
+              <surname>Yorke</surname>
+              <given-names>ED</given-names>
+            </name>
+          </person-group>
+          <article-title>The use and qa of biologically related models for treatment planning: Short report of the tg-166 of the therapy physics committee of the aapm</article-title>
+          <source>Med Phys</source>
+          <year>2012</year>
+          <volume>39</volume>
+          <fpage>1386</fpage>
+          <lpage>1409</lpage>
+          <pub-id pub-id-type="doi">10.1118/1.3685447</pub-id>
+          <pub-id pub-id-type="pmid">22380372</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Mohan</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Robust optimization of intensity modulated proton therapy</article-title>
+          <source>Med Phys</source>
+          <year>2012</year>
+          <volume>39</volume>
+          <fpage>1079</fpage>
+          <lpage>1091</lpage>
+          <pub-id pub-id-type="doi">10.1118/1.3679340</pub-id>
+          <pub-id pub-id-type="pmid">22320818</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR23">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cozzia</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Bolsi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Nicolini</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Fogliata</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>The simultaneous integrated boost with proton beams in head and neck patients</article-title>
+          <source>Z Med Phys</source>
+          <year>2004</year>
+          <volume>14</volume>
+          <fpage>180</fpage>
+          <lpage>188</lpage>
+          <pub-id pub-id-type="pmid">15462420</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

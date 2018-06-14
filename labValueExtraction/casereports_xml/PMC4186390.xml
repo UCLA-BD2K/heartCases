@@ -1,0 +1,929 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:ali="http://www.niso.org/schemas/ali/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">J Vis Exp</journal-id>
+      <journal-id journal-id-type="iso-abbrev">J Vis Exp</journal-id>
+      <journal-id journal-id-type="publisher-id">JoVE</journal-id>
+      <journal-title-group>
+        <journal-title>Journal of Visualized Experiments : JoVE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1940-087X</issn>
+      <publisher>
+        <publisher-name>MyJove Corporation</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24962460</article-id>
+      <article-id pub-id-type="pmc">4186390</article-id>
+      <article-id pub-id-type="publisher-id">50682</article-id>
+      <article-id pub-id-type="doi">10.3791/50682</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Medicine</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>3D-Neuronavigation <italic>In Vivo</italic> Through a Patient's Brain During a Spontaneous Migraine Headache</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>DaSilva</surname>
+            <given-names>Alexandre F.</given-names>
+          </name>
+          <xref ref-type="aff" rid="ID1">
+<sup>1</sup>
+</xref>
+          <xref ref-type="aff" rid="ID2">
+<sup>2</sup>
+</xref>
+          <xref ref-type="aff" rid="ID3">
+<sup>3</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Nascimento</surname>
+            <given-names>Thiago D.</given-names>
+          </name>
+          <xref ref-type="aff" rid="ID1">
+<sup>1</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Love</surname>
+            <given-names>Tiffany</given-names>
+          </name>
+          <xref ref-type="aff" rid="ID3">
+<sup>3</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>DosSantos</surname>
+            <given-names>Marcos F.</given-names>
+          </name>
+          <xref ref-type="aff" rid="ID1">
+<sup>1</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Martikainen</surname>
+            <given-names>Ilkka K.</given-names>
+          </name>
+          <xref ref-type="aff" rid="ID1">
+<sup>1</sup>
+</xref>
+          <xref ref-type="aff" rid="ID3">
+<sup>3</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Cummiford</surname>
+            <given-names>Chelsea M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="ID3">
+<sup>3</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>DeBoer</surname>
+            <given-names>Misty</given-names>
+          </name>
+          <xref ref-type="aff" rid="ID1">
+<sup>1</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lucas</surname>
+            <given-names>Sarah R.</given-names>
+          </name>
+          <xref ref-type="aff" rid="ID1">
+<sup>1</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bender</surname>
+            <given-names>MaryCatherine A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="ID1">
+<sup>1</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Koeppe</surname>
+            <given-names>Robert A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="ID4">
+<sup>4</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hall</surname>
+            <given-names>Theodore</given-names>
+          </name>
+          <xref ref-type="aff" rid="ID5">
+<sup>5</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Petty</surname>
+            <given-names>Sean</given-names>
+          </name>
+          <xref ref-type="aff" rid="ID5">
+<sup>5</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Maslowski</surname>
+            <given-names>Eric</given-names>
+          </name>
+          <xref ref-type="aff" rid="ID5">
+<sup>5</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Smith</surname>
+            <given-names>Yolanda R.</given-names>
+          </name>
+          <xref ref-type="aff" rid="ID6">
+<sup>6</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zubieta</surname>
+            <given-names>Jon-Kar</given-names>
+          </name>
+          <xref ref-type="aff" rid="ID3">
+<sup>3</sup>
+</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="ID1"><sup>1</sup>Headache &amp; Orofacial Pain Effort (H.O.P.E.), Biological &amp; Materials Sciences Department, University of Michigan School of Dentistry</aff>
+      <aff id="ID2"><sup>2</sup>Michigan Center for Oral Health Research (MCOHR), University of Michigan School of Dentistry</aff>
+      <aff id="ID3"><sup>3</sup>Translational Neuroimaging Laboratory, Molecular &amp; Behavioral Neuroscience Institute, University of Michigan</aff>
+      <aff id="ID4"><sup>4</sup>PET Physics Section, Division of Nuclear Medicine, Radiology Department, University of Michigan</aff>
+      <aff id="ID5"><sup>5</sup>3DLab, University of Michigan</aff>
+      <aff id="ID6"><sup>6</sup>Department of Obstetrics and Gynecology, University of Michigan</aff>
+      <author-notes>
+        <fn>
+          <p>Correspondence to: Alexandre F. DaSilva at <email>adasilva@umich.edu</email></p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>2</day>
+        <month>6</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>2</day>
+        <month>6</month>
+        <year>2014</year>
+      </pub-date>
+      <!-- PMC Release delay is 0 months and 0 days and was based on the
+							<pub-date pub-type="epub"/>. -->
+      <issue>88</issue>
+      <elocation-id>50682</elocation-id>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2014, Journal of Visualized Experiments</copyright-statement>
+        <copyright-year>2014</copyright-year>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. To view a copy of this license, visit<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-nd/3.0/">http://creativecommons.org/licenses/by-nc-nd/3.0/</ext-link></license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>A growing body of research, generated primarily from MRI-based studies, shows that migraine appears to occur, and possibly endure, due to the alteration of specific neural processes in the central nervous system. However, information is lacking on the molecular impact of these changes, especially on the endogenous opioid system during migraine headaches, and neuronavigation through these changes has never been done. This study aimed to investigate, using a novel 3D immersive and interactive neuronavigation (3D-IIN) approach, the endogenous &#xB5;-opioid transmission in the brain during a migraine headache attack <italic>in vivo</italic>. This is arguably one of the most central neuromechanisms associated with pain regulation, affecting multiple elements of the pain experience and analgesia. A 36 year-old female, who has been suffering with migraine for 10 years, was scanned in the typical headache (ictal) and nonheadache (interictal) migraine phases using Positron Emission Tomography (PET) with the selective radiotracer [<sup>11</sup>C]carfentanil, which allowed us to measure &#xB5;-opioid receptor availability in the brain (non-displaceable binding potential - &#xB5;OR BP<sub>ND</sub>). The short-life radiotracer was produced by a cyclotron and chemical synthesis apparatus on campus located in close proximity to the imaging facility. Both PET scans, interictal and ictal, were scheduled during separate mid-late follicular phases of the patient's menstrual cycle. During the ictal PET session her spontaneous headache attack reached severe intensity levels; progressing to nausea and vomiting at the end of the scan session. There were reductions in &#xB5;OR BP<sub>ND</sub> in the pain-modulatory regions of the endogenous &#xB5;-opioid system during the ictal phase, including the cingulate cortex, nucleus accumbens (NAcc), thalamus (Thal), and periaqueductal gray matter (PAG); indicating that &#xB5;ORs were already occupied by endogenous opioids released in response to the ongoing pain. To our knowledge, this is the first time that changes in &#xB5;OR BP<sub>ND</sub> during a migraine headache attack have been neuronavigated using a novel 3D approach. This method allows for interactive research and educational exploration of a migraine attack in an actual patient's neuroimaging dataset.</p>
+      </abstract>
+      <kwd-group kwd-group-type="author-generated">
+        <kwd>Medicine</kwd>
+        <kwd>Issue 88</kwd>
+        <kwd>&#x3BC;-opioid</kwd>
+        <kwd>opiate</kwd>
+        <kwd>migraine</kwd>
+        <kwd>headache</kwd>
+        <kwd>pain</kwd>
+        <kwd>Positron Emission Tomography</kwd>
+        <kwd>molecular neuroimaging</kwd>
+        <kwd>3D</kwd>
+        <kwd>neuronavigation</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <fig id="Fig_50682" orientation="portrait" position="anchor">
+      <alternatives>
+        <media id="Video_50682" xlink:href="jove-88-50682.mp4" mimetype="video" mime-subtype="mp4" orientation="portrait" xlink:type="simple" position="anchor"/>
+        <graphic xlink:href="jove-88-50682-thumb"/>
+      </alternatives>
+    </fig>
+    <sec>
+      <title>Introduction</title>
+      <p>Migraine is a chronic trigeminal pain disorder that affects nearly 16% of women and 6% of men in the United States and worldwide<sup>1-3</sup>. Repetitive migraine headache attacks have an impact on a large part of the patient&#x2019;s existence, impairing quality of life and performance, costing billions of dollars in missed school/work days and healthcare utilization<sup>4</sup>. During the debilitating headache attacks, its sufferers have a marked increased sensitivity to noxious (hyperalgesia) and even nonnoxious stimuli (allodynia)<sup>5</sup>.</p>
+      <p>The &#xB5;-opioid neurotransmitter system is one of the principal endogenous pain modulatory mechanisms in our brain. It is involved in the regulation of experimental and clinical pain perception, as well as in the analgesic action of opioid drugs<sup>6-9</sup>&#xA0;which have been associated with the chronification of migraine attacks<sup>10</sup>. Recent advances in Positron Emission Tomography (PET) molecular imaging allow for the study of important molecular mechanisms in the brain of chronic pain patients <italic>in vivo</italic><sup>11</sup>. In this study, despite the challenging logistics of synchronizing the aleatory and debilitating nature of the episodic attacks with the complexity of PET/radiotracer session setup, 3D neuronavigation was used for the first time to investigate &#xB5;OR availability in key pain-matrix regions of a patient&#x2019;s brain during a spontaneous migraine headache.</p>
+      <p>
+<bold>Case Presentation</bold>
+</p>
+      <p>A 36 year-old Asian female was enrolled in the study. She presented with a 10 year history of migraine with visual aura. Right-sided migraine headaches occurred an average of 12 days per month, with moderate to severe pain intensity that would usually last for 72 hr (if untreated or unsuccessfully treated). There was an increased frequency of headache attacks around her menstrual cycle, which had a regular pattern throughout the study. Associated symptoms included: nausea, vomiting, photophobia, and phonophobia. During the regular headache attacks she did not present any autonomic symptoms. As treatment, she was managing her symptoms with pharmacological abortive therapy only, which was based on non-steroidal anti-inflammatory drugs, and there were no indications of medication overuse or opioid intake. The clinical examination during the screening visit was unremarkable and without abnormalities, and a review of systems was within normal limits. She was single with no children, and was not using contraceptive medication.</p>
+    </sec>
+    <sec>
+      <title>Protocol</title>
+      <p>The study should be approved by the local Institutional Review Board, and by the Radioactive Drug Research Committee. The research subject gives written informed consent to participate in the study. The protocol is divided into three chronological steps:</p>
+      <list list-type="order">
+        <list-item>
+          <p>MRI session</p>
+        </list-item>
+        <list-item>
+          <p>PET session during the ictal phase (headache) of migraine</p>
+        </list-item>
+        <list-item>
+          <p>PET session during the interictal phase (no headache) of migraine</p>
+        </list-item>
+      </list>
+      <p>The patient is responsible for filling out a headache diary, and for confirming with the research group the occurrence of a migraine attack on the day of imaging session. Both, interictal and ictal, PET scans should be scheduled during separate mid-late follicular phases of the patient (5 to 10 days after the first day of menstrual bleeding), which in this case was tracked and calculated in advance by a gynecologist with expertise in the field (Y.R.S.).</p>
+      <sec>
+        <title>1. MRI Session</title>
+        <list list-type="order">
+          <list-item>
+            <p>Preparing for the Experiment <list list-type="order"><list-item><p>Prior to preparing the subject for the scan, it is necessary to follow proper safety instructions due to the magnetic field of the MR scanner. All study personnel must be metal-free before entering the MR procedure room.</p></list-item><list-item><p>Provide a copy of the Informed Consent Form, previously signed by the research volunteer during initial screening, to the MR technologist.</p></list-item></list>
+</p>
+          </list-item>
+          <list-item>
+            <p>Preparing the Subject for the Scan <list list-type="order"><list-item><p>On the day of the MRI, ask the research subject to fill out a MRI safety screening form. This form is required for any MRI taken at the University of Michigan &#x2013; fMRI lab. The questionnaire reinforces that the subject is also metal-free and does not have a medical condition that requires careful and special consideration (<italic>e.g.</italic>, metallic foreign fragments, implanted mechanical/electrical device).</p></list-item><list-item><p>Reassure that the participant understands the MR procedure, risks and benefits.</p></list-item><list-item><p>Deliver the completed screening form to the MR technologist who will be assisting in the procedure.</p></list-item></list>
+</p>
+          </list-item>
+          <list-item>
+            <p>Acquire a T1-weighted anatomical MRI scan during an interictal phase for the patient on a 3 Tesla scanner. <list list-type="order"><list-item><p>Use the following sequence parameters for the MRI acquisition: <list list-type="bullet"><list-item><p>A. Axial spoiled-gradient recalled (SPGR) 3D acquisition</p></list-item><list-item><p>B. Bandwith = 15.63</p></list-item><list-item><p>C. Repetition time [TR] = 9.2 msec</p></list-item><list-item><p>D. Echo time [TE] = 1.9 msec</p></list-item><list-item><p>E. Inversion recovery preparation 500 msec</p></list-item><list-item><p>F. Flip angle = 15&#xB0;</p></list-item><list-item><p>G. 25/26 FOV</p></list-item><list-item><p>H. Number of Excitations [NEX] = 1</p></list-item><list-item><p>I. 144 contiguous slices</p></list-item><list-item><p>J. 1.0 mm slice thickness</p></list-item><list-item><p>K. 256 x 256 matrix</p></list-item></list>
+</p></list-item></list>
+</p>
+          </list-item>
+        </list>
+      </sec>
+      <sec>
+        <title>2. Ictal PET Session</title>
+        <list list-type="order">
+          <list-item>
+            <p>Preparing for the Experiment <list list-type="order"><list-item><p>Prior to confirming the scan at the University Hospital, contact the subject to verify in which phase of the menstrual cycle she will be on the day of the scan. It is recommended to perform a PET scan during mid-late follicular phase (5 to 10 days following menstrual bleeding onset).</p></list-item><list-item><p>Submit a request to the hospital to produce [<sup>11</sup>C]carfentanil, a short-life radiotracer with a selective affinity for &#xB5;-opioid receptors, using a cyclotron in the vicinity of the scan. The tracer must be produced 2 hr before the scan.</p></list-item><list-item><p>On the day of the potential ictal PET scan, contact the subject 2&#xA0;hr&#xA0;before the appointment to confirm the presence of a spontaneous migraine attack. If a migraine attack is present, validate the migraine diagnosis following the International Classification of Headache Disorders. After diagnosis, assure that the participant is able to safely get to the hospital to undergo the scan. Provide transportation if the subject is not comfortable driving or if no designated driver is available.</p></list-item></list>
+</p>
+          </list-item>
+          <list-item>
+            <p>Preparing the Subject for the Scan <list list-type="order"><list-item><p>When the participant arrives in the hospital, escort her to the PET suite for revalidation of diagnosis based on the International Classification of Headache Disorders. Prior to the scan, perform a urine drug test to confirm that the subject did not intake any substance that could interact with the tracer [<sup>11</sup>C]carfentanil, followed by an urine pregnancy test.</p></list-item><list-item><p>Reaffirm that the participant understands the PET procedure, risks, and benefits.</p></list-item><list-item><p>Deliver a copy of the Informed Consent Form, previously signed by the research volunteer during the initial screening, to the Nuclear Medicine technologist.</p></list-item><list-item><p>Following the guidance of the Nuclear Medicine technologist, help the subject settle into the scanner.</p></list-item><list-item><p>Have the subject undergo 1&#xA0;90 min PET scan using a Siemens HR+ scanner in 3D mode (reconstructed images have a full-width at half maximum (FWHM) resolution of ~5.5 mm-in-plane and 5.0 mm axially).</p></list-item><list-item><p>For each [<sup>11</sup>C]carfentanil dose (555 MBq &#x2264; 0.03 &#x3BC;g/kg), administer fifty percent as a bolus with the remainder continuously infused over the course of the scan to achieve steady-state tracer levels approximately 35 min&#xA0;after tracer administration.</p></list-item><list-item><p>Interictal PET session.</p></list-item><list-item><p>Repeat Steps 2.2 - 2.6 during non-headache phase.</p></list-item></list>
+</p>
+          </list-item>
+        </list>
+      </sec>
+      <sec>
+        <title>3. PET Data Reconstruction</title>
+        <list list-type="order">
+          <list-item>
+            <p>Reconstruct PET images using interactive algorithms into a 128 x 128 pixel matrix in a 28.8 cm diameter field of view (FOV).</p>
+          </list-item>
+          <list-item>
+            <p>Acquire 21&#xA0;image frames and co-register to one another to correct for motion during the scan.</p>
+          </list-item>
+          <list-item>
+            <p>Obtain a 6 min transmission (68Ge source) scan prior to the PET scan for the purposes of attenuation correction.</p>
+          </list-item>
+          <list-item>
+            <p>Convert the dynamic image data for each scan on a voxel-by-voxel basis into two sets of parametric images (10 - 40 min): <list list-type="order"><list-item><p>Use a tracer transport measure (K1 ratio) for coregistration and normalization procedures; and</p></list-item><list-item><p>Use a receptor-related measure, BP<sub>ND</sub>, proportional to Bmax (receptor concentration) to divide by Kd (receptor affinity).</p></list-item></list>
+</p>
+          </list-item>
+          <list-item>
+            <p>Estimate these measures by using the reference region-based Logan graphical analysis with the occipital cortex as the reference region<sup>12</sup>.</p>
+          </list-item>
+        </list>
+      </sec>
+      <sec>
+        <title>4. PET Data Analysis</title>
+        <p>NOTE: Anatomically standardize images into template space using Statistical Parametric Mapping (SPM8) software following the sequence below.</p>
+        <list list-type="order">
+          <list-item>
+            <p>Co-register the MR scan and K1 scans.</p>
+          </list-item>
+          <list-item>
+            <p>Normalize the MR scan to the Montreal Neurologic Institute (MNI) template brain using DARTEL.</p>
+          </list-item>
+          <list-item>
+            <p>Apply the resulting deformation matrix to the PET images.</p>
+          </list-item>
+          <list-item>
+            <p>Verify co-registration and normalization accuracy by comparing the transformed MR and PET images to the MNI atlas template.</p>
+          </list-item>
+          <list-item>
+            <p>Region of Interest (ROI) analysis.</p>
+          </list-item>
+        </list>
+        <p>Examine the activity of several bilateral regions that are engaged during the processing of pain, including:</p>
+        <list list-type="bullet">
+          <list-item>
+            <p>A. Anterior/medial/posterior cingulate</p>
+          </list-item>
+          <list-item>
+            <p>B. Insula</p>
+          </list-item>
+          <list-item>
+            <p>C. Hippocampus</p>
+          </list-item>
+          <list-item>
+            <p>D. Amygdala</p>
+          </list-item>
+          <list-item>
+            <p>E. Caudate head/body</p>
+          </list-item>
+          <list-item>
+            <p>F. Nucleus accumbens</p>
+          </list-item>
+          <list-item>
+            <p>G. Putamen</p>
+          </list-item>
+          <list-item>
+            <p>H. Lateral/medial globus pallidus</p>
+          </list-item>
+          <list-item>
+            <p>I. Thalamus nuclei (ventral anterior, ventral posterior lateral/medial, lateral posterior, midline, lateral/medial dorsal)</p>
+          </list-item>
+          <list-item>
+            <p>J. Periaqueductal gray matter (PAG)</p>
+          </list-item>
+        </list>
+        <list list-type="order">
+          <list-item>
+            <p>Define MarsBaR (in standardized space for each of these regions, with the exception of the PAG. Generate the PAG ROI by placing a 3 mm sphere at coordinates: right: 4, -28, -6; and left: -2, -28, -6. This PAG location was previously shown to have diffusional and connectivity alterations in migraine patients as compared to healthy controls<sup>13,14</sup>. NOTE: Test-retest studies with [<sup>11</sup>C]carfentanil show reproducibility of BP<sub>ND</sub> measures of well less than 10%, with most cortical regions being 3 - 5%<sup>15</sup>. The largest coefficients of variation (CoV = Std.Dev./Mean) are typically observed in the regions with the lowest binding, however, even in the cortical regions with lowest binding BP<sub>ND</sub> CoV&#x2019;s were ~0.5. Hence, percentage changes in ROI &#xB5;OR BP<sub>ND</sub> between scans are only considered as significant when above 10%.</p>
+          </list-item>
+        </list>
+      </sec>
+      <sec>
+        <title>5. 3D-Neuronavigation</title>
+        <list list-type="order">
+          <list-item>
+            <p>Preparing for an 3D-IIN Experience <list list-type="order"><list-item><p>Organize the data provided in NIfTI volumetric data format as a stack of images with density and activation levels defined as 16 bit.</p></list-item><list-item><p>Wear active LCD shutter glasses to enable the time sequential stereoscopic 3D effect. The shutter glasses operate through the blocking of one eye while the image for the other eye is shown on screen. The process then repeats for the other eye. This shuttering effect occurs at 110 Hz.</p></list-item><list-item><p>Use a joystick for interactions with the simulation after being instructed on its use.</p></list-item><list-item><p>Outfit the shutter glasses and joystick with reflective markers to enable precise 6DOF tracking of the objects in space via a Vicon motion capture system.</p></list-item></list>
+</p>
+          </list-item>
+          <list-item>
+            <p>Display Aubject Activation Data <list list-type="order"><list-item><p>Use XML configuration files to define color mappings of density and activation levels, which are loaded when the application begins and shared with each computer in the cluster.</p></list-item><list-item><p>Acquire 3-dimensional volumetric cells from the provided NIfTIdata set by way of Jugular&#x2019;s internal loading functions and the &#x201C;Niftilib&#x201D; open source software library.</p></list-item><list-item><p>Share resulting volumetric cells with each computer in the cluster to improve speed.</p></list-item><list-item><p>Interpret Volumetric cells by an OpenGL shader (GLSL) that conducts ray marching and the displaying of voxels with varying colors and transparencies defined by previously shared color mapping XML configuration files.</p></list-item></list>
+</p>
+          </list-item>
+          <list-item>
+            <p>Obtain the location through the Vicon system and use this to update drawn perspectives of the volumetric data on each screen.</p>
+          </list-item>
+          <list-item>
+            <p>Record interactions and use them to dynamically adjust and cut planes through the data in order to navigate in the virtual space.</p>
+          </list-item>
+        </list>
+      </sec>
+      <sec>
+        <title>6. 3D-Immersive &amp; Interactive Neuronavigation (3D-IIN)</title>
+        <list list-type="order">
+          <list-item>
+            <p>Store subject activation data in the NIfTI data format, a volumetric data type that is interpreted using the Niftilib library.</p>
+          </list-item>
+          <list-item>
+            <p>Obtain interactions and the location through a Vicon tracking system, a joystick device, and gestural input. Use this information to ensure the displayed image represents the correct vantage point, allowing for real-time exploration of the data set, and enable dynamic control for up to 3 arbitrary cutting planes using familiar movements and control schemes (<bold>Figure 1</bold>).</p>
+          </list-item>
+        </list>
+      </sec>
+    </sec>
+    <sec>
+      <title>Representative Results</title>
+      <p>The patient presented to the hospital with a right temporal and occipital pulsating headache, with intensity of 6 on a 0-10 pain scale. She was having her typical migraine headache, however without aura. It had initiated upon awakening 5 hr before the (ictal) PET session, and she managed to tolerate it without any abortive pharmacotherapy. To her knowledge, the headache was not evoked by any triggering factor (<italic>e.g.</italic>, alcohol, sleep deprivation). No autonomic symptoms were reported, but photophobia and phonophobia were present. Following initiation of the ictal PET session the headache intensity escalated, reaching severe levels (9 on a 0-10 pain scale) 60 min into the study; progressing to nausea and vomiting at the end of the scan session. Decrease in &#xB5;OR BP<sub>ND</sub> was noticed in the brain of the patient during the spontaneous migraine headache (ictal phase), as compared to the baseline (interictal phase) (<bold>Figure 2</bold>). There were patent reductions in &#xB5;OR BP<sub>ND</sub> in the main pain-matrix regions of the endogenous &#xB5;-opioid system, including the following thalamus nuclei: right lateral dorsal (11, -19, -16: 10.2%), right medial dorsal (6, -17, -8: 11.1%), right midline (8, -19, -16: 27%), and ventral anterior (9, -9, -12: 12.0%). In addition, changes were found in the right anterior (8, 35, 14: 13.7%) and left posterior cingulate cortex (-5, -44, 23: 11.8%), left caudate body (-11, 6, 15: 12.0%), medial globus pallidus (right: 16, -4, -3: 16.2%; left: -14, -4, -3: 22.6%), left nucleus accumbens (-9, -11, -7: 10.5%), and hippocampus (right: 30, -22, -14: 12.6%; left: -30, -22, -14: 11.5%). There was an increase in &#xB5;OR BP<sub>ND </sub>only in the left amygdala (-23, -4, -19: 11.7%). In the brainstem, the significant ictal reduction in &#xB5;OR BP<sub>ND</sub> extended from the rostral to caudal periaqueductal gray matter (PAG) (right: 4, -28, -6: 15.1%; left: -2, -28, -6: 14.6%) (<bold>Figure 3</bold>). However, the global hemispheric percentage changes in the &#xB5;OR BP<sub>ND </sub>during the migraine attack were modest (right: 8.5%; left: 8.29%), indicating that the decreases in the &#xB5;OR BP<sub>ND </sub>were specific to the pain-matrix structures in the brain.</p>
+      <p><graphic xlink:href="jove-88-50682-0.jpg" position="float" orientation="portrait"/><bold>Figure 1.&#xA0;Full Virtual Reality 3D Data Navigation of a Migrainous Brain</bold>. For the first time actual migraine neuroimaging data was explored in a fully immersive 3D virtual reality, which includes unrestricted navigation through the data (by students, clinicians, and researchers) regarding availability of &#xB5;-opioid receptors (&#xB5;OR BP<sub>ND</sub>) in the brain during the migraine headache attack <italic>in vivo</italic>.</p>
+      <p><graphic xlink:href="jove-88-50682-1.jpg" position="float" orientation="portrait"/><bold>Figure 2.&#xA0;&#x3BC;-Opioid Brain Profile of a Migraine Headache <italic>in vivo.</italic>&#xA0;</bold>The ictal phase (lower row) &#x2013; headache phase - shows a decrease in &#x3BC;-opioid receptor availability (&#xB5;OR BP<sub>ND</sub>) in the pain-matrix regions (Threshold value, DV = 4.50). This result possibly represents an increase in endogenous &#x3BC;-opioid release during the migraine attack, as a regulatory response to the ongoing severe headache. Key words: thalamus (Thal), nucleus accumbens (Nac), and anterior cingular cortex (ACC).</p>
+      <p><graphic xlink:href="jove-88-50682-2.jpg" position="float" orientation="portrait"/><bold>Figure 3.&#xA0;Midbrain/Pons/Medulla &#x3BC;-Opioid Receptor Availability During a Migraine Attack <italic>in vivo</italic></bold><bold>. </bold>The ictal phase (right column) &#x2013; headache phase - shows a decrease in &#x3BC;-opioid receptor availability along the periaqueductal gray matter (PAG) (Threshold value, DV = 4.50), as compared to the interictal phase (left column) &#x2013; non-headache phase. Key words: PAG: r - rostral; m - medial; c - caudal.</p>
+    </sec>
+    <sec>
+      <title>Discussion</title>
+      <p>In this case report, actual migraine headache neuroimaging data was explored for the first time, in a fully immersive virtual 3D reality, which demonstrated a decrease in &#xB5;-opioid receptor availability (&#xB5;OR BP<sub>ND</sub>). Reductions in &#xB5;OR BP<sub>ND</sub> imply that there is a higher occupancy and/or a loss of &#xB5;-opioid receptors in the central nervous system. Acute reductions in &#xB5;OR BP<sub>ND </sub>in pain-matrix regions during the ictal scan as compared to the interictal scan, are expected to occur as a consequence of the release of endogenous opioids interacting with &#xB5;ORs as a regulatory response to the ongoing pain, making less &#xB5;ORs accessible to the radiotracer.</p>
+      <p>The novelty of our ictal migraine neuroimaging study lies in the new 3D neuronavigation approach to investigate a patient&#x2019;s actual brain data in virtual reality. PET radiotracer technology was used to measure changes in &#xB5;ORs availability with [<sup>11</sup>C]carfentanil. When examined during the headache event, the brains of migraineurs are usually scanned following an attack trigger (<italic>e.g</italic>., glyceryl trinitrate, photostimulation)<sup>16,17</sup>, or under the technical demand of a specific evoked stimulus (<italic>e.g</italic>., pain, brush, light, and odor)<sup>18-20</sup>. All those studies corroborate the knowledge that the disorder is associated with cortical and subcortical hyperexcitability during the headache phase. However, such a plethora of stimuli in the neuroimaging protocols introduces multiple factors that cloud our understanding of the sole impact of an acute migraine attack on the central nervous system. From the few previous functional studies without the presence of exogenous stimulation, there is indication of increased regional cerebral flow in areas such as the cingulate cortex, hypothalamus, and brainstem<sup>21</sup>, which can persist even after acute therapy<sup>22</sup>. Hitherto, the neuroimaging technologies applied have not allowed for the molecular characterization of neurotransmitter/receptor processes involved in the migraine attack, such as the endogenous &#xB5;-opioid mechanism, one of most important analgesic resources in the brain. Moreover, our method allowed these processes to be explored using 3D neuronavigation in a virtual environment.</p>
+      <p>The descending pain modulatory system is a complex network that regulates pain processing to a great extent via &#x3BC;-opioid receptors throughout the brain, including spinal to supra-spinal areas. These areas are known to be involved in endogenous anti-nociception, stress-induced analgesia, and in the action of opioid drugs commonly used for chronic pain and migraine treatment. In fact, the dural neurogenic vasodilation associated with migraine can be inhibited by morphine and subsequently reversed by the opioid antagonist naloxone, indicating that the effects of morphine on neurogenic inflammation are mediated specifically via activation of &#xB5;-opioid receptors<sup>23</sup>. Interestingly, the magnitude of endogenous opioid/&#xB5;ORs regional activations in humans is related to the individual&#x2019;s capacity to suppress sensory and affective elements of the pain experience<sup>24</sup>.</p>
+      <p>In our study, the brain regions that showed reductions in &#xB5;-opioid receptor availability during the ictal phase are responsible for both elements of the migraine headache experience and its modulation. They are the ACC, thalamus, basal ganglia (<italic>e.g</italic>., NAcc), hippocampus, and the PAG. In addition to sensitization due to abnormal trigeminal afferent traffic, one solid hypothesis for migraine pathophysiology is the dysfunction of the modulatory system. In this case, projections from/to brainstem structures, such as the PAG, where there is a high expression of opioid receptors, would inefficiently produce their anti-nociceptive effect on ascending sensory neurons. In addition, other higher cortical structures participate in this faulty pain-modulatory mechanism in migraine. A recent interictal resting-state study reported changes in the connectivity of migraineurs versus healthy controls in the ventrolateral PAG and most of the (sub)cortical structures in the modulatory pain system and correlated these with the frequency of the headache attacks<sup>13</sup>. The regions with connectivity changes found in this study are the same as those with changes in &#xB5;OR BP<sub>ND</sub> found in our own study. The same PAG location was originally reported as encompassing microstructural neuroplasticity in migraineurs<sup>14</sup>, and here had a considerable decrease in &#xB5;OR BP<sub>ND</sub> during the attack.</p>
+      <p>Further studies with larger cohorts are necessary to confirm and extend the findings presented in this case report. For instance, it is currently unknown why the system does not properly respond to the long-term use of exogenous opioids frequently prescribed in migraine clinics. Nonetheless, our study provides important mechanistic information, on the impact of a migraine headache in the &#xB5; -opioid system, and uses a novel 3D immersive and interactive neuronavigation (3D-IIN) approach for the first time. In the future, this exploratory 3D method could provide a much more immersive and interactive perspective for examining the brains of patients in research and the clinic.</p>
+    </sec>
+    <sec>
+      <title>Disclosures</title>
+      <p>The authors have nothing to disclose.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>This work was supported by the following grants (DaSilva AF): National Institute of Health - National Institute of Neurological Disorders and Stroke - K23 NS062946, Dana Foundation's Brain and Immuno-Imaging Award, and the Migraine Research Foundation Research Grant Award. The authors acknowledge the PET Center Nuclear Medicine Technologists (Jill M. Rothley, Edward J. McKenna, Andrew R. Weeden, Paul Kison, and Caitlin Hendricks) and the personnel of Functional MRI Laboratory (Scott Peltier and Keith Newnham). Dr. Alexandre DaSilva, the principal investigator, had full access to all the data in the study, and takes responsibility for the integrity of the data and the accuracy of the data analysis. The authors declare no conflicts of interest related to this study.</p>
+    </ack>
+    <ref-list>
+      <ref id="B0">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stewart</surname>
+              <given-names>WF</given-names>
+            </name>
+            <name>
+              <surname>Shechter</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Rasmussen</surname>
+              <given-names>BK</given-names>
+            </name>
+          </person-group>
+          <article-title>Migraine prevalence. A review of population-based studies</article-title>
+          <source>Neurology</source>
+          <year>1994</year>
+          <volume>44</volume>
+        </element-citation>
+      </ref>
+      <ref id="B1">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lipton</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Silberstein</surname>
+              <given-names>SD</given-names>
+            </name>
+            <name>
+              <surname>Stewart</surname>
+              <given-names>WF</given-names>
+            </name>
+          </person-group>
+          <article-title>An update on the epidemiology of migraine</article-title>
+          <source>Headache</source>
+          <year>1994</year>
+          <volume>34</volume>
+          <fpage>319</fpage>
+          <lpage>328</lpage>
+          <pub-id pub-id-type="pmid">7928310</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B2">
+        <element-citation publication-type="other" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lipton</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Bigal</surname>
+              <given-names>ME</given-names>
+            </name>
+          </person-group>
+          <article-title>Migraine: epidemiology, impact, and risk factors for progression</article-title>
+          <source>Headache</source>
+          <year>2005</year>
+        </element-citation>
+      </ref>
+      <ref id="B3">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hu</surname>
+              <given-names>XH</given-names>
+            </name>
+            <name>
+              <surname>Markson</surname>
+              <given-names>LE</given-names>
+            </name>
+            <name>
+              <surname>Lipton</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Stewart</surname>
+              <given-names>WF</given-names>
+            </name>
+            <name>
+              <surname>Berger</surname>
+              <given-names>ML</given-names>
+            </name>
+          </person-group>
+          <article-title>Burden of migraine in the United States: disability and economic costs. Arch Intern Med</article-title>
+          <source>Arch Intern Med</source>
+          <year>1999</year>
+          <volume>159</volume>
+          <fpage>813</fpage>
+          <lpage>818</lpage>
+          <pub-id pub-id-type="pmid">10219926</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B4">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lipton</surname>
+              <given-names>RB</given-names>
+            </name>
+          </person-group>
+          <article-title>Cutaneous allodynia in the migraine population</article-title>
+          <source>Ann Neurol</source>
+          <year>2008</year>
+          <volume>63</volume>
+          <fpage>148</fpage>
+          <lpage>158</lpage>
+          <pub-id pub-id-type="pmid">18059010</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fields</surname>
+              <given-names>HL</given-names>
+            </name>
+          </person-group>
+          <article-title>Understanding how opioids contribute to reward and analgesia</article-title>
+          <source>Reg Anesth Pain Med</source>
+          <year>2007</year>
+          <volume>32</volume>
+          <fpage>242</fpage>
+          <lpage>246</lpage>
+          <pub-id pub-id-type="pmid">17543821</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B6">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <article-title>Opioid Therapy for Migraine</article-title>
+          <source>Headache: The Journal of Head and Face Pain</source>
+          <year>2007</year>
+          <volume>47</volume>
+          <fpage>1371</fpage>
+          <lpage>1372</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B7">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Menon</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The human mu-opioid receptor gene polymorphism (A118G) is associated with head pain severity in a clinical cohort of female migraine with aura patients</article-title>
+          <source>The journal of headache and pain</source>
+          <year>2012</year>
+          <volume>13</volume>
+          <fpage>513</fpage>
+          <lpage>519</lpage>
+          <pub-id pub-id-type="pmid">22752568</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Drinovac</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Bach-Rojecky</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Matak</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Lackovic</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>Involvement of mu-opioid receptors in antinociceptive action of botulinum toxin type A</article-title>
+          <source>Neuropharmacology</source>
+          <year>2013</year>
+          <volume>70</volume>
+          <fpage>331</fpage>
+          <lpage>337</lpage>
+          <pub-id pub-id-type="pmid">23499661</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B9">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lipton</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Bigal</surname>
+              <given-names>ME</given-names>
+            </name>
+          </person-group>
+          <article-title>Opioid therapy and headache: a cause and a cure</article-title>
+          <source>Neurology</source>
+          <year>2004</year>
+          <volume>62</volume>
+          <fpage>1662</fpage>
+          <lpage>1663</lpage>
+          <pub-id pub-id-type="pmid">15159457</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Harris</surname>
+              <given-names>RE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Decreased central mu-opioid receptor availability in fibromyalgia</article-title>
+          <source>J Neurosci</source>
+          <year>2007</year>
+          <volume>27</volume>
+          <fpage>10000</fpage>
+          <lpage>10006</lpage>
+          <pub-id pub-id-type="pmid">17855614</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B11">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Logan</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Distribution volume ratios without blood sampling from graphical analysis of PET data</article-title>
+          <source>J Cereb Blood Flow Metab</source>
+          <year>1996</year>
+          <volume>16</volume>
+          <fpage>834</fpage>
+          <lpage>840</lpage>
+          <pub-id pub-id-type="pmid">8784228</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B12">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mainero</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Boshyan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hadjikhani</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Altered functional magnetic resonance imaging resting-state connectivity in periaqueductal gray networks in migraine</article-title>
+          <source>Ann Neurol</source>
+          <year>2011</year>
+          <volume>70</volume>
+          <fpage>838</fpage>
+          <lpage>845</lpage>
+          <pub-id pub-id-type="pmid">22162064</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>DaSilva</surname>
+              <given-names>AF</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Interictal alterations of the trigeminal somatosensory pathway and periaqueductal gray matter in migraine</article-title>
+          <source>Neuroreport</source>
+          <year>2007</year>
+          <volume>18</volume>
+          <fpage>301</fpage>
+          <lpage>305</lpage>
+          <pub-id pub-id-type="pmid">17435592</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hirvonen</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Measurement of central mu-opioid receptor binding in vivo with PET and [11C]carfentanil: a test-retest study in healthy subjects</article-title>
+          <source>European journal of nuclear medicine and molecular imaging</source>
+          <year>2009</year>
+          <volume>36</volume>
+          <fpage>275</fpage>
+          <lpage>286</lpage>
+          <pub-id pub-id-type="pmid">18779961</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B15">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Aurora</surname>
+              <given-names>SK</given-names>
+            </name>
+            <name>
+              <surname>Nagesh</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Patel</surname>
+              <given-names>SC</given-names>
+            </name>
+            <name>
+              <surname>Welch</surname>
+              <given-names>KM</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional MRI-BOLD of brainstem structures during visually triggered migraine</article-title>
+          <source>Neurology</source>
+          <year>2002</year>
+          <volume>59</volume>
+          <fpage>72</fpage>
+          <lpage>78</lpage>
+          <pub-id pub-id-type="pmid">12105310</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Afridi</surname>
+              <given-names>SK</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A PET study exploring the laterality of brainstem activation in migraine using glyceryl trinitrate</article-title>
+          <source>Brain</source>
+          <year>2005</year>
+          <volume>128</volume>
+          <fpage>932</fpage>
+          <lpage>939</lpage>
+          <pub-id pub-id-type="pmid">15705611</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moulton</surname>
+              <given-names>EA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Painful heat reveals hyperexcitability of the temporal pole in interictal and ictal migraine States</article-title>
+          <source>Cereb Cortex</source>
+          <year>2011</year>
+          <volume>21</volume>
+          <fpage>435</fpage>
+          <lpage>448</lpage>
+          <pub-id pub-id-type="pmid">20562317</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B18">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Burstein</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Thalamic sensitization transforms localized pain into widespread allodynia</article-title>
+          <source>Ann Neurol</source>
+          <year>2010</year>
+          <volume>68</volume>
+          <fpage>81</fpage>
+          <lpage>91</lpage>
+          <pub-id pub-id-type="pmid">20582997</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B19">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Denuelle</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A PET study of photophobia during spontaneous migraine attacks</article-title>
+          <source>Neurology</source>
+          <year>2011</year>
+          <volume>76</volume>
+          <fpage>213</fpage>
+          <lpage>218</lpage>
+          <pub-id pub-id-type="pmid">21148120</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B20">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Denuelle</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Fabre</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Payoux</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Chollet</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Geraud</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Hypothalamic activation in spontaneous migraine attacks</article-title>
+          <source>Headache</source>
+          <year>2007</year>
+          <volume>47</volume>
+          <fpage>1418</fpage>
+          <lpage>1426</lpage>
+          <pub-id pub-id-type="pmid">18052951</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B21">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Weiller</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Brain stem activation in spontaneous human migraine attacks</article-title>
+          <source>Nat Med</source>
+          <year>1995</year>
+          <volume>1</volume>
+          <fpage>658</fpage>
+          <lpage>660</lpage>
+          <pub-id pub-id-type="pmid">7585147</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B22">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Williamson</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Role of opioid receptors in neurogenic dural vasodilation and sensitization of trigeminal neurones in anaesthetized rats</article-title>
+          <source>Br J Pharmacol</source>
+          <year>2001</year>
+          <volume>133</volume>
+          <fpage>807</fpage>
+          <lpage>814</lpage>
+          <pub-id pub-id-type="pmid">11454653</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B23">
+        <element-citation publication-type="journal" publisher-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zubieta</surname>
+              <given-names>JK</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Regional mu opioid receptor regulation of sensory and affective dimensions of pain</article-title>
+          <source>Science</source>
+          <year>2001</year>
+          <volume>293</volume>
+          <fpage>311</fpage>
+          <lpage>315</lpage>
+          <pub-id pub-id-type="pmid">11452128</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

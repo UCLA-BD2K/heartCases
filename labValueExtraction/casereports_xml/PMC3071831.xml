@@ -1,0 +1,599 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21494688</article-id>
+      <article-id pub-id-type="pmc">3071831</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-10-04446</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0018424</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Molecular Cell Biology</subject>
+            <subj-group>
+              <subject>Signal Transduction</subject>
+              <subj-group>
+                <subject>Signaling Cascades</subject>
+                <subj-group>
+                  <subject>Akt Signaling Cascade</subject>
+                  <subject>ERK signaling cascade</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Proteomics</subject>
+            <subj-group>
+              <subject>Protein Abundance</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Anatomy and Physiology</subject>
+            <subj-group>
+              <subject>Immune Physiology</subject>
+              <subj-group>
+                <subject>Antibodies</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Clinical Immunology</subject>
+            <subj-group>
+              <subject>Immunologic Techniques</subject>
+              <subj-group>
+                <subject>Immunohistochemical Analysis</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Endocrinology</subject>
+            <subj-group>
+              <subject>Endocrine Physiology</subject>
+              <subj-group>
+                <subject>Insulin-like Growth Factor</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Oncology</subject>
+            <subj-group>
+              <subject>Cancer Treatment</subject>
+              <subj-group>
+                <subject>Antibody Therapy</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Cancers and Neoplasms</subject>
+              <subj-group>
+                <subject>Bone and Soft Tissue Sarcomas</subject>
+                <subj-group>
+                  <subject>Ewing Sarcoma</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Oncology Agents</subject>
+              <subject>Pediatric Oncology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Targeted Morphoproteomic Profiling of Ewing's Sarcoma Treated with Insulin-Like Growth Factor 1 Receptor (IGF1R) Inhibitors: Response/Resistance Signatures</article-title>
+        <alt-title alt-title-type="running-head">Targeted Morphoproteomics of Ewing's Sarcoma</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Subbiah</surname>
+            <given-names>Vivek</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Naing</surname>
+            <given-names>Aung</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Brown</surname>
+            <given-names>Robert E.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chen</surname>
+            <given-names>Helen</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Doyle</surname>
+            <given-names>Laurence</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>LoRusso</surname>
+            <given-names>Patricia</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Benjamin</surname>
+            <given-names>Robert</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Anderson</surname>
+            <given-names>Pete</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kurzrock</surname>
+            <given-names>Razelle</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Pediatrics, The University of Texas MD Anderson Cancer Center, Houston, Texas</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Department of Investigational Cancer Therapeutics (Phase I Clinical Trials Program), The University of Texas MD Anderson Cancer Center, Houston, Texas</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Department of Pathology and Laboratory Medicine, UT Health, University of Texas&#x2013;Houston Medical School, Houston, Texas</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Cancer Therapy Evaluation Program, National Cancer Institute, Bethesda, Maryland</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>Wayne State University&#x2013;Barbara Ann Karmanos Cancer Institute, Detroit, Michigan</addr-line>
+      </aff>
+      <aff id="aff6">
+        <label>6</label>
+        <addr-line>Division of Cancer Medicine, Department of Sarcoma Medical Oncology, University of Texas MD Anderson Cancer Center, Houston, Texas</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Rich</surname>
+            <given-names>Benjamin Edward</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">Dana-Farber Cancer Institute, United States of America</aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>vsubbiah@mdanderson.org</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: VS AN REB RK. Performed the experiments: VS AN REB RK. Analyzed the data: VS AN REB HC PA RK. Contributed reagents/materials/analysis tools: VS AN REB HC LD PL RB PA RK. Wrote the paper: VS REB RK.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>6</day>
+        <month>4</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>6</volume>
+      <issue>4</issue>
+      <elocation-id>e18424</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>4</day>
+          <month>11</month>
+          <year>2010</year>
+        </date>
+        <date date-type="accepted">
+          <day>5</day>
+          <month>3</month>
+          <year>2011</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>This is an open-access article, free of all copyright, and may be freely reproduced, distributed, transmitted, modified, built upon, or otherwise used by anyone for any lawful purpose. The work is made available under the Creative Commons CC0 public domain dedication.</copyright-statement>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>Insulin-like growth factor 1 receptor (IGF1R) targeted therapies have resulted in responses in a small number of patients with advanced metastatic Ewing's sarcoma. We performed morphoproteomic profiling to better understand response/resistance mechanisms of Ewing's sarcoma to IGF1R inhibitor-based therapy.</p>
+        </sec>
+        <sec>
+          <title>Methodology/Principal Findings</title>
+          <p>This pilot study assessed two patients with advanced Ewing's sarcoma treated with IGF1R antibody alone followed by combined IGF1R inhibitor plus mammalian target of rapamycin (mTOR) inhibitor treatment once resistance to single-agent IGF1R inhibitor developed. Immunohistochemical probes were applied to detect p-mTOR (Ser2448), p-Akt (Ser473), p-ERK1/2 (Thr202/Tyr204), nestin, and p-STAT3 (Tyr 705) in the original and recurrent tumor. The initial remarkable radiographic responses to IGF1R-antibody therapy was followed by resistance and then response to combined IGF1R plus mTOR inhibitor therapy in both patients, and then resistance to the combination regimen in one patient. In patient 1, upregulation of p-Akt and p-mTOR in the tumor that relapsed after initial response to IGF1R antibody might explain the resistance that developed, and the subsequent response to combined IGF1R plus mTOR inhibitor therapy. In patient 2, upregulation of mTOR was seen in the primary tumor, perhaps explaining the initial response to the IGF1R and mTOR inhibitor combination, while the resistant tumor that emerged showed activation of the ERK pathway as well.</p>
+        </sec>
+        <sec>
+          <title>Conclusion/Significance</title>
+          <p>Morphoproteomic analysis revealed that the mTOR pathway was activated in these two patients with advanced Ewing's sarcoma who showed response to combined IGF1R and mTOR inhibition, and the ERK pathway in the patient in whom resistance to this combination emerged. Our pilot results suggests that morphoproteomic assessment of signaling pathway activation in Ewing's sarcoma merits further investigation as a guide to understanding response and resistance signatures.</p>
+        </sec>
+      </abstract>
+      <counts>
+        <page-count count="9"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Ewing's sarcoma is the second most common malignant bone tumor in children, adolescents and young adults. Despite using a multimodal approach combining surgery, chemotherapy, and radiation, a therapeutic plateau has been attained with no change in overall survival <xref ref-type="bibr" rid="pone.0018424-Balamuth1">[1]</xref>, <xref ref-type="bibr" rid="pone.0018424-Smith1">[2]</xref>, <xref ref-type="bibr" rid="pone.0018424-Subbiah1">[3]</xref>, <xref ref-type="bibr" rid="pone.0018424-Subbiah2">[4]</xref>, <xref ref-type="bibr" rid="pone.0018424-Ludwig1">[5]</xref>. Attempts to improve clinical outcome through collaborative trials beginning in the early 1970s sought to optimize care through ever more mechanistically-diverse chemotherapies. Strategies included increasing duration of treatment or dosage per cycle, decreasing treatment interval (i.e., interval dose compression), or using high-dose myeloablative chemotherapy followed by peripheral blood stem cell transplant <xref ref-type="bibr" rid="pone.0018424-Subbiah1">[3]</xref>. However, survival remains poor for patients with metastatic disease. For metastatic Ewing's sarcoma at diagnosis, the risk of refractory or recurrent disease approaches 80% after initial therapy and the outcome of recurrent disease is poor with event-free survival less than 20% <xref ref-type="bibr" rid="pone.0018424-Subbiah1">[3]</xref>. Treatment options for patients with refractory or recurrent Ewing's sarcoma are limited.</p>
+      <p>Early phase clinical trials frequently combine targeted agents to optimize benefit. Two challenges at the outset are 1) deciding which agents to combine given the heterogeneity of tumors and their various underlying resistance pathways and feedback loops, and 2) how to translate findings from the bench to the bedside or directly from the bedside <xref ref-type="bibr" rid="pone.0018424-Rodon1">[6]</xref>. Morphoproteomics (morphology+proteomics) involves immunohistochemical assessment of the activation of signaling pathways in cancer cells, and predicting susceptibility to small-molecule inhibitors, specific chemotherapeutic agents, and possibly, differentiating agents <xref ref-type="bibr" rid="pone.0018424-Brown1">[7]</xref>. In some cases, drugs that fail early in the disease trajectory can produce renewed tumor regression later, particularly with rational addition of another drug <xref ref-type="bibr" rid="pone.0018424-Naing1">[8]</xref>. Morphoproteomics can potentially identify targeted combinations of drugs appropriate for prospective testing <xref ref-type="bibr" rid="pone.0018424-Brown2">[9]</xref>.</p>
+      <p>Insulin-like growth factor 1 receptor (IGF1R)-targeted therapies have shown early promise <xref ref-type="bibr" rid="pone.0018424-Rodon2">[10]</xref>, with responses in a small number of patients with Ewing's sarcoma <xref ref-type="bibr" rid="pone.0018424-Subbiah2">[4]</xref>, <xref ref-type="bibr" rid="pone.0018424-Tolcher1">[11]</xref>, <xref ref-type="bibr" rid="pone.0018424-Kurzrock1">[12]</xref>, <xref ref-type="bibr" rid="pone.0018424-Olmos1">[13]</xref>. Currently available IGF1R antibodies recognize different epitopes of the receptor and, therefore, may exert different biological/clinical responses <xref ref-type="bibr" rid="pone.0018424-Maki1">[14]</xref>, <xref ref-type="bibr" rid="pone.0018424-Olmos2">[15]</xref>. Even so, phase I studies with different IGF1R antibodies demonstrated remarkable responses in a subset of Ewing's sarcoma patients <xref ref-type="bibr" rid="pone.0018424-Tolcher1">[11]</xref>, <xref ref-type="bibr" rid="pone.0018424-Kurzrock1">[12]</xref>, <xref ref-type="bibr" rid="pone.0018424-Olmos1">[13]</xref>. While response rates in Phase II studies have not yet been reported, it is clear that while some responses have been dramatic, they occurred in only a minority of patients. The mechanisms underlying primary and secondary response and resistance are unknown.</p>
+      <p>Herein, we report our experience with two index cases of Ewing's sarcoma, with an initial positive response to an IGF1R inhibitor followed by resistance. Both patients subsequently responded to a combination of an IGF1R inhibitor and a mammalian target of rapamycin (mTOR) inhibitor. We performed morphoproteomic profiling to elucidate the functional signaling pathways in both patients.</p>
+    </sec>
+    <sec sec-type="methods" id="s2">
+      <title>Methods</title>
+      <sec id="s2a">
+        <title>Patient Selection, Treatment and Clinical Assessments</title>
+        <p>We reviewed the medical records of two patients with Ewing's sarcoma who were seen in the Phase I Clinical Trials Program at The University of Texas MD Anderson Cancer Center and initially treated with an IGF1R inhibitor alone, then subsequently with an IGF1R and mTOR inhibitor combination. The patients in this manuscript have given written informed consent (as outlined in the PLoS consent form) to publication of their clinical details. Treatment and consent on investigational trials, and data collection and morphoproteomic analysis were performed in accordance with the guidelines of the University of Texas MD Anderson Cancer Center Institutional Review Board (IRB).</p>
+        <p>The patients in the manuscript were derived from two different Phase I studies and a Phase II study using different IGF1R inhibitors and all the studies have been registered in <ext-link ext-link-type="uri" xlink:href="http://www.clinicaltrials.gov">www.clinicaltrials.gov</ext-link>. The scope of the studies, current status and clinical trial registration identifiers are as follows:</p>
+        <p>1. A Multiple Ascending Dose Study of R1507 in Patients with Advanced Solid Tumors (now closed and not actively recruiting patients) NCT00400361 (Phase I),</p>
+        <p>2. A Study to Determine the Activity of SCH 717454 in Subjects with Relapsed Osteosarcoma or Ewing's Sarcoma (Study P04720AM3) (now closed and not actively recruiting patients) NCT00617890 (Phase II),</p>
+        <p>3. IMC-A12 in Combination with Temsirolimus (CCI-779) in Patients With Advanced Cancers (Study is closed to Ewing's Sarcoma cohort) NCT00678769 (Phase I).</p>
+        <p>After initiation of an investigational therapy, patients were evaluated clinically at 3- to 4-week intervals. At each visit, a history was taken and physical examination performed along with comprehensive metabolic and hematologic panels. Patients were assessed for the onset of new symptoms and compliance with the investigational therapy. Tumor response was determined using Response Evaluation Criteria in Solid Tumors (RECIST) version 3.1 by positron emission tomography/computed tomography (PET/CT) scans or CT scans obtained about every six to eight weeks. Sections of original and recurrent tumor were available for analysis. The morphoproteomic analysis reported in this manuscript was not a part of the original Phase 1 trial protocols, and were carried out as a separate subsequent analysis. Patient consent and MD Anderson IRB approval were obtained for morphoproteomic analysis as outlined above.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Immunohistochemical and Morphoproteomic Analysis</title>
+        <p>Immunohistochemical (IHC) probes were used to detect the following phosphorylated (p) antigens as published previously<xref ref-type="bibr" rid="pone.0018424-Zenali1">[16]</xref>: p-mTOR (Ser 2448); p-Akt (Ser 473);and p-extracellular signal-regulated kinase (ERK) 1/2 (Thr 202/Tyr204) [Cell Signaling Technology, Beverly, MA]; and p-signal transducer and activator of transcription (STAT)3 (Tyr 705) [Santa Cruz Biotechnology, Santa Cruz, CA]. In addition, IHC probes in specimens from the two patients were applied to detect the expressions of CD99 (DakoCytomation, Carpinteria, CA) and nestin (abcam, Cambridge, MA). Chromogenic signals were evaluated by brightfield microscopy and semi-quantified with regard to percentage of cells stained (0&#x2013;100%) and the staining intensity (0: non-staining, 1+: weak staining, 2 +: moderate staining, and 3 +: strong staining). Subcellular compartmentalizations were assessed as plasmalemmal, cytoplasmic, and/or nuclear. Concurrently run positive and negative IHC controls reacted appropriately. The methods have been published previously <xref ref-type="bibr" rid="pone.0018424-Brown1">[7]</xref>, <xref ref-type="bibr" rid="pone.0018424-Brown2">[9]</xref>, <xref ref-type="bibr" rid="pone.0018424-Zenali1">[16]</xref>, <xref ref-type="bibr" rid="pone.0018424-Shen1">[17]</xref> and were performed in a laboratory that is certified under the Clinical Laboratory Improvement Amendments of 1988 (&#x201C;CLIA&#x201D;) as qualified to perform high-complexity clinical testing.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p>Patient outcomes with chemotherapy and targeted therapy are summarized below.</p>
+      <sec id="s3a">
+        <title/>
+        <sec id="s3a1">
+          <title>Patient 1</title>
+          <p>A twenty-four year old Caucasian woman presented with a three-year history of back pain and left lower extremity pain. Magnetic resonance imaging (MRI) revealed a sacral mass, which was determined to be Ewing's sarcoma following pathological assessment at MD Anderson. The tumor cells were positive for CD99 and negative for chromogranin A, keratin and desmin. She underwent six cycles of intravenous chemotherapy through central line with vincristine (2 mg intravenous [IV]on day 1), adriamycin (37.5 mg/m2/day IV for 2 days), and ifosfamide (2500 mg/m2 IV for 4 days) with MESNA uroprotection, followed by resection of the tumor, confirmed as being Ewing's sarcoma. Fluorescent in situ hybridrization showed a positive result for a clone with an <italic>EWSR1</italic> gene rearrangement. The patient received postoperative radiation therapy, followed by six cycles of adjuvant chemotherapy with irinotecan. After six months of follow-up, lung metastases were discovered. She was started on etoposide and after five months, her tumors progressed. Liposomal doxorubicin (Doxil) was initiated, but stopped after tumor progression. The patient then underwent thoracotomy for removal of tumor, followed by erlotinib, followed by another lung resection.</p>
+          <p>She was then referred to the Phase I clinic at MD Anderson Cancer Center. A CT scan showed enlargement of numerous pulmonary metastatic lesions, the largest measuring 5.9 cm&#xD7;5.1 cm. She was treated on three sequential Phase I trials, with continued disease progression. In December 2006, the patient was started on a Phase I study of R1507 (Roche, Nutley NJ), a fully human IgG1 type monoclonal antibody against IGF1R. Within six weeks, she had a dramatic response, with near complete tumor regression (<xref ref-type="fig" rid="pone-0018424-g001">Figure 1</xref>, previously described in <xref ref-type="bibr" rid="pone.0018424-Kurzrock1">[12]</xref>). No toxicity was noted. After 20 months of continued treatment a small focus of growing residual disease was found followed by surgical resection. Therapy continued for another 15 months, followed by progressed disease in the patient's lungs. She was started on another study using a different anti-IGF1R antibody (IMC-A12; Imclone, San Diego CA) <xref ref-type="bibr" rid="pone.0018424-Rowinsky1">[18]</xref> in combination with the mTOR inhibitor temsirolimus (NCT00678769). She tolerated this combination without any major side effects except a decrease in platelet counts. After 14 months of treatment, both PET/CT and chest CT scans show no disease (complete response) (<xref ref-type="fig" rid="pone-0018424-g002">Figure 2</xref>) and she continues on treatment.</p>
+          <fig id="pone-0018424-g001" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0018424.g001</object-id>
+            <label>Figure 1</label>
+            <caption>
+              <title>Imaging Responses in Ewing's sarcoma patient 1.</title>
+              <p>CT of the thorax in patient 1 with Ewing's sarcoma response to IGF1R antibody (R1507) alone <xref ref-type="bibr" rid="pone.0018424-Kurzrock1">[12]</xref>. Left panel shows pre-treatment CT scan of the thorax showing metastatic Ewing's sarcoma in the lung. Right panel: Six weeks after IGF1R antibody (R1507) therapy shows regression of tumor.</p>
+            </caption>
+            <graphic xlink:href="pone.0018424.g001"/>
+          </fig>
+          <fig id="pone-0018424-g002" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0018424.g002</object-id>
+            <label>Figure 2</label>
+            <caption>
+              <title>Imaging Responses in Ewing's sarcoma patient 1.</title>
+              <p>CT of the thorax in patient 1 with Ewing's sarcoma response to IGF1R antibody (IMCA12)+ mTOR (Temsirolimus) combination. Left panel shows pre-treatment CT scan of the thorax showing metastatic Ewing's sarcoma in the lung. Right panel: Nine months after IGF1R antibody+ mTOR inhibitor (IMCA12+ Temsirolimus) therapy showing continued response.</p>
+            </caption>
+            <graphic xlink:href="pone.0018424.g002"/>
+          </fig>
+        </sec>
+        <sec id="s3a2">
+          <title>Patient 2</title>
+          <p>A twenty-one year old Caucasian man presented with back pain radiating to the left leg in December 2006. An MRI revealed a large left iliac mass extending into the sacroiliac joint. Biopsy showed Ewing's sarcoma with a t(11;22) translocation. On presentation he had a large left iliac primary lesion and bilateral pulmonary nodules and no evidence of bone marrow disease. He was enrolled on the Children's Oncology Group Study AEWS0031 (NCT00006734) and received standard q 3 week regimen consisting of vincristine (2 mg/m2 IV push, on day 1. maximum dose 2 mg.), doxorubicin(75 mg/m2/course continuous IV infusion over 48 hours, beginning day 1), cyclophosphamide (1200 mg/m2 IV infusion over 1 hour with MESNA uroprotection, on day 1), alternating with ifosfamide (1800 mg/m2/day IV infusion over 1 hour, Days 1&#x2013;5 of each cycle. (9,000 mg/m2 max total dose) and etoposide (100 mg/m2/day IV infusion over 1 to 2 hours, days 1&#x2013;5 of each cycle (500 mg/m2 total dose). His pain improved after one treatment and he had an excellent response. He then received 55.8 Gy radiation in 31 fractions to the pelvis for local control of the unresectable disease, as well as whole lung radiation therapy for his pulmonary nodules at the end of chemotherapy. He completed therapy with no evidence of disease. Eight months later he developed recurrent pulmonary nodules. A PET/CT scan showed activity only in lungs. He received topotecan and cyclophosphamide, and although his tumors responded initially, they eventually progressed. The patient then received temozolomide and irinotecan, without response, followed by enrollment on an IGF1R inhibitor study using SCH 717454 (Schering, Kenilworth NJ), an IGF1R antibody (19D12) <xref ref-type="bibr" rid="pone.0018424-Subbiah2">[4]</xref>, <xref ref-type="bibr" rid="pone.0018424-Wang1">[19]</xref>. He had near complete response (18 of 19 nodules improving or disappeared) following 7 cycles. However, after 4 months, a solitary left lung nodule began to grow, and he was taken off study for progressive disease by RECIST. A thoracoscopic biopsy was done and confirmed Ewing's sarcoma. Subsequently, he was started on etoposide, but disease continued to progress. He then presented to the MD Anderson Phase I clinic and was enrolled on the protocol of IMC-A12, IGF1R antibody in combination with Temsirolimus, mTOR inhibitor (NCT00678769). Three out of four nodules showed a near complete response and one nodule remained stable. However, after four months, one nodule began to grow, and he was removed from study (<xref ref-type="fig" rid="pone-0018424-g003">Figure 3</xref>). The non-responding tumor was biopsied, and Ewing's sarcoma was confirmed. Subsequently, the patient was treated with high-dose ifosfamide and also received proton radiation therapy to the lung nodule.</p>
+          <fig id="pone-0018424-g003" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0018424.g003</object-id>
+            <label>Figure 3</label>
+            <caption>
+              <title>Imaging Responses in Ewing's sarcoma patient 2.</title>
+              <p>FDG PET /CT in patient 2 with Ewing's sarcoma response to IMCA12+Temsirolimus combination and then emergence of resistance. Left panel shows pre-treatment FDG PET/CT scan of the thorax showing metastatic Ewing's sarcoma in the lung. Middle panel shows FDG PET/CT response after 8 weeks of treatment. Right panel shows re-emergence of resistance 16 weeks after IGF1R antibody+ mTOR (IMCA12+ Temsirolimus) therapy.</p>
+            </caption>
+            <graphic xlink:href="pone.0018424.g003"/>
+          </fig>
+        </sec>
+      </sec>
+      <sec id="s3b">
+        <title>Morphoproteomics /Correlative Studies</title>
+        <p>The pre-treatment similarities and differences between patient 1 and 2 are shown in <xref ref-type="table" rid="pone-0018424-t001">Table 1</xref>.</p>
+        <table-wrap id="pone-0018424-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0018424.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Targeted Morphoproteomic Profiling of Ewing Sarcoma Patients Treated with Insulin-like Growth Factor-1 Receptor (IGF-1R) Inhibitor: Pretreatment Specimens.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0018424-t001-1" xlink:href="pone.0018424.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="2" align="left" rowspan="1">Ras/Raf kinase/Extracellular Signal-Regulated Kinase (ERK) Pathway<xref ref-type="table-fn" rid="nt101">*</xref></td>
+                  <td colspan="2" align="left" rowspan="1">mTORC2 Pathway<xref ref-type="table-fn" rid="nt101">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">STAT3 Pathway</td>
+                  <td align="left" rowspan="1" colspan="1">Nestin</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Patient No</td>
+                  <td align="left" rowspan="1" colspan="1">CD99 (Plasmalemmal)</td>
+                  <td align="left" rowspan="1" colspan="1">p-ERK &#xBD; Thr 202/Tyr 204 [Nuclear]</td>
+                  <td align="left" rowspan="1" colspan="1">p-Akt Ser 473 [Nuclear]</td>
+                  <td align="left" rowspan="1" colspan="1">p-mTOR Ser2448[Nuclear];</td>
+                  <td align="left" rowspan="1" colspan="1">p-STAT3<xref ref-type="table-fn" rid="nt102">**</xref> Tyr 705 [Nuclear]</td>
+                  <td align="left" rowspan="1" colspan="1">(Cytoplasmic)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">Present (1+)</td>
+                  <td align="left" rowspan="1" colspan="1">Present (1&#x2013;3+)</td>
+                  <td align="left" rowspan="1" colspan="1">+/&#x2212;</td>
+                  <td align="left" rowspan="1" colspan="1">1+</td>
+                  <td align="left" rowspan="1" colspan="1">&lt;10%</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">Present (2+)</td>
+                  <td align="left" rowspan="1" colspan="1">Present (0&#x2013;3+)</td>
+                  <td align="left" rowspan="1" colspan="1">2+</td>
+                  <td align="left" rowspan="1" colspan="1">2+</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;50%</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>*Maximum scoring intensity graded on a scale of 0 (no signal) to 3+ (high intensity).</p>
+            </fn>
+            <fn id="nt102">
+              <label/>
+              <p>**Percentage of positive tumoral nuclei.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <sec id="s3b1">
+          <title>Patient 1</title>
+          <p>A limited number of sections of metastatic tumor from the following time points were available 1) before IGF1R antibody therapy; and 2) from the resistant recurrence that emerged during IGF1R antibody therapy (<xref ref-type="fig" rid="pone-0018424-g004">Figure 4</xref>). Constitutive mTOR pathway activation was noted in the pre-anti-IGF1R specimen (<xref ref-type="fig" rid="pone-0018424-g004">Figure 4</xref>) and reflected p-mTOR (Ser2448) expression in both cytoplasmic plasmalemmal and nuclear compartments. Similar findings have been reported in the Ewing's family of tumors <xref ref-type="bibr" rid="pone.0018424-Zenali1">[16]</xref>. There was also cytoplasmic plasmalemmal expression of p-Akt (Ser473), but with almost no nuclear expression, which was more consistent with P13K/Akt/mTORC1 signaling pathway activity. In contrast, there was apparent upregulation of these analytes in the specimen from the IGF1R-resistant tumor that emerged during IGF1R antibody therapy, with predominant nuclear expression of both p-mTOR (Ser2448) and p-Akt (Ser473), consistent with mTORC2 pathway activation <xref ref-type="bibr" rid="pone.0018424-Shen1">[17]</xref>, <xref ref-type="bibr" rid="pone.0018424-Rosner1">[20]</xref>, <xref ref-type="bibr" rid="pone.0018424-Sarbassov1">[21]</xref>. In both biopsies, only endothelial cells were immunopositive for nestin, a neural precursor/differentiation marker, whereas the tumor cells were immunonegative. Notably, p-STAT3(Tyr705) was detected in a very minor component of the tumoral nuclei in the initial biopsy and was variably expressed in the post-anti- IGF1R treatment biopsy, ranging up to approximately one-half of the tumor cells in one microanatomical region.</p>
+          <fig id="pone-0018424-g004" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0018424.g004</object-id>
+            <label>Figure 4</label>
+            <caption>
+              <title>Schematic clinical history and immunohistochemistry of patient 1.</title>
+              <p>Schematic history of patient 1 depicting time line of first biopsy(Biopsy A) and second biopsy (Biopsy B). <underline>Immunohistochemistry Patient 1.</underline> Pre-IGF1R treatment (Specimen A) and Post &#x2013;IGF1R treatment (Specimen B) p-mTOR,p-AKT,p-STAT3 and nestin probes. Pre-treatment digital images (left hand frames, Specimen A) reveal: primarily cytoplasmic and plasmalemmal expression of p-mTOR (Ser 2448) and p-Akt (Ser 473) consistent with preponderance of mTORC1 pathway; occasional p-STAT3 (Tyr 705) in tumoral nuclei (up to &#x223C;20%) and absence of cytoplasmic nestin. Post-treatment digital images (right hand frames, Specimen B) reveal: primarily nuclear p-mTOR (Ser 2448) and p-Akt (Ser 473) consistent with mTORC2 pathway preponderance; moderate increase in number of tumor cells with nuclear p-STAT3 (Tyr 705) (from 0 up to &#x223C;50% in some regions) and absence of cytoplasmic nestin (endothelial cells serve as internal control). Original magnifications x400.</p>
+            </caption>
+            <graphic xlink:href="pone.0018424.g004"/>
+          </fig>
+        </sec>
+        <sec id="s3b2">
+          <title>Patient 2</title>
+          <p>Sections of tumor before IGF1R antibody therapy and after IGF1R antibody combined with mTOR inhibitor therapy were available for analysis (<xref ref-type="fig" rid="pone-0018424-g005">Figure 5</xref>). A greater number of sections were available than for patient 1, permitting more extensive pathway evaluation (<xref ref-type="fig" rid="pone-0018424-g005">Figure 5</xref>).</p>
+          <fig id="pone-0018424-g005" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0018424.g005</object-id>
+            <label>Figure 5</label>
+            <caption>
+              <title>Schematic clinical history and immunohistochemistry of patient 2.</title>
+              <p>Schematic history of patient 2 depicting time line of first biopsy (Biopsy C) and second biopsy (Biopsy D). <underline>Immunohistochemistry Patient 2.</underline> Pre-IGF1R treatment (Specimen C) and Post &#x2013;IGF1R+ mTOR (Specimen D) p-mTOR,p-AKT,p-STAT3, nestin probes and p-ERK1/2. Pre-treatment digital images (left hand frames, Specimen C) reveal: primarily cytoplasmic but with some nuclear expression of both p-mTOR (Ser 2448) and p-Akt (Ser 473) indicative of both mTORC1 and mTORC2 pathways; nuclear p-STAT3 (Tyr 705) in the majority of tumoral nuclei and faint but detectable constitutive nestin expression. Post-treatment digital images (right hand frames, Specimen D) reveal: preponderance of nuclear p-mTOR (Ser 2448) and p-Akt (Ser 473) consistent with upregulation of the mTORC2 pathway; persistence of p-STAT3 (Tyr 705)expression in tumoral nuclei and an increase in cytoplasmic nestin expression, the latter consistent with temsirolimus therapy. Constitutive activation of the Ras/Raf /ERK pathway is noted in both specimens by p-ERK 1/2 (Thr202/Tyr204) expression, showing nuclear translocation. Original magnifications x400.</p>
+            </caption>
+            <graphic xlink:href="pone.0018424.g005"/>
+          </fig>
+          <p>There was constitutive activation of mTOR in the patient's original and recurrent tumor, evidenced by phosphorylation (p) of mTOR in a putative site of activation, Ser2448, with a predominantly nuclear distribution most likely indicating an mTORC2 complex (rictor + p-mTOR), <xref ref-type="bibr" rid="pone.0018424-Rosner1">[20]</xref> and correlative activation of Akt on Ser473 consistent with the presence of both mTORC2 and dominant expression of p-Akt (Ser473) in tumoral nuclei <xref ref-type="bibr" rid="pone.0018424-Shen1">[17]</xref>, <xref ref-type="bibr" rid="pone.0018424-Rosner1">[20]</xref>, <xref ref-type="bibr" rid="pone.0018424-Sarbassov1">[21]</xref>. Constitutive activation of the Ras/Raf /ERK pathway is noted in both specimens by p-ERK 1/2 (Thr202/Tyr204) expression, showing nuclear translocation <xref ref-type="bibr" rid="pone.0018424-Brown2">[9]</xref>. The expression appeared generalized and uniform in recurrent tumor and, to a lesser degree, in the original (primary) tumor. The signal transducer and activator of transcription (STAT)3 pathway was constitutively activated in both the primary and recurrent tumor, as evidenced by expression with nuclear translocation of p-STAT3 (Tyr 705) in the vast majority of tumor cells. The neural and endothelial precursor marker, nestin, was weakly expressed in the original (primary) tumor (0&#x2013;1+). However, in the recurrent tumor, nestin was expressed in approximately 25% to 50% of tumor cells (up to 3+ cytoplasmic plasmalemmal expression) (<xref ref-type="fig" rid="pone-0018424-g005">Figures 5</xref> and <xref ref-type="fig" rid="pone-0018424-g006">6</xref>). Neural differentiation markers to CD56 and synaptophysin were expressed in recurrent tumor in the plasmalemmal and cytoplasmic compartments (not shown).</p>
+          <fig id="pone-0018424-g006" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0018424.g006</object-id>
+            <label>Figure 6</label>
+            <caption>
+              <title>High magnification immunohistochemistry showing nuclear versus cytoplasmic staining.</title>
+              <p>Post-IGF1R+ mTOR inhibitor therapy specimen from patient 2 in higher magnification (600X) showing brown chromogenic signal in nestin with predominantly cytoplasmic staining in the top panel and mTOR (Ser 2448) with predominant nulclear staining in the bottom panel.</p>
+            </caption>
+            <graphic xlink:href="pone.0018424.g006"/>
+          </fig>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>There is no effective therapy for advanced Ewing's sarcoma and patients with advanced metastatic disease succumb to their disease. Two patients with Ewing's sarcoma who responded, but then progressed after IGF1R inhibitor therapy alone showed consistently high mTORC2 expression in their tumors. Both patients responded after treatment to combined IGF1R and mTOR inhibition. The time interval between the first and the second IGF1R based therapy was 1 month for patient 1 and 4 months for patient 2. One patient had a continued response and has remained on IGF1R-based therapy for more than 50 months, the last 14 months of which has been an IGF1R inhibitor combined with an mTOR inhibitor. The patient's last imaging scans showed no disease. Unfortunately, the second patient acquired resistance.</p>
+      <p>Preclinical studies have shown that mTOR is a bypass pathway for IGF1R targeting. Similarly, combined inhibition of IGF1R and mTOR may circumvent counterproductive rapamycin-induced upregulation of Akt that can occur within 6 hours of treatment <xref ref-type="bibr" rid="pone.0018424-Subbiah1">[3]</xref>, <xref ref-type="bibr" rid="pone.0018424-Bertrand1">[22]</xref>. Several Phase I/II clinical trials are currently investigating this potential synergy in advanced malignancies. (Clinicaltrials.gov identifiers: NCT00678769; NCT00880282 and NCT01016015).</p>
+      <p>In this context, our finding of upregulated p-Akt (Ser473) and p-mTOR (Ser2448) in patient 1's resistant tumor that emerged following IGF1R antibody therapy is consistent with a resistance mechanism that could be related to upregulation of TORC2. The patient was, however, treated successfully with termsirolimus, a TORC1 inhibitor. Although short-term inhibition of TORC1 drives TORC2 formation and results in Akt activation, long-term TORC1 inhibition abrogates Akt expression through activation of S6K by PKD1 and also blocks TORC2 assembly <xref ref-type="bibr" rid="pone.0018424-Shah1">[23]</xref>, <xref ref-type="bibr" rid="pone.0018424-Sarbassov2">[24]</xref>. Activated S6K can down-modulate Akt by acting against insulin receptor substrate 1 proteins and P13K <xref ref-type="bibr" rid="pone.0018424-Shah1">[23]</xref>. Although these pathways have often been depicted as linear, clearly there is a complex interplay among signaling elements (<xref ref-type="fig" rid="pone-0018424-g007">Figure 7</xref>). EWS-FLI1 fusion protein, the hallmark of Ewing's sarcoma, downregulates insulin-like growth factor binding protein 3, IGFBP3, and upregulates IGF-1 expression resulting in enhanced IGF1R <xref ref-type="bibr" rid="pone.0018424-Prieur1">[25]</xref>. Therefore, treatment with an IGF1R inhibitor may counteract EWS-FLI1-mediated upregulation of the insulin receptor (IR) /IGF1R machinery. Temsirolimus is a &#x201C;rapalog&#x201D; and rapamycin has been shown to downregulate the EWS-FLI1 fusion protein <xref ref-type="bibr" rid="pone.0018424-MateoLozano1">[26]</xref> possibly also lessening IR/IGF1R signaling, and therefore providing an additional pathway by which this molecule might be operative in this patient.</p>
+      <fig id="pone-0018424-g007" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0018424.g007</object-id>
+        <label>Figure 7</label>
+        <caption>
+          <title>Simplified Insulin-like growth factor 1 receptor (IGF1R) and mTORC1 and mTORC2 signaling in relation with EWS-FLI1.</title>
+          <p>Insulin Receptor substrate 1 (IRS1) and Phosphatidylinositol 3-kinases (PI3K) are activated by Insulin and/or IGF1 signaling at the insulin receptor level. PDK1 and Akt are recruited to the plasma membrane by products of PI3K, PIP2, PIP3 (phosphatidylinositol 3,4,5 trisphosphate and phosphatidylinositol 3,4 bisphosphate). After this event there is phosphorylation and activation of Akt by mTORC2 complex (mTOR + mLST8+ Rictor). This leads to a chain of activation of numerous targets by Akt. The TSC1/2 complex is also phosphorylated in this fashion. By the mechanism inactivation of TSC2's GAP activity for the small G protein Rheb is initiated. Now mTORC1 complex (mTOR + mLST8+Raptor) is activated by GTP-bound Rheb and phosphorylates proteins like S6K. This starts a negative feedback loop to modulate auto-activity, through S6K-mediated pathway decrease in the activation of PI3K. IGF1R antibody inhibits IGF1R signaling and rapalogs (Temsirolimus in this case) inhibit mTORC1 short term, and eventually inhibit mTORC 2 with chronic exposure, and also suppresses EWS-FLI1 which drives tumorigenesis in Ewing's sarcoma. EWS-FLI1 suppresses nestin.</p>
+        </caption>
+        <graphic xlink:href="pone.0018424.g007"/>
+      </fig>
+      <p>In patient 2, constitutive activation of Akt and mTOR is similar to that in patient 1's recurrent tumor, and is seen in baseline pre-treatment tumor and in tumor that was resistant to IGF1R and mTOR combination treatment. These observations suggest the possibility that the TORC2 pathway has a role in primary and recurrent tumor <xref ref-type="bibr" rid="pone.0018424-Shen1">[17]</xref> (<xref ref-type="fig" rid="pone-0018424-g005">Figures 5</xref>, <xref ref-type="fig" rid="pone-0018424-g006">6</xref>, and <xref ref-type="fig" rid="pone-0018424-g007">7</xref>). After IGFR treatment alone, response was followed by resistance. Similarly, an initial response was followed by re-emergence of resistance following treatment with the IGFR-mTOR inhibitor combination. The mechanism of response to the IGFR and mTOR combination may be similar to that in patient 1, that is, through Akt and mTOR suppression that occurs with chronic temsirolimus exposure <xref ref-type="bibr" rid="pone.0018424-Shah1">[23]</xref>, <xref ref-type="bibr" rid="pone.0018424-Sarbassov2">[24]</xref>. The biologic activity of the mTOR inhibitor temsirolimus is further confirmed by the upregulation of nestin seen in the patient's IGFR/mTOR resistant tumor, since temsirolimus down-modulates EWS-FLI1, which would be expected to upregulate nestin <xref ref-type="bibr" rid="pone.0018424-MateoLozano1">[26]</xref>, <xref ref-type="bibr" rid="pone.0018424-Galli1">[27]</xref> (<xref ref-type="fig" rid="pone-0018424-g007">Figure 7</xref>). However, other pathways are operative in this patient's tumor, including Ras/Raf /ERK and STAT3 (<xref ref-type="fig" rid="pone-0018424-g005">Figure 5</xref>).The relative overexpression of CD99 in this patient is consistent with activation of this pathway (not shown). In addition, p-Akt and S6K are not downregulated by combined IGF1R and mTOR inhibition, perhaps due to Ras/Raf/ERK activation. These signals might account for tumor resistance <xref ref-type="bibr" rid="pone.0018424-MateoLozano1">[26]</xref>. Of interest, in addition to nestin the patient's recurrent tumor showed a propensity toward differentiation along neural lines, as demonstrated by increased expression of other neural markers such as CD56 or neural cell adhesion molecule and synaptophysin.</p>
+      <p>We have demonstrated resistance/response mechanisms by morphoproteomics in two patients with advanced Ewing's sarcoma. This needs to be analyzed retrospectively and validated prospectively in a larger dataset to allow more robust conclusions. Next generaration whole exome sequencing of patients with Ewing's sarcoma responding to IGF1R based treatment and reverse phase protein array analysis in patients acquiring resistance is underway and will help to decipher unidentified mechanisms and perhaps unravel novel mutations and genetic aberrations in the response and resistance pathways.</p>
+      <p>Our observations suggest that rational combinations of targeted therapy, which modulate multiple relevant pathways, may be useful in overcoming resistance in patients with Ewing's sarcoma. Inhibition of IGF1R and/or IGF1R and mTOR has resulted in significant clinical activity in patients with Ewing's sarcoma. Study of an IGF1R inhibitor combined with mTOR inhibitor is currently underway. Our pilot results suggests that morphoproteomic assessment of signaling pathway activation in Ewing's sarcoma merits further investigation as a guide to understanding response and resistance signatures.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding: </bold>This study was funded by in part by U01 CA062461-17 (RK) and NCI-CTEP R21-CA13763301A1 (AN). This work was also supported by Grant RR024148 from the National Center for Research Resources (NCRR), National Institutes of Health (NIH), and NIH Roadmap for Medical Research. Its contents are solely the responsibility of the authors and do not necessarily represent the official view of NCRR or NIH. Information on NCRR is available at <ext-link ext-link-type="uri" xlink:href="http://www.ncrr.nih.gov/">http://www.ncrr.nih.gov/</ext-link>. Information on Reengineering the Clinical Research Enterprise can be obtained from <ext-link ext-link-type="uri" xlink:href="http://nihroadmap.nih.gov/clinicalresearch/overview-translational.asp">http://nihroadmap.nih.gov/clinicalresearch/overview-translational.asp</ext-link>. The University of Texas MD Anderson Cancer Center is supported in part by the NIH through Cancer Center Support Grant no. CA 016672. Presented in part as a platform presentation at the 16th Annual Meeting of the Connective Tissue Oncologic Society, November 11-13, 2010, Paris, France. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0018424-Balamuth1">
+        <label>1</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Balamuth</surname><given-names>NJ</given-names></name><name><surname>Womer</surname><given-names>RB</given-names></name></person-group>             <year>2010</year>             <article-title>Ewing's sarcoma.</article-title>             <source>Lancet Oncol</source>             <volume>11</volume>             <fpage>184</fpage>             <lpage>192</lpage>          <pub-id pub-id-type="pmid">20152770</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Smith1">
+        <label>2</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Smith</surname><given-names>MA</given-names></name><name><surname>Seibel</surname><given-names>NL</given-names></name><name><surname>Altekruse</surname><given-names>SF</given-names></name><name><surname>Ries</surname><given-names>LA</given-names></name><name><surname>Melbert</surname><given-names>DL</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Outcomes for children and adolescents with cancer: challenges for the twenty-first century.</article-title>             <source>J Clin Oncol</source>             <volume>28</volume>             <fpage>2625</fpage>             <lpage>2634</lpage>          <pub-id pub-id-type="pmid">20404250</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Subbiah1">
+        <label>3</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Subbiah</surname><given-names>V</given-names></name><name><surname>Anderson</surname><given-names>P</given-names></name><name><surname>Lazar</surname><given-names>AJ</given-names></name><name><surname>Burdett</surname><given-names>E</given-names></name><name><surname>Raymond</surname><given-names>K</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Ewing's sarcoma: standard and experimental treatment options.</article-title>             <source>Curr Treat Options Oncol</source>             <volume>10</volume>             <fpage>126</fpage>             <lpage>140</lpage>          <pub-id pub-id-type="pmid">19533369</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Subbiah2">
+        <label>4</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Subbiah</surname><given-names>V</given-names></name><name><surname>Anderson</surname><given-names>PM</given-names></name></person-group>             <year>2010</year>             <article-title>Targeted Therapy of Ewing's Sarcoma.</article-title>             <source>Sarcoma</source>             <volume>Volume 2011 (2011)</volume>             <comment>Article ID 686985, doi:10.1155/2011/686985</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0018424-Ludwig1">
+        <label>5</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Ludwig</surname><given-names>JA</given-names></name></person-group>             <year>2008</year>             <article-title>Ewing sarcoma: historical perspectives, current state-of-the-art, and opportunities for targeted therapy in the future.</article-title>             <source>Curr Opin Oncol</source>             <volume>20</volume>             <fpage>412</fpage>             <lpage>418</lpage>          <pub-id pub-id-type="pmid">18525337</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Rodon1">
+        <label>6</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Rodon</surname><given-names>J</given-names></name><name><surname>Perez</surname><given-names>J</given-names></name><name><surname>Kurzrock</surname><given-names>R</given-names></name></person-group>             <year>2010</year>             <article-title>Combining targeted therapies: practical issues to consider at the bench and bedside.</article-title>             <source>Oncologist</source>             <volume>15</volume>             <fpage>37</fpage>             <lpage>50</lpage>          <pub-id pub-id-type="pmid">20080862</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Brown1">
+        <label>7</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Brown</surname><given-names>RE</given-names></name></person-group>             <year>2009</year>             <article-title>Morphogenomics and morphoproteomics: a role for anatomic pathology in personalized medicine.</article-title>             <source>Arch Pathol Lab Med</source>             <volume>133</volume>             <fpage>568</fpage>             <lpage>579</lpage>          <pub-id pub-id-type="pmid">19391654</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Naing1">
+        <label>8</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Naing</surname><given-names>A</given-names></name><name><surname>Kurzrock</surname><given-names>R</given-names></name></person-group>             <year>2010</year>             <article-title>Chemotherapy resistance and retreatment: a dogma revisited.</article-title>             <source>Clin Colorectal Cancer</source>             <volume>9</volume>             <fpage>E1</fpage>             <lpage>4</lpage>          <pub-id pub-id-type="pmid">20378496</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Brown2">
+        <label>9</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Brown</surname><given-names>RE</given-names></name></person-group>             <year>2005</year>             <article-title>Morphoproteomics: exposing protein circuitries in tumors to identify potential therapeutic targets in cancer patients.</article-title>             <source>Expert Rev Proteomics</source>             <volume>2</volume>             <fpage>337</fpage>             <lpage>348</lpage>          <pub-id pub-id-type="pmid">16000081</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Rodon2">
+        <label>10</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Rodon</surname><given-names>J</given-names></name><name><surname>DeSantos</surname><given-names>V</given-names></name><name><surname>Ferry</surname><given-names>RJ</given-names><suffix>Jr</suffix></name><name><surname>Kurzrock</surname><given-names>R</given-names></name></person-group>             <year>2008</year>             <article-title>Early drug development of inhibitors of the insulin-like growth factor-I receptor pathway: lessons from the first clinical trials.</article-title>             <source>Mol Cancer Ther</source>             <volume>7</volume>             <fpage>2575</fpage>             <lpage>2588</lpage>          <pub-id pub-id-type="pmid">18790742</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Tolcher1">
+        <label>11</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Tolcher</surname><given-names>AW</given-names></name><name><surname>Sarantopoulos</surname><given-names>J</given-names></name><name><surname>Patnaik</surname><given-names>A</given-names></name><name><surname>Papadopoulos</surname><given-names>K</given-names></name><name><surname>Lin</surname><given-names>CC</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Phase I, pharmacokinetic, and pharmacodynamic study of AMG 479, a fully human monoclonal antibody to insulin-like growth factor receptor 1.</article-title>             <source>J Clin Oncol</source>             <volume>27</volume>             <fpage>5800</fpage>             <lpage>5807</lpage>          <pub-id pub-id-type="pmid">19786654</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Kurzrock1">
+        <label>12</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Kurzrock</surname><given-names>R</given-names></name><name><surname>Patnaik</surname><given-names>A</given-names></name><name><surname>Aisner</surname><given-names>J</given-names></name><name><surname>Warren</surname><given-names>T</given-names></name><name><surname>Leong</surname><given-names>S</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>A phase I study of weekly R1507, a human monoclonal antibody insulin-like growth factor-I receptor antagonist, in patients with advanced solid tumors.</article-title>             <source>Clin Cancer Res</source>             <volume>16</volume>             <fpage>2458</fpage>             <lpage>2465</lpage>          <pub-id pub-id-type="pmid">20371689</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Olmos1">
+        <label>13</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Olmos</surname><given-names>D</given-names></name><name><surname>Postel-Vinay</surname><given-names>S</given-names></name><name><surname>Molife</surname><given-names>LR</given-names></name><name><surname>Okuno</surname><given-names>SH</given-names></name><name><surname>Schuetze</surname><given-names>SM</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Safety, pharmacokinetics, and preliminary activity of the anti-IGF-1R antibody figitumumab (CP-751,871) in patients with sarcoma and Ewing's sarcoma: a phase 1 expansion cohort study.</article-title>             <source>Lancet Oncol</source>             <volume>11</volume>             <fpage>129</fpage>             <lpage>135</lpage>          <pub-id pub-id-type="pmid">20036194</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Maki1">
+        <label>14</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Maki</surname><given-names>RG</given-names></name></person-group>             <year>2010</year>             <article-title>Small is beautiful: insulin-like growth factors and their role in growth, development, and cancer.</article-title>             <source>J Clin Oncol</source>             <volume>28</volume>             <fpage>4985</fpage>             <lpage>4995</lpage>          <pub-id pub-id-type="pmid">20975071</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Olmos2">
+        <label>15</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Olmos</surname><given-names>D</given-names></name><name><surname>Tan</surname><given-names>DS</given-names></name><name><surname>Jones</surname><given-names>RL</given-names></name><name><surname>Judson</surname><given-names>IR</given-names></name></person-group>             <year>2010</year>             <article-title>Biological rationale and current clinical experience with anti-insulin-like growth factor 1 receptor monoclonal antibodies in treating sarcoma: twenty years from the bench to the bedside.</article-title>             <source>Cancer J</source>             <volume>16</volume>             <fpage>183</fpage>             <lpage>194</lpage>          <pub-id pub-id-type="pmid">20526094</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Zenali1">
+        <label>16</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Zenali</surname><given-names>MJ</given-names></name><name><surname>Zhang</surname><given-names>PL</given-names></name><name><surname>Bendel</surname><given-names>AE</given-names></name><name><surname>Brown</surname><given-names>RE</given-names></name></person-group>             <year>2009</year>             <article-title>Morphoproteomic Confirmation of Constitutively Activated mTOR, ERK, and NF-kappaB Pathways in Ewing Family of Tumors.</article-title>             <source>Ann Clin Lab Sci</source>             <volume>39</volume>             <fpage>160</fpage>             <lpage>166</lpage>          <pub-id pub-id-type="pmid">19429803</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Shen1">
+        <label>17</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Shen</surname><given-names>Q</given-names></name><name><surname>Stanton</surname><given-names>ML</given-names></name><name><surname>Feng</surname><given-names>W</given-names></name><name><surname>Rodriguez</surname><given-names>ME</given-names></name><name><surname>Ramondetta</surname><given-names>L</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Morphoproteomic analysis reveals an overexpressed and constitutively activated phospholipase D1-mTORC2 pathway in endometrial carcinoma.</article-title>             <source>Int J Clin Exp Pathol</source>             <volume>4</volume>             <fpage>13</fpage>             <lpage>21</lpage>          <pub-id pub-id-type="pmid">21228924</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Rowinsky1">
+        <label>18</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Rowinsky</surname><given-names>EK</given-names></name><name><surname>Youssoufian</surname><given-names>H</given-names></name><name><surname>Tonra</surname><given-names>JR</given-names></name><name><surname>Solomon</surname><given-names>P</given-names></name><name><surname>Burtrum</surname><given-names>D</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>IMC-A12, a Human IgG1 Monoclonal Antibody to the Insulin-Like Growth Factor I Receptor.</article-title>             <source>Clinical Cancer Research</source>             <volume>13</volume>             <fpage>5549s</fpage>             <lpage>5555s</lpage>          <pub-id pub-id-type="pmid">17875788</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Wang1">
+        <label>19</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Wang</surname><given-names>Y</given-names></name><name><surname>Lipari</surname><given-names>P</given-names></name><name><surname>Wang</surname><given-names>X</given-names></name><name><surname>Hailey</surname><given-names>J</given-names></name><name><surname>Liang</surname><given-names>L</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>A fully human insulin-like growth factor-I receptor antibody SCH 717454 (Robatumumab) has antitumor activity as a single agent and in combination with cytotoxics in pediatric tumor xenografts.</article-title>             <source>Mol Cancer Ther</source>             <volume>9</volume>             <fpage>410</fpage>             <lpage>418</lpage>          <pub-id pub-id-type="pmid">20124453</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Rosner1">
+        <label>20</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Rosner</surname><given-names>M</given-names></name><name><surname>Hengstschlager</surname><given-names>M</given-names></name></person-group>             <year>2008</year>             <article-title>Cytoplasmic and nuclear distribution of the protein complexes mTORC1 and mTORC2: rapamycin triggers dephosphorylation and delocalization of the mTORC2 components rictor and sin1.</article-title>             <source>Hum Mol Genet</source>             <volume>17</volume>             <fpage>2934</fpage>             <lpage>2948</lpage>          <pub-id pub-id-type="pmid">18614546</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Sarbassov1">
+        <label>21</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Sarbassov</surname><given-names>DD</given-names></name><name><surname>Guertin</surname><given-names>DA</given-names></name><name><surname>Ali</surname><given-names>SM</given-names></name><name><surname>Sabatini</surname><given-names>DM</given-names></name></person-group>             <year>2005</year>             <article-title>Phosphorylation and regulation of Akt/PKB by the rictor-mTOR complex.</article-title>             <source>Science</source>             <volume>307</volume>             <fpage>1098</fpage>             <lpage>1101</lpage>          <pub-id pub-id-type="pmid">15718470</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Bertrand1">
+        <label>22</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Bertrand</surname><given-names>FE</given-names></name><name><surname>Steelman</surname><given-names>LS</given-names></name><name><surname>Chappell</surname><given-names>WH</given-names></name><name><surname>Abrams</surname><given-names>SL</given-names></name><name><surname>Shelton</surname><given-names>JG</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>Synergy between an IGF-1R antibody and Raf//MEK//ERK and PI3K//Akt//mTOR pathway inhibitors in suppressing IGF-1R-mediated growth in hematopoietic cells.</article-title>             <source>Leukemia</source>             <volume>20</volume>             <fpage>1254</fpage>             <lpage>1260</lpage>          <pub-id pub-id-type="pmid">16642049</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Shah1">
+        <label>23</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Shah</surname><given-names>OJ</given-names></name><name><surname>Wang</surname><given-names>Z</given-names></name><name><surname>Hunter</surname><given-names>T</given-names></name></person-group>             <year>2004</year>             <article-title>Inappropriate activation of the TSC/Rheb/mTOR/S6K cassette induces IRS1/2 depletion, insulin resistance, and cell survival deficiencies.</article-title>             <source>Curr Biol</source>             <volume>14</volume>             <fpage>1650</fpage>             <lpage>1656</lpage>          <pub-id pub-id-type="pmid">15380067</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Sarbassov2">
+        <label>24</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Sarbassov</surname><given-names>DD</given-names></name><name><surname>Ali</surname><given-names>SM</given-names></name><name><surname>Sengupta</surname><given-names>S</given-names></name><name><surname>Sheen</surname><given-names>JH</given-names></name><name><surname>Hsu</surname><given-names>PP</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>Prolonged rapamycin treatment inhibits mTORC2 assembly and Akt/PKB.</article-title>             <source>Mol Cell</source>             <volume>22</volume>             <fpage>159</fpage>             <lpage>168</lpage>          <pub-id pub-id-type="pmid">16603397</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Prieur1">
+        <label>25</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Prieur</surname><given-names>A</given-names></name><name><surname>Tirode</surname><given-names>F</given-names></name><name><surname>Cohen</surname><given-names>P</given-names></name><name><surname>Delattre</surname><given-names>O</given-names></name></person-group>             <year>2004</year>             <article-title>EWS/FLI-1 silencing and gene profiling of Ewing cells reveal downstream oncogenic pathways and a crucial role for repression of insulin-like growth factor binding protein 3.</article-title>             <source>Mol Cell Biol</source>             <volume>24</volume>             <fpage>7275</fpage>             <lpage>7283</lpage>          <pub-id pub-id-type="pmid">15282325</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-MateoLozano1">
+        <label>26</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Mateo-Lozano</surname><given-names>S</given-names></name><name><surname>Tirado</surname><given-names>OM</given-names></name><name><surname>Notario</surname><given-names>V</given-names></name></person-group>             <year>2003</year>             <article-title>Rapamycin induces the fusion-type independent downregulation of the EWS/FLI-1 proteins and inhibits Ewing's sarcoma cell proliferation.</article-title>             <source>Oncogene</source>             <volume>22</volume>             <fpage>9282</fpage>             <lpage>9287</lpage>          <pub-id pub-id-type="pmid">14681687</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0018424-Galli1">
+        <label>27</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Galli</surname><given-names>S</given-names></name><name><surname>Li</surname><given-names>G</given-names></name><name><surname>Tsokos</surname><given-names>M</given-names></name></person-group>             <year>2010</year>             <article-title>Pediatrics.</article-title>             <source>Modern Pathology</source>             <volume>23</volume>             <fpage>393A</fpage>             <lpage>395A</lpage>          </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

@@ -1,0 +1,1767 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21853089</article-id>
+      <article-id pub-id-type="pmc">3154926</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-11-06127</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0023204</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Genomics</subject>
+              <subj-group>
+                <subject>Genome Sequencing</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genomics</subject>
+            <subj-group>
+              <subject>Genome Sequencing</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Infectious Diseases</subject>
+            <subj-group>
+              <subject>Parasitic Diseases</subject>
+              <subj-group>
+                <subject>Malaria</subject>
+                <subj-group>
+                  <subject>Plasmodium Falciparum</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Tropical Diseases (Non-Neglected)</subject>
+              <subj-group>
+                <subject>Malaria</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Drug-Resistant Genotypes and Multi-Clonality in <italic>Plasmodium falciparum</italic> Analysed by Direct Genome Sequencing from Peripheral Blood of Malaria Patients</article-title>
+        <alt-title alt-title-type="running-head">Parasite Genomes Direct from Malaria Patients</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Robinson</surname>
+            <given-names>Timothy</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Campino</surname>
+            <given-names>Susana G.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Auburn</surname>
+            <given-names>Sarah</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Assefa</surname>
+            <given-names>Samuel A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Polley</surname>
+            <given-names>Spencer D.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Manske</surname>
+            <given-names>Magnus</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>MacInnis</surname>
+            <given-names>Bronwyn</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rockett</surname>
+            <given-names>Kirk A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Maslen</surname>
+            <given-names>Gareth L.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sanders</surname>
+            <given-names>Mandy</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Quail</surname>
+            <given-names>Michael A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chiodini</surname>
+            <given-names>Peter L.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kwiatkowski</surname>
+            <given-names>Dominic P.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Clark</surname>
+            <given-names>Taane G.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sutherland</surname>
+            <given-names>Colin J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Wellcome Trust Centre for Human Genetics, University of Oxford, Oxford, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Wellcome Trust Sanger Institute, Hinxton, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Global Health Division, Menzies School of Health Research, Charles Darwin University, Darwin, Australia</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Department of Clinical Parasitology, Hospital for Tropical Diseases, London, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>Faculties of Infectious and Tropical Diseases and Epidemiology and Population Health, London School of Hygiene &amp; Tropical Medicine, London, United Kingdom</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Dimopoulos</surname>
+            <given-names>George</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">Johns Hopkins School of Public Health, United States of America</aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>colin.sutherland@lshtm.ac.uk</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: TR SGC SA DPK TGC CJS. Performed the experiments: TR SGC SA SAA SDP TGC CJS. Analyzed the data: SGC SA TGC CJS. Contributed reagents/materials/analysis tools: SGC SA MM BM KAR GLM MS MAQ DPK SDP PLC TGC CJS. Wrote the paper: TR TGC CJS. Revised and commented on the manuscript: SGC SA PLC.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>11</day>
+        <month>8</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>6</volume>
+      <issue>8</issue>
+      <elocation-id>e23204</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>1</day>
+          <month>4</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>8</day>
+          <month>7</month>
+          <year>2011</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Robinson et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</copyright-statement>
+        <copyright-year>2011</copyright-year>
+      </permissions>
+      <abstract>
+        <p>Naturally acquired blood-stage infections of the malaria parasite <italic>Plasmodium falciparum</italic> typically harbour multiple haploid clones. The apparent number of clones observed in any single infection depends on the diversity of the polymorphic markers used for the analysis, and the relative abundance of rare clones, which frequently fail to be detected among PCR products derived from numerically dominant clones. However, minority clones are of clinical interest as they may harbour genes conferring drug resistance, leading to enhanced survival after treatment and the possibility of subsequent therapeutic failure. We deployed new generation sequencing to derive genome data for five non-propagated parasite isolates taken directly from 4 different patients treated for clinical malaria in a UK hospital. Analysis of depth of coverage and length of sequence intervals between paired reads identified both previously described and novel gene deletions and amplifications. Full-length sequence data was extracted for 6 loci considered to be under selection by antimalarial drugs, and both known and previously unknown amino acid substitutions were identified. Full mitochondrial genomes were extracted from the sequencing data for each isolate, and these are compared against a panel of polymorphic sites derived from published or unpublished but publicly available data. Finally, genome-wide analysis of clone multiplicity was performed, and the number of infecting parasite clones estimated for each isolate. Each patient harboured at least 3 clones of <italic>P. falciparum</italic> by this analysis, consistent with results obtained with conventional PCR analysis of polymorphic merozoite antigen loci. We conclude that genome sequencing of peripheral blood <italic>P. falciparum</italic> taken directly from malaria patients provides high quality data useful for drug resistance studies, genomic structural analyses and population genetics, and also robustly represents clonal multiplicity.</p>
+      </abstract>
+      <counts>
+        <page-count count="11"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Naturally acquired blood-stage infections of the malaria parasite <italic>Plasmodium falciparum</italic> typically harbour multiple haploid clones. Different parasite clones may vary significantly in immunogenicity, immune-avoidance mechanisms, susceptibility to drugs, and transmissibility by different <italic>Anopheles</italic> mosquito vector species <xref ref-type="bibr" rid="pone.0023204-Meyer1">[1]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0023204-Frnert1">[3]</xref>. The polyclonality and diversity of malarial infections together present a major barrier to vaccine development <xref ref-type="bibr" rid="pone.0023204-Kilama1">[4]</xref>, <xref ref-type="bibr" rid="pone.0023204-Takala1">[5]</xref>. The different parasite genotypes present in a single infection can be identified by analysis of polymorphic genetic loci, such as the merozoite surface protein genes <italic>msp1</italic> and <italic>msp2</italic>, amplified from peripheral blood samples of infected individuals <xref ref-type="bibr" rid="pone.0023204-Frnert1">[3]</xref>, <xref ref-type="bibr" rid="pone.0023204-Snounou1">[6]</xref>. The apparent number of clones observed in any single infection thus depends on the diversity [in that individual) of the polymorphic marker used for the analysis, and the relative abundance of rare clones, which often fail to be detected among PCR products derived from numerically dominant clones. However, minority clones are of clinical interest as they may harbour genes conferring drug resistance and thus be selected by treatment, causing therapeutic failure <xref ref-type="bibr" rid="pone.0023204-Gadalla1">[7]</xref>, <xref ref-type="bibr" rid="pone.0023204-Sutherland1">[8]</xref>, or express antigenic variants unaffected by vaccine-elicited immunity <xref ref-type="bibr" rid="pone.0023204-Flck1">[9]</xref>.</p>
+      <p>Studies of the multiplicity of malarial infections have examined associations with the course and severity of infection, drug sensitivity, age, geographic origin, gametocyte production and infectivity to mosquitoes <xref ref-type="bibr" rid="pone.0023204-Ariey1">[10]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0023204-Sutherland2">[19]</xref>. However, the most frequent application of clone analysis in malaria infections is in so-called &#x201C;PCR correction&#x201D; of recurrent infections in clinical trials of anti-malarial therapy. This can be confounded by the selective emergence after antimalarial treatment of minority clones in the pre-treatment parasite population <xref ref-type="bibr" rid="pone.0023204-Juliano1">[20]</xref>. Commonly used PCR methods share the limitation that such minority clones are under-represented or may be absent among assay products. This leads to mis-classification of PCR data in clinical trials, and underestimation of the extent of allelic polymorphism in any given infection <xref ref-type="bibr" rid="pone.0023204-Sutherland1">[8]</xref>, <xref ref-type="bibr" rid="pone.0023204-Basco1">[21]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0023204-Kiwanuka1">[24]</xref>.</p>
+      <p>An alternative approach to investigating polyclonality in <italic>P. falciparum</italic> infections is adaptation of patient isolates to culture, and use of cloning and molecular genotyping techniques to analyse multiplicity <italic>in vitro</italic>. However, a recent study by Nsobya <italic>et al.</italic> <xref ref-type="bibr" rid="pone.0023204-Nsobya1">[25]</xref>, using isolates from Ugandan malaria patients propagated <italic>in vitro</italic>, demonstrated that there are significant inter-genotype differences in the ability to survive in even short-term cultures, leading to a rapid skewing of the parasite population <italic>in vitro</italic>, and an overall loss of complexity. Thus techniques which avoid expansion of parasite material, whether by polymerase chain reaction or by <italic>in vitro</italic> expansion, are more likely to preserve the complexity and relative abundance of different genotypes in patient isolates of interest.</p>
+      <p>The recent development of new generation direct sequencing technologies, capable of elucidating whole-genome data from relatively small biological samples, provides a potential new approach to investigate polyclonality in malaria infections. These technologies fractionate DNA samples into random end-tagged fragments of a uniform size, which are amplified <italic>in situ</italic> on a solid matrix, and then record the sequence of base addition to each growing amplicon. This produces a large number of short, but &#x201C;massively&#x201D; parallel sequence (MPS) reads which permit assembly of a partial or full genome provided an established reference genome sequence is available, and sufficient depth (number of reads at each nucleotide position) and breadth (proportion of the genome amplified and sequenced) of coverage are achieved. The single molecule sequencing approach of MPS technologies ensures that each sequence read (or pair of sequence reads if both ends of the molecule are sequenced) is essentially a haplotype, providing great scope for the characterisation of polyclonal infections. Using MPS, it is now possible to derive genome sequence data from a small volume of material from any organism of interest. Although assembly of extended genomic sequences is facilitated by the use of existing reference sequence, <italic>de novo</italic> or reference-free approaches are becoming more widely used <xref ref-type="bibr" rid="pone.0023204-Zerbino1">[26]</xref>. MPS is now being assessed as a method to examine genome-wide polymorphism in <italic>P. falciparum</italic>, using both parasites cultured <italic>in vitro</italic> and material taken directly from the peripheral blood of people infected with the parasite <xref ref-type="bibr" rid="pone.0023204-Manske1">[27]</xref>. However, the AT-rich genome of malaria parasites poses particular challenges for this approach to genome assembly <xref ref-type="bibr" rid="pone.0023204-Kozarewa1">[28]</xref>, and thus it is unclear how well MPS will perform in analysis of <italic>P. falciparum</italic> taken directly from patients, particularly as natural infections commonly carry multiple clones with distinct genotypes at polymorphic loci.</p>
+      <p>In this study we use MPS to derive genome-level sequence data for five <italic>P. falciparum</italic> parasite isolates prepared directly from peripheral blood of four malaria patients, after minimal or no amplification of the parasite genome <xref ref-type="bibr" rid="pone.0023204-Kozarewa1">[28]</xref>. To evaluate the fidelity of the sequence data generated, and its utility for studies of genomic variation, we first examined structural differences among our isolates by global scanning for copy number variants (CNV). We then assessed sequence diversity at known polymorphic sites among six genes considered to be under strong selective pressure from antimalarial therapy, and among full-length mitochondrial sequences derived from each isolate. Finally, a genome-wide analysis of multiplicity was performed using other loci, selected empirically, which provided robust estimates of genotype multiplicity in each patient. These results were compared to conventional assessments of polyclonality using polymorphic loci encoding merozoite surface antigens.</p>
+    </sec>
+    <sec sec-type="methods" id="s2">
+      <title>Methods</title>
+      <sec id="s2a">
+        <title>Sample collection</title>
+        <p>Samples (OX001, OX003, OX005A, OX005B, OX006) were collected from returning travellers attending the Hospital for Tropical Diseases (HTD), or a referring hospital, with malaria symptoms, who were diagnosed positive by malaria films examined in the Department of Clinical Parasitology, and who gave written consent to have their blood samples analysed under a protocol approved by the University College London Hospitals Research Ethics Committee (project ref no. 07/0055). A minimum parasite density of 1% of infected erythrocytes was set as a cut-off to ensure DNA preparations included a high parasite to human white blood cell ratio.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Processing of blood samples</title>
+        <p>EDTA blood remaining after diagnosis (2&#x2013;4 mL) was prepared for genomic DNA extraction by removal of human white blood cells within four hours of venesection. Briefly, blood was diluted two to three-fold in phosphate-buffered saline, pH 7.2 (PBS), layered on to a 2 ml cushion of Lymphoprep&#xAE; (Axis-Shield, UK), and centrifuged for 30 minutes at 4,000 g in a bench-top centrifuge at room temperature. Upper layers, including leukocytes, were removed, and the erythrocyte pellet was washed once in PBS and re-suspended to a total volume of 5 ml with PBS. The erythrocyte suspension was passed once through a Plasmodipu&#x2122; filter (Euro-Diagnostica), resuspended in 5 ml PBS and pelleted at 4000 g for 10 minutes. The erythrocyte pellet was stored frozen at &#x2212;20&#xB0;C, pending DNA extraction using the Qiagen DNA Blood Maxi (Qiagen, Crawley, UK) extraction kit.</p>
+        <p>Purified DNA samples were taken to the Wellcome Trust Sanger Institute (WTSI) malaria labs and prepared for MPS sequencing as described elsewhere <xref ref-type="bibr" rid="pone.0023204-Manske1">[27]</xref>, <xref ref-type="bibr" rid="pone.0023204-Kozarewa1">[28]</xref>. In parallel, each DNA sample was analysed for multiplicity using a standard nested PCR method to amplify polymorphic regions of <italic>pfmsp1</italic> and <italic>pfmsp2</italic> <xref ref-type="bibr" rid="pone.0023204-Snounou1">[6]</xref>. Amplicons were fractionated on agarose gels.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Sequence Analysis</title>
+        <p>All samples underwent whole genome sequencing on the Illumina Genome Analyzer II platform, as previously described <xref ref-type="bibr" rid="pone.0023204-Manske1">[27]</xref>. Briefly, paired 54- or 76-base pair sequence reads were generated on DNA fragments of 200&#x2013;300bp. The fastq files for each lane of sequence data for each isolate were mapped onto the <italic>P. falciparum</italic> 3D7 reference genome V2.1.5 (<ext-link ext-link-type="ftp" xlink:href="ftp://ftp.sanger.ac.uk/pub/pathogens/Plasmodium/falciparum/3D7/3D7.latest_version/">ftp://ftp.sanger.ac.uk/pub/pathogens/Plasmodium/falciparum/3D7/3D7.latest_version/</ext-link>) using the Burrows-Wheeler Aligner (<ext-link ext-link-type="uri" xlink:href="http://bio-bwa.sourceforge.net">http://bio-bwa.sourceforge.net</ext-link>), resulting in <italic>bam</italic> files that can be analysed using SAMtools/BCFtools (<ext-link ext-link-type="uri" xlink:href="http://samtools.sourceforge.net">http://samtools.sourceforge.net</ext-link>). Using this toolkit, we excluded reads of poor mapping quality, and derived a list of SNP (and small insertions and deletions (indels)) based on uniquely mapping reads and acceptable levels of coverage (minimum 10, max. 2000). In addition we applied a filter to rule out error-prone variant calls, based on a pseudo Phred Q-score, where a Q30/60 refers to one error per one-thousand/million bases. We used a threshold Q30, and the sensitivity of the estimated total number of SNP (and indels) to this score is shown in <xref ref-type="table" rid="pone-0023204-t001">Table 1</xref>. Using this approach we identified SNP in the mitochondria genome (5.97 kb), and used tabulations of coverage across all SNP positions to call nucleotides. All raw sequence data (fastq format) used here are publicly available as fastq files, and as &#x201C;Open Access&#x201D; samples (prefix PL) on the WTSI Malaria Programme web-site <xref ref-type="bibr" rid="pone.0023204-http1">[29]</xref>.</p>
+        <table-wrap id="pone-0023204-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0023204.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Summary of sequence data, and numbers of potential SNP and indels, relative to 3D7 reference sequence.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0023204-t001-1" xlink:href="pone.0023204.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Isolate</td>
+                  <td align="left" rowspan="1" colspan="1">Read length</td>
+                  <td align="left" rowspan="1" colspan="1">Lanes</td>
+                  <td align="left" rowspan="1" colspan="1">PE reads</td>
+                  <td align="left" rowspan="1" colspan="1">Cover. All, &gt;0</td>
+                  <td align="left" rowspan="1" colspan="1">Cover.All, &gt;0</td>
+                  <td align="left" rowspan="1" colspan="1">Cover.</td>
+                  <td align="left" rowspan="1" colspan="1">% genome</td>
+                  <td align="left" rowspan="1" colspan="1">% genome</td>
+                  <td align="left" rowspan="1" colspan="1">Q30</td>
+                  <td align="left" rowspan="1" colspan="1">Q30</td>
+                  <td align="left" rowspan="1" colspan="1">Q20</td>
+                  <td align="left" rowspan="1" colspan="1">Q20</td>
+                  <td align="left" rowspan="1" colspan="1">Q60</td>
+                  <td align="left" rowspan="1" colspan="1">Q60</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">per lane (millions)</td>
+                  <td align="left" rowspan="1" colspan="1">Median (mean)</td>
+                  <td align="left" rowspan="1" colspan="1">Nuclear median (mean)</td>
+                  <td align="left" rowspan="1" colspan="1">Mito Median (mean)</td>
+                  <td align="left" rowspan="1" colspan="1">Cover. &gt;0</td>
+                  <td align="left" rowspan="1" colspan="1">Cover. &gt;4</td>
+                  <td align="left" rowspan="1" colspan="1">SNP (Indels)</td>
+                  <td align="left" rowspan="1" colspan="1">% coding (unique) regions</td>
+                  <td align="left" rowspan="1" colspan="1">SNP (Indels)</td>
+                  <td align="left" rowspan="1" colspan="1">% coding (unique) regions</td>
+                  <td align="left" rowspan="1" colspan="1">SNP (Indels)</td>
+                  <td align="left" rowspan="1" colspan="1">% coding (unique) regions</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OX001</td>
+                  <td align="left" rowspan="1" colspan="1">54</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">14.4</td>
+                  <td align="left" rowspan="1" colspan="1">3, (11, 16)</td>
+                  <td align="left" rowspan="1" colspan="1">3, 9 (11, 16)</td>
+                  <td align="left" rowspan="1" colspan="1">1071 (1158)</td>
+                  <td align="left" rowspan="1" colspan="1">68.2</td>
+                  <td align="left" rowspan="1" colspan="1">45.4</td>
+                  <td align="left" rowspan="1" colspan="1">27943 (1043)</td>
+                  <td align="left" rowspan="1" colspan="1">69.2 (70.0)</td>
+                  <td align="left" rowspan="1" colspan="1">29521 (1123)</td>
+                  <td align="left" rowspan="1" colspan="1">68.5 (69.1)</td>
+                  <td align="left" rowspan="1" colspan="1">24167 (785)</td>
+                  <td align="left" rowspan="1" colspan="1">71.0 (72.1)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OX003</td>
+                  <td align="left" rowspan="1" colspan="1">54</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">13.9</td>
+                  <td align="left" rowspan="1" colspan="1">6, 9 (11, 14)</td>
+                  <td align="left" rowspan="1" colspan="1">6, 9 (11, 14)</td>
+                  <td align="left" rowspan="1" colspan="1">939 (895)</td>
+                  <td align="left" rowspan="1" colspan="1">80.7</td>
+                  <td align="left" rowspan="1" colspan="1">54.5</td>
+                  <td align="left" rowspan="1" colspan="1">27093 (1546)</td>
+                  <td align="left" rowspan="1" colspan="1">65.4 (70.1)</td>
+                  <td align="left" rowspan="1" colspan="1">28538 (1644)</td>
+                  <td align="left" rowspan="1" colspan="1">64.5 (69.1)</td>
+                  <td align="left" rowspan="1" colspan="1">23699 (1249)</td>
+                  <td align="left" rowspan="1" colspan="1">67.6 (70.2)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OX005A</td>
+                  <td align="left" rowspan="1" colspan="1">76</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">32.6</td>
+                  <td align="left" rowspan="1" colspan="1">90, 91 (98, 101)</td>
+                  <td align="left" rowspan="1" colspan="1">90, 91 (97, 100)</td>
+                  <td align="left" rowspan="1" colspan="1">1244 (1150)</td>
+                  <td align="left" rowspan="1" colspan="1">97.5</td>
+                  <td align="left" rowspan="1" colspan="1">95.5</td>
+                  <td align="left" rowspan="1" colspan="1">48329 (25763)</td>
+                  <td align="left" rowspan="1" colspan="1">31.4 (74.5)</td>
+                  <td align="left" rowspan="1" colspan="1">50442 (26419)</td>
+                  <td align="left" rowspan="1" colspan="1">31.3 (74.0)</td>
+                  <td align="left" rowspan="1" colspan="1">43059 (24239)</td>
+                  <td align="left" rowspan="1" colspan="1">31.9 (76.5)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OX005B</td>
+                  <td align="left" rowspan="1" colspan="1">76</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">30.0</td>
+                  <td align="left" rowspan="1" colspan="1">126, 127 (115, 118)</td>
+                  <td align="left" rowspan="1" colspan="1">125, 127 (114, 117)</td>
+                  <td align="left" rowspan="1" colspan="1">1544 (1478)</td>
+                  <td align="left" rowspan="1" colspan="1">97.5</td>
+                  <td align="left" rowspan="1" colspan="1">96.1</td>
+                  <td align="left" rowspan="1" colspan="1">43753 (22624)</td>
+                  <td align="left" rowspan="1" colspan="1">33.8 (76.7)</td>
+                  <td align="left" rowspan="1" colspan="1">46258 (23208)</td>
+                  <td align="left" rowspan="1" colspan="1">33.4 (75.6)</td>
+                  <td align="left" rowspan="1" colspan="1">37010 (21180)</td>
+                  <td align="left" rowspan="1" colspan="1">34.5 (79.8)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OX006</td>
+                  <td align="left" rowspan="1" colspan="1">76</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">25.1</td>
+                  <td align="left" rowspan="1" colspan="1">122, 123 (115, 117)</td>
+                  <td align="left" rowspan="1" colspan="1">122, 123 (115, 117)</td>
+                  <td align="left" rowspan="1" colspan="1">1526 (1450)</td>
+                  <td align="left" rowspan="1" colspan="1">98.0</td>
+                  <td align="left" rowspan="1" colspan="1">96.7</td>
+                  <td align="left" rowspan="1" colspan="1">42985 (25580)</td>
+                  <td align="left" rowspan="1" colspan="1">32.5 (78.1)</td>
+                  <td align="left" rowspan="1" colspan="1">45863 (26687)</td>
+                  <td align="left" rowspan="1" colspan="1">32.3 (77.1)</td>
+                  <td align="left" rowspan="1" colspan="1">34307 (23834)</td>
+                  <td align="left" rowspan="1" colspan="1">32.5 (81.1)</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>PE&#x200A;=&#x200A; paired end; Cover. &#x200A;=&#x200A; coverage; all refers to all positions; &gt;0 refers to those positions with non-zero coverage; Mito&#x200A;=&#x200A; mitochondrial genome; unique &#x200A;=&#x200A;% of sliding 50-mer windows around each position that are unique; indels&#x200A;=&#x200A; insertions and deletions; Q20/30/60 equates to error rates of 1 in 100/1000/1000000 base pairs respectively.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="s2d">
+        <title>Identification of copy number variation</title>
+        <p>CNV, including deletions and sequence amplifications, may be identified using sequence coverage data. In particular, regions with little or no coverage may be deleted in some or all genomes in the infection, whilst those with coverage in excess of the average may be amplified. A list of small indels from the paired end mapping process with evidence from at least two isolates was constructed using SAM tools with the same Q30 threshold. In particular, small indels are detected by comparing the distance between mapped read pairs to the average insert size of the genomic library <xref ref-type="bibr" rid="pone.0023204-Tuzun1">[30]</xref>, <xref ref-type="bibr" rid="pone.0023204-Korbel1">[31]</xref>. For each isolate, we then calculated total coverage at positions in the sequence that were in coding regions and were classified as unique by sliding 50-mers across the reference genome. To further identify regions with CNVs we adopted a similar approach to Yoon <italic>et al.</italic> <xref ref-type="bibr" rid="pone.0023204-Yoon1">[32]</xref>. In particular, coverage data were normalised for GC content, and a Z-score statistic calculated using 100-bp windows by subtracting the mean of all windows and dividing by the standard deviation. These Z-scores were converted to p-values and we report any regions lower than a 10<sup>&#x2212;6</sup> threshold. Regions of interest were examined graphically using LookSeq software <xref ref-type="bibr" rid="pone.0023204-Manske2">[33]</xref> (available at <ext-link ext-link-type="uri" xlink:href="http://lookseq.sanger.ac.uk/lookseq2/index.html">http://lookseq.sanger.ac.uk/lookseq2/index.html</ext-link>).</p>
+      </sec>
+      <sec id="s2e">
+        <title>Analysis of drug resistance-associated loci</title>
+        <p>Illumina nucleotide calls were extracted from genome read data at each position for the following six loci, implicated in resistance to artemisinins or other antimalarials: (i) <italic>pfatpase6</italic> (PFA0310c, chr 1: 265 447-269 412); (ii) <italic>pfmrp1</italic> (PFA0590w, chr 1: 465 875&#x2013;471 344); (iii) <italic>pfmdr1</italic> (PFE1150w, chr 5: 957 885-962 144); (iv) <italic>pfcrt</italic> (MAL7P1.27, chr 7: 458 990&#x2013;461 216); (v) <italic>pfmrp2</italic> (PFL1410c, chr 12: 1 192 877&#x2013;1 199 204); <italic>pfnhe1</italic> (P13_0019, chr 13: 170 076&#x2013;175 991). Sequence from each locus was converted to fasta format after manual removal of introns, and compared to sequence from the other isolates, and the 3D7 reference genome, by alignment in Clustal W (<ext-link ext-link-type="uri" xlink:href="http://www.ebi.ac.uk/Tools">http://www.ebi.ac.uk/Tools</ext-link>). At these loci, coverage depth was typically 40 to 100 reads; multiplicity at a specific site was often observed, indicated by more than one nucleotide being called; a low threshold (2 calls) was set for retaining minor variants in the analysis, irrespective of the total read coverage at that position. Coverage breadth was excellent, being close to 100% for each resistance-associated locus.</p>
+      </sec>
+      <sec id="s2f">
+        <title>Genome-wide screen for minimal multiplicity</title>
+        <p>For each of our test isolates we inferred the minimal multiplicity by considering the number of distinct haplotypes formed by combinations of three SNP on single or paired reads. We removed any haplotypes that had a frequency of one, and ignored those sets of haplotypes with total frequency (coverage) less than 10, or were located in genomic regions that were not unique (defined using 50-mers, see above).</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Patients</title>
+        <p>Between December 2008 and December 2009, subjects gave consent for genetic studies on parasite isolates derived from the diagnostic blood samples taken as part of their routine care. Five DNA samples from four of these volunteers were deemed suitable for taking into the Illumina DNA sequencing pipeline. For one patient (OX005), two sequential samples, taken at 0 hours (i.e. pre-treatment) and 9 hours after treatment, were analysed in parallel. All patients were successfully treated and recovered from malaria.</p>
+        <sec id="s3a1">
+          <title>OX001</title>
+          <p>This patient was a 53-year old Ghanaian who had lived in the UK all their adult life and presented with symptoms of acute malaria after a visit to Accra and the surrounding countryside for a period of six weeks. Having started to feel unwell in Ghana, the patient reported taking one (unidentified) tablet which was bought from a street trader, but reported no other treatment, and did not use chemoprophylaxis.</p>
+        </sec>
+        <sec id="s3a2">
+          <title>OX003</title>
+          <p>This 26-year old Zimbabwean-born Caucasian patient had lived in the UK for four years and reported having malaria 3 times before moving to the UK. The patient presented with circulating <italic>P. falciparum</italic> trophozoites and schizonts at a parasitaemia of 1.3% following a visit to Mozambique (Mapute/Tete) for a period of three weeks, during which no chemoprophylaxis or treatment was taken. A single pre-treatment blood sample was analysed.</p>
+        </sec>
+        <sec id="s3a3">
+          <title>OX005</title>
+          <p>Following a visit to family in Ghana, this 49-year-old Ghanaian-born UK resident (of 22 years) presented with severe malaria and a peripheral <italic>P. falciparum</italic> parasitaemia of 3.0% (details presented in reference 34). Two sequential samples, F54840 and F55564, taken prior to treatment and 8 hours later (4 to 5 hours after commencement of quinine treatment), respectively, were analysed.</p>
+        </sec>
+        <sec id="s3a4">
+          <title>OX006</title>
+          <p>This case is also presented in detail in reference 34. Briefly, a 39-year-old European, resident in the UK and with no previous malaria episodes, presented with severe <italic>P. falciparum</italic> hyperparasitaemia (39%) after returning from 10 days in Kenya. One sample, taken approximately 2 hours after commencing intra-venous artesunate therapy, was analysed.</p>
+          <p>Data for all isolates described are publicly available via the MapSeq portal at the WTSI (<ext-link ext-link-type="uri" xlink:href="http://www.sanger.ac.uk/MapSeq/">http://www.sanger.ac.uk/MapSeq/</ext-link>) and have the following Sanger identifiers within the PF14 study folder: OX001&#x200A;=&#x200A;PL0001, OX003&#x200A;=&#x200A;PL0002, OX005&#x200A;=&#x200A;PL0004, OX006&#x200A;=&#x200A;PL0005.</p>
+        </sec>
+      </sec>
+      <sec id="s3b">
+        <title>Evidence of variation in gene copy number in patient isolates</title>
+        <p>Read coverage, sequence intervals between read pairs and GC content were examined around loci of interest, identified as described in <xref ref-type="sec" rid="s2">Methods</xref>. Two examples of gene amplification are presented in <xref ref-type="fig" rid="pone-0023204-g001">Figure 1</xref>, in isolates OX001 and OX006. The richness of data clearly differs between these two isolates, as the former was analysed using an earlier format of the MPS procedure which utilised 54nt reads, whereas 76nt reads were used in analysis of OX006 (<xref ref-type="table" rid="pone-0023204-t001">Table 1</xref>; <xref ref-type="fig" rid="pone-0023204-g001">Fig. 1</xref>). The <italic>pfgch1</italic> locus, which has previously been identified as undergoing amplification in Southeast Asian parasite isolates <xref ref-type="bibr" rid="pone.0023204-Nair1">[35]</xref>, showed evidence of excess coverage in isolate OX006, but not in isolate OX001 (<xref ref-type="fig" rid="pone-0023204-g001">Fig. 1</xref>), nor in the other 4 isolates (data not shown). The PF14_0486 locus (<italic>pfef2</italic>) encodes an EF2 translation elongation factor related to Ef2b isoforms of metazoan eukaryotes, with 65% amino acid sequence identity to <italic>Drosophila melanogaster</italic> Ef2b (accession number AY075481). <italic>pfef2</italic> displayed high coverage consistent with amplification in isolate OX001, but not in OX006 (<xref ref-type="fig" rid="pone-0023204-g001">Fig. 1</xref>).</p>
+        <fig id="pone-0023204-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0023204.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Identifying amplifications as areas of high MPS coverage.</title>
+            <p>Length of sequence intervals between paired reads (nt) and coverage (read frequency) are plotted against chromosome position and %GC content for two loci in isolates OX001 and OX006. <italic>pfgh1</italic> displays high coverage consistent with amplification in OX006, but not OX001. <italic>pfef2</italic> displays high coverage consistent with amplification in OX001, but not OX006. Loci of interest (red circles) are shown within100 km of genomic context. Red colouring within the read pile-ups signify polymorphic sites within a read in which a non-reference allele is present (i.e. SNP).</p>
+          </caption>
+          <graphic xlink:href="pone.0023204.g001"/>
+        </fig>
+        <p>Evidence of deletion of genomic sequences, defined with respect to the 3D7 reference genome sequence, was found at numerous loci across the genome in each isolate. <xref ref-type="fig" rid="pone-0023204-g002">Figure 2</xref> presents pile-up graphics <xref ref-type="bibr" rid="pone.0023204-Manske2">[33]</xref> for two isoforms of <italic>pfrbp2</italic> encoded on chromosome 13 (MAL13P1.176; PF13_0198). The data clearly distinguish between two previously described deletions that are common towards the carboxy terminus of MAL13P1.176, encoding the b-homologue of <italic>pfrbp2</italic>: OX001 and OX005 are to seen to have apparent read intervals of &#x223C;950nt over this domain, which is approximately 600 bp longer than the average read length in that chromosome region (<xref ref-type="fig" rid="pone-0023204-g002">Fig. 2</xref>). This fits well with the expected 587 bp deletion in the serine-rich domain, which was recently shown to be common across Africa <xref ref-type="bibr" rid="pone.0023204-Nair1">[35]</xref>. In contrast, OX003 and OX004 show evidence of a smaller deletion in the low complexity domain immediately upstream of the serine-rich region. Interestingly, this is also seen at the C-terminus of the a-homologue (PF13_0198), which lacks the serine-rich domain and does not exhibit the deletion-polymorphism characteristic of the adjacent b-homologue. Among other loci displaying similar evidence of intra-genic deletion in one or more of our clinical isolates was the conserved <italic>Plasmodium</italic> protein (unknown function) PF14_0226 in which the 12 amino acid repeat motif S(or K or W)TLKEKKNEMNV occurs in 7 tandem repeats in 3D7, but typically occurred as 2 to 5 repeats in MPS-derived genome sequences from our isolates. Verification that this observation is not due to ambiguous assembly of repeats could be accomplished simply by amplification and sequencing of this region of the gene.</p>
+        <fig id="pone-0023204-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0023204.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Deletions in <italic>pfrbp2</italic> homologues a and b appear as areas with inflated sequence intervals in four isolates.</title>
+            <p>Two isoforms of RBP2 are encoded by adjacent genes on chromosome 13, arranged head to head and transcribed in opposite directions. 60 kb around these genes are depicted, for four isolates. Loci of interest (red arrows) have either a &#x223C;600 bp deletion in the carboxy-terminal serine-rich domain of homologue b (red elipses), or a &#x223C;2&#x2013;300 bp deletion in the low-complexity protein domain immediately upstream in both genes (blue elipses). Y-axis depicts sequence interval between paired reads. X-axis depicts nucleotide coordinates along the chromosome, as in <xref ref-type="fig" rid="pone-0023204-g001">Figure 1</xref>.</p>
+          </caption>
+          <graphic xlink:href="pone.0023204.g002"/>
+        </fig>
+        <p>Of particular note was occasional evidence of larger chromosomal deletions, such as that encompassing one or both of the loci encoding Rh1/Clag3.1 and Rh1/Clag3.2 (PF0110w and PF0120w) at the left end of chromosome 3. In isolates OX005 and OX005A, both genes and the chromosomal region between them appeared to be deleted, totalling over 20 kb of missing chromosome sequence compared to the reference. This is consistent with reports of variation in the size of this chromosome estimated using pulse-field gel electrophoresis, with 3D7 carrying a larger 3<sup>rd</sup> chromosome than other isolates tested in one study <xref ref-type="bibr" rid="pone.0023204-Kemp1">[36]</xref>. Thus the duplication of the <italic>clag3</italic> locus described in laboratory lines <xref ref-type="bibr" rid="pone.0023204-Cortes1">[37]</xref> was not readily identified in MPS sequence data of our wild isolates. Interestingly, the PfEMP1 pseudogene between the two <italic>clag3</italic> loci in 3D7 was identified by MPS in some, but not all of our isolates (<xref ref-type="fig" rid="pone-0023204-g003">Fig. 3</xref>).</p>
+        <fig id="pone-0023204-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0023204.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Evidence of a major deletion at the right end of chromosome 3 in isolate OX005.</title>
+            <p>Paired reads across the whole of chromosome 3 are presented in pile-up view for two isolates, OX005 and OX006 (upper panel). Y-axis depicts sequence interval between paired reads, and X-axis gives chromosome coordinates as in <xref ref-type="fig" rid="pone-0023204-g001">Figures 1</xref> and <xref ref-type="fig" rid="pone-0023204-g002">2</xref>. A detailed view of &#x223C;70 kb around the <italic>clag3.2</italic> and <italic>clag3.1</italic> loci is also shown for 4 isolates (lower panel). The locus between PFC0110w and PFC0120w is a degenerate <italic>var</italic> gene lacking a full-length ORF in 3D7 and other parasite sequences in the available databases.</p>
+          </caption>
+          <graphic xlink:href="pone.0023204.g003"/>
+        </fig>
+      </sec>
+      <sec id="s3c">
+        <title>Sequence polymorphism in known loci under drug selection</title>
+        <p>In order to evaluate the potential of MPS analysis using parasite material taken directly from treated malaria patients for phenotype-genotype association studies, we derived full length data for 6 loci known or considered likely to be under selective pressure from antimalarial drugs (see <xref ref-type="sec" rid="s2">Methods</xref>). Data for all 5 isolates and all 6 loci are presented in <xref ref-type="table" rid="pone-0023204-t002">Table 2</xref>. In each of these genes, known polymorphisms were identified. Both the reference and variant alleles were present in at least one gene from each of the isolates OX001, OX003 and OX006. This indicates that these were polyclonal infections, and that multiple alleles of these genes were present. Both isolates from patient OX005 appeared monoclonal (and identical) at these loci, except for apparent polyclonality in the repetitive &#x201C;hinge&#x201D; region of <italic>pfmdr1</italic> and in a three amino-acid repeat region of <italic>pfmrp2</italic>. In both loci, this may conceivably be caused by ambiguous assembly of highly-repetitive sequences, but we cannot rule out true polyclonality in both these isolates (see further analysis below).</p>
+        <table-wrap id="pone-0023204-t002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0023204.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Amino acids encoded at polymorphic codons of 6 <italic>P. falciparum</italic> loci likely to be under drug selection.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0023204-t002-2" xlink:href="pone.0023204.t002"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Isolate</td>
+                  <td colspan="3" align="left" rowspan="1">Pfatpase6 PFA0310c</td>
+                  <td colspan="2" align="left" rowspan="1">Pfmrp1 PFA0590w</td>
+                  <td colspan="5" align="left" rowspan="1">Pfmdr1 PFE1150w</td>
+                  <td colspan="3" align="left" rowspan="1">Pfcrt MAL7P1.27</td>
+                  <td colspan="9" align="left" rowspan="1">Pfmrp2 PFL1410c</td>
+                  <td colspan="5" align="left" rowspan="1">Pfnhe1 P13_0019</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CODONS:</td>
+                  <td align="left" rowspan="1" colspan="1">431</td>
+                  <td align="left" rowspan="1" colspan="1">569</td>
+                  <td align="left" rowspan="1" colspan="1">639</td>
+                  <td align="left" rowspan="1" colspan="1">876</td>
+                  <td align="left" rowspan="1" colspan="1">1466</td>
+                  <td align="left" rowspan="1" colspan="1">86</td>
+                  <td align="left" rowspan="1" colspan="1">184</td>
+                  <td align="left" rowspan="1" colspan="1">496</td>
+                  <td align="left" rowspan="1" colspan="1">649&#x2013;654</td>
+                  <td align="left" rowspan="1" colspan="1">1246</td>
+                  <td align="left" rowspan="1" colspan="1">72&#x2013;76</td>
+                  <td align="left" rowspan="1" colspan="1">220</td>
+                  <td align="left" rowspan="1" colspan="1">271</td>
+                  <td align="left" rowspan="1" colspan="1">199</td>
+                  <td align="left" rowspan="1" colspan="1">235&#x2013;40&#x2013;42</td>
+                  <td align="left" rowspan="1" colspan="1">350</td>
+                  <td align="left" rowspan="1" colspan="1">709</td>
+                  <td align="left" rowspan="1" colspan="1">714</td>
+                  <td align="left" rowspan="1" colspan="1">796</td>
+                  <td align="left" rowspan="1" colspan="1">1527</td>
+                  <td align="left" rowspan="1" colspan="1">1531</td>
+                  <td align="left" rowspan="1" colspan="1">1373</td>
+                  <td align="left" rowspan="1" colspan="1">173</td>
+                  <td align="left" rowspan="1" colspan="1">203&#x2013;4</td>
+                  <td align="left" rowspan="1" colspan="1">878</td>
+                  <td align="left" rowspan="1" colspan="1">950</td>
+                  <td align="left" rowspan="1" colspan="1">1557</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">3D7 REF</td>
+                  <td align="left" rowspan="1" colspan="1">E</td>
+                  <td align="left" rowspan="1" colspan="1">N</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">I</td>
+                  <td align="left" rowspan="1" colspan="1">K</td>
+                  <td align="left" rowspan="1" colspan="1">N</td>
+                  <td align="left" rowspan="1" colspan="1">Y</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">NDDNNN</td>
+                  <td align="left" rowspan="1" colspan="1">D</td>
+                  <td align="left" rowspan="1" colspan="1">CVMNK</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">Q</td>
+                  <td align="left" rowspan="1" colspan="1">L</td>
+                  <td align="left" rowspan="1" colspan="1">YQQ</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">Q</td>
+                  <td align="left" rowspan="1" colspan="1">K</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">L</td>
+                  <td align="left" rowspan="1" colspan="1">H</td>
+                  <td align="left" rowspan="1" colspan="1">V</td>
+                  <td align="left" rowspan="1" colspan="1">SD</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">V</td>
+                  <td align="left" rowspan="1" colspan="1">F</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OX001 Ghana</td>
+                  <td align="left" rowspan="1" colspan="1">E</td>
+                  <td align="left" rowspan="1" colspan="1">N</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">I</td>
+                  <td align="left" rowspan="1" colspan="1">K</td>
+                  <td align="left" rowspan="1" colspan="1">YN</td>
+                  <td align="left" rowspan="1" colspan="1">F</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">NDDNNN</td>
+                  <td align="left" rowspan="1" colspan="1">YD</td>
+                  <td align="left" rowspan="1" colspan="1">CVMNK</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">Q</td>
+                  <td align="left" rowspan="1" colspan="1">LV</td>
+                  <td align="left" rowspan="1" colspan="1">YQQ</td>
+                  <td align="left" rowspan="1" colspan="1">PT</td>
+                  <td align="left" rowspan="1" colspan="1">QK</td>
+                  <td align="left" rowspan="1" colspan="1">K</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">-</td>
+                  <td align="left" rowspan="1" colspan="1">-</td>
+                  <td align="left" rowspan="1" colspan="1">N</td>
+                  <td align="left" rowspan="1" colspan="1">V</td>
+                  <td align="left" rowspan="1" colspan="1">SD</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">V</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OX003 Mozambique</td>
+                  <td align="left" rowspan="1" colspan="1">E</td>
+                  <td align="left" rowspan="1" colspan="1">K</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">I</td>
+                  <td align="left" rowspan="1" colspan="1">K</td>
+                  <td align="left" rowspan="1" colspan="1">N</td>
+                  <td align="left" rowspan="1" colspan="1">F</td>
+                  <td align="left" rowspan="1" colspan="1">I</td>
+                  <td align="left" rowspan="1" colspan="1">NDDNNN DDNNNN</td>
+                  <td align="left" rowspan="1" colspan="1">D</td>
+                  <td align="left" rowspan="1" colspan="1">CVIET</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">E</td>
+                  <td align="left" rowspan="1" colspan="1">V</td>
+                  <td align="left" rowspan="1" colspan="1">YQQ</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">Q</td>
+                  <td align="left" rowspan="1" colspan="1">I</td>
+                  <td align="left" rowspan="1" colspan="1">AS</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">VI</td>
+                  <td align="left" rowspan="1" colspan="1">H</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">SD</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OX005A Ghana</td>
+                  <td align="left" rowspan="1" colspan="1">E</td>
+                  <td align="left" rowspan="1" colspan="1">N</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">I</td>
+                  <td align="left" rowspan="1" colspan="1">K</td>
+                  <td align="left" rowspan="1" colspan="1">N</td>
+                  <td align="left" rowspan="1" colspan="1">F</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">NDNDNN YNDNNN</td>
+                  <td align="left" rowspan="1" colspan="1">D</td>
+                  <td align="left" rowspan="1" colspan="1">CVMNK</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">Q</td>
+                  <td align="left" rowspan="1" colspan="1">V</td>
+                  <td align="left" rowspan="1" colspan="1">YQQ YEE</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">Q</td>
+                  <td align="left" rowspan="1" colspan="1">I</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">I</td>
+                  <td align="left" rowspan="1" colspan="1">H</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">FY</td>
+                  <td align="left" rowspan="1" colspan="1">I</td>
+                  <td align="left" rowspan="1" colspan="1">V</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OX005B Ghana</td>
+                  <td align="left" rowspan="1" colspan="1">E</td>
+                  <td align="left" rowspan="1" colspan="1">N</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">I</td>
+                  <td align="left" rowspan="1" colspan="1">K</td>
+                  <td align="left" rowspan="1" colspan="1">N</td>
+                  <td align="left" rowspan="1" colspan="1">F</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">NDDDNN NNDNNN</td>
+                  <td align="left" rowspan="1" colspan="1">D</td>
+                  <td align="left" rowspan="1" colspan="1">CVMNK</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">Q</td>
+                  <td align="left" rowspan="1" colspan="1">V</td>
+                  <td align="left" rowspan="1" colspan="1">YQQ NEE</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">Q</td>
+                  <td align="left" rowspan="1" colspan="1">I</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">I</td>
+                  <td align="left" rowspan="1" colspan="1">H</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">FD</td>
+                  <td align="left" rowspan="1" colspan="1">I</td>
+                  <td align="left" rowspan="1" colspan="1">V</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OX006 Kenya</td>
+                  <td align="left" rowspan="1" colspan="1">K</td>
+                  <td align="left" rowspan="1" colspan="1">N</td>
+                  <td align="left" rowspan="1" colspan="1">D</td>
+                  <td align="left" rowspan="1" colspan="1">VI</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">YN</td>
+                  <td align="left" rowspan="1" colspan="1">YF</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">NNNNDD NDDNNN</td>
+                  <td align="left" rowspan="1" colspan="1">YD</td>
+                  <td align="left" rowspan="1" colspan="1">CVIET</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">E</td>
+                  <td align="left" rowspan="1" colspan="1">V</td>
+                  <td align="left" rowspan="1" colspan="1">YQQ NQE</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">Q</td>
+                  <td align="left" rowspan="1" colspan="1">I</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">ST</td>
+                  <td align="left" rowspan="1" colspan="1">LI</td>
+                  <td align="left" rowspan="1" colspan="1">H</td>
+                  <td align="left" rowspan="1" colspan="1">V</td>
+                  <td align="left" rowspan="1" colspan="1">SD</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt102">
+              <label/>
+              <p>Genome sequence data was generated on the Solexa Illumina platform as described in Materials and <xref ref-type="sec" rid="s2">Methods</xref>. Sequences aligning with the 6 loci shown in the reference sequence for <italic>P. falciparum</italic> (laboratory clone 3D7) were extracted (with quality criteria stated in the <xref ref-type="sec" rid="s2">Methods</xref>), converted to FASTA format, translated and aligned in Clustal W. Sites exhibiting polymorphism among the 5 isolates are shown.</p>
+            </fn>
+            <fn id="nt103">
+              <label/>
+              <p>Shading: non-synonymous substitution relative to the reference sequence.</p>
+            </fn>
+            <fn id="nt104">
+              <label/>
+              <p>Multiplicity: where more than one base was called at any one position, the encoded amino acid with the most calls is displayed above. Haplotypes cannot be inferred by these data &#x2013; for example any or all combinations of YFY, YFD, NFY or NFD may exist for <italic>pfmdr1</italic> codons 86, 184 and 1246 in patient OX001.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Recent data suggest that the two amino acid changes in the <italic>P. falciparum</italic> ABC transporter MRP1 observed in isolate OX006 are associated with artemisinin and anti-folate resistance in African studies <xref ref-type="bibr" rid="pone.0023204-Dahlstrm1">[38]</xref>, <xref ref-type="bibr" rid="pone.0023204-Dahlstrm2">[39]</xref>, and it is possible that the response to artesunate-treatment of the parasites in this individual may have been delayed <xref ref-type="bibr" rid="pone.0023204-Beshir1">[34]</xref>. Examination of the <italic>pfmrp1</italic> sequence at codon 876 in later follow-up blood samples from this patient may be instructive, as this locus exhibited mixed wild-type and mutant alleles in the immediately post-treatment sample analysed here. The data presented on <italic>pfmrp2</italic> represents the first full-length analyses of this gene in wild parasites; 8 non-synonymous codons were found in addition to the amino-acid repeat polymorphism at codons 235, 240 and 242. In <italic>pfmdr1</italic>, which encodes the best characterised transporter protein in <italic>P. falciparum</italic>, PgH1, we encountered the expected polymorphisms at codons 86, 184, 649&#x2013;654 and 1246. Unexpectedly, our Mozambique isolate also harboured a novel non-synonymous substitution, T496I. This region of the locus is not usually analysed in sequencing studies, and there are no data to suggest whether or not this substitution is relevant to parasite responses to antimalarial treatment.</p>
+        <p>The less stringent call threshold for SNP used in our analysis of drug-resistance associated loci permitted identification of low frequency amino acid variants at expected positions: for example in the <italic>pfmdr1</italic> locus of isolate OX001 at codon 86 there were 46 MPS &#x201C;calls&#x201D; for T at nucleotide 256, encoding the resistance-associated tyrosine at this position, and 6 calls for the wild-type nucleotide A, encoding asparagine. Similarly, at codon 1246 there were 42 calls for T at nucleotide 3756, encoding a resistance-associated tyrosine, and 4 calls for G, encoding aspartic acid. Thus, as these low frequency calls generated sequences consistent with previous studies of the locus, we conclude that they are <italic>bona fide</italic> results, and so caution should be exercised in setting high call thresholds in MPS studies of potentially polyclonal <italic>P. falciparum</italic> isolates. This approach also readily identified substitutions of interest in the <italic>pfdhfr</italic> (PFD0830w) and <italic>pfdhps</italic> (PF08_0095) loci which are known to modulate parasite sensitivity to the anti-folate drugs (<xref ref-type="table" rid="pone-0023204-t003">Table 3</xref>). All isolates harboured the &#x201C;triple mutant&#x201D; haplotype IRNI at codons 51, 59, 108 and 164 of <italic>pfdhfr</italic>, but three different haplotypes of <italic>pfdhps</italic> were seen. Only the Kenyan isolate OX006 harboured the <italic>pfdhps</italic> 540E mutation associated with high rates of treatment failure with sulphadoxine-pyramethamine, and known to be much more common among travellers returning with malaria from east Africa <xref ref-type="bibr" rid="pone.0023204-Sutherland3">[40]</xref>.</p>
+        <table-wrap id="pone-0023204-t003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0023204.t003</object-id>
+          <label>Table 3</label>
+          <caption>
+            <title>SNP and inferred haplotypes in <italic>pfdhfr</italic> and <italic>pfdhps</italic> loci.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0023204-t003-3" xlink:href="pone.0023204.t003"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="5" align="left" rowspan="1">Isolate ID</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Chromosome coordinate Gene ID</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">OX001</td>
+                  <td align="left" rowspan="1" colspan="1">OX003</td>
+                  <td align="left" rowspan="1" colspan="1">OX005A</td>
+                  <td align="left" rowspan="1" colspan="1">OX005B</td>
+                  <td align="left" rowspan="1" colspan="1">OX006</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MAL4:755220 PFD0830w</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MAL4:755243 PFD0830w</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MAL4:755391 PFD0830w</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MAL4:755558 PFD0830w</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>DHFR haplotype codons 51_59_108_164</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>IRNI</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>IRNI</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>IRNI</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>IRNI</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>IRNI</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MAL8:550802 PF08_0095</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MAL8:550806 PF08_0095</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MAL8:551114 PF08_0095</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MAL8:551238 PF08_0095</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>DHPS haplotype codons 436_437_540_581</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>SGKA</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>SGKA</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>AGKA</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>AGKA</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>SGEA</bold>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>In summary, specific analysis from our MPS data of a series of loci implicated in drug response identified expected polymorphisms in each gene, strongly suggested polyclonality in most if not all isolates, and suggested setting of low call thresholds can assist in identifying low abundance sequences. The analysis identified previously unknown substitutions in <italic>pfmdr1</italic> and <italic>pfmrp2</italic> that now require evaluation as possible markers of parasite response to antimalarial drugs.</p>
+      </sec>
+      <sec id="s3d">
+        <title>Polymorphism in mitochondrial genome sequences</title>
+        <p>Polymorphic sites in the 5.97 kb mitochondrial genome were derived for each sample by the identification of nucleotides that differed to the reference sequence. As expected the mitochondria had at least ten-fold more coverage than the nuclear genome (<xref ref-type="table" rid="pone-0023204-t001">Table 1</xref>). The full mitochondrial sequence was generated for each patient isolate, and compared against the panel of 32 polymorphic sites by Joy <italic>et al.</italic> <xref ref-type="bibr" rid="pone.0023204-Joy1">[41]</xref> (<xref ref-type="table" rid="pone-0023204-t003">Table 3</xref>). The parasite isolates were in each case almost identical to the reference sequence. Three polymorphisms were found, and two corresponded to sites previously identified by Joy and colleagues. These results indicate that MPS sequencing data derived from uncloned and uncultured parasite material is of a sufficiently high quality for use in phylogenetic studies based on variation in the parasite mitochondrial genome.</p>
+      </sec>
+      <sec id="s3e">
+        <title>Clonal multiplicity estimated from conventional pfmsp2 genotyping</title>
+        <p>Nested PCR analysis of the <italic>pfmsp1</italic> and <italic>pfmsp2</italic> locus was undertaken to estimate the polyclonality of each isolate using conventional methods. The results are presented in <xref ref-type="table" rid="pone-0023204-t004">Table 4</xref>. All isolates except OX005A harboured polyclonal infections as evidenced by analysis of <italic>pfmsp1</italic> and <italic>pfmsp2</italic> alleles, with five, four, one, two and six distinct alleles, respectively. It was observed that isolate OX005B, taken 9 hours after initiation of quinine therapy, harboured an additional <italic>P. falciparum</italic> genotype not present in isolate OX005A, taken prior to the first dose.</p>
+        <table-wrap id="pone-0023204-t004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0023204.t004</object-id>
+          <label>Table 4</label>
+          <caption>
+            <title>Polymorphic nucleotide positions in MPS-derived <italic>P. falciparum</italic> mitochondrial genomes.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0023204-t004-4" xlink:href="pone.0023204.t004"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td colspan="33" align="left" rowspan="1">Mitochondrial genome coordinates</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">NT coord: Joy et al. 30</td>
+                  <td align="left" rowspan="1" colspan="1">74</td>
+                  <td align="left" rowspan="1" colspan="1">204</td>
+                  <td align="left" rowspan="1" colspan="1">701</td>
+                  <td align="left" rowspan="1" colspan="1">766</td>
+                  <td align="left" rowspan="1" colspan="1">776</td>
+                  <td align="left" rowspan="1" colspan="1">837</td>
+                  <td align="left" rowspan="1" colspan="1">964</td>
+                  <td align="left" rowspan="1" colspan="1">1260</td>
+                  <td align="left" rowspan="1" colspan="1">1284</td>
+                  <td align="left" rowspan="1" colspan="1">1362</td>
+                  <td align="left" rowspan="1" colspan="1">1371</td>
+                  <td align="left" rowspan="1" colspan="1">1634</td>
+                  <td align="left" rowspan="1" colspan="1">1687</td>
+                  <td align="left" rowspan="1" colspan="1">1696</td>
+                  <td align="left" rowspan="1" colspan="1">1754</td>
+                  <td align="left" rowspan="1" colspan="1">1780</td>
+                  <td align="left" rowspan="1" colspan="1">1938</td>
+                  <td align="left" rowspan="1" colspan="1">2179</td>
+                  <td align="left" rowspan="1" colspan="1">2387</td>
+                  <td align="left" rowspan="1" colspan="1">2495</td>
+                  <td align="left" rowspan="1" colspan="1">2645</td>
+                  <td align="left" rowspan="1" colspan="1">3010</td>
+                  <td align="left" rowspan="1" colspan="1">3070</td>
+                  <td align="left" rowspan="1" colspan="1">3517</td>
+                  <td align="left" rowspan="1" colspan="1">3558</td>
+                  <td align="left" rowspan="1" colspan="1">3729</td>
+                  <td align="left" rowspan="1" colspan="1">3858</td>
+                  <td align="left" rowspan="1" colspan="1">3966</td>
+                  <td align="left" rowspan="1" colspan="1">4184</td>
+                  <td align="left" rowspan="1" colspan="1">4718</td>
+                  <td align="left" rowspan="1" colspan="1">4720</td>
+                  <td align="left" rowspan="1" colspan="1">4956</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Ref state (version 2.1.4)</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>ATAT</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Coding Gene</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="7" align="left" rowspan="1">
+                    <bold>cox3</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="6" align="left" rowspan="1">
+                    <bold>cox1</bold>
+                  </td>
+                  <td colspan="6" align="left" rowspan="1">
+                    <bold>cytb</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>ISOLATES</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OX001 Ghana</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>A</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OX003 Mozambique</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>A</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OX005A Ghana</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OX005B Ghana</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">OX006 Kenya</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>A</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">G</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">T</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">A</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>C</bold>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt105">
+              <label/>
+              <p>Row 1: Nucleotide coordinates from ref. 30;</p>
+            </fn>
+            <fn id="nt106">
+              <label/>
+              <p>Row 2: additional &#x201C;ATAT&#x201D; insert at position 701 is not present in reference sequence.</p>
+            </fn>
+            <fn id="nt107">
+              <label/>
+              <p>Row 3: intersection of polymorphic loci with protein-coding genes</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="s3f">
+        <title>Genome-wide multiplicity from MPS data</title>
+        <p>Multiplicity was estimated only for loci in which 3 single-nucleotide polymorphisms (SNP) occurred in close proximity, using two different approaches. The first analysis identified loci where three SNP were found on a single read of 54 or 76 bp (<xref ref-type="table" rid="pone-0023204-t001">Table 1</xref>). In the second analysis, tri-SNP loci were deployed in which one of the SNP occurred on an independent sequence read adjacent to the read with the other two SNP (a "2+1&#x201D; SNP trio). This latter approach could be seen as potentially the more robust, as false 3-SNP haplotypes are less likely to be generated by errors in two adjacent reads, than in a single poor quality sequence read. The first analysis identified 139 polymorphic tri-SNP loci that indicated a multiplicity of 5 genotypes or more across the whole genome in at least one isolate. The majority of these loci did not map to annotated genes in the reference genome, and very few loci displayed high apparent multiplicity in more than one isolate. However, there were clusters of adjacent loci in the same isolate giving high multiplicity estimates, and these suggest the methods deployed were correctly identifying highly polymorphic genomic regions. In the second more stringent analysis, using &#x201C;2+1&#x201D; SNP trios across paired reads, 52 tri-SNP haplotypes were identified. Multiplicity estimates derived from both methods are compared to those derived from PCR data in <xref ref-type="table" rid="pone-0023204-t005">Table 5</xref>.</p>
+        <table-wrap id="pone-0023204-t005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0023204.t005</object-id>
+          <label>Table 5</label>
+          <caption>
+            <title>Clonal multiplicity estimated from polymorphic amplicon sizes in <italic>pfmsp1</italic> and <italic>pfmsp2</italic> PCR assays compared to estimates from MPS analysis.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0023204-t005-5" xlink:href="pone.0023204.t005"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td colspan="2" align="left" rowspan="1">Number of alleles seen<xref ref-type="table-fn" rid="nt108">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">OX001 Ghana</td>
+                  <td align="left" rowspan="1" colspan="1">OX003 Mozambique</td>
+                  <td align="left" rowspan="1" colspan="1">OX005A Ghana</td>
+                  <td align="left" rowspan="1" colspan="1">OX005B Ghana</td>
+                  <td align="left" rowspan="1" colspan="1">OX006 Kenya</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="2" align="left" rowspan="1">
+                    <bold>MSP-1</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td colspan="2" align="left" rowspan="1">K1</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="left" rowspan="1">MAD20</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="left" rowspan="1">RO33</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="left" rowspan="1">
+                    <bold>MSP-2</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td colspan="2" align="left" rowspan="1">FC27</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="left" rowspan="1">IC/3D7</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="left" rowspan="1">Minimum number of genotypes from PCR analysis</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>5</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>4</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>3</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>3</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>4</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Minimum number of genotypes from MPS analysis <xref ref-type="table-fn" rid="nt109">**</xref></td>
+                  <td align="left" rowspan="1" colspan="1">Method 1</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>6</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>5</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>6</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>7</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>7</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Method 2</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">-</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt108">
+              <label/>
+              <p>*Each of the three allelic families occur in a mutually exclusive manner in a single <italic>msp1</italic> gene; similarly for the two allelic families of <italic>msp1</italic>. Thus the minimum number of genotypes is taken as the larger of the allele totals for the two genes.</p>
+            </fn>
+            <fn id="nt109">
+              <label/>
+              <p>**Highest minimum estimates of haplotype multiplicity (&gt;&#x200A;=&#x200A;3) are shown for each isolate. Method 2 did not identify high multiplicity loci in isolate OX005B.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Estimates of clonal multiplicity derived from MPS analysis were similar, but slightly higher than those obtained from analysis of <italic>msp1</italic> and <italic>msp2</italic> alleles by PCR. Therefore, we examined the data for evidence that the same loci were generating high multiplicity estimates in more than one isolate, and thus might be generally useful tools for clonal multiplicity studies, and also looked for overlap between the two methods used. Two highly repetitive loci contributed to elevated estimates of multiplicity in more than one isolate, but these were only seen when using the first (less stringent) method. The first of these, on chromosome 7, lies in the distal sub-telomeric repeat region, and thus is unlikely to provide an accurate estimate of clone multiplicity. The second locus, within the gene P10_0265, which encodes a conserved <italic>Plasmodium</italic> protein of unknown function, is within a region of open reading frame that is highly repetitive. A tri-nucleotide repeat (CAA/CAG) occurs 67 times in the 3D7 reference sequence, encoding an extensive poly-glutamine tract. Analysis of read-length at this locus <xref ref-type="bibr" rid="pone.0023204-Manske2">[33]</xref> confirmed apparent high multiplicity around these repeat sequences in each isolate, but it is likely this is the result of mapping inconsistencies due to repeat overlaps. (Confirmation of the utility of this locus for estimating multiplicity would require empirical size comparison of appropriate PCR amplicons from different isolates.) These findings support the use of the more stringent &#x201C;2+1&#x201D; SNP trio approach for identification of multiplicity at polymorphic loci.</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>In this study, we have demonstrated that MPS analysis of the genomes of <italic>P. falciparum</italic> parasites isolated directly from infected malaria patients generates high quality data that can be used to identify known and unknown polymorphisms in loci of interest. In particular we demonstrated the utility of this approach to identify genomic sites where both previously described and novel CNV occurred. We were also able to elucidate, directly from MPS data, drug-resistance associated haplotypes of candidate loci, and succeeded in generating high quality mitochondrial genome sequence data suitable for phylogenetic studies. Some of the polymorphisms identified in drug resistance-associated loci and mitochondrial genomes have been previously described, but others were identified here for the first time and can now be investigated in more detail.</p>
+      <p>The main objective of the study was to investigate the utility of MPS analysis for estimating polyclonality in natural parasite isolates, as accurate estimation of clone multiplicity is important for studies of drug efficacy and parasite population diversity <xref ref-type="bibr" rid="pone.0023204-Juliano2">[42]</xref>, <xref ref-type="bibr" rid="pone.0023204-Juliano3">[43]</xref>. Using a genome-wide approach, reproducible estimates of clonal multiplicity in our clinical isolates were obtained, and these were similar to estimates of clonal multiplicity estimated by standard methods based on well-characterised size and sequence polymorphisms in the <italic>pfmsp1</italic> and <italic>pfmsp2</italic> genes. Thus we have confirmed by two completely independent methods a high multiplicity in all of our patients. Multiplicity was also seen in our analysis of drug resistance-associated loci, but as expected of loci under strong directional selection, in each case only two alleles at each position were observed, reflecting lower overall diversity in these genes.</p>
+      <p>How does a traveller, in many cases only briefly exposed to malaria infection risk, come to harbour multiple parasite clones? Previous studies have quantified the risk to be one <italic>P. falciparum</italic> infection per 1.36&#xD7;10<sup>5</sup> UK traveller weeks in an endemic area. This suggests the probability of a single individual receiving more than one infective bite per week is approximately one in one hundred thousand <xref ref-type="bibr" rid="pone.0023204-Druilhe1">[44]</xref>, <xref ref-type="bibr" rid="pone.0023204-Hill1">[45]</xref>. However, as these studies were based on Thai data, it is likely multiple inoculations are more likely in the African locations where our patients acquired their <italic>P. falciparum</italic> infections: the precise chance that an individual received multiple inoculations will differ depending on the endemicity of infection in the area visited, microheterogeneity in mosquito biting and infection rates, use of and adherence to bite prevention and chemoprophylaxis and the fact that multiple areas of differing risk may have been visited by the same traveller <xref ref-type="bibr" rid="pone.0023204-Jelinek1">[13]</xref>. Nevertheless, the likelihood is that in most imported cases of <italic>P. falciparum</italic> infection, the entire clonal repertoire entered the host in a single bite. Thus our patients' genetically complex parasite infections are expected to reflect the complexity circulating in endemic area human populations; further, as mixed gametocyte genotypes have been shown to circulate in African studies <xref ref-type="bibr" rid="pone.0023204-Babiker1">[46]</xref>, <xref ref-type="bibr" rid="pone.0023204-Sutherland4">[47]</xref>, recombinant zygotes, heterozygous at polymorphic loci, are expected to be common. Thus an infection with multiplicity 6 must be the product of at least 3 genetically unrelated oocysts, each of which was heterozygous. This oocyst diversity could have built up in the mosquito over a few days as, once infected, mosquitoes are known to continue feeding on subsequent nights <xref ref-type="bibr" rid="pone.0023204-Gouagna1">[48]</xref>. A single female <italic>Anopheles</italic> may thus have several developing oocysts at slightly different stages of maturity. This would imply that each sporozoite inoculum may be presenting in a single event the progeny of several blood meals in which the mosquito was infected with a variety of parasite genotypes.</p>
+      <p>MPS data are well suited to long-range investigation of copy number variations in both coding and non-coding genomic DNA. Using tools freely available on-line at the WTSI, we were able to identify in our MPS data, almost to the exact base-pair, a previously described 587 bp deletion in the b-homologue of <italic>pfrbp2</italic> <xref ref-type="bibr" rid="pone.0023204-Ahouidi1">[49]</xref>. The evidence for genomic amplification of <italic>pfef2</italic> (PF14_0486) in OX001 is of interest. Although this nuclear locus encodes a eukaryotic-type cytoplasmic translation elongation factor similar to those of <italic>Drosophila</italic>, prokaryotic-type EF genes in the <italic>Plasmodium</italic> apicoplast genome encode a group of proteins known to be the parasite targets of antibacterial drugs such as clindamycin and doxycycline <xref ref-type="bibr" rid="pone.0023204-Biswas1">[50]</xref>. It is unknown whether amplification of cytoplasmic elongation factor genes such as <italic>pfef2</italic> might play a role in parasite drug responses.</p>
+      <p>An unexpected finding was the evidence suggesting two rhopH1/clag3 genes on chromosome 3, and the var pseudo gene located between them, were deleted in one of our isolates. Paired read data from other isolates was also suggestive of partial or full deletion of the clag sequences. A possible explanation for this is that mistakes in the assembly of MPS end-reads were made due to the fact that these genes belong to a multi-gene family dispersed across the genome at several loci. However, large areas of null read coverage were not common in our dataset, and other members of the clag gene family on chromosomes 2, 7 and 9 were examined and displayed similar or better read coverage than their immediate genomic context. Further alignment of GENBANK sequences for clag3.1 and clag3.2 loci from 3D7, FVO and 7G8 laboratory strains demonstrated remarkable conservation (&gt;90% sequence identity at nucleotide level) among these loci. Therefore, extreme polymorphism at these loci is an unlikely explanation for poor read coverage. Given the observations of Kemp et al. that chromosome 3 can vary significantly in size on pulse-field electrophoresis <xref ref-type="bibr" rid="pone.0023204-Kemp1">[36]</xref> and the evidence of mutually exclusive expression of clag3.1 and clag3.2 proteins in different cultured lines derived from 3D7, suggesting functional redundancy <xref ref-type="bibr" rid="pone.0023204-Cortes1">[37]</xref>, our data may be interpreted as a demonstration that <italic>P. falciparum</italic> can propagate perfectly well <italic>in vivo</italic> without one or both of the clag loci on chromosome 3. Unfortunately, genomic material from our patients was not prepared in such a way as to permit whole chromosome preparations for analysis on pulse-field electrophoresis, in order to verify this interpretation.</p>
+      <sec id="s4a">
+        <title>Concluding remarks</title>
+        <p>This study provides proof-of-principle that MPS data from material obtained directly from malaria-infected <italic>Homo sapiens</italic> is suitable for a variety of genomic, phylogenetic, parasitological and clinical analyses. A great strength of MPS in general is the prospect of high-throughput analysis of a large number of genomes in parallel <xref ref-type="bibr" rid="pone.0023204-Manske1">[27]</xref>; we have only examined a handful of genomes, and thus have not taken advantage of this aspect of the technology. However, an important feature of our analysis is that we have used well characterised clinical material with follow-up post-treatment DNA samples available, permitting further studies of any locus of interest identified in the pre-treatment isolate. Thus, we have been able to compare the pre-treatment genome sequence, for one of our patients, with the sequence of an isolate taken after 9 hours of antimalarial treatment. It follows that, in some settings, genomic-level follow-up studies of drug selection signals are eminently feasible.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank the malaria patients at HTD who gave consent for genomic analyses to be carried out on their parasite isolates, and Dr Tom Doherty for helpful discussions.</p>
+    </ack>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding: </bold>SDP is supported by the Foundation for Innovative New Diagnostics; PLC is supported by the UCL Hospitals Comprehensive Biomedical Research Centre for Infection; CJS is supported by the United Kingdom Health Protection Agency. Genome sequencing and the development of software for sequence analysis was funded by the Wellcome Trust core funding to the Sanger Institute (Wellcome 077012/Z/05/Z) and the MRC Centre for Genomics and Global Health (MRC G0600718). None of these funding agencies had any direct role in the design or conduct of the study. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0023204-Meyer1">
+        <label>1</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Meyer</surname><given-names>CG</given-names></name><name><surname>May</surname><given-names>J</given-names></name><name><surname>Arez</surname><given-names>AP</given-names></name><name><surname>Gil</surname><given-names>JP</given-names></name><name><surname>Do Rosario</surname><given-names>V</given-names></name></person-group>             <year>2002</year>             <article-title>Genetic diversity of Plasmodium falciparum: asexual stages.</article-title>             <source>Trop Med Int Health</source>             <volume>7</volume>             <fpage>395</fpage>             <lpage>408</lpage>          <pub-id pub-id-type="pmid">12000649</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Nicastri1">
+        <label>2</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Nicastri</surname><given-names>E</given-names></name><name><surname>Paglia</surname><given-names>MG</given-names></name><name><surname>Severini</surname><given-names>C</given-names></name><name><surname>Ghirga</surname><given-names>P</given-names></name><name><surname>Bevilacqua</surname><given-names>N</given-names></name><etal/></person-group>             <year>2008</year>             <article-title>Plasmodium falciparum multiple infections, disease severity and host characteristics in malaria affected travellers returning from Africa.</article-title>             <source>Travel Med Infect Dis</source>             <volume>6</volume>             <fpage>205</fpage>             <lpage>209</lpage>          <pub-id pub-id-type="pmid">18571110</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Frnert1">
+        <label>3</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>F&#xE4;rnert</surname><given-names>A</given-names></name><name><surname>Tengstam</surname><given-names>K</given-names></name><name><surname>Palme</surname><given-names>IB</given-names></name><name><surname>Bronner</surname><given-names>U</given-names></name><name><surname>Lebbad</surname><given-names>M</given-names></name><etal/></person-group>             <year>2002</year>             <article-title>Polyclonal Plasmodium falciparum malaria in travellers and selection of antifolate mutations after proguanil prophylaxis.</article-title>             <source>Am J Trop Med Hyg</source>             <volume>66</volume>             <fpage>487</fpage>             <lpage>491</lpage>          <pub-id pub-id-type="pmid">12201581</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Kilama1">
+        <label>4</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Kilama</surname><given-names>W</given-names></name><name><surname>Ntoumi</surname><given-names>F</given-names></name></person-group>             <year>2009</year>             <article-title>Malaria: a research agenda for the eradication era.</article-title>             <source>Lancet</source>             <volume>374</volume>             <fpage>1480</fpage>             <lpage>1482</lpage>          <pub-id pub-id-type="pmid">19880004</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Takala1">
+        <label>5</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Takala</surname><given-names>SL</given-names></name><name><surname>Plowe</surname><given-names>CV</given-names></name></person-group>             <year>2009</year>             <article-title>Genetic diversity and malaria vaccine design, testing and efficacy: preventing and overcoming &#x2019;vaccine resistant malaria'.</article-title>             <source>Parasite Immunol</source>             <volume>31</volume>             <fpage>560</fpage>             <lpage>573</lpage>          <pub-id pub-id-type="pmid">19691559</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Snounou1">
+        <label>6</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Snounou</surname><given-names>G</given-names></name></person-group>             <year>2002</year>             <article-title>Genotyping of Plasmodium spp.</article-title>             <source>Nested PCR Methods Mol Med</source>             <volume>72</volume>             <fpage>103</fpage>             <lpage>116</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023204-Gadalla1">
+        <label>7</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Gadalla</surname><given-names>NB</given-names></name><name><surname>Elzaki</surname><given-names>SE</given-names></name><name><surname>Mukhtar</surname><given-names>E</given-names></name><name><surname>Warhurst</surname><given-names>DC</given-names></name><name><surname>El-Sayed</surname><given-names>B</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Dynamics of pfcrt alleles CVMNK and CVIET in chloroquine-treated Sudanese patients infected with Plasmodium falciparum.</article-title>             <source>Malaria J</source>             <volume>9</volume>             <fpage>74</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023204-Sutherland1">
+        <label>8</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Sutherland</surname><given-names>CJ</given-names></name></person-group>             <year>2008</year>             <article-title>Comparing highly efficacious antimalarial drugs.</article-title>             <source>PLoS Med</source>             <volume>5</volume>             <fpage>e228</fpage>          <pub-id pub-id-type="pmid">19018659</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Flck1">
+        <label>9</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Fl&#xFC;ck</surname><given-names>C</given-names></name><name><surname>Sch&#xF6;pflin</surname><given-names>S</given-names></name><name><surname>Smith</surname><given-names>T</given-names></name><name><surname>Genton</surname><given-names>B</given-names></name><name><surname>Alpers</surname><given-names>MP</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>Effect of the malaria vaccine Combination B on merozoite surface antigen 2 diversity.</article-title>             <source>Infect Genet Evol</source>             <volume>7</volume>             <fpage>44</fpage>             <lpage>51</lpage>          <pub-id pub-id-type="pmid">16647307</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Ariey1">
+        <label>10</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Ariey</surname><given-names>F</given-names></name><name><surname>Hommel</surname><given-names>D</given-names></name><name><surname>Le Scanf</surname><given-names>C</given-names></name><name><surname>Duchemin</surname><given-names>JB</given-names></name><name><surname>Peneau</surname><given-names>C</given-names></name><etal/></person-group>             <year>2001</year>             <article-title>Association of severe malaria with a specific Plasmodium falciparum genotype in French Guiana.</article-title>             <source>J Infect Dis</source>             <volume>184</volume>             <fpage>237</fpage>             <lpage>241</lpage>          <pub-id pub-id-type="pmid">11424024</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Kimura1">
+        <label>11</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Kimura</surname><given-names>E</given-names></name><name><surname>Mattei</surname><given-names>D</given-names></name><name><surname>di Santi</surname><given-names>SM</given-names></name><name><surname>Scherf</surname><given-names>A</given-names></name></person-group>             <year>1990</year>             <article-title>Genetic diversity in the major merozoite surface antigen of Plasmodium falciparum: high prevalence of a third polymorphic form detected in strains derived from malaria patients.</article-title>             <source>Gene</source>             <volume>91</volume>             <fpage>57</fpage>             <lpage>62</lpage>          <pub-id pub-id-type="pmid">2205540</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Kun1">
+        <label>12</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Kun</surname><given-names>JF</given-names></name><name><surname>Schmidt-Ott</surname><given-names>RJ</given-names></name><name><surname>Lehman</surname><given-names>LG</given-names></name><name><surname>Lell</surname><given-names>B</given-names></name><name><surname>Luckner</surname><given-names>D</given-names></name><etal/></person-group>             <year>1998</year>             <article-title>Merozoite surface antigen 1 and 2 genotypes and rosetting of Plasmodium falciparum in severe and mild malaria in Lambar&#xE9;n&#xE9;, Gabon.</article-title>             <source>Trans R Soc Trop Med Hyg</source>             <volume>92</volume>             <fpage>110</fpage>             <lpage>114</lpage>          <pub-id pub-id-type="pmid">9692171</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Jelinek1">
+        <label>13</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Jelinek</surname><given-names>T</given-names></name><name><surname>Peyerl-Hoffmann</surname><given-names>G</given-names></name><name><surname>M&#xFC;hlberger</surname><given-names>N</given-names></name><name><surname>Wichmann</surname><given-names>O</given-names></name><name><surname>Wilhelm</surname><given-names>M</given-names></name><etal/></person-group>             <year>2002</year>             <article-title>Molecular surveillance of drug resistance through imported isolates of Plasmodium falciparum in Europe.</article-title>             <source>Malar J</source>             <volume>1</volume>             <fpage>11</fpage>          <pub-id pub-id-type="pmid">12423552</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Scherf1">
+        <label>14</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Scherf</surname><given-names>A</given-names></name><name><surname>Mattei</surname><given-names>D</given-names></name><name><surname>Sarthou</surname><given-names>JL</given-names></name></person-group>             <year>1991</year>             <article-title>Multiple infections and unusual distribution of block 2 of the MSA1 gene of Plasmodium falciparum detected in west African clinical isolates by polymerase chain reaction analysis.</article-title>             <source>Mol Biochem Parasitol</source>             <volume>44</volume>             <fpage>297</fpage>             <lpage>299</lpage>          <pub-id pub-id-type="pmid">2052030</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Kun2">
+        <label>15</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Kun</surname><given-names>JFJ</given-names></name><name><surname>Missinou</surname><given-names>MA</given-names></name><name><surname>Lell</surname><given-names>B</given-names></name><name><surname>Sovric</surname><given-names>M</given-names></name><name><surname>Knoop</surname><given-names>H</given-names></name><etal/></person-group>             <year>2002</year>             <article-title>New emerging Plasmodium falciparum genotypes in children during the transition phase from asymptomatic parasitemia to malaria.</article-title>             <source>Am J Trop Med Hyg</source>             <volume>66</volume>             <fpage>653</fpage>             <lpage>658</lpage>          <pub-id pub-id-type="pmid">12224569</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-OfosuOkyere1">
+        <label>16</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Ofosu-Okyere</surname><given-names>A</given-names></name><name><surname>Mackinnon</surname><given-names>MJ</given-names></name><name><surname>Sowa</surname><given-names>MP</given-names></name><name><surname>Koram</surname><given-names>KA</given-names></name><name><surname>Nkrumah</surname><given-names>F</given-names></name><etal/></person-group>             <year>2001</year>             <article-title>Novel Plasmodium falciparum clones and rising clone multiplicities are associated with the increase in malaria morbidity in Ghanaian children during the transition into the high transmission season.</article-title>             <source>Parasitology</source>             <volume>123</volume>             <fpage>113</fpage>             <lpage>123</lpage>          <pub-id pub-id-type="pmid">11510676</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Ranjit1">
+        <label>17</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Ranjit</surname><given-names>MR</given-names></name><name><surname>Das</surname><given-names>A</given-names></name><name><surname>Chhotray</surname><given-names>GP</given-names></name><name><surname>Das</surname><given-names>BP</given-names></name><name><surname>Das</surname><given-names>BN</given-names></name><etal/></person-group>             <year>2004</year>             <article-title>The PfCRT (K76T) point mutation favours clone multiplicity and disease severity in Plasmodium falciparum infection.</article-title>             <source>Trop Med Int Health</source>             <volume>9</volume>             <fpage>857</fpage>             <lpage>861</lpage>          <pub-id pub-id-type="pmid">15303989</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Hallett1">
+        <label>18</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Hallett</surname><given-names>RL</given-names></name><name><surname>Dunyo</surname><given-names>S</given-names></name><name><surname>Ord</surname><given-names>R</given-names></name><name><surname>Jawara</surname><given-names>M</given-names></name><name><surname>Pinder M, et</surname><given-names>al</given-names></name></person-group>             <year>2006</year>             <article-title>Treatment of malaria in Gambian children with chloroquine plus sulphadoxine-pyrimethamine favours survival and transmission to mosquitoes of multi-drug-resistant Plasmodium falciparum.</article-title>             <source>PLoS Clin Trials</source>             <volume>1</volume>             <fpage>e15</fpage>          <pub-id pub-id-type="pmid">16871318</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Sutherland2">
+        <label>19</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Sutherland</surname><given-names>CJ</given-names></name><name><surname>Alloueche</surname><given-names>A</given-names></name><name><surname>McRobert</surname><given-names>A</given-names></name><name><surname>Ord</surname><given-names>A</given-names></name><name><surname>Leggat</surname><given-names>J</given-names></name><etal/></person-group>             <year>2002</year>             <article-title>Genetic complexity of Plasmodium falciparum gametocytes isolated from the peripheral blood of treated Gambian children.</article-title>             <source>Am J Trop Med Hyg</source>             <volume>66</volume>             <fpage>700</fpage>             <lpage>705</lpage>          <pub-id pub-id-type="pmid">12224577</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Juliano1">
+        <label>20</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Juliano</surname><given-names>JJ</given-names></name><name><surname>Gadalla</surname><given-names>N</given-names></name><name><surname>Sutherland</surname><given-names>CJ</given-names></name><name><surname>Meshnick</surname><given-names>SR</given-names></name></person-group>             <year>2010</year>             <article-title>The perils of PCR: can we accurately &#x2019;correct' antimalarial trials?</article-title>             <source>Trends Parasitol 26:</source>             <volume>119 - 124</volume>          </element-citation>
+      </ref>
+      <ref id="pone.0023204-Basco1">
+        <label>21</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Basco</surname><given-names>LK</given-names></name><name><surname>Tahar</surname><given-names>R</given-names></name><name><surname>Escalante</surname><given-names>A</given-names></name></person-group>             <year>2004</year>             <article-title>Molecular epidemiology of malaria in Cameroon. XVIII. Polymorphisms of the Plasmodium falciparum merozoite surface antigen-2 gene in isolates from symptomatic patients.</article-title>             <source>Am J Trop Med Hyg</source>             <volume>70</volume>             <fpage>238</fpage>             <lpage>244</lpage>          <pub-id pub-id-type="pmid">15031510</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Takala2">
+        <label>22</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Takala</surname><given-names>SL</given-names></name><name><surname>Escalante</surname><given-names>AA</given-names></name><name><surname>Branch</surname><given-names>OH</given-names></name><name><surname>Kariuki</surname><given-names>S</given-names></name><name><surname>Biswas</surname><given-names>S</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>Genetic diversity in the Block 2 region of the merozoite surface protein 1 (MSP-1) of Plasmodium falciparum: additional complexity and selection and convergence in fragment size polymorphism.</article-title>             <source>Infect Genet Evol</source>             <volume>6</volume>             <fpage>417</fpage>             <lpage>424</lpage>          <pub-id pub-id-type="pmid">16517218</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Farnert1">
+        <label>23</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Farnert</surname><given-names>A</given-names></name><name><surname>Snounou</surname><given-names>G</given-names></name><name><surname>Rooth</surname><given-names>I</given-names></name><name><surname>Bjorkman</surname><given-names>A</given-names></name></person-group>             <year>1997</year>             <article-title>Daily dynamics of Plasmodium falciparum subpopulations in asymptomatic children in a holoendemic area.</article-title>             <source>Am J Trop Med Hyg</source>             <volume>56</volume>             <fpage>538</fpage>             <lpage>547</lpage>          <pub-id pub-id-type="pmid">9180605</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Kiwanuka1">
+        <label>24</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Kiwanuka</surname><given-names>GN</given-names></name></person-group>             <year>2009</year>             <article-title>Genetic diversity in Plasmodium falciparum merozoite surface protein 1 and 2 coding genes and its implications in malaria epidemiology: a review of published studies from 1997-2007.</article-title>             <source>J Vector Borne Dis</source>             <volume>46</volume>             <fpage>1</fpage>             <lpage>12</lpage>          <pub-id pub-id-type="pmid">19326702</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Nsobya1">
+        <label>25</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Nsobya</surname><given-names>SL</given-names></name><name><surname>Kiggundu</surname><given-names>M</given-names></name><name><surname>Joloba</surname><given-names>M</given-names></name><name><surname>Dorsey</surname><given-names>G</given-names></name><name><surname>Rosenthal</surname><given-names>PJ</given-names></name></person-group>             <year>2008</year>             <article-title>Complexity of Plasmodium falciparum clinical samples from Uganda during short-term culture.</article-title>             <source>J Infect Dis</source>             <volume>198</volume>             <fpage>1554</fpage>             <lpage>1557</lpage>          <pub-id pub-id-type="pmid">18808336</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Zerbino1">
+        <label>26</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Zerbino</surname><given-names>DR</given-names></name><name><surname>Birney</surname><given-names>E</given-names></name></person-group>             <year>2008</year>             <article-title>Velvet: algorithms for de novo short read assembly using de Bruijn graphs.</article-title>             <source>Genome Res</source>             <volume>18</volume>             <fpage>821</fpage>             <lpage>9</lpage>          <pub-id pub-id-type="pmid">18349386</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Manske1">
+        <label>27</label>
+        <element-citation publication-type="other">             <person-group person-group-type="author"><name><surname>Manske</surname><given-names>M</given-names></name><name><surname>Miotto</surname><given-names>O</given-names></name><name><surname>Campino</surname><given-names>S</given-names></name><name><surname>Auburn</surname><given-names>S</given-names></name><name><surname>Almagro-Garcia</surname><given-names>J</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Next generation sequencing analysis of Plasmodium falciparum diversity within the host and across populations.</article-title>                          <comment>(Revised version under review)</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0023204-Kozarewa1">
+        <label>28</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Kozarewa</surname><given-names>I</given-names></name><name><surname>Ning</surname><given-names>Z</given-names></name><name><surname>Quail</surname><given-names>MA</given-names></name><name><surname>Sanders</surname><given-names>MJ</given-names></name><name><surname>Berriman</surname><given-names>M</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Amplification-free Illumina sequencing-library preparation facilitates improved mapping and assembly of (G+C)-biased genomes.</article-title>             <source>Nat Methods</source>             <volume>6</volume>             <fpage>291</fpage>             <lpage>295</lpage>          <pub-id pub-id-type="pmid">19287394</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-http1">
+        <label>29</label>
+        <element-citation publication-type="other">             <comment><ext-link ext-link-type="uri" xlink:href="http://www.sanger.ac.uk/research/projects/malariaprogramme-kwiatkowski/sequencing.html">http://www.sanger.ac.uk/research/projects/malariaprogramme-kwiatkowski/sequencing.html</ext-link></comment>          </element-citation>
+      </ref>
+      <ref id="pone.0023204-Tuzun1">
+        <label>30</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Tuzun</surname><given-names>E</given-names></name><name><surname>Sharp</surname><given-names>AJ</given-names></name><name><surname>Bailey</surname><given-names>JA</given-names></name><name><surname>Kaul</surname><given-names>R</given-names></name><name><surname>Morrison VA, et</surname><given-names>al</given-names></name></person-group>             <year>2005</year>             <article-title>Fine-scale structural variation of the human genome.</article-title>             <source>Nat Genet</source>             <volume>37</volume>             <fpage>727</fpage>             <lpage>732</lpage>          <pub-id pub-id-type="pmid">15895083</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Korbel1">
+        <label>31</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Korbel</surname><given-names>JO</given-names></name><name><surname>Urban</surname><given-names>AE</given-names></name><name><surname>Affourtit</surname><given-names>JP</given-names></name><name><surname>Godwin</surname><given-names>B</given-names></name><name><surname>Grubert</surname><given-names>F</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>Paired-end mapping reveals extensive structural variation in the human genome.</article-title>             <source>Science</source>             <volume>318</volume>             <fpage>420</fpage>             <lpage>426</lpage>          <pub-id pub-id-type="pmid">17901297</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Yoon1">
+        <label>32</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Yoon</surname><given-names>S</given-names></name><name><surname>Xuan</surname><given-names>Z</given-names></name><name><surname>Makarov</surname><given-names>V</given-names></name><name><surname>Ye</surname><given-names>K</given-names></name><name><surname>Sebat</surname><given-names>J</given-names></name></person-group>             <year>2009</year>             <article-title>Sensitive and accurate detection of copy number variants using read depth of coverage.</article-title>             <source>Genome Res</source>             <volume>19</volume>             <fpage>1586</fpage>             <lpage>1592</lpage>          <pub-id pub-id-type="pmid">19657104</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Manske2">
+        <label>33</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Manske</surname><given-names>HM</given-names></name><name><surname>Kwiatkowski</surname><given-names>DP</given-names></name></person-group>             <year>2009</year>             <article-title>LookSeq: a browser-based viewer for deep sequencing data.</article-title>             <source>Genome Res</source>             <volume>19</volume>             <fpage>2125</fpage>             <lpage>2132</lpage>          <pub-id pub-id-type="pmid">19679872</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Beshir1">
+        <label>34</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Beshir</surname><given-names>K</given-names></name><name><surname>Hallett</surname><given-names>RL</given-names></name><name><surname>Eziefula</surname><given-names>AC</given-names></name><name><surname>Bailey</surname><given-names>R</given-names></name><name><surname>Watson J, et</surname><given-names>al</given-names></name></person-group>             <year>2010</year>             <article-title>Measuring the efficacy of anti-malarial drugs in vivo: quantitative PCR measurement of parasite clearance.</article-title>             <source>Malaria J</source>             <volume>9</volume>             <fpage>312</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023204-Nair1">
+        <label>35</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Nair</surname><given-names>S</given-names></name><name><surname>Miller</surname><given-names>B</given-names></name><name><surname>Barends</surname><given-names>M</given-names></name><name><surname>Jaidee</surname><given-names>A</given-names></name><name><surname>Patel</surname><given-names>J</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Adaptive copy number evolution in malaria parasites.</article-title>             <source>PLoS Genet</source>             <volume>4</volume>             <fpage>e1000243</fpage>          <pub-id pub-id-type="pmid">18974876</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Kemp1">
+        <label>36</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Kemp</surname><given-names>DJ</given-names></name><name><surname>Thompson</surname><given-names>JK</given-names></name><name><surname>Walliker</surname><given-names>D</given-names></name><name><surname>Corcoran</surname><given-names>LM</given-names></name></person-group>             <year>1987</year>             <article-title>Molecular karyotype of Plasmodium falciparum: Conserved linkage groups and expendable histidine-rich protein genes.</article-title>             <source>Proc Natl Acd Sci USA</source>             <volume>84</volume>             <fpage>7672</fpage>             <lpage>7676</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023204-Cortes1">
+        <label>37</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Cortes</surname><given-names>A</given-names></name><name><surname>Carret</surname><given-names>C</given-names></name><name><surname>Kaneko</surname><given-names>O</given-names></name><name><surname>Yim Lim</surname><given-names>BYS</given-names></name><name><surname>Ivens A, et</surname><given-names>al</given-names></name></person-group>             <year>2007</year>             <article-title>Epigenetic silencing of Plasmodium falciparum genes linked to erythrocyte invasion.</article-title>             <source>PloS Pathogens</source>             <volume>3</volume>             <fpage>1023</fpage>             <lpage>1035</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023204-Dahlstrm1">
+        <label>38</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Dahlstr&#xF6;m</surname><given-names>S</given-names></name><name><surname>Ferreira</surname><given-names>PE</given-names></name><name><surname>Veiga</surname><given-names>MI</given-names></name><name><surname>Sedighi</surname><given-names>N</given-names></name><name><surname>Wiklund</surname><given-names>L</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Plasmodium falciparum multidrug resistance protein 1 and artemisinin-based combination therapy in Africa.</article-title>             <source>J Infect Dis</source>             <volume>200</volume>             <fpage>1456</fpage>             <lpage>1464</lpage>          <pub-id pub-id-type="pmid">19807279</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Dahlstrm2">
+        <label>39</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Dahlstr&#xF6;m</surname><given-names>S</given-names></name><name><surname>Veiga</surname><given-names>MI</given-names></name><name><surname>M&#xE5;rtensson</surname><given-names>A</given-names></name><name><surname>Bj&#xF6;rkman</surname><given-names>A</given-names></name><name><surname>Gil</surname><given-names>JP</given-names></name></person-group>             <year>2009</year>             <article-title>Polymorphism in PfMRP1 (Plasmodium falciparum multidrug resistance protein 1) amino acid 1466 associated with resistance to sulfadoxine-pyrimethamine treatment.</article-title>             <source>Antimicrob Agents Chemother</source>             <volume>53</volume>             <fpage>2553</fpage>             <lpage>2556</lpage>          <pub-id pub-id-type="pmid">19364873</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Sutherland3">
+        <label>40</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Sutherland</surname><given-names>CJ</given-names></name><name><surname>Fifer</surname><given-names>H</given-names></name><name><surname>Pearce</surname><given-names>RJ</given-names></name><name><surname>bin Reza</surname><given-names>F</given-names></name><name><surname>Nicholas</surname><given-names>M</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Novel pfdhps haplotypes among imported cases of <italic>Plasmodium falciparum</italic> malaria in the UK.</article-title>             <source>Antimicr Agents Chemother</source>             <volume>53</volume>             <fpage>3405</fpage>             <lpage>3410</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0023204-Joy1">
+        <label>41</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Joy</surname><given-names>DA</given-names></name><name><surname>Feng</surname><given-names>X</given-names></name><name><surname>Mu</surname><given-names>J</given-names></name><name><surname>Furuya</surname><given-names>T</given-names></name><name><surname>Chotivanich K, et</surname><given-names>al</given-names></name></person-group>             <year>2003</year>             <article-title>Early origin and recent expansion of Plasmodium falciparum.</article-title>             <source>Science</source>             <volume>300</volume>             <fpage>318</fpage>             <lpage>321</lpage>          <pub-id pub-id-type="pmid">12690197</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Juliano2">
+        <label>42</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Juliano</surname><given-names>JJ</given-names></name><name><surname>Porter</surname><given-names>K</given-names></name><name><surname>Mwapasa</surname><given-names>V</given-names></name><name><surname>Sem</surname><given-names>R</given-names></name><name><surname>Rogers</surname><given-names>WO</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Exposing malaria in-host diversity and estimating population diversity by capture-recapture using massively parallel pyrosequencing.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>107</volume>             <fpage>20138</fpage>             <lpage>20143</lpage>          <pub-id pub-id-type="pmid">21041629</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Juliano3">
+        <label>43</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Juliano</surname><given-names>JJ</given-names></name><name><surname>Kwiek</surname><given-names>JJ</given-names></name><name><surname>Cappell</surname><given-names>K</given-names></name><name><surname>Mwapasa</surname><given-names>V</given-names></name><name><surname>Meshnick</surname><given-names>SR</given-names></name></person-group>             <year>2007</year>             <article-title>Minority-variant pfcrt K76T mutations and chloroquine resistance, Malawi.</article-title>             <source>Emerg Infect Dis</source>             <volume>13</volume>             <fpage>872</fpage>             <lpage>877</lpage>          <pub-id pub-id-type="pmid">17553226</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Druilhe1">
+        <label>44</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Druilhe</surname><given-names>P</given-names></name><name><surname>Daubersies</surname><given-names>P</given-names></name><name><surname>Patarapotikul</surname><given-names>J</given-names></name><name><surname>Gentil</surname><given-names>C</given-names></name><name><surname>Chene</surname><given-names>L</given-names></name><etal/></person-group>             <year>1998</year>             <article-title>A primary malarial infection is composed of a very wide range of genetically diverse but related parasites.</article-title>             <source>J Clin Invest</source>             <volume>101</volume>             <fpage>2008</fpage>             <lpage>2016</lpage>          <pub-id pub-id-type="pmid">9576766</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Hill1">
+        <label>45</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Hill</surname><given-names>DR</given-names></name><name><surname>Behrens</surname><given-names>RH</given-names></name><name><surname>Bradley</surname><given-names>DJ</given-names></name></person-group>             <year>1996</year>             <article-title>The risk of malaria in travellers to Thailand.</article-title>             <source>Trans R Soc Trop Med Hyg</source>             <volume>90</volume>             <fpage>680</fpage>             <lpage>681</lpage>          <pub-id pub-id-type="pmid">9015516</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Babiker1">
+        <label>46</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Babiker</surname><given-names>HA</given-names></name><name><surname>Abdel-Wahab</surname><given-names>A</given-names></name><name><surname>Ahmed</surname><given-names>S</given-names></name><name><surname>Suleiman</surname><given-names>S</given-names></name><name><surname>Ranford-Cartwright</surname><given-names>LC</given-names></name></person-group>             <year>1999</year>             <article-title>Detection of low level Plasmodium falciparum gametocytes using reverse transcriptase polymerase chain reaction.</article-title>             <source>Mol Biochem Parasitol</source>             <volume>99</volume>             <fpage>143</fpage>             <lpage>148</lpage>          <pub-id pub-id-type="pmid">10215031</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Sutherland4">
+        <label>47</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Sutherland</surname><given-names>CJ</given-names></name><name><surname>Alloueche</surname><given-names>A</given-names></name><name><surname>McRobert</surname><given-names>A</given-names></name><name><surname>Ord</surname><given-names>A</given-names></name><name><surname>Leggat</surname><given-names>J</given-names></name><etal/></person-group>             <year>2002</year>             <article-title>Genetic complexity of Plasmodium falciparum gametocytes isolated from the peripheral blood of treated Gambian children.</article-title>             <source>Am J Trop Med Hyg</source>             <volume>66</volume>             <fpage>700</fpage>             <lpage>705</lpage>          <pub-id pub-id-type="pmid">12224577</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Gouagna1">
+        <label>48</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Gouagna</surname><given-names>LC</given-names></name><name><surname>Bancone</surname><given-names>G</given-names></name><name><surname>Yao</surname><given-names>F</given-names></name><name><surname>Yameogo</surname><given-names>B</given-names></name><name><surname>Dabir&#xE9;</surname><given-names>KR</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Genetic variation in human HBB is associated with Plasmodium falciparum transmission.</article-title>             <source>Nat Genet</source>             <volume>42</volume>             <fpage>328</fpage>             <lpage>331</lpage>          <pub-id pub-id-type="pmid">20305663</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Ahouidi1">
+        <label>49</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Ahouidi</surname><given-names>AD</given-names></name><name><surname>Bei</surname><given-names>AK</given-names></name><name><surname>Neafsey</surname><given-names>DE</given-names></name><name><surname>Sarr</surname><given-names>O</given-names></name><name><surname>Volkman</surname><given-names>S</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Population genetic analysis of large sequence polymorphisms in Plasmodium falciparum blood-stage antigens.</article-title>             <source>Infect Genet Evol</source>             <volume>10</volume>             <fpage>200</fpage>             <lpage>206</lpage>          <pub-id pub-id-type="pmid">19931645</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0023204-Biswas1">
+        <label>50</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Biswas</surname><given-names>S</given-names></name><name><surname>Lim</surname><given-names>EE</given-names></name><name><surname>Gupta</surname><given-names>A</given-names></name><name><surname>Saqib</surname><given-names>U</given-names></name><name><surname>Mir</surname><given-names>SS</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Interaction of apicoplast-encoded elongation factor (EF) EF-Tu with nuclear-encoded EF-Ts mediates translation in the Plasmodium falciparum plastid.</article-title>             <source>Int J Parasitol [Epub ahead of print]</source>          </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

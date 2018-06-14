@@ -1,0 +1,797 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Med Imaging</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Medical Imaging</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2342</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21338504</article-id>
+      <article-id pub-id-type="pmc">3047291</article-id>
+      <article-id pub-id-type="publisher-id">1471-2342-11-5</article-id>
+      <article-id pub-id-type="doi">10.1186/1471-2342-11-5</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Technical Advance</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Integration of 3D anatomical data obtained by CT imaging and 3D optical scanning for computer aided implant surgery</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" equal-contrib="yes" id="A1">
+          <name>
+            <surname>Frisardi</surname>
+            <given-names>Gianni</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>frisardi@tin.it</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A2">
+          <name>
+            <surname>Chessa</surname>
+            <given-names>Giacomo</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>gchessa@uniss.it</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A3">
+          <name>
+            <surname>Barone</surname>
+            <given-names>Sandro</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>s.barone@ing.unipi.it</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A4">
+          <name>
+            <surname>Paoli</surname>
+            <given-names>Alessandro</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>a.paoli@ing.unipi.it</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A5">
+          <name>
+            <surname>Razionale</surname>
+            <given-names>Armando</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>a.razionale@ing.unipi.it</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A6">
+          <name>
+            <surname>Frisardi</surname>
+            <given-names>Flavio</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>frisardi.flavio@tiscali.it</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>"Epoch&#xE8;" Orofacial Pain Center, Nettuno (Rome), Italy</aff>
+      <aff id="I2"><label>2</label>Department of Prosthetic Rehabilitation, University of Sassari, Italy</aff>
+      <aff id="I3"><label>3</label>Department of Mechanical, Nuclear and Production Engineering, University of Pisa, Italy</aff>
+      <pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>21</day>
+        <month>2</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>11</volume>
+      <fpage>5</fpage>
+      <lpage>5</lpage>
+      <history>
+        <date date-type="received">
+          <day>12</day>
+          <month>9</month>
+          <year>2010</year>
+        </date>
+        <date date-type="accepted">
+          <day>21</day>
+          <month>2</month>
+          <year>2011</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9;2011 Frisardi et al; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2011</copyright-year>
+        <copyright-holder>Frisardi et al; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1471-2342/11/5"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>A precise placement of dental implants is a crucial step to optimize both prosthetic aspects and functional constraints. In this context, the use of virtual guiding systems has been recognized as a fundamental tool to control the ideal implant position. In particular, complex periodontal surgeries can be performed using preoperative planning based on CT data. The critical point of the procedure relies on the lack of accuracy in transferring CT planning information to surgical field through custom-made stereo-lithographic surgical guides.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>In this work, a novel methodology is proposed for monitoring loss of accuracy in transferring CT dental information into periodontal surgical field. The methodology is based on integrating 3D data of anatomical (impression and cast) and preoperative (radiographic template) models, obtained by both CT and optical scanning processes.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>A clinical case, relative to a fully edentulous jaw patient, has been used as test case to assess the accuracy of the various steps concurring in manufacturing surgical guides. In particular, a surgical guide has been designed to place implants in the bone structure of the patient. The analysis of the results has allowed the clinician to monitor all the errors, which have been occurring step by step manufacturing the physical templates.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>The use of an optical scanner, which has a higher resolution and accuracy than CT scanning, has demonstrated to be a valid support to control the precision of the various physical models adopted and to point out possible error sources. A case study regarding a fully edentulous patient has confirmed the feasibility of the proposed methodology.</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>Over the last few years, dental prostheses supported by osseointegrated implants have progressively replaced the use of removable dentures in the treatment of edentulous patients. The restoration of missing teeth must provide a patient with aesthetical, biomechanical and functional requirements of natural dentition, particularly concerning chewing functions. When conventional implantation techniques are used, the clinical outcome is often unpredictable, since it greatly relies on skills and experience of dental surgeons.</p>
+      <p>The placement of endosseous implants is based on invasive procedures which require a long time to be completed. Recently, many different implant planning procedures have been developed to support oral implant positioning. Number, size, position of implants must be related to bone morphology, as well as to the accompanying vital structures (e.g. neurovascular bundles). Complex surgical interventions can be performed using preoperative planning based on 3D imaging. The developments in computer-assisted surgery have brought to the definition of effective operating procedures in dental implantology. Several systems have been designed to guide treatment-planning processes: from simulation environments to surgical fields [<xref ref-type="bibr" rid="B1">1</xref>]. The guided approaches are generally based on three-dimensional reconstructions of patient anatomies processing data obtained by either Computed Tomography (CT) or Cone-Beam Computed Tomography (CBCT) [<xref ref-type="bibr" rid="B2">2</xref>]. These methodologies allow more accurate assessments of surgical difficulties through less invasive procedures and operating time reductions. In particular, radiographic data (depth and proximity to anatomical landmarks) and restorative requirements are crucial for a complete transfer of implant planning (positioning, trajectory and distribution) to surgical field [<xref ref-type="bibr" rid="B3">3</xref>]. Virtual planning processes provide digital models of drill guides, which are typically manufactured by stereo-lithography and used as surgical guidance in the preparation of implant receptor sites.</p>
+      <p>In the past decade, a methodology based on the use of two different guides and a double CT scan procedure, has been introduced [<xref ref-type="bibr" rid="B4">4</xref>] and later commercialized as NobelGuide<sup>&#xAE; </sup>by NobelBiocare (Zurich, Switzerland). This procedure involves an intermediate template (<italic>radiographic template</italic>) that is used to refer the soft tissues with respect to the bone structure derived from patient CT scan data. The guide is manufactured on the basis of diagnostic wax-up reproducing the desired prosthetic end result. The diagnostic wax-up is obtained starting from the dental cast, produced from the impression of the patient's mouth, and helps in the definition of a proper dental prosthesis design. Moreover, the radiographic template is made of a non radio-opaque material, usually acrylic resin, to avoid image disturbs when CT scans of patients are carried. Then, the template is separately scanned changing radiological parameters in order to visualize the acrylic resin. The computer-based alignment of the prosthetic model with respect to the maxillofacial structure is obtained by small radio-opaque gutta-percha spheres inserted within the radiographic template. These gutta-percha markers are visible in both the different CT scans and can be used as references to register the two data sets through point-based rigid registration techniques [<xref ref-type="bibr" rid="B5">5</xref>].</p>
+      <p>Specific 3D image-based software programs for implant surgery planning, based on CT scan data, have been recently developed and clinically approved by many manufacturers. These software applications allow surgeons to locate implant receptor sites and simulate implant placement [<xref ref-type="bibr" rid="B6">6</xref>]. The planned implant positions are then transferred to the surgical field by means of a surgical guide made by stereo-lithographic techniques. Surgical guides can be bone-supported, tooth-supported or mucosa-supported depending on the specific patient's conditions. Bone-supported guides are designed to fit on the jawbone and can be used for partially or fully edentulous cases, while tooth-supported guides are tailored to fit directly on the teeth. The latters are mostly effective for single tooth and partially edentulous cases. Mucosa-supported surgical guides are rather designed for placement on soft tissues and are recommended for fully edentulous patients when minimally invasive surgery is required.</p>
+      <p>The surgical guide is then placed within the patient's mouth and can be anchored, especially when mucosa-supported guides are used, to the jawbone by stabilizing pins (Anchor Pins).</p>
+      <p>The weak point of the whole procedure relies on the accuracy in transferring information deriving from CT data into surgical planning. Geometrical deviations of implant positions between planning and intervention stages could cause irreversible damages of anatomical structure, such as sensory nerves. The surgical guide should closely fit with the hard and/or soft tissue surface in a unique and stable position in order to accurately transfer the pre-operative treatment plan. If the surgical template is not accurate, the fit will be improper, compromising the implant placement. Even small angular errors in the placement of perforation guides can, indeed, propagate in considerable horizontal deviations due to the depth of the implant.</p>
+      <p>A previous in ex vivo study to assess the accuracy of 10-15 mm-long implant positioning using CBCT, revealed a mean angular deviation of 2&#xB0; (<italic>SD </italic>&#xB1; 0.8, range 0.7&#xB0; &#xF7; 4&#xB0;) and a mean linear deviation of 1.1 mm (<italic>SD </italic>&#xB1; 0.7 mm, range 0.3 &#xF7; 2.3 mm) at the hexagon and 2 mm (<italic>SD </italic>&#xB1; 0.7 mm, range 0.7 &#xF7; 2.4 mm) at the tip [<xref ref-type="bibr" rid="B7">7</xref>].</p>
+      <p>Sarment <italic>et al. </italic>[<xref ref-type="bibr" rid="B8">8</xref>] compared the accuracy of a stereo-lithographic surgical template to conventional surgical template <italic>in vitro</italic>. An average linear deviation of 1.5 mm at the entrance, and 2.1 mm at the apex for the conventional template, as compared with 0.9 and 1.0 mm for the stereo-lithographic surgical template was reported.</p>
+      <p>Di Giacomo <italic>et al. </italic>[<xref ref-type="bibr" rid="B9">9</xref>] published a preliminary study involving the placement of 21 implants using a stereo-lithographic surgical template, showing an angular deviation of 7.25&#xB0; between planned and actual implant axes, whereas the linear deviation was 1.45 mm.</p>
+      <p>In a recent study [<xref ref-type="bibr" rid="B10">10</xref>], the accuracy of a surgical template in transferring planned implant position to the real patient surgery has been assessed. The mean mesio-distal angular deviation of the planned to the actual was 0.17&#xB0; (<italic>SD </italic>&#xB1; 5.02&#xB0;) ranging from 0.262&#xB0; to 12.2&#xB0;, though, the mean bucco-lingual angular deviation was 0.46&#xB0; (<italic>SD </italic>&#xB1; 4.48&#xB0;) ranging from 0.085&#xB0; to 7.67&#xB0;.</p>
+      <p>These studies confirm that the error could be high, especially in neurovascular anatomical districts, such as the mandibular nerve. In this anatomical area, a moderate damage may also result in severe symptoms. For example, the lesion of the mandibular nerve is of the Wallerian degenerative type [<xref ref-type="bibr" rid="B11">11</xref>], which is a slow degenerative process and the diagnosis by laser-evoked potentials and trigeminal reflexes would allow early decompression [<xref ref-type="bibr" rid="B12">12</xref>].</p>
+      <p>Deviations between planning and postoperative outcome may reflect the sum of many error sources. For instance, CT scan quality and processing of DICOM (<italic>Digital Imaging and Communication in Medicine</italic>) images affect the creation of the corresponding 3D digital models. Misalignment errors can also be introduced during the arrangement of the radiographic template within the maxillofacial structures by the gutta-percha markers. Moreover, further inaccuracies can be introduced in manufacturing physical models by stereo-lithographic techniques.</p>
+      <p>This paper concerns the development of an innovative methodology to evaluate the accuracy in transferring CT based implant planning into surgical fields for oral rehabilitation.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <p>The proposed methodology is based on the combined use of CT scan data and a structured light vision system. In particular, the data acquisition phase regards two different scanning technologies: radiological scanning and optical scanning.</p>
+      <p>A clinical case, relative to a fully edentulous patient, has been used as test case to assess the feasibility of the proposed methodology. The ethics approval was obtained by Human Research Ethics Committee at the Sassari Hospital (n&#xB0; 971) and written form approval was obtained by the patient.</p>
+      <sec>
+        <title>Optical scanning</title>
+        <p>The 3D optical scanner used in this work is based on a stereo vision approach with structured coded light projection [<xref ref-type="bibr" rid="B13">13</xref>]. The optical unit is composed of a monochrome digital camera (CCD - 1280 &#xD7; 960 pixels) and a multimedia white light projector (DLP - 1024 &#xD7; 768 pixels) that are used as active devices for a triangulation process. The digitizer is integrated with a rotary axis, automatically controlled by a stepper motor with a resolution of 400 steps per round (Figure <xref ref-type="fig" rid="F1">1</xref>). The scanner is capable of measuring about 1 million 3D points within the field of view (100 mm &#xD7; 80 mm), with a spatial resolution of 0.1 mm and an overall accuracy of 0.01 mm [<xref ref-type="bibr" rid="B13">13</xref>].</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p><bold>Optical scanner</bold>. 3D optical scanner used to capture dental models</p>
+          </caption>
+          <graphic xlink:href="1471-2342-11-5-1"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>CT scan data</title>
+        <p>CT scanning of maxillofacial region is based on the acquisition of several slices of the jaw bone at each turn of a helical movement of an x-ray source and a reciprocating area detector. The acquired data can be stored in DICOM format.</p>
+        <p>In this work, CT scanning has been performed using a system Toshiba Aquilion by Toshiba Medical Systems, Japan, with 0.5 mm slice thickness. 3D models have been reconstructed processing DICOM images by means of 3D Slicer (version 3.2), a freely available open source software initially developed as a joint effort between the Surgical Planning Lab at Brigham and Women's Hospital and the MIT Artificial Intelligence Lab. The software has now evolved into a national platform supported by a variety of federal funding sources [<xref ref-type="bibr" rid="B14">14</xref>]. 3D Slicer is an end-user application to process medical images and to generate 3D volumetric data set, which can be used to provide primary reconstruction images in three orthogonal planes (axial, sagittal and coronal). 3D models of anatomical structure can be generated through a powerful and robust segmentation tool on the basis of a semi-automated approach. The displayed gray level of the voxels representing hard tissues can be dynamically altered to provide the most realistic appearance of the bone structure, minimizing soft tissues and the superimposition of metal artifacts (Figure <xref ref-type="fig" rid="F2">2</xref>). Initial segmentation of CT data can then be obtained by threshold segmentation. This involves the manual selection of a threshold value that can be dynamically adjusted to provide the optimal filling of the interested structure in all the slices acquired.</p>
+        <fig id="F2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p><bold>CT data</bold>. Maxilla CT data in the axial, sagittal and coronal planes and a fully 3D vision</p>
+          </caption>
+          <graphic xlink:href="1471-2342-11-5-2"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>3D reconstructions</title>
+        <p>The accuracy of 3D reconstruction based on CT data analysis may be affected by several factors that should be considered in surgical treatment planning. A reduction of image quality may be caused by metallic artifacts and/or patient motions. Moreover, the influence of an appropriate segmentation on the final 3D representation is a matter of utmost importance [<xref ref-type="bibr" rid="B15">15</xref>]. The segmentation process typically relies on the adopted mathematical algorithm, on spatial and contrast resolution of the slice images, on technical skills of the operator in selecting the optimal threshold value. Metal restorations as well as tissues not belonging to the structure of interest (i.e. antagonistic teeth) must be carefully cleaned up from the CT scan images when models for interactive planning are prepared. This process can lead to different volume reconstructions due to the operator's selection of threshold values, even if proved and patented software is used. In particular, the detection of the optimal threshold value is not straightforward when images presenting smooth intensity distributions are processed (Figure <xref ref-type="fig" rid="F3">3</xref>). For this reason, a methodology to verify the accuracy of the 3D reconstruction of CT derived images would be necessary for clinical applications.</p>
+        <fig id="F3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p><bold>(A-D) CT data segmentation process</bold>. (A) DICOM image of the radiographic template with associated a row grey intensity level, (B-D) segmentation with three different threshold values.</p>
+          </caption>
+          <graphic xlink:href="1471-2342-11-5-3"/>
+        </fig>
+        <p>In this work, a validation process for 3D reconstructions of radiographic templates used in implant guided surgery has been developed using the optical scanner. As previously illustrated, the radiological template (Figure <xref ref-type="fig" rid="F4">4A</xref>) is manually manufactured on the basis of the diagnostic wax-up to take into account prosthesis design, and on the gypsum dental cast (Figure <xref ref-type="fig" rid="F4">4B</xref>) to assure the optimal fitting of the mating surfaces. The 3D model of the radiographic template is reconstructed processing the DICOM images (Figure <xref ref-type="fig" rid="F5">5A</xref>). The radiographic template is also acquired by the optical scanner. The 3D model as obtained by the structured light scanning system (Figure <xref ref-type="fig" rid="F5">5B</xref>) is used as the gold standard to improve the accuracy of the CT reconstruction. The comparison between the CT reconstructed and the optically captured models gives the information to optimize the parameters of the DICOM images segmentation process. The data acquired by the optical scanner are aligned to the model obtained by the CT reconstruction through a point-based registration technique. Correspondent pairs of points are manually selected on the two different models and the rigid transformation between the two objects is determined by applying the singular value decomposition (SVD) method [<xref ref-type="bibr" rid="B5">5</xref>]. The alignment is then refined by applying a surface-based registration technique through best fitting algorithms [<xref ref-type="bibr" rid="B16">16</xref>].</p>
+        <fig id="F4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p><bold>(A-B) Preoperative and anatomical dental models</bold>. (A) Radiographic template with gutta-percha markers, (B) gypsum dental cast.</p>
+          </caption>
+          <graphic xlink:href="1471-2342-11-5-4"/>
+        </fig>
+        <fig id="F5" position="float">
+          <label>Figure 5</label>
+          <caption>
+            <p><bold>(A-B) Digital models of the radiographic template</bold>. 3D digital models of the radiographic template obtained by CT data (A) and by the optical scanner (B).</p>
+          </caption>
+          <graphic xlink:href="1471-2342-11-5-5"/>
+        </fig>
+        <p>Figure <xref ref-type="fig" rid="F6">6</xref> shows the full-field 3D compare of three different reconstructions of the radiological guide, obtained varying the threshold values, with respect to the model obtained by the optical scanner. The distribution of discrepancies between the datasets obtained using the two scanning technologies, with both positive and negative deviations, quantifies the dimensional difference of the CT based reconstruction that can turn out to be smaller (Figure <xref ref-type="fig" rid="F6">6A</xref>) or greater (Figure <xref ref-type="fig" rid="F6">6C</xref>). The search of the optimal threshold value can therefore be made by minimizing the absolute mean of the distances between the two models (Figure <xref ref-type="fig" rid="F6">6B</xref>). Histogram plots of these distributions are reported in Figure <xref ref-type="fig" rid="F6">6D</xref>, whereas Table <xref ref-type="table" rid="T1">1</xref> reports the associated statistical data (mean and standard deviation).</p>
+        <table-wrap id="T1" position="float">
+          <label>Table 1</label>
+          <caption>
+            <p>Statistical data relative to different DICOM reconstructions</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th align="center">3D Compare</th>
+                <th align="center"><italic>Mean value</italic><break/>[mm]</th>
+                <th align="center"><italic>SD</italic><break/>[mm]</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="center">A</td>
+                <td align="center">-0.224</td>
+                <td align="center">0.226</td>
+              </tr>
+              <tr>
+                <td align="center">B</td>
+                <td align="center">-0.008</td>
+                <td align="center">0.200</td>
+              </tr>
+              <tr>
+                <td align="center">C</td>
+                <td align="center">0.185</td>
+                <td align="center">0.179</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>Mean and standard deviation of the discrepancies in the three different cases reported in Figure 6 and relative to the threshold values used in Figure 3 (B-D)</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <fig id="F6" position="float">
+          <label>Figure 6</label>
+          <caption>
+            <p><bold>(A-D) Full-field 3D comparisons of three different reconstructions of the radiographic template</bold>. Full-field 3D compare of three different DICOM reconstructions of the radiographic template with respect to the model obtained by the optical scanner and relative histogram plots (D). The DICOM model (Figure 5A) results smaller (A), comparable (B) and greater (C) than the one obtained by the optical scanner (Figure 5B).</p>
+          </caption>
+          <graphic xlink:href="1471-2342-11-5-6"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec>
+      <title>Results</title>
+      <p>In the present work, a clinical case, relative to a fully edentulous patient, has been used as test case to assess the accuracy of the various steps concurring in manufacturing surgical guides. A study surgical template (Figure <xref ref-type="fig" rid="F7">7B</xref>), called Duplicate Radiographic Template (D.R.T) and based on the same CT data used to fabricate the mucosa-supported surgical guide, has been manufactured by a stereo-lithographic process. This template does not present the holes to hold the drill guides since the first requirement was just the reproduction of the only functional areas to wearing the guide. All the physical models (impression, cast, radiographic template, study surgical template) have been acquired by the optical scanner. The 3D digital models have been realigned by best fitting techniques in order to evaluate the discrepancies between the different shapes. The virtual alignments have been conducted by only referring the mating surfaces of the various models, since the crucial problem regards the proper fit between the final surgical guide and the patient's mucosa.</p>
+      <fig id="F7" position="float">
+        <label>Figure 7</label>
+        <caption>
+          <p><bold>(A-B) Impression and radiographic template</bold>. Patient's mouth impression (A) and Duplicate Radiographic Template (B)</p>
+        </caption>
+        <graphic xlink:href="1471-2342-11-5-7"/>
+      </fig>
+      <p>Figure <xref ref-type="fig" rid="F8">8</xref> shows the 3D compare between the patient mouth's impression (Figure <xref ref-type="fig" rid="F7">7A</xref>) and the relative study cast (<italic>mean value </italic>-0.004 mm, <italic>SD </italic>0.067 mm). The manufacturing of the gypsum cast is the first critical step of the whole process that can be verified, since the accuracy in detecting the impression is not measurable. Mismatch between the impression and the gypsum cast may cause improper fitting of the radiographic template, which could result stable on the cast, but floating or not wearable in the patient's mouth.</p>
+      <fig id="F8" position="float">
+        <label>Figure 8</label>
+        <caption>
+          <p><bold>Full-field 3D comparison between impression and cast</bold>. 3D compare between the impression and the gypsum cast models obtained by optical scanning.</p>
+        </caption>
+        <graphic xlink:href="1471-2342-11-5-8"/>
+      </fig>
+      <p>In Figure <xref ref-type="fig" rid="F9">9</xref>, the distributions of the optical measurement discrepancies between corresponding points of the gypsum cast and, respectively, the radiological guide (Figure <xref ref-type="fig" rid="F9">9B</xref>) (<italic>mean value </italic>-0.009 mm, <italic>SD </italic>0.069 mm) and the surgical guide or Duplicate Radiographic Template (Figure <xref ref-type="fig" rid="F9">9C</xref>) (<italic>mean value </italic>0.013 mm, <italic>SD </italic>0.141 mm) are reported. Moreover, the fitting of the radiological guide model, obtained by processing DICOM images on the gypsum cast has been verified (Figure <xref ref-type="fig" rid="F9">9A</xref>) (<italic>mean value </italic>-0.004 mm, <italic>SD </italic>0.082 mm). Table <xref ref-type="table" rid="T2">2</xref> summarizes the same results in terms of mean value and standard deviation of the misalignments. Histogram plots relative to these distributions are reported in Figure <xref ref-type="fig" rid="F9">9D</xref>.</p>
+      <table-wrap id="T2" position="float">
+        <label>Table 2</label>
+        <caption>
+          <p>Statistical data relative to discrepancies between cast and dental models</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th align="center">3D Compare</th>
+              <th align="center" colspan="2">Impression</th>
+              <th align="center" colspan="2">Gypsum cast</th>
+            </tr>
+            <tr>
+              <th/>
+              <th align="center"><italic>Mean value</italic><break/>[mm]</th>
+              <th align="center"><italic>SD</italic><break/>[mm]</th>
+              <th align="center"><italic>Mean value</italic><break/>[mm]</th>
+              <th align="center"><italic>SD</italic><break/>[mm]</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center">DICOM</td>
+              <td align="center">-</td>
+              <td align="center">-</td>
+              <td align="center">-0.004</td>
+              <td align="center">0.082</td>
+            </tr>
+            <tr>
+              <td align="center">Gypsum cast</td>
+              <td align="center">-0.004</td>
+              <td align="center">0.067</td>
+              <td align="center">-</td>
+              <td align="center">-</td>
+            </tr>
+            <tr>
+              <td align="center">Radiological template</td>
+              <td align="center">-</td>
+              <td align="center">-</td>
+              <td align="center">-0.009</td>
+              <td align="center">0.069</td>
+            </tr>
+            <tr>
+              <td align="center">Surgical template</td>
+              <td align="center">-</td>
+              <td align="center">-</td>
+              <td align="center">0.013</td>
+              <td align="center">0.141</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <p>Mean and standard deviation of the discrepancies reported in Figure 8 and Figure 9</p>
+        </table-wrap-foot>
+      </table-wrap>
+      <fig id="F9" position="float">
+        <label>Figure 9</label>
+        <caption>
+          <p><bold>(A-D) Full-field 3D comparisons between cast and dental models</bold>. Full-field distributions of the measurements discrepancies between gypsum cast model and, respectively, the radiological guide model as obtained by DICOM processing (A), the radiological guide model (B) and the Duplicate radiographic Template "D.R.T." (C) as obtained by the optical scanner. (D) Relative histogram plots.</p>
+        </caption>
+        <graphic xlink:href="1471-2342-11-5-9"/>
+      </fig>
+    </sec>
+    <sec>
+      <title>Discussion</title>
+      <p>The analysis of the results allows the detection of possible errors occurred in manufacturing surgical guides. Low discrepancy values between the impression and cast models prove the correctness in the manufacturing process of the gypsum cast. The almost perfect superimposition between the radiological template and the study cast should have been expected since the radiological template is customized by manually fitting it on the cast. The transfer from the radiological to the surgical guides involves two distinct processes: the reconstruction of the radiological guide model by CT scanning and the manufacturing of the surgical guide starting from this digital model. The accuracy of the first step has been verified aligning the model obtained by processing the DICOM images with the gypsum cast. The fine adjustment of the threshold value in the segmentation process, using the model obtained by optical scanning as the anatomical truth, has allowed the minimization of the deviations with respect to the cast. For this reason, the high misalignment errors regarding the surgical template can be attributed to the stereo-lithographic process, which has been used to manufacture the surgical guide. The geometrical differences of the surfaces mating with the gypsum cast, certainly affect the overall accuracy in the implant placement positions. As a further proof, the surgical guide has demonstrated to improperly fit the physical model of the dental gypsum cast. This could lead the surgeon to anchor the template in the wrong way, compromising the desired implant placement.</p>
+      <p>A thorough study of the effect of these discrepancies on the maximum deviations obtained between the planned positions of the implants and the postoperative result should be done.</p>
+    </sec>
+    <sec>
+      <title>Conclusions</title>
+      <p>In this paper, a methodology to evaluate the transfer accuracy of CT dental information into periodontal surgical field has been proposed. The procedure is based on the integration of a structured light vision system within the CT scan based preoperative planning process. The use of the optical scanner, having a higher resolution and accuracy than CT scanning, has demonstrated to be a valid support to evaluate the precision of the various physical models adopted and to point out possible error sources. Optical scanning of the radiological guide, mounted on the gypsum cast, could be furthermore helpful for the integration of the prosthetic data within the bone structure. In case of not fully edentulous patients, the acquisition of teeth's shape could be used, in addition to gutta-percha markers, to optimize or verify the positioning of the radiological guide with respect to the maxillofacial structure. Moreover, the accurate digital model of the mouth impression could be the base for the direct design of the radiological guide using CAD/CAM technologies, without passing through manufacturing the gypsum cast, drastically reducing errors and planning time.</p>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors declare that they have no competing interests.</p>
+    </sec>
+    <sec>
+      <title>Authors' contributions</title>
+      <p>GF, GC, SB, AP, AR and FF participated to the conception and design of the work, to the acquisition of data, wrote the paper, participated in the analysis and interpretation of data and reviewed the manuscript. All the authors read and approved the final manuscript.</p>
+    </sec>
+    <sec>
+      <title>Pre-publication history</title>
+      <p>The pre-publication history for this paper can be accessed here:</p>
+      <p>
+        <ext-link ext-link-type="uri" xlink:href="http://www.biomedcentral.com/1471-2342/11/5/prepub">http://www.biomedcentral.com/1471-2342/11/5/prepub</ext-link>
+      </p>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgements</title>
+      <p>Written consent was obtained from the patient for publication of present study.</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Vercruyssen</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Jacobs</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Van Assche</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>van Steenberghe</surname>
+            <given-names>D</given-names>
+          </name>
+          <article-title>The use of CT scan based planning for oral rehabilitation by means of implants and its transfer to the surgical field: a critical review on accuracy</article-title>
+          <source>J Oral Rehabil</source>
+          <year>2008</year>
+          <volume>35</volume>
+          <fpage>454</fpage>
+          <lpage>474</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1365-2842.2007.01816.x</pub-id>
+          <pub-id pub-id-type="pmid">18429973</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Scarfe</surname>
+            <given-names>WC</given-names>
+          </name>
+          <name>
+            <surname>Farman</surname>
+            <given-names>AG</given-names>
+          </name>
+          <name>
+            <surname>Sukovic</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Clinical applications of cone-beam computed tomography in dental practice</article-title>
+          <source>J Can Dent Assoc</source>
+          <year>2006</year>
+          <volume>72</volume>
+          <fpage>75</fpage>
+          <lpage>80</lpage>
+          <pub-id pub-id-type="pmid">16480609</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Tardieu</surname>
+            <given-names>PB</given-names>
+          </name>
+          <name>
+            <surname>Vrielinck</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Escolano</surname>
+            <given-names>E</given-names>
+          </name>
+          <article-title>Computer-assisted implant placement. A case report: treatment of the mandible</article-title>
+          <source>Int J Oral Maxillofac Implants</source>
+          <year>2003</year>
+          <volume>18</volume>
+          <fpage>599</fpage>
+          <lpage>604</lpage>
+          <pub-id pub-id-type="pmid">12939016</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Verstreken</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Van Cleynenbreugel</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Martens</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Marchal</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>van Steenberghe</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Suetens</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>An image-guided planning system for endosseous oral implants</article-title>
+          <source>IEEE Trans Med Imaging</source>
+          <year>1998</year>
+          <volume>17</volume>
+          <fpage>842</fpage>
+          <lpage>852</lpage>
+          <pub-id pub-id-type="doi">10.1109/42.736056</pub-id>
+          <pub-id pub-id-type="pmid">9874310</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Eggert</surname>
+            <given-names>DW</given-names>
+          </name>
+          <name>
+            <surname>Lorusso</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Fischer</surname>
+            <given-names>RB</given-names>
+          </name>
+          <article-title>Estimating 3-D rigid body transformations: a comparison of four major algorithms</article-title>
+          <source>Mach Vis Appl</source>
+          <year>1997</year>
+          <volume>9</volume>
+          <fpage>272</fpage>
+          <lpage>290</lpage>
+          <pub-id pub-id-type="doi">10.1007/s001380050048</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Azari</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Nikzad</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Computer-assisted implantology: historical background and potential outcomes - a review</article-title>
+          <source>Int J Med Robotics Comput Assist Surg</source>
+          <year>2008</year>
+          <volume>4</volume>
+          <fpage>95</fpage>
+          <lpage>104</lpage>
+          <pub-id pub-id-type="doi">10.1002/rcs.188</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Van Assche</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>van Steenberghe</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Guerrero</surname>
+            <given-names>ME</given-names>
+          </name>
+          <name>
+            <surname>Hirsch</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Schutyser</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Quirynen</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Jacobs</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>Accuracy of implant placement based on pre-surgical planning of three-dimensional cone-beam images: a pilot study</article-title>
+          <source>J Clin Periodontol</source>
+          <year>2007</year>
+          <volume>34</volume>
+          <fpage>816</fpage>
+          <lpage>821</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1600-051X.2007.01110.x</pub-id>
+          <pub-id pub-id-type="pmid">17716317</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Sarment</surname>
+            <given-names>DP</given-names>
+          </name>
+          <name>
+            <surname>Sukovic</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Clinthorne</surname>
+            <given-names>N</given-names>
+          </name>
+          <article-title>Accuracy of implant placement with a stereolithographic surgical guide</article-title>
+          <source>Int J Oral Maxillofac Implants</source>
+          <year>2003</year>
+          <volume>18</volume>
+          <fpage>571</fpage>
+          <lpage>577</lpage>
+          <pub-id pub-id-type="pmid">12939011</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Di Giacomo</surname>
+            <given-names>GA</given-names>
+          </name>
+          <name>
+            <surname>Cury</surname>
+            <given-names>PR</given-names>
+          </name>
+          <name>
+            <surname>de Araujo</surname>
+            <given-names>NS</given-names>
+          </name>
+          <name>
+            <surname>Sendyk</surname>
+            <given-names>WR</given-names>
+          </name>
+          <name>
+            <surname>Sendyk</surname>
+            <given-names>CL</given-names>
+          </name>
+          <article-title>Clinical application of stereolithographic surgical guides for implant placement: preliminary results</article-title>
+          <source>J Periodontol</source>
+          <year>2005</year>
+          <volume>76</volume>
+          <fpage>503</fpage>
+          <lpage>507</lpage>
+          <pub-id pub-id-type="doi">10.1902/jop.2005.76.4.503</pub-id>
+          <pub-id pub-id-type="pmid">15857088</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Al-Harbi</surname>
+            <given-names>SA</given-names>
+          </name>
+          <name>
+            <surname>Sun</surname>
+            <given-names>AY</given-names>
+          </name>
+          <article-title>Implant placement accuracy when using stereolithographic template as a surgical guide: preliminary results</article-title>
+          <source>Implant Dent</source>
+          <year>2009</year>
+          <volume>18</volume>
+          <fpage>46</fpage>
+          <lpage>56</lpage>
+          <pub-id pub-id-type="doi">10.1097/ID.0b013e31818c6a50</pub-id>
+          <pub-id pub-id-type="pmid">19212237</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mi</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Beirowski</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Gillingwater</surname>
+            <given-names>TH</given-names>
+          </name>
+          <name>
+            <surname>Adalbert</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Wagner</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Grumme</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Osaka</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Conforti</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Arnhold</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Addicks</surname>
+            <given-names>K</given-names>
+          </name>
+          <etal/>
+          <article-title>The slow Wallerian degeneration gene, WldS, inhibits axonal spheroid pathology in gracile axonal dystrophy mice</article-title>
+          <source>Brain</source>
+          <year>2005</year>
+          <volume>128</volume>
+          <fpage>405</fpage>
+          <lpage>416</lpage>
+          <pub-id pub-id-type="doi">10.1093/brain/awh368</pub-id>
+          <pub-id pub-id-type="pmid">15644421</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Romaniello</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Cruccu</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Frisardi</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Arendt-Nielsen</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Svensson</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Assessment of nociceptive trigeminal pathways by laser-evoked potentials and laser silent periods in patients with painful temporomandibular disorders</article-title>
+          <source>Pain</source>
+          <year>2003</year>
+          <volume>103</volume>
+          <fpage>31</fpage>
+          <lpage>39</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0304-3959(02)00347-0</pub-id>
+          <pub-id pub-id-type="pmid">12749956</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Barone</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Paoli</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Razionale</surname>
+            <given-names>AV</given-names>
+          </name>
+          <person-group person-group-type="editor">INGEGRAF</person-group>
+          <article-title>An Innovative Methodology for the Design of Custom Dental Prostheses by Optical Scanning</article-title>
+          <source>Proceedings of XXI INGEGRAF: 10-12 June 2009; Lugo</source>
+          <year>2009</year>
+          <publisher-name>Lugo</publisher-name>
+          <fpage>264</fpage>
+          <lpage>272</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="other">
+          <article-title>3D Slicer (version 3.2)</article-title>
+          <ext-link ext-link-type="uri" xlink:href="http://www.slicer.org">http://www.slicer.org</ext-link>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Brown</surname>
+            <given-names>AA</given-names>
+          </name>
+          <name>
+            <surname>Scarfe</surname>
+            <given-names>WC</given-names>
+          </name>
+          <name>
+            <surname>Scheetz</surname>
+            <given-names>JP</given-names>
+          </name>
+          <name>
+            <surname>Silveira</surname>
+            <given-names>AM</given-names>
+          </name>
+          <name>
+            <surname>Farman</surname>
+            <given-names>AG</given-names>
+          </name>
+          <article-title>Linear accuracy of cone beam CT derived 3D images</article-title>
+          <source>Angle Orthod</source>
+          <year>2009</year>
+          <volume>79</volume>
+          <fpage>150</fpage>
+          <lpage>157</lpage>
+          <pub-id pub-id-type="doi">10.2319/122407-599.1</pub-id>
+          <pub-id pub-id-type="pmid">19123719</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Besl</surname>
+            <given-names>PJ</given-names>
+          </name>
+          <name>
+            <surname>McKay</surname>
+            <given-names>ND</given-names>
+          </name>
+          <article-title>A Method for Registration of 3D Shapes</article-title>
+          <source>IEEE Trans Pattern Anal Mach Intell</source>
+          <year>1992</year>
+          <volume>14</volume>
+          <fpage>239</fpage>
+          <lpage>256</lpage>
+          <pub-id pub-id-type="doi">10.1109/34.121791</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

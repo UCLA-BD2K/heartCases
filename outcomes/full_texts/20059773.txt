@@ -1,0 +1,175 @@
+The use of hospital discharge administrative data (HDAD) has been recommended for automating, improving, even substituting, population-based
+cancer registries. The frequency of false positive and false negative cases recommends local validation. The aim of this study was to detect
+newly diagnosed, false positive and false negative cases of cancer from hospital discharge claims, using four Spanish population-based
+cancer registries as the gold standard. Prostate cancer was used as a case study. A total of 2286 incident cases of prostate cancer
+registered in 2000 were used for validation. In the most sensitive algorithm (that using five diagnostic codes), estimates for Sensitivity
+ranged from 14.5% (CI95% 10.3-19.6) to 45.7% (CI95% 41.4-50.1). In the most predictive algorithm (that using five diagnostic and five
+surgical codes) Positive Predictive Value estimates ranged from 55.9% (CI95% 42.4-68.8) to 74.3% (CI95% 67.0-80.6). The most frequent reason
+for false positive cases was the number of prevalent cases inadequately considered as newly diagnosed cancers, ranging from 61.1% to 82.3%
+of false positive cases. The most frequent reason for false negative cases was related to the number of cases not attended in hospital
+settings. In this case, figures ranged from 34.4% to 69.7% of false negative cases, in the most predictive algorithm. HDAD might be a
+helpful tool for cancer registries to reach their goals. The findings suggest that, for automating cancer registries, algorithms combining
+diagnoses and procedures are the best option. However, for cancer surveillance purposes, in those cancers like prostate cancer in which care
+is not only hospital-based, combining inpatient and outpatient information will be required. Population-based cancer registries (hereinafter
+registries) are usually considered the main tool for cancer surveillance purposes. Unfortunately, there are some geographic areas which are
+not covered by a registry and concerns about rates of underreporting remain current . Although some improvements have been made in the way a
+registry deals with data, most of the activity is still managed manually. Additionally, registries gather information from different sources
+with a large variation in their reliability and validity. Finally, all these processes imply delays in the production of relevant
+information. Thus, automating all these processes has become a priority in order to improve cancer registries accuracy, efficiency and
+timeliness . The use of secondary databases, particularly those which provide information on hospital discharges (i.e. hospital discharges
+administrative data ), has been recommended for improving registries performance in terms of the number of incident cancer cases retrieved ;
+in some circumstances, they have even been used as a substitute for a registry . However, the nature of the information (hospital-based
+data), the purposes for which it is recorded (not to act as a diseases registry) and the methodology (based on the information declared by
+the clinicians) require local validation. In fact, some studies have shown variability in the capacity of HDAD to identify incident cancer
+cases. For example, depending on the definition used to name incident cases, the timeframe of retrieval, or whether the patient received
+surgical treatment, positive predictive values (PPV) ranged from 43% to 92% in breast cancer . Other research, focusing on prostate, lung,
+colorectal, breast, pancreas and endometrial cancer in elderly Americans showed similar variation in estimates: sensitivity ranged from 46%
+in prostate cancer to 82% in colorectal cancer . As a consequence of these results, positive and negative false causes have been described.
+So, prevalent cases, coding error misclassification (benign, in situ, etc.), multiple readmissions, coding cancer in a secondary diagnostic
+position or not having a concurrent surgical procedure in the same episode, have been suggested causes of false positive cases of incident
+cancer. Private hospitalizations, outpatient care, elderly people, patients with comorbidity or patients admitted for conservative
+procedures have been proposed -among others- as causes of negative false cases of incident cancer . Unfortunately, few studies have focused
+on HDAD validity in the Spanish context. Recently, a study discussed this matter comparing colorectal cancer admissions with cases
+registered in a Spanish registry . When only the first diagnostic code was considered, the sensitivity of the HDAD reached 80% with a
+positive predictive value of 75%. When all the coded diagnoses were considered, sensitivity rose to 85% reducing the PPV to 64%. Finally,
+HDAD validity is expected to be different in those cases in which variability in medical practice is relevant. For example, colorectal
+cancer in which admission for surgery is the rule and prostate cancer, where options for treatment go from a watchful waiting strategy
+(ambulatory care) to a radical prostatectomy (hospital care) . In fact, for prostatectomy on prostate cancer, a 7-fold variation was found
+between high and low intensity healthcare areas in Spain . The aim of our study was to detect incident, false positive and false negative
+cases of cancer on hospital discharge claims, using four Spanish population-based cancer registries as the gold standard. Prostate cancer
+was used as a case study. We firstly carried out a linking-records-based validation study. Using a cross-section of 1998 to 2000 HDAD from
+48 hospitals in 4 Spanish regions (Basque Country, Region of Murcia, and the provinces of Granada and Zaragoza), prostate cancer discharges
+in 2000 were studied. Public hospitals provided the information for the study, except in the case of Murcia where information from private
+hospitals was also included. For validation purposes, the lack of an independent gold standard obliged us to use cancer registries, although
+some overlapping might be found because HDAD is usually a basic source of information for cancer registries. The four Spanish population-
+based registries, used as the gold standard in the study, cover a population of about 2.5 million inhabitants, and fulfil international
+standard procedures . The Health Regional Authorities in Andalusia, Aragon, Basque Country and Region of Murcia, which are in charge of both
+the cancer registries and the HDAD, allowed its use for the purposes of this study. Once prostate cancer cases were retrieved from HDAD, a
+linking-record process was developed in order to match these cases with those identified as incident cases in 2000 by each local registry.
+The process basically consisted in matching -both in a deterministic or a probabilistic way- each prostate cancer case by hospital record
+ID, hospital of admission, date of birth, insurance identification number or name of patient . All cases were checked after automatic
+linking process finished. (Figure 1) Flowchart representing the linking record process. As a consequence, four matched datasets were
+obtained from this process and used in the analyses: the Basque Country Dataset (BD), the Granada Dataset (GD), the Murcia Dataset (MD) and
+the Zaragoza Dataset (ZD). HDAD validity for detecting incident cases of prostate cancer was assessed by estimating sensitivity, positive
+predictive value and analysing false negative and false positive underlying causes for the most sensitive (i.e., more helpful for cancer
+surveillance purposes) and the most predictive strategy of analysis (i.e., more useful for automating data). The definition of a malignant
+prostate cancer was based on combinations of diagnostic and procedure codes according to the International Classification of Diseases, 9th
+Revision, Clinical Modification ICD-9-CM (table 1) Codes defining malignant prostate neoplasm Among those selected "cases under study", both
+incident and prevalent cases were found. To reduce the possibility of retrieving prevalent cases (as opposed to incident ones), an active
+search was made in the two previous years (1998 and 1999). Those episodes with the same diagnostic code, metastases codes, and those with a
+code of cancer antecedent or episode of care for cancer were excluded. As previous work suggests , in order to get a more specific
+definition, four different strategies (computing algorithms) combining both the number of codes and the information from diagnoses and
+procedures were checked. These four strategies were: 1) selecting episodes which had an eligible code in the main diagnostic position
+(Algorithm 1); 2) selecting episodes which had an eligible code in the first five diagnostic positions (Algorithm 2); 3) selecting episodes
+that had a code of cancer in the main diagnostic position and also a related surgical procedure (Algorithm 3); and 4) selecting episodes
+which had a code of cancer among the first five diagnostic positions and a related surgical procedure (Algorithm 4). When procedures were
+used (i.e. algorithm 3 and 4), five first positions were considered. Therefore, once cancer codes were selected, possible prevalent cases
+were excluded by searching in the two previous years. Then, the four aforementioned strategies were checked to select the best in detecting
+"incident cancer cases". Number and percentage of matched cases and causes of failure were analyzed. Among matched and unmatched cases,
+underlying causes of disagreement were studied; thus, false positive and false negative cases were recorded and discussed. Finally, in order
+to determine the validity of the HDAD to detect incident cases of cancer, two indexes were estimated: 1) Sensitivity, as the percentage of
+cases considered incident cases in the HDAD within those true incident cases recorded in the registry; and, 2) the Positive Predictive Value
+as the percentage of true cases within those cases considered incident cases in the HDAD. Both indexes were calculated for each one of the
+four different strategies and 95% confidence intervals (CI95%) were estimated using an exact binomial test . All analyses were conducted
+using STATA v9. A total of 2286 cases of prostate cancer registered in 2000 were used. 231 cases were included from Granada cancer registry
+(crude rate of 57.8 per 105 inhabitants); 1150 cases from Basque Country cancer registry (crude rate of 113.4 per 105 inhabitants); 411
+cases from Murcia cancer registry (crude rate of 71.4 per 105 inhabitants) and 494 cases from Zaragoza cancer registry (crude rate of 117.9
+per 105 inhabitants). Table 2 compares these facts with the number of cases retrieved from the HDAD once algorithms were implemented.
+Sensitivity (S) and Positive Predictive Values (PPV). (by Algorithm and Region) S: sensitivity, PPV: Positive Predictive Value; CI95%:
+Confidence Interval assuming a type I error of 5% The most sensitive strategy (algorithm 2) was that which used diagnostic codes from
+position 1 to 5; whereas the most predictive (algorithm 4) (i.e. the highest PPV) was that which considered concurrent diagnoses and
+procedures from positions 1 to 5 (Table 2). However, estimates for both Sensitivity and PPV were moderate to low. With regard to
+sensitivity, as expected, strategies based on diagnoses performed a little better than strategies based on concurrent diagnoses and
+procedures. However, except in ZD, first and second algorithm estimates scored under 25%. Although PPV performed better than sensitivity in
+BD and ZD (62% [CI95%: 55.6 to 68.0] in the former and 74.3% [CI95%: 67.0 to 80.6] in the latter), GD and MD included the 50% value (table
+2). (Table 3), it should be noted that all datasets shared an important source of false negative cases, that is, those prostate cancer
+patients without admission (i.e. cases that were only treated as outpatients). In fact data ranged from 79% of cases in GD and MD to 39.3%
+in BD, with a 72.7% in ZD. Causes underlying positive and negative false cases in prostate cancer (with regard to the highest sensitive
+algorithm) However, the main source of false negative cases in BD was private hospitalization (i.e. the lack of information from a set of
+hospitals without HDAD) during the period of study. This cause was responsible of 42.7% of BD false negatives. On the other hand, cases
+admitted in 2000 but discharged in 2001 were a relevant source of false negative cases in BD (11.3%), MD (12.9%) and ZD (16%). Considering
+the false positive causes related to the most sensitive strategy, all datasets shared a very common cause; cases considered "incident cases"
+by the algorithm that actually were "prevalent cases" (data ranged form 61.1% in MD to 82.3% in GD). It should be noted that the following
+source of false positive cases was a coding error or clinical diagnosis misclassification in discharge records; this represented 4.3% in BD,
+10.3% in GD, 16.4% in ZD and 23.9% in MD. (Table 4), besides the already referred causes, an additional source of false negative cases was
+found: cases lost due to the restrictions of the algorithm itself. Data ranged from 11.8% of false cases in GD to 26.9% in ZD, suggesting
+coding differences among local HDADs. Causes underlying negative and positive false cases in prostate cancer (with regard to the highest
+predictive algorithm) On the other hand, incident cases which were actually prevalent were also the main cause of false positive cases in
+the most predictive algorithm (data ranged from 66.7% of false cases in MD to 82.1% in BD). A linking-records-based validation study was
+carried out to determine whether the HDAD might be a useful tool to identify incident cases of prostate cancer. 2286 incident prostate
+cancer cases, recorded in four Spanish population-based cancer registries, were used to estimate its validity. Four algorithms were
+developed to detect incident cases. Those using only diagnostic codes were the most sensitive strategies although sensitivity scored around
+25%; those using concurrent information about procedures were the most predictive, although positive predictive value scored close to 50%.
+There is no recent literature available for comparison. Some international literature showed higher values for sensitivity in prostate
+cancer, although the context was extremely different (cases attended 20 years ago, a completely different prostate cancer management,
+different use of administrative databases and a completely different healthcare system) to allow a reasonable discussion about the
+consistency of our results. Unfortunately, in our context, the only published study evaluated colorectal cancer . Nevertheless, the analysis
+of false positive and false negative underlying causes has provided very useful insights. Three possible sources of failure to detect
+incident cases could be described in our study: the HDAD itself, the algorithms to detect cancer, and the features of this specific cancer
+site. Firstly, although HDAD has been a compulsory information system for public institutions since the mid 90s in Spain, it was not
+mandatory for private hospitals. Thus, it must be expected that in those places where population is served by hospitals not required to
+provide hospital information, the capacity of HDAD to find cases when they exist in the registry will be limited. In fact, this is the
+reason for the high number of false negative cases in the Basque Country, region in which the private-public mix is more influential in
+prostate cancer treatment (32% of prostate cancers registered the year under study were considered false negatives for this cause). In the
+remaining regions where this effect is expected to be less important, the percentage of false negative cases was lower: only 27 cases in
+Granada (12% of registered cancer), 25 cases in Zaragoza (5%) and 1 case in Murcia (0.3%) where information about private hospitals was also
+included. Secondly, the population covered by a registry and the population attended by a hospital (from which the cases were retrieved) are
+different. Procedures like radical prostatectomy are usually delivered in high-volume hospitals, in which populations from different
+healthcare areas or regions are regularly referred to. These cases were identified as false positive cases because these patients belonged
+to a different area than that covered by the registry. Although this was not an important source of false positive cases, in the most
+sensitive algorithm, figures ranged from 1.3% in ZD to 4.5% in BD. Thirdly, coding processes seem to act as a potential source of variation
+within and among regional settings in different ways. In fact, empirical data show figures that deserve some comment. False positive
+diagnoses (i.e. HDAD registered prostate cancer when other type of cancer or even a benign tumour was registered in the registry) varied
+among regions. Taking into account the most sensitive definition, over all prostate cancer cases identified by HDAD, false positive
+diagnoses ranged from 4.3% in BD to 23.9% in MD (previous research found 7% of inappropriate use of codes ). Another element that
+potentially could affect the number of false negative cases is the number of ICD codes registered for each patient, in each hospital, both
+in diagnoses and procedures. Slight differences have been found among registries: HDAD in Granada registered a mean of 4 diagnoses and 2
+procedures; Basque Country recorded a mean of 3 diagnoses and 1 procedure, Murcia registered a mean of 5 diagnoses and 2.4 procedures and
+Zaragoza registered a mean of 4.2 diagnoses and 2.1 procedures. However, although a potential cause, the number of false negative cases for
+this reason was negligible. As expected algorithms including concurrent procedures were more "restrictive", and their positive predictive
+values were higher than those without surgical codes. As a consequence of being so "specific" there was a significant loss of prostate
+cancer cases (i.e. false negative cases): 25 in GD, 125 in BD, 52 in MD and 99 in ZD. These numbers represented 11.8% of cases detected in
+GD, 12.6% in BD, 13.7% in MD and 26.9% in ZD and probably refers to those cases admitted for diagnostic tests that did not require surgical
+treatment. On the other hand, a noticeable number of false negative cases were due to the fact that there were patients diagnosed in 2000
+(i.e. admission to the hospital was in 2000) but they were discharged in 2001. This ranged from 1.4% of cases in GD to 11.7% of cases in ZD.
+However, flagging properly theses cases, for example by opening the timeframe two months forward, we would barely increase sensitivity in a
+10%, remaining figures under 50%. An additional source of false negative cases could be found in the exclusion of metastatic disease in the
+definition of incident case; it would the case for patients that initially present with metastases and the original prostatic tumour is only
+found once they are discharged. These patients would be flagged as false negatives if they are discharged without definitive diagnoses. None
+out of the 58 cases which could potentially be affected in our sample was actually misclassified. Finally, although several strategies were
+used to reduce the number of prevalent cases (patients with an episode were followed backwards two years and specific exclusion criteria
+were used) a remarkable number of prevalent cases were retrieved by the algorithm. As expected the most specific strategy (algorithm 4)
+identified less prevalent cases than the most sensitive one (algorithm 2); however, 9(69.2%) prevalent cases were found in GD, 78 (82.1%) in
+BD, 14(66.7%) in MD and 36(81.8%) in ZD. When we reviewed cases registered in 1997 and earlier, we found a 48% of prevalent cases. This
+finding suggests that considering a timeframe backward of 5 years would be better in terms of gaining higher positive predictive values.
+Long survival cancers, like prostate cancer, are supposed to have more hospital readmissions than aggressive short survival cancers.
+Probably, the unexpected number of prevalent cases is related with us having decided to use too short a timeframe. In fact, in a ten-year
+period study Brackley et al. found a rate of false positive as small as 1%, although authors recognised a significant overlapping between
+HDAD and registries. But the most important element to be considered is the different manner in which healthcare services manage prostate
+cancer. In fact, 947 cases (41% of the total sample of prostate cancer registered by the 4 registries in 2000) were treated in ambulatory
+settings, being considered false negative cases by our methodology [147 cases in GD, 343 in BD, 262 in MD and 195 in ZD]. Thus, the more
+hospital-based the care provided the more probability of registering positive true cases by using the HDAD. This hypothesis was tested for
+breast cancer in a study that compared the Medicare and SEER registries agreement: concordance was considerably higher if surgery was
+performed (85% vs 50% when only biopsy was provided) . Preliminary data from colorectal cancer and female breast cancer in Spain, two sites
+in which surgery is needed, show a better performance of positive predictive value: our context is consistent with this hypothesis:
+colorectal cancer and breast cancer showed a higher positive predictive value (up to 89% and up to 86%, respectively) . Looking at these
+findings, we would be able to hypothesize that a good performance of our algorithms is expected in those cancers in which surgical treatment
+is needed and variations in surgical population rates are small (e.g. larynx, endometrial, colorectal or breast cancer). Conversely, those
+cancers with high uncertainty about the effectiveness of surgical intervention (e.g. prostate, oesophagus, pancreas, lung cancer) will
+perform poorly. Following the findings and discussion, in cancers like prostate cancer, we might distinguish some implications for cancer
+registries: a) For automating the retrieval of incident cases, using algorithms combining diagnoses and procedures is a better option;
+however, opening the timeframe, being careful with the way cancer is registered, and properly recording the post-code where the patients
+live are important issues to be addressed. b) On the other hand, some improvements should be implemented in the algorithms for cancer
+surveillance purposes. In this case, to widen the timeframe forward and to get cases from private institutions are important issues;
+however, the critical point is the need to combine inpatient and outpatient information in those cancers like prostate cancer, in which care
+is not only hospital-based. HDAD seems to be a useful instrument to help cancer registries to reach their goals. Nevertheless, differences
+in the way cancers are managed across the healthcare system and the variability within and between registry procedures, suggest the need to
+be careful when HDAD is used. The authors declare that they have no competing interests. EBD, CM, MDC, CN, II, MJS & CM have been involved
+in the design, the analysis, the interpretation of results, and in the drafting process. NM & MM have programmed the linking record process
+and the STATA algorithms for detecting incident cases. CM, LH, JP, NL, OM, MCT, JB, MR, EP, YLC fixed databases for matching and checked
+every single case once the automatic linking process was finished. All authors read and approved the final manuscript. The pre-publication
+history for this paper can be accessed here: http://www.biomedcentral.com/1472-6963/10/9/prepub to the following Health Public Institutions
+which allow us the use of HDAD: Department of Health in Andalusia, Department of Health and Consumer in Aragon, Department of Health in
+Basque Country and Department of Health in Region of Murcia. The study was developed as a cooperative project within a National funded
+Network for Public Health and Epidemiology Research (ref C0309); and specifically, through a grant from the Institute for Health Carlos III
+(PI042051, PI042142, PI042384, PI042489)

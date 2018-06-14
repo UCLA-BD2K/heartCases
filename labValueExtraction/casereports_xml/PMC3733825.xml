@@ -1,0 +1,2893 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">J Neuroeng Rehabil</journal-id>
+      <journal-id journal-id-type="iso-abbrev">J Neuroeng Rehabil</journal-id>
+      <journal-title-group>
+        <journal-title>Journal of NeuroEngineering and Rehabilitation</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1743-0003</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">23822118</article-id>
+      <article-id pub-id-type="pmc">3733825</article-id>
+      <article-id pub-id-type="publisher-id">1743-0003-10-66</article-id>
+      <article-id pub-id-type="doi">10.1186/1743-0003-10-66</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>MUNDUS project: MUltimodal Neuroprosthesis for daily Upper limb Support</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" id="A1">
+          <name>
+            <surname>Pedrocchi</surname>
+            <given-names>Alessandra</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>alessandra.pedrocchi@polimi.it</email>
+        </contrib>
+        <contrib contrib-type="author" id="A2">
+          <name>
+            <surname>Ferrante</surname>
+            <given-names>Simona</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>simona.ferrante@polimi.it</email>
+        </contrib>
+        <contrib contrib-type="author" id="A3">
+          <name>
+            <surname>Ambrosini</surname>
+            <given-names>Emilia</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>emilia.ambrosini@mail.polimi.it</email>
+        </contrib>
+        <contrib contrib-type="author" id="A4">
+          <name>
+            <surname>Gandolla</surname>
+            <given-names>Marta</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>marta.gandolla@mail.polimi.it</email>
+        </contrib>
+        <contrib contrib-type="author" id="A5">
+          <name>
+            <surname>Casellato</surname>
+            <given-names>Claudia</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>claudia.casellato@mail.polimi.it</email>
+        </contrib>
+        <contrib contrib-type="author" id="A6">
+          <name>
+            <surname>Schauer</surname>
+            <given-names>Thomas</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>schauer@control.tu-berlin.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A7">
+          <name>
+            <surname>Klauer</surname>
+            <given-names>Christian</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>klauer@control.tu-berlin.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A8">
+          <name>
+            <surname>Pascual</surname>
+            <given-names>Javier</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>javier.pascual@tu-berlin.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A9">
+          <name>
+            <surname>Vidaurre</surname>
+            <given-names>Carmen</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>vidcar@cs.tu-berlin.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A10">
+          <name>
+            <surname>Gf&#xF6;hler</surname>
+            <given-names>Margit</given-names>
+          </name>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>margit.gfoehler@tuwien.ac.at</email>
+        </contrib>
+        <contrib contrib-type="author" id="A11">
+          <name>
+            <surname>Reichenfelser</surname>
+            <given-names>Werner</given-names>
+          </name>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>werner.reichenfelser@tuwien.ac.at</email>
+        </contrib>
+        <contrib contrib-type="author" id="A12">
+          <name>
+            <surname>Karner</surname>
+            <given-names>Jakob</given-names>
+          </name>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>jakob.karner@tuwien.ac.at</email>
+        </contrib>
+        <contrib contrib-type="author" id="A13">
+          <name>
+            <surname>Micera</surname>
+            <given-names>Silvestro</given-names>
+          </name>
+          <xref ref-type="aff" rid="I5">5</xref>
+          <xref ref-type="aff" rid="I6">6</xref>
+          <email>micera@sssup.it</email>
+        </contrib>
+        <contrib contrib-type="author" id="A14">
+          <name>
+            <surname>Crema</surname>
+            <given-names>Andrea</given-names>
+          </name>
+          <xref ref-type="aff" rid="I5">5</xref>
+          <email>andrea.crema@epfl.ch</email>
+        </contrib>
+        <contrib contrib-type="author" id="A15">
+          <name>
+            <surname>Molteni</surname>
+            <given-names>Franco</given-names>
+          </name>
+          <xref ref-type="aff" rid="I7">7</xref>
+          <email>fmolteni@valduce.it</email>
+        </contrib>
+        <contrib contrib-type="author" id="A16">
+          <name>
+            <surname>Rossini</surname>
+            <given-names>Mauro</given-names>
+          </name>
+          <xref ref-type="aff" rid="I7">7</xref>
+          <email>mrarss@tin.it</email>
+        </contrib>
+        <contrib contrib-type="author" id="A17">
+          <name>
+            <surname>Palumbo</surname>
+            <given-names>Giovanna</given-names>
+          </name>
+          <xref ref-type="aff" rid="I7">7</xref>
+          <email>gpalumbo2001it@yahoo.it</email>
+        </contrib>
+        <contrib contrib-type="author" id="A18">
+          <name>
+            <surname>Guanziroli</surname>
+            <given-names>Eleonora</given-names>
+          </name>
+          <xref ref-type="aff" rid="I7">7</xref>
+          <email>eleonora.guanziroli@gpop.it</email>
+        </contrib>
+        <contrib contrib-type="author" id="A19">
+          <name>
+            <surname>Jedlitschka</surname>
+            <given-names>Andreas</given-names>
+          </name>
+          <xref ref-type="aff" rid="I8">8</xref>
+          <email>Andreas.Jedlitschka@iese.fraunhofer.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A20">
+          <name>
+            <surname>Hack</surname>
+            <given-names>Marco</given-names>
+          </name>
+          <xref ref-type="aff" rid="I8">8</xref>
+          <email>marco.hack@iese.fraunhofer.de</email>
+        </contrib>
+        <contrib contrib-type="author" id="A21">
+          <name>
+            <surname>Bulgheroni</surname>
+            <given-names>Maria</given-names>
+          </name>
+          <xref ref-type="aff" rid="I9">9</xref>
+          <email>mariabulgheroni@ab-acus.com</email>
+        </contrib>
+        <contrib contrib-type="author" id="A22">
+          <name>
+            <surname>d&#x2019;Amico</surname>
+            <given-names>Enrico</given-names>
+          </name>
+          <xref ref-type="aff" rid="I9">9</xref>
+          <email>enricodamico@ab-acus.com</email>
+        </contrib>
+        <contrib contrib-type="author" id="A23">
+          <name>
+            <surname>Schenk</surname>
+            <given-names>Peter</given-names>
+          </name>
+          <xref ref-type="aff" rid="I10">10</xref>
+          <email>peter.schenk@hocoma.com</email>
+        </contrib>
+        <contrib contrib-type="author" id="A24">
+          <name>
+            <surname>Zwicker</surname>
+            <given-names>Sven</given-names>
+          </name>
+          <xref ref-type="aff" rid="I10">10</xref>
+          <email>sven.zwicker@hocoma.com</email>
+        </contrib>
+        <contrib contrib-type="author" id="A25">
+          <name>
+            <surname>Duschau-Wicke</surname>
+            <given-names>Alexander</given-names>
+          </name>
+          <xref ref-type="aff" rid="I10">10</xref>
+          <email>duschau@mavt.ethz.ch</email>
+        </contrib>
+        <contrib contrib-type="author" id="A26">
+          <name>
+            <surname>Miseikis</surname>
+            <given-names>Justinas</given-names>
+          </name>
+          <xref ref-type="aff" rid="I10">10</xref>
+          <email>justinas.miseikis@hocoma.com</email>
+        </contrib>
+        <contrib contrib-type="author" id="A27">
+          <name>
+            <surname>Graber</surname>
+            <given-names>Lina</given-names>
+          </name>
+          <xref ref-type="aff" rid="I10">10</xref>
+          <email>graberl@student.ethz.ch</email>
+        </contrib>
+        <contrib contrib-type="author" id="A28">
+          <name>
+            <surname>Ferrigno</surname>
+            <given-names>Giancarlo</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>giancarlo.ferrigno@biomed.polimi.it</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>NeuroEngineering And medical Robotics Laboratory, NearLab, Department of Electronics, Information, and Bioengineering, Politecnico di Milano, Italy</aff>
+      <aff id="I2"><label>2</label>Control Systems Group, Technische Universit&#xE4;t Berlin, Berlin, Germany</aff>
+      <aff id="I3"><label>3</label>Machine Learning Group, Computer Science Faculty, Technische Universit&#xE4;t Berlin, Berlin, Germany</aff>
+      <aff id="I4"><label>4</label>Technische Universit&#xE4;t Wien, Vienna, Austria</aff>
+      <aff id="I5"><label>5</label>Translational Neural Engineering Lab, Center for Neuroprosthetics, Ecole Polytechnique Federale de Lausanne (EPFL), Lausanne, Switzerland</aff>
+      <aff id="I6"><label>6</label>The BioRobotics Institute, Scuola Superiore Sant&#x2019;Anna, Pisa, Italy</aff>
+      <aff id="I7"><label>7</label>Valduce Hospital, Villa Beretta Rehabilitation Center, Costa Masnaga, Lecco, Italy</aff>
+      <aff id="I8"><label>8</label>Fraunhofer Institute for Experimental Software Engineering, Kaiserslautern, Germany</aff>
+      <aff id="I9"><label>9</label>Ab.Acus, Milan, Italy</aff>
+      <aff id="I10"><label>10</label>Hocoma AG, Volketswil, Switzerland</aff>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>3</day>
+        <month>7</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>10</volume>
+      <fpage>66</fpage>
+      <lpage>66</lpage>
+      <history>
+        <date date-type="received">
+          <day>29</day>
+          <month>8</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>14</day>
+          <month>6</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2013 Pedrocchi et al.; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Pedrocchi et al.; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.jneuroengrehab.com/content/10/1/66"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>MUNDUS is an assistive framework for recovering direct interaction capability of severely motor impaired people based on arm reaching and hand functions. It aims at achieving personalization, modularity and maximization of the user&#x2019;s direct involvement in assistive systems. To this, MUNDUS exploits any residual control of the end-user and can be adapted to the level of severity or to the progression of the disease allowing the user to voluntarily interact with the environment. MUNDUS target pathologies are high-level spinal cord injury (SCI) and neurodegenerative and genetic neuromuscular diseases, such as amyotrophic lateral sclerosis, Friedreich ataxia, and multiple sclerosis (MS). The system can be alternatively driven by residual voluntary muscular activation, head/eye motion, and brain signals. MUNDUS modularly combines an antigravity lightweight and non-cumbersome exoskeleton, closed-loop controlled Neuromuscular Electrical Stimulation for arm and hand motion, and potentially a motorized hand orthosis, for grasping interactive objects.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>The definition of the requirements and of the interaction tasks were designed by a focus group with experts and a questionnaire with 36 potential end-users.</p>
+          <p>Five end-users (3 SCI and 2 MS) tested the system in the configuration suitable to their specific level of impairment. They performed two exemplary tasks: reaching different points in the working volume and drinking. Three experts evaluated over a 3-level score (from 0, unsuccessful, to 2, completely functional) the execution of each assisted sub-action.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>The functionality of all modules has been successfully demonstrated. User&#x2019;s intention was detected with a 100% success. Averaging all subjects and tasks, the minimum evaluation score obtained was 1.13&#x2009;&#xB1;&#x2009;0.99 for the release of the handle during the drinking task, whilst all the other sub-actions achieved a mean value above 1.6. All users, but one, subjectively perceived the usefulness of the assistance and could easily control the system. Donning time ranged from 6 to 65&#xA0;minutes, scaled on the configuration complexity.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>The MUNDUS platform provides functional assistance to daily life activities; the modules integration depends on the user&#x2019;s need, the functionality of the system have been demonstrated for all the possible configurations, and preliminary assessment of usability and acceptance is promising.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>Assistive device</kwd>
+        <kwd>Upper limb support</kwd>
+        <kwd>Neuromuscular electrical stimulation</kwd>
+        <kwd>Wearable exoskeleton</kwd>
+        <kwd>Neurological disorders</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>Restoring and augmenting human capabilities compensating for reduced motor functions and disabilities may be carried out by different approaches, all of them finalised to return to the involved person some missing functions or capabilities. The types of functions that are worthwhile to be restored strictly depend on the personal history and life of the entailed subject [<xref ref-type="bibr" rid="B1">1</xref>].</p>
+      <p>The International Classification of Functioning, Disability and Health (ICF) copes well with subjectivity in the identification of the functions able to guarantee human dignity and self-esteem. The recognition of the person, with his/her history, willing and wishes, is a key point in the development of methods to overcome disabilities and augment human capabilities. Human dignity and self-esteem are more preserved when restoring missing functions with devices safeguarding self-perception and first hand interaction while guaranteeing independent living. ICF identifies facilitators and barriers as environmental factors which, through their presence (facilitator) or absence (barrier), improve activity and functions, or reduce disability. Assistive technologies market offers a wide range of facilitators designed to support independent life.</p>
+      <p>People coming from a personal history of severe traumas or neuromuscular diseases that have led to a sudden or progressive loss of motor capabilities attribute a high value to the maintenance of a direct interaction with daily life objects [<xref ref-type="bibr" rid="B2">2</xref>]. Simple tasks, such as taking autonomously a glass, bringing it to the mouth and drinking, are actions that contribute to a positive assessment of their own quality of life. However, most of the assistive technologies solutions for people with severe motor impairments hardly surrogate the natural human interaction with daily life objects [<xref ref-type="bibr" rid="B3">3</xref>]. Passive functional upper limb orthoses (e.g. [<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B5">5</xref>]) are mainly used for rehabilitation purposes. Power assisted exoskeletons (exo) (e.g. [<xref ref-type="bibr" rid="B6">6</xref>,<xref ref-type="bibr" rid="B7">7</xref>]) are basically developed for stationary rehabilitation exercising in a clinical environment, and they are rather heavy due to the power-demanding actuators integrated into the system. A different approach, recently investigated in literature, is the use of assistive robotic manipulators which can be mounted to the side of an electric-powered wheelchair for general manipulation [<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B9">9</xref>]. However, these solutions work without a continuous control by the user&#x2019;s intention and are not usually connected to the user&#x2019;s arm.</p>
+      <p>In general, robotic arms have not been very successful in the past because of their cumbersomeness, high cost and reduced acceptability by the users, even if some interesting examples have been recently discussed in the literature, such as the upper limb assistive device based on Neuro Muscular Electrical Stimulation (NMES) proposed by Shill and colleagues, which has the primary goal to improve the paralyzed upper extremity function and, thus, to enhance the patient&#x2019;s independence in activities of daily living [<xref ref-type="bibr" rid="B10">10</xref>].</p>
+      <p>An innovative solution may be offered by customizable and modular systems able to exploit any residual motor capability and assure a direct interaction of the user with the external environment, preserving the most the naturalness. This is the way pursued by the MUNDUS project through the implementation of a new concept of a modular assistive neural prosthesis to support basic arm and hand functions, such as reaching and grasping. The MUNDUS assistive neural prosthesis helps the user to reach an object, by positioning the arm in the space, to grasp it, and to bring it to a target final destination (the mouth or any location of the user&#x2019;s workspace).</p>
+      <p>Expected MUNDUS users are people affected by high-level Spinal Cord Injury (SCI) and neurodegenerative diseases such as Amyotrophic Lateral Sclerosis (ALS), Friedreich Ataxia, Multiple Sclerosis (MS). Except for SCI, all of these pathologies are characterized by a progressive course of the impairment with a faster or slower continuous loss of motor capabilities. It is very important to cope with the current motor condition day by day, offering solutions able to be modularly adapted to the current modifying status of the person. In severe neurodegenerative impairments, the possibility to deploy the same assistive device, properly changing its configuration, from the early phase of the disease to the latest one, is a key issue to increase acceptability of the system itself and to enhance its usability.</p>
+      <p>This approach was adopted in literature in the robotic rehabilitation of the lower limbs, by developing patient-cooperative control strategies able to adapt the robot controller to the patient&#x2019;s voluntary effort [<xref ref-type="bibr" rid="B11">11</xref>-<xref ref-type="bibr" rid="B14">14</xref>]. The concept of MUNDUS is to apply a similar approach to assistive devices for upper limb support in order to increase the usability and acceptability of the system by maximizing the user involvement in the task execution. Indeed, MUNDUS offers a modular solution able to follow the user in the progression of the disease: sensors, actuators and control solutions can be adapted to the actual level of severity, allowing interaction through the voluntary control of the user (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>).</p>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p>MUNDUS concept.</p>
+        </caption>
+        <graphic xlink:href="1743-0003-10-66-1"/>
+      </fig>
+      <p>On the control level, MUNDUS exploits a modular and expandable set of voluntary commands that the user is able to send. In case of impairment of neuromuscular functions, there are few exploitable commanding strategies to detect the intention to move and &#x201C;where to go&#x201D;: electromyography (EMG) signals [<xref ref-type="bibr" rid="B15">15</xref>,<xref ref-type="bibr" rid="B16">16</xref>], by taking advantage of residual local neuromuscular function; head or eyes motion [<xref ref-type="bibr" rid="B17">17</xref>]; and brain signals acquired by electroencephalography (EEG) [<xref ref-type="bibr" rid="B18">18</xref>,<xref ref-type="bibr" rid="B19">19</xref>], when muscular activities are no more available. MUNDUS pursues the modular implementation of these possible strategies and, based on the user, the therapist/clinician selects the control signals according to his/her residual capabilities.</p>
+      <p>On the execution level, MUNDUS allows the choice of actuators, again, according to available personal resources. Whenever possible, arm motion is powered by the user&#x2019;s own muscles, and facilitated by gravity compensation provided by a passive, spring-loaded exoskeleton. Alternatively, NMES is delivered to the upper arm muscles to induce the arm movement within the defined workspace. The use of NMES successfully combines the naturalness of the function, which is still performed by the arm/hand muscles, with some systemic and local benefits. Positive fallouts of the daily use of assistive technologies based on NMES are the increase of muscle tone, the reduction of spasticity, the bone remineralisation, and a training effect of motor relearning over the central nervous system [<xref ref-type="bibr" rid="B20">20</xref>-<xref ref-type="bibr" rid="B25">25</xref>]. NMES allows the system to be artificially empowered without worsening its wearability and lightness.</p>
+      <p>At the hand level, when the user is not anymore able to functionally use his/her own hand, an NMES actuated grasping glove or a specifically designed robotic orthosis are available to assist the grasping of collaborative &#x201C;functional objects&#x201D;, recognized by Radio Frequency Identification (RFID).</p>
+      <p>The purpose of the present paper is to provide a global overview of the MUNDUS platform and of its first validation on end-users. In the Methods section, the users and clinical requirements of the whole system are described; the system modules are described and the evaluation methods are outlined. Details on the technical design and the implemented solutions for each module are not reported as well as the validation of the modules on healthy subjects: single publications are referred for these parts. The results are then focused on end-users experiments. A group of 5 subjects affected by neurological diseases tested the system in different configurations according to their current level of disability. To assess the performance, a 3-level score for functional evaluation was autonomously assigned by three experts.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>Definition of users and clinical requirements</title>
+        <p>The MUNDUS system was developed adopting a user-centred approach: the design process started with capturing the clinical requirements through a focus group of experts and interviews of potential users, and continued the development and optimization of the system until all the possible user needs were fulfilled.</p>
+        <p>A focus group was brought together to identify the possible applications of the MUNDUS platform and to suggest requirements (see Additional file <xref ref-type="supplementary-material" rid="S1">1</xref> - Focus group and potential user group questionnaires and answers). Fourteen experts were recruited for the focus group: 7 medical doctors (5 physiatrists, 1 neurologist, 1 general medical doctor), 1 psychologist, 1 physiotherapist, 1 mechanical engineer, 1 patient affected by Amyotrophic Lateral Sclerosis, 1 caregiver, and 2 social enterprise representatives employing disabled people. The main required aspects were modularity, reproduction of movements as close as possible to &#x201C;natural&#x201D; ones in terms of performance, preference for low encumbering device, multitask device to be used in different tasks/environments, reasonable costs and ease of use.</p>
+        <p>A group of potential users was also identified. A total of 39 MUNDUS potential users have been contacted and 36 gave their consent to participate to the interview (see Additional file <xref ref-type="supplementary-material" rid="S1">1</xref> - Focus group and potential user group questionnaires and answers). The analysis of the potential users&#x2019; interviews yielded some of the design inputs for the device. The most required activities were related to daily living: eating, drinking, and personal hygiene. The major required goal was to improve autonomy. They would like to have a device useable mostly at home during the activities of daily living. The device should be easy to use, light, and wearable, even if all the selected users depended on a wheelchair.</p>
+        <p>The data collected from the focus group and the users&#x2019; interviews suggested that the device should allow at least the following movements: anterior reaching, hand to mouth, hand to body, antigravity support of arm, and gross grasping (not fine movement of the fingers). Further, the requirement of portability was set as less crucial for the MUNDUS platform because most of end-users depended on a wheelchair; thus, the use of the MUNDUS system was restricted to a table.</p>
+      </sec>
+      <sec>
+        <title>Definition of users scenarios and interaction tasks</title>
+        <p>Depending on the users&#x2019; residual capabilities, three different scenarios have been identified. Specifically, subjects grouped in scenario 1 present residual functional control of the arm and/or hand muscles, but they are too weak to accomplish functional tasks in daily activities. The residual EMG signals of the upper limb muscles is used to drive the system. In scenario 1, the allowed interaction tasks are not pre-defined because they strongly depend on the residual capabilities of the user.</p>
+        <p>Within scenario 2, subjects have no residual functional voluntary activation of arm and hand muscles, but they can still control the head and gaze fixation. Then, an eye tracking system is used to identify the intention of the users.</p>
+        <p>Subjects belonging to scenario 3, even if not blind, lack the ability to move their eyes and, thus, they are not able to reliably fix different locations of the screen, which is a prerequisite for using an eye tracking system. The interaction with these subjects is only performed by brain signals, as recorded by EEG.</p>
+        <p>For scenarios 2 and 3, a set of interaction tasks has been pre-defined to fulfil the clinical requirements. The following tasks have been included: pressing a button, drinking with a straw, eating (even if most of subjects at this level of disability are affected by dysphagia, i.e. dysfunctions in the neural control of swallowing), touching their own body, changing the posture of the other arm, bringing an object to the face (e.g. a towel or a sponge), touching another person, interacting with objects for personal hygiene (e.g. a brush or a wet napkin). To simplify the control of the movement and to optimize the interaction between the user and the system, each interaction task has been divided in sub-actions. For instance, the drinking task has been divided into 6 sub-actions: (1) going from rest to the cup position on the table, (2) grasping the cup, (3) going to the mouth, (4) going back to the table, (5) releasing the cup, and (6) going back to the rest position. The triggering of most of the sub-actions should be given by the user, so as to allow him/her to keep a direct control of the function.</p>
+      </sec>
+      <sec>
+        <title>Description of the system modules</title>
+        <sec>
+          <title>Sensors used to detect the user&#x2019;s intention</title>
+          <p>The detection of the user&#x2019;s intention is performed in different ways, depending on the residual capabilities of the user, i.e. depending on the scenarios. The following systems can be alternatively used: an EMG amplifier and/or a USB-button (scenario 1), an eye tracking system (scenario 2), and a Brain Computer Interface (BCI) (scenario 3).</p>
+          <p>These modules share the following functions: selection of the final target point to be reached at the beginning of each interaction tasks and triggering of specific sub-actions.</p>
+          <sec>
+            <title>EMG &amp; USB-button module</title>
+            <p>In scenario 1, EMG surface electrodes are used to detect the residual activation of the arm muscles with a double aim: to modulate arm NMES in order to augment the volitional muscle contractions of the user, assuring the completion of the task; and to trigger the execution of the sub-actions. A USB-button controlled by the contralateral hand of the user can be used to substitute the detection of the EMG signal for the triggering of the sub-actions [<xref ref-type="bibr" rid="B26">26</xref>].</p>
+            <p>A multi-channel signal amplifier system (Porti&#x2122;, Twente Medical System International) is used to acquire the EMG signals at 2048&#xA0;Hz. EMG recordings take place on the shoulder (anterior, medial and posterior deltoid), and on the upper arm (biceps). A user-defined muscle of the contralateral arm is also acquired when the EMG signal is used for triggering the sub-actions. The EMG amplifier and the signal processing shall assure the acquisition of the residual volitional EMG in the presence of stimulation artefacts coming from NMES [<xref ref-type="bibr" rid="B26">26</xref>,<xref ref-type="bibr" rid="B27">27</xref>].</p>
+          </sec>
+          <sec>
+            <title>Eye Tracking module</title>
+            <p>The eye tracker is provided by a commercial device and only specific GUI for the MUNDUS application have been developed. The Tobii T60&#xAE; system, a table mounted eye tracker integrated into a 17&#x201D; TFT monitor, has been selected. During tracking, the Tobii T60 uses infrared diodes to generate reflection patterns on the corneas of the user&#x2019;s eyes. Proper image processing is used to identify the gaze point on the screen. One Kinect camera is used to show on the screen the live scene of the objects on the table the subject can choose to interact with, while special parts of the screen are dedicated to other available tasks (i.e., emergency button, touching spots of the body). To trigger the sub-actions, specific questions are displayed on the screen and the user can reply by fixating a GO or a STOP icon.</p>
+          </sec>
+          <sec>
+            <title>BCI module</title>
+            <p>The BCI control is based on the Center Speller [<xref ref-type="bibr" rid="B28">28</xref>], but applied to an object selector. The advantage of this interface, based on Event Related Potentials (ERP), is that it can be operated by non-spatial feature attention. By paying attention to a rare event between a sequence of frequent ones, a time and phase locked positive polarity is evoked in the EEG. To infer which action/object the user tries to select, spatio-temporal features of the ERPs are extracted with machine learning techniques and used to feed a Linear Discriminant Classifier [<xref ref-type="bibr" rid="B29">29</xref>]. To trigger the sub-actions, specific questions are displayed on the screen and the user can reply by selecting a GO or a STOP icon.</p>
+            <p>The brain activity is acquired from the scalp with multi-channel EEG BrainAmp amplifiers (Brain Products GmbH) using an ActiCap with 16 Ag/AgCl electrodes in an extended 10&#x2013;20 system sampled at 1000&#xA0;Hz with a band-pass filter from 0.05 to 200&#xA0;Hz.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>Sensors used to monitor and control the movement</title>
+          <sec>
+            <title>HAND sensors</title>
+            <p>To properly monitor the hand functions, it is important to detect basic hand joint movements and interaction forces with objects [<xref ref-type="bibr" rid="B30">30</xref>]. A sensorised glove was designed, manufactured, and assembled. The glove is light, unobtrusive, and highly transpiring. Bend sensors (Bend Sensors, Flexpoint Sensor Systems Inc) on metacarpal and proximal interphalangeal joints were used to assess the kinematic configuration of the hand, while force sensors, placed under the finger tips and on the palm, were used to detect grasp contact points and grasp force (Tekscan A201 and A401 Force Sensing Resistors, FSR).</p>
+          </sec>
+          <sec>
+            <title>Exoskeleton sensors and environmental sensors</title>
+            <p>The exoskeleton includes encoders to measure the angles at the three Degrees Of Freedom (DOF) of the arm (Vert-X, Contelec AG, Switzerland).</p>
+            <p>Environmental sensors are used to identify and track the elements (hand, mouth, and objects) in the working volume, and to provide their absolute 3D positions within a common coordinate system. One Kinect&#x2122; sensor is used to identify and track the position of the hand and the objects on the table (top-view camera). Making use of the speed of the exo sensors and the accuracy of the environmental sensors, by means of calibration and filtering, an accuracy of about &#xB1;1&#xA0;cm and data rate of about 50&#xA0;Hz is achieved.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>Interactive objects</title>
+          <p>All the objects are equipped with a RFID tag to make them automatically recognizable, and to activate the correspondent workflow. In this way, among the possible interactive objects selected for scenario 2 and 3, the system automatically acts properly once the arm is approaching the object as soon as the RFID antenna mounted on the exo distal element read the tag. This solution avoids the caregiver to daily inform the system of the used objects, which could be eventually also changed during the session without any rebooting procedure. The selected passive tags are low cost adhesive rectangular tags easily attachable on any support.</p>
+          <p>The RFID reader used is the R1230CB QUARK by CAENRFID working in the 865.600&#xF7;867.600 MHZ range (ETSI EN 302 208).</p>
+          <p>To allow a safe handling of the objects for the desired interaction tasks, a special handle with cardanic joints has been developed. Different standard objects can be mounted on the handle, with minor adjustments, so to allow the most of the interaction tasks, without the development of specific single objects. The handle can be either used to keep the object verticality, as for the glass, or to fix the object at any other orientation, such as for the brush.</p>
+        </sec>
+        <sec>
+          <title>Actuators</title>
+          <sec>
+            <title>Exoskeleton</title>
+            <p>The exoskeleton provides 2 DOFs at the shoulder: shoulder elevation in the sagittal plane and shoulder rotation in the horizontal elevation plane. The third DOF at the shoulder (rotation of the homers around its axis) is locked permanently. At the elbow, one DOF is provided.</p>
+            <p>When the pronation/supination of the forearm or the flexion/extension of the wrist are not under user control, MUNDUS fixes these two DOFs through the mechanical structure. The locking of the wrist rotation as well as that of the humeral rotation can be efficiently compensated by using the designed handle and holder.</p>
+            <p>Two exo prototypes are available, Version 1 for persons with residual motor function who only need weight support, as provided by passive elements (springs and elastic wires), and Version 2 with additional electromagnetic DC brakes for locking of the mechanical DOFs (Kendrion <ext-link ext-link-type="uri" xlink:href="http://www.kendrion.com">http://www.kendrion.com</ext-link>). The exo - Version 2 has a total weight of 2.2&#xA0;kg, while Version 1 weighs 1.4&#xA0;kg. Figure&#xA0;<xref ref-type="fig" rid="F2">2</xref> shows a digital mock-up of the exo-Version 2 (panel a) and a test participant sitting in a wheelchair and donning the exo (panel b).</p>
+            <fig id="F2" position="float">
+              <label>Figure 2</label>
+              <caption>
+                <p><bold>The exoskeleton. a)</bold> Digital mock-up of the exo-Version 2; <bold>b)</bold> The exo worn by a test participant in a wheelchair.</p>
+              </caption>
+              <graphic xlink:href="1743-0003-10-66-2"/>
+            </fig>
+          </sec>
+          <sec>
+            <title>ARM NMES controller</title>
+            <p>An 8-channel current-controlled stimulator (RehaStim&#x2122;, Hasomed GmbH), delivering rectangular biphasic pulses is used to provide NMES to the arm muscles. The stimulation frequency is constant and fixed at 25&#xA0;Hz for all stimulation channels, whereas the pulse amplitude and the pulse width range are set individually on each channel. In order to induce arm movements at the shoulder and elbow joints, the following muscles are stimulated with standard adhesive electrodes (PALS&#xAE; Platinum, Axelgaard Manufacturing Co., Ltd.): the biceps and the anterior, median and posterior deltoid. The triceps is not stimulated because elbow&#x2019;s extension is assured by gravity.</p>
+            <p>According to the scenario, the stimulation commands are controlled in two different ways.</p>
+            <p>In scenario 1, when used, NMES is controlled by the residual EMG volitional activity. The volitional EMG activity is on-line converted into an integral control of the duration of the current pulses delivered to the muscle. Two thresholds set on each user define the level of muscular activation to start and stop the stimulation [<xref ref-type="bibr" rid="B26">26</xref>].</p>
+            <p>In scenario 2/3, a feedback controller is used to induce arm movements by means of NMES. This controller has been designed as a single DOF control sequence exploiting the selective blocking of the other degrees as provided by the exo brakes. The calculation of an angular reference position is achieved by computing the inverse kinematics for a given 3D target position. For the shoulder elevation, a digital controller based on an identified dynamic transfer function model is automatically designed using the pole-placement method in the calibration phase. The control of the horizontal shoulder rotation as well as the elbow-joint angle is achieved by constantly ramping-up the stimulation intensity until the reference angle is reached and locked with the corresponding brake. A sequential feedback controller has been preferred to a simultaneous feedback control of the 3 DOFs integrated with a biomimetic feedforward controller [<xref ref-type="bibr" rid="B31">31</xref>] able to mimic the naturalness of the arm movement [<xref ref-type="bibr" rid="B32">32</xref>-<xref ref-type="bibr" rid="B34">34</xref>]. Indeed, the use of the sequential feedback controller alone can reduce the calibration time and assure a very robust accuracy in reaching the target, which is the most relevant requirement for MUNDUS.</p>
+          </sec>
+          <sec>
+            <title>HAND NMES controller</title>
+            <p>A second stimulator (RehaStim&#x2122;, Hasomed GmbH) is used to control NMES of the forearm and hand muscles. Since electrode arrays are used, a customized demultiplexer is connected to the stimulator. At the hand level, NMES induces flexion of the fingers joints to get a palmar grip, and extension of the fingers joints to achieve hand opening movement and consequently to release the object [<xref ref-type="bibr" rid="B35">35</xref>,<xref ref-type="bibr" rid="B36">36</xref>]. Extrinsic flexors, extrinsic extensors, thenar muscles, and lumbricals, palmar and dorsal interossei muscles are stimulated. The design of the electrode array offers a good trade-off between NMES selectivity and device complexity [<xref ref-type="bibr" rid="B37">37</xref>]. Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref> (panel a) shows the garment with stimulation arrays embedded for hand NMES.</p>
+            <fig id="F3" position="float">
+              <label>Figure 3</label>
+              <caption>
+                <p><bold>The hand module. a)</bold> The stimulation arrays embedded in the garment: MD, medial distal, and MP, medial proximal for finger flexion (indifferent electrode A); LD, lateral distal, and LP, lateral proximal for finger extension (indifferent electrode B); T, thenars, and P, palmar (indifferent electrode C). <bold>b)</bold> The robotic hand orthosis.</p>
+              </caption>
+              <graphic xlink:href="1743-0003-10-66-3"/>
+            </fig>
+            <p>As shown in Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref> (panel a) a total of 6 arrays are used: the medial distal (MD) and medial proximal (MP) arrays are used to stimulate the fingers flexors; the lateral distal (LD) and lateral proximal (LP) arrays for the fingers extensors; and two small electrode arrays are used to stimulate the lumbricals, dorsal and palmar interossei (P) and the thenars muscles (T), respectively. Three indifferent electrodes, indicated as A, B, and C, are used in combination with the electrode arrays. An initial calibration, automatically driven by a dedicated software, is required to check the forearm muscles response to NMES and select which element of each array will be used and to set the stimulation parameters (pulse amplitude and duration) to best assure the completion of each single action. The stimulation frequency is fixed at 20&#xA0;Hz for all stimulation channels.</p>
+            <p>The timing of the stimulation of the different muscles is pre-planned [<xref ref-type="bibr" rid="B38">38</xref>-<xref ref-type="bibr" rid="B40">40</xref>] taking into account the information coming from the interactive object.</p>
+          </sec>
+          <sec>
+            <title>Robotic hand orthosis</title>
+            <p>In the case of complete absence of any muscular activity regarding hand motor functions or in the case of hypersensitivity to electrical hand stimuli, an actuated robotic hand orthosis, shown in Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref> (panel b) has been designed. This orthosis has two coupled DOFs driven by a DC motor with a planetary gearhead (A-max 22 and GP 22, Maxon motor, Switzerland) and two angular sensors (Vert-X, Contelec AG, Switzerland) to measure the MetaCarpoPhalangeal (MCP) and the Proximal InterPhalangeal (PIP) joint angles. The MCP and PIP joint motions are coupled with a fixed gear ratio through a timing belt transmission. The orthosis, characterized by a total weight of 0.51&#xA0;kg, can be adjusted to different hand and fingers lengths. The robotic hand orthosis is mechanically mounted to the distal part of the arm allowing for free palmar grasping of cylindrical objects. The thumb is fixed in opposition to the fingers by means of a soft and flexible orthopaedic thumb brace.</p>
+          </sec>
+        </sec>
+        <sec>
+          <title>Mundus central controller and real-time control</title>
+          <p>The overall control of the modules is set by the MUNDUS Central Controller (MUNDUS CC), a state machine controller communicating with all modules. For the purpose of the system integration, the single module controllers have been integrated into two PCs &#x2013; one Linux-based computer running the real time controller and one Windows-based computer running MUNDUS CC. The communication between the modules is established via UDP and messages are broadcasted in the XML format. MUNDUS CC as a state machine handles all use cases by reacting upon receiving trigger messages and broadcasting state commands.</p>
+          <p>MUNDUS CC activates, deactivates and controls all the non real time modules (RFID, EyeTracker, and BCI) and activates the real time controller system, that includes all other modules. The real time controller is based on a computer system running Linux/RTAI. Development and testing of the control system is performed in Scilab/Scicos environment, the realtime framework OpenRTDynamics and QRtaiLab. Figure&#xA0;<xref ref-type="fig" rid="F4">4</xref> reports the integration of the MUNDUS platform in the three different scenarios.</p>
+          <fig id="F4" position="float">
+            <label>Figure 4</label>
+            <caption>
+              <p><bold>Modules integration in the three scenarios.</bold> Two examples of modules integration are depicted in the flowcharts corresponding to the different user scenarios. In all the flowcharts the subject block shows the condition of the user: red body districts are impaired, while green ones have still residual functional ability. The upper flowchart is referred to scenario 1. The lower flowchart is representative of both scenario 2 and 3.</p>
+            </caption>
+            <graphic xlink:href="1743-0003-10-66-4"/>
+          </fig>
+          <p>Besides the MUNDUS CC, a graphical user interface framework &#x2013; the MUNDUS GUI &#x2013; has been developed with the aim to guide the caregiver through the calibration and the system initialization steps. The same GUI is used during the tasks to guide the end-user in the interaction with the system in order to tell him/her when he can activate or deactivate the brakes or trigger some of the sub-actions.</p>
+        </sec>
+        <sec>
+          <title>Power supply and safety</title>
+          <p>The MUNDUS system is powered by a 230&#xA0;V main connection. To assure the safety of the system, the following safety measures have been implemented: isolating transformers for electrical safety, emergency stop button, cover for elbow brake, and warning signs to release brakes for donning/doffing.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Performance evaluation of the MUNDUS system</title>
+        <p>Five end-users belonging to the MUNDUS target population have been recruited for the study. All the tests have been performed at the Villa Beretta Rehabilitation Centre (Valduce Hospital). The prototype and the experimental protocol for the validation of the system has been approved by the ethical committee of the Valduce Hospital and all participants signed a written informed consent. Two exemplary interaction tasks, in term of assessing the system functionality, have been selected for the first tests: drinking and reaching a body spot or a button within the working space. All the tasks were performed with the right arm since only a right-arm exo prototype has been developed. At the beginning of the session, the MUNDUS platform has been customized on the needs of each single user; thus, different configurations have been tested by different users. To assess the functionality of the system, for each subject and each performed trial, the task has been divided into sub-actions as previously described. The level of support provided by the MUNDUS system was scored for each sub-action from 0 (unsuccessful) to 1 (acceptable) and 2 (completely functional). If a sub-action was not supported by the system, a not available (NA) score was given. The scores were agreed by three experts: one was present at the tests while the other two were analysing the data and the corresponding videos.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Results and discussions</title>
+      <p>A detailed validation of each single module on healthy subjects to completely report the fulfilment of the specifications is outside the goal of the present paper.</p>
+      <p>Five end-users with different pathologies and disability have tested the MUNDUS platform in different configurations depending on their current condition. Table&#xA0;<xref ref-type="table" rid="T1">1</xref> reports the demographic and the clinical details of the participants while Table <xref ref-type="table" rid="T2">2</xref> describes the MUNDUS configurations tested. In what follows, the results of the tests are described subject by subject.</p>
+      <table-wrap position="float" id="T1">
+        <label>Table 1</label>
+        <caption>
+          <p>Characteristics of the end users</p>
+        </caption>
+        <table frame="hsides" rules="groups" border="1">
+          <colgroup>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+          </colgroup>
+          <thead valign="top">
+            <tr>
+              <th align="center" valign="bottom">
+                <bold>Subject</bold>
+                <hr/>
+              </th>
+              <th align="center" valign="bottom">
+                <bold>Age</bold>
+                <hr/>
+              </th>
+              <th align="center" valign="bottom">
+                <bold>Sex</bold>
+                <hr/>
+              </th>
+              <th align="center" valign="bottom">
+                <bold>Pathology</bold>
+                <hr/>
+              </th>
+              <th align="center" valign="bottom">
+                <bold>MI Upper limb (max 0-100)</bold>
+                <hr/>
+              </th>
+              <th align="center" valign="bottom">
+                <bold>Fugl Meyer (max 0-44)</bold>
+                <hr/>
+              </th>
+              <th colspan="4" align="center" valign="bottom">
+                <bold>MRC right arm (max 5)</bold>
+                <hr/>
+              </th>
+            </tr>
+            <tr>
+              <th align="center">&#xA0;</th>
+              <th align="center">&#xA0;</th>
+              <th align="center">&#xA0;</th>
+              <th align="center">&#xA0;</th>
+              <th align="center">&#xA0;</th>
+              <th align="center">&#xA0;</th>
+              <th align="center">
+                <bold>Elbow extension</bold>
+              </th>
+              <th align="center">
+                <bold>Elbow flexion</bold>
+              </th>
+              <th align="center">
+                <bold>Finger extension</bold>
+              </th>
+              <th align="center">
+                <bold>Finger flexion</bold>
+              </th>
+            </tr>
+          </thead>
+          <tbody valign="top">
+            <tr>
+              <td align="center" valign="bottom">
+                <bold>FS001</bold>
+                <hr/>
+              </td>
+              <td align="center" valign="bottom">44<hr/></td>
+              <td align="center" valign="bottom">M<hr/></td>
+              <td align="center" valign="bottom">incomplete SCI C3-C4<hr/></td>
+              <td align="center" valign="bottom">45<hr/></td>
+              <td align="center" valign="bottom">11<hr/></td>
+              <td align="center" valign="bottom">M3<hr/></td>
+              <td align="center" valign="bottom">M3<hr/></td>
+              <td align="center" valign="bottom">M1<hr/></td>
+              <td align="center" valign="bottom">M1<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">
+                <bold>RF002</bold>
+                <hr/>
+              </td>
+              <td align="center" valign="bottom">37<hr/></td>
+              <td align="center" valign="bottom">F<hr/></td>
+              <td align="center" valign="bottom">multiple sclerosis<hr/></td>
+              <td align="center" valign="bottom">73<hr/></td>
+              <td align="center" valign="bottom">29<hr/></td>
+              <td align="center" valign="bottom">M4<hr/></td>
+              <td align="center" valign="bottom">M4<hr/></td>
+              <td align="center" valign="bottom">M4<hr/></td>
+              <td align="center" valign="bottom">M4<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">
+                <bold>ND004</bold>
+                <hr/>
+              </td>
+              <td align="center" valign="bottom">79<hr/></td>
+              <td align="center" valign="bottom">M<hr/></td>
+              <td align="center" valign="bottom">incomplete SCI C4-C5<hr/></td>
+              <td align="center" valign="bottom">56<hr/></td>
+              <td align="center" valign="bottom">19<hr/></td>
+              <td align="center" valign="bottom">M3<hr/></td>
+              <td align="center" valign="bottom">M3<hr/></td>
+              <td align="center" valign="bottom">M2<hr/></td>
+              <td align="center" valign="bottom">M2<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">
+                <bold>GD007</bold>
+                <hr/>
+              </td>
+              <td align="center" valign="bottom">49<hr/></td>
+              <td align="center" valign="bottom">M<hr/></td>
+              <td align="center" valign="bottom">Multiple sclerosis<hr/></td>
+              <td align="center" valign="bottom">100<hr/></td>
+              <td align="center" valign="bottom">41<hr/></td>
+              <td align="center" valign="bottom">M5<hr/></td>
+              <td align="center" valign="bottom">M5<hr/></td>
+              <td align="center" valign="bottom">M5<hr/></td>
+              <td align="center" valign="bottom">M5<hr/></td>
+            </tr>
+            <tr>
+              <td align="center">
+                <bold>GC008</bold>
+              </td>
+              <td align="center">33</td>
+              <td align="center">M</td>
+              <td align="center">incomplete SCI C7-D1</td>
+              <td align="center">23</td>
+              <td align="center">16</td>
+              <td align="center">M2</td>
+              <td align="center">M2</td>
+              <td align="center">M1</td>
+              <td align="center">M1</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <table-wrap position="float" id="T2">
+        <label>Table 2</label>
+        <caption>
+          <p>Configurations tested by each end-user in each session</p>
+        </caption>
+        <table frame="hsides" rules="groups" border="1">
+          <colgroup>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+          </colgroup>
+          <thead valign="top">
+            <tr>
+              <th align="center" valign="bottom">
+                <bold>MUNDUS config.</bold>
+                <hr/>
+              </th>
+              <th align="center" valign="bottom">
+                <bold>Test</bold>
+                <hr/>
+              </th>
+              <th align="center" valign="bottom">
+                <bold>Scenario</bold>
+                <hr/>
+              </th>
+              <th align="center" valign="bottom">
+                <bold>Exo</bold>
+                <hr/>
+              </th>
+              <th align="center" valign="bottom">
+                <bold>Environmental sensors</bold>
+                <hr/>
+              </th>
+              <th align="center" valign="bottom">
+                <bold>RFID</bold>
+                <hr/>
+              </th>
+              <th colspan="2" align="center" valign="middle">
+                <bold>Arm NMES</bold>
+                <hr/>
+              </th>
+              <th colspan="2" align="center" valign="middle">
+                <bold>Hand</bold>
+                <hr/>
+              </th>
+              <th colspan="3" align="center" valign="middle">
+                <bold>Intention detection</bold>
+                <hr/>
+              </th>
+            </tr>
+            <tr>
+              <th align="center">&#xA0;</th>
+              <th align="center">&#xA0;</th>
+              <th align="center">&#xA0;</th>
+              <th align="center">&#xA0;</th>
+              <th align="center">&#xA0;</th>
+              <th align="center">&#xA0;</th>
+              <th align="center" valign="middle">
+                <bold>EMG controlled</bold>
+              </th>
+              <th align="center" valign="middle">
+                <bold>Feedback controller</bold>
+              </th>
+              <th align="center" valign="middle">
+                <bold>NMES&#x2009;+&#x2009;glove</bold>
+              </th>
+              <th align="center" valign="middle">
+                <bold>Robotic orthosis</bold>
+              </th>
+              <th align="center" valign="middle">
+                <bold>USB button</bold>
+              </th>
+              <th align="center" valign="middle">
+                <bold>Eye tracking</bold>
+              </th>
+              <th align="center" valign="middle">
+                <bold>BCI</bold>
+              </th>
+            </tr>
+          </thead>
+          <tbody valign="top">
+            <tr>
+              <td align="center" valign="bottom">1<hr/></td>
+              <td align="center" valign="bottom">FS001test1-5<hr/></td>
+              <td align="center" valign="bottom">1<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">2<hr/></td>
+              <td align="center" valign="bottom">FS001test6-7<hr/></td>
+              <td align="center" valign="bottom">1<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">1<hr/></td>
+              <td align="center" valign="bottom">RF002test1-4<hr/></td>
+              <td align="center" valign="bottom">1<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">3<hr/></td>
+              <td align="center" valign="bottom">ND004test1-2<hr/></td>
+              <td align="center" valign="bottom">2<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">4<hr/></td>
+              <td align="center" valign="bottom">ND004test3<hr/></td>
+              <td align="center" valign="bottom">2<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">5<hr/></td>
+              <td align="center" valign="bottom">GD007test1-2<hr/></td>
+              <td align="center" valign="bottom">1<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">6<hr/></td>
+              <td align="center" valign="bottom">GC008test1-2<hr/></td>
+              <td align="center" valign="bottom">3<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">7<hr/></td>
+              <td align="center" valign="bottom">GC008test3<hr/></td>
+              <td align="center" valign="bottom">3<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">X<hr/></td>
+            </tr>
+            <tr>
+              <td align="center">8</td>
+              <td align="center">GC008tests4-6</td>
+              <td align="center">3</td>
+              <td align="center">X</td>
+              <td align="center">X</td>
+              <td align="center">&#xA0;</td>
+              <td align="center">&#xA0;</td>
+              <td align="center">X</td>
+              <td align="center">&#xA0;</td>
+              <td align="center">&#xA0;</td>
+              <td align="center">&#xA0;</td>
+              <td align="center">&#xA0;</td>
+              <td align="center">X</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <sec>
+        <title>Subject 1: FS001</title>
+        <p>This subject is a quadriplegic male of 44&#xA0;years old with an incomplete SCI (C3-C4 level) since 2010. This subject is classified as an ASIA Impairment Scale C with right and left motor/sensitive level C4. According to the subject&#x2019;s characteristics reported in Table&#xA0;<xref ref-type="table" rid="T1">1</xref>, the scenario selected was Scenario 1. To reduce the complexity of the system for the first tests, no intention detection module was used; the brakes of the exo were automatically activated once the subject reached the target position and manually de-activated by the operator when required by the subject. The subject performed two experimental sessions. In the first session he performed a drinking task exploiting only the weight compensation provided by the exo (see Figure&#xA0;<xref ref-type="fig" rid="F5">5</xref> referring to-FS001_test 1 in Table&#xA0;<xref ref-type="table" rid="T3">3</xref> and Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>). The subject was helped by the operator to open the hand.</p>
+        <fig id="F5" position="float">
+          <label>Figure 5</label>
+          <caption>
+            <p><bold>Tests on subject FS001.</bold> Subject FS001 movement phases during the drinking task (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>). From left to right: initial position <bold>(a)</bold>, reaching of the cup <bold>(b)</bold>, grasping of the cup <bold>(c)</bold>, cup to mouth <bold>(d)</bold>, releasing of the cup <bold>(e)</bold> and return to initial position <bold>(f)</bold>.</p>
+          </caption>
+          <graphic xlink:href="1743-0003-10-66-5"/>
+        </fig>
+        <table-wrap position="float" id="T3">
+          <label>Table 3</label>
+          <caption>
+            <p>Evaluation of the functionality for each testing trial (NA: Not Assisted by MUNDUS; 0: unsuccessful; 1: acceptable; 2: completely functional)</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="center" valign="bottom">
+                  <bold>Test</bold>
+                  <hr/>
+                </th>
+                <th align="center" valign="bottom">
+                  <bold>MUNDUS config.</bold>
+                  <hr/>
+                </th>
+                <th align="center" valign="bottom">
+                  <bold>Task</bold>
+                  <hr/>
+                </th>
+                <th colspan="9" align="center" valign="bottom">
+                  <bold>Sub-action</bold>
+                  <hr/>
+                </th>
+                <th align="center" valign="bottom">
+                  <bold>Mean score (SD)</bold>
+                  <hr/>
+                </th>
+                <th align="center" valign="bottom">
+                  <bold>Video</bold>
+                  <hr/>
+                </th>
+              </tr>
+              <tr>
+                <th align="center">&#xA0;</th>
+                <th align="center">&#xA0;</th>
+                <th align="center">&#xA0;</th>
+                <th align="center">
+                  <bold>From rest to target</bold>
+                </th>
+                <th align="center" valign="middle">
+                  <bold>Open hand</bold>
+                </th>
+                <th align="center" valign="middle">
+                  <bold>grasp handle</bold>
+                </th>
+                <th align="center">
+                  <bold>Reach target</bold>
+                </th>
+                <th align="center">
+                  <bold>Keep position</bold>
+                </th>
+                <th align="center">
+                  <bold>Return to table</bold>
+                </th>
+                <th align="center">
+                  <bold>Release handle</bold>
+                </th>
+                <th align="center">
+                  <bold>Go back to rest</bold>
+                </th>
+                <th align="center">
+                  <bold>Intention communication</bold>
+                </th>
+                <th align="center">&#xA0;</th>
+                <th align="center">&#xA0;</th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>FS001-test 1</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2 (0)<hr/></td>
+                <td align="center" valign="bottom">Additional file <xref ref-type="supplementary-material" rid="S2">2</xref><hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>FS001-test 2</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2 (0)<hr/></td>
+                <td align="center" valign="bottom">no video available<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>FS001-test 3</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2 (0)<hr/></td>
+                <td align="center" valign="bottom">no video available<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>FS001-test 4</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2 (0)<hr/></td>
+                <td align="center" valign="bottom">no video available<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>FS001-test 5</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2 (0)<hr/></td>
+                <td align="center" valign="bottom">no video available<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>FS001-test 6</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">0<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">0<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">1.13 (0.83)<hr/></td>
+                <td align="center" valign="bottom">Additional file <xref ref-type="supplementary-material" rid="S3">3</xref><hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>FS001-test 7</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">0<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">0<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">1.13 (0.83)<hr/></td>
+                <td align="center" valign="bottom">no video available<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>RF002-test 1</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2 (0)<hr/></td>
+                <td align="center" valign="bottom">Additional file <xref ref-type="supplementary-material" rid="S4">4</xref><hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>RF002-test 2</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">reaching<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">--<hr/></td>
+                <td align="center" valign="bottom">--<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2 (0)<hr/></td>
+                <td align="center" valign="bottom">Additional file <xref ref-type="supplementary-material" rid="S5">5</xref><hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>RF002-test 3</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2 (0)<hr/></td>
+                <td align="center" valign="bottom">no video available<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>RF002-test 4</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">reaching<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">--<hr/></td>
+                <td align="center" valign="bottom">--<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2 (0)<hr/></td>
+                <td align="center" valign="bottom">no video available<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>ND004-test 1</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">3<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">1.67 (0.52)<hr/></td>
+                <td align="center" valign="bottom">no video available<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>ND004-test 2</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">3<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">1.83 (0.41)<hr/></td>
+                <td align="center" valign="bottom">Additional file <xref ref-type="supplementary-material" rid="S6">6</xref><hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>ND004-test 3</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">4<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">1.7<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">1.92 (0.15)<hr/></td>
+                <td align="center" valign="bottom">Additional file <xref ref-type="supplementary-material" rid="S7">7</xref><hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>GD007-test 1</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">5<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2 (0)<hr/></td>
+                <td align="center" valign="bottom">Additional file <xref ref-type="supplementary-material" rid="S8">8</xref><hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>GD007-test 2</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">5<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2 (0)<hr/></td>
+                <td align="center" valign="bottom">no video available<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>GC008-test 1</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">6<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">0<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">1.25 (0.96)<hr/></td>
+                <td align="center" valign="bottom">Additional file <xref ref-type="supplementary-material" rid="S9">9</xref><hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>GC008-test 2</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">6<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">1.75 (0.50)<hr/></td>
+                <td align="center" valign="bottom">no video available<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>GC008-test 3</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">7<hr/></td>
+                <td align="center" valign="bottom">drinking<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">0<hr/></td>
+                <td align="center" valign="bottom">0<hr/></td>
+                <td align="center" valign="bottom">0<hr/></td>
+                <td align="center" valign="bottom">0<hr/></td>
+                <td align="center" valign="bottom">NA<hr/></td>
+                <td align="center" valign="bottom">0.88 (0.99)<hr/></td>
+                <td align="center" valign="bottom">no video available<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>GC008-test 4</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">8<hr/></td>
+                <td align="center" valign="bottom">reaching<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">--<hr/></td>
+                <td align="center" valign="bottom">--<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2 (0)<hr/></td>
+                <td align="center" valign="bottom">Additional file <xref ref-type="supplementary-material" rid="S10">10</xref><hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>GC008-test 5</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">8<hr/></td>
+                <td align="center" valign="bottom">reaching<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">--<hr/></td>
+                <td align="center" valign="bottom">--<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2 (0)<hr/></td>
+                <td align="center" valign="bottom">Additional file <xref ref-type="supplementary-material" rid="S11">11</xref><hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>GC008-test 6</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">8<hr/></td>
+                <td align="center" valign="bottom">reaching<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">--<hr/></td>
+                <td align="center" valign="bottom">--<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">2 (0)<hr/></td>
+                <td align="center" valign="bottom">no video available<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>Number of repetitions</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">19<hr/></td>
+                <td align="center" valign="bottom">8<hr/></td>
+                <td align="center" valign="bottom">8<hr/></td>
+                <td align="center" valign="bottom">19<hr/></td>
+                <td align="center" valign="bottom">22<hr/></td>
+                <td align="center" valign="bottom">14<hr/></td>
+                <td align="center" valign="bottom">8<hr/></td>
+                <td align="center" valign="bottom">19<hr/></td>
+                <td align="center" valign="bottom">7<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+              </tr>
+              <tr>
+                <td align="center" valign="bottom">
+                  <bold>Mean</bold>
+                  <hr/>
+                </td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">1.89<hr/></td>
+                <td align="center" valign="bottom">1.71<hr/></td>
+                <td align="center" valign="bottom">1.63<hr/></td>
+                <td align="center" valign="bottom">1.95<hr/></td>
+                <td align="center" valign="bottom">1.64<hr/></td>
+                <td align="center" valign="bottom">1.79<hr/></td>
+                <td align="center" valign="bottom">1.13<hr/></td>
+                <td align="center" valign="bottom">1.79<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+                <td align="center" valign="bottom">&#xA0;<hr/></td>
+              </tr>
+              <tr>
+                <td align="center">
+                  <bold>SD</bold>
+                </td>
+                <td align="center">&#xA0;</td>
+                <td align="center">&#xA0;</td>
+                <td align="center">0.32</td>
+                <td align="center">0.45</td>
+                <td align="center">0.52</td>
+                <td align="center">0.23</td>
+                <td align="center">0.79</td>
+                <td align="center">0.58</td>
+                <td align="center">0.99</td>
+                <td align="center">0.54</td>
+                <td align="center">0</td>
+                <td align="center">&#xA0;</td>
+                <td align="center">&#xA0;</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>Only the designed support for the cup allowed the user to drink autonomously, once the operator helped him in opening the hand to grasp and then to release the handle. An extra test was done activating the brakes and repeating the task 5 times; with the exo support, the subject successfully performed the five repetitions (FS001_test 1 to 5 in Table&#xA0;<xref ref-type="table" rid="T3">3</xref>); without the exo fatigue prevented the subject to repeat the task.</p>
+        <p>During the second experimental session, the subject tested the Hand NMES module to assist the opening of the hand which was not possible by his own volitional control. This session was repeated twice on two different days (FS001_test 6 and 7 in Table&#xA0;<xref ref-type="table" rid="T3">3</xref> and Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>). On both days, the hand was correctly opened and closed by the stimulation. After the first day of stimulation the subject reported a positive reduction of the rigidity of the hand with the possibility to better use it to drive the wheelchair.</p>
+      </sec>
+      <sec>
+        <title>Subject 2: RF002</title>
+        <p>The second subject is a female of 37&#xA0;years affected by multiple sclerosis. The pathology was diagnosed in 1996. She has weakness in all of the muscles of the right arm and the pathology prevents her to perform independently activities of daily life requiring antigravity effort. According to subject&#x2019;s characteristics the scenario selected was Scenario 1. Again no intention detection modules were used and the exo brakes were controlled as for the first subject. Subject RF002 was asked to perform the drinking task (RF002_test 1 in Table&#xA0;<xref ref-type="table" rid="T3">3</xref>, Additional file <xref ref-type="supplementary-material" rid="S4">4</xref>) and the touching the left shoulder task (RF002_test 2 in Table&#xA0;<xref ref-type="table" rid="T3">3</xref>, Additional file <xref ref-type="supplementary-material" rid="S5">5</xref>). The subject reported a perception of a more exhausting task when using the exoskeleton with respect to the natural movement. To quantitatively control whether the exo was somehow making the task execution more difficult for her, we acquired the EMG signals of the biceps and deltoids muscles. Of course this test was not intended to provide a complete evaluation of muscular fatigue but it was an evident assessment of the level of muscular activation used to perform the same task with and without the exo (RF002_test 3 and 4 in Table&#xA0;<xref ref-type="table" rid="T3">3</xref>).</p>
+        <p>Figure&#xA0;<xref ref-type="fig" rid="F6">6</xref> shows the results of the drinking task (left column) and of the touching the left shoulder (right column) with the support of the exo. The breaks were activated automatically to keep the position once reached the mouth/shoulder to allow some resting to the subject and the possibility to keep the position and the function longer. The EMG activation profiles of the biceps and of the three deltoids muscles are reported in panels b), c), e) and f). It can be noticed that the subject relaxed the biceps some seconds after the activation of the brakes when she actually realized their activation.</p>
+        <fig id="F6" position="float">
+          <label>Figure 6</label>
+          <caption>
+            <p><bold>Tests on subject RF002.</bold> Subject RF002 angles and EMG signals measured during the drinking task <bold>(</bold>panels <bold>a</bold>-<bold>c)</bold> and the touching the left shoulder task <bold>(</bold>panels <bold>d</bold>-<bold>f)</bold>, with the support of the exo. In panels <bold>a)</bold> and <bold>d)</bold> the angles profiles are reported, the vertical lines limit the phase of the brakes activation. The correspondent EMG signals of the biceps and anterior deltoid <bold>(</bold>panels <bold>b)</bold> and <bold>e))</bold> and of the medial and posterior deltoid <bold>(</bold>panels <bold>c)</bold> and <bold>f))</bold>are reported.</p>
+          </caption>
+          <graphic xlink:href="1743-0003-10-66-6"/>
+        </fig>
+        <p>Figure&#xA0;<xref ref-type="fig" rid="F7">7</xref> shows the results obtained by the same subject while performing the drinking task (left column) and the touching the left shoulder (right column) without the support of the exo. No kinematic data were available since the angle sensors are include on the exo. The subject was asked to keep the target position (the mouth or the shoulder) for at least 5&#xA0;seconds.</p>
+        <fig id="F7" position="float">
+          <label>Figure 7</label>
+          <caption>
+            <p><bold>Tests on subject RF002.</bold> Subject RF002 EMG signals performing the drinking task <bold>(</bold>panels <bold>a</bold>-<bold>b)</bold> and the touching the left shoulder task <bold>(</bold>panels <bold>c</bold>-<bold>d)</bold> without any support. EMG signals of the biceps and anterior deltoid <bold>(</bold>panels <bold>a)</bold> and <bold>c))</bold> and of the medial and posterior deltoid <bold>(</bold>panels <bold>b)</bold> and <bold>d</bold><bold>))</bold> are reported.</p>
+          </caption>
+          <graphic xlink:href="1743-0003-10-66-7"/>
+        </fig>
+        <p>Comparing Figure&#xA0;<xref ref-type="fig" rid="F6">6</xref> and Figure&#xA0;<xref ref-type="fig" rid="F7">7</xref>, lower EMG activations were required when the movement was performed with the support of the exo both reducing the maximal peaks of activations, exploiting the exo antigravity support, and the duration of the activation, exploiting the brakes.</p>
+        <p>The EMG acquisitions showed that the muscles were less activated and with no evident fatiguing when supported by the exo; thus, we can conclude that, the feeling of the subject had to be partly attributed to the visual impression of the bulkiness of the exo. Anyway, her evaluation of the system was not positive, in subjective terms, i.e. acceptability and usability.</p>
+      </sec>
+      <sec>
+        <title>Subject 3: ND004</title>
+        <p>This user is a quadriplegic male of 79&#xA0;years old with an incomplete SCI (C4-C5 level) since 2010. This subject is classified as an ASIA Impairment Scale with right motor level C4, and left motor level C7. His residual control of the arm was very poor and he was selected to test Scenario 2 configuration. This subject carried out two different experimental sessions.</p>
+        <p>In the first session (ND004_test 1 and ND004_test 2 in Table&#xA0;<xref ref-type="table" rid="T3">3</xref>. Additional file <xref ref-type="supplementary-material" rid="S6">6</xref>), the subject used scenario 2 configuration, he exploited the exo and the muscles of his right arm were stimulated with the sequential feedback control strategy to accomplish the drinking task. The subject used the eye tracking module to select the object to be grasped and to trigger the different sub-actions. The grasping and the releasing of the object were performed with the help of the operator. From MUNDUS perspective, this test aimed to testing whether the stimulation was able to assure the reaching task completion in the case of a subject with partial muscle atrophy. Figure&#xA0;<xref ref-type="fig" rid="F8">8</xref> reports the results achieved during the first test performed by the subject. Pictures of the subject in three specific instants of the movement are shown: initial position (panel a), cup to mouth (panel b) and return to initial position (panel c). The figure reports also the angles profiles (panel d), the correspondent muscles stimulation (panel e) and the breaks activation (panel f) used to execute movement.</p>
+        <fig id="F8" position="float">
+          <label>Figure 8</label>
+          <caption>
+            <p><bold>Tests of the arm NMES on subject ND004.</bold> Subject ND004 movement phases, stimulation and breaks activation. A complete drinking task is reported. Panels <bold>(a</bold>-<bold>c)</bold> report pictures of the subject in the initial position, at the mouth and back to rest position, respectively. In panel <bold>d)</bold> the angles are reported in solid lines, target angles for each phase of the task are as shadows of the same color of the correspondent angle. In panel <bold>e)</bold> the levels of stimulation are reported as percentage of the maximal stimulation intensity as set during the identification of the parameters on the subject. Panel <bold>f)</bold> reports the activation of the brakes; the indicated sentences indicate the ongoing sub-actions.</p>
+          </caption>
+          <graphic xlink:href="1743-0003-10-66-8"/>
+        </fig>
+        <p>As shown in Figure&#xA0;<xref ref-type="fig" rid="F8">8</xref> (panel d) the subject did reach the reference angles very nicely during the first two sub-actions, i.e. &#x201C;reaching of the cup&#x201D; and &#x201C;moving to the mouth&#x201D;, while in the second part of the task (&#x201C;go back to table&#x201D; and &#x201C;return to rest position&#x201D;) some difficulties are shown in the relaxation of the deltoids and the biceps muscles due to a residual muscles stiffness after stimulation. Indeed, these movements should have been executed thanks to gravity once the brakes were off. The persistence of some stiffness after the stimulation was observed also in some healthy subjects in the initial trials but it was soon reduced after a familiarization with the system.</p>
+        <p>Just after second 80, a sudden sliding of the shoulder horizontal rotation angle (red line in panel d) can be observed even if the correspondent brake was activated (red line in panel f). This was due to the fact the brake was not strong enough to block such a big arm. A similar problem occurred also with some healthy subjects and a new version of the horizontal shoulder brake was then integrated into the prototype. The performance of the second test improved in the second half of the drinking task a sit can be seen in the Additional file <xref ref-type="supplementary-material" rid="S6">6</xref>.</p>
+        <p>During the second session (ND004_test 3 in Table&#xA0;<xref ref-type="table" rid="T3">3</xref>, Additional file <xref ref-type="supplementary-material" rid="S7">7</xref>), Subject ND004 tested the HAND NMES module (Figure&#xA0;<xref ref-type="fig" rid="F9">9</xref>).</p>
+        <fig id="F9" position="float">
+          <label>Figure 9</label>
+          <caption>
+            <p><bold>Tests of the hand module on subject ND004.</bold> In panel <bold>(a)</bold>, the force measured at the finger tips (FSR) are shown in terms of raw data having values ranging from 0 to 1023; the stimulation intensities provided to the electrodes arrays inducing the grasping and the opening of the hand are depicted in panels <bold>b)</bold> and <bold>c)</bold>, respectively.</p>
+          </caption>
+          <graphic xlink:href="1743-0003-10-66-9"/>
+        </fig>
+        <p>It can be noticed that when MUNDUS CC requested to open the hand, the appropriate muscles were stimulated with an increasing ramp up to the maximal tolerated current value defined in the calibration procedure (Figure&#xA0;<xref ref-type="fig" rid="F9">9</xref>, panel b). The opening of the thumb was not completely successful and the operator slightly helped him, however the release did not require similar assistance. On the other hand, when MUNDUS CC requested to grasp an object, stimulation pulses were delivered to the other arrays (Figure&#xA0;<xref ref-type="fig" rid="F9">9</xref>, panel c) and an increasing force was measured at the finger tips suggesting that an object was grasped by the subject (Figure&#xA0;<xref ref-type="fig" rid="F9">9</xref>, panel a).</p>
+        <p>Moreover, this subject had a lower rigidity in the hand after the stimulation session. This reduction of the stiffness allowed him to voluntarily control some opening and closing functions, otherwise not possible, also the day after the experiment.</p>
+      </sec>
+      <sec>
+        <title>Subject 4: GD007</title>
+        <p>This end user is a male of 45&#xA0;years. He was diagnosed with multiple sclerosis in 1988. This subject was able to perform the entire movement also without the exo support, but after the execution of few repetitions, there was a reduction of the range of motion due to a fast onset of muscular fatigue, hence he was assigned to Scenario 1. Two repetitions of the drinking task (GD007_test 1 and 2 in Table&#xA0;<xref ref-type="table" rid="T3">3</xref>, Additional file <xref ref-type="supplementary-material" rid="S8">8</xref>) were performed. The subject&#x2019;s arm was supported by the exo and the EMG-based NMES controller. Two muscles were stimulated according to the volitional muscular activity: the biceps and the medial deltoid. The stimulation pulse width was modulated between 0 and 450&#xA0;&#x3BC;s according to the residual EMG activity detected by the adaptive filter [<xref ref-type="bibr" rid="B21">21</xref>]. The opening and closing of the hand was performed by means of the HAND NMES module. The subject preferred to use the USB button to trigger the different sub-actions because he had a good control of the left hand.</p>
+        <p>Figure&#xA0;<xref ref-type="fig" rid="F10">10</xref> shows the results obtained by Subject GD007. The whole movement is divided in 8 different phases delimited by the instants in which the subject interacted with the GUI pressing the USB button (vertical lines in panel a-c). These interactions were needed to let the user decide when to activate or deactivate the brakes and when to start the hand opening and closing. Instead, the completion of the hand opening and hand closing movements were automatically recognized by the controller through the use of the sensorised glove.</p>
+        <fig id="F10" position="float">
+          <label>Figure 10</label>
+          <caption>
+            <p><bold>Tests on subject GD007.</bold> An example of the results obtained by patient GD007 during the drinking task supported by the exo, the EMG-based NMES arm module and the hand NMES module (Additional file <xref ref-type="supplementary-material" rid="S8">8</xref>) Panel <bold>a)</bold> shows the angles of the exoskeleton: shoulder elevation (in blue), shoulder rotation (in red), elbow angle (in green); the dashed black line shows the activation of the brakes; panels <bold>b)</bold> and <bold>c)</bold> report the root mean square of the voluntary EMG and the pulse width delivered to the muscles (the biceps and the medial deltoid are reported in panel <bold>b)</bold> and <bold>c)</bold> respectively). The activation and deactivation thresholds of the NMES controller are shown in dashed and solid horizontal line respectively. In panels <bold>(a</bold>-<bold>c)</bold> the vertical lines indicate the instants in which the subject interacted with the system and delimitate 8 different phases of the movement: 1. approach the object; 2. interaction with MUNDUS CC; 3. open hand and reach the object; 4. grasp object and move to mouth; 5. drink; 6. move back to table; 7. release object and back to rest; 8. relax hand. Data coming from the hand module are reported in the panels on the right: panel <bold>d)</bold> shows the kinematic raw data (range 0&#x2013;1023) measured by the instrumented glove at the PIP joints, panel <bold>e)</bold> reports the raw data (range 0&#x2013;1023) of the force sensors; the stimulation currents for the muscles involved in the grasping and hand opening are reported in panels <bold>f)</bold> and <bold>g)</bold>, respectively. In panels d-g the vertical lines indicates the different phases in terms of hand functions.</p>
+          </caption>
+          <graphic xlink:href="1743-0003-10-66-10"/>
+        </fig>
+        <p>The movement started with the subject reaching the object on the table (phase 1); in this phase the subject exploited only the exo and no stimulation was needed to accomplish the sub-action; once arrived close to the object, the subject decided to activate the brakes (end of phase 1). In phase 2, the system was waiting for another trigger from the user to start the opening of the hand. In phase 3, the hand was opened by NMES and the subject was getting closer to the object; when the object was reached the user triggered the grasping action (end of phase 3). Once the object was grasped by NMES, the brakes were automatically deactivated and the subject moved the cup to the mouth (phase 4). During phase 4 the arm movement was supported by NMES of only the biceps (panel b). For the medial deltoid, the support of the exo was enough to have a very small contraction to perform the task and no amplification was provided by the stimulation (panel c). Once reached the mouth (end of phase 4), the subject pushed the button in order to inform the system that the target was reached and the brakes were activated. During phase 5, the subject was drinking with all the brakes ON and the arm NMES OFF; only the hand NMES was ON to keep the grasping. Once the subject finished to drink, he pushed again the button (end of phase 5), the brakes were unlocked and the subject could move back to the table (phase 6). Once on the table, the subject triggered the hand opening (end of phase 6), the object was released and the subject went back to rest (phase 7). Finally, in phase 8 the hand was relaxed.</p>
+        <p>Concerning the hand module (Figure&#xA0;<xref ref-type="fig" rid="F10">10</xref>, panels d-g), the opening and closing of the hand induced by NMES was functional to grasp and release the handle of the cup.</p>
+        <p>The subject did not have any difficulty in using the system and was able to accomplish the whole task.</p>
+      </sec>
+      <sec>
+        <title>Subject 5: GC008</title>
+        <p>This subject is a quadriplegic male of 33&#xA0;years old with an incomplete SCI (C7 level) since 2011. The subject is classified as an ASIA Impairment Scale A with right and left motor/sensitive level C7. He has no residual voluntary control of his right arm and hand. Both his arm and hand muscles were completely flaccid, i.e. no muscle tone was present (see MRC scores in Table&#xA0;<xref ref-type="table" rid="T1">1</xref>), and he was an NMES-responder only at the arm level. Thus, the selected scenario was Scenario 3, since the instability of his trunk control prevented the possibility to use efficiently the eye tracking module, and he tested the robotic hand orthosis. The subject carried out two experimental sessions. During the first session, the subject visited the rehabilitation centre on three consecutive days. Familiarization with the robotic orthosis, adaptation of the orthotic interface with the subject and adjustments of the orthosis as well as of the exo were the goals of the first day. On the second and third day, the subject was asked to perform two different test cases. The first test case (GC008_test 1 in Table&#xA0;<xref ref-type="table" rid="T3">3</xref>, Additional file <xref ref-type="supplementary-material" rid="S9">9</xref>) involved the donning procedure of the orthosis as a stand-alone module, the GUI-guided calibration of an open, a closed and a relaxed hand position and a therapist-triggered grasp and lift movement of the drinking cup to verify the holding of the object. The grasping was not stable in this test. The same steps were performed during the second test case with the robotic orthosis mounted on the exo (GC008_test 2 in Table&#xA0;<xref ref-type="table" rid="T3">3</xref>). In this second test the grasping was reliable, while the release was not completely accomplished and required the help of the operator. The arm movement for reaching the object was aided by the operator for both test cases. On the second day, the presence of the exo had no adverse effects on the performance of the tests: the cup could be securely grasped and held while the operator was moving his arm. Figure&#xA0;<xref ref-type="fig" rid="F11">11</xref> shows an example of the measured MCP and PIP angles during the calibration and the subsequent grasp&amp;hold phase. To calibrate the three hand postures, the operator incrementally increased or decreased the actuated MCP joint angle by 4&#xB0; and set the values by clicking on the corresponding button on the GUI screen. The starting points of the blue arrows mark the time and angular values of these clicks. In the subsequent testing phase, the corresponding relax, open and close commands were sent to the controller. The final angles deviate from the reference angle by approximately 6&#xB0; due to an implemented tolerance band and mechanical clearance. The flexible thumb brace did not always hold the thumb in a position such that it did not interfere with the cup handle. In those cases, the operator had to manually extend the thumb.</p>
+        <fig id="F11" position="float">
+          <label>Figure 11</label>
+          <caption>
+            <p><bold>Tests on subject GC008.</bold> An example of the results obtained by subject GC008 while testing the robotic hand orthosis. MetaCarpoPhalangeal (MCP) and the Proximal InterPhalangeal (PIP) joint angles during the GUI-guided calibration and the subsequent testing phase are shown. The MCP joint reference is the only reference signal controlling the two coupled degrees of freedom.</p>
+          </caption>
+          <graphic xlink:href="1743-0003-10-66-11"/>
+        </fig>
+        <p>During the second experimental session, the subject tested the combination of the exo with the robotic hand orthosis and the stimulation of the arm muscles by means of the sequential feedback controller. The use of the robotic hand with the stimulation of the arm muscles (GC008_test 3 in Table&#xA0;<xref ref-type="table" rid="T3">3</xref>) showed that the weight of the robotic orthosis prevented the possibility to perform the whole drinking task, since once the subject was reaching the mouth the weight of the hand system was causing a slight humeral rotation changing the orientation and preventing the correct action of the gravity to drive the return to the table sub-action. Afterwards the subject tested the following reaching tasks, without the hand module: touching the left shoulder, touching the left hand, and pushing a button (GC008_test 4 to 6 in Table&#xA0;<xref ref-type="table" rid="T3">3</xref>, Additional file <xref ref-type="supplementary-material" rid="S10">10</xref> and Additional file <xref ref-type="supplementary-material" rid="S11">11</xref>). In these last trials the Scenario 3 configuration was tested, using BCI to control the system. He was able to complete successfully all these latter tasks and to select and confirm actions by means of BCI with an accuracy of 100%.</p>
+      </sec>
+      <sec>
+        <title>Performance evaluation</title>
+        <p>The evaluation scores, agreed by three experts, were assigned for each sub-action of each task performed by the subject with any support provided by the MUNDUS system and are reported in Table&#xA0;<xref ref-type="table" rid="T3">3</xref>.</p>
+        <p>Overall 8 configurations of the MUNDUS system have been tested by the five end-users (Table&#xA0;<xref ref-type="table" rid="T2">2</xref>). The simplest solution, including only the exoskeleton antigravity support (configuration 1) was tested by two subjects (FS001 and RF002) over 9 trials and it demonstrated a complete functionality in both the considered tasks categories, i.e. drinking and reaching. The hand NMES, as a stand-alone module (configuration 4, ND004) showed a complete functionality. When it was integrated with the rest of the system (configurations 2 and 5, FS001 and GD007 respectively) it showed some problems in the case of RF001, while a complete functionality was reported by the tests performed by GD007. Scenario 2 and 3 using the complete support of the arm functions by the sequential feedback arm NMES controller (configuration 3 and 8, ND004 and GC008 respectively) showed an overall very good performance (only for one subject there was a slight problem in the return phase because of residual stiffness). The robotic hand orthosis, tested only by GC008, had some problems in the first trial as stand-alone (configuration 6) while it had a better performance on the second one. However, its combination with the exoskeleton failed (configuration 7). The scenario 3, without hand assistance (configuration 8), was then tested over the reaching tasks and a complete functionality was assessed.</p>
+        <p>All the intention detection modules (eyetracking in configuration 3, the EMG driven in configuration 5 and the BCI in configuration 8) resulted completely reliable to permit the subjects to control the system, none of the testing subjects had problems in understanding the communication modality.</p>
+        <p>Given the complexity of the system, the preparation time including the donning, the initialization and the calibration of all the used modules is a crucial aspect to consider. The time required for the simplest configuration tested (configuration 1) ranged from a minimum of 6&#xA0;minutes to a maximum of 15&#xA0;minutes. Instead, when configurations including many modules are used (configuration 3 or 5) the preparation time ranged from a minimum of 35 to a maximum of 45&#xA0;minutes. When also BCI is used, its calibration alone lasted about 20&#xA0;minutes.</p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>MUNDUS could represent an important pioneering solution especially because of its modularity, flexibility, light and non-cumbersome features. The study is aimed at proposing the system to people at a middle stage of disability, when the effort of the individuals to restore the reduced or missed motor functions is very high. In this context, MUNDUS supports the users and follows them so to keep them as longer as possible capable to interact with their own arm in a workspace where different functions could be available.</p>
+      <p>MUNDUS contributes to improve autonomy and independence in basic activities of daily life and a better social inclusion by supplying empowerment of existing abilities and functions. Simple tasks such as drinking, scratching ourselves, changing autonomously a TV program, moving the hair away from the eyes, are among the fundamentals of our quality of life. Analogously, displacing objects or pushing buttons to start machines processes are simple works in the production line, facilitating the access to work to improve quality of life. Such tasks has been identified as the most relevant by a focus group with experts and a questionnaire gathering interviews of 36 potential users.</p>
+      <p>The pilot group of end-users have tested different configurations of the platform coping with their current level of disability. Drinking and reaching different spots either on the body or on the table have been the testing paradigms. Since these were the first tests ever performed, the system was calibrated and operated by the developers and caregivers were not involved so far. The second stage of the evaluation (currently on going) is involving also carers and therapists. Some strengths and weaknesses of the system arose from the reported experiments.</p>
+      <p>The exoskeleton well supports the weight of the arm and reduces the level of muscular activation needed to perform some daily activities. Crucially, it supports the achievement of the arm movements reducing the trunk and the head compensatory actions which are typical of impaired subjects, but which can also provoke chronic pain induced by abnormal postures. The exo can be adjusted on subjects with very different anthropometrical measures, for example consider that FS001 is a man of about 91&#xA0;kg and 180&#xA0;m height and RF002 is a woman of about 41&#xA0;kg and 150&#xA0;m height.</p>
+      <p>The use of the handle to assure the cup grasping and the independence of orientation of the object during the task has revealed as one of the most beneficial aspects for the subjects who still have a residual, but suboptimal, control of the arm and the hand.</p>
+      <p>The acceptability of the system was overall positive, only one subject was complaining about the experiments (RF002). She was a very small and weak woman not completely collaborative. During the experiment, she indeed had the impression that the exo was actually inducing an extra weight on her arm and that she was fatiguing much more in performing the tasks with the exo. EMG recordings have demonstrated that her perception was false and the exo was indeed supporting the weight of her arm during the tasks.</p>
+      <p>The arm NMES stimulation was successfully controlled in both the myo-controlled solution, scenario 1, and in the feedback controlled solution, scenario 2 and 3.</p>
+      <p>The eye tracker was effective and easy to use, as well as the BCI. The use of the eye tracker showed the advantage of a very fast and easy calibration, while BCI took longer and is more cumbersome but its use was suggested for a subject who actually had a good field of vision but a poor control of the trunk, preventing him to keep a stable posture and consequently keeping a good calibration of the eye tracker.</p>
+      <p>About the use of NMES on weak subjects, there are some limitations in the number of people who could benefit of the system because of no responsiveness to NMES, which is frequent at least in ALS people. Anyway, in the weak subjects still having residual muscular activation, the use of NMES is usually efficient, possibly after a training period to improve the functional response. Note that once the exoskeleton is supporting the weight of the arm, the muscular contractions required to accomplish the tasks are very small.</p>
+      <p>The MUNDUS system is a research prototype. An exploitation plan to transform it into a commercial device is currently ongoing by the industrial partners of the project. The complete system will not be cheap and the commercial exploitation will consider as the most likely clients the insurance companies and the health providers and not the user himself. However, one of the major advantage, currently investigated in terms of exploitation strategy, is to enlarge the possible users community at least of reduced configurations (such as the EMG controlled NMES with the exo support to be proposed for stroke survivors as upper limb rehabilitative treatment), because one of the major issue in the commercialization of the system is the low prevalence of the target pathologies.</p>
+    </sec>
+    <sec>
+      <title>Abbreviations</title>
+      <p>MUNDUS: MUltimodal Neuroprosthesis for Daily Upper limb Support; ICF: International Classification of Functioning, Disability and Health; Exo: Exoskeleton; SCI: Spinal cord injury; ALS: Amyotrophic Lateral Sclerosis; EMG: ElectroMyoGraphy; EEG: ElectroEncephaloGraphy; NMES: Neuro Muscular Electrical Stimulation; RFID: Radio Frequency Identification; BCI: Brain Computer Interface; ERP: Event Related Potentials; FSR: Force Sensing Resistors; DOF: Degrees Of Freedom; MUNDUS CC: MUNDUS Central Controller; ROM: Range Of Motion; MD: Medial Distal; MP: Medial proximal; LD: Lateral Distal; LP: Lateral Proximal; P: Palmar; T: Thenars; MCP: MetaCarpoPhalangeal joint angle; MS: Multiple Sclerosis; PIP: Proximal InterPhalangeal joint angle; NA: Not available.</p>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors have no competing interests in relation to this study.</p>
+    </sec>
+    <sec>
+      <title>Authors&#x2019; contributions</title>
+      <p>AP participated to conception, coordination and implementation of the whole research project, set-up integration and data collection, manuscript writing. SF, EA participated to implementation of the whole research project and set-up integration, NMES-module design and development, data collection, manuscript writing. MG_it, CC participated to the eye-tracking module design, development and integration. TS, CK participated to the arm controller strategies design, development and integration. JP, CV participated to the BCI-module design, development and integration. MG_at, WR, JK participated to the exo design, development and integration. SM, AC participated to the hand-module design, development and integration. FM, MR, GP, EG participated to the requirement definition, patients recruitment, data collection and dealt with the clinical issues. AJ, MH participated to the environmental sensors design, development and integration. MB, EDA participated to the RFID design, development and integration. PS, SZ, ADW, JM, LG participated to the HW and SW integration of all modules. GF participated to conception, coordination and implementation of the whole research project. All authors contributed to manuscript review. All authors read and approved the final manuscript.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="S1">
+        <caption>
+          <title>Additional file 1</title>
+          <p><bold>Documentation: Focus group and user group questionnaires.</bold> The document reports the questions used to drive the focus group work and the corresponding results and the questionnaire of the potential user group along with a summary of the answers. </p>
+        </caption>
+        <media xlink:href="1743-0003-10-66-S1.pdf">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S2">
+        <caption>
+          <title>Additional file 2</title>
+          <p><bold>The movie shows the end-user FS001 performing the drinking task using the MUNDUS system.</bold> The following modules are used exoskeleton for weight support; environmental sensors for detecting object position RFID to identify the object.</p>
+        </caption>
+        <media xlink:href="1743-0003-10-66-S2.mp4">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S3">
+        <caption>
+          <title>Additional file 3</title>
+          <p><bold>The movie shows the end-user FS001 performing the drinking task using the MUNDUS system.</bold> The following modules are used: passive exoskeleton for weight support; environmental sensors for detecting object position; RFID to identify the object; hand NMES to perform the grasping; sensorised glove to measure the kinematics of the fingers and the stability of the grip. </p>
+        </caption>
+        <media xlink:href="1743-0003-10-66-S3.mp4">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S4">
+        <caption>
+          <title>Additional file 4</title>
+          <p><bold>The movie shows the end-user RF002 performing the drinking task using the MUNDUS system.</bold> The following modules are used: exoskeleton for weight support; environmental sensors for detecting object position; RFID to identify the object. </p>
+        </caption>
+        <media xlink:href="1743-0003-10-66-S4.mp4">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S5">
+        <caption>
+          <title>Additional file 5</title>
+          <p><bold>The movie shows the end-user RF002 performing the reaching task toward the shoulder using the MUNDUS system.</bold> The following modules are used: exoskeleton for weight support; environmental sensors for detecting object position; RFID to identify the object.</p>
+        </caption>
+        <media xlink:href="1743-0003-10-66-S5.mp4">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S6">
+        <caption>
+          <title>Additional file 6</title>
+          <p><bold>The movie shows the end-user ND004 performing the drinking task using the MUNDUS system.</bold> The hand was supported by the operator during the task. The following modules are used: exoskeleton for weight support; environmental sensors for detecting object position; RFID to identify the object; arm NMES for performing the reaching movements (feedback controller); eye tracking for intention detection and triggering of the sub-actions. </p>
+        </caption>
+        <media xlink:href="1743-0003-10-66-S6.mp4">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S7">
+        <caption>
+          <title>Additional file 7</title>
+          <p><bold>The movie shows the end-user ND004 testing the HAND NMES as a stand alone module.</bold> The following modules are used: hand NMES to perform the grasping; sensorised glove to measure the kinematics of the fingers and the stability of the grip. </p>
+        </caption>
+        <media xlink:href="1743-0003-10-66-S7.mp4">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S8">
+        <caption>
+          <title>Additional file 8</title>
+          <p><bold>The movie shows the end-user GD007 performing the drinking task using the MUNDUS system.</bold> The following modules are used: exoskeleton for weight support; arm NMES to support the reaching task (EMG based NMES controller); hand NMES to perform the grasping; sensorised glove to measure the kinematics of the fingers and the stability of the grip; USB button for intention detection and triggering of the sub-actions. </p>
+        </caption>
+        <media xlink:href="1743-0003-10-66-S8.mp4">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S9">
+        <caption>
+          <title>Additional file 9</title>
+          <p><bold>The movie shows the end-user GC008 testing the robotic hand orthosis as a stand-alone module.</bold> The following modules are used: the robotic hand orthosis to provide hand grasping and releasing functions. </p>
+        </caption>
+        <media xlink:href="1743-0003-10-66-S9.mp4">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S10">
+        <caption>
+          <title>Additional file 10</title>
+          <p><bold>The movie shows the end-user GC008 performing the reaching the button task using the MUNDUS system.</bold> The following modules are used: exoskeleton for weight support; environmental sensors for detecting object position; arm NMES to perform the reaching task (feedback controller); brain computer interface for intention detection and triggering of the sub-actions. </p>
+        </caption>
+        <media xlink:href="1743-0003-10-66-S10.mp4">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S11">
+        <caption>
+          <title>Additional file 11</title>
+          <p><bold>The movie shows the end-user GC008 performing the reaching the shoulder task using the MUNDUS system.</bold> The following modules are used: exoskeleton for weight support; environmental sensors for detecting object position; arm NMES to perform the reaching task (feedback controller); brain computer interface for intention detection and triggering of the sub-actions. </p>
+        </caption>
+        <media xlink:href="1743-0003-10-66-S11.mp4">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgements</title>
+      <p>The work is supported by the EU STREP MUNDUS grant ICT-2009.7.2 &#x2013; Accessible and Assistive ICT GA 248326. We would like to acknowledge Axelgaard Manufacturing Ltd for donating us the stimulation electrodes and all the subjects who agreed to participate to the study.</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Krantz</surname>
+            <given-names>O</given-names>
+          </name>
+          <article-title>Assistive devices utilisation in activities of everyday life&#x2013;a proposed framework of understanding a user perspective</article-title>
+          <source>Disabil Rehabil Assist Technol</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>189</fpage>
+          <lpage>198</lpage>
+          <pub-id pub-id-type="doi">10.3109/17483107.2011.618212</pub-id>
+          <pub-id pub-id-type="pmid">22375736</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cincotti</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Mattia</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Aloise</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Bufalari</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Schalk</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Oriolo</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Cherubini</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Marciani</surname>
+            <given-names>MG</given-names>
+          </name>
+          <name>
+            <surname>Babiloni</surname>
+            <given-names>F</given-names>
+          </name>
+          <article-title>Non-invasive brain-computer interface system: towards its application as assistive technology</article-title>
+          <source>Brain Res Bull</source>
+          <year>2008</year>
+          <volume>75</volume>
+          <fpage>796</fpage>
+          <lpage>803</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.brainresbull.2008.01.007</pub-id>
+          <pub-id pub-id-type="pmid">18394526</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Brose</surname>
+            <given-names>SW</given-names>
+          </name>
+          <name>
+            <surname>Weber</surname>
+            <given-names>DJ</given-names>
+          </name>
+          <name>
+            <surname>Salatin</surname>
+            <given-names>BA</given-names>
+          </name>
+          <name>
+            <surname>Grindle</surname>
+            <given-names>GG</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Vazquez</surname>
+            <given-names>JJ</given-names>
+          </name>
+          <name>
+            <surname>Cooper</surname>
+            <given-names>RA</given-names>
+          </name>
+          <article-title>The role of assistive robotics in the lives of persons with disability</article-title>
+          <source>Am J Phys Med Rehabil</source>
+          <year>2010</year>
+          <volume>89</volume>
+          <fpage>509</fpage>
+          <lpage>521</lpage>
+          <pub-id pub-id-type="doi">10.1097/PHM.0b013e3181cf569b</pub-id>
+          <pub-id pub-id-type="pmid">20134305</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rahman</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Sample</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Jayakumar</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>King</surname>
+            <given-names>MM</given-names>
+          </name>
+          <name>
+            <surname>Wee</surname>
+            <given-names>JY</given-names>
+          </name>
+          <name>
+            <surname>Seliktar</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Alexander</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Scavina</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Clark</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Passive exoskeletons for assisting limb movement</article-title>
+          <source>J Rehabil Res Dev</source>
+          <year>2006</year>
+          <volume>43</volume>
+          <fpage>583</fpage>
+          <lpage>590</lpage>
+          <pub-id pub-id-type="doi">10.1682/JRRD.2005.04.0070</pub-id>
+          <pub-id pub-id-type="pmid">17123200</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Herder</surname>
+            <given-names>JL</given-names>
+          </name>
+          <name>
+            <surname>Vrijlandt</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Antonides</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Cloosterman</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Mastenbroek</surname>
+            <given-names>PL</given-names>
+          </name>
+          <article-title>Principle and design of a mobile arm support for people with muscular weakness</article-title>
+          <source>J Rehabil Res Dev</source>
+          <year>2006</year>
+          <volume>43</volume>
+          <fpage>591</fpage>
+          <lpage>604</lpage>
+          <pub-id pub-id-type="doi">10.1682/JRRD.2006.05.0044</pub-id>
+          <pub-id pub-id-type="pmid">17123201</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Nef</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Mihelj</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Riener</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>ARMin: a robot for patient-cooperative arm therapy</article-title>
+          <source>Med Biol Eng Comput</source>
+          <year>2007</year>
+          <volume>45</volume>
+          <fpage>887</fpage>
+          <lpage>900</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11517-007-0226-6</pub-id>
+          <pub-id pub-id-type="pmid">17674069</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cavallaro</surname>
+            <given-names>EE</given-names>
+          </name>
+          <name>
+            <surname>Rosen</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Perry</surname>
+            <given-names>JC</given-names>
+          </name>
+          <name>
+            <surname>Burns</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Real-time myoprocessors for a neural controlled powered exoskeleton arm</article-title>
+          <source>IEEE Trans Biomed Eng</source>
+          <year>2006</year>
+          <volume>53</volume>
+          <fpage>2387</fpage>
+          <lpage>2396</lpage>
+          <pub-id pub-id-type="doi">10.1109/TBME.2006.880883</pub-id>
+          <pub-id pub-id-type="pmid">17073345</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Driessen</surname>
+            <given-names>BJ</given-names>
+          </name>
+          <name>
+            <surname>Evers</surname>
+            <given-names>HG</given-names>
+          </name>
+          <name>
+            <surname>van Woerden</surname>
+            <given-names>JA</given-names>
+          </name>
+          <article-title>MANUS&#x2013;a wheelchair-mounted rehabilitation robot</article-title>
+          <source>Proc Inst Mech Eng H</source>
+          <year>2001</year>
+          <volume>215</volume>
+          <fpage>285</fpage>
+          <lpage>290</lpage>
+          <pub-id pub-id-type="pmid">11436271</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Bien</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Kim</surname>
+            <given-names>D-J</given-names>
+          </name>
+          <name>
+            <surname>Chung</surname>
+            <given-names>M-J</given-names>
+          </name>
+          <name>
+            <surname>Kwon</surname>
+            <given-names>D-S</given-names>
+          </name>
+          <name>
+            <surname>Chang</surname>
+            <given-names>P-H</given-names>
+          </name>
+          <article-title>Development of a wheelchair-based rehabilitation robotic system (KARES II) with various human-robot interaction interfaces for the disabled</article-title>
+          <source>2003 IEEE/ASME International Conference on Advanced Intelligent Mechatronics, 2003. AIM 2003. Proceedings</source>
+          <year>2003</year>
+          <edition>2</edition>
+          <fpage>902</fpage>
+          <lpage>907</lpage>
+          <comment>vol.2</comment>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Schill</surname>
+            <given-names>O</given-names>
+          </name>
+          <name>
+            <surname>Wiegand</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Schmitz</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Matthies</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Eck</surname>
+            <given-names>U</given-names>
+          </name>
+          <name>
+            <surname>Pylatiuk</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Reischl</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Schulz</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Rupp</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>OrthoJacket: an active FES-hybrid orthosis for the paralysed upper extremity</article-title>
+          <source>Biomed Tech (Berl)</source>
+          <year>2011</year>
+          <volume>56</volume>
+          <fpage>35</fpage>
+          <lpage>44</lpage>
+          <pub-id pub-id-type="pmid">21210758</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Riener</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>L&#xFC;nenburger</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Jezernik</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Anderschitz</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Colombo</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Dietz</surname>
+            <given-names>V</given-names>
+          </name>
+          <article-title>Patient-cooperative strategies for robot-aided treadmill training: first experimental results</article-title>
+          <source>IEEE Trans Neural Syst Rehabil Eng</source>
+          <year>2005</year>
+          <volume>13</volume>
+          <fpage>380</fpage>
+          <lpage>394</lpage>
+          <pub-id pub-id-type="doi">10.1109/TNSRE.2005.848628</pub-id>
+          <pub-id pub-id-type="pmid">16200761</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ambrosini</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Ferrante</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Pedrocchi</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Ferrigno</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Guanziroli</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Molteni</surname>
+            <given-names>F</given-names>
+          </name>
+          <article-title>A novel biofeedback cycling training to improve gait symmetry in stroke patients: a case series study</article-title>
+          <source>IEEE Int Conf Rehabil Robot</source>
+          <year>2011</year>
+          <volume>2011</volume>
+          <fpage>5975495</fpage>
+          <pub-id pub-id-type="pmid">22275692</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ferrante</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Ambrosini</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Ravelli</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Guanziroli</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Molteni</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Ferrigno</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Pedrocchi</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>A biofeedback cycling training to improve locomotion: a case series study based on gait pattern classification of 153 chronic stroke patients</article-title>
+          <source>J Neuroeng Rehabil</source>
+          <year>2011</year>
+          <volume>8</volume>
+          <fpage>47</fpage>
+          <pub-id pub-id-type="doi">10.1186/1743-0003-8-47</pub-id>
+          <pub-id pub-id-type="pmid">21861930</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Comolli</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Ferrante</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Pedrocchi</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Bocciolone</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Ferrigno</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Molteni</surname>
+            <given-names>F</given-names>
+          </name>
+          <article-title>Metrological characterization of a cycle-ergometer to optimize the cycling induced by functional electrical stimulation on patients with stroke</article-title>
+          <source>Med Eng Phys</source>
+          <year>2010</year>
+          <volume>32</volume>
+          <fpage>339</fpage>
+          <lpage>348</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.medengphy.2010.01.005</pub-id>
+          <pub-id pub-id-type="pmid">20171923</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Sinkjaer</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Haugland</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Inmann</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Hansen</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Nielsen</surname>
+            <given-names>KD</given-names>
+          </name>
+          <article-title>Biopotentials as command and feedback signals in functional electrical stimulation systems</article-title>
+          <source>Med Eng Phys</source>
+          <year>2003</year>
+          <volume>25</volume>
+          <fpage>29</fpage>
+          <lpage>40</lpage>
+          <pub-id pub-id-type="doi">10.1016/S1350-4533(02)00178-9</pub-id>
+          <pub-id pub-id-type="pmid">12485784</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Liu</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Sun</surname>
+            <given-names>YL</given-names>
+          </name>
+          <name>
+            <surname>Huang</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Trust sensor interface for improving reliability of EMG-based user intent recognition</article-title>
+          <source>Conf Proc IEEE Eng Med Biol Soc</source>
+          <year>2011</year>
+          <volume>2011</volume>
+          <fpage>7516</fpage>
+          <lpage>7520</lpage>
+          <pub-id pub-id-type="pmid">22256077</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mele</surname>
+            <given-names>ML</given-names>
+          </name>
+          <name>
+            <surname>Federici</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>A psychotechnological review on eye-tracking systems: towards user experience</article-title>
+          <source>Disabil Rehabil Assist Technol</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>261</fpage>
+          <lpage>281</lpage>
+          <pub-id pub-id-type="doi">10.3109/17483107.2011.635326</pub-id>
+          <pub-id pub-id-type="pmid">22117604</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Niazi</surname>
+            <given-names>IK</given-names>
+          </name>
+          <name>
+            <surname>Jiang</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Tiberghien</surname>
+            <given-names>O</given-names>
+          </name>
+          <name>
+            <surname>Nielsen</surname>
+            <given-names>JF</given-names>
+          </name>
+          <name>
+            <surname>Dremstrup</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Farina</surname>
+            <given-names>D</given-names>
+          </name>
+          <article-title>Detection of movement intention from single-trial movement-related cortical potentials</article-title>
+          <source>J Neural Eng</source>
+          <year>2011</year>
+          <volume>8</volume>
+          <fpage>066009</fpage>
+          <pub-id pub-id-type="doi">10.1088/1741-2560/8/6/066009</pub-id>
+          <pub-id pub-id-type="pmid">22027549</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lee</surname>
+            <given-names>EC</given-names>
+          </name>
+          <name>
+            <surname>Woo</surname>
+            <given-names>JC</given-names>
+          </name>
+          <name>
+            <surname>Kim</surname>
+            <given-names>JH</given-names>
+          </name>
+          <name>
+            <surname>Whang</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Park</surname>
+            <given-names>KR</given-names>
+          </name>
+          <article-title>A brain-computer interface method combined with eye tracking for 3D interaction</article-title>
+          <source>J Neurosci Methods</source>
+          <year>2010</year>
+          <volume>190</volume>
+          <fpage>289</fpage>
+          <lpage>298</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jneumeth.2010.05.008</pub-id>
+          <pub-id pub-id-type="pmid">20580646</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Janssen</surname>
+            <given-names>TWJ</given-names>
+          </name>
+          <name>
+            <surname>Glaser</surname>
+            <given-names>RM</given-names>
+          </name>
+          <name>
+            <surname>Shuster</surname>
+            <given-names>DB</given-names>
+          </name>
+          <article-title>Clinical efficacy of electrical stimulation exercise training: effects on health, fitness, and function</article-title>
+          <source>Topics in Spinal Cord Injury Rehabilitation</source>
+          <year>1998</year>
+          <volume>3</volume>
+          <fpage>33</fpage>
+          <lpage>49</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Sheffler</surname>
+            <given-names>LR</given-names>
+          </name>
+          <name>
+            <surname>Chae</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Neuromuscular electrical stimulation in neurorehabilitation</article-title>
+          <source>Muscle Nerve</source>
+          <year>2007</year>
+          <volume>35</volume>
+          <fpage>562</fpage>
+          <lpage>590</lpage>
+          <pub-id pub-id-type="doi">10.1002/mus.20758</pub-id>
+          <pub-id pub-id-type="pmid">17299744</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ferrante</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Pedrocchi</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Ferrigno</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Molteni</surname>
+            <given-names>F</given-names>
+          </name>
+          <article-title>Cycling induced by functional electrical stimulation improves the muscular strength and the motor control of individuals with post-acute stroke. Europa Medicophysica-SIMFER 2007 Award Winner</article-title>
+          <source>Eur J Phys Rehabil Med</source>
+          <year>2008</year>
+          <volume>44</volume>
+          <issue>Ferrante S, Pedrocchi A, Ferrigno G, Molteni F</issue>
+          <fpage>159</fpage>
+          <lpage>167</lpage>
+          <pub-id pub-id-type="pmid">18418336</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ambrosini</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Ferrante</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Ferrigno</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Molteni</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Pedrocchi</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Cycling induced by electrical stimulation improves muscle activation and symmetry during pedaling in hemiparetic patients</article-title>
+          <source>IEEE Trans Neural Syst Rehabil Eng</source>
+          <year>2012</year>
+          <volume>20</volume>
+          <fpage>320</fpage>
+          <lpage>330</lpage>
+          <pub-id pub-id-type="pmid">22514205</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ambrosini</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Ferrante</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Pedrocchi</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Ferrigno</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Molteni</surname>
+            <given-names>F</given-names>
+          </name>
+          <article-title>Cycling induced by electrical stimulation improves motor recovery in postacute hemiparetic patients: a randomized controlled trial</article-title>
+          <source>Stroke</source>
+          <year>2011</year>
+          <volume>42</volume>
+          <fpage>1068</fpage>
+          <lpage>1073</lpage>
+          <pub-id pub-id-type="doi">10.1161/STROKEAHA.110.599068</pub-id>
+          <pub-id pub-id-type="pmid">21372309</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ambrosini</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Ferrante</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Schauer</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Ferrigno</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Molteni</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Pedrocchi</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Design of a symmetry controller for cycling induced by electrical stimulation: preliminary results on post-acute stroke patients</article-title>
+          <source>Artif Organs</source>
+          <year>2010</year>
+          <volume>34</volume>
+          <fpage>663</fpage>
+          <lpage>667</lpage>
+          <pub-id pub-id-type="pmid">20528850</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ambrosini</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Ferrante</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Tibiletti</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Schauer</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Klauer</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Ferrigno</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Pedrocchi</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>An EMG-controlled neuroprosthesis for daily upper limb support: a preliminary study</article-title>
+          <source>Conf Proc IEEE Eng Med Biol Soc</source>
+          <year>2011</year>
+          <volume>2011</volume>
+          <fpage>4259</fpage>
+          <lpage>4262</lpage>
+          <pub-id pub-id-type="pmid">22255280</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Sennels</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Biering-S&#xF8;rensen</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Andersen</surname>
+            <given-names>OT</given-names>
+          </name>
+          <name>
+            <surname>Hansen</surname>
+            <given-names>SD</given-names>
+          </name>
+          <article-title>Functional neuromuscular stimulation controlled by surface electromyographic signals produced by volitional activation of the same muscle: adaptive removal of the muscle response from the recorded EMG-signal</article-title>
+          <source>IEEE Trans Rehabil Eng</source>
+          <year>1997</year>
+          <volume>5</volume>
+          <fpage>195</fpage>
+          <lpage>206</lpage>
+          <pub-id pub-id-type="doi">10.1109/86.593293</pub-id>
+          <pub-id pub-id-type="pmid">9184905</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Treder</surname>
+            <given-names>MS</given-names>
+          </name>
+          <name>
+            <surname>Schmidt</surname>
+            <given-names>NM</given-names>
+          </name>
+          <name>
+            <surname>Blankertz</surname>
+            <given-names>B</given-names>
+          </name>
+          <article-title>Gaze-independent brain-computer interfaces based on covert attention and feature attention</article-title>
+          <source>J Neural Eng</source>
+          <year>2011</year>
+          <volume>8</volume>
+          <fpage>066003</fpage>
+          <pub-id pub-id-type="doi">10.1088/1741-2560/8/6/066003</pub-id>
+          <pub-id pub-id-type="pmid">21975312</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Blankertz</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Lemm</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Treder</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Haufe</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>M&#xFC;ller</surname>
+            <given-names>K-R</given-names>
+          </name>
+          <article-title>Single-trial analysis and classification of ERP components&#x2013;a tutorial</article-title>
+          <source>Neuroimage</source>
+          <year>2011</year>
+          <volume>56</volume>
+          <fpage>814</fpage>
+          <lpage>825</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.06.048</pub-id>
+          <pub-id pub-id-type="pmid">20600976</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Dipietro</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Sabatini</surname>
+            <given-names>AM</given-names>
+          </name>
+          <name>
+            <surname>Dario</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Evaluation of an instrumented glove for hand-movement acquisition</article-title>
+          <source>J Rehabil Res Dev</source>
+          <year>2003</year>
+          <volume>40</volume>
+          <fpage>179</fpage>
+          <lpage>189</lpage>
+          <pub-id pub-id-type="pmid">15077642</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ferrante</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Ambrosini</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Ferrigno</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Pedrocchi</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Biomimetic NMES controller for arm movements supported by a passive exoskeleton</article-title>
+          <source>Proceedings of the 34th Annual International Conferenceence of the IEEE Engineering in Medicine and Biology Society IEEE EMBC</source>
+          <year>2012</year>
+          <volume>2012</volume>
+          <fpage>1</fpage>
+          <lpage>4</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Davidson</surname>
+            <given-names>PR</given-names>
+          </name>
+          <name>
+            <surname>Wolpert</surname>
+            <given-names>DM</given-names>
+          </name>
+          <article-title>Motor learning and prediction in a variable environment</article-title>
+          <source>Curr Opin Neurobiol</source>
+          <year>2003</year>
+          <volume>13</volume>
+          <fpage>232</fpage>
+          <lpage>237</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0959-4388(03)00038-2</pub-id>
+          <pub-id pub-id-type="pmid">12744979</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Casellato</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Ferrante</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Gandolla</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Volonterio</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Ferrigno</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Baselli</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Frattini</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Martegani</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Molteni</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Pedrocchi</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Simultaneous measurements of kinematics and fMRI: compatibility assessment and case report on recovery evaluation of one stroke patient</article-title>
+          <source>J Neuroeng Rehabil</source>
+          <year>2010</year>
+          <volume>7</volume>
+          <fpage>49</fpage>
+          <pub-id pub-id-type="doi">10.1186/1743-0003-7-49</pub-id>
+          <pub-id pub-id-type="pmid">20863391</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Gandolla</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Ferrante</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Casellato</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Ferrigno</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Molteni</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Martegani</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Frattini</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Pedrocchi</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>fMRI brain mapping during motion capture and FES induced motor tasks: signal to noise ratio assessment</article-title>
+          <source>Med Eng Phys</source>
+          <year>2011</year>
+          <volume>33</volume>
+          <fpage>1027</fpage>
+          <lpage>1032</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.medengphy.2011.04.005</pub-id>
+          <pub-id pub-id-type="pmid">21550290</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kinoshita</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Francis</surname>
+            <given-names>PR</given-names>
+          </name>
+          <article-title>A comparison of prehension force control in young and elderly individuals</article-title>
+          <source>Eur J Appl Physiol Occup Physiol</source>
+          <year>1996</year>
+          <volume>74</volume>
+          <fpage>450</fpage>
+          <lpage>460</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF02337726</pub-id>
+          <pub-id pub-id-type="pmid">8954293</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Inmann</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Haugland</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Functional evaluation of natural sensory feedback incorporated in a hand grasp neuroprosthesis</article-title>
+          <source>Med Eng Phys</source>
+          <year>2004</year>
+          <volume>26</volume>
+          <fpage>439</fpage>
+          <lpage>447</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.medengphy.2004.03.002</pub-id>
+          <pub-id pub-id-type="pmid">15234680</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kuhn</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Keller</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Micera</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Morari</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Array electrode design for transcutaneous electrical stimulation: a simulation study</article-title>
+          <source>Med Eng Phys</source>
+          <year>2009</year>
+          <volume>31</volume>
+          <fpage>945</fpage>
+          <lpage>951</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.medengphy.2009.05.006</pub-id>
+          <pub-id pub-id-type="pmid">19540788</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kilgore</surname>
+            <given-names>KL</given-names>
+          </name>
+          <name>
+            <surname>Lauer</surname>
+            <given-names>RT</given-names>
+          </name>
+          <name>
+            <surname>Peckham</surname>
+            <given-names>PH</given-names>
+          </name>
+          <article-title>A transducer for the measurement of finger joint moments</article-title>
+          <source>IEEE Trans Rehabil Eng</source>
+          <year>1998</year>
+          <volume>6</volume>
+          <fpage>424</fpage>
+          <lpage>429</lpage>
+          <pub-id pub-id-type="doi">10.1109/86.736157</pub-id>
+          <pub-id pub-id-type="pmid">9865890</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Popovi&#x107;</surname>
+            <given-names>DB</given-names>
+          </name>
+          <name>
+            <surname>Popovi&#x107;</surname>
+            <given-names>MB</given-names>
+          </name>
+          <article-title>Automatic determination of the optimal shape of a surface electrode: selective stimulation</article-title>
+          <source>J Neurosci Methods</source>
+          <year>2009</year>
+          <volume>178</volume>
+          <fpage>174</fpage>
+          <lpage>181</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jneumeth.2008.12.003</pub-id>
+          <pub-id pub-id-type="pmid">19109996</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Biffi</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Menegon</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Piraino</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Pedrocchi</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Fiore</surname>
+            <given-names>GB</given-names>
+          </name>
+          <name>
+            <surname>Rasponi</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Validation of long-term primary neuronal cultures and network activity through the integration of reversibly bonded microbioreactors and MEA substrates</article-title>
+          <source>Biotechnol Bioeng</source>
+          <year>2012</year>
+          <volume>109</volume>
+          <fpage>166</fpage>
+          <lpage>175</lpage>
+          <pub-id pub-id-type="doi">10.1002/bit.23310</pub-id>
+          <pub-id pub-id-type="pmid">21858786</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>
