@@ -74,7 +74,7 @@ from sklearn.externals import joblib
 
 from tqdm import *
 
-from heartCases_help import find_citation_counts
+from heartCases_help import find_citation_counts, build_mesh_to_icd10_dict
 
 #Constants and Options
 						
@@ -228,14 +228,14 @@ def get_data_files(name):
 	'''
 	Retrieves one of the following:
 	the Disease Ontology database (do),
-	the 2017 MeSH term file from NLM (mo),
+	the 2018 MeSH term file from NLM (mo),
 	or the 2017 SPECIALIST Lexicon from NLM (sl).
 	The last of these requires decompression and returns a directory.
 	The others return a filename.
 	'''
 	
 	data_locations = {"do": ("http://ontologies.berkeleybop.org/","doid.obo"),
-					"mo": ("ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/asciimesh/","d2017.bin"),
+					"mo": ("ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/asciimesh/","d2018.bin"),
 					"sl": ("https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lexicon/2017/release/LEX/", "LEXICON")}
 	
 	baseURL, filename = data_locations[name]
@@ -243,122 +243,24 @@ def get_data_files(name):
 	outfilepath = filename
 		
 	print("Downloading from %s" % filepath)
-	response = urllib2.urlopen(filepath)
-	out_file = open(os.path.basename(filename), "w+b")
-	chunk = 1048576
-	pbar = tqdm(unit="Mb")
-	while 1:
-		data = (response.read(chunk)) #Read one Mb at a time
-		out_file.write(data)
-		if not data:
-			pbar.close()
-			print("\n%s file download complete." % filename)
-			out_file.close()
-			break
-		pbar.update(1)
+	try:
+		response = urllib2.urlopen(filepath)
+		out_file = open(os.path.basename(filename), "w+b")
+		chunk = 1048576
+		pbar = tqdm(unit="Mb")
+		while 1:
+			data = (response.read(chunk)) #Read one Mb at a time
+			out_file.write(data)
+			if not data:
+				pbar.close()
+				print("\n%s file download complete." % filename)
+				out_file.close()
+				break
+			pbar.update(1)
+	except urllib2.URLError as e:
+		sys.exit("Encountered an error while downloading %s: %s" % (filename, e))
 	
 	return filename
-	
-def parse_disease_ontology(do_filename):
-	'''
-	Build the MeSH ID to ICD-10 dictionary
-	the relevant IDs are xrefs in no particular order
-	Also, terms differ in the xrefs provided (e.g., a MeSH but no ICD-10)
-	So, re-assemble the entries first and remove those without both refs
-	'''
-	do_ids = {}	#Internal DOIDs are keys, lists of xrefs are values
-				#MeSH ID is always first xref, ICD-10 code is 2nd
-				#List also stores parent DOID, if available, in 3rd value
-				#4th value is name (a string)
-	do_xrefs_icd10 = {} #ICD-10 codes are keys, lists of MeSH IDs are values
-						#This isn't ideal but ICD-10 codes are more specific
-						#and sometimes the same ICD code applies to multiple 
-						#MeSH codes/terms.
-	do_xrefs_terms = {} #ICD-10 codes are keys, lists of *all terms* are values
-						#Used as fallback in xrefs don't match.
-						#As above, one ICD-10 code may match multiple terms,
-						#plus these aren't MeSH terms so they may not match
-	
-	with open(do_filename) as do_file:
-		
-		have_icd10 = 0
-		have_msh = 0
-		have_parent = 0
-		doid = "0"
-		
-		#Skip the header on this file
-		#The header may vary in line count between file versions.
-		for line in do_file:
-			if line[0:6] == "[Term]":
-				break
-			
-		for line in do_file:
-			if line[0:9] == "id: DOID:":
-				doid = ((line.split(":"))[2].strip())
-			elif line[0:14] == "xref: ICD10CM:":
-				icd10 = ((line.split(":"))[2].strip())
-				have_icd10 = 1
-			elif line[0:11] == "xref: MESH:":
-				msh = ((line.split(":"))[2].strip())
-				have_msh = 1
-			elif line[0:6] == "is_a: ": #Store parent so we can add it later
-				splitline = line.split(":")
-				parent = ((splitline[2].split("!"))[0].strip())
-				have_parent = 1
-			elif line[0:6] == "name: ": #Term name. Does not include synonyms
-				name = ((line.split(":"))[1].strip())
-			elif line == "\n":
-				if have_icd10 == 1 and have_msh == 1:
-					if have_parent == 1:
-						do_ids[doid] = [msh, icd10, parent, name]
-					else:
-						do_ids[doid] = [msh, icd10, doid, name]
-				else: #We're missing one or both ID refs. Mark the entry
-				      #so we can come back to it.
-					if have_msh == 1:
-						if have_parent == 1:
-							do_ids[doid] = [msh, "NA", parent, name]
-						else:
-							do_ids[doid] = [msh, "NA", doid, name]
-					if have_icd10 == 1:
-						if have_parent == 1:
-							do_ids[doid] = ["NA", icd10, parent, name]
-						else:
-							do_ids[doid] = ["NA", icd10, doid, name]
-					if have_icd10 == 0 and have_msh == 0:
-						if have_parent == 1:
-							do_ids[doid] = ["NA", "NA", parent, name]
-						else:
-							do_ids[doid] = ["NA", "NA", doid, name]
-				have_icd10 = 0
-				have_msh = 0
-				have_parent = 0
-	
-	#Now check to see if we need to inherit refs from parents
-	for item in do_ids:
-		msh = do_ids[item][0]
-		icd10 = do_ids[item][1]
-		parent = do_ids[item][2]
-		name = do_ids[item][3]
-		
-		if msh == "NA":
-			msh = do_ids[parent][0]
-		if icd10 == "NA":
-			icd10 = do_ids[parent][1]
-			
-		if icd10 in do_xrefs_icd10:
-			if msh not in do_xrefs_icd10[icd10]:
-				do_xrefs_icd10[icd10].append(msh)
-		else:
-			do_xrefs_icd10[icd10] = [msh]
-			
-		if icd10 in do_xrefs_terms:
-			if name not in do_xrefs_terms[icd10]:
-				do_xrefs_terms[icd10].append(name)
-		else:
-			do_xrefs_terms[icd10] = [name]
-	
-	return do_ids, do_xrefs_icd10, do_xrefs_terms
 
 def load_slexicon(sl_filename):
 	'''
@@ -491,38 +393,71 @@ def get_medline_from_pubmed(pmid_list):
 	Given a file containing a list of PMIDs, one per line.
 	Creates a file containing one MEDLINE record for each PMID.
 	Returns name of this file.
+	Uses the History server to account for large PMID lists.
 	'''
 	
 	outfilepath = pmid_list[:-4] + "_MEDLINE.txt"  
-	baseURL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed"
-	idstring = "&id=" # to be followed by PubMed IDs, comma-delimited
-	options = "&retmode=text&rettype=medline"
+	baseURL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
+	epost = "epost.fcgi"
+	efetch = "efetch.fcgi?db=pubmed"
+	options = "&usehistory=y&retmode=text&rettype=medline"
 	
 	pmids = []
+	
+	out_file = open(outfilepath, "w+b")
 	
 	with open(pmid_list) as infile:
 		for line in infile:
 			pmids.append(line.rstrip())
 	
 	print("Retrieving %s records from PubMed." % len(pmids))
-	idstring = idstring + ",".join(pmids)
-	queryURL = baseURL + idstring + options
 	
-	response = urllib2.urlopen(queryURL)
-	out_file = open(outfilepath, "w+b")
-	chunk = 1048576
-	pbar = tqdm(unit="Mb")
-	while 1:
-		data = (response.read(chunk)) #Read one Mb at a time
-		out_file.write(data)
-		if not data:
-			pbar.close()
-			print("\nRecords retrieved - see %s" % outfilepath)
-			out_file.close()
-			break
-		pbar.update(1)
+	try:
+		#POST using epost first, with all PMIDs
+		idstring = ",".join(pmids)
+		queryURL = baseURL + epost
+		args = urllib.urlencode({"db":"pubmed","id":idstring})
+		response = urllib2.urlopen(queryURL, args)
 		
-	return outfilepath
+		response_text = (response.read()).splitlines()
+		
+		webenv_value = (response_text[3].strip())[8:-9]
+		webenv = "&WebEnv=" + webenv_value
+		querykey_value = (response_text[2].strip())[10:-11]
+		querykey = "&query_key=" + querykey_value
+		
+		batch_size = 1000 #This can, in theory, be up to 100,000
+								#before batches should be iterated through
+								#by increasing the retstart value.
+		i = 0
+		
+		#Now retrieve entries
+		pbar = tqdm(unit="Mb")
+		while i <= len(pmids):
+			retstart = "&retstart=" + str(i)
+			retmax = "&retmax=" + str(batch_size)
+			queryURL = baseURL + efetch + querykey + webenv \
+						+ retstart + retmax + options
+			response = urllib2.urlopen(queryURL)
+			
+			out_file = open(outfilepath, "a")
+			chunk = 1048576
+			while 1:
+				data = (response.read(chunk)) #Read one Mb at a time
+				out_file.write(data)
+				if not data:
+					break
+				pbar.update(1)
+			i = i + batch_size
+		pbar.close()
+		out_file.close()
+		
+		print("\nRetrieved PubMed entries and wrote to %s" % outfilepath)
+		
+		return outfilepath
+		
+	except urllib2.HTTPError as e:
+		print("\nCouldn't complete PubMed entry retrieval: %s" % e)
 	
 def get_mesh_terms(terms_list):
 	'''
@@ -1000,6 +935,10 @@ def plot_those_counts(counts, all_matches, outfilename, ptitle):
 	'''
 	all_plots = []
 	
+	#Define palette 
+	colorset = ['#8D72D8','#D6B559','#FA540A','#2599E9','#7B9FB3',
+				'#F489B3','#F94730','#D9EDBF','#FBBD11','#B094B0']
+	
 	#Plot simple counts first
 	height = (len(counts)*100) + 200
 	textplot = figure(plot_width=700, plot_height=height, 
@@ -1034,7 +973,11 @@ def plot_those_counts(counts, all_matches, outfilename, ptitle):
 		catvalues = [] #Y axis
 		counts = [] #X axis
 		
-		randcol = ('#%06X' % random.randint(0,256**3-1)) #A random plot color
+		#randcol = ('#%06X' % random.randint(0,256**3-1)) #A random plot color
+		
+		choicecol = random.choice(colorset) #Choose a color from the predefined set
+		randcol = choicecol
+		colorset.remove(choicecol)
 	
 		#Truncate to top 50 entries
 		height = 600
@@ -1186,7 +1129,12 @@ def parse_args():
 						"NER labeling on any documents. Can save time.")
 	parser.add_argument('--pmids', help="name of a text file containing "
 						"a list of PubMed IDs, one per line, to retrieve "
-						"MEDLINE records for")
+						"MEDLINE records for. Note that lists of several "
+						"thousand PMIDs or more may fail with an error.")
+	parser.add_argument('--print_query', help="if TRUE, output all "
+						"query MeSH terms to command line. Note "
+						"that this may include several thousand "
+						"terms.")
 	parser.add_argument('--recordlimit', help="The maximum number of "
 						"records to search.")
 	parser.add_argument('--search_topic', help="Select a pre-curated set of "
@@ -1197,6 +1145,8 @@ def parse_args():
 						"a list of MeSH terms, one per line, to search for. "
 						"Will also search titles for terms, unless "
 						"--search_doc_titles is set to FALSE.")
+	parser.add_argument('--this_term', help="a single MeSH term to search for."
+						"The --terms argument takes precedence.")
 	parser.add_argument('--testing', help="if FALSE, do not test classifiers")
 	parser.add_argument('--verbose', help="if TRUE, provide verbose output")
 	parser.add_argument('--first_match', help="if TRUE, filter input "
@@ -1207,6 +1157,7 @@ def parse_args():
 	parser.add_argument('--random_records', help="if TRUE, choose "
 						"training records at random until hitting "
 						"value specified by --recordlimit argument.")
+
 	
 	try:
 		args = parser.parse_args()
@@ -1343,10 +1294,10 @@ def main():
 		if args.first_match == "TRUE":
 			first_match_only = True
 			
-	search_title = True
+	search_doc_titles = True
 	if args.search_doc_titles:
 		if args.search_doc_titles == "FALSE":
-			search_title = False
+			search_doc_titles = False
 	
 	#If True, choose training records at random until hitting
 	#record_count_cutoff value
@@ -1354,6 +1305,13 @@ def main():
 	if args.random_records:
 		if args.random_records == "TRUE":
 			random_record_list = True
+	
+	#Argument tells us if MeSH terms in use should be printed
+	#If True, print all MeSH terms + subheading terms to be used as query
+	print_query_terms = False
+	if args.print_query:
+		if args.print_query == "TRUE":
+			print_query_terms = True	
 	
 	#Check if PMID list was provided.
 	#If so, download records for all of them.
@@ -1386,11 +1344,11 @@ def main():
 		do_filename = disease_ofile_list[0]
 		
 	#Get the MeSH file if it isn't present
-	mesh_ofile_list = glob.glob('d2017.*')
+	mesh_ofile_list = glob.glob('d2018.*')
 	if len(mesh_ofile_list) >1:
 		print("Found multiple possible MeSH term files. "
 				"Using the preferred one.")
-		mo_filename = "d2017.bin"
+		mo_filename = "d2018.bin"
 	elif len(mesh_ofile_list) == 0 :
 		print("Did not find MeSH term file. Downloading: ")
 		mo_filename = get_data_files("mo")
@@ -1433,8 +1391,8 @@ def main():
 			"across %s primary subheadings." % \
 			(unique_term_count, synonym_count, len(mo_cats)))
 	
-	#Check if custom MeSH search term list was provided.
-	#If so, just search for these
+	#Check if custom MeSH search term or list was provided.
+	#If so, just search using input
 	#Otherwise, just use CVD-specific MeSH terms produced above
 	#to filter for on-topic documents.
 	if args.terms:
@@ -1444,16 +1402,26 @@ def main():
 		custom_mesh_terms = get_mesh_terms(terms_file)
 		have_custom_terms = True
 		print("File contains %s terms." % len(custom_mesh_terms))
+	elif args.this_term:
+		clean_term = str(args.this_term).lower()
+		print("Using this MeSH term to search: %s" % clean_term)
+		custom_mesh_terms = [clean_term]
+		have_custom_terms = True
 	else:
 		print("Searching documents using all topic-related terms.")
 		print("List includes %s topic-relevant terms + synonyms." % \
 			(len(mesh_term_list)))
 		have_custom_terms = False
-		
-	print("Building MeSH ID to ICD-10 dictionary using Disease Ontology.")
-	#Build the MeSH to ICD-10 dictionary
+	if print_query_terms:
+		print("Full query term list follows:\n")
+		for term in mesh_term_list:
+			print(term)
+	
+	#Build the MeSH to ICD-10-CM dictionary
+	print("Building MeSH ID to ICD-10 mappings.")
+	icd10_map_files = [do_filename]
 	do_ids, do_xrefs_icd10, do_xrefs_terms = \
-		parse_disease_ontology(do_filename)
+		build_mesh_to_icd10_dict(icd10_map_files)
 		
 	#Load the SPECIALIST lexicon if needed
 	#Not currently in use, however.
@@ -1569,6 +1537,8 @@ def main():
 			
 			while record_count < record_count_cutoff and fileindex < filereccount:
 				
+				missing_code_terms = []
+				
 				for record in records:
 					
 					#If searching randomly, skip some records
@@ -1583,7 +1553,12 @@ def main():
 					have_abst = 0
 					
 					#Get the Pubmed ID
-					pmid = record['PMID']
+					#There is a chance it won't have one if the entry
+					#isn't available. 
+					try:
+						pmid = record['PMID']
+					except KeyError:
+						print(record)
 					all_pmids.append(pmid)
 					
 					#If this PMID doesn't pass the filter (if any filters)
@@ -1617,7 +1592,7 @@ def main():
 					else:
 						search_term_list = mesh_term_list
 					
-					if search_title:
+					if search_doc_titles:
 						for word in search_term_list:
 							if word in split_title:
 								found = 1
@@ -1644,14 +1619,24 @@ def main():
 					these_clean_other_terms = []
 					these_mesh_codes = []
 					these_icd10s = []
+					
 					for term in these_mesh_terms:
 						clean_term = term.replace("*","")
 						clean_term2 = (clean_term.split("/"))[0]
 						clean_term3 = (clean_term2.lower())
 						these_clean_mesh_terms.append(clean_term3)
 						
-						these_mesh_codes.append(mo_ids[clean_term3])
-					
+						try: 
+							#Some terms may be missing from MeSH if
+							#they've been changed between versions.
+							#These should still be rare,
+							#so they are ignored for now
+							#and the user is notified.
+							these_mesh_codes.append(mo_ids[clean_term3])
+						except KeyError:
+							if clean_term2 not in missing_code_terms:
+								missing_code_terms.append(clean_term2)
+										
 					for ot in these_other_terms:
 						clean_ot = (ot.lower())
 						these_clean_other_terms.append(clean_ot)
@@ -1684,7 +1669,10 @@ def main():
 							matched_journals[jtitle] = matched_journals[jtitle] +1
 							
 						#Count the publication year
-						pubdate = record['EDAT']
+						try:
+							pubdate = record['EDAT']
+						except KeyError: #If the EDAT field isn't available
+							pubdate = record['DP']
 						pubyear = pubdate[:4]
 						if pubyear not in matched_years:
 							matched_years[pubyear] = 1
@@ -1782,6 +1770,8 @@ def main():
 						break
 	
 	pbar.close()
+	
+	print("Can't find code for MeSH term(s): %s" % clean_term2)
 	
 	print("Done loading input file.")
 	
@@ -1907,7 +1897,14 @@ def main():
 			clean_term2 = (clean_term.split("/"))[0]
 			clean_term3 = (clean_term2.lower())
 			these_clean_mesh_terms.append(clean_term3)
-			these_mesh_codes.append(mo_ids[clean_term3])
+			try:
+				#Account for terms potentially missing codes,
+				#usually due to MeSH version differences.
+				#These are mostly handled when loading input
+				#so those codes are ignored here
+				these_mesh_codes.append(mo_ids[clean_term3])
+			except KeyError:
+				continue
 		
 		these_clean_mesh_terms = set(these_clean_mesh_terms)
 		
@@ -2152,7 +2149,7 @@ def main():
 					
 		os.chdir("..")
 	
-	if record_count > 0: #We can provide output
+	if record_count > 0 and match_record_count > 0: #We can provide output
 		
 		output_file_dict = {outfilename: "full matching records with MEDLINE headings",
 						viz_outfilename: "plots of metadata for matching records"}

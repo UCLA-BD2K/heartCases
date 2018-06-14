@@ -1,9 +1,23 @@
 # heartCases
-A medical language processing system for case reports involving cardiovascular disease.
+
+<img src="https://github.com/caufieldjh/heartCases/blob/master/heartcases_icon_1.png" alt="heartCases logo" width="100">
+A medical language processing system for case reports. Though primarily intended for case reports involving cardiovascular disease, the system works with a variety of medical subjects.
 
 (Work in progress.)
 
-This system includes several different modules.
+This system includes several different modules. Presently, heartCases is capable of:
+* Counting documents within a set of MEDLINE-format entries matching a given set of MeSH terms, along with their synonyms, whether they are in the entry's given MeSH terms or title
+* Filtering documents based on their citation count
+* Performing basic named entity recognition within document abstracts, using MeSH terms as entities
+* Building a classifier to expand the set of MeSH terms appropriately applied to each document
+
+Future functionality will include:
+* Additional term sources for entity labeling and document indexing (e.g. Wikidata)
+* Concept-level annotation based on document text in order (e.g. "patient had symptom" vs "patient did not report symptom" are distinct in meaning but not distinguished by the MeSH term for "symptom")
+* Deep learning approaches for entity and concept recognition within case reports
+* Quantificaiton and analysis of associations between multiple terms across document sets (e.g. likelihood of "heart attack" in documents involving "hypercholesterolemia", vs. all documents)
+* A system for computationally generating new case reports as part of a model corpus, tunable for different distributions of symptoms, diseases, and other clinical narrative features.
+* A system for translating medical language used in case reports to a higher-level representation requiring less technical knowledge (akin to that employed by patient-facing EHR system output, though assuming less structure within the input text).
 
 ## heartCases_read.py
 
@@ -83,15 +97,29 @@ Citation counts, if requested using the argument `--citation_counts TRUE`, are p
 Work in progress.
 
 
+## Helper Modules
 
-# caseReportClassification
+The following modules assist with additional case report filtering and labeling tasks.
+
+### heartCases_help.py
+
+This provides common functions for interfacing with the NCBI eutils, specifically for downloading records through PubMed and retrieving citation counts from PubMed Central.
+
+### get_mesh_term.py
+
+Given a text file containing a list of MeSH unique IDs, provides the corresponding MeSH terms.
+Requires the MeSH ontology file AND the MeSH Supplementary Records file, both in ASCII format (.bin) to be present in the same directory.
+
+If the use_supplementary_terms option is True, IDs for supplementary terms will be converted to the terms for their corresponding headings, e.g. C537043 corresponds to the Supplementary Concept of "Albinism ocular late onset sensorineural deafness" but maps to the headings "Hearing Loss, Sensorineural" and "Albinism, Ocular".
+
+### caseReportClassification
 A medical language processing system that classifies case reports into single or multiple patient categories using their abstracts and MeSH terms.
 
-## caseReport_classify.py
+#### caseReport_classify.py
 
 This system is intended to classify whether or not a case report is about a single patient or multiple patients.
 
-### Usage
+#### Usage
 Run as:
 `python caseReport_classify.py`
 
@@ -109,14 +137,15 @@ The results will be stored as a tab separated .txt file called `Classification_R
 
 
 
-# labValueExtraction
+### labValueExtraction
 A medical language processing system that parses through full texts of case reports, retrieves the lab values, and finds the entity being measured by each lab value.
 
-## extractLabValue.py
+#### extractLabValue.py
 
 Running this file extracts the lab values of the passed in XML files of case reports and stores the results in `Lab Values.txt`.
 
-### Usage
+
+#### Usage
 ##### IMPORTANT!!! First UNZIP the files in the `word_embedding.syn1neg.zip` and `word_embedding.wv.syn0.zip` from the folder `files_to_be_loaded` and store them in the folder `files_to_be_loaded` as their own indepedent .npy files.
 
 Run as:
