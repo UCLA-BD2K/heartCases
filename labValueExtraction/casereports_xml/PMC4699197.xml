@@ -1,0 +1,565 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:ali="http://www.niso.org/schemas/ali/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, CA USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">26699878</article-id>
+      <article-id pub-id-type="pmc">4699197</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0145628</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-15-41944</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Enface Thickness Mapping and Reflectance Imaging of Retinal Layers in Diabetic Retinopathy</article-title>
+        <alt-title alt-title-type="running-head">Enface Thickness Mapping and Imaging in Diabetic Retinopathy</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Francis</surname>
+            <given-names>Andrew W.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wanek</surname>
+            <given-names>Justin</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lim</surname>
+            <given-names>Jennifer I.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Shahidi</surname>
+            <given-names>Mahnaz</given-names>
+          </name>
+          <xref rid="cor001" ref-type="corresp">*</xref>
+          <xref ref-type="aff" rid="aff001"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff001">
+        <addr-line>Department of Ophthalmology and Visual Sciences, University of Illinois at Chicago, Chicago, Illinois, United States of America</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Swaroop</surname>
+            <given-names>Anand</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>National Eye Institute, UNITED STATES</addr-line>
+      </aff>
+      <author-notes>
+        <fn fn-type="conflict" id="coi001">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con" id="contrib001">
+          <p>Conceived and designed the experiments: JW MS. Performed the experiments: AF JW MS. Analyzed the data: AF JW. Contributed reagents/materials/analysis tools: JW JL. Wrote the paper: AF JW MS.</p>
+        </fn>
+        <corresp id="cor001">* E-mail: <email>mahnshah@uic.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>23</day>
+        <month>12</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2015</year>
+      </pub-date>
+      <volume>10</volume>
+      <issue>12</issue>
+      <elocation-id>e0145628</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>26</day>
+          <month>9</month>
+          <year>2015</year>
+        </date>
+        <date date-type="accepted">
+          <day>6</day>
+          <month>12</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2015 Francis et al</copyright-statement>
+        <copyright-year>2015</copyright-year>
+        <copyright-holder>Francis et al</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited</license-p>
+        </license>
+      </permissions>
+      <self-uri content-type="pdf" xlink:type="simple" xlink:href="pone.0145628.pdf"/>
+      <abstract>
+        <sec id="sec001">
+          <title>Purpose</title>
+          <p>To present a method for image segmentation and generation of enface thickness maps and reflectance images of retinal layers in healthy and diabetic retinopathy (DR) subjects.</p>
+        </sec>
+        <sec id="sec002">
+          <title>Methods</title>
+          <p>High density spectral domain optical coherence tomography (SDOCT) images were acquired in 10 healthy and 4 DR subjects. Customized image analysis software identified 5 retinal cell layer interfaces and generated thickness maps and reflectance images of the total retina (TR), inner retina (IR), outer retina (OR), and the inner segment ellipsoid (ISe) band. Thickness maps in DR subjects were compared to those of healthy subjects by generating deviation maps which displayed retinal locations with thickness below, within, and above the normal 95% confidence interval.</p>
+        </sec>
+        <sec id="sec003">
+          <title>Results</title>
+          <p>In healthy subjects, TR and IR thickness maps displayed the foveal depression and increased thickness in the parafoveal region. OR and ISe thickness maps showed increased thickness at the fovea, consistent with normal retinal anatomy. In DR subjects, thickening and thinning in localized regions were demonstrated on TR, IR, OR, and ISe thickness maps, corresponding to retinal edema and atrophy, respectively. TR and OR reflectance images showed reduced reflectivity in regions of increased thickness. Hard exudates appeared as hyper-reflective spots in IR reflectance images and casted shadows on the deeper OR and ISe reflectance images. The ISe reflectance image clearly showed the presence of focal laser scars.</p>
+        </sec>
+        <sec id="sec004">
+          <title>Conclusions</title>
+          <p>Enface thickness mapping and reflectance imaging of retinal layers is a potentially useful method for quantifying the spatial and axial extent of pathologies due to DR.</p>
+        </sec>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work was supported by NIH research grants DK104393 and EY001792, Department of VA, Senior Scientific Investigator (MS) and unrestricted departmental awards from Research to Prevent Blindness. The funders had no role in the design and conduct of the study; collection, management, analysis, and interpretation of the data; preparation, review, or approval of the manuscript; and decision to submit the manuscript for publication.</funding-statement>
+      </funding-group>
+      <counts>
+        <fig-count count="6"/>
+        <table-count count="0"/>
+        <page-count count="15"/>
+      </counts>
+      <custom-meta-group>
+        <custom-meta id="data-availability">
+          <meta-name>Data Availability</meta-name>
+          <meta-value>All relevant data are within the paper.</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+    <notes>
+      <title>Data Availability</title>
+      <p>All relevant data are within the paper.</p>
+    </notes>
+  </front>
+  <body>
+    <sec sec-type="intro" id="sec005">
+      <title>Introduction</title>
+      <p>Spectral domain optical coherence tomography (SDOCT) has become an essential tool in the management of patients with diabetic retinopathy (DR) and has improved clinicians&#x2019; abilities to detect anatomical alterations in the retinal tissue as compared to conventional ophthalmoscopy or fundus photography.[<xref rid="pone.0145628.ref001" ref-type="bibr">1</xref>&#x2013;<xref rid="pone.0145628.ref010" ref-type="bibr">10</xref>] Specifically, SDOCT B-scans allow depth-resolved visualization of pathologies resulting from non-proliferative diabetic retinopathy (NPDR), proliferative diabetic retinopathy (PDR), and diabetic macular edema (DME). These pathologies include diffuse retinal thickening and thinning, cystoid space formation, hard exudates, and tractional effects from abnormal neovascular tissue.[<xref rid="pone.0145628.ref001" ref-type="bibr">1</xref>&#x2013;<xref rid="pone.0145628.ref010" ref-type="bibr">10</xref>]</p>
+      <p>SDOCT imaging visualizes the retinal tissue in axial cross-sections, permitting quantitative assessment of central submacular thickness, which is correlated with visual acuity in clinical treatment studies for DME.[<xref rid="pone.0145628.ref011" ref-type="bibr">11</xref>&#x2013;<xref rid="pone.0145628.ref019" ref-type="bibr">19</xref>] The disadvantages of cross-sectional B-scans are limited visualization of the full spatial extent of irregular or large pathologies at different retinal layers and quantification of correlations between inner and outer retinal layer pathologies.</p>
+      <p>Recently developed image segmentation algorithms permit depth-resolved enface SDOCT imaging for viewing the retinal layers in the coronal plane. These enface SDOCT &#x201C;C-scans&#x201D; allow for quantifiable evaluation of individual retinal layers separated in depth. Several manual and semi-automated techniques have been developed for evaluation of the retinal layers in diabetics with the objective of improving the prognostic capability of SDOCT imaging.[<xref rid="pone.0145628.ref020" ref-type="bibr">20</xref>&#x2013;<xref rid="pone.0145628.ref026" ref-type="bibr">26</xref>]</p>
+      <p>There is considerable evidence that the continuity of individual retinal layers has prognostic significance. Continuity of the inner segment ellipsoid (ISe) layer was found to correlate with visual acuity in several retinal conditions including DR.[<xref rid="pone.0145628.ref027" ref-type="bibr">27</xref>&#x2013;<xref rid="pone.0145628.ref040" ref-type="bibr">40</xref>] Continuity of the ISe is determined by the relative brightness and thickness of this layer and may be affected by macular edema, ischemia or treatments including panretinal photocoagulation (PRP) or focal laser.[<xref rid="pone.0145628.ref041" ref-type="bibr">41</xref>, <xref rid="pone.0145628.ref042" ref-type="bibr">42</xref>]</p>
+      <p>We have previously reported a method for generation of enface images of retinal layers from high-density SDOCT B-scans.[<xref rid="pone.0145628.ref020" ref-type="bibr">20</xref>, <xref rid="pone.0145628.ref043" ref-type="bibr">43</xref>] Several groups have also published studies that apply enface SDOCT techniques for assessment of retinal diseases.[<xref rid="pone.0145628.ref008" ref-type="bibr">8</xref>, <xref rid="pone.0145628.ref038" ref-type="bibr">38</xref>, <xref rid="pone.0145628.ref044" ref-type="bibr">44</xref>&#x2013;<xref rid="pone.0145628.ref055" ref-type="bibr">55</xref>] In the present study, we describe a method for semi-automated segmentation of retinal layers for generation of both enface thickness maps and reflectance images of the total retina, inner retina, outer retina, and the ISe layer in healthy control and DR subjects.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="sec006">
+      <title>Materials and Methods</title>
+      <sec id="sec007">
+        <title>Subjects</title>
+        <p>Subjects were recruited from the ophthalmology clinics at the Illinois Eye and Ear Infirmary (University of Illinois at Chicago, Chicago, IL, USA). The research study was approved by an Institutional Review Board at the University of Illinois at Chicago. Prior to enrollment, the research study was explained to the subjects and written informed consents were obtained from each subject according to the tenets of the Declaration of Helsinki. SDOCT images were acquired in 10 healthy control subjects (age: 55 &#xB1; 8 years) and 4 DR subjects (age: 59 &#xB1; 12 years). The inclusion criterion for control subjects was no clinical history of diabetes or other retinal disease. SDOCT imaging was performed in one eye of each subject. Clinical data were obtained from the charts of DR subjects.</p>
+      </sec>
+      <sec id="sec008">
+        <title>Image Acquisition</title>
+        <p>A high density SDOCT raster volume scan of the macula was obtained using a commercially available instrument. (Spectralis; Heidelberg Engineering, Heidelberg, Germany). The volume scan consisted of 145 raster horizontal B-scans with a depth resolution of 3.9 &#x3BC;m and 768 A-scans per B-scan. The instrument&#x2019;s eye tracking function allowed 9 B-scans to be averaged at each location. The SDOCT raster scan covered a retinal area of 15&#xB0; x 15&#xB0; centered on the fovea with approximately 31 micron spacing between SDOCT B-scans. Scanning laser ophthalmoscope (SLO) images were acquired with the same instrument.</p>
+      </sec>
+      <sec id="sec009">
+        <title>SDOCT Segmentation</title>
+        <p>Semi-automated image segmentation software was developed in MATLAB (Mathworks Inc., Natick, MA, USA) for identification of five interfaces between retinal cell layers in the SDOCT B-scans. Retinal cell layer interfaces were detected using graph theory and dynamic programming, based on a previous described method.[<xref rid="pone.0145628.ref024" ref-type="bibr">24</xref>] Briefly, a graph was created for each SDOCT B-scan with the edge weights of the graph assigned based on the vertical gradients in the image, such that large gradients resulted in small weights. A horizontal path through the graph that minimized the total sum of the weights was found using Dijkstra&#x2019;s algorithm and defined a line separating two retinal cell layers.[<xref rid="pone.0145628.ref024" ref-type="bibr">24</xref>] By assigning weights of the graph according to the sign of the gradient (positive or negative), retinal cell layer interfaces that had bright to dark or dark to bright transitions were identified.</p>
+        <p>As shown in <xref rid="pone.0145628.g001" ref-type="fig">Fig 1</xref>, the retinal interfaces detected were 1) vitreous and internal limiting membrane (ILM), 2) inner nuclear layer (INL) and outer plexiform layer (OPL), 3) outer nuclear layer (ONL) and inner segment ellipsoid (ISe), 4) ISe and retinal pigment epithelium (RPE), and 5) RPE and choroid. To find a unique path for these 5 retinal interfaces, image segmentation was performed in a set order. First, the interface between the vitreous and ILM was identified, since this interface was characterized by the largest dark to bright transition (largest positive vertical gradient) in the image and represented the lowest weighted path of the graph. Second, the interface between the ONL and ISe layers was found after restricting the graph search area to include only image regions below the vitreous/ILM path. Third, the path corresponding to the RPE/choroid interface was determined by restricting the graph search area to include only locations of the image below the ONL/ISe path and by assigning lower graph weights to larger negative gradients (bright to dark transition). Fourth, the INL/OPL cell interface was detected by limiting the graph to include only regions of the image between the vitreous/ILM and ONL/ISe paths. Finally, the ISe/RPE boundary was found by restricting the graph search area to include only image areas between the detected ONL/ISe and RPE/Choroid interface.</p>
+        <fig id="pone.0145628.g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0145628.g001</object-id>
+          <label>Fig 1</label>
+          <caption>
+            <title>An example of a SDOCT B-scan image at the fovea in a healthy subject displaying segmentation of five retinal interfaces comprised of 1) vitreous and internal limiting membrane (ILM), 2) inner nuclear layer (INL) and outer plexiform layer (OPL), 3) outer nuclear layer (ONL) and inner segment ellipsoid (ISe), 4) ISe and retinal pigment epithelium (RPE), and 5) RPE and choroid.</title>
+          </caption>
+          <graphic xlink:href="pone.0145628.g001"/>
+        </fig>
+        <p>After automated segmentation of the retinal interfaces, the operator was able to scroll through all 145 SDOCT B-scans in the volume scan to review the segmentation results and, if necessary, manually correct errors in the detected interfaces. This process was necessary for images obtained in DR subjects due to the presence of irregular layer boundaries and intraretinal fluid. To correct segmentation errors, the operator would first select a segmentation path that required modification and then manually draw a revised line corresponding to the visualized cell layer interface. The search area of the graph was then restricted to include only a small vertical image region around the manually drawn line, and a revised path for the cell layer interface was obtained by determining a new graph cut solution.</p>
+      </sec>
+      <sec id="sec010">
+        <title>Enface Thickness Maps and Reflectance Images</title>
+        <p>Enface thickness maps and reflectance images were generated based on segmentation of the retinal interfaces in the SDOCT B-scans. Total retinal (TR) thickness was calculated as the depth separation between the vitreous/ILM and RPE/choroid interfaces. Inner retinal (IR) thickness was calculated as the depth separation between the vitreous/ILM and INL/OPL interfaces. Outer retina (OR) thickness was calculated as the depth separation between the INL/OPL and RPE/choroid interfaces. ISe thickness was calculated as the depth separation between the ONL/ISe and ISe/RPE interfaces. Enface reflectance images of TR, IR, OR, and ISe were generated based on pixel values averaged vertically within the segmented layers in each SDOCT B-scan to create rows of the corresponding enface images.</p>
+      </sec>
+      <sec id="sec011">
+        <title>Statistical Analysis</title>
+        <p>Thickness, standard deviation (SD), and 95% confidence interval (CI) maps for each segmented layer were generated from data in healthy subjects. Thickness maps obtained in DR subjects were compared to the normal CI maps using deviation maps. The deviation maps were generated by categorizing each pixel as below the lower limit, within the upper and lower limits, or above the upper limit of the normal CI and color coded as blue, green, and red, respectively.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="sec012">
+      <title>Results</title>
+      <sec id="sec013">
+        <title>Control Subjects</title>
+        <p><xref rid="pone.0145628.g002" ref-type="fig">Fig 2</xref> displays a SLO image showing the scanned retinal area, a SDOCT B-scan, enface thickness maps, and reflectance images for the right eye of a control subject. The TR thickness map displayed a central region of decreased thickness corresponding to the foveal depression, surrounded by a ring of increased thickness in the parafoveal region. Similarly, the IR thickness map showed a smooth, gradual decrease in thickness from the parafovea to the fovea as the inner retinal layers disappear. The OR thickness map demonstrated a gradual increase in thickness towards the foveal center due to the longer, more densely packed cones. Similarly, the ISe thickness map showed increased thickness centrally, because of a greater separation between the ellipsoid of the inner segments and the apical RPE at the fovea.[<xref rid="pone.0145628.ref027" ref-type="bibr">27</xref>]</p>
+        <fig id="pone.0145628.g002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0145628.g002</object-id>
+          <label>Fig 2</label>
+          <caption>
+            <p><bold>Top</bold>: SLO image with the corresponding SDOCT B-scan imaged through the fovea in the right eye of a control subject. <bold>Bottom</bold>: Thickness maps and reflectance images of the total retina, inner retina, outer retina, and the inner segment ellipsoid (ISe) layer are displayed. Color bars for thickness maps represent thickness in microns. Thickness maps were consistent with normal retinal anatomy. Outer retina and ISe reflectance images display shadowing of the retinal vasculature.</p>
+          </caption>
+          <graphic xlink:href="pone.0145628.g002"/>
+        </fig>
+        <p>Reflectance images displayed homogenous patterns without significant variations. The normal retinal vasculature including the major retinal arcades are marginally visible within the IR reflectance image, but appeared more prominently in the OR and ISe reflectance images due to shadowing effects. The foveal center appeared darker, relative to the surrounding parafoveal retina in reflectance images, but more prominently in the IR reflectance image due to the absence of inner retinal cell layers.</p>
+      </sec>
+      <sec id="sec014">
+        <title>Diabetic Subjects</title>
+        <sec id="sec015">
+          <title>Case 1: PDR and DME</title>
+          <p>A 42 year old female with a history of PDR and DME presented for follow up evaluation. She had previously received PRP for PDR, focal laser for DME, and injections of anti-vascular endothelial growth factor (anti-VEGF) agents in her left eye. Her vision was 20/25 and stable from previous visits. She had no new visual complaints. Fundus examination was notable for a blunted fovea, focal laser scars, and prominent macular edema.</p>
+          <p><xref rid="pone.0145628.g003" ref-type="fig">Fig 3</xref> displays a SLO image showing the scanned retinal area, a SDOCT B-scan, enface thickness and deviation maps, and reflectance images obtained in the left eye. TR thickness and deviation maps showed foveal and parafoveal regions of retinal thickening. Thickening due to cystoid DME was predominantly located in the OR and to a lesser degree in the IR, as shown in OR thickness and deviation maps as compared to the IR maps. The IR thickness map was notable for a distorted foveal depression that was also depicted in the IR deviation map. The ISe thickness map showed increased thickness centrally, similar to control subjects, accounting for the unaffected visual acuity. The ISe thickness and deviation maps displayed a ring-shaped area of thinning which was consistent with the pattern of focal laser scars seen in the SLO image.</p>
+          <fig id="pone.0145628.g003" orientation="portrait" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0145628.g003</object-id>
+            <label>Fig 3</label>
+            <caption>
+              <p><bold>Top</bold>: SLO image with the corresponding SDOCT B-scan imaged through the fovea in the left eye of a DR subject with a history of PDR and DME (Case 1). The SLO image shows focal laser scars and the SDOCT B-scan displays cystoid DME, hard exudates, and inner segment ellipsoid (ISe) discontinuity (arrow). <bold>Bottom</bold>: Total retina (TR) and outer retinal (OR) thickness and deviation maps display central retinal thickening. The inner retina (IR) thickness map shows a distorted foveal depression and the inner segment ellipsoid (ISe) thickness map shows a ring-shaped area of thinning which is consistent with the pattern of focal laser scars seen in the SLO image. Color bars for thickness maps represent thickness in microns. TR and OR reflectance images show reduced reflectivity in regions of increased thickness. Hard exudates appear as hyper-reflective spots in the IR reflectance image and cast shadows on the deeper OR and ISe reflectance images. The ISe reflectance image clearly shows the presence of focal laser scars.</p>
+            </caption>
+            <graphic xlink:href="pone.0145628.g003"/>
+          </fig>
+          <p>Both the TR and OR reflectance images displayed regions of reduced reflectivity that corresponded to regions of increased retinal thickness. The IR reflectance image showed a region of reduced reflectivity near the distorted foveal depression. Hard exudates were visible in the IR reflectance image as hyper-reflective spots that cast shadows on the deeper OR and ISe reflectance images. Multiple focal laser scars were visible in the ISe reflectance image.</p>
+        </sec>
+        <sec id="sec016">
+          <title>Case 2: PDR and DME</title>
+          <p>A 62 year old female with a history of PDR with DME presented for evaluation. She had previously received focal laser for DME in addition to several anti-VEGF injections in her left eye. Visual acuity was 20/100. Fundus examination was notable for the presence of significant retinal thickening supero-nasal to the fovea, consistent with clinically significant DME.</p>
+          <p><xref rid="pone.0145628.g004" ref-type="fig">Fig 4</xref> displays a SLO image showing the scanned retinal area, a SDOCT B-scan, enface thickness and deviation maps, and reflectance images obtained in the left eye. The SDOCT B-scan demonstrated irregular retinal architecture with a large cystoid macular edema at the fovea and hard exudate formation in parafoveal areas. TR and OR thickness and deviation maps showed substantial thickening in supero-nasal areas. Foveal thickening was present in the TR and IR thickness maps corresponding to cystoid macular edema observed on the SDOCT B-scan through the fovea. The ISe thickness map demonstrated thinning supero-temporal to the fovea in a region heavily affected by focal laser scars. On the OR reflectance image, dark areas located supero-nasal to the fovea corresponded with regions of increased TR and OR thickness. Spots of reflectance inhomogeneity supero-temporal to the fovea on the ISe reflectance image were consistent with focal laser scars and corresponded to a large region of ISe thinning, as visualized on the ISe thickness map.</p>
+          <fig id="pone.0145628.g004" orientation="portrait" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0145628.g004</object-id>
+            <label>Fig 4</label>
+            <caption>
+              <p><bold>Top</bold>: SLO and SDOCT B-scan in a PDR subject with a history of DME in the left eye (Case 2). SDOCT B-scan shows irregular retinal architecture, hard exudates, and cystoid DME at the fovea. <bold>Bottom</bold>: Total retina (TR) and outer retina (OR) thickness and deviation maps reveal substantial regions of retinal thickening. The inner segment ellipsoid (ISe) thickness map shows thinning supero-temporal to the fovea. Color bars for thickness maps represent thickness in microns. The ISe reflectance image displays spots of reflectance inhomogeneity due to laser scars in the same region.</p>
+            </caption>
+            <graphic xlink:href="pone.0145628.g004"/>
+          </fig>
+        </sec>
+        <sec id="sec017">
+          <title>Case 3: PDR, DME and atrophy</title>
+          <p>A 66 year old male with a history of PDR and DME in his left eye presented for follow up evaluation. He had a history of PRP treatment and had undergone focal laser therapy in the left eye for DME 3 months prior to this visit. Visual acuity was 20/40 and he had no new visual complaints.</p>
+          <p><xref rid="pone.0145628.g005" ref-type="fig">Fig 5</xref> displays a SLO image showing the scanned retinal area, a SDOCT B-scan, enface thickness and deviation maps, and reflectance images obtained in the left eye. The SDOCT B-scan showed areas of inner retinal thinning with preservation of the OR and ISe centrally. TR and IR thickness maps demonstrate large regions of retinal thinning indicated by the deviation maps. The OR thickness map demonstrated the overall preservation of normal retinal anatomy, except for local regions of abnormal thinning and thickening, as shown in the OR deviation map. The ISe thickness map shows reduced thickness superiorly and temporally, but normal thickness near the fovea. IR and OR reflectance images were relatively homogenous. Scattered focal hypo-reflective spots due to laser scars were observed superiorly and temporally on the ISe reflectance image, corresponding to localized thinning.</p>
+          <fig id="pone.0145628.g005" orientation="portrait" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0145628.g005</object-id>
+            <label>Fig 5</label>
+            <caption>
+              <p><bold>Top</bold>: SLO and SDOCT B-scan images in a PDR subject with a history of DME and retinal atrophy (Case 3). The SDOCT B-scan shows areas of inner retinal (IR) thinning with preservation of the outer retina (OR) and inner segment ellipsoid (ISe) centrally. <bold>Bottom:</bold> Total retina (TR) and IR thickness and deviation maps showed large regions of retinal thinning. The OR and ISe thickness maps demonstrate preservation of the normal retinal anatomy near the fovea with scattered areas of thinning in the periphery, due to focal laser scars. Color bars for thickness maps represent thickness in microns. OR and ISe reflectance images display scattered focal hypo-reflective spots due to laser scars superiorly and temporally.</p>
+            </caption>
+            <graphic xlink:href="pone.0145628.g005"/>
+          </fig>
+        </sec>
+        <sec id="sec018">
+          <title>Case 4: NPDR and DME</title>
+          <p>A 61 year old male with a history of NPDR and DME in his left eye presented for follow up examination. His visual acuity was 20/20 and he had no new visual complaints. Fundus ophthalmoscopy initially identified an area of increased retinal thickening nasal to the fovea.</p>
+          <p><xref rid="pone.0145628.g006" ref-type="fig">Fig 6</xref> displays a SLO image showing the scanned retinal area, a SDOCT B-scan, enface thickness and deviation maps, and reflectance images obtained in the left eye. On the SDOCT B-scan, cystoid DME and retinal thickening near the fovea was present. TR and OR thickness and deviation maps showed a region of increased retinal thickness. The IR thickness map showed preservation of the foveal depression with nonspecific scattered areas of thinning. The ISe thickness map displayed a central foveal region of increased thickness that corresponded to the normal anatomy.</p>
+          <fig id="pone.0145628.g006" orientation="portrait" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0145628.g006</object-id>
+            <label>Fig 6</label>
+            <caption>
+              <p><bold>Top</bold>: SLO and SDOCT B-scans of the left eye in a NPDR subject with a history of DME (Case 4). On the SDOCT B-scan, there is a temporal region of cystoid DME and hard exudates in the outer retina (OR) resulting in distortion of the foveal depression. The inner segment ellipsoid (ISe) layer appears intact. <bold>Bottom</bold>: Total retina (TR) and OR thickness and deviation maps show thickening at the fovea. The inner retina (IR) thickness and deviation maps show preservation of the normal foveal depression with nonspecific scattered areas of thinning inferiorly. ISe thickness and deviation maps show a central region of increased thickness that corresponds to the normal anatomy. Color bars for thickness maps represent thickness in microns. TR and OR reflectance images show reduced reflectivity in focal regions of increased thickness. The IR reflectance image demonstrates scattered hyper-reflectance spots from hard exudates. The ISe reflectance image shows hypo-reflectance spots that correspond to shadows from hard exudates in the inner retina.</p>
+            </caption>
+            <graphic xlink:href="pone.0145628.g006"/>
+          </fig>
+          <p>TR and OR reflectance images showed a diffuse area of reduced reflectivity in the region of increased thickness. The IR reflectance image demonstrated scattered areas of hyper-reflectance from hard exudates. The ISe reflectance image showed hypo-reflective spots that correspond to shadows from hard exudates in the inner retina.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions" id="sec019">
+      <title>Discussion</title>
+      <p>The current study reports a method for generating enface thickness maps and reflectance images of retinal layers using a commercially available SDOCT instrument. The method established normal retinal anatomical features in TR, OR, IR, and ISe thickness maps and reflectance images, and detected pathologic alterations in selected cases of DR. In subjects with DR, pathologic alterations, including thickening and thinning of TR, IR, OR, and ISe across the macular area, were quantitatively displayed on the enface thickness and deviation maps. Furthermore, reflectance images of TR, IR, OR, and ISe displayed regions of reduced reflectivity that corresponded with areas of increased thickness and disruption of ISe integrity. Hard exudates were consistently observed as hyper-reflective regions on IR reflectance images and hypo-reflective regions on OR and ISe reflectance images.</p>
+      <p>Several previous studies have reported methods for segmentation of different retinal layers in DR.[<xref rid="pone.0145628.ref022" ref-type="bibr">22</xref>&#x2013;<xref rid="pone.0145628.ref026" ref-type="bibr">26</xref>, <xref rid="pone.0145628.ref043" ref-type="bibr">43</xref>, <xref rid="pone.0145628.ref056" ref-type="bibr">56</xref>] Mohammad et al[<xref rid="pone.0145628.ref043" ref-type="bibr">43</xref>] proposed an automated level-set method for co-localization of pathologies in enface images of retinal layers. Huang et al[<xref rid="pone.0145628.ref022" ref-type="bibr">22</xref>] utilized an EdgeSelect method to perform semi-automated segmentation of retinal layers in DR subjects. Chiu et al[<xref rid="pone.0145628.ref023" ref-type="bibr">23</xref>, <xref rid="pone.0145628.ref024" ref-type="bibr">24</xref>, <xref rid="pone.0145628.ref056" ref-type="bibr">56</xref>] developed an automated algorithm to identify eight retinal layer boundaries on SDOCT images in DME subjects. In addition, the commercial Heidelberg Eye Explorer software has recently provided automated layer segmentation for generation of enface thickness maps and reflectance images of retinal layers. However, this software has built-in retinal layer boundaries for thickness mapping that cannot be modified by the user, such as specifying the external limiting membrane as the interface between inner and outer retina. Furthermore, accurate automated segmentation of retinal layers is complicated by the heterogeneous presentation of DR. Boundaries between retinal layers in subjects with distorted retinal architecture from cystoid DME are often poorly detected by computer algorithms, necessitating user interaction. The semi-automated segmentation method presented in the current study was capable of effectively identifying retinal layer boundaries and generating both enface thickness maps and reflectance images. Future studies comparing segmentation of individual retinal layers by different image analysis techniques are warranted.</p>
+      <p>Studies employing segmentation techniques to investigate reflectance changes of individual, depth resolved retinal layers in an enface manner are lacking. Murakami et al[<xref rid="pone.0145628.ref037" ref-type="bibr">37</xref>] investigated the relationship between diabetic cystoid spaces and the characteristics of the photoreceptors beneath the cystoid spaces in DME subjects. They reported that areas beneath the cystoid spaces had greater disruption of the ISe than areas without cystoid spaces. In the current study, enface reflectance images of the ISe layer were generated, providing a more accurate and localized assessment of the ISe integrity. Further studies investigating reflectance variations in different retinal layers in DR subjects are needed.</p>
+      <p>In the current study, DR subjects who maintained good visual acuity had ISe reflectance at the fovea similar to that of control subjects. Although additional subjects are needed to establish a correspondence between enface ISe reflectance images and visual acuity, this finding is in agreement with previous studies that showed ISe layer continuity is correlated with visual acuity. [<xref rid="pone.0145628.ref028" ref-type="bibr">28</xref>, <xref rid="pone.0145628.ref030" ref-type="bibr">30</xref>&#x2013;<xref rid="pone.0145628.ref033" ref-type="bibr">33</xref>, <xref rid="pone.0145628.ref057" ref-type="bibr">57</xref>] Because thickness maps and reflectance images are capable of accurately displaying foveal pathology, any alteration in this region may be clinically relevant and may precede detectable findings on clinical examination. Additionally, restoration of the ISe layer may indicate resolving pathology. Thickness maps and reflectance images can also be overlaid and combined for accurate comparison between clinical visits, allowing for detection of subtle alterations in retinal anatomy.</p>
+      <p>Enface OCT imaging has several practical advantages compared to standard cross-sectional OCT imaging. Enface OCT images generated from a high density raster of OCT B-scans enable detection of subtle retinal pathology that may fall between standard OCT B-scans. Additionally, enface OCT imaging allows succinct visualization of the spatial extent of pathologies in different retinal layers compared to scrolling through individual OCT B-scans. This feature is particularly useful for accurate monitoring of pathological changes over time. Enface OCT imaging may also be an effective method to study changes in choroidal thickness, which have been associated with disease severity in DR, although this was not assessed in the current study. Based on individual OCT B-scans, choroidal thickness was reported to be reduced in eyes with moderate-to-severe DR and DME compared to age-matched controls.[<xref rid="pone.0145628.ref058" ref-type="bibr">58</xref>, <xref rid="pone.0145628.ref059" ref-type="bibr">59</xref>] Additionally, choroidal thickness mapping showed eyes with microaneurysms, hard exudates and DME had a significantly thinner choroid compared to age-matched controls.[<xref rid="pone.0145628.ref060" ref-type="bibr">60</xref>, <xref rid="pone.0145628.ref061" ref-type="bibr">61</xref>] This suggests the pathogenesis of DR may be associated with a choroidal angiopathy, in addition to microvascular changes in the inner retina. Furthermore, OCT angiography is now available for generating enface images of the retinal vasculature. Combined enface assessment of the retinal anatomy and vasculature would provide a comprehensive means for clinical assessment of DR.</p>
+      <p>In summary, the reported method for segmentation of SDOCT B-scan images and generation of enface thickness maps and reflectance images of retinal layers has the advantage of quantifying the spatial and axial extent of DR pathologies. Future studies are necessary to investigate the clinical utility of enface thickness mapping and reflectance imaging in DR and other retinal diseases.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0145628.ref001">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Otani</surname><given-names>T</given-names></name>, <name><surname>Kishi</surname><given-names>S</given-names></name>, <name><surname>Maruyama</surname><given-names>Y</given-names></name>. <article-title>Patterns of diabetic macular edema with optical coherence tomography</article-title>. <source>Am J Ophthalmol</source>. <year>1999</year>;<volume>127</volume>(<issue>6</issue>):<fpage>688</fpage>&#x2013;<lpage>93</lpage>. .<pub-id pub-id-type="pmid">10372879</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref002">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Sim</surname><given-names>DA</given-names></name>, <name><surname>Keane</surname><given-names>PA</given-names></name>, <name><surname>Fung</surname><given-names>S</given-names></name>, <name><surname>Karampelas</surname><given-names>M</given-names></name>, <name><surname>Sadda</surname><given-names>SR</given-names></name>, <name><surname>Fruttiger</surname><given-names>M</given-names></name>, <etal>et al</etal>
+<article-title>Quantitative analysis of diabetic macular ischemia using optical coherence tomography</article-title>. <source>Invest Ophthalmol Vis Sci</source>. <year>2014</year>;<volume>55</volume>(<issue>1</issue>):<fpage>417</fpage>&#x2013;<lpage>23</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.13-12677">10.1167/iovs.13-12677</ext-link></comment> .<pub-id pub-id-type="pmid">24398090</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref003">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Adhi</surname><given-names>M</given-names></name>, <name><surname>Duker</surname><given-names>JS</given-names></name>. <article-title>Optical coherence tomography&#x2014;current and future applications</article-title>. <source>Curr Opin Ophthalmol</source>. <year>2013</year>;<volume>24</volume>(<issue>3</issue>):<fpage>213</fpage>&#x2013;<lpage>21</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/ICU.0b013e32835f8bf8">10.1097/ICU.0b013e32835f8bf8</ext-link></comment> .<pub-id pub-id-type="pmid">23429598</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref004">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Helmy</surname><given-names>YM</given-names></name>, <name><surname>Atta Allah</surname><given-names>HR</given-names></name>. <article-title>Optical coherence tomography classification of diabetic cystoid macular edema</article-title>. <source>Clin Ophthalmol</source>. <year>2013</year>;<volume>7</volume>:<fpage>1731</fpage>&#x2013;<lpage>7</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2147/OPTH.S47987">10.2147/OPTH.S47987</ext-link></comment> ; PubMed Central PMCID: PMCPMC3770711.<pub-id pub-id-type="pmid">24039393</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref005">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Lee</surname><given-names>JY</given-names></name>, <name><surname>Chiu</surname><given-names>SJ</given-names></name>, <name><surname>Srinivasan</surname><given-names>PP</given-names></name>, <name><surname>Izatt</surname><given-names>JA</given-names></name>, <name><surname>Toth</surname><given-names>CA</given-names></name>, <name><surname>Farsiu</surname><given-names>S</given-names></name>, <etal>et al</etal>
+<article-title>Fully automatic software for retinal thickness in eyes with diabetic macular edema from images acquired by cirrus and spectralis systems</article-title>. <source>Invest Ophthalmol Vis Sci</source>. <year>2013</year>;<volume>54</volume>(<issue>12</issue>):<fpage>7595</fpage>&#x2013;<lpage>602</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.13-11762">10.1167/iovs.13-11762</ext-link></comment> ; PubMed Central PMCID: PMCPMC4428560.<pub-id pub-id-type="pmid">24084089</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref006">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Sikorski</surname><given-names>BL</given-names></name>, <name><surname>Malukiewicz</surname><given-names>G</given-names></name>, <name><surname>Stafiej</surname><given-names>J</given-names></name>, <name><surname>Lesiewska-Junk</surname><given-names>H</given-names></name>, <name><surname>Raczynska</surname><given-names>D</given-names></name>. <article-title>The diagnostic function of OCT in diabetic maculopathy</article-title>. <source>Mediators Inflamm</source>. <year>2013</year>;<volume>2013</volume>:<fpage>434560</fpage>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1155/2013/434560">10.1155/2013/434560</ext-link></comment> ; PubMed Central PMCID: PMCPMC3863575.<pub-id pub-id-type="pmid">24369444</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref007">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>Sonoda</surname><given-names>S</given-names></name>, <name><surname>Sakamoto</surname><given-names>T</given-names></name>, <name><surname>Shirasawa</surname><given-names>M</given-names></name>, <name><surname>Yamashita</surname><given-names>T</given-names></name>, <name><surname>Otsuka</surname><given-names>H</given-names></name>, <name><surname>Terasaki</surname><given-names>H</given-names></name>. <article-title>Correlation between reflectivity of subretinal fluid in OCT images and concentration of intravitreal VEGF in eyes with diabetic macular edema</article-title>. <source>Invest Ophthalmol Vis Sci</source>. <year>2013</year>;<volume>54</volume>(<issue>8</issue>):<fpage>5367</fpage>&#x2013;<lpage>74</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.13-12382">10.1167/iovs.13-12382</ext-link></comment> .<pub-id pub-id-type="pmid">23860753</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref008">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Rosen</surname><given-names>RB</given-names></name>, <name><surname>Hathaway</surname><given-names>M</given-names></name>, <name><surname>Rogers</surname><given-names>J</given-names></name>, <name><surname>Pedro</surname><given-names>J</given-names></name>, <name><surname>Garcia</surname><given-names>P</given-names></name>, <name><surname>Laissue</surname><given-names>P</given-names></name>, <etal>et al</etal>
+<article-title>Multidimensional en-face OCT imaging of the retina</article-title>. <source>Opt Express</source>. <year>2009</year>;<volume>17</volume>(<issue>5</issue>):<fpage>4112</fpage>&#x2013;<lpage>33</lpage>. .<pub-id pub-id-type="pmid">19259250</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref009">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Kim</surname><given-names>BY</given-names></name>, <name><surname>Smith</surname><given-names>SD</given-names></name>, <name><surname>Kaiser</surname><given-names>PK</given-names></name>. <article-title>Optical coherence tomographic patterns of diabetic macular edema</article-title>. <source>Am J Ophthalmol</source>. <year>2006</year>;<volume>142</volume>(<issue>3</issue>):<fpage>405</fpage>&#x2013;<lpage>12</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ajo.2006.04.023">10.1016/j.ajo.2006.04.023</ext-link></comment> .<pub-id pub-id-type="pmid">16935584</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref010">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Huang</surname><given-names>D</given-names></name>, <name><surname>Swanson</surname><given-names>EA</given-names></name>, <name><surname>Lin</surname><given-names>CP</given-names></name>, <name><surname>Schuman</surname><given-names>JS</given-names></name>, <name><surname>Stinson</surname><given-names>WG</given-names></name>, <name><surname>Chang</surname><given-names>W</given-names></name>, <etal>et al</etal>
+<article-title>Optical coherence tomography</article-title>. <source>Science</source>. <year>1991</year>;<volume>254</volume>(<issue>5035</issue>):<fpage>1178</fpage>&#x2013;<lpage>81</lpage>. .<pub-id pub-id-type="pmid">1957169</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref011">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Mitchell</surname><given-names>P</given-names></name>, <name><surname>Bandello</surname><given-names>F</given-names></name>, <name><surname>Schmidt-Erfurth</surname><given-names>U</given-names></name>, <name><surname>Lang</surname><given-names>GE</given-names></name>, <name><surname>Massin</surname><given-names>P</given-names></name>, <name><surname>Schlingemann</surname><given-names>RO</given-names></name>, <etal>et al</etal>
+<article-title>The RESTORE study: ranibizumab monotherapy or combined with laser versus laser monotherapy for diabetic macular edema</article-title>. <source>Ophthalmology</source>. <year>2011</year>;<volume>118</volume>(<issue>4</issue>):<fpage>615</fpage>&#x2013;<lpage>25</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ophtha.2011.01.031">10.1016/j.ophtha.2011.01.031</ext-link></comment> .<pub-id pub-id-type="pmid">21459215</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref012">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Massin</surname><given-names>P</given-names></name>, <name><surname>Bandello</surname><given-names>F</given-names></name>, <name><surname>Garweg</surname><given-names>JG</given-names></name>, <name><surname>Hansen</surname><given-names>LL</given-names></name>, <name><surname>Harding</surname><given-names>SP</given-names></name>, <name><surname>Larsen</surname><given-names>M</given-names></name>, <etal>et al</etal>
+<article-title>Safety and efficacy of ranibizumab in diabetic macular edema (RESOLVE Study): a 12-month, randomized, controlled, double-masked, multicenter phase II study</article-title>. <source>Diabetes Care</source>. <year>2010</year>;<volume>33</volume>(<issue>11</issue>):<fpage>2399</fpage>&#x2013;<lpage>405</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2337/dc10-0493">10.2337/dc10-0493</ext-link></comment> ; PubMed Central PMCID: PMCPMC2963502.<pub-id pub-id-type="pmid">20980427</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref013">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Rajendram</surname><given-names>R</given-names></name>, <name><surname>Fraser-Bell</surname><given-names>S</given-names></name>, <name><surname>Kaines</surname><given-names>A</given-names></name>, <name><surname>Michaelides</surname><given-names>M</given-names></name>, <name><surname>Hamilton</surname><given-names>RD</given-names></name>, <name><surname>Esposti</surname><given-names>SD</given-names></name>, <etal>et al</etal>
+<article-title>A 2-year prospective randomized controlled trial of intravitreal bevacizumab or laser therapy (BOLT) in the management of diabetic macular edema: 24-month data: report 3</article-title>. <source>Arch Ophthalmol</source>. <year>2012</year>;<volume>130</volume>(<issue>8</issue>):<fpage>972</fpage>&#x2013;<lpage>9</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1001/archophthalmol.2012.393">10.1001/archophthalmol.2012.393</ext-link></comment> .<pub-id pub-id-type="pmid">22491395</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref014">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Brown</surname><given-names>DM</given-names></name>, <name><surname>Nguyen</surname><given-names>QD</given-names></name>, <name><surname>Marcus</surname><given-names>DM</given-names></name>, <name><surname>Boyer</surname><given-names>DS</given-names></name>, <name><surname>Patel</surname><given-names>S</given-names></name>, <name><surname>Feiner</surname><given-names>L</given-names></name>, <etal>et al</etal>
+<article-title>Long-term outcomes of ranibizumab therapy for diabetic macular edema: the 36-month results from two phase III trials: RISE and RIDE</article-title>. <source>Ophthalmology</source>. <year>2013</year>;<volume>120</volume>(<issue>10</issue>):<fpage>2013</fpage>&#x2013;<lpage>22</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ophtha.2013.02.034">10.1016/j.ophtha.2013.02.034</ext-link></comment> .<pub-id pub-id-type="pmid">23706949</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref015">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Nguyen</surname><given-names>QD</given-names></name>, <name><surname>Shah</surname><given-names>SM</given-names></name>, <name><surname>Khwaja</surname><given-names>AA</given-names></name>, <name><surname>Channa</surname><given-names>R</given-names></name>, <name><surname>Hatef</surname><given-names>E</given-names></name>, <name><surname>Do</surname><given-names>DV</given-names></name>, <etal>et al</etal>
+<article-title>Two-year outcomes of the ranibizumab for edema of the mAcula in diabetes (READ-2) study</article-title>. <source>Ophthalmology</source>. <year>2010</year>;<volume>117</volume>(<issue>11</issue>):<fpage>2146</fpage>&#x2013;<lpage>51</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ophtha.2010.08.016">10.1016/j.ophtha.2010.08.016</ext-link></comment> .<pub-id pub-id-type="pmid">20855114</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref016">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Elman</surname><given-names>MJ</given-names></name>, <name><surname>Ayala</surname><given-names>A</given-names></name>, <name><surname>Bressler</surname><given-names>NM</given-names></name>, <name><surname>Browning</surname><given-names>D</given-names></name>, <name><surname>Flaxel</surname><given-names>CJ</given-names></name>, <name><surname>Glassman</surname><given-names>AR</given-names></name>, <etal>et al</etal>
+<article-title>Intravitreal Ranibizumab for diabetic macular edema with prompt versus deferred laser treatment: 5-year randomized trial results</article-title>. <source>Ophthalmology</source>. <year>2015</year>;<volume>122</volume>(<issue>2</issue>):<fpage>375</fpage>&#x2013;<lpage>81</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ophtha.2014.08.047">10.1016/j.ophtha.2014.08.047</ext-link></comment> ; PubMed Central PMCID: PMCPMC4520307.<pub-id pub-id-type="pmid">25439614</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref017">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>Jampol</surname><given-names>LM</given-names></name>, <name><surname>Glassman</surname><given-names>AR</given-names></name>, <name><surname>Bressler</surname><given-names>NM</given-names></name>. <article-title>Comparative Effectiveness Trial for Diabetic Macular Edema: Three Comparisons for the Price of 1 Study From the Diabetic Retinopathy Clinical Research Network</article-title>. <source>JAMA Ophthalmol</source>. <year>2015</year>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1001/jamaophthalmol.2015.1880">10.1001/jamaophthalmol.2015.1880</ext-link></comment> .<pub-id pub-id-type="pmid">26087135</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref018">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Lim</surname><given-names>LT</given-names></name>, <name><surname>Chia</surname><given-names>SN</given-names></name>, <name><surname>Ah-Kee</surname><given-names>EY</given-names></name>, <name><surname>Chew</surname><given-names>N</given-names></name>, <name><surname>Gupta</surname><given-names>M</given-names></name>. <article-title>Advances in the management of diabetic macular oedema based on evidence from the Diabetic Retinopathy Clinical Research Network</article-title>. <source>Singapore Med J</source>. <year>2015</year>;<volume>56</volume>(<issue>5</issue>):<fpage>237</fpage>&#x2013;<lpage>47</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.11622/smedj.2015071">10.11622/smedj.2015071</ext-link></comment> ; PubMed Central PMCID: PMCPMC4447924.<pub-id pub-id-type="pmid">26034315</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref019">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Wells</surname><given-names>JA</given-names></name>, <name><surname>Glassman</surname><given-names>AR</given-names></name>, <name><surname>Ayala</surname><given-names>AR</given-names></name>, <name><surname>Jampol</surname><given-names>LM</given-names></name>, <name><surname>Aiello</surname><given-names>LP</given-names></name>, <name><surname>Antoszyk</surname><given-names>AN</given-names></name>, <etal>et al</etal>
+<article-title>Aflibercept, bevacizumab, or ranibizumab for diabetic macular edema</article-title>. <source>N Engl J Med</source>. <year>2015</year>;<volume>372</volume>(<issue>13</issue>):<fpage>1193</fpage>&#x2013;<lpage>203</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1056/NEJMoa1414264">10.1056/NEJMoa1414264</ext-link></comment> ; PubMed Central PMCID: PMCPMC4422053.<pub-id pub-id-type="pmid">25692915</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref020">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Wanek</surname><given-names>J</given-names></name>, <name><surname>Zelkha</surname><given-names>R</given-names></name>, <name><surname>Lim</surname><given-names>JI</given-names></name>, <name><surname>Shahidi</surname><given-names>M</given-names></name>. <article-title>Feasibility of a method for en face imaging of photoreceptor cell integrity</article-title>. <source>Am J Ophthalmol</source>. <year>2011</year>;<volume>152</volume>(<issue>5</issue>):<fpage>807</fpage>&#x2013;<lpage>14.e1</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ajo.2011.04.027">10.1016/j.ajo.2011.04.027</ext-link></comment> ; PubMed Central PMCID: PMCPMC3200461.<pub-id pub-id-type="pmid">21764030</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref021">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Lim</surname><given-names>JI</given-names></name>, <name><surname>Zelkha</surname><given-names>R</given-names></name>, <name><surname>Niec</surname><given-names>M</given-names></name>, <name><surname>Setlur</surname><given-names>V</given-names></name>, <name><surname>Shahidi</surname><given-names>M</given-names></name>. <article-title>Inner and outer retinal thickness mapping of nonproliferative diabetic retinopathy by spectral-domain optical coherence tomography</article-title>. <source>Ophthalmic Surg Lasers Imaging Retina</source>. <year>2015</year>;<volume>46</volume>(<issue>3</issue>):<fpage>316</fpage>&#x2013;<lpage>20</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3928/23258160-20150323-03">10.3928/23258160-20150323-03</ext-link></comment> .<pub-id pub-id-type="pmid">25856816</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref022">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Huang</surname><given-names>Y</given-names></name>, <name><surname>Danis</surname><given-names>RP</given-names></name>, <name><surname>Pak</surname><given-names>JW</given-names></name>, <name><surname>Luo</surname><given-names>S</given-names></name>, <name><surname>White</surname><given-names>J</given-names></name>, <name><surname>Zhang</surname><given-names>X</given-names></name>, <etal>et al</etal>
+<article-title>Development of a semi-automatic segmentation method for retinal OCT images tested in patients with diabetic macular edema</article-title>. <source>PLoS One</source>. <year>2013</year>;<volume>8</volume>(<issue>12</issue>):<fpage>e82922</fpage>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0082922">10.1371/journal.pone.0082922</ext-link></comment> ; PubMed Central PMCID: PMCPMC3873283.<pub-id pub-id-type="pmid">24386127</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref023">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Chiu</surname><given-names>SJ</given-names></name>, <name><surname>Allingham</surname><given-names>MJ</given-names></name>, <name><surname>Mettu</surname><given-names>PS</given-names></name>, <name><surname>Cousins</surname><given-names>SW</given-names></name>, <name><surname>Izatt</surname><given-names>JA</given-names></name>, <name><surname>Farsiu</surname><given-names>S</given-names></name>. <article-title>Kernel regression based segmentation of optical coherence tomography images with diabetic macular edema</article-title>. <source>Biomed Opt Express</source>. <year>2015</year>;<volume>6</volume>(<issue>4</issue>):<fpage>1172</fpage>&#x2013;<lpage>94</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1364/BOE.6.001172">10.1364/BOE.6.001172</ext-link></comment> ; PubMed Central PMCID: PMCPMC4399658.<pub-id pub-id-type="pmid">25909003</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref024">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Chiu</surname><given-names>SJ</given-names></name>, <name><surname>Li</surname><given-names>XT</given-names></name>, <name><surname>Nicholas</surname><given-names>P</given-names></name>, <name><surname>Toth</surname><given-names>CA</given-names></name>, <name><surname>Izatt</surname><given-names>JA</given-names></name>, <name><surname>Farsiu</surname><given-names>S</given-names></name>. <article-title>Automatic segmentation of seven retinal layers in SDOCT images congruent with expert manual segmentation</article-title>. <source>Opt Express</source>. <year>2010</year>;<volume>18</volume>(<issue>18</issue>):<fpage>19413</fpage>&#x2013;<lpage>28</lpage>. ; PubMed Central PMCID: PMCPMC3408910. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1364/OE.18.019413">10.1364/OE.18.019413</ext-link></comment><pub-id pub-id-type="pmid">20940837</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref025">
+        <label>25</label>
+        <mixed-citation publication-type="journal"><name><surname>Garvin</surname><given-names>MK</given-names></name>, <name><surname>Abr&#xE0;moff</surname><given-names>MD</given-names></name>, <name><surname>Wu</surname><given-names>X</given-names></name>, <name><surname>Russell</surname><given-names>SR</given-names></name>, <name><surname>Burns</surname><given-names>TL</given-names></name>, <name><surname>Sonka</surname><given-names>M</given-names></name>. <article-title>Automated 3-D intraretinal layer segmentation of macular spectral-domain optical coherence tomography images</article-title>. <source>IEEE Trans Med Imaging</source>. <year>2009</year>;<volume>28</volume>(<issue>9</issue>):<fpage>1436</fpage>&#x2013;<lpage>47</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/TMI.2009.2016958">10.1109/TMI.2009.2016958</ext-link></comment> ; PubMed Central PMCID: PMCPMC2911837.<pub-id pub-id-type="pmid">19278927</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref026">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Vermeer</surname><given-names>KA</given-names></name>, <name><surname>van der Schoot</surname><given-names>J</given-names></name>, <name><surname>Lemij</surname><given-names>HG</given-names></name>, <name><surname>de Boer</surname><given-names>JF</given-names></name>. <article-title>Automated segmentation by pixel classification of retinal layers in ophthalmic OCT images</article-title>. <source>Biomed Opt Express</source>. <year>2011</year>;<volume>2</volume>(<issue>6</issue>):<fpage>1743</fpage>&#x2013;<lpage>56</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1364/BOE.2.001743">10.1364/BOE.2.001743</ext-link></comment> ; PubMed Central PMCID: PMCPMC3114239.<pub-id pub-id-type="pmid">21698034</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref027">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Spaide</surname><given-names>RF</given-names></name>, <name><surname>Curcio</surname><given-names>CA</given-names></name>. <article-title>Anatomical correlates to the bands seen in the outer retina by optical coherence tomography: literature review and model</article-title>. <source>Retina</source>. <year>2011</year>;<volume>31</volume>(<issue>8</issue>):<fpage>1609</fpage>&#x2013;<lpage>19</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/IAE.0b013e3182247535">10.1097/IAE.0b013e3182247535</ext-link></comment> ; PubMed Central PMCID: PMCPMC3619110.<pub-id pub-id-type="pmid">21844839</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref028">
+        <label>28</label>
+        <mixed-citation publication-type="journal"><name><surname>Wong</surname><given-names>IY</given-names></name>, <name><surname>Iu</surname><given-names>LP</given-names></name>, <name><surname>Koizumi</surname><given-names>H</given-names></name>, <name><surname>Lai</surname><given-names>WW</given-names></name>. <article-title>The inner segment/outer segment junction: what have we learnt so far?</article-title>
+<source>Curr Opin Ophthalmol</source>. <year>2012</year>;<volume>23</volume>(<issue>3</issue>):<fpage>210</fpage>&#x2013;<lpage>8</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/ICU.0b013e3283524162">10.1097/ICU.0b013e3283524162</ext-link></comment> .<pub-id pub-id-type="pmid">22450219</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref029">
+        <label>29</label>
+        <mixed-citation publication-type="journal"><name><surname>Hood</surname><given-names>DC</given-names></name>, <name><surname>Zhang</surname><given-names>X</given-names></name>, <name><surname>Ramachandran</surname><given-names>R</given-names></name>, <name><surname>Talamini</surname><given-names>CL</given-names></name>, <name><surname>Raza</surname><given-names>A</given-names></name>, <name><surname>Greenberg</surname><given-names>JP</given-names></name>, <etal>et al</etal>
+<article-title>The inner segment/outer segment border seen on optical coherence tomography is less intense in patients with diminished cone function</article-title>. <source>Invest Ophthalmol Vis Sci</source>. <year>2011</year>;<volume>52</volume>(<issue>13</issue>):<fpage>9703</fpage>&#x2013;<lpage>9</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.11-8650">10.1167/iovs.11-8650</ext-link></comment> ; PubMed Central PMCID: PMCPMC3341126.<pub-id pub-id-type="pmid">22110066</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref030">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>Shin</surname><given-names>HJ</given-names></name>, <name><surname>Lee</surname><given-names>SH</given-names></name>, <name><surname>Chung</surname><given-names>H</given-names></name>, <name><surname>Kim</surname><given-names>HC</given-names></name>. <article-title>Association between photoreceptor integrity and visual outcome in diabetic macular edema</article-title>. <source>Graefes Arch Clin Exp Ophthalmol</source>. <year>2012</year>;<volume>250</volume>(<issue>1</issue>):<fpage>61</fpage>&#x2013;<lpage>70</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00417-011-1774-x">10.1007/s00417-011-1774-x</ext-link></comment> .<pub-id pub-id-type="pmid">21874345</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref031">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>Sakamoto</surname><given-names>A</given-names></name>, <name><surname>Nishijima</surname><given-names>K</given-names></name>, <name><surname>Kita</surname><given-names>M</given-names></name>, <name><surname>Oh</surname><given-names>H</given-names></name>, <name><surname>Tsujikawa</surname><given-names>A</given-names></name>, <name><surname>Yoshimura</surname><given-names>N</given-names></name>. <article-title>Association between foveal photoreceptor status and visual acuity after resolution of diabetic macular edema by pars plana vitrectomy</article-title>. <source>Graefes Arch Clin Exp Ophthalmol</source>. <year>2009</year>;<volume>247</volume>(<issue>10</issue>):<fpage>1325</fpage>&#x2013;<lpage>30</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00417-009-1107-5">10.1007/s00417-009-1107-5</ext-link></comment> .<pub-id pub-id-type="pmid">19430805</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref032">
+        <label>32</label>
+        <mixed-citation publication-type="journal"><name><surname>Murakami</surname><given-names>T</given-names></name>, <name><surname>Nishijima</surname><given-names>K</given-names></name>, <name><surname>Sakamoto</surname><given-names>A</given-names></name>, <name><surname>Ota</surname><given-names>M</given-names></name>, <name><surname>Horii</surname><given-names>T</given-names></name>, <name><surname>Yoshimura</surname><given-names>N</given-names></name>. <article-title>Association of pathomorphology, photoreceptor status, and retinal thickness with visual acuity in diabetic retinopathy</article-title>. <source>Am J Ophthalmol</source>. <year>2011</year>;<volume>151</volume>(<issue>2</issue>):<fpage>310</fpage>&#x2013;<lpage>7</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ajo.2010.08.022">10.1016/j.ajo.2010.08.022</ext-link></comment> .<pub-id pub-id-type="pmid">21145531</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref033">
+        <label>33</label>
+        <mixed-citation publication-type="journal"><name><surname>Otani</surname><given-names>T</given-names></name>, <name><surname>Yamaguchi</surname><given-names>Y</given-names></name>, <name><surname>Kishi</surname><given-names>S</given-names></name>. <article-title>Correlation between visual acuity and foveal microstructural changes in diabetic macular edema</article-title>. <source>Retina</source>. <year>2010</year>;<volume>30</volume>(<issue>5</issue>):<fpage>774</fpage>&#x2013;<lpage>80</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/IAE.0b013e3181c2e0d6">10.1097/IAE.0b013e3181c2e0d6</ext-link></comment> .<pub-id pub-id-type="pmid">19996821</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref034">
+        <label>34</label>
+        <mixed-citation publication-type="journal"><name><surname>Alasil</surname><given-names>T</given-names></name>, <name><surname>Keane</surname><given-names>PA</given-names></name>, <name><surname>Updike</surname><given-names>JF</given-names></name>, <name><surname>Dustin</surname><given-names>L</given-names></name>, <name><surname>Ouyang</surname><given-names>Y</given-names></name>, <name><surname>Walsh</surname><given-names>AC</given-names></name>, <etal>et al</etal>
+<article-title>Relationship between optical coherence tomography retinal parameters and visual acuity in diabetic macular edema</article-title>. <source>Ophthalmology</source>. <year>2010</year>;<volume>117</volume>(<issue>12</issue>):<fpage>2379</fpage>&#x2013;<lpage>86</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ophtha.2010.03.051">10.1016/j.ophtha.2010.03.051</ext-link></comment> .<pub-id pub-id-type="pmid">20561684</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref035">
+        <label>35</label>
+        <mixed-citation publication-type="journal"><name><surname>Kitaya</surname><given-names>N</given-names></name>, <name><surname>Hikichi</surname><given-names>T</given-names></name>, <name><surname>Kagokawa</surname><given-names>H</given-names></name>, <name><surname>Takamiya</surname><given-names>A</given-names></name>, <name><surname>Takahashi</surname><given-names>A</given-names></name>, <name><surname>Yoshida</surname><given-names>A</given-names></name>. <article-title>Irregularity of photoreceptor layer after successful macular hole surgery prevents visual acuity improvement</article-title>. <source>Am J Ophthalmol</source>. <year>2004</year>;<volume>138</volume>(<issue>2</issue>):<fpage>308</fpage>&#x2013;<lpage>10</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ajo.2004.03.004">10.1016/j.ajo.2004.03.004</ext-link></comment> .<pub-id pub-id-type="pmid">15289151</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref036">
+        <label>36</label>
+        <mixed-citation publication-type="journal"><name><surname>Baba</surname><given-names>T</given-names></name>, <name><surname>Yamamoto</surname><given-names>S</given-names></name>, <name><surname>Arai</surname><given-names>M</given-names></name>, <name><surname>Arai</surname><given-names>E</given-names></name>, <name><surname>Sugawara</surname><given-names>T</given-names></name>, <name><surname>Mitamura</surname><given-names>Y</given-names></name>, <etal>et al</etal>
+<article-title>Correlation of visual recovery and presence of photoreceptor inner/outer segment junction in optical coherence images after successful macular hole repair</article-title>. <source>Retina</source>. <year>2008</year>;<volume>28</volume>(<issue>3</issue>):<fpage>453</fpage>&#x2013;<lpage>8</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/IAE.0b013e3181571398">10.1097/IAE.0b013e3181571398</ext-link></comment> .<pub-id pub-id-type="pmid">18327138</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref037">
+        <label>37</label>
+        <mixed-citation publication-type="journal"><name><surname>Murakami</surname><given-names>T</given-names></name>, <name><surname>Nishijima</surname><given-names>K</given-names></name>, <name><surname>Akagi</surname><given-names>T</given-names></name>, <name><surname>Uji</surname><given-names>A</given-names></name>, <name><surname>Horii</surname><given-names>T</given-names></name>, <name><surname>Ueda-Arakawa</surname><given-names>N</given-names></name>, <etal>et al</etal>
+<article-title>Optical coherence tomographic reflectivity of photoreceptors beneath cystoid spaces in diabetic macular edema</article-title>. <source>Invest Ophthalmol Vis Sci</source>. <year>2012</year>;<volume>53</volume>(<issue>3</issue>):<fpage>1506</fpage>&#x2013;<lpage>11</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.11-9231">10.1167/iovs.11-9231</ext-link></comment> .<pub-id pub-id-type="pmid">22323463</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref038">
+        <label>38</label>
+        <mixed-citation publication-type="journal"><name><surname>Sallo</surname><given-names>FB</given-names></name>, <name><surname>Peto</surname><given-names>T</given-names></name>, <name><surname>Egan</surname><given-names>C</given-names></name>, <name><surname>Wolf-Schnurrbusch</surname><given-names>UE</given-names></name>, <name><surname>Clemons</surname><given-names>TE</given-names></name>, <name><surname>Gillies</surname><given-names>MC</given-names></name>, <etal>et al</etal>
+<article-title>"En face" OCT imaging of the IS/OS junction line in type 2 idiopathic macular telangiectasia</article-title>. <source>Invest Ophthalmol Vis Sci</source>. <year>2012</year>;<volume>53</volume>(<issue>10</issue>):<fpage>6145</fpage>&#x2013;<lpage>52</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.12-10580">10.1167/iovs.12-10580</ext-link></comment> .<pub-id pub-id-type="pmid">22899757</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref039">
+        <label>39</label>
+        <mixed-citation publication-type="journal"><name><surname>Yamauchi</surname><given-names>Y</given-names></name>, <name><surname>Yagi</surname><given-names>H</given-names></name>, <name><surname>Usui</surname><given-names>Y</given-names></name>, <name><surname>Kimura</surname><given-names>K</given-names></name>, <name><surname>Agawa</surname><given-names>T</given-names></name>, <name><surname>Tsukahara</surname><given-names>R</given-names></name>, <etal>et al</etal>
+<article-title>Biological activity is the likely origin of the intersection between the photoreceptor inner and outer segments of the rat retina as determined by optical coherence tomography</article-title>. <source>Clin Ophthalmol</source>. <year>2011</year>;<volume>5</volume>:<fpage>1649</fpage>&#x2013;<lpage>53</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2147/OPTH.S26661">10.2147/OPTH.S26661</ext-link></comment> ; PubMed Central PMCID: PMCPMC3236708.<pub-id pub-id-type="pmid">22174571</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref040">
+        <label>40</label>
+        <mixed-citation publication-type="journal"><name><surname>Maheshwary</surname><given-names>AS</given-names></name>, <name><surname>Oster</surname><given-names>SF</given-names></name>, <name><surname>Yuson</surname><given-names>RM</given-names></name>, <name><surname>Cheng</surname><given-names>L</given-names></name>, <name><surname>Mojana</surname><given-names>F</given-names></name>, <name><surname>Freeman</surname><given-names>WR</given-names></name>. <article-title>The association between percent disruption of the photoreceptor inner segment-outer segment junction and visual acuity in diabetic macular edema</article-title>. <source>Am J Ophthalmol</source>. <year>2010</year>;<volume>150</volume>(<issue>1</issue>):<fpage>63</fpage>&#x2013;<lpage>7.e1</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ajo.2010.01.039">10.1016/j.ajo.2010.01.039</ext-link></comment> ; PubMed Central PMCID: PMCPMC2900476.<pub-id pub-id-type="pmid">20451897</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref041">
+        <label>41</label>
+        <mixed-citation publication-type="journal"><name><surname>Fong</surname><given-names>DS</given-names></name>, <name><surname>Girach</surname><given-names>A</given-names></name>, <name><surname>Boney</surname><given-names>A</given-names></name>. <article-title>Visual side effects of successful scatter laser photocoagulation surgery for proliferative diabetic retinopathy: a literature review</article-title>. <source>Retina</source>. <year>2007</year>;<volume>27</volume>(<issue>7</issue>):<fpage>816</fpage>&#x2013;<lpage>24</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/IAE.0b013e318042d32c">10.1097/IAE.0b013e318042d32c</ext-link></comment> .<pub-id pub-id-type="pmid">17891003</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref042">
+        <label>42</label>
+        <mixed-citation publication-type="journal"><name><surname>Shimura</surname><given-names>M</given-names></name>, <name><surname>Yasuda</surname><given-names>K</given-names></name>, <name><surname>Nakazawa</surname><given-names>T</given-names></name>, <name><surname>Kano</surname><given-names>T</given-names></name>, <name><surname>Ohta</surname><given-names>S</given-names></name>, <name><surname>Tamai</surname><given-names>M</given-names></name>. <article-title>Quantifying alterations of macular thickness before and after panretinal photocoagulation in patients with severe diabetic retinopathy and good vision</article-title>. <source>Ophthalmology</source>. <year>2003</year>;<volume>110</volume>(<issue>12</issue>):<fpage>2386</fpage>&#x2013;<lpage>94</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ophtha.2003.05.008">10.1016/j.ophtha.2003.05.008</ext-link></comment> .<pub-id pub-id-type="pmid">14644723</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref043">
+        <label>43</label>
+        <mixed-citation publication-type="journal"><name><surname>Mohammad</surname><given-names>F</given-names></name>, <name><surname>Ansari</surname><given-names>R</given-names></name>, <name><surname>Wanek</surname><given-names>J</given-names></name>, <name><surname>Francis</surname><given-names>A</given-names></name>, <name><surname>Shahidi</surname><given-names>M</given-names></name>. <article-title>Feasibility of level-set analysis of enface OCT retinal images in diabetic retinopathy</article-title>. <source>Biomed Opt Express</source>. <year>2015</year>;<volume>6</volume>(<issue>5</issue>):<fpage>1904</fpage>&#x2013;<lpage>18</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1364/BOE.6.001904">10.1364/BOE.6.001904</ext-link></comment> ; PubMed Central PMCID: PMCPMC4467721.<pub-id pub-id-type="pmid">26137390</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref044">
+        <label>44</label>
+        <mixed-citation publication-type="journal"><name><surname>Clamp</surname><given-names>MF</given-names></name>, <name><surname>Wilkes</surname><given-names>G</given-names></name>, <name><surname>Leis</surname><given-names>LS</given-names></name>, <name><surname>McDonald</surname><given-names>HR</given-names></name>, <name><surname>Johnson</surname><given-names>RN</given-names></name>, <name><surname>Jumper</surname><given-names>JM</given-names></name>, <etal>et al</etal>
+<article-title>En face spectral domain optical coherence tomography analysis of lamellar macular holes</article-title>. <source>Retina</source>. <year>2014</year>;<volume>34</volume>(<issue>7</issue>):<fpage>1360</fpage>&#x2013;<lpage>6</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/IAE.0000000000000115">10.1097/IAE.0000000000000115</ext-link></comment> .<pub-id pub-id-type="pmid">24667569</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref045">
+        <label>45</label>
+        <mixed-citation publication-type="journal"><name><surname>Ferrara</surname><given-names>D</given-names></name>, <name><surname>Mohler</surname><given-names>KJ</given-names></name>, <name><surname>Waheed</surname><given-names>N</given-names></name>, <name><surname>Adhi</surname><given-names>M</given-names></name>, <name><surname>Liu</surname><given-names>JJ</given-names></name>, <name><surname>Grulkowski</surname><given-names>I</given-names></name>, <etal>et al</etal>
+<article-title>En face enhanced-depth swept-source optical coherence tomography features of chronic central serous chorioretinopathy</article-title>. <source>Ophthalmology</source>. <year>2014</year>;<volume>121</volume>(<issue>3</issue>):<fpage>719</fpage>&#x2013;<lpage>26</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ophtha.2013.10.014">10.1016/j.ophtha.2013.10.014</ext-link></comment> ; PubMed Central PMCID: PMCPMC3943670.<pub-id pub-id-type="pmid">24289918</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref046">
+        <label>46</label>
+        <mixed-citation publication-type="journal"><name><surname>Puche</surname><given-names>N</given-names></name>, <name><surname>Querques</surname><given-names>G</given-names></name>, <name><surname>Blanco-Garavito</surname><given-names>R</given-names></name>, <name><surname>Zerbib</surname><given-names>J</given-names></name>, <name><surname>Gherdaoui</surname><given-names>F</given-names></name>, <name><surname>Tilleul</surname><given-names>J</given-names></name>, <etal>et al</etal>
+<article-title>En face enhanced depth imaging optical coherence tomography features in adult onset foveomacular vitelliform dystrophy</article-title>. <source>Graefes Arch Clin Exp Ophthalmol</source>. <year>2014</year>;<volume>252</volume>(<issue>4</issue>):<fpage>555</fpage>&#x2013;<lpage>62</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00417-013-2493-2">10.1007/s00417-013-2493-2</ext-link></comment> .<pub-id pub-id-type="pmid">24158372</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref047">
+        <label>47</label>
+        <mixed-citation publication-type="journal"><name><surname>Reznicek</surname><given-names>L</given-names></name>, <name><surname>Dabov</surname><given-names>S</given-names></name>, <name><surname>Kayat</surname><given-names>B</given-names></name>, <name><surname>Liegl</surname><given-names>R</given-names></name>, <name><surname>Kampik</surname><given-names>A</given-names></name>, <name><surname>Ulbig</surname><given-names>M</given-names></name>, <etal>et al</etal>
+<article-title>Scanning laser 'en face' retinal imaging of epiretinal membranes</article-title>. <source>Saudi J Ophthalmol</source>. <year>2014</year>;<volume>28</volume>(<issue>2</issue>):<fpage>134</fpage>&#x2013;<lpage>8</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.sjopt.2014.03.009">10.1016/j.sjopt.2014.03.009</ext-link></comment> ; PubMed Central PMCID: PMCPMC4023114.<pub-id pub-id-type="pmid">24843307</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref048">
+        <label>48</label>
+        <mixed-citation publication-type="journal"><name><surname>Rispoli</surname><given-names>M</given-names></name>, <name><surname>Le Rouic</surname><given-names>JF</given-names></name>, <name><surname>Lesnoni</surname><given-names>G</given-names></name>, <name><surname>Colecchio</surname><given-names>L</given-names></name>, <name><surname>Catalano</surname><given-names>S</given-names></name>, <name><surname>Lumbroso</surname><given-names>B</given-names></name>. <article-title>Retinal surface en face optical coherence tomography: a new imaging approach in epiretinal membrane surgery</article-title>. <source>Retina</source>. <year>2012</year>;<volume>32</volume>(<issue>10</issue>):<fpage>2070</fpage>&#x2013;<lpage>6</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/IAE.0b013e3182562076">10.1097/IAE.0b013e3182562076</ext-link></comment> .<pub-id pub-id-type="pmid">22842490</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref049">
+        <label>49</label>
+        <mixed-citation publication-type="journal"><name><surname>Alkabes</surname><given-names>M</given-names></name>, <name><surname>Salinas</surname><given-names>C</given-names></name>, <name><surname>Vitale</surname><given-names>L</given-names></name>, <name><surname>Bur&#xE9;s-Jelstrup</surname><given-names>A</given-names></name>, <name><surname>Nucci</surname><given-names>P</given-names></name>, <name><surname>Mateo</surname><given-names>C</given-names></name>. <article-title>En face optical coherence tomography of inner retinal defects after internal limiting membrane peeling for idiopathic macular hole</article-title>. <source>Invest Ophthalmol Vis Sci</source>. <year>2011</year>;<volume>52</volume>(<issue>11</issue>):<fpage>8349</fpage>&#x2013;<lpage>55</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.11-8043">10.1167/iovs.11-8043</ext-link></comment> .<pub-id pub-id-type="pmid">21862645</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref050">
+        <label>50</label>
+        <mixed-citation publication-type="journal"><name><surname>Biedermann</surname><given-names>BR</given-names></name>, <name><surname>Wieser</surname><given-names>W</given-names></name>, <name><surname>Eigenwillig</surname><given-names>CM</given-names></name>, <name><surname>Palte</surname><given-names>G</given-names></name>, <name><surname>Adler</surname><given-names>DC</given-names></name>, <name><surname>Srinivasan</surname><given-names>VJ</given-names></name>, <etal>et al</etal>
+<article-title>Real time en face Fourier-domain optical coherence tomography with direct hardware frequency demodulation</article-title>. <source>Opt Lett</source>. <year>2008</year>;<volume>33</volume>(<issue>21</issue>):<fpage>2556</fpage>&#x2013;<lpage>8</lpage>. ; PubMed Central PMCID: PMCPMC2743229.<pub-id pub-id-type="pmid">18978919</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref051">
+        <label>51</label>
+        <mixed-citation publication-type="journal"><name><surname>Forte</surname><given-names>R</given-names></name>, <name><surname>Pascotto</surname><given-names>F</given-names></name>, <name><surname>Napolitano</surname><given-names>F</given-names></name>, <name><surname>Cennamo</surname><given-names>G</given-names></name>, <name><surname>de Crecchio</surname><given-names>G</given-names></name>. <article-title>En face optical coherence tomography of macular holes in high myopia</article-title>. <source>Eye (Lond)</source>. <year>2007</year>;<volume>21</volume>(<issue>3</issue>):<fpage>436</fpage>&#x2013;<lpage>7</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/sj.eye.6702598">10.1038/sj.eye.6702598</ext-link></comment> .<pub-id pub-id-type="pmid">17001323</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref052">
+        <label>52</label>
+        <mixed-citation publication-type="journal"><name><surname>Forte</surname><given-names>R</given-names></name>, <name><surname>Pascotto</surname><given-names>F</given-names></name>, <name><surname>Soreca</surname><given-names>E</given-names></name>, <name><surname>Cusati</surname><given-names>G</given-names></name>, <name><surname>de Crecchio</surname><given-names>G</given-names></name>. <article-title>Posterior retinal detachment without macular hole in high myopia: visualization with en face optical coherence tomography</article-title>. <source>Eye (Lond)</source>. <year>2007</year>;<volume>21</volume>(<issue>1</issue>):<fpage>111</fpage>&#x2013;<lpage>3</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/sj.eye.6702418">10.1038/sj.eye.6702418</ext-link></comment> .<pub-id pub-id-type="pmid">16826242</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref053">
+        <label>53</label>
+        <mixed-citation publication-type="journal"><name><surname>Cucu</surname><given-names>RG</given-names></name>, <name><surname>Podoleanu</surname><given-names>AG</given-names></name>, <name><surname>Rogers</surname><given-names>JA</given-names></name>, <name><surname>Pedro</surname><given-names>J</given-names></name>, <name><surname>Rosen</surname><given-names>RB</given-names></name>. <article-title>Combined confocal/en face T-scan-based ultrahigh-resolution optical coherence tomography in vivo retinal imaging</article-title>. <source>Opt Lett</source>. <year>2006</year>;<volume>31</volume>(<issue>11</issue>):<fpage>1684</fpage>&#x2013;<lpage>6</lpage>. .<pub-id pub-id-type="pmid">16688261</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref054">
+        <label>54</label>
+        <mixed-citation publication-type="journal"><name><surname>van Velthoven</surname><given-names>ME</given-names></name>, <name><surname>Verbraak</surname><given-names>FD</given-names></name>, <name><surname>Yannuzzi</surname><given-names>LA</given-names></name>, <name><surname>Rosen</surname><given-names>RB</given-names></name>, <name><surname>Podoleanu</surname><given-names>AG</given-names></name>, <name><surname>de Smet</surname><given-names>MD</given-names></name>. <article-title>Imaging the retina by en face optical coherence tomography</article-title>. <source>Retina</source>. <year>2006</year>;<volume>26</volume>(<issue>2</issue>):<fpage>129</fpage>&#x2013;<lpage>36</lpage>. .<pub-id pub-id-type="pmid">16467666</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref055">
+        <label>55</label>
+        <mixed-citation publication-type="journal"><name><surname>van Velthoven</surname><given-names>ME</given-names></name>, <name><surname>Verbraak</surname><given-names>FD</given-names></name>, <name><surname>Garcia</surname><given-names>PM</given-names></name>, <name><surname>Schlingemann</surname><given-names>RO</given-names></name>, <name><surname>Rosen</surname><given-names>RB</given-names></name>, <name><surname>de Smet</surname><given-names>MD</given-names></name>. <article-title>Evaluation of central serous retinopathy with en face optical coherence tomography</article-title>. <source>Br J Ophthalmol</source>. <year>2005</year>;<volume>89</volume>(<issue>11</issue>):<fpage>1483</fpage>&#x2013;<lpage>8</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/bjo.2005.073056">10.1136/bjo.2005.073056</ext-link></comment> ; PubMed Central PMCID: PMCPMC1772953.<pub-id pub-id-type="pmid">16234458</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref056">
+        <label>56</label>
+        <mixed-citation publication-type="journal"><name><surname>Chiu</surname><given-names>SJ</given-names></name>, <name><surname>Toth</surname><given-names>CA</given-names></name>, <name><surname>Bowes Rickman</surname><given-names>C</given-names></name>, <name><surname>Izatt</surname><given-names>JA</given-names></name>, <name><surname>Farsiu</surname><given-names>S</given-names></name>. <article-title>Automatic segmentation of closed-contour features in ophthalmic images using graph theory and dynamic programming</article-title>. <source>Biomed Opt Express</source>. <year>2012</year>;<volume>3</volume>(<issue>5</issue>):<fpage>1127</fpage>&#x2013;<lpage>40</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1364/BOE.3.001127">10.1364/BOE.3.001127</ext-link></comment> ; PubMed Central PMCID: PMCPMC3342188.<pub-id pub-id-type="pmid">22567602</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref057">
+        <label>57</label>
+        <mixed-citation publication-type="journal"><name><surname>Forooghian</surname><given-names>F</given-names></name>, <name><surname>Stetson</surname><given-names>PF</given-names></name>, <name><surname>Meyer</surname><given-names>SA</given-names></name>, <name><surname>Chew</surname><given-names>EY</given-names></name>, <name><surname>Wong</surname><given-names>WT</given-names></name>, <name><surname>Cukras</surname><given-names>C</given-names></name>, <etal>et al</etal>
+<article-title>Relationship between photoreceptor outer segment length and visual acuity in diabetic macular edema</article-title>. <source>Retina</source>. <year>2010</year>;<volume>30</volume>(<issue>1</issue>):<fpage>63</fpage>&#x2013;<lpage>70</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/IAE.0b013e3181bd2c5a">10.1097/IAE.0b013e3181bd2c5a</ext-link></comment> ; PubMed Central PMCID: PMCPMC3021331.<pub-id pub-id-type="pmid">19952996</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref058">
+        <label>58</label>
+        <mixed-citation publication-type="journal"><name><surname>Regatieri</surname><given-names>CV</given-names></name>, <name><surname>Branchini</surname><given-names>L</given-names></name>, <name><surname>Carmody</surname><given-names>J</given-names></name>, <name><surname>Fujimoto</surname><given-names>JG</given-names></name>, <name><surname>Duker</surname><given-names>JS</given-names></name>. <article-title>Choroidal thickness in patients with diabetic retinopathy analyzed by spectral-domain optical coherence tomography</article-title>. <source>Retina</source>. <year>2012</year>;<volume>32</volume>(<issue>3</issue>):<fpage>563</fpage>&#x2013;<lpage>8</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/IAE.0b013e31822f5678">10.1097/IAE.0b013e31822f5678</ext-link></comment> ; PubMed Central PMCID: PMCPMC3393081.<pub-id pub-id-type="pmid">22374157</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref059">
+        <label>59</label>
+        <mixed-citation publication-type="journal"><name><surname>Regatieri</surname><given-names>CV</given-names></name>, <name><surname>Branchini</surname><given-names>L</given-names></name>, <name><surname>Fujimoto</surname><given-names>JG</given-names></name>, <name><surname>Duker</surname><given-names>JS</given-names></name>. <article-title>Choroidal imaging using spectral-domain optical coherence tomography</article-title>. <source>Retina</source>. <year>2012</year>;<volume>32</volume>(<issue>5</issue>):<fpage>865</fpage>&#x2013;<lpage>76</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/IAE.0b013e318251a3a8">10.1097/IAE.0b013e318251a3a8</ext-link></comment> ; PubMed Central PMCID: PMCPMC3381654.<pub-id pub-id-type="pmid">22487582</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref060">
+        <label>60</label>
+        <mixed-citation publication-type="journal"><name><surname>Esmaeelpour</surname><given-names>M</given-names></name>, <name><surname>Brunner</surname><given-names>S</given-names></name>, <name><surname>Ansari-Shahrezaei</surname><given-names>S</given-names></name>, <name><surname>Shahrezaei</surname><given-names>SA</given-names></name>, <name><surname>Nemetz</surname><given-names>S</given-names></name>, <name><surname>Povazay</surname><given-names>B</given-names></name>, <etal>et al</etal>
+<article-title>Choroidal thinning in diabetes type 1 detected by 3-dimensional 1060 nm optical coherence tomography</article-title>. <source>Invest Ophthalmol Vis Sci</source>. <year>2012</year>;<volume>53</volume>(<issue>11</issue>):<fpage>6803</fpage>&#x2013;<lpage>9</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.12-10314">10.1167/iovs.12-10314</ext-link></comment> .<pub-id pub-id-type="pmid">22952126</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0145628.ref061">
+        <label>61</label>
+        <mixed-citation publication-type="journal"><name><surname>Esmaeelpour</surname><given-names>M</given-names></name>, <name><surname>Pova&#x17E;ay</surname><given-names>B</given-names></name>, <name><surname>Hermann</surname><given-names>B</given-names></name>, <name><surname>Hofer</surname><given-names>B</given-names></name>, <name><surname>Kajic</surname><given-names>V</given-names></name>, <name><surname>Hale</surname><given-names>SL</given-names></name>, <etal>et al</etal>
+<article-title>Mapping choroidal and retinal thickness variation in type 2 diabetes using three-dimensional 1060-nm optical coherence tomography</article-title>. <source>Invest Ophthalmol Vis Sci</source>. <year>2011</year>;<volume>52</volume>(<issue>8</issue>):<fpage>5311</fpage>&#x2013;<lpage>6</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/iovs.10-6875">10.1167/iovs.10-6875</ext-link></comment> .<pub-id pub-id-type="pmid">21508108</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

@@ -1,0 +1,975 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">22479377</article-id>
+      <article-id pub-id-type="pmc">3314005</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-11-16734</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0033263</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Population Genetics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Molecular Genetics</subject>
+            </subj-group>
+            <subj-group>
+              <subject>Population Genetics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genomics</subject>
+            <subj-group>
+              <subject>Genome Analysis Tools</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Population Biology</subject>
+            <subj-group>
+              <subject>Epidemiology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Hematology</subject>
+            <subj-group>
+              <subject>Coagulation Disorders</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Identification and Functional Analysis of a Novel von Willebrand Factor Mutation in a Family with Type 2A von Willebrand Disease</article-title>
+        <alt-title alt-title-type="running-head">A Novel VWF Mutation in a Family with Type 2A VWD</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Dong</surname>
+            <given-names>Jing</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Zhao</surname>
+            <given-names>Xiaojuan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Shi</surname>
+            <given-names>Sensen</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ma</surname>
+            <given-names>Zhenni</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Liu</surname>
+            <given-names>Meng</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wu</surname>
+            <given-names>Qingyu</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ruan</surname>
+            <given-names>Changgeng</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dong</surname>
+            <given-names>Ningzheng</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Jiangsu Institute of Hematology, Soochow University, First Affiliated Hospital, Suzhou, China</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Cyrus Tang Hematology Center, Soochow University, Suzhou, China</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Molecular Cardiology, Nephrology and Hypertension, Lerner Research Institute, Cleveland Clinic, Cleveland, Ohio, United States of America</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Key Lab of Thrombosis and Hemostasis of Ministry of Health, Jiangsu Institute of Hematology, Soochow University, First Affiliated Hospital, Suzhou, China</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Reitsma</surname>
+            <given-names>Pieter H.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">Leiden University Medical Center, The Netherlands</aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>ningzheng_dong@yahoo.com.cn</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: ND QW CR. Performed the experiments: JD XJZ SS ZM ML. Analyzed the data: JD XJZ SS ND. Contributed reagents/materials/analysis tools: XJZ SS ZM ML. Wrote the paper: JD QW ND. Clinical laboratory tests: JD XJZ SS.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>27</day>
+        <month>3</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>7</volume>
+      <issue>3</issue>
+      <elocation-id>e33263</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>29</day>
+          <month>8</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>10</day>
+          <month>2</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Dong et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</copyright-statement>
+        <copyright-year>2012</copyright-year>
+      </permissions>
+      <abstract>
+        <p>von Willebrand factor (VWF) is essential for normal hemostasis. VWF gene mutations cause the hemorrhagic von Willebrand disease (VWD). In this study, a 9-year-old boy was diagnosed as type 2A VWD, based on a history of abnormal bleeding, low plasma VWF antigen and activity, low plasma factor VIII activity, and lack of plasma high-molecular-weight (HMW) VWF multimers. Sequencing analysis detected a 6-bp deletion in exon 28 of his VWF gene, which created a mutant lacking D1529V1530 residues in VWF A2 domain. This mutation also existed in his family members with abnormal bleedings but not in &gt;60 normal controls. In transfected HEK293 cells, recombinant VWF &#x394;D1529V1530 protein had markedly reduced levels in the conditioned medium (42&#xB1;4% of wild-type (WT) VWF, <italic>p</italic>&lt;0.01). The mutant VWF in the medium had less HMW multimers. In contrast, the intracellular levels of the mutant VWF in the transfected cells were significantly higher than that of WT (174&#xB1;29%, <italic>p</italic>&lt;0.05), indicating intracellular retention of the mutant VWF. In co-transfection experiments, the mutant reduced WT VWF secretion from the cells. By immunofluorescence staining, the retention of the mutant VWF was identified within the endoplasmic reticulum (ER). Together, we identified a unique VWF mutation responsible for the bleeding phenotype in a patient family with type 2A VWD. The mutation impaired VWF trafficking through the ER, thereby preventing VWF secretion from the cells. Our results illustrate the diversity of VWF gene mutations, which contributes to the wide spectrum of VWD.</p>
+      </abstract>
+      <counts>
+        <page-count count="6"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>von Willebrand factor (VWF) is a multimeric glycoprotein that plays an important role in hemostasis <xref ref-type="bibr" rid="pone.0033263-Ruggeri1">[1]</xref>, <xref ref-type="bibr" rid="pone.0033263-Sadler1">[2]</xref>. VWF mediates platelet adhesion at damaged vascular sites and protects plasma factor VIII (FVIII) from proteolytic degradation. In vascular endothelial cells and megakaryocytes, VWF is synthesized as a 2813-amino acid processor consisting of multiple domains in the order of D1-D2-D&#x2032;-D3-A1-A2-A3-D4-B1-B2-B3-C1-C2-CK. After removal of the signal peptide, VWF monomers in the endoplasmic reticulum (ER) form dimers by connecting their C-termini through disulfide bonds. VWF dimers then translocate to the Golgi to form high-molecular-weight (HMW) multimers by linking cysteine residues at their N-termini. The assembled VWF is either constitutively secreted or stored in Weibel-Palade bodies of endothelial cells or &#x3B1;-granules of platelets. The HMW multimers are critical for VWF to mediate platelet adhesion under high shear flow conditions <xref ref-type="bibr" rid="pone.0033263-Ruggeri1">[1]</xref>, <xref ref-type="bibr" rid="pone.0033263-Sadler1">[2]</xref>.</p>
+      <p>von Willebrand disease (VWD) is the most common inherited bleeding disorder caused by mutations in the VWF gene <xref ref-type="bibr" rid="pone.0033263-Peerlinck1">[3]</xref>, <xref ref-type="bibr" rid="pone.0033263-Bernardi1">[4]</xref>, <xref ref-type="bibr" rid="pone.0033263-Holmberg1">[5]</xref>, <xref ref-type="bibr" rid="pone.0033263-Lethagen1">[6]</xref>, <xref ref-type="bibr" rid="pone.0033263-OBrien1">[7]</xref>, <xref ref-type="bibr" rid="pone.0033263-Hommais1">[8]</xref>, <xref ref-type="bibr" rid="pone.0033263-Michiels1">[9]</xref>, <xref ref-type="bibr" rid="pone.0033263-Gupta1">[10]</xref>, <xref ref-type="bibr" rid="pone.0033263-Kashiwagi1">[11]</xref>, <xref ref-type="bibr" rid="pone.0033263-Baronciani1">[12]</xref>, <xref ref-type="bibr" rid="pone.0033263-Corrales1">[13]</xref>, <xref ref-type="bibr" rid="pone.0033263-PerezRodriguez1">[14]</xref>, <xref ref-type="bibr" rid="pone.0033263-Casari1">[15]</xref>, <xref ref-type="bibr" rid="pone.0033263-Castaman1">[16]</xref>, <xref ref-type="bibr" rid="pone.0033263-Daidone1">[17]</xref>, <xref ref-type="bibr" rid="pone.0033263-Wang1">[18]</xref>, which result in quantitative and/or qualitative defects in VWF <xref ref-type="bibr" rid="pone.0033263-Sadler1">[2]</xref>, <xref ref-type="bibr" rid="pone.0033263-Sadler2">[19]</xref>. VWD is classified into three types: types 1 and 3 refer to different degrees of quantitative VWF deficiencies, whereas type 2 refers to all qualitative VWF deficiencies. Type 2 VWD is subdivided into types 2A, 2B, 2M, and 2N. Type 2A refers to qualitative variants with decreased platelet adhesion activity and a selective loss of HMW VWF multimers <xref ref-type="bibr" rid="pone.0033263-Sadler2">[19]</xref>. Identification of VWF gene mutations in VWD subtypes has helped to understand the molecular basis underlying VWD and the structure-function relationship of VWF.</p>
+      <p>In this study, we diagnosed a patient family with type 2A VWD. DNA sequence analysis of the VWF gene in the patients identified a novel 6-base pair (bp) deletion in exon 28, which encodes the C-terminal half of VWF A2 domain. In functional studies, the mutation did not prevent VWF expression in transfected human embryonic kidney (HEK)293 cells but markedly impaired VWF secretion from the cells. The results help to explain the findings of low plasma VWF levels but normal platelet VWF levels in the patients and support the importance of A2 domain in VWF biosynthesis and secretion.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <sec id="s2a">
+        <title>Diagnosis of a patient family with type 2A VWD</title>
+        <p>The proband was a 9-year-old boy, whose family pedigree is shown in <xref ref-type="fig" rid="pone-0033263-g001">Fig. 1</xref>. He suffered from frequent bruise, epistaxis, prolonged bleedings from small wounds, and delayed wound healing. His mother also had a history of epistaxis, menorrhagia and anemia. His father did not experience any abnormal bleedings. Several members in the extended family had bleeding tendencies. The results of laboratory tests from the proband and some of his family members are shown in <xref ref-type="table" rid="pone-0033263-t001">Table 1</xref>, which indicated normal clotting times but low plasma VWF antigen and activity in the proband (V-2), and the family members III-3, IV-2, IV-3 and IV-4.</p>
+        <fig id="pone-0033263-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0033263.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Pedigree of the family with bleeding disorder.</title>
+            <p>Squares and circles indicate males and females, respectively, and arrow indicates the proband. Black color denotes affected individuals. A slash through the symbol indicates decreased individuals.</p>
+          </caption>
+          <graphic xlink:href="pone.0033263.g001"/>
+        </fig>
+        <table-wrap id="pone-0033263-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0033263.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Main laboratory findings of the patient and family members.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0033263-t001-1" xlink:href="pone.0033263.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">V-2</td>
+                  <td align="left" rowspan="1" colspan="1">III-3</td>
+                  <td align="left" rowspan="1" colspan="1">IV-2</td>
+                  <td align="left" rowspan="1" colspan="1">IV-3</td>
+                  <td align="left" rowspan="1" colspan="1">IV-4</td>
+                  <td align="left" rowspan="1" colspan="1">IV-5</td>
+                  <td align="left" rowspan="1" colspan="1">Normal Range</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">TT, sec</td>
+                  <td align="left" rowspan="1" colspan="1">16.7</td>
+                  <td align="left" rowspan="1" colspan="1">16.7</td>
+                  <td align="left" rowspan="1" colspan="1">15.6</td>
+                  <td align="left" rowspan="1" colspan="1">18.6</td>
+                  <td align="left" rowspan="1" colspan="1">18.1</td>
+                  <td align="left" rowspan="1" colspan="1">17.1</td>
+                  <td align="left" rowspan="1" colspan="1">14&#x2013;21</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">APTT, sec</td>
+                  <td align="left" rowspan="1" colspan="1">58.1</td>
+                  <td align="left" rowspan="1" colspan="1">45.5</td>
+                  <td align="left" rowspan="1" colspan="1">45.8</td>
+                  <td align="left" rowspan="1" colspan="1">45.2</td>
+                  <td align="left" rowspan="1" colspan="1">46.1</td>
+                  <td align="left" rowspan="1" colspan="1">36.6</td>
+                  <td align="left" rowspan="1" colspan="1">28&#x2013;40</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">PT, sec</td>
+                  <td align="left" rowspan="1" colspan="1">14.2</td>
+                  <td align="left" rowspan="1" colspan="1">14.0</td>
+                  <td align="left" rowspan="1" colspan="1">13.8</td>
+                  <td align="left" rowspan="1" colspan="1">13.4</td>
+                  <td align="left" rowspan="1" colspan="1">14.1</td>
+                  <td align="left" rowspan="1" colspan="1">13.0</td>
+                  <td align="left" rowspan="1" colspan="1">11&#x2013;14.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">RIPA, %</td>
+                  <td align="left" rowspan="1" colspan="1">28.5</td>
+                  <td align="left" rowspan="1" colspan="1">N/A</td>
+                  <td align="left" rowspan="1" colspan="1">N/A</td>
+                  <td align="left" rowspan="1" colspan="1">N/A</td>
+                  <td align="left" rowspan="1" colspan="1">3.0</td>
+                  <td align="left" rowspan="1" colspan="1">85.0</td>
+                  <td align="left" rowspan="1" colspan="1">50&#x2013;150</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">VWF:Ag, U/dL</td>
+                  <td align="left" rowspan="1" colspan="1">20.5</td>
+                  <td align="left" rowspan="1" colspan="1">21.6</td>
+                  <td align="left" rowspan="1" colspan="1">30.4</td>
+                  <td align="left" rowspan="1" colspan="1">19.5</td>
+                  <td align="left" rowspan="1" colspan="1">21.7</td>
+                  <td align="left" rowspan="1" colspan="1">95.2</td>
+                  <td align="left" rowspan="1" colspan="1">50&#x2013;150</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">VWF:Rco, U/dL</td>
+                  <td align="left" rowspan="1" colspan="1">6.2</td>
+                  <td align="left" rowspan="1" colspan="1">5.0</td>
+                  <td align="left" rowspan="1" colspan="1">8.4</td>
+                  <td align="left" rowspan="1" colspan="1">7.6</td>
+                  <td align="left" rowspan="1" colspan="1">5.0</td>
+                  <td align="left" rowspan="1" colspan="1">94.5</td>
+                  <td align="left" rowspan="1" colspan="1">50&#x2013;150</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">FVIII:C, U/dL</td>
+                  <td align="left" rowspan="1" colspan="1">25.0</td>
+                  <td align="left" rowspan="1" colspan="1">28.0</td>
+                  <td align="left" rowspan="1" colspan="1">50.0</td>
+                  <td align="left" rowspan="1" colspan="1">29.0</td>
+                  <td align="left" rowspan="1" colspan="1">N/A</td>
+                  <td align="left" rowspan="1" colspan="1">79.0</td>
+                  <td align="left" rowspan="1" colspan="1">50&#x2013;150</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>TT, thrombin time; APTT, activated partial thromboplastin time; PT, prothrombin time; RIPA, ristocetin-induced platelet agglutination; VWF:Ag, VWF antigen; VWF:RCo, VWF ristocetin cofactor activity; FVIII:C, FVIII coagulant activity; N/A, not available.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>We analyzed VWF multimers in plasma and platelets from these individuals. Plasma VWF from the proband, III-3, IV-2, IV-3 and IV-4 lacked high or intermediate MW multimers, whereas VWF from the proband's father (IV-5) had a similar multimer pattern to that of a normal control (<xref ref-type="fig" rid="pone-0033263-g002">Fig. 2A</xref>). In contrast, platelet VWF from these individuals all had HMW multimers that were indistinguishable from those of normal controls (<xref ref-type="fig" rid="pone-0033263-g002">Fig. 2B</xref>). Based on these data and the results of laboratory tests, including low plasma VWF Ag and activities (<xref ref-type="table" rid="pone-0033263-t001">Table 1</xref>), the proband and 4 additional family members (III-3, IV-2, IV-3 and IV-4) were diagnosed for type 2A VWD.</p>
+        <fig id="pone-0033263-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0033263.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Analysis of plasma and platelet VWF multimers.</title>
+            <p>Plasma (A) and platelet (B) VWF multimers were assessed by 1.6% SDS-agarose gel electrophoresis and Western blotting. Normal plasma samples were diluted 1&#x2236;20 and patient plasma samples were diluted 1&#x2236;5. Samples from family members and a normal control (N) were indicated. Platelet samples were not available from IV-4.</p>
+          </caption>
+          <graphic xlink:href="pone.0033263.g002"/>
+        </fig>
+      </sec>
+      <sec id="s2b">
+        <title>Identification of a VWF gene mutation</title>
+        <p>To understand the genetic basis underlying the VWD in this family, we isolated genomic DNA from the proband and sequenced all 52 exons in his VWF gene. We found overlapping peaks in the sequencing chromatogram of exon 28 (data not shown), suggesting a heterozygous mutation. To verify this VWF gene mutation, we separated DNA fragments from the patient's two alleles by PCR amplification and cloning of the DNA fragments into pMD18-T vector. Sequencing analysis of the resulting plasmids showed that the patient had one normal VWF allele and a mutant allele with a 6-bp deletion in exon 28, which encoded amino acids D1529 and V1530 in VWF A2 domain (<xref ref-type="fig" rid="pone-0033263-g003">Fig. 3</xref>). The deletion kept the remaining coding sequence in-frame. We did not find any additional insertion, deletion or non-synonymous point mutations in his VWF gene. This 6-bp deletion mutation also existed in his mother (IV-4) and three other family members (III-3, IV-2 and IV-3) with bleeding symptoms but not in his father (IV-5) and more than 60 unrelated normal controls, indicating that this mutation is responsible for the VWD in this family.</p>
+        <fig id="pone-0033263-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0033263.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Identification of a VWF gene mutation.</title>
+            <p>Sequence analysis of the VWF gene in the proband detected a 6-bp nucleotides deletion in exon 28. The mutation caused D1529V1530 deletion (&#x394;D1529V1530) in VWF A2 domain. The ADAMTS13 cleavage site is indicated by an arrow.</p>
+          </caption>
+          <graphic xlink:href="pone.0033263.g003"/>
+        </fig>
+      </sec>
+      <sec id="s2c">
+        <title>Analysis of recombinant mutant VWF</title>
+        <p>We constructed a plasmid expressing mutant VWF with D1529V1530 deletion (&#x394;D1529V1530) and transfected the plasmid into HEK293 cells. Recombinant VWF in the condition medium and cell lysates was quantified by ELISA (<xref ref-type="table" rid="pone-0033263-t002">Table 2</xref>). Compared with control recombinant wild-type (WT) VWF in similarly transfected cells, VWF &#x394;D1529V1530 mutant had a higher intracellular level (174&#xB1;29%, <italic>p</italic>&lt;0.05). The level of the mutant VWF in the conditioned medium, however, was markedly reduced compared to that of WT control (42&#xB1;4%, <italic>p</italic>&lt;0.01).</p>
+        <table-wrap id="pone-0033263-t002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0033263.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Expression of WT and mutant VWF in transfected HEK293 cells.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0033263-t002-2" xlink:href="pone.0033263.t002"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Plasmid</td>
+                  <td align="left" rowspan="1" colspan="1">Cell Lysate</td>
+                  <td colspan="3" align="left" rowspan="1">Conditioned Medium</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">VWF:Ag (%)</td>
+                  <td align="left" rowspan="1" colspan="1">VWF:Ag (%)</td>
+                  <td align="left" rowspan="1" colspan="1">VWF:CB (%)</td>
+                  <td align="left" rowspan="1" colspan="1">VWF:CB/VWF:Ag</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">WT</td>
+                  <td align="left" rowspan="1" colspan="1">100&#xB1;28</td>
+                  <td align="left" rowspan="1" colspan="1">100&#xB1;12</td>
+                  <td align="left" rowspan="1" colspan="1">100&#xB1;12</td>
+                  <td align="left" rowspan="1" colspan="1">1.0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Mutant</td>
+                  <td align="left" rowspan="1" colspan="1">174&#xB1;29<xref ref-type="table-fn" rid="nt104">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">42&#xB1;4<xref ref-type="table-fn" rid="nt103">**</xref></td>
+                  <td align="left" rowspan="1" colspan="1">16&#xB1;4<xref ref-type="table-fn" rid="nt103">**</xref></td>
+                  <td align="left" rowspan="1" colspan="1">0.38</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Mutant/WT</td>
+                  <td align="left" rowspan="1" colspan="1">121&#xB1;52</td>
+                  <td align="left" rowspan="1" colspan="1">61&#xB1;16<xref ref-type="table-fn" rid="nt104">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">21&#xB1;16<xref ref-type="table-fn" rid="nt103">**</xref></td>
+                  <td align="left" rowspan="1" colspan="1">0.34</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">WT (1/2)</td>
+                  <td align="left" rowspan="1" colspan="1">58&#xB1;21</td>
+                  <td align="left" rowspan="1" colspan="1">68&#xB1;7<xref ref-type="table-fn" rid="nt104">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">32&#xB1;7<xref ref-type="table-fn" rid="nt103">**</xref></td>
+                  <td align="left" rowspan="1" colspan="1">0.47</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt102">
+              <label/>
+              <p>VWF:Ag, VWF antigen; VWF:CB, VWF collagen-binding activity; WT, wild-type VWF; WT (1/2), one-half amount of WT plasmid; Data represent mean &#xB1; SD,</p>
+            </fn>
+            <fn id="nt103">
+              <label>**</label>
+              <p><italic>p</italic>&lt;0.01 <italic>vs.</italic> WT,</p>
+            </fn>
+            <fn id="nt104">
+              <label>*</label>
+              <p><italic>p</italic>&lt;0.05 <italic>vs.</italic> WT. Data were from three independent experiments.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>To test the hypothesis that the mutant VWF allele may interfere with the expression of the normal VWF allele in the patients, we mixed equal amounts of plasmids for WT and &#x394;D1529V1530 mutant VWF and transfected them into HEK293 cells. ELISA analysis of cell lysates showed higher levels of recombinant VWF expression in HEK293 cells transfected with both WT and &#x394;D1529V1530 mutant plasmids (<xref ref-type="table" rid="pone-0033263-t002">Table 2</xref>). The levels in the conditioned medium from these cells, however, were significantly lower than that from the cells transfected with WT plasmid alone (61&#xB1;16% of WT, <italic>p</italic>&lt;0.05). The reduced levels were similar to that from the cells transfected with one-half amount of WT plasmid (<xref ref-type="table" rid="pone-0033263-t002">Table 2</xref>). The results indicate that &#x394;D1529V1530 mutant impaired WT VWF secretion from the transfected cells.</p>
+        <p>We then analyzed the multimer pattern of recombinant WT and mutant VWF from the transfected cells. As shown in <xref ref-type="fig" rid="pone-0033263-g004">Fig. 4</xref>, recombinant WT VWF from the conditioned medium had HMW multimers. In contrast, VWF &#x394;D1529V1530 mutant from similarly transfected cells had lower expression levels and less HMW multimers. In the conditioned media from the cells transfected with both the mutant and WT plasmids or one-half amount of WT plasmid alone, VWF protein expression levels were lower but HMW multimers were clearly present (<xref ref-type="fig" rid="pone-0033263-g004">Fig. 4</xref>).</p>
+        <fig id="pone-0033263-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0033263.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Multimer analysis of recombinant VWF expressed in HEK293 cells.</title>
+            <p>Multimeric analysis of recombinant VWF was performed with the conditioned medium from HEK293 cells transfected with plasmids for WT and the mutant, individually or in combination. Samples from the vector-transfected cells were used as a negative control.</p>
+          </caption>
+          <graphic xlink:href="pone.0033263.g004"/>
+        </fig>
+        <p>We next did immunofluorescence staining to localize WT and mutant VWF proteins inside the cells by co-staining with protein disulfide isomerase (PDI), an ER protein marker. As shown in <xref ref-type="fig" rid="pone-0033263-g005">Fig. 5</xref> (middle row panels), recombinant WT VWF was detected in transfected HEK293 cells. The protein was present around the nucleus and in the cytoplasm where the staining was granule-like. There were limited overlaps between VWF and PDI expression. In similarly transfected HEK293 cells, the mutant VWF was detected mostly around the nucleus and the expression pattern overlapped with that of PDI (<xref ref-type="fig" rid="pone-0033263-g005">Fig. 5</xref>, lower panels). The results indicate that a significant portion of the mutant VWF molecules was retained in the ER in these cells.</p>
+        <fig id="pone-0033263-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0033263.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Detection of WT and mutant VWF in transfected HEK293 cells by immunostaining.</title>
+            <p>HEK293 cells were transfected with a control vector or plasmids expressing WT or mutant VWF. The cells were stained for VWF (red), PDI (green) or DAPI (nucleus, blue). In the right column panels, merged pictures of green, red and blue channels are shown. The images were obtained with a confocal microscope. Scale bars: 10 &#xB5;m.</p>
+          </caption>
+          <graphic xlink:href="pone.0033263.g005"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>In this study, we report a patient family with type 2A VWD. The diagnosis was based on the VWD classification <xref ref-type="bibr" rid="pone.0033263-Michiels1">[9]</xref>, <xref ref-type="bibr" rid="pone.0033263-Sadler2">[19]</xref>, which includes a history of moderate bleeding, low levels of plasma VWF:Ag, reduced VWF:CB and VWF:Rco activities, decreased FVIII coagulant activity, and lack of high and intermediate MW VWF multimers. Sequencing analysis of the VWF gene exons of the proband identified a 6-bp deletion in exon 28. This mutation has never been reported in the literature and is predicted to create a mutant VWF that lacks residues D1529V1530 in A2 domain. This novel mutation was found in 4 additional family members, who had similar clinical symptoms and laboratory findings, but not in &gt;60 normal controls.</p>
+      <p>We expressed and characterized VWF &#x394;D1529V1530 mutant in transfected HEK293 cells. Unlike the previously reported delR1569 mutation in VWF A2 domain, which greatly reduced VWF expression <xref ref-type="bibr" rid="pone.0033263-Hassenpflug1">[20]</xref>, the deletion of D1529V1530 did not prevent VWF expression in HEK293 cells, as indicated by higher levels of VWF protein in cell lysate (<xref ref-type="table" rid="pone-0033263-t002">Table 2</xref>). The secretion of this mutant from the cells, however, was markedly impaired, as indicated by low levels of mutant VWF in the conditioned medium (<xref ref-type="table" rid="pone-0033263-t002">Table 2</xref>). The mutant also decreased the levels of recombinant WT VWF in the conditioned medium when they were co-expressed, exhibiting a dominant-negative effect on VWF secretion (<xref ref-type="table" rid="pone-0033263-t002">Table 2</xref>). These data were consistent with the findings of low plasma VWF levels but normal platelet VWF levels in these patients. Similar findings of normal cellular expression but reduced secretion were reported in other type 2A VWD patients who had mutations in VWF A2 <xref ref-type="bibr" rid="pone.0033263-Hassenpflug1">[20]</xref>, <xref ref-type="bibr" rid="pone.0033263-Lyons1">[21]</xref>, D3 or CK domains <xref ref-type="bibr" rid="pone.0033263-Baronciani2">[22]</xref>. The dominant-negative effect of &#x394;D1529V1530 mutant on WT VWF secretion in transfected cells may also explain the autosomal dominant inheritance observed in this patient family.</p>
+      <p>In patients with type 2A VWD, mutations in VWF A1 and A2 domains often resulted in the loss of HMW, and sometimes intermediate MW, multimers <xref ref-type="bibr" rid="pone.0033263-OBrien1">[7]</xref>, <xref ref-type="bibr" rid="pone.0033263-Penas1">[23]</xref>. It is proposed that type 2A VWD may be divided into groups I and II, based on different molecular defects <xref ref-type="bibr" rid="pone.0033263-OBrien1">[7]</xref>, <xref ref-type="bibr" rid="pone.0033263-Kashiwagi1">[11]</xref>, <xref ref-type="bibr" rid="pone.0033263-Lyons1">[21]</xref>, <xref ref-type="bibr" rid="pone.0033263-Tsai1">[24]</xref>. In group I, mutations impair the intracellular transport, storage or secretion of VWF, especially HMW multimers. The reported VWF mutations that belong to this group include L1503R <xref ref-type="bibr" rid="pone.0033263-Kashiwagi1">[11]</xref>, G1505R, S1506L <xref ref-type="bibr" rid="pone.0033263-Lyons1">[21]</xref>, L1540P <xref ref-type="bibr" rid="pone.0033263-Kashiwagi1">[11]</xref>, <xref ref-type="bibr" rid="pone.0033263-Sutherland1">[25]</xref> and V1607D <xref ref-type="bibr" rid="pone.0033263-Lyons1">[21]</xref>. In group II, mutations do not alter VWF protein synthesis, intracellular transport or secretion, but render the protein more susceptible to ADAMTS13, which cleaves VWF at Y1605-M1606 in A2 domain <xref ref-type="bibr" rid="pone.0033263-OBrien1">[7]</xref>, <xref ref-type="bibr" rid="pone.0033263-Tsai1">[24]</xref>, <xref ref-type="bibr" rid="pone.0033263-Akiyama1">[26]</xref> (<xref ref-type="fig" rid="pone-0033263-g003">Fig. 3</xref>). These data indicate that mutations in A2 domain, depending on their specific positions and the nature of amino acid changes, may have different effects on the intracellular trafficking and posttranslational degradation of VWF.</p>
+      <p>Unlike most point mutations reported in type 2A VWD that alter single amino acids, the mutation we found in this study deleted two amino acids in A2 domain while the remaining VWF sequence was kept in-frame. Mechanistically, the type 2A VWD caused by this deletion mutation belongs to group I because the mutation impaired VWF secretion. As shown by ELISA and multimer analysis (<xref ref-type="table" rid="pone-0033263-t002">Table 2</xref> and <xref ref-type="fig" rid="pone-0033263-g004">Fig. 4</xref>), mutant VWF in the conditioned medium was at low levels and had less HMW multimers, consistent with low levels of plasma VWF that also lacked HMW mulitmers in these patients (<xref ref-type="fig" rid="pone-0033263-g002">Fig. 2A</xref>). We showed that co-expression of WT VWF did not significantly improve the secretion of the mutant in transfected cells (<xref ref-type="table" rid="pone-0033263-t002">Table 2</xref>). In this regard, this mutant VWF differed from some of quantitative VWF mutants in D3 and CK domains, which also had reduced secretion in transfected HEK293 cells. The defective secretion of these quantitative VWF mutants, however, was attenuated if WT VWF was co-expressed, resulting in normal amounts of HMW multimers in the conditioned medium <xref ref-type="bibr" rid="pone.0033263-Wang2">[27]</xref>, <xref ref-type="bibr" rid="pone.0033263-Schneppenheim1">[28]</xref>. These data indicate that &#x394;D1529V1530 mutant may interact with WT VWF and impair the intracellular trafficking and secretion of WT VWF. In the patients, however, it is unlikely that the mutation completely blocked the VWF intracellular trafficking since HMW VWF multimers were detected in the patients' platelets (<xref ref-type="fig" rid="pone-0033263-g002">Fig. 2A</xref>). The data suggest that &#x394;D1529V1530 mutation may impair both the intracellular trafficking and secretion of VWF in the patients.</p>
+      <p>In summary, we identified a novel deletion mutation in VWF A2 domain in a family of patients with type 2A VWD. In functional studies, we showed that the mutation did not prevent VWF expression but markedly impaired VWF secretion in transfected HEK293 cells. Our results help to determine the genetic basis of the bleeding phenotype in this patient family and provide new data to illustrate the diversity of VWF gene mutations that contributes to the wide spectrum of VWD.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s4">
+      <title>Materials and Methods</title>
+      <sec id="s4a">
+        <title>Blood samples and laboratory tests</title>
+        <p>This study was approved by the Ethics Committees of the First Affiliated Hospital of Soochow University and all participants gave informed consent. Blood was collected in tubes containing 3.2% of sodium citrate [1&#x2236;10 (v/v)] as an anticoagulant. Plasma was prepared by centrifugation of blood samples at 12, 000&#xD7; g for 5 min, aliquoted and stored at &#x2212;80&#xB0;C until use. Platelet-rich plasma (PRP) and platelet-poor plasma (PPP) were prepared by centrifugation of blood samples at 100&#xD7; g for 10 min and 800&#xD7; g for 15 min, respectively.</p>
+        <p>VWF antigen (VWF:Ag) and VWF ristocetin cofactor activity (VWF:Rco) were measured by ELISA <xref ref-type="bibr" rid="pone.0033263-Vanhoorelbeke1">[29]</xref>. VWF collagen-binding activity (VWF:CB) was measured using an ELISA-based assay with human type III collagen (Sigma, St Louis, MO, USA) <xref ref-type="bibr" rid="pone.0033263-Favaloro1">[30]</xref>. Ristocetin-induced platelet aggregation (RIPA) was done on a platelet aggregometer (Chronolog) in the presence of 1.25 mg/mL ristocetin (Sigma). Plasma FVIII activity was measured by a one-stage method <xref ref-type="bibr" rid="pone.0033263-Gill1">[31]</xref>.</p>
+      </sec>
+      <sec id="s4b">
+        <title>VWF multimer analysis</title>
+        <p>Analysis of VWF multimers in plasma and platelets from patients or in the conditioned medium from transfected cells expressing recombinant VWF was performed using 1.6% SDS-agarose gel electrophoresis, as previously described <xref ref-type="bibr" rid="pone.0033263-Gupta1">[10]</xref>, <xref ref-type="bibr" rid="pone.0033263-Budde1">[32]</xref>. VWF multimers in the gel were transferred to a nitrocellulose membrane and detected by an HRP-conjugated rabbit anti-human VWF antibody (Dako, Glostrup, Denmark).</p>
+      </sec>
+      <sec id="s4c">
+        <title>DNA extraction and sequencing</title>
+        <p>Genomic DNA was extracted from peripheral blood leukocytes using the QIAamp Blood Kit (Qiagen), according to the manufacturer's instruction. DNA sequences from all 52 exons and intron&#x2013;exon boundaries of the VWF gene were amplified by PCR using oligonucleotide primers that were listed publicly <ext-link ext-link-type="uri" xlink:href="http://www.euvwd.group.shef.ac.uk/sequence.htm">http://www.euvwd.group.shef.ac.uk/sequence.htm</ext-link>. PCR products were sequenced directly by a DNA analyzer (Applied Biosystems 310). To verify possible heterozygous deletions or insertions in patients, amplified DNA fragments with candidate mutations were cloned into pMD18-T vector (Takara), and inserts from the resulting plasmids were sequenced. The new sequence data has been deposited in GenBank (accession number: BankIt1476860 Seq1 JN625247).</p>
+      </sec>
+      <sec id="s4d">
+        <title>Plasmid construction</title>
+        <p>The plasmid pSVHVWF containing the full-length human VWF cDNA was kindly provided by Evan Sadler (Washington University School of Medicine, St Louis, USA) <xref ref-type="bibr" rid="pone.0033263-Wagner1">[33]</xref>. A PCR-based method was used to construct expression vectors encoding VWF mutants using the full-length human VWF cDNA as a template. Oligonucleotide primers <named-content content-type="gene">5&#x2032;-tga ttc agc gga tgg gcc agg aca gc-3&#x2032;</named-content> and <named-content content-type="gene">5&#x2032;-gct gtc ctg gcc cat ccg ctg aat ca -3&#x2032;</named-content> were used to make the plasmid expressing the mutant VWF with D1529V1530 deletion (&#x394;D1529V1530). In this study, the amino acid numbering was based on human pro-VWF. The entire cDNA insert for the mutant VWF in the expression vector was verified by sequencing.</p>
+      </sec>
+      <sec id="s4e">
+        <title>Expression of recombinant VWF</title>
+        <p>HEK293 cells <xref ref-type="bibr" rid="pone.0033263-Knappe1">[34]</xref> were cultured in Dulbecco's modified Eagle's medium (DMEM) supplemented with 10% fetal bovine serum at 37&#xB0;C in an incubator with 5% CO<sub>2</sub>. Transient transfection was performed using LipofectAMINE 2000 (Invitrogen), as described previously <xref ref-type="bibr" rid="pone.0033263-Liao1">[35]</xref>. The conditioned medium was collected 48 h after transfection and centrifuged at 15,000 rpm to remove cell debris. The cells were lysed in a buffer containing 100 mM Tris-HCl, pH 7.5, and 1% Triton X-100. Recombinant VWF in the conditioned medium and cell lysates was quantified by ELISA and analyzed for its multimeric structure.</p>
+      </sec>
+      <sec id="s4f">
+        <title>Confocal immunofluorescence microscopy</title>
+        <p>For immunofluorescence staining of recombinant VWF in cells <xref ref-type="bibr" rid="pone.0033263-Castaman1">[16]</xref>, HEK293 cells were cultured on coverslips in 6-well plates and transfected with VWF expressing plasmids. After 48 h, the cells were fixed with 4% paraformaldehyde, permeabilized in 1% Triton X-100 and blocked with 5% bovine serum albumin in phosphate-buffered saline. Cells were incubated with first antibodies and then with fluorescence-conjugated secondary antibodies. A polyclonal anti-VWF antibody (Dako) and a monoclonal anti-human PDI antibody (BD Bioscience) were used to visualize VWF and the ER, respectively. Alexa 488- and Alexa 594-conjugated secondary antibodies were from Invitrogen. Fluorescent images were acquired with a confocal microscope (NIKON TE2000-E).</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank Wei Zhang and Jian Su for clinical laboratory tests, and Evan Sadler for WT VWF plasmid.</p>
+    </ack>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding: </bold>This work was supported in part by grants from the National Natural Science Foundation of China (31070716, 81170247), the Natural Science Foundation of the Jiangsu Higher Education Institutions (10KJB320017), Applied and Basic Research Project of Suzhou (SYS201021), and the Priority Academic Program Development of Jiangsu Higher Education Institutions of China. No additional external funding received for this study. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0033263-Ruggeri1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ruggeri</surname><given-names>ZM</given-names></name></person-group>
+<year>2003</year>
+<article-title>Von Willebrand factor.</article-title>
+<source>Curr Opin Hematol</source>
+<volume>10</volume>
+<fpage>142</fpage>
+<lpage>149</lpage>
+<pub-id pub-id-type="pmid">12579041</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Sadler1">
+        <label>2</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sadler</surname><given-names>JE</given-names></name></person-group>
+<year>1998</year>
+<article-title>Biochemistry and genetics of von Willebrand factor.</article-title>
+<source>Annu Rev Biochem</source>
+<volume>67</volume>
+<fpage>395</fpage>
+<lpage>424</lpage>
+<pub-id pub-id-type="pmid">9759493</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Peerlinck1">
+        <label>3</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Peerlinck</surname><given-names>K</given-names></name><name><surname>Eikenboom</surname><given-names>JC</given-names></name><name><surname>Ploos Van Amstel</surname><given-names>HK</given-names></name><name><surname>Sangtawesin</surname><given-names>W</given-names></name><name><surname>Arnout</surname><given-names>J</given-names></name><etal/></person-group>
+<year>1992</year>
+<article-title>A patient with von Willebrand's disease characterized by a compound heterozygosity for a substitution of Arg854 by Gln in the putative factor-VIII-binding domain of von Willebrand factor (vWF) on one allele and very low levels of mRNA from the second vWF allele.</article-title>
+<source>Br J Haematol</source>
+<volume>80</volume>
+<fpage>358</fpage>
+<lpage>363</lpage>
+<pub-id pub-id-type="pmid">1581215</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Bernardi1">
+        <label>4</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bernardi</surname><given-names>F</given-names></name><name><surname>Casonato</surname><given-names>A</given-names></name><name><surname>Marchetti</surname><given-names>G</given-names></name><name><surname>Gemmati</surname><given-names>D</given-names></name><name><surname>Bizzaro</surname><given-names>N</given-names></name><etal/></person-group>
+<year>1998</year>
+<article-title>Two novel mutations (Pro864His, Val867Glu) causing type 2A von Willebrand disease and affecting a single restriction site in exon 28.</article-title>
+<source>Br J Haematol</source>
+<volume>103</volume>
+<fpage>885</fpage>
+<lpage>887</lpage>
+<pub-id pub-id-type="pmid">9858250</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Holmberg1">
+        <label>5</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Holmberg</surname><given-names>L</given-names></name><name><surname>Karpman</surname><given-names>D</given-names></name><name><surname>Isaksson</surname><given-names>C</given-names></name><name><surname>Kristoffersson</surname><given-names>AC</given-names></name><name><surname>Lethagen</surname><given-names>S</given-names></name><etal/></person-group>
+<year>1998</year>
+<article-title>Ins405AsnPro mutation in the von Willebrand factor propeptide in recessive type 2A (IIC) von Willebrand's disease.</article-title>
+<source>Thromb Haemost</source>
+<volume>79</volume>
+<fpage>718</fpage>
+<lpage>722</lpage>
+<pub-id pub-id-type="pmid">9569179</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Lethagen1">
+        <label>6</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lethagen</surname><given-names>S</given-names></name><name><surname>Isaksson</surname><given-names>C</given-names></name><name><surname>Schaedel</surname><given-names>C</given-names></name><name><surname>Holmberg</surname><given-names>L</given-names></name></person-group>
+<year>2002</year>
+<article-title>Von Willebrand's disease caused by compound heterozygosity for a substitution mutation (T1156M) in the D3 domain of the von Willebrand factor and a stop mutation (Q2470X).</article-title>
+<source>Thromb Haemost</source>
+<volume>88</volume>
+<fpage>421</fpage>
+<lpage>426</lpage>
+<pub-id pub-id-type="pmid">12353070</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-OBrien1">
+        <label>7</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>O'Brien</surname><given-names>LA</given-names></name><name><surname>Sutherland</surname><given-names>JJ</given-names></name><name><surname>Hegadorn</surname><given-names>C</given-names></name><name><surname>Benford</surname><given-names>K</given-names></name><name><surname>Racz</surname><given-names>H</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>A novel type 2A (Group II) von Willebrand disease mutation (L1503Q) associated with loss of the highest molecular weight von Willebrand factor multimers.</article-title>
+<source>J Thromb Haemost</source>
+<volume>2</volume>
+<fpage>1135</fpage>
+<lpage>1142</lpage>
+<pub-id pub-id-type="pmid">15219197</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Hommais1">
+        <label>8</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hommais</surname><given-names>A</given-names></name><name><surname>Stepanian</surname><given-names>A</given-names></name><name><surname>Fressinaud</surname><given-names>E</given-names></name><name><surname>Mazurier</surname><given-names>C</given-names></name><name><surname>Pouymayou</surname><given-names>K</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Impaired dimerization of von Willebrand factor subunit due to mutation A2801D in the CK domain results in a recessive type 2A subtype IID von Willebrand disease.</article-title>
+<source>Thromb Haemost</source>
+<volume>95</volume>
+<fpage>776</fpage>
+<lpage>781</lpage>
+<pub-id pub-id-type="pmid">16676067</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Michiels1">
+        <label>9</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Michiels</surname><given-names>JJ</given-names></name><name><surname>Berneman</surname><given-names>Z</given-names></name><name><surname>Gadisseur</surname><given-names>A</given-names></name><name><surname>van der Planken</surname><given-names>M</given-names></name><name><surname>Schroyens</surname><given-names>W</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Classification and characterization of hereditary types 2A, 2B, 2C, 2D, 2E, 2M, 2N, and 2U (unclassifiable) von Willebrand disease.</article-title>
+<source>Clin Appl Thromb Hemost</source>
+<volume>12</volume>
+<fpage>397</fpage>
+<lpage>420</lpage>
+<pub-id pub-id-type="pmid">17000885</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Gupta1">
+        <label>10</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gupta</surname><given-names>PK</given-names></name><name><surname>Saxena</surname><given-names>R</given-names></name><name><surname>Adamtziki</surname><given-names>E</given-names></name><name><surname>Budde</surname><given-names>U</given-names></name><name><surname>Oyen</surname><given-names>F</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>Genetic defects in von Willebrand disease type 3 in Indian and Greek patients.</article-title>
+<source>Blood Cells Mol Dis</source>
+<volume>41</volume>
+<fpage>219</fpage>
+<lpage>222</lpage>
+<pub-id pub-id-type="pmid">18485763</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Kashiwagi1">
+        <label>11</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kashiwagi</surname><given-names>T</given-names></name><name><surname>Matsushita</surname><given-names>T</given-names></name><name><surname>Ito</surname><given-names>Y</given-names></name><name><surname>Hirashima</surname><given-names>K</given-names></name><name><surname>Sanda</surname><given-names>N</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>L1503R is a member of group I mutation and has dominant-negative effect on secretion of full-length VWF multimers: an analysis of two patients with type 2A von Willebrand disease.</article-title>
+<source>Haemophilia</source>
+<volume>14</volume>
+<fpage>556</fpage>
+<lpage>563</lpage>
+<pub-id pub-id-type="pmid">18397285</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Baronciani1">
+        <label>12</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Baronciani</surname><given-names>L</given-names></name><name><surname>Federici</surname><given-names>AB</given-names></name><name><surname>Punzo</surname><given-names>M</given-names></name><name><surname>Solimando</surname><given-names>M</given-names></name><name><surname>Cozzi</surname><given-names>G</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Type 2A (IIH) von Willebrand disease is due to mutations that affect von Willebrand factor multimerization.</article-title>
+<source>J Thromb Haemost</source>
+<volume>7</volume>
+<fpage>1114</fpage>
+<lpage>1122</lpage>
+<pub-id pub-id-type="pmid">19422453</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Corrales1">
+        <label>13</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Corrales</surname><given-names>I</given-names></name><name><surname>Ramirez</surname><given-names>L</given-names></name><name><surname>Altisent</surname><given-names>C</given-names></name><name><surname>Parra</surname><given-names>R</given-names></name><name><surname>Vidal</surname><given-names>F</given-names></name></person-group>
+<year>2009</year>
+<article-title>Rapid molecular diagnosis of von Willebrand disease by direct sequencing. Detection of 12 novel putative mutations in VWF gene.</article-title>
+<source>Thromb Haemost</source>
+<volume>101</volume>
+<fpage>570</fpage>
+<lpage>576</lpage>
+<pub-id pub-id-type="pmid">19277422</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-PerezRodriguez1">
+        <label>14</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Perez-Rodriguez</surname><given-names>A</given-names></name><name><surname>Garcia-Rivero</surname><given-names>A</given-names></name><name><surname>Loures</surname><given-names>E</given-names></name><name><surname>Lopez-Fernandez</surname><given-names>MF</given-names></name><name><surname>Rodriguez-Trillo</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Autosomal dominant C1149R von Willebrand disease: phenotypic findings and their implications.</article-title>
+<source>Haematologica</source>
+<volume>94</volume>
+<fpage>679</fpage>
+<lpage>686</lpage>
+<pub-id pub-id-type="pmid">19286880</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Casari1">
+        <label>15</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Casari</surname><given-names>C</given-names></name><name><surname>Pinotti</surname><given-names>M</given-names></name><name><surname>Lancellotti</surname><given-names>S</given-names></name><name><surname>Adinolfi</surname><given-names>E</given-names></name><name><surname>Casonato</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>The dominant-negative von Willebrand factor gene deletion p.P1127_C1948delinsR: molecular mechanism and modulation.</article-title>
+<source>Blood</source>
+<volume>116</volume>
+<fpage>5371</fpage>
+<lpage>5376</lpage>
+<pub-id pub-id-type="pmid">20570857</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Castaman1">
+        <label>16</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Castaman</surname><given-names>G</given-names></name><name><surname>Giacomelli</surname><given-names>SH</given-names></name><name><surname>Jacobi</surname><given-names>P</given-names></name><name><surname>Obser</surname><given-names>T</given-names></name><name><surname>Budde</surname><given-names>U</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>Homozygous type 2N R854W von Willebrand factor is poorly secreted and causes a severe von Willebrand disease phenotype.</article-title>
+<source>J Thromb Haemost</source>
+<volume>8</volume>
+<fpage>2011</fpage>
+<lpage>2016</lpage>
+<pub-id pub-id-type="pmid">20586924</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Daidone1">
+        <label>17</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Daidone</surname><given-names>V</given-names></name><name><surname>Gallinaro</surname><given-names>L</given-names></name><name><surname>Grazia Cattini</surname><given-names>M</given-names></name><name><surname>Pontara</surname><given-names>E</given-names></name><name><surname>Bertomoro</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2011</year>
+<article-title>An apparently silent nucleotide substitution (c.7056C&gt;T) in the von Willebrand factor gene is responsible for type 1 von Willebrand disease.</article-title>
+<source>Haematologica</source>
+<volume>96</volume>
+<fpage>881</fpage>
+<lpage>887</lpage>
+<pub-id pub-id-type="pmid">21393328</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Wang1">
+        <label>18</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wang</surname><given-names>Y</given-names></name><name><surname>Zhang</surname><given-names>J</given-names></name><name><surname>Zhang</surname><given-names>W</given-names></name><name><surname>Wan</surname><given-names>H</given-names></name><name><surname>Ruan</surname><given-names>C</given-names></name></person-group>
+<year>2000</year>
+<article-title>A new mutation, Ala1500&#x2192;Glu, responsible for type 2A von Willebrand disease.</article-title>
+<source>Int J Hematol</source>
+<volume>72</volume>
+<fpage>512</fpage>
+<lpage>516</lpage>
+<pub-id pub-id-type="pmid">11197223</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Sadler2">
+        <label>19</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sadler</surname><given-names>JE</given-names></name><name><surname>Budde</surname><given-names>U</given-names></name><name><surname>Eikenboom</surname><given-names>JC</given-names></name><name><surname>Favaloro</surname><given-names>EJ</given-names></name><name><surname>Hill</surname><given-names>FG</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Update on the pathophysiology and classification of von Willebrand disease: a report of the Subcommittee on von Willebrand Factor.</article-title>
+<source>J Thromb Haemost</source>
+<volume>4</volume>
+<fpage>2103</fpage>
+<lpage>2114</lpage>
+<pub-id pub-id-type="pmid">16889557</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Hassenpflug1">
+        <label>20</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hassenpflug</surname><given-names>WA</given-names></name><name><surname>Budde</surname><given-names>U</given-names></name><name><surname>Obser</surname><given-names>T</given-names></name><name><surname>Angerhaus</surname><given-names>D</given-names></name><name><surname>Drewke</surname><given-names>E</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Impact of mutations in the von Willebrand factor A2 domain on ADAMTS13-dependent proteolysis.</article-title>
+<source>Blood</source>
+<volume>107</volume>
+<fpage>2339</fpage>
+<lpage>2345</lpage>
+<pub-id pub-id-type="pmid">16322474</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Lyons1">
+        <label>21</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lyons</surname><given-names>SE</given-names></name><name><surname>Bruck</surname><given-names>ME</given-names></name><name><surname>Bowie</surname><given-names>EJ</given-names></name><name><surname>Ginsburg</surname><given-names>D</given-names></name></person-group>
+<year>1992</year>
+<article-title>Impaired intracellular transport produced by a subset of type IIA von Willebrand disease mutations.</article-title>
+<source>J Biol Chem</source>
+<volume>267</volume>
+<fpage>4424</fpage>
+<lpage>4430</lpage>
+<pub-id pub-id-type="pmid">1537829</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Baronciani2">
+        <label>22</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Baronciani</surname><given-names>L</given-names></name><name><surname>Federici</surname><given-names>AB</given-names></name><name><surname>Cozzi</surname><given-names>G</given-names></name><name><surname>Canciani</surname><given-names>MT</given-names></name><name><surname>Mannucci</surname><given-names>PM</given-names></name></person-group>
+<year>2007</year>
+<article-title>Biochemical characterization of a recombinant von Willebrand factor (VWF) with combined type 2B and type 1 defects in the VWF gene in two patients with a type 2A phenotype of von Willebrand disease.</article-title>
+<source>J Thromb Haemost</source>
+<volume>5</volume>
+<fpage>282</fpage>
+<lpage>288</lpage>
+<pub-id pub-id-type="pmid">17155947</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Penas1">
+        <label>23</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Penas</surname><given-names>N</given-names></name><name><surname>Perez</surname><given-names>A</given-names></name><name><surname>Gonzalez-Boullosa</surname><given-names>R</given-names></name><name><surname>Batlle</surname><given-names>J</given-names></name></person-group>
+<year>2004</year>
+<article-title>C1272S: a new candidate mutation in type 2A von Willebrand disease that disrupts the disulfide loop responsible for the interaction of VWF with platelet GP Ib-IX.</article-title>
+<source>Am J Hematol</source>
+<volume>75</volume>
+<fpage>73</fpage>
+<lpage>77</lpage>
+<pub-id pub-id-type="pmid">14755371</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Tsai1">
+        <label>24</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tsai</surname><given-names>HM</given-names></name></person-group>
+<year>2004</year>
+<article-title>Type 2 A (group II) von Willebrand disease mutations increase the susceptibility of VWF to ADAMTS-13.</article-title>
+<source>J Thromb Haemost</source>
+<volume>2</volume>
+<fpage>2057</fpage>
+<pub-id pub-id-type="pmid">15550049</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Sutherland1">
+        <label>25</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sutherland</surname><given-names>JJ</given-names></name><name><surname>O'Brien</surname><given-names>LA</given-names></name><name><surname>Lillicrap</surname><given-names>D</given-names></name><name><surname>Weaver</surname><given-names>DF</given-names></name></person-group>
+<year>2004</year>
+<article-title>Molecular modeling of the von Willebrand factor A2 Domain and the effects of associated type 2A von Willebrand disease mutations.</article-title>
+<source>J Mol Model</source>
+<volume>10</volume>
+<fpage>259</fpage>
+<lpage>270</lpage>
+<pub-id pub-id-type="pmid">15322948</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Akiyama1">
+        <label>26</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Akiyama</surname><given-names>M</given-names></name><name><surname>Takeda</surname><given-names>S</given-names></name><name><surname>Kokame</surname><given-names>K</given-names></name><name><surname>Takagi</surname><given-names>J</given-names></name><name><surname>Miyata</surname><given-names>T</given-names></name></person-group>
+<year>2009</year>
+<article-title>Crystal structures of the noncatalytic domains of ADAMTS13 reveal multiple discontinuous exosites for von Willebrand factor.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>106</volume>
+<fpage>19274</fpage>
+<lpage>19279</lpage>
+<pub-id pub-id-type="pmid">19880749</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Wang2">
+        <label>27</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wang</surname><given-names>JW</given-names></name><name><surname>Valentijn</surname><given-names>KM</given-names></name><name><surname>de Boer</surname><given-names>HC</given-names></name><name><surname>Dirven</surname><given-names>RJ</given-names></name><name><surname>van Zonneveld</surname><given-names>AJ</given-names></name><etal/></person-group>
+<year>2011</year>
+<article-title>Intracellular storage and regulated secretion of von Willebrand factor in quantitative von Willebrand disease.</article-title>
+<source>J Biol Chem</source>
+<volume>286</volume>
+<fpage>24180</fpage>
+<lpage>24188</lpage>
+<pub-id pub-id-type="pmid">21596755</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Schneppenheim1">
+        <label>28</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schneppenheim</surname><given-names>R</given-names></name><name><surname>Michiels</surname><given-names>JJ</given-names></name><name><surname>Obser</surname><given-names>T</given-names></name><name><surname>Oyen</surname><given-names>F</given-names></name><name><surname>Pieconka</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>A cluster of mutations in the D3 domain of von Willebrand factor correlates with a distinct subgroup of von Willebrand disease: type 2A/IIE.</article-title>
+<source>Blood</source>
+<volume>115</volume>
+<fpage>4894</fpage>
+<lpage>4901</lpage>
+<pub-id pub-id-type="pmid">20351307</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Vanhoorelbeke1">
+        <label>29</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Vanhoorelbeke</surname><given-names>K</given-names></name><name><surname>Cauwenberghs</surname><given-names>N</given-names></name><name><surname>Vauterin</surname><given-names>S</given-names></name><name><surname>Schlammadinger</surname><given-names>A</given-names></name><name><surname>Mazurier</surname><given-names>C</given-names></name><etal/></person-group>
+<year>2000</year>
+<article-title>A reliable and reproducible ELISA method to measure ristocetin cofactor activity of von Willebrand factor.</article-title>
+<source>Thromb Haemost</source>
+<volume>83</volume>
+<fpage>107</fpage>
+<lpage>113</lpage>
+<pub-id pub-id-type="pmid">10669163</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Favaloro1">
+        <label>30</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Favaloro</surname><given-names>EJ</given-names></name></person-group>
+<year>2000</year>
+<article-title>Collagen binding assay for von Willebrand factor (VWF:CBA): detection of von Willebrands Disease (VWD), and discrimination of VWD subtypes, depends on collagen source.</article-title>
+<source>Thromb Haemost</source>
+<volume>83</volume>
+<fpage>127</fpage>
+<lpage>135</lpage>
+<pub-id pub-id-type="pmid">10669166</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Gill1">
+        <label>31</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gill</surname><given-names>JC</given-names></name><name><surname>Endres-Brooks</surname><given-names>J</given-names></name><name><surname>Bauer</surname><given-names>PJ</given-names></name><name><surname>Marks</surname><given-names>WJ</given-names><suffix>Jr</suffix></name><name><surname>Montgomery</surname><given-names>RR</given-names></name></person-group>
+<year>1987</year>
+<article-title>The effect of ABO blood group on the diagnosis of von Willebrand disease.</article-title>
+<source>Blood</source>
+<volume>69</volume>
+<fpage>1691</fpage>
+<lpage>1695</lpage>
+<pub-id pub-id-type="pmid">3495304</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Budde1">
+        <label>32</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Budde</surname><given-names>U</given-names></name><name><surname>Schneppenheim</surname><given-names>R</given-names></name><name><surname>Eikenboom</surname><given-names>J</given-names></name><name><surname>Goodeve</surname><given-names>A</given-names></name><name><surname>Will</surname><given-names>K</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>Detailed von Willebrand factor multimer analysis in patients with von Willebrand disease in the European study, molecular and clinical markers for the diagnosis and management of type 1 von Willebrand disease (MCMDM-1VWD).</article-title>
+<source>J Thromb Haemost</source>
+<volume>6</volume>
+<fpage>762</fpage>
+<lpage>771</lpage>
+<pub-id pub-id-type="pmid">18315556</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Wagner1">
+        <label>33</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wagner</surname><given-names>DD</given-names></name><name><surname>Saffaripour</surname><given-names>S</given-names></name><name><surname>Bonfanti</surname><given-names>R</given-names></name><name><surname>Sadler</surname><given-names>JE</given-names></name><name><surname>Cramer</surname><given-names>EM</given-names></name><etal/></person-group>
+<year>1991</year>
+<article-title>Induction of specific storage organelles by von Willebrand factor propolypeptide.</article-title>
+<source>Cell</source>
+<volume>64</volume>
+<fpage>403</fpage>
+<lpage>413</lpage>
+<pub-id pub-id-type="pmid">1988154</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Knappe1">
+        <label>34</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Knappe</surname><given-names>S</given-names></name><name><surname>Wu</surname><given-names>F</given-names></name><name><surname>Madlansacay</surname><given-names>MR</given-names></name><name><surname>Wu</surname><given-names>Q</given-names></name></person-group>
+<year>2004</year>
+<article-title>Identification of domain structures in the propeptide of corin essential for the processing of proatrial natriuretic peptide.</article-title>
+<source>J Biol Chem</source>
+<volume>279</volume>
+<fpage>34464</fpage>
+<lpage>34471</lpage>
+<pub-id pub-id-type="pmid">15192093</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033263-Liao1">
+        <label>35</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Liao</surname><given-names>X</given-names></name><name><surname>Wang</surname><given-names>W</given-names></name><name><surname>Chen</surname><given-names>S</given-names></name><name><surname>Wu</surname><given-names>Q</given-names></name></person-group>
+<year>2007</year>
+<article-title>Role of glycosylation in corin zymogen activation.</article-title>
+<source>J Biol Chem</source>
+<volume>282</volume>
+<fpage>27728</fpage>
+<lpage>27735</lpage>
+<pub-id pub-id-type="pmid">17660514</pub-id></element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

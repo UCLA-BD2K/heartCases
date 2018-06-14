@@ -1,0 +1,343 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:ali="http://www.niso.org/schemas/ali/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Cancer Med</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Cancer Med</journal-id>
+      <journal-id journal-id-type="publisher-id">cam4</journal-id>
+      <journal-title-group>
+        <journal-title>Cancer Medicine</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">2045-7634</issn>
+      <issn pub-type="epub">2045-7634</issn>
+      <publisher>
+        <publisher-name>John Wiley &amp; Sons, Ltd</publisher-name>
+        <publisher-loc>Chichester, UK</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">26311253</article-id>
+      <article-id pub-id-type="pmc">4673996</article-id>
+      <article-id pub-id-type="doi">10.1002/cam4.519</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Clinical Cancer Research</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Computed modeling of alternating electric fields therapy for recurrent glioblastoma</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lok</surname>
+            <given-names>Edwin</given-names>
+          </name>
+          <xref ref-type="aff" rid="au1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hua</surname>
+            <given-names>Van</given-names>
+          </name>
+          <xref ref-type="aff" rid="au1">1</xref>
+          <xref ref-type="aff" rid="au2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wong</surname>
+            <given-names>Eric T</given-names>
+          </name>
+          <xref ref-type="aff" rid="au1">1</xref>
+          <xref ref-type="aff" rid="au3">3</xref>
+          <xref ref-type="corresp" rid="cor1"/>
+        </contrib>
+        <aff id="au1">
+          <label>1</label>
+          <institution>Brain Tumor Center and Neuro-Oncology Unit, Department of Neurology, Harvard Medical School, Beth Israel Deaconess Medical Center</institution>
+          <addr-line>Boston, Massachusetts</addr-line>
+        </aff>
+        <aff id="au2">
+          <label>2</label>
+          <institution>Massachusetts College of Pharmacy and Health Sciences University</institution>
+          <addr-line>Boston, Massachusetts</addr-line>
+        </aff>
+        <aff id="au3">
+          <label>3</label>
+          <institution>Department of Physics, University of Massachusetts at Lowell</institution>
+          <addr-line>Lowell, Massachusetts</addr-line>
+        </aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="cor1"><bold>Correspondence</bold> Eric T. Wong, Brain Tumor Center and Neuro-Oncology Unit, Harvard Medical School, Beth Israel Deaconess Medical Center, 330 Brookline Avenue, Boston, MA 02215. Tel: 617-667-1665; Fax: 617-667-1664; E-mail: <email>ewong@bidmc.harvard.edu</email></corresp>
+        <fn>
+          <p><bold>Funding Information</bold> This research was supported by A Reason To Ride Research Fund.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="ppub">
+        <month>11</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>26</day>
+        <month>8</month>
+        <year>2015</year>
+      </pub-date>
+      <volume>4</volume>
+      <issue>11</issue>
+      <fpage>1697</fpage>
+      <lpage>1699</lpage>
+      <history>
+        <date date-type="received">
+          <day>12</day>
+          <month>7</month>
+          <year>2015</year>
+        </date>
+        <date date-type="accepted">
+          <day>03</day>
+          <month>8</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2015 The Authors. <italic>Cancer Medicine</italic> published by John Wiley &amp; Sons Ltd.</copyright-statement>
+        <copyright-year>2015</copyright-year>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Tumor treating fields (TTFields) are alternating electric fields frequency tuned to 200&#xA0;kHz for the treatment of recurrent glioblastoma. We report a patient treated with TTFields and determined the distribution of TTFields intracranially by computerized simulation using co-registered postgadolinium T1-weighted, T2, and MP RAGE images together with pre-specified conductivity and relative permittivity values for various cerebral structures. The distribution of the electric fields within the brain is inhomogeneous. Higher field intensities were aggregated near the ventricles, particularly at the frontal and occipital horns. The recurred tumor was found distant from the primary glioblastoma and it was located at a site of relatively lower electric field intensity. Future improvement in TTFields treatment may need to take into account the inhomogeneity of the electric field distribution within the brain.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Electric fields</kwd>
+        <kwd>glioblastoma</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Introduction</title>
+      <p>Alternating electric fields or tumor treating fields (TTFields) therapy is a novel treatment modality for recurrent glioblastoma <xref rid="b1" ref-type="bibr">1</xref>. The TTFields are frequency tuned to 200&#xA0;kHz and are delivered by the FDA-approved NovoTTF-100A System (Novocure, Inc., Haifa, Israel) via two pairs of orthogonally positioned arrays placed on the patient&#x2019;s shaved scalp <xref rid="b1" ref-type="bibr">1</xref>. In past clinical trial for recurrent glioblastomas, TTFields have been shown to have equivalent efficacy when compared to conventional chemotherapies, whereas for newly diagnosed glioblastomas TTFields plus temozolomide appear to have superior efficacy when compared to temozolomide alone in interim analysis <xref rid="b2" ref-type="bibr">2</xref>,<xref rid="b3" ref-type="bibr">3</xref>. However, the precise distribution of TTFields within the brain, and the extent to which they cover the recurrent glioblastoma, remains poorly understood. Here, we report our analysis using computerized simulation to determine the frequency-dependent electric field distribution inside a patient&#x2019;s brain, using co-registered postgadolinium T1-weighted, T2, and MP RAGE images together with prespecified conductivity and relative permittivity values for the cerebral structures (<ext-link ext-link-type="uri" xlink:href="http://www.itis.ethz.ch/itis-for-health/tissue-properties/database/dielectric-properties/">http://www.itis.ethz.ch/itis-for-health/tissue-properties/database/dielectric-properties/</ext-link>). We found that the electric fields on the scalp mirror that of the observed skin irritation. The strength of TTFields is highest at the ventricular horns and the medial surface of the tumor.</p>
+    </sec>
+    <sec>
+      <title>Results and Discussion</title>
+      <p>We performed an IRB-approved retrospective neuroimaging analysis of TTFields therapy in a 67-year-old woman with recurrent glioblastoma in the posterior right frontal brain (Fig.<xref ref-type="fig" rid="fig01">1A</xref> and <xref ref-type="fig" rid="fig01">B</xref>) 6&#xA0;months after the initial treatment with neurosurgical resection, cranial irradiation with concomitant daily temozolomide, and followed by adjuvant temozolomide. She then received both bevacizumab, infused at a dose of 10&#xA0;mg/kg every 2&#xA0;weeks, and TTFields therapy, with which she applied onto her shaved head continuously when possible. The placement of the transducer arrays was based on a personalized computer-generated layout, which is derived from MRI-based morphometric measurements of her head, tumor size, and tumor location. She continued both treatments for 24&#xA0;months until another site of disease was detected in the lateral border of the right lateral ventricle (Fig.<xref ref-type="fig" rid="fig01">1C</xref> and <xref ref-type="fig" rid="fig01">D</xref>).</p>
+      <fig id="fig01" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p>Tumor treating fields (TTFields) therapy for recurrent glioblastoma. Recurrent glioblastoma in the posterior right frontal brain was detected in a 67-year-old woman 6&#xA0;months after initial treatment. The tumor can be seen in two successive slices, upper slice (A) and lower slice (B) on gadolinium-enhanced T1-weighted MP RAGE sequence. Her recurrent disease was then treated with bevacizumab and TTFields using the NovoTTF-100A device and after 24&#xA0;months a new site of disease was detected at the lateral border of the right lateral ventricle (D), while the primary tumor was stable (C). Computed modeling revealed that the electric field strength was highest around the ceramic disks forming each array (E), which is also located at the same site of scalp irritation experienced by the patient (F). High field strength is also seen at the ventricular horns and there is inhomogeneous electric field distribution on the tumor (G). The new enhancing tumor is situated at the lateral border of the right lateral ventricle in an area with relatively lower electric field strength (H, arrow).</p>
+        </caption>
+        <graphic xlink:href="cam40004-1697-f1"/>
+      </fig>
+      <p>From the same baseline MRI used for array layout, a three-dimensional rendition of the head was generated based on the co-registered MR image datasets using ScanIP software (Simpleware Ltd., Exeter, U.K.). A finite element mesh was generated for each of the segmented head structures including the scalp, skull, dura, cerebrospinal fluid (CSF), supratentorial gray/white matter, ventricles, brainstem, cerebellum, and the recurrent glioblastoma. The composite finite element mesh model was imported into COMSOL Multiphysics 5.0 (Burlington, MA) to solve for the electric field distribution. The respective conductivity and relative permittivity values used were 0.001&#xA0;S/m and 1110 for scalp, 0.021&#xA0;S/m and 204 for skull, 0.502&#xA0;S/m and 290 for dura, 2.000&#xA0;S/m and 109 for CSF, 0.141&#xA0;S/m and 2010 for gray matter, 0.087&#xA0;S/m and 1290 for white matter, and 1.000&#xA0;S/m and 10,000 for recurrent glioblastoma <xref rid="b4" ref-type="bibr">4</xref>.</p>
+      <p>This is the first electric field simulation of a patient with recurrent glioblastoma treated with TTFields therapy and our analysis revealed important information relevant to the clinical care of patients. First, the highest electric field strength was found around the ceramic disks forming each array (Fig.<xref ref-type="fig" rid="fig01">1E</xref>), which is also located at the same site of scalp irritation experienced by the patient (Fig.<xref ref-type="fig" rid="fig01">1F</xref>). Although the hydrogel situated between the ceramic disk and the scalp may cause local dermatologic irritation, the high intensity of the electric fields beneath the disks may be another contributor. This irritation can be reduced by shifting the arrays by 10&#x2013;20&#xA0;mm clockwise or counterclockwise when exchanged at 3&#x2013;4&#xA0;day intervals <xref rid="b5" ref-type="bibr">5</xref>. Second, because water has high conductivity and low relative permittivity, the electric fields are expected to converge toward the ventricles. Miranda et&#xA0;al. <xref rid="b6" ref-type="bibr">6</xref> have shown that the highest field intensity aggregated at the periventricular region. Likewise, we observed the same phenomenon but the highest field strength is localized at the ventricular horns, most likely due to the large relative difference in dielectric properties and the inhomogeneity of the different tissues. Finally, we detected inhomogeneous electric field distribution on the tumor, with the medial border facing the right lateral ventricle having higher field strength than the lateral border (Fig.<xref ref-type="fig" rid="fig01">1G</xref>). Furthermore, this patient developed a new site of disease during TTFields therapy and her head MRI revealed a new enhancing tumor situated at the lateral border of the right lateral ventricle (Fig.<xref ref-type="fig" rid="fig01">1H</xref>, arrow), a location with relatively lower electric field strength. Tumor cell invasion into the surrounding brain may explain this phenomenon. Therefore, future studies will need to incorporate the site of progressive disease and the relative electric field strength at that location.</p>
+    </sec>
+    <sec>
+      <title>Conflict of Interest</title>
+      <p>E. T. Wong received an unrestricted grant from Novocure for sponsored laboratory research. E. Lok and V. Hua report no disclosure.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="b1">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fonkem</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wong</surname>
+              <given-names>ET</given-names>
+            </name>
+          </person-group>
+          <article-title>NovoTTF-100A: a new treatment modality for recurrent glioblastoma</article-title>
+          <source>Expert Rev. Neurother</source>
+          <year>2012</year>
+          <volume>12</volume>
+          <fpage>2192</fpage>
+          <lpage>2202</lpage>
+        </element-citation>
+      </ref>
+      <ref id="b2">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stupp</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>ET</given-names>
+            </name>
+            <name>
+              <surname>Kanner</surname>
+              <given-names>AA</given-names>
+            </name>
+            <name>
+              <surname>Steinberg</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Engelhard</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Heidecke</surname>
+              <given-names>V</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>NovoTTF-100A versus physician&#x2019;s choice chemotherapy in recurrent glioblastoma: a randomised phase III trial of a novel treatment modality</article-title>
+          <source>Eur. J. Cancer</source>
+          <year>2012</year>
+          <volume>48</volume>
+          <fpage>2192</fpage>
+          <lpage>2202</lpage>
+          <pub-id pub-id-type="pmid">22608262</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b3">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stupp</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Scott</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Taillibert</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kanner</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kesari</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Interim analysis of the EF-14 trial: a prospective, multi-center trial of NovoTTF-100&#xB0; together with temozolomide compared to temozolomide in patients with newly diagnosed GBM</article-title>
+          <source>Neuro Oncol</source>
+          <year>2014</year>
+          <volume>16</volume>
+          <issue>Suppl. 5</issue>
+          <fpage>v167</fpage>
+        </element-citation>
+      </ref>
+      <ref id="b4">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Peloso</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Tuma</surname>
+              <given-names>DT</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jain</surname>
+              <given-names>RK</given-names>
+            </name>
+          </person-group>
+          <article-title>Dielectric properties of solid tumors during normothermia and hyperthermia</article-title>
+          <source>IEEE Trans. Biomed. Eng</source>
+          <year>1984</year>
+          <volume>31</volume>
+          <fpage>725</fpage>
+          <lpage>728</lpage>
+          <pub-id pub-id-type="pmid">6500596</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b5">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lacouture</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Davis</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Elzinga</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Butowski</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Tran</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Villano</surname>
+              <given-names>JL</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Characterization and management of dermatologic adverse events with the NovoTTF-100A System, a novel anti-mitotic electric field device for the treatment of recurrent glioblastoma</article-title>
+          <source>Semin. Oncol</source>
+          <year>2014</year>
+          <volume>41</volume>
+          <issue>Suppl. 4</issue>
+          <fpage>S1</fpage>
+          <lpage>S14</lpage>
+          <pub-id pub-id-type="pmid">24794308</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="b6">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Miranda</surname>
+              <given-names>PC</given-names>
+            </name>
+            <name>
+              <surname>Kekkonen</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Salvador</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baser</surname>
+              <given-names>PJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Predicting the electric field distribution in the brain for the treatment of glioblastoma</article-title>
+          <source>Phys. Med. Biol</source>
+          <year>2014</year>
+          <volume>59</volume>
+          <fpage>4137</fpage>
+          <lpage>4147</lpage>
+          <pub-id pub-id-type="pmid">25003941</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

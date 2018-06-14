@@ -1,0 +1,851 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">J Med Internet Res</journal-id>
+      <journal-id journal-id-type="publisher-id">JMIR</journal-id>
+      <journal-title-group>
+        <journal-title>Journal of Medical Internet Research</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1438-8871</issn>
+      <publisher>
+        <publisher-name>Gunther Eysenbach</publisher-name>
+        <publisher-loc>Centre for Global eHealth Innovation, Toronto, Canada</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">20439251</article-id>
+      <article-id pub-id-type="pmc">2885784</article-id>
+      <article-id pub-id-type="publisher-id">v12i2e10</article-id>
+      <article-id pub-id-type="doi">10.2196/jmir.1371</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Original Paper</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Mobile Therapy: Case Study Evaluations of a Cell Phone Application for Emotional Self-Awareness</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Eysenbach</surname>
+            <given-names>Gunther</given-names>
+          </name>
+        </contrib>
+      </contrib-group>
+      <contrib-group>
+        <contrib contrib-type="reviewer">
+          <name>
+            <surname>Diefenbach</surname>
+            <given-names>Michael</given-names>
+          </name>
+        </contrib>
+        <contrib contrib-type="reviewer">
+          <name>
+            <surname>Moncur</surname>
+            <given-names>Wendy</given-names>
+          </name>
+        </contrib>
+      </contrib-group>
+      <contrib-group>
+        <contrib id="contrib1" contrib-type="author" corresp="yes">
+          <name>
+            <surname>Morris</surname>
+            <given-names>Margaret E</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <address>
+            <institution>Digital Health Group</institution>
+            <institution>Intel Corporation</institution>
+            <addr-line>20270 NW Amberglen Court</addr-line>
+            <addr-line>AG1-102</addr-line>
+            <addr-line>Beaverton, OR 97006</addr-line>
+            <country>USA</country>
+            <phone>1 971 285 6815</phone>
+            <fax>1 503 456 2714</fax>
+            <email>margaret.morris@intel.com</email>
+          </address>
+          <xref ref-type="aff" rid="aff1">1</xref>
+        </contrib>
+        <contrib id="contrib2" contrib-type="author">
+          <name>
+            <surname>Kathawala</surname>
+            <given-names>Qusai</given-names>
+          </name>
+          <degrees>MFA</degrees>
+          <xref ref-type="aff" rid="aff1">1</xref>
+        </contrib>
+        <contrib id="contrib3" contrib-type="author">
+          <name>
+            <surname>Leen</surname>
+            <given-names>Todd K</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <xref ref-type="aff" rid="aff2">2</xref>
+        </contrib>
+        <contrib id="contrib4" contrib-type="author">
+          <name>
+            <surname>Gorenstein</surname>
+            <given-names>Ethan E</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <xref ref-type="aff" rid="aff3">3</xref>
+        </contrib>
+        <contrib id="contrib5" contrib-type="author">
+          <name>
+            <surname>Guilak</surname>
+            <given-names>Farzin</given-names>
+          </name>
+          <degrees>MS</degrees>
+          <xref ref-type="aff" rid="aff1">1</xref>
+        </contrib>
+        <contrib id="contrib6" contrib-type="author">
+          <name>
+            <surname>Labhard</surname>
+            <given-names>Michael</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <xref ref-type="aff" rid="aff1">1</xref>
+        </contrib>
+        <contrib id="contrib7" contrib-type="author">
+          <name>
+            <surname>Deleeuw</surname>
+            <given-names>William</given-names>
+          </name>
+          <degrees>BS</degrees>
+          <xref ref-type="aff" rid="aff1">1</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff3" rid="aff3">
+        <sup>3</sup>
+        <institution>Behavioral Medicine Program</institution>
+        <institution>Department of Psychiatry</institution>
+        <institution>Columbia University</institution>
+        <addr-line>New York, NY</addr-line>
+        <country>USA</country>
+      </aff>
+      <aff id="aff2" rid="aff2">
+        <sup>2</sup>
+        <institution>Division of  Biomedical Engineering</institution>
+        <institution>Oregon Health and Sciences University</institution>
+        <addr-line>Portland, OR</addr-line>
+        <country>USA</country>
+      </aff>
+      <aff id="aff1" rid="aff1">
+        <sup>1</sup>
+        <institution>Digital Health Group</institution>
+        <institution>Intel Corporation</institution>
+        <addr-line>Beaverton, OR</addr-line>
+        <country>USA</country>
+      </aff>
+      <pub-date pub-type="collection">
+        <season>Apr-Jun</season>
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>30</day>
+        <month>4</month>
+        <year>2010</year>
+      </pub-date>
+      <volume>12</volume>
+      <issue>2</issue>
+      <elocation-id>e10</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>29</day>
+          <month>10</month>
+          <year>2009</year>
+        </date>
+        <date date-type="rev-request">
+          <day>25</day>
+          <month>11</month>
+          <year>2009</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>24</day>
+          <month>1</month>
+          <year>2010</year>
+        </date>
+        <date date-type="accepted">
+          <day>02</day>
+          <month>3</month>
+          <year>2010</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9;Margaret E Morris, Qusai Kathawala, Farzin Guilak, William Deleeuw, Michael Labhard, Todd K Leen, Ethan E Gorenstein. Originally published in the Journal of Medical Internet Research (http://www.jmir.org), 30.04.2010 &#xA0;</copyright-statement>
+        <copyright-year>2010</copyright-year>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0/">
+          <license-p><!--CREATIVE COMMONS-->This is an open-access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0/">http://creativecommons.org/licenses/by/2.0/</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work, first published in the Journal of Medical Internet Research, is properly cited. The complete bibliographic information, a link to the original publication on <ext-link ext-link-type="uri" xlink:href="http://www.jmir.org/,">http://www.jmir.org/,</ext-link> as well as this copyright and license information must be included.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:type="simple" xlink:href="http://www.jmir.org/2010/2/e10/"/>
+      <abstract>
+        <sec sec-type="background">
+          <title>Background</title>
+          <p>Emotional awareness and self-regulation are important skills for improving mental health and reducing the risk of cardiovascular disease. Cognitive behavioral therapy can teach these skills but is not widely available.</p>
+        </sec>
+        <sec sec-type="objective">
+          <title>Objective</title>
+          <p>This exploratory study examined the potential of mobile phone technologies to broaden access to cognitive behavioral therapy techniques and to provide in-the-moment support.</p>
+        </sec>
+        <sec sec-type="methods">
+          <title>Methods</title>
+          <p>We developed a mobile phone application with touch screen scales for mood reporting and therapeutic exercises for cognitive reappraisal (ie, examination of maladaptive interpretations) and physical relaxation. The application was deployed in a one-month field study with eight individuals who had reported significant stress during an employee health assessment. Participants were prompted via their mobile phones to report their moods several times a day on a Mood Map&#x2014;a translation of the circumplex model of emotion&#x2014;and a series of single-dimension mood scales. Using the prototype, participants could also activate mobile therapies as needed. During weekly open-ended interviews, participants discussed their use of the device and responded to longitudinal views of their data. Analyses included a thematic review of interview narratives, assessment of mood changes over the course of the study and the diurnal cycle, and interrogation of this mobile data based on stressful incidents reported in interviews.</p>
+        </sec>
+        <sec sec-type="results">
+          <title>Results</title>
+          <p>Five case studies illustrate participants' use of the mobile phone application to increase self-awareness and to cope with stress. One example is a participant who had been coping with longstanding marital conflict. After reflecting on his mood data, particularly a drop in energy each evening, the participant began practicing relaxation therapies on the phone before entering his house, applying cognitive reappraisal techniques to cope with stressful family interactions, and talking more openly with his wife. His mean anger, anxiety and sadness ratings all were lower in the second half of the field study than in the first (<italic>P</italic> &#x2264; .01 for all three scales). Similar changes were observed among other participants as they used the application to negotiate bureaucratic frustrations, work tensions and personal relationships. Participants appeared to understand the mood scales developed for this experience sampling application and responded to them in a way that was generally consistent with self-reflection in weekly interviews. Interview accounts of mood changes, associated with diurnal cycles, personal improvement over the course of the study, and stressful episodes, could be seen in the experience sampling data. Discrepancies between interview and experience-sampling data highlighted the ways that individuals responded to the two forms of inquiry and how they calibrated mood ratings over the course of the study.</p>
+        </sec>
+        <sec sec-type="conclusions">
+          <title>Conclusions</title>
+          <p>Participants quickly grasped the Mood Mapping and therapeutic concepts, and applied them creatively in order to help themselves and empathize with others. Applications developed for mobile phones hold promise for delivering state-of-the-art psychotherapies in a nonstigmatizing fashion to many people who otherwise would not have access to therapy.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>Mood phone</kwd>
+        <kwd>experience sampling method</kwd>
+        <kwd>ecological momentary assessment</kwd>
+        <kwd>cognitive behavioral therapy</kwd>
+        <kwd>affect</kwd>
+        <kwd>mood</kwd>
+        <kwd>emotion</kwd>
+        <kwd>mobile phone</kwd>
+        <kwd>self-assessment</kwd>
+        <kwd>Mood Map</kwd>
+        <kwd>cellular phone</kwd>
+        <kwd>psychotherapy</kwd>
+        <kwd>stress</kwd>
+        <kwd>technology</kwd>
+        <kwd>sampling</kwd>
+        <kwd>user centered design</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="introduction">
+      <title>Introduction</title>
+      <p>Emotional self-awareness is an important skill for personal health [<xref ref-type="bibr" rid="ref1">1</xref>,<xref ref-type="bibr" rid="ref2">2</xref>]. Awareness of emotional patterns helps people recognize the situational nature of distress, and over time, to modulate their reactions to stressful events. The ability to monitor and modulate emotional reactions, that is, self-regulation, impacts both mental and physical health [<xref ref-type="bibr" rid="ref3">3</xref>]. Particularly important for cardiovascular health is emotional resilience, that is, the ability to bounce back quickly from a stressful event [<xref ref-type="bibr" rid="ref4">4</xref>]. Emotional awareness and self-regulation are becoming recognized as societal issues due to the influence of mood on physical health, interpersonal relationships, civic engagement, and professional effectiveness [<xref ref-type="bibr" rid="ref5">5</xref>]. Public policy campaigns have called for extending psychotherapy to the large numbers of people who typically do not have access to such services [<xref ref-type="bibr" rid="ref6">6</xref>,<xref ref-type="bibr" rid="ref7">7</xref>].</p>
+      <p>Personal technologies hold promise for helping people learn about their emotional patterns and improve coping in the flow of daily life. Here, we explore mobile phones for extending the well-evidenced practice of cognitive behavior therapy, in which patients learn to modify thought and behavior patterns that contribute to negative emotional states [<xref ref-type="bibr" rid="ref8">8</xref>]. The appeal of mobile phones as a vehicle for therapy lies in their relatively low cost and lack of stigma, as well as their ability to capture data and offer coaching throughout the day. Experience sampling, a method for prompting in-situ self-report, is well suited for deployment on mobile phones [<xref ref-type="bibr" rid="ref9">9</xref>]. This technique has been applied previously to understand how a wide range of behaviors and moods vary over time, place, and situations [<xref ref-type="bibr" rid="ref10">10</xref>]. Prompting at random intervals addresses reporting biases, such as the tendency to recall the most intense and recent emotions [<xref ref-type="bibr" rid="ref9">9</xref>,<xref ref-type="bibr" rid="ref11">11</xref>]. Historically, beepers and journals have been the primary tools for experience sampling, but these are cumbersome for long-term use. More recently, Twitter and other microblogging tools accessible through mobile devices, have been allowing many people to sample and share their own behaviors, feelings, and experiences throughout the day.</p>
+      <p>In this study, we examined the use of a mobile phone application that combined experience sampling of mood with exercises inspired by cognitive behavioral therapy. The intent of the technology was twofold: to gather data trends that could be illuminating to individuals over time and to offer some interventions that could be activated on the spot. This study emerged from a project called Mobile Heart Health, in which mobile therapies were triggered by physiological indications of stress [<xref ref-type="bibr" rid="ref12">12</xref>]. The physiological sensors, which detected stress according to changes in heart rate variability, were compelling but not easily deployable for extended field trials. Two parts of the Mobile Heart Health system&#x2014;the experience sampling and the therapies&#x2014;were tested in the field studies described in this paper. We designed a touch screen Mood Map and several single-dimensional mood scales (<xref ref-type="fig" rid="figure1">Figure 1</xref> and <xref ref-type="fig" rid="figure2">Figure 2</xref>) to invite self-reflection and minimize the burden of self-reporting. The Mood Map allowed participants to plot their moods on a two dimensional space, according to their level of physical energy and the valence of their emotional state. This interface was based on the circumplex model, which describes all emotion by these two factors and has been shown to account for 70% of the variance in self-reported affective states [<xref ref-type="bibr" rid="ref13">13</xref>].</p>
+      <p>The mobile therapies delivered in our current study were inspired by cognitive therapy interventions. They included visualizations for physical relaxation and cues for cognitive reappraisal. In cognitive reappraisal, patients monitor and correct &#x201C;attributional biases&#x201D; in their automatic reactions or interpretations [<xref ref-type="bibr" rid="ref14">14</xref>]. Biases that have been associated with negative affect include attributing negative events to internal, permanent and global causes, and exaggerating the urgency and morality of situations [<xref ref-type="bibr" rid="ref15">15</xref>,<xref ref-type="bibr" rid="ref16">16</xref>]. The reappraisal techniques used to challenge these biases inspired the Mind Scan exercises, one of the mobile therapies described below.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>Participants</title>
+        <p>Of the ten adults who enrolled in the study, 6 were women and 4 were men. Participants&#x2019; ages ranged from 30 to 48 with a mean age of 37 years (SD 5.75). Of these participants, eight completed the study and two discontinued participation due to time constraints. Participants were employees at a large corporation. All had completed a Mayo Clinic Health Risk Assessment in which they indicated a stress level of 3 or above on a 5-point scale. Health coaches showed notices about the study to people they thought might be interested in participating. The notices instructed those who were interested to contact the researcher for more information about the study.</p>
+      </sec>
+      <sec sec-type="materials">
+        <title>Materials</title>
+        <p>The mood sampling application was run on HTC 3600 mobile phones provided to participants for use during the study. The phones could not be used for phone calls during the study because of complications associated with transferring calling plans. In addition to a phone, each participant was given a charger and a manual that provided detailed instructions and contact information for technical support.</p>
+        <p>The application consisted of mood reporting scales and mobile therapies. The mood reporting scales included the Mood Map and single-dimension mood scales for happiness, sadness, anxiety, and anger. All scale entries were made via the touch screen. The application logged the time and date of all user interactions.</p>
+        <p>The Mood Map is a touch-screen translation of the circumplex model of emotion [<xref ref-type="bibr" rid="ref13">13</xref>], shown in <xref ref-type="fig" rid="figure1">Figure 1</xref>. Participants described their mood by indicating its location on a two-dimensional space formed by the horizontal axis of &#x201C;negative&#x2013;positive&#x201D; and the vertical axis of &#x201C;high&#x2013;low&#x201D; energy. The left endpoint of the x-axis, valence, is labeled &#x201C;negative,&#x201D; and the right endpoint is labeled &#x201C;positive.&#x201D; The bottom end of the y-axis, arousal, is labeled &#x201C;low energy,&#x201D; and the top end, &#x201C;high energy.&#x201D; When an individual places a fingertip on the appropriate location on the Mood Map, a red dot appears to indicate his or her mood at the time of the experience sampling inquiry. Each axis was intended to capture 15 discrete values, from -7 to +7. An error in data capture limited analysis of the x-axis to a bipolar distinction (ie, whether moods were positive or negative), but the full spectrum of y-axis values, that is, energy ratings, were captured accurately.</p>
+        <fig id="figure1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p>Mood Map</p>
+          </caption>
+          <graphic xlink:href="jmir_v12i2e10_fig1"/>
+        </fig>
+        <fig id="figure2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p>Single-dimension mood scale</p>
+          </caption>
+          <graphic xlink:href="jmir_v12i2e10_fig2"/>
+        </fig>
+        <p>Single-dimension mood scales for anger, anxiety, happiness, and sadness were used in addition to the Mood Map. These measures of specific emotions complemented the general expression of emotional experience captured by the Mood Map. These mood scales, adapted from a rating scale by Brown [<xref ref-type="bibr" rid="ref17">17</xref>], were arranged vertically on the screen, with an 11-point range. They were labeled with the specific emotion and were graded in color between the two endpoints. An example, the anxiety scale, is shown in <xref ref-type="fig" rid="figure2">Figure 2</xref>. Each scale proceeded from &#x201C;not at all&#x201D; (followed by the mood being captured, such as &#x201C;anxious&#x201D;) at the bottom of the screen, to &#x201C;extremely&#x201D; (again followed by the particular mood) at the top of the screen. The experience sampling application pushed these scales to participants at scheduled times throughout the day.</p>
+        <p>Participants were prompted for their moods in the morning, evening and throughout the day, using an experience sampling program called MyExperience [<xref ref-type="bibr" rid="ref18">18</xref>]. The times of morning and evening prompts were determined in the introductory interview, based on each participant&#x2019;s daily habits and schedules. Participants could select prompting intervals ranging from 30 minutes to three hours, but the exact time at which the prompt appeared within this interval varied by several minutes to prevent prepared responses.</p>
+        <p>To reduce monotony and mindless responses, the prompts alternated between a long and short set of questions. The long query consisted of the Mood Map and all four mood scales: anxiety, anger, happiness and sadness. The short query consisted of the Mood Map and one single dimension mood scale. The single dimension mood scale in the short version depended on the quadrant of the Mood Map response. For example, a Mood Map response in the upper left quadrant (negative mood, high energy) was followed by the anxiety scale, whereas a Mood Map response in the upper right quadrant (positive mood, high energy) was followed by the happiness scale. Participants were instructed to ignore prompts that could disrupt their work or personal communication (eg, a mood query during an important meeting).</p>
+        <p>Individuals varied considerably in the frequency of their responses: Over the course of the study, the number of mood scale responses ranged from 412 to 828 with a median of 612. Most participants used the application in spurts rather than steadily. On average, participants completed 21 mood scales per day.</p>
+        <p>Once participants recognized their moods, they could access the &#x201C;mobile therapies,&#x201D; short translations of cognitive behavioral therapy concepts adapted to the mobile phone (shown in <xref ref-type="fig" rid="figure3">Figure 3</xref>, <xref ref-type="fig" rid="figure4">4</xref>, and <xref ref-type="fig" rid="figure5">5</xref>). These could be activated by touching icons on the main screen of the application. The principal mobile therapies included a breathing visualization (<xref ref-type="fig" rid="figure3">Figure 3</xref>), a physical relaxation animation called the Body Scan (<xref ref-type="fig" rid="figure4">Figure 4</xref>), and a series of cognitive reappraisal exercises called the Mind Scan (<xref ref-type="fig" rid="figure5">Figure 5</xref>, described below). The breathing exercise was a blue circle that expanded and contracted slowly to encourage deliberate and slower breathing. The Body Scan included an outline of a human figure with rhetorical questions about where the user might be holding tension, for example, &#x201C;Are you furrowing your brow?&#x201D; As the user clicked through the questions, that section of the body outline changed from red to blue.</p>
+        <p>The Mind Scan was a series of rhetorical questions designed to encourage cognitive reappraisal. The questions addressed cognitive distortions associated with depression, such as attributing negative events to global, stable and internal causes [<xref ref-type="bibr" rid="ref15">15</xref>]. For example, one Mind Scan screen asked, &#x201C;Might I be globalizing?&#x201D; and was accompanied by the example thought, &#x201C;It&#x2019;s not just that report; it&#x2019;s my whole career.&#x201D; Other distortions, identified by Gorenstein and colleagues [<xref ref-type="bibr" rid="ref16">16</xref>], related to the perception of annoyances as injustices, translated as, &#x201C;Might I be making rules out of my pet peeves?&#x201D; and an exaggerated sense of urgency to resolve an issue, that is, &#x201C;Might I be exaggerating the urgency of this situation?&#x201D; Participants could activate the breathing, Body Scan, and Mind Scan features directly or could select &#x201C;coaching&#x201D; to access a series of visual prompts for effective handling of interpersonal conflict. All of these exercises could be completed in a minute or less.</p>
+        <fig id="figure3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p>Breathing exercise</p>
+          </caption>
+          <graphic xlink:href="jmir_v12i2e10_fig3"/>
+        </fig>
+        <fig id="figure4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p>Body Scan</p>
+          </caption>
+          <graphic xlink:href="jmir_v12i2e10_fig4"/>
+        </fig>
+        <fig id="figure5" position="float">
+          <label>Figure 5</label>
+          <caption>
+            <p>Mind Scan</p>
+          </caption>
+          <graphic xlink:href="jmir_v12i2e10_fig5"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Procedures</title>
+        <p>Participants were recruited from a sample of employees who completed a Health Risk Assessment with a health coach. The health risk assessment involved an online survey from the Mayo Clinic that included a question about stress. Those who rated their stress levels as 3 or higher on a scale of 1 to 5 in response to this question were told about the study by the health coach. Potential candidates were given a flyer about the study and told that they could contact the primary researcher for more information.</p>
+        <p>In a first meeting with the researcher, the application was described and participants were screened for their availability to use the application and participate in four weekly interviews, each approximately one hour in length. Rule-out criteria included extensive travel and current involvement in psychological or psychiatric treatment. These criteria were stated in the consent form, which was read aloud to participants. Training on the phone application, including detailed guidance on Mood Mapping and mobile therapies, occurred in follow-up meetings. Participants were given a phone to use for the study, along with a detailed manual and encouragement to contact researchers with questions.</p>
+        <p>Four weekly interviews, the last of which was an exit interview, were conducted with each participant by a single researcher, a clinical psychologist. The interviews were open-ended conversations about how participants had used the phone application to reflect on their moods and handle stressful situations, and to identify other ways they had shaped the application to the nuances of their lives. Participants shared reactions to the application and to trends of their experience sampling data, which were shown on a laptop computer. The interviews were structured not as therapy sessions but as discussions about how people could interact with the application in a therapeutic way. Interviews were approximately one hour in length and were recorded and transcribed. In the initial interview, participants described sources of stress and the way stress manifested in their relationships, behaviors and physical experiences. In the exit interview, participants discussed their final week of participation and summarized their experiences with the application.</p>
+        <p>This study was approved by a board responsible for privacy considerations at the participants&#x2019; place of employment. Identifiers were removed from the data collected from participants&#x2019; phones, and data were stored in an encrypted database. Data stored on the phone (numerical responses to scales) were associated with participant numbers but not names. Analysis was conducted after the data were downloaded from participants&#x2019; phones. The entries made by participants were stored on the phone and not transmitted to anyone outside of weekly downloads. As a result&#x2014;and as we explained to participants&#x2014;there was no real-time monitoring of their entries, and no possibility of real-time interventions based on their reports of negative moods. Participants did not receive any financial compensation or organizational recognition for their involvement in the study. Participants were told at the outset that there was no known benefit to participating, and that they could discontinue at any time.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results">
+      <title>Results</title>
+      <p>To understand how the phone was used for self-reflection and coping, we analyzed interview narratives and experience sampling data for indications of change in mood patterns. Accounts of mood changes from interviews were used to examine patterns in the experience sampling data during the same time ranges.</p>
+      <p>We examined changes that were described in interviews as occurring over the course of the one month study; characteristic patterns of change over the diurnal cycle; and changes during specific stressful incidents. These three categories emerged from qualitative analysis of interview data. Agreements and disagreements between experience sampling data and weekly interviews are highlighted in the case studies. A number of participants reported changes over the course of the study in their mood patterns and coping skills, and ascribed these changes to use of the application. These examples illustrate the potential of mobile tools not just for gathering data about mood patterns, but also for querying in a way that invites emotional awareness, self-regulation, and behavioral change. Five case studies are shared.</p>
+      <p>We examined changes over the one-month study in several ways. We used the Behrens-Fisher <italic>t</italic>-test to compare data from the first half of the study with data from the second half. We also examined standard and robust linear regression of the mood scales against time in the one-month study.The regression results largely corroborated the <italic>t</italic>-test results, but since the linear trends generally are not a good fit to these data, we report only the <italic>t</italic>-test results here.</p>
+      <p>To study diurnal patterns, we segmented each participant's data into time blocks. This segmentation was guided by the raw data and by mood patterns reported during the interviews. We used a two-way analysis of variance (ANOVA) for joint analysis of diurnal changes and changes over the course of the study. The diurnal time blocks just mentioned formed the first grouping variable for this analysis. Two groupings were explored for the second variable: (1) week number in the study, and (2) first versus second half of the study. This joint analysis of diurnal changes and changes over the course of the study allowed us to study interaction effects between the two. Bonferroni adjustments were made for multiple comparisons in the ANOVA. We adopted a significance level of <italic>P</italic> = .05 for reporting results and report the actual <italic>P</italic> values for significant test results, except when <italic>P</italic> &lt; .001.</p>
+      <p>To examine stressful episodes, we segmented the participant&#x2019;s experience sampling data according to the time intervals of incidents reported in interviews. We analyzed whether emotion ratings during time intervals corresponding to reported stressful episodes differed from the emotion ratings outside of those intervals, referred to as the background period. We compared the mood scale levels in the episodes with the background by one-way ANOVA. Names and identifying information of participants have been changed.</p>
+      <sec>
+        <title>Case Studies</title>
+        <sec>
+          <title>Tobias</title>
+          <p>Tobias, a man in his early thirties, enrolled in this study because he was eager to extend his self-improvement from weight loss to stress reduction. During the previous year he had lost close to 60 pounds by following a strict diet and exercise plan. His stress stemmed from conflict with his wife over childcare and household responsibilities.</p>
+          <p>Tobias described a clear diurnal pattern in his mood. Each day at 5PM, he raced back from work to immediately take over responsibility for the kids, pets, dinner, and general chaos of home life, as his wife, also exhausted, left the house to find time alone. He found the transition jarring and often remained irritated the entire evening.</p>
+          <p>Echoing this verbal account, Tobias&#x2019; phone entries show a decrease in energy upon coming home. In fact, his energy, as reflected in the Y values in the Mood Map, decreased continually throughout the day. As shown in <xref ref-type="fig" rid="figure6">Figure 6</xref>, his mean energy values were 6.01 before 11:30AM, dropped to 4.58 between 11:30AM and 5:00PM, and further dropped to 1.67 from 5:00PM until his last recording at 10:49PM (two-way ANOVA, <italic>P</italic> &lt;  .001).</p>
+          <fig id="figure6" position="float">
+            <label>Figure 6</label>
+            <caption>
+              <p>Progressive drop in Tobias&#x2019; energy through the day. The circles show the mean values in the diurnal segments indicated on the abscissa. Error bars show the 95% confidence limits on the means. Note that the total Mood Y range available to the user is [-7, +7].</p>
+            </caption>
+            <graphic xlink:href="jmir_v12i2e10_fig6"/>
+          </fig>
+          <p>Tobias&#x2019; mood and communication patterns shifted as the study progressed. He explored some of the mobile therapy concepts, using them to anticipate his negative reactions to coming home and curtail them so that they would not dominate the entire evening. Tobias applied a rhetorical question from the Mind Scan, &#x201C;Might I be stabilizing?&#x201D; by telling himself &#x201C;Just be prepared for the next 15 to 30 minutes&#x2026;It probably isn't going to be an ideal situation for you, but just get through the 15 to 30 minutes and then, you know, you&#x2019;ll be fine.&#x201D; He practiced this and other short exercises before he walked in the door. Perhaps more importantly, he spoke with his wife about alternative solutions and schedules for sharing responsibilities. He was pleased by the self-awareness and coping abilities he developed during the study.</p>
+          <p>The improvements in mood and family relations that Tobias described are reflected in his mood entries. There was a lifting of energy (the Y value of the mood scale), and a decrease in negative emotions on the single dimension scales. <xref ref-type="fig" rid="figure7">Figure 7</xref> shows his anger, anxiety, and sadness ratings throughout the study. His mean anger, anxiety, and sadness ratings all were lower in the second half of the study than in the first half. His mean anger ratings decreased from 0.49 during the first half of the study to zero in the second half (<italic>P = .</italic>01, Behrens-Fisher <italic>t</italic>-test). His anxiety ratings decreased from 0.37 to 0.04 (<italic>P</italic> = .006), and his sadness ratings from 0.61 to zero (<italic>P</italic> &lt; .001). His energy ratings (y-axis of Mood Map) increased from 3.28 in the first half of the study to 6.58 in the second half (<italic>P</italic> &lt; .001).</p>
+          <p>Tobias&#x2019; pattern of decreased energy in the evenings abated to some degree as the study progressed. His energy continued to decrease throughout the day, but the decrease was less extreme in the second half of the study than in the first half. Two-way ANOVA comparing his energy before and after 4PM and between the first and second half of the study showed a significant interaction (<italic>P =</italic>.005). Specifically, in the first half of the study, Tobias&#x2019; energy ratings before 4PM averaged 5.09 and after 4PM averaged 2.22. In the second half of the study, his energy ratings before and after 4PM were more nearly equal (3.67 and 3.64, respectively). That is, Tobias showed less fatigue or burnout in the evening hours as the study progressed.</p>
+          <p>In addition to improved mood, Tobias described greater self-awareness throughout the study. He found the Mood Map useful as a way &#x201C;to check in with myself.&#x201D; At the beginning of the study, he was disappointed that the system wasn&#x2019;t telling him his mood: &#x201C;What I was hoping this device was going to be was something that told me how I was feeling, because that&#x2019;s one of the things I struggle with,&#x201D; he said. Later, though, he expressed a comfortable curiosity in his mood patterns, and &#x201C;more confidence in my feelings.&#x201D;</p>
+          <fig id="figure7" position="float">
+            <label>Figure 7</label>
+            <caption>
+              <p>Anger, anxiety, and sadness mood ratings change across the study for Tobias, who described improved mood and better communication with his wife. Vertical lines mark the half-way point in the study.</p>
+            </caption>
+            <graphic xlink:href="jmir_v12i2e10_fig7"/>
+          </fig>
+        </sec>
+        <sec>
+          <title>Theresa</title>
+          <p>Another participant whose mood improved over the course of the study was Theresa, a woman in her late thirties who had been chronically frustrated at home and in her work as a manager. Her frustration at home related to her niece, who recently had moved in with the participant but never helped with household chores and continually left the lights on when she left the house. At work, Theresa struggled with a technician on her team who failed to take ownership for finishing tasks. In an interview, she characterized her exasperation with both relationships: &#x201C;It&#x2019;s like [the movie] <italic>Groundhog Day</italic>...it&#x2019;s the same thing...over and over again!&#x201D;</p>
+          <p>Eventually, Theresa tried out a collaborative approach that worked well in both situations. At home, she devised a system that finally motivated her niece to turn off the lights: &#x201C;I was like, &#x2018;Okay, maybe we&#x2019;ll have an energy conservation initiative with her, that if she turns off all the lights before she goes to school and turns down her heat, that&#x2019;s a point. And we&#x2019;ll keep points every day.&#x2019;&#x201D; And at work, she suggested a &#x201C;priority list&#x201D; for managing tasks, and this approach went over well with the technician: &#x201C;He continued to work on the list, so it was working as expected...and it turns out he loves it!&#x201D;</p>
+          <p>She described her satisfaction with her negotiation: &#x201C;It was this neat experience for me&#x2026;The conflict was done&#x2026;and I didn&#x2019;t grow up that way&#x2026;It goes back to looking&#x2014;okay, &#x2018;What&#x2019;s the priority?&#x2019; &#x2018;What is the true goal?&#x2019; because we both have the same goal in mind, but we might get there different ways. So, I think that the questions that are on there, you know, helped to get to that, even if I didn&#x2019;t look at them right before the meeting&#x201D;.
+						
+						 In these quotes, Theresa not only describes the skills that she developed during the study, but also her internalization of the concepts. She interweaves language and concepts from the mobile therapies, such as &#x201C;What is the true goal?&#x201D; with her self-reflection in the interview. She also makes it clear that she applies these concepts even if she isn&#x2019;t looking at the phone.</p>
+          <p>The satisfaction that Theresa described is reflected in the positive change in her mood ratings recorded on the phone. The energy dimension of her Mood Map ratings rose from a mean 1.14 in the first half of the study to 1.8 in the second half (Behrens-Fisher <italic>t</italic>-test <italic>P</italic> = .01). As shown in <xref ref-type="fig" rid="figure8">Figure 8</xref>, her sadness decreased dramatically, from a mean of 3.15 to 0.875 (<italic>P</italic> &lt; .001), the largest cross-study shift in a mood scale we observed among all participants. Surprisingly, this decided drop in sadness was not accompanied by a significant drop in anger. This discrepancy suggests that the label of anger on the specific scale did not resonate with Theresa&#x2019;s frustration, and points to the need to tailor mood queries to an individual&#x2019;s emotional signature, that is, the range and pattern of each person&#x2019;s emotions.</p>
+          <fig id="figure8" position="float">
+            <label>Figure 8</label>
+            <caption>
+              <p>Sadness decreases dramatically in the second half of the study for Theresa, coinciding with her successful negotiation of conflict at home and work.</p>
+            </caption>
+            <graphic xlink:href="jmir_v12i2e10_fig8"/>
+          </fig>
+        </sec>
+        <sec>
+          <title>Forest</title>
+          <p>Personal stressors marked the interview and experience sampling data of Forest, a man in his mid thirties who had recently moved to the United States. He described frequent anger and frustration related to an overarching struggle to establish professional and financial stability.</p>
+          <p>Here we explore two stressful episodes described in Forest&#x2019;s interviews and experience sampling data. The first stressor, which occurred early in the study, followed his wife&#x2019;s selection of a physician who was not covered by his insurance. He spent days on the phone arguing with insurance companies and with the physician, trying to find a way to please his wife without incurring enormous expense. Although he and his wife eventually agreed on a doctor within the insurance network, he regretted the fruitless frustration he experienced along the way.</p>
+          <p>Forest&#x2019;s mean anger ratings (but not other emotion ratings) during this episode were significantly higher than the background level (2.41 vs. 1.57, <italic>P</italic> = .03). This difference is reflected in the time series of his anger ratings, shown in <xref ref-type="fig" rid="figure9">Figure 9</xref>.</p>
+          <fig id="figure9" position="float">
+            <label>Figure 9</label>
+            <caption>
+              <p>Snapshots of two comparably stressful episodes (1/21 to 1/29 and 2/4 to 2/11) identified by Forest during interviews. The solid and dotted vertical lines mark the beginning and end of the episodes respectively. In the second episode, he applied stress management and conflict resolution techniques and reported less anger.</p>
+            </caption>
+            <graphic xlink:href="jmir_v12i2e10_fig9"/>
+          </fig>
+          <p>Several weeks later, Forest relayed a similarly stressful series of interactions as he tried to obtain a US passport for his daughter. He was turned away because of missing paper work on his first visit to the consulate, and on each subsequent visit he had to interact with a rude officer.</p>
+          <p>Although irritated, Forest mentally prepared for each follow-up interaction by repeating to himself some of the mobile therapy concepts about goal orientation and constructive confrontation. In an interview, he relayed his self-talk from the day of the incident, in which he combined text from the mobile therapies shown in <xref ref-type="fig" rid="figure10">Figure 10</xref> (&#x201C;Step back&#x2026;expand perspective&#x201D; ) with his own self-reflection ( &#x201C;What is my goal here? So what if I don&#x2019;t like this guy? Step back, expand perspective.&#x201D;)</p>
+          <p>Even though securing the passport required a stressful series of interactions that took up far more time than he had anticipated, Forest felt good about the outcome and the way he handled the interactions. Unlike the first episode, his anger ratings associated with obtaining the passport were not significantly higher than the background level. This episode is reflected in the second segment of the anger time series (dated from 2/4 to 2/11) in <xref ref-type="fig" rid="figure9">Figure 9</xref>. The majority of Forest&#x2019;s mobile therapy usages occurred during these two stressful episodes, suggesting that he reached out to the phone for help in moments of need.</p>
+          <fig id="figure10" position="float">
+            <label>Figure 10</label>
+            <caption>
+              <p>Forest and other participants quickly internalized the mobile therapies.</p>
+            </caption>
+            <graphic xlink:href="jmir_v12i2e10_fig10"/>
+          </fig>
+        </sec>
+        <sec>
+          <title>Octavia</title>
+          <p>Octavia, a woman in her late thirties with an advanced technical job, described ongoing struggles with anxiety and procrastination. After several reorganizations in her division, she struggled to prioritize tasks and spent much of her day simply reacting to email or addressing small requests. She described the most difficulty focusing and the most anxiety in the morning. In keeping with this interview account, her mood phone entries showed more negativity in the morning hours than in the afternoon. As shown in <xref ref-type="fig" rid="figure11">Figure 11</xref>, her anxiety averaged 3.04 before 1:00PM, and dropped to 2.16 after (two-way ANOVA, <italic>P</italic> &lt; .001). Her unhappiness dropped from a mean of 4.27 before 1:00PM to a mean of 3.94 after (<italic>P</italic> = .01).</p>
+          <fig id="figure11" position="float">
+            <label>Figure 11</label>
+            <caption>
+              <p>Octavia&#x2019;s interview accounts of morning procrastination are paralleled in her experience sampling data, which show elevated anxiety before 1:00 PM. The circles show the mean values in the diurnal segments indicated on the abscissa. Error bars show the 95% confidence limits on the means.</p>
+            </caption>
+            <graphic xlink:href="jmir_v12i2e10_fig11"/>
+          </fig>
+          <fig id="figure12" position="float">
+            <label>Figure 12</label>
+            <caption>
+              <p>Example Mind Scan prompt that helped Octavia prioritize and stop procrastinating</p>
+            </caption>
+            <graphic xlink:href="jmir_v12i2e10_fig12"/>
+          </fig>
+          <p>In her closing interview, Octavia described notably better focus, productivity and clarity in presenting her work to others. She attributed these improvements to the phone application, particularly the prompts about prioritizing (an example prompt is shown in <xref ref-type="fig" rid="figure12">Figure 12</xref>):</p>
+          <disp-quote>
+            <p>
+                       Not a whole lot else has changed other than usage of this (application) and just a refocusing&#x2026;what it helped me say is, &#x201C;What is the absolute most important thing I should accomplish?&#x201D;&#x2026;knowing there are other things out there that need to happen, that just are not quite as important&#x2026;I was thinking about the visual&#x2026;where it says, &#x201C;Focus on what matters to me.&#x201D;
+                    </p>
+          </disp-quote>
+          <p>Octavia&#x2019;s verbal account of increased focus over as the month that she used the phone application was echoed in the experience sampling data: Her mean anxiety dropped from 2.88 to 2.16 from the first to the second half of the study (Behrens-Fisher <italic>t</italic>-test <italic>P</italic>  = . 005). The drop in anxiety also is evident from the two-way ANOVA, which showed significantly higher anxiety in week one (3.06) than in weeks three or four (1.92 and 1.37, respectively, <italic>P</italic> = . 001). The time series of her anxiety ratings, with the weeks demarcated, are shown in <xref ref-type="fig" rid="figure13">Figure 13</xref>. Octavia&#x2019;s sadness and unhappiness also declined through the course of the study; sadness dropped from a mean of 0.49 to 0.08 (Behrens-Fisher <italic>t</italic>-test <italic>P</italic>  = . 001), and unhappiness dropped from 4.39 to 3.41 (<italic>P</italic> &lt; .001). Her energy ratings on the Mood Map (y-axis) do not reflect the increased energy that she reported, however. As mentioned above, Octavia described improved focus and prioritization over the course of the study. While her anxiety and some other negative moods were lower in the second half of the study, no change in the diurnal pattern of anxiety across the study was revealed by the two-way ANOVA used to simultaneously study diurnal and across-study changes. That is, her anxiety was lower overall by the end of the study, but remained higher in the morning.</p>
+          <fig id="figure13" position="float">
+            <label>Figure 13</label>
+            <caption>
+              <p>This time series visualization shows Octavia&#x2019;s lowered anxiety ratings in weeks three and four of the study, a pattern that matches her interview account of decreased anxiety. The short vertical lines along the x-axis mark the beginning of each week in the study.</p>
+            </caption>
+            <graphic xlink:href="jmir_v12i2e10_fig13"/>
+          </fig>
+        </sec>
+        <sec>
+          <title>Eliza</title>
+          <p>A more complex trend in moods was exhibited by Eliza, a woman in her mid-forties who juggled a full-time job and close relationships with her two sons, husband and extended family. She managed a tight schedule, running each morning, arriving at work by 7:00 AM, picking up her children after school, and reviewing their homework&#x2013;all before preparing dinner. Historically, Eliza dealt with anxiety and other negative emotions through constant busyness, but said that this coping style eventually left her exhausted. She worked hard to be positive and supportive at work and at home, and experienced deep regret when she let others down. She also described frequent waves of anxiety that &#x201C;wipe out the joy&#x201D; of positive moments with her family.</p>
+          <p>As the study progressed, Eliza expressed great interest in mapping her moods, describing better self-understanding, clearer communication and improved resolution of conflicts with her husband and eldest son. In light of these reported gains, initially it was surprising to see an increased negative affect in her experience sampling data across the study. Specifically, the mean of her energy ratings on the Mood Map decreased from 2.82 to 1.88 from the first to the second half of the study (Behrens-Fisher <italic>t</italic>-test <italic>P</italic> = .007) and her mean sadness ratings increased from 0.69 to 1.38 (<italic>P</italic> = .039). This change, although surprising in light of her reported increased insight and improved communication, made sense on closer analysis. The trend towards negativity in her experience sampling mirrored statements she made in interviews about learning to acknowledge different emotional states. She described calibrating herself on the Mood Map:</p>
+          <disp-quote>
+            <p>
+                        I allowed myself more freedom. It&#x2019;s exploratory. I allowed myself more freedom and range of motion in there just to get myself rolling&#x2026;I thought, &#x201C;I&#x2019;m going to explore what it feels like to put it right over here because that&#x2019;s where I think I&#x2019;m at&#x201D; &#x2026;[Before] I need[ed] everybody to be happy. This has allowed me to go, &#x201D;Oh, it&#x2019;s okay, I&#x2019;m not always happy either,&#x201D;&#x2026;something I&#x2019;ve learned from this is, instead of always needing to be in that positive, happy quadrant, accepting that I can be in a negative quadrant, either with energy or with mood, and still be managing myself&#x2026;that I can be okay even when I&#x2019;m not in a positive energetic state, and that allows me to say for other people, oh, they can feel that way and still be&#x2014;I don&#x2019;t have to fix it.
+                    </p>
+          </disp-quote>
+          <p>For Eliza and others, it was difficult to disentangle mood changes from changes in self-awareness. That is, the experience sampling data could reflect either increased distress or acknowledgment of previously disavowed negative moods.</p>
+          <p>Two stressful episodes, both family conflicts, stood out in Eliza&#x2019;s interview narratives and experience sampling data (see <xref ref-type="fig" rid="figure14">Figure 14</xref>). The first incident occurred shortly before her birthday. Her mother, after trying unsuccessfully to arrange a birthday dinner for Eliza, sent a card, followed by a phone call and an email, all expressing sorrow that they were not able to see one another. Eliza felt a surge of anger after each message, resenting that her mother had manipulated her into feeling guilt. She explained that the mobile therapies helped her sympathize with her mother&#x2019;s intent and decide to postpone a heated conversation. She also became more comfortable with her decision to decline the dinner invitation and reserve time for herself. Nonetheless, the event took its toll. Eliza described sadness that is mirrored in her experience sampling data: During this episode, her mean ratings for sadness, but no other emotion, rose above the background level (from 0.040 to 1.88, <italic>P</italic> &lt; .001, one-way ANOVA).</p>
+          <p>The second conflict involved Eliza&#x2019;s ten-year-old son. A call from his teacher about his disruption of a class triggered her anger: &#x201C;I was definitely in a rage. I was really angry. I was, you know, I was already at my wit&#x2019;s end, and I&#x2019;d been trying to make the afternoon nice and then, you know, all the chemical elements came together.&#x201D; Shortly after, she regretted lashing out at her son for simply having fun with his friend during class. That afternoon they sat down together, exploring the mobile therapies and scales to process the conflict. Her son started to understand not only his mother&#x2019;s anger, but also his anger at the teacher. During this episode too, Eliza&#x2019;s sadness rose significantly above the background level (0.40) to 1.87 (<italic>P</italic>  &lt; .001 one-way ANOVA). In addition, her anger, typically near zero, increased to 0.94 (<italic>P</italic> = .008), and her happiness fell from 5.53 to 4.47 (<italic>P = .</italic>002).</p>
+          <p>Eliza&#x2019;s phone entries characterize the first event as more disappointing and the second as more infuriating. She used the mobile therapies for anger management and conflict resolution heavily during both episodes; in fact, one half of her usages of these therapies throughout the study fell on the dates of those episodes. For Eliza, negative affect may have been experienced primarily as sadness, but at a certain threshold developed to include anger.</p>
+          <fig id="figure14" position="float">
+            <label>Figure 14</label>
+            <caption>
+              <p>The time series of mood ratings echoes Eliza&#x2019;s interview account of two stressful episodes; both were family conflicts that stretched over multiple days. The first episode (between 2/6 and 2/8) was characterized in mobile entries as sadness; the second (between 2/11 and 2/14) as sadness and anger. A solid vertical line marks the beginning of each episode, and the end of each episode is marked with a dotted vertical line.</p>
+            </caption>
+            <graphic xlink:href="jmir_v12i2e10_fig14"/>
+          </fig>
+        </sec>
+      </sec>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Discussion</title>
+      <p>Emotional awareness and self-regulation are important personal health skills that may be facilitated by mobile technologies. In this exploratory project, we developed and tested a mobile application that enabled users to report their emotional states and access therapeutic exercises based on cognitive behavioral therapy. We examined how people used this application to increase self-awareness in moments of stress, develop insights about their emotional patterns, and practice new strategies for modulating stress reactions.</p>
+      <p>Interview narratives suggest that study participants applied the mood scales and therapeutic content in ways that helped them initiate meaningful personal change. Examples discussed in the Results section&#x2014;of a woman who started problem solving in a more collaborative way with her niece and co-worker, a man who became more goal-focused in bureaucratic negotiations,and another who experimented with a new approach to dealing with family stress at the end of his workday&#x2014;were similar to those shared by other participants. In general, people quickly internalized the mood questions and mobile therapies, applying the concepts whether or not they were physically interacting with the application. Several participants used the concepts from the application to understand and coach other people.</p>
+      <p>The case studies analyzed self-reflection in weekly interviews in conjunction with experience sampling data. Interview reports of marked patterns (eg, in stress and fatigue) were generally reflected in experience sampling data, with the most striking agreement between the two forms of data appearing in stressful episodes. In these distinct events, participants made clear notations of negative emotions and were far more likely to use mobile therapies than they were at other times. These observations suggest a readiness to use mobile therapies when experiencing intense emotions.</p>
+      <p>The primary disparity between interviews and experience sampling data was that participants seemed to express more emotional volatility and negativity in the former than in the latter. There are several possible explanations for this disparity. As Kahneman explains in reference to the &#x201C;peak-end rule,&#x201D; recall is biased towards intense and recent events [<xref ref-type="bibr" rid="ref11">11</xref>]. Interviews may have evoked the most dramatic emotional experiences that participants had during the week. Alternatively, people may be more emotionally expressive when interacting with an interviewer than with an application. Some of the disparity appeared to stem from adjusting to the tool over time; for example, one participant who was excited about increased self-awareness reported that she became more comfortable acknowledging negative moods as the study progressed. By highlighting the most emotionally salient events, interviews help in the interpretation of experience sampling data, which includes many data points, equally weighted, over a stretch of time.</p>
+      <p>This was a preliminary study with limitations that should be addressed in future studies. The first limitation concerns the small sample size used for this initial, qualitative exploration of how people adopt mobile therapies. Our interview approach&#x2014;repeated, open-ended discussions over the one-month period that participants used the prototype&#x2014;was influenced by clinical psychology, ethnography, and participatory design. To evaluate the efficacy of such a system, a large controlled study would be required. Second, as noted earlier, a data capture error limited the analysis of the x-axis of the Mood Map to a bipolar distinction between positive and negative responses. Another limitation was the requirement that participants carry an additional phone; future studies should take advantage of application stores, such as those for the iPhone and Android, to test tools on people&#x2019;s current phones. Ideally the study should continue for a longer period of time to allow accommodation to the mood scales. Finally, evaluating this type of intervention is complicated because it combines therapy and assessment and because people&#x2019;s use of the tool changes over time.</p>
+      <p>This study pointed out some key directions for future mobile therapies. The benefits in self-awareness and coping that individuals garnered in this study most likely resulted from a combination of the features on the phone and the reflection offered in weekly interviews. Future systems could combine the assessment, mobile therapies, and feedback that participants experienced in this study. That is, the feedback from interviews could be built into the software and used to customize the mobile therapies. To cultivate self-awareness over daily, weekly, and monthly patterns, the system should ideally present mood trends on the phone immediately after a mood entry. As mentioned above, the system should also invite users to investigate their mood correlates and set goals, activities that were appealing to most of our participants. To help with managing situation-specific stressors, feedback displays could illuminate the contextual triggers and help the user to develop coping strategies. The system could track which therapies were most helpful and provide similar but increasingly sophisticated strategies over time.</p>
+      <p>In summary, this preliminary study pointed to potential promises of coupling experience sampling tools with mobile therapies to encourage self-awareness and coping in daily life. Future applications should ideally include adaptive learning and query based on an individual&#x2019;s emotional signature&#x2014;the range, patterns, and triggers of emotions he or she experiences&#x2014;and display trends immediately following queries. Mobile therapies should be pushed to the user based on his or her emotional signature, and ideally be integrated with the personal technologies he or she uses for entertainment, calendaring, and communication. We recommend experimental studies to assess the potential benefits of such systems, in addition to larger field deployments to understand how such systems might be adopted in communities. Among other topics that can be examined in qualitative field studies is mood sharing, that is, how people use their Mood Map ratings or media to represent their emotional states, the clusters of people with whom they share mood data, and the contagion effects of mood in social networks.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p>Several authors are employees of Intel Corporation. Intel funded this exploratory research. The investigatory technology described in this paper was a research vehicle and not a commercially available product.</p>
+      </fn>
+    </fn-group>
+    <ack>
+      <p>We thank colleagues Stefanie Danhope-Smith, Gail Block, John Sherry, Richard Sloan, Dominic D&#x2019;Andrea, Nancy Vuckovic, Scott Mainwaring, Mary Smiley, Eric Dishman, Charing Riolo, Larry Jamner, Robert Biswas-Diener, and the participants in this study.</p>
+    </ack>
+    <ref-list>
+      <ref id="ref1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Salovey</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Mayer</surname>
+              <given-names>JD</given-names>
+            </name>
+          </person-group>
+          <article-title>Emotional intelligence</article-title>
+          <source>Imagination, Cognition, and Personality</source>
+          <year>1990</year>
+          <volume>9</volume>
+          <fpage>185</fpage>
+          <lpage>211</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref2">
+        <label>2</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Goleman</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <source>Emotional Intelligence</source>
+          <year>1995</year>
+          <publisher-loc>New York, NY</publisher-loc>
+          <publisher-name>Bantam Books</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="ref3">
+        <label>3</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gross</surname>
+              <given-names>JJ</given-names>
+            </name>
+          </person-group>
+          <source>Handbook of Emotion Regulation</source>
+          <year>2007</year>
+          <publisher-loc>New York, NY</publisher-loc>
+          <publisher-name>Guilford Press</publisher-name>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://psycnet.apa.org/psycinfo/2007-01392-000">http://psycnet.apa.org/psycinfo/2007-01392-000</ext-link>
+          </comment>
+        </element-citation>
+      </ref>
+      <ref id="ref4">
+        <label>4</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McEwen</surname>
+              <given-names>BS</given-names>
+            </name>
+          </person-group>
+          <source>The End of Stress as We Know It</source>
+          <year>2002</year>
+          <publisher-loc>Washington, DC</publisher-loc>
+          <publisher-name>Joseph Henry Press</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="ref5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lyubomirsky</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>King</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Diener</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>The benefits of frequent positive affect: Does happiness lead to success?</article-title>
+          <source>Psychol Bull</source>
+          <year>2005</year>
+          <month>11</month>
+          <volume>131</volume>
+          <issue>6</issue>
+          <fpage>803</fpage>
+          <lpage>55</lpage>
+          <pub-id pub-id-type="medline">16351326</pub-id>
+          <pub-id pub-id-type="pii">2005-15687-001</pub-id>
+          <pub-id pub-id-type="doi">10.1037/0033-2909.131.6.803</pub-id>
+          <pub-id pub-id-type="pmid">16351326</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref6">
+        <label>6</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Diener</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Schimmack</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Lucas</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Helliwell</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <source>Well-being for Public Policy</source>
+          <year>2009</year>
+          <publisher-loc>New York, NY</publisher-loc>
+          <publisher-name>Oxford University Press, Inc</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="ref7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Diener</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Subjective well-being. The science of happiness and a proposal for a national index</article-title>
+          <source>Am Psychol</source>
+          <year>2000</year>
+          <month>1</month>
+          <volume>55</volume>
+          <issue>1</issue>
+          <fpage>34</fpage>
+          <lpage>43</lpage>
+          <pub-id pub-id-type="medline">11392863</pub-id>
+          <pub-id pub-id-type="doi">10.1037/0003-066X.55.1.34</pub-id>
+          <pub-id pub-id-type="pmid">11392863</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref8">
+        <label>8</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dobson</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Dobson</surname>
+              <given-names>KS</given-names>
+            </name>
+          </person-group>
+          <source>Evidence-based Practice of Cognitive-behavioral Therapy</source>
+          <year>2009</year>
+          <publisher-loc>New York, NY</publisher-loc>
+          <publisher-name>Guilford Press</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="ref9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Csikszentmihalyi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Larson</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Validity and reliability of the Experience-Sampling Method</article-title>
+          <source>J Nerv Ment Dis</source>
+          <year>1987</year>
+          <month>9</month>
+          <volume>175</volume>
+          <issue>9</issue>
+          <fpage>526</fpage>
+          <lpage>36</lpage>
+          <pub-id pub-id-type="medline">3655778</pub-id>
+          <pub-id pub-id-type="pmid">3655778</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref10">
+        <label>10</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Eid</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Larsen</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <source>The Science of Subjective Well-being</source>
+          <year>2008</year>
+          <publisher-loc>New York, NY</publisher-loc>
+          <publisher-name>Guilford Press</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="ref11">
+        <label>11</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kahneman</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <source>Objective happiness. In Kahneman D, Diener E, Schwartz N, editors. Well-being: The Foundations of Hedonic Psychology</source>
+          <year>1999</year>
+          <publisher-loc>New York, NY</publisher-loc>
+          <publisher-name>Russell Sage</publisher-name>
+          <fpage>3</fpage>
+          <lpage>25</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Morris</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Guilak</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Mobile Heart Health</article-title>
+          <source>IEEE Pervasive Computing</source>
+          <year>2009</year>
+          <volume>8</volume>
+          <fpage>57</fpage>
+          <lpage>61</lpage>
+          <pub-id pub-id-type="doi">10.1109/MPRV.2009.31</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Russell</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <article-title>A circumplex model of affect</article-title>
+          <source>J Pers Soc Psychol</source>
+          <year>1980</year>
+          <volume>39</volume>
+          <fpage>1161</fpage>
+          <lpage>1178</lpage>
+          <pub-id pub-id-type="doi">10.1037/h0077714</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref14">
+        <label>14</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Clark</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Beck</surname>
+              <given-names>AT</given-names>
+            </name>
+            <name>
+              <surname>Alford</surname>
+              <given-names>BA</given-names>
+            </name>
+          </person-group>
+          <source>Scientific Foundations of Cognitive Theory and Therapy of Depression</source>
+          <year>1999</year>
+          <publisher-loc>Philadelphia, PA</publisher-loc>
+          <publisher-name>John Wiley &amp; Sons</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="ref15">
+        <label>15</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seligman</surname>
+              <given-names>MEP</given-names>
+            </name>
+          </person-group>
+          <source>Explanatory style: Predicting depression, achievement, and health. In Yapko MD, editor. Brief Therapy Approaches to Treating Anxiety and Depression</source>
+          <year>1989</year>
+          <publisher-loc>New York, NY</publisher-loc>
+          <publisher-name>Brunner/Mazel, Inc</publisher-name>
+          <fpage>5</fpage>
+          <lpage>32</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gorenstein</surname>
+              <given-names>EE</given-names>
+            </name>
+            <name>
+              <surname>Tager</surname>
+              <given-names>FA</given-names>
+            </name>
+            <name>
+              <surname>Shapiro</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Monk</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Sloan</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>cognitive-behavior therapy for reduction of persistent anger</article-title>
+          <source>Cogn Behav Pract</source>
+          <year>2007</year>
+          <volume>14</volume>
+          <issue>2</issue>
+          <fpage>168</fpage>
+          <lpage>184</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.cbpra.2006.07.004</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref17">
+        <label>17</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brown</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>O'Leary</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Barlow</surname>
+              <given-names>DA</given-names>
+            </name>
+          </person-group>
+          <source>Generalized anxiety disorder. In: Barlow DH, editor. Clinical Handbook of Psychological Disorders: A Step-by-Step Treatment Manual. 3rd edition</source>
+          <year>2001</year>
+          <publisher-loc>New York, NY</publisher-loc>
+          <publisher-name>Guilford Press</publisher-name>
+          <fpage>154</fpage>
+          <lpage>208</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref18">
+        <label>18</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Froehlich</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Consolvo</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Harrison</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Landay</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <article-title>MyExperience: A system for in situ tracing and capturing of user feedback on mobile phones</article-title>
+          <conf-name>MobiSys 07</conf-name>
+          <conf-date>June 2007</conf-date>
+          <conf-loc>San Juan, Puerto Rico</conf-loc>
+          <fpage>57</fpage>
+          <lpage>70</lpage>
+          <pub-id pub-id-type="doi">10.1145/1247660.1247670</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

@@ -1,0 +1,2708 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Med Res Methodol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Med Res Methodol</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Medical Research Methodology</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2288</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">22646911</article-id>
+      <article-id pub-id-type="pmc">3511219</article-id>
+      <article-id pub-id-type="publisher-id">1471-2288-12-70</article-id>
+      <article-id pub-id-type="doi">10.1186/1471-2288-12-70</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Evaluation of the Propensity score methods for estimating marginal odds ratios in case of small sample size</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" id="A1">
+          <name>
+            <surname>Pirracchio</surname>
+            <given-names>Romain</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>romainpirracchio@yahoo.fr</email>
+        </contrib>
+        <contrib contrib-type="author" id="A2">
+          <name>
+            <surname>Resche-Rigon</surname>
+            <given-names>Matthieu</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>matthieu.resche-rigon@paris7.jussieu.fr</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes" id="A3">
+          <name>
+            <surname>Chevret</surname>
+            <given-names>Sylvie</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>sylvie.chevret@paris7.jussieu.fr</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Service de Biostatistique et Information M&#xE9;dicale, H&#xF4;pital Saint-Louis, UMR-S717 Inserm; Sorbonne Paris Cit&#xE9;, Universit&#xE9; Paris Diderot, 1 avenue Claude Vellefaux, Paris 75010, France</aff>
+      <aff id="I2"><label>2</label>3- Service d'Anesth&#xE9;sie-R&#xE9;animation, H&#xF4;pital Europ&#xE9;en Georges Pompidou, Universit&#xE9; Paris 5 Descartes, Sorbonne Paris Cit&#xE9;, Paris, France</aff>
+      <pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>30</day>
+        <month>5</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>12</volume>
+      <fpage>70</fpage>
+      <lpage>70</lpage>
+      <history>
+        <date date-type="received">
+          <day>7</day>
+          <month>9</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>21</day>
+          <month>4</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9;2012 Pirracchio et al.; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2012</copyright-year>
+        <copyright-holder>Pirracchio et al.; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (
+<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1471-2288/12/70"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>Propensity score (PS) methods are increasingly used, even when sample sizes are small or treatments are seldom used. However, the relative performance of the two mainly recommended PS methods, namely PS-matching or inverse probability of treatment weighting (IPTW), have not been studied in the context of small sample sizes.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>We conducted a series of Monte Carlo simulations to evaluate the influence of sample size, prevalence of treatment exposure, and strength of the association between the variables and the outcome and/or the treatment exposure, on the performance of these two methods.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>Decreasing the sample size from 1,000 to 40 subjects did not substantially alter the Type I error rate, and led to relative biases below 10%. The IPTW method performed better than the PS-matching down to 60 subjects. When N was set at 40, the PS matching estimators were either similarly or even less biased than the IPTW estimators. Including variables unrelated to the exposure but related to the outcome in the PS model decreased the bias and the variance as compared to models omitting such variables. Excluding the true confounder from the PS model resulted, whatever the method used, in a significantly biased estimation of treatment effect. These results were illustrated in a real dataset.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>Even in case of small study samples or low prevalence of treatment, PS-matching and IPTW can yield correct estimations of treatment effect unless the true confounders and the variables related only to the outcome are not included in the PS model.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>Propensity scores</kwd>
+        <kwd>Propensity score matching</kwd>
+        <kwd>Inverse probability weighting</kwd>
+        <kwd>Small sample size</kwd>
+        <kwd>Simulation</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>In non-randomized studies, any estimated association between treatment and outcome can be biased because of the imbalance in baseline covariates that may affect the outcome. In this context, propensity score methods (PS)
+[<xref ref-type="bibr" rid="B1">1</xref>] are increasingly used to estimate marginal causal treatment effect. The propensity score, as defined by Rosenbaum and Rubin
+[<xref ref-type="bibr" rid="B1">1</xref>] is the individual probability of receiving the treatment of interest conditional on the observed baseline covariates. It has been demonstrated that, within the strata of subjects matched on the propensity score, distributions of these covariates tend to be similar between treated and untreated
+[<xref ref-type="bibr" rid="B1">1</xref>]. Therefore, conditioning on the propensity score allows to draw unbiased marginal estimates of treatment effects
+[<xref ref-type="bibr" rid="B1">1</xref>].</p>
+      <p>Four methods of using the propensity score have been so far described: stratification
+[<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B2">2</xref>], adjustment
+[<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B2">2</xref>], matching
+[<xref ref-type="bibr" rid="B1">1</xref>-<xref ref-type="bibr" rid="B4">4</xref>] and more recently inverse probability of treatment weighting (IPTW)
+[<xref ref-type="bibr" rid="B3">3</xref>,<xref ref-type="bibr" rid="B5">5</xref>-<xref ref-type="bibr" rid="B9">9</xref>]. Using an empirical case study and Monte Carlo simulations, several authors
+[<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B10">10</xref>] recently showed that the PS-matching and the IPTW more efficiently reduced the imbalance in baseline covariates than the two other methods did. However, these methods were evaluated using large simulated datasets of about 10,000 observations, and roughly balanced treatment groups
+[<xref ref-type="bibr" rid="B10">10</xref>]. From a practical point of view, if propensity scores have usually been applied to large observational cohorts
+[<xref ref-type="bibr" rid="B11">11</xref>-<xref ref-type="bibr" rid="B13">13</xref>], they have been also used in the setting of small samples
+[<xref ref-type="bibr" rid="B14">14</xref>,<xref ref-type="bibr" rid="B15">15</xref>] or with important imbalances in the treatment allocation, as observed, for instance, when estimating the benefit of intensive care unit (ICU) admission
+[<xref ref-type="bibr" rid="B16">16</xref>].</p>
+      <p>Although PS-matching and IPTW have not been evaluated in the context of small sample sizes, such a situation raises specific questions. First, because the propensity score is used to balance baseline covariates more than to predict treatment assignment, it has been recommended
+[<xref ref-type="bibr" rid="B17">17</xref>-<xref ref-type="bibr" rid="B19">19</xref>] to include in the PS model all the potential confounders and to avoid any selection procedure based on the goodness-of-fit
+[<xref ref-type="bibr" rid="B19">19</xref>,<xref ref-type="bibr" rid="B20">20</xref>]. However, the limited sample size restricts the number of variables to be included in the PS regression model to limit model <italic>over parameterization</italic>. Moreover, in case of small sample sizes, it is not clear whether one PS method, i.e. PS matching or IPTW, outperforms the other or not, considering, on one hand, that matching without replacement might lead to a further decrease in the sample size (and thus, in the statistical power of outcome comparisons), and, on the other hand, that IPTW might give an excessive weight to some observations that could dramatically influence the results. All these points could be similarly addressed in case of important imbalances in the size of the treatment arms. Therefore, our goal was to explore such specific situations in order to provide some warnings concerning the use of PS methods, for analysts, but also for readers.</p>
+      <p>Actually, we assessed the performance of PS-matching and IPTW in the particular context of small samples, when the odds ratio (OR) is used as the measure of treatment effect. We present the results of Monte Carlo simulations in which we studied the influence of the sample size, the prevalence of treated patients, and the strength of the association between the variables and the outcome and/or the treatment exposure, in order the assess the accuracy of PS methods in terms of bias, variance estimation and Type I error rates in the estimation of treatment effect. Finally, some illustration is provided from a real observational dataset, assessing the benefit of allogeneic stem cell transplantation in a small sample of patients with multiple myeloma.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>Monte carlo simulation study</title>
+        <p>Monte Carlo simulations were used to evaluate the performance of PS-matching and IPTW to estimate the marginal OR of treatment effect in the context of small sample sizes and/ or low prevalence of the treated population. They consisted in (1) randomly generated N independent datasets in several settings defined by sample size, treatment effect and covariates effect on both treatment and outcome; (2) applying the PS-matching and IPTW approaches to analyze the data, separately. In each setting, the performance of each approach was assessed by computing the bias, the mean squared error (MSE) and the variance of the estimated OR from the N replications of the dataset. Type I and Type II error rates, as defined by the frequency of rejecting the null or alternative hypothesis under the null or the alternative, respectively, were also estimated.</p>
+        <sec>
+          <title>Data-generating process</title>
+          <p>Let Z be the variable defining treatment allocation (Z&#x2009;=&#x2009;1 for the treated, 0 otherwise), Y be the outcome of interest (Y&#x2009;=&#x2009;1 for those subject who experienced the outcome, 0 otherwise) and X a set of 4 independent and identically distributed baseline covariates
+<inline-formula><mml:math id="M1" name="1471-2288-12-70-i1" overflow="scroll"><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:msub><mml:mi>X</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mo>&#x2026;</mml:mo><mml:mo>,</mml:mo><mml:mn>4</mml:mn><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:math></inline-formula>.</p>
+          <p>The probability of allocated treatment and that of experiencing the outcome were described by the two following logistic models, respectively:</p>
+          <p>
+            <disp-formula id="bmcM1">
+              <label>(1)</label>
+              <mml:math id="M2" name="1471-2288-12-70-i2" overflow="scroll">
+                <mml:mrow>
+                  <mml:mtext>log</mml:mtext>
+                  <mml:mi>i</mml:mi>
+                  <mml:mi>t</mml:mi>
+                  <mml:mo stretchy="true">(</mml:mo>
+                  <mml:mi>P</mml:mi>
+                  <mml:mo stretchy="true">(</mml:mo>
+                  <mml:msub>
+                    <mml:mi>Z</mml:mi>
+                    <mml:mi>i</mml:mi>
+                  </mml:msub>
+                  <mml:mo>=</mml:mo>
+                  <mml:mn>1</mml:mn>
+                  <mml:msub>
+                    <mml:mtext>|X</mml:mtext>
+                    <mml:mtext>i</mml:mtext>
+                  </mml:msub>
+                  <mml:mo stretchy="true">)</mml:mo>
+                  <mml:mo stretchy="true">)</mml:mo>
+                  <mml:mo>=</mml:mo>
+                  <mml:msub>
+                    <mml:mi>&#x3B1;</mml:mi>
+                    <mml:mn>0</mml:mn>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>&#x3B1;</mml:mi>
+                    <mml:mn>1</mml:mn>
+                  </mml:msub>
+                  <mml:msub>
+                    <mml:mi>X</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mn>1</mml:mn>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:mo>&#x2026;</mml:mo>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>&#x3B1;</mml:mi>
+                    <mml:mn>4</mml:mn>
+                  </mml:msub>
+                  <mml:msub>
+                    <mml:mi>X</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mn>4</mml:mn>
+                    </mml:mrow>
+                  </mml:msub>
+                </mml:mrow>
+              </mml:math>
+            </disp-formula>
+          </p>
+          <p>
+            <disp-formula id="bmcM2">
+              <label>(2)</label>
+              <mml:math id="M3" name="1471-2288-12-70-i3" overflow="scroll">
+                <mml:mrow>
+                  <mml:mtext>log</mml:mtext>
+                  <mml:mi>i</mml:mi>
+                  <mml:mi>t</mml:mi>
+                  <mml:mo stretchy="true">(</mml:mo>
+                  <mml:mi>P</mml:mi>
+                  <mml:mo stretchy="true">(</mml:mo>
+                  <mml:msub>
+                    <mml:mi>Y</mml:mi>
+                    <mml:mi>i</mml:mi>
+                  </mml:msub>
+                  <mml:mo>=</mml:mo>
+                  <mml:mn>1</mml:mn>
+                  <mml:mo stretchy="true">|</mml:mo>
+                  <mml:msub>
+                    <mml:mi>Z</mml:mi>
+                    <mml:mi>i</mml:mi>
+                  </mml:msub>
+                  <mml:mo>,</mml:mo>
+                  <mml:msub>
+                    <mml:mi>X</mml:mi>
+                    <mml:mi>i</mml:mi>
+                  </mml:msub>
+                  <mml:mo stretchy="true">)</mml:mo>
+                  <mml:mo stretchy="true">)</mml:mo>
+                  <mml:mo>=</mml:mo>
+                  <mml:msub>
+                    <mml:mi>&#x3B2;</mml:mi>
+                    <mml:mn>0</mml:mn>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>&#x3B2;</mml:mi>
+                    <mml:mi>T</mml:mi>
+                  </mml:msub>
+                  <mml:msub>
+                    <mml:mi>Z</mml:mi>
+                    <mml:mi>i</mml:mi>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>&#x3B2;</mml:mi>
+                    <mml:mn>1</mml:mn>
+                  </mml:msub>
+                  <mml:msub>
+                    <mml:mi>X</mml:mi>
+                    <mml:mi>i</mml:mi>
+                  </mml:msub>
+                  <mml:msub>
+                    <mml:mrow/>
+                    <mml:mn>1</mml:mn>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:mo>&#x2026;</mml:mo>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>&#x3B2;</mml:mi>
+                    <mml:mn>4</mml:mn>
+                  </mml:msub>
+                  <mml:msub>
+                    <mml:mi>X</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mn>4</mml:mn>
+                    </mml:mrow>
+                  </mml:msub>
+                </mml:mrow>
+              </mml:math>
+            </disp-formula>
+          </p>
+          <p>where
+<inline-formula><mml:math id="M4" name="1471-2288-12-70-i4" overflow="scroll"><mml:msub><mml:mi>Z</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:math></inline-formula> was the treatment assignment for subject <italic>i</italic>,
+<inline-formula><mml:math id="M5" name="1471-2288-12-70-i5" overflow="scroll"><mml:mfenced open="(" close=")"><mml:mrow><mml:msub><mml:mi>&#x3B1;</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mo>&#x2026;</mml:mo><mml:mo>,</mml:mo><mml:msub><mml:mi>&#x3B1;</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:mfenced></mml:math></inline-formula> and
+<inline-formula><mml:math id="M6" name="1471-2288-12-70-i6" overflow="scroll"><mml:mfenced open="(" close=")"><mml:mrow><mml:msub><mml:mi>&#x3B2;</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>&#x3B2;</mml:mi><mml:mi>T</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:mo>&#x2026;</mml:mo><mml:mo>,</mml:mo><mml:msub><mml:mi>&#x3B2;</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow></mml:mfenced></mml:math></inline-formula> the sets of corresponding slope and regression coefficients. Regression coefficients allowed considering different situations of covariate association with the treatment and the outcome:
+<inline-formula><mml:math id="M7" name="1471-2288-12-70-i7" overflow="scroll"><mml:msub><mml:mi>X</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:math></inline-formula> did not affect any of them (&#x3B1;<sub>1</sub>&#x2009;=&#x2009;&#x3B2;<sub>1</sub>&#x2009;=&#x2009;0),
+<inline-formula><mml:math id="M8" name="1471-2288-12-70-i8" overflow="scroll"><mml:msub><mml:mi>X</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:math></inline-formula>was associated only with the outcome (&#x3B1;<sub>2</sub>&#x2009;=&#x2009;0, &#x3B2;<sub>2</sub>&#x2009;=&#x2009;b),
+<inline-formula><mml:math id="M9" name="1471-2288-12-70-i9" overflow="scroll"><mml:msub><mml:mi>X</mml:mi><mml:mn>3</mml:mn></mml:msub></mml:math></inline-formula> only with the treatment (&#x3B1;<sub>3</sub>&#x2009;=&#x2009;a, &#x3B2;<sub>3</sub>&#x2009;=&#x2009;0), and
+<inline-formula><mml:math id="M10" name="1471-2288-12-70-i10" overflow="scroll"><mml:msub><mml:mi>X</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:math></inline-formula> with both as a true confounder (&#x3B1;<sub>4</sub>&#x2009;=&#x2009;a, &#x3B2;<sub>4</sub>&#x2009;=&#x2009;b).</p>
+          <p>The value of the intercept
+<inline-formula><mml:math id="M11" name="1471-2288-12-70-i11" overflow="scroll"><mml:msub><mml:mi>&#x3B1;</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:math></inline-formula> was successively set at 0 and &#x2212;1.38 to guarantee a marginal probability of treatment allocation of 0.50 and 0.2, respectively. For each set of values of (
+<inline-formula><mml:math id="M12" name="1471-2288-12-70-i12" overflow="scroll"><mml:msub><mml:mi>&#x3B2;</mml:mi><mml:mi>T</mml:mi></mml:msub></mml:math></inline-formula>, a, b), the value of
+<inline-formula><mml:math id="M13" name="1471-2288-12-70-i13" overflow="scroll"><mml:msub><mml:mi>&#x3B2;</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:math></inline-formula> was determined by a minimization algorithm from a sample of 1,000,000 in order to guarantee the outcome to occur in 50 per cent of subjects, approximately.</p>
+          <p>For each subject, treatment allocation and outcome were randomly generated from Bernoulli distributions with subject-specific probability of treatment assignment derived from equation (1) or equation (2), as the success probability, respectively. Each covariate was randomly generated from a Normal distribution N(&#x3BC;&#x2009;=&#x2009;0, &#x3C3;&#x2009;=&#x2009;0.5).</p>
+          <p>Several situations were examined, that differed in terms of:</p>
+          <p>&#x2013; Sample size, ranging from 1,000 down to 40 (1000, 900, 800, 700, 600, 500, 400, 300, 200, 180, 160, 140, 120, 100, 80, 60, 40)</p>
+          <p>&#x2013; Treatment effect
+<inline-formula><mml:math id="M14" name="1471-2288-12-70-i14" overflow="scroll"><mml:msub><mml:mi>&#x3B2;</mml:mi><mml:mi>T</mml:mi></mml:msub></mml:math></inline-formula>, successively fixed at 0 (null hypothesis), 0.41 and 0.92 (alternative hypotheses of moderate or strong treatment effect) corresponding to conditional ORs fixed at 1, 1.5 and 2.5, respectively</p>
+          <p>&#x2013; Strength of the association between the covariates and both the treatment and the outcome, with a and b fixed at 0.41 and 0.92, corresponding to moderate and strong association, respectively.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Analysis of simulated data sets</title>
+        <sec>
+          <title>Propensity score models</title>
+          <p>The propensity score models the probability that a given patient would be exposed to the experimental treatment, conditionally to his(her) baseline covariates
+[<xref ref-type="bibr" rid="B1">1</xref>]:</p>
+          <p>
+            <disp-formula id="bmcM3">
+              <label>(3)</label>
+              <mml:math id="M15" name="1471-2288-12-70-i15" overflow="scroll">
+                <mml:mrow>
+                  <mml:mtext>log</mml:mtext>
+                  <mml:mi>i</mml:mi>
+                  <mml:mi>t</mml:mi>
+                  <mml:mo stretchy="true">(</mml:mo>
+                  <mml:mi>P</mml:mi>
+                  <mml:mo stretchy="true">(</mml:mo>
+                  <mml:mi>Z</mml:mi>
+                  <mml:mo>=</mml:mo>
+                  <mml:mn>1</mml:mn>
+                  <mml:mo stretchy="true">|</mml:mo>
+                  <mml:mi>V</mml:mi>
+                  <mml:mo stretchy="true">)</mml:mo>
+                  <mml:mo stretchy="true">)</mml:mo>
+                  <mml:mo>=</mml:mo>
+                  <mml:mover accent="true">
+                    <mml:mi>&#x3B2;</mml:mi>
+                    <mml:mo>^</mml:mo>
+                  </mml:mover>
+                  <mml:mi>V</mml:mi>
+                </mml:mrow>
+              </mml:math>
+            </disp-formula>
+          </p>
+          <p>where
+<inline-formula><mml:math id="M16" name="1471-2288-12-70-i16" overflow="scroll"><mml:mover accent="true"><mml:mi>&#x3B2;</mml:mi><mml:mo>^</mml:mo></mml:mover></mml:math></inline-formula> is the maximum likelihood estimator of the baseline covariate effects, and <italic>V</italic> is the vector of covariates included in the model. Eight models were examined according to the vector <italic>V</italic>: 3 univariable models with either one of the covariates <italic>X</italic><sub><italic>2</italic></sub><italic>, X</italic><sub><italic>3</italic></sub><italic>, X</italic><sub><italic>4</italic></sub> (models 1, 2, 3, respectively), 3 bivariate models (<italic>X</italic><sub><italic>2,</italic></sub><italic>X</italic><sub><italic>3</italic></sub>), (<italic>X</italic><sub><italic>2,</italic></sub><italic>X</italic><sub><italic>4</italic></sub>) and (<italic>X</italic><sub><italic>3,</italic></sub><italic>X</italic><sub><italic>4</italic></sub>) (models 4, 5, 6, respectively), one 3-covariate model with <italic>X</italic><sub><italic>2</italic></sub><italic>, X</italic><sub><italic>3</italic></sub><italic>, X</italic><sub><italic>4</italic></sub> (model 7) and finally the full model with <italic>X</italic><sub><italic>1</italic></sub><italic>, X</italic><sub><italic>2</italic></sub><italic>, X</italic><sub><italic>3</italic></sub><italic>, X</italic><sub><italic>4</italic></sub> (model 8).</p>
+          <p>The propensity score (<italic>PS</italic><sub><italic>i</italic></sub>) of the patient <italic>i</italic> was then estimated from the predicted probability of treatment given his(her) covariates as obtained by logistic regression. The PS-matching method was used because it has been proposed as a reference method when using propensity score
+[<xref ref-type="bibr" rid="B10">10</xref>]. However, because it has been demonstrated that this approach may not be strictly unbiased to estimate a marginal OR
+[<xref ref-type="bibr" rid="B21">21</xref>], we also applied the IPTW approach which has been shown to be unbiased for estimating marginal ORs
+[<xref ref-type="bibr" rid="B22">22</xref>].</p>
+        </sec>
+        <sec>
+          <title>Propensity score based matching</title>
+          <p>Different types of matching algorithms have been proposed
+[<xref ref-type="bibr" rid="B23">23</xref>,<xref ref-type="bibr" rid="B24">24</xref>]. We used 1&#x2013;1 matching without replacement. Each treated subject was randomly selected and then matched to the nearest untreated subject based on calipers of width of 0.2 of the standard deviation of the logit of the PS, as previously recommended
+[<xref ref-type="bibr" rid="B23">23</xref>,<xref ref-type="bibr" rid="B24">24</xref>].</p>
+        </sec>
+        <sec>
+          <title>Inverse-probability-of-treatment weighting</title>
+          <p>Each subject was weighted in the likelihood using the inverse estimated probability of treatment actually administered, <italic>z</italic><sub><italic>i</italic></sub>, as follows
+[<xref ref-type="bibr" rid="B6">6</xref>]:</p>
+          <p>
+            <disp-formula id="bmcM4">
+              <label>(4)</label>
+              <mml:math id="M17" name="1471-2288-12-70-i17" overflow="scroll">
+                <mml:mrow>
+                  <mml:mi>I</mml:mi>
+                  <mml:mi>P</mml:mi>
+                  <mml:mi>T</mml:mi>
+                  <mml:msub>
+                    <mml:mi>W</mml:mi>
+                    <mml:mi>i</mml:mi>
+                  </mml:msub>
+                  <mml:mo>=</mml:mo>
+                  <mml:mfrac>
+                    <mml:msub>
+                      <mml:mi>z</mml:mi>
+                      <mml:mi>i</mml:mi>
+                    </mml:msub>
+                    <mml:mrow>
+                      <mml:mi>P</mml:mi>
+                      <mml:msub>
+                        <mml:mi>S</mml:mi>
+                        <mml:mi>i</mml:mi>
+                      </mml:msub>
+                    </mml:mrow>
+                  </mml:mfrac>
+                  <mml:mo>+</mml:mo>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mn>1</mml:mn>
+                      <mml:mo>&#x2212;</mml:mo>
+                      <mml:msub>
+                        <mml:mi>z</mml:mi>
+                        <mml:mi>i</mml:mi>
+                      </mml:msub>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mn>1</mml:mn>
+                      <mml:mo>&#x2212;</mml:mo>
+                      <mml:mi>P</mml:mi>
+                      <mml:msub>
+                        <mml:mi>S</mml:mi>
+                        <mml:mi>i</mml:mi>
+                      </mml:msub>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mrow>
+              </mml:math>
+            </disp-formula>
+          </p>
+          <p>Note that, for treated subjects (<italic>z</italic><sub><italic>i</italic></sub>&#x2009;=&#x2009;1),
+<inline-formula><mml:math id="M18" name="1471-2288-12-70-i18" overflow="scroll"><mml:mrow><mml:mi>I</mml:mi><mml:mi>P</mml:mi><mml:mi>T</mml:mi><mml:msub><mml:mi>W</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mrow><mml:mi>P</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mfrac></mml:mrow></mml:math></inline-formula>, while for untreated (<italic>z</italic><sub><italic>i</italic></sub>&#x2009;=&#x2009;0),
+<inline-formula><mml:math id="M19" name="1471-2288-12-70-i19" overflow="scroll"><mml:mrow><mml:mspace width=".3em"/><mml:mi>I</mml:mi><mml:mi>P</mml:mi><mml:mi>T</mml:mi><mml:msub><mml:mi>W</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mfrac><mml:mn>1</mml:mn><mml:mrow><mml:mn>1</mml:mn><mml:mo>&#x2212;</mml:mo><mml:mi>P</mml:mi><mml:mi>S</mml:mi></mml:mrow></mml:mfrac><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula>.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Treatment effect estimates</title>
+        <p>In each simulated dataset, the benefit of treatment on the outcome was first estimated by fitting a logistic model applied to the PS-matched dataset using generalized estimating equations with robust variance estimator (package <monospace>gee</monospace> for R, Vincent J Carey, Thomas Lumley and Brian Ripley). Then, a weighted logistic model using a generalized linear model adapted to data from a complex survey design, with inverse-probability weighting and design-based standard errors applied (package <monospace>svyGLM</monospace> for R, Thomas Lumley).</p>
+      </sec>
+      <sec>
+        <title>Model performance criteria</title>
+        <p>A total of 7,300 independent datasets &#x2013; generated as described above &#x2013; was required to detect a difference in type I error of at least 0.005 as compared to 0.05 with a power of 95%. The performance of each of the 8 PS models was evaluated from those 7,300 simulated sets using the following criteria: type I error, statistical power, absolute and relative biases from the marginal OR (%) and mean square error (MSE). Type I error and statistical power were estimated by the proportions of true and false null hypotheses that were rejected, respectively. MSE was computed by the average of the squares of the differences between the estimate and the true value fixed by simulation.</p>
+        <p>All simulations and statistical analyses were performed using R software version 1.10.1 (
+<ext-link ext-link-type="uri" xlink:href="http://www.R-project.org">http://www.R-project.org</ext-link>) running on a Linux platform.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results">
+      <title>Results</title>
+      <sec>
+        <title>Simulation results</title>
+        <sec>
+          <title>Full fitted models</title>
+          <p>To evaluate the impact of small sample sizes on estimation, we first fitted a non-parsimonious PS model, including all the four baseline covariates (model 8).</p>
+          <p>When using the PS-matching approach, the mean number of pairs ranged from 21.2 to 22.6 (i.e., from 53.0 to 56.5% of the sample) for 40 patients and increased up to 370.0 - 421.2 (74.0-84.2%) for 500 patients.</p>
+          <p>Under the null hypothesis, no substantial increase in the Type I error rate was observed as the sample size decreased from 1,000 down to 40 subjects. As shown in Figure
+<xref ref-type="fig" rid="F1">1</xref> (Panel A), for a treatment effect and a strength of the association between the covariates and the outcome both set at a strong level, and a marginal prevalence of the treatment at 0.5, the Type I error rate ranged from 0.039 to 0.052 for PS matching, and from 0.036 to 0.047 for IPTW. The Type I error rate was not markedly affected by the strength of the association between the covariates and the treatment/outcome (Table
+<xref ref-type="table" rid="T1">1</xref>), nor by treatment prevalence, decreasing from 0.5 down to 0.2 (data not shown).</p>
+          <fig id="F1" position="float">
+            <label>Figure 1</label>
+            <caption>
+              <p><bold>Evolutions of the type I error (Panel A) and the bias and the mean square error (MSE) in the estimated coefficients (Panel B) when decreasing the sample size according to the method used, analysis of PS matched or inversely probability weighted (IPW) data sets.</bold> These results were obtained using a non parsimonious PS model that included the four baseline covariates. The strength of the association between the baseline covariates, the treatment and the outcome was uniformly set as strong (odds ratio of 2.5) with a marginal prevalence of the treatment of 0.5. In the upper panel (Panel A), the type I error rate was obtained under the null hypothesis. In the lower panel (Panel B), the bias and the mean square error were computed using a treatment effect set at 2.5.</p>
+            </caption>
+            <graphic xlink:href="1471-2288-12-70-1"/>
+          </fig>
+          <table-wrap position="float" id="T1">
+            <label>Table 1</label>
+            <caption>
+              <p>Type I errors, Bias and Mean Square Error (MSE) for non parsimonious PS model according to the method used (PS matching (PSm) or IPTW) and to the strength of the association between baseline covariates, treatment/outcome</p>
+            </caption>
+            <table frame="hsides" rules="groups" border="1">
+              <colgroup>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+              </colgroup>
+              <thead valign="top">
+                <tr>
+                  <th align="left" valign="top">
+                    <bold>N</bold>
+                    <hr/>
+                  </th>
+                  <th align="left" valign="top">&#xA0;<hr/></th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>OR(a)&#x2009;=&#x2009;1.5, OR(b)&#x2009;=&#x2009;1.5</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>OR(a)&#x2009;=&#x2009;2.5, OR(b) =1.5</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>OR(a)&#x2009;=&#x2009;1.5, OR(b)&#x2009;=&#x2009;2.5</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>OR(a)&#x2009;=&#x2009;2.5, OR(b)&#x2009;=&#x2009;2.5</bold>
+                    <hr/>
+                  </th>
+                </tr>
+                <tr>
+                  <th align="left" valign="top">&#xA0;</th>
+                  <th align="left" valign="top">&#xA0;</th>
+                  <th align="left" valign="top">
+                    <bold>PSm</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>IPTW</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>PSm</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>IPTW</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>PSm</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>IPTW</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>PSm</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>IPTW</bold>
+                  </th>
+                </tr>
+              </thead>
+              <tbody valign="top">
+                <tr>
+                  <td align="left" valign="top">
+                    <bold>40</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">
+                    <bold>Type I error</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.055<hr/></td>
+                  <td align="left" valign="top">0.048<hr/></td>
+                  <td align="left" valign="top">0.053<hr/></td>
+                  <td align="left" valign="top">0.056<hr/></td>
+                  <td align="left" valign="top">0.052<hr/></td>
+                  <td align="left" valign="top">0.039<hr/></td>
+                  <td align="left" valign="top">0.052<hr/></td>
+                  <td align="left" valign="top">0.047<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Bias</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.05<hr/></td>
+                  <td align="left" valign="top">0.057<hr/></td>
+                  <td align="left" valign="top">0.049<hr/></td>
+                  <td align="left" valign="top">0.07<hr/></td>
+                  <td align="left" valign="top">0.059<hr/></td>
+                  <td align="left" valign="top">0.055<hr/></td>
+                  <td align="left" valign="top">0.048<hr/></td>
+                  <td align="left" valign="top">0.079<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>%</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">5.6<hr/></td>
+                  <td align="left" valign="top">6.5<hr/></td>
+                  <td align="left" valign="top">5.4<hr/></td>
+                  <td align="left" valign="top">7.8<hr/></td>
+                  <td align="left" valign="top">7.1<hr/></td>
+                  <td align="left" valign="top">6.6<hr/></td>
+                  <td align="left" valign="top">5.7<hr/></td>
+                  <td align="left" valign="top">9.4<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Variance</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.875<hr/></td>
+                  <td align="left" valign="top">0.593<hr/></td>
+                  <td align="left" valign="top">0.918<hr/></td>
+                  <td align="left" valign="top">0.694<hr/></td>
+                  <td align="left" valign="top">0.873<hr/></td>
+                  <td align="left" valign="top">0.576<hr/></td>
+                  <td align="left" valign="top">0.903<hr/></td>
+                  <td align="left" valign="top">0.683<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>MSE</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.878<hr/></td>
+                  <td align="left" valign="top">0.597<hr/></td>
+                  <td align="left" valign="top">0.92<hr/></td>
+                  <td align="left" valign="top">0.699<hr/></td>
+                  <td align="left" valign="top">0.876<hr/></td>
+                  <td align="left" valign="top">0.579<hr/></td>
+                  <td align="left" valign="top">0.905<hr/></td>
+                  <td align="left" valign="top">0.690<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">
+                    <bold>60</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">
+                    <bold>Type I error</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.045<hr/></td>
+                  <td align="left" valign="top">0.046<hr/></td>
+                  <td align="left" valign="top">0.047<hr/></td>
+                  <td align="left" valign="top">0.046<hr/></td>
+                  <td align="left" valign="top">0.044<hr/></td>
+                  <td align="left" valign="top">0.039<hr/></td>
+                  <td align="left" valign="top">0.044<hr/></td>
+                  <td align="left" valign="top">0.039<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Bias</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.058<hr/></td>
+                  <td align="left" valign="top">0.036<hr/></td>
+                  <td align="left" valign="top">0.058<hr/></td>
+                  <td align="left" valign="top">0.049<hr/></td>
+                  <td align="left" valign="top">0.048<hr/></td>
+                  <td align="left" valign="top">0.022<hr/></td>
+                  <td align="left" valign="top">0.05<hr/></td>
+                  <td align="left" valign="top">0.033<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>%</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">6.4<hr/></td>
+                  <td align="left" valign="top">4<hr/></td>
+                  <td align="left" valign="top">6.4<hr/></td>
+                  <td align="left" valign="top">5.4<hr/></td>
+                  <td align="left" valign="top">5.7<hr/></td>
+                  <td align="left" valign="top">2.6<hr/></td>
+                  <td align="left" valign="top">6<hr/></td>
+                  <td align="left" valign="top">3.9<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Variance</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.511<hr/></td>
+                  <td align="left" valign="top">0.36<hr/></td>
+                  <td align="left" valign="top">0.553<hr/></td>
+                  <td align="left" valign="top">0.414<hr/></td>
+                  <td align="left" valign="top">0.484<hr/></td>
+                  <td align="left" valign="top">0.329<hr/></td>
+                  <td align="left" valign="top">0.516<hr/></td>
+                  <td align="left" valign="top">0.388<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>MSE</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.514<hr/></td>
+                  <td align="left" valign="top">0.362<hr/></td>
+                  <td align="left" valign="top">0.556<hr/></td>
+                  <td align="left" valign="top">0.416<hr/></td>
+                  <td align="left" valign="top">0.486<hr/></td>
+                  <td align="left" valign="top">0.33<hr/></td>
+                  <td align="left" valign="top">0.519<hr/></td>
+                  <td align="left" valign="top">0.389<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">
+                    <bold>100</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">
+                    <bold>Type I error</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.049<hr/></td>
+                  <td align="left" valign="top">0.046<hr/></td>
+                  <td align="left" valign="top">0.047<hr/></td>
+                  <td align="left" valign="top">0.046<hr/></td>
+                  <td align="left" valign="top">0.047<hr/></td>
+                  <td align="left" valign="top">0.034<hr/></td>
+                  <td align="left" valign="top">0.04<hr/></td>
+                  <td align="left" valign="top">0.036<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Bias</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.023<hr/></td>
+                  <td align="left" valign="top">0.018<hr/></td>
+                  <td align="left" valign="top">0.02<hr/></td>
+                  <td align="left" valign="top">0.022<hr/></td>
+                  <td align="left" valign="top">0.021<hr/></td>
+                  <td align="left" valign="top">0.015<hr/></td>
+                  <td align="left" valign="top">0.025<hr/></td>
+                  <td align="left" valign="top">0.016<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>%</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">2.6<hr/></td>
+                  <td align="left" valign="top">2<hr/></td>
+                  <td align="left" valign="top">2.2<hr/></td>
+                  <td align="left" valign="top">2.5<hr/></td>
+                  <td align="left" valign="top">2.5<hr/></td>
+                  <td align="left" valign="top">1.8<hr/></td>
+                  <td align="left" valign="top">2.9<hr/></td>
+                  <td align="left" valign="top">1.9<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Variance</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.254<hr/></td>
+                  <td align="left" valign="top">0.194<hr/></td>
+                  <td align="left" valign="top">0.282<hr/></td>
+                  <td align="left" valign="top">0.223<hr/></td>
+                  <td align="left" valign="top">0.242<hr/></td>
+                  <td align="left" valign="top">0.177<hr/></td>
+                  <td align="left" valign="top">0.261<hr/></td>
+                  <td align="left" valign="top">0.204<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>MSE</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.255<hr/></td>
+                  <td align="left" valign="top">0.194<hr/></td>
+                  <td align="left" valign="top">0.283<hr/></td>
+                  <td align="left" valign="top">0.223<hr/></td>
+                  <td align="left" valign="top">0.243<hr/></td>
+                  <td align="left" valign="top">0.177<hr/></td>
+                  <td align="left" valign="top">0.262<hr/></td>
+                  <td align="left" valign="top">0.204<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">
+                    <bold>500</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">
+                    <bold>Type I error</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.049<hr/></td>
+                  <td align="left" valign="top">0.046<hr/></td>
+                  <td align="left" valign="top">0.05<hr/></td>
+                  <td align="left" valign="top">0.048<hr/></td>
+                  <td align="left" valign="top">0.041<hr/></td>
+                  <td align="left" valign="top">0.038<hr/></td>
+                  <td align="left" valign="top">0.042<hr/></td>
+                  <td align="left" valign="top">0.037<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Bias</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.01<hr/></td>
+                  <td align="left" valign="top">0.007<hr/></td>
+                  <td align="left" valign="top">0.012<hr/></td>
+                  <td align="left" valign="top">0.008<hr/></td>
+                  <td align="left" valign="top">0.01<hr/></td>
+                  <td align="left" valign="top">0.005<hr/></td>
+                  <td align="left" valign="top">0.013<hr/></td>
+                  <td align="left" valign="top">0.005<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>%</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">1.1<hr/></td>
+                  <td align="left" valign="top">0.8<hr/></td>
+                  <td align="left" valign="top">1.3<hr/></td>
+                  <td align="left" valign="top">0.9<hr/></td>
+                  <td align="left" valign="top">1.2<hr/></td>
+                  <td align="left" valign="top">0.6<hr/></td>
+                  <td align="left" valign="top">1.5<hr/></td>
+                  <td align="left" valign="top">0.6<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Variance</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.04<hr/></td>
+                  <td align="left" valign="top">0.034<hr/></td>
+                  <td align="left" valign="top">0.045<hr/></td>
+                  <td align="left" valign="top">0.038<hr/></td>
+                  <td align="left" valign="top">0.037<hr/></td>
+                  <td align="left" valign="top">0.032<hr/></td>
+                  <td align="left" valign="top">0.042<hr/></td>
+                  <td align="left" valign="top">0.035<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;</td>
+                  <td align="left" valign="top">
+                    <bold>MSE</bold>
+                  </td>
+                  <td align="left" valign="top">0.04</td>
+                  <td align="left" valign="top">0.034</td>
+                  <td align="left" valign="top">0.045</td>
+                  <td align="left" valign="top">0.038</td>
+                  <td align="left" valign="top">0.037</td>
+                  <td align="left" valign="top">0.032</td>
+                  <td align="left" valign="top">0.042</td>
+                  <td align="left" valign="top">0.035</td>
+                </tr>
+              </tbody>
+            </table>
+            <table-wrap-foot>
+              <p>This table specially details the sample sizes ranging from 40 to 500. Prevalence of the treatment was set at 0.5. Conditional treatment effect was set at log(2.5) except for Type I errors estimations (log(1)). (N: number of subjects; PS: propensity score; IPTW: inverse probability of treatment weighting, OR(a) and OR(b): strengths of the association between baseline covariates and treatment or outcome respectively, as defined on an odds ratio scale).</p>
+            </table-wrap-foot>
+          </table-wrap>
+          <p>Given a strong treatment effect and balanced treatment groups (treatment prevalence set at 0.5), the bias and the mean square error expectedly increased, as long as the sample size decreased, for both PS-matching and IPTW (Table
+<xref ref-type="table" rid="T1">1</xref> &amp; Figure
+<xref ref-type="fig" rid="F1">1</xref>, Panel B). However, even for sample sizes of less than 100 subjects, bias remained below 10% (Table
+<xref ref-type="table" rid="T1">1</xref>). For sample sizes of more than 60 subjects, IPTW estimations were systematically less biased and MSE smaller than those reached by PS-matching. Similar results were found in case of low prevalence of the treatment.</p>
+          <p>When the strength of the association between the covariates and the treatment/outcome decreased, IPTW estimators remained similarly or even less biased than PS-matching estimators, down to 60 subjects (Table
+<xref ref-type="table" rid="T1">1</xref>). However, when the sample size was set at 40, the PS-matching estimators outperformed better than the IPTW estimators.</p>
+          <p>Whatever the method, the reduction of treatment effect (with OR decreasing from 2.5 to 1.5) was associated with a global decrease in the bias and the MSE, but with similar relative bias (data not shown). In this situation, the largest bias was observed for both methods when the number of subjects decreased to less than 60 (IPTW: relative bias: 8.1%, MSE: 0.675; PS-matching: relative bias: 7.6%, MSE: 0.933).</p>
+          <p>As expected, the variance in the estimation of treatment effect increased monotonically while the sample size decreased. The variances of the IPTW estimators were systematically smaller than the variances of the PS estimators. For both methods and whatever the treatment effect, the smallest variance was observed when baseline covariates were strongly associated to the outcome, but moderately to treatment.</p>
+        </sec>
+        <sec>
+          <title>Selected fitted models</title>
+          <p>When the simulations were fitted using PS-models that included at least <italic>X</italic><sub><italic>4</italic></sub>, no substantial increase in the Type I error rate was observed as the sample size decreased from 1,000 to 40 subjects whatever the strength of the association between the covariates, the treatment and the outcome. However, when removing the true confounder from the PS model, the Type I error rate substantially increased to a maximum obtained for the IPTW method, in case of strong association between the two remaining covariates, the treatment and the outcome (Table
+<xref ref-type="table" rid="T2">2</xref>). Moreover, the IPTW method seems always more conservative than the PS-matching.</p>
+          <table-wrap position="float" id="T2">
+            <label>Table 2</label>
+            <caption>
+              <p>Bias and variance of the estimated treatment effect for the different selected PS models and according to the method used (PS matching or IPTW)</p>
+            </caption>
+            <table frame="hsides" rules="groups" border="1">
+              <colgroup>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+                <col align="left"/>
+              </colgroup>
+              <thead valign="top">
+                <tr>
+                  <th align="left" valign="top">&#xA0;<hr/></th>
+                  <th align="left" valign="top">&#xA0;<hr/></th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>Model 1</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>Model 2</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>Model 3</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>Model 4</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>Model 5</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>Model 6</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>Model 7</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>Model 8</bold>
+                    <hr/>
+                  </th>
+                </tr>
+                <tr>
+                  <th align="left" valign="top">
+                    <bold>N</bold>
+                    <hr/>
+                  </th>
+                  <th align="left" valign="top">&#xA0;<hr/></th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>X2</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>X3</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>X4</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>X2,X3</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>X2,X4</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>X3,X4</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>X2,X3,X4</bold>
+                    <hr/>
+                  </th>
+                  <th colspan="2" align="left" valign="top">
+                    <bold>X1,X2,X3,X4</bold>
+                    <hr/>
+                  </th>
+                </tr>
+                <tr>
+                  <th align="left" valign="top">&#xA0;</th>
+                  <th align="left" valign="top">&#xA0;</th>
+                  <th align="left" valign="top">
+                    <bold>PSm</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>IPTW</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>PSm</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>IPTW</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>PSm</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>IPTW</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>PSm</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>IPTW</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>PSm</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>IPTW</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>PSm</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>IPTW</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>PSm</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>IPTW</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>PSm</bold>
+                  </th>
+                  <th align="left" valign="top">
+                    <bold>IPTW</bold>
+                  </th>
+                </tr>
+              </thead>
+              <tbody valign="top">
+                <tr>
+                  <td align="left" valign="top">
+                    <bold>40</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">
+                    <bold>Type I error</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.062<hr/></td>
+                  <td align="left" valign="top">0.041<hr/></td>
+                  <td align="left" valign="top">0.059<hr/></td>
+                  <td align="left" valign="top">0.051<hr/></td>
+                  <td align="left" valign="top">0.058<hr/></td>
+                  <td align="left" valign="top">0.040<hr/></td>
+                  <td align="left" valign="top">0.060<hr/></td>
+                  <td align="left" valign="top">0.047<hr/></td>
+                  <td align="left" valign="top">0.053<hr/></td>
+                  <td align="left" valign="top">0.036<hr/></td>
+                  <td align="left" valign="top">0.048<hr/></td>
+                  <td align="left" valign="top">0.045<hr/></td>
+                  <td align="left" valign="top">0.053<hr/></td>
+                  <td align="left" valign="top">0.044<hr/></td>
+                  <td align="left" valign="top">0.052<hr/></td>
+                  <td align="left" valign="top">0.047<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Bias</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.273<hr/></td>
+                  <td align="left" valign="top">0.235<hr/></td>
+                  <td align="left" valign="top">0.265<hr/></td>
+                  <td align="left" valign="top">0.251<hr/></td>
+                  <td align="left" valign="top">0.086<hr/></td>
+                  <td align="left" valign="top">0.06<hr/></td>
+                  <td align="left" valign="top">0.259<hr/></td>
+                  <td align="left" valign="top">0.25<hr/></td>
+                  <td align="left" valign="top">0.075<hr/></td>
+                  <td align="left" valign="top">0.061<hr/></td>
+                  <td align="left" valign="top">0.064<hr/></td>
+                  <td align="left" valign="top">0.071<hr/></td>
+                  <td align="left" valign="top">0.075<hr/></td>
+                  <td align="left" valign="top">0.074<hr/></td>
+                  <td align="left" valign="top">0.048<hr/></td>
+                  <td align="left" valign="top">0.079<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Relative bias</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">32.6<hr/></td>
+                  <td align="left" valign="top">28.1<hr/></td>
+                  <td align="left" valign="top">31.7<hr/></td>
+                  <td align="left" valign="top">30<hr/></td>
+                  <td align="left" valign="top">10.3<hr/></td>
+                  <td align="left" valign="top">7.2<hr/></td>
+                  <td align="left" valign="top">31<hr/></td>
+                  <td align="left" valign="top">29.9<hr/></td>
+                  <td align="left" valign="top">9<hr/></td>
+                  <td align="left" valign="top">7.3<hr/></td>
+                  <td align="left" valign="top">7.6<hr/></td>
+                  <td align="left" valign="top">8.5<hr/></td>
+                  <td align="left" valign="top">9<hr/></td>
+                  <td align="left" valign="top">8.8<hr/></td>
+                  <td align="left" valign="top">5.7<hr/></td>
+                  <td align="left" valign="top">9.4<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Variance</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.809<hr/></td>
+                  <td align="left" valign="top">0.508<hr/></td>
+                  <td align="left" valign="top">0.872<hr/></td>
+                  <td align="left" valign="top">0.566<hr/></td>
+                  <td align="left" valign="top">0.862<hr/></td>
+                  <td align="left" valign="top">0.551<hr/></td>
+                  <td align="left" valign="top">0.874<hr/></td>
+                  <td align="left" valign="top">0.573<hr/></td>
+                  <td align="left" valign="top">0.843<hr/></td>
+                  <td align="left" valign="top">0.56<hr/></td>
+                  <td align="left" valign="top">0.907<hr/></td>
+                  <td align="left" valign="top">0.634<hr/></td>
+                  <td align="left" valign="top">0.904<hr/></td>
+                  <td align="left" valign="top">0.644<hr/></td>
+                  <td align="left" valign="top">0.903<hr/></td>
+                  <td align="left" valign="top">0.683<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>MSE</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.884<hr/></td>
+                  <td align="left" valign="top">0.563<hr/></td>
+                  <td align="left" valign="top">0.942<hr/></td>
+                  <td align="left" valign="top">0.629<hr/></td>
+                  <td align="left" valign="top">0.869<hr/></td>
+                  <td align="left" valign="top">0.555<hr/></td>
+                  <td align="left" valign="top">0.941<hr/></td>
+                  <td align="left" valign="top">0.635<hr/></td>
+                  <td align="left" valign="top">0.848<hr/></td>
+                  <td align="left" valign="top">0.563<hr/></td>
+                  <td align="left" valign="top">0.911<hr/></td>
+                  <td align="left" valign="top">0.639<hr/></td>
+                  <td align="left" valign="top">0.909<hr/></td>
+                  <td align="left" valign="top">0.649<hr/></td>
+                  <td align="left" valign="top">0.905<hr/></td>
+                  <td align="left" valign="top">0.69<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">
+                    <bold>60</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">
+                    <bold>Type I error</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.055<hr/></td>
+                  <td align="left" valign="top">0.050<hr/></td>
+                  <td align="left" valign="top">0.058<hr/></td>
+                  <td align="left" valign="top">0.057<hr/></td>
+                  <td align="left" valign="top">0.045<hr/></td>
+                  <td align="left" valign="top">0.038<hr/></td>
+                  <td align="left" valign="top">0.052<hr/></td>
+                  <td align="left" valign="top">0.053<hr/></td>
+                  <td align="left" valign="top">0.043<hr/></td>
+                  <td align="left" valign="top">0.037<hr/></td>
+                  <td align="left" valign="top">0.049<hr/></td>
+                  <td align="left" valign="top">0.042<hr/></td>
+                  <td align="left" valign="top">0.044<hr/></td>
+                  <td align="left" valign="top">0.041<hr/></td>
+                  <td align="left" valign="top">0.044<hr/></td>
+                  <td align="left" valign="top">0.039<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Bias</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.239<hr/></td>
+                  <td align="left" valign="top">0.203<hr/></td>
+                  <td align="left" valign="top">0.235<hr/></td>
+                  <td align="left" valign="top">0.217<hr/></td>
+                  <td align="left" valign="top">0.041<hr/></td>
+                  <td align="left" valign="top">0.02<hr/></td>
+                  <td align="left" valign="top">0.245<hr/></td>
+                  <td align="left" valign="top">0.219<hr/></td>
+                  <td align="left" valign="top">0.047<hr/></td>
+                  <td align="left" valign="top">0.022<hr/></td>
+                  <td align="left" valign="top">0.051<hr/></td>
+                  <td align="left" valign="top">0.028<hr/></td>
+                  <td align="left" valign="top">0.059<hr/></td>
+                  <td align="left" valign="top">0.03<hr/></td>
+                  <td align="left" valign="top">0.05<hr/></td>
+                  <td align="left" valign="top">0.033<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Relative bias</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">28.6<hr/></td>
+                  <td align="left" valign="top">24.3<hr/></td>
+                  <td align="left" valign="top">28.1<hr/></td>
+                  <td align="left" valign="top">25.9<hr/></td>
+                  <td align="left" valign="top">4.9<hr/></td>
+                  <td align="left" valign="top">2.4<hr/></td>
+                  <td align="left" valign="top">29.3<hr/></td>
+                  <td align="left" valign="top">26.2<hr/></td>
+                  <td align="left" valign="top">5.6<hr/></td>
+                  <td align="left" valign="top">2.6<hr/></td>
+                  <td align="left" valign="top">6.1<hr/></td>
+                  <td align="left" valign="top">3.3<hr/></td>
+                  <td align="left" valign="top">7.1<hr/></td>
+                  <td align="left" valign="top">3.6<hr/></td>
+                  <td align="left" valign="top">6<hr/></td>
+                  <td align="left" valign="top">3.9<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Variance</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.466<hr/></td>
+                  <td align="left" valign="top">0.317<hr/></td>
+                  <td align="left" valign="top">0.52<hr/></td>
+                  <td align="left" valign="top">0.354<hr/></td>
+                  <td align="left" valign="top">0.494<hr/></td>
+                  <td align="left" valign="top">0.339<hr/></td>
+                  <td align="left" valign="top">0.532<hr/></td>
+                  <td align="left" valign="top">0.348<hr/></td>
+                  <td align="left" valign="top">0.477<hr/></td>
+                  <td align="left" valign="top">0.333<hr/></td>
+                  <td align="left" valign="top">0.524<hr/></td>
+                  <td align="left" valign="top">0.379<hr/></td>
+                  <td align="left" valign="top">0.514<hr/></td>
+                  <td align="left" valign="top">0.375<hr/></td>
+                  <td align="left" valign="top">0.516<hr/></td>
+                  <td align="left" valign="top">0.388<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>MSE</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.523<hr/></td>
+                  <td align="left" valign="top">0.359<hr/></td>
+                  <td align="left" valign="top">0.575<hr/></td>
+                  <td align="left" valign="top">0.401<hr/></td>
+                  <td align="left" valign="top">0.495<hr/></td>
+                  <td align="left" valign="top">0.339<hr/></td>
+                  <td align="left" valign="top">0.592<hr/></td>
+                  <td align="left" valign="top">0.396<hr/></td>
+                  <td align="left" valign="top">0.479<hr/></td>
+                  <td align="left" valign="top">0.334<hr/></td>
+                  <td align="left" valign="top">0.527<hr/></td>
+                  <td align="left" valign="top">0.38<hr/></td>
+                  <td align="left" valign="top">0.517<hr/></td>
+                  <td align="left" valign="top">0.376<hr/></td>
+                  <td align="left" valign="top">0.519<hr/></td>
+                  <td align="left" valign="top">0.389<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">
+                    <bold>100</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">
+                    <bold>Type I error</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.062<hr/></td>
+                  <td align="left" valign="top">0.057<hr/></td>
+                  <td align="left" valign="top">0.065<hr/></td>
+                  <td align="left" valign="top">0.066<hr/></td>
+                  <td align="left" valign="top">0.052<hr/></td>
+                  <td align="left" valign="top">0.039<hr/></td>
+                  <td align="left" valign="top">0.057<hr/></td>
+                  <td align="left" valign="top">0.062<hr/></td>
+                  <td align="left" valign="top">0.042<hr/></td>
+                  <td align="left" valign="top">0.034<hr/></td>
+                  <td align="left" valign="top">0.046<hr/></td>
+                  <td align="left" valign="top">0.041<hr/></td>
+                  <td align="left" valign="top">0.044<hr/></td>
+                  <td align="left" valign="top">0.037<hr/></td>
+                  <td align="left" valign="top">0.04<hr/></td>
+                  <td align="left" valign="top">0.036<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Bias</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.209<hr/></td>
+                  <td align="left" valign="top">0.193<hr/></td>
+                  <td align="left" valign="top">0.212<hr/></td>
+                  <td align="left" valign="top">0.203<hr/></td>
+                  <td align="left" valign="top">0.029<hr/></td>
+                  <td align="left" valign="top">0.013<hr/></td>
+                  <td align="left" valign="top">0.215<hr/></td>
+                  <td align="left" valign="top">0.203<hr/></td>
+                  <td align="left" valign="top">0.029<hr/></td>
+                  <td align="left" valign="top">0.013<hr/></td>
+                  <td align="left" valign="top">0.028<hr/></td>
+                  <td align="left" valign="top">0.016<hr/></td>
+                  <td align="left" valign="top">0.028<hr/></td>
+                  <td align="left" valign="top">0.016<hr/></td>
+                  <td align="left" valign="top">0.025<hr/></td>
+                  <td align="left" valign="top">0.016<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Relative bias</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">25<hr/></td>
+                  <td align="left" valign="top">23.1<hr/></td>
+                  <td align="left" valign="top">25.3<hr/></td>
+                  <td align="left" valign="top">24.3<hr/></td>
+                  <td align="left" valign="top">3.5<hr/></td>
+                  <td align="left" valign="top">1.6<hr/></td>
+                  <td align="left" valign="top">25.7<hr/></td>
+                  <td align="left" valign="top">24.3<hr/></td>
+                  <td align="left" valign="top">3.5<hr/></td>
+                  <td align="left" valign="top">1.6<hr/></td>
+                  <td align="left" valign="top">3.3<hr/></td>
+                  <td align="left" valign="top">1.9<hr/></td>
+                  <td align="left" valign="top">3.3<hr/></td>
+                  <td align="left" valign="top">1.9<hr/></td>
+                  <td align="left" valign="top">2.9<hr/></td>
+                  <td align="left" valign="top">1.9<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Variance</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.239<hr/></td>
+                  <td align="left" valign="top">0.175<hr/></td>
+                  <td align="left" valign="top">0.254<hr/></td>
+                  <td align="left" valign="top">0.194<hr/></td>
+                  <td align="left" valign="top">0.242<hr/></td>
+                  <td align="left" valign="top">0.186<hr/></td>
+                  <td align="left" valign="top">0.256<hr/></td>
+                  <td align="left" valign="top">0.188<hr/></td>
+                  <td align="left" valign="top">0.239<hr/></td>
+                  <td align="left" valign="top">0.18<hr/></td>
+                  <td align="left" valign="top">0.259<hr/></td>
+                  <td align="left" valign="top">0.205<hr/></td>
+                  <td align="left" valign="top">0.253<hr/></td>
+                  <td align="left" valign="top">0.199<hr/></td>
+                  <td align="left" valign="top">0.261<hr/></td>
+                  <td align="left" valign="top">0.204<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>MSE</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.282<hr/></td>
+                  <td align="left" valign="top">0.212<hr/></td>
+                  <td align="left" valign="top">0.299<hr/></td>
+                  <td align="left" valign="top">0.235<hr/></td>
+                  <td align="left" valign="top">0.243<hr/></td>
+                  <td align="left" valign="top">0.186<hr/></td>
+                  <td align="left" valign="top">0.302<hr/></td>
+                  <td align="left" valign="top">0.23<hr/></td>
+                  <td align="left" valign="top">0.24<hr/></td>
+                  <td align="left" valign="top">0.18<hr/></td>
+                  <td align="left" valign="top">0.259<hr/></td>
+                  <td align="left" valign="top">0.205<hr/></td>
+                  <td align="left" valign="top">0.254<hr/></td>
+                  <td align="left" valign="top">0.2<hr/></td>
+                  <td align="left" valign="top">0.262<hr/></td>
+                  <td align="left" valign="top">0.204<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">
+                    <bold>500</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">
+                    <bold>Type I error</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.148<hr/></td>
+                  <td align="left" valign="top">0.155<hr/></td>
+                  <td align="left" valign="top">0.150<hr/></td>
+                  <td align="left" valign="top">0.162<hr/></td>
+                  <td align="left" valign="top">0.051<hr/></td>
+                  <td align="left" valign="top">0.045<hr/></td>
+                  <td align="left" valign="top">0.146<hr/></td>
+                  <td align="left" valign="top">0.157<hr/></td>
+                  <td align="left" valign="top">0.046<hr/></td>
+                  <td align="left" valign="top">0.040<hr/></td>
+                  <td align="left" valign="top">0.046<hr/></td>
+                  <td align="left" valign="top">0.042<hr/></td>
+                  <td align="left" valign="top">0.045<hr/></td>
+                  <td align="left" valign="top">0.037<hr/></td>
+                  <td align="left" valign="top">0.042<hr/></td>
+                  <td align="left" valign="top">0.037<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Bias</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.187<hr/></td>
+                  <td align="left" valign="top">0.182<hr/></td>
+                  <td align="left" valign="top">0.192<hr/></td>
+                  <td align="left" valign="top">0.191<hr/></td>
+                  <td align="left" valign="top">0.014<hr/></td>
+                  <td align="left" valign="top">0.005<hr/></td>
+                  <td align="left" valign="top">0.193<hr/></td>
+                  <td align="left" valign="top">0.191<hr/></td>
+                  <td align="left" valign="top">0.015<hr/></td>
+                  <td align="left" valign="top">0.005<hr/></td>
+                  <td align="left" valign="top">0.014<hr/></td>
+                  <td align="left" valign="top">0.005<hr/></td>
+                  <td align="left" valign="top">0.014<hr/></td>
+                  <td align="left" valign="top">0.005<hr/></td>
+                  <td align="left" valign="top">0.013<hr/></td>
+                  <td align="left" valign="top">0.005<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Relative bias</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">22.3<hr/></td>
+                  <td align="left" valign="top">21.8<hr/></td>
+                  <td align="left" valign="top">22.9<hr/></td>
+                  <td align="left" valign="top">22.8<hr/></td>
+                  <td align="left" valign="top">1.7<hr/></td>
+                  <td align="left" valign="top">0.6<hr/></td>
+                  <td align="left" valign="top">23.1<hr/></td>
+                  <td align="left" valign="top">22.8<hr/></td>
+                  <td align="left" valign="top">1.8<hr/></td>
+                  <td align="left" valign="top">0.6<hr/></td>
+                  <td align="left" valign="top">1.7<hr/></td>
+                  <td align="left" valign="top">0.6<hr/></td>
+                  <td align="left" valign="top">1.7<hr/></td>
+                  <td align="left" valign="top">0.6<hr/></td>
+                  <td align="left" valign="top">1.5<hr/></td>
+                  <td align="left" valign="top">0.6<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;<hr/></td>
+                  <td align="left" valign="top">
+                    <bold>Variance</bold>
+                    <hr/>
+                  </td>
+                  <td align="left" valign="top">0.037<hr/></td>
+                  <td align="left" valign="top">0.032<hr/></td>
+                  <td align="left" valign="top">0.042<hr/></td>
+                  <td align="left" valign="top">0.036<hr/></td>
+                  <td align="left" valign="top">0.04<hr/></td>
+                  <td align="left" valign="top">0.034<hr/></td>
+                  <td align="left" valign="top">0.041<hr/></td>
+                  <td align="left" valign="top">0.034<hr/></td>
+                  <td align="left" valign="top">0.039<hr/></td>
+                  <td align="left" valign="top">0.033<hr/></td>
+                  <td align="left" valign="top">0.044<hr/></td>
+                  <td align="left" valign="top">0.037<hr/></td>
+                  <td align="left" valign="top">0.042<hr/></td>
+                  <td align="left" valign="top">0.035<hr/></td>
+                  <td align="left" valign="top">0.042<hr/></td>
+                  <td align="left" valign="top">0.035<hr/></td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top">&#xA0;</td>
+                  <td align="left" valign="top">
+                    <bold>MSE</bold>
+                  </td>
+                  <td align="left" valign="top">0.072</td>
+                  <td align="left" valign="top">0.066</td>
+                  <td align="left" valign="top">0.079</td>
+                  <td align="left" valign="top">0.072</td>
+                  <td align="left" valign="top">0.04</td>
+                  <td align="left" valign="top">0.034</td>
+                  <td align="left" valign="top">0.078</td>
+                  <td align="left" valign="top">0.071</td>
+                  <td align="left" valign="top">0.039</td>
+                  <td align="left" valign="top">0.033</td>
+                  <td align="left" valign="top">0.044</td>
+                  <td align="left" valign="top">0.037</td>
+                  <td align="left" valign="top">0.042</td>
+                  <td align="left" valign="top">0.035</td>
+                  <td align="left" valign="top">0.042</td>
+                  <td align="left" valign="top">0.035</td>
+                </tr>
+              </tbody>
+            </table>
+            <table-wrap-foot>
+              <p>This table specially details the sample sizes ranging from 40 to 500. Prevalence of the treatment set at 0.5, treatment effect.</p>
+            </table-wrap-foot>
+          </table-wrap>
+          <p>In case of strong treatment effect, variables included in the PS model affected the bias and the MSE: non-inclusion of the true confounder systematically implied a bias larger than 10%; moreover the inclusion of variables unrelated to the treatment allocation but related to the outcome allowed to achieve less biased results than that of variables related to treatment but unrelated to the outcome (Table
+<xref ref-type="table" rid="T2">2</xref> &amp; Figure
+<xref ref-type="fig" rid="F2">2</xref>). Such impact on bias was more important with IPTW than with PS-matching (Table
+<xref ref-type="table" rid="T2">2</xref>), and when the covariates and the treatment/outcome were strongly rather than moderately associated. The bias, variances and MSE of the IPTW estimators were systematically smaller than those of the PS estimators. Similar trends were found when the treatment effect was moderate, but the absolute values of both biases and MSE were smaller than those observed with a strong treatment effect.</p>
+          <fig id="F2" position="float">
+            <label>Figure 2</label>
+            <caption>
+              <p><bold>OR biases and MSE according to the sample size and variables included in the propensity score when using an IPTW approach.</bold> Upper panel: OR biases; Lower panel: OR Mean Square Error (MSE).</p>
+            </caption>
+            <graphic xlink:href="1471-2288-12-70-2"/>
+          </fig>
+          <p>The variance of the estimated treatment effect decreased when the true confounder or covariate unrelated to the treatment but related to the outcome were included in the PS, especially with the IPTW method (Table
+<xref ref-type="table" rid="T2">2</xref>). Adding to model 5 (including true confounder&#x2009;+&#x2009;variable related to the outcome) a variable related to treatment allocation (model 7) did not reduce the bias, but increased the variance of the estimation. Moreover, adding to the PS model a variable related neither to the treatment nor to the outcome (model 8), did not further improve the precision of the estimation, but increased the variance, especially when the sample size decreased below 100.</p>
+          <p>Similar results than those observed using a non-parsimonious PS model, were found when the marginal prevalence of the treatment decreased from 0.5 to 0.2.</p>
+          <p>For both IPTW and PS-matching methods, the minimally biased estimation was obtained by incorporating in the PS model, as well as true confounders, variables strongly associated to the outcome but moderately associated to the treatment.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Illustration to a real observational dataset</title>
+        <p>To illustrate these results, we then applied the PS methods described above in a real situation, where we aimed at evaluating the benefit of sequential autologous-allogeneic tandem approach in Multiple Myeloma (MM), using a small observational dataset
+[<xref ref-type="bibr" rid="B15">15</xref>]. Twenty-three patients (median age 48 years, range 26&#x2013;59 years) with relapsed multiple myeloma (MM) who received the treatment under study were compared to a control group of 142 MM relapsing patients free of such a treatment (median age 51.5 years, range 25&#x2013;65 years). Hence, this dataset combined the two situations of relatively small sample size (n&#x2009;=&#x2009;165) and very low prevalence of treatment (23/165, 14%). We used the survival status at 24 months as the outcome measure, with benefit of treatment measured on ORs.</p>
+        <p>Three baseline variables, related to treatment allocation, to the outcome or to both of them, were available at baseline: 1) age at diagnosis, only associated with treatment allocation (with untreated patients more likely to be older than treated; p&#x2009;=&#x2009;0.05), 2) beta2 microglobulin level&#x2009;&#x2265;&#x2009;3.5, only moderately associated with the outcome OR&#x2009;=&#x2009;1.8 (95%CI 0.9;3.5 , p&#x2009;=&#x2009;0.10), and 3) time elapsed since the first line treatment at relapse, strongly associated with both the treatment allocation OR&#x2009;=&#x2009;0.4 (95%CI 0.2;0.8 , p&#x2009;=&#x2009;0.01) and to the outcome OR&#x2009;=&#x2009;0.4 (95%CI 0.2;0.7 , p&#x2009;=&#x2009;0.002). Of note, log time was considered instead of the time to insure the validity of logistic models.</p>
+        <p>In this situation, we applied the PS-matched and PS-weighted (IPTW) approaches, when PS incorporated the baseline information separately. Results are summarized in Table
+<xref ref-type="table" rid="T3">3</xref>. As expected by the simulation results, the choice of the variable included in the PS model heavily impacted the estimation of treatment effect, and this was even more pronounced when using the IPTW-weighted estimator than the PS-matched estimator. Indeed, consistently with the simulation findings, including only the variable related to the treatment, e.g. <italic>age at diagnosis</italic>, yielded estimates different than that obtained by including only the true confounder, namely <italic>time elapsed since the first line treatment at relapse</italic>.</p>
+        <table-wrap position="float" id="T3">
+          <label>Table 3</label>
+          <caption>
+            <p>Estimated odds ratios (OR) of death and 95% confidence interval using naive, propensity score matching, or IPTW approaches</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+              <col align="left"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left" valign="top">
+                  <bold>Model</bold>
+                  <hr/>
+                </th>
+                <th align="left" valign="top">
+                  <bold>Adjustment in the original set</bold>
+                  <hr/>
+                </th>
+                <th colspan="2" align="left" valign="top">
+                  <bold>PS-matched sample</bold>
+                  <hr/>
+                </th>
+                <th colspan="2" align="left" valign="top">
+                  <bold>IPT-Weighted sample</bold>
+                  <hr/>
+                </th>
+              </tr>
+              <tr>
+                <th align="left" valign="top">
+                  <bold>Covariates</bold>
+                </th>
+                <th align="left" valign="top">
+                  <bold>OR (95%CI) p-value</bold>
+                </th>
+                <th align="left" valign="top">
+                  <bold>No pairs</bold>
+                </th>
+                <th align="left" valign="top">
+                  <bold>OR (95%CI) p-value</bold>
+                </th>
+                <th align="left" valign="top">
+                  <bold>Sum of weights</bold>
+                </th>
+                <th align="left" valign="top">
+                  <bold>OR (95%CI) p-value</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="top">
+                  <bold>X1&#x2009;=&#x2009;age</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="top">0.44 (0.14;1.42) p&#x2009;=&#x2009;0.17<hr/></td>
+                <td align="left" valign="top">22<hr/></td>
+                <td align="left" valign="top">0.27 (0.06;1.23) p&#x2009;=&#x2009;0.091<hr/></td>
+                <td align="left" valign="top">327.5<hr/></td>
+                <td align="left" valign="top">0.39 (0.11;1.32) p&#x2009;=&#x2009;0.13<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <bold>X2&#x2009;=&#x2009;beta2micro</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="top">0.47 (0.15;1.47) p&#x2009;=&#x2009;0.19<hr/></td>
+                <td align="left" valign="top">23<hr/></td>
+                <td align="left" valign="top">0.27 (0.05;1.41) p&#x2009;=&#x2009;0.12<hr/></td>
+                <td align="left" valign="top">330.0<hr/></td>
+                <td align="left" valign="top">0.48 (0.14;1.65) p&#x2009;=&#x2009;0.25<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <bold>X3&#x2009;=&#x2009;time to relapse</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="top">0.24 (0.07;0.84) p&#x2009;=&#x2009;0.026<hr/></td>
+                <td align="left" valign="top">23<hr/></td>
+                <td align="left" valign="top">0.19 (0.05;0.65) p&#x2009;=&#x2009;0.0088<hr/></td>
+                <td align="left" valign="top">349.1<hr/></td>
+                <td align="left" valign="top">0.27 (0.08;0.92) p&#x2009;=&#x2009;0.039<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <bold>X1&#x2009;+&#x2009;X2</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="top">0.49 (0.15;1.57) p&#x2009;=&#x2009;0.23<hr/></td>
+                <td align="left" valign="top">22<hr/></td>
+                <td align="left" valign="top">0.48 (0.09;2.58) p&#x2009;=&#x2009;0.39<hr/></td>
+                <td align="left" valign="top">317.9<hr/></td>
+                <td align="left" valign="top">0.41 (0.12;1.36) p&#x2009;=&#x2009;0.15<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <bold>X1&#x2009;+&#x2009;X3</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="top">0.22 (0.06;0.85) p&#x2009;=&#x2009;0.028<hr/></td>
+                <td align="left" valign="top">18<hr/></td>
+                <td align="left" valign="top">0.20 (0.03;1.17) p&#x2009;=&#x2009;0.073<hr/></td>
+                <td align="left" valign="top">456.0<hr/></td>
+                <td align="left" valign="top">0.23 (0.05;1.00) p&#x2009;=&#x2009;0.052<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <bold>X2&#x2009;+&#x2009;X3</bold>
+                  <hr/>
+                </td>
+                <td align="left" valign="top">0.26 (0.07;0.93) p&#x2009;=&#x2009;0.039<hr/></td>
+                <td align="left" valign="top">23<hr/></td>
+                <td align="left" valign="top">0.19 (0.05;0.68) p&#x2009;=&#x2009;0.011<hr/></td>
+                <td align="left" valign="top">340.8<hr/></td>
+                <td align="left" valign="top">0.26 (0.08;0.86) p&#x2009;=&#x2009;0.028<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">
+                  <bold>X1&#x2009;+&#x2009;X2&#x2009;+&#x2009;X3</bold>
+                </td>
+                <td align="left" valign="top">0.24 (0.06;0.93) p&#x2009;=&#x2009;0.040</td>
+                <td align="left" valign="top">20</td>
+                <td align="left" valign="top">0.41 (0.08;2.1) p&#x2009;=&#x2009;0.28</td>
+                <td align="left" valign="top">432.1</td>
+                <td align="left" valign="top">0.21 (0.05;0.86) p&#x2009;=&#x2009;0.031</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>If we assumed from the former simulation results that the model including the variable related to the outcome and the true confounder (namely, the <italic>beta2 microglobulin level</italic> and the <italic>time elapsed since the first line treatment at relapse</italic>) was the optimal model, results were concordant with those obtained by simulation. Hence, the results obtained by including only the true confounder were very close to the former in terms of estimates and variance. Omitting from the PS model either the true confounder or the variable related to the outcome substantially modified the estimation of treatment effect.</p>
+        <p>Moreover, as demonstrated in the simulation study, adding to the PS model variables only related to the treatment allocation (that is, models with age, beta2 microglobulin level and time to relapse) led to a larger variance in the estimation of the treatment effect, especially when using a PS-matching approach.</p>
+        <p>Finally, if considering the recommended strategy defined above, that is, only using covariates strongly associated with the outcome in the PS, the conclusion was somewhat concordant whatever the approach.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Discussion</title>
+      <p>Propensity score methods have been widely studied to analyze very large datasets
+[<xref ref-type="bibr" rid="B11">11</xref>-<xref ref-type="bibr" rid="B13">13</xref>]. However, although originally developed in epidemiological settings with large sample sizes, they are increasingly being used to estimate causal treatment effects in clinical settings, where sample sizes are rather limited as compared to the former settings. Actually, while the former epidemiological settings deal with thousands of patients, the clinical setting usually have to deal with at most several hundred patients, or even less than 50
+[<xref ref-type="bibr" rid="B14">14</xref>,<xref ref-type="bibr" rid="B15">15</xref>]. However, only a few publications have addressed the issue of PS properties in such a situation
+[<xref ref-type="bibr" rid="B25">25</xref>]. Thus, the aim of this study was to get further insights into their performances when either the sample sizes or the prevalence of exposure are rather low, and to address the question of the variables to include in the PS model in such situations.</p>
+      <p>To answer those questions, we used the 2 main recommended PS approaches
+[<xref ref-type="bibr" rid="B11">11</xref>-<xref ref-type="bibr" rid="B13">13</xref>], namely the PS-matching and IPTW. The large use of PS matching was confirmed by a PubMed search (performed on October, 2010) that selected 521 references dealing with PS matching from a whole set of 2,045 PS references. By contrast, only 64 references dealt with IPTW or PS-weighted approaches, and this could be explained because they have been more recently promoted, and appear more complex to use than PS-matching. Other PS approaches have been developed such as PS adjustment
+[<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B2">2</xref>] or PS-quintile stratification
+[<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B2">2</xref>] but they have been shown of less performance in large samples. Thus, it appeared unlikely that they would perform better in the context of small sample size or low prevalence of exposure.</p>
+      <p>Based on a simulation study, we showed that no substantial increase in the Type I error rate was observed as the sample size decreased from 1,000 to 40 subjects, but that small sample sizes lead to biased estimations of the marginal treatment effect. However, relative bias remained inferior to 10%, even with small sample down to 40 patients. Of note, in case of small sample sizes down to 60 subjects, IPTW method seems to perform always better than the PS-matching. Such results could have been expected as IPTW method preserves the sample size all along the analysis process and maximizes the available amount of information as compared to PS-matching. On the contrary, 1:1, without replacement matching procedures are associated with a reduction in the sample size, as all treated usually cannot find a non-treated to be matched with. Hence, because the weighted dataset is generally larger than the matched dataset, the variance and the confidence intervals associated with the IPTW estimations are expected to be smaller. However, when N was set at 40, the PS-matching estimators were either similarly or even less biased than the IPTW estimators. One possible explanation is that, in case of very small samples, the weighting resulted in a significant distortion of the population, with excessive weights given to marginal subjects. This was illustrated in the real dataset where the sum of weights was sometimes far above the actual sample size. However, this could be addressed by using stabilized weights, as previously reported
+[<xref ref-type="bibr" rid="B26">26</xref>]. We thus reran the analyses using such stabilized weights, but in our case, stabilization did not affect the results (data not shown).</p>
+      <p>The second question addressed in this study was the selection of the covariates to be included in the PS model, in case of small sample sizes. Previous simulation studies have addressed different questions concerning the choice of the variables to be included in the PS model, such as the effect of omitting confounding variables when using quintile-stratified propensity adjustment in longitudinal studies
+[<xref ref-type="bibr" rid="B27">27</xref>], or the relative performances of PS models when including variables related to treatment allocation, variables related to outcome or all variables related to either outcome or treatment or neither
+[<xref ref-type="bibr" rid="B28">28</xref>]. However, data concerning appropriate PS models when dealing with limited sample sizes are still lacking. Indeed, while it is usually recommended
+[<xref ref-type="bibr" rid="B17">17</xref>-<xref ref-type="bibr" rid="B19">19</xref>] to include in the PS model all the potential confounders, this could lead to <italic>over parameterized</italic> PS models when the number of treated is limited. On the other hand, it has been previously reported that PS model misspecification could highly influence the estimation
+[<xref ref-type="bibr" rid="B25">25</xref>,<xref ref-type="bibr" rid="B27">27</xref>]. Therefore, in the context of small sample sizes, one might consider preferable to apply some variable selection procedure, but it seems crucial to adequately choose those variables to be included in the PS model. To do so, it has previously been shown that, because the goal of a PS model is to efficiently control confounding, but not to predict treatment or exposure, the use of selection procedure based on the goodness-of-fit cannot be recommended
+[<xref ref-type="bibr" rid="B19">19</xref>,<xref ref-type="bibr" rid="B20">20</xref>,<xref ref-type="bibr" rid="B25">25</xref>]. As previously reported
+[<xref ref-type="bibr" rid="B17">17</xref>,<xref ref-type="bibr" rid="B25">25</xref>], we found that the inclusion in the PS model of variables unrelated to the exposure but related to the outcome is mandatory. Indeed, consistently with the results published by Brookhart et al.
+[<xref ref-type="bibr" rid="B25">25</xref>], we found that the inclusion of such variables decreased both the bias and the variance of the estimated treatment effect. We also found that excluding the true confounder from the PS model resulted, whatever the method used, in a significantly biased estimation of treatment effect. These results are not in line with the advices provided by Brookhart et al.
+[<xref ref-type="bibr" rid="B25">25</xref>]. Indeed, the latter authors suggested that including in the PS model a true confounder that is only weakly related to the outcome, but very strongly related to the exposure might result in a loss in efficiency that is not offset by a large enough decrease in bias. Our different results might be otherwise explained by the fact that our simulation study did not explore a situation where the true confounder is very strongly related to the exposure but only very weakly to the outcome.</p>
+      <p>We measured the performance of each approach using type I error, power, bias and MSE estimated from independent replicates of simulated datasets. However, in practice, the accurate way to evaluate the performance of a PS procedure relies on the assessment of its ability to reach conditional exchangeability between groups, as recommended by Austin
+[<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B29">29</xref>]. Balance is commonly measured on standardized differences, though permutation tests have been also reported as an interesting alternate way of evaluation. Indeed, such tests tend reject when bias due to inexact propensity matching is enough to undermine causal inferences, and tend not to reject when that bias is small enough to be ignored, could be used instead
+[<xref ref-type="bibr" rid="B30">30</xref>].</p>
+      <p>The importance of variables to be included in the model was exemplified in our real dataset, where achieved balances and treatment effect estimates (Table
+<xref ref-type="table" rid="T3">3</xref>) heavily depended on the approach (PS-match versus IPTW) and the included covariates, with estimated ORs of death ranging from 0.19 (when PS included the true confounder) up to 0.4, which was reached by both IPTW and PS-matching approach in situations where the true confounder was omitted from the model. While we chose to focus on the 2 currently recommended PS methods, PS matching and IPTW, it should be emphasized that PS adjustment and stratification on the quintiles of the PS have not been and compared to the former methods in the context of small sample sizes. Further simulation studies should be performed to compare the performances of the 4 methods in the context of small sample size.</p>
+      <p>For the PS matching, we used a classical pair matching procedure, based on a caliper defined as 0.2SD of the logit of the PS. This was chosen as the mostly used matching method in clinical settings
+[<xref ref-type="bibr" rid="B31">31</xref>], while that caliper width was recommended on the basis of simulation results
+[<xref ref-type="bibr" rid="B23">23</xref>,<xref ref-type="bibr" rid="B32">32</xref>]. However, several other matching procedures could have been proposed that may offer interesting advantages over the former, notably in the context of small sample sizes
+[<xref ref-type="bibr" rid="B33">33</xref>]. Otherwise,data-adaptive algorithms such as ridge matching have been also reported to perform better than &#x201C;classical&#x201D; pair matching
+[<xref ref-type="bibr" rid="B34">34</xref>]. Nevertheless, evaluating the matching algorithm was not the goal of this paper, though its importance deserves to be the focus of a specific simulation study. This should be the framework of further studies.</p>
+      <p>We did not consider other model misspecifications but those regarding the PS model. Indeed, in the class of IPW estimators, it is well known that the weighted estimators are consistent provided that the model for estimating the PS is correctly specified. Otherwise, to relax this restriction, so-called doubly-robust estimators have been proposed
+[<xref ref-type="bibr" rid="B8">8</xref>], that also require the specification of the outcome regression model. Misspecifications may consist in choosing the wrong link function, or selecting a linear instead of a non-linear predictor. In case of model misspecification, the mean square error of estimate has been shown to be reduced by using the matching estimator, both for small-to-moderate sample sizes
+[<xref ref-type="bibr" rid="B35">35</xref>]. Further work in this topic may be of interest.</p>
+      <p>The choice of the odds ratio as a measure of treatment effect has been debated. Indeed, the choice of the appropriate PS based estimators for conditional and marginal non-linear treatment effects has been thoroughly discussed in the recent literature
+[<xref ref-type="bibr" rid="B21">21</xref>,<xref ref-type="bibr" rid="B36">36</xref>-<xref ref-type="bibr" rid="B38">38</xref>]. Actually, the problem with OR, usually described as non-collapsibility, refers to the fact that conditional and marginal effects might differ unless the true effect is null
+[<xref ref-type="bibr" rid="B21">21</xref>,<xref ref-type="bibr" rid="B39">39</xref>,<xref ref-type="bibr" rid="B40">40</xref>]. Moreover, Austin et al.
+[<xref ref-type="bibr" rid="B23">23</xref>] have previously shown that PS-matching, as compared to PS-stratification or -adjustment, offers substantially less biased estimates of both conditional and marginal OR. The choice to control the conditional treatment effect rather than the marginal as proposed by Austin
+[<xref ref-type="bibr" rid="B23">23</xref>] was driven by our wish to achieve a probability of 0.50 of experiencing the outcome and to maximize the statistical power considering the small sample size. The resulting marginal treatment effect was thereafter estimated using a second simulation study of sample size 1,000,000 that confirmed that conditional and marginal treatment effects were in the same range. Otherwise, previous simulations studies support the use of IPTW estimators as approximately unbiased estimators of marginal odds ratios
+[<xref ref-type="bibr" rid="B22">22</xref>,<xref ref-type="bibr" rid="B38">38</xref>]. The choice of a binary outcome and the use of an adapted and largely applied regression model were motivated by our will to overcome a biostatistical issue that has been raised by one of our clinical question.</p>
+      <p>Finally, the choice of an event rate of 0.5 could be debated. Indeed, the prevalence of event may be far from 0.5 in clinical situations. However, we chose a prevalence of 0.5 because our goal was to assess the effects of decreasing the sample size. Then, when dealing with sample size of 40&#x2013;60 patients, an even rate of 0.1-0.2 would have been associated with a very small number of events, and a high risk of model misspecification. To confirm this assumption, we reran the simulation using an event rate fixed at 0.2. As expected, decreasing the event rate down to 0.2 was associated for both methods with unacceptable increases in variance and MSE, when the sample size was &#x2264;100 (variance ranging from 1.294 to 177.4; MSE ranging from 1.309 to 177.4).</p>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>In conclusion, this simulation study revealed that, even in case of small study samples or low prevalence of treatment, both propensity score matching and inverse probability of treatment weighting can yield unbiased estimations of treatment effect. However, in such situations, a particular attention should be paid to the choice of the variables to be included in the PS model. The optimal model seems to be that including the true confounder and the variable related only to the outcome, although reporting several models as a sensitivity analysis may appear a good way of arguing for or against the robustness of the estimated effects. Future work in this area should aim at providing for the clinicians: (1) formal rules to choose the best approach between matching and weighting according to the population characteristics, (2) practical strategies to select the variables for inclusion in a propensity score model in case of small study samples or low treatment prevalence.</p>
+    </sec>
+    <sec>
+      <title>Abbreviations</title>
+      <p>PS: propensity score; IPTW: inverse probability of treatment weighting; MSE: mean squared error; GMM: Generalized methods of moments; OR: odds ratio; MM: multiple myeloma; 95CI: 95% Confidence interval.</p>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors declare that they have no competing interests.</p>
+    </sec>
+    <sec>
+      <title>Authors&#x2019; contribution</title>
+      <p>RP and MRR performed the analysis and wrote the manuscript, SC supervised the analysis and the elaboration of the manuscript. All authors read and approved the final manuscript.</p>
+    </sec>
+    <sec>
+      <title>Pre-publication history</title>
+      <p>The pre-publication history for this paper can be accessed here:</p>
+      <p>
+        <ext-link ext-link-type="uri" xlink:href="http://www.biomedcentral.com/1471-2288/12/70/prepub">http://www.biomedcentral.com/1471-2288/12/70/prepub</ext-link>
+      </p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rosenbaum</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Rubin</surname>
+            <given-names>D</given-names>
+          </name>
+          <article-title>The central role of the propensity score in observational studies for causal effects</article-title>
+          <source>Biometrika</source>
+          <year>1983</year>
+          <volume>70</volume>
+          <fpage>41</fpage>
+          <lpage>45</lpage>
+          <pub-id pub-id-type="doi">10.1093/biomet/70.1.41</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rosenbaum</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Rubin</surname>
+            <given-names>D</given-names>
+          </name>
+          <article-title>Reducing bias in observational studies using sub-classification on the propensity score</article-title>
+          <source>J Am Stat Assoc</source>
+          <year>1984</year>
+          <volume>79</volume>
+          <fpage>516</fpage>
+          <lpage>524</lpage>
+          <pub-id pub-id-type="doi">10.1080/01621459.1984.10478078</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>D'Agostino</surname>
+            <given-names>RB</given-names>
+            <suffix>Jr</suffix>
+          </name>
+          <article-title>Propensity score methods for bias reduction in the comparison of a treatment to a non-randomized control group</article-title>
+          <source>Stat Med</source>
+          <year>1998</year>
+          <volume>17</volume>
+          <issue>19</issue>
+          <fpage>2265</fpage>
+          <lpage>2281</lpage>
+          <pub-id pub-id-type="doi">10.1002/(SICI)1097-0258(19981015)17:19&lt;2265::AID-SIM918&gt;3.0.CO;2-B</pub-id>
+          <pub-id pub-id-type="pmid">9802183</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Austin</surname>
+            <given-names>PC</given-names>
+          </name>
+          <article-title>A critical appraisal of propensity-score matching in the medical literature between 1996 and 2003</article-title>
+          <source>Stat Med</source>
+          <year>2008</year>
+          <volume>27</volume>
+          <issue>12</issue>
+          <fpage>2037</fpage>
+          <lpage>2049</lpage>
+          <pub-id pub-id-type="doi">10.1002/sim.3150</pub-id>
+          <pub-id pub-id-type="pmid">18038446</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rosenbaum</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Model-Based Direct Adjustement</article-title>
+          <source>J Am Stat Assoc</source>
+          <year>1987</year>
+          <volume>82</volume>
+          <issue>398</issue>
+          <fpage>387</fpage>
+          <pub-id pub-id-type="doi">10.1080/01621459.1987.10478441</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Robins</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Hernan</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Brumback</surname>
+            <given-names>B</given-names>
+          </name>
+          <article-title>Marginal structural models and causal inference in epidemiology</article-title>
+          <source>Epidemiology</source>
+          <year>2000</year>
+          <volume>11</volume>
+          <issue>5</issue>
+          <fpage>550</fpage>
+          <lpage>560</lpage>
+          <pub-id pub-id-type="doi">10.1097/00001648-200009000-00011</pub-id>
+          <pub-id pub-id-type="pmid">10955408</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Joffe</surname>
+            <given-names>MM</given-names>
+          </name>
+          <name>
+            <surname>Ten Have</surname>
+            <given-names>TR</given-names>
+          </name>
+          <name>
+            <surname>Feldman</surname>
+            <given-names>HI</given-names>
+          </name>
+          <name>
+            <surname>Kimmel</surname>
+            <given-names>SE</given-names>
+          </name>
+          <article-title>Model selection, confounder control, and marginal structural models: review and new applications</article-title>
+          <source>The American Statistician</source>
+          <year>2004</year>
+          <volume>58</volume>
+          <fpage>272</fpage>
+          <lpage>279</lpage>
+          <pub-id pub-id-type="doi">10.1198/000313004X5824</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lunceford</surname>
+            <given-names>JK</given-names>
+          </name>
+          <name>
+            <surname>Davidian</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Stratification and weighting via the propensity score in estimation of causal treatment effects: a comparative study</article-title>
+          <source>Stat Med</source>
+          <year>2004</year>
+          <volume>23</volume>
+          <issue>19</issue>
+          <fpage>2937</fpage>
+          <lpage>2960</lpage>
+          <pub-id pub-id-type="doi">10.1002/sim.1903</pub-id>
+          <pub-id pub-id-type="pmid">15351954</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kurth</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Walker</surname>
+            <given-names>AM</given-names>
+          </name>
+          <name>
+            <surname>Glynn</surname>
+            <given-names>RJ</given-names>
+          </name>
+          <name>
+            <surname>Chan</surname>
+            <given-names>KA</given-names>
+          </name>
+          <name>
+            <surname>Gaziano</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Berger</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Robins</surname>
+            <given-names>JM</given-names>
+          </name>
+          <article-title>Results of multivariable logistic regression, propensity matching, propensity adjustment, and propensity-based weighting under conditions of nonuniform effect</article-title>
+          <source>Am J Epidemiol</source>
+          <year>2006</year>
+          <volume>163</volume>
+          <issue>3</issue>
+          <fpage>262</fpage>
+          <lpage>270</lpage>
+          <pub-id pub-id-type="pmid">16371515</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Austin</surname>
+            <given-names>PC</given-names>
+          </name>
+          <article-title>The relative ability of different propensity score methods to balance measured covariates between treated and untreated subjects in observational studies</article-title>
+          <source>Med Decis Making</source>
+          <year>2009</year>
+          <volume>29</volume>
+          <issue>6</issue>
+          <fpage>661</fpage>
+          <lpage>677</lpage>
+          <pub-id pub-id-type="doi">10.1177/0272989X09341755</pub-id>
+          <pub-id pub-id-type="pmid">19684288</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rubin</surname>
+            <given-names>DB</given-names>
+          </name>
+          <article-title>Estimating causal effects from large data sets using propensity scores</article-title>
+          <source>Ann Intern Med</source>
+          <year>1997</year>
+          <volume>127</volume>
+          <issue>8 Pt 2</issue>
+          <fpage>757</fpage>
+          <lpage>763</lpage>
+          <pub-id pub-id-type="pmid">9382394</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wijeysundera</surname>
+            <given-names>DN</given-names>
+          </name>
+          <name>
+            <surname>Beattie</surname>
+            <given-names>WS</given-names>
+          </name>
+          <name>
+            <surname>Austin</surname>
+            <given-names>PC</given-names>
+          </name>
+          <name>
+            <surname>Hux</surname>
+            <given-names>JE</given-names>
+          </name>
+          <name>
+            <surname>Laupacis</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Epidural anaesthesia and survival after intermediate-to-high risk non-cardiac surgery: a population-based cohort study</article-title>
+          <source>Lancet</source>
+          <year>2008</year>
+          <volume>372</volume>
+          <issue>9638</issue>
+          <fpage>562</fpage>
+          <lpage>569</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0140-6736(08)61121-6</pub-id>
+          <pub-id pub-id-type="pmid">18692893</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Park</surname>
+            <given-names>DW</given-names>
+          </name>
+          <name>
+            <surname>Seung</surname>
+            <given-names>KB</given-names>
+          </name>
+          <name>
+            <surname>Kim</surname>
+            <given-names>YH</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>JY</given-names>
+          </name>
+          <name>
+            <surname>Kim</surname>
+            <given-names>WJ</given-names>
+          </name>
+          <name>
+            <surname>Kang</surname>
+            <given-names>SJ</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>SW</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>CW</given-names>
+          </name>
+          <name>
+            <surname>Park</surname>
+            <given-names>SW</given-names>
+          </name>
+          <name>
+            <surname>Yun</surname>
+            <given-names>SC</given-names>
+          </name>
+          <etal/>
+          <article-title>Long-term safety and efficacy of stenting versus coronary artery bypass grafting for unprotected left main coronary artery disease: 5-year results from the MAIN-COMPARE (Revascularization for Unprotected Left Main Coronary Artery Stenosis: Comparison of Percutaneous Coronary Angioplasty Versus Surgical Revascularization) registry</article-title>
+          <source>J Am Coll Cardiol</source>
+          <year>2010</year>
+          <volume>56</volume>
+          <issue>2</issue>
+          <fpage>117</fpage>
+          <lpage>124</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jacc.2010.04.004</pub-id>
+          <pub-id pub-id-type="pmid">20451344</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Fernandez-Nebro</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Olive</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Castro</surname>
+            <given-names>MC</given-names>
+          </name>
+          <name>
+            <surname>Varela</surname>
+            <given-names>AH</given-names>
+          </name>
+          <name>
+            <surname>Riera</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Irigoyen</surname>
+            <given-names>MV</given-names>
+          </name>
+          <article-title>Garcia de Yebenes MJ, Garcia-Vicuna R: Long-term TNF-alpha blockade in patients with amyloid A amyloidosis complicating rheumatic diseases</article-title>
+          <source>Am J Med</source>
+          <year>2010</year>
+          <volume>123</volume>
+          <issue>5</issue>
+          <fpage>454</fpage>
+          <lpage>461</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.amjmed.2009.11.010</pub-id>
+          <pub-id pub-id-type="pmid">20399323</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Karlin</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Arnulf</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Chevret</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Ades</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Robin</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>De Latour</surname>
+            <given-names>RP</given-names>
+          </name>
+          <name>
+            <surname>Malphettes</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Kabbara</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Asli</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Rocha</surname>
+            <given-names>V</given-names>
+          </name>
+          <etal/>
+          <article-title>Tandem autologous non-myeloablative allogeneic transplantation in patients with multiple myeloma relapsing after a first high dose therapy</article-title>
+          <source>Bone Marrow Transplant</source>
+          <year>2011</year>
+          <volume>46</volume>
+          <issue>2</issue>
+          <fpage>250</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1038/bmt.2010.90</pub-id>
+          <pub-id pub-id-type="pmid">20400980</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Iapichino</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Corbella</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Minelli</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Mills</surname>
+            <given-names>GH</given-names>
+          </name>
+          <name>
+            <surname>Artigas</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Edbooke</surname>
+            <given-names>DL</given-names>
+          </name>
+          <name>
+            <surname>Pezzi</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Kesecioglu</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Patroniti</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Baras</surname>
+            <given-names>M</given-names>
+          </name>
+          <etal/>
+          <article-title>Reasons for refusal of admission to intensive care and impact on mortality</article-title>
+          <source>Intensive Care Med</source>
+          <year>2010</year>
+          <volume>36</volume>
+          <issue>10</issue>
+          <fpage>1772</fpage>
+          <lpage>1779</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00134-010-1933-2</pub-id>
+          <pub-id pub-id-type="pmid">20533023</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rubin</surname>
+            <given-names>DB</given-names>
+          </name>
+          <name>
+            <surname>Thomas</surname>
+            <given-names>N</given-names>
+          </name>
+          <article-title>Matching using estimated propensity scores: relating theory to practice</article-title>
+          <source>Biometrics</source>
+          <year>1996</year>
+          <volume>52</volume>
+          <issue>1</issue>
+          <fpage>249</fpage>
+          <lpage>264</lpage>
+          <pub-id pub-id-type="doi">10.2307/2533160</pub-id>
+          <pub-id pub-id-type="pmid">8934595</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Perkins</surname>
+            <given-names>SM</given-names>
+          </name>
+          <name>
+            <surname>Tu</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Underhill</surname>
+            <given-names>MG</given-names>
+          </name>
+          <name>
+            <surname>Zhou</surname>
+            <given-names>XH</given-names>
+          </name>
+          <name>
+            <surname>Murray</surname>
+            <given-names>MD</given-names>
+          </name>
+          <article-title>The use of propensity scores in pharmacoepidemiologic research</article-title>
+          <source>Pharmacoepidemiol Drug Saf</source>
+          <year>2000</year>
+          <volume>9</volume>
+          <issue>2</issue>
+          <fpage>93</fpage>
+          <lpage>101</lpage>
+          <pub-id pub-id-type="doi">10.1002/(SICI)1099-1557(200003/04)9:2&lt;93::AID-PDS474&gt;3.0.CO;2-I</pub-id>
+          <pub-id pub-id-type="pmid">19025807</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Austin</surname>
+            <given-names>PC</given-names>
+          </name>
+          <article-title>Goodness-of-fit diagnostics for the propensity score model when estimating treatment effects using covariate adjustment with the propensity score</article-title>
+          <source>Pharmacoepidemiol Drug Saf</source>
+          <year>2008</year>
+          <volume>17</volume>
+          <issue>12</issue>
+          <fpage>1202</fpage>
+          <lpage>1217</lpage>
+          <pub-id pub-id-type="doi">10.1002/pds.1673</pub-id>
+          <pub-id pub-id-type="pmid">18972454</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Weitzen</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Lapane</surname>
+            <given-names>KL</given-names>
+          </name>
+          <name>
+            <surname>Toledano</surname>
+            <given-names>AY</given-names>
+          </name>
+          <name>
+            <surname>Hume</surname>
+            <given-names>AL</given-names>
+          </name>
+          <name>
+            <surname>Mor</surname>
+            <given-names>V</given-names>
+          </name>
+          <article-title>Weaknesses of goodness-of-fit tests for evaluating propensity score models: the case of the omitted confounder</article-title>
+          <source>Pharmacoepidemiol Drug Saf</source>
+          <year>2005</year>
+          <volume>14</volume>
+          <issue>4</issue>
+          <fpage>227</fpage>
+          <lpage>238</lpage>
+          <pub-id pub-id-type="doi">10.1002/pds.986</pub-id>
+          <pub-id pub-id-type="pmid">15386700</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Austin</surname>
+            <given-names>PC</given-names>
+          </name>
+          <article-title>The performance of different propensity score methods for estimating marginal odds ratios</article-title>
+          <source>Stat Med</source>
+          <year>2007</year>
+          <volume>26</volume>
+          <issue>16</issue>
+          <fpage>3078</fpage>
+          <lpage>3094</lpage>
+          <pub-id pub-id-type="doi">10.1002/sim.2781</pub-id>
+          <pub-id pub-id-type="pmid">17187347</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Forbes</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Shortreed</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Inverse probability weighted estimation of the marginal odds ratio: correspondence regarding 'The performance of different propensity score methods for estimating marginal odds ratios'</article-title>
+          <source>Stat Med</source>
+          <year>2008</year>
+          <volume>27</volume>
+          <issue>26)</issue>
+          <fpage>5556</fpage>
+          <lpage>5559</lpage>
+          <comment>author reply 5560&#x2013;5553</comment>
+          <pub-id pub-id-type="pmid">18613263</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Austin</surname>
+            <given-names>PC</given-names>
+          </name>
+          <article-title>Some methods of propensity-score matching had superior performance to others: results of an empirical investigation and Monte Carlo simulations</article-title>
+          <source>Biom J</source>
+          <year>2009</year>
+          <volume>51</volume>
+          <issue>1</issue>
+          <fpage>171</fpage>
+          <lpage>184</lpage>
+          <pub-id pub-id-type="doi">10.1002/bimj.200810488</pub-id>
+          <pub-id pub-id-type="pmid">19197955</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="book">
+          <name>
+            <surname>Rosenbaum</surname>
+            <given-names>P</given-names>
+          </name>
+          <source>Observational Studies. 2nd Edition</source>
+          <year>2002</year>
+          <publisher-name>New York, Inc: Springer-Verlag</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Brookhart</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Schneeweiss</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Rothman</surname>
+            <given-names>KJ</given-names>
+          </name>
+          <name>
+            <surname>Glynn</surname>
+            <given-names>RJ</given-names>
+          </name>
+          <name>
+            <surname>Avorn</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Sturmer</surname>
+            <given-names>T</given-names>
+          </name>
+          <article-title>Variable selection for propensity score models</article-title>
+          <source>Am J Epidemiol</source>
+          <year>2006</year>
+          <volume>163</volume>
+          <issue>12</issue>
+          <fpage>1149</fpage>
+          <lpage>1156</lpage>
+          <pub-id pub-id-type="doi">10.1093/aje/kwj149</pub-id>
+          <pub-id pub-id-type="pmid">16624967</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cole</surname>
+            <given-names>SR</given-names>
+          </name>
+          <name>
+            <surname>Hernan</surname>
+            <given-names>MA</given-names>
+          </name>
+          <article-title>Constructing inverse probability weights for marginal structural models</article-title>
+          <source>Am J Epidemiol</source>
+          <year>2008</year>
+          <volume>168</volume>
+          <issue>6</issue>
+          <fpage>656</fpage>
+          <lpage>664</lpage>
+          <pub-id pub-id-type="doi">10.1093/aje/kwn164</pub-id>
+          <pub-id pub-id-type="pmid">18682488</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Leon</surname>
+            <given-names>AC</given-names>
+          </name>
+          <name>
+            <surname>Hedeker</surname>
+            <given-names>D</given-names>
+          </name>
+          <article-title>Quantile Stratification Based on a Misspecified Propensity Score in Longitudinal Treatment Effectiveness Analyses of Ordinal Doses</article-title>
+          <source>Comput Stat Data Anal</source>
+          <year>2007</year>
+          <volume>51</volume>
+          <issue>12</issue>
+          <fpage>6114</fpage>
+          <lpage>6122</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.csda.2006.12.021</pub-id>
+          <pub-id pub-id-type="pmid">18037978</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Austin</surname>
+            <given-names>PC</given-names>
+          </name>
+          <name>
+            <surname>Grootendorst</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Anderson</surname>
+            <given-names>GM</given-names>
+          </name>
+          <article-title>A comparison of the ability of different propensity score models to balance measured variables between treated and untreated subjects: a Monte Carlo study</article-title>
+          <source>Stat Med</source>
+          <year>2007</year>
+          <volume>26</volume>
+          <issue>4</issue>
+          <fpage>734</fpage>
+          <lpage>753</lpage>
+          <pub-id pub-id-type="doi">10.1002/sim.2580</pub-id>
+          <pub-id pub-id-type="pmid">16708349</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Austin</surname>
+            <given-names>PC</given-names>
+          </name>
+          <article-title>Balance diagnostics for comparing the distribution of baseline covariates between treatment groups in propensity-score matched samples</article-title>
+          <source>Stat Med</source>
+          <year>2009</year>
+          <volume>28</volume>
+          <issue>25</issue>
+          <fpage>3083</fpage>
+          <lpage>3107</lpage>
+          <pub-id pub-id-type="doi">10.1002/sim.3697</pub-id>
+          <pub-id pub-id-type="pmid">19757444</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hansen</surname>
+            <given-names>BB</given-names>
+          </name>
+          <article-title>The essential role of balance tests in propensity-matched observational studies: comments on 'A critical appraisal of propensity-score matching in the medical literature between 1996 and 2003' by Peter Austin, Statistics in Medicine</article-title>
+          <source>Stat Med</source>
+          <year>2008</year>
+          <volume>27</volume>
+          <issue>12)</issue>
+          <fpage>2050</fpage>
+          <lpage>2054</lpage>
+          <comment>discussion 2066&#x2013;2059</comment>
+          <pub-id pub-id-type="pmid">18407561</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Gayat</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Pirracchio</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Resche-Rigon</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Mebazaa</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Mary</surname>
+            <given-names>JY</given-names>
+          </name>
+          <name>
+            <surname>Porcher</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>Propensity scores in intensive care and anaesthesiology literature: a systematic review</article-title>
+          <source>Intensive Care Med</source>
+          <year>2010</year>
+          <volume>36</volume>
+          <issue>12</issue>
+          <fpage>1993</fpage>
+          <lpage>2003</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00134-010-1991-5</pub-id>
+          <pub-id pub-id-type="pmid">20689924</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Austin</surname>
+            <given-names>PC</given-names>
+          </name>
+          <article-title>Optimal caliper widths for propensity-score matching when estimating differences in means and differences in proportions in observational studies</article-title>
+          <source>Pharm Stat</source>
+          <year>2011</year>
+          <volume>10</volume>
+          <issue>2</issue>
+          <fpage>150</fpage>
+          <lpage>161</lpage>
+          <pub-id pub-id-type="doi">10.1002/pst.433</pub-id>
+          <pub-id pub-id-type="pmid">20925139</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Dehija</surname>
+            <given-names>RH</given-names>
+          </name>
+          <name>
+            <surname>Wahba</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Propensity Score-Matching Methods for Nonexperimental Causal Studies</article-title>
+          <source>Rev Econ Stat</source>
+          <year>2002</year>
+          <volume>84</volume>
+          <issue>1</issue>
+          <fpage>151</fpage>
+          <lpage>161</lpage>
+          <pub-id pub-id-type="doi">10.1162/003465302317331982</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Fr&#xF6;lich</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Finite-Sample Properties of Propensity-Score Matching and Weighting Estimators</article-title>
+          <source>Rev Econ Stat</source>
+          <year>2004</year>
+          <volume>86</volume>
+          <issue>1</issue>
+          <fpage>77</fpage>
+          <lpage>90</lpage>
+          <pub-id pub-id-type="doi">10.1162/003465304323023697</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="other">
+          <name>
+            <surname>Waernbaum</surname>
+            <given-names>I</given-names>
+          </name>
+          <article-title>Model misspecification and robustness in causal inference: comparing matching with doubly robust estimation</article-title>
+          <source>Stat Med</source>
+          <year>2012</year>
+          <comment>[Epub ahead of print]</comment>
+          <pub-id pub-id-type="doi">10.1002/sim.4496.</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Austin</surname>
+            <given-names>PC</given-names>
+          </name>
+          <name>
+            <surname>Grootendorst</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Normand</surname>
+            <given-names>SL</given-names>
+          </name>
+          <name>
+            <surname>Anderson</surname>
+            <given-names>GM</given-names>
+          </name>
+          <article-title>Conditioning on the propensity score can result in biased estimation of common measures of treatment effect: a Monte Carlo study</article-title>
+          <source>Stat Med</source>
+          <year>2007</year>
+          <volume>26</volume>
+          <issue>4</issue>
+          <fpage>754</fpage>
+          <lpage>768</lpage>
+          <pub-id pub-id-type="doi">10.1002/sim.2618</pub-id>
+          <pub-id pub-id-type="pmid">16783757</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Martens</surname>
+            <given-names>EP</given-names>
+          </name>
+          <name>
+            <surname>Pestman</surname>
+            <given-names>WR</given-names>
+          </name>
+          <name>
+            <surname>Klungel</surname>
+            <given-names>OH</given-names>
+          </name>
+          <article-title>Conditioning on the propensity score can result in biased estimation of common measures of treatment effect: a Monte Carlo study (p n/a) by Peter C. Austin, Paul Grootendorst, Sharon-Lise T. Normand, Geoffrey M. Anderson</article-title>
+          <source>Stat Med</source>
+          <year>2007</year>
+          <volume>26</volume>
+          <issue>16)</issue>
+          <fpage>3208</fpage>
+          <lpage>3210</lpage>
+          <comment>Author reply Published Online: 16 June 2006.</comment>
+          <pub-id pub-id-type="doi">10.1002/sim.2618</pub-id>
+          <pub-id pub-id-type="pmid">17373674</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Stampf</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Graf</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Schmoor</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Schumacher</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Estimators and confidence intervals for the marginal odds ratio using logistic regression and propensity score stratification</article-title>
+          <source>Stat Med</source>
+          <year>2010</year>
+          <volume>29</volume>
+          <issue>7&#x2013;8</issue>
+          <fpage>760</fpage>
+          <lpage>769</lpage>
+          <pub-id pub-id-type="pmid">20213703</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Gail</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Wieand</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Piantadosi</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Biased estimates of treatment effect in randomized experiments with nonlinear regressions and omitted covariates</article-title>
+          <source>Biometrika</source>
+          <year>1984</year>
+          <volume>71</volume>
+          <issue>3</issue>
+          <fpage>431</fpage>
+          <lpage>444</lpage>
+          <pub-id pub-id-type="doi">10.1093/biomet/71.3.431</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Greenland</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Interpretation and choice of effect measures in epidemiologic analyses</article-title>
+          <source>Am J Epidemiol</source>
+          <year>1987</year>
+          <volume>125</volume>
+          <issue>5</issue>
+          <fpage>761</fpage>
+          <lpage>768</lpage>
+          <pub-id pub-id-type="pmid">3551588</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

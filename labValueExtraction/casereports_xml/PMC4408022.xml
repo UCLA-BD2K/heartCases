@@ -1,0 +1,1081 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:ali="http://www.niso.org/schemas/ali/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, CA USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">25906048</article-id>
+      <article-id pub-id-type="pmc">4408022</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-14-42304</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0125006</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Interrogating a Multifactorial Model of Breast Conserving Therapy with Clinical Data</article-title>
+        <alt-title alt-title-type="running-head">Interrogating a Model of Breast Conserving Therapy with Clinical Data</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Salmon</surname>
+            <given-names>Remi</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Garbey</surname>
+            <given-names>Marc</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff002">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff003">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor001">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Moore</surname>
+            <given-names>Linda W.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff004">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bass</surname>
+            <given-names>Barbara L.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff003">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff004">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff001">
+        <label>1</label>
+        <addr-line>Department of Computer Science, University of Houston, Houston, TX, USA</addr-line>
+      </aff>
+      <aff id="aff002">
+        <label>2</label>
+        <addr-line>Department of Biology and Biochemistry, University of Houston, Houston, TX, USA</addr-line>
+      </aff>
+      <aff id="aff003">
+        <label>3</label>
+        <addr-line>Methodist Institute for Technology, Innovation and Education, Houston, TX, USA</addr-line>
+      </aff>
+      <aff id="aff004">
+        <label>4</label>
+        <addr-line>Department of Surgery, Houston Methodist, Houston, TX, USA</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Santini</surname>
+            <given-names>Daniele</given-names>
+          </name>
+          <role>Academic Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>University Campus Bio-Medico, ITALY</addr-line>
+      </aff>
+      <author-notes>
+        <fn fn-type="conflict" id="coi001">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con" id="contrib001">
+          <p>Conceived and designed the experiments: RS MG LWM BLB. Performed the experiments: MG RS. Analyzed the data: MG RS. Wrote the paper: RS MG LWM.</p>
+        </fn>
+        <corresp id="cor001">* E-mail: <email>mgarbey@central.uh.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>23</day>
+        <month>4</month>
+        <year>2015</year>
+      </pub-date>
+      <volume>10</volume>
+      <issue>4</issue>
+      <elocation-id>e0125006</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>12</day>
+          <month>12</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>2</day>
+          <month>3</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2015</copyright-year>
+        <copyright-holder>Salmon et al</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited</license-p>
+        </license>
+      </permissions>
+      <self-uri content-type="pdf" xlink:type="simple" xlink:href="pone.0125006.pdf"/>
+      <abstract>
+        <p>Most women with early stage breast cancer do not require removal of the entire breast to treat their cancer; instead, up to 70% of women can be effectively and safely treated by breast conserving therapy (BCT) with surgical removal of the tumor only (lumpectomy) followed by radiation treatment of the remaining breast tissue. Unfortunately, the final contour and cosmesis of the treated breast is suboptimal in approximately 30% of patients. The ability to accurately predict breast contour after BCT for breast cancer could significantly improve patient decision-making regarding the choice of surgery for breast cancer. Our overall hypothesis is that the complex interplay among mechanical forces due to gravity, breast tissue constitutive law distribution, inflammation induced by radiotherapy and internal stress generated by the healing process play a dominant role in determining the success or failure of lumpectomy in preserving the breast contour and cosmesis. We have shown here from a first patient study that even in the idealistic situation of excellent cosmetic outcome this problem requires multiscale modeling. We propose a method to decide which component of the model works best for each phase of healing and what parameters should be considered dominant and patient specific. This patient study is part of a clinical trial registered on ClinicalTrial.gov, identifier <ext-link ext-link-type="uri" xlink:href="https://clinicaltrials.gov/ct2/show/NCT02310711">NCT02310711</ext-link>.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>The authors received no specific funding for this work.</funding-statement>
+      </funding-group>
+      <counts>
+        <fig-count count="18"/>
+        <table-count count="2"/>
+        <page-count count="24"/>
+      </counts>
+      <custom-meta-group>
+        <custom-meta id="data-availability">
+          <meta-name>Data Availability</meta-name>
+          <meta-value>All relevant data are within the paper and its Supporting Information files.</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+    <notes>
+      <title>Data Availability</title>
+      <p>All relevant data are within the paper and its Supporting Information files.</p>
+    </notes>
+  </front>
+  <body>
+    <sec sec-type="intro" id="sec001">
+      <title>Introduction</title>
+      <p>Breast cancer is the most common cancer of women in the world. It is estimated that one woman out of eight will be exposed to breast cancer during her lifetime [<xref rid="pone.0125006.ref001" ref-type="bibr">1</xref>]. Improving breast cancer treatment outcome and survival depends on early detection and effective use of multimodality therapy: surgery, radiation oncology, hormonal and chemotherapy treatments [<xref rid="pone.0125006.ref002" ref-type="bibr">2</xref>]. Most women with early stage breast cancer do not require removal of the entire breast (mastectomy) to treat their cancer; instead, up to 70% of women can be effectively and safely treated by breast conserving therapy (BCT) with surgical removal of the tumor only (lumpectomy) followed by radiation treatment of the remaining breast tissue [<xref rid="pone.0125006.ref003" ref-type="bibr">3</xref>, <xref rid="pone.0125006.ref004" ref-type="bibr">4</xref>]. The goals of BCT are to achieve local control of the cancer as well as to preserve a breast that satisfies the woman&#x2019;s cosmetic, emotional and physical needs. Unfortunately, the final contour and cosmesis of the treated breast is suboptimal in approximately 30% of patients [<xref rid="pone.0125006.ref005" ref-type="bibr">5</xref>, <xref rid="pone.0125006.ref006" ref-type="bibr">6</xref>].</p>
+      <p>Our goal is to determine if patterns of deformity can be predicted by multiscale mathematical models based on preoperative imaging and surgical data points [<xref rid="pone.0125006.ref007" ref-type="bibr">7</xref>]. Research efforts to improve the surgical outcomes of breast conserving therapy in regards to prediction of cosmetic and functional outcome are very limited. To our knowledge we are the first team working on a computational framework designed to predict BCT outcomes and explore targets for improvement. The ability to accurately predict breast contour after breast conserving therapy for breast cancer could significantly improve patient decision-making regarding the choice of surgery for breast cancer&#x2014;BCT or mastectomy [<xref rid="pone.0125006.ref008" ref-type="bibr">8</xref>, <xref rid="pone.0125006.ref009" ref-type="bibr">9</xref>]. As BCT is equivalent to total mastectomy to achieve overall survival in patients with non-metastatic breast cancer, the procedure of BCT offers significant advantages for the 70% of patients who are candidates for this procedure.</p>
+      <p>There are currently no tools, other than surgical experience and judgment that can optimize cosmetic outcome or predict the impact of partial mastectomy on the contour and deformity of the treated breast. This focus of our research goes beyond classical tissue mechanics and incorporates novel important variables into the model including tissue plasticity and the dynamics of tissue healing and repair, both primarily and in the setting of radiation therapy. Our overall hypothesis is that the complex interplay among mechanical forces due to gravity, breast tissue constitutive law distribution, inflammation induced by radiotherapy and internal stress generated by the healing process play a dominant role in determining the success or failure of lumpectomy in preserving the breast shape and cosmesis.</p>
+      <p>We have built a general computational framework to test this hypothesis [<xref rid="pone.0125006.ref010" ref-type="bibr">10</xref>&#x2013;<xref rid="pone.0125006.ref013" ref-type="bibr">13</xref>]. Our model encompasses multiple scales in space (from cells to tissue) and time (from minutes for the tissue mechanics to months for healing). We have used a modular method coupling mathematical models and corresponding software for patient specific data to test our hypothesis and refine the model.</p>
+      <p>From that conceptual work many scenarios seem possible. However we do not know <italic>a priori</italic> which <italic>factors are dominant</italic>, nor the <italic>optimal clinical protocol</italic> for validating the model. In other words, we do not know precisely what medical imaging is needed and when should we acquire the data in order to control cost, spare our patients from unnecessary medical exam and still get enough information to calibrate the model. Additionally, a typical pilot study to follow a patient requires at least six months and, more preferably, a year. To our knowledge, no animal model is available for this study that would help us improve the model predictability with respect to the cosmetic outcome for the patient.</p>
+      <p>The goal of this work was to progress with the agile development of both the multiscale model and the clinical study in order to build some credibility to our model, and identify the dominant phenomena that should be carefully monitored. Patients at high risk for deformation include women with relatively small breasts, with volume loss due to previous biopsies, those with high tumor-to-breast size ratio, and those with tumor positioned in specific areas of the breast&#x2014;such as those immediately beneath the nipple. For this paper, we follow a single patient that seems <italic>a priori</italic> to offer the best possible scenario: upon initiation of the clinical study, we assessed that the cosmetic outcome for this specific patient would be very good. Therefore, we utilized this study to assess whether the impact of mass lost after lumpectomy, tissue inflammation during the healing process, and changes in stiffness of scar tissue could be quantified using our model.</p>
+      <p>We present in this paper the lessons learned from interrogating our multifactorial modeling of BCT and how we might improve this clinical study to get a broader spectrum of applicabilities to our model, while targeting improvement in the BCT procedure. In other words, this paper does not conclude on the result of a single patient study, but rather on how we can progress on the model by going from a first data set to a broader one. We advocate here that this so-called agile development of the clinical study is an optimal way to develop a predictive model, as the patient corpus grows. We will demonstrate that a multiscale model used to capture a post-surgery outcome is far more complex than one initially may think, and describe the benefit of what we have called computational surgery [<xref rid="pone.0125006.ref014" ref-type="bibr">14</xref>].</p>
+    </sec>
+    <sec sec-type="materials|methods" id="sec002">
+      <title>Materials and Methods</title>
+      <sec id="sec003">
+        <title>Ethics Statement</title>
+        <p>This paper reports on a single patient who went through breast conserving therapy. This represents the first case of an ongoing clinical protocol that has been approved by the Houston Methodist Research Institute institutional review board&#x2014;IRB0112-0007.</p>
+        <p>After having the study explained to her and having read the study description, the patient provided informed written consent for the acquisition and publication of data for the trial.</p>
+        <p>Participants recruitment for the trial started on May 7<sup>th</sup>, 2012. Because the trial was considered a single-patient case study at the time of the trial start, the trial was registered on ClinicalTrial.gov (NCT02310711) on December 1<sup>st</sup>, 2014 after recruitment started. The authors confirm that all ongoing and related trials for this drug/intervention are registered on ClinicalTrial.gov.</p>
+        <p>The study protocol and the TREND checklist are available as supporting information; see <xref ref-type="supplementary-material" rid="pone.0125006.s001">S1 Protocol</xref> and <xref ref-type="supplementary-material" rid="pone.0125006.s002">S1 TREND Checklist</xref>.</p>
+      </sec>
+      <sec id="sec004">
+        <title>Data acquisition and clinical trial</title>
+        <p>Factor influencing the cosmetic outcome of BCT are multiple and include [<xref rid="pone.0125006.ref015" ref-type="bibr">15</xref>, <xref rid="pone.0125006.ref016" ref-type="bibr">16</xref>]:
+<list list-type="bullet"><list-item><p>the position and size of the lumpectomy within the breast,</p></list-item><list-item><p>the mechanical parameters of the breast tissues,</p></list-item><list-item><p>the distribution of fat and glandular tissues in the breast,</p></list-item><list-item><p>the advancement of the healing process,</p></list-item><list-item><p>the change of the mechanical properties of the tissue due to the radiotherapy treatment and/or the healing process.</p></list-item></list></p>
+        <p>The study was designed to include adult females &#x2265; 30 years old who had early stage non-metastatic breast cancer, received a pre-operative mammogram within 30 days of surgery, have received a pre-operative MRI exam within 30 days of surgery, would be planning to undergo lumpectomy, and receive post-surgery radiotherapy of the whole breast (<xref ref-type="fig" rid="pone.0125006.g001">Fig 1</xref>). Females who had a previous breast cancer, who required neo-adjuvant therapy, who were pregnant or breastfeeding, or who had participated in an investigational drug study in the previous 30 days were excluded. Following consent, and prior to surgery, 3-dimensional surface imaging was captured and the study began (<xref ref-type="fig" rid="pone.0125006.g002">Fig 2</xref>).</p>
+        <fig id="pone.0125006.g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g001</object-id>
+          <label>Fig 1</label>
+          <caption>
+            <title>CONSORT flow diagram.</title>
+            <p>Flow chart for the patient enrolled in the study.</p>
+          </caption>
+          <graphic xlink:href="pone.0125006.g001"/>
+        </fig>
+        <fig id="pone.0125006.g002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g002</object-id>
+          <label>Fig 2</label>
+          <caption>
+            <title>Timeline of the clinical study.</title>
+            <p>Calendar of the medical exams and dates at which the data acquisition was performed during the clinical study.</p>
+          </caption>
+          <graphic xlink:href="pone.0125006.g002"/>
+        </fig>
+        <p>Pre-operative MRI data allowed retrieval of the 3D shape of the breast as well as the mapping of tissue distribution. Breast tissue was then classified into fat, glandular tissue or skin, and the chest muscle wall as well as the tumor were segmented. After the surgery, subsequent surface imaging provided quantitative information on the breast surface for quantification of the cosmetic defect. Observation of the possible change of coloration at some skin location, due to inflammation, necrosis or radiotherapy was accomplished using digital photography. Ultrasound imaging allowed quantification of the shape of the cavity left by the lumpectomy as healing progressed. Thermal imaging (using a FLIR E60 camera with a sensitivity of 0.1&#xB0;<italic>C</italic> in the range of physiological temperature of interest and a spatial resolution of 240 &#xD7; 180 pixels) provided an indirect indicator of the inflammation of the breast tissue. Inflammation is part of the healing process as well as a side-effect of the radiotherapy treatment on tissue [<xref rid="pone.0125006.ref017" ref-type="bibr">17</xref>, <xref rid="pone.0125006.ref018" ref-type="bibr">18</xref>]. Finally, pain assessment was obtained at each visit.</p>
+        <p>The patient presented here is a 50-years old female with lobular carcinoma in-situ located in the right upper quandrant of the right breast, above the nipple area. The patient was monitored from June 27<sup>th</sup>, 2012 to February 20<sup>th</sup>, 2013 for a total duration of 34 weeks following surgery due to the fact that she required chemotherapy prior to radiotherapy. The week 3 study visit took place prior to chemotherapy and the week 6 study visit occurred after the course of chemotherapy. This pathology presentation was an ideal configuration with respect to size, location and development of the tumor. The tumor was localized in the sagittal plane going though the nipple with the center of the tumor at a distance of 47 mm from the skin. MRI data were acquired 30 days prior to the operation (Figs <xref ref-type="fig" rid="pone.0125006.g003">3</xref> and <xref ref-type="fig" rid="pone.0125006.g004">4</xref>).</p>
+        <fig id="pone.0125006.g003" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g003</object-id>
+          <label>Fig 3</label>
+          <caption>
+            <title>Right breast MRI in the transverse plane.</title>
+            <p>The dimensions of the tumor were measured and annotated on the MRI image.</p>
+          </caption>
+          <graphic xlink:href="pone.0125006.g003"/>
+        </fig>
+        <fig id="pone.0125006.g004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g004</object-id>
+          <label>Fig 4</label>
+          <caption>
+            <title>Right breast MRI in the sagittal plane.</title>
+            <p>The dimensions of the tumor were measured and annotated on the MRI image.</p>
+          </caption>
+          <graphic xlink:href="pone.0125006.g004"/>
+        </fig>
+        <p>From this MRI data, we retrieved a data set composed of 199 slices with a resolution of 250 &#xD7; 250 pixels and a voxel size of 0.7031 &#xD7; 0.7031 &#xD7; 1 mm. After the surgery, and throughout the duration of the clinical trial, the patient underwent ultrasound imaging combined with thermal surface imaging at week 2 and week 19 after surgery. An additional acquisition of thermal surface imaging was performed at week 34 after the surgery. The two-dimensional ultrasound imaging was acquired with a spatial resolution of 0.1 mm in both dimensions and was performed in the sagittal and transverse planes of the breast with the patient seated comfortably. Lateral and frontal photographs of the breast were acquired at weeks 2, 4, 19 and 34 after the surgery date as well as prior to the surgery.</p>
+        <p>Because of the tumor location centered in the sagittal plane going through the nipple, we opted for a simplification towards a 2-dimensional problem, where the transverse direction of the breast is ignored. This was one of the reasons for which we started with this specific patient, and was also in agreement with the fact we operated with a standard two-dimensional ultrasound system that could not provide an accurate 3D reconstruction of the lumpectomy cavity. The tumor was measured as a compact ellipsoid-shaped mass of 12 &#xD7; 9 mm in the considered sagittal plane (<xref ref-type="fig" rid="pone.0125006.g004">Fig 4</xref>). Thanks to this 2D simplification, 3D surface imaging was not necessary and profile photographs of the breast were used to reconstruct a 2D contour in the sagittal plane going through the nipple of the right breast.</p>
+        <p>In the future, we plan to employ a more elaborate data acquisition process to validate and improve our model. However it should be noticed that, unless one shows that some essential observations are missed by current standard procedures, a predictive clinical model of cosmetic outcome that is patient-specific should not require anything but a preoperative MRI scan (or preferably a mammography), 2D ultrasound and possibly surface imaging with a low-cost system.</p>
+      </sec>
+      <sec id="sec005">
+        <title>Virtual breast reconstruction</title>
+        <p>A 3D reconstruction of the breast surface is obtained by segmentation of the post-operative MRI data. The MRI DICOM data is pre-processed using the DICOM ToolKit (<ext-link ext-link-type="uri" xlink:href="http://dcmtk.org/">http://dcmtk.org/</ext-link>); the DICOM images are first converted to 8-bit monochrome images by applying a Value Of Interest windowing function computed from the histogram of each DICOM image. Each image is then processed with the Octave software (<ext-link ext-link-type="uri" xlink:href="http://www.gnu.org/software/octave/">http://www.gnu.org/software/octave/</ext-link>); first, a segmentation using a Fuzzy C-Means algorithm is performed [<xref rid="pone.0125006.ref019" ref-type="bibr">19</xref>]. The data is segmented into 3 classes labeled as background noise, fat and glandular tissue. Additionally, the surface of the skin defined as the interface between the background noise and the breast tissues is smoothed using a 1D Tikhonov regularization [<xref rid="pone.0125006.ref020" ref-type="bibr">20</xref>] on each slice in order to correct the defects of the non-localized segmentation. The breast-chest wall interface is interpolated from a manual segmentation of the projected 3D data in the transverse and sagittal planes. Finally, the data is scaled-down to the voxel resolution of the MRI data. The resulting reconstructed surface of the skin is shown in <xref ref-type="fig" rid="pone.0125006.g005">Fig 5</xref>.</p>
+        <fig id="pone.0125006.g005" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g005</object-id>
+          <label>Fig 5</label>
+          <caption>
+            <title>3D reconstruction of the MRI data.</title>
+            <p>In this figure only the elevation map of the skin surface is shown, scaled to the MRI voxel resolution.</p>
+          </caption>
+          <graphic xlink:href="pone.0125006.g005"/>
+        </fig>
+        <p>As previously discussed, we chose to work in the 2D space of the sagittal plane of the tumor bed in the right-side breast. However, and for compatibility reasons with the 3D finite elements solver used in this work, we considered a slice of thickness <italic>&#x3B4;z</italic> &#x2260; 0 from the reconstructed volume of the breast. In order to remove the spatial dependency in <italic>z</italic> required for our 2D model, we forced a translational symmetry along the <italic>z</italic> axis. We extracted a single &#x201C;slice of interest&#x201D; from the reconstructed 3D breast at the chosen coordinate and created an artificial 3D volume by extruding the slice along the <italic>z</italic> axis. This allowed the use of a 3D mesh as input of the finite elements solver while forcing the solution to be two-dimensional, using appropriate no-displacement boundary conditions in the <italic>z</italic> direction on the 2 faces of the slice. Our finite elements computational framework is in fact ready for 3D patient specific simulation [<xref rid="pone.0125006.ref021" ref-type="bibr">21</xref>], but as noted earlier our ultrasound imaging of the lumpectomy cavity was only 2D.</p>
+        <p>In order to account for the loss of internal tissues resulting from the lumpectomy, we created an artificial cavity in the mesh of the breast, referred to as a &#x201C;virtual lumpectomy&#x201D;. We modeled the virtual lumpectomy as an ellipse parameterized by major and minor axes whose dimensions were estimated from patient data, with additional input from the surgeon. First, the dimensions of the tumor bed were measured from the MRI images; then a negative margin was added, increasing the size of the cavity. The size of the negative margin was taken from the diagnostic of the surgeon, established prior to surgery. From the MRI data, we measured the major and minor axes of the cavity bed to be 12 and 9<italic>mm</italic>, respectively. We used a negative margin of 5 mm, as estimated by the surgeon. This construction was cross-referenced, to some extent, with the first 2D ultrasound exam that was performed after surgery, and provided some information on the cavity left by the lumpectomy.</p>
+      </sec>
+      <sec id="sec006">
+        <title>Multifactorial model of BCT</title>
+        <p>Over the last few years, we have developed two main classes of model to study the change in shape of the breast post-surgery.</p>
+        <p>The first class of model is based entirely on a tissue mechanical description of the breast. Immediately after surgery, it is expected that the loss of tissue left by the lumpectomy will significantly affect the breast shape. In fact, the gap left by the resection fills quickly with seroma and some pressure accumulates in this pocket due to inflammation [<xref rid="pone.0125006.ref022" ref-type="bibr">22</xref>]. A short-term model of the breast shape should take into account both of these phenomena.</p>
+        <p>To build this mechanical model, we built a robust model of breast tissue deformation, even before a virtual lumpectomy could be applied to the geometry. The breast is a fairly mobile structure: the MRI data is acquired in the prone position, while the cosmetic outcome is generally evaluated when the patient torso is vertical. This is a fairly nontrivial problem that has been extensively reported in the literature [<xref rid="pone.0125006.ref010" ref-type="bibr">10</xref>, <xref rid="pone.0125006.ref023" ref-type="bibr">23</xref>&#x2013;<xref rid="pone.0125006.ref028" ref-type="bibr">28</xref>]. We used a combination of quasi-incompressible isotropic Neo-Hookean materials to model the glandular, fat and skin tissues and the patient-specific distribution of these tissues that we were able to map from the MRI data analysis. The Neo-Hookean hyperelastic model is defined by its strain energy density function:
+<disp-formula id="pone.0125006.e001"><alternatives><graphic xlink:href="pone.0125006.e001.jpg" id="pone.0125006.e001g" mimetype="image" position="anchor" orientation="portrait"/><mml:math id="M1"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>W</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mi>&#x3BC;</mml:mi><mml:mn>2</mml:mn></mml:mfrac><mml:mrow><mml:mo>(</mml:mo><mml:msup><mml:mi>J</mml:mi><mml:mrow><mml:mo>-</mml:mo><mml:mn>2</mml:mn><mml:mo>/</mml:mo><mml:mn>3</mml:mn></mml:mrow></mml:msup><mml:msub><mml:mi>I</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>-</mml:mo><mml:mn>3</mml:mn><mml:mo>)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:mfrac><mml:mi>K</mml:mi><mml:mn>2</mml:mn></mml:mfrac><mml:msup><mml:mrow><mml:mo>(</mml:mo><mml:mi>J</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn><mml:mo>)</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives><label>(1)</label></disp-formula>
+where <italic>W</italic> is the strain energy per unit of volume, <italic>I</italic><sub>1</sub> is the first invariant of the left Cauchy-Green deformation tensor, <italic>&#x3BC;</italic> is the initial shear modulus of the material, <italic>K</italic> is the bulk modulus and <italic>J</italic> is the determinant of the elastic deformation gradient. The parameters <italic>&#x3BC;</italic> and <italic>K</italic> represent, respectively, the stiffness and compressibility for each type of tissue. In this paper we chose to use the Young modulus <italic>E</italic> and Poisson ratio <italic>&#x3BD;</italic> as parameters, from which the <italic>&#x3BC;</italic> and <italic>K</italic> parameters can be easily derived. This choice was motivated by the fact that those parameters are widely used in the literature and thus their range of variation can be estimated more easily.</p>
+        <p>We should mention that in the future, we will use the same hyperelastic material approximation to model the scar tissue resulting of cellular proliferation inside the wound during the healing, but we did not include that approximation in this report.</p>
+        <p>The mesh of the virtual breast was created using the Gmsh software [<xref rid="pone.0125006.ref029" ref-type="bibr">29</xref>] (<ext-link ext-link-type="uri" xlink:href="http://www.geuz.org/gmsh/">http://www.geuz.org/gmsh/</ext-link>). The element sizes of the mesh are constrained to the spatial resolution of the MRI data, and a material label was assigned to each node of the mesh based on the result of the segmentation of the MRI data. The skin was modeled using triangular shell elements on the outer surface of the breast with a 1 mm thickness [<xref rid="pone.0125006.ref024" ref-type="bibr">24</xref>, <xref rid="pone.0125006.ref030" ref-type="bibr">30</xref>]. To account for the effect of the seroma in the wound cavity after surgery, we applied a positive pressure inside the cavity. We used the finite element software FEBio (<ext-link ext-link-type="uri" xlink:href="http://www.febio.org/">http://www.febio.org/</ext-link>) to solve this model. FEBio is specifically focused on solving nonlinear large deformation problems in biosolid mechanics [<xref rid="pone.0125006.ref031" ref-type="bibr">31</xref>].</p>
+        <p>The second class of model is a mecano-biological model that takes into account the healing process. This model is required to describe its long time scale. The cosmetic outcome may be less satisfactory after a few months of healing. It is well known that the cavity left by the lumpectomy gets filled progressively by scar tissue with a higher stiffness than the original breast tissues, and that in this long-term process up to 20% of the volume may be lost [<xref rid="pone.0125006.ref032" ref-type="bibr">32</xref>].</p>
+        <p>We have, therefore, developed a multiscale model that couples the modeling of the breast tissue mechanics and the progression of the wound healing inside the lumpectomy cavity. To model the healing process, we have developed both a level set approach similar to Javierre et al. [<xref rid="pone.0125006.ref033" ref-type="bibr">33</xref>] and an Agent-Based Model (ABM) to model the healing process. The ABM is a bottom up approach that describes the tissue remodeling at the cellular level, while the level set define as a &#x201C;constitutive law&#x201D; the velocity of the wound progression of the wall.</p>
+        <p>We proposed a very simple cellular automata (CA) model for this case [<xref rid="pone.0125006.ref034" ref-type="bibr">34</xref>] that is in some sense the simplest possible ABM one can use for healing, while giving results very similar to the level set model [<xref rid="pone.0125006.ref012" ref-type="bibr">12</xref>]. The CA operates on the unloaded geometry with a discrete hexagonal grid that has 3 axes of symmetry. Each site of the hexagonal grid might be either empty or occupied by a cell. The probability <italic>p</italic> of cell division inside the tissue, as detailed in [<xref rid="pone.0125006.ref012" ref-type="bibr">12</xref>], is written as:
+<disp-formula id="pone.0125006.e002"><alternatives><graphic xlink:href="pone.0125006.e002.jpg" id="pone.0125006.e002g" mimetype="image" position="anchor" orientation="portrait"/><mml:math id="M2"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>p</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mi>u</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi>F</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mi>c</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mi>&#x3B1;</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>&#x3B1;</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mfrac><mml:msub><mml:mi>E</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mi>E</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub></mml:mfrac><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives><label>(2)</label></disp-formula>
+where (<italic>i</italic>, <italic>j</italic>) is the site location coordinate the hexagonal grid. Cell division is promoted by a generic growth factor <italic>c</italic><sub><italic>i</italic>,<italic>j</italic></sub> modulated by a cut off function <italic>F</italic>, and possibly a normalized distribution of mechanical stress <italic>E</italic><sub><italic>i</italic>,<italic>j</italic></sub> in the tissues at that corresponding location in the unloaded geometry.</p>
+        <p>The equation leading the diffusion of growth factor in the tissues and developed by Javierre et al. [<xref rid="pone.0125006.ref033" ref-type="bibr">33</xref>] follows the equation:
+<disp-formula id="pone.0125006.e003"><alternatives><graphic xlink:href="pone.0125006.e003.jpg" id="pone.0125006.e003g" mimetype="image" position="anchor" orientation="portrait"/><mml:math id="M3"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mfrac><mml:mrow><mml:mi>&#x2202;</mml:mi><mml:mi>c</mml:mi></mml:mrow><mml:mrow><mml:mi>&#x2202;</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:mfrac><mml:mo>-</mml:mo><mml:mi>D</mml:mi><mml:mo>&#x394;</mml:mo><mml:mi>c</mml:mi><mml:mo>+</mml:mo><mml:mo>&#x39B;</mml:mo><mml:mi>c</mml:mi><mml:mo>=</mml:mo><mml:msub><mml:mi>&#x3C7;</mml:mi><mml:mrow><mml:mi>a</mml:mi><mml:mo>.</mml:mo><mml:mi>l</mml:mi><mml:mo>.</mml:mo></mml:mrow></mml:msub><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives><label>(3)</label></disp-formula>
+where <italic>D</italic> and &#x39B; are the diffusion coefficient and decay rates, respectively. <italic>&#x3C7;</italic><sub><italic>a</italic>.<italic>l</italic>.</sub> is a unit step function equal to 1 inside a layer of fixed witdh around the wound edge, referred to as an &#x201C;active layer&#x201D;, and 0 elsewhere. We used homogeneous Neuman boundary conditions at the wall of the resection to express that there was no flux of growth factor. We completed the PDE problem with a homogeneous Dirichlet boundary condition on the far field that did not impact the growth factor distribution in the active layer.</p>
+        <p>The mechanical code follows the hyperelastic model described above. We then alternated between the calculation of the &#x201C;instantaneous&#x201D; mechanical deformation of the breast for a given geometry and the wound healing progression. The CA model for wound healing was run for a period long enough to observe a noticeable change in the closing of the wound that would change the output of the mechanical model. Typically we run the CA to model a physical period of the order of a week.</p>
+        <p>The virtual breast was then updated with the new geometry of the wound. A new mesh of the virtual breast was created as shown in <xref ref-type="fig" rid="pone.0125006.g006">Fig 6</xref>. A detailed description of the implementation of that multiscale model from Garbey et al. [<xref rid="pone.0125006.ref012" ref-type="bibr">12</xref>] is summarized in <xref ref-type="fig" rid="pone.0125006.g007">Fig 7</xref>.</p>
+        <fig id="pone.0125006.g006" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g006</object-id>
+          <label>Fig 6</label>
+          <caption>
+            <title>Mesh of the virtual breast, in the sagittal plane of interest.</title>
+            <p>We show in a different color intensity the fat and glandular materials of the elements of the mesh.</p>
+          </caption>
+          <graphic xlink:href="pone.0125006.g006"/>
+        </fig>
+        <fig id="pone.0125006.g007" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g007</object-id>
+          <label>Fig 7</label>
+          <caption>
+            <title>Illustration of the mechanico-biological model of the breast after BCT.</title>
+            <p>Upper half of the diagram (<italic>unloaded</italic>): biological agent-based model of the wound healing; lower half of the diagram (<italic>loaded</italic>): mechanical model of the breast. The stress distribution at the wound edge is normalized and mapped from the loaded geometry of the breast under gravity to the unloaded geometry of the breast of the biological model.</p>
+          </caption>
+          <graphic xlink:href="pone.0125006.g007"/>
+        </fig>
+        <p>Once the healing was completed by the mecano-biological model, we returned to the initial mechanical model, but using a stiffer material for the newly-formed scar tissue, according to the literature. Next, we calibrated the model.</p>
+      </sec>
+      <sec id="sec007">
+        <title>Data fitting and model calibration</title>
+        <p><xref ref-type="table" rid="pone.0125006.t001">Table 1</xref> summarizes the parameters set for each component of the model, mechanical or biological. Some parameters such as density or compressibility of soft tissue can be set relatively easily from the literature. Other parameters such as <italic>&#x3B1;</italic><sub>1</sub> that accounts for the sensitivity of wound healing to mechanical stress have a secondary effect in the simulation. We set <italic>&#x3B1;</italic><sub>1</sub> = 0, justified by that fact that its effect in the simulation would be negligible versus the error resulting of the data acquisition process. We also used a generic growth factor <italic>c</italic>, but we have no lab measurement available that would help us specify its decay rate &#x39B;. However, by using a production rate overestimated to <italic>&#x3C7;</italic><sub><italic>a</italic>.<italic>l</italic>.</sub> = 1 [<italic>c</italic>].<italic>s</italic><sup>&#x2212;1</sup> inside the active layer, we significantly lessen the influence of &#x39B;. It turns out in our simulation that this parameters has also secondary effect that would be less significant than the error we have made on the wound cavity location. Eventually, we can restrict ourselves to a fairly limited set of unknown parameters (see <xref ref-type="table" rid="pone.0125006.t002">Table 2</xref>).</p>
+        <table-wrap id="pone.0125006.t001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125006.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Summary of the parameters of the model (i).</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone.0125006.t001g" xlink:href="pone.0125006.t001"/>
+            <table frame="box" rules="all" border="0">
+              <colgroup span="1">
+                <col align="left" valign="top" span="1"/>
+                <col align="left" valign="top" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th align="left" rowspan="1" colspan="1">
+                    <bold>Parameter</bold>
+                  </th>
+                  <th align="left" rowspan="1" colspan="1">
+                    <bold>Value</bold>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" colspan="2" rowspan="1">Mechanical model of breast tissues:</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>&#x3BD;</italic>
+                    <sub>
+                      <italic>fat</italic>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.49</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>&#x3C1;</italic>
+                    <sub>
+                      <italic>fat</italic>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.9 kg.L<sup>&#x2212;1</sup> [<xref rid="pone.0125006.ref045" ref-type="bibr">45</xref>]</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>&#x3BD;</italic>
+                    <sub>
+                      <italic>glandular</italic>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.49</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>&#x3C1;</italic>
+                    <sub>
+                      <italic>glandular</italic>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1 kg.L<sup>&#x2212;1</sup> [<xref rid="pone.0125006.ref046" ref-type="bibr">46</xref>]</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>&#x3BD;</italic>
+                    <sub>
+                      <italic>skin</italic>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.49</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>&#x3C1;</italic>
+                    <sub>
+                      <italic>skin</italic>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1 kg.L<sup>&#x2212;1</sup></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>&#x3B4;</italic>
+                    <sub>
+                      <italic>skin</italic>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1 mm [<xref rid="pone.0125006.ref047" ref-type="bibr">47</xref>]</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="2" rowspan="1">First phase of healing:</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>E</italic>
+                    <sub>
+                      <italic>inflammation</italic>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">80 kPa [<xref rid="pone.0125006.ref043" ref-type="bibr">43</xref>]</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>&#x3B4;</italic>
+                    <sub>
+                      <italic>inflammation</italic>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">5 mm</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="2" rowspan="1">Third phase of healing:</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>&#x3BD;</italic>
+                    <sub>
+                      <italic>scar</italic>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.49</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>&#x3C1;</italic>
+                    <sub>
+                      <italic>scar</italic>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1 kg.L<sup>&#x2212;1</sup></td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="2" rowspan="1">Biological model of wound healing:</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>D</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.05 cm<sup>2</sup>day<sup>&#x2212;1</sup> [<xref rid="pone.0125006.ref048" ref-type="bibr">48</xref>]</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x39B;</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>&#x3B1;</italic>
+                    <sub>1</sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="t001fn001">
+              <p>These parameters are extracted from the literature or set to zero if they appears to have secondary effect in the model sensitivity to parameters.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <table-wrap id="pone.0125006.t002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0125006.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Summary of the parameters of the model (ii).</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone.0125006.t002g" xlink:href="pone.0125006.t002"/>
+            <table frame="box" rules="all" border="0">
+              <colgroup span="1">
+                <col align="left" valign="top" span="1"/>
+                <col align="left" valign="top" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th align="left" rowspan="1" colspan="1">
+                    <bold>Parameter</bold>
+                  </th>
+                  <th align="left" rowspan="1" colspan="1">
+                    <bold>Value</bold>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" colspan="2" rowspan="1">Mechanical model of breast tissues:</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>
+                      <italic>E</italic>
+                    </bold>
+                    <sub>
+                      <bold>
+                        <italic>fat</italic>
+                      </bold>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">2&#x2013;15 kPa [<xref rid="pone.0125006.ref049" ref-type="bibr">49</xref>]</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>
+                      <italic>E</italic>
+                    </bold>
+                    <sub>
+                      <bold>
+                        <italic>glandular</italic>
+                      </bold>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">5&#x2013;15 kPa [<xref rid="pone.0125006.ref049" ref-type="bibr">49</xref>]</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>
+                      <italic>E</italic>
+                    </bold>
+                    <sub>
+                      <bold>
+                        <italic>skin</italic>
+                      </bold>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">5&#x2013;30 kPa [<xref rid="pone.0125006.ref050" ref-type="bibr">50</xref>]</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="2" rowspan="1">First phase of healing:</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>&#x3BB;</bold>
+                    <sub>
+                      <bold>1</bold>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1.0&#x2013;3.0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>
+                      <italic>P</italic>
+                    </bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0.0&#x2013;500.0 Pa</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="2" rowspan="1">Second phase of healing:</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>&#x3BB;</bold>
+                    <sub>
+                      <bold>2</bold>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1.0&#x2013;3.0</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="2" rowspan="1">Third phase of healing:</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>&#x3BB;</bold>
+                    <sub>
+                      <bold>3</bold>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1.0&#x2013;3.0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>
+                      <italic>E</italic>
+                    </bold>
+                    <sub>
+                      <bold>
+                        <italic>scar</italic>
+                      </bold>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">10&#x2013;80 kPa</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="2" rowspan="1">Biological model of wound healing:</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>
+                      <italic>&#x3B1;</italic>
+                    </bold>
+                    <sub>
+                      <bold>0</bold>
+                    </sub>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">0&#x2013;0.6</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="t002fn001">
+              <p>The parameters in bold characters are used to define the sets of unknown parameters <italic>&#x3B1;</italic> estimated in this paper. Initial ranges of variation are given here as used in the optimization method.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>We have put in bold characters the set of candidate unknown parameters that we would like to be patient specific. These are the few parameters that we intend to recover from model fitting. Let us denote <italic>&#x3B1;</italic> this unknown vector of scalar. Since we worked with a 2D model with this first patient, our criteria to match the model with the experiments were extremely simple. We looked at the difference between the 1D contour of the profile view of the patient&#x2019;s breast and the same profile obtained by the simulation.</p>
+        <p>We used standard photographs of the patient side view obtained during clinical examination. We extracted the contour of the breast easily with a segmentation method. Let us call <italic>C</italic><sup><italic>ground</italic>&#x2013;<italic>truth</italic></sup> the corresponding contour. Meanwhile let us denote <italic>C</italic><sup><italic>model</italic></sup> the same supposedly contour, obtained from the simulation. <italic>C</italic><sup><italic>ground</italic>&#x2013;<italic>truth</italic></sup> and <italic>C</italic><sup><italic>model</italic></sup> are parametric curves. We projected both function on a square ROI that included the breast on a discretized grid that corresponded to the MRI resolution at the millimeter scale. The digital pictures were less accurate and thus required interpolation.</p>
+        <p>The objective function <italic>f</italic>(<italic>&#x3B1;</italic>, <italic>s</italic>) we minimized is defined as:
+<disp-formula id="pone.0125006.e004"><alternatives><graphic xlink:href="pone.0125006.e004.jpg" id="pone.0125006.e004g" mimetype="image" position="anchor" orientation="portrait"/><mml:math id="M4"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>f</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>&#x3B1;</mml:mi><mml:mo>,</mml:mo><mml:mi>s</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:munder><mml:mo>&#x2211;</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:munder><mml:mrow><mml:mo>&#x2016;</mml:mo></mml:mrow><mml:msubsup><mml:mi>C</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow><mml:mrow><mml:mi>m</mml:mi><mml:mi>o</mml:mi><mml:mi>d</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi></mml:mrow></mml:msubsup><mml:mrow><mml:mo>(</mml:mo><mml:mi>&#x3B1;</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>-</mml:mo><mml:mi>s</mml:mi><mml:mo>*</mml:mo><mml:msubsup><mml:mi>C</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow><mml:mrow><mml:mi>g</mml:mi><mml:mi>r</mml:mi><mml:mi>o</mml:mi><mml:mi>u</mml:mi><mml:mi>n</mml:mi><mml:mi>d</mml:mi><mml:mo>-</mml:mo><mml:mi>t</mml:mi><mml:mi>r</mml:mi><mml:mi>u</mml:mi><mml:mi>t</mml:mi><mml:mi>h</mml:mi></mml:mrow></mml:msubsup><mml:mrow><mml:mo>&#x2016;</mml:mo></mml:mrow><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives><label>(4)</label></disp-formula></p>
+        <p>We did not require accurate measurement of the distance from the patient to the camera, in order to simplify the clinical data acquisition process for the nurse and save time for the patient. The physical dimension of the pixel in the image expressed by the aspect ratio <italic>s</italic> was then set as an additional unknown in the optimization procedure.</p>
+        <p>Before we proceeded with the parameter estimation, we made some preliminary observations in the clinical study with the first patient to determine which phenomena seemed to emerge clearly and therefore what model might be able to catch it. We will present some simple metrics we can extract from the imaging of this patient.</p>
+      </sec>
+    </sec>
+    <sec id="sec008">
+      <title>Highlighting the three phases of healing</title>
+      <p>From the series of frontal photographs of the patient during the clinical protocol of <xref ref-type="fig" rid="pone.0125006.g002">Fig 2</xref>, we notice that the difference in height between the left and right nipple changed over time in a fairly non trivial way. We defined the first metric as the absolute vertical difference in height between the nipples of each breast of the patient (<xref ref-type="fig" rid="pone.0125006.g008">Fig 8</xref>). We tracked the potential change of tissue stiffness that could affect that metric.</p>
+      <fig id="pone.0125006.g008" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g008</object-id>
+        <label>Fig 8</label>
+        <caption>
+          <title>First metric.</title>
+          <p>Evolution of the difference in the vertical position of the nipple of the right breast and the left breast; the three phases of healing are separated by the vertical dashed lines.</p>
+        </caption>
+        <graphic xlink:href="pone.0125006.g008"/>
+      </fig>
+      <p>Similarly, using the lateral photographs of the patient, we were able to compute the area of the breast included in a disc of fixed radius centered on the nipple, and compared the area of both breasts. This complemented the first metric, giving an estimate of the change of volume of the operated breast (<xref ref-type="fig" rid="pone.0125006.g009">Fig 9</xref>). We tracked potential change due to the internal loss of tissue after the surgery as well as the creation of scar tissues inside the wound, counterbalanced by the change of volume due to the accumulation of seroma.</p>
+      <fig id="pone.0125006.g009" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g009</object-id>
+        <label>Fig 9</label>
+        <caption>
+          <title>Second metric.</title>
+          <p>Evolution of the difference in the lateral surface of the right breast and the left breast; the three phases of healing are separated by the vertical dashed lines.</p>
+        </caption>
+        <graphic xlink:href="pone.0125006.g009"/>
+      </fig>
+      <p>The curve obtained with the first metric (<xref ref-type="fig" rid="pone.0125006.g008">Fig 8</xref>) highlights the 3 distinct phases of healing [<xref rid="pone.0125006.ref035" ref-type="bibr">35</xref>, <xref rid="pone.0125006.ref036" ref-type="bibr">36</xref>] that we will investigate with our model later on in this paper. In the first seven weeks after the operation, the progressive increase of the difference in elevation of the breasts from 17 to 28 mm indicated an increase of stiffness, possibly explained by the inflammation of the wounded tissues [<xref rid="pone.0125006.ref036" ref-type="bibr">36</xref>]. The following decrease of the difference in elevation to about 14 mm indicates a return to a relaxed position of the breast over the next 4 to 5 months; this was interpreted as the diminution of the inflammation phase coupled with the progress of cellular division and tissue remodeling inside the wound [<xref rid="pone.0125006.ref037" ref-type="bibr">37</xref>]. Finally, the resumption of the difference in elevation around the 8<sup>th</sup> month to 32 mm indicated an increase of tissue stiffness due to the radiotherapy [<xref rid="pone.0125006.ref038" ref-type="bibr">38</xref>] that the patient underwent in the scope of the breast conserving therapy.</p>
+      <p>Those results were validated by the second metric (<xref ref-type="fig" rid="pone.0125006.g009">Fig 9</xref>) showing the evolution of the difference in lateral area, that we assimilated to the volume of the breast. The first two phases of healing and their time scale were clearly identified. The inflammatory phase was characterized by a large augmentation of the lateral area of 3.5 cm<sup>2</sup> due to the pressure resulting from the accumulation of seroma [<xref rid="pone.0125006.ref039" ref-type="bibr">39</xref>, <xref rid="pone.0125006.ref040" ref-type="bibr">40</xref>], filling the cavity during the first few weeks of healing and typical of the post-lumpectomy inflammation. This was followed by return to a normal configuration where the two breasts are roughly of the same lateral area. This can be explained by the fact that the internal pressure resorbs itself while the scar tissue created during the 2<sup>nd</sup> phase of healing fills the cavity.</p>
+      <p>Finally in <xref ref-type="fig" rid="pone.0125006.g010">Fig 10</xref> we report on the evolution of the difference in temperature between the two breasts measured from thermal imaging. The surface temperature of the right breast was measured at the location of the surgical incision on the skin. The surface temperature of the left breast was measured at the corresponding location on the left breast. The temperature was measured on a grid of 7 &#xD7; 7 pixels and averaged in order to minimize the signal-to-noise ratio. The difference in temperature appears initially higher of about 5&#xB0;<italic>C</italic>, confirming the inflammatory activity in the operated breast [<xref rid="pone.0125006.ref041" ref-type="bibr">41</xref>]. During the healing process, a convergence in the temperatures of the two breasts was observed, indicating a decay of the inflammatory activity.</p>
+      <fig id="pone.0125006.g010" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g010</object-id>
+        <label>Fig 10</label>
+        <caption>
+          <title>Third metric.</title>
+          <p>Evolution of the surface temperature of both breasts, measured at the location of the surgical incision on the skin on the right breast, and the corresponding location on the left breast.</p>
+        </caption>
+        <graphic xlink:href="pone.0125006.g010"/>
+      </fig>
+      <p>In conclusion we have identified three phases of the healing process:
+<list list-type="bullet"><list-item><p>Phase I: weeks 1&#x2013;6, characterized mainly by post-surgery inflammation.</p></list-item><list-item><p>Phase II: weeks 7&#x2013;20, characterized by seroma absorption and progression of the healing.</p></list-item><list-item><p>Phase III: weeks 21&#x2013;35, dominated by the effect of radiotherapy.</p></list-item></list>
+The patient status at week 0, <italic>i.e.</italic> right before surgery, is referred to as Phase 0.</p>
+      <p>The 3 measurements presented in this section were easy to do. Perhaps we should have seen the patient more often to fill our potential measurement gap around weeks 10 and 25 in <xref ref-type="fig" rid="pone.0125006.g008">Fig 8</xref>. Beside, this scenario would have changed somehow if the patient had not got any positive lymph node after surgery. The radiotherapy treatment started here later than usual because of the chemotherapy treatment from week 6 to 16. Nevertheless, we could adapt our general computational framework to describe each phase and recover a subset of the patient specific parameters in our model.</p>
+    </sec>
+    <sec sec-type="results" id="sec009">
+      <title>Results</title>
+      <p>In this study, we have limited ourselves to a few parameters for the validation of each phase of healing to get a meaningful and credible result. In fact, the more unknown parameters we can work with, the better fit we should get. With only two parameters, we are able to show graphically the parameter landscape with a surface response [<xref rid="pone.0125006.ref042" ref-type="bibr">42</xref>] and improve our understanding of the phenomenon post-surgery. We will also demonstrate that it is feasible to have an accurate prediction in each phase (<xref ref-type="fig" rid="pone.0125006.g011">Fig 11</xref>).</p>
+      <fig id="pone.0125006.g011" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g011</object-id>
+        <label>Fig 11</label>
+        <caption>
+          <title>Fitting of the model to the patient data for the different phases of healing.</title>
+          <p>Result of the 2D fitting of the parameters described in <xref ref-type="table" rid="pone.0125006.t002">Table 2</xref> for Phase 0 (estimation of the mechanical parameters <italic>E</italic><sub><italic>fat</italic></sub>, <italic>E</italic><sub><italic>glandular</italic></sub>, <italic>E</italic><sub><italic>skin</italic></sub> before surgery, top-left quadrant), Phase I (fitting of the parameters &#x3BB;<sub>1</sub>, <italic>P</italic> for the inflammation of the breast, top-right quadrant), Phase II (fitting of the biological parameter <italic>&#x3B1;</italic><sub>0</sub>, bottom-left quadrant), and Phase III (fitting of the parameters &#x3BB;<sub>3</sub>, <italic>E</italic><sub><italic>scar</italic></sub> for the increase in stiffness of the breast during the radiation therapy, bottom-right quadrant). Solid lines represent the output of the model <italic>C</italic><sup><italic>model</italic></sup> and dashed lines represent the breast contoured manually <italic>C</italic><sup><italic>ground</italic>&#x2013;<italic>truth</italic></sup> (axes in meters).</p>
+        </caption>
+        <graphic xlink:href="pone.0125006.g011"/>
+      </fig>
+      <p><bold>Phase 0:</bold> First, we estimated the Young modulus of fat, glandular and skin tissue of the patient that fitted to the breast contour acquired in the seated position. For this, we used <italic>&#x3B1;</italic> = {<italic>E</italic><sub><italic>fat</italic></sub>, <italic>E</italic><sub><italic>glandular</italic></sub>, <italic>E</italic><sub><italic>skin</italic></sub>} in <xref ref-type="disp-formula" rid="pone.0125006.e004">Eq (4)</xref>.</p>
+      <p>We assumed that the patient&#x2019;s breast in the prone position during the MRI scan had no residual stress. We needed to somehow invert the gravity before applying the model to the seated position with vertical gravity. We have previously described this procedure [<xref rid="pone.0125006.ref010" ref-type="bibr">10</xref>, <xref rid="pone.0125006.ref011" ref-type="bibr">11</xref>]. Technically, one can improve this method and skip that computational step by using a floating device during MRI acquisition [<xref rid="pone.0125006.ref027" ref-type="bibr">27</xref>] in order to directly acquire the unloaded shape.</p>
+      <p>We obtained a minimum of the objective function <italic>f</italic> for <italic>E</italic><sub><italic>fat</italic></sub> = 3.7 kPa, <italic>E</italic><sub><italic>glandular</italic></sub> = 9.5 kPa and <italic>E</italic><sub><italic>skin</italic></sub> = 25 kPa. We observed in the surface response shown in <xref ref-type="fig" rid="pone.0125006.g012">Fig 12</xref> a higher sensitivity to the Young modulus of the fat tissue. This could be a consequence of the fat tissues occupying the majority of the breast, as compared to the skin and glandular tissues more scarcely distributed.</p>
+      <fig id="pone.0125006.g012" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g012</object-id>
+        <label>Fig 12</label>
+        <caption>
+          <title>Surface response of <italic>f</italic> for Phase 0.</title>
+          <p>Surface response of <italic>f</italic> (see <xref ref-type="disp-formula" rid="pone.0125006.e004">Eq 4</xref>) obtained in the determination of the mechanical parameters <italic>E</italic><sub><italic>fat</italic></sub>, <italic>E</italic><sub><italic>glandular</italic></sub>, <italic>E</italic><sub><italic>skin</italic></sub> described in <xref ref-type="table" rid="pone.0125006.t002">Table 2</xref>.</p>
+        </caption>
+        <graphic xlink:href="pone.0125006.g012"/>
+      </fig>
+      <p>Once the mechanical properties of the breast were established, we attempted to model each phase of the healing process.</p>
+      <p><bold>Phase I:</bold> In the first phase of healing, we observed that the inflammation of the breast induced an increase of volume by an order of magnitude of the size of the resected tissue volume. We also observed a higher elevation of the nipple. Those observations might be associated to two distinct phenomena characteristic of the inflammation process; on one hand the pressure resulting from the seroma filling the wound cavity raised during the first weeks of healing. On the other hand, we may have observed an increase of the stiffness of the breast tissues.</p>
+      <p>To model the first effect of the inflammation we applied a normal positive pressure <italic>P</italic> on the walls of the cavity. To model the second effect of the inflammation, we defined a new Young modulus <inline-formula id="pone.0125006.e005"><mml:math id="M5"><mml:mrow><mml:msubsup><mml:mi>E</mml:mi><mml:mrow><mml:mi>f</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mo>&#x2032;</mml:mo></mml:msubsup><mml:mo>=</mml:mo><mml:msub><mml:mi>&#x3BB;</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:msubsup><mml:mi>E</mml:mi><mml:mrow><mml:mi>f</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mn>0</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula> and <inline-formula id="pone.0125006.e006"><mml:math id="M6"><mml:mrow><mml:msubsup><mml:mi>E</mml:mi><mml:mrow><mml:mi>g</mml:mi><mml:mi>l</mml:mi><mml:mi>a</mml:mi><mml:mi>n</mml:mi><mml:mi>d</mml:mi><mml:mi>u</mml:mi><mml:mi>l</mml:mi><mml:mi>a</mml:mi><mml:mi>r</mml:mi></mml:mrow><mml:mo>&#x2032;</mml:mo></mml:msubsup><mml:mo>=</mml:mo><mml:msub><mml:mi>&#x3BB;</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:msubsup><mml:mi>E</mml:mi><mml:mrow><mml:mi>g</mml:mi><mml:mi>l</mml:mi><mml:mi>a</mml:mi><mml:mi>n</mml:mi><mml:mi>d</mml:mi><mml:mi>u</mml:mi><mml:mi>l</mml:mi><mml:mi>a</mml:mi><mml:mi>r</mml:mi></mml:mrow><mml:mn>0</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula> for the fat and glandular tissues, respectively, where &#x3BB;<sub>1</sub> is an unknown scalar. To minimize the number of unknown parameters, we consider the effect of the swelling as homogeneous with respect to the fat and glandular tissue stiffness. We can use then a unique scaling factor &#x3BB;<sub>1</sub> for tissue stiffness that applies to both fat and glandular tissues. The skin Young modulus is unchanged from Phase 0 as as the effects of inflammation are more prevalent on internal soft tissues. We assumed a region of constant width <italic>&#x3B4;</italic><sub><italic>inflammation</italic></sub> = 5 mm around the wound edge modeling the local inflammation. We modeled this region of higher stiffness with a Young modulus of <italic>E</italic><sub><italic>inflammation</italic></sub> = 80 kPa [<xref rid="pone.0125006.ref043" ref-type="bibr">43</xref>]. We also assumed that healing at this early phase had not enough time to produce new scar tissue.</p>
+      <p>The new vector of unknown in <xref ref-type="disp-formula" rid="pone.0125006.e004">Eq (4)</xref> is <italic>&#x3B1;</italic> = {&#x3BB;<sub>1</sub>, <italic>P</italic>}. We obtained a global minimum of our objective function <italic>f</italic> that led to the best fitting in <xref ref-type="fig" rid="pone.0125006.g011">Fig 11</xref> for <italic>P</italic> = 120 Pa and &#x3BB;<sub>1</sub> = 2.0. The surface response in <xref ref-type="fig" rid="pone.0125006.g013">Fig 13</xref> indicated a much higher sensitivity in the dimension of the parameter &#x3BB;<sub>1</sub>, where the fitting appeared nearly independent from the pressure <italic>P</italic>. We explain this result by the fact that the filling of the wound cavity by seroma increased <italic>locally</italic> the volume of the breast at the location of the wound while <xref ref-type="disp-formula" rid="pone.0125006.e004">Eq (4)</xref> provided a global metric of the breast contour. The dependency in <italic>P</italic> is shown in <xref ref-type="fig" rid="pone.0125006.g014">Fig 14</xref> where the global minimum is visible.</p>
+      <fig id="pone.0125006.g013" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g013</object-id>
+        <label>Fig 13</label>
+        <caption>
+          <title>Surface response of <italic>f</italic> for Phase I.</title>
+          <p>Surface response of <italic>f</italic> (see <xref ref-type="disp-formula" rid="pone.0125006.e004">Eq 4</xref>) obtained in the determination of the parameters &#x3BB;<sub>1</sub>, <italic>P</italic> described in <xref ref-type="table" rid="pone.0125006.t002">Table 2</xref>.</p>
+        </caption>
+        <graphic xlink:href="pone.0125006.g013"/>
+      </fig>
+      <fig id="pone.0125006.g014" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g014</object-id>
+        <label>Fig 14</label>
+        <caption>
+          <title>Projection of the surface response of <italic>f</italic> for Phase I.</title>
+          <p>Projection of <italic>f</italic> for Phase I (see <xref ref-type="fig" rid="pone.0125006.g013">Fig 13</xref>) in the plane &#x3BB;<sub>1</sub> = 2.0.</p>
+        </caption>
+        <graphic xlink:href="pone.0125006.g014"/>
+      </fig>
+      <p>While the resulting fitting using a single scaling factor &#x3BB;<sub>1</sub> was remarkably good, we may consider an independent increase in stiffness for the fat and glandular tissues in the 3D case. As a matter of fact, the 3D fitting of our model might be more difficult to achieve than in the 2D case, but will also provide more data to retrieve additional parameters. The model fitting then confirmed a doubling of the stiffness of the breast tissues and a positive pressure in the cavity left by the resection. Both are necessary to get the best fitting. The global increase of tissue stiffness seemed, however, to be prevalent.</p>
+      <p>We noticed in Figs <xref ref-type="fig" rid="pone.0125006.g008">8</xref> and <xref ref-type="fig" rid="pone.0125006.g009">9</xref> that the effect of seroma increasing the pressure in the cavity and the increased stiffness of the tissue was somehow reversible. As a matter of fact we assumed that no healing had progressed yet. In other words, once the excess of seroma was managed by the lymphatic network, and the tissue stiffness relaxed to a lower value, the tissue shape should have no memory in the time scale of a week. We then restarted the simulation of the breast tissue deformation with the mechanical parameters corresponding to the relaxed state of Phase 0.</p>
+      <p>As a result of this quasi-steady assumption, we assumed for the next phase that the pressure in the cavity would return to zero, and that the dominant effect was dependent on the change of geometry of the cavity that became smaller.</p>
+      <p><bold>Phase II:</bold> In the second phase of healing following the inflammation, the increase in production of growth factors such as PDGF and TGF-<italic>&#x3B2;</italic> triggers cellular activity and collagen deposition in the wound cavity [<xref rid="pone.0125006.ref033" ref-type="bibr">33</xref>, <xref rid="pone.0125006.ref044" ref-type="bibr">44</xref>]. In this phase, we did not distinguish between the proliferative and remodeling phases of the wound healing, which mainly differ at the cellular level. At the end of the inflammatory phase, the shape of the breast may have returned to its shape at Phase 0, except that a cosmetic defect may result from the new shape of the empty cavity surrounded by newly formed scar tissues.</p>
+      <p>To take into account the progress of the healing of the wound, we used our coupled mecano-biology model for the duration of 19 weeks corresponding to the next clinical exam with our patient. The cell division probability <italic>p</italic> is correlated to the velocity at which the wound edge progresses in its normal direction with the parameters <italic>&#x3B1;</italic><sub>0</sub>, <italic>&#x3B1;</italic><sub>1</sub>. We neglected the secondary effect related to the mechanical stress by setting <italic>&#x3B1;</italic><sub>1</sub> = 0 as justified in Section 1; we restricted our search for <italic>&#x3B1;</italic><sub>0</sub> in the parameter range [0, 0.6]. We also included a uniform multiplicative factor &#x3BB;<sub>2</sub> to account for the increase in stiffness of the newly created scar tissue as well as the surrounding tissues in the breast while retaining the hypothesis introduced in Phase 1.</p>
+      <p>The new vector of unknown in <xref ref-type="disp-formula" rid="pone.0125006.e004">Eq (4)</xref> is <italic>&#x3B1;</italic> = {&#x3BB;<sub>2</sub>, <italic>&#x3B1;</italic><sub>0</sub>}. We obtain a global minimum of the objective function <italic>f</italic> for &#x3BB;<sub>2</sub> = 1.2 and <italic>&#x3B1;</italic><sub>0</sub> = 0.17. We then had an increase of the tissue stiffness of the order of 20%. This value was significantly lower than observed for the previous phase of the healing. This confirmed our initial guess of different phases of healing characterized in part by the changes in the stiffness of the breast tissues.</p>
+      <p>The surface response in <xref ref-type="fig" rid="pone.0125006.g015">Fig 15</xref> a higher sensitivity on parameter &#x3BB;<sub>2</sub> while variations due to <italic>&#x3B1;</italic><sub>0</sub> are of order of magnitude of 10% lower. When we project the surface response in the &#x3BB;<sub>2</sub> direction (see <xref ref-type="fig" rid="pone.0125006.g016">Fig 16</xref>) we observe multiple local minima for <italic>&#x3B1;</italic><sub>0</sub> &#x2208; [0.15, 0.5]; this lack of selection on <italic>&#x3B1;</italic><sub>0</sub> did not permit us to conclude quantitatively on the validation of the parameters of the biological model of wound healing.</p>
+      <fig id="pone.0125006.g015" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g015</object-id>
+        <label>Fig 15</label>
+        <caption>
+          <title>Surface response of <italic>f</italic> for Phase II.</title>
+          <p>Surface response of <italic>f</italic> (see <xref ref-type="disp-formula" rid="pone.0125006.e004">Eq 4</xref>) obtained in the determination of the parameters &#x3BB;<sub>2</sub>, <italic>&#x3B1;</italic><sub>0</sub> described in <xref ref-type="table" rid="pone.0125006.t002">Table 2</xref>.</p>
+        </caption>
+        <graphic xlink:href="pone.0125006.g015"/>
+      </fig>
+      <fig id="pone.0125006.g016" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g016</object-id>
+        <label>Fig 16</label>
+        <caption>
+          <title>Projection of the surface response of <italic>f</italic> for Phase II.</title>
+          <p>Projection of <italic>f</italic> for Phase II (see <xref ref-type="fig" rid="pone.0125006.g015">Fig 15</xref>) in the plane &#x3BB;<sub>2</sub> = 1.2.</p>
+        </caption>
+        <graphic xlink:href="pone.0125006.g016"/>
+      </fig>
+      <p>With the minimum <italic>&#x3B1;</italic><sub>0</sub> = 0.17, appearing to be only marginally a global minimum, our mechano-biological model predicted, for week 19 after surgery, a cavity of size 13 mm &#xD7; 8 mm in the vertical loaded position. This is actually somehow coherent with <xref ref-type="fig" rid="pone.0125006.g017">Fig 17</xref> an ultrasound image of the patient&#x2019;s breast acquired at week 19 after surgery in which the size of the cavity measured was of the order of 12 mm &#xD7; 4 mm. In this context, and because of the uncertainties on the ultrasound imaging along with the small size of the wound cavity of the patient, we cannot validate quantitatively the effects of the parameter <italic>&#x3B1;</italic><sub>1</sub> just on the 2D contour of the breast. We may however be able to do better as we develop further our work using 3D data. Nevertheless, we observe in the ultrasound imaging of the wound in <xref ref-type="fig" rid="pone.0125006.g017">Fig 17</xref> a more elongated shape of the wound cavity than predicted by our model in the absence of <italic>alpha</italic><sub>1</sub>, consistent with the <italic>qualitative</italic> prediction of our model regarding the effect of mechanical stress on wound healing when <italic>&#x3B1;</italic><sub>1</sub> &#x2260; 0 [<xref rid="pone.0125006.ref012" ref-type="bibr">12</xref>].</p>
+      <fig id="pone.0125006.g017" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g017</object-id>
+        <label>Fig 17</label>
+        <caption>
+          <title>Ultrasound imaging of the wound.</title>
+          <p>Image acquired in the transverse plane of the wound at week 19 after surgery. The segments 1 and 2 were measured at 13 mm and 4 mm, respectively.</p>
+        </caption>
+        <graphic xlink:href="pone.0125006.g017"/>
+      </fig>
+      <p><bold>Phase III:</bold> The third and last phase of the healing we have monitored seemed dominated by the impact of the radiation therapy. In general, patients undergo radiation therapy usually 2 to 3 weeks after surgery in order to minimize the risk of tumor recurrence. However our patient had chemotherapy in addition to BCT, which therefore delayed the course of radiotherapy. The patient was given external beam radiation therapy for 7 weeks, starting on week 20.</p>
+      <p>Our next and last clinical exam used to fit the model for this phase was at week 34, about 7 weeks after the end of the radiotherapy treatment. In our prediction with the mechano-biology model, the size of the lumpectomy would have been less than a centimeter at week 34. Beside, the effect of the increased curvature of the wound becomes smaller should speed up the closure [<xref rid="pone.0125006.ref013" ref-type="bibr">13</xref>, <xref rid="pone.0125006.ref033" ref-type="bibr">33</xref>]. We assumed then that the wound was closed at week 34.</p>
+      <p>In this phase, we introduced in the mechanical model the newly created scar tissue filling the lumpectomy cavity with a Young modulus <italic>E</italic><sub><italic>scar</italic></sub> unknown <italic>a priori</italic>. Tissues density and Poisson ratio are supposed to be uniform across the breast and unchanged. We again used a multiplicative factor &#x3BB;<sub>3</sub> applied to the fat and glandular tissues in order to model the stiffness increase caused by the radiation treatment.</p>
+      <p>The new vector of unknown in <xref ref-type="disp-formula" rid="pone.0125006.e004">Eq (4)</xref> is <italic>&#x3B1;</italic> = {&#x3BB;<sub>3</sub>, <italic>E</italic><sub><italic>scar</italic></sub>}. We obtained a minimum of the objective function <italic>f</italic> shown in <xref ref-type="fig" rid="pone.0125006.g018">Fig 18</xref> for <italic>E</italic><sub><italic>scar</italic></sub> = 24 kPa and &#x3BB;<sub>3</sub> = 1.7. This increase in tissue stiffness from the second phase of healing was in accordance with our observation of the patient and confirmed our initial estimate of the presence of three distinct phases of healing. However, the very small variations of the surface response of <italic>f</italic> in the dimension of <italic>E</italic><sub><italic>scar</italic></sub> implied that our prediction on the Young modulus of the scar tissues was not really conclusive.</p>
+      <fig id="pone.0125006.g018" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0125006.g018</object-id>
+        <label>Fig 18</label>
+        <caption>
+          <title>Surface response of <italic>f</italic> for Phase III.</title>
+          <p>Surface response of <italic>f</italic> (see <xref ref-type="disp-formula" rid="pone.0125006.e004">Eq 4</xref>) obtained in the determination of the parameters of the model &#x3BB;<sub>3</sub>, <italic>E</italic><sub><italic>scar</italic></sub> described in <xref ref-type="table" rid="pone.0125006.t002">Table 2</xref>.</p>
+        </caption>
+        <graphic xlink:href="pone.0125006.g018"/>
+      </fig>
+    </sec>
+    <sec sec-type="conclusions" id="sec010">
+      <title>Discussion</title>
+      <p>We have begun with the first patient enrolled in our clinical study to interrogate a multifactorial model of breast recovery after surgery. The goal was to confirm our heuristic knowledge on the phenomenology. We have been able to confirm with this work that BCT outcome is indeed multiscale by nature. Thanks to our general mechano-biological model framework, we are able to study separately the effects of each factor on the breast shape such as change of stiffness in tissues, positive pressure in the wound cavity, production of scar tissue, etc.</p>
+      <p>We took a step further here and tried to retrieve the dominant factors affecting the breast shape of the patient based on clinical measurable data that can be easily incorporated in the standard health care follow up procedure. The answer is indeed time-dependent since inflammation can produce transient phenomena that temporarily mask the final cosmetic outcome.</p>
+      <p>The choice of our first patient was rather critical to start this study in close to ideal conditions: the cosmetic outcome was rather good and the location of the tumor was such that we could work quickly with 2D prediction in the sagittal plane. What we could not easily anticipate was the fact that this patient would require chemotherapy, therefore delaying radiotherapy. This resulted in some healing during the chemotherapy that we could not measure.</p>
+      <p>This study allowed us to obtain a fitting between our model and the clinical data for this patient better than what we would have expected initially. This result might be significant because we operate the fitting with a very minimum number of parameters, 2 or 3 at most, that are patient-specific. Furthermore, we have learned from this study how to improve our clinical protocol. For example, it is clear that we should see the patient more often, for a longer period of time and during any treatment phase (chemotherapy and/or radiotherapy).</p>
+      <p>This study also further justifies validation by 3D accurate reconstruction of the cavity left by the resection of the tumor with 3D ultrasound imaging. 3D ultrasound is becoming more common and affordable. Fortunately, we have acquired a 3D surface imaging capable to complete the study.</p>
+      <p>We are now pursuing this clinical study with new patients [<xref rid="pone.0125006.ref021" ref-type="bibr">21</xref>], and are planning for a small subpopulation to undergo MRI exams in order to obtain some ground truth measurements. We are also confident that we can pursue this study with patients who present more challenging BCT conditions. In particular, we will begin to follow up cases where tumors are at locations that may lead to dissymmetry. In this case, we will indeed use 3D modeling and perhaps get from that additional dimension in our model some improvement in our understanding of the phenomenon. Ideally, we should gradually increase the complexity of the biological component of our model and its relationship with radiotherapy. This may give us a better way to predict and possibly minimize the cosmetic outcome of BCT while controlling at best tumor recurrence.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="sec011">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0125006.s001">
+        <label>S1 Protocol</label>
+        <caption>
+          <title>Study protocol.</title>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0125006.s001.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0125006.s002">
+        <label>S1 TREND Checklist</label>
+        <caption>
+          <title>Transparent Reporting of Evaluations with Nonrandomized Designs (TREND) checklist.</title>
+          <p>(PDF)</p>
+        </caption>
+        <media xlink:href="pone.0125006.s002.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We would like to thank the Department of Surgery at the Houston Methodist hospital for providing the data and instruments used in this study. We would also like to thank the patient for volunteering in the clinical trial.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0125006.ref001">
+        <label>1</label>
+        <mixed-citation publication-type="other">National Cancer Institute. Breast Cancer Risk in American Women; 2012. Accessed March 4, 2014. <ext-link ext-link-type="uri" xlink:href="http://www.cancer.gov/caricertopics/factsheet/detection/probability-breast-cancer">http://www.cancer.gov/cancertopics/factsheet/detection/probability-breast-cancer</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref002">
+        <label>2</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Benson</surname><given-names>JR</given-names></name>, <name><surname>Jatoi</surname><given-names>I</given-names></name>, <name><surname>Keisch</surname><given-names>M</given-names></name>, <name><surname>Esteva</surname><given-names>FJ</given-names></name>, <name><surname>Makris</surname><given-names>A</given-names></name>, <name><surname>Jordan</surname><given-names>VC</given-names></name>. <article-title>Early breast cancer</article-title>. <source>Lancet</source>. <year>2009</year>;<volume>373</volume>(<issue>9673</issue>):<fpage>1463</fpage>&#x2013;<lpage>1479</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0140-6736(09)60316-0">10.1016/S0140-6736(09)60316-0</ext-link></comment>
+<pub-id pub-id-type="pmid">19394537</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref003">
+        <label>3</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Fisher</surname><given-names>B</given-names></name>, <name><surname>Anderson</surname><given-names>S</given-names></name>, <name><surname>Bryant</surname><given-names>J</given-names></name>, <name><surname>Margolese</surname><given-names>RG</given-names></name>, <name><surname>Deutsch</surname><given-names>M</given-names></name>, <name><surname>Fisher</surname><given-names>ER</given-names></name>, <etal>et al</etal>
+<article-title>Twenty-year follow-up of a randomized trial comparing total mastectomy, lumpectomy, and lumpectomy plus irradiation for the treatment of invasive breast cancer</article-title>. <source>N Engl J Med</source>. <year>2002</year>;<volume>347</volume>(<issue>16</issue>):<fpage>1233</fpage>&#x2013;<lpage>1241</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1056/NEJMoa022152">10.1056/NEJMoa022152</ext-link></comment>
+<pub-id pub-id-type="pmid">12393820</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref004">
+        <label>4</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Clarke</surname><given-names>M</given-names></name>, <name><surname>Collins</surname><given-names>R</given-names></name>, <name><surname>Darby</surname><given-names>S</given-names></name>, <name><surname>Davies</surname><given-names>C</given-names></name>, <name><surname>Elphinstone</surname><given-names>P</given-names></name>, <name><surname>Evans</surname><given-names>E</given-names></name>, <etal>et al</etal>
+<article-title>Effects of radiotherapy and of differences in the extent of surgery for early breast cancer on local recurrence and 15-year survival: an overview of the randomised trials</article-title>. <source>Lancet</source>. <year>2005</year>;<volume>366</volume>(<issue>9503</issue>):<fpage>2087</fpage>&#x2013;<lpage>2106</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0140-6736(05)67887-7">10.1016/S0140-6736(05)67887-7</ext-link></comment>
+<pub-id pub-id-type="pmid">16360786</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref005">
+        <label>5</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Clough</surname><given-names>KB</given-names></name>, <name><surname>Cuminet</surname><given-names>J</given-names></name>, <name><surname>Fitoussi</surname><given-names>A</given-names></name>, <name><surname>Nos</surname><given-names>C</given-names></name>, <name><surname>Mosseri</surname><given-names>V</given-names></name>. <article-title>Cosmetic sequelae after conservative treatment for breast cancer: classification and results of surgical correction</article-title>. <source>Ann Plast Surg</source>. <year>1998</year>;<volume>41</volume>(<issue>5</issue>):<fpage>471</fpage>&#x2013;<lpage>481</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/00000637-199811000-00004">10.1097/00000637-199811000-00004</ext-link></comment>
+<pub-id pub-id-type="pmid">9827948</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref006">
+        <label>6</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Veiga</surname><given-names>D</given-names></name>, <name><surname>Veiga-Filho</surname><given-names>J</given-names></name>, <name><surname>Ribeiro</surname><given-names>L</given-names></name>, <name><surname>Archangelo</surname><given-names>I</given-names><suffix>Jr</suffix></name>, <name><surname>Balbino</surname><given-names>P</given-names></name>, <name><surname>Caetano</surname><given-names>L</given-names></name>, <etal>et al</etal>
+<article-title>Quality-of-life and self-esteem outcomes after oncoplastic breast-conserving surgery</article-title>. <source>Plast Reconstr Surg</source>. <year>2010</year>;<volume>125</volume>(<issue>3</issue>):<fpage>811</fpage>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/PRS.0b013e3181ccdac5">10.1097/PRS.0b013e3181ccdac5</ext-link></comment>
+<pub-id pub-id-type="pmid">20195109</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref007">
+        <label>7</label>
+        <mixed-citation publication-type="book">
+<name><surname>Bass</surname><given-names>BL</given-names></name>, <name><surname>Garbey</surname><given-names>M</given-names></name>. <chapter-title>Breast-Conserving Therapy for Breast Cancer: Targets for Investigation to Improve Results</chapter-title> In: <source>Computational Surgery and Dual Training</source>. <publisher-name>Springer</publisher-name>; <year>2010</year> p. <fpage>3</fpage>&#x2013;<lpage>11</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref008">
+        <label>8</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Al-Ghazal</surname><given-names>S</given-names></name>, <name><surname>Fallowfield</surname><given-names>L</given-names></name>, <name><surname>Blamey</surname><given-names>R</given-names></name>. <article-title>Does cosmetic outcome from treatment of primary breast cancer influence psychosocial morbidity?</article-title>
+<source>Eur J Surg Oncol</source>. <year>1999</year>;<volume>25</volume>(<issue>6</issue>):<fpage>571</fpage>&#x2013;<lpage>573</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1053/ejso.1999.0708">10.1053/ejso.1999.0708</ext-link></comment>
+<pub-id pub-id-type="pmid">10556001</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref009">
+        <label>9</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Waljee</surname><given-names>JF</given-names></name>, <name><surname>Hu</surname><given-names>ES</given-names></name>, <name><surname>Ubel</surname><given-names>PA</given-names></name>, <name><surname>Smith</surname><given-names>DM</given-names></name>, <name><surname>Newman</surname><given-names>LA</given-names></name>, <name><surname>Alderman</surname><given-names>AK</given-names></name>. <article-title>Effect of esthetic outcome after breast-conserving surgery on psychosocial functioning and quality of life</article-title>. <source>J Clin Oncol</source>. <year>2008</year>;<volume>26</volume>(<issue>20</issue>):<fpage>3331</fpage>&#x2013;<lpage>3337</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1200/JCO.2007.13.1375">10.1200/JCO.2007.13.1375</ext-link></comment>
+<pub-id pub-id-type="pmid">18612149</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref010">
+        <label>10</label>
+        <mixed-citation publication-type="book">
+<name><surname>Thanoon</surname><given-names>D</given-names></name>, <name><surname>Garbey</surname><given-names>M</given-names></name>, <name><surname>Kim</surname><given-names>NH</given-names></name>, <name><surname>Bass</surname><given-names>B</given-names></name>. <chapter-title>A computational framework for breast surgery: application to breast conserving therapy</chapter-title> In: <source>Computational Surgery and Dual Training</source>. <publisher-name>Springer</publisher-name>; <year>2010</year> p. <fpage>249</fpage>&#x2013;<lpage>266</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref011">
+        <label>11</label>
+        <mixed-citation publication-type="book">
+<name><surname>Thanoon</surname><given-names>D</given-names></name>, <name><surname>Garbey</surname><given-names>M</given-names></name>, <name><surname>Bass</surname><given-names>B</given-names></name>. <source>Computational Modeling of Breast Conserving Surgery: a Cosmetic Outcome Indicator from Virtual Surgery</source>. In: <publisher-name>BICoB</publisher-name>; <year>2011</year> p. <fpage>55</fpage>&#x2013;<lpage>60</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref012">
+        <label>12</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Garbey</surname><given-names>M</given-names></name>, <name><surname>Salmon</surname><given-names>R</given-names></name>, <name><surname>Thanoon</surname><given-names>D</given-names></name>, <name><surname>Bass</surname><given-names>B</given-names></name>. <article-title>Multiscale modeling and distributed computing to predict cosmesis outcome after a lumpectomy</article-title>. <source>J Comput Phys</source>. <year>2013</year>;<volume>244</volume>:<fpage>321</fpage>&#x2013;<lpage>335</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jcp.2012.08.002">10.1016/j.jcp.2012.08.002</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref013">
+        <label>13</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Garbey</surname><given-names>M</given-names></name>, <name><surname>Bass</surname><given-names>B</given-names></name>, <name><surname>Berceli</surname><given-names>S</given-names></name>. <article-title>Multiscale mechanobiology modeling for surgery assessment</article-title>. <source>Acta Mech Sin</source>. <year>2012</year>;<volume>28</volume>(<issue>4</issue>):<fpage>1186</fpage>&#x2013;<lpage>1202</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10409-012-0133-4">10.1007/s10409-012-0133-4</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref014">
+        <label>14</label>
+        <mixed-citation publication-type="book">
+<name><surname>Garbey</surname><given-names>M</given-names></name>, <name><surname>Bass</surname><given-names>BL</given-names></name>, <name><surname>Berceli</surname><given-names>S</given-names></name>, <name><surname>Collet</surname><given-names>C</given-names></name>, <name><surname>Cerveri</surname><given-names>P</given-names></name>. <source>Computational Surgery and Dual Training: Computing, Robotics and Imaging</source>. <publisher-name>Springer</publisher-name>; <year>2014</year>.</mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref015">
+        <label>15</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Taylor</surname><given-names>ME</given-names></name>, <name><surname>Perez</surname><given-names>CA</given-names></name>, <name><surname>Halverson</surname><given-names>KJ</given-names></name>, <name><surname>Kuske</surname><given-names>RR</given-names></name>, <name><surname>Philpott</surname><given-names>GW</given-names></name>, <name><surname>Garcia</surname><given-names>DM</given-names></name>, <etal>et al</etal>
+<article-title>Factors influencing cosmetic results after conservation therapy for breast cancer</article-title>. <source>Int J Rad Oncol Biol Phys</source>. <year>1995</year>;<volume>31</volume>(<issue>4</issue>):<fpage>753</fpage>&#x2013;<lpage>764</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/0360-3016(94)00480-3">10.1016/0360-3016(94)00480-3</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref016">
+        <label>16</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Al-Ghazal</surname><given-names>S</given-names></name>, <name><surname>Blamey</surname><given-names>R</given-names></name>, <name><surname>Stewart</surname><given-names>J</given-names></name>, <name><surname>Morgan</surname><given-names>A</given-names></name>. <article-title>The cosmetic outcome in early breast cancer treated with breast conservation</article-title>. <source>Eur J Surg Oncol</source>. <year>1999</year>;<volume>25</volume>(<issue>6</issue>):<fpage>566</fpage>&#x2013;<lpage>570</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1053/ejso.1999.0707">10.1053/ejso.1999.0707</ext-link></comment>
+<pub-id pub-id-type="pmid">10556000</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref017">
+        <label>17</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Bower</surname><given-names>JE</given-names></name>, <name><surname>Ganz</surname><given-names>PA</given-names></name>, <name><surname>Tao</surname><given-names>ML</given-names></name>, <name><surname>Hu</surname><given-names>W</given-names></name>, <name><surname>Belin</surname><given-names>TR</given-names></name>, <name><surname>Sepah</surname><given-names>S</given-names></name>, <etal>et al</etal>
+<article-title>Inflammatory biomarkers and fatigue during radiation therapy for breast and prostate cancer</article-title>. <source>Clin Cancer Res</source>. <year>2009</year>;<volume>15</volume>(<issue>17</issue>):<fpage>5534</fpage>&#x2013;<lpage>5540</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1158/1078-0432.CCR-08-2584">10.1158/1078-0432.CCR-08-2584</ext-link></comment>
+<pub-id pub-id-type="pmid">19706826</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref018">
+        <label>18</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Dormand</surname><given-names>EL</given-names></name>, <name><surname>Banwell</surname><given-names>PE</given-names></name>, <name><surname>Goodacre</surname><given-names>TE</given-names></name>. <article-title>Radiotherapy and wound healing</article-title>. <source>Int Wound J</source>. <year>2005</year>;<volume>2</volume>(<issue>2</issue>):<fpage>112</fpage>&#x2013;<lpage>127</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1742-4801.2005.00079.x">10.1111/j.1742-4801.2005.00079.x</ext-link></comment>
+<pub-id pub-id-type="pmid">16722862</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref019">
+        <label>19</label>
+        <mixed-citation publication-type="book">
+<name><surname>Bezdek</surname><given-names>JC</given-names></name>. <source>Pattern recognition with fuzzy objective function algorithms</source>. <publisher-name>Kluwer Academic Publishers</publisher-name>; <year>1981</year>.</mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref020">
+        <label>20</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Golub</surname><given-names>GH</given-names></name>, <name><surname>Hansen</surname><given-names>PC</given-names></name>, <name><surname>O&#x2019;Leary</surname><given-names>DP</given-names></name>. <article-title>Tikhonov regularization and total least squares</article-title>. <source>SIAM J Math Anal</source>. <year>1999</year>;<volume>21</volume>(<issue>1</issue>):<fpage>185</fpage>&#x2013;<lpage>194</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1137/S0895479897326432">10.1137/S0895479897326432</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref021">
+        <label>21</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Thanoon</surname><given-names>D</given-names></name>, <name><surname>Garbey</surname><given-names>M</given-names></name>, <name><surname>Bass</surname><given-names>B</given-names></name>. <article-title>Deriving indicators for breast conserving surgery using finite element analysis</article-title>. <source>Comput Methods Biomech Biomed Engin</source>. <year>2015</year>;<volume>18</volume>(<issue>5</issue>):<fpage>533</fpage>&#x2013;<lpage>544</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1080/10255842.2013.820716">10.1080/10255842.2013.820716</ext-link></comment>
+<pub-id pub-id-type="pmid">23919823</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref022">
+        <label>22</label>
+        <mixed-citation publication-type="book">
+<name><surname>Gutierrez</surname><given-names>R</given-names></name>, <name><surname>Horst</surname><given-names>KC</given-names></name>, <name><surname>Dirbas</surname><given-names>FM</given-names></name>, <name><surname>Ikeda</surname><given-names>DM</given-names></name>. <chapter-title>Breast Imaging Following Breast Conservation Therapy</chapter-title> In: <source>Breast Surgical Techniques and Interdisciplinary Management</source>. <publisher-name>Springer</publisher-name>; <year>2011</year> p. <fpage>975</fpage>&#x2013;<lpage>995</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref023">
+        <label>23</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Azar</surname><given-names>F</given-names></name>, <name><surname>Metaxas</surname><given-names>D</given-names></name>, <name><surname>Schnall</surname><given-names>M</given-names></name>. <article-title>A finite element model of the breast for predicting mechanical deformations during interventional procedures</article-title>. In: <source>Proc Int Soc Magn Reson Med</source>. <volume>vol. 7</volume>; <year>1999</year> p. <fpage>1084</fpage>&#x2013;<lpage>1085</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref024">
+        <label>24</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Schnabel</surname><given-names>JA</given-names></name>, <name><surname>Tanner</surname><given-names>C</given-names></name>, <name><surname>Castellano-Smith</surname><given-names>AD</given-names></name>, <name><surname>Degenhard</surname><given-names>A</given-names></name>, <name><surname>Leach</surname><given-names>MO</given-names></name>, <name><surname>Hose</surname><given-names>DR</given-names></name>, <etal>et al</etal>
+<article-title>Validation of nonrigid image registration using finite-element methods: application to breast MR images</article-title>. <source>IEEE Trans Med Imaging</source>. <year>2003</year>;<volume>22</volume>(<issue>2</issue>):<fpage>238</fpage>&#x2013;<lpage>247</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/TMI.2002.808367">10.1109/TMI.2002.808367</ext-link></comment>
+<pub-id pub-id-type="pmid">12716000</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref025">
+        <label>25</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Tanner</surname><given-names>C</given-names></name>, <name><surname>Schnabel</surname><given-names>JA</given-names></name>, <name><surname>Hill</surname><given-names>DL</given-names></name>, <name><surname>Hawkes</surname><given-names>DJ</given-names></name>, <name><surname>Leach</surname><given-names>MO</given-names></name>, <name><surname>Hose</surname><given-names>DR</given-names></name>. <article-title>Factors influencing the accuracy of biomechanical breast models</article-title>. <source>Med Phys</source>. <year>2006</year>;<volume>33</volume>:<fpage>1758</fpage>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1118/1.2198315">10.1118/1.2198315</ext-link></comment>
+<pub-id pub-id-type="pmid">16872083</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref026">
+        <label>26</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Rajagopal</surname><given-names>V</given-names></name>, <name><surname>Lee</surname><given-names>A</given-names></name>, <name><surname>Chung</surname><given-names>JH</given-names></name>, <name><surname>Warren</surname><given-names>R</given-names></name>, <name><surname>Highnam</surname><given-names>R</given-names></name>, <name><surname>Nielsen</surname><given-names>P</given-names></name>, <etal>et al</etal>
+<article-title>Towards Tracking Breast Cancer Across Medical Images Using Subject-Specific Biomechanical Models</article-title>. <source>Med Image Comput Comput Assist Interv</source>. <year>2007</year>;p. <fpage>651</fpage>&#x2013;<lpage>658</lpage>. <pub-id pub-id-type="pmid">18051114</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref027">
+        <label>27</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Rajagopal</surname><given-names>V</given-names></name>, <name><surname>Chung</surname><given-names>JH</given-names></name>, <name><surname>Bullivant</surname><given-names>D</given-names></name>, <name><surname>Nielsen</surname><given-names>PM</given-names></name>, <name><surname>Nash</surname><given-names>MP</given-names></name>. <article-title>Determining the finite elasticity reference state from a loaded configuration</article-title>. <source>Int J Numer Methods Eng</source>. <year>2007</year>;<volume>72</volume>(<issue>12</issue>):<fpage>1434</fpage>&#x2013;<lpage>1451</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/nme.2045">10.1002/nme.2045</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref028">
+        <label>28</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Samani</surname><given-names>A</given-names></name>, <name><surname>Bishop</surname><given-names>J</given-names></name>, <name><surname>Yaffe</surname><given-names>MJ</given-names></name>, <name><surname>Plewes</surname><given-names>DB</given-names></name>. <article-title>Biomechanical 3-D finite element modeling of the human breast using MRI data</article-title>. <source>IEEE Trans Med Imaging</source>. <year>2001</year>;<volume>20</volume>(<issue>4</issue>):<fpage>271</fpage>&#x2013;<lpage>279</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/42.921476">10.1109/42.921476</ext-link></comment>
+<pub-id pub-id-type="pmid">11370894</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref029">
+        <label>29</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Geuzaine</surname><given-names>C</given-names></name>, <name><surname>Remacle</surname><given-names>JF</given-names></name>. <article-title>Gmsh: A 3-D finite element mesh generator with built-in pre-and post-processing facilities</article-title>. <source>Int J Numer Methods Eng</source>. <year>2009</year>;<volume>79</volume>(<issue>11</issue>):<fpage>1309</fpage>&#x2013;<lpage>1331</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/nme.2579">10.1002/nme.2579</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref030">
+        <label>30</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Diridollou</surname><given-names>S</given-names></name>, <name><surname>Patat</surname><given-names>F</given-names></name>, <name><surname>Gens</surname><given-names>F</given-names></name>, <name><surname>Vaillant</surname><given-names>L</given-names></name>, <name><surname>Black</surname><given-names>D</given-names></name>, <name><surname>Lagarde</surname><given-names>J</given-names></name>, <etal>et al</etal>
+<article-title>In vivo model of the mechanical properties of the human skin under suction</article-title>. <source>Skin Res Technol</source>. <year>2000</year>;<volume>6</volume>(<issue>4</issue>):<fpage>214</fpage>&#x2013;<lpage>221</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1034/j.1600-0846.2000.006004214.x">10.1034/j.1600-0846.2000.006004214.x</ext-link></comment>
+<pub-id pub-id-type="pmid">11428960</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref031">
+        <label>31</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Maas</surname><given-names>SA</given-names></name>, <name><surname>Ellis</surname><given-names>BJ</given-names></name>, <name><surname>Ateshian</surname><given-names>GA</given-names></name>, <name><surname>Weiss</surname><given-names>JA</given-names></name>. <article-title>FEBio: finite elements for biomechanics</article-title>. <source>J Biomech Eng</source>. <year>2012</year>;<volume>134</volume>(<issue>1</issue>). <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1115/1.4005694">10.1115/1.4005694</ext-link></comment>
+<pub-id pub-id-type="pmid">22482660</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref032">
+        <label>32</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Prendergast</surname><given-names>B</given-names></name>, <name><surname>Indelicato</surname><given-names>DJ</given-names></name>, <name><surname>Grobmyer</surname><given-names>SR</given-names></name>, <name><surname>Saito</surname><given-names>AI</given-names></name>, <name><surname>Lightsey</surname><given-names>JL</given-names></name>, <name><surname>Snead</surname><given-names>FE</given-names></name>, <etal>et al</etal>
+<article-title>The dynamic tumor bed: volumetric changes in the lumpectomy cavity during breast-conserving therapy</article-title>. <source>Int J Rad Oncol Biol Phys</source>. <year>2009</year>;<volume>74</volume>(<issue>3</issue>):<fpage>695</fpage>&#x2013;<lpage>701</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ijrobp.2008.08.044">10.1016/j.ijrobp.2008.08.044</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref033">
+        <label>33</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Javierre</surname><given-names>E</given-names></name>, <name><surname>Vermolen</surname><given-names>F</given-names></name>, <name><surname>Vuik</surname><given-names>C</given-names></name>, <name><surname>Van Der Zwaag</surname><given-names>S</given-names></name>. <article-title>A mathematical analysis of physiological and morphological aspects of wound closure</article-title>. <source>J Math Biol</source>. <year>2009</year>;<volume>59</volume>(<issue>5</issue>):<fpage>605</fpage>&#x2013;<lpage>630</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00285-008-0242-7">10.1007/s00285-008-0242-7</ext-link></comment>
+<pub-id pub-id-type="pmid">19099307</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref034">
+        <label>34</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Ermentrout</surname><given-names>GB</given-names></name>, <name><surname>Edelstein-Keshet</surname><given-names>L</given-names></name>. <article-title>Cellular automata approaches to biological modeling</article-title>. <source>J Theor Biol</source>. <year>1993</year>;<volume>160</volume>(<issue>1</issue>):<fpage>97</fpage>&#x2013;<lpage>133</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1006/jtbi.1993.1007">10.1006/jtbi.1993.1007</ext-link></comment>
+<pub-id pub-id-type="pmid">8474249</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref035">
+        <label>35</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Diegelmann</surname><given-names>RF</given-names></name>, <name><surname>Evans</surname><given-names>MC</given-names></name>. <article-title>Wound healing: an overview of acute, fibrotic and delayed healing</article-title>. <source>Front Biosci</source>. <year>2004</year>;<volume>9</volume>(<issue>1</issue>):<fpage>283</fpage>&#x2013;<lpage>289</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2741/1184">10.2741/1184</ext-link></comment>
+<pub-id pub-id-type="pmid">14766366</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref036">
+        <label>36</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Li</surname><given-names>J</given-names></name>, <name><surname>Chen</surname><given-names>J</given-names></name>, <name><surname>Kirsner</surname><given-names>R</given-names></name>. <article-title>Pathophysiology of acute wound healing</article-title>. <source>Clin Dermatol</source>. <year>2007</year>;<volume>25</volume>(<issue>1</issue>):<fpage>9</fpage>&#x2013;<lpage>18</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.clindermatol.2006.09.007">10.1016/j.clindermatol.2006.09.007</ext-link></comment>
+<pub-id pub-id-type="pmid">17276196</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref037">
+        <label>37</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Monaco</surname><given-names>JL</given-names></name>, <name><surname>Lawrence</surname><given-names>WT</given-names></name>. <article-title>Acute wound healing: an overview</article-title>. <source>Clin Plast Surg</source>. <year>2003</year>;<volume>30</volume>(<issue>1</issue>):<fpage>1</fpage>&#x2013;<lpage>12</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0094-1298(02)00070-6">10.1016/S0094-1298(02)00070-6</ext-link></comment>
+<pub-id pub-id-type="pmid">12636211</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref038">
+        <label>38</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Zheng</surname><given-names>Y</given-names></name>, <name><surname>Leung</surname><given-names>S</given-names></name>, <name><surname>Mak</surname><given-names>A</given-names></name>. <article-title>Assessment of neck tissue fibrosis using an ultrasound palpation system: a feasibility study</article-title>. <source>Med Biol Eng Comput</source>. <year>2000</year>;<volume>38</volume>(<issue>5</issue>):<fpage>497</fpage>&#x2013;<lpage>502</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/BF02345743">10.1007/BF02345743</ext-link></comment>
+<pub-id pub-id-type="pmid">11094804</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref039">
+        <label>39</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Woodworth</surname><given-names>PA</given-names></name>, <name><surname>McBoyle</surname><given-names>MF</given-names></name>, <name><surname>Helmer</surname><given-names>SD</given-names></name>, <name><surname>Beamer</surname><given-names>RL</given-names></name>. <article-title>Seroma formation after breast cancer surgery: incidence and predicting factors</article-title>. <source>Am Surg</source>. <year>2000</year>;<volume>66</volume>(<issue>5</issue>):<fpage>444</fpage>&#x2013;<lpage>50</lpage>. <pub-id pub-id-type="pmid">10824744</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref040">
+        <label>40</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Gonzalez</surname><given-names>EA</given-names></name>, <name><surname>Saltzstein</surname><given-names>EC</given-names></name>, <name><surname>Riedner</surname><given-names>CS</given-names></name>, <name><surname>Nelson</surname><given-names>BK</given-names></name>. <article-title>Seroma formation following breast cancer surgery</article-title>. <source>Breast J</source>. <year>2003</year>;<volume>9</volume>(<issue>5</issue>):<fpage>385</fpage>&#x2013;<lpage>388</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1046/j.1524-4741.2003.09504.x">10.1046/j.1524-4741.2003.09504.x</ext-link></comment>
+<pub-id pub-id-type="pmid">12968958</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref041">
+        <label>41</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Collins</surname><given-names>AJ</given-names></name>, <name><surname>Ring</surname><given-names>F</given-names></name>, <name><surname>Bacon</surname><given-names>PA</given-names></name>, <name><surname>Brookshaw</surname><given-names>JD</given-names></name>. <article-title>Thermography and radiology complimentary methods for the study of inflammatory diseases</article-title>. <source>Clin Rad</source>. <year>1976</year>;<volume>27</volume>(<issue>2</issue>):<fpage>237</fpage>&#x2013;<lpage>243</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0009-9260(76)80153-5">10.1016/S0009-9260(76)80153-5</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref042">
+        <label>42</label>
+        <mixed-citation publication-type="book">
+<name><surname>Myers</surname><given-names>RH</given-names></name>, <name><surname>Anderson-Cook</surname><given-names>CM</given-names></name>. <source>Response surface methodology: process and product optimization using designed experiments</source>. <volume>vol. 705</volume>
+<publisher-name>John Wiley &amp; Sons</publisher-name>; <year>2009</year>.</mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref043">
+        <label>43</label>
+        <mixed-citation publication-type="other">Chapellier BM. ShearWave&#x2122; Elastography; 2012. Accessed 20 September 2013. <ext-link ext-link-type="uri" xlink:href="http://www.medata.cz/_docs/en_supersonicimagine-clinical_cases_sheet_2.pdf">http://www.medata.cz/_docs/en_supersonicimagine-clinical_cases_sheet_2.pdf</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref044">
+        <label>44</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Grinnell</surname><given-names>F</given-names></name>. <article-title>Fibroblasts, myofibroblasts, and wound contraction</article-title>. <source>J Cell Biol</source>. <year>1994</year>;<volume>124</volume>(<issue>4</issue>):<fpage>401</fpage>&#x2013;<lpage>404</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1083/jcb.124.4.401">10.1083/jcb.124.4.401</ext-link></comment>
+<pub-id pub-id-type="pmid">8106541</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref045">
+        <label>45</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Martin</surname><given-names>A</given-names></name>, <name><surname>Daniel</surname><given-names>M</given-names></name>, <name><surname>Drinkwater</surname><given-names>D</given-names></name>, <name><surname>Clarys</surname><given-names>J</given-names></name>, <etal>et al</etal>
+<article-title>Adipose tissue density, estimated adipose lipid fraction and whole body adiposity in male cadavers</article-title>. <source>Int J Obes</source>. <year>1994</year>;<volume>18</volume>(<issue>2</issue>):<fpage>79</fpage>&#x2013;<lpage>83</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref046">
+        <label>46</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Haddadin</surname><given-names>IS</given-names></name>, <name><surname>McIntosh</surname><given-names>A</given-names></name>, <name><surname>Meisamy</surname><given-names>S</given-names></name>, <name><surname>Corum</surname><given-names>C</given-names></name>, <name><surname>Snyder</surname><given-names>ALS</given-names></name>, <name><surname>Powell</surname><given-names>NJ</given-names></name>, <etal>et al</etal>
+<article-title>Metabolite quantification and high-field MRS in breast cancer</article-title>. <source>NMR Biomed</source>. <year>2009</year>;<volume>22</volume>(<issue>1</issue>):<fpage>65</fpage>&#x2013;<lpage>76</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/nbm.1217">10.1002/nbm.1217</ext-link></comment>
+<pub-id pub-id-type="pmid">17957820</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref047">
+        <label>47</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Pope</surname><given-names>T</given-names><suffix>Jr</suffix></name>, <name><surname>Read</surname><given-names>M</given-names></name>, <name><surname>Medsker</surname><given-names>T</given-names></name>, <name><surname>Buschi</surname><given-names>A</given-names></name>, <name><surname>Brenbridge</surname><given-names>A</given-names></name>. <article-title>Breast skin thickness: normal range and causes of thickening shown on film-screen mammography</article-title>. <source>J Can Assoc Radiol</source>. <year>1984</year>;<volume>35</volume>(<issue>4</issue>):<fpage>365</fpage>
+<pub-id pub-id-type="pmid">6526847</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref048">
+        <label>48</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Javierre</surname><given-names>E</given-names></name>, <name><surname>Moreo</surname><given-names>P</given-names></name>, <name><surname>Doblar&#xE9;</surname><given-names>M</given-names></name>, <name><surname>Garc&#xED;a-Aznar</surname><given-names>J</given-names></name>. <article-title>Numerical modeling of a mechano-chemical theory for wound contraction analysis</article-title>. <source>Int J Solids Struct</source>. <year>2009</year>;<volume>46</volume>(<issue>20</issue>):<fpage>3597</fpage>&#x2013;<lpage>3606</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ijsolstr.2009.06.010">10.1016/j.ijsolstr.2009.06.010</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref049">
+        <label>49</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Rzymski</surname><given-names>P</given-names></name>, <name><surname>Sk&#xF3;rzewska</surname><given-names>A</given-names></name>, <name><surname>Skibi&#x144;ska-Zieli&#x144;ska</surname><given-names>M</given-names></name>, <name><surname>Opala</surname><given-names>T</given-names></name>. <article-title>Factors influencing breast elasticity measured by the ultrasound Shear Wave elastography-preliminary results</article-title>. <source>Arch Med Sci</source>. <year>2011</year>;<volume>7</volume>(<issue>1</issue>):<fpage>127</fpage>&#x2013;<lpage>133</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.5114/aoms.2011.20617">10.5114/aoms.2011.20617</ext-link></comment>
+<pub-id pub-id-type="pmid">22291745</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0125006.ref050">
+        <label>50</label>
+        <mixed-citation publication-type="journal">
+<name><surname>Delalleau</surname><given-names>A</given-names></name>, <name><surname>Josse</surname><given-names>G</given-names></name>, <name><surname>Lagarde</surname><given-names>JM</given-names></name>, <name><surname>Zahouani</surname><given-names>H</given-names></name>, <name><surname>Bergheau</surname><given-names>JM</given-names></name>. <article-title>Characterization of the mechanical properties of skin by inverse analysis combined with the indentation test</article-title>. <source>J Biomech</source>. <year>2006</year>;<volume>39</volume>(<issue>9</issue>):<fpage>1603</fpage>&#x2013;<lpage>1610</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jbiomech.2005.05.001">10.1016/j.jbiomech.2005.05.001</ext-link></comment>
+<pub-id pub-id-type="pmid">15990103</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

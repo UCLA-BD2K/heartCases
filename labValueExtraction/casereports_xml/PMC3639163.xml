@@ -1,0 +1,1292 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">23658651</article-id>
+      <article-id pub-id-type="pmc">3639163</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-12-22778</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0062774</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Sequence Analysis</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Genetic Mutation</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genomics</subject>
+            <subj-group>
+              <subject>Genome Sequencing</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Microbiology</subject>
+            <subj-group>
+              <subject>Microbial Mutation</subject>
+              <subject>Microbial Pathogens</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Infectious Diseases</subject>
+            <subj-group>
+              <subject>Bacterial Diseases</subject>
+              <subj-group>
+                <subject>Klebsiella Pneumonia</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Copy Number Change of the NDM-1 Sequence in a Multidrug-Resistant <italic>Klebsiella pneumoniae</italic> Clinical Isolate</article-title>
+        <alt-title alt-title-type="running-head">Copy Number Change of the NDM-1 Sequence</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Huang</surname>
+            <given-names>Tzu-Wen</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chen</surname>
+            <given-names>Te-Li</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chen</surname>
+            <given-names>Ying-Tsong</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lauderdale</surname>
+            <given-names>Tsai-Ling</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Liao</surname>
+            <given-names>Tsai-Lien</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lee</surname>
+            <given-names>Yi-Tzu</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff10">
+            <sup>10</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chen</surname>
+            <given-names>Chien-Pei</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Liu</surname>
+            <given-names>Yen-Ming</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lin</surname>
+            <given-names>Ann-Chi</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chang</surname>
+            <given-names>Ya-Hui</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wu</surname>
+            <given-names>Keh-Ming</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff8">
+            <sup>8</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kirby</surname>
+            <given-names>Ralph</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff9">
+            <sup>9</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lai</surname>
+            <given-names>Jui-Fen</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tan</surname>
+            <given-names>Mei-Chen</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Siu</surname>
+            <given-names>Leung-Kei</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chang</surname>
+            <given-names>Chung-Ming</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Fung</surname>
+            <given-names>Chang-Phone</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tsai</surname>
+            <given-names>Shih-Feng</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff8">
+            <sup>8</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff9">
+            <sup>9</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Institute of Molecular and Genomic Medicine, National Health Research Institutes, Miaoli, Taiwan</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>National Institute of Infectious Diseases and Vaccinology, National Health Research Institutes, Miaoli, Taiwan</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Division of Infectious Diseases, Taipei Veterans General Hospital, Taipei, Taiwan</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Immunology Research Center, Taipei Veterans General Hospital, Taipei, Taiwan</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>Institute of Genomics and Bioinformatics, National Chung-Hsing University, Taichung, Taiwan</addr-line>
+      </aff>
+      <aff id="aff6">
+        <label>6</label>
+        <addr-line>Biotechnology Center, National Chung-Hsing University, Taichung, Taiwan</addr-line>
+      </aff>
+      <aff id="aff7">
+        <label>7</label>
+        <addr-line>Institute of Clinical Medicine, National Yang-Ming University, Taipei, Taiwan</addr-line>
+      </aff>
+      <aff id="aff8">
+        <label>8</label>
+        <addr-line>Genome Research Center, National Yang-Ming University, Taipei, Taiwan</addr-line>
+      </aff>
+      <aff id="aff9">
+        <label>9</label>
+        <addr-line>Department of Life Sciences and Institute of Genome Sciences, National Yang-Ming University, Taipei, Taiwan</addr-line>
+      </aff>
+      <aff id="aff10">
+        <label>10</label>
+        <addr-line>Department of Medicine, Chutung Veterans Hospital, Chutung, Hsinchu County, Taiwan</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Forestier</surname>
+            <given-names>Christiane</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Universit&#xE9; d'Auvergne Clermont 1, France</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>petsai@nhri.org.tw</email></corresp>
+        <fn fn-type="conflict">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: TWH TLC SFT. Performed the experiments: TWH T.L. Liao CPC YML ACL YHC JFL MCT. Analyzed the data: TWH YTC KMW RK. Contributed reagents/materials/analysis tools: TLC YTL CPF. Wrote the paper: TWH YTC T.L. Lauderdale LKS CMC SFT RK.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>29</day>
+        <month>4</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>4</issue>
+      <elocation-id>e62774</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>31</day>
+          <month>7</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>26</day>
+          <month>3</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Huang et al</copyright-holder>
+        <license>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>The genetic features of the antimicrobial resistance of a multidrug resistant <italic>Klebsiella pneumoniae</italic> strain harboring <italic>bla</italic><sub>NDM-1</sub> were investigated to increase our understanding of the evolution of NDM-1. The strain, KPX, came from a Taiwanese patient with a hospitalization history in New Delhi. Complete DNA sequencing was performed; and the genes responsible for antimicrobial resistance were systematically examined and isolated by library screening. KPX harbored two resistance plasmids, pKPX-1 and pKPX-2, which are 250-kb and 141-kb in size, respectively, with <italic>bla</italic><sub>NDM-1</sub> present on pKPX-1. The plasmid pKPX-1 contained genes associated with the IncR and IncF groups, while pKPX-2 belonged to the IncF family. Each plasmid carried multiple antimicrobial resistance genetic determinants. The gene responsible for resistance to carbapenems was found on pKPX-1 and that for resistance to aztreonam was found on pKPX-2. To our surprise, we discovered that <italic>bla</italic><sub>NDM-1</sub> exists on pKPX-1 as multiple copies in the form of tandem repeats. Amplification of <italic>bla</italic><sub>NDM-1</sub> was found to occur by duplication of an 8.6-kb unit, with the copy number of the repeat varying from colony to colony. This repeat sequence is identical to that of the pNDM-MAR except for two base substitutions. The copy number of <italic>bla</italic><sub>NDM-1</sub> of colonies under different conditions was assessed by Southern blotting and quantitative PCR. The <italic>bla</italic><sub>NDM-1</sub> sequence was maintained in the presence of the antimicrobial selection; however, removal of antimicrobial selection led to the emergence of susceptible bacterial populations with a reduced copy number or even the complete loss of the <italic>bla</italic><sub>NDM-1</sub> sequence. The dynamic nature of the NDM-1 sequence provides a strong argument for judicious use of the broad-spectrum antimicrobials in order to reduce the development and spread of antimicrobial resistance among pathogens.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work is supported in part by National Science Council grants to TLC (NSC 98-2314-B-010-010-MY3), SFT (NSC 99-2320-B-400 -013-MY3) and YTC (NSC 100-2311-B-005-001). SFT, TLL, CMC have received long-term support from the National Health Research Institutes. TLC is supported by Immunology Research Center at Taipei Veterans General Hospital (V100E4-005). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="12"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>A novel metallo-&#x3B2;-lactamase, New Delhi metallo-&#x3B2;-lactamase (NDM-1), was first identified in 2008 in a <italic>Klebsiella pneumoniae</italic> strain isolated from a Swedish patient who had received surgery in a New Delhi hospital <xref ref-type="bibr" rid="pone.0062774-Yong1">[1]</xref>. Since then, the bacteria harboring NDM-1 coding sequence, <italic>bla</italic><sub>NDM-1</sub>, have been isolated worldwide in different species of <italic>Enterobacteriaceae</italic>, <italic>Acinetobacter baumannii</italic> and <italic>Pseudomonas aeruginosa</italic>
+<xref ref-type="bibr" rid="pone.0062774-Kumarasamy1">[2]</xref>, <xref ref-type="bibr" rid="pone.0062774-Nordmann1">[3]</xref>, <xref ref-type="bibr" rid="pone.0062774-Pillai1">[4]</xref>, <xref ref-type="bibr" rid="pone.0062774-Walsh1">[5]</xref>, <xref ref-type="bibr" rid="pone.0062774-Chen1">[6]</xref>, <xref ref-type="bibr" rid="pone.0062774-Karthikeyan1">[7]</xref>, <xref ref-type="bibr" rid="pone.0062774-Jovcic1">[8]</xref>. The global dissemination of these highly resistant bacteria has drawn significant attention and become a major concern among the general public as well as among medical professionals <xref ref-type="bibr" rid="pone.0062774-Walsh1">[5]</xref>, <xref ref-type="bibr" rid="pone.0062774-Moellering1">[9]</xref>; this is because most of these bacteria are multidrug resistant and remain susceptible <italic>in vitro</italic> to only a limited number of antimicrobials <xref ref-type="bibr" rid="pone.0062774-Livermore1">[10]</xref>, such as polymyxin and tigecycline.</p>
+      <p>NDM-1 is a broad-spectrum &#x3B2;-lactamase and is able to hydrolyze all &#x3B2;-lactam antimicrobials except aztreonam <xref ref-type="bibr" rid="pone.0062774-Yong1">[1]</xref>. The plasmids carrying <italic>bla</italic><sub>NDM-1</sub> seem to have a broad host range <xref ref-type="bibr" rid="pone.0062774-Walsh1">[5]</xref>; and many of them are readily transferred to <italic>E. coli</italic>, which might be one of the reasons for the rapid dissemination of <italic>bla</italic><sub>NDM-1</sub> into various <italic>Enterobacteriaceae</italic>
+<xref ref-type="bibr" rid="pone.0062774-Walsh1">[5]</xref>, <xref ref-type="bibr" rid="pone.0062774-Potron1">[11]</xref>. Furthermore, NDM-1 genes are associated with not only other &#x3B2;-lactam but also non-&#x3B2;-lactam resistance determinants that can be co-harbored on the same plasmid <xref ref-type="bibr" rid="pone.0062774-Nordmann2">[12]</xref>, <xref ref-type="bibr" rid="pone.0062774-Poirel1">[13]</xref>. The ease of the transfer of these broad-host-range multidrug-resistant plasmids within the <italic>Enterobacteriaceae</italic> is very worrisome. It is therefore crucial to gain an understanding of the various resistance determinants carried by these plasmids as well as of various other characteristics associated with the transferability of these plasmids.</p>
+      <p>Shotgun sequencing has been successfully used to explore the genetic backgrounds of bacteria with multidrug resistant phenotypes. For NDM-1 positive isolates, many partial and complete plasmid sequences have been deposited in public databases and published. To date, nine plasmids carrying <italic>bla</italic><sub>NDM-1</sub> isolated from different countries have been investigated; they were found to belong to a range of different incompatibility groups (IncL/M <xref ref-type="bibr" rid="pone.0062774-Ho1">[14]</xref>, IncA/C <xref ref-type="bibr" rid="pone.0062774-Sekizuka1">[15]</xref>, <xref ref-type="bibr" rid="pone.0062774-Carattoli1">[16]</xref>, <xref ref-type="bibr" rid="pone.0062774-McGann1">[17]</xref>, IncN2 <xref ref-type="bibr" rid="pone.0062774-Poirel2">[18]</xref>, IncFII <xref ref-type="bibr" rid="pone.0062774-Bonnin1">[19]</xref>, IncH <xref ref-type="bibr" rid="pone.0062774-Villa1">[20]</xref>, IncHI1 <xref ref-type="bibr" rid="pone.0062774-Dolejska1">[21]</xref> and untypeable <xref ref-type="bibr" rid="pone.0062774-Hu1">[22]</xref>). Complete sequences of these plasmids indicated that although the core regions of <italic>bla</italic><sub>NDM-1</sub> share certain similarity, the regions neighboring <italic>bla</italic><sub>NDM-1</sub> are quite variable and contain several insertion sequences, which probably reflects multiple genetic modification events. (For a review see Nordmann <italic>et al.</italic>
+<xref ref-type="bibr" rid="pone.0062774-Nordmann2">[12]</xref>.) Furthermore, it has been shown that the remnant of IS<italic>Aba125</italic> found upstream of <italic>bla</italic><sub>NDM-1</sub> and the bleomycin resistance gene (<italic>ble</italic><sub>MBL</sub>) found downstream of <italic>bla</italic><sub>NDM-1</sub> are mostly conserved in <italic>Enterobacteriaceae</italic>
+<xref ref-type="bibr" rid="pone.0062774-Poirel1">[13]</xref>. Together these findings provide convincing molecular evidence that allows the dissemination and evolution of the <italic>bla</italic><sub>NDM-1</sub> sequence to be traced and the possible environmental origin of strains and plasmids to be pinpointed <xref ref-type="bibr" rid="pone.0062774-Sekizuka1">[15]</xref>.</p>
+      <p>In this study, we report the complete genetic determinants encoding antimicrobial resistance in a multidrug resistant <italic>K. pneumoniae</italic> strain carrying <italic>bla</italic><sub>NDM-1</sub> from a Taiwanese patient. Our new findings, which are based on laboratory experiments, corroborate the clinical observations collected from this silent carrier of a NDM-1-positive isolate; furthermore, the detailed molecular analysis of the NDM-1 region has generated new insights into the dynamic features of the region&#x2019;s unique structure.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s2">
+      <title>Materials and Methods</title>
+      <sec id="s2a">
+        <title>Patient and Clinical Course</title>
+        <p>A 38-year-old Taiwanese man was repatriated to Taiwan after undergoing an operation in a medical center in New Delhi, India. This patient had stayed in an Indian intensive care unit for 8 days <xref ref-type="bibr" rid="pone.0062774-Wu1">[23]</xref>. <italic>K. pneumoniae</italic> carrying <italic>bla</italic><sub>NDM-1</sub> (designated KPX) was isolated from two rectal swab samples of this patient as part of his routine clinical treatment. The identification and the antimicrobial profile of these isolates were fully characterized (<xref ref-type="table" rid="pone-0062774-t001">Table 1</xref>). About one month after the first isolation of the NDM-1 positive <italic>K. pneumoniae</italic>, the Taiwan CDC announced that the bacterium had not been detected in three consecutive samples from rectal swabs <xref ref-type="bibr" rid="pone.0062774-Chen2">[24]</xref>.</p>
+        <table-wrap id="pone-0062774-t001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0062774.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Minimal inhibitory concentrations (MICs)<xref ref-type="table-fn" rid="nt101">*</xref> for different antimicrobial agents of <italic>K. pneumoniae</italic> KPX, <italic>E. coli</italic> DH10B, and <italic>E. coli</italic> transformants of DNA derived from <italic>K. pneumoniae</italic> KPX.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0062774-t001-1" xlink:href="pone.0062774.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Agent</td>
+                  <td colspan="2" align="left" rowspan="1">KPX</td>
+                  <td colspan="2" align="left" rowspan="1"><italic>E. coli</italic> DH10B</td>
+                  <td colspan="2" align="left" rowspan="1">ECX-1</td>
+                  <td colspan="2" align="left" rowspan="1">ECX-2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">MIC</td>
+                  <td align="left" rowspan="1" colspan="1">Interpretation</td>
+                  <td align="left" rowspan="1" colspan="1">MIC</td>
+                  <td align="left" rowspan="1" colspan="1">Interpretation</td>
+                  <td align="left" rowspan="1" colspan="1">MIC</td>
+                  <td align="left" rowspan="1" colspan="1">Interpretation</td>
+                  <td align="left" rowspan="1" colspan="1">MIC</td>
+                  <td align="left" rowspan="1" colspan="1">Interpretation</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Ampicillin</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Piperacillin</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">1.5</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Ampicillin/sulbactam</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">24</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Ticarcillin/clavulanate</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">64</td>
+                  <td align="left" rowspan="1" colspan="1">I</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Piperacillin/tazobactam</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Cefazolin</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;32</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;32</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;32</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Cefuroxime</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Cefoxitin</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Cefotaxime</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.125</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Ceftazidime</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.38</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">16</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Ceftriaxone</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.094</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">192</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Cefepime</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.064</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">8</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Aztreonam</td>
+                  <td align="left" rowspan="1" colspan="1">256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.19</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">0.19</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">48</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Ertapenem</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;32</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.008</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;32</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.016</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Imipenem</td>
+                  <td align="left" rowspan="1" colspan="1">12</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.25</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;32</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.25</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Meropenem</td>
+                  <td align="left" rowspan="1" colspan="1">16</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.032</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">32</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.032</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Doripenem</td>
+                  <td align="left" rowspan="1" colspan="1">32</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.032</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">32</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.032</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Gentamicin</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;1024</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.5</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">0.75</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">24</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Amikacin</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Nalidixic acid</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">1.5</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">1.5</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Ciprofloxacin</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;32</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.004</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">0.004</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">0.19</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Levofloxacin</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;32</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.008</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">0.008</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">0.064</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Trimethoprim/sulfamethoxazole</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;32</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">0.0147</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;32</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;32</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Chloramphenicol</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Tetracycline</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;256</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                  <td align="left" rowspan="1" colspan="1">1.5</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">1.5</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">32</td>
+                  <td align="left" rowspan="1" colspan="1">R</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Minocycline</td>
+                  <td align="left" rowspan="1" colspan="1">12</td>
+                  <td align="left" rowspan="1" colspan="1">I/R</td>
+                  <td align="left" rowspan="1" colspan="1">0.5</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">0.75</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">0.75</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Tigecycline</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">0.19</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">0.19</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">0.19</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Polymyxin E</td>
+                  <td align="left" rowspan="1" colspan="1">0.38</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2264;0.064</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2264;0.064</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                  <td align="left" rowspan="1" colspan="1">&#x2264;0.064</td>
+                  <td align="left" rowspan="1" colspan="1">S</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label>*</label>
+              <p>MIC interpretations are based on Clinical and Laboratory Standards Institute (CLSI) breakpoints (CLSI M100-S21, <xref ref-type="bibr" rid="pone.0062774-Clinical1">[28]</xref>), except for polymyxin E and tigecycline, which are based on EUCAST (<ext-link ext-link-type="uri" xlink:href="http://www.eucast.org/clinical_breakpoints/">http://www.eucast.org/clinical_breakpoints/</ext-link>) breakpoints.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="s2b">
+        <title>Bacterial Identification and Antimicrobial Susceptibilities Tests</title>
+        <p>The cultured samples were inoculated onto MacConkey agar plates (BBL, Becton Dickinson Microbiology Systems, Cockeysville, MD) containing imipenem (1 &#xB5;g/ml). Bacteria that grew on these plates were tested for the presence of carbapenemases by the Modified Hodge test (MHT) <xref ref-type="bibr" rid="pone.0062774-Carvalhaes1">[25]</xref>. Bacteria that gave a positive result for the MHT were screened for the presence of <italic>bla</italic><sub>NDM-1</sub> by PCR using primers targeting the <italic>bla</italic><sub>NDM-1</sub> gene (GenBank accession number FN396876.1). Identification of KPX was performed by conventional biochemical methods and by 16S rRNA sequence analysis <xref ref-type="bibr" rid="pone.0062774-Chen3">[26]</xref>. Multilocus sequence typing (MLST) was used to identify the clonality of the isolate <xref ref-type="bibr" rid="pone.0062774-Turton1">[27]</xref>. Minimal inhibitory concentrations of various antimicrobials were determined by the reference broth microdilution method using custom-designed panels (Sensititre, Trek Diagnostics, West Essex, England) following the guidelines of the Clinical and Laboratory Standards Institute <xref ref-type="bibr" rid="pone.0062774-Clinical1">[28]</xref> and by the E-test following the manufacturer&#x2019;s recommendations.</p>
+      </sec>
+      <sec id="s2c">
+        <title>DNA Sequencing and Gene Annotation</title>
+        <p>To identify the genetic determinates of antimicrobial resistance we performed shotgun sequencing of the KPX plasmids. The plasmids were extracted using a Qiagen large-construct kit (Qiagen, Valencia, CA, USA). Shotgun sequencing was performed to a 160-fold coverage using a Genome Sequencer Junior instrument (Roche) using a library consisting of 800-bp shotgun fragments. Additional small-size (3&#x223C;4-kb and 5&#x223C;8-kb inserts) shotgun libraries were constructed from the plasmid DNA <xref ref-type="bibr" rid="pone.0062774-Fleischmann1">[29]</xref>, <xref ref-type="bibr" rid="pone.0062774-Fraser1">[30]</xref> and then sequenced to 2.3-fold coverage of the targets using ABI3730xl automated capillary electrophoresis sequencers (Applied Biosystems, Foster City, CA, USA). Taking the linking information of paired sequences, contigs were inspected manually and reassembled, using the Consed visualization and editing system <xref ref-type="bibr" rid="pone.0062774-Gordon1">[31]</xref>. Two circular DNA sequences (pKPX-1 and pKPX-2) were eventually assembled; and the orientation and position of the constituent contigs were confirmed by matrix PCR and by sequencing selected cloned <italic>Bam</italic>HI and <italic>Eco</italic>RI fragments.</p>
+        <p>Open reading frames (ORF) were predicted based on the start and termination codons. Sequence homology was searched against the GenBank database using the BLAST program (<ext-link ext-link-type="uri" xlink:href="http://blast.ncbi.nlm.nih.gov/">http://blast.ncbi.nlm.nih.gov/</ext-link>). Manual annotation was carried out throughout the sequence; and any discrepancies were curated.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Molecular Analysis</title>
+        <p>KPX was cultured in 200-ml Luria-Bertani (LB) broth for overnight at 37&#xB0;C. Bacterial cells were harvested by centrifugation and plasmids were extracted as for DNA sequencing. To separate different plasmids, 0.6 &#xB5;g plasmid DNA from KPX was electroporated into ElectroMAX&#x2122; DH10B&#x2122; T1 Phage-Resistant electrocompetent <italic>E. coli</italic> cells (Invitrogen, Carlsbad, CA, USA) following the manufacturer&#x2019;s instructions. Two transformants selected from the Luria agar plate containing either 4 &#xB5;g/ml imipenem (ECX-1) or 100 &#xB5;g/ml ampicillin (ECX-2) were confirmed for the presence of the NDM-1 gene by antimicrobial susceptibility test and PCR.</p>
+        <p>To verify the DNA sequence assembly, plasmid DNA from KPX, ECX-1 and ECX-2 digested with different restriction enzymes was separated by either conventional agarose gel electrophoresis or pulsed field gel electrophoresis (PFGE) using a CHEF-DEII system (Bio-Rad Laboratories, Hercules, CA, USA). The PGFE was carried out using a 1% agarose gel and 0.5X TBE buffer at 6 volts per centimeter and 14&#xB0;C for 16 hours, with a switch time of 1&#x2013;25 seconds and a rotated angle of 120 degrees. To investigate the genetic organization of the <italic>bla</italic><sub>NDM-1</sub> locus, Southern blotting was performed using DIG-labeled probes (Roche Diagnostics, Mannheim, Germany).</p>
+      </sec>
+      <sec id="s2e">
+        <title>Conjugation Test</title>
+        <p>To test the conjugal ability of KPX plasmids, the original <italic>K. pneumoniae</italic> strain, KPX, was mated to an <italic>E. coli</italic> recipient, J53, which is resistant to sodium azide, at 25&#xB0;C, at 30&#xB0;C, and at 37&#xB0;C using overnight culture. The mating mixture was then resuspended in LB broth and spread onto plates containing both 100 &#xB5;g/ml sodium azide and 100 &#xB5;g/ml ampicillin. After overnight culture, the grown colonies were tested for their resistance to either imipenem or gentamicin.</p>
+      </sec>
+      <sec id="s2f">
+        <title>Isolation of Antimicrobial Resistance Associated Sequences</title>
+        <p>In order to identify the genetic determinants for amikacin or chloramphenicol resistance, two shotgun libraries with average insert sizes of 3.5-kb and 6-kb were constructed. In total, 1920 colonies were tested for growth in the presence of amikacin or chloramphenicol medium at different concentrations of antibiotic (16, 32, and 64 &#xB5;g/ml). Colonies that grew on the individual selection medium were picked. Thirty clones conferring amikacin resistance and twenty clones conferring chloramphenicol resistance were sequenced from both ends of their inserts.</p>
+      </sec>
+      <sec id="s2g">
+        <title>Imipenem Selection of bla<sub>NDM-1</sub></title>
+        <p>Bacterial KPX was spread onto LB agar plates with different concentrations of imipenem. After overnight incubation, multiple single colonies from each plate were inoculated into LB broth that contained the same concentration of imipenem and grown at 37&#xB0;C for 4&#x2013;7 hours. Genomic DNA derived from each colony was extracted by Wizard DNA purification kit (Promega, Madison, WI, USA). To estimate the relative copy number of the NDM-1 gene, two sequences that could be amplified from pKPX-1 &#x2013; namely <italic>pcoB</italic> (pcoB-F: <named-content content-type="gene">TGCCATGCAGATGCCAGCAGAT</named-content>; pcoB-R: <named-content content-type="gene">ATCCGACCGTTGCCATTCCAG</named-content>) and <italic>bla</italic><sub>NDM-1</sub> (NDM_qPCR_F: <named-content content-type="gene">TGCCCAATATTATGCACCCGG</named-content>; NDM_qPCR_R: <named-content content-type="gene">CGAAACCCGGCATGTCGAGA</named-content>) &#x2013; were designed. Quantitative PCR reactions were carried out using 5 &#xB5;l KAPA SYBR&#xAE; FAST ABI Prism&#xAE; 2X qPCR Master Mix (Kapa Biosystems, Woburn, MA, USA), 2 ng genomic DNA as template, and 2 pmole of each primer in a 10 &#xB5;l reaction. The Ct values of each sample was measured under appropriate PCR conditions (preheat at 50&#xB0;C for 2 min; denature at 95&#xB0;C for 20 sec; 40 amplified cycles at 95&#xB0;C for 3 sec and 60&#xB0;C for 20 sec) on an ABI PRISM 7900HT. The relative fold change of <italic>bla</italic><sub>NDM-1</sub> for each sample was normalized against a housekeeping gene (<italic>pcoB</italic>) by using the comparative Ct method <xref ref-type="bibr" rid="pone.0062774-Schmittgen1">[32]</xref>.</p>
+      </sec>
+      <sec id="s2h">
+        <title>Ethics Statement</title>
+        <p>This research did not involve human subjects. The bacterial samples used in this study were previously gathered as part of routine clinical work. The clinical information presented in this paper on the patient has been published previously <xref ref-type="bibr" rid="pone.0062774-Wu1">[23]</xref>, <xref ref-type="bibr" rid="pone.0062774-Chen2">[24]</xref>. We consulted NHRI&#x2019;s Institutional Review Board regarding whether this study would require review and none was required.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Antimicrobial Susceptibility Testing</title>
+        <p>Scrutiny of a returnee from India identified that the individual was positive for <italic>K. pneumoniae</italic> carrying <italic>bla</italic><sub>NDM-1</sub>
+<xref ref-type="bibr" rid="pone.0062774-Wu1">[23]</xref>. The <italic>K. pneumoniae</italic> belonged to ST type 11. <xref ref-type="table" rid="pone-0062774-t001">Table 1</xref> summarizes the resistance phenotypes of this isolate (designated KPX) for several classes of antimicrobials. Similar to other NDM-1 positive enteric bacteria, this clinical isolate is resistant to all tested antimicrobials except polymyxin E and tigecycline. To facilitate sequence assembly and to map the genetic determinants of antimicrobial resistance, two types of plasmid subclones were obtained by <italic>E. coli</italic> transformation (<xref ref-type="table" rid="pone-0062774-t001">Table 1</xref>). The first, ECX-1, was resistant to imipenem; and the other, ECX-2, was susceptible to imipenem but resistant to ampicillin. ECX-2 also showed susceptibility to quinolones. The plasmids carried by the two transformants were named pECX-1 and pECX-2, respectively.</p>
+      </sec>
+      <sec id="s3b">
+        <title>Molecular and Genomic Analysis</title>
+        <p>We applied a combination of genetic and genomic methods, including 454 sequencing technology <xref ref-type="bibr" rid="pone.0062774-Margulies1">[33]</xref> and library screening <xref ref-type="bibr" rid="pone.0062774-Wu2">[34]</xref>, to obtain a comprehensive in-depth view of the antimicrobial resistance of this particular isolate. A total of 165,600 reads (64 megabases) generated from the 454 GS Junior as well as 1,152 paired-end Sanger reads (910 kilobases) were assembled using the Newbler sequence assembler (version 2.3). As shown in <xref ref-type="fig" rid="pone-0062774-g001">Fig. 1</xref>, the two circular plasmids from the KPX isolate were 250,444-bp (GenBank accession number AP012055) and 141,545-bp (GenBank accession number AP012056) in size; they were designated pKPX-1 and pKPX-2, respectively. Pulse field gel electrophoresis (PFGE) was used to analyze the plasmid DNA of the <italic>E. coli</italic> transformants; and their restriction patterns with <italic>Xba</italic>I or <italic>Avr</italic>II were compared to the full plasmid profile of the KPX isolate. The plasmids from KPX, when digested with <italic>Xba</italic>I, generated four fragments of approximately 202-kb, 88-kb, 54-kb, and 48-kb in size. Two bands, 202-kb and 48-kb, were derived from pKPX-1, while the other two bands, 88-kb and 54-kb, were derived from pKPX-2. In contrast, the plasmid (pECX-1) from the imipenem-resistant <italic>E. coli</italic> transformants gave two <italic>Xba</italic>I fragments of 108-kb and 80-kb, which suggests that there was a gross rearrangement of pKPX-1 to create pECX-1 (<xref ref-type="fig" rid="pone-0062774-g001">Fig. 1A</xref> and <xref ref-type="fig" rid="pone-0062774-g002">Fig. 2</xref>). This interpretation was confirmed by the results obtained when the plasmid was digested with <italic>Avr</italic>II.</p>
+        <fig id="pone-0062774-g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0062774.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Sequence analysis of KPX plasmids.</title>
+            <p>Two circular sequences are shown for the organization of pKPX-1 (<bold>A</bold>) and pKPX-2 (<bold>B</bold>). Mapping shotgun sequencing reads of pECX-1 to the pKPX-1 is indicated by the red half-circle. A large part of the plasmid, corresponding to the nucleotide positions 23,125 to 145,377 of pKPX-1, was not found in pECX-1. Only the part on the left side, totaling 128,191-bp, is retained. Two genes encoding chloramphenicol and amikacin resistance were identified by functional library screening. Their positions in the deleted region are indicated. Nucleotides are numbered according to the replication origin. Genes are color coded: yellow, &#x3B2;-lactamase; red, antimicrobial resistance associated; blue, plasmid replication and partitioning; black, transposases or IS elements; and white, other coding sequences of miscellaneous features. The arrows on the open reading frames (ORFs) indicate the gene orientation. Gene clusters involved in gene transfer or mobility are marked in green. <italic>Xba</italic>I and <italic>Avr</italic>II restriction sites are shown inside the circle.</p>
+          </caption>
+          <graphic xlink:href="pone.0062774.g001"/>
+        </fig>
+        <fig id="pone-0062774-g002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0062774.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Restriction analysis of the KPX plasmids by PFGE.</title>
+            <p>Plasmid DNA isolated from the KPX isolate was analyzed using pulsed field gel electrophoresis (PFGE). The restriction patterns of the plasmid DNA were compared to those of pECX-1 and pECX-2 in <italic>Escherichia coli</italic>. The size of the DNA markers is shown in kilobases (kb) on the left side.</p>
+          </caption>
+          <graphic xlink:href="pone.0062774.g002"/>
+        </fig>
+        <p>To delineate the structural difference between pKPX-1 and pECX-1, we performed shotgun sequencing of pECX-1 and mapped the sequencing reads to pKPX-1. As shown in <xref ref-type="fig" rid="pone-0062774-g001">Fig. 1A</xref>, approximately 122-kb (nucleotide position 23,125 to 145,377) from the pKPX-1 was absent in the pECX-1 sequence. A 24-bp direct repeat was found at the ends of the deletion fragment; this sequence, <named-content content-type="gene">5&#x2032;-TGATATTTAACATAAAACGCATTA-3&#x2032;</named-content>, may have allowed homologous recombination to take place.On the basis of sequence annotation, both pKPX-1 and pKPX-2 contain genes for conjugation functions. However, it was experimentally determined that while pKPX-2 is a conjugative plasmid, pKPX-1 appears to be non-conjugative. Seventy-seven transconjugants, which were selected from plates containing both sodium azide and ampicillin, were tested for resistance to imipenem (targeting pKPX-1) or gentamicin (targeting pKPX-2). All 77 transconjugants were resistant to gentamicin but not to imipenem. Colony PCR targeting for <italic>qnrB</italic> and <italic>aac(6&#x2032;)-Ib</italic> was performed to confirm the transfer of pKPX-2. Plasmids extracted from two transconjugants were digested with <italic>Avr</italic>II and analyzed by PFGE. The restriction pattern of these plasmids was the same as the pattern of pKPX-2 (data not shown).</p>
+      </sec>
+      <sec id="s3c">
+        <title>Genetic Determinants of Antimicrobial Resistance</title>
+        <p>From assembled sequences, we predicted a total of 215 genes that were encoded by the pKPX-1 plasmid and 132 genes that were encoded by the pKPX-2 plasmid. <xref ref-type="table" rid="pone-0062774-t002">Table 2</xref> summarizes the genes among these that are implicated in resistance to commonly used antimicrobials.</p>
+        <table-wrap id="pone-0062774-t002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0062774.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Antimicrobial resistance determinants in pKPX-1 and pKPX-2.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0062774-t002-2" xlink:href="pone.0062774.t002"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Antimicrobials</td>
+                  <td align="left" rowspan="1" colspan="1">pKPX-1</td>
+                  <td align="left" rowspan="1" colspan="1">pKPX-2</td>
+                  <td align="left" rowspan="1" colspan="1">KPX chromosome</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x3B2;-lactams</td>
+                  <td colspan="3" align="left" rowspan="1">&#x3B2;-lactamases</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Penicillins</td>
+                  <td align="left" rowspan="1" colspan="1">NDM-1</td>
+                  <td align="left" rowspan="1" colspan="1">TEM-1</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">CTX-M-15</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">OXA-1</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Narrow-spectrum cephalosporins</td>
+                  <td align="left" rowspan="1" colspan="1">NDM-1</td>
+                  <td align="left" rowspan="1" colspan="1">TEM-1</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">CTX-M-15</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">OXA-1</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Extended-spectrum cephalosporins</td>
+                  <td align="left" rowspan="1" colspan="1">NDM-1</td>
+                  <td align="left" rowspan="1" colspan="1">CTX-M-15</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Carbapenem</td>
+                  <td align="left" rowspan="1" colspan="1">NDM-1</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Aztreonam</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">CTX-M-15</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Aminoglycosides</td>
+                  <td colspan="3" align="left" rowspan="1">Aminoglycoside-modifying enzymes/16S rRNA methyltransferases</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Amikacin</td>
+                  <td align="left" rowspan="1" colspan="1">AAC(6&#x2032;)-Ib<sup>&#x2020;</sup></td>
+                  <td align="left" rowspan="1" colspan="1">AAC(6&#x2032;)-Ib-cr</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Rmt<sup>&#x2020;</sup></td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Kanamycin/Neomycin</td>
+                  <td align="left" rowspan="1" colspan="1">APH(3&#x2032;)-I</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Gentamicin</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">AAC(3)-II</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Streptomycin</td>
+                  <td align="left" rowspan="1" colspan="1">ANT(3&#x2033;)-I</td>
+                  <td align="left" rowspan="1" colspan="1">APH(3&#x2033;)-Ib</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Quinolone and fluoroquinolones</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">QnrB</td>
+                  <td align="left" rowspan="1" colspan="1">GyrA, S83I</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">AAC(6&#x2032;)-Ib-cr</td>
+                  <td align="left" rowspan="1" colspan="1">ParC, S80I</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Tetracycline</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">TetA</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Chloramphenicol</td>
+                  <td align="left" rowspan="1" colspan="1">CatA1<sup>&#x2020;</sup></td>
+                  <td align="left" rowspan="1" colspan="1">CatB4<xref ref-type="table-fn" rid="nt102">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Rifampicin</td>
+                  <td align="left" rowspan="1" colspan="1">ARR-2<sup>&#x2020;</sup></td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Trimethoprim/sulfamethoxazole</td>
+                  <td align="left" rowspan="1" colspan="1">DHPS (<italic>sul1</italic>)</td>
+                  <td align="left" rowspan="1" colspan="1">DHPS (<italic>sul2</italic>)</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">DHFRXII</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Erythromycin</td>
+                  <td align="left" rowspan="1" colspan="1">Mph(A)</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt102">
+              <label>*</label>
+              <p>Nonfunctional; <sup>&#x2020;</sup> Deleted in pECX-1.</p>
+            </fn>
+            <fn id="nt103">
+              <label/>
+              <p>Abbreviations: AAC, aminoglycoside acetyltransferase; APH, aminoglycoside phosphotransferase; ANT, aminoglycoside nucleotdyltransferase; Rmt, 16S rRNA methyltransferase; Qnr, quinolone resistance protein; TetA, tetracycline efflux protein; Cat, chloramphenicol acetyltransferase; ARR-2, rifampin ADP-ribosyltransferase; DHPS, dihydropteroate synthase; DHFR, dihydrofolate reductase; Mph, macrolide phosphotransferase.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <sec id="s3c1">
+          <title>&#x3B2;-lactams</title>
+          <p>Annotation of the plasmid sequences from the KPX isolate revealed four &#x3B2;-lactamase genes: <italic>bla</italic><sub>NDM-1</sub> on pKPX-1, and <italic>bla</italic><sub>CTX-M-15</sub>, <italic>bla</italic><sub>TEM-1</sub>, and <italic>bla</italic><sub>OXA-1</sub> on pKPX-2. All these &#x3B2;-lactamase genes are adjacent to or flanked by insertion sequences (<xref ref-type="fig" rid="pone-0062774-g003">Fig. 3</xref>). When a comparison between pKPX-1 and FN396876, the first reported NDM-1 DNA fragment, was carried out it was found that a 1172-bp region, including the 813-bp of the <italic>bla</italic><sub>NDM-1</sub> ORF, is 100% identical. Upstream of the <italic>bla</italic><sub>NDM-1</sub>, sequence homology stops at an IS<italic>30</italic>-family transposase pseudogene region. On the other side, an 830-bp region was also found to be identical between the two sequences. This colinearity downstream between FN396876 and the pKPX-1 sequence is disrupted by a 21-bp sequence; and this addition between the two conserved sequences allowed the annotation of a bleomycin-resistance gene (61% identity in amino acid sequence of a bleomycin resistance protein from <italic>Caulobacter crescentus</italic> CB15, GenBank accession number NP_421581.1) in pKPX-1. The 813-bp common sequence ends with an extra <italic>bla</italic><sub>DHA-1</sub> pseudogene present in FN396876 (<xref ref-type="fig" rid="pone-0062774-g003">Fig. 3A</xref>).</p>
+          <fig id="pone-0062774-g003" orientation="portrait" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0062774.g003</object-id>
+            <label>Figure 3</label>
+            <caption>
+              <title>Organization of the <italic>bla</italic><sub>NDM-1</sub> sequences and other &#x3B2;-lactamase genes.</title>
+              <p>(<bold>A</bold>) Comparable flanking sequences of <italic>bla</italic><sub>NDM-1</sub> in pKPX-1 and those reported for the <italic>K. pneumoniae</italic> ST type 14 sequence (GenBank accession number FN396876) from India and pNDM-MAR of a <italic>K. pneumoniae</italic> ST type 15 from Morocco <xref ref-type="bibr" rid="pone.0062774-Dolejska1">[21]</xref>, and of pNDM-HK, an <italic>E. coli</italic> isolate from Hong Kong <xref ref-type="bibr" rid="pone.0062774-Ho1">[14]</xref>. The colors are red, <italic>bla</italic><sub>NDM-1</sub>; gray, pseudogenes; and white, others. The abbreviations are hypo, hypothetical protein; pseudo, pseudogenes; <italic>ldh</italic>, L-lactate dehydrogenase pseudogene; <italic>trpF</italic>, phosphoribosyl anthranilate isomerase pseudogene; <italic>bla</italic><sub>DHA-1</sub>, AmpC &#x3B2;-lactamase <italic>bla</italic><sub>DHA-1</sub> pseudogene; and <italic>psp</italic>, phage shock protein operon transcriptional activator. The 1543-bp identity between the <italic>tnpA</italic> transposase and the incomplete <italic>tnpA</italic> pseudogene is shown. (<bold>B</bold>) Two regions that contain three &#x3B2;-lactamase genes &#x2013; <italic>bla</italic><sub>OXA-1</sub>, <italic>bla</italic><sub>TEM-1</sub>, and <italic>bla</italic><sub>CTX-M-15</sub> &#x2013; are shown. The ORFs encoding the &#x3B2;-lactamases are colored red. Transposons or insertion sequence-related genes are in black. Other genes are in white. The <italic>intI1</italic> gene is a putative integrase. The <italic>catB4</italic> gene encodes a chloramphenicol resistance acetyltransferase. The <italic>aac(6&#x2032;)-Ib</italic> gene encodes an aminoglycoside resistance 6&#x2032;-acetyltransferase type Ib. The <italic>dhps</italic> gene encodes a dihydropteroate synthase, which provides sulfonamide resistance. The <italic>strB</italic> gene encodes a streptomycin resistance protein B.</p>
+            </caption>
+            <graphic xlink:href="pone.0062774.g003"/>
+          </fig>
+        </sec>
+        <sec id="s3c2">
+          <title>Aminoglycosides</title>
+          <p>Genes predicted to confer resistance to aminoglycosides on pKPX-1 are <italic>rmt</italic>, <italic>aac(6&#x2032;)-Ib</italic>, <italic>aph(3&#x2032;)-I</italic>, and <italic>aadA2</italic>. On pKPX-2, the genes predicted to be responsible for aminoglycosides resistance are <italic>aac(6&#x2032;)-Ib-cr</italic>, <italic>aac(3)-II</italic>, and <italic>strB</italic>. To confirm experimentally that the pKPX plasmids were responsible for resistance to the aminoglycosides, we screened shotgun clones using amikacin selection and identified those that grew in the presence of the antimicrobial. Almost all of the selected <italic>E. coli</italic> transformants carried pieces of DNA fragments from pKPX-1 and these sequences were absent from pECX-1. Interestingly, these fragments overlapped and clustered with <italic>aac(6&#x2032;)-Ib</italic> and <italic>rmt</italic> (<xref ref-type="supplementary-material" rid="pone.0062774.s001">Fig. S1</xref>). Thus, deletion of the pKPX-1 sequence to give pECX-1 caused the loss of a number of antimicrobial resistance genes. A small number of amikacin-resistant clones were found to contain the sequence of the <italic>aac(6&#x2032;)-Ib-cr</italic> genes from pKPX-2 (<xref ref-type="supplementary-material" rid="pone.0062774.s001">Fig. S1</xref>).</p>
+        </sec>
+        <sec id="s3c3">
+          <title>Quinolones</title>
+          <p>Two plasmid-mediated quinolone resistance determinants, aminoglycoside acetyltransferase <italic>aac(6&#x2032;)-Ib-cr</italic> and <italic>qnrB</italic>, which presumably confer reduced susceptibility to fluoroquinolones <xref ref-type="bibr" rid="pone.0062774-Strahilevitz1">[35]</xref>, were found to be present on pKPX-2. The fact that both ECX-1 and ECX-2 are susceptible to quinolones indicates that the KPX chromosome has mutations affecting the target genes of the antimicrobials. Indeed we found mutations in the <italic>gyrA</italic> (Ser83Ile) and <italic>parC</italic> (Ser80Ile) genes, both of which are chromosomal in nature.</p>
+        </sec>
+        <sec id="s3c4">
+          <title>Tetracycline, erythromycin, and chloramphenicol</title>
+          <p>We identified <italic>tetA</italic>
+<xref ref-type="bibr" rid="pone.0062774-Hillen1">[36]</xref> as a determinant of tetracycline resistance and a gene similar to <italic>mph(A)</italic>
+<xref ref-type="bibr" rid="pone.0062774-Noguchi1">[37]</xref>, which encodes macrolide 2'-phosphotransferase and confers erythromycin resistance. In addition, three genes were identified as possibly able to confer chloramphenicol resistance. These are <italic>catA1</italic>, together with a putative chloramphenicol acetyltransferase gene (putative <italic>cat</italic>) on pKPX-1, and <italic>catB4</italic> on pKPX-2. Since neither ECX-1 nor ECX-2 was resistant to chloramphenicol, we screened shotgun libraries to isolate the responsible sequences from pKPX-1 and pKPX-2. This yielded, respectively, seven and eight clones spanning the <italic>catA1</italic> gene and the putative <italic>cat</italic> that were resistant to chloramphenicol, with minimal inhibitory concentration in the range of 32&#x2013;64 &#xB5;g/ml (<xref ref-type="supplementary-material" rid="pone.0062774.s002">Fig. S2</xref>). The putative <italic>cat</italic> gene encodes a 23.7-kDa protein that is 73% identical to the chloramphenicol acetyltransferase from <italic>Agrobacterium tumefaciens</italic> (GenBank accession number NP_355927.1) at the amino acid level. These two genes, which are presumably responsible for the chloramphenicol resistance of KPX together with <italic>aac(6&#x2032;)-Ib</italic> and <italic>rmt</italic>, were lost in pECX-1 as a result of deletion (<xref ref-type="fig" rid="pone-0062774-g001">Fig. 1A</xref>).</p>
+        </sec>
+      </sec>
+      <sec id="s3d">
+        <title>Comparative Analysis with other NDM-1 Positive Plasmids</title>
+        <p>Recently, the complete sequencing of many NDM-1 carrying plasmids isolated from <italic>Enterobacteriaceae</italic> has shown that these plasmids belonged to a variety of different incompatibility groups, which is consistent with their wide bacterial host range. The two replication proteins encoded by pKPX-1 belonged to the IncR and IncF groups, while pKPX-2 is a member of the IncF family. To gain insight into the evolution of the <italic>bla</italic><sub>NDM-1</sub> genetic element, the coding and flanking sequences of <italic>bla</italic><sub>NDM-1</sub> from pKPX-1 were compared to those of the corresponding regions of representative plasmids. As shown in <xref ref-type="fig" rid="pone-0062774-g003">Fig. 3A</xref>, only the core sequence of the <italic>bla</italic><sub>NDM-1</sub> region is conserved. The right boundary of the homologous sequences starts upstream of the <italic>bla</italic><sub>NDM-1</sub> gene near the truncated IS<italic>Aba125</italic> region (position 188,934 to 189,093), while the left boundary ends at variable sites ranging from a <italic>groEL</italic> pseudogene to a bleomycin-resistance gene (<italic>ble</italic><sub>MBL</sub>, position 183,741 to 187,837). This observation is consistent with findings published in a recent report <xref ref-type="bibr" rid="pone.0062774-Poirel1">[13]</xref>. Among the reported sequences, pKPX-1shared a long stretch of identical sequence in the NDM-1 region with that of pNDM-MAR <xref ref-type="bibr" rid="pone.0062774-Villa1">[20]</xref>, an IncH plasmid carried by a <italic>K. pneumoniae</italic> isolate from Morocco.</p>
+      </sec>
+      <sec id="s3e">
+        <title>Amplification of the bla<sub>NDM-1</sub> Gene</title>
+        <p>The region neighboring <italic>bla</italic><sub>NDM-1</sub> is variable and filled with insertion sequences that reflect multiple genetic modification events. How <italic>bla</italic><sub>NDM-1</sub> arose and is mobilized among the <italic>Enterobacteriaceae</italic> is still not totally clear. However, we have discovered the <italic>bla</italic><sub>NDM-1</sub> region of pKPX-1 has a unique structure. As shown in <xref ref-type="fig" rid="pone-0062774-g003">Fig. 3A</xref>, two identical 1543-bp sequences flank the far ends of the <italic>bla</italic><sub>NDM-1</sub> region. The 1543-bp sequence on the right side is part of a Tn<italic>3</italic>-like IS element, as marked by TnpA transposase and its flanking inverted repeats (IRR and IRL). Thus, the <italic>bla</italic><sub>NDM-1</sub> segment could possibly be mobilized as a composite transposon. Alternatively, the 1543-bp repeat at both sides of the approximately 8.6-kb <italic>bla</italic><sub>NDM-1</sub> region may serve as a target for homologous recombination. Note that pNDM-MAR also contains this unique structure and also has an intact <italic>tnpA</italic> transpoase gene in the left flanking sequence (<xref ref-type="fig" rid="pone-0062774-g003">Fig. 3A</xref>). Only a 2-bp difference is present across the 10,273-bp segment (from position 182,056 to 192,328 of pKPX-1) that is shared between the two plasmids.</p>
+        <p>It appears that this 8.6-kb unit containing the <italic>bla</italic><sub>NDM-1</sub> sequence exists in multiple copies as tandem repeats. By counting the read number across the pKPX-1 and pECX-1 plasmids, we found a much deeper coverage for the NDM-1 region than for the flanking sequences, indicating there was amplification of the NDM-1 coding sequence. To further characterize the organization of the cassette, we conducted Southern analysis of the NDM-1 coding region using several different restriction enzymes (<xref ref-type="fig" rid="pone-0062774-g004">Fig. 4A</xref>). As shown in <xref ref-type="fig" rid="pone-0062774-g004">Fig. 4B and 4C</xref>, <italic>Avr</italic>II and <italic>Nru</italic>I each generated one major discrete band from pKPX-1 and pECX-1 plasmid DNA. On the other hand, <italic>Hind</italic>III and <italic>Bam</italic>HI generated one major band of 71.8-kb and 79.1-kb, respectively, from pECX-1 (<xref ref-type="fig" rid="pone-0062774-g004">Fig. 4B</xref>) but multiple bands for pKPX-1 (<xref ref-type="fig" rid="pone-0062774-g004">Fig. 4C</xref>). In both plasmids, the sizes of <italic>bla</italic><sub>NDM-1</sub> sequence positive bands produced by <italic>Hind</italic>III and <italic>Bam</italic>HI digest are bigger than those predicted by the assembled sequence. These results demonstrate that there is multiplication of the 8.6-kb cassette. Furthermore, the tandem repeats in pKPX-1 appear to vary across different subpopulations of the cultured bacteria, as a ladder pattern of bands indicates the existence of bacteria carrying a different copy number of the repeats. By way of contrast, the pECX-1 plasmid is relatively homogenous and seems to have a fixed repeat number. We estimate there are eight copies of the cassette present in pECX-1 (<xref ref-type="fig" rid="pone-0062774-g004">Fig. 4B</xref>).</p>
+        <fig id="pone-0062774-g004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0062774.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Tandem duplication of the <italic>bla</italic><sub>NDM-1</sub> gene in pKPX-1 and pECX-1.</title>
+            <p>(<bold>A</bold>) Diagrammatic representation of the analysis of <italic>bla</italic><sub>NDM-1</sub> copy number by Southern blot. The probe is shown with a red arrow, and the tandem duplication of the 8588-bp repeat is indicated by the bracket. The asterisks indicate the methylated <italic>Nru</italic>I sites. The sizes of <italic>Bam</italic>HI or <italic>Hind</italic>III digested fragments depend on the copy number of the repeat. The pound sign indicates 79.1 kb and 71.8 kb for <italic>Bam</italic>HI and <italic>Hind</italic>III restrictions, respectively, when there are 8 copies of the tandem repeat, as in the case of pECX-1. (<bold>B</bold>) Sequencing read distribution and Southern analysis of the <italic>bla</italic><sub>NDM-1</sub> region for pECX-1. The upper panel shows the relative coverage depth of the repeat region and its flanking sequences. The average coverage of <italic>bla</italic><sub>NDM-1</sub> is 7&#x2013;8 fold of those sequences of the immediately adjacent regions, suggesting that there are eight copies of the repeat. As shown in the lower panel, Southern analysis confirms this model of tandem duplication. (<bold>C</bold>) <italic>Bla</italic><sub>NDM-1</sub> copy number variation detected by the Southern analysis. Sequence depth of the region revealed an average of 3&#x2013;4 copies of the repeat sequence in pKPX. <italic>Bam</italic>HI and <italic>Hind</italic>III digestion gave a series of ladder bands, corresponding to different copy numbers of the repeat. By contrast, <italic>Avr</italic>II and <italic>Nru</italic>I both deliberated a single major band of 8.6 kb, representing the unit length of the tandem repeats.</p>
+          </caption>
+          <graphic xlink:href="pone.0062774.g004"/>
+        </fig>
+        <p>Taking together the sequencing and molecular analysis data, we conclude that there is amplification of the NDM-1 coding sequence in the KPX isolate. Moreover, the NDM-1-positive plasmids of the bacteria showed genetic heterogeneity in the <italic>bla</italic><sub>NDM-1</sub> copy number.</p>
+      </sec>
+      <sec id="s3f">
+        <title>Copy Number of the 8.6-kb Repeat under Imipenem Selection</title>
+        <p>To investigate whether <italic>bla</italic><sub>NDM-1</sub> copy number is affected by antimicrobial selection, colonies isolated from cultures at different imipenem concentrations were analyzed for their <italic>bla</italic><sub>NDM-1</sub> structure by a real-time PCR assay<monospace>.</monospace> As shown in <xref ref-type="fig" rid="pone-0062774-g005">Fig. 5A</xref>, the copy number varied significantly when KPX was cultured in the absence of imipenem, while the <italic>bla</italic><sub>NDM-1</sub> gene copy was consistently higher as the imipenem concentration was increased (the mean expression levels relative to a housekeeping gene, <italic>pcoB</italic>, were 2.8, 10.7, 13.8, and 14.6 at 0 &#xB5;g/ml, 1 &#xB5;g/ml, 2 &#xB5;g/ml, and 4 &#xB5;g/ml, respectively). This finding was supported in a separate experiment using imipenem concentration ranging from 0 to 256 &#xB5;g/ml (data not shown). Taken together, our results indicated that the <italic>bla</italic><sub>NDM-1</sub> gene was maintained high in the plasmid when the imipenem concentration was 2 &#xB5;g/ml and above, but that the KPX bacteria lost the imipenem resistance gene when selection pressure was lifted.</p>
+        <fig id="pone-0062774-g005" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0062774.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Copy number change of the <italic>bla</italic><sub>NDM-1</sub> gene.</title>
+            <p>(<bold>A</bold>) A dot plot of the copy numbers of <italic>bla</italic><sub>NDM-1</sub> from colonies selected at four different concentrations of imipenem (0, 1, 2, and 4 &#xB5;g/ml). The y-axis is the relative fold change of <italic>bla</italic><sub>NDM-1</sub> to the <italic>pcoB</italic> gene. Each condition contained 16 individual isolates, which were analyzed by quantitative PCR (qPCR) in triplicate. The red line indicates the mean of fold change under each condition. (<bold>B</bold>) Two isolates (G0&#x2013;5 and G0&#x2013;6) with extremely low <italic>bla</italic><sub>NDM-1</sub> relative to <italic>pcoB</italic> from the zero imipenem condition were analyzed for the junctional sequences of the 8.6-kb repeat. The diagram shows the abbreviated structure and expected fragment size of <italic>Eco</italic>RV (RV) or <italic>Xho</italic>I (Xh) digestion when the 8.6-kb repeat is deleted. The filled black triangles indicate the positions of the PCR primers (NDMjuc-F: <named-content content-type="gene">GCTCTCTACGCTGCCTTGCAGG</named-content> and NDMjuc-R: <named-content content-type="gene">GTACCTGGAGACAGTGGGCAAG</named-content>). The green box indicates the 8.6-kb repeat. The yellow lines indicate the 1543-bp identical region, as described in <xref ref-type="fig" rid="pone-0062774-g003">Figure 3</xref>. The bottom image shows the uncut (U), <italic>Eco</italic>RV, or <italic>Xho</italic>I digested PCR products of G0&#x2013;5 and G0&#x2013;6.</p>
+          </caption>
+          <graphic xlink:href="pone.0062774.g005"/>
+        </fig>
+        <p>To understand the structural changes that occur in the NDM-1 region isolated from these imipenem sensitive isolates at a molecular level, a 2.9-kb DNA fragment was amplified by PCR using a unique primer pair that annealed to the sequences outside the NDM-1 repeat unit (<xref ref-type="fig" rid="pone-0062774-g005">Fig. 5B</xref>). The size of amplified DNA and its restriction pattern after <italic>Xho</italic>I and <italic>Eco</italic>RV digestion were the same as predicted (<xref ref-type="fig" rid="pone-0062774-g005">Fig. 5B</xref>). Sequencing this amplified DNA fragment confirmed that the entire 8.6-kb repeat unit was removed via the flanking 1.5-kb tandem repeats (<xref ref-type="supplementary-material" rid="pone.0062774.s003">Fig. S3</xref>).</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>In the present study, we have fully analyzed the plasmid sequences present in this bacterial isolate, from which it can be concluded that the antimicrobial resistance determinants of a <italic>bla</italic><sub>NDM-1</sub> carrying <italic>K. pneumoniae</italic> strain are distributed over three separate replicons, namely the chromosome and two plasmids (<xref ref-type="table" rid="pone-0062774-t002">Table 2</xref>). The antimicrobial resistance determinants were uncovered by elucidating their sequences in the context of antimicrobials susceptibility profiling; and these findings were corroborated by library screen and isolation of the drug-resistant sequences. We found that the <italic>K. pneumoniae</italic> genetic system has the potential to acquire, alter, and transfer drug resistance genes. Such transmissibility and plasticity underpin the prevalence and diversity of NDM-1 positive <italic>Enterobacteriaceae</italic> populations. The present findings should help with the creation of measures to reduce the development and spread of antimicrobial resistance among bacterial pathogens.</p>
+      <p>The reduction in copy number and loss of the <italic>bla</italic><sub>NDM-1</sub> gene in the absence of strong imipenem selection suggests that either the high copy number of this gene or the presence of the gene itself has a negative impact on the fitness of the <italic>Klebsiella</italic> bacterium that contains this sequence, as discussed by Sol&#xE9; <italic>et al</italic>. <xref ref-type="bibr" rid="pone.0062774-Sole1">[38]</xref>. This supports the idea that it is logical and important to control antimicrobial resistance in a hospital setting by reducing the use of broad-spectrum antimicrobials. Unnecessary use of antimicrobials will favor bacterial strains that gain advantage under such manmade selection pressure. This is not only true for carbapenems but also for ciprofloxacin. In this context, the <italic>K. pneumoniae</italic> host harboring the <italic>bla</italic><sub>NDM-1</sub> gene was found to also have chromosomal mutations in <italic>gyrA</italic> and <italic>parC</italic>.</p>
+      <p>From an evolutionary point of view, gene amplification is important for bacteria to cope with antibiotic selection. Among bacteria, just as with other kingdoms of life, copy number change provides a way of generating genetic variability for adaptation to altered growth conditions <xref ref-type="bibr" rid="pone.0062774-Sandegren1">[39]</xref>. Amplification of plasmid-borne resistance genes conferring the high-level resistance to antibiotics such as &#x3B2;-lactams or tetracycline, etc., has been reported in a range of different bacteria <xref ref-type="bibr" rid="pone.0062774-Clewell1">[40]</xref>, <xref ref-type="bibr" rid="pone.0062774-Yagi1">[41]</xref>, <xref ref-type="bibr" rid="pone.0062774-Szczepanowski1">[42]</xref>, <xref ref-type="bibr" rid="pone.0062774-Hammond1">[43]</xref>, <xref ref-type="bibr" rid="pone.0062774-Bertini1">[44]</xref>, <xref ref-type="bibr" rid="pone.0062774-Sun1">[45]</xref>. The dosage of resistance genes is flexible and hinges upon concentration of the antibiotics. The proposed mechanism of amplification typically involves the insertion sequence (IS) elements associated with the resistance genes <xref ref-type="bibr" rid="pone.0062774-Hammond1">[43]</xref>, <xref ref-type="bibr" rid="pone.0062774-Bertini1">[44]</xref>. Indeed, in our case the <italic>bla</italic><sub>NDM-1</sub> sequence was flanked by a 1543-bp direct repeat, which was part of a Tn<italic>3</italic>-like element. This mobile element (containing <italic>tnpA</italic>) is well preserved in pNDM-MAR <xref ref-type="bibr" rid="pone.0062774-Villa1">[20]</xref> on the two sides of the NDM-1 region (<xref ref-type="fig" rid="pone-0062774-g003">Fig. 3A</xref>). Considering the similarity of the NDM-1 region between pKPX-1 and pNDM-MAR, it is possible that they share a common origin for the <italic>bla</italic><sub>NDM-1</sub> sequence, presumably from India.</p>
+      <p>Interestingly, the copy number of <italic>bla</italic><sub>NDM-1</sub> was fixed after pKPX was transformed into a <italic>recA</italic>-defective <italic>E. coli</italic> host, whereas the copy number varied in the original KPX strain. It suggests that dynamic change of the <italic>bla</italic><sub>NDM-1</sub> region is RecA-dependent. This point is consistent with a previous report <xref ref-type="bibr" rid="pone.0062774-Yagi2">[46]</xref>. Of note, high resistance to carbapenems mediated through amplification of <italic>bla</italic><sub>OXA-58</sub> has been reported <xref ref-type="bibr" rid="pone.0062774-Bertini1">[44]</xref>. To our knowledge, this is the first clinical case showing amplification of the <italic>bla</italic><sub>NDM-1</sub> gene in the many reports of sequenced NDM-1-positive plasmids. Finally, gene amplification is unstable and usually detected when bacteria are grown in the presence of antibiotics under laboratory conditions <xref ref-type="bibr" rid="pone.0062774-Sandegren1">[39]</xref>. Our data indicate this clinical KPX isolate harbors subpopulations with different copy number of the <italic>bla</italic><sub>NDM-1</sub>. We hypothesize that these bacteria expressed variable levels of the &#x3B2;-lactamase. Indeed, RT-PCR analysis and MIC of KPX cultivated at different imipenem concentrations showed that the repeat sequence impacted on <italic>bla</italic><sub>NDM-1</sub> expression and antibiotic resistance phenotype (data not shown).</p>
+      <p>NDM-1 encodes resistance to all &#x3B2;-lactams except monobactams. However, the plasmid carrying <italic>bla</italic><sub>NDM-1</sub> alone does not confer all the antimicrobial phenotypes of KPX. The <italic>E. coli</italic> transformant (ECX-1), which still carries the NDM-1 determinant, remains susceptible to aztreonam and fluoroquinolones. Thus, it is theoretically possible that a superbug such as the <italic>K. pneumoniae</italic> strain reported here may lose some resistance mechanisms on transfer to a new host via the loss of critical sequences from one of the replicons. In the case of the current investigation, no antimicrobial treatment was administered to the patient during hospitalization in Taiwan. As soon as the patient was in a stable condition, he was discharged from the hospital and allowed to stay at home. However, during this time he was continuously monitored for NDM-1 positive bacteria via fecal specimens. These became undetectable after a short period of time. Unnecessary and extended use of the broad-spectrum antimicrobials would probably have prolonged the period of colonization with NDM-1 positive bacteria, and thus increased the chance of possible spread in the hospital and even in Taiwan in general.</p>
+      <p>By segregating the two plasmids of the original host and by studying the phenotypes of individual plasmid in isolation, we gained insights beyond the DNA sequence. The plasmid pKPX-1 appears to be unstable and non-conjugable; and we found no evidence that it was mobilizable by pKPX-2. Not only were we able to find variation between isolates in the tandem repeats of the NDM-1 region, a large portion of the plasmid sequence was found to be deleted in the plasmid when the <italic>E. coli</italic> transformant was examined (<xref ref-type="fig" rid="pone-0062774-g002">Fig. 2</xref>). We confirmed that this truncated form did exist in the original <italic>K. pneumoniae</italic> isolate but it was initially discovered in the pECX-1. We speculate that the truncation of the plasmid and the variable nature of the NDM-1 sequence could be advantageous for KPX to meet the different environmental conditions.</p>
+      <p>In conclusion, this investigation on the NDM-1-positive <italic>K. pneumoniae</italic> clinical isolate has generated detailed genetic information for its multidrug resistance phenotype. Our study not only provides molecular evidence for tandem duplication of the <italic>bla</italic><sub>NDM-1</sub> sequence and a clear demonstration of the heterogeneous nature of carbapenemase gene in a single isolate, but also allows us to present a scheme of genetic recombination through which the bacteria can lose the <italic>bla</italic><sub>NDM-1</sub> sequence in the absence of selection pressure. While the clinical implication of this observation is quite clear, the physiological basis underlying the negative impact on fitness by NDM-1 remains unknown and warrants future study taking a systems biology approach.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0062774.s001">
+        <label>Figure S1</label>
+        <caption>
+          <p><bold>Identification of the genetic determinants for amikacin resistance.</bold> The predicted amikacin resistance genes are colored orange. These include a gene encoding a putative rRNA methyltransferase, <italic>rmt</italic>, and <italic>aac(6&#x2032;)-Ib</italic> on pKPX-1, and a <italic>aac(6&#x2032;)-Ib-cr</italic> gene on pKPX-2. Both ends of the insert in each resistant clone were sequenced, and the sequence pairs mapped back to the complete plasmid sequences. The genomic regions covered by the resistant clones are indicated by dotted lines; and the identification of each clone is given on the left.</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0062774.s001.tif" mimetype="image" mime-subtype="tiff">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0062774.s002">
+        <label>Figure S2</label>
+        <caption>
+          <p><bold>Identification of genetic determinants for chloramphenicol resistance.</bold> The predicted chloramphenicol resistance genes are colored green. Both ends of the insert in each resistant clone were sequenced, and the sequence pairs mapped back to the complete plasmid sequences. The genomic regions covered by the resistant clones are indicated by dotted lines; and the identification of each clone is given on the left.</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0062774.s002.tif" mimetype="image" mime-subtype="tiff">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0062774.s003">
+        <label>Figure S3</label>
+        <caption>
+          <p><bold>The breakpoint at the NDM-1 region.</bold> The remaining sequence of the amplified DNA fragment after losing the NDM-1 region is shown. The arrows indicate the orientation of the repeat-flanking coding sequences (109 and 114). Gray color indicates the 1543-bp repeat identified in the NDM-1 region (as shown in <xref ref-type="fig" rid="pone-0062774-g003">Fig. 3A</xref>).</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0062774.s003.tif" mimetype="image" mime-subtype="tiff">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>The authors wish to express gratitude to Shou-Dong Lee for inspiring this project and to the staff of the Yang Ming Genome Center for their assistance in library construction, library screening, and DNA sequencing. We also appreciate the critical reading of the manuscript by Clara HY Tsai.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0062774-Yong1">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Yong</surname><given-names>D</given-names></name>, <name><surname>Toleman</surname><given-names>MA</given-names></name>, <name><surname>Giske</surname><given-names>CG</given-names></name>, <name><surname>Cho</surname><given-names>HS</given-names></name>, <name><surname>Sundman</surname><given-names>K</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Characterization of a new metallo-beta-lactamase gene, <italic>bla</italic><sub>NDM-1</sub>, and a novel erythromycin esterase gene carried on a unique genetic structure in <italic>Klebsiella pneumoniae</italic> sequence type 14 from India</article-title>. <source>Antimicrob Agents Chemother</source><volume>53</volume>: <fpage>5046</fpage>&#x2013;<lpage>5054</lpage><pub-id pub-id-type="pmid">19770275</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Kumarasamy1">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Kumarasamy</surname><given-names>KK</given-names></name>, <name><surname>Toleman</surname><given-names>MA</given-names></name>, <name><surname>Walsh</surname><given-names>TR</given-names></name>, <name><surname>Bagaria</surname><given-names>J</given-names></name>, <name><surname>Butt</surname><given-names>F</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Emergence of a new antibiotic resistance mechanism in India, Pakistan, and the UK: a molecular, biological, and epidemiological study</article-title>. <source>Lancet Infect Dis</source><volume>10</volume>: <fpage>597</fpage>&#x2013;<lpage>602</lpage><pub-id pub-id-type="pmid">20705517</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Nordmann1">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Nordmann</surname><given-names>P</given-names></name>, <name><surname>Poirel</surname><given-names>L</given-names></name>, <name><surname>Toleman</surname><given-names>MA</given-names></name>, <name><surname>Walsh</surname><given-names>TR</given-names></name> (<year>2011</year>) <article-title>Does broad-spectrum beta-lactam resistance due to NDM-1 herald the end of the antibiotic era for treatment of infections caused by Gram-negative bacteria?</article-title><source>J Antimicrob Chemother</source><volume>66</volume>: <fpage>689</fpage>&#x2013;<lpage>692</lpage><pub-id pub-id-type="pmid">21393184</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Pillai1">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Pillai</surname><given-names>DR</given-names></name>, <name><surname>McGeer</surname><given-names>A</given-names></name>, <name><surname>Low</surname><given-names>DE</given-names></name> (<year>2011</year>) <article-title>New Delhi metallo-beta-lactamase-1 in <italic>Enterobacteriaceae</italic>: emerging resistance</article-title>. <source>CMAJ</source><volume>183</volume>: <fpage>59</fpage>&#x2013;<lpage>64</lpage><pub-id pub-id-type="pmid">21220461</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Walsh1">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Walsh</surname><given-names>TR</given-names></name>, <name><surname>Weeks</surname><given-names>J</given-names></name>, <name><surname>Livermore</surname><given-names>DM</given-names></name>, <name><surname>Toleman</surname><given-names>MA</given-names></name> (<year>2011</year>) <article-title>Dissemination of NDM-1 positive bacteria in the New Delhi environment and its implications for human health: an environmental point prevalence study</article-title>. <source>Lancet Infect Dis</source><volume>11</volume>: <fpage>355</fpage>&#x2013;<lpage>362</lpage><pub-id pub-id-type="pmid">21478057</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Chen1">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Chen</surname><given-names>Y</given-names></name>, <name><surname>Zhou</surname><given-names>Z</given-names></name>, <name><surname>Jiang</surname><given-names>Y</given-names></name>, <name><surname>Yu</surname><given-names>Y</given-names></name> (<year>2011</year>) <article-title>Emergence of NDM-1-producing <italic>Acinetobacter baumannii</italic> in China</article-title>. <source>J Antimicrob Chemother</source><volume>66</volume>: <fpage>1255</fpage>&#x2013;<lpage>1259</lpage><pub-id pub-id-type="pmid">21398294</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Karthikeyan1">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>Karthikeyan</surname><given-names>K</given-names></name>, <name><surname>Thirunarayan</surname><given-names>MA</given-names></name>, <name><surname>Krishnan</surname><given-names>P</given-names></name> (<year>2010</year>) <article-title>Coexistence of <italic>bla</italic><sub>OXA-23</sub> with <italic>bla</italic><sub>NDM-1</sub> and armA in clinical isolates of <italic>Acinetobacter baumannii</italic> from India</article-title>. <source>J Antimicrob Chemother</source><volume>65</volume>: <fpage>2253</fpage>&#x2013;<lpage>2254</lpage><pub-id pub-id-type="pmid">20650909</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Jovcic1">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Jovcic</surname><given-names>B</given-names></name>, <name><surname>Lepsanovic</surname><given-names>Z</given-names></name>, <name><surname>Suljagic</surname><given-names>V</given-names></name>, <name><surname>Rackov</surname><given-names>G</given-names></name>, <name><surname>Begovic</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Emergence of NDM-1 metallo-beta-lactamase in <italic>Pseudomonas aeruginosa</italic> clinical isolates from Serbia</article-title>. <source>Antimicrob Agents Chemother</source><volume>55</volume>: <fpage>3929</fpage>&#x2013;<lpage>3931</lpage><pub-id pub-id-type="pmid">21646490</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Moellering1">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Moellering</surname><given-names>RC</given-names><suffix>Jr</suffix></name> (<year>2010</year>) <article-title>NDM-1 &#x2013; a cause for worldwide concern</article-title>. <source>N Engl J Med</source><volume>363</volume>: <fpage>2377</fpage>&#x2013;<lpage>2379</lpage><pub-id pub-id-type="pmid">21158655</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Livermore1">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Livermore</surname><given-names>DM</given-names></name>, <name><surname>Warner</surname><given-names>M</given-names></name>, <name><surname>Mushtaq</surname><given-names>S</given-names></name>, <name><surname>Doumith</surname><given-names>M</given-names></name>, <name><surname>Zhang</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>What remains against carbapenem-resistant <italic>Enterobacteriaceae</italic>? Evaluation of chloramphenicol, ciprofloxacin, colistin, fosfomycin, minocycline, nitrofurantoin, temocillin and tigecycline</article-title>. <source>Int J Antimicrob Agents</source><volume>37</volume>: <fpage>415</fpage>&#x2013;<lpage>419</lpage><pub-id pub-id-type="pmid">21429716</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Potron1">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Potron</surname><given-names>A</given-names></name>, <name><surname>Poirel</surname><given-names>L</given-names></name>, <name><surname>Nordmann</surname><given-names>P</given-names></name> (<year>2011</year>) <article-title>Plasmid-mediated transfer of the <italic>bla</italic><sub>NDM-1</sub> gene in Gram-negative rods</article-title>. <source>FEMS Microbiol Lett</source><volume>324</volume>: <fpage>111</fpage>&#x2013;<lpage>116</lpage><pub-id pub-id-type="pmid">22092811</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Nordmann2">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Nordmann</surname><given-names>P</given-names></name>, <name><surname>Poirel</surname><given-names>L</given-names></name>, <name><surname>Walsh</surname><given-names>TR</given-names></name>, <name><surname>Livermore</surname><given-names>DM</given-names></name> (<year>2011</year>) <article-title>The emerging NDM carbapenemases</article-title>. <source>Trends Microbiol</source><volume>19</volume>: <fpage>588</fpage>&#x2013;<lpage>595</lpage><pub-id pub-id-type="pmid">22078325</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Poirel1">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Poirel</surname><given-names>L</given-names></name>, <name><surname>Dortet</surname><given-names>L</given-names></name>, <name><surname>Bernabeu</surname><given-names>S</given-names></name>, <name><surname>Nordmann</surname><given-names>P</given-names></name> (<year>2011</year>) <article-title>Genetic features of <italic>bla</italic><sub>NDM-1</sub>-positive <italic>Enterobacteriaceae</italic></article-title>. <source>Antimicrob Agents Chemother</source><volume>55</volume>: <fpage>5403</fpage>&#x2013;<lpage>5407</lpage><pub-id pub-id-type="pmid">21859933</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Ho1">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Ho</surname><given-names>PL</given-names></name>, <name><surname>Lo</surname><given-names>WU</given-names></name>, <name><surname>Yeung</surname><given-names>MK</given-names></name>, <name><surname>Lin</surname><given-names>CH</given-names></name>, <name><surname>Chow</surname><given-names>KH</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Complete Sequencing of pNDM-HK Encoding NDM-1 Carbapenemase from a Multidrug-Resistant <italic>Escherichia coli</italic> Strain Isolated in Hong Kong</article-title>. <source>PLoS One</source><volume>6</volume>: <fpage>e17989</fpage><pub-id pub-id-type="pmid">21445317</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Sekizuka1">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Sekizuka</surname><given-names>T</given-names></name>, <name><surname>Matsui</surname><given-names>M</given-names></name>, <name><surname>Yamane</surname><given-names>K</given-names></name>, <name><surname>Takeuchi</surname><given-names>F</given-names></name>, <name><surname>Ohnishi</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Complete sequencing of the <italic>bla</italic><sub>NDM-1</sub>-positive IncA/C plasmid from <italic>Escherichia coli</italic> ST38 isolate suggests a possible origin from plant pathogens</article-title>. <source>PLoS One</source><volume>6</volume>: <fpage>e25334</fpage><pub-id pub-id-type="pmid">21966500</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Carattoli1">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Carattoli</surname><given-names>A</given-names></name>, <name><surname>Villa</surname><given-names>L</given-names></name>, <name><surname>Poirel</surname><given-names>L</given-names></name>, <name><surname>Bonnin</surname><given-names>RA</given-names></name>, <name><surname>Nordmann</surname><given-names>P</given-names></name> (<year>2012</year>) <article-title>Evolution of IncA/C <italic>bla</italic><sub>CMY-2</sub>-carrying plasmids by acquisition of the <italic>bla</italic><sub>NDM-1</sub> carbapenemase gene</article-title>. <source>Antimicrob Agents Chemother</source><volume>56</volume>: <fpage>783</fpage>&#x2013;<lpage>786</lpage><pub-id pub-id-type="pmid">22123704</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-McGann1">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>McGann</surname><given-names>P</given-names></name>, <name><surname>Hang</surname><given-names>J</given-names></name>, <name><surname>Clifford</surname><given-names>RJ</given-names></name>, <name><surname>Yang</surname><given-names>Y</given-names></name>, <name><surname>Kwak</surname><given-names>YI</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Complete sequence of a novel 178-kilobase plasmid carrying <italic>bla</italic><sub>NDM-1</sub> in a <italic>Providencia stuartii</italic> strain isolated in Afghanistan</article-title>. <source>Antimicrob Agents Chemother</source><volume>56</volume>: <fpage>1673</fpage>&#x2013;<lpage>1679</lpage><pub-id pub-id-type="pmid">22290972</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Poirel2">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Poirel</surname><given-names>L</given-names></name>, <name><surname>Bonnin</surname><given-names>RA</given-names></name>, <name><surname>Nordmann</surname><given-names>P</given-names></name> (<year>2011</year>) <article-title>Analysis of the resistome of a multidrug-resistant NDM-1-producing <italic>Escherichia coli</italic> strain by high-throughput genome sequencing</article-title>. <source>Antimicrob Agents Chemother</source><volume>55</volume>: <fpage>4224</fpage>&#x2013;<lpage>4229</lpage><pub-id pub-id-type="pmid">21746951</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Bonnin1">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Bonnin</surname><given-names>RA</given-names></name>, <name><surname>Poirel</surname><given-names>L</given-names></name>, <name><surname>Carattoli</surname><given-names>A</given-names></name>, <name><surname>Nordmann</surname><given-names>P</given-names></name> (<year>2012</year>) <article-title>Characterization of an IncFII plasmid encoding NDM-1 from <italic>Escherichia coli</italic> ST131</article-title>. <source>PLoS One</source><volume>7</volume>: <fpage>e34752</fpage><pub-id pub-id-type="pmid">22511964</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Villa1">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Villa</surname><given-names>L</given-names></name>, <name><surname>Poirel</surname><given-names>L</given-names></name>, <name><surname>Nordmann</surname><given-names>P</given-names></name>, <name><surname>Carta</surname><given-names>C</given-names></name>, <name><surname>Carattoli</surname><given-names>A</given-names></name> (<year>2012</year>) <article-title>Complete sequencing of an IncH plasmid carrying the <italic>bla</italic><sub>NDM-1</sub>, <italic>bla</italic><sub>CTX-M-15</sub> and <italic>qnrB1</italic> genes</article-title>. <source>J Antimicrob Chemother</source><volume>67</volume>: <fpage>1645</fpage>&#x2013;<lpage>1650</lpage><pub-id pub-id-type="pmid">22511638</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Dolejska1">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Dolejska</surname><given-names>M</given-names></name>, <name><surname>Villa</surname><given-names>L</given-names></name>, <name><surname>Poirel</surname><given-names>L</given-names></name>, <name><surname>Nordmann</surname><given-names>P</given-names></name>, <name><surname>Carattoli</surname><given-names>A</given-names></name> (<year>2012</year>) <article-title>Complete sequencing of an IncHI1 plasmid encoding the carbapenemase NDM-1, the ArmA 16S RNA methylase and a resistance-nodulation-cell division/multidrug efflux pump</article-title>. <source>J Antimicrob Chemother</source><volume>68</volume>: <fpage>34</fpage>&#x2013;<lpage>39</lpage><pub-id pub-id-type="pmid">22969080</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Hu1">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Hu</surname><given-names>H</given-names></name>, <name><surname>Hu</surname><given-names>Y</given-names></name>, <name><surname>Pan</surname><given-names>Y</given-names></name>, <name><surname>Liang</surname><given-names>H</given-names></name>, <name><surname>Wang</surname><given-names>H</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Novel plasmid and its variant harboring both a <italic>bla</italic><sub>NDM-1</sub> gene and type IV secretion system in clinical isolates of <italic>Acinetobacter lwoffii</italic></article-title>. <source>Antimicrob Agents Chemother</source><volume>56</volume>: <fpage>1698</fpage>&#x2013;<lpage>1702</lpage><pub-id pub-id-type="pmid">22290961</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Wu1">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Wu</surname><given-names>HS</given-names></name>, <name><surname>Chen</surname><given-names>TL</given-names></name>, <name><surname>Chen</surname><given-names>IC</given-names></name>, <name><surname>Huang</surname><given-names>MS</given-names></name>, <name><surname>Wang</surname><given-names>FD</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>First identification of a patient colonized with <italic>Klebsiella pneumoniae</italic> carrying <italic>bla</italic><sub>NDM-1</sub> in Taiwan</article-title>. <source>J Chin Med Assoc</source><volume>73</volume>: <fpage>596</fpage>&#x2013;<lpage>598</lpage><pub-id pub-id-type="pmid">21093828</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Chen2">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Chen</surname><given-names>TL</given-names></name>, <name><surname>Fung</surname><given-names>CP</given-names></name>, <name><surname>Lee</surname><given-names>SD</given-names></name> (<year>2011</year>) <article-title>Spontaneous eradication of a NDM-1 positive <italic>Klebsiella pneumoniae</italic> that colonized the intestine of an asymptomatic carrier</article-title>. <source>J Chin Med Assoc</source><volume>74</volume>: <fpage>104</fpage><pub-id pub-id-type="pmid">21354091</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Carvalhaes1">
+        <label>25</label>
+        <mixed-citation publication-type="journal"><name><surname>Carvalhaes</surname><given-names>CG</given-names></name>, <name><surname>Picao</surname><given-names>RC</given-names></name>, <name><surname>Nicoletti</surname><given-names>AG</given-names></name>, <name><surname>Xavier</surname><given-names>DE</given-names></name>, <name><surname>Gales</surname><given-names>AC</given-names></name> (<year>2010</year>) <article-title>Cloverleaf test (modified Hodge test) for detecting carbapenemase production in <italic>Klebsiella pneumoniae</italic>: be aware of false positive results</article-title>. <source>J Antimicrob Chemother</source><volume>65</volume>: <fpage>249</fpage>&#x2013;<lpage>251</lpage><pub-id pub-id-type="pmid">19996141</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Chen3">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Chen</surname><given-names>TL</given-names></name>, <name><surname>Siu</surname><given-names>LK</given-names></name>, <name><surname>Lee</surname><given-names>YT</given-names></name>, <name><surname>Chen</surname><given-names>CP</given-names></name>, <name><surname>Huang</surname><given-names>LY</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title><italic>Acinetobacter baylyi</italic> as a pathogen for opportunistic infection</article-title>. <source>J Clin Microbiol</source><volume>46</volume>: <fpage>2938</fpage>&#x2013;<lpage>2944</lpage><pub-id pub-id-type="pmid">18632910</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Turton1">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Turton</surname><given-names>JF</given-names></name>, <name><surname>Baklan</surname><given-names>H</given-names></name>, <name><surname>Siu</surname><given-names>LK</given-names></name>, <name><surname>Kaufmann</surname><given-names>ME</given-names></name>, <name><surname>Pitt</surname><given-names>TL</given-names></name> (<year>2008</year>) <article-title>Evaluation of a multiplex PCR for detection of serotypes K1, K2 and K5 in <italic>Klebsiella</italic> sp. and comparison of isolates within these serotypes</article-title>. <source>FEMS Microbiol Lett</source><volume>284</volume>: <fpage>247</fpage>&#x2013;<lpage>252</lpage><pub-id pub-id-type="pmid">18507682</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Clinical1">
+        <label>28</label>
+        <mixed-citation publication-type="other">Clinical and Laboratory Standards Institute. (2010) Performance standards for antimicrobial susceptibility testing: 20th informational supplement. CLSI document M100-S20. Clinical and Laboratory Standards Institute, Wayne, PA.</mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Fleischmann1">
+        <label>29</label>
+        <mixed-citation publication-type="journal"><name><surname>Fleischmann</surname><given-names>RD</given-names></name>, <name><surname>Adams</surname><given-names>MD</given-names></name>, <name><surname>White</surname><given-names>O</given-names></name>, <name><surname>Clayton</surname><given-names>RA</given-names></name>, <name><surname>Kirkness</surname><given-names>EF</given-names></name>, <etal>et al</etal> (<year>1995</year>) <article-title>Whole-genome random sequencing and assembly of <italic>Haemophilus influenzae</italic> Rd</article-title>. <source>Science</source><volume>269</volume>: <fpage>496</fpage>&#x2013;<lpage>512</lpage><pub-id pub-id-type="pmid">7542800</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Fraser1">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>Fraser</surname><given-names>CM</given-names></name>, <name><surname>Fleischmann</surname><given-names>RD</given-names></name> (<year>1997</year>) <article-title>Strategies for whole microbial genome sequencing and analysis</article-title>. <source>Electrophoresis</source><volume>18</volume>: <fpage>1207</fpage>&#x2013;<lpage>1216</lpage><pub-id pub-id-type="pmid">9298642</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Gordon1">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>Gordon</surname><given-names>D</given-names></name>, <name><surname>Abajian</surname><given-names>C</given-names></name>, <name><surname>Green</surname><given-names>P</given-names></name> (<year>1998</year>) <article-title>Consed: a graphical tool for sequence finishing</article-title>. <source>Genome Res</source><volume>8</volume>: <fpage>195</fpage>&#x2013;<lpage>202</lpage><pub-id pub-id-type="pmid">9521923</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Schmittgen1">
+        <label>32</label>
+        <mixed-citation publication-type="journal"><name><surname>Schmittgen</surname><given-names>TD</given-names></name>, <name><surname>Livak</surname><given-names>KJ</given-names></name> (<year>2008</year>) <article-title>Analyzing real-time PCR data by the comparative C<sub>T</sub> method</article-title>. <source>Nat Protoc</source><volume>3</volume>: <fpage>1101</fpage>&#x2013;<lpage>1108</lpage><pub-id pub-id-type="pmid">18546601</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Margulies1">
+        <label>33</label>
+        <mixed-citation publication-type="journal"><name><surname>Margulies</surname><given-names>M</given-names></name>, <name><surname>Egholm</surname><given-names>M</given-names></name>, <name><surname>Altman</surname><given-names>WE</given-names></name>, <name><surname>Attiya</surname><given-names>S</given-names></name>, <name><surname>Bader</surname><given-names>JS</given-names></name>, <etal>et al</etal> (<year>2005</year>) <article-title>Genome sequencing in microfabricated high-density picolitre reactors</article-title>. <source>Nature</source><volume>437</volume>: <fpage>376</fpage>&#x2013;<lpage>380</lpage><pub-id pub-id-type="pmid">16056220</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Wu2">
+        <label>34</label>
+        <mixed-citation publication-type="journal"><name><surname>Wu</surname><given-names>KM</given-names></name>, <name><surname>Li</surname><given-names>LH</given-names></name>, <name><surname>Yan</surname><given-names>JJ</given-names></name>, <name><surname>Tsao</surname><given-names>N</given-names></name>, <name><surname>Liao</surname><given-names>TL</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Genome sequencing and comparative analysis of <italic>Klebsiella pneumoniae</italic> NTUH-K2044, a strain causing liver abscess and meningitis</article-title>. <source>J Bacteriol</source><volume>191</volume>: <fpage>4492</fpage>&#x2013;<lpage>4501</lpage><pub-id pub-id-type="pmid">19447910</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Strahilevitz1">
+        <label>35</label>
+        <mixed-citation publication-type="journal"><name><surname>Strahilevitz</surname><given-names>J</given-names></name>, <name><surname>Jacoby</surname><given-names>GA</given-names></name>, <name><surname>Hooper</surname><given-names>DC</given-names></name>, <name><surname>Robicsek</surname><given-names>A</given-names></name> (<year>2009</year>) <article-title>Plasmid-mediated quinolone resistance: a multifaceted threat</article-title>. <source>Clin Microbiol Rev</source><volume>22</volume>: <fpage>664</fpage>&#x2013;<lpage>689</lpage><pub-id pub-id-type="pmid">19822894</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Hillen1">
+        <label>36</label>
+        <mixed-citation publication-type="journal"><name><surname>Hillen</surname><given-names>W</given-names></name>, <name><surname>Berens</surname><given-names>C</given-names></name> (<year>1994</year>) <article-title>Mechanisms underlying expression of Tn10 encoded tetracycline resistance</article-title>. <source>Annu Rev Microbiol</source><volume>48</volume>: <fpage>345</fpage>&#x2013;<lpage>369</lpage><pub-id pub-id-type="pmid">7826010</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Noguchi1">
+        <label>37</label>
+        <mixed-citation publication-type="journal"><name><surname>Noguchi</surname><given-names>N</given-names></name>, <name><surname>Emura</surname><given-names>A</given-names></name>, <name><surname>Matsuyama</surname><given-names>H</given-names></name>, <name><surname>O'Hara</surname><given-names>K</given-names></name>, <name><surname>Sasatsu</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>1995</year>) <article-title>Nucleotide sequence and characterization of erythromycin resistance determinant that encodes macrolide 2'-phosphotransferase I in <italic>Escherichia coli</italic></article-title>. <source>Antimicrob Agents Chemother</source><volume>39</volume>: <fpage>2359</fpage>&#x2013;<lpage>2363</lpage><pub-id pub-id-type="pmid">8619599</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Sole1">
+        <label>38</label>
+        <mixed-citation publication-type="journal"><name><surname>Sole</surname><given-names>M</given-names></name>, <name><surname>Pitart</surname><given-names>C</given-names></name>, <name><surname>Roca</surname><given-names>I</given-names></name>, <name><surname>Fabrega</surname><given-names>A</given-names></name>, <name><surname>Salvador</surname><given-names>P</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>First description of an <italic>Escherichia coli</italic> strain producing NDM-1 carbapenemase in Spain</article-title>. <source>Antimicrob Agents Chemother</source><volume>55</volume>: <fpage>4402</fpage>&#x2013;<lpage>4404</lpage><pub-id pub-id-type="pmid">21730115</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Sandegren1">
+        <label>39</label>
+        <mixed-citation publication-type="journal"><name><surname>Sandegren</surname><given-names>L</given-names></name>, <name><surname>Andersson</surname><given-names>DI</given-names></name> (<year>2009</year>) <article-title>Bacterial gene amplification: implications for the evolution of antibiotic resistance</article-title>. <source>Nat Rev Microbiol</source><volume>7</volume>: <fpage>578</fpage>&#x2013;<lpage>588</lpage><pub-id pub-id-type="pmid">19609259</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Clewell1">
+        <label>40</label>
+        <mixed-citation publication-type="journal"><name><surname>Clewell</surname><given-names>DB</given-names></name>, <name><surname>Yagi</surname><given-names>Y</given-names></name>, <name><surname>Bauer</surname><given-names>B</given-names></name> (<year>1975</year>) <article-title>Plasmid-determined tetracycline resistance in <italic>Streptococcus faecalis</italic>: evidence for gene amplification during growth in presence of tetracycline</article-title>. <source>Proc Natl Acad Sci U S A</source><volume>72</volume>: <fpage>1720</fpage>&#x2013;<lpage>1724</lpage><pub-id pub-id-type="pmid">807914</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Yagi1">
+        <label>41</label>
+        <mixed-citation publication-type="journal"><name><surname>Yagi</surname><given-names>Y</given-names></name>, <name><surname>Clewell</surname><given-names>DB</given-names></name> (<year>1976</year>) <article-title>Plasmid-determined tetracycline resistance in <italic>Streptococcus faecalis</italic>: tandemly repeated resistance determinants in amplified forms of pAM&#x3B1;1 DNA</article-title>. <source>J Mol Biol</source><volume>102</volume>: <fpage>583</fpage>&#x2013;<lpage>600</lpage><pub-id pub-id-type="pmid">818395</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Szczepanowski1">
+        <label>42</label>
+        <mixed-citation publication-type="journal"><name><surname>Szczepanowski</surname><given-names>R</given-names></name>, <name><surname>Krahn</surname><given-names>I</given-names></name>, <name><surname>Puhler</surname><given-names>A</given-names></name>, <name><surname>Schluter</surname><given-names>A</given-names></name> (<year>2004</year>) <article-title>Different molecular rearrangements in the integron of the IncP-1&#x3B2; resistance plasmid pB10 isolated from a wastewater treatment plant result in elevated beta-lactam resistance levels</article-title>. <source>Arch Microbiol</source><volume>182</volume>: <fpage>429</fpage>&#x2013;<lpage>435</lpage><pub-id pub-id-type="pmid">15375643</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Hammond1">
+        <label>43</label>
+        <mixed-citation publication-type="journal"><name><surname>Hammond</surname><given-names>DS</given-names></name>, <name><surname>Schooneveldt</surname><given-names>JM</given-names></name>, <name><surname>Nimmo</surname><given-names>GR</given-names></name>, <name><surname>Huygens</surname><given-names>F</given-names></name>, <name><surname>Giffard</surname><given-names>PM</given-names></name> (<year>2005</year>) <article-title><italic>bla</italic><sub>SHV</sub> Genes in <italic>Klebsiella pneumoniae</italic>: different allele distributions are associated with different promoters within individual isolates</article-title>. <source>Antimicrob Agents Chemother</source><volume>49</volume>: <fpage>256</fpage>&#x2013;<lpage>263</lpage><pub-id pub-id-type="pmid">15616303</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Bertini1">
+        <label>44</label>
+        <mixed-citation publication-type="journal"><name><surname>Bertini</surname><given-names>A</given-names></name>, <name><surname>Poirel</surname><given-names>L</given-names></name>, <name><surname>Bernabeu</surname><given-names>S</given-names></name>, <name><surname>Fortini</surname><given-names>D</given-names></name>, <name><surname>Villa</surname><given-names>L</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>Multicopy <italic>bla</italic><sub>OXA-58</sub> gene as a source of high-level resistance to carbapenems in <italic>Acinetobacter baumannii</italic></article-title>. <source>Antimicrob Agents Chemother</source><volume>51</volume>: <fpage>2324</fpage>&#x2013;<lpage>2328</lpage><pub-id pub-id-type="pmid">17438042</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Sun1">
+        <label>45</label>
+        <mixed-citation publication-type="journal"><name><surname>Sun</surname><given-names>S</given-names></name>, <name><surname>Berg</surname><given-names>OG</given-names></name>, <name><surname>Roth</surname><given-names>JR</given-names></name>, <name><surname>Andersson</surname><given-names>DI</given-names></name> (<year>2009</year>) <article-title>Contribution of gene amplification to evolution of increased antibiotic resistance in <italic>Salmonella typhimurium</italic></article-title>. <source>Genetics</source><volume>182</volume>: <fpage>1183</fpage>&#x2013;<lpage>1195</lpage><pub-id pub-id-type="pmid">19474201</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0062774-Yagi2">
+        <label>46</label>
+        <mixed-citation publication-type="journal"><name><surname>Yagi</surname><given-names>Y</given-names></name>, <name><surname>Clewell</surname><given-names>DB</given-names></name> (<year>1980</year>) <article-title>Amplification of the tetracycline resistance determinant of plasmid pAM&#x3B1;1 in <italic>Streptococcus faecalis</italic>: dependence on host recombination machinery</article-title>. <source>J Bacteriol</source><volume>143</volume>: <fpage>1070</fpage>&#x2013;<lpage>1072</lpage><pub-id pub-id-type="pmid">6782074</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

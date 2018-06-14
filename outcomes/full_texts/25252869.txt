@@ -1,0 +1,247 @@
+These authors contributed equally to this work. Clonal architecture in myeloproliferative neoplasms (MPNs) is poorly understood. Here we
+report genomic analyses of a patient with primary myelofibrosis (PMF) transformed to secondary acute myeloid leukemia (sAML). Whole genome
+sequencing (WGS) was performed on PMF and sAML diagnosis samples, with skin included as a germline surrogate. Deep sequencing validation was
+performed on the WGS samples and an additional sample obtained during sAML remission/relapsed PMF. Clustering analysis of 649 validated
+somatic single nucleotide variants revealed four distinct clonal groups, each including putative driver mutations. The first group
+(including JAK2 and U2AF1), representing the founding clone, included mutations with high frequency at all three disease stages. The second
+clonal group (including MYB) was present only in PMF, suggesting the presence of a clone that was dispensable for transformation. The third
+group (including ASXL1) contained mutations with low frequency in PMF and high frequency in subsequent samples, indicating evolution of the
+dominant clone with disease progression. The fourth clonal group (including IDH1 and RUNX1) was acquired at sAML transformation and was
+predominantly absent at sAML remission/relapsed PMF. Taken together, these findings illustrate the complex clonal dynamics associated with
+disease evolution in MPNs and sAML. Myeloproliferative neoplasms (MPNs) are clonal myeloid malignancies that are derived from hematopoietic
+stem/progenitor cells (HSPCs).(1) These chronic disorders are characterized by unrestrained cellular proliferation leading to overproduction
+of one or more myeloid lineages. Primary myelofibrosis (PMF) is a subtype of MPN characterized by megakaryocyte hyperplasia and atypia, bone
+marrow fibrosis, extramedullary hematopoiesis, and splenomegaly.(2) The overall prognosis for PMF is poor, with expected survival ranging
+from months to several years.(3) In addition, patients with PMF exhibit a propensity for transformation to secondary acute myeloid leukemia
+(sAML), for which the prognosis is dismal.(4, 5) The genetic basis of MPNs has been an area of intense investigation, notably marked by the
+identification of the JAK2 V617F mutation.(6-9) Approximately 50-60% of patients with PMF harbor the JAK2 V617F mutation, and an additional
+subset of patients (∼5-10%) exhibit mutations in other members of the JAK-STAT signaling axis such as MPL(10, 11) or LNK (SH2B3).(12, 13)
+These findings indicate that dysregulated JAK-STAT signaling is a hallmark of MPN pathogenesis. In support of this notion, both JAK2
+V617F-positive and JAK2 V617F-negative MF patients have exhibited clinical responses to treatment with targeted inhibitors of JAK2.(14, 15)
+Despite these findings, recent studies have demonstrated that JAK2 (or MPL or LNK) mutations are not the sole genetic lesion in many MPN
+cases.(16) TET2 mutations may be acquired prior to the JAK2 V617F mutation, indicating that at least in some MPNs there is a “pre-JAK2”
+event leading to clonal hematopoiesis.(17) This notion is supported by recent exome sequencing studies in which a subset of MPN patients
+were found to harbor pre-JAK2 mutations.(18) Alterations in several genes (e.g. IKZF1, p53) are specifically associated with transformation
+to sAML.(16) Interestingly, sAML arising from a JAK2 V617F-positive MPN frequently lacks the JAK2 V617F mutation, suggesting that the
+leukemic clone in these cases originated from a pre-JAK2 clone.(19) Recurrent mutations in several other genes (e.g. ASXL1, EZH2, DNTM3A,
+IDH1/2, CBL, SRSF2, CALR) have also recently been identified in MPNs.(20-22) Many of these mutations have been identified in chronic as well
+as blast phase MPNs. The specific role of these genes in disease initiation and/or progression remains incompletely understood. Clonal
+hierarchy in MPNs, particularly in the context of disease progression, is not well defined. While exome sequencing studies can suggest
+possible clonal populations,(18, 22) this approach lacks the resolution to confidently define subclonal populations, primarily due to the
+low number of coding mutations typically found in myeloid malignancies.(23, 24) In addition, small subclonal populations may only be
+detected when multiple timepoints are assessed. Previous studies investigating clonal evolution in MPNs have primarily focused on selected
+gene mutations or chromosome 9p UPD encompassing JAK2.(25-28) The only whole genome sequencing (WGS) study in MPNs published to date
+examined a single patient with early stage PMF and did not examine multiple timepoints or disease evolution.(29) Here we report
+comprehensive genomic analyses performed on an individual patient with PMF transformed to sAML. WGS in conjunction with deep sequencing
+validation enabled clonal modeling of multiple disease stages, thereby inferring mechanisms of disease evolution. Bone marrow, peripheral
+blood, and skin samples were obtained from a single patient at three different disease stages (PMF, sAML, sAML remission/relapsed PMF).
+Genomic DNA was extracted from PMF and sAML bone marrow mononuclear cells, as well as from peripheral blood mononuclear cells obtained
+during sAML remission/relapsed PMF. Genomic DNA was extracted from a skin biopsy collected at PMF diagnosis. The patient provided written
+consent on a protocol approved by the Washington University Human Studies Committee (WU #01-1014) that includes specific language
+authorizing WGS. WGS was performed on the PMF, sAML, and skin (normal) samples. For WGS, paired-end sequencing was performed using the
+Illumina HiSeq platform with 100 bp read length (San Diego, CA). For the PMF and sAML samples, 211.9 to 212.9Gb of WGS sequence was
+generated (corresponding to 63.9x and 60.2x haploid coverage of the reference genome, respectively), and for the normal sample 127.1Gb was
+generated (corresponding to 37.5x haploid coverage). Alignment of reads and detection of somatic mutations (single nucleotide, indel, and
+structural variants) was performed as described previously(24), with updates to the versions of the following tools: BWA v0.5.9(30), Picard
+v1.46 (http://picard.sourceforge.net/), dbSNP build 132(31), Samtools svn rev 963(32), and Pindel v0.5.(33) Single nucleotide variants
+(SNVs) and indels were binned into tiers as previously described (34), where tier 1 includes mutations in the coding regions of exons,
+consensus splice sites, and RNA genes, tier 2 includes mutations in highly conserved genomic regions and regions with regulatory potential,
+tier 3 includes mutations in the nonrepetitive portion of the genome not included in tier 2, and tier 4 mutations are in the remainder of
+the genome. Somatic copy number alterations were detected using copyCat version 1.5 (https://github.com/chrisamiller/copycat). Possible
+regions of copy number alteration were investigated by plotting the ratio of tumor to reference WGS reads normalized to the average tumor:
+reference ratio across the chromosome for all SNVs in the candidate region. Copy number neutral loss of heterozygosity was detected on
+chromosome 9 from bases 1 to 8783029 in both the PMF and sAML samples using SNP calls from Varscan and segmented with the DNAcopy package
+for R.(35) RNA sequencing was performed on the PMF and sAML samples. Paired-end sequencing was performed on poly-A selected RNA using the
+Illumina HiSeq2000 platform with 100 bp read length. For the PMF and sAML samples, 397 and 393 million total reads were generated,
+respectively. Reads were aligned with TopHat v1.3.1 (36) and analyzed with Cufflinks v1.0.3.(37) The resulting transcript abundance
+estimates are expressed in fragments per kilobase of exon per million fragments mapped (FPKM), as proposed by Mortazavi et al.(38) Gene
+fusions were detected from RNA sequencing data using BreakFusion version 1.0.(39) A capture panel was designed for validation resequencing.
+A customized capture array design targeting 10,307,042 bases was made by Roche NimbleGen (Madison, WI), and libraries were hybridized
+according to the manufacturer's protocol. The array included all tier 1-3 high confidence SNVs (1,351), tier 1 low confidence SNVs (48,884),
+tier 1-3 indels (5,549) and structural variants (22,442) identified in the WGS. In addition, capture probes targeting SNVs and exons in
+genes known or predicted to be associated with MPN pathogenesis (Supplementary Table 1) were obtained from Integrated DNA Technologies
+(Coralville, IA). These additional probes targeting 80,880 bases were spiked into the Roche Nimblegen (Madison, WI) capture panel at a 2:1
+ratio. Validation sequencing was performed on the three WGS samples as well as a fourth sample obtained during sAML remission/relapsed PMF.
+Sequence was produced on the Illumina HiSeq2000 platform and runs were completed according to the manufacturer's recommendations (Illumina
+Inc, San Diego, CA). Between 2.7 and 4.9 Gb of sequence was produced for each sample, giving a median target coverage of 216x to 388x.
+Variants were detected using Somatic Sniper v0.7.3 (40), GATK (41), Pindel v0.5, and Varscan v2.2.6 (42), then validated as described
+previously.(24) All validated SNVs had a VAF of at least 11% in the sample in which it was validated. In order to follow the frequency of a
+SNV or indel across disease progression, if a mutation was validated in at least one sample, the frequency of that mutation in other samples
+was retained regardless of individual sample validation results. In some instances this led to the retention of mutations with extremely low
+VAFs. In these cases it could not be completely excluded that the low VAFs were in fact due to base calling errors. Validated SNVs in the
+PMF and sAML samples enabled the identification of clonal groups using a clustering strategy similar to Walter et al.(43) The variant allele
+frequencies (VAFs) of three SNVs in a region of uniparental disomy (UPD) on chromosome 9 (first 8.7 MB) were divided in half prior to
+clustering. Outlier VAFs were detected by dbscan (44), with a reachability index of 0.5. VAF data along with outlier points submitted as
+potential noise were submitted for unsupervised clustering using the Mclust algorithm (45) with default parameters. The maximum number of
+clusters was limited to four (G=1:4), and each cluster had to contain at least seven SNVs (1% of the total number of SNVs). Out of 10
+available models in Mclust, an ellipsoidal model with variable volume and orientation but equal shape was selected as the best model and
+contained three groups. Validated SNVs in the sAML remission/relapsed PMF sample refined the clusters. Initial unsupervised clustering of
+the PMF and sAML samples identified a single group with high sAML VAFs and low PMF VAFs. Based on the VAFs in the sAML remission/relapsed
+PMF sample, the cluster was divided into two groups: “Low PMF” or “sAML only”. The SNVs in the “Low PMF” group had VAFs > 19% in the sAML
+remission/relapsed PMF sample. The “sAML only” SNVs were characterized by VAFs < 2.6% in the PMF stage and < 2% in the sAML
+remission/relapsed PMF sample. The result was four clusters of SNVs that corresponded to the founding clone and three subclones observed
+across the three samples. Peripheral blood from the PMF stage was stained with antibodies against CD34, CD38, CD3, CD19, CD14, and CD16.
+Lineage-negative CD34+ cells were sorted on a Dako MoFlo flow cytometer (Beckman-Coulter Inc, Indianapolis, IN) and plated at one cell per
+well into 96-well plates containing a monolayer of AFT024 mouse bone marrow stromal cells. After growth for 28-35 days in vitro, DNA from
+individual colonies was extracted using the QiaAmp DNA mini kit (Qiagen, Bergisch Gladbach, Germany). Colony DNA was genotyped for JAK2
+V617F and U2AF1 Q157P mutations by TaqMan real time PCR on a StepOne Plus real time thermal cycler (Applied Biosystems/Life Technologies,
+Grand Island, NY). The JAK2 V617F PCR was a modified version of the protocol by Levine et al.(46) The U2AF1 Q157P TaqMan PCR assay utilized
+forward primer = CCGTGACGGACTTCAGAGAA, reverse primer = ACTGGCCACTCCTCACTCA, WT probe = VIC-CTGCCGTCAGTATGAG-MGB, and Q157P probe = 6FAM-
+TGCCGTCCGTATGAG-MGB, with an annealing temperature of 60°C. Genotyping was calibrated with HEL cell line DNA (JAK2 V617F homozygous) mixed
+in a titration series with control JAK2 wild-type human genomic DNA, and whole bone marrow DNA from the PMF stage. Genotyping for each
+colony was considered successful if consistent genotype results were obtained for both JAK2 and U2AF1 PCRs. Of 202 CD34+ cell derived colony
+DNAs genotyped, 42 had consistent genotype results for both the JAK2 V617F and U2AF1 Q157P mutations. A 51 year-old woman initially
+presented with splenomegaly, pancytopenia, and leukoerythroblastosis (Supplementary Table S2). A bone marrow biopsy demonstrated severe
+fibrosis, consistent with a diagnosis of PMF. Cytogenetics were normal. Bone marrow and skin samples were banked at that time. The patient
+had an excellent response to treatment with thalidomide, ultimately achieving a complete hematologic remission. Due to the development of
+neuropathy, therapy was eventually switched to lenalidomide. Seven years after initial PMF diagnosis, the patient transformed to sAML. A
+bone marrow biopsy revealed 49% blasts, and cytogenetics were normal. Testing for JAK2 V617F was positive. Bone marrow samples were again
+banked. The patient received induction chemotherapy with IDA-FLAG (idarubicin, fludarabine, cytarabine, G-CSF) and attained a complete
+remission, followed by consolidation chemotherapy with four cycles of high-dose cytarabine. Subsequently, the patient declined bone marrow
+transplantation. Approximately 1.5 years after sAML diagnosis, the patient again developed pancytopenia with leukoerythroblastosis,
+consistent with relapsed PMF, but with no evidence of sAML relapse. Peripheral blood samples were banked approximately two years after sAML
+diagnosis. Samples were thus banked at three stages: PMF diagnosis, sAML diagnosis, and sAML remission/relapsed PMF. WGS was performed on
+the PMF and sAML patient samples, as well as a skin sample obtained at PMF diagnosis. The latter served as a normal control to exclude
+potential germline variants. Haploid coverage was 64x, 60x, and 38x for the PMF, sAML, and skin samples, respectively. Potential somatic
+mutations were identified and divided into four tiers as previously described.(34) Tier 1 mutations included mutations in protein coding
+sequences, consensus splice sites and RNA genes. Somatic single nucleotide mutations (SNVs) and insertions and deletions (indels) were
+validated using custom capture to enable deep sequencing of each mutation. A fourth sample, the sAML remission/relapsed PMF sample, was
+included in the validation analysis, thereby adding a third timepoint to compare mutation frequencies over time with disease progression. A
+total of 649 SNVs were validated in at least one of the three tumor samples (Table 1, Supplementary Table S3 and S4). Of the 649 SNVs, all
+had over 100x coverage with the exception of three SNVs with just under 100 reads in the sAML sample. An average of 398, 302, and 537 reads
+spanned the validated mutations in the PMF, sAML, and sAML remission/relapsed PMF samples, respectively. In addition, two tier 1 indels were
+validated, along with 127 tier 2 and 3 indels (Supplementary Table S3 and S4) No structural variants (Supplementary Table S5) or gene
+fusions (Supplementary Table S6) were identified that likely contributed to disease progression due to the absence of either in the sAML
+sample. Seven years passed between the collection of the PMF sample and the sAML sample, and a corresponding increase in the total number of
+SNVs from 440 to 562 was observed (Table 1). The proportion of SNVs in tiers 1-3 was similar between the PMF and sAML samples and for the
+SNVs that were gained between PMF and sAML, suggesting that the majority of SNVs were randomly distributed across the genome. There was no
+overrepresentation of tier 1 SNVs gained in the sAML sample, indicating that disease progression was not accompanied by a specific increase
+in coding mutations. The observed number of coding SNVs per sample fell within the calculated range of coding mutations expected to
+accumulate in HSPCs each year as a result of errors during DNA replication,(23) suggesting that the majority of the mutations were due to
+the aging process. This was also consistent with genome-wide studies in MDS and AML which concluded that the majority of somatic SNVs are
+passenger mutations that accumulate over time (23, 34, 43). An increased proportion of transversion mutations may be indicative of therapy-
+related DNA changes.(23, 47) For the PMF and sAML samples, the transition and transversion frequencies were roughly similar to previously
+published studies of AML, MDS, and MPNs (Figure 1).(22, 23, 43) sAML-specific mutations from the patient examined in this study also had a
+similar distribution. These findings indicate that there was no obvious therapy-related effect on mutation distribution in this case. A
+total of 38 tier 1 SNVs were validated across the three tumor samples (Figure 2, Supplementary Table 3). Of the validated tier 1 SNVs, six
+were identified as putative driver mutations (JAK2, U2AF1, MYB, ASXL1, RUNX1, IDH1) based on prior studies demonstrating mutations in each
+of these genes in MPNs and/or sAML (Table 2).(20, 48-51) The JAK2 and U2AF1 mutations were identified in all three samples with a variant
+allele frequency (VAF) of approximately 75% and 40%, respectively. The MYB mutation was present in the PMF sample at a VAF of 20%, but was
+not detectable in the sAML or sAML remission/relapsed PMF samples. A mutation in ASXL1 was found at a low frequency (6%) in the PMF sample,
+but was substantially enriched in the sAML (44%) and sAML remission/relapsed PMF (32%) samples. RUNX1 and IDH1 mutations were validated only
+in the sAML sample at VAFs of 35 and 30%, respectively. Amongst the remaining 32 tier 1 SNVs, a mutation in the HCFC1 gene was identified as
+an additional possible driver based on its expression, known function and interaction in pathways also involving ASXL1.(52-54) This mutation
+followed a VAF pattern across the three different disease stages that was quite similar to ASXL1, suggesting a possible synergy between the
+two mutations. RNA sequencing data confirmed that all candidate driver mutations (Table 2) were expressed in the corresponding PMF and/or
+sAML samples (Supplementary Table 3). Out of the 40 tier 1 mutations inclusive of SNVs and indels, 18 were expressed in the PMF and/or sAML
+samples. Most mutations had a similar VAF in the validated whole genome sequencing data compared to the RNA sequencing data (Supplementary
+Figure 1). The JAK2 V617F mutation may initially be acquired as a heterozygous mutation and subsequently become homozygous via mitotic
+recombination (27, 55, 56). To establish whether the VAF observed for the JAK2 V617F mutation corresponded primarily to a dominant JAK2
+V617F homozygous clone, or to a mixture of JAK2 V617F homozygous and heterozygous clonal populations, colonies derived from individual CD34+
+cells from the PMF stage were grown in vitro to identify the predominant genotypes among individual clones. Genotyping by real-time PCR
+verified that the observed CD34+-derived cell population was predominantly JAK2 V617F homozygous, with 69% of colonies homozygous, less than
+5% heterozygous for JAK2 V617F, and 26% JAK2 homozygous wild-type (Table 3). Based on these results, the imputed JAK2 V617F allele frequency
+in the genotyped colonies was 71.4%. This was similar to the 71.2% from bulk sorted CD34+ cells, suggesting that culturing the CD34+ cells
+did not significantly alter the JAK2 V617F VAF. Both VAFs were similar to the 74.4% observed by deep sequencing of the bone marrow from the
+PMF stage. Thus, the single cell-derived clones observed in vitro appeared to be representative of those in vivo, implying that the in vivo
+cell population was predominantly JAK2 V617F homozygous. By the overt establishment of PMF, the homozygous mutant cell population was
+already dominant over the heterozygous population. Since the JAK2 and U2AF1 mutations were the most abundant candidate driver mutations
+identified at the PMF stage, either could represent the founding mutation of the PMF propagating clone. To establish which mutation may have
+arisen first, colony DNAs were also genotyped for the U2AF1 Q157P mutation. As shown in Table 3, the U2AF1 mutation was present only in
+cells also containing JAK2 V617F. The predominant JAK2 V617F homozygous cell population was almost entirely U2AF1 Q157P heterozygous,
+consistent with an observed VAF for U2AF1 Q157P roughly half of that observed for JAK2 V617F. There were too few JAK2 heterozygous cells
+observed to determine definitively which mutation, JAK2 or U2AF1, preceded the other. It can only be concluded that by the onset of PMF, a
+JAK2 V617F homozygous, U2AF1 Q157P heterozygous clone had outcompeted all previous mutant clonal populations. With over four hundred SNVs
+per sample, the clonal architecture during disease progression could be inferred. The VAFs of copy neutral mutations were clustered to
+identify the predominant clone and subclonal populations accompanying disease evolution. Since there was no evidence for copy number
+variation around any of the validated SNVs, all validated SNVs were considered copy number neutral and were included in modeling clonality.
+The JAK2 V617F mutation and two additional SNVs were located in a region of uniparental disomy (UPD) in the first 8.78 Mb of chromosome 9
+and had apparent copy number neutral loss of heterozygosity. Consistent with the observation of UPD, all three SNVs had VAFs of
+approximately 75% across samples, and genotyping indicated that the majority of cells were homozygous for the JAK2 V617F mutation. As a
+result, the VAFs for each of the three mutations (including JAK2 V617F) were divided in half for clonal modeling, resulting in VAFs of
+approximately 37%. Using the assumption that mutations with similar VAFs represented a clonal group and traveled together, clonal groups
+were identified based on clusters of VAFs. Unsupervised clustering of the VAFs from the PMF and sAML sample identified a founding clone and
+two subclones (Figure 3A). The frequency of variants in the sAML remission/relapsed PMF sample provided a third timepoint to resolve clonal
+groups and showed that there was a founding clone and three subclones (Figure 3B). The sAML remission/relapsed PMF sample distinguished
+between a sAML-only clonal group and a clonal group that had a high VAF at both sAML and sAML remission/relapsed PMF. Based on the
+clustering results, a model of clonal progression was developed demonstrating the dynamics of clonal evolution across disease progression
+(Figure 3C). This study delineates clonal evolution in a patient who initially presented with PMF, transformed to sAML, and subsequently
+experienced prolonged sAML remission despite PMF relapse. Bone marrow genomic DNA was cytogenetically normal at both PMF and sAML stages,
+and no large structural variant or gene fusion contributing to disease progression was detected. Therefore, the total somatic mutational
+burden identified at the PMF and sAML stages could be attributed to a combination of SNVs and small indels. Seven candidate driver SNVs were
+identified in the PMF and/or sAML samples. These candidate driver mutations corresponded to the founding clone and subsequent subclones
+identified in the PMF and sAML disease stages. The overall burden of acquired mutations in this patient was similar to those previously
+reported for de novo AML and normal aging of the hematopoietic system.(23) The transversion frequency and the ratio of tier 1:2:3 mutations
+was consistent with healthy aging(23) as well as previous observations in de novo AML(23), myelodysplastic syndromes (MDS), and post-MDS
+sAML(43). With respect to MPNs, a single published WGS study describing a patient with PMF at chronic phase(29) and recently published exome
+sequencing studies(21, 22, 57) have not suggested a substantially different mutational burden in MPNs from what has been observed in this
+study or in normal aging. Taken together, these observations indicate that the majority of somatic mutations in this patient were most
+likely passenger mutations acquired in the context of normal aging of the HSPC population. A total of 40 tier 1 SNVs and indels were
+identified via WGS and validated by custom capture sequencing. The majority of these were categorized as likely passenger mutations based on
+absence of expression by RNA sequencing, codon synonymity, and/or predicted benign alteration in a protein (Supplementary table 3). However,
+it could not be definitively excluded that a subset of these mutations may have pathogenetic relevance. Six genes (JAK2, U2AF1, MYB, ASXL1,
+IDH1, and RUNX1) were identified as likely candidate driver mutations, largely based on known recurrence of mutations in these genes in MPNs
+and/or sAML.(20, 48-51) A seventh gene (HCFC1) was identified as a possible driver mutation based on its known functions and interaction
+with ASXL1.(52-54) The PMF stage was characterized by a founding clone harboring mutations in JAK2 and U2AF1, a large subclone containing a
+mutation in MYB, and a minor subclone containing mutations in ASXL1 and HCFC1. The SNVs in JAK2 and U2AF1 were representative of a dominant
+clone at all disease stages. The high VAF of JAK2 V617F suggested prevalent homozygosity at all stages. Single colony genotyping confirmed
+that the CD34+ cell population was predominantly JAK2 V617F homozygous at the PMF stage, with the residual population being wild-type for
+JAK2, and JAK2 V617F heterozygous clones being rare. Based on single colony genotyping, it could not be resolved which of the mutations in
+JAK2 and U2AF1 preceded the other in the evolution of the malignant clone. Given the dominance of the clone containing these mutations at
+the PMF stage, both mutations were likely early events. Based on the stage-specific clonality or subclonality of the candidate driver
+mutations, the PMF dominant clone was driven predominantly if not exclusively by the JAK2 and U2AF1 mutations, with the MYB mutation being a
+likely subclonal driver, albeit one that was extinct by the time of sAML diagnosis. Since the MYB mutation was not identified in the
+relapsed MF, these observations suggest that the combination of JAK2 V617F homozygosity and U2AF1 Q157P heterozygosity was sufficient to
+initiate PMF in this patient. ASXL1 and HCFC1 mutations were present in a small subclone at the PMF stage that expanded with transformation
+and remained at high frequency at sAML remission/relapsed PMF. The combination of mutations in ASXL1 and HCFC1 was particularly notable
+because their protein products are known bind to each other and are present together in complexes with several other known oncogenes and
+tumor suppressors with diverse biological roles including regulation of histone methylation.(52-54) In a mouse model, absence of one such
+shared binding partner, BAP1, led to a lack of HCFC1 protein (since BAP1 normally prevents HCFC1 degradation), and these mice exhibited
+features of myeloproliferative disease.(52) Although recurrent HCFC1 mutations have not been identified thus far in large-scale exome
+sequencing studies in MPNs,(18, 21, 22) a mutation in HCFC1 was found in one case of de novo AML.(24). Collectively, these findings support
+the notion that HCFC1 mutations may be pathogenic, and that ASXL1 and HCFC1 mutations could plausibly interact to contribute to disease
+evolution. However, the possibility that the HCFC1 mutation in this case was a passenger mutation that randomly coincided with the mutation
+in ASXL1 cannot be excluded. The clone containing ASXL1 and HCFC1 mutations proliferated at the expense of the MYB mutant clone, and was
+parental to the sAML clone harboring RUNX1 and IDH1 mutations. The persistence of the ASXL1 and HCFC1 mutations at sAML remission/relapsed
+PMF suggests that the addition of these mutations to the JAK2/U2AF1 mutant founding clone was not sufficient to induce transformation to
+sAML, which was likely precipitated by mutations in RUNX1 and IDH1. The ASXL1/HCFC1 mutant clone, however, was likely dominant over the
+parental JAK2/U2AF1 mutant clone lacking these later mutations. The sAML stage was characterized by the founding clone and two nested
+subclones, with one clone harboring ASXL1 and HCFC1 mutations and the sAML-specific subclone additionally containing mutations in RUNX1 and
+IDH1. The near total absence in the sAML remission/relapsed PMF sample of the IDH1 and RUNX1 mutations indicates that treatment
+predominantly eradicated the sAML specific subclone. However, the RUNX1 mutation was identified at a very low frequency (0.7%) in the sAML
+remission/relapsed PMF sample, suggesting the presence of minimal residual disease and a potential for sAML relapse. Approximately one year
+following sAML remission, the patient did experience clinical sAML relapse. Biological samples were not available from the relapsed sAML
+stage to confirm that the RUNX1 mutation was present, as would be predicted. The availability of matched serial samples provided additional
+resolution regarding subclonal populations present at the PMF disease stage. Based only on the PMF validation data, there appeared to be a
+founding clone driven by mutations in JAK2 and U2AF1 and a subclone characterized by a mutation in MYB. However, by including the sAML data
+it became clear that while the ASXL1 mutation was only present at low frequency in the PMF stage, it represented an additional subclone that
+expanded and likely contributed to leukemic transformation. As ASXL1 is considered to be a high-risk mutation, its presence, even in a rare
+subclone, in the PMF stage is relevant to the biology of the patient's disease course. To our knowledge, this represents the first study to
+analyze the progression from a chronic phase MPN to sAML by WGS and utilize deep sequencing validation to model clonal evolution across the
+disease stages. Future studies with this approach are needed to determine whether consistent patterns of clonal evolution that drive MPN
+disease progression can be identified. This work was supported by NIH grants K08HL106576 (Oh), K12HL087107 (Oh), P01CA101937 (Ley), and
+T32HL007088 (Engle, Fisher). This research was also supported by a Sidney Kimmel Scholar Award (Oh), Leukemia Research Foundation New
+Investigator Award (Oh), Central Society for Clinical Research Early Career Development Award (Oh), Barnes-Jewish Hospital
+Foundation/Washington University Institute of Clinical and Translational Sciences Pilot Grant (Oh), and American Cancer Society
+Institutional Research Grant (Oh). This work was supported by the Washington University Institute of Clinical and Translational Sciences
+grant UL1TR000448 from the National Center for Advancing Translational Sciences of NIH. Technical support was provided by the Alvin J.
+Siteman Cancer Center Tissue Procurement and Flow Cytometry Cores, which are supported by NCI Cancer Center Support Grant P30CA91842. The
+authors thank D. Link and J. Xia for assistance with cell sorting and colony assays, K. Martin, C. Kaiwar, and M. Fulbright for performing
+JAK2 and U2AF1 genotyping experiments, and J. McMichael for assistance with illustrations. Conflict of interest disclosure: The authors
+declare no competing financial interest. Supplementary information is available on the Leukemia website The percentage of somatic single
+nucleotide variants (SNVs) in the PMF, sAML, or specific for the sAML sample are categorized by transition and transversion mutation types.
+The variant allele frequency for each tier 1 SNV across the PMF, sAML, and sAML remission/relapsed PMF samples is shown. The genes with the
+SNVs are divided based on whether the SNV was present predominantly in all three samples (Shared SNVs), only the PMF sample (PMF SNVs), low
+in the PMF sample but high in sAML and sAML remission/relapsed PMF samples (Low PMF SNVs), and only in the sAML sample (sAML SNVs).
+Unsupervised clustering of 649 SNVs identified clusters of mutations with similar variant allele frequencies corresponding to the founding
+clone (green), subclone 1 (light blue), subclone 2 (red), and subclone 3 (dark blue). (A) Frequency of mutations in PMF versus sAML. (B)
+Frequency of mutations in sAML remission/relapsed PMF versus sAML. (C) A model of clonal evolution based on the median values for the VAFs
+in each of the four clusters at each stage of progression in (A) and (B) as shown below the plot. Abbreviations: PMF, primary myelofibrosis;
+sAML, secondary acute myeloid leukemia; sAML REM, secondary acute myeloid leukemia remission/relapsed PMF. The number of SNV mutations
+validated for each sample per tier. sAML specific mutations are the mutations gained between the PMF sample and the sAML sample.
+Abbreviations: PMF, primary myelofibrosis; sAML, secondary acute myeloid leukemia. Only includes SNVs identified in WGS sequencing of the
+PMF or sAML samples For each SNV, the normal gene function, effect of the mutation (if known), and the variant allele frequency (VAF) at
+each of the three disease stages is shown. Abbreviations: PMF, primary myelofibrosis; sAML, secondary acute myeloid leukemia. Colonies were
+isolated from the peripheral blood at the PMF stage and were genotyped for JAK2 V617F and U2AF1 Q157P mutations. The number of colonies with
+each genotype is shown. Abbreviations: WT, Het, and Hom correspond to colonies that are wildtype, heterozygous, or homozygous for the
+mutation, respectively. PMF, primary myelofibrosis.

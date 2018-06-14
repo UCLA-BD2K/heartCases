@@ -1,0 +1,569 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="case-report">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">J Clin Monit Comput</journal-id>
+      <journal-id journal-id-type="iso-abbrev">J Clin Monit Comput</journal-id>
+      <journal-title-group>
+        <journal-title>Journal of Clinical Monitoring and Computing</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1387-1307</issn>
+      <issn pub-type="epub">1573-2614</issn>
+      <publisher>
+        <publisher-name>Springer Netherlands</publisher-name>
+        <publisher-loc>Dordrecht</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24197827</article-id>
+      <article-id pub-id-type="pmc">4119244</article-id>
+      <article-id pub-id-type="publisher-id">9529</article-id>
+      <article-id pub-id-type="doi">10.1007/s10877-013-9529-3</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Brief Report</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Impact of changes in systemic vascular resistance on a novel non-invasive continuous cardiac output measurement system based on pulse wave transit time: a report of two cases</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Ishihara</surname>
+            <given-names>Hironori</given-names>
+          </name>
+          <address>
+            <phone>+81-172-524121</phone>
+            <fax>+81-172-524124</fax>
+            <email>concerto0328@yahoo.co.jp</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tsutsui</surname>
+            <given-names>Masato</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff2"/>
+        </contrib>
+        <aff id="Aff1"><label/>Department of Anesthesiology, Kuroishi-Kosei Hospital, Kuroishi-Shi, 036-0351 Japan </aff>
+        <aff id="Aff2"><label/>Department of Anesthesiology, National Defense Medical College, 3-2 Namiki, Tokorozawa-Shi, 359-8513 Japan </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>7</day>
+        <month>11</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>7</day>
+        <month>11</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <year>2014</year>
+      </pub-date>
+      <volume>28</volume>
+      <issue>4</issue>
+      <fpage>423</fpage>
+      <lpage>427</lpage>
+      <history>
+        <date date-type="received">
+          <day>9</day>
+          <month>6</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>31</day>
+          <month>10</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; The Author(s) 2013</copyright-statement>
+        <license license-type="OpenAccess">
+          <license-p>
+<bold>Open Access</bold>This article is distributed under the terms of the Creative Commons Attribution License which permits any use, distribution, and reproduction in any medium, provided the original author(s) and the source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <p>The inaccuracy of arterial waveform analysis for measuring continuos cardiac output (CCO) associated with changes in systemic vascular resistance (SVR) has been well documented. A new non-invasive continuous cardiac output monitoring system (esCCO) mainly utilizing pulse wave transit time (PWTT) in place of arterial waveform analysis has been developed. However, the trending ability of esCCO to measure cardiac output during changes in SVR remains unclear. After a previous multicenter study on esCCO measurement, we retrospectively identified two cases in which apparent changes in SVR developed in a short period during data collection. In each case, the trending ability of esCCO to measure cardiac output and time component of PWTT were analyzed. Recorded data suggest that the time component of PWTT may have a significant impact on the accuracy of estimating stroke volume during changes in SVR. However, further prospective clinical studies are required to test this hypothesis.</p>
+      </abstract>
+      <kwd-group xml:lang="en">
+        <title>Keywords</title>
+        <kwd>Cardiac output</kwd>
+        <kwd>Measurement technique</kwd>
+        <kwd>Pulse wave transit time</kwd>
+        <kwd>Systemic vascular resistance</kwd>
+      </kwd-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>&#xA9; Springer Science+Business Media New York 2014</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1" sec-type="intro">
+      <title>Introduction</title>
+      <p>Non-invasive continuous cardiac output (CCO) monitors have become popular in operating rooms and intensive care units (ICUs). However, the inaccuracy of arterial waveform analysis for measuring CCO associated with changes in systemic vascular resistance (SVR) has been well documented [<xref ref-type="bibr" rid="CR1">1</xref>, <xref ref-type="bibr" rid="CR2">2</xref>]. Sugo et al. [<xref ref-type="bibr" rid="CR3">3</xref>] developed a new non-invasive CCO monitoring system called estimated continuous cardiac output (esCCO). In the esCCO system, CCO is derived by means of a conventional electrocardiogram (ECG) monitor, peripheral pulse oximetry (SpO<sub>2</sub>) system, and arterial pulse pressure. The esCCO system uses pulse wave transit time (PWTT) in place of arterial waveform analysis. PWTT is the sum of the pre-ejection period (PEP) and the time taken for pulse wave to travel from the ascending aorta to the SpO<sub>2</sub> probe site (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>). PWTT is calculated from the interval between the R wave peak of the ECG and the rise point of peripheral SpO<sub>2</sub> pulse wave when the ECG and SpO<sub>2</sub> are recorded simultaneously. Stroke volume (SV) is derived as follows:<disp-formula id="Equa"><alternatives><tex-math id="M1">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\text{SV }} = {\text{ K }} \times \, (\alpha \times {\text{PWTT }} + \beta )$$\end{document}</tex-math><graphic xlink:href="10877_2013_9529_Article_Equa.gif" position="anchor"/></alternatives></disp-formula><fig id="Fig1"><label>Fig.&#xA0;1</label><caption><p>Relationship between each time-related component of pulse wave transit time. <italic>PWTT</italic> pulse wave transit time, <italic>SpO</italic>
+<sub><italic>2</italic></sub> peripheral pulse oximetry, <italic>PEP</italic> pre-ejection period, <italic>PWTT1</italic> transit time from the rising point of the aortic root pressure wave to the rising point of the radial artery pressure wave in the systolic phase, <italic>PWTT2</italic> transit time from the rising point of the radial artery wave to the rising point of the SpO<sub>2</sub> pulse wave in the systolic phase</p></caption><graphic xlink:href="10877_2013_9529_Fig1_HTML" id="MO2"/></fig></p>
+      <p>Here, <italic>&#x3B1;</italic> is an experimental constant. K and <italic>&#x3B2;</italic> are derived from PWTT, heart rate, pulse pressure, and cardiac output (CO) at the start of measurement for each patient. Accordingly, the esCCO system requires a continuous measurement of PWTT, but not MAP after the start of measurement to calculate CCO.</p>
+      <p>There have been no clinical studies on the esCCO system concerning CCO estimation during changes in SVR or on the impact of the time component of PWTT on the estimation of CO, even though changes in SVR would have a less impact on esCCO system compared to CCO measurement system with arterial waveform analysis [<xref ref-type="bibr" rid="CR4">4</xref>]. In our previous multicenter studies [<xref ref-type="bibr" rid="CR4">4</xref>&#x2013;<xref ref-type="bibr" rid="CR6">6</xref>], we identified two cases in which apparent changes in SVR developed in a short period of time during data collection. In this report, we retrospectively analyze the time component of peripheral wave transmission in these two cases, and examined the contribution of the time component of PWTT in determination of SV and CO.</p>
+    </sec>
+    <sec id="Sec2">
+      <title>Case history</title>
+      <p>The esCCO system was connected to a conventional ECG monitor, radial artery pressure monitor, and SpO<sub>2</sub> system. A CCO monitor derived data from a flow directional pulmonary artery catheter (Swan-Ganz CCOmbo CCO/SVO2, ref. 744HF75, Baxter Healthcare, Edwards Critical Care Division, Irvine, CA) and was connected to the esCCO system. SVR is calculated continuously from CO, mean arterial pressure (MAP), and CVP using a standard formula. Additionally, the amplitude of SpO<sub>2</sub> pulse wave was measured continuously, as described by Murray et al. [<xref ref-type="bibr" rid="CR7">7</xref>].</p>
+      <sec id="Sec3">
+        <title>Case 1</title>
+        <p>A 79-year-old male with height of 167.5&#xA0;cm and preoperative body weight of 52.8&#xA0;kg underwent removal of a pancreatic tumor. Total intravenous anesthesia with propofol and remifentanil combined with continuous epidural block using 6&#xA0;ml/h of 1.0&#xA0;% carbocaine was given to the patient. Approximately 2&#xA0;h before completion of the surgical procedure, MAP started to gradually decrease and reached 61&#xA0;mmHg at 20:00, and the carbocaine infusion was switched to 0.2&#xA0;% ropivacaine infusion (5&#xA0;ml/h). The lowest MAP of 55&#xA0;mmHg was recorded at 20:09, and MAP gradually increased thereafter. While CCO decreased from 6.5 to 5.2&#xA0;L/min (Fig.&#xA0;<xref rid="Fig2" ref-type="fig">2</xref>, Interval A: 20:15&#x2013;20:45), SVR increased from 640 to 1,100 dyne&#xA0;s&#xA0;cm<sup>&#x2212;5</sup>. esCCO decreased from 8.3 to 6.8&#xA0;L/min, and the amplitude of the SpO<sub>2</sub> pulse wave also decreased.<fig id="Fig2"><label>Fig.&#xA0;2</label><caption><p>Trends in circulatory parameters in Case 1 (Interval A) <italic>Blue</italic> heart rate (HR); <italic>Red</italic> mean arterial pressure (MAP); <italic>Green</italic> estimated continuous cardiac output (esCCO); <italic>Brown</italic> continuous cardiac output derived from a flow directional pulmonary artery catheter (CCO); <italic>Purple</italic> systemic vascular resistance (SVR); <italic>Black</italic> pulse amplitude (normalized SpO<sub>2</sub> pulse wave amplitude)</p></caption><graphic xlink:href="10877_2013_9529_Fig2_HTML" id="MO3"/></fig></p>
+      </sec>
+      <sec id="Sec4">
+        <title>Case 2</title>
+        <p>A 61-year-old male with height of 158.5&#xA0;cm and preoperative body weight of 56.9&#xA0;kg underwent quadruple off-pump coronary artery bypass grafting. MAP increased, and SV slightly decreased immediately after the patient was admitted postoperatively to the ICU. SVR increased from 1,700 to 2,500 dyne&#xA0;s&#xA0;cm<sup>&#x2212;5</sup>, but neither CCO nor esCCO was obviously changed (Fig.&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>, Interval B). The amplitude of the SpO<sub>2</sub> pulse wave decreased. Subsequently, 0.5&#xA0;mg of IV nicardipine was injected and resulted in a decrease in MAP from 110 to 89&#xA0;mmHg, associated with an increase in CCO from 4.0 to 4.5&#xA0;L/min. SVR decreased from 2,500 to 1,600&#xA0;dyne&#xA0;s&#xA0;cm<sup>&#x2212;5</sup>. esCCO increased from 4.3 to 4.9&#xA0;L/min, even though an increase in esCCO preceded that of the CCO, reflecting the time delay in CCO measurement due to averaging (Fig.&#xA0;<xref rid="Fig3" ref-type="fig">3</xref>, Interval C).<fig id="Fig3"><label>Fig.&#xA0;3</label><caption><p>Trends in circulatory parameters in Case 2 (Intervals B and C) <italic>Blue</italic> heart rate (HR); <italic>Red</italic> mean arterial pressure (MAP); <italic>Green</italic> estimated continuous cardiac output (esCCO); <italic>Brown</italic> continuous cardiac output derived from a flow directional pulmonary artery catheter (CCO); <italic>Purple</italic> systemic vascular resistance (SVR); <italic>Black</italic> pulse amplitude (normalized SpO<sub>2</sub> pulse wave amplitude)</p></caption><graphic xlink:href="10877_2013_9529_Fig3_HTML" id="MO4"/></fig></p>
+      </sec>
+      <sec id="Sec5">
+        <title>Analysis of the time component</title>
+        <p>PWTT can be divided into the following 3 time-related components (Fig.&#xA0;<xref rid="Fig1" ref-type="fig">1</xref>):<list list-type="order"><list-item><p>PEP: Pre-ejection period consisting of the electromechanical delay at the start of systole and isometric contraction time, with the R wave of ECG serving as the starting point.</p></list-item><list-item><p>PWTT1: The time taken for pulse wave transmission from the aorta through the elastic arteries to the muscular arteries (namely, the radial artery).</p></list-item><list-item><p>PWTT2: The time taken for pulse wave transmission from the radial artery to the further distal peripheral site of SpO<sub>2</sub> measurement.</p></list-item></list>As PEP and PWTT1 cannot be measured separately in the esCCO method, PWTT was divided into two components: PEP&#xA0;+&#xA0;PWTT1, and PWTT2.</p>
+        <p>When SVR increased in Case 1, PWTT increased in association with the decrease in SV and increase in MAP (Fig.&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>). Among the components tested, PEP&#xA0;+&#xA0;PWTT1 remained unchanged, but PWTT2 increased during Interval A. A similar pattern of change was observed during the increase in SVR in Case 2 (Fig.&#xA0;<xref rid="Fig5" ref-type="fig">5</xref>, Interval B), even though PEP&#xA0;+&#xA0;PWTT1 tended to be slightly shorter.<fig id="Fig4"><label>Fig.&#xA0;4</label><caption><p>Trends in time-related components associated with stroke volume and mean arterial pressure from 20:15 to 20:45 in Case 1 (Interval A). <italic>Left panel</italic> PWTT (PEP&#xA0;+&#xA0;PWTT1 and PWTT2); <italic>Middle panel</italic> stroke volume (SV); <italic>Right panel</italic> MAP. <italic>Bars</italic> in each column show data obtained at 5-min intervals. <italic>Red arrows</italic> indicate directional changes over time</p></caption><graphic xlink:href="10877_2013_9529_Fig4_HTML" id="MO5"/></fig><fig id="Fig5"><label>Fig.&#xA0;5</label><caption><p>Trends of the time-related components associated with SV and MAP from 16:50 to 17:20 in Case 2 (Interval B). <italic>Left panel</italic> PWTT (PEP&#xA0;+&#xA0;PWTT1 and PWTT2); <italic>Middle panel</italic> SV; <italic>Right panel</italic> MAP. <italic>Bars</italic> in each column show data obtained at 5-min intervals. <italic>Red arrows</italic> indicate directional changes over time</p></caption><graphic xlink:href="10877_2013_9529_Fig5_HTML" id="MO6"/></fig></p>
+        <p>When SVR decreased in Case 2, PWTT tended to be shorter in association with the increasing tendency of SV and the decreasing tendency of MAP (Fig.&#xA0;<xref rid="Fig6" ref-type="fig">6</xref>, Interval C). PEP&#xA0;+&#xA0;PWTT1 showed a 1.10-fold prolongation at 19:30 compared with 18:00, and PWTT2 showed a 1.25-fold shortening at 19:30 compared with 18:00.<fig id="Fig6"><label>Fig.&#xA0;6</label><caption><p>Trends in time-related components associated with SV and MAP from 18:00 to 19:30 in Case 2 (Interval C). <italic>Left panel</italic> PWTT (PEP&#xA0;+&#xA0;PWTT1 and PWTT2); <italic>Middle panel</italic> SV; <italic>Right panel</italic> MAP. <italic>Bars</italic> in each column show data obtained at 5-min intervals. <italic>Red arrows</italic> indicate directional changes over time</p></caption><graphic xlink:href="10877_2013_9529_Fig6_HTML" id="MO7"/></fig></p>
+      </sec>
+      <sec id="Sec6">
+        <title>Comment</title>
+        <p>Changes in SVR in both cases were confirmed by continuous estimation of SVR as well as by continuous measurement of the amplitude of the SpO<sub>2</sub> pulse wave as reported by Murray et al. [<xref ref-type="bibr" rid="CR7">7</xref>]. Additionally, contributory factors to induce changes in SVR were clearly identified in both cases: switch from carbocaine to ropivacaine infusion for case 1, and nicardipine injection for case 2, respectively. Therefore, we believe that this case report could preliminarily show the relationship between each component of PWTT and SV during changes in SVR.</p>
+        <p>Although PEP was not assessed separately in the esCCO system, PEP depends on changes in preload, afterload, and cardiac contractility. Ronn et al. [<xref ref-type="bibr" rid="CR8">8</xref>] reported that PEP shortened when afterload was decreased by vasodilator administration. The inotropic action of the heart mediated by the carotid sinus reflex likely plays a role in this shortening. On the other hand, Boudoulas et al. [<xref ref-type="bibr" rid="CR9">9</xref>] reported prolongation of PEP in relation to an elevation in isometric contraction pressure following an increase in afterload induced by vasoconstrictor administration. On the basis of these findings, we speculate that an increase in afterload prolongs PEP as observed in Case 1 (Fig.&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>) and Case 2 (Fig.&#xA0;<xref rid="Fig5" ref-type="fig">5</xref>), while a decrease in afterload shortens PEP as observed in Case 2 (Fig.&#xA0;<xref rid="Fig6" ref-type="fig">6</xref>).</p>
+        <p>PWTT1 indicates pulse wave transit time from pulse waves arising from the aorta to the radial artery through elastic and muscular arteries. The pulse wave velocity of this time component is well known to correlate with arterial capacitance [<xref ref-type="bibr" rid="CR10">10</xref>] and to be a useful parameter for measuring changes in arterial pressure [<xref ref-type="bibr" rid="CR11">11</xref>]. When MAP increases, the pulse wave velocity increases, resulting in shortening of PWTT1 as observed in Case 1 (Fig.&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>) and Case 2 (Fig.&#xA0;<xref rid="Fig5" ref-type="fig">5</xref>). In contrast, when MAP decreases, the pulse wave velocity decreases, resulting in prolongation of PWTT1 as observed in Case 2. When observing opposite directional changes in PEP and PWTT1 during changes in afterload, changes in PEP&#xA0;+&#xA0;PWTT1 are not obvious as observed in Case 1 (Fig.&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>) and Case 2 (Figs.&#xA0;<xref rid="Fig5" ref-type="fig">5</xref>, <xref rid="Fig6" ref-type="fig">6</xref>), compared with changes shown when each component is solely used to estimate SV.</p>
+        <p>PWTT2 indicates pulse wave transit time from the radial artery to the further distal arterioles of the SpO<sub>2</sub> detection site. Pulse wave velocity in this part begins to decrease and reflects an increase in viscosity as the vascular diameter decreases [<xref ref-type="bibr" rid="CR12">12</xref>]. Accordingly, prolongation of PWTT2 can be expected when vasoconstriction occurs as observed in Case 1 (Fig.&#xA0;<xref rid="Fig4" ref-type="fig">4</xref>) and Case 2 (Fig.&#xA0;<xref rid="Fig5" ref-type="fig">5</xref>). In contrast, shortening of PWTT2 can be expected when vasodilation occurs as observed in Case 2 (Fig.&#xA0;<xref rid="Fig6" ref-type="fig">6</xref>).</p>
+        <p>Considering these directional changes in the time component of PWTT associated with changes in afterload, PWTT2 is likely to have a significant impact on the determination of PWTT during changes in afterload. Sugo et al. [<xref ref-type="bibr" rid="CR3">3</xref>] analyzed the relationship of each of these components with SV in an animal study, and they found that inclusion of the PWTT2 component can improve the accuracy of SV estimation after phenylephrine injection. If SV is estimated solely from PWTT1, which reflects mainly arterial pressure [<xref ref-type="bibr" rid="CR11">11</xref>], overestimation of SV can be expected during vasoconstriction accompanied by an increase in arterial pressure, while the underestimation during vasodilatation is associated with a decrease in arterial pressure. In fact, Meng et al. [<xref ref-type="bibr" rid="CR2">2</xref>] reported that the trending ability of CO derived from arterial waveform analysis versus CO derived from esophageal Doppler was only 23&#xA0;% after phenylephrine treatment, even though the former accurately tracked changes in CO when preload changed. It seems that the inclusion of PEP and PWTT2 can help promote the accuracy of estimating SV based on PWTT when changes in SVR occur.</p>
+        <p>There were limitations in this report in addition to a small sample size. First, data of this report were not derived from a prospective clinical study, and it is thus difficult to draw any definite conclusion, even though a canine experimental study on SV estimation after phenylephrine injection supported the hypothesis [<xref ref-type="bibr" rid="CR3">3</xref>]. Therefore, further prospective clinical studies are required to test the hypothesis by simultaneously measuring MAP, CVP and well accepted CCO in comparison with esCCO. Second, the impact of changes in SVR on CO is only partially understood and consequently any conclusion based on simple observation is difficult. In fact, we could find only two cases where changes in SVR mainly affected changes in CO, since various factors other than afterload may also have a significant impact on determining CO particularly in our previous multi-center study [<xref ref-type="bibr" rid="CR4">4</xref>].</p>
+        <p>In summary, data of this report suggest that the time component of PWTT may improve the accuracy of CCO estimation during changes in SVR. However, further prospective clinical studies are required to test this hypothesis.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn>
+        <p>Hironori Ishihara: The former Associate Professor, Department of Anesthesiology, Hirosaki University Graduate School of Medicine, retired from the university on March 31, 2013 due to his age of 65 years-old.</p>
+      </fn>
+      <fn>
+        <p>IRB: The data of this case report were retrieved from a previous multi-center study [<xref ref-type="bibr" rid="CR4">4</xref>, <xref ref-type="bibr" rid="CR5">5</xref>]. Each institutional review board approved the study as described in a report.</p>
+      </fn>
+    </fn-group>
+    <ack>
+      <p>The authors thank Yoshihiro Sugo, B.E., of the Telemetry Technology Center, Nihon Kohden Corporation, for granting permission to use data from the multicenter study in our analysis. This work was supported by equipment provided by Nihon Kohden Corporation, Japan. No other financial support by the company.</p>
+    </ack>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lorsomradee</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Cromheecke</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>De Hert</surname>
+              <given-names>SG</given-names>
+            </name>
+          </person-group>
+          <article-title>Uncalibrated arterial pulse contour analysis versus continuous thermodilution technique</article-title>
+          <source>J Cardiothorac Vasc Anesth.</source>
+          <year>2007</year>
+          <volume>21</volume>
+          <fpage>636</fpage>
+          <lpage>643</lpage>
+          <pub-id pub-id-type="doi">10.1053/j.jvca.2007.02.003</pub-id>
+          <pub-id pub-id-type="pmid">17905266</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meng</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Tran</surname>
+              <given-names>NP</given-names>
+            </name>
+            <name>
+              <surname>Alexander</surname>
+              <given-names>BS</given-names>
+            </name>
+            <name>
+              <surname>Laning</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Kain</surname>
+              <given-names>ZN</given-names>
+            </name>
+            <name>
+              <surname>Cannesson</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>The impact of phenylephrine, ephedrine, and increased preload on the third-generation Vigileo-Flotrac and esophageal doppler cardiac output measurements</article-title>
+          <source>Anesth Analg.</source>
+          <year>2011</year>
+          <volume>113</volume>
+          <fpage>373</fpage>
+          <lpage>385</lpage>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sugo</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ukawa</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Takeda</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ishihara</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kazama</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Takeda</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>A novel continuous cardiac output monitor based on pulse wave transit time</article-title>
+          <source>Conf Proc IEEE Eng Med Biol Soc.</source>
+          <year>2010</year>
+          <volume>2010</volume>
+          <fpage>2853</fpage>
+          <lpage>2856</lpage>
+          <pub-id pub-id-type="pmid">21095971</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yamada</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Tsutsui</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Sugo</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Sato</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Akazawa</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sato</surname>
+              <given-names>N</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Multicenter study verifying a method of noninvasive continuous cardiac output measurement using pulse wave transit time: a comparison with intermittent bolus thermodilution cardiac output</article-title>
+          <source>Anesth Analg.</source>
+          <year>2012</year>
+          <volume>115</volume>
+          <fpage>82</fpage>
+          <lpage>87</lpage>
+          <pub-id pub-id-type="doi">10.1213/ANE.0b013e31824e2b6c</pub-id>
+          <pub-id pub-id-type="pmid">22467885</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ishihara</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Sugo</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Tsutsui</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Yamada</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sato</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Akazawa</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sato</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Yamashita</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Takeda</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>The ability of a new continuous cardiac output monitor to measure trends in cardiac output following implementation of a patient information calibration and an automated exclusion algorithm</article-title>
+          <source>J Clin Monit Comput.</source>
+          <year>2012</year>
+          <volume>26</volume>
+          <fpage>465</fpage>
+          <lpage>471</lpage>
+          <pub-id pub-id-type="doi">10.1007/s10877-012-9384-7</pub-id>
+          <pub-id pub-id-type="pmid">22854918</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tsutsui</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Yamada</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sugo</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Sato</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Akazawa</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sato</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Yamashita</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Ishihara</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kazama</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Takeda</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparison of continuous cardiac output measurement methods: non-invasive estimated CCO using pulse wave transit time and CCO using thermodilution</article-title>
+          <source>Masui</source>
+          <year>2012</year>
+          <volume>61</volume>
+          <fpage>1011</fpage>
+          <lpage>1017</lpage>
+          <pub-id pub-id-type="pmid">23012842</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Murray</surname>
+              <given-names>WB</given-names>
+            </name>
+            <name>
+              <surname>Foster</surname>
+              <given-names>PA</given-names>
+            </name>
+          </person-group>
+          <article-title>The peripheral pulse wave information overlooked</article-title>
+          <source>J Clin Monit Comput.</source>
+          <year>1996</year>
+          <volume>12</volume>
+          <fpage>365</fpage>
+          <lpage>377</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF02077634</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ronn</surname>
+              <given-names>O</given-names>
+            </name>
+          </person-group>
+          <article-title>Acute haemodynamic effects of felodipine and verapamil in man</article-title>
+          <source>Drugs</source>
+          <year>1985</year>
+          <volume>29</volume>
+          <fpage>16</fpage>
+          <lpage>25</lpage>
+          <pub-id pub-id-type="doi">10.2165/00003495-198500292-00005</pub-id>
+          <pub-id pub-id-type="pmid">3987543</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boudoulas</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Effect of afterload on left ventricular performance in experimental animals</article-title>
+          <source>J Med.</source>
+          <year>1982</year>
+          <volume>13</volume>
+          <fpage>373</fpage>
+          <lpage>385</lpage>
+          <pub-id pub-id-type="pmid">6963329</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Olafiranye</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Qureshi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Salciccioli</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Vermon-Jones</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Philip</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kassotis</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lazar</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>The relationship between effective arterial capacitance and pulse wave velocity is dependent on left ventricular stroke volume</article-title>
+          <source>Angiology</source>
+          <year>2009</year>
+          <volume>60</volume>
+          <fpage>82</fpage>
+          <lpage>86</lpage>
+          <pub-id pub-id-type="doi">10.1177/0003319708315306</pub-id>
+          <pub-id pub-id-type="pmid">18504267</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gribbin</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Steptoe</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Sleight</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Pulse wave velocity as a measure of blood pressure change</article-title>
+          <source>Psychophysiology</source>
+          <year>1976</year>
+          <volume>13</volume>
+          <fpage>86</fpage>
+          <lpage>90</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1469-8986.1976.tb03344.x</pub-id>
+          <pub-id pub-id-type="pmid">1244636</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sakamoto</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Analysis of motion of viscous liquid in a thin-walled elastic tube</article-title>
+          <source>Iyodensi To Seitai Kogaku</source>
+          <year>1966</year>
+          <volume>5</volume>
+          <fpage>408</fpage>
+          <lpage>413</lpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

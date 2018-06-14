@@ -1,0 +1,1404 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Med Inform Decis Mak</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Med Inform Decis Mak</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Medical Informatics and Decision Making</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1472-6947</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">23638635</article-id>
+      <article-id pub-id-type="pmc">3653787</article-id>
+      <article-id pub-id-type="publisher-id">1472-6947-13-56</article-id>
+      <article-id pub-id-type="doi">10.1186/1472-6947-13-56</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>A hybrid seasonal prediction model for tuberculosis incidence in China</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" id="A1">
+          <name>
+            <surname>Cao</surname>
+            <given-names>Shiyi</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>hai_tao_cao@163.com</email>
+        </contrib>
+        <contrib contrib-type="author" id="A2">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Feng</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>fwang@cuhk.edu.hk</email>
+        </contrib>
+        <contrib contrib-type="author" id="A3">
+          <name>
+            <surname>Tam</surname>
+            <given-names>Wilson</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>wilsontam@cuhk.edu.hk</email>
+        </contrib>
+        <contrib contrib-type="author" id="A4">
+          <name>
+            <surname>Tse</surname>
+            <given-names>Lap Ah</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>shelly@cuhk.edu.hk</email>
+        </contrib>
+        <contrib contrib-type="author" id="A5">
+          <name>
+            <surname>Kim</surname>
+            <given-names>Jean Hee</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>jhkim@cuhk.edu.hk</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes" id="A6">
+          <name>
+            <surname>Liu</surname>
+            <given-names>Junan</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>liujnn2000@yahoo.com.cn</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes" id="A7">
+          <name>
+            <surname>Lu</surname>
+            <given-names>Zuxun</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>zuxunlu@yahoo.com</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>School of Public Health, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, 430030, P.R., China</aff>
+      <aff id="I2"><label>2</label>JC School of Public Health and Primary Care, The Chinese University of Hong Kong, Hong Kong, SAR, China</aff>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>2</day>
+        <month>5</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>13</volume>
+      <fpage>56</fpage>
+      <lpage>56</lpage>
+      <history>
+        <date date-type="received">
+          <day>8</day>
+          <month>11</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>26</day>
+          <month>4</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2013 Cao et al.; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Cao et al.; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1472-6947/13/56"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>Tuberculosis (TB) is a serious public health issue in developing countries. Early prediction of TB epidemic is very important for its control and intervention. We aimed to develop an appropriate model for predicting TB epidemics and analyze its seasonality in China.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>Data of monthly TB incidence cases from January 2005 to December 2011 were obtained from the Ministry of Health, China. A seasonal autoregressive integrated moving average (SARIMA) model and a hybrid model which combined the SARIMA model and a generalized regression neural network model were used to fit the data from 2005 to 2010. Simulation performance parameters of mean square error (MSE), mean absolute error (MAE) and mean absolute percentage error (MAPE) were used to compare the goodness-of-fit between these two models. Data from 2011 TB incidence data was used to validate the chosen model.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>Although both two models could reasonably forecast the incidence of TB, the hybrid model demonstrated better goodness-of-fit than the SARIMA model. For the hybrid model, the MSE, MAE and MAPE were 38969150, 3406.593 and 0.030, respectively. For the SARIMA model, the corresponding figures were 161835310, 8781.971 and 0.076, respectively. The seasonal trend of TB incidence is predicted to have lower monthly incidence in January and February and higher incidence from March to June.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>The hybrid model showed better TB incidence forecasting than the SARIMA model. There is an obvious seasonal trend of TB incidence in China that differed from other countries.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>Hybrid model</kwd>
+        <kwd>Incidence</kwd>
+        <kwd>Prediction</kwd>
+        <kwd>Seasonality</kwd>
+        <kwd>Tuberculosis</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>Tuberculosis (TB) is an often fatal infectious disease caused by the agent <italic>mycobacterium tuberculosis</italic>. Despite concerted worldwide efforts to control this disease, TB remains a major health issue with a high global health burden, particularly in low and middle-income countries [<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B2">2</xref>]. In 2009, it was estimated that there were approximately 9.4 million newly diagnosed cases, 14 million prevalent cases, and 1.7 million deaths that were attributable to TB in the world [<xref ref-type="bibr" rid="B3">3</xref>].</p>
+      <p>Since tuberculosis can be disseminated widely from active cases through aerosol droplets, it is highly cost-effective to detect a TB epidemic in its early stages in order to optimize disease control and intervention. One important characteristic of TB that assists in predicting epidemics is seasonality. A recent systematic review which reviewed studies from multiple regions around the world, noted a seasonal pattern of tuberculosis across countries. Moreover, the review noted that TB cases tended to reach their peak during the spring and summer seasons [<xref ref-type="bibr" rid="B4">4</xref>]. The seasonality of TB epidemics allows more efficient and effective use of existing data and it also provides clues to explore the environmental and social factors which might influence TB epidemics.</p>
+      <p>There were some retrospective studies using routine surveillance data to describe the patterns of TB occurrence [<xref ref-type="bibr" rid="B5">5</xref>,<xref ref-type="bibr" rid="B6">6</xref>], and the TB forecasting models have been developed in various countries to understand and predict the trajectory of a TB epidemic [<xref ref-type="bibr" rid="B7">7</xref>-<xref ref-type="bibr" rid="B9">9</xref>]. Up to the present, there has no such studies conducted in China, even though China possesses the world&#x2019;s second largest tuberculosis epidemic after India.</p>
+      <p>Given the high priority to tuberculosis control, there have been large numbers of international TB prevalence studies. Nonetheless, measurements of prevalence were usually confined to the adult population and these surveys typically will not include culture-negative pulmonary TB cases [<xref ref-type="bibr" rid="B10">10</xref>]. Although there are increasing numbers of countries that possess TB prevalence data from representative, population-based surveys, there has been no nationwide survey of TB incidence in any country.</p>
+      <p>In order to address these noted gaps in the literature, in this study we aim to develop a model to predict TB epidemics and to analyze its seasonality in China. There are many models which can be used in infectious disease forecasting, such as Markov chain models [<xref ref-type="bibr" rid="B8">8</xref>], Grey models, general regression models, autoregressive integrated moving average class models (ARIMA) [<xref ref-type="bibr" rid="B11">11</xref>] and artificial neural network [<xref ref-type="bibr" rid="B12">12</xref>]. For better forecasting performance, hybrid models which combined two or more single models for communicable disease forecasting have also been explored, and previous findings indicate that hybrid models outperformed single models [<xref ref-type="bibr" rid="B13">13</xref>,<xref ref-type="bibr" rid="B14">14</xref>]. We plan to compare our model with a hybrid model in order to compare their performance. The findings of this study will be useful for forecasting TB epidemics and providing reference information for TB control and intervention.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>Study area and data collection</title>
+        <p>The Ministry of Health of the People&#x2019;s Republic of China (MOH) releases the incidence data of notifiable diseases on a monthly basis. The data including incidence and mortality rates of each notifiable disease is primarily collected from every local Center of Disease and Control. In the MOH, more than 30 of infectious diseases are categorized into three major types (ClassA ,B or C) of notifiable diseases. Tuberculosis is categorized to class B notifiable disease in this system. All cases must be verified by the clinical and laboratory diagnosis. All tuberculosis cases must be reported within twelve hours by health professionals to their local health department which will, in turn, be reported to the MOH. We collected all the monthly incidence data of TB from MOH from January 2005 to December 2011 (Table&#xA0;<xref ref-type="table" rid="T1">1</xref>). Ethical approval is not required for this study.</p>
+        <table-wrap position="float" id="T1">
+          <label>Table 1</label>
+          <caption>
+            <p>Reported monthly incidence number of tuberculosis from January 2005 to December 2011</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th align="left" valign="bottom">
+                  <bold>Month</bold>
+                  <hr/>
+                </th>
+                <th colspan="7" align="center" valign="bottom">
+                  <bold>Year</bold>
+                  <hr/>
+                </th>
+              </tr>
+              <tr>
+                <th align="left">&#xA0;</th>
+                <th align="center">
+                  <bold>2005</bold>
+                </th>
+                <th align="center">
+                  <bold>2006</bold>
+                </th>
+                <th align="center">
+                  <bold>2007</bold>
+                </th>
+                <th align="center">
+                  <bold>2008</bold>
+                </th>
+                <th align="center">
+                  <bold>2009</bold>
+                </th>
+                <th align="center">
+                  <bold>2010</bold>
+                </th>
+                <th align="center">
+                  <bold>2011</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom">January<hr/></td>
+                <td align="center" valign="bottom">85577<hr/></td>
+                <td align="center" valign="bottom">89436<hr/></td>
+                <td align="center" valign="bottom">115457<hr/></td>
+                <td align="center" valign="bottom">111688<hr/></td>
+                <td align="center" valign="bottom">90160<hr/></td>
+                <td align="center" valign="bottom">105877<hr/></td>
+                <td align="center" valign="bottom">99617<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">February<hr/></td>
+                <td align="center" valign="bottom">75625<hr/></td>
+                <td align="center" valign="bottom">103823<hr/></td>
+                <td align="center" valign="bottom">91235<hr/></td>
+                <td align="center" valign="bottom">101689<hr/></td>
+                <td align="center" valign="bottom">127167<hr/></td>
+                <td align="center" valign="bottom">88759<hr/></td>
+                <td align="center" valign="bottom">98157<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">March<hr/></td>
+                <td align="center" valign="bottom">151935<hr/></td>
+                <td align="center" valign="bottom">147996<hr/></td>
+                <td align="center" valign="bottom">141508<hr/></td>
+                <td align="center" valign="bottom">156679<hr/></td>
+                <td align="center" valign="bottom">139986<hr/></td>
+                <td align="center" valign="bottom">138574<hr/></td>
+                <td align="center" valign="bottom">135848<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">April<hr/></td>
+                <td align="center" valign="bottom">165419<hr/></td>
+                <td align="center" valign="bottom">145029<hr/></td>
+                <td align="center" valign="bottom">148930<hr/></td>
+                <td align="center" valign="bottom">153978<hr/></td>
+                <td align="center" valign="bottom">139915<hr/></td>
+                <td align="center" valign="bottom">133833<hr/></td>
+                <td align="center" valign="bottom">129351<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">May<hr/></td>
+                <td align="center" valign="bottom">150823<hr/></td>
+                <td align="center" valign="bottom">135933<hr/></td>
+                <td align="center" valign="bottom">135933<hr/></td>
+                <td align="center" valign="bottom">142612<hr/></td>
+                <td align="center" valign="bottom">128411<hr/></td>
+                <td align="center" valign="bottom">128598<hr/></td>
+                <td align="center" valign="bottom">125129<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">June<hr/></td>
+                <td align="center" valign="bottom">151330<hr/></td>
+                <td align="center" valign="bottom">134879<hr/></td>
+                <td align="center" valign="bottom">134775<hr/></td>
+                <td align="center" valign="bottom">131699<hr/></td>
+                <td align="center" valign="bottom">142182<hr/></td>
+                <td align="center" valign="bottom">127545<hr/></td>
+                <td align="center" valign="bottom">119344<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">July<hr/></td>
+                <td align="center" valign="bottom">133807<hr/></td>
+                <td align="center" valign="bottom">123829<hr/></td>
+                <td align="center" valign="bottom">134695<hr/></td>
+                <td align="center" valign="bottom">136378<hr/></td>
+                <td align="center" valign="bottom">129537<hr/></td>
+                <td align="center" valign="bottom">122602<hr/></td>
+                <td align="center" valign="bottom">112647<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">August<hr/></td>
+                <td align="center" valign="bottom">132729<hr/></td>
+                <td align="center" valign="bottom">127509<hr/></td>
+                <td align="center" valign="bottom">130404<hr/></td>
+                <td align="center" valign="bottom">122923<hr/></td>
+                <td align="center" valign="bottom">126893<hr/></td>
+                <td align="center" valign="bottom">117221<hr/></td>
+                <td align="center" valign="bottom">115140<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">September<hr/></td>
+                <td align="center" valign="bottom">123062<hr/></td>
+                <td align="center" valign="bottom">115540<hr/></td>
+                <td align="center" valign="bottom">119078<hr/></td>
+                <td align="center" valign="bottom">123998<hr/></td>
+                <td align="center" valign="bottom">124152<hr/></td>
+                <td align="center" valign="bottom">112288<hr/></td>
+                <td align="center" valign="bottom">106925<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">October<hr/></td>
+                <td align="center" valign="bottom">104851<hr/></td>
+                <td align="center" valign="bottom">108177<hr/></td>
+                <td align="center" valign="bottom">111325<hr/></td>
+                <td align="center" valign="bottom">119821<hr/></td>
+                <td align="center" valign="bottom">109343<hr/></td>
+                <td align="center" valign="bottom">101463<hr/></td>
+                <td align="center" valign="bottom">100392<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">November<hr/></td>
+                <td align="center" valign="bottom">117468<hr/></td>
+                <td align="center" valign="bottom">111384<hr/></td>
+                <td align="center" valign="bottom">116503<hr/></td>
+                <td align="center" valign="bottom">110896<hr/></td>
+                <td align="center" valign="bottom">104782<hr/></td>
+                <td align="center" valign="bottom">110414<hr/></td>
+                <td align="center" valign="bottom">110662<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">December</td>
+                <td align="center">116859</td>
+                <td align="center">114262</td>
+                <td align="center">119421</td>
+                <td align="center">121114</td>
+                <td align="center">120341</td>
+                <td align="center">105036</td>
+                <td align="center">104710</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </sec>
+      <sec>
+        <title>Model development</title>
+        <p>This study was based on time series data of TB. Before the model fitting, a line plot was drawn to observe the trend of the time series data for model selection (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>). Based on this plot, we found that the time series data of TB incidence had a seasonality trend with periodicity. Firstly, we considered the ARIMA model, which have been widely used to analyze the time series data. Furthermore, artificial neural network was a model which was broadly applied in multivariate nonlinear analysis recently [<xref ref-type="bibr" rid="B14">14</xref>] and could be a supplement of linear analysis. Therefore, we selected seasonal ARIMA (SARIMA) model and hybrid model of SARIMA and generalized regression neural network (GRNN).</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p>Reported monthly incidence number of tuberculosis from January 2005 to December 2010.</p>
+          </caption>
+          <graphic xlink:href="1472-6947-13-56-1"/>
+        </fig>
+        <sec>
+          <title>SARIMA model construction</title>
+          <p>The SARIMA model is developed from the ARIMA model. The future value of a variable in ARIMA model is a linear function of several past observations and random errors. It uses autoregressive parameters, moving average parameters and the number of differencing passes to describe a series in which a pattern is repeated over time. There are six main parameters for fitting the SARIMA model: the order of autoregressive (p) and seasonal autoregressive (P), the order of integration (d) and seasonal integration (D), and the order of moving average (q) and seasonal moving average (Q). In this study, SARIMA model was developed using monthly incidence of TB as the dependent variable and its past variables as independent variable with the control of seasonality. The general SARIMA model has the following form:</p>
+          <p>
+            <disp-formula>
+              <mml:math id="M1" name="1472-6947-13-56-i1" overflow="scroll">
+                <mml:mrow>
+                  <mml:mi mathvariant="normal">&#x3D5;</mml:mi>
+                  <mml:mfenced open="(" close=")">
+                    <mml:mi mathvariant="normal">B</mml:mi>
+                  </mml:mfenced>
+                  <mml:mi mathvariant="normal">&#x3A6;</mml:mi>
+                  <mml:mfenced open="(" close=")">
+                    <mml:msup>
+                      <mml:mi mathvariant="normal">B</mml:mi>
+                      <mml:mi mathvariant="normal">S</mml:mi>
+                    </mml:msup>
+                  </mml:mfenced>
+                  <mml:msup>
+                    <mml:mfenced open="(" close=")">
+                      <mml:mrow>
+                        <mml:mn>1</mml:mn>
+                        <mml:mo>&#x2212;</mml:mo>
+                        <mml:msup>
+                          <mml:mi mathvariant="normal">B</mml:mi>
+                          <mml:mi mathvariant="normal">S</mml:mi>
+                        </mml:msup>
+                      </mml:mrow>
+                    </mml:mfenced>
+                    <mml:mi mathvariant="normal">D</mml:mi>
+                  </mml:msup>
+                  <mml:msub>
+                    <mml:mi mathvariant="normal">X</mml:mi>
+                    <mml:mi mathvariant="normal">t</mml:mi>
+                  </mml:msub>
+                  <mml:mo>=</mml:mo>
+                  <mml:mi mathvariant="normal">&#x3B8;B</mml:mi>
+                  <mml:mi mathvariant="normal">&#x398;</mml:mi>
+                  <mml:mfenced open="(" close=")">
+                    <mml:msup>
+                      <mml:mi mathvariant="normal">B</mml:mi>
+                      <mml:mi mathvariant="normal">S</mml:mi>
+                    </mml:msup>
+                  </mml:mfenced>
+                  <mml:msub>
+                    <mml:mi>&#x3F5;</mml:mi>
+                    <mml:mi mathvariant="normal">t</mml:mi>
+                  </mml:msub>
+                </mml:mrow>
+              </mml:math>
+            </disp-formula>
+          </p>
+          <p>with</p>
+          <p>
+            <disp-formula>
+              <mml:math id="M2" name="1472-6947-13-56-i2" overflow="scroll">
+                <mml:mrow>
+                  <mml:mi mathvariant="normal">&#x3D5;</mml:mi>
+                  <mml:mfenced open="(" close=")">
+                    <mml:mi mathvariant="normal">B</mml:mi>
+                  </mml:mfenced>
+                  <mml:mo>=</mml:mo>
+                  <mml:mn>1</mml:mn>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:msub>
+                    <mml:mi mathvariant="normal">&#x3D5;</mml:mi>
+                    <mml:mn>1</mml:mn>
+                  </mml:msub>
+                  <mml:mi mathvariant="normal">B</mml:mi>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:msub>
+                    <mml:mi mathvariant="normal">&#x3D5;</mml:mi>
+                    <mml:mn>2</mml:mn>
+                  </mml:msub>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:mo>&#x2026;</mml:mo>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:msub>
+                    <mml:mi mathvariant="normal">&#x3D5;</mml:mi>
+                    <mml:mi mathvariant="normal">P</mml:mi>
+                  </mml:msub>
+                  <mml:msup>
+                    <mml:mi mathvariant="normal">B</mml:mi>
+                    <mml:mi mathvariant="normal">P</mml:mi>
+                  </mml:msup>
+                  <mml:mi mathvariant="normal">&#x3A6;</mml:mi>
+                </mml:mrow>
+              </mml:math>
+            </disp-formula>
+          </p>
+          <p>
+            <disp-formula>
+              <mml:math id="M3" name="1472-6947-13-56-i3" overflow="scroll">
+                <mml:mrow>
+                  <mml:mfenced open="(" close=")">
+                    <mml:msup>
+                      <mml:mi mathvariant="normal">B</mml:mi>
+                      <mml:mi mathvariant="normal">S</mml:mi>
+                    </mml:msup>
+                  </mml:mfenced>
+                  <mml:mo>=</mml:mo>
+                  <mml:mn>1</mml:mn>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:msub>
+                    <mml:mi mathvariant="normal">&#x3A6;</mml:mi>
+                    <mml:mn>1</mml:mn>
+                  </mml:msub>
+                  <mml:msup>
+                    <mml:mi mathvariant="normal">B</mml:mi>
+                    <mml:mi mathvariant="normal">s</mml:mi>
+                  </mml:msup>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:msub>
+                    <mml:mi mathvariant="normal">&#x3A6;</mml:mi>
+                    <mml:mn>2</mml:mn>
+                  </mml:msub>
+                  <mml:msup>
+                    <mml:mi mathvariant="normal">B</mml:mi>
+                    <mml:mrow>
+                      <mml:mn>2</mml:mn>
+                      <mml:mi mathvariant="normal">s</mml:mi>
+                    </mml:mrow>
+                  </mml:msup>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:mo>&#x2026;</mml:mo>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:msub>
+                    <mml:mi mathvariant="normal">&#x3A6;</mml:mi>
+                    <mml:mi mathvariant="normal">P</mml:mi>
+                  </mml:msub>
+                  <mml:msup>
+                    <mml:mi mathvariant="normal">B</mml:mi>
+                    <mml:mi mathvariant="normal">Ps</mml:mi>
+                  </mml:msup>
+                </mml:mrow>
+              </mml:math>
+            </disp-formula>
+          </p>
+          <p>
+            <disp-formula>
+              <mml:math id="M4" name="1472-6947-13-56-i4" overflow="scroll">
+                <mml:mrow>
+                  <mml:mi mathvariant="normal">&#x3B8;</mml:mi>
+                  <mml:mfenced open="(" close=")">
+                    <mml:mi mathvariant="normal">B</mml:mi>
+                  </mml:mfenced>
+                  <mml:mo>=</mml:mo>
+                  <mml:mn>1</mml:mn>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:msub>
+                    <mml:mi mathvariant="normal">&#x3B8;</mml:mi>
+                    <mml:mn>1</mml:mn>
+                  </mml:msub>
+                  <mml:mi mathvariant="normal">B</mml:mi>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:msub>
+                    <mml:mi mathvariant="normal">&#x3B8;</mml:mi>
+                    <mml:mn>1</mml:mn>
+                  </mml:msub>
+                  <mml:msup>
+                    <mml:mi mathvariant="normal">B</mml:mi>
+                    <mml:mn>2</mml:mn>
+                  </mml:msup>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:mo>&#x2026;</mml:mo>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:msub>
+                    <mml:mi mathvariant="normal">&#x3B8;</mml:mi>
+                    <mml:mi mathvariant="normal">q</mml:mi>
+                  </mml:msub>
+                  <mml:msup>
+                    <mml:mi mathvariant="normal">B</mml:mi>
+                    <mml:mi mathvariant="normal">q</mml:mi>
+                  </mml:msup>
+                </mml:mrow>
+              </mml:math>
+            </disp-formula>
+          </p>
+          <p>
+            <disp-formula>
+              <mml:math id="M5" name="1472-6947-13-56-i5" overflow="scroll">
+                <mml:mrow>
+                  <mml:mi mathvariant="normal">&#x398;</mml:mi>
+                  <mml:mfenced open="(" close=")">
+                    <mml:msup>
+                      <mml:mi mathvariant="normal">B</mml:mi>
+                      <mml:mi mathvariant="normal">S</mml:mi>
+                    </mml:msup>
+                  </mml:mfenced>
+                  <mml:mo>=</mml:mo>
+                  <mml:mn>1</mml:mn>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:msub>
+                    <mml:mi mathvariant="normal">&#x398;</mml:mi>
+                    <mml:mn>1</mml:mn>
+                  </mml:msub>
+                  <mml:msup>
+                    <mml:mi mathvariant="normal">B</mml:mi>
+                    <mml:mi mathvariant="normal">s</mml:mi>
+                  </mml:msup>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:msub>
+                    <mml:mi mathvariant="normal">&#x398;</mml:mi>
+                    <mml:mn>2</mml:mn>
+                  </mml:msub>
+                  <mml:msup>
+                    <mml:mi mathvariant="normal">B</mml:mi>
+                    <mml:mrow>
+                      <mml:mn>2</mml:mn>
+                      <mml:mi mathvariant="normal">s</mml:mi>
+                    </mml:mrow>
+                  </mml:msup>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:mo>&#x2026;</mml:mo>
+                  <mml:mo>&#x2212;</mml:mo>
+                  <mml:msub>
+                    <mml:mi mathvariant="normal">&#x398;</mml:mi>
+                    <mml:mi mathvariant="normal">Q</mml:mi>
+                  </mml:msub>
+                  <mml:msup>
+                    <mml:mi mathvariant="normal">B</mml:mi>
+                    <mml:mi mathvariant="normal">Qs</mml:mi>
+                  </mml:msup>
+                </mml:mrow>
+              </mml:math>
+            </disp-formula>
+          </p>
+          <p>In the equation, B is the backward shift operator, &#x3F5;<sub>t</sub> is the estimated residual at time <italic>t</italic> with zero mean and constant variance and X<sub>t</sub> denotes the observed value at time <italic>t</italic> (<italic>t</italic>&#x2009;=&#x2009;1, 2&#x2026; k). The process is called SARIMA (p, q, d) (P, D, Q)<sup>s</sup>(<italic>s</italic> is the length of the seasonal period). Autocorrelation function and partial autocorrelation functions were performed to identify the six main parameters preliminarily. Akaike information criterion and Schwarz Bayesian criterion were used to determine the optimal model that most closely fit the data. The SARIMA model was built using a SPSS 13.0 (SPSS Inc., Chicago, IL, USA) and <italic>p</italic> value&#x2009;&lt;&#x2009;0.05 was used as a cut-off for statistical significance.</p>
+        </sec>
+        <sec>
+          <title>Development of the hybrid model combining SARIMA model and Generalized Regression Neural Network (GRNN) model</title>
+          <p>Artificial neural network models are being applied widely in multivariate nonlinear models. There are self-organizing and self-learning processes in it [<xref ref-type="bibr" rid="B15">15</xref>]. Neural networks are trained by a set of data with the outcomes that the trainer wishes the network to learn. Then the trained network can be evaluated by inputting similar but previously unseen data. Among various artificial neural network models, GRNN model is a universal approximator for smooth functions based on nonlinear regression theory. Given enough data, it is able to solve any smoothing function approximation problem. The training series of a GRNN consists of input values <italic>x</italic>, each with a corresponding value of an output <italic>y</italic>. estimated value of <italic>y</italic> can be produced minimizing the squared error. For constructing a better GRNN model, selection of an appropriate smoothing factor is very important. The smoothing factor plays a great role in matching its predictions to the data in the training patterns. The selection process is usually conducted by software.</p>
+          <p>Because the SARIMA model had been used to analyze the linear part of the actual data, the residuals should contain nonlinear relationships. In SARIMA- GRNN model, we combined the linear and nonlinear parts of the models. We selected the monthly estimated incidence number of TB at time variable <italic>t</italic> from the SARIMA model and time variable <italic>t</italic> as two input variables. There is one output variable <italic>y</italic> which was the actual reported monthly incidence number of TB. The iterations of GRNN learning and simulating data was conducted in Matlab 7.0 software package (Math Works Inc., Natick, MA, USA) to determine the relationship between the input and output variables.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Comparison between the two models in simulation performance</title>
+        <p>Three indexes were used in comparisons of the fitting effectiveness of the SARIMA model and the hybrid model: the mean square error (MSE), mean absolute error (MAE) and mean absolute percentage error (MAPE). Their calculation formulas are:</p>
+        <p>
+          <disp-formula>
+            <mml:math id="M6" name="1472-6947-13-56-i6" overflow="scroll">
+              <mml:mrow>
+                <mml:mi mathvariant="normal">MSE</mml:mi>
+                <mml:mo>=</mml:mo>
+                <mml:mfrac>
+                  <mml:mn>1</mml:mn>
+                  <mml:mi mathvariant="normal">n</mml:mi>
+                </mml:mfrac>
+                <mml:munderover>
+                  <mml:mstyle displaystyle="true">
+                    <mml:mo>&#x2211;</mml:mo>
+                  </mml:mstyle>
+                  <mml:mrow>
+                    <mml:mi mathvariant="normal">t</mml:mi>
+                    <mml:mo>=</mml:mo>
+                    <mml:mn>1</mml:mn>
+                  </mml:mrow>
+                  <mml:mi mathvariant="normal">n</mml:mi>
+                </mml:munderover>
+                <mml:msup>
+                  <mml:mfenced open="(" close=")">
+                    <mml:mrow>
+                      <mml:msub>
+                        <mml:mi mathvariant="normal">X</mml:mi>
+                        <mml:mi mathvariant="normal">t</mml:mi>
+                      </mml:msub>
+                      <mml:mo>&#x2212;</mml:mo>
+                      <mml:msub>
+                        <mml:mover>
+                          <mml:mi mathvariant="normal">X</mml:mi>
+                          <mml:mo>&#x2C6;</mml:mo>
+                        </mml:mover>
+                        <mml:mi mathvariant="normal">t</mml:mi>
+                      </mml:msub>
+                    </mml:mrow>
+                  </mml:mfenced>
+                  <mml:mn>2</mml:mn>
+                </mml:msup>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula>
+            <mml:math id="M7" name="1472-6947-13-56-i7" overflow="scroll">
+              <mml:mrow>
+                <mml:mi mathvariant="normal">MAE</mml:mi>
+                <mml:mo>=</mml:mo>
+                <mml:mfrac>
+                  <mml:mn>1</mml:mn>
+                  <mml:mi mathvariant="normal">n</mml:mi>
+                </mml:mfrac>
+                <mml:munderover>
+                  <mml:mstyle displaystyle="true">
+                    <mml:mo>&#x2211;</mml:mo>
+                  </mml:mstyle>
+                  <mml:mrow>
+                    <mml:mi mathvariant="normal">t</mml:mi>
+                    <mml:mo>=</mml:mo>
+                    <mml:mn>1</mml:mn>
+                  </mml:mrow>
+                  <mml:mi mathvariant="normal">n</mml:mi>
+                </mml:munderover>
+                <mml:mfenced open="|" close="|">
+                  <mml:mrow>
+                    <mml:msub>
+                      <mml:mi mathvariant="normal">X</mml:mi>
+                      <mml:mi mathvariant="normal">t</mml:mi>
+                    </mml:msub>
+                    <mml:mo>&#x2212;</mml:mo>
+                    <mml:msub>
+                      <mml:mover>
+                        <mml:mi mathvariant="normal">X</mml:mi>
+                        <mml:mo>&#x2C6;</mml:mo>
+                      </mml:mover>
+                      <mml:mi mathvariant="normal">t</mml:mi>
+                    </mml:msub>
+                  </mml:mrow>
+                </mml:mfenced>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>
+          <disp-formula>
+            <mml:math id="M8" name="1472-6947-13-56-i8" overflow="scroll">
+              <mml:mrow>
+                <mml:mi mathvariant="normal">MAPE</mml:mi>
+                <mml:mo>=</mml:mo>
+                <mml:mfrac>
+                  <mml:mn>1</mml:mn>
+                  <mml:mi mathvariant="normal">n</mml:mi>
+                </mml:mfrac>
+                <mml:munderover>
+                  <mml:mstyle displaystyle="true">
+                    <mml:mo>&#x2211;</mml:mo>
+                  </mml:mstyle>
+                  <mml:mrow>
+                    <mml:mi mathvariant="normal">t</mml:mi>
+                    <mml:mo>=</mml:mo>
+                    <mml:mn>1</mml:mn>
+                  </mml:mrow>
+                  <mml:mi mathvariant="normal">n</mml:mi>
+                </mml:munderover>
+                <mml:mfrac>
+                  <mml:mfenced open="|" close="|">
+                    <mml:mrow>
+                      <mml:msub>
+                        <mml:mi mathvariant="normal">X</mml:mi>
+                        <mml:mi mathvariant="normal">t</mml:mi>
+                      </mml:msub>
+                      <mml:mo>&#x2212;</mml:mo>
+                      <mml:msub>
+                        <mml:mover>
+                          <mml:mi mathvariant="normal">X</mml:mi>
+                          <mml:mo>&#x2C6;</mml:mo>
+                        </mml:mover>
+                        <mml:mi mathvariant="normal">t</mml:mi>
+                      </mml:msub>
+                    </mml:mrow>
+                  </mml:mfenced>
+                  <mml:msub>
+                    <mml:mi mathvariant="normal">X</mml:mi>
+                    <mml:mi mathvariant="normal">t</mml:mi>
+                  </mml:msub>
+                </mml:mfrac>
+              </mml:mrow>
+            </mml:math>
+          </disp-formula>
+        </p>
+        <p>where X<sub>t</sub> is the real incidence number at time <italic>t</italic>, <inline-formula><mml:math id="M9" name="1472-6947-13-56-i9" overflow="scroll"><mml:msub><mml:mover><mml:mi mathvariant="normal">X</mml:mi><mml:mo>&#x2C6;</mml:mo></mml:mover><mml:mi mathvariant="normal">t</mml:mi></mml:msub></mml:math></inline-formula> is the estimated incidence at time <italic>t</italic>, and <italic>n</italic> is the number of predictions. Good fitness performance is demonstrated with these three indices showing as small a value as possible.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results">
+      <title>Results</title>
+      <p>The data set from January 2005 to December 2010 was used to model fitting. For determining main parameters (p, P, d, D, q, Q) of SARIMA, we drew autocorrelation function plot and partial autocorrelation function plot (Figure&#xA0;<xref ref-type="fig" rid="F2">2</xref>). In the SARIMA time series analysis, the best model generated from the data set was SARIMA (1, 0, 0) (1, 0, 1)<sub>12</sub>. The model equation is: (1&#x2009;&#x2212;&#x2009;0.272B)(1&#x2009;&#x2212;&#x2009;0.997B<sup>12</sup>)X<sub>t</sub>&#x2009;=&#x2009;(1&#x2009;&#x2212;&#x2009;0.888B<sup>12</sup>)&#x2009;&#xD7;&#x2009;123088.518. The estimation of model parameters and their testing results were presented in Table&#xA0;<xref ref-type="table" rid="T2">2</xref>.</p>
+      <fig id="F2" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <p><bold>Autocorrelation function(ACF) and partial ACF charts of monthly tuberculosis incidence numbers.</bold> (<bold>a</bold>) ACF chart; (<bold>b</bold>) Partial ACF chart.</p>
+        </caption>
+        <graphic xlink:href="1472-6947-13-56-2"/>
+      </fig>
+      <table-wrap position="float" id="T2">
+        <label>Table 2</label>
+        <caption>
+          <p>Parameter estimates and their testing results of the SARIMA model</p>
+        </caption>
+        <table frame="hsides" rules="groups" border="1">
+          <colgroup>
+            <col align="left"/>
+            <col align="left"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+          </colgroup>
+          <thead valign="top">
+            <tr>
+              <th colspan="2" align="left">
+                <bold>Coefficients</bold>
+              </th>
+              <th align="center">
+                <bold>Estimates</bold>
+              </th>
+              <th align="center">
+                <bold>Standard error</bold>
+              </th>
+              <th align="center">
+                <bold>
+                  <italic>t</italic>
+                </bold>
+              </th>
+              <th align="center">
+                <bold>
+                  <italic>p </italic>
+                </bold>
+                <bold>value</bold>
+              </th>
+            </tr>
+          </thead>
+          <tbody valign="top">
+            <tr>
+              <td align="left" valign="bottom">Non-Seasonal Lags<hr/></td>
+              <td align="left" valign="bottom">AR1<hr/></td>
+              <td align="center" valign="bottom">0.272<hr/></td>
+              <td align="center" valign="bottom">0.097<hr/></td>
+              <td align="center" valign="bottom">2.793<hr/></td>
+              <td align="center" valign="bottom">0.007<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">Seasonal Lags<hr/></td>
+              <td align="left" valign="bottom">Seasonal AR1<hr/></td>
+              <td align="center" valign="bottom">0.997<hr/></td>
+              <td align="center" valign="bottom">0.020<hr/></td>
+              <td align="center" valign="bottom">49.893<hr/></td>
+              <td align="center" valign="bottom">0.000<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">&#xA0;<hr/></td>
+              <td align="left" valign="bottom">Seasonal MA1<hr/></td>
+              <td align="center" valign="bottom">0.888<hr/></td>
+              <td align="center" valign="bottom">0.392<hr/></td>
+              <td align="center" valign="bottom">2.268<hr/></td>
+              <td align="center" valign="bottom">0.026<hr/></td>
+            </tr>
+            <tr>
+              <td colspan="2" align="left">Constant</td>
+              <td align="center">123088.518</td>
+              <td align="center">5895.414</td>
+              <td align="center">20.879</td>
+              <td align="center">0.000</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <p>Melard's algorithm was used for estimation.</p>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>In constructing the SARIMA-GRNN model, the simulation accuracy of the GRNN model was determined by using the smoothing factor &#x3B4;.After exploring various smoothing factors from 0.1 to 1.0, we found when the smooth factor was 0.1, the hybrid model has lowest MSE, MAE and MAPE. So we selected 0.1 as an appropriate smoothing factor.</p>
+      <p>We compared SARIMA with SARIMA-GRNN in fitting goodness. The real incidence numbers and estimated incidence numbers of SARIMA model and SARIMA-GRNN model monthly are shown in Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref>. MSE, MAE and MAPE of the combined model (38969150, 3406.593 and 0.030, respectively) were lower than those of the single SARIMA model (161835310, 8781.971 and 0.076, respectively).</p>
+      <fig id="F3" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <p><bold>Simulation effects of SARIMA model and SARIMA-GRNN model.</bold> (<bold>a</bold>) Reported monthly incidence number of tuberculosis and its estimated value from SARIMA model; (<bold>b</bold>) Reported monthly incidence number of tuberculosis and its estimated value from SARIMA-GRNN model.</p>
+        </caption>
+        <graphic xlink:href="1472-6947-13-56-3"/>
+      </fig>
+      <p>We attempted to predict the number of monthly incident TB cases in 2011 using SARIMA and the hybrid models and compared them with the actual numbers (see Table&#xA0;<xref ref-type="table" rid="T3">3</xref>). MSE, MAE and MAPE of the hybrid model were all lower than those of the single mode; and MAPE of the hybrid model was 3.7%.</p>
+      <table-wrap position="float" id="T3">
+        <label>Table 3</label>
+        <caption>
+          <p>Reported and forecasted TB cases for 2011</p>
+        </caption>
+        <table frame="hsides" rules="groups" border="1">
+          <colgroup>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+          </colgroup>
+          <thead valign="top">
+            <tr>
+              <th align="center" valign="bottom">
+                <bold>Date</bold>
+                <hr/>
+              </th>
+              <th align="center" valign="bottom">
+                <bold>Reported cases</bold>
+                <hr/>
+              </th>
+              <th colspan="2" align="center" valign="bottom">
+                <bold>Forecasted cases</bold>
+                <hr/>
+              </th>
+            </tr>
+            <tr>
+              <th align="center">&#xA0;</th>
+              <th align="center">&#xA0;</th>
+              <th align="center">
+                <bold>SARIMA model</bold>
+              </th>
+              <th align="center">
+                <bold>Hybrid model</bold>
+              </th>
+            </tr>
+          </thead>
+          <tbody valign="top">
+            <tr>
+              <td align="center" valign="bottom">January<hr/></td>
+              <td align="center" valign="bottom">99617<hr/></td>
+              <td align="center" valign="bottom">97969<hr/></td>
+              <td align="center" valign="bottom">101914<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">February<hr/></td>
+              <td align="center" valign="bottom">98157<hr/></td>
+              <td align="center" valign="bottom">99085<hr/></td>
+              <td align="center" valign="bottom">104172<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">March<hr/></td>
+              <td align="center" valign="bottom">135848<hr/></td>
+              <td align="center" valign="bottom">144081<hr/></td>
+              <td align="center" valign="bottom">134218<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">April<hr/></td>
+              <td align="center" valign="bottom">129351<hr/></td>
+              <td align="center" valign="bottom">145607<hr/></td>
+              <td align="center" valign="bottom">134200<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">May<hr/></td>
+              <td align="center" valign="bottom">125129<hr/></td>
+              <td align="center" valign="bottom">135715<hr/></td>
+              <td align="center" valign="bottom">127165<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">June<hr/></td>
+              <td align="center" valign="bottom">119344<hr/></td>
+              <td align="center" valign="bottom">135855<hr/></td>
+              <td align="center" valign="bottom">127130<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">July<hr/></td>
+              <td align="center" valign="bottom">112647<hr/></td>
+              <td align="center" valign="bottom">129515<hr/></td>
+              <td align="center" valign="bottom">119442<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">August<hr/></td>
+              <td align="center" valign="bottom">115140<hr/></td>
+              <td align="center" valign="bottom">125768<hr/></td>
+              <td align="center" valign="bottom">110901<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">September<hr/></td>
+              <td align="center" valign="bottom">106925<hr/></td>
+              <td align="center" valign="bottom">119794<hr/></td>
+              <td align="center" valign="bottom">105334<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">October<hr/></td>
+              <td align="center" valign="bottom">100392<hr/></td>
+              <td align="center" valign="bottom">109934<hr/></td>
+              <td align="center" valign="bottom">108230<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">November<hr/></td>
+              <td align="center" valign="bottom">110662<hr/></td>
+              <td align="center" valign="bottom">112293<hr/></td>
+              <td align="center" valign="bottom">107170<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">December<hr/></td>
+              <td align="center" valign="bottom">104710<hr/></td>
+              <td align="center" valign="bottom">115860<hr/></td>
+              <td align="center" valign="bottom">105263<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">
+                <bold>Error</bold>
+                <hr/>
+              </td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">MSE<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">125120982.998<hr/></td>
+              <td align="center" valign="bottom">22749934.518<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">MAE<hr/></td>
+              <td align="center" valign="bottom">&#xA0;<hr/></td>
+              <td align="center" valign="bottom">9737.576<hr/></td>
+              <td align="center" valign="bottom">4093.497<hr/></td>
+            </tr>
+            <tr>
+              <td align="center">MAPE</td>
+              <td align="center">&#xA0;</td>
+              <td align="center">0.084</td>
+              <td align="center">0.037</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <p>From the model curve (Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref>), we found that yearly TB incidence number in China showed a slightly decreasing trend. There was also a seasonal pattern in the number of new TB cases. The monthly incidence of TB was lower in January and February and higher from March to June.</p>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Discussion</title>
+      <p>We developed a SARIMA model and a SARIMA-GRNN hybrid model to predict monthly incidence of TB in China. Although both models could simulate the TB time series data well, the hybrid model, which takes both linear and nonlinear components into account, outperformed the SARIMA model. We believed that models combining ARIMA and artificial neural network contain more data characteristics than non-hybrid models and may thereby be better for forecasting.</p>
+      <p>Based upon the results of this study, we believe that there will be no obvious improvement in the high burden of TB in China in the near future. The results indicated that in the near future, the reported annual TB incidence numbers in China will decrease only slightly. Even though this study&#x2019;s analysis was based only on reported cases of TB since time series data of real incidence of TB in China cannot be readily obtained, the web-based and case-based mandatory TB reporting system has been fully operational since 2005 and covers almost 100% of detected TB cases in China [<xref ref-type="bibr" rid="B16">16</xref>]. Hence, the reported incidence number should closely mirror the real incidence of TB. Moreover, the trends and epidemics from reported incidence numbers are very similar to those actual incidence and epidemic situation of TB. These findings reveal that the China&#x2019;s progress in TB control has been very incremental and intensified interventions are urgently needed.</p>
+      <p>In this study we concluded that there is a seasonal variation in TB incidence that showed periodicity in China. The monthly incidence number demonstrated a trough in January and February and was higher from March to June. This seasonal trend of TB incidence in China differed from that of many other nearby regions. For instance, in Hong Kong, the peak season of TB incidence is summer only [<xref ref-type="bibr" rid="B17">17</xref>]. In northern India the peak time season of TB incidence occurred between April to June and in October and December; although the TB incidence was lower in other months, there was no obvious seasonal trends [<xref ref-type="bibr" rid="B18">18</xref>]. One plausible explanation of these seasonal trends in China may be that the annual Spring Festival, the most important traditional festival of the year, usually falls in mid-February. During the entire month of February, there are huge population movements throughout China by various transportation modes. In view the TB incubation period, we suggest that the peak time of TB incidence may be partly attributed to the large population flows and the poor ventilation of public transportation during the Spring Festival period. The Spring Festival period may be the peak time of TB transmission. Hence, measures to prevent TB transmission within public transportation during the Spring Festival may play an important role in decreasing incidence number particularly from March to June. Other possible mechanisms for the seasonal variations in TB incidence in China need to be further studied.</p>
+      <p>There are a number of limitations in present study as follow. Firstly, climate&#x2013;related data and data related to population movements were not included in the model fitting because of limitations in data availability. Secondly, China is a vast country and with a wide variation in climate, so seasonality of TB in the various geographic regions may differ. Due to lack of available data, seasonality at smaller area levels was not been analyzed. Lastly, the models were derived using data only from 2005 through 2010 and tested against only one year of data. Hence, these findings should be interpreted with caution and may be re-examined with additional time series data.</p>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>Limitations inherent in non-hybrid forecasting models can be compensated by developing applying hybrid model that combines two or more models. The resulting hybrid model may thereby be more effective than a single model in producing reliable forecasts of TB. Since the models suggest that the TB epidemic in China will not decrease markedly in the coming years, there is a need to implement greater TB control measures in China. The seasonality of the TB incidence suggested by the models also indicate the need for interventions focused on reducing infectious disease transmission on public transportation during the Spring Festival period.</p>
+    </sec>
+    <sec>
+      <title>Abbreviations</title>
+      <p>TB: Tuberculosis; SARIMA: Seasonal autoregressive integrated moving average; GRNN: Generalized regression neural network; MSE: Mean square error; MAE: Mean absolute error; MAPE: Mean absolute percentage error; MOH: Ministry of Health of the People&#x2019;s Republic of China.</p>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>All authors declared no competing interests.</p>
+    </sec>
+    <sec>
+      <title>Authors&#x2019; contributions</title>
+      <p>ZL and SC conceived the idea and prepared a draft protocol. SC and JL collected relevant data. SC analyzed data and prepared the manuscript. FW, WT, JL, JK and ZL helped results interpretation and critically commented on and revised the manuscript. All authors read and approved the final manuscript.</p>
+    </sec>
+    <sec>
+      <title>Authors&#x2019; information</title>
+      <p>Shiyi Cao: Doctoral candidate in Tongji Medical College, Huazhong University of Science and Technology</p>
+      <p>Feng Wang: Research Assistant Professor in School of Public Health and Primary Care, the Chinese University of Hong Kong</p>
+      <p>Wilson Tam: Research Assistant Professor in School of Public Health and Primary Care, the Chinese University of Hong Kong</p>
+      <p>Lap Ah Tse, Assistant Professor in School of Public Health and Primary Care, the Chinese University of Hong Kong</p>
+      <p>Jean Hee Kim, Assistant Professor in School of Public Health and Primary Care, the Chinese University of Hong Kong</p>
+      <p>Junan Liu: Associate professor in Tongji Medical College, Huazhong University of Science and Technology</p>
+      <p>Zuxun Lu: director and professor in Tongji Medical College, Huazhong University of Science and Technology</p>
+    </sec>
+    <sec>
+      <title>Pre-publication history</title>
+      <p>The pre-publication history for this paper can be accessed here:</p>
+      <p>
+        <ext-link ext-link-type="uri" xlink:href="http://www.biomedcentral.com/1472-6947/13/56/prepub">http://www.biomedcentral.com/1472-6947/13/56/prepub</ext-link>
+      </p>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgement</title>
+      <p>This project was supported by National Natural Science Foundation of China (ID: 70973041) and Chinese Major National Science and Technology Programs (ID: 2009ZX10003-019).</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Dye</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Global epidemiology of tuberculosis</article-title>
+          <source>Lancet</source>
+          <year>2006</year>
+          <volume>367</volume>
+          <issue>9514</issue>
+          <fpage>938</fpage>
+          <lpage>40</lpage>
+          <comment>Epub 2006/03/21</comment>
+          <pub-id pub-id-type="doi">10.1016/S0140-6736(06)68384-0</pub-id>
+          <pub-id pub-id-type="pmid">16546542</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Corbett</surname>
+            <given-names>EL</given-names>
+          </name>
+          <name>
+            <surname>Marston</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Churchyard</surname>
+            <given-names>GJ</given-names>
+          </name>
+          <article-title>Tuberculosis in sub-Saharan Africa: opportunities, challenges, and change in the era of antiretroviral treatment</article-title>
+          <source>Lancet</source>
+          <year>2006</year>
+          <volume>367</volume>
+          <issue>9514</issue>
+          <fpage>926</fpage>
+          <lpage>37</lpage>
+          <comment>Epub 2006/03/21</comment>
+          <pub-id pub-id-type="doi">10.1016/S0140-6736(06)68383-9</pub-id>
+          <pub-id pub-id-type="pmid">16546541</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="book">
+          <collab>WHO</collab>
+          <source>Global tuberculosis control 2010</source>
+          <year>2010</year>
+          <publisher-name>Geneva: World Health Organization</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Fares</surname>
+            <given-names>A</given-names>
+          </name>
+          <article-title>Seasonality of tuberculosis</article-title>
+          <source>J Glob Infect Dis</source>
+          <year>2011</year>
+          <volume>3</volume>
+          <issue>1</issue>
+          <fpage>46</fpage>
+          <lpage>55</lpage>
+          <comment>Epub 2011/05/17</comment>
+          <pub-id pub-id-type="doi">10.4103/0974-777X.77296</pub-id>
+          <pub-id pub-id-type="pmid">21572609</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Tanaka</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Tendency of seasonal disease in Japan</article-title>
+          <source>Global Environ Res-English Edition</source>
+          <year>1998</year>
+          <volume>2</volume>
+          <fpage>169</fpage>
+          <lpage>76</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Naranbat</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Nymadawa</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Schopfer</surname>
+            <given-names>K</given-names>
+          </name>
+          <article-title>Seasonality of tuberculosis in an Eastern-Asian country with an extreme continental climate</article-title>
+          <source>Eur Respir J</source>
+          <year>2009</year>
+          <volume>34</volume>
+          <fpage>921</fpage>
+          <pub-id pub-id-type="doi">10.1183/09031936.00035309</pub-id>
+          <pub-id pub-id-type="pmid">19386690</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Munoz</surname>
+            <given-names>MP</given-names>
+          </name>
+          <name>
+            <surname>Orcau</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Cayla</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Tuberculosis in Barcelona: a predictive model based on temporal series</article-title>
+          <source>Revista Espanola De Salud Publica</source>
+          <year>2009</year>
+          <volume>83</volume>
+          <issue>5</issue>
+          <fpage>751</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.1590/S1135-57272009000500016</pub-id>
+          <pub-id pub-id-type="pmid">20111823</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Debanne</surname>
+            <given-names>SM</given-names>
+          </name>
+          <name>
+            <surname>Bielefeld</surname>
+            <given-names>RA</given-names>
+          </name>
+          <name>
+            <surname>Cauthen</surname>
+            <given-names>GM</given-names>
+          </name>
+          <article-title>Multivariate Markovian modeling of tuberculosis: forecast for the United States</article-title>
+          <source>Emerg Infect Dis</source>
+          <year>2000</year>
+          <volume>6</volume>
+          <issue>2</issue>
+          <fpage>148</fpage>
+          <lpage>57</lpage>
+          <comment>Epub 2000/04/11</comment>
+          <pub-id pub-id-type="doi">10.3201/eid0602.000207</pub-id>
+          <pub-id pub-id-type="pmid">10756148</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rios</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Garcia</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Sanchez</surname>
+            <given-names>JA</given-names>
+          </name>
+          <article-title>A statistical analysis of the seasonality in pulmonary tuberculosis</article-title>
+          <source>Eur J Epidemiol</source>
+          <year>2000</year>
+          <volume>16</volume>
+          <issue>5</issue>
+          <fpage>483</fpage>
+          <lpage>8</lpage>
+          <comment>Epub 2000/09/21</comment>
+          <pub-id pub-id-type="doi">10.1023/A:1007653329972</pub-id>
+          <pub-id pub-id-type="pmid">10997837</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="book">
+          <collab>WHO</collab>
+          <source>global tuberculosis control 2011</source>
+          <year>2011</year>
+          <publisher-name>Geneva: World Health Organization</publisher-name>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zhu</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Tang</surname>
+            <given-names>LH</given-names>
+          </name>
+          <name>
+            <surname>Zhou</surname>
+            <given-names>SS</given-names>
+          </name>
+          <article-title>[Study on the feasibility for ARIMA model application to predict malaria incidence in an unstable malaria area]</article-title>
+          <source>Zhongguo Ji Sheng Chong Xue Yu Ji Sheng Chong Bing Za Zhi</source>
+          <year>2007</year>
+          <volume>25</volume>
+          <issue>3</issue>
+          <fpage>232</fpage>
+          <lpage>6</lpage>
+          <comment>Epub 2007/11/28</comment>
+          <pub-id pub-id-type="pmid">18038786</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cunha</surname>
+            <given-names>GB</given-names>
+          </name>
+          <name>
+            <surname>Luitgards-Moura</surname>
+            <given-names>JF</given-names>
+          </name>
+          <name>
+            <surname>Naves</surname>
+            <given-names>EL</given-names>
+          </name>
+          <article-title>[Use of an artificial neural network to predict the incidence of malaria in the city of Canta, state of Roraima]</article-title>
+          <source>Rev Soc Bras Med Trop</source>
+          <year>2010</year>
+          <volume>43</volume>
+          <issue>5</issue>
+          <fpage>567</fpage>
+          <lpage>70</lpage>
+          <comment>Epub 2010/11/19. A utilizacao de uma rede neural artificial para previsao da incidencia da malaria no municipio de Canta, estado de Roraima</comment>
+          <pub-id pub-id-type="doi">10.1590/S0037-86822010000500019</pub-id>
+          <pub-id pub-id-type="pmid">21085871</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zhu</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Xia</surname>
+            <given-names>JL</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>[Comparison of predictive effect between the single auto regressive integrated moving average (ARIMA) model and the ARIMA-generalized regression neural network (GRNN) combination model on the incidence of scarlet fever]</article-title>
+          <source>Zhonghua Liu Xing Bing Xue Za Zhi</source>
+          <year>2009</year>
+          <volume>30</volume>
+          <issue>9</issue>
+          <fpage>964</fpage>
+          <lpage>8</lpage>
+          <comment>Epub 2010/03/03</comment>
+          <pub-id pub-id-type="pmid">20193238</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Yan</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Xu</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Yang</surname>
+            <given-names>X</given-names>
+          </name>
+          <article-title>A hybrid model for short-term bacillary dysentery prediction in Yichang City, China</article-title>
+          <source>Jpn J Infect Dis</source>
+          <year>2010</year>
+          <volume>63</volume>
+          <issue>4</issue>
+          <fpage>264</fpage>
+          <lpage>70</lpage>
+          <pub-id pub-id-type="pmid">20657066</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kirby</surname>
+            <given-names>SD</given-names>
+          </name>
+          <name>
+            <surname>Eng</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Danter</surname>
+            <given-names>W</given-names>
+          </name>
+          <article-title>Neural network prediction of obstructive sleep apnea from clinical criteria</article-title>
+          <source>Chest</source>
+          <year>1999</year>
+          <volume>116</volume>
+          <issue>2</issue>
+          <fpage>409</fpage>
+          <lpage>15</lpage>
+          <comment>Epub 1999/08/24</comment>
+          <pub-id pub-id-type="doi">10.1378/chest.116.2.409</pub-id>
+          <pub-id pub-id-type="pmid">10453870</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wan</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Cheng</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Chin</surname>
+            <given-names>DP</given-names>
+          </name>
+          <article-title>A new disease reporting system increases TB case detection in China</article-title>
+          <source>Bull World Health Organ</source>
+          <year>2007</year>
+          <volume>85</volume>
+          <issue>5</issue>
+          <fpage>401</fpage>
+          <pub-id pub-id-type="doi">10.2471/BLT.06.036376</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Leung</surname>
+            <given-names>CC</given-names>
+          </name>
+          <name>
+            <surname>Yew</surname>
+            <given-names>WW</given-names>
+          </name>
+          <name>
+            <surname>Chan</surname>
+            <given-names>TY</given-names>
+          </name>
+          <article-title>Seasonal pattern of tuberculosis in Hong Kong</article-title>
+          <source>Int J Epidemiol</source>
+          <year>2005</year>
+          <volume>34</volume>
+          <issue>4</issue>
+          <fpage>924</fpage>
+          <lpage>30</lpage>
+          <comment>Epub 2005/04/27</comment>
+          <pub-id pub-id-type="doi">10.1093/ije/dyi080</pub-id>
+          <pub-id pub-id-type="pmid">15851395</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Thorpe</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Frieden</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Laserson</surname>
+            <given-names>K</given-names>
+          </name>
+          <article-title>Seasonality of tuberculosis in India: is it real and what does it tell us?</article-title>
+          <source>Lancet</source>
+          <year>2004</year>
+          <volume>364</volume>
+          <issue>9445</issue>
+          <fpage>1613</fpage>
+          <lpage>4</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0140-6736(04)17316-9</pub-id>
+          <pub-id pub-id-type="pmid">15519633</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

@@ -1,0 +1,119 @@
+A closing wedge osteotomy of the lumbar spine may be considered to correct posture and spinal balance in progressive thoracolumbar kyphotic
+deformity caused by ankylosing spondylitis (AS). Adequate deformity planning is essential for reliable prediction of the effect of surgical
+correction of the spine on the sagittal balance and horizontal gaze of the patient. The effect of a spinal osteotomy on the horizontal gaze
+is equal to the osteotomy angle. However, the effect of a spinal osteotomy on the sagittal balance depends on both the correction angle and
+the level of osteotomy simultaneously. The relation between the correction angle, the level of osteotomy and the sagittal balance of the
+spine can be expressed by a mathematical equation. However, this mathematical equation is not easily used in daily practice. We present the
+computer program ASKyphoplan that analyses and visualizes the planning procedure for sagittal plane corrective osteotomies of the spine in
+AS. The relationship between the planned correction angle, level of osteotomy and sagittal balance are coupled into the program. The steps
+taken during an ASKyphoplan run are outlined, and the clinical application is discussed. The application of the program is illustrated by
+the analysis of the data from a patient recently treated by a lumbar osteotomy in AS. The software can be used free of charge on the
+internet at http://www.stega.nl under the heading “research” in the menu. In ankylosing spondylitis (AS), the spine becomes a rigid beam of
+bone from the occiput down to the sacrum. With few exceptions, AS leads to a rigid thoracolumbar kyphotic deformity (TLKD). Surgical
+correction of the TLKD by an extending osteotomy of the spine may be considered. The goal of such a surgical procedure is to restore both
+the patients’ capacity to see the horizon, as well as the sagittal balance of the ankylosed spine [2, 5, 6, 8]. Preoperative planning of the
+effect of a lumbar osteotomy on the correction of the horizontal gaze and sagittal balance of the spine in patients with TLKD complicating
+AS is of utmost importance. The effect of a spinal osteotomy on the correction of the horizontal gaze is equal to the osteotomy angle,
+irrespective of the osteotomy level. Though the effect of a spinal osteotomy on the sagittal balance of the spine depends on both the
+osteotomy angle and the level of osteotomy simultaneously the correction of the sagittal balance is maximal when the intervention is
+performed at the lowest possible level of the lumbar spine . Recently, a biomechanical and mathematical method for deformity planning for
+sagittal plane corrective osteotomies of the spine in AS has been developed. The effect of a lumbar osteotomy in AS on the horizontal gaze,
+defined as the chin-brow to vertical angle (CBVA) and the sagittal balance of the spine, defined as the sagittal vertical axis (SVA), can be
+expressed by a mathematical equation . Following the promoted mathematical equation, a nomogram subsequently shows the relationship between
+the osteotomy angle, the level of osteotomy, and the sagittal balance. Unfortunately, both the crucial mathematic equations and the
+resulting nomogram are not easy to use in daily practice. ASKyphoplan is a computational program that analyses and visualizes the planning
+procedure for sagittal plane corrective osteotomies of the lumbar spine in AS , which can be used easily in daily practice according to the
+promoted biomechanical and mathematical principles . The purpose of the present work is to discuss the program and its performance. To this
+end, we illustrate the preoperative planning with ASKyphoplan on a patient, recently treated by a lumbar osteotomy in AS. The software can
+be used free of charge on the internet at http://www.stega.nl under the heading “research” in the menu. The computational program
+ASKyphoplan is based on the biomechanical and mathematical principles described earlier . In the present description of an ASKyphoplan run,
+we define the plumb line from the centre of the vertebral body of C7 and we plan the osteotomy at level L4. The normal sacral endplate angle
+(SEA) is defined at 40° with the horizontal. Obviously, all variables can be changed independently for each case. A standard full-length
+lateral radiograph of the whole spine with the patient standing in relaxed standing position is made. Preferably, the radiograph is acquired
+and saved in a picture archiving and communication system (PACS). However, the use of a digitized regular film is also possible. The centre
+of body C7, the posterior superior corner of the sacrum (PSCS), the sacral endplate (SEA), and the rotation point (RP) on the anterior
+cortex of L4 are marked on the radiograph. In addition, the 50 mm grid of the film or two randomly chosen points are measured using the
+‘measuring distance’ tool displayed on the digital system for calibration. Finally, the marked radiograph is saved in JPEG, Dicom or PNG
+format on a personal computer (Fig. 1). Fig. 1The steps involved in radiographic analysis. A standard full-length lateral radiograph of the
+whole spine with the patient standing in relaxed standing position is made. C7 the centre of body C7, PSCS the posterior superior corner of
+the sacrum, SEA the sacral endplate, RP the rotation point on the anterior cortex of L4 are marked on the radiograph. In addition, the 50 mm
+grid of the film or two randomly chosen points are measured using ‘measuring distance’ tool displayed on the digital system for calibration
+The steps involved in radiographic analysis. A standard full-length lateral radiograph of the whole spine with the patient standing in
+relaxed standing position is made. C7 the centre of body C7, PSCS the posterior superior corner of the sacrum, SEA the sacral endplate, RP
+the rotation point on the anterior cortex of L4 are marked on the radiograph. In addition, the 50 mm grid of the film or two randomly chosen
+points are measured using ‘measuring distance’ tool displayed on the digital system for calibration Open the file with the saved radiograph
+in ASKyphoplan and upload the digitalized radiograph including the marks. Five consecutive pages are followed: ‘Calibration’, ‘Draw’, ‘Set
+SEA’, ‘Calculate’, and ‘Report’. Mark the two measured reference points or the two marks on the grid of the film and define the distance in
+mm for calibration in the program. The preceding marked reference points on the radiograph serve as guidance for drawing the deformity
+planning. The posterior superior corner of the sacrum (PSCS) is marked and a co-ordinate system appears. Then, the sacral endplate angle
+(SEA) from the posterior superior corner of the sacrum, parallel to the sacral endplate is drawn. The individual (compensated) SEA will
+appear in degrees. The centre of body C7 is marked, and the plumb line from C7 appears. The sagittal vertical axis (SVA), defined as the
+horizontal distance between the posterior corner of the sacrum and the plumb line from C7, will be shown. Finally, the aimed hinge or
+rotation point (RP) at the anterior cortex of L4 is marked. The normal SEA is assumed to make an angle of approximately 40° with the
+horizontal [1, 6]. By defining the SEA at 40°, the radiograph will be projected onto the co-ordinate system with the SEA at 40°. The pre-
+operative SVA without compensation appears in millimeters. The relation between the correction angle, the level of osteotomy and the
+sagittal balance of the spine is calculated and visualized in the computer program. By planning the osteotomy at level L4 and aiming the
+post-operative SVA at 75 mm for example , the aimed correction angle at L4 and resulting correction of the CBVA follows. Using the
+‘visibility’ bar, the virtual post-operative radiograph can be visualized (Fig. 3). The effect of changing the level of osteotomy on the SVA
+and CBVA correction or the effect of changing the correction angle on the SVA and CBVA can be visualized clearly by changing these variables
+in the program. The preoperative deformity planning, calculation and visualization of the osteotomy can be saved as a PDF file and printed
+for documentation. A 29 year-old man with a 8 year history of AS and a progressive TLKD is indicated for lumbar osteotomy (Fig. 2a). The
+standard full-length lateral radiograph of the whole spine showed a pre-operative SEA of 14°. Rotation of the radiograph onto the co-
+ordinate system with the SEA at 40° resulted in a pre-operative SVA of 384 mm (Fig. 3). Planning a SVA 75 mm anterior to the posterior
+superior corner of the sacral endplate, a correction angle of 43° at level L4 is required. In addition, a 43° correction at L4 will correct
+the CBVA with 17° (Fig. 3). The surgical procedure, including positioning of the patient, anaesthesia and surgical technique was performed
+according to the technique described earlier . During the closure procedure of the closing wedge osteotomy, lateral images of the lumbar
+spine from the image intensifier were sent wireless to the local PACS at regular times. The acquired correction was measured in degrees by
+measuring the Cobb angle on the acquired images between the upper and lower endplate of L4 regularly, using ‘measuring angle’ tool displayed
+on the digital system, until the required correction angle was achieved (Fig. 4a, b). The post-operative radiograph of the lumbar spine
+showed a correction of 40° in L4. There were no complications during surgery and follow-up treatment. The clinical postoperative CBVA showed
+to be 27 (Fig. 2b). Fig. 2Clinical appearance a before and b after closing wedge osteotomy. The preoperative CBVA is 63°, and the
+postoperative CBVA is 27°Fig. 3ASKyphoplan reportFig. 4During the closure procedure lateral images of the lumbar spine from the image
+intensifier were sent wireless to the local PACS at regular times (a). The correction is measured in degrees by measuring the Cobb angle on
+the acquired images between the upper and lower endplate of L4 regularly, until the required correction angle was achieved (b) Clinical
+appearance a before and b after closing wedge osteotomy. The preoperative CBVA is 63°, and the postoperative CBVA is 27° ASKyphoplan report
+During the closure procedure lateral images of the lumbar spine from the image intensifier were sent wireless to the local PACS at regular
+times (a). The correction is measured in degrees by measuring the Cobb angle on the acquired images between the upper and lower endplate of
+L4 regularly, until the required correction angle was achieved (b) Adequate deformity planning for sagittal plane corrective osteotomies of
+the spine in AS is essential for reliable prediction of the effect of surgical correction of the spine. ASKyphoplan is a computational
+program that analyses and visualizes the planning procedure for sagittal plane corrective osteotomies of the lumbar spine in AS, which can
+be used easily in daily practice. The program analyses and visualizes the relationship between the osteotomy angle, the level of osteotomy
+in relation to the sagittal balance and CBVA for sagittal plane corrective osteotomies. In fact, deformity planning with ASKyphoplan can be
+performed for any patient with TLKD attributable to AS. All mentioned variables can be altered freely in the program for each individual
+patient and or by each individual surgeon. ASKyphoplan professes not to represent the only, or necessarily the best, method for deformity
+planning in AS, but is rather meant as a method of the authors which may be helpful to others who treat patients with progressive TLKD
+caused by AS. The need for adequate deformity planning for sagittal plane corrective osteotomies of the spine in AS, however, is
+demonstrated by three recent papers [3, 4, 7]. Suk et al. emphasized the clinical importance of the CBVA as an objective index for
+evaluating the horizontal gaze before and after lumbar osteotomy in AS. They reported on a series of 34 patients with AS treated with a
+closing wedge osteotomy. The osteotomy was performed at the apex of the kyphosis from Th7 to L2, and the mean correction angle was 37.7°.
+However, in seven cases (21%) there was an overcorrection of the CBVA of more than 10° hyperextension. Unfortunately, the authors did not
+report the correlation between the level of osteotomy, degree of correction, and CBVA correction. Deformity planning with ASKyphoplan will
+provide the relationship between the correction angle, level of osteotomy, CBVA correction, and sagittal balance easily. Sengupta et al.
+described the treatment of a case with a severe thoracolumbar kyphotic deformity resulting from AS in which a lordosing osteotomy of the
+mid-thoracic spine caused an extension deformity of the cervical spine. The authors described a flexion osteotomy of the cervical spine to
+correct the caused iatrogenic extension deformity. The reported case, a 44 year–old woman with a 120° thoracic kyphosis, and a fixed
+cervical spine with a CBVA of 45° due to AS, underwent a closing wedge osteotomy at T6 and T8. A total osteotomy angle of 75° was achieved.
+As a result, an overcorrection of the CBVA of 30° needed a corrective flexion osteotomy of the cervical spine. The case illustrates well the
+need for adequate deformity planning for sagittal plane corrective osteotomies of the spine in AS. Overcorrection of the CBVA and the
+subsequent need for a corrective cervical flexion osteotomy as described in this case can be prevented with the use of ASKyphoplan in
+future. Finally, this method of deformity planning is also essential in patients with a kyphotic Andersson lesion complicating AS . In these
+cases the level of osteotomy is fixed by the location of the Andersson lesion. As expected, correction of the Andersson lesion in a high
+lumbar region will not result in the optimal restoration of the sagittal balance. However, overcorrection at the level of the Andersson
+lesion, in an attempt to achieve a better correction of the sagittal balance, may result in an extension deformity of the cervical spine
+forcing the visual field upward. There are some clinical assumptions and technical difficulties in the procedure that can be criticized.
+Firstly, we defined the normal SEA to be 40° to the horizon. In healthy subjects, the SEA makes an angle of approximately 40° with the
+horizon on a standing lateral radiographic projection [1, 6]. With the normal SEA of 40°, the hip joints are in the zero position, thus
+allowing for small compensatory movements of the pelvis. Obviously, alterations for the normal SEA can be applied individually. Secondly,
+the SVA is measured by calculating the horizontal distance between the posterior superior corner of the sacrum and the plumb line from C7.
+Unfortunately, C7 is not always that visible on the sagittal radiograph in patients with severe TLKD because of the over projection of the
+upper extremities. In individual cases the SVA can be defined as the horizontal distance between the posterior superior corner of the sacral
+endplate and the plumb line from any other cervical vertebra, for example the spinal process of C7 or vertebra C2. Thirdly, it should be
+realized that the optimum post-operative SVA in patients with TLKD resulting from AS is not known. We hypothesized that the post-operative
+SVA from C7 should be planned between 50 and 100 mm anteriorly of the posterior superior corner of the sacral endplate to prevent over
+correction of the ankylosed TLKD in AS . For that reason, a postoperative SVA of 75 mm was planned in our case. However, further studies are
+necessary to evaluate the optimum postoperative SVA in patients with TLKD complicating AS. In addition, the relation between the
+measurements of the SVA from C7 and other measurement points e.g. the spinous process of C7 or the vertebra of C2 in deformity planning has
+to be analysed. Finally, the interobserver and intraobserver reliability of ASKyphoplan should be analysed in further studies. In
+conclusion, ASKyphoplan is a computational program that analyses and visualizes the planning procedure for sagittal plane corrective
+osteotomies of the spine in AS. The relationship between the planned correction angle, level of osteotomy, CBVA correction, and sagittal
+balance are coupled into the program. The program can be used easily in daily practice.

@@ -1,0 +1,942 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">22723858</article-id>
+      <article-id pub-id-type="pmc">3377647</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-12-04002</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0038405</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Biochemistry</subject>
+            <subj-group>
+              <subject>Proteins</subject>
+              <subj-group>
+                <subject>Acute Phase Proteins</subject>
+                <subject>Plasma Proteins</subject>
+                <subject>Protein Structure</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Biophysics</subject>
+            <subj-group>
+              <subject>Protein Folding</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Genomics</subject>
+              <subj-group>
+                <subject>Structural Genomics</subject>
+                <subject>Structure Prediction</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Macromolecular Structure Analysis</subject>
+              <subj-group>
+                <subject>Protein Structure</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Population Genetics</subject>
+              <subj-group>
+                <subject>Genetic Polymorphism</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Molecular Genetics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Human Genetics</subject>
+              <subj-group>
+                <subject>Autosomal Recessive</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Genetic Mutation</subject>
+              <subject>Genetics of Disease</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Molecular Cell Biology</subject>
+            <subj-group>
+              <subject>Cellular Structures</subject>
+              <subj-group>
+                <subject>Subcellular Organelles</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Gastroenterology and Hepatology</subject>
+            <subj-group>
+              <subject>Liver Diseases</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Pulmonology</subject>
+            <subj-group>
+              <subject>Chronic Obstructive Pulmonary Diseases</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Three New Alpha1-Antitrypsin Deficiency Variants Help to Define a C-Terminal Region Regulating Conformational Change and Polymerization</article-title>
+        <alt-title alt-title-type="running-head">Rare &#x3B1;1-Antitrypsin Variants and Polymerization</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Fra</surname>
+            <given-names>Anna M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gooptu</surname>
+            <given-names>Bibek</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ferrarotti</surname>
+            <given-names>Ilaria</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Miranda</surname>
+            <given-names>Elena</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Scabini</surname>
+            <given-names>Roberta</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ronzoni</surname>
+            <given-names>Riccardo</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Benini</surname>
+            <given-names>Federica</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="fn1">
+            <sup>&#xA4;</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Corda</surname>
+            <given-names>Luciano</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Medicina</surname>
+            <given-names>Daniela</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Luisetti</surname>
+            <given-names>Maurizio</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Schiaffonati</surname>
+            <given-names>Luisa</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Biomedical Sciences and Biotechnology, University of Brescia, Brescia, Italy</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Institute of Structural Molecular Biology/Crystallography, Birkbeck College, University of London, London, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Department of Molecular Medicine, University of Pavia, Istituto Di Ricovero e Cura a Carattere Scientifico Policlinico San Matteo, Pavia, Italy</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Department of Biology and Biotechnology &#x2018;Charles Darwin&#x2019; and Pasteur Institute, Cenci Bolognetti Foundation, University of Rome &#x2018;La Sapienza&#x2019;, Rome, Italy</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>Division of Internal Medicine, Spedali Civili, Brescia, Italy</addr-line>
+      </aff>
+      <aff id="aff6">
+        <label>6</label>
+        <addr-line>Department of Pathology, Spedali Civili, Brescia, Italy</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Gasset</surname>
+            <given-names>Maria</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">Consejo Superior de Investigaciones Cientificas, Spain</aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>fra@med.unibs.it</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: AMF BG EM IF ML LS. Performed the experiments: AMF BG RS EM RR DM. Analyzed the data: AMF BG IF EM DM. Wrote the paper: AMF BG IF ML LS. Contributed clinical data: FB LC ML.</p>
+        </fn>
+        <fn id="fn1" fn-type="current-aff">
+          <label>&#xA4;</label>
+          <p>Current address: Division of Internal Medicine, Desenzano Hospital, Brescia, Italy</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>18</day>
+        <month>6</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>7</volume>
+      <issue>6</issue>
+      <elocation-id>e38405</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>2</day>
+          <month>2</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>5</day>
+          <month>5</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Fra et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</copyright-statement>
+        <copyright-year>2012</copyright-year>
+      </permissions>
+      <abstract>
+        <p>Alpha1-antitrypsin (AAT) deficiency is a hereditary disorder associated with reduced AAT plasma levels, predisposing adults to pulmonary emphysema. The most common genetic AAT variants found in patients are the mildly deficient S and the severely deficient Z alleles, but several other pathogenic rare alleles have been reported. While the plasma AAT deficiency is a common trait of the disease, only a few AAT variants, including the prototypic Z AAT and some rare variants, form cytotoxic polymers in the endoplasmic reticulum of hepatocytes and predispose to liver disease. Here we report the identification of three new rare AAT variants associated to reduced plasma levels and characterize their molecular behaviour in cellular models. The variants, called Mpisa (Lys259Ile), Etaurisano (Lys368Glu) and Yorzinuovi (Pro391His), showed reduced secretion compared to control M AAT, and accumulated to different extents in the cells as ordered polymeric structures resembling those formed by the Z variant. Structural analysis of the mutations showed that they may facilitate polymerization both by loosening &#x2018;latch&#x2019; interactions constraining the AAT reactive loop and through effects on core packing. In conclusion, the new AAT deficiency variants, besides increasing the risk of lung disease, may predispose to liver disease, particularly if associated with the common Z variant. The new mutations cluster structurally, thus defining a region of the AAT molecule critical for regulating its conformational state.</p>
+      </abstract>
+      <counts>
+        <page-count count="9"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Alpha1-antitrypsin deficiency (AATD) is a genetic disorder characterized by reduced plasma levels of alpha1-antitrypsin (AAT), the archetypal member of the serpin (<underline>ser</underline>ine <underline>p</underline>rotease <underline>in</underline>hibitor) protein superfamily. An acute phase glycoprotein, AAT is mainly synthesized in the liver and it inhibits neutrophil elastase to regulate inflammatory processes in the circulation and lung tissue <xref ref-type="bibr" rid="pone.0038405-Silverman1">[1]</xref>, <xref ref-type="bibr" rid="pone.0038405-Stoller1">[2]</xref>. Plasma levels of AAT are tightly linked to variants of the coding gene <italic>SERPINA1</italic> (14q32.1) (OMIM: 107400), which dictate the AAT concentration according to a co-dominant model. Pathogenic alleles of the <italic>SERPINA1</italic> gene are conventionally classified as &#x201C;null&#x201D;, if associated with undetectable AAT, or as &#x201C;deficient&#x201D; alleles if the mutated protein is synthesised and retained in a misfolded state within hepatocytes, resulting in variable degrees of secretion defect <xref ref-type="bibr" rid="pone.0038405-Luisetti1">[3]</xref>.</p>
+      <p>The commonest deficient variants causing AATD are the S (Glu264Val) and Z (Glu342Lys) mutations. SS genotypes result in mild deficiency, with minimal clinical sequelae. The ZZ and SZ genotypes, associated with 15% and 25% of normal AAT plasma levels, account for the vast majority of severe AATD. However, there are several other pathogenic AAT alleles described, usually referred to as &#x201C;rare alleles&#x201D;, associated with varying degrees of reduced plasma level. The prevalence of these rare AATD genotypes is believed to be more frequent in the Mediterranean area <xref ref-type="bibr" rid="pone.0038405-Denden1">[4]</xref>, <xref ref-type="bibr" rid="pone.0038405-Ferrarotti1">[5]</xref>.</p>
+      <p>The deficiency of circulating AAT is associated with an increased risk of developing emphysema, due to uncontrolled elastase activity in the lung, which may be exacerbated by additional risk factors such as cigarette smoke <xref ref-type="bibr" rid="pone.0038405-Evans1">[6]</xref>. Besides emphysema, the Z AAT variant also predisposes to liver diseases, which may present in ZZ homozygous individuals as neonatal jaundice, cirrhosis and increased risk of hepatocellular carcinoma <xref ref-type="bibr" rid="pone.0038405-Perlmutter1">[7]</xref>. The development of liver disease is caused by excessive accumulation of Z AAT in the endoplasmic reticulum (ER) of hepatocytes as ordered polymeric structures, which deposit in PAS+, diastase-resistant inclusion bodies <xref ref-type="bibr" rid="pone.0038405-Lomas1">[8]</xref>. Polymerization of Z AAT proceeds through formation of an unstable monomeric AAT intermediate termed M* <xref ref-type="bibr" rid="pone.0038405-Dafforn1">[9]</xref>, <xref ref-type="bibr" rid="pone.0038405-Gooptu1">[10]</xref>. This permits a stabilising interaction between two AAT motifs, the reactive loop and beta-sheet A. The latter is opened in M* and insertion of the reactive loop links two AAT molecules into a dimer. Successive intermolecular interactions lengthen this into a polymer chain <xref ref-type="bibr" rid="pone.0038405-Gooptu2">[11]</xref>. Currently three models of serpin polymerization are proposed in the literature, all of which conform to these constraints, but differing in the number of beta strands (1, 2, or 3) involved in the intermolecular linkage <xref ref-type="bibr" rid="pone.0038405-Chiou1">[12]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0038405-Yamasaki2">[15]</xref>. However all three models incorporate release of strand 1 of beta-sheet C, expansion of beta-sheet A and insertion of reactive loop residues as an extra strand in beta-sheet A. Besides the archetypal Z AAT, other deficiency variants have been shown to form polymers within the ER. While the Z mutation resides in the hinge region at the base of the reactive loop, other strongly polymerizing variants such as Siiyama (Ser52Phe), Mmalton (Phe52del) and King&#x2019;s (His334Asp) carry mutations localized in the shutter region, which directly favour opening of beta-sheet A <xref ref-type="bibr" rid="pone.0038405-Lomas2">[16]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0038405-Miranda1">[18]</xref>. The Pbrescia mutation instead perturbs an arginine pocket that normally stabilizes the reactive loop <xref ref-type="bibr" rid="pone.0038405-Medicina1">[19]</xref>, and milder polymerizing variants such as I (Arg39Cys) and S (Glu264Val) may act indirectly on beta-sheet A stability by perturbing helix A/G-core packing <xref ref-type="bibr" rid="pone.0038405-Mahadeva1">[20]</xref>. Although the different mutations affect different AAT regions, the resulting polymers are recognised by a monoclonal antibody (mAb) specific for Z AAT polymers, strongly supporting their structural similarity <xref ref-type="bibr" rid="pone.0038405-Miranda1">[18]</xref>.</p>
+      <fig id="pone-0038405-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0038405.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Genotypes of the index cases.</title>
+          <p>(A) Table summarizing the amino acid mutations of the variants, the genotypes of the index cases as well as the plasma levels of AAT and C-reactive protein (CRP) determined in the index cases. (B) Pedigree of the Etaurisano proband&#x2019;s family. (C) Pedigree of the Yorzinuovi proband&#x2019;s family. Arrows in the family trees indicate index cases. Half-filled squares and circles indicate heterozygous subjects.</p>
+        </caption>
+        <graphic xlink:href="pone.0038405.g001"/>
+      </fig>
+      <p>Here we report the identification and characterization of three novel AAT alleles, Mpisa (Lys259Ile), Etaurisano (Lys368Glu) and Yorzinuovi (Pro391His), associated with reduced concentration of AAT in plasma. The behaviour of the variants when expressed individually in cellular models clearly supports their identification as deficiency alleles, with a range of intracellular polymer loads observed. These mutations cluster structurally and are likely to facilitate polymerization both by effects upon &#x2018;latch&#x2019; interactions constraining the AAT reactive loop and upon core packing.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s2">
+      <title>Materials and Methods</title>
+      <sec id="s2a">
+        <title>Subjects</title>
+        <p>The index case carrying the Mpisa AAT allele was 26 years old at the time of diagnosis at the San Matteo Hospital (Pavia, Italy). He had dyspnea and no evidence of liver disease. The index case carrying the Etaurisano AAT allele was 31 years old when he was referred to the San Matteo Hospital (Pavia, Italy) because of panlobular emphysema. The proband with the Yorzinuovi allele was first admitted at the age of 46 at the Gastroenterology department of Spedali Civili (Brescia, Italy) because of a ten year history of mild hyper-transaminasemia. The index case&#x2019;s families were investigated where possible. Collection of blood samples and the genetic investigations were performed after appropriate written informed consent of the subjects involved and approval by the ethical committees of the institutions involved (San Matteo Hospital of Pavia and Spedali Civili of Brescia, Italy). The patients in this manuscript have given written informed consent to publication of their anonymised case details.</p>
+        <fig id="pone-0038405-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0038405.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Fate of the new AAT</title>
+            <p><bold>variants in Hepa 1.6 transfected cells.</bold> (A) Pulse-chase experiments on Hepa 1.6 cells expressing AAT variants. Transfected Hepa 1.6 cells were pulsed with <sup>35</sup>S Met/Cys for 10 min and chased for the indicated times. AAT was immunoprecipitated from culture media and from NP40-soluble and NP40&#x2013;insoluble cell fractions, and analysed by SDS-PAGE and autoradiography. Arrows, mature secreted AAT (approx. 54 kDa); arrowheads, immature intracellular AAT (approx. 50 kDa). (B) Densitometric analysis of the autoradiograms shown in panel A. The relative amounts of AAT at the different times are expressed as percentage of the total amount of intracellular AAT at the beginning of chase (time 0), set as 100%.</p>
+          </caption>
+          <graphic xlink:href="pone.0038405.g002"/>
+        </fig>
+      </sec>
+      <sec id="s2b">
+        <title>Quantification of Alpha1-antitrypsin and C-Reactive Protein (CRP) Plasma Levels</title>
+        <p>The AAT level measurements were performed on plasma or dried blood spot (DBS) samples by a rate immune nephelometric method (Array 360 System; Beckman-Coulter) using a goat anti-human AAT antibody (Beckman-Coulter) <xref ref-type="bibr" rid="pone.0038405-Gorrini1">[21]</xref>. The CRP level measurement was performed on plasma samples by an immune nephelometric assay (Image Immunochemistry System; Beckman-Coulter).</p>
+        <fig id="pone-0038405-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0038405.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Secretion of the AAT variants relative to M AAT.</title>
+            <p>(A) Dot blot analysis of AAT secreted in the cell media by Hepa 1.6 cells expressing Null-hk, M, Z, Mwurzburg, Mpisa, Etaurisano or Yorzinuovi. The right panel shows serial dilutions of purified AAT. (B) AAT secreted in the cell media of transfected Hepa1.6 cells, expressed as percentage of M AAT. Dot blots performed as shown in panel A were analysed by densitometry, AAT levels were calculated from the purified AAT standard curve, and expressed as percentages of M AAT level. The results are presented as means and SD of three independent transfection experiments (each experiment in duplicates). Asterisks indicate statistical significance (p&lt;0.01 by Dunnett&#x2019;s test of each variant compared to M AAT). Null-hk and Yorzinuovi were &lt;10% of M AAT.</p>
+          </caption>
+          <graphic xlink:href="pone.0038405.g003"/>
+        </fig>
+      </sec>
+      <sec id="s2c">
+        <title>Isoelectric Focusing (IEF) of Alpha1-antitrypsin</title>
+        <p>The phenotype of the new variants was determined by IEF analysis on plasma/DBS samples, comparing them with sera of known phenotype in a pH gradient of 4,2&#x2013;4,9 (Multiphor II Electroforesis System, GE Healthcare BioScience) as previously described <xref ref-type="bibr" rid="pone.0038405-Ferrarotti2">[22]</xref>. Conventionally, the variants were named according to their IEF migration and the birthplace of the senior carrier.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Molecular Studies of New Alpha1-antitrypsin Variants</title>
+        <p>DNA was isolated from whole peripheral blood or DBS samples using a commercial extraction kit (DNA IQ System, Promega). Genotyping for detection of the S and Z variants was performed by <italic>PCR/RFLP,</italic> as previously described <xref ref-type="bibr" rid="pone.0038405-Ferrarotti3">[23]</xref>. The new mutations were identified by sequencing all coding exons (II-V) of the AAT gene (SERPINA1, RefSeq: NG_008290), as previously described <xref ref-type="bibr" rid="pone.0038405-Ferrarotti2">[22]</xref>, using the CEQ 8800 genetic analysis System (Beckman Coulter). The background of the Mpisa and Yorzinuovi alleles was determined on the base of the rs709932, rs6647 and rs1303 SNPs. To determine the background of the Etaurisano variant, the amplimers of exon V from the index case&#x2019;s DNA were subsequently cloned into a pCR2.1 vector using the TA Cloning Kit (Invitrogen), transformed in One Shot Inv&#x3B1;F&#x2019; E.coli cells and sequenced by usual protocol.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Construction of Alpha-1 Antitrypsin Expression Vectors</title>
+        <p>The pcDNA3.1/Zeo (+) expression vectors encoding for human M1(Val213) and Z AAT <xref ref-type="bibr" rid="pone.0038405-Wu1">[24]</xref> were generous gifts from Dr R. Sifers (Baylor College of Medicine, Houston, TX). The mutations of the Mpisa, Etaurisano and Yorzinuovi were introduced into the M1 AAT cDNA by site-directed mutagenesis using the QuikChange II Site-Directed Mutagenesis Kit (Stratagene), according to the manufacturer&#x2019;s instructions and with the following primers and those complementary to them:</p>
+        <p>Mpisa (5&#x2032;CTGCCTGATGAGGGGA<underline>T</underline>ACTACAGCACCTG);</p>
+        <p>Etaurisano (5&#x2032;CCCGAGGTCAAGTTCAAC<underline>G</underline>AACCCTTTGTCTTCTTAA);</p>
+        <p>Yorzinuovi (5&#x2032;TGGGAAAAGTGGTGAATC<underline>A</underline>CACCCAAAAATAACTGCC).</p>
+      </sec>
+      <sec id="s2f">
+        <title>Cell Culture and DNA Transfections</title>
+        <p>The Hepa 1.6 (IZLER, Brescia, Italy) and COS-7 (ATCC) cells were grown in DMEM supplemented with 10% FBS (Sigma). Transient transfections of both cell lines with AAT encoding vectors were performed with Lipofectamine2000 (Invitrogen) according to the manufacturer&#x2019;s protocol, using a 1&#x2236;3 DNA (&#xB5;g)/Lipofectamine (&#xB5;l) ratio in serum free DMEM for 5 h and then culturing transfected cells with normal medium for further 24 h. Alternatively, Hepa1.6 cells were transfected by adding to sub-confluent cells grown in normal culture medium a PBS solution containing polyethylenimine (PEI &#x201C;Max&#x201D;, Polysciences Inc.) and plasmid DNA (20 &#xB5;g PEI &#x201C;Max&#x201D; and 2 &#xB5;g DNA in 40 &#xB5;l PBS for 10 cm<sup>2</sup> wells).</p>
+      </sec>
+      <sec id="s2g">
+        <title>Pulse-chase Experiments</title>
+        <p>Cells were pulsed for 10 min with <sup>35</sup>S Met/Cys (EasyTag&#x2122; Express Protein Labelling mix, Perkin Elmer) and chased for 0, 30, 60, 120 and 240 min. At each point in time, the cell media were collected and the cells were lysed in a buffer containing 50 mM Tris-HCl (pH 7.4), 150 mM NaCl, 1% NP40, 10 mM NEM and protease inhibitors (Sigma-Aldrich). The NP40-soluble and -insoluble fractions from cell lysates were separated by centrifugation at 12000 g and the insoluble material recovered in the pellet was solubilised by boiling in 50 mM Tris-HCl, pH 7.4, 2% SDS and then diluted 1&#x2236;10 with a buffer containing 50 mM Tris-HCl (pH 7.4), 150 mM NaCl, 1% NP40. The radiolabelled AAT in cell fractions and media was then immunoprecipitated using an anti-AAT polyclonal antibody (DAKO) and analysed by SDS-PAGE/autoradiography.</p>
+      </sec>
+      <sec id="s2h">
+        <title>Quantitative Dot Blot</title>
+        <p>The different AAT variants were expressed in Hepa 1.6 cells by transfection with Lipofectamine2000 (Invitrogen) as described above. 24 h after transfection, the culture media were replaced by serum-free media and cells were further incubated for 16 h. AAT in the cell media was analysed by dot blot in parallel with serial dilutions of purified AAT (Sigma), revealed with an anti-AAT polyclonal antibody (DAKO), HRP-conjugated anti-rabbit antibodies (Amersham) and ECL Plus (Amersham). In one experiment, AAT was revealed by anti-AAT polyclonal antibody (DAKO), IRDye800CW-conjugated anti-rabbit IgG (Li-cor Bioscience) and the Odissey FC Imaging System (Li-cor Bioscience). Dot blots were analysed by densitometry, and the AAT levels were calculated for each experiment from the AAT standard curve and expressed as percentages relatively to the mean levels for M AAT. Statistical analysis was performed by one-way ANOVA followed by Dunnet&#x2019;s post-test using GraphPad Prism version 5 (Graphpad software Inc, San Diego, CA, USA).</p>
+      </sec>
+      <sec id="s2i">
+        <title>Non-denaturing PAGE and Western Blot Analysis</title>
+        <p>For non-denaturing analysis, the different AAT variants were expressed in COS-7 cells by transfection with Lipofectamine2000 (Invitrogen) as previously described <xref ref-type="bibr" rid="pone.0038405-Miranda2">[25]</xref>. 48 h after transfection culture media were collected and concentrated 10 times in Vivaspin columns with a 3000 Da cut-off membrane (VivaScience), while cells were lysed in a NP40 buffer (150 mM NaCl, 50 mM Tris-HCl pH 7.4, 1% NP40). Both cell lysates and culture media were subjected to 7.5% non-denaturing PAGE and blotted as described <xref ref-type="bibr" rid="pone.0038405-Miranda2">[25]</xref>. Membranes were probed with either the commercial anti-AAT mAb 704 (Abcam) or with the 2C1 mAb <xref ref-type="bibr" rid="pone.0038405-Miranda1">[18]</xref> and revealed with HRP-conjugated anti-mouse antibodies (Sigma-Aldrich) and ECL SuperSignal West Pico and Femto Maximum Sensitivity Substrates (Pierce Biotechnology).</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Identification of the Novel Alpha1-antitrypsin Alleles</title>
+        <p>The new AAT variants investigated in this study, as well as the genotype and plasma concentration of AAT and CRP of the index cases, are summarised in <xref ref-type="fig" rid="pone-0038405-g001">Figure 1A</xref>. The levels of CRP were determined in order to exclude the influence of an acute inflammatory state on AAT plasma concentration. The variants were named according to the plasma protein&#x2019;s migration by IEF (M, E and Y; <xref ref-type="supplementary-material" rid="pone.0038405.s001">Figure S1</xref>) and the birthplace of the senior carrier (Pisa, Taurisano and Orzinuovi).</p>
+        <p>The Mpisa allele is characterized by an A to T transition in exon III (c.848A&gt;T) in the M1Val background, resulting in a Lys259Ile substitution. The Mpisa allele was identified in association with the Z AAT allele in a patient with emphysema and reduced AAT plasma levels (56 mg/dL). Afterwards, other five M/Mpisa unrelated subjects were identified. Their AAT plasma levels (82&#x2013;96 mg/dl) were at the lower limit of normal values <xref ref-type="bibr" rid="pone.0038405-Zorzetto1">[26]</xref>.</p>
+        <p>The Etaurisano allele is characterized by a transversion in AAT exon V (c.1174 A&gt;G) resulting in Lys368Glu substitution. It was first identified in a subject with panlobular emphysema, in the heterozygous state with the M allele. It was then found in the index case&#x2019;s father and brother (<xref ref-type="fig" rid="pone-0038405-g001">Figure 1B</xref>). Cloning and sequencing of exon V indicated that the Etaurisano mutation arose on the M2 background allele.</p>
+        <p>The Yorzinuovi allele is characterised by a transversion in exon V (c.1244C&gt;A), resulting in a Pro391His protein mutation, on a M1Val background. It was first identified in heterozygous state with M in a subject with mild but persistently elevated transaminase levels, as well as in three related asymptomatic subjects (<xref ref-type="fig" rid="pone-0038405-g001">Figure 1C</xref>). Notably, the Pro391His mutation was previously found in association with the Asp256Val mutation in the Ybarcelona AAT variant <xref ref-type="bibr" rid="pone.0038405-Jardi1">[27]</xref>.</p>
+        <p>More clinical details on the probands are reported in the <xref ref-type="supplementary-material" rid="pone.0038405.s002">Information S1</xref>.</p>
+        <fig id="pone-0038405-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0038405.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Intracellular accumulation of the new AAT variants as 2C1-positive polymers.</title>
+            <p>PAGE and immunoblot analysis for AAT in NP40&#x2013;soluble cellular fractions (C) and culture media (M) from COS-7 cells transfected with M, Z, Mwurzburg, Mpisa, Etaurisano and Yorzinuovi AAT cDNAs or empty vector (-). Top panels: reducing SDS-PAGE and immunoblot with the 704 mAb to AAT (Abcam). Middle panels: non-denaturing PAGE and immunoblot with the 704 mAb (Abcam). Bottom panels: non-denaturing PAGE and immunoblot with the 2C1 mAb specific for AAT polymers. The middle and bottom panels correspond to the same membranes probed first with the 2C1 mAb and then with the 704 mAb from Abcam.</p>
+          </caption>
+          <graphic xlink:href="pone.0038405.g004"/>
+        </fig>
+      </sec>
+      <sec id="s3b">
+        <title>Reduced Secretion of the Newly Identified Variants by Hepa 1.6 Hepatoma Cells</title>
+        <p>We investigated the molecular behaviour of the novel AATD-associated variants by expressing them in liver-derived cells (Hepa1.6) and performing pulse-chase experiments (<xref ref-type="fig" rid="pone-0038405-g002">Figure 2</xref>). As controls we included M and Z AAT, as well as Mwurzburg (Pro369Ser), a previously described AAT deficiency variant whose amino acid substitution occurs next to that of Etaurisano <xref ref-type="bibr" rid="pone.0038405-Poller1">[28]</xref>. As expected, the newly synthesized M AAT was present at the end of the pulse period in the NP40-soluble cell fraction as a single band of about 50 kD, which corresponds to the high mannose intermediate form (<xref ref-type="fig" rid="pone-0038405-g002">Figure 2A</xref>, arrowhead). During the chase period, the protein is converted to a fully glycosylated mature protein (approx. 54 kD) that is rapidly secreted into the medium (<xref ref-type="fig" rid="pone-0038405-g002">Figure 2A</xref>, arrow). Only a small amount of M AAT was transiently found as immature polypeptide in the NP40-insoluble cell fraction. On the other hand, the newly synthesized Z protein was mainly retained in the cells as immature and significantly accumulated in the NP40-insoluble fractions, confirming its tendency to form large insoluble complexes (<xref ref-type="fig" rid="pone-0038405-g002">Figure 2A</xref>). The novel variants showed a reduction of protein secretion and were found in the NP40-insoluble fraction, suggesting that they formed large insoluble intracellular complexes similarly to Z AAT, although to different extents. The AAT distribution at different time points in the intracellular soluble and insoluble fractions, as well as in the cell media, was quantified by densitometry and expressed as percentages of the total AAT amount found at time 0 of chase (<xref ref-type="fig" rid="pone-0038405-g002">Figure 2B</xref>). At 240 min of chase, when about 78% of the wild-type M is found in the culture medium, the different mutants show reduced secretion (Z 16%, Mwurzburg 27%, Etaurisano 52%, Mpisa 22% and Yorzinuovi 11%). At the same time point, when the wild-type M is undetectable in the NP40-insoluble fraction, all the mutants show an accumulation of detergent insoluble complexes (Z 21%, Mwurzburg 13%, Etaurisano 13%, Mpisa 13% and Yorzinuovi 43%).</p>
+        <p>The secretion efficiency of the variants was also evaluated at steady state by quantitative dot-blot analysis of the AAT found in cell culture media of transfected Hepa1.6 cells (<xref ref-type="fig" rid="pone-0038405-g003">Figure 3</xref>). Panel A represents a single experiment comparing the different mutant variants and the M, Z and Null-hongkong (Null-hk) controls, using serial dilutions of commercial purified AAT (Sigma) as reference. Quantitative densitometric analysis of dot blots from three independent transfection experiments (<xref ref-type="fig" rid="pone-0038405-g003">Figure 3B</xref>) confirmed the results of the pulse chase experiments showing that the new deficiency variants all behave as defective in Hepa 1.6 cells, the Yorzinuovi being the most severely deficient (below 10% of M AAT).</p>
+      </sec>
+      <sec id="s3c">
+        <title>Formation of Polymers by the Alpha1-antitrypsin Variants in Transfected COS-7 Cells</title>
+        <p>The finding that the new variants accumulated as large NP40-insoluble complexes in Hepa 1.6 cells prompted us to investigate whether their accumulation occurs in the form of ordered polymers, similarly to Z AAT. We assessed the presence of AAT polymers in cell lysates and culture media from COS-7 cells transiently expressing the variants by non-denaturing PAGE and immunoblot analysis (<xref ref-type="fig" rid="pone-0038405-g004">Figure 4</xref>). As expected, M AAT was found at low levels within the cells and was secreted in the cell medium exclusively in the monomeric form. Z AAT instead was found mainly as polymers both in the cell lysate and in the medium. Similarly, polymeric AAT was found in both the cell lysates and media of the cells expressing the new variants (<xref ref-type="fig" rid="pone-0038405-g004">Figure 4</xref>, middle panels). Variable proportions of the monomer and polymer forms are detected for the different AAT variants, in correlation with their propensity to polymerize. This is consistent with previous studies on alpha1-antitrypsin and neuroserpin mutants <xref ref-type="bibr" rid="pone.0038405-Miranda1">[18]</xref>, <xref ref-type="bibr" rid="pone.0038405-Miranda2">[25]</xref>, <xref ref-type="bibr" rid="pone.0038405-Miranda3">[29]</xref>. The Mwurzburg and Etaurisano variants displayed a higher percentage in the monomeric form, in agreement with their milder defect in secretion. Based on our results, we cannot determine whether the polymers found in the cell media are formed extracellularly, secreted from the cells or both. The polymeric forms were all recognised by the polymer specific mAb 2C1 <xref ref-type="bibr" rid="pone.0038405-Miranda1">[18]</xref> (<xref ref-type="fig" rid="pone-0038405-g004">Figure 4</xref>, bottom panels), suggesting that the polymers formed by the new variants of AAT structurally resemble those formed by Z AAT. Analysis of intracellular and extracellular AAT variants by sandwich ELISA with the 2C1 mAb <xref ref-type="bibr" rid="pone.0038405-Belorgey1">[30]</xref> confirmed the presence of Z-like polymers in all the samples produced by transient expression of the new AAT variants in COS-7 cells (results not shown).</p>
+      </sec>
+      <sec id="s3d">
+        <title>Structural Modelling of the New Mutant Variants of AAT</title>
+        <p>We have assessed likely structural effects of the new mutations (<xref ref-type="fig" rid="pone-0038405-g005">Figure 5</xref>). They cluster in the so-called &#x2018;gate&#x2019; region of AAT <xref ref-type="bibr" rid="pone.0038405-Wardell1">[31]</xref>, where a network of hydrophobic interactions fasten the lateral border of &#x3B2;-sheet C to close a &#x3B2;-barrel motif with &#x3B2;-sheet B. The Yorzinuovi, Etaurisano and Mwurzburg mutations loosen this interaction to facilitate release/prevent tethering of strand 1 of &#x3B2;-sheet C (s1C) and favour mobilisation of the reactive site loop to adopt alternative conformations (<xref ref-type="fig" rid="pone-0038405-g005">Figure 5A</xref>). The Mpisa (Lys259Ile), Etaurisano (Lys368Glu) and Mwurzburg (Pro369Ser) mutations will also perturb helix G, affecting core packing and hence the shutter region.</p>
+        <fig id="pone-0038405-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0038405.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Structural analysis of the new alpha1-antitrypsin mutations.</title>
+            <p>(A) Upper panel: Mutation sites in native AAT (PDB ID: 1QLP; &#x3B2;-sheet A in blue, reactive loop red, B/C sheet &#x3B2;-barrel yellow, mutation site residues in pink, zoom is rotated 90&#xB0; around vertical axis). &#x2018;Latch&#x2019; interactions (dotted lines) stabilise the closed conformation of the &#x2018;gate&#x2019; (s4C-s3C). Lower panel: left, gate closure in the native state; right, gate opening is associated with loss of latch interactions, release of s1C and conformational change (intermediate state modelled upon latent conformer, PDB ID: 1IZ2, <xref ref-type="bibr" rid="pone.0038405-Gooptu3">[39]</xref>). (B) Alignment of C-terminal sequences of inhibitory human serpins, performed by ClustalW2 (<ext-link ext-link-type="uri" xlink:href="http://www.ebi.ac.uk">www.ebi.ac.uk</ext-link>, default parameters, visualised by Jalview). SERPINA1, &#x3B1;<sub>1</sub>-antitrypsin; A3, &#x3B1;<sub>1</sub>-antichymotrypsin; A4, kallistatin; A5, PAI3; A10, protein Z-dependent protease inhibitor; B1, leukocyte elastase inhibitor; B2, PAI2; C1, antithrombin III; D1, heparin cofactor 2; E1, PAI1; E2, glia-derived nexin; F2, &#x3B1;<sub>2</sub>-antiplasmin; G1, C1 inhibitor; I1, neuroserpin. Alpha1-antitrypsin mutation sites of Z (342), Etaurisano (368), Mwurzburg (369) and Yorzinuovi (391) are indicated (top).</p>
+          </caption>
+          <graphic xlink:href="pone.0038405.g005"/>
+        </fig>
+        <p>AAT is the archetype of the serine protease inhibitor (serpin) superfamily <xref ref-type="bibr" rid="pone.0038405-Silverman2">[32]</xref>. We performed protein sequence alignment of a range of inhibitory serpins <xref ref-type="bibr" rid="pone.0038405-Law1">[33]</xref> to assess the overall conservation of the aminoacids mutated in the new variants. The Yorzinuovi (Pro391His), Etaurisano (Lys368Glu) and Mwurzburg (Pro369Ser) mutations affect highly conserved C-terminal residues (<xref ref-type="fig" rid="pone-0038405-g005">Figure 5B</xref>), further supporting the hypothesis that they play a crucial role in the folding, stability and function of serpins.</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>In this study we report three new AAT deficiency variants, bearing non-conservative aminoacid substitutions, that we named Mpisa (Lys259Ile), Etaurisano (Lys368Glu), and Yorzinuovi (Pro391His). These variants were identified in Italian patients with reduced serum AAT levels. The previously reported variant Mwurzburg was included in our study because the causative mutation (Pro369Ser) affects the adjacent residue to that affected in Etaurisano (Lys368Glu). Moreover, this variant is represented in the Italian cohort of AATD patients with rare alleles (LC and ML, unpublished data) and allows us a further correlation between mutations in this region and cell model data. We studied both intracellular accumulation and defective secretion of AAT in our cell models since these respectively relate to the major pathogenic drivers of the liver and lung disease associated with AAT deficiency.</p>
+      <p>The new variants show a secretion defect in Hepa cells, the Yorzinuovi being the most severely deficient. These in vitro results are fully consistent with the plasma levels observed in the carriers, while clinical evidence of lung disease was established only in some patients. The onset of emphysema indeed depends on several risk factors, particularly cigarette smoke, as widely documented for Z homozygous individuals <xref ref-type="bibr" rid="pone.0038405-Evans1">[6]</xref>.</p>
+      <p>We also evaluated the tendency of the different variants to form ordered polymers when expressed in transfected Hepa and COS cells. The higher tendency to form polymers was displayed by Yorzinuovi, which explains its severe secretory defect. Based on the recognition by the 2C1 polymer-specific monoclonal antibody, the structure of the polymers formed by the new variants resembles that of Z. The index case carrying the Yorzinuovi allele in association with the wild-type M allele was referred because of persistently elevated transaminases, although no AAT inclusions were evidenced by immunohistochemical analysis on liver biopsy, while the two other carriers of this allele were fully asymptomatic. This mild phenotype may be related to the heterozygote state of the carriers. Similarly the MZ phenotype is not associated with severe lung or liver disease. Indeed, even the ZZ phenotype is associated with a wide spectrum of liver disease: from disease-free to end-stage hepatic failure or malignancy. Thus the risk of liver disease from intrahepatocytic polymerization is modified by further genetic and environmental factors, only partially elucidated.</p>
+      <p>Sequence alignment of different serpins revealed that the aminoacids mutated in the Etaurisano, Mwurzburg and Yorzinuovi are in a highly conserved C-terminal region, likely to be important for the structural stability of serpins. Consistently, other natural mutations leading to plasma deficiency have been reported to affect this region. The Pro391His mutation was previously found in association with the Asp256Val mutation in the Ybarcelona AAT variant <xref ref-type="bibr" rid="pone.0038405-Jardi1">[27]</xref>. Pro369 is also mutated in the Mheerlen AAT deficient variant (Pro369Leu) <xref ref-type="bibr" rid="pone.0038405-Poller1">[28]</xref>, <xref ref-type="bibr" rid="pone.0038405-Kim1">[34]</xref>. Moreover, the Pro476Ser substitution in the C1 inhibitor (equivalent to Pro391 in the AAT) was previously reported to promote intracellular multimerization, causing reduced plasma levels and angioedema <xref ref-type="bibr" rid="pone.0038405-Eldering1">[35]</xref>.</p>
+      <p>The crucial role of the C-terminal AAT region is strengthened by our structural analysis aimed at predicting the possible effects of the mutations underlying intracellular accumulation and polymer formation. The mutations highlight the structural significance of the gate region of AAT, where a network of hydrophobic interactions fasten the lateral border of &#x3B2;-sheet C to close a &#x3B2;-barrel motif with &#x3B2;-sheet B. Since these interactions keep the gate region closed in the native structure we propose they be termed &#x2018;latch&#x2019; interactions. Loosening these interactions will favour &#x2018;unlatching&#x2019; of the gate and population of the polymerogenic intermediate M* (<xref ref-type="fig" rid="pone-0038405-g005">Figure 5A</xref>). An opened gate <xref ref-type="bibr" rid="pone.0038405-Wardell1">[31]</xref> and untethered s1C <xref ref-type="bibr" rid="pone.0038405-Chang1">[36]</xref> have both previously been proposed as requirements for conformational change in the serpin superfamily. The new mutations show these are likely intrinsically coupled during intracellular polymerisation. The network of latch interactions also explains the elegant systematic mutagenesis study of Pro391 carried out almost two decades ago <xref ref-type="bibr" rid="pone.0038405-Brodbeck1">[37]</xref>. Mutation to hydrophobic residues had minimal effects on secretion and degradation profiles. However as mutations became increasingly hydrophilic, intracellular retention within the ER and/or degradation increased to give phenotypes more marked than the Z variant.</p>
+      <p>The mutations also highlight the significance of packing interactions between &#x3B1;-helices A and G and &#x3B2;-sheet B within the core of the molecule. Destabilisation of such interactions and consequent dysregulation of &#x3B2;-sheet A opening has been postulated as the mechanism by which the S (Glu264Val) <xref ref-type="bibr" rid="pone.0038405-Elliott1">[38]</xref> and I (Arg39Cys) <xref ref-type="bibr" rid="pone.0038405-Mahadeva1">[20]</xref> mutations cause polymerisation and mild plasma deficiency. The Mpisa (Lys259Ile) mutation will affect G-helix packing whilst the linker preceding the G-helix will be destabilised by the Etaurisano (Lys368Glu) mutation. Formation of the intermediate state in either the single strand (&#x2018;classical&#x2019; loop-sheet model <xref ref-type="bibr" rid="pone.0038405-Chiou1">[12]</xref>, <xref ref-type="bibr" rid="pone.0038405-Ekeowa1">[13]</xref>) or triple strand (C-terminal derived <xref ref-type="bibr" rid="pone.0038405-Yamasaki2">[15]</xref>) linkage models of serpin polymerization are highly consistent with direct coupling of s1C release with intramolecular loop insertion. Both of these models are therefore similarly compatible with the finding that gate loosening and/or core disrupting mutations result in increased polymerization and mild deficiency. In contrast, gate opening does not appear integral to the 2 strand (beta-hairpin <xref ref-type="bibr" rid="pone.0038405-Yamasaki1">[14]</xref>) model. It seems less likely that the &#x2018;latch&#x2019; mutations we describe would trigger polymer formation by this mechanism. Further structural studies will be required to establish whether the novel variants populate extensively unfolded intermediates in the disease state, as proposed in the triple-strand model, or favour more parsimonious conformational change, consistent with single-strand linkage. In conclusion, we demonstrate that the new AAT deficiency variants, besides increasing the risk of lung disease, may predispose to liver disease, particularly if associated with Z or with a different polymerogenic variant. Together the novel mutations define a latch region that regulates the population of an M* state. Polymerogenic mutations here will promote conformational change by favouring s1C release and/or effects upon core packing.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0038405.s001">
+        <label>Figure S1</label>
+        <caption>
+          <p><bold>Phenotyping of the new AAT variants.</bold> IEF analysis was performed on plasma from the heterozygous carriers of the new AAT variants, comparing them with plasma of known phenotype in a pH gradient of 4,2&#x2013;4,9. The arrow shows the major band of the Etaurisano variant. The asterisk shows the major band of Yorzinuovi.</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0038405.s001.tif" mimetype="image" mime-subtype="tiff">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0038405.s002">
+        <label>Information S1</label>
+        <caption>
+          <p><bold>Clinical data.</bold> Supplementary clinical information on the index cases carrying the Mpisa, Etaurisano and Yorzinuovi AAT alleles.</p>
+          <p>(DOC)</p>
+        </caption>
+        <media xlink:href="pone.0038405.s002.doc" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>The authors are very grateful to Mrs Nuccia Gatta, president of the Italian &#x3B1;<sub>1</sub>AT Association, for constant encouragement. The authors also thank David Lomas and Laura Tiberio for informative discussions.</p>
+    </ack>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding: </bold>The work was supported in part by the Italian &#x3B1;1AT Association and by Fondazione Istituto Di Ricovero e Cura a Carattere Scientifico San Matteo &#x201C;Ricerca Corrente&#x201D;. BG was supported by a Wellcome Trust Intermediate Clinical Fellowship. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0038405-Silverman1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Silverman</surname><given-names>EK</given-names></name><name><surname>Sandhaus</surname><given-names>RA</given-names></name></person-group>
+<year>2009</year>
+<article-title>Clinical practice. Alpha1-antitrypsin deficiency.</article-title>
+<source>N Engl J Med</source>
+<volume>360</volume>
+<fpage>2749</fpage>
+<lpage>2757</lpage>
+<pub-id pub-id-type="pmid">19553648</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Stoller1">
+        <label>2</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stoller</surname><given-names>JK</given-names></name><name><surname>Aboussouan</surname><given-names>LS</given-names></name></person-group>
+<year>2005</year>
+<article-title>Alpha1-antitrypsin deficiency.</article-title>
+<source>Lancet</source>
+<volume>365</volume>
+<fpage>2225</fpage>
+<lpage>2236</lpage>
+<pub-id pub-id-type="pmid">15978931</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Luisetti1">
+        <label>3</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Luisetti</surname><given-names>M</given-names></name><name><surname>Seersholm</surname><given-names>N</given-names></name></person-group>
+<year>2004</year>
+<article-title>Alpha1-antitrypsin deficiency. 1: epidemiology of alpha1-antitrypsin deficiency.</article-title>
+<source>Thorax</source>
+<volume>59</volume>
+<fpage>164</fpage>
+<lpage>169</lpage>
+<pub-id pub-id-type="pmid">14760160</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Denden1">
+        <label>4</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Denden</surname><given-names>S</given-names></name><name><surname>Zorzetto</surname><given-names>M</given-names></name><name><surname>Amri</surname><given-names>F</given-names></name><name><surname>Knani</surname><given-names>J</given-names></name><name><surname>Ottaviani</surname><given-names>S</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Screening for Alpha 1 antitrypsin deficiency in Tunisian subjects with obstructive lung disease: a feasibility report.</article-title>
+<source>Orphanet J Rare Dis</source>
+<volume>4</volume>
+<fpage>12</fpage>
+<pub-id pub-id-type="pmid">19368725</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Ferrarotti1">
+        <label>5</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ferrarotti</surname><given-names>I</given-names></name><name><surname>Baccheschi</surname><given-names>J</given-names></name><name><surname>Zorzetto</surname><given-names>M</given-names></name><name><surname>Tinelli</surname><given-names>C</given-names></name><name><surname>Corda</surname><given-names>L</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>Prevalence and phenotype of subjects carrying rare variants in the Italian registry for alpha1-antitrypsin deficiency.</article-title>
+<source>J Med Genet</source>
+<volume>42</volume>
+<fpage>282</fpage>
+<lpage>287</lpage>
+<pub-id pub-id-type="pmid">15744045</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Evans1">
+        <label>6</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Evans</surname><given-names>MD</given-names></name><name><surname>Pryor</surname><given-names>WA</given-names></name></person-group>
+<year>1994</year>
+<article-title>Cigarette smoking, emphysema, and damage to alpha 1-proteinase inhibitor.</article-title>
+<source>Am J Physiol</source>
+<volume>266</volume>
+<fpage>L593</fpage>
+<lpage>611</lpage>
+<pub-id pub-id-type="pmid">8023948</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Perlmutter1">
+        <label>7</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Perlmutter</surname><given-names>DH</given-names></name></person-group>
+<year>2002</year>
+<article-title>Liver injury in alpha1-antitrypsin deficiency: an aggregated protein induces mitochondrial injury.</article-title>
+<source>J Clin Invest</source>
+<volume>110</volume>
+<fpage>1579</fpage>
+<lpage>1583</lpage>
+<pub-id pub-id-type="pmid">12464659</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Lomas1">
+        <label>8</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lomas</surname><given-names>DA</given-names></name><name><surname>Evans</surname><given-names>DL</given-names></name><name><surname>Finch</surname><given-names>JT</given-names></name><name><surname>Carrell</surname><given-names>RW</given-names></name></person-group>
+<year>1992</year>
+<article-title>The mechanism of Z alpha 1-antitrypsin accumulation in the liver.</article-title>
+<source>Nature</source>
+<volume>357</volume>
+<fpage>605</fpage>
+<lpage>607</lpage>
+<pub-id pub-id-type="pmid">1608473</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Dafforn1">
+        <label>9</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dafforn</surname><given-names>TR</given-names></name><name><surname>Mahadeva</surname><given-names>R</given-names></name><name><surname>Elliott</surname><given-names>PR</given-names></name><name><surname>Sivasothy</surname><given-names>P</given-names></name><name><surname>Lomas</surname><given-names>DA</given-names></name></person-group>
+<year>1999</year>
+<article-title>A kinetic mechanism for the polymerization of alpha1-antitrypsin.</article-title>
+<source>J Biol Chem</source>
+<volume>274</volume>
+<fpage>9548</fpage>
+<lpage>9555</lpage>
+<pub-id pub-id-type="pmid">10092640</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Gooptu1">
+        <label>10</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gooptu</surname><given-names>B</given-names></name><name><surname>Hazes</surname><given-names>B</given-names></name><name><surname>Chang</surname><given-names>WS</given-names></name><name><surname>Dafforn</surname><given-names>TR</given-names></name><name><surname>Carrell</surname><given-names>RW</given-names></name><etal/></person-group>
+<year>2000</year>
+<article-title>Inactive conformation of the serpin alpha(1)-antichymotrypsin indicates two-stage insertion of the reactive loop: implications for inhibitory function and conformational disease.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>97</volume>
+<fpage>67</fpage>
+<lpage>72</lpage>
+<pub-id pub-id-type="pmid">10618372</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Gooptu2">
+        <label>11</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gooptu</surname><given-names>B</given-names></name><name><surname>Lomas</surname><given-names>DA</given-names></name></person-group>
+<year>2009</year>
+<article-title>Conformational pathology of the serpins: themes, variations, and therapeutic strategies.</article-title>
+<source>Annu Rev Biochem</source>
+<volume>78</volume>
+<fpage>147</fpage>
+<lpage>176</lpage>
+<pub-id pub-id-type="pmid">19245336</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Chiou1">
+        <label>12</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chiou</surname><given-names>A</given-names></name><name><surname>Hagglof</surname><given-names>P</given-names></name><name><surname>Orte</surname><given-names>A</given-names></name><name><surname>Chen</surname><given-names>AY</given-names></name><name><surname>Dunne</surname><given-names>PD</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Probing neuroserpin polymerization and interaction with amyloid-beta peptides using single molecule fluorescence.</article-title>
+<source>Biophys J</source>
+<volume>97</volume>
+<fpage>2306</fpage>
+<lpage>2315</lpage>
+<pub-id pub-id-type="pmid">19843463</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Ekeowa1">
+        <label>13</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ekeowa</surname><given-names>UI</given-names></name><name><surname>Freeke</surname><given-names>J</given-names></name><name><surname>Miranda</surname><given-names>E</given-names></name><name><surname>Gooptu</surname><given-names>B</given-names></name><name><surname>Bush</surname><given-names>MF</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>Defining the mechanism of polymerization in the serpinopathies.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>107</volume>
+<fpage>17146</fpage>
+<lpage>17151</lpage>
+<pub-id pub-id-type="pmid">20855577</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Yamasaki1">
+        <label>14</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yamasaki</surname><given-names>M</given-names></name><name><surname>Li</surname><given-names>W</given-names></name><name><surname>Johnson</surname><given-names>DJ</given-names></name><name><surname>Huntington</surname><given-names>JA</given-names></name></person-group>
+<year>2008</year>
+<article-title>Crystal structure of a stable dimer reveals the molecular basis of serpin polymerization.</article-title>
+<source>Nature</source>
+<volume>455</volume>
+<fpage>1255</fpage>
+<lpage>1258</lpage>
+<pub-id pub-id-type="pmid">18923394</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Yamasaki2">
+        <label>15</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yamasaki</surname><given-names>M</given-names></name><name><surname>Sendall</surname><given-names>TJ</given-names></name><name><surname>Pearce</surname><given-names>MC</given-names></name><name><surname>Whisstock</surname><given-names>JC</given-names></name><name><surname>Huntington</surname><given-names>JA</given-names></name></person-group>
+<year>2011</year>
+<article-title>Molecular basis of alpha(1)-antitrypsin deficiency revealed by the structure of a domain-swapped trimer.</article-title>
+<source>EMBO Rep</source>
+<volume>12</volume>
+<fpage>1011</fpage>
+<lpage>1017</lpage>
+<pub-id pub-id-type="pmid">21909074</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Lomas2">
+        <label>16</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lomas</surname><given-names>DA</given-names></name><name><surname>Elliott</surname><given-names>PR</given-names></name><name><surname>Sidhar</surname><given-names>SK</given-names></name><name><surname>Foreman</surname><given-names>RC</given-names></name><name><surname>Finch</surname><given-names>JT</given-names></name><etal/></person-group>
+<year>1995</year>
+<article-title>alpha 1-Antitrypsin Mmalton (Phe52-deleted) forms loop-sheet polymers in vivo. Evidence for the C sheet mechanism of polymerization.</article-title>
+<source>J Biol Chem</source>
+<volume>270</volume>
+<fpage>16864</fpage>
+<lpage>16870</lpage>
+<pub-id pub-id-type="pmid">7622502</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Lomas3">
+        <label>17</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lomas</surname><given-names>DA</given-names></name><name><surname>Finch</surname><given-names>JT</given-names></name><name><surname>Seyama</surname><given-names>K</given-names></name><name><surname>Nukiwa</surname><given-names>T</given-names></name><name><surname>Carrell</surname><given-names>RW</given-names></name></person-group>
+<year>1993</year>
+<article-title>Alpha 1-antitrypsin Siiyama (Ser53&#x2013;&gt;Phe). Further evidence for intracellular loop-sheet polymerization.</article-title>
+<source>J Biol Chem</source>
+<volume>268</volume>
+<fpage>15333</fpage>
+<lpage>15335</lpage>
+<pub-id pub-id-type="pmid">8340361</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Miranda1">
+        <label>18</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Miranda</surname><given-names>E</given-names></name><name><surname>Perez</surname><given-names>J</given-names></name><name><surname>Ekeowa</surname><given-names>UI</given-names></name><name><surname>Hadzic</surname><given-names>N</given-names></name><name><surname>Kalsheker</surname><given-names>N</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>A novel monoclonal antibody to characterize pathogenic polymers in liver disease associated with alpha1-antitrypsin deficiency.</article-title>
+<source>Hepatology</source>
+<volume>52</volume>
+<fpage>1078</fpage>
+<lpage>1088</lpage>
+<pub-id pub-id-type="pmid">20583215</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Medicina1">
+        <label>19</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Medicina</surname><given-names>D</given-names></name><name><surname>Montani</surname><given-names>N</given-names></name><name><surname>Fra</surname><given-names>AM</given-names></name><name><surname>Tiberio</surname><given-names>L</given-names></name><name><surname>Corda</surname><given-names>L</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Molecular characterization of the new defective P(brescia) alpha1-antitrypsin allele.</article-title>
+<source>Hum Mutat</source>
+<volume>30</volume>
+<fpage>E771</fpage>
+<lpage>781</lpage>
+<pub-id pub-id-type="pmid">19437508</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Mahadeva1">
+        <label>20</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mahadeva</surname><given-names>R</given-names></name><name><surname>Chang</surname><given-names>WS</given-names></name><name><surname>Dafforn</surname><given-names>TR</given-names></name><name><surname>Oakley</surname><given-names>DJ</given-names></name><name><surname>Foreman</surname><given-names>RC</given-names></name><etal/></person-group>
+<year>1999</year>
+<article-title>Heteropolymerization of S, I, and Z alpha1-antitrypsin and liver cirrhosis.</article-title>
+<source>J Clin Invest</source>
+<volume>103</volume>
+<fpage>999</fpage>
+<lpage>1006</lpage>
+<pub-id pub-id-type="pmid">10194472</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Gorrini1">
+        <label>21</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gorrini</surname><given-names>M</given-names></name><name><surname>Ferrarotti</surname><given-names>I</given-names></name><name><surname>Lupi</surname><given-names>A</given-names></name><name><surname>Bosoni</surname><given-names>T</given-names></name><name><surname>Mazzola</surname><given-names>P</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Validation of a rapid, simple method to measure alpha1-antitrypsin in human dried blood spots.</article-title>
+<source>Clin Chem</source>
+<volume>52</volume>
+<fpage>899</fpage>
+<lpage>901</lpage>
+<pub-id pub-id-type="pmid">16638961</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Ferrarotti2">
+        <label>22</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ferrarotti</surname><given-names>I</given-names></name><name><surname>Scabini</surname><given-names>R</given-names></name><name><surname>Campo</surname><given-names>I</given-names></name><name><surname>Ottaviani</surname><given-names>S</given-names></name><name><surname>Zorzetto</surname><given-names>M</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Laboratory diagnosis of alpha1-antitrypsin deficiency.</article-title>
+<source>Transl Res</source>
+<volume>150</volume>
+<fpage>267</fpage>
+<lpage>274</lpage>
+<pub-id pub-id-type="pmid">17964515</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Ferrarotti3">
+        <label>23</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ferrarotti</surname><given-names>I</given-names></name><name><surname>Zorzetto</surname><given-names>M</given-names></name><name><surname>Scabini</surname><given-names>R</given-names></name><name><surname>Mazzola</surname><given-names>P</given-names></name><name><surname>Campo</surname><given-names>I</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>A novel method for rapid genotypic identification of alpha 1-antitrypsin variants.</article-title>
+<source>Diagn Mol Pathol</source>
+<volume>13</volume>
+<fpage>160</fpage>
+<lpage>163</lpage>
+<pub-id pub-id-type="pmid">15322427</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Wu1">
+        <label>24</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wu</surname><given-names>Y</given-names></name><name><surname>Swulius</surname><given-names>MT</given-names></name><name><surname>Moremen</surname><given-names>KW</given-names></name><name><surname>Sifers</surname><given-names>RN</given-names></name></person-group>
+<year>2003</year>
+<article-title>Elucidation of the molecular logic by which misfolded alpha 1-antitrypsin is preferentially selected for degradation.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>100</volume>
+<fpage>8229</fpage>
+<lpage>8234</lpage>
+<pub-id pub-id-type="pmid">12815101</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Miranda2">
+        <label>25</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Miranda</surname><given-names>E</given-names></name><name><surname>Romisch</surname><given-names>K</given-names></name><name><surname>Lomas</surname><given-names>DA</given-names></name></person-group>
+<year>2004</year>
+<article-title>Mutants of neuroserpin that cause dementia accumulate as polymers within the endoplasmic reticulum.</article-title>
+<source>J Biol Chem</source>
+<volume>279</volume>
+<fpage>28283</fpage>
+<lpage>28291</lpage>
+<pub-id pub-id-type="pmid">15090543</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Zorzetto1">
+        <label>26</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zorzetto</surname><given-names>M</given-names></name><name><surname>Russi</surname><given-names>E</given-names></name><name><surname>Senn</surname><given-names>O</given-names></name><name><surname>Imboden</surname><given-names>M</given-names></name><name><surname>Ferrarotti</surname><given-names>I</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>SERPINA1 gene variants in individuals from the general population with reduced alpha1-antitrypsin concentrations.</article-title>
+<source>Clin Chem</source>
+<volume>54</volume>
+<fpage>1331</fpage>
+<lpage>1338</lpage>
+<pub-id pub-id-type="pmid">18515255</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Jardi1">
+        <label>27</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jardi</surname><given-names>R</given-names></name><name><surname>Rodriguez</surname><given-names>F</given-names></name><name><surname>Miravitlles</surname><given-names>M</given-names></name><name><surname>Vidal</surname><given-names>R</given-names></name><name><surname>Cotrina</surname><given-names>M</given-names></name><etal/></person-group>
+<year>1998</year>
+<article-title>Identification and molecular characterization of the new alpha-1-antitrypsin deficient allele PI Y barcelona (Asp256&#x2013;&gt;Val and Pro391&#x2013;&gt;His). Mutations in brief no. 174. Online.</article-title>
+<source>Hum Mutat</source>
+<volume>12</volume>
+<fpage>213</fpage>
+<pub-id pub-id-type="pmid">10651487</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Poller1">
+        <label>28</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Poller</surname><given-names>W</given-names></name><name><surname>Merklein</surname><given-names>F</given-names></name><name><surname>Schneider-Rasp</surname><given-names>S</given-names></name><name><surname>Haack</surname><given-names>A</given-names></name><name><surname>Fechner</surname><given-names>H</given-names></name><etal/></person-group>
+<year>1999</year>
+<article-title>Molecular characterisation of the defective alpha 1-antitrypsin alleles PI Mwurzburg (Pro369Ser), Mheerlen (Pro369Leu), and Q0lisbon (Thr68Ile).</article-title>
+<source>Eur J Hum Genet</source>
+<volume>7</volume>
+<fpage>321</fpage>
+<lpage>331</lpage>
+<pub-id pub-id-type="pmid">10234508</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Miranda3">
+        <label>29</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Miranda</surname><given-names>E</given-names></name><name><surname>MacLeod</surname><given-names>I</given-names></name><name><surname>Davies</surname><given-names>MJ</given-names></name><name><surname>Perez</surname><given-names>J</given-names></name><name><surname>Romisch</surname><given-names>K</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>The intracellular accumulation of polymeric neuroserpin explains the severity of the dementia FENIB.</article-title>
+<source>Hum Mol Genet</source>
+<volume>17</volume>
+<fpage>1527</fpage>
+<lpage>1539</lpage>
+<pub-id pub-id-type="pmid">18267959</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Belorgey1">
+        <label>30</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Belorgey</surname><given-names>D</given-names></name><name><surname>Irving</surname><given-names>JA</given-names></name><name><surname>Ekeowa</surname><given-names>UI</given-names></name><name><surname>Freeke</surname><given-names>J</given-names></name><name><surname>Roussel</surname><given-names>BD</given-names></name><etal/></person-group>
+<year>2011</year>
+<article-title>Characterisation of serpin polymers in vitro and in vivo.</article-title>
+<source>Methods</source>
+<volume>53</volume>
+<fpage>255</fpage>
+<lpage>266</lpage>
+<pub-id pub-id-type="pmid">21115126</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Wardell1">
+        <label>31</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wardell</surname><given-names>MR</given-names></name><name><surname>Chang</surname><given-names>WS</given-names></name><name><surname>Bruce</surname><given-names>D</given-names></name><name><surname>Skinner</surname><given-names>R</given-names></name><name><surname>Lesk</surname><given-names>AM</given-names></name><etal/></person-group>
+<year>1997</year>
+<article-title>Preparative induction and characterization of L-antithrombin: a structural homologue of latent plasminogen activator inhibitor-1.</article-title>
+<source>Biochemistry</source>
+<volume>36</volume>
+<fpage>13133</fpage>
+<lpage>13142</lpage>
+<pub-id pub-id-type="pmid">9335576</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Silverman2">
+        <label>32</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Silverman</surname><given-names>GA</given-names></name><name><surname>Bird</surname><given-names>PI</given-names></name><name><surname>Carrell</surname><given-names>RW</given-names></name><name><surname>Church</surname><given-names>FC</given-names></name><name><surname>Coughlin</surname><given-names>PB</given-names></name><etal/></person-group>
+<year>2001</year>
+<article-title>The serpins are an expanding superfamily of structurally similar but functionally diverse proteins. Evolution, mechanism of inhibition, novel functions, and a revised nomenclature.</article-title>
+<source>J Biol Chem</source>
+<volume>276</volume>
+<fpage>33293</fpage>
+<lpage>33296</lpage>
+<pub-id pub-id-type="pmid">11435447</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Law1">
+        <label>33</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Law</surname><given-names>RH</given-names></name><name><surname>Zhang</surname><given-names>Q</given-names></name><name><surname>McGowan</surname><given-names>S</given-names></name><name><surname>Buckle</surname><given-names>AM</given-names></name><name><surname>Silverman</surname><given-names>GA</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>An overview of the serpin superfamily.</article-title>
+<source>Genome Biol</source>
+<volume>7</volume>
+<fpage>216</fpage>
+<pub-id pub-id-type="pmid">16737556</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Kim1">
+        <label>34</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kim</surname><given-names>MJ</given-names></name><name><surname>Jung</surname><given-names>CH</given-names></name><name><surname>Im</surname><given-names>H</given-names></name></person-group>
+<year>2006</year>
+<article-title>Characterization and suppression of dysfunctional human alpha1-antitrypsin variants.</article-title>
+<source>Biochem Biophys Res Commun</source>
+<volume>343</volume>
+<fpage>295</fpage>
+<lpage>302</lpage>
+<pub-id pub-id-type="pmid">16540089</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Eldering1">
+        <label>35</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Eldering</surname><given-names>E</given-names></name><name><surname>Verpy</surname><given-names>E</given-names></name><name><surname>Roem</surname><given-names>D</given-names></name><name><surname>Meo</surname><given-names>T</given-names></name><name><surname>Tosi</surname><given-names>M</given-names></name></person-group>
+<year>1995</year>
+<article-title>COOH-terminal substitutions in the serpin C1 inhibitor that cause loop overinsertion and subsequent multimerization.</article-title>
+<source>J Biol Chem</source>
+<volume>270</volume>
+<fpage>2579</fpage>
+<lpage>2587</lpage>
+<pub-id pub-id-type="pmid">7852321</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Chang1">
+        <label>36</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chang</surname><given-names>WS</given-names></name><name><surname>Whisstock</surname><given-names>J</given-names></name><name><surname>Hopkins</surname><given-names>PC</given-names></name><name><surname>Lesk</surname><given-names>AM</given-names></name><name><surname>Carrell</surname><given-names>RW</given-names></name><etal/></person-group>
+<year>1997</year>
+<article-title>Importance of the release of strand 1C to the polymerization mechanism of inhibitory serpins.</article-title>
+<source>Protein Sci</source>
+<volume>6</volume>
+<fpage>89</fpage>
+<lpage>98</lpage>
+<pub-id pub-id-type="pmid">9007980</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Brodbeck1">
+        <label>37</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Brodbeck</surname><given-names>RM</given-names></name><name><surname>Brown</surname><given-names>JL</given-names></name></person-group>
+<year>1994</year>
+<article-title>Study of the roles of proline 391 and a highly conserved sequence in the carboxyl-terminal region of members of the serpin family in the secretion of alpha 1-proteinase inhibitor.</article-title>
+<source>J Biol Chem</source>
+<volume>269</volume>
+<fpage>17252</fpage>
+<lpage>17256</lpage>
+<pub-id pub-id-type="pmid">8006033</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Elliott1">
+        <label>38</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Elliott</surname><given-names>PR</given-names></name><name><surname>Stein</surname><given-names>PE</given-names></name><name><surname>Bilton</surname><given-names>D</given-names></name><name><surname>Carrell</surname><given-names>RW</given-names></name><name><surname>Lomas</surname><given-names>DA</given-names></name></person-group>
+<year>1996</year>
+<article-title>Structural explanation for the deficiency of S alpha 1-antitrypsin.</article-title>
+<source>Nat Struct Biol</source>
+<volume>3</volume>
+<fpage>910</fpage>
+<lpage>911</lpage>
+<pub-id pub-id-type="pmid">8901864</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0038405-Gooptu3">
+        <label>39</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gooptu</surname><given-names>B</given-names></name><name><surname>Miranda</surname><given-names>E</given-names></name><name><surname>Nobeli</surname><given-names>I</given-names></name><name><surname>Mallya</surname><given-names>M</given-names></name><name><surname>Purkiss</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Crystallographic and cellular characterisation of two mechanisms stabilising the native fold of alpha1-antitrypsin: implications for disease and drug design.</article-title>
+<source>J Mol Biol</source>
+<volume>387</volume>
+<fpage>857</fpage>
+<lpage>868</lpage>
+<pub-id pub-id-type="pmid">19232354</pub-id></element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

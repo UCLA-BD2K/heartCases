@@ -1,0 +1,1173 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">22428046</article-id>
+      <article-id pub-id-type="pmc">3302824</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-11-18963</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0033412</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Genomics</subject>
+              <subj-group>
+                <subject>Genome Analysis Tools</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Human Genetics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genomics</subject>
+            <subj-group>
+              <subject>Genome Analysis Tools</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Clinical Genetics</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Obstetrics and Gynecology</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Genome-Wide Linkage in a Highly Consanguineous Pedigree Reveals Two Novel Loci on Chromosome 7 for Non-Syndromic Familial Premature Ovarian Failure</article-title>
+        <alt-title alt-title-type="running-head">Two Novel Loci for Non-Syndromic Familial POF</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Caburet</surname>
+            <given-names>Sandrine</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zavadakova</surname>
+            <given-names>Petra</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="fn1">
+            <sup>&#xA4;a</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ben-Neriah</surname>
+            <given-names>Ziva</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bouhali</surname>
+            <given-names>Kamal</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dipietromaria</surname>
+            <given-names>Aur&#xE9;lie</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Charon</surname>
+            <given-names>C&#xE9;line</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Besse</surname>
+            <given-names>C&#xE9;line</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Laissue</surname>
+            <given-names>Paul</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff8">
+            <sup>8</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="fn2">
+            <sup>&#xA4;b</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="fn3">
+            <sup>&#xA4;c</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chalifa-Caspi</surname>
+            <given-names>Vered</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff9">
+            <sup>9</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Christin-Maitre</surname>
+            <given-names>Sophie</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff10">
+            <sup>10</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Vaiman</surname>
+            <given-names>Daniel</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff8">
+            <sup>8</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Levi</surname>
+            <given-names>Giovanni</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Veitia</surname>
+            <given-names>Reiner A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Fellous</surname>
+            <given-names>Marc</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff8">
+            <sup>8</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Institut Jacques Monod, Universit&#xE9; Denis Diderot, CNRS UMR7592, Paris, France</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Universit&#xE9; Paris Diderot-Paris VII, Paris, France</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Department of Medical Genetics, University of Lausanne, Lausanne, Switzerland</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Department of Genetics, Hadassah University Hospital, Jerusalem, Israel</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>&#xC9;volution des R&#xE9;gulations Endocriniennes, CNRS UMR7221, Mus&#xE9;um National d'Histoire Naturelle, Paris, France</addr-line>
+      </aff>
+      <aff id="aff6">
+        <label>6</label>
+        <addr-line>CEA/CNG, Institut de G&#xE9;nomique, Evry, France</addr-line>
+      </aff>
+      <aff id="aff7">
+        <label>7</label>
+        <addr-line>Institut Cochin, Universit&#xE9; Paris Descartes, CNRS UMR 8104, Paris, France</addr-line>
+      </aff>
+      <aff id="aff8">
+        <label>8</label>
+        <addr-line>Inserm, U1016, Paris, France</addr-line>
+      </aff>
+      <aff id="aff9">
+        <label>9</label>
+        <addr-line>National Institute for Biotechnology in the Negev, Ben-Gurion University of the Negev, Beer-Sheva, Israel</addr-line>
+      </aff>
+      <aff id="aff10">
+        <label>10</label>
+        <addr-line>Inserm U933 G&#xE9;n&#xE9;tique de la Reproduction, Service d'Endocrinologie de la Reproduction, H&#xF4;pital Saint-Antoine, Universit&#xE9; Pierre-et-Marie-Curie, Paris, France</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Janecke</surname>
+            <given-names>Andreas R.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">Innsbruck Medical University, Austria</aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>caburet.sandrine@ijm.univ-paris-diderot.fr</email> (SC); <email>marc.fellous@inserm.fr</email> (MF)</corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: SC MF. Performed the experiments: SC PL CB CC. Analyzed the data: SC PZ VCC DV KB AD GL SCM MF. Contributed reagents/materials/analysis tools: ZBN VCC. Wrote the paper: SC PZ GL RAV MF. Organized, supervised, and performed the phenotyping: ZBN.</p>
+        </fn>
+        <fn id="fn1" fn-type="current-aff">
+          <label>&#xA4;a</label>
+          <p>Current address: Division of Molecular Pediatrics, Centre Hospitalier Universitaire Vaudois, Lausanne, Switzerland</p>
+        </fn>
+        <fn id="fn2" fn-type="current-aff">
+          <label>&#xA4;b</label>
+          <p>Current address: Unidad de Gen&#xE9;tica, Escuela de Medicina y Ciencias de la Salud, Universidad del Rosario, Bogot&#xE1;, Colombia</p>
+        </fn>
+        <fn id="fn3" fn-type="current-aff">
+          <label>&#xA4;c</label>
+          <p>Current address: Gen&#xE9;tica Molecular de Colombia, Departamento de Fertilidad Humana, Bogot&#xE1;, Colombia</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>13</day>
+        <month>3</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>7</volume>
+      <issue>3</issue>
+      <elocation-id>e33412</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>28</day>
+          <month>9</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>8</day>
+          <month>2</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Caburet et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</copyright-statement>
+        <copyright-year>2012</copyright-year>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>The human condition known as Premature Ovarian Failure (POF) is characterized by loss of ovarian function before the age of 40. A majority of POF cases are sporadic, but 10&#x2013;15% are familial, suggesting a genetic origin of the disease. Although several causal mutations have been identified, the etiology of POF is still unknown for about 90% of the patients.</p>
+        </sec>
+        <sec>
+          <title>Methodology/Principal Findings</title>
+          <p>We report a genome-wide linkage and homozygosity analysis in one large consanguineous Middle-Eastern POF-affected family presenting an autosomal recessive pattern of inheritance. We identified two regions with a LOD<sub>max</sub> of 3.26 on chromosome 7p21.1-15.3 and 7q21.3-22.2, which are supported as candidate regions by homozygosity mapping. Sequencing of the coding exons and known regulatory sequences of three candidate genes (<italic>DLX5, DLX6</italic> and <italic>DSS1</italic>) included within the largest region did not reveal any causal mutations.</p>
+        </sec>
+        <sec>
+          <title>Conclusions/Significance</title>
+          <p>We detect two novel POF-associated loci on human chromosome 7, opening the way to the identification of new genes involved in the control of ovarian development and function.</p>
+        </sec>
+      </abstract>
+      <counts>
+        <page-count count="6"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Premature ovarian failure (POF; MIM 311360 [OMIM]), clinically characterized by the early loss of normal ovarian function, is a cause of infertility in women under the age of 40 <xref ref-type="bibr" rid="pone.0033412-Nelson1">[1]</xref>, <xref ref-type="bibr" rid="pone.0033412-Coulam1">[2]</xref>, <xref ref-type="bibr" rid="pone.0033412-Goswami1">[3]</xref>, <xref ref-type="bibr" rid="pone.0033412-ChristinMaitre1">[4]</xref>. POF can result from different ovarian defects, including early decrease in the primordial follicle pool, increased or accelerated follicular atresia and follicle growth blockade. The clinical characteristics of POF are a primary or secondary amenorrhea associated with elevated levels of circulating gonadotropins LH and FSH <xref ref-type="bibr" rid="pone.0033412-Nelson2">[5]</xref>.</p>
+      <p>Although POF may be due to metabolic, autoimmune, infectious or iatrogenic causes, compelling evidence suggests that certain forms of the disease have a genetic etiology. Many POF cases are familial <xref ref-type="bibr" rid="pone.0033412-Lacombe1">[6]</xref>, <xref ref-type="bibr" rid="pone.0033412-Oldenburg1">[7]</xref>, <xref ref-type="bibr" rid="pone.0033412-vanKasteren1">[8]</xref>, <xref ref-type="bibr" rid="pone.0033412-Vegetti1">[9]</xref> and specific genetic alterations or mutations have been associated with syndromic or non-syndromic forms of the disease. The most frequent anomalies are X chromosome alterations, including X chromosome monosomy (Turner syndrome) <xref ref-type="bibr" rid="pone.0033412-Sybert1">[10]</xref>, X deletions and translocations, mutations of the <italic>BMP15</italic> gene <xref ref-type="bibr" rid="pone.0033412-DiPasquale1">[11]</xref>, <xref ref-type="bibr" rid="pone.0033412-Dixit1">[12]</xref>, <xref ref-type="bibr" rid="pone.0033412-Laissue1">[13]</xref>, and premutations of the <italic>FMR1</italic> gene (Fragile X syndrome) <xref ref-type="bibr" rid="pone.0033412-Goswami1">[3]</xref>. POF-associated mutations were also identified in autosomal genes, such as <italic>ATM</italic>
+<xref ref-type="bibr" rid="pone.0033412-Barlow1">[14]</xref>, <xref ref-type="bibr" rid="pone.0033412-Barlow2">[15]</xref>, <italic>FSHR</italic>
+<xref ref-type="bibr" rid="pone.0033412-Aittomaki1">[16]</xref>, <italic>GDF9</italic>
+<xref ref-type="bibr" rid="pone.0033412-Laissue1">[13]</xref>, <xref ref-type="bibr" rid="pone.0033412-Shimizu1">[17]</xref>, <italic>NOBOX</italic>
+<xref ref-type="bibr" rid="pone.0033412-Qin1">[18]</xref>, <xref ref-type="bibr" rid="pone.0033412-Qin2">[19]</xref>, <italic>AIRE</italic>
+<xref ref-type="bibr" rid="pone.0033412-ChristinMaitre2">[20]</xref>, <italic>StAR</italic>
+<xref ref-type="bibr" rid="pone.0033412-Kaku1">[21]</xref> and <italic>FOXL2</italic>
+<xref ref-type="bibr" rid="pone.0033412-Crisponi1">[22]</xref>, <xref ref-type="bibr" rid="pone.0033412-Harris1">[23]</xref>, <xref ref-type="bibr" rid="pone.0033412-Laissue2">[24]</xref>, <xref ref-type="bibr" rid="pone.0033412-Gersak1">[25]</xref>.</p>
+      <p>Despite these progresses, the etiology of POF remains unknown in about 90% of POF patients, suggesting that the causes of the disease are highly heterogeneous <xref ref-type="bibr" rid="pone.0033412-Nelson2">[5]</xref>. Therefore, a comprehensive identification of POF-predisposing genes is necessary to acquire a more accurate vision of the genetic causes of the disease.</p>
+      <p>Genome-wide linkage analysis has been successfully used to identify causal mutations in human diseases, including POF, for which such approach led to the identification of a 15.8 Mb region on chromosome 5 <xref ref-type="bibr" rid="pone.0033412-Oldenburg1">[7]</xref> and a mutation in <italic>POF1B</italic> on the X chromosome <xref ref-type="bibr" rid="pone.0033412-Lacombe1">[6]</xref>. In order to identify novel POF-associated loci, we analyzed a large, highly consanguineous, non-syndromic POF family using a combination of genome-wide linkage and homozygosity mapping.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s2">
+      <title>Materials and Methods</title>
+      <sec id="s2a">
+        <title>Ethical Statement</title>
+        <p>The research protocol was approved by the Medical Center Ethical Committee of the Hadassah University Hospital (Jerusalem). Written informed consent was obtained from all individuals included in the study.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Participants and Data Collection</title>
+        <p>A disease gene mapping was initiated in a large highly consanguineous Middle Eastern family (MO1). The MO1 Palestinian family (pedigree in <xref ref-type="fig" rid="pone-0033412-g001">Figure 1</xref>), with 5 affected women, was recruited through the Genetic Department of Hadassah Hospital in Jerusalem. Medical reports were obtained and completed when possible. Blood samples were collected for hormonal, genomic and cytogenetic studies. Karyotypes and genomic DNA isolation were performed by standard procedures.</p>
+        <fig id="pone-0033412-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0033412.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Pedigree of the consanguineous MO1 family, with haplotype reconstruction of the 7q21-22 region.</title>
+            <p>Squares indicate males and circles indicate females. Black symbols indicate women affected with Premature Ovarian Failure. Year of birth, when known, is indicated below the number of the individual. Double connecting lines indicate consanguineous marriages, all known to be between first cousins even when the precise consanguinity loop could not be established. Asterisks mark the individuals included in the microsatellite and/or the SNP whole-genome genotyping studies. The haplotypes for the large 7q21-22 region were reconstructed with Merlin <xref ref-type="bibr" rid="pone.0033412-Abecasis1">[26]</xref> for the individuals genotyped on the SNP array, and visualized with HaploPainter. For the sake of simplicity, the number of depicted SNPs was reduced, to 3 SNPs at the border of the shared homozygous block (2 SNPs out and 1 SNP in) and to approximately 1 informative SNP/cM inside the block. A red bar represents the ancestral disease haplotype transmitted both by the mother 1 and the father 2, and the green and blue bars represent the wild-type haplotypes. Recombination events in individuals 3 and 8 delimit the region of interest between the external markers rs11768589 and rs2727744 (horizontal lines).</p>
+          </caption>
+          <graphic xlink:href="pone.0033412.g001"/>
+        </fig>
+        <p>The proband is the eldest of 6 sisters, 4 of them being affected with POF with primary amenorrhea. Their mother and father are first cousins, connected through at least 3 earlier consanguineous marriages. The non-affected mother and the affected maternal aunt were also born from a consanguineous marriage between first cousins, born from consanguineous marriages as well. The proband was diagnosed with POF at the age of 17 years because of amenorrhea, small and undeveloped breasts and streak gonads in ultrasound scan. The three other affected sisters were diagnosed with POF on the basis of a similar phenotype at ages between 18 and 20. All affected sisters presented with a normal uterus, but small ovaries with the appearance of &#x201C;streak gonads&#x201D; upon echography. Their height was within the normal range. Karyotype, <italic>FMR1</italic> premutation analysis and hormonal dosage were performed at the time of diagnosis (<xref ref-type="table" rid="pone-0033412-t001">Table 1</xref>). No increased sedimentation rate or any other abnormal test for the presence of auto antibodies could be found in any patient. At the age of 19, the youngest POF patient suffered from a simultaneous bilateral ovarian cancer. After surgery, histological analysis revealed a gonadoblastoma on the right ovary, and a complex dysgerminoma/embryonic carcinoma/choriocarcinoma in the tumor of the left ovary. In addition to these four cases, a maternal aunt (individual 12, <xref ref-type="fig" rid="pone-0033412-g001">Figure 1</xref>) was diagnosed with POF and primary amenorrhea (her DNA was not available for the genome-wide linkage analysis). The non-affected sisters of the proband had menarche at ages within the normal range, and conceived naturally 2 and 3 children, respectively.</p>
+        <table-wrap id="pone-0033412-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0033412.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Clinical and genetic data for the MO1 POF patients included in the study.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0033412-t001-1" xlink:href="pone.0033412.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Individual</td>
+                  <td align="left" rowspan="1" colspan="1">Type of amenorrhea</td>
+                  <td align="left" rowspan="1" colspan="1">FSH (mIU/ml)</td>
+                  <td align="left" rowspan="1" colspan="1">Estradiol (pg/ml)</td>
+                  <td align="left" rowspan="1" colspan="1">LH (mUI/ml)</td>
+                  <td align="left" rowspan="1" colspan="1">Karyotype</td>
+                  <td align="left" rowspan="1" colspan="1">FMR1 premutation</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MO1&#x2013;3</td>
+                  <td align="left" rowspan="1" colspan="1">primary</td>
+                  <td align="left" rowspan="1" colspan="1">63.1</td>
+                  <td align="left" rowspan="1" colspan="1">20.2</td>
+                  <td align="left" rowspan="1" colspan="1">19.9</td>
+                  <td align="left" rowspan="1" colspan="1">46,XX</td>
+                  <td align="left" rowspan="1" colspan="1">No</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MO1&#x2013;7</td>
+                  <td align="left" rowspan="1" colspan="1">primary</td>
+                  <td align="left" rowspan="1" colspan="1">51.4</td>
+                  <td align="left" rowspan="1" colspan="1">12.1</td>
+                  <td align="left" rowspan="1" colspan="1">21.1</td>
+                  <td align="left" rowspan="1" colspan="1">46,XX</td>
+                  <td align="left" rowspan="1" colspan="1">No</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MO1&#x2013;8</td>
+                  <td align="left" rowspan="1" colspan="1">primary</td>
+                  <td align="left" rowspan="1" colspan="1">45.7</td>
+                  <td align="left" rowspan="1" colspan="1">12.5</td>
+                  <td align="left" rowspan="1" colspan="1">18.0</td>
+                  <td align="left" rowspan="1" colspan="1">46,XX</td>
+                  <td align="left" rowspan="1" colspan="1">No</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MO1&#x2013;9</td>
+                  <td align="left" rowspan="1" colspan="1">primary</td>
+                  <td align="left" rowspan="1" colspan="1">55.3</td>
+                  <td align="left" rowspan="1" colspan="1">22.0</td>
+                  <td align="left" rowspan="1" colspan="1">18.0</td>
+                  <td align="left" rowspan="1" colspan="1">46,XX</td>
+                  <td align="left" rowspan="1" colspan="1">No</td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="left" rowspan="1">
+                    <bold>Reference values</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2013;21</td>
+                  <td align="left" rowspan="1" colspan="1">30&#x2013;190</td>
+                  <td align="left" rowspan="1" colspan="1">1.0&#x2013;14.7</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+      </sec>
+      <sec id="s2c">
+        <title>Microsatellites genotyping and SNP genotyping</title>
+        <p>Genotyping was performed on anonymous samples without knowledge of any personal identifiers at the Genotyping platform from the Institut de G&#xE9;nomique (Evry, France). After a genome-wide linkage analysis with 457 microsatellite markers (average autosomal marker spacing of 10 cM) that identified a significant linkage on chromosome 7, we performed a high-resolution genome-wide scan, using the Affymetrix GeneChip&#xAE; Human Mapping 250 K Nsp Array (Affymetrix Inc., Santa Clara, CA). On this array, bi-allelic markers are equally distributed across the genome with a median physical distance between SNPs of 4.8 kb, an average distance of 11.2 kb, and an average 0.30 of heterozygosity. The Affymetrix genome-wide genotyping was performed according to the standard manufacturer's protocol (GeneChip&#xAE; Mapping 250 K Assay Manual Rev. 3/96-Well Plate Protocol), using 250 ng of genomic DNA per sample. Washing and staining steps were performed with Affymetrix GeneChip&#xAE; Fluidics Station 450 and scanning step with the Affymetrix GeneChip&#xAE; Scanner 3000 7 G. Raw data were obtained with Affymetrix GeneChip&#xAE; Operating Software (GCOS). Data were extracted with Affymetrix GeneChip&#xAE; Genotyping Analysis Software (GTYPE) using BRLMM model as genotype calling method.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Linkage analysis and Homozygosity mapping</title>
+        <p>After classical filtering of SNP markers for genotyping quality, mendelian errors and verification of Hardy-Weinberg equilibrium, multipoint parametric linkage analysis was performed with Merlin under the assumption of recessive inheritance, with a disease allele frequency of 0.0001 and a penetrance of 0.99 <xref ref-type="bibr" rid="pone.0033412-Abecasis1">[26]</xref>. The haplotypes in the identified 7q21-22 region were reconstructed with Merlin and presented graphically with HaploPainter v.1.043 <xref ref-type="bibr" rid="pone.0033412-Thiele1">[27]</xref>. The homozygous regions were confirmed and displayed using the dedicated software KinSNP (<ext-link ext-link-type="uri" xlink:href="http://bioinfo.bgu.ac.il/bsu/software/KinSNP/">http://bioinfo.bgu.ac.il/bsu/software/KinSNP/</ext-link>) <xref ref-type="bibr" rid="pone.0033412-Amirel1">[28]</xref>. POF patients in the MO1 family were searched for runs of shared homozygosity (ROSHs) with a minimum length of 1 cM according to the deCode genetic map. The degree of tolerance for genotyping errors within ROSHs was adjusted such that heterozygous calls surrounded by 15 or more shared homozygous SNPs were ignored.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Sequencing of candidate genes</title>
+        <p>Candidate genes were amplified by PCR from genomic DNA of one affected POF patient and one non-affected sister (details of primers and PCR conditions are provided in <xref ref-type="supplementary-material" rid="pone.0033412.s001">Document S1</xref>). PCR products were sequenced by standard Sanger sequencing.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results and Discussion</title>
+      <sec id="s3a">
+        <title>Linkage analysis in a highly consanguineous POF family</title>
+        <p>The highly consanguineous MO1 family (<xref ref-type="fig" rid="pone-0033412-g001">Figure 1</xref>) includes 5 POF patients in two generations (familial and clinical details in <xref ref-type="sec" rid="s2">Material and Methods</xref> and <xref ref-type="table" rid="pone-0033412-t001">Table 1</xref>). Although it was not possible to retrieve further familial information to assess earlier consanguinity loops, the high degree of consanguinity in this family strongly suggested an autosomal recessive inheritance of the disease allele from a common ancestor. A first genome-wide linkage analysis with 457 microsatellite markers identified a 10.5 Mb-long region within 7q21-22 (maximum LOD-score (LOD<sub>max</sub>) of 3.8). A second whole-genome scan with a 250 K SNP array identified four chromosomal regions with significant linkage under a recessive model (LOD<sub>max</sub>&#x200A;=&#x200A;3.26, <xref ref-type="fig" rid="pone-0033412-g002">Figure 2</xref> and <xref ref-type="table" rid="pone-0033412-t002">Table 2</xref>). It confirmed the significant linkage for a 9.96 Mb region on 7q21.3-22.2. It identified also an additional 2.56 Mb-long linkage region in 7p21.1, and two narrow segments, each spanning less than 0.2 Mb, within a short region of 6.6 Mb in 13q14. These regions had not been detected by the first genome-wide scan, since they were entirely framed by the analyzed microsatellites.</p>
+        <fig id="pone-0033412-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0033412.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Whole genome linkage analysis for the MO1 family.</title>
+            <p>The multipoint parametric LOD-score is plotted against the physical location of markers along the genome. The chromosome number is indicated in the upper part of the graph. Genotype analysis was performed on the Affymetrix GeneChip&#xAE; Human Mapping 250 K <italic>Nsp</italic> Array (Affymetrix Inc., Santa Clara, CA). A significant LOD-score was obtained for two regions on chromosome 7. The apparent single peak on chromosome 13 encompasses two distinct very small peaks.</p>
+          </caption>
+          <graphic xlink:href="pone.0033412.g002"/>
+        </fig>
+        <table-wrap id="pone-0033412-t002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0033412.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Characteristics of significant LOD-score loci identified by genome-wide linkage in the MO1 family.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0033412-t002-2" xlink:href="pone.0033412.t002"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Chrom</td>
+                  <td colspan="2" align="left" rowspan="1">7</td>
+                  <td colspan="2" align="left" rowspan="1">7</td>
+                  <td colspan="2" align="left" rowspan="1">13</td>
+                  <td colspan="2" align="left" rowspan="1">13</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Cytoband</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">7p21.1</td>
+                  <td align="left" rowspan="1" colspan="1">7p15.3</td>
+                  <td align="left" rowspan="1" colspan="1">7q21.3</td>
+                  <td align="left" rowspan="1" colspan="1">7q22.2</td>
+                  <td colspan="2" align="left" rowspan="1">13q14.12</td>
+                  <td colspan="2" align="left" rowspan="1">13q14.3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>LOD max</bold>
+                  </td>
+                  <td colspan="2" align="left" rowspan="1">3.257</td>
+                  <td colspan="2" align="left" rowspan="1">3.257</td>
+                  <td colspan="2" align="left" rowspan="1">3.257</td>
+                  <td colspan="2" align="left" rowspan="1">3.257</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold># of SNPs</bold>
+                  </td>
+                  <td colspan="2" align="left" rowspan="1">297</td>
+                  <td colspan="2" align="left" rowspan="1">643</td>
+                  <td colspan="2" align="left" rowspan="1">25</td>
+                  <td colspan="2" align="left" rowspan="1">27</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Flanking SNP</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">rs13222101</td>
+                  <td align="left" rowspan="1" colspan="1">rs7806550</td>
+                  <td align="left" rowspan="1" colspan="1">rs11768589</td>
+                  <td align="left" rowspan="1" colspan="1">rs17152355</td>
+                  <td align="left" rowspan="1" colspan="1">rs4245330</td>
+                  <td align="left" rowspan="1" colspan="1">rs2248414</td>
+                  <td align="left" rowspan="1" colspan="1">rs536338</td>
+                  <td align="left" rowspan="1" colspan="1">rs797493</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Position (cM)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">31.654</td>
+                  <td align="left" rowspan="1" colspan="1">34.696</td>
+                  <td align="left" rowspan="1" colspan="1">106.189</td>
+                  <td align="left" rowspan="1" colspan="1">115.436</td>
+                  <td align="left" rowspan="1" colspan="1">47.21</td>
+                  <td align="left" rowspan="1" colspan="1">47.495</td>
+                  <td align="left" rowspan="1" colspan="1">53.166</td>
+                  <td align="left" rowspan="1" colspan="1">53.377</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Size (cM)</bold>
+                  </td>
+                  <td colspan="2" align="left" rowspan="1">3.042</td>
+                  <td colspan="2" align="left" rowspan="1">9.247</td>
+                  <td colspan="2" align="left" rowspan="1">0.285</td>
+                  <td colspan="2" align="left" rowspan="1">0.211</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Position (bp, in GRCh37)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">17723272</td>
+                  <td align="left" rowspan="1" colspan="1">20278642</td>
+                  <td align="left" rowspan="1" colspan="1">95615196</td>
+                  <td align="left" rowspan="1" colspan="1">105575202</td>
+                  <td align="left" rowspan="1" colspan="1">44661321</td>
+                  <td align="left" rowspan="1" colspan="1">44798197</td>
+                  <td align="left" rowspan="1" colspan="1">51103461</td>
+                  <td align="left" rowspan="1" colspan="1">51261023</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Size (Mb)</bold>
+                  </td>
+                  <td colspan="2" align="left" rowspan="1">2.56</td>
+                  <td colspan="2" align="left" rowspan="1">9.96</td>
+                  <td colspan="2" align="left" rowspan="1">0.14</td>
+                  <td colspan="2" align="left" rowspan="1">0.16</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Homozyg.</bold>
+                  </td>
+                  <td colspan="2" align="left" rowspan="1">YES</td>
+                  <td colspan="2" align="left" rowspan="1">YES</td>
+                  <td colspan="2" align="left" rowspan="1">NO</td>
+                  <td colspan="2" align="left" rowspan="1">NO</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold># of genes</bold>
+                  </td>
+                  <td colspan="2" align="left" rowspan="1">11+5 pseudogenes</td>
+                  <td colspan="2" align="left" rowspan="1">166+39 pseudogenes</td>
+                  <td colspan="2" align="left" rowspan="1">1 hypothetical</td>
+                  <td colspan="2" align="left" rowspan="1">1 (2 terminal exons)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Candidate Genes</bold>
+                  </td>
+                  <td colspan="2" align="left" rowspan="1"/>
+                  <td colspan="2" align="left" rowspan="1">SHFM1, DLX5, DLX6</td>
+                  <td colspan="2" align="left" rowspan="1"/>
+                  <td colspan="2" align="left" rowspan="1"/>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>The flanking SNPs are the first ones outside the LOD<sub>max</sub> peak, defined as having a LOD-score&lt;LOD<sub>max</sub>-2 or LOD-score&lt;LOD<sub>max</sub>-1. The Homozyg. line indicates whether the linkage peak was detected as a run of shared homozygosity by the KinSNP analysis.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Both regions on chromosome 7 are supported as candidate regions for the disease gene because they are detected as large runs of shared homozygosity by KinSNP (data not shown), and by a correct transmission of haplotypes, as reconstructed by Merlin. The four affected sisters shared a common disease haplotype, at the homozygous state because of the inheritance from a common ancestor through the paternal and maternal branches. Their non-affected sisters were either heterozygous (individual 6) or non-carrier (individual 10) for the disease haplotype (<xref ref-type="fig" rid="pone-0033412-g001">Figure 1</xref>). In addition, as the haplotypes confirmed that the affected sisters were not hemizygous for these regions, the mutation is not a large-scale deletion. Five larger ROSHs are detected by KinSNP, but in all these, the non-affected mothers and all the daughters shared the same haplotype at the homozygous state, which is incompatible with the transmission of the disease in the family. Therefore, the candidate region on the 7q21.3-22.2 is the largest homozygous stretch compatible with linkage.</p>
+        <p>The two peaks on chromosome 13 are not detected as ROSHs by KinSNP, due to the small size of the homozygous stretches. However, a visual inspection of the haplotypes in the KinSNP output confirmed that these peaks indeed contain a range of SNPs that are homozygous by descent in the four affected sisters, and heterozygous in the non-affected sisters and the non-affected mother (data not shown). Additional linkage analysis along 0.2, 0.4, 0.6, 0.8 and 1 cM grids on chromosome 13 showed that the positive peaks disappeared only with the setting of 1 cM. Thus, those peaks probably do not result from linkage disequilibrium and are likely to reflect identity-by-state homozygosity.</p>
+        <p>In addition, the SNP-based linkage analysis identified a near-significant region of 0.19 Mb on Xp22.33, that spans the boundary between the pseudo-autosomal region and the X specific region (LOD&#x200A;=&#x200A;2.94, <xref ref-type="fig" rid="pone-0033412-g002">figure 2</xref>). This peak is detected as a ROSH by KinSNP. However, the analysis of the haplotypes revealed that the non-affected mother, the healthy sisters, as well as the affected daughters, shared the same haplotype at the homozygous state for 15 of the 20 SNPs within the peak (data not shown). Therefore, it is highly unlikely that this locus contains the mutation responsible for the POF phenotype in this family.</p>
+      </sec>
+      <sec id="s3b">
+        <title>Sequencing of POF candidate genes in the MO1 family</title>
+        <p>In total, the two loci on chromosome 7 span 12.29 cM and 12.52 Mb, and contain 177 genes (details of positions, sizes and genes content for all peaks with a LOD-score above 3 are presented in <xref ref-type="table" rid="pone-0033412-t002">Table 2</xref>, and a list of all the genes located in these regions in <xref ref-type="supplementary-material" rid="pone.0033412.s002">Table S1</xref>).</p>
+        <p>We cannot exclude the smaller loci on chromosome 13 as possibly containing the mutation involved in this familial POF, however they do not contain any evident functional candidate gene, if any gene at all. The first locus on chromosome 13 could possibly contain one gene (C13orf44), but the corresponding RefSeq sequences were permanently suppressed from the Gene database because there is currently insufficient support for the transcript and the protein (GeneID 79024). The second locus on chromosome 13 contains only the 2 terminal exons of two transcripts of the DLEU1 gene, a long non-coding RNA gene with multiple splicing variants implicated as a tumor suppressor in B-cell chronic lymphocytic leukemia.</p>
+        <p>Similarly, the region on 7p21.1 does not contain any obvious functional candidate genes. <italic>TWIST1</italic> was formerly known as the BPES3 locus, because eyelid features of some patients with Saethre-Chotzen syndrome, due to mutations in <italic>TWIST1</italic>, were similar to those presented by patients with BPES. Nevertheless, this specific phenotype observed in those patients affected with Saethre-Chotzen syndrome was later recognized to be due to phenotypic variability. In addition, patients with Saethre-Chotzen syndrome do not present any ovarian defects. Therefore <italic>TWIST1</italic> cannot be considered as a POF candidate gene.</p>
+        <p>On the contrary, the region on 7q21.3-22.3 includes at least three POF functional candidate genes. <italic>DLX5</italic> and <italic>DLX6</italic> code for two closely linked homeobox transcription factors, involved in the control of steroidogenesis <xref ref-type="bibr" rid="pone.0033412-Nishida1">[29]</xref>. The allelic reduction of <italic>Dlx5</italic> and <italic>Dlx6</italic> in the mouse is associated with a POF-like phenotype, with an early reduction of fertility and a rapid and premature follicular depletion. This study also provided evidence supporting a reciprocal regulation between <italic>Dlx5</italic>, <italic>Dlx6</italic> and <italic>Foxl2</italic>, a transcription factor essential for ovarian development and function, also implicated in POF <xref ref-type="bibr" rid="pone.0033412-Caburet1">[30]</xref>, <xref ref-type="bibr" rid="pone.0033412-Jeong1">[31]</xref>, <xref ref-type="bibr" rid="pone.0033412-Bouhali1">[32]</xref>. Another potential candidate gene is <italic>SHFM1</italic>, located in close proximity of the <italic>DLX5/DLX6</italic> locus. Its nematode ortholog, <italic>dss-1</italic>, is functionally conserved during evolution and was shown to be required for oogenesis and normal female fertility in <italic>C. elegans</italic> (with no impact on gonad development or on male fertility) <xref ref-type="bibr" rid="pone.0033412-Pispa1">[33]</xref>. The murine <italic>Dss1</italic> is expressed in the early genital tubercle during fetal development, and in the early genital bud of the newborn mice <xref ref-type="bibr" rid="pone.0033412-Crackower1">[34]</xref>. Although these three genes are implicated in the etiology of the Split Hand/Split Foot Malformation Type I syndrome (SHFM1, MIM%183600) <xref ref-type="bibr" rid="pone.0033412-Scherer1">[35]</xref>, their possible function in the ovary prompted us to sequence them in the MO1 family. Sequencing of the coding, promoter and known enhancers regions of <italic>DLX5</italic> and <italic>DLX6</italic> did not show any DNA variants segregating with the disease. Likewise, we did not find any variants in the promoter and coding sequence of <italic>SHFM1</italic>.</p>
+      </sec>
+      <sec id="s3c">
+        <title>Conclusions</title>
+        <p>We have indentified two novel POF-associated loci on chromosome 7, that do not coincide with the regions identified by genome-wide linkage in the two previous studies of familial POF cases: the <italic>POF1B</italic> gene on the X chromosome, and a 15.8 Mb region in 5q14.1-q15 <xref ref-type="bibr" rid="pone.0033412-Lacombe1">[6]</xref>, <xref ref-type="bibr" rid="pone.0033412-Oldenburg1">[7]</xref>. In addition, these regions on chromosome 7 are not included and do not contain the CNVs that were detected as statistically different from controls in POF patients by Aboura and colleagues <xref ref-type="bibr" rid="pone.0033412-Aboura1">[36]</xref>. The identification of two other putative loci in our study highlights the important genetic heterogeneity of this disease.</p>
+        <p>The fact that the severe ovarian cancer affecting the youngest POF patient (individual 9) was bilateral and simultaneous strongly suggests a genetic origin. However, the association between POF and ovarian cancer is highly unusual and, to our knowledge, was never described before. Besides, a direct relation between POF and ovarian cancer is doubtful since only one POF-affected sister developed a cancer at a young age. Therefore it is more likely that the co-occurrence of these diseases in this patient could be related to the high familial consanguinity.</p>
+        <p>We could not find any sequence variant segregating with the disease in the coding and known regulatory sequences of <italic>DLX5/6</italic> and the coding sequence of <italic>SHFM1</italic>. Although we cannot exclude the existence of still unknown regulatory features, possibly affecting both <italic>SHFM1</italic> and <italic>DLX5/DLX6</italic>, which could harbor the causal mutation for POF in our family, the most likely hypothesis is that the mutation is present in the coding sequence of another gene located in the 7p or the 7q regions.</p>
+        <p>Among those genes, other possible candidates include <italic>SMURF1</italic>, the <italic>CYP3</italic> gene family and <italic>VGF</italic>. <italic>SMURF1</italic> encodes an E3 ubiquitin ligase specific of regulatory SMAD proteins, that was shown in rat and human granulosa cell lines to ubiquitinylate R-Smad 1 and 5, two of the regulatory Smads activated by oocyte-secreted BMP15, a known POF gene <xref ref-type="bibr" rid="pone.0033412-Huang1">[37]</xref>. The <italic>CYP3</italic> gene cluster in 7q includes four genes, <italic>CYP3A43</italic>, <italic>CYP3A4</italic>, <italic>CYP3A7</italic> and <italic>CYP3A5</italic>, encoding cytochrome P450 enzymes, known to be implicated in drug metabolism and synthesis of cholesterol and steroids. Although some of the CYP3A genes appear to have a restricted expression in the liver and to be mainly responsible for drug detoxification, we cannot exclude a role in steroid synthesis in the ovary <xref ref-type="bibr" rid="pone.0033412-Monostory1">[38]</xref>. <italic>VGF</italic> encodes a 68-kDa precursor of multiple bioactive peptides with diverse neuroendocrine functions, expressed abundantly in the brain, and in peripheral endocrine tissues including the pituitary gland. In addition to a role in the regulation of energy homeostasis, <italic>VGF</italic> could also regulate reproduction, since homozygous Vgf-null mice are infertile, presenting a delayed sexual maturation, incomplete mammary development and ovaries with only primary and atretic follicles, apparently due to an abnormal pitituary gonadotropin content <xref ref-type="bibr" rid="pone.0033412-Hahm1">[39]</xref>.</p>
+        <p>As the two loci identified on chromosome 7 contain too many genes for a direct sequencing approach in search of the causal mutation, we plan to proceed to an exome-sequencing in the MO1 family. Hopefully, this study will enable us to identify the mutation implicated in Premature Ovarian Failure in this family and might lead to the identification of one or several genes involved in the control of ovarian function and development.</p>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="s4">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0033412.s001">
+        <label>Document S1</label>
+        <caption>
+          <p>
+            <bold>Primers and conditions of PCR used for sequencing </bold>
+            <bold>
+              <italic>SHFM1, DLX5</italic>
+            </bold>
+            <bold> and </bold>
+            <bold>
+              <italic>DLX6</italic>
+            </bold>
+            <bold>.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+        <media xlink:href="pone.0033412.s001.doc" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0033412.s002">
+        <label>Table S1</label>
+        <caption>
+          <p><bold>List of genes present in the loci identified on chromosomes 7 and 13 by genome-wide linkage in the MO1 POF family.</bold> The lists were established using the NCBI Genome Viewer, using the rs number of the border SNPs, as given in <xref ref-type="table" rid="pone-0033412-t001">Table 1</xref>. Pseudogenes are written in grey.</p>
+          <p>(XLS)</p>
+        </caption>
+        <media xlink:href="pone.0033412.s002.xls" mimetype="application" mime-subtype="vnd.ms-excel">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We are indebted to Jacques S. Beckmann for his great help in the analysis of the first genome scan, and his very helpful comments and suggestions all along the project. We thank Simon Heath (Institut de G&#xE9;nomique, CEA, Evry, France) for the initial analysis of the genotyping data, Robert Ivanek (Friedrich Miescher Institute for Biomedical Research, Basel, Switzerland) for his help with data file preparation, Besma Lakhal (CHU Farhat-Hached, Sousse, Tunisia) for helping with the sequencing of the candidate genes, and Inbar Plaschkes (National Institute for Biotechnology in the Negev, Ben-Gurion University of the Negev, Beer-Sheva, Israel) for her help with KinSNP analysis. In addition, we express our thanks to the affected patients and their relatives for participating in our study and for their keen interest in our results.</p>
+    </ack>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding: </bold>SC, RAV and MF are supported by the University Paris Diderot-Paris7 (<ext-link ext-link-type="uri" xlink:href="http://www.univ-paris-diderot.fr/">www.univ-paris-diderot.fr/</ext-link>). SC and RAV are supported by the Ligue contre le Cancer (<ext-link ext-link-type="uri" xlink:href="http://www.ligue-cancer.net">www.ligue-cancer.net</ext-link>), the Foundation pour la Recherche M&#xE9;dicale (FRM, <ext-link ext-link-type="uri" xlink:href="http://www.frm.org">www.frm.org</ext-link>), and the Centre National de la Recherche Scientifique (CNRS, <ext-link ext-link-type="uri" xlink:href="http://www.cnrs.fr">www.cnrs.fr</ext-link>). This project was also supported by the GIS-Institut des Maladies Rares (<ext-link ext-link-type="uri" xlink:href="http://www.institutmaladiesrares.net">www.institutmaladiesrares.net</ext-link>). KB is a recipient of a doctoral fellowship from the French Ministry of Research. AD was supported by the Institut Emilie du Chatelet (<ext-link ext-link-type="uri" xlink:href="http://www.institutemilieduchatelet.org">www.institutemilieduchatelet.org</ext-link>). This research was partially supported by the EU Consortium IDEAL (HEALTH-F2-2011-259679) and by the Direction de la Recherche Clinique, Assistance Publique-H&#xF4;pitaux de Paris (PHRC AOR 016). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0033412-Nelson1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nelson</surname><given-names>LM</given-names></name><name><surname>Covington</surname><given-names>SN</given-names></name><name><surname>Rebar</surname><given-names>RW</given-names></name></person-group>
+<year>2005</year>
+<article-title>An update: spontaneous premature ovarian failure is not an early menopause.</article-title>
+<source>Fertil Steril</source>
+<volume>83</volume>
+<fpage>1327</fpage>
+<lpage>1332</lpage>
+<pub-id pub-id-type="pmid">15866564</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Coulam1">
+        <label>2</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Coulam</surname><given-names>CB</given-names></name><name><surname>Bustillo</surname><given-names>M</given-names></name><name><surname>Schulman</surname><given-names>JD</given-names></name></person-group>
+<year>1986</year>
+<article-title>Empty follicle syndrome.</article-title>
+<source>Fertil Steril</source>
+<volume>46</volume>
+<fpage>1153</fpage>
+<lpage>1155</lpage>
+<pub-id pub-id-type="pmid">3781029</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Goswami1">
+        <label>3</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Goswami</surname><given-names>D</given-names></name><name><surname>Conway</surname><given-names>GS</given-names></name></person-group>
+<year>2005</year>
+<article-title>Premature ovarian failure.</article-title>
+<source>Hum Reprod Update</source>
+<volume>11</volume>
+<fpage>391</fpage>
+<lpage>410</lpage>
+<pub-id pub-id-type="pmid">15919682</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-ChristinMaitre1">
+        <label>4</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Christin-Maitre</surname><given-names>S</given-names></name><name><surname>Pasquier</surname><given-names>M</given-names></name><name><surname>Donadille</surname><given-names>B</given-names></name><name><surname>Bouchard</surname><given-names>P</given-names></name></person-group>
+<year>2006</year>
+<article-title>[Premature ovarian failure].</article-title>
+<source>Ann Endocrinol (Paris)</source>
+<volume>67</volume>
+<fpage>557</fpage>
+<lpage>566</lpage>
+<pub-id pub-id-type="pmid">17194965</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Nelson2">
+        <label>5</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nelson</surname><given-names>LM</given-names></name></person-group>
+<year>2009</year>
+<article-title>Clinical practice. Primary ovarian insufficiency.</article-title>
+<source>N Engl J Med</source>
+<volume>360</volume>
+<fpage>606</fpage>
+<lpage>614</lpage>
+<pub-id pub-id-type="pmid">19196677</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Lacombe1">
+        <label>6</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lacombe</surname><given-names>A</given-names></name><name><surname>Lee</surname><given-names>H</given-names></name><name><surname>Zahed</surname><given-names>L</given-names></name><name><surname>Choucair</surname><given-names>M</given-names></name><name><surname>Muller</surname><given-names>JM</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Disruption of POF1B binding to nonmuscle actin filaments is associated with premature ovarian failure.</article-title>
+<source>Am J Hum Genet</source>
+<volume>79</volume>
+<fpage>113</fpage>
+<lpage>119</lpage>
+<pub-id pub-id-type="pmid">16773570</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Oldenburg1">
+        <label>7</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Oldenburg</surname><given-names>RA</given-names></name><name><surname>van Dooren</surname><given-names>MF</given-names></name><name><surname>de Graaf</surname><given-names>B</given-names></name><name><surname>Simons</surname><given-names>E</given-names></name><name><surname>Govaerts</surname><given-names>L</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>A genome-wide linkage scan in a Dutch family identifies a premature ovarian failure susceptibility locus.</article-title>
+<source>Hum Reprod</source>
+<volume>23</volume>
+<fpage>2835</fpage>
+<lpage>2841</lpage>
+<pub-id pub-id-type="pmid">18689850</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-vanKasteren1">
+        <label>8</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>van Kasteren</surname><given-names>YM</given-names></name><name><surname>Schoemaker</surname><given-names>J</given-names></name></person-group>
+<year>1999</year>
+<article-title>Premature ovarian failure: a systematic review on therapeutic interventions to restore ovarian function and achieve pregnancy.</article-title>
+<source>Hum Reprod Update</source>
+<volume>5</volume>
+<fpage>483</fpage>
+<lpage>492</lpage>
+<pub-id pub-id-type="pmid">10582785</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Vegetti1">
+        <label>9</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Vegetti</surname><given-names>W</given-names></name><name><surname>Marozzi</surname><given-names>A</given-names></name><name><surname>Manfredini</surname><given-names>E</given-names></name><name><surname>Testa</surname><given-names>G</given-names></name><name><surname>Alagna</surname><given-names>F</given-names></name><etal/></person-group>
+<year>2000</year>
+<article-title>Premature ovarian failure.</article-title>
+<source>Mol Cell Endocrinol</source>
+<volume>161</volume>
+<fpage>53</fpage>
+<lpage>57</lpage>
+<pub-id pub-id-type="pmid">10773392</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Sybert1">
+        <label>10</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sybert</surname><given-names>VP</given-names></name><name><surname>McCauley</surname><given-names>E</given-names></name></person-group>
+<year>2004</year>
+<article-title>Turner's syndrome.</article-title>
+<source>N Engl J Med</source>
+<volume>351</volume>
+<fpage>1227</fpage>
+<lpage>1238</lpage>
+<pub-id pub-id-type="pmid">15371580</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-DiPasquale1">
+        <label>11</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Di Pasquale</surname><given-names>E</given-names></name><name><surname>Beck-Peccoz</surname><given-names>P</given-names></name><name><surname>Persani</surname><given-names>L</given-names></name></person-group>
+<year>2004</year>
+<article-title>Hypergonadotropic ovarian failure associated with an inherited mutation of human bone morphogenetic protein-15 (BMP15) gene.</article-title>
+<source>Am J Hum Genet</source>
+<volume>75</volume>
+<fpage>106</fpage>
+<lpage>111</lpage>
+<pub-id pub-id-type="pmid">15136966</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Dixit1">
+        <label>12</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dixit</surname><given-names>H</given-names></name><name><surname>Rao</surname><given-names>LK</given-names></name><name><surname>Padmalatha</surname><given-names>VV</given-names></name><name><surname>Kanakavalli</surname><given-names>M</given-names></name><name><surname>Deenadayal</surname><given-names>M</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Missense mutations in the BMP15 gene are associated with ovarian failure.</article-title>
+<source>Hum Genet</source>
+<volume>119</volume>
+<fpage>408</fpage>
+<lpage>415</lpage>
+<pub-id pub-id-type="pmid">16508750</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Laissue1">
+        <label>13</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Laissue</surname><given-names>P</given-names></name><name><surname>Christin-Maitre</surname><given-names>S</given-names></name><name><surname>Touraine</surname><given-names>P</given-names></name><name><surname>Kuttenn</surname><given-names>F</given-names></name><name><surname>Ritvos</surname><given-names>O</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Mutations and sequence variants in GDF9 and BMP15 in patients with premature ovarian failure.</article-title>
+<source>Eur J Endocrinol</source>
+<volume>154</volume>
+<fpage>739</fpage>
+<lpage>744</lpage>
+<pub-id pub-id-type="pmid">16645022</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Barlow1">
+        <label>14</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Barlow</surname><given-names>C</given-names></name><name><surname>Hirotsune</surname><given-names>S</given-names></name><name><surname>Paylor</surname><given-names>R</given-names></name><name><surname>Liyanage</surname><given-names>M</given-names></name><name><surname>Eckhaus</surname><given-names>M</given-names></name><etal/></person-group>
+<year>1996</year>
+<article-title>Atm-deficient mice: a paradigm of ataxia telangiectasia.</article-title>
+<source>Cell</source>
+<volume>86</volume>
+<fpage>159</fpage>
+<lpage>171</lpage>
+<pub-id pub-id-type="pmid">8689683</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Barlow2">
+        <label>15</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Barlow</surname><given-names>DH</given-names></name></person-group>
+<year>1996</year>
+<article-title>Premature ovarian failure.</article-title>
+<source>Baillieres Clin Obstet Gynaecol</source>
+<volume>10</volume>
+<fpage>361</fpage>
+<lpage>384</lpage>
+<pub-id pub-id-type="pmid">8931900</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Aittomaki1">
+        <label>16</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Aittomaki</surname><given-names>K</given-names></name><name><surname>Lucena</surname><given-names>JL</given-names></name><name><surname>Pakarinen</surname><given-names>P</given-names></name><name><surname>Sistonen</surname><given-names>P</given-names></name><name><surname>Tapanainen</surname><given-names>J</given-names></name><etal/></person-group>
+<year>1995</year>
+<article-title>Mutation in the follicle-stimulating hormone receptor gene causes hereditary hypergonadotropic ovarian failure.</article-title>
+<source>Cell</source>
+<volume>82</volume>
+<fpage>959</fpage>
+<lpage>968</lpage>
+<pub-id pub-id-type="pmid">7553856</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Shimizu1">
+        <label>17</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shimizu</surname><given-names>T</given-names></name><name><surname>Miyahayashi</surname><given-names>Y</given-names></name><name><surname>Yokoo</surname><given-names>M</given-names></name><name><surname>Hoshino</surname><given-names>Y</given-names></name><name><surname>Sasada</surname><given-names>H</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>Molecular cloning of porcine growth differentiation factor 9 (GDF-9) cDNA and its role in early folliculogenesis: direct ovarian injection of GDF-9 gene fragments promotes early folliculogenesis.</article-title>
+<source>Reproduction</source>
+<volume>128</volume>
+<fpage>537</fpage>
+<lpage>543</lpage>
+<pub-id pub-id-type="pmid">15509699</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Qin1">
+        <label>18</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Qin</surname><given-names>Y</given-names></name><name><surname>Choi</surname><given-names>Y</given-names></name><name><surname>Zhao</surname><given-names>H</given-names></name><name><surname>Simpson</surname><given-names>JL</given-names></name><name><surname>Chen</surname><given-names>ZJ</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>NOBOX homeobox mutation causes premature ovarian failure.</article-title>
+<source>Am J Hum Genet</source>
+<volume>81</volume>
+<fpage>576</fpage>
+<lpage>581</lpage>
+<pub-id pub-id-type="pmid">17701902</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Qin2">
+        <label>19</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Qin</surname><given-names>Y</given-names></name><name><surname>Shi</surname><given-names>Y</given-names></name><name><surname>Zhao</surname><given-names>Y</given-names></name><name><surname>Carson</surname><given-names>SA</given-names></name><name><surname>Simpson</surname><given-names>JL</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Mutation analysis of NOBOX homeodomain in Chinese women with premature ovarian failure.</article-title>
+<source>Fertil Steril</source>
+<volume>91</volume>
+<fpage>1507</fpage>
+<lpage>1509</lpage>
+<pub-id pub-id-type="pmid">18930203</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-ChristinMaitre2">
+        <label>20</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Christin-Maitre</surname><given-names>S</given-names></name><name><surname>Vasseur</surname><given-names>C</given-names></name><name><surname>Portnoi</surname><given-names>MF</given-names></name><name><surname>Bouchard</surname><given-names>P</given-names></name></person-group>
+<year>1998</year>
+<article-title>Genes and premature ovarian failure.</article-title>
+<source>Mol Cell Endocrinol</source>
+<volume>145</volume>
+<fpage>75</fpage>
+<lpage>80</lpage>
+<pub-id pub-id-type="pmid">9922102</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Kaku1">
+        <label>21</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kaku</surname><given-names>U</given-names></name><name><surname>Kameyama</surname><given-names>K</given-names></name><name><surname>Izawa</surname><given-names>M</given-names></name><name><surname>Yamada</surname><given-names>M</given-names></name><name><surname>Miyamoto</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>Ovarian histological findings in an adult patient with the steroidogenic acute regulatory protein (StAR) deficiency reveal the impairment of steroidogenesis by lipoid deposition.</article-title>
+<source>Endocr J</source>
+<volume>55</volume>
+<fpage>1043</fpage>
+<lpage>1049</lpage>
+<pub-id pub-id-type="pmid">18724044</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Crisponi1">
+        <label>22</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Crisponi</surname><given-names>L</given-names></name><name><surname>Deiana</surname><given-names>M</given-names></name><name><surname>Loi</surname><given-names>A</given-names></name><name><surname>Chiappe</surname><given-names>F</given-names></name><name><surname>Uda</surname><given-names>M</given-names></name><etal/></person-group>
+<year>2001</year>
+<article-title>The putative forkhead transcription factor FOXL2 is mutated in blepharophimosis/ptosis/epicanthus inversus syndrome.</article-title>
+<source>Nat Genet</source>
+<volume>27</volume>
+<fpage>159</fpage>
+<lpage>166</lpage>
+<pub-id pub-id-type="pmid">11175783</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Harris1">
+        <label>23</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Harris</surname><given-names>SE</given-names></name><name><surname>Chand</surname><given-names>AL</given-names></name><name><surname>Winship</surname><given-names>IM</given-names></name><name><surname>Gersak</surname><given-names>K</given-names></name><name><surname>Aittomaki</surname><given-names>K</given-names></name><etal/></person-group>
+<year>2002</year>
+<article-title>Identification of novel mutations in FOXL2 associated with premature ovarian failure.</article-title>
+<source>Mol Hum Reprod</source>
+<volume>8</volume>
+<fpage>729</fpage>
+<lpage>733</lpage>
+<pub-id pub-id-type="pmid">12149404</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Laissue2">
+        <label>24</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Laissue</surname><given-names>P</given-names></name><name><surname>Lakhal</surname><given-names>B</given-names></name><name><surname>Benayoun</surname><given-names>BA</given-names></name><name><surname>Dipietromaria</surname><given-names>A</given-names></name><name><surname>Braham</surname><given-names>R</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Functional evidence implicating FOXL2 in non-syndromic premature ovarian failure and in the regulation of the transcription factor OSR2.</article-title>
+<source>J Med Genet</source>
+<volume>46</volume>
+<fpage>455</fpage>
+<lpage>457</lpage>
+<pub-id pub-id-type="pmid">19429596</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Gersak1">
+        <label>25</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gersak</surname><given-names>K</given-names></name><name><surname>Harris</surname><given-names>SE</given-names></name><name><surname>Smale</surname><given-names>WJ</given-names></name><name><surname>Shelling</surname><given-names>AN</given-names></name></person-group>
+<year>2004</year>
+<article-title>A novel 30 bp deletion in the FOXL2 gene in a phenotypically normal woman with primary amenorrhoea: case report.</article-title>
+<source>Hum Reprod</source>
+<volume>19</volume>
+<fpage>2767</fpage>
+<lpage>2770</lpage>
+<pub-id pub-id-type="pmid">15459170</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Abecasis1">
+        <label>26</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Abecasis</surname><given-names>GR</given-names></name><name><surname>Cherny</surname><given-names>SS</given-names></name><name><surname>Cookson</surname><given-names>WO</given-names></name><name><surname>Cardon</surname><given-names>LR</given-names></name></person-group>
+<year>2002</year>
+<article-title>Merlin&#x2013;rapid analysis of dense genetic maps using sparse gene flow trees.</article-title>
+<source>Nat Genet</source>
+<volume>30</volume>
+<fpage>97</fpage>
+<lpage>101</lpage>
+<pub-id pub-id-type="pmid">11731797</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Thiele1">
+        <label>27</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Thiele</surname><given-names>H</given-names></name><name><surname>Nurnberg</surname><given-names>P</given-names></name></person-group>
+<year>2005</year>
+<article-title>HaploPainter: a tool for drawing pedigrees with complex haplotypes.</article-title>
+<source>Bioinformatics</source>
+<volume>21</volume>
+<fpage>1730</fpage>
+<lpage>1732</lpage>
+<pub-id pub-id-type="pmid">15377505</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Amirel1">
+        <label>28</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Amir el</surname><given-names>AD</given-names></name><name><surname>Bartal</surname><given-names>O</given-names></name><name><surname>Morad</surname><given-names>E</given-names></name><name><surname>Nagar</surname><given-names>T</given-names></name><name><surname>Sheynin</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>KinSNP software for homozygosity mapping of disease genes using SNP microarrays.</article-title>
+<source>Hum Genomics</source>
+<volume>4</volume>
+<fpage>394</fpage>
+<lpage>401</lpage>
+<pub-id pub-id-type="pmid">20846928</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Nishida1">
+        <label>29</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nishida</surname><given-names>H</given-names></name><name><surname>Miyagawa</surname><given-names>S</given-names></name><name><surname>Vieux-Rochas</surname><given-names>M</given-names></name><name><surname>Morini</surname><given-names>M</given-names></name><name><surname>Ogino</surname><given-names>Y</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>Positive regulation of steroidogenic acute regulatory protein gene expression through the interaction between Dlx and GATA-4 for testicular steroidogenesis.</article-title>
+<source>Endocrinology</source>
+<volume>149</volume>
+<fpage>2090</fpage>
+<lpage>2097</lpage>
+<pub-id pub-id-type="pmid">18276760</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Caburet1">
+        <label>30</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Caburet</surname><given-names>S</given-names></name><name><surname>Georges</surname><given-names>A</given-names></name><name><surname>L'H&#xF4;te</surname><given-names>D</given-names></name><name><surname>Todeschini</surname><given-names>AL</given-names></name><name><surname>Benayoun</surname><given-names>BA</given-names></name><etal/></person-group>
+<year>2011</year>
+<article-title>The transcription factor FOXL2: at the crossroads of ovarian physiology and pathology.</article-title>
+<source>Molecular and Cellular Endocrinology</source>
+</element-citation>
+      </ref>
+      <ref id="pone.0033412-Jeong1">
+        <label>31</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jeong</surname><given-names>J</given-names></name><name><surname>Li</surname><given-names>X</given-names></name><name><surname>McEvilly</surname><given-names>RJ</given-names></name><name><surname>Rosenfeld</surname><given-names>MG</given-names></name><name><surname>Lufkin</surname><given-names>T</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>Dlx genes pattern mammalian jaw primordium by regulating both lower jaw-specific and upper jaw-specific genetic programs.</article-title>
+<source>Development</source>
+<volume>135</volume>
+<fpage>2905</fpage>
+<lpage>2916</lpage>
+<pub-id pub-id-type="pmid">18697905</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Bouhali1">
+        <label>32</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bouhali</surname><given-names>K</given-names></name><name><surname>Dipietromaria</surname><given-names>A</given-names></name><name><surname>Fontaine</surname><given-names>A</given-names></name><name><surname>Caburet</surname><given-names>S</given-names></name><name><surname>Barbieri</surname><given-names>O</given-names></name><etal/></person-group>
+<year>2011</year>
+<article-title>Allelic reduction of Dlx5 and Dlx6 results in early follicular depletion: a new mouse model of primary ovarian insufficiency.</article-title>
+<source>Hum Mol Genet</source>
+<volume>20</volume>
+<fpage>2642</fpage>
+<lpage>2650</lpage>
+<pub-id pub-id-type="pmid">21505076</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Pispa1">
+        <label>33</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pispa</surname><given-names>J</given-names></name><name><surname>Palmen</surname><given-names>S</given-names></name><name><surname>Holmberg</surname><given-names>CI</given-names></name><name><surname>Jantti</surname><given-names>J</given-names></name></person-group>
+<year>2008</year>
+<article-title>C. elegans dss-1 is functionally conserved and required for oogenesis and larval growth.</article-title>
+<source>BMC Dev Biol</source>
+<volume>8</volume>
+<fpage>51</fpage>
+<pub-id pub-id-type="pmid">18471277</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Crackower1">
+        <label>34</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Crackower</surname><given-names>MA</given-names></name><name><surname>Scherer</surname><given-names>SW</given-names></name><name><surname>Rommens</surname><given-names>JM</given-names></name><name><surname>Hui</surname><given-names>CC</given-names></name><name><surname>Poorkaj</surname><given-names>P</given-names></name><etal/></person-group>
+<year>1996</year>
+<article-title>Characterization of the split hand/split foot malformation locus SHFM1 at 7q21.3-q22.1 and analysis of a candidate gene for its expression during limb development.</article-title>
+<source>Hum Mol Genet</source>
+<volume>5</volume>
+<fpage>571</fpage>
+<lpage>579</lpage>
+<pub-id pub-id-type="pmid">8733122</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Scherer1">
+        <label>35</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Scherer</surname><given-names>SW</given-names></name><name><surname>Poorkaj</surname><given-names>P</given-names></name><name><surname>Massa</surname><given-names>H</given-names></name><name><surname>Soder</surname><given-names>S</given-names></name><name><surname>Allen</surname><given-names>T</given-names></name><etal/></person-group>
+<year>1994</year>
+<article-title>Physical mapping of the split hand/split foot locus on chromosome 7 and implication in syndromic ectrodactyly.</article-title>
+<source>Hum Mol Genet</source>
+<volume>3</volume>
+<fpage>1345</fpage>
+<lpage>1354</lpage>
+<pub-id pub-id-type="pmid">7987313</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Aboura1">
+        <label>36</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Aboura</surname><given-names>A</given-names></name><name><surname>Dupas</surname><given-names>C</given-names></name><name><surname>Tachdjian</surname><given-names>G</given-names></name><name><surname>Portnoi</surname><given-names>MF</given-names></name><name><surname>Bourcigaux</surname><given-names>N</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Array comparative genomic hybridization profiling analysis reveals deoxyribonucleic acid copy number variations associated with premature ovarian failure.</article-title>
+<source>J Clin Endocrinol Metab</source>
+<volume>94</volume>
+<fpage>4540</fpage>
+<lpage>4546</lpage>
+<pub-id pub-id-type="pmid">19837940</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Huang1">
+        <label>37</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Huang</surname><given-names>C</given-names></name></person-group>
+<year>2010</year>
+<article-title>Roles of E3 ubiquitin ligases in cell adhesion and migration.</article-title>
+<source>Cell Adh Migr</source>
+<volume>4</volume>
+<fpage>10</fpage>
+<lpage>8</lpage>
+<pub-id pub-id-type="pmid">20009572</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Monostory1">
+        <label>38</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Monostory</surname><given-names>K</given-names></name><name><surname>Dvorak</surname><given-names>Z</given-names></name></person-group>
+<year>2011</year>
+<article-title>Steroid regulation of drug-metabolizing cytochromes P450.</article-title>
+<source>Curr Drug Metab</source>
+<volume>12</volume>
+<fpage>154</fpage>
+<lpage>72</lpage>
+<pub-id pub-id-type="pmid">21395541</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0033412-Hahm1">
+        <label>39</label>
+        <element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hahm</surname><given-names>S</given-names></name><name><surname>Mizuno</surname><given-names>TM</given-names></name><name><surname>Wu</surname><given-names>TJ</given-names></name><name><surname>Wisor</surname><given-names>JP</given-names></name><name><surname>Priest</surname><given-names>CA</given-names></name><etal/></person-group>
+<year>1999</year>
+<article-title>Targeted deletion of the Vgf gene indicates that the encoded secretory peptide precursor plays a novel role in the regulation of energy balance.</article-title>
+<source>Neuron</source>
+<volume>23</volume>
+<fpage>537</fpage>
+<lpage>48</lpage>
+<pub-id pub-id-type="pmid">10433265</pub-id></element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

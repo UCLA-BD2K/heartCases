@@ -1,0 +1,2630 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Med Genomics</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Med Genomics</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Medical Genomics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1755-8794</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24405831</article-id>
+      <article-id pub-id-type="pmc">3896667</article-id>
+      <article-id pub-id-type="publisher-id">1755-8794-7-2</article-id>
+      <article-id pub-id-type="doi">10.1186/1755-8794-7-2</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Whole-genome sequencing of matched primary and metastatic hepatocellular carcinomas</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes" id="A1">
+          <name>
+            <surname>Ouyang</surname>
+            <given-names>Limei</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>ouyanglimei@genomics.cn</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A2">
+          <name>
+            <surname>Lee</surname>
+            <given-names>Jeeyun</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>jyunlee@skku.edu</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A3">
+          <name>
+            <surname>Park</surname>
+            <given-names>Cheol-Keun</given-names>
+          </name>
+          <xref ref-type="aff" rid="I3">3</xref>
+          <email>ckpark@skku.edu</email>
+        </contrib>
+        <contrib contrib-type="author" id="A4">
+          <name>
+            <surname>Mao</surname>
+            <given-names>Mao</given-names>
+          </name>
+          <xref ref-type="aff" rid="I4">4</xref>
+          <email>mao_m@yahoo.com</email>
+        </contrib>
+        <contrib contrib-type="author" id="A5">
+          <name>
+            <surname>Shi</surname>
+            <given-names>Yujian</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>shiyujian2@genomics.cn</email>
+        </contrib>
+        <contrib contrib-type="author" id="A6">
+          <name>
+            <surname>Gong</surname>
+            <given-names>Zhuolin</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>gongzhuolin@genomics.cn</email>
+        </contrib>
+        <contrib contrib-type="author" id="A7">
+          <name>
+            <surname>Zheng</surname>
+            <given-names>Hancheng</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>zhenghch@genomics.cn</email>
+        </contrib>
+        <contrib contrib-type="author" id="A8">
+          <name>
+            <surname>Li</surname>
+            <given-names>Yingrui</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>liyr@genomics.cn</email>
+        </contrib>
+        <contrib contrib-type="author" id="A9">
+          <name>
+            <surname>Zhao</surname>
+            <given-names>Yonggang</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>zhaoyonggang@genomics.cn</email>
+        </contrib>
+        <contrib contrib-type="author" id="A10">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Guangbiao</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>wanggb@genomics.cn</email>
+        </contrib>
+        <contrib contrib-type="author" id="A11">
+          <name>
+            <surname>Fu</surname>
+            <given-names>Huiling</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>fuhuiling@genomics.cn</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes" id="A12">
+          <name>
+            <surname>Kim</surname>
+            <given-names>Jhingook</given-names>
+          </name>
+          <xref ref-type="aff" rid="I5">5</xref>
+          <email>jkimsmc@skku.edu</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes" id="A13">
+          <name>
+            <surname>Lim</surname>
+            <given-names>Ho Yeong</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>hoylim@skku.edu</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>BGI-Shenzhen, Beishan Industrial Zone, Beishan Road, Shenzhen, Yantian 518083, People&#x2019;s Republic of China</aff>
+      <aff id="I2"><label>2</label>Division of Hematology-Oncology, Department of Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine, 50 Irwon-dong, Gangnam-gu, Seoul 135-710, Korea</aff>
+      <aff id="I3"><label>3</label>Department of Pathology, Samsung Medical Center, Sungkyunkwan University School of Medicine, Seoul 135-710, Korea</aff>
+      <aff id="I4"><label>4</label>Oncology Research Unit, Pfizer Inc., San Diego CA 92121, USA</aff>
+      <aff id="I5"><label>5</label>Department of Thoracic and Cardiovascular Surgery, Samsung Medical Center, Sungkyunkwan University School of Medicine, 50 Irwon-dong, Gangnam-gu, Seoul 135-710, Korea</aff>
+      <pub-date pub-type="collection">
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>9</day>
+        <month>1</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>7</volume>
+      <fpage>2</fpage>
+      <lpage>2</lpage>
+      <history>
+        <date date-type="received">
+          <day>11</day>
+          <month>7</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>27</day>
+          <month>12</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2014 Ouyang et al.; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2014</copyright-year>
+        <copyright-holder>Ouyang et al.; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1755-8794/7/2"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>To gain biological insights into lung metastases from hepatocellular carcinoma (HCC), we compared the whole-genome sequencing profiles of primary HCC and paired lung metastases.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>We used whole-genome sequencing at 33X-43X coverage to profile somatic mutations in primary HCC (HBV+) and metachronous lung metastases (&gt; 2 years interval).</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>In total, 5,027-13,961 and 5,275-12,624 somatic single-nucleotide variants (SNVs) were detected in primary HCC and lung metastases, respectively. Generally, 38.88-78.49% of SNVs detected in metastases were present in primary tumors. We identified 65&#x2013;221 structural variations (SVs) in primary tumors and 60&#x2013;232 SVs in metastases. Comparison of these SVs shows very similar and largely overlapped mutated segments between primary and metastatic tumors. Copy number alterations between primary and metastatic pairs were also found to be closely related. Together, these preservations in genomic profiles from liver primary tumors to metachronous lung metastases indicate that the genomic features during tumorigenesis may be retained during metastasis.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>We found very similar genomic alterations between primary and metastatic tumors, with a few mutations found specifically in lung metastases, which may explain the clinical observation that both primary and metastatic tumors are usually sensitive or resistant to the same systemic treatments.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>Cancer</kwd>
+        <kwd>Hepatocellular carcinomas (HCC)</kwd>
+        <kwd>Lung metastasis</kwd>
+        <kwd>Somatic</kwd>
+        <kwd>Next-generation sequencing (NGS)</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>Hepatocellular carcinoma (HCC) is one of the most common cancers worldwide with an estimated 500,000-1,000,000 new cases per year [<xref ref-type="bibr" rid="B1">1</xref>]. It is also one of the few cancers with an increased incidence rate [<xref ref-type="bibr" rid="B2">2</xref>-<xref ref-type="bibr" rid="B4">4</xref>]. Although curative resection or liver transplant is widely adopted as treatment for HCC [<xref ref-type="bibr" rid="B5">5</xref>], a majority of HCC patients are not amenable to surgical resection due to the extensive intrahepatic tumor burden or limited donor resources. In nature, HCC is an invasive tumor and is metastasized hematogenously and lymphogenously to other organs, even after its local recurrence. The most common organs of distant metastases include lungs, lymph nodes, bone, and brain, in particular, with the lung metastasis occurring in 18-60% of HCC cases [<xref ref-type="bibr" rid="B6">6</xref>]. While extrahepatic metastases are known to occur in HCC patients with an advanced intrahepatic tumor stage [<xref ref-type="bibr" rid="B6">6</xref>,<xref ref-type="bibr" rid="B7">7</xref>], the prognosis in patients with extrahepatic metastases is extremely poor. To improve the prognosis for HCC metastases, we aim to investigate the genetic signatures of HCC through unbiased next-generation sequencing (NGS) in this whole genome-scale systematic study.</p>
+      <p>Recently, whole genome sequencing of metastatic acral melanomas and matched primary tumor and adjacent normal tissues showed high similarity of global gene copy number alterations, loss of heterozygosity and single nucleotide variation in primary and metastasis tissues [<xref ref-type="bibr" rid="B8">8</xref>]. Meanwhile, <italic>de novo</italic> nonsynonymous coding single-nucleotide variants (SNVs) were identified in metastatic lesions from acral melanomas [<xref ref-type="bibr" rid="B8">8</xref>]. In addition, recent studies that identified the clonal populations by sequencing the genomes of 7 pancreatic cancer metastases helped elucidate the mechanisms of distant metastases [<xref ref-type="bibr" rid="B9">9</xref>,<xref ref-type="bibr" rid="B10">10</xref>]. Herein, we sequenced the whole genomes of 4 paired samples (primary tumor, metachronous lung metastases) obtained from HCC patients. These selected patients were treatment na&#xEF;ve at the time of primary HCC surgery and were later diagnosed with lung metastatic nodules more than 2 years after the first surgery. We compared the genetic landscape between primary liver and metastatic lung tumor tissues and performed an in-depth investigation of the genetic alterations to uncover potential biomarkers for tumor progression and metastasis.</p>
+    </sec>
+    <sec sec-type="results">
+      <title>Results</title>
+      <sec>
+        <title>Case description</title>
+        <p>Four patients who were pathologically diagnosed of HCC and lung metastases were included in this study.</p>
+        <sec>
+          <title>Case #1(441)</title>
+          <p>A 50-year old man presented with a 9-cm sized mass at right hepatic lobe. The patient was a HBV carrier and his liver function was of Child-Pugh classification of A. The patient underwent right liver lobectomy when freshly frozen tissue of primary tumor and blood DNA was collected. The pathologic review of the surgical specimen revealed Edmonson grade II, tumor necrosis of 10%, microvascular tumor emboli and chronic active hepatitis with bridging fibrosis in background liver. Three years later, the patient developed a 2-cm sized single metastatic nodule in posterior basal segment of right lower lobe. The patient underwent right lower lobectomy and the pathologic diagnosis was metastatic hepatocellular carcinoma. Currently, the patient is in remission without recurrence since lung metastatectomy for more than 5 years.</p>
+        </sec>
+        <sec>
+          <title>Case #2(DD59)</title>
+          <p>A 46 year-old man presented with a 5.2 &#xD7; 4.4&#xA0;cm massive HCC involving S6 and S7. The patient was a hepatitis B carrier. The patient underwent right hemi-hepatectomy (tissue procurement of primary tumor). The pathologic features were as follows, Edmonson grade II, 0% necrosis, intrahepatic metastasis, segmental portal vein microinvasion and negative resection margin. Three months later, the patient developed small recurrent tumor in left lateral segment of left lobe of liver and underwent radiofrequency ablation and 6 cycles of transcatheter arterial chemoembolization (TACE) thereafter. Shortly after the 6<sup>th</sup> TACE, two nodules were detected in right lung. The patient underwent video-assisted thoracoscopic surgery wedge resection of right upper apical segment, posterior segment and RLL lobectomy. The pathologic diagnosis was metastatic hepatocellular carcinoma. Fresh frozen tissues were collected during the surgery at this time. Seven months later the patient developed another 2&#xA0;cm lung metastatic nodule in right middle lobe and underwent metastatectomy. The patient is currently in remission for 4 years.</p>
+        </sec>
+        <sec>
+          <title>Case #3(D473)</title>
+          <p>A 43-year old male presented with an 11-cm sized HCC-B (hepatitis B) and underwent right hepatectomy. The pathologic examination revealed Edmonson grade II HCC with 10% necrosis, no portal vein invasion with mild portoperiportal inflammation in background liver due to chronic hepatitis B. Four months following the surgical resection, a newly developed enhancing nodule in S3 of liver was detected which was subsequently treated with 5 cycles of TACE. Two years from the initial hepatic resection, a 1&#xA0;cm nodule in left upper lobe was detected which was surgically removed with wedge resection. The tumor specimen was confirmed of metastatic HCC in lung and freshly frozen tissue was collected at this time. The patient underwent repeated multiple pulmonary metastatectomies for recurrent metastatases. The patient still has slowly progressive, multiple lung metastases which were refractory to sorafenib and sunitinib. The patient died of disease ten months later after failing to treatment due to disease progression.</p>
+        </sec>
+        <sec>
+          <title>Case #4(D430)</title>
+          <p>A 51-year old male had a 6.6 c m sized liver mass and was diagnosed of HCC-B. The patient underwent S6 segmentectomy and the pathologic examination revealed Edmondson grade II, 60% necrosis, no microvessel or portal vein invasion and no intrahepatic metastasis. Two years later, a 14&#xA0;cm solitary lung nodule was detected in left lower lobe superior segment which was surgically resected. Thirty months later, the patient developed multiple HCC nodules and received ten 10 cycles of TACE. The patient is still undergoing periodic TACE for multiple HCCs at the time of this writing. The core information is marked with specific notes (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S1 and Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S1).</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Whole genome sequencing</title>
+        <p>Using the paired-end sequencing strategy, we simultaneously generated 98.90Gb-129.65Gb sequence data from normal liver tissues, primary HCC tumors, and lung metastases of the 4 patients described above, with the corresponding haploid genome coverage of 33&#x2013;43 fold at high coverage &gt;99% (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S2A). The widespread somatic alterations were identified throughout the genome, from somatic single nucleotide variants (SNVs) and small insertions or deletions (indels) to structural variations (SVs) (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref> and Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S2F). We next depicted the whole-genome alterations as Circos plots, which give visual demonstrations of metastasis-specific genetic alterations (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>). Subsequently, we performed an in-depth analysis of the mutations, copy number alterations, and structure variations.</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p><bold>Circos plots for the 4 primary tumors and their matched metastases.</bold> Outer panels represent somatic SNVs with nonsynonymous and splice mutations in red, others are in black. Somatic copy number alterations are shown in inner panels (orange histogram, duplications; blue histogram, deletions). Structural variations are depicted as links in the interior of the plots. Blue link, inter-chromosomal translocations; red link, intra-chromosomal translocations; purple link, insertions; green link, deletions. Plots of <bold>A</bold> to <bold>H</bold> show the variants of primary tumor and metastasis from each of the 4 cases 441, D430, D473 and DD59 with &#x201C;P&#x201D; for primary and &#x201C;M&#x201D; for metastasis.</p>
+          </caption>
+          <graphic xlink:href="1755-8794-7-2-1"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Mutation analysis</title>
+        <p>Alignments to the reference genome with opened gaps were performed using BWA (<ext-link ext-link-type="uri" xlink:href="http://bio-bwa.sourceforge.net/bwa.shtml">http://bio-bwa.sourceforge.net/bwa.shtml</ext-link>), and SOAPsnv [<xref ref-type="bibr" rid="B11">11</xref>] was used to query SNVs from tumors against matched normal tissues. 3.40-8.63% of total SNVs were detected in dbSNP (dbSNP132). These known germline SNPs were excluded from downstream analysis. The SNVs were annotated to RefGene and summarized according to their genetic features (Table&#xA0;<xref ref-type="table" rid="T1">1</xref>). In total, 5,027-13,961 somatic SNVs were detected in HCC primary tumors and 5,275-12,624 were in lung metastatic tumors. In addition, most SNVs detected in lung metastases were also present in primary tumors, ranging from 38.88% to 78.49% across 4 individuals, suggesting that the major genetic characteristics of tumors might be preserved during metastasis (Figure&#xA0;<xref ref-type="fig" rid="F2">2</xref>).</p>
+        <table-wrap position="float" id="T1">
+          <label>Table 1</label>
+          <caption>
+            <p>Summary of somatic SNVs</p>
+          </caption>
+          <table frame="hsides" rules="groups" border="1">
+            <colgroup>
+              <col align="left"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+              <col align="center"/>
+            </colgroup>
+            <thead valign="top">
+              <tr>
+                <th rowspan="2" align="left" valign="top">
+                  <bold>Categories</bold>
+                </th>
+                <th colspan="2" align="center" valign="bottom">
+                  <bold>441</bold>
+                  <hr/>
+                </th>
+                <th colspan="2" align="center" valign="bottom">
+                  <bold>D430</bold>
+                  <hr/>
+                </th>
+                <th colspan="2" align="center" valign="bottom">
+                  <bold>D473</bold>
+                  <hr/>
+                </th>
+                <th colspan="2" align="center" valign="bottom">
+                  <bold>DD59</bold>
+                  <hr/>
+                </th>
+              </tr>
+              <tr>
+                <th align="center">
+                  <bold>Primary tumor</bold>
+                </th>
+                <th align="center">
+                  <bold>Metastasis</bold>
+                </th>
+                <th align="center">
+                  <bold>Primary tumor</bold>
+                </th>
+                <th align="center">
+                  <bold>Metastasis</bold>
+                </th>
+                <th align="center">
+                  <bold>Primary tumor</bold>
+                </th>
+                <th align="center">
+                  <bold>Metastasis</bold>
+                </th>
+                <th align="center">
+                  <bold>Primary tumor</bold>
+                </th>
+                <th align="center">
+                  <bold>Metastasis</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" valign="bottom"># of somatic SNVs<hr/></td>
+                <td align="center" valign="bottom">13,961<hr/></td>
+                <td align="center" valign="bottom">12,624<hr/></td>
+                <td align="center" valign="bottom">6,208<hr/></td>
+                <td align="center" valign="bottom">5,275<hr/></td>
+                <td align="center" valign="bottom">5,027<hr/></td>
+                <td align="center" valign="bottom">7,251<hr/></td>
+                <td align="center" valign="bottom">5,666<hr/></td>
+                <td align="center" valign="bottom">7,652<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Synonymous<hr/></td>
+                <td align="center" valign="bottom">24<hr/></td>
+                <td align="center" valign="bottom">26<hr/></td>
+                <td align="center" valign="bottom">19<hr/></td>
+                <td align="center" valign="bottom">13<hr/></td>
+                <td align="center" valign="bottom">13<hr/></td>
+                <td align="center" valign="bottom">11<hr/></td>
+                <td align="center" valign="bottom">5<hr/></td>
+                <td align="center" valign="bottom">13<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Nonsense<hr/></td>
+                <td align="center" valign="bottom">4<hr/></td>
+                <td align="center" valign="bottom">3<hr/></td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">0<hr/></td>
+                <td align="center" valign="bottom">3<hr/></td>
+                <td align="center" valign="bottom">3<hr/></td>
+                <td align="center" valign="bottom">0<hr/></td>
+                <td align="center" valign="bottom">4<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Missense<hr/></td>
+                <td align="center" valign="bottom">74<hr/></td>
+                <td align="center" valign="bottom">69<hr/></td>
+                <td align="center" valign="bottom">23<hr/></td>
+                <td align="center" valign="bottom">18<hr/></td>
+                <td align="center" valign="bottom">22<hr/></td>
+                <td align="center" valign="bottom">36<hr/></td>
+                <td align="center" valign="bottom">33<hr/></td>
+                <td align="center" valign="bottom">45<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Splice<hr/></td>
+                <td align="center" valign="bottom">5<hr/></td>
+                <td align="center" valign="bottom">5<hr/></td>
+                <td align="center" valign="bottom">0<hr/></td>
+                <td align="center" valign="bottom">0<hr/></td>
+                <td align="center" valign="bottom">0<hr/></td>
+                <td align="center" valign="bottom">0<hr/></td>
+                <td align="center" valign="bottom">1<hr/></td>
+                <td align="center" valign="bottom">2<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">UTR<hr/></td>
+                <td align="center" valign="bottom">84<hr/></td>
+                <td align="center" valign="bottom">76<hr/></td>
+                <td align="center" valign="bottom">43<hr/></td>
+                <td align="center" valign="bottom">30<hr/></td>
+                <td align="center" valign="bottom">37<hr/></td>
+                <td align="center" valign="bottom">44<hr/></td>
+                <td align="center" valign="bottom">44<hr/></td>
+                <td align="center" valign="bottom">57<hr/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="bottom">Intron<hr/></td>
+                <td align="center" valign="bottom">4,216<hr/></td>
+                <td align="center" valign="bottom">3,826<hr/></td>
+                <td align="center" valign="bottom">1,911<hr/></td>
+                <td align="center" valign="bottom">1,667<hr/></td>
+                <td align="center" valign="bottom">1,680<hr/></td>
+                <td align="center" valign="bottom">2,354<hr/></td>
+                <td align="center" valign="bottom">1,878<hr/></td>
+                <td align="center" valign="bottom">2,543<hr/></td>
+              </tr>
+              <tr>
+                <td align="left">Intergenic</td>
+                <td align="center">9,554</td>
+                <td align="center">8,619</td>
+                <td align="center">4,211</td>
+                <td align="center">3,547</td>
+                <td align="center">3,272</td>
+                <td align="center">4,803</td>
+                <td align="center">3,705</td>
+                <td align="center">4,988</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <fig id="F2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p><bold>The number of somatic mutations detected in primary tumors and metastases.</bold> The percentage of mutations shared by metastases and primary tumors was calculated, and the mutations are summarized into 3 groups: primary tumors, metastases, and shared mutations.</p>
+          </caption>
+          <graphic xlink:href="1755-8794-7-2-2"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Mutation spectrum</title>
+        <p>An overview of the mutation spectrum shows that the C:G&#x2009;&gt;&#x2009;T:A transition rates within the coding regions were the highest, i.e. 28.96% in primary tumors and 32.10% in metastases (Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref>A and Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S2D), both of which were higher than those observed at the whole-genome level (21.71% vs. 22.22%; Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref>B). In addition, the second highest mutation type was C:G&#x2009;&gt;&#x2009;A:T transversion (19.40% vs. 18.27%) which was consistent with the notion that C:G&#x2009;&gt;&#x2009;A:T transversion is associated with HBV-positive HCC [<xref ref-type="bibr" rid="B12">12</xref>]. Throughout the genetic regions, less mutations of C nucleotides to other nucleotides were located in the CpG islands, whereas more C:G&#x2009;&gt;&#x2009;T:A mutations were found in the non-CpG island regions (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S2B and S2C), which may be explained by the fact that cytimidines outside of the CpG islands are easily methylated and mutated. In total, the transversion rate was significantly higher in metastases than in primary tumors (52.65% vs. 54.70%; <italic>P</italic>&#x2009;=&#x2009;0.0003531) (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S2E). Among 6 classes of transition and transversion mutations, we observed an average of 2.39% and 4.87% increases in T:A&#x2009;&gt;&#x2009;G:C (<italic>P</italic>&#x2009;=&#x2009;8.46e-16) and C:G&#x2009;&gt;&#x2009;G:C (<italic>P</italic>&#x2009;&lt;&#x2009;2.2e-16) transversion, respectively, in metastasis-specific mutations (Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref>B and Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S2E), which may be caused by microenvironment seeding or effects of chemotherapy [<xref ref-type="bibr" rid="B13">13</xref>].</p>
+        <fig id="F3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p><bold>Comparison of mutational classes between primary tumors and metastasis samples. (A)</bold> The transition and transversion categories of coding mutations are classified from primary tumor and metastasis-specific groups. <bold>(B)</bold> Fraction of overall mutations spanning the transition and transversion categories are concluded in primary tumor and metastasis-specific groups. Red boxes represent primary tumor and blue boxes represent metastasis. Asterisks represent significant difference between primary tumor and metastasis (*, 1e-3&lt;<italic>P</italic>&#x2009;&#x2264;&#x2009;5e-2; **, 1e-10&lt;<italic>P</italic>&#x2009;&#x2264;&#x2009;1e-3; ***, <italic>P</italic>&#x2009;&#x2264;&#x2009;1e-10).</p>
+          </caption>
+          <graphic xlink:href="1755-8794-7-2-3"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Mutant allele frequency</title>
+        <p>To delineate possible genetic evolution during metastasis, we carried out an in-depth examination of the mutations of paired primary and metastasis samples. While a large portion of SNVs were shared by both stages, significant differences were observed between the allele frequency of nonsynonymous and splicing-site SNVs in cancer related genes (i.e. the genes in cancer census gene database [<xref ref-type="bibr" rid="B14">14</xref>] (Figure&#xA0;<xref ref-type="fig" rid="F4">4</xref>; Fisher&#x2019;s exact test). For instance, a nonsense mutation (E304*) in TP53, which regulates TAT binding, was found in both primary tumors and metastases of case D473 (Figure&#xA0;<xref ref-type="fig" rid="F4">4</xref>C and Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S3), whereas a deleterious missense mutation in the DNA-binding domain of TP53 (N131D) was only detected in metastases of case 441 (Figure&#xA0;<xref ref-type="fig" rid="F4">4</xref>A and Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S3). In addition, we found the similar SNV frequency in a set of oncogenes and tumor suppressors, such as CBL and MYC, between primary tumors and metastases. Non-silent mutations of BRCA1, PRF1, and other cancer genes were detected solely in the metastasis stage (Figure&#xA0;<xref ref-type="fig" rid="F4">4</xref> and Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S4). Moreover, we found 9 mutations with significantly different allele frequency between in primary tumor and in metastasis. The 8 mutations are located in genes KIAA1377, SESN3, MYH4, ZNF613, C5, SPEN, MYO9A and DNM3. Of which, MHY4 is involved in tight junction pathway, SESN3 plays a role in p53 signaling pathway, SPEN is involved in Notch signaling pathway which regulates transcription. Intriguingly, multiple mutations of zinc finger proteins (ZNF) were detected in the metastasis samples; among these, metastasis-specific genetic mutations of ZNF257 and ZNF682 have been reported to be upregulated in metastatic cell lines (lung and bone), relative to the parental line of breast adenocarcinoma [<xref ref-type="bibr" rid="B15">15</xref>]. Overall, mutations in genes that are involved in the cell cycle, apoptosis, DNA repair, and transcription regulations were enriched in the metastasis stage (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S10B). On the basis of the allele frequency distributions, we can focus on the metastasis-specific genetic alterations to further investigate its underlying mechanisms of lung metastases in HCC. Dissection of the somatic mutations in primary tumors and metastases shows that the affected genes are involved in the focal adhesion and gap junction pathways (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Tables S3, S10A and S10B). In the future, high-depth sequencing based on our candidate list may help explore the subclones or key drivers in metastasis. The 66 somatic mutations were genotyped by Sanger sequencing, and 60 mutations were validated (6 failed to be validated) (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S11).</p>
+        <fig id="F4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p><bold>Comparison of nonsynonymous and splice mutation frequency between primary tumors and metastases.</bold> Each point represents a somatic single-nucleotide variant (SNV). Allele frequency enrichment was tested using the Fishers&#x2019; exact test. Gray dot, shared mutations; orange, significantly enriched mutations in primary tumors; green, significantly enriched mutations in metastases; purple, primary tumor-specific mutations; blue, metastasis-specific mutations. SNVs in cancer genes or genes located in cancer-related pathways are labeled with the corresponding gene names. SNVs in each of the 4 cases show in plots <bold>A</bold> to <bold>D</bold> separately.</p>
+          </caption>
+          <graphic xlink:href="1755-8794-7-2-4"/>
+        </fig>
+        <p>In addition to the mutation frequency, we examined whether metastasis-derived mutations occur at certain genomic regions. However, we did not find any obvious hypermutation region in any of the 4 trio samples (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S4). To further investigate the inter-somatic mutation distance, we compared the inter-somatic mutation distances to the simulated null distributions. The results show that the observed somatic mutation distances (&lt;100&#xA0;kb) were spaced more closely rather than randomly spotted (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figures S2 and S3) and that the mutation events occurred in a similar manner in both primary and metastatic tumors (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S5). We also analyzed the inter-somatic mutation distances across different cancer types, of which data was derived from public databases (Materials and methods), such as liver cancer, lung adenocarcinoma, and prostate cancer. Interestingly, we found that a specific tumor type may develop its own intrinsic mutation distance (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S5). Together, our findings suggest that the scattered small regions with dense mutations are present in the cancer genomes and that specific cancer types are associated with their own mutation distance.</p>
+      </sec>
+      <sec>
+        <title>Short insertions and deletions</title>
+        <p>We predicted 2,514-4,925 and 4,366-7,968 indels in primary tumors and metastases, respectively, including a total of 25/34 (primary tumor/metastasis) events affecting protein coding (18/24 frameshift and 7/10 in-frame) in 42 genes (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S2F). Specifically, a frameshift insertion in the tumor suppressor RB1 was detected in both primary tumors and the matched metastases, whereas a metastasis-specific frameshift deletion was detected in the oncogene TFEB. In addition, a frameshift insertion in WNT5A and an in-frame deletion in DAAM2 were only detected in metastases; both WNT5A and DAAM2 are involved in the Wnt signaling pathway (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S10C).</p>
+      </sec>
+      <sec>
+        <title>Copy number alteration</title>
+        <p>Copy number alterations (CNAs) in primary tumors and metastases of 4 cases were detected by comparing with their respective matched normal samples. From primary tumors to metastases, the lengths of CNAs were changed, but the total sizes of CNAs were not significantly different (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S2G). As indicated by the CNA plots, primary tumors and their matched lung metastases generated similar global CNA patterns across 4 pairs (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S6). The copy numbers across the genomes between primary tumors and metastases were found to be positively correlated with each other with correlation coefficient &gt;0.5 for all 4 cases (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S7), consistent with the conclusion that the genetic characteristics of metastases mostly originate from primary tumors. The copy numbers of CNA events were altered from primary tumors to metastases, and these CNAs were annotated to corresponding genes (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S7). Specifically, many CNAs with common regions but different copy number between primary tumor and metastasis are abserved in cases DD59 and D473. Such a pattern corresponds to the low percentage of somatic SNVs preserved in metastases (Figure&#xA0;<xref ref-type="fig" rid="F2">2</xref>). We found 26 CNA regions (26 deletions and no amplification) in primary tumors and 235 CNA regions (173 deletions and 62 amplifications) in metastases. Notably, 11 of the 26 deletions observed in primary tumors overlapped with 11 deletions in metastases (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S7 and Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S2H). The deletions detected in both primary tumors and metastases were mainly located in 1p, 4q, 8p, 9p, 9q, 16p, and 21q (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S7). By categorizing tumor-specific CNA regions in metastases, we found that alterations of oncogenes and tumor suppressors, for instance, tumor suppressor PMS2 and oncogenes TFPT, ZNF331, and others, may be linked to metastatic progression (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S7 and Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S7). In addition, frequent somatic copy number loss in the region spanning the tumor suppressor genes, CDKN2A and CDKN2B, was also observed across metastasis samples (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S7) [<xref ref-type="bibr" rid="B8">8</xref>].</p>
+      </sec>
+      <sec>
+        <title>Structural variation</title>
+        <p>We used CREST to detect structural variants (SV) in sequencing data [<xref ref-type="bibr" rid="B16">16</xref>]. We identified 65&#x2013;221 and 60&#x2013;232 SVs in primary tumors and metastases, respectively. Indeed, the large portion of SVs in primary and metastatic tumors overlapped with each other (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>). We identified 30 translocations that were only in metastases, 8 translocations that were only in primary tumors, as well as 30 overlapped translocations (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S2I). Some of the oncogenes and tumor suppressors, such as TPM3 and ZNF331, which were located in the breakpoints of somatic SVs, were detected in our study (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S6). Specific mutated genes that were identified in tumorigenesis pathways are summarized in Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S10. Specifically, distinct mutated genes in metastasis, CNTNAP2 and PDCD1LG2, are the components of the cell adhesion pathway. The overexpression of CDH13 and AKAP13A, both of which were found to be truncated in our study, have been reported to correlate with a higher risk of late recurrence of hepatocellular carcinoma [<xref ref-type="bibr" rid="B17">17</xref>,<xref ref-type="bibr" rid="B18">18</xref>]. In addition, the CDH13 and PDCD1LG2 genes located at the breakpoints of an inter-chromosome translocation may cause the CDH13-PDCD1LG2 fusion.</p>
+      </sec>
+      <sec>
+        <title>Potential regulation pathways of tumor progression</title>
+        <p>To identify genes as &#x201C;driver&#x201D; somatic mutations in either primary tumorigenesis or metastasis process, the genes with significant higher nonsynonymous mutation rates against a background were estimated [<xref ref-type="bibr" rid="B19">19</xref>]. Tumor suppressors PRF1 and BRCA1, as well as oncogene TFEB, all of which may play an important role in cancer cell survival during the progress of metastasis, were predicted as driver genes only in metastases. WNT5A, PLCB3, and DAAM2, which can activate or inhibit canonical Wnt signaling, were predicted as metastasis-specific driver genes (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S10F). TP53, a tumor suppressor that was previously reported to be associated with liver cancer [<xref ref-type="bibr" rid="B14">14</xref>], was also weighted as a driver gene and is recurrently mutant in metastases (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S2). In addition, we identified that shared mutations between primary tumors and metastases were significantly enriched in the pathways of bladder cancer, pancreatic cancer, non-small cell lung cancer, thyroid cancer, and melanoma, which implies that the general progress of different tumor types may be driven by several same mutations. The mTOR signaling pathway and some others were identified to be significant only in primary tumors (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S9A).</p>
+        <p>By integrating altered genes in primary tumor and specifically altered genes in metastasis from four cases, we concluded several cancer and cell migration relevant pathways. Altered pathways in primary tumor were Wnt, JAK-STAT, cell cycle and focal adhesion pathways (Figure&#xA0;<xref ref-type="fig" rid="F5">5</xref>), which function in tumor initiation and development. On the other hand, metastasis-altered pathways included tight junction, focal adhesion and ErbB/MAPK pathways (Figure&#xA0;<xref ref-type="fig" rid="F6">6</xref>). Tumor cells in metastasis carried alterations enabling migration and circulation and derived additional alterations, which may endowi their ability to clonalize in distant organ and grow as primary tumor cells [<xref ref-type="bibr" rid="B20">20</xref>].</p>
+        <fig id="F5" position="float">
+          <label>Figure 5</label>
+          <caption>
+            <p><bold>Significantly altered pathway in primary tumor.</bold> Pathway analysis for primary tumor mutant genes identified significant genomic alteration in several cancer pathways, including <bold>(A)</bold> Wnt, <bold>(B)</bold> focal adhesion, <bold>(C)</bold> JAK-STAT and <bold>(D)</bold> cell cycle pathways. Alterations included somatic SNVs, Indels, CNAs and SVs. Alteration recurrence was referred as number of cases harboring a mutant gene. Alteration types were represented by different colours.</p>
+          </caption>
+          <graphic xlink:href="1755-8794-7-2-5"/>
+        </fig>
+        <fig id="F6" position="float">
+          <label>Figure 6</label>
+          <caption>
+            <p><bold>Significantly altered pathway in metastasis.</bold> Pathway analysis for metastasis-specific mutant genes identified significant genomic alteration in multiple cancer/cell migration relevant pathways, including <bold>(A)</bold> tight junction, <bold>(B)</bold> ErbB/MAPK and <bold>(C)</bold> focal adhesion pathway. Alterations included somatic SNVs, Indels, CNAs and SVs. Alteration recurrence was referred as number of cases harboring a mutant gene. Alteration types were represented by different colours.</p>
+          </caption>
+          <graphic xlink:href="1755-8794-7-2-6"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusion</title>
+      <p>In summary, genetic alteration patterns are very similar between primary tumor and metastasis of 4 cases (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>, Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S2 and Table&#xA0;<xref ref-type="table" rid="T2">2</xref>). For somatic SNVs, we concluded that 38.88-78.49% mutations detected in primary tumors were preserved in matched metastases (Figure&#xA0;<xref ref-type="fig" rid="F2">2</xref>). Also copy number along tumor genomes are very close correlated between primary tumors and matched metastases, with correlation coefficients range of 0.51-0.82 (Pearson correlation coefficient) for 4 cases (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S7). In addition to SNVs and CNAs, SVs have the similar pattern across 4 pairs with 30.21-74.07% SVs detected in primary tumors preserved in metastases. From all above, we can approximately conclude that genetic feature in primary tumor and metastasis of case 441 are the most similar, and case D430 ranks the second most similar and then case D473 and case DD59. Specifically on clinical features, case 441 had been performed simple treatment with only liver lobectomy and without any recurrence during primary tumor developing to metastasis. Case D430 also underwent simple segmentectomy, however, developed recurrence after metastasis detected. Both cases of D473 and DD59 underwent TACE before metastases were detected, which may cause point mutations [<xref ref-type="bibr" rid="B13">13</xref>], consistent with that percentages of common point mutations between primary tumor and metastasis are low for these two cases (Figure&#xA0;<xref ref-type="fig" rid="F2">2</xref>).</p>
+      <table-wrap position="float" id="T2">
+        <label>Table 2</label>
+        <caption>
+          <p>Similarity of genetic alterations in primary tumors and matched metastases</p>
+        </caption>
+        <table frame="hsides" rules="groups" border="1">
+          <colgroup>
+            <col align="left"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+          </colgroup>
+          <thead valign="top">
+            <tr>
+              <th align="left">
+                <bold>Statistics</bold>
+              </th>
+              <th align="center">
+                <bold>441</bold>
+              </th>
+              <th align="center">
+                <bold>D430</bold>
+              </th>
+              <th align="center">
+                <bold>D473</bold>
+              </th>
+              <th align="center">
+                <bold>DD59</bold>
+              </th>
+            </tr>
+          </thead>
+          <tbody valign="top">
+            <tr>
+              <td align="left" valign="bottom">% of met_SSMs preserved in primary tumor<hr/></td>
+              <td align="center" valign="bottom">78.49%<hr/></td>
+              <td align="center" valign="bottom">72.55%<hr/></td>
+              <td align="center" valign="bottom">53.26%<hr/></td>
+              <td align="center" valign="bottom">38.88%<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">% of met_Indels preserved in primary tumor<hr/></td>
+              <td align="center" valign="bottom">63.64%<hr/></td>
+              <td align="center" valign="bottom">100.00%<hr/></td>
+              <td align="center" valign="bottom">57.14%<hr/></td>
+              <td align="center" valign="bottom">28.57%<hr/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="bottom">Correlation coefficients of copy numbers between primary tumor and metastasis<hr/></td>
+              <td align="center" valign="bottom">0.69<hr/></td>
+              <td align="center" valign="bottom">0.51<hr/></td>
+              <td align="center" valign="bottom">0.82<hr/></td>
+              <td align="center" valign="bottom">0.53<hr/></td>
+            </tr>
+            <tr>
+              <td align="left">% of met_SVs preserved in primary tumor</td>
+              <td align="center">74.07%</td>
+              <td align="center">43.08%</td>
+              <td align="center">67.87%</td>
+              <td align="center">30.21%</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Discussion</title>
+      <p>HCC is the fifth most common cancer and the third most common cause of cancer-related deaths worldwide. It has a high prevalence in Asia, including Korea, due to endemic hepatitis B virus infection. numerous clinical trials using cytotoxic chemotherapy or targeted agents have failed, except sorafenib [<xref ref-type="bibr" rid="B21">21</xref>]. While intrahepatic recurrence is most common, lung metastases are the most common extrahepatic spread and account for up to 40% of metastatic HCC [<xref ref-type="bibr" rid="B22">22</xref>]. survival of patients with metastatic HCC is usually less than 1 year [<xref ref-type="bibr" rid="B23">23</xref>]. Recently, prolonged median survival durations have been reported from 6.4&#xA0;months to 40.7&#xA0;months following metastasectomies [<xref ref-type="bibr" rid="B24">24</xref>]. However, despite advances in therapeutic strategies, extrahepatic metastasis is still a major impediment to better prognosis in HCC patients.</p>
+      <p>In this study, we employed whole-genome sequencing to profile somatic mutations and structural variations in primary HCC (HBV+) and their matched metachronous lung metastases. Several recent studies on HCCs of different etiologies (HBV, HCV, and alcohol) using whole-genome and exome sequencing have not only confirmed previously known mutations of &#x3B2;-catenin and TP53 but also identified novel genetic alterations in genes that are involved in epigenetic regulation, such as ARID1A, ARID1B, ARID2, MLL, and MLL3 [<xref ref-type="bibr" rid="B12">12</xref>]. Wnt/&#x3B2;-catenin, p53 signaling, cell cycle, and chromatin remodeling have recently emerged as dominant cancer pathways in primary HCC [<xref ref-type="bibr" rid="B12">12</xref>]. To the best of our knowledge, this study is the first to examine the genomic profiles of matched pairs of primary and metastatic HCC by whole-genome sequencing.</p>
+      <p>In summary, comparison of structural variations between primary and metastatic tumors shows very similar and largely overlapped mutated segments (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>). In addition, CNVs in primary and metastatic pairs were found to be closely related, and 38.88-78.49% of SNVs detected in primary HCC tumors were also detected in lung metastases. These preservations in genomic profiles from liver primary tumors to metachronous lung metastases indicate that the genomic features during tumorigenesis may be retained during metastasis.</p>
+      <p>Despite similarities between primary and metastatic pairs, a few somatic mutations were detected only in metastatic tumors. Multiple mutations of zinc finger (ZNF) genes were detected in the metastasis samples, and mutated genes that are involved in apoptosis and transcription regulations were enriched in metastases (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S10B). The ZNF family represents a large group of proteins involved in various aspects of transcriptional regulation [<xref ref-type="bibr" rid="B25">25</xref>]. It has been reported that there were almost twice as many ZNF mutated genes in the HBV-positive hepatitis [<xref ref-type="bibr" rid="B26">26</xref>]. In our study, a total of 5 ZNF, namely ZNF257, ZNF682, ZNF404, ZNF514, and ZNF142, were mutated in lung metastases from HCC (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S10B). Among these, ZNF257 and ZNF682 were previously reported to be upregulated in lung and bone metastases, relative to the primary breast adenocarcinoma, and were speculated to be putative metastasis genes [<xref ref-type="bibr" rid="B15">15</xref>]. In addition, ZNF mutations were found in head and neck squamous cell carcinoma (HNSCC); therefore, the genetic changes to these transcriptional regulators have been implicated in the development of HNSCC [<xref ref-type="bibr" rid="B27">27</xref>]. Nevertheless, the functional role of ZNFs in HCC tumorigenesis is yet to be defined.</p>
+      <p>In addition, mutations in known cancer gene suppressor TP53 were also detected in our study samples, including a nonsense mutation (E343*) in the regulator of TAT binding and a missense mutation (N131D) in the DNA-binding domain, both were previously reported by COSMIC (<ext-link ext-link-type="uri" xlink:href="http://cancer.sanger.ac.uk/cancergenome/projects/cosmic/">http://cancer.sanger.ac.uk/cancergenome/projects/cosmic/</ext-link>) (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S3).</p>
+      <p>Notably, a frameshift insertion in WNT5A and an in-frame deletion in DAAM2 were detected only in lung metastases; both WNT5A and DAAM2 are involved in the Wnt signaling pathway. Recent genome sequencing studies have revealed that the WNT signaling pathway is the most frequently altered oncogenic pathway in primary HCC [<xref ref-type="bibr" rid="B12">12</xref>]. In addition to the high prevalence of CTNNB1 mutations, genetic alterations of other components, such AXIN1, AXIN2, and APC genes that encode proteins containing the destruction box, also occur at a lower frequency. Wnt5a, which is up-regulated in poorly differentiated and highly motile mesenchymal-like HCC cells, has been suggested to play a role in tumor progression by inducing epithelial mesenchymal transition [<xref ref-type="bibr" rid="B28">28</xref>]. In line with this, Wnt5a up-regulation was significantly shown to enhance migration, proliferation, and invasiveness in pancreatic cancer cells <italic>in vitro</italic>[<xref ref-type="bibr" rid="B29">29</xref>]. Importantly, Wnt signaling has been implicated in the activation of HCC-initiating cells [<xref ref-type="bibr" rid="B30">30</xref>,<xref ref-type="bibr" rid="B31">31</xref>]. While Wnt5a has been described as a tumor promoter in melanoma, gastric, pancreatic, and prostate cancers, it was suggested to be a tumor suppressor in HCC, neuroblastoma, leukemia, colon, and thyroid cancers [<xref ref-type="bibr" rid="B32">32</xref>]. The functional significance of Wnt5 aberrations in tumorigenesis of lung metastases from HCC primary tumors should be evaluated in subsequent studies.</p>
+      <p>Synthetically, primary tumor harbored more alterations located in Wnt, cell cycle, JAK-STAT pathways (Figure&#xA0;<xref ref-type="fig" rid="F5">5</xref>), which plays an important role in encoding protein molecular emphasizing the cell proliferation, apoptosis and inflammation, as well as focal adhesion pathway. Focal adhesion pathway has been implicated in the cell migration and initiated metastasis [<xref ref-type="bibr" rid="B33">33</xref>]. For metastasis, specific alterations arose in tight junction and focal adhesion pathways (Figure&#xA0;<xref ref-type="fig" rid="F6">6</xref>), which enhanced the cell migration mechanism.</p>
+      <p>In this study, for the first time, the whole-genome sequencing profiles of primary HCC and paired lung metastases were compared. We found similar genomic alterations between them, with a few mutations that were found specifically in lung metastases, which may explain the clinical observation that both primary and metastatic tumors are usually sensitive or resistant to the same systemic treatments.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>Tumor specimens and ethical statement</title>
+        <p>A total of 4 pairs of fresh frozen tumors and adjacent non-tumor liver tissues containing no necrosis or hemorrhage were collected from primary HCC patients treated with curative hepatectomy at the Samsung Medical Center, Seoul, Korea. Lung tumor specimens were collected at the time of lung metastasectomy. This study was approved by the Institutional Review Board of Samsung Medical Center, Seoul, Korea.</p>
+      </sec>
+      <sec>
+        <title>DNA</title>
+        <p>Genomic DNA was extracted from sliced tissue specimens using the QIAamp DNA Mini Kit (Qiagen, Hilden, Germany), respectively.</p>
+      </sec>
+      <sec>
+        <title>Library construction and whole-genome sequencing</title>
+        <p>Qualified genomic DNA samples were randomly fragmented by Covaris. After ligation of sequencing adapters to both ends of resulting fragments, successfully adapter-ligated DNA fragments were purified, and those with an insert size of approximately 500&#xA0;bp were selected by electrophoresis. Insert fragments with correct sizes were harvested and prepared for cluster amplification by cBot (Hiseq 2000).</p>
+        <p>The qualified DNA library was then loaded on Hiseq2000 for high-throughput sequencing, to meet required sequencing depth with 90-bp paired-end reads. Raw image files were read by the Illumina&#x2019;s base calling software with default parameters, and raw data were collected.</p>
+      </sec>
+      <sec>
+        <title>Read mapping and somatic variant detection</title>
+        <p>Sequencing reads from primary and metastatic tumors, as well as matched normal tissues, were gap-aligned to the hg19 reference genome by BWA program, followed by removal of PCR duplicates. Somatic variants in primary and metastatic tumors were detected by comparing tumor reads to those of matched normal samples. Somatic mutations in tumors were predicted by SOAPsnv (<ext-link ext-link-type="uri" xlink:href="http://soap.genomics.org.cn/index.html">http://soap.genomics.org.cn/index.html</ext-link>) using a sensitive score threshold. Next, <italic>p</italic> values were calculated using Fisher&#x2019;s exact test for all putative mutation sites, based on the distribution of read support with high stringent specificity and sensitivity [<xref ref-type="bibr" rid="B11">11</xref>]. For mutations present in dbSNP (which are usually germline mutations), we removed potential germline mutations existing in database of dbSNP132 for the downstream analysis. Subsequently, we annotated potential somatic SNVs by mapping them to RefGene (<ext-link ext-link-type="uri" xlink:href="http://refgene.com/">http://refgene.com/</ext-link>) using an in-house annotation program.</p>
+        <p>Indels in tumors were examined through gapped alignment not allowing gap located 5&#xA0;bp to either end of the mapped reads [<xref ref-type="bibr" rid="B11">11</xref>]. From the indel pool, somatic indels were detected by filtering SNV which was also detected in adjacent normal samples. Somatic indels with &#x2264;5 supporting reads were filtered for high confidence.</p>
+        <p>We used in-house software based on the read-depth method to infer copy number variation in primary and metastatic tumors. Copy number variants were called when the copy number in tumors was &#x2264;0.75- or &#x2265;1.25-fold of that in corresponding normal samples. To infer recurrently amplified or deleted genomic regions, we detected the focal copy number segments (&#x2264;1Mbp) by re-implementing the GISTIC algorithm [<xref ref-type="bibr" rid="B34">34</xref>] using copy numbers in 1-kb windows, instead of SNP array probes as markers. G-scores were calculated for genomic and gene-coding regions, based on the frequency and amplitude of amplification and deletion affecting each gene, respectively. A significant CNV region was defined as having an amplification G-score &gt;0.08 or a deletion G-score &lt;0.09, corresponding to a <italic>p</italic>-value threshold of 0.05 from the permutation-derived null distribution [<xref ref-type="bibr" rid="B34">34</xref>].</p>
+        <p>We further applied CREST [<xref ref-type="bibr" rid="B16">16</xref>] to whole-genome DNA sequence data obtained from primary and metastatic tumors to identify candidate structural variants (SV) at base-pair resolution.</p>
+      </sec>
+      <sec>
+        <title>Prediction of driver genes</title>
+        <p>Driver genes were predicted using in-house software by re-implementing the algorithm in which driver genes are the genes with a significant higher non-silent mutation (nonsynonymous/splice/coding indel) rate against a background mutation rate estimated from collected silent mutations [<xref ref-type="bibr" rid="B19">19</xref>]. Similarly, driver pathways were predicted by computing the significance of enrichment of non-silent mutations in a certain pathway against background.</p>
+      </sec>
+      <sec>
+        <title>Pathway enrichment analysis</title>
+        <p>Pathway enrichment analyses of genes harboring somatic SNV, small coding indel, CNV, or SV were performed using the Gene Set Enrichment Analysis [<xref ref-type="bibr" rid="B35">35</xref>,<xref ref-type="bibr" rid="B36">36</xref>].</p>
+      </sec>
+      <sec>
+        <title>Genomic distribution of somatic mutations</title>
+        <p>We computed the inter-somatic mutation distance within individuals by defining the inter-somatic mutation distance as the distance from a somatic mutation to the very next one. We computed null distributions by randomly sampling positions from the genome (excluding assembly gaps), while maintaining the number of somatic mutations per chromosome [<xref ref-type="bibr" rid="B37">37</xref>]. Using the Kolmogorov&#x2013;Smirnov test, we calculated the differences between real distributions and corresponding null distributions and found that inter-somatic mutation distances were significantly smaller than expected (<italic>p</italic>&#x2009;&lt;&#x2009;0.05). The distribution of inter-somatic mutation distance in primary and metastatic tumors of sample D473 were compared to the distributions of inter-somatic mutation distances in HCC and other types of tumors, using published data downloaded from ICGC (<ext-link ext-link-type="ftp" xlink:href="ftp://data.dcc.icgc.org/version_11/">ftp://data.dcc.icgc.org/version_11/</ext-link>). We used 2 lung adenocarcinoma samples, TCGA-05-4382-01A-01D-1265-08 and TCGA-05-4424-01A-22D-1855-08, from TCGA (<ext-link ext-link-type="uri" xlink:href="http://cancergenome.nih.gov/">http://cancergenome.nih.gov/</ext-link>), 2 prostate cancers, CPCG_0099_Pr_P_P1 and CPCG_0184_Pr_P_P4, from OICR (<ext-link ext-link-type="uri" xlink:href="http://oicr.on.ca/">http://oicr.on.ca/</ext-link>), 2 liver cancers, HCC122T and RK020_C01, from NCC (<ext-link ext-link-type="uri" xlink:href="http://www.ncc.go.jp/en/">http://www.ncc.go.jp/en/</ext-link>), and 1 liver cancer sample (sample 180) sample, sample180, from a collaboration HCC project of which some results have been published [<xref ref-type="bibr" rid="B11">11</xref>].</p>
+      </sec>
+      <sec>
+        <title>Data access</title>
+        <p>Sequencing data for this publication has been deposited in NCBI Short Reads Archive and is accessible through accession number SRA076160.</p>
+        <p>Written informed consent was obtained from the patient (who was not deceased at the time of writing or waived by the IRB if deceased) for the publication of this report and any accompanying images.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Abbreviations</title>
+      <p>HCC: Hepatocellular carcinoma; SNVs: Single-nucleotide variants; SVs: Structural variations; CNAs: Copy number alterations; SSMs: Somatic SNV mutations; NGS: Next-generation sequencing; TACE: Transcatheter arterial chemoembolization; COSMIC: Catalogue of somatic mutations in cancer; ICGC: International cancer genome consortium; TCGA: The cancer genome atlas; OICR: Ontario institute for cancer research; NCC: National cancer center.</p>
+    </sec>
+    <sec>
+      <title>Competing interest</title>
+      <p>The authors declare that they have no competing interests.</p>
+    </sec>
+    <sec>
+      <title>Authors&#x2019; contributions</title>
+      <p>JL, HL, JGK, CKP initially designed this study. LO, YZ performed research and analyzed data. LO, JL, CKP, JGK, HL, MM, YS, ZG and HZ designed the research and reviewed the manuscript. LO, JL, JGK, HL, CKP, MM, YS, ZG wrote the paper. All authors read and approved the final version of the manuscript for publication.</p>
+    </sec>
+    <sec>
+      <title>Pre-publication history</title>
+      <p>The pre-publication history for this paper can be accessed here:</p>
+      <p>
+        <ext-link ext-link-type="uri" xlink:href="http://www.biomedcentral.com/1755-8794/7/2/prepub">http://www.biomedcentral.com/1755-8794/7/2/prepub</ext-link>
+      </p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="S1">
+        <caption>
+          <title>Additional file 1</title>
+          <p>Contains tables of summaries of variants, variant lists, gene lists and pathway lists.</p>
+        </caption>
+        <media xlink:href="1755-8794-7-2-S1.xls">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="S2">
+        <caption>
+          <title>Additional file 2</title>
+          <p>Contains figures of clinical images and variants.</p>
+        </caption>
+        <media xlink:href="1755-8794-7-2-S2.docx">
+          <caption>
+            <p>Click here for file</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgement</title>
+      <p>This study was supported by a grant from the Korea Healthcare Technology R&amp;D Project, Ministry for Health &amp; Welfare Affairs, Republic of Korea (HI09C06580000).</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>El-Serag</surname>
+            <given-names>HBRK</given-names>
+          </name>
+          <article-title>Hepatocellular carcinoma: epidemiology and molecular carcinogenesis</article-title>
+          <source>Gastroenterology</source>
+          <year>2007</year>
+          <volume>7</volume>
+          <fpage>2557</fpage>
+          <lpage>2576</lpage>
+          <pub-id pub-id-type="doi">10.1053/j.gastro.2007.04.061</pub-id>
+          <pub-id pub-id-type="pmid">17570226</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jemal</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Center</surname>
+            <given-names>MM</given-names>
+          </name>
+          <name>
+            <surname>DeSantis</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Ward</surname>
+            <given-names>EM</given-names>
+          </name>
+          <article-title>Global patterns of cancer incidence and mortality rates and trends</article-title>
+          <source>Cancer Epidemiol Biomarkers Prev</source>
+          <year>2010</year>
+          <volume>7</volume>
+          <fpage>1893</fpage>
+          <lpage>1907</lpage>
+          <pub-id pub-id-type="doi">10.1158/1055-9965.EPI-10-0437</pub-id>
+          <pub-id pub-id-type="pmid">20647400</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Bray</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Jemal</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Grey</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Ferlay</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Forman</surname>
+            <given-names>D</given-names>
+          </name>
+          <article-title>Global cancer transitions according to the human development index (2008&#x2013;2030): a population-based study</article-title>
+          <source>Lancet Oncol</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>790</fpage>
+          <lpage>801</lpage>
+          <pub-id pub-id-type="doi">10.1016/S1470-2045(12)70211-5</pub-id>
+          <pub-id pub-id-type="pmid">22658655</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Jemal</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Bray</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Center</surname>
+            <given-names>MM</given-names>
+          </name>
+          <name>
+            <surname>Ferlay</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Ward</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Forman</surname>
+            <given-names>D</given-names>
+          </name>
+          <article-title>Global cancer statistics</article-title>
+          <source>CA Cancer J Clin</source>
+          <year>2011</year>
+          <volume>7</volume>
+          <fpage>69</fpage>
+          <lpage>90</lpage>
+          <pub-id pub-id-type="doi">10.3322/caac.20107</pub-id>
+          <pub-id pub-id-type="pmid">21296855</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Rahbari</surname>
+            <given-names>NNMA</given-names>
+          </name>
+          <name>
+            <surname>Mollberg</surname>
+            <given-names>NM</given-names>
+          </name>
+          <name>
+            <surname>M&#xFC;ller</surname>
+            <given-names>SA</given-names>
+          </name>
+          <name>
+            <surname>Koch</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>B&#xFC;chler</surname>
+            <given-names>MW</given-names>
+          </name>
+          <name>
+            <surname>Weitz</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Hepatocellular carcinoma: current management and perspectives for the future</article-title>
+          <source>Ann Surg</source>
+          <year>2011</year>
+          <volume>7</volume>
+          <fpage>453</fpage>
+          <lpage>469</lpage>
+          <pub-id pub-id-type="doi">10.1097/SLA.0b013e31820d944f</pub-id>
+          <pub-id pub-id-type="pmid">21263310</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Natsuizaka</surname>
+            <given-names>MOT</given-names>
+          </name>
+          <name>
+            <surname>Akaike</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Kuwata</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Yamazaki</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Sato</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Karino</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Toyota</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Suga</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Asaka</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Clinical features of hepatocellular carcinoma with extrahepatic metastases</article-title>
+          <source>J Gastroenterol Hepatol</source>
+          <year>2005</year>
+          <volume>7</volume>
+          <fpage>1781</fpage>
+          <lpage>1787</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1440-1746.2005.03919.x</pub-id>
+          <pub-id pub-id-type="pmid">16246200</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Katyal</surname>
+            <given-names>SOJ</given-names>
+            <suffix>3rd</suffix>
+          </name>
+          <name>
+            <surname>Peterson</surname>
+            <given-names>MS</given-names>
+          </name>
+          <name>
+            <surname>Ferris</surname>
+            <given-names>JV</given-names>
+          </name>
+          <name>
+            <surname>Carr</surname>
+            <given-names>BS</given-names>
+          </name>
+          <name>
+            <surname>Baron</surname>
+            <given-names>RL</given-names>
+          </name>
+          <article-title>Extrahepatic metastases of hepatocellular carcinoma</article-title>
+          <source>Radiology</source>
+          <year>2000</year>
+          <volume>7</volume>
+          <fpage>698</fpage>
+          <lpage>703</lpage>
+          <pub-id pub-id-type="doi">10.1148/radiology.216.3.r00se24698</pub-id>
+          <pub-id pub-id-type="pmid">10966697</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Turajlic</surname>
+            <given-names>SFS</given-names>
+          </name>
+          <name>
+            <surname>Lambros</surname>
+            <given-names>MB</given-names>
+          </name>
+          <name>
+            <surname>Mitsopoulos</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Kozarewa</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Geyer</surname>
+            <given-names>FC</given-names>
+          </name>
+          <name>
+            <surname>Mackay</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Hakas</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Zvelebil</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Lord</surname>
+            <given-names>CJ</given-names>
+          </name>
+          <name>
+            <surname>Ashworth</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Thomas</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Stamp</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Larkin</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Reis-Filho</surname>
+            <given-names>JS</given-names>
+          </name>
+          <name>
+            <surname>Marais</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>Whole genome sequencing of matched primary and metastatic acral melanomas</article-title>
+          <source>Genome Res</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>196</fpage>
+          <lpage>207</lpage>
+          <pub-id pub-id-type="doi">10.1101/gr.125591.111</pub-id>
+          <pub-id pub-id-type="pmid">22183965</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Campbell</surname>
+            <given-names>PJYS</given-names>
+          </name>
+          <name>
+            <surname>Mudie</surname>
+            <given-names>LJ</given-names>
+          </name>
+          <name>
+            <surname>Stephens</surname>
+            <given-names>PJ</given-names>
+          </name>
+          <name>
+            <surname>Pleasance</surname>
+            <given-names>ED</given-names>
+          </name>
+          <name>
+            <surname>Stebbings</surname>
+            <given-names>LA</given-names>
+          </name>
+          <name>
+            <surname>Morsberger</surname>
+            <given-names>LA</given-names>
+          </name>
+          <name>
+            <surname>Latimer</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>McLaren</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Lin</surname>
+            <given-names>ML</given-names>
+          </name>
+          <name>
+            <surname>McBride</surname>
+            <given-names>DJ</given-names>
+          </name>
+          <name>
+            <surname>Varela</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Nik-Zainal</surname>
+            <given-names>SA</given-names>
+          </name>
+          <name>
+            <surname>Leroy</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Jia</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Menzies</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Butler</surname>
+            <given-names>AP</given-names>
+          </name>
+          <name>
+            <surname>Teague</surname>
+            <given-names>JW</given-names>
+          </name>
+          <name>
+            <surname>Griffin</surname>
+            <given-names>CA</given-names>
+          </name>
+          <name>
+            <surname>Burton</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Swerdlow</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Quail</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Stratton</surname>
+            <given-names>MR</given-names>
+          </name>
+          <name>
+            <surname>Iacobuzio-Donahue</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Futreal</surname>
+            <given-names>PA</given-names>
+          </name>
+          <article-title>The patterns and dynamics of genomic instability in metastatic pancreatic cancer</article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>7</volume>
+          <fpage>1109</fpage>
+          <lpage>1113</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature09460</pub-id>
+          <pub-id pub-id-type="pmid">20981101</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Yachida</surname>
+            <given-names>SJS</given-names>
+          </name>
+          <name>
+            <surname>Bozic</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Antal</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Leary</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Fu</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Kamiyama</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Hruban</surname>
+            <given-names>RH</given-names>
+          </name>
+          <name>
+            <surname>Eshleman</surname>
+            <given-names>JR</given-names>
+          </name>
+          <name>
+            <surname>Nowak</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Velculescu</surname>
+            <given-names>VE</given-names>
+          </name>
+          <name>
+            <surname>Kinzler</surname>
+            <given-names>KW</given-names>
+          </name>
+          <name>
+            <surname>Vogelstein</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Iacobuzio-Donahue</surname>
+            <given-names>CA</given-names>
+          </name>
+          <article-title>Distant metastasis occurs late during the genetic evolution of pancreatic cancer</article-title>
+          <source>Nature</source>
+          <year>2010</year>
+          <volume>7</volume>
+          <fpage>1114</fpage>
+          <lpage>1117</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature09515</pub-id>
+          <pub-id pub-id-type="pmid">20981102</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Sung</surname>
+            <given-names>WKZH</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>NP</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>WH</given-names>
+          </name>
+          <name>
+            <surname>Ariyaratne</surname>
+            <given-names>PN</given-names>
+          </name>
+          <name>
+            <surname>Tennakoon</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Mulawadi</surname>
+            <given-names>FH</given-names>
+          </name>
+          <name>
+            <surname>Wong</surname>
+            <given-names>KF</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>AM</given-names>
+          </name>
+          <name>
+            <surname>Poon</surname>
+            <given-names>RT</given-names>
+          </name>
+          <name>
+            <surname>Fan</surname>
+            <given-names>ST</given-names>
+          </name>
+          <name>
+            <surname>Chan</surname>
+            <given-names>KL</given-names>
+          </name>
+          <name>
+            <surname>Gong</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Hu</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Lin</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Q</given-names>
+          </name>
+          <name>
+            <surname>Barber</surname>
+            <given-names>TD</given-names>
+          </name>
+          <name>
+            <surname>Chou</surname>
+            <given-names>WC</given-names>
+          </name>
+          <name>
+            <surname>Aggarwal</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Hao</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Zhou</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Hardwick</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Buser</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Xu</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Kan</surname>
+            <given-names>Z</given-names>
+          </name>
+          <name>
+            <surname>Dai</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Mao</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Reinhard</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Luk</surname>
+            <given-names>JM</given-names>
+          </name>
+          <article-title>Genome-wide survey of recurrent HBV integration in hepatocellular carcinoma</article-title>
+          <source>Nat Genet</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>765</fpage>
+          <lpage>769</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng.2295</pub-id>
+          <pub-id pub-id-type="pmid">22634754</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Li</surname>
+            <given-names>SMMS</given-names>
+          </name>
+          <name>
+            <surname>Mao</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Next generation sequencing reveals genetic landscape of hepatocellular carcinomas</article-title>
+          <source>Cancer Lett</source>
+          <year>2013</year>
+          <volume>7</volume>
+          <issue>2</issue>
+          <fpage>247</fpage>
+          <lpage>53</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.canlet.2012.09.027</pub-id>
+          <pub-id pub-id-type="pmid">23063663</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ding</surname>
+            <given-names>LLT</given-names>
+          </name>
+          <name>
+            <surname>Larson</surname>
+            <given-names>DE</given-names>
+          </name>
+          <name>
+            <surname>Miller</surname>
+            <given-names>CA</given-names>
+          </name>
+          <name>
+            <surname>Koboldt</surname>
+            <given-names>DC</given-names>
+          </name>
+          <name>
+            <surname>Welch</surname>
+            <given-names>JS</given-names>
+          </name>
+          <name>
+            <surname>Ritchey</surname>
+            <given-names>JK</given-names>
+          </name>
+          <name>
+            <surname>Young</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Lamprecht</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>McLellan</surname>
+            <given-names>MD</given-names>
+          </name>
+          <name>
+            <surname>McMichael</surname>
+            <given-names>JF</given-names>
+          </name>
+          <name>
+            <surname>Wallis</surname>
+            <given-names>JW</given-names>
+          </name>
+          <name>
+            <surname>Lu</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Shen</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Harris</surname>
+            <given-names>CC</given-names>
+          </name>
+          <name>
+            <surname>Dooling</surname>
+            <given-names>DJ</given-names>
+          </name>
+          <name>
+            <surname>Fulton</surname>
+            <given-names>RS</given-names>
+          </name>
+          <name>
+            <surname>Fulton</surname>
+            <given-names>LL</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Schmidt</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Kalicki-Veizer</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Magrini</surname>
+            <given-names>VJ</given-names>
+          </name>
+          <name>
+            <surname>Cook</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>McGrath</surname>
+            <given-names>SD</given-names>
+          </name>
+          <name>
+            <surname>Vickery</surname>
+            <given-names>TL</given-names>
+          </name>
+          <name>
+            <surname>Wendl</surname>
+            <given-names>MC</given-names>
+          </name>
+          <name>
+            <surname>Heath</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Watson</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Link</surname>
+            <given-names>DC</given-names>
+          </name>
+          <name>
+            <surname>Tomasson</surname>
+            <given-names>MH</given-names>
+          </name>
+          <name>
+            <surname>Shannon</surname>
+            <given-names>WD</given-names>
+          </name>
+          <etal/>
+          <article-title>Clonal evolution in relapsed acute myeloid leukaemia revealed by whole-genome sequencing</article-title>
+          <source>Nature</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>506</fpage>
+          <lpage>510</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature10738</pub-id>
+          <pub-id pub-id-type="pmid">22237025</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Futreal</surname>
+            <given-names>PA</given-names>
+          </name>
+          <name>
+            <surname>Coin</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Marshall</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Down</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Hubbard</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Wooster</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Rahman</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Stratton</surname>
+            <given-names>MR</given-names>
+          </name>
+          <article-title>A census of human cancer genes</article-title>
+          <source>Nat Rev Cancer</source>
+          <year>2004</year>
+          <volume>7</volume>
+          <fpage>177</fpage>
+          <lpage>183</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrc1299</pub-id>
+          <pub-id pub-id-type="pmid">14993899</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Tavazoie</surname>
+            <given-names>SFAC</given-names>
+          </name>
+          <name>
+            <surname>Oskarsson</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Padua</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>Q</given-names>
+          </name>
+          <name>
+            <surname>Bos</surname>
+            <given-names>PD</given-names>
+          </name>
+          <name>
+            <surname>Gerald</surname>
+            <given-names>WL</given-names>
+          </name>
+          <name>
+            <surname>Massagu&#xE9;</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Endogenous human microRNAs that suppress breast cancer metastasis</article-title>
+          <source>Nature</source>
+          <year>2008</year>
+          <volume>7</volume>
+          <fpage>147</fpage>
+          <lpage>152</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature06487</pub-id>
+          <pub-id pub-id-type="pmid">18185580</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wang</surname>
+            <given-names>JMC</given-names>
+          </name>
+          <name>
+            <surname>Easton</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Roberts</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Heatley</surname>
+            <given-names>SL</given-names>
+          </name>
+          <name>
+            <surname>Ma</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Rusch</surname>
+            <given-names>MC</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Harris</surname>
+            <given-names>CC</given-names>
+          </name>
+          <name>
+            <surname>Ding</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Holmfeldt</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Payne-Turner</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Fan</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Wei</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Zhao</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Obenauer</surname>
+            <given-names>JC</given-names>
+          </name>
+          <name>
+            <surname>Naeve</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Mardis</surname>
+            <given-names>ER</given-names>
+          </name>
+          <name>
+            <surname>Wilson</surname>
+            <given-names>RK</given-names>
+          </name>
+          <name>
+            <surname>Downing</surname>
+            <given-names>JR</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>CREST maps somatic structural variation in cancer genomes with base-pair resolution</article-title>
+          <source>Nat Methods</source>
+          <year>2011</year>
+          <volume>7</volume>
+          <fpage>652</fpage>
+          <lpage>654</lpage>
+          <pub-id pub-id-type="doi">10.1038/nmeth.1628</pub-id>
+          <pub-id pub-id-type="pmid">21666668</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hoshida</surname>
+            <given-names>YVA</given-names>
+          </name>
+          <name>
+            <surname>Kobayashi</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Peix</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Chiang</surname>
+            <given-names>DY</given-names>
+          </name>
+          <name>
+            <surname>Camargo</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Gupta</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Moore</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Wrobel</surname>
+            <given-names>MJ</given-names>
+          </name>
+          <name>
+            <surname>Lerner</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Reich</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Chan</surname>
+            <given-names>JA</given-names>
+          </name>
+          <name>
+            <surname>Glickman</surname>
+            <given-names>JN</given-names>
+          </name>
+          <name>
+            <surname>Ikeda</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Hashimoto</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Watanabe</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Daidone</surname>
+            <given-names>MG</given-names>
+          </name>
+          <name>
+            <surname>Roayaie</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Schwartz</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Thung</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Salvesen</surname>
+            <given-names>HB</given-names>
+          </name>
+          <name>
+            <surname>Gabriel</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Mazzaferro</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Bruix</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Friedman</surname>
+            <given-names>SL</given-names>
+          </name>
+          <name>
+            <surname>Kumada</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Llovet</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Golub</surname>
+            <given-names>TR</given-names>
+          </name>
+          <article-title>Gene expression in fixed tissues and outcome in hepatocellular carcinoma</article-title>
+          <source>N Engl J Med</source>
+          <year>2008</year>
+          <volume>7</volume>
+          <fpage>1995</fpage>
+          <lpage>2004</lpage>
+          <pub-id pub-id-type="doi">10.1056/NEJMoa0804525</pub-id>
+          <pub-id pub-id-type="pmid">18923165</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wang</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Wu</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Jiang</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Huang</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Lin</surname>
+            <given-names>H</given-names>
+          </name>
+          <etal/>
+          <article-title>Differential Differentiation- and Survival and Invasion-related T-/H-cadherin (CDH13) Computational Downstream Network from No-Tumor Hepatitis/Cirrhosis (HBV or HCV infection) to Human Hepatocellular Carcinoma (HCC) Malignant Transformation</article-title>
+          <source>J Mol Biomark Diagn</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>127</fpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Youn</surname>
+            <given-names>ASR</given-names>
+          </name>
+          <article-title>Identifying cancer driver genes in tumor genome sequencing studies</article-title>
+          <source>Bioinformatics</source>
+          <year>2011</year>
+          <volume>7</volume>
+          <fpage>175</fpage>
+          <lpage>181</lpage>
+          <pub-id pub-id-type="doi">10.1093/bioinformatics/btq630</pub-id>
+          <pub-id pub-id-type="pmid">21169372</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Nguyen</surname>
+            <given-names>DX</given-names>
+          </name>
+          <name>
+            <surname>Bos</surname>
+            <given-names>PD</given-names>
+          </name>
+          <name>
+            <surname>Massague</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Metastasis: from dissemination to organ-specific colonization</article-title>
+          <source>Nat Rev Cancer</source>
+          <year>2009</year>
+          <volume>7</volume>
+          <fpage>274</fpage>
+          <lpage>284</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrc2622</pub-id>
+          <pub-id pub-id-type="pmid">19308067</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Parkin</surname>
+            <given-names>DM</given-names>
+          </name>
+          <article-title>The global health burden of infection-associated cancers in the year 2002</article-title>
+          <source>Int J Cancer</source>
+          <year>2006</year>
+          <volume>7</volume>
+          <fpage>3030</fpage>
+          <lpage>3044</lpage>
+          <pub-id pub-id-type="doi">10.1002/ijc.21731</pub-id>
+          <pub-id pub-id-type="pmid">16404738</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kakumu</surname>
+            <given-names>S</given-names>
+          </name>
+          <article-title>Trends in liver cancer researched by the Liver Cancer Study Group of Japan</article-title>
+          <source>Hepatol Res</source>
+          <year>2002</year>
+          <volume>7</volume>
+          <fpage>S21</fpage>
+          <lpage>S27</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>SMZZ</given-names>
+          </name>
+          <name>
+            <surname>Tang</surname>
+            <given-names>ZY</given-names>
+          </name>
+          <name>
+            <surname>Sun</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Cheng</surname>
+            <given-names>JM</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>BH</given-names>
+          </name>
+          <article-title>Prognostic analysis of pulmonary metastases from hepatocellular carcinoma</article-title>
+          <source>Hepatol Int</source>
+          <year>2008</year>
+          <volume>7</volume>
+          <fpage>237</fpage>
+          <lpage>243</lpage>
+          <pub-id pub-id-type="doi">10.1007/s12072-008-9052-7</pub-id>
+          <pub-id pub-id-type="pmid">19669310</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Yoon</surname>
+            <given-names>YSKH</given-names>
+          </name>
+          <name>
+            <surname>Kim</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Choi</surname>
+            <given-names>YS</given-names>
+          </name>
+          <name>
+            <surname>Shim</surname>
+            <given-names>YM</given-names>
+          </name>
+          <name>
+            <surname>Paik</surname>
+            <given-names>SW</given-names>
+          </name>
+          <name>
+            <surname>Kim</surname>
+            <given-names>K</given-names>
+          </name>
+          <article-title>Long-term survival and prognostic factors after pulmonary metastasectomy in hepatocellular carcinoma</article-title>
+          <source>Ann Surg Oncol</source>
+          <year>2010</year>
+          <volume>7</volume>
+          <fpage>2795</fpage>
+          <lpage>2801</lpage>
+          <pub-id pub-id-type="doi">10.1245/s10434-010-1073-5</pub-id>
+          <pub-id pub-id-type="pmid">20517683</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Krishna</surname>
+            <given-names>SS</given-names>
+          </name>
+          <name>
+            <surname>Majumdar</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Grishin</surname>
+            <given-names>NV</given-names>
+          </name>
+          <article-title>Structural classification of zinc fingers: survey and summary</article-title>
+          <source>Nucleic Acids Res</source>
+          <year>2003</year>
+          <volume>7</volume>
+          <fpage>532</fpage>
+          <lpage>550</lpage>
+          <pub-id pub-id-type="doi">10.1093/nar/gkg161</pub-id>
+          <pub-id pub-id-type="pmid">12527760</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Cradick</surname>
+            <given-names>TJ</given-names>
+          </name>
+          <name>
+            <surname>Keck</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Bradshaw</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Jamieson</surname>
+            <given-names>AC</given-names>
+          </name>
+          <name>
+            <surname>McCaffrey</surname>
+            <given-names>AP</given-names>
+          </name>
+          <article-title>Zinc-finger nucleases as a novel therapeutic strategy for targeting hepatitis B virus DNAs</article-title>
+          <source>Mol Ther</source>
+          <year>2010</year>
+          <volume>7</volume>
+          <fpage>947</fpage>
+          <lpage>954</lpage>
+          <pub-id pub-id-type="doi">10.1038/mt.2010.20</pub-id>
+          <pub-id pub-id-type="pmid">20160705</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Nichols</surname>
+            <given-names>AC</given-names>
+          </name>
+          <name>
+            <surname>Chan-Seng-Yue</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Yoo</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Xu</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Dhaliwal</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Basmaji</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Szeto</surname>
+            <given-names>CC</given-names>
+          </name>
+          <name>
+            <surname>Dowthwaite</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Todorovic</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Starmans</surname>
+            <given-names>MH</given-names>
+          </name>
+          <etal/>
+          <article-title>A pilot study comparing HPV-positive and HPV-negative head and neck squamous cell carcinomas by whole exome sequencing</article-title>
+          <source>ISRN Oncol</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>809370</fpage>
+          <pub-id pub-id-type="pmid">23304554</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Yuzugullu</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Benhaj</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Ozturk</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Senturk</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Celik</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Toylu</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Tasdemir</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Yilmaz</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Erdal</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Akcali</surname>
+            <given-names>KC</given-names>
+          </name>
+          <name>
+            <surname>Atabey</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Ozturk</surname>
+            <given-names>M</given-names>
+          </name>
+          <article-title>Canonical Wnt signaling is antagonized by noncanonical Wnt5a in hepatocellular carcinoma cells</article-title>
+          <source>Mol Cancer</source>
+          <year>2009</year>
+          <volume>7</volume>
+          <fpage>90</fpage>
+          <pub-id pub-id-type="doi">10.1186/1476-4598-8-90</pub-id>
+          <pub-id pub-id-type="pmid">19849855</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ripka</surname>
+            <given-names>SKA</given-names>
+          </name>
+          <name>
+            <surname>Buchholz</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Wagner</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Sipos</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Kl&#xF6;ppel</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Downward</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Gress</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Michl</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>WNT5A&#x2013;target of CUTL1 and potent modulator of tumor cell migration and invasion in pancreatic cancer</article-title>
+          <source>Carcinogenesis</source>
+          <year>2007</year>
+          <volume>7</volume>
+          <fpage>1178</fpage>
+          <lpage>1187</lpage>
+          <pub-id pub-id-type="doi">10.1093/carcin/bgl255</pub-id>
+          <pub-id pub-id-type="pmid">17227781</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Hu</surname>
+            <given-names>MKM</given-names>
+          </name>
+          <name>
+            <surname>Jeong</surname>
+            <given-names>YJ</given-names>
+          </name>
+          <name>
+            <surname>Fuerer</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Ghole</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Nusse</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Sylvester</surname>
+            <given-names>KG</given-names>
+          </name>
+          <article-title>Wnt/beta-catenin signaling in murine hepatic transit amplifying progenitor cells</article-title>
+          <source>Gastroenterology</source>
+          <year>2007</year>
+          <volume>7</volume>
+          <fpage>1579</fpage>
+          <lpage>1591</lpage>
+          <pub-id pub-id-type="doi">10.1053/j.gastro.2007.08.036</pub-id>
+          <pub-id pub-id-type="pmid">17983805</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Yang</surname>
+            <given-names>WYH</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>Q</given-names>
+          </name>
+          <name>
+            <surname>He</surname>
+            <given-names>YQ</given-names>
+          </name>
+          <name>
+            <surname>Yu</surname>
+            <given-names>LX</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>SH</given-names>
+          </name>
+          <name>
+            <surname>Huang</surname>
+            <given-names>DD</given-names>
+          </name>
+          <name>
+            <surname>Tang</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Kong</surname>
+            <given-names>XN</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>SQ</given-names>
+          </name>
+          <name>
+            <surname>Wu</surname>
+            <given-names>MC</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>HY</given-names>
+          </name>
+          <article-title>Wnt/beta-catenin signaling contributes to activation of normal and tumorigenic liver progenitor cells</article-title>
+          <source>Cancer Res</source>
+          <year>2008</year>
+          <volume>7</volume>
+          <fpage>4287</fpage>
+          <lpage>4295</lpage>
+          <pub-id pub-id-type="doi">10.1158/0008-5472.CAN-07-6691</pub-id>
+          <pub-id pub-id-type="pmid">18519688</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>McDonald</surname>
+            <given-names>SLSA</given-names>
+          </name>
+          <article-title>The opposing roles of Wnt-5a in cancer</article-title>
+          <source>Br J Cancer</source>
+          <year>2009</year>
+          <volume>7</volume>
+          <fpage>209</fpage>
+          <lpage>214</lpage>
+          <pub-id pub-id-type="doi">10.1038/sj.bjc.6605174</pub-id>
+          <pub-id pub-id-type="pmid">19603030</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Welf</surname>
+            <given-names>ES</given-names>
+          </name>
+          <name>
+            <surname>Haugh</surname>
+            <given-names>JM</given-names>
+          </name>
+          <article-title>Signaling pathways that control cell migration: models and analysis</article-title>
+          <source>Wiley Interdiscip Rev Syst Biol Med</source>
+          <year>2011</year>
+          <volume>7</volume>
+          <fpage>231</fpage>
+          <lpage>240</lpage>
+          <pub-id pub-id-type="doi">10.1002/wsbm.110</pub-id>
+          <pub-id pub-id-type="pmid">21305705</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Beroukhim</surname>
+            <given-names>RGG</given-names>
+          </name>
+          <name>
+            <surname>Nghiemphu</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Barretina</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Hsueh</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Linhart</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Vivanco</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Lee</surname>
+            <given-names>JC</given-names>
+          </name>
+          <name>
+            <surname>Huang</surname>
+            <given-names>JH</given-names>
+          </name>
+          <name>
+            <surname>Alexander</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Du</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Kau</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Thomas</surname>
+            <given-names>RK</given-names>
+          </name>
+          <name>
+            <surname>Shah</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Soto</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Perner</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Prensner</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Debiasi</surname>
+            <given-names>RM</given-names>
+          </name>
+          <name>
+            <surname>Demichelis</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Hatton</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>Rubin</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Garraway</surname>
+            <given-names>LA</given-names>
+          </name>
+          <name>
+            <surname>Nelson</surname>
+            <given-names>SF</given-names>
+          </name>
+          <name>
+            <surname>Liau</surname>
+            <given-names>L</given-names>
+          </name>
+          <name>
+            <surname>Mischel</surname>
+            <given-names>PS</given-names>
+          </name>
+          <name>
+            <surname>Cloughesy</surname>
+            <given-names>TF</given-names>
+          </name>
+          <name>
+            <surname>Meyerson</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Golub</surname>
+            <given-names>TA</given-names>
+          </name>
+          <name>
+            <surname>Lander</surname>
+            <given-names>ES</given-names>
+          </name>
+          <name>
+            <surname>Mellinghoff</surname>
+            <given-names>IK</given-names>
+          </name>
+          <name>
+            <surname>Sellers</surname>
+            <given-names>WR</given-names>
+          </name>
+          <article-title>Assessing the significance of chromosomal aberrations in cancer: methodology and application to glioma</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2007</year>
+          <volume>7</volume>
+          <fpage>20007</fpage>
+          <lpage>20012</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0710052104</pub-id>
+          <pub-id pub-id-type="pmid">18077431</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Subramanian</surname>
+            <given-names>ATP</given-names>
+          </name>
+          <name>
+            <surname>Mootha</surname>
+            <given-names>VK</given-names>
+          </name>
+          <name>
+            <surname>Mukherjee</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Ebert</surname>
+            <given-names>BL</given-names>
+          </name>
+          <name>
+            <surname>Gillette</surname>
+            <given-names>MA</given-names>
+          </name>
+          <name>
+            <surname>Paulovich</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Pomeroy</surname>
+            <given-names>SL</given-names>
+          </name>
+          <name>
+            <surname>Golub</surname>
+            <given-names>TR</given-names>
+          </name>
+          <name>
+            <surname>Lander</surname>
+            <given-names>ES</given-names>
+          </name>
+          <name>
+            <surname>Mesirov</surname>
+            <given-names>JP</given-names>
+          </name>
+          <collab>Source, Broad Institute of Massachusetts Institute of Technology and Harvard CS, Cambridge, MA 02141, USA</collab>
+          <article-title>Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2005</year>
+          <volume>7</volume>
+          <fpage>15545</fpage>
+          <lpage>15550</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0506580102</pub-id>
+          <pub-id pub-id-type="pmid">16199517</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Mootha</surname>
+            <given-names>VKLC</given-names>
+          </name>
+          <name>
+            <surname>Eriksson</surname>
+            <given-names>KF</given-names>
+          </name>
+          <name>
+            <surname>Subramanian</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Sihag</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Lehar</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Puigserver</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Carlsson</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Ridderstr&#xE5;le</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Laurila</surname>
+            <given-names>E</given-names>
+          </name>
+          <name>
+            <surname>Houstis</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Daly</surname>
+            <given-names>MJ</given-names>
+          </name>
+          <name>
+            <surname>Patterson</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Mesirov</surname>
+            <given-names>JP</given-names>
+          </name>
+          <name>
+            <surname>Golub</surname>
+            <given-names>TR</given-names>
+          </name>
+          <name>
+            <surname>Tamayo</surname>
+            <given-names>P</given-names>
+          </name>
+          <name>
+            <surname>Spiegelman</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Lander</surname>
+            <given-names>ES</given-names>
+          </name>
+          <name>
+            <surname>Hirschhorn</surname>
+            <given-names>JN</given-names>
+          </name>
+          <name>
+            <surname>Altshuler</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Groop</surname>
+            <given-names>LC</given-names>
+          </name>
+          <article-title>PGC-1alpha-responsive genes involved in oxidative phosphorylation are coordinately downregulated in human diabetes</article-title>
+          <source>Nat Genet</source>
+          <year>2003</year>
+          <volume>7</volume>
+          <fpage>267</fpage>
+          <lpage>273</lpage>
+          <pub-id pub-id-type="doi">10.1038/ng1180</pub-id>
+          <pub-id pub-id-type="pmid">12808457</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Michaelson</surname>
+            <given-names>JJSY</given-names>
+          </name>
+          <name>
+            <surname>Gujral</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Zheng</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Malhotra</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Jin</surname>
+            <given-names>X</given-names>
+          </name>
+          <name>
+            <surname>Jian</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Greer</surname>
+            <given-names>D</given-names>
+          </name>
+          <name>
+            <surname>Bhandari</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Wu</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Corominas</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Peoples</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Koren</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Gore</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Kang</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Lin</surname>
+            <given-names>GN</given-names>
+          </name>
+          <name>
+            <surname>Estabillo</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Gadomski</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Singh</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Akshoomoff</surname>
+            <given-names>N</given-names>
+          </name>
+          <name>
+            <surname>Corsello</surname>
+            <given-names>C</given-names>
+          </name>
+          <name>
+            <surname>McCarroll</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Iakoucheva</surname>
+            <given-names>LM</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Sebat</surname>
+            <given-names>J</given-names>
+          </name>
+          <article-title>Whole-genome sequencing in autism identifies hot spots for de novo germline mutation</article-title>
+          <source>Cell</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>1431</fpage>
+          <lpage>1442</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.cell.2012.11.019</pub-id>
+          <pub-id pub-id-type="pmid">23260136</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

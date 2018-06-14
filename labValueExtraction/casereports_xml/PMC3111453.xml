@@ -1,0 +1,596 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21695262</article-id>
+      <article-id pub-id-type="pmc">3111453</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-11-05321</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0020854</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Biochemistry</subject>
+            <subj-group>
+              <subject>Proteins</subject>
+              <subj-group>
+                <subject>Protein Structure</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Computational Biology</subject>
+            <subj-group>
+              <subject>Macromolecular Structure Analysis</subject>
+              <subj-group>
+                <subject>Protein Structure</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Genetic Mutation</subject>
+              <subj-group>
+                <subject>Mutation Types</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Genetics of Disease</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Nephrology</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Impaired Proteostasis Contributes to Renal Tubular Dysgenesis</article-title>
+        <alt-title alt-title-type="running-head">Impaired Proteostasis in RTD</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>de Oliveira</surname>
+            <given-names>Rita Machado</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Marijanovic</surname>
+            <given-names>Zrinka</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Carvalho</surname>
+            <given-names>Filipe</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Milt&#xE9;nyi</surname>
+            <given-names>Gabriel Miltenberger</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Matos</surname>
+            <given-names>Joana Estev&#xE3;o</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tenreiro</surname>
+            <given-names>Sandra</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Oliveira</surname>
+            <given-names>S&#xF3;nia</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Enguita</surname>
+            <given-names>Francisco Javier</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Stone</surname>
+            <given-names>Ros&#xE1;rio</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Outeiro</surname>
+            <given-names>Tiago Fleming</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Cell and Molecular Neuroscience Unit, Instituto de Medicina Molecular, Lisboa, Portugal</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>GenoMed Diagnosticos de Medicina Molecular, Instituto de Medicina Molecular, Lisboa, Portugal</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Cell Biology Unit, Instituto de Medicina Molecular, Lisboa, Portugal</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Unidade de Nefrologia, Servi&#xE7;o de Pediatria, Hospital da Santa Maria, Lisboa, Portugal</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>Instituto de Fisiologia, Faculdade de Medicina de Lisboa, Lisboa, Portugal</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Gasset</surname>
+            <given-names>Maria</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">Consejo Superior de Investigaciones Cientificas, Spain</aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>touteiro@gmail.com</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: RMO TFO. Performed the experiments: RMO ZM FC GMM JEM SO FJE. Analyzed the data: RMO. Contributed reagents/materials/analysis tools: ST. Wrote the paper: RMO TFO. Diagnosed and treated the patient: RS.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>9</day>
+        <month>6</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>6</volume>
+      <issue>6</issue>
+      <elocation-id>e20854</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>23</day>
+          <month>3</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>10</day>
+          <month>5</month>
+          <year>2011</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>de Oliveira et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</copyright-statement>
+        <copyright-year>2011</copyright-year>
+      </permissions>
+      <abstract>
+        <p>Protein conformational disorders are associated with the appearance, persistence, accumulation, and misprocessing of aberrant proteins in the cell. The etiology of renal tubular dysgenesis (RTD) is linked to mutations in the angiotensin-converting enzyme (ACE). Here, we report the identification of a novel ACE mutation (Q1069R) in an RTD patient. ACE Q1069R is found sequestered in the endoplasmic reticulum and is also subject to increased proteasomal degradation, preventing its transport to the cell surface and extracellular fluids. Modulation of cellular proteostasis by temperature shift causes an extension in the processing time and trafficking of ACE Q1069R resulting in partial rescue of the protein processing defect and an increase in plasma membrane levels. In addition, we found that temperature shifting causes the ACE Q1069R protein to be secreted in an active state, suggesting that the mutation does not affect the enzyme's catalytic properties.</p>
+      </abstract>
+      <counts>
+        <page-count count="9"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>A growing number of human diseases, such as cystic fibrosis, Alzheimer's disease, and certain types of cancer, are associated with alterations in the protein homeostasis network (proteostasis) that lead to protein misfolding, mislocalization, or aggregation <xref ref-type="bibr" rid="pone.0020854-Powers1">[1]</xref>.</p>
+      <p>RTD is a severe disorder affecting renal tubular development and is characterized by persistent fetal anuria and perinatal death <xref ref-type="bibr" rid="pone.0020854-Lacoste1">[2]</xref>. Mutations in different components of the renin-angiotensin system have been linked to RTD, and one such class of mutations are those found in the gene that codes for the angiotensin-converting enzyme (ACE) <xref ref-type="bibr" rid="pone.0020854-Gribouval1">[3]</xref>. In most cases, affected individuals die <italic>in utero</italic> or within 24 hours of birth <xref ref-type="bibr" rid="pone.0020854-Lacoste1">[2]</xref>. ACE is a zinc-metallopeptidase and a key component of the renin-angiotensin-aldosterone system involved in the regulation of blood pressure and heart function through the formation of the vasoconstrictor angiotensin II and inactivation of the vasodilator bradykinin <xref ref-type="bibr" rid="pone.0020854-Eriksson1">[4]</xref>, <xref ref-type="bibr" rid="pone.0020854-Riordan1">[5]</xref>. ACE also regulates water balance, neuropeptide metabolism, reproduction, immune functions and kidney development <xref ref-type="bibr" rid="pone.0020854-Gubler1">[6]</xref>, <xref ref-type="bibr" rid="pone.0020854-Hagaman1">[7]</xref>, <xref ref-type="bibr" rid="pone.0020854-Ehlers1">[8]</xref>, <xref ref-type="bibr" rid="pone.0020854-Krege1">[9]</xref>. There are two forms of ACE, a somatic and a testicular form, both C-terminally anchored to the plasma membrane <xref ref-type="bibr" rid="pone.0020854-Wei1">[10]</xref>. The somatic form is abundant in endothelial, epithelial and neuronal cell membranes. Somatic ACE also exists as a soluble form that originates from membrane-bound endothelial ACE by the action of a yet unidentified protease. Soluble ACE is found in the plasma, cerebrospinal fluid, seminal liquid, and urine <xref ref-type="bibr" rid="pone.0020854-Wei1">[10]</xref>, <xref ref-type="bibr" rid="pone.0020854-Ramchandran1">[11]</xref>, and contains two enzymatic domains with a high degree of internal sequence homology <xref ref-type="bibr" rid="pone.0020854-Soubrier1">[12]</xref>. However, the active sites in the two enzymatic domains display contrasting catalytic and immunological properties and substrate specificities <xref ref-type="bibr" rid="pone.0020854-Jaspard1">[13]</xref>, <xref ref-type="bibr" rid="pone.0020854-Wei2">[14]</xref>, <xref ref-type="bibr" rid="pone.0020854-Wei3">[15]</xref>.</p>
+      <p>Recently, two novel homozygous mutations in the ACE gene linked to autosomal recessive RTD were described <xref ref-type="bibr" rid="pone.0020854-Uematsu1">[16]</xref>, <xref ref-type="bibr" rid="pone.0020854-Uematsu2">[17]</xref>. Here, we describe a novel point mutation in the ACE gene, encoding ACE Q1069R, identified in a female RTD patient. We elucidated the molecular mechanisms by which this mutation results in non-functional ACE protein and discuss possible strategies for therapeutic intervention in RTD and other disorders associated with proteostasis network imbalance.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <sec id="s2a">
+        <title>Identification of the mutation in the ACE gene</title>
+        <p>In 2004, a female child was born by cesarean section&#xA0;after 36 weeks of gestation. Apgar score was 2 at the fist minute and 8 at the tenth minute after birth. Somatometrics was adequate to the gestational age. There was no history of parental consanguinity and no reported cases of renal disease in the family. The mother was a healthy young women and the pregnancy was uneventful, with no reference to oligoamnious or to maternal drugs use. The patient had a healthy older brother.</p>
+        <p>At birth, the patient presented large fontanels with widely separated sutures, talus feet and joint contractures. Profound hypotension recalcitrant to treatment with pressors was present since the first hours after birth. She also presented moderate respiratory distress and a persistent ductus arteriosus. Anuria was detected at birth so peritoneal dialysis was started on the 3<sup>rd</sup> day after birth. The renal sonogram showed normal/high size kidneys, with poor corticomedullary differentiation. The skull x-ray showed poor ossification of the vault. Biochemical investigation indicated very high plasmatic rennin (&gt;1000 mcU/ml) and the karyotype was normal (46 XX). Based on the above symptoms clinical diagnosis of RTD was suspected. On the 12<sup>th</sup> day pressor therapy was stopped and she was transferred to the nephrology unit where she was treated as an inpatient on continuous peritoneal dialysis for 6 months. At that age, the patient started cycling peritoneal dialysis and was discharged from the hospital. Diuresis slowly increased until 1.5 ml/kg/day and the main problem was&#xA0;failure to thrive with slight developmental retardation. At the age of 4 years the patient was successfully submitted to cadaver kidney transplantation. She maintains normal graft function, improved growth and normalized development.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Identification of the mutation in the ACE gene</title>
+        <p>Since ACE was previously implicated in RTD, we sequenced the ACE gene from our patient and identified a homozygous A-to-G nucleotide change in exon 22 (c.3293A&gt;G) (<xref ref-type="fig" rid="pone-0020854-g001">Figure 1A</xref>). The mutation caused a glutamine to arginine substitution at amino acid 1069 in the ACE protein. Segregation analysis in the family of the proband showed that both of her clinically healthy parents and one clinically healthy brother were heterozygous carriers for this mutation. No other mutations were observed in the ACE gene (<xref ref-type="fig" rid="pone-0020854-g001">Figure 1A</xref>).</p>
+        <fig id="pone-0020854-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0020854.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Novel mutation in the ACE gene is associated with RTD in a homozygous patient for the nucleotide substitution.</title>
+            <p><bold>A.</bold> Mutation c.3293A&gt;G (p.G1069R) in homozygous state in our proband and in heterozygous state in the patient&#x2019;s brother. Arrow points the changing nucleotide. Wt: WT sequence of the ACE gene (part of exon 22). On the bottom, pedigree of the family. Circles indicate females; squares, males; filled symbols, affected individuals; open symbols, unaffected individuals; Mut/Mut, homozygous p.Q1069R mutation; Mut/WT, heterozygous Q1069R mutation (WT indicates WT allele). <bold>B.</bold> Pocket and cavity analysis of C-terminal domains from native ACE and Q1069R mutant after energy minimization of the atomic coordinates and molecular dynamics simulations. Presence of pocket and cavities within the structure were analyzed by POCASA algorithm and the results plotted in 3D structure over the backbone of the native ACE C-terminal domain atomic coordinates (PDB code: 2OC2). The figure was prepared by using Pymol.</p>
+          </caption>
+          <graphic xlink:href="pone.0020854.g001"/>
+        </fig>
+      </sec>
+      <sec id="s2c">
+        <title>Impact of the mutation on protein structure and activity</title>
+        <p>We assayed ACE activity from patient blood samples to determine whether the mutation affected its enzymatic activity. In contrast to the reported absence of activity prior to kidney transplant <xref ref-type="bibr" rid="pone.0020854-Danilov1">[18]</xref>, the patient displayed normal ACE activity compared to five healthy volunteers (<xref ref-type="supplementary-material" rid="pone.0020854.s001">Figure S1</xref>). Lack of ACE activity from the patient sample prior to kidney transplantation may stem from changes in the active site of the mutant protein or alternatively, the mutation may affect protein localization and stability. In order to distinguish between these two possibilities we employed molecular dynamics simulations of wild type (WT) and mutant protein in a controlled environment. See SI for more details about the molecular dynamics simulation. Root Mean Squared Deviations (RMSD) of the amino-acids positions of WT and mutant proteins, along with the simulation of the 3-D structure, suggests that the Q1069R substitution should not influence the structure of the active site (<xref ref-type="fig" rid="pone-0020854-g001">Figure 1B</xref> and <xref ref-type="supplementary-material" rid="pone.0020854.s002">Figure S2</xref>). Amino acids comprising the active site of the enzyme and residues involved in coordinating a Zn<sup>2+</sup> atom required for protein activity showed little or no variation in RMSD in each protein, suggesting that lack of activity is likely due to aberrant protein processing (<xref ref-type="supplementary-material" rid="pone.0020854.s002">Figure S2</xref>). Moreover, molecular dynamics analysis showed an increased exposed surface area in the mutated protein caused by changes in the protein hydrodynamic radius (<xref ref-type="supplementary-material" rid="pone.0020854.s002">Figure S2</xref>), consistent with an increase in the volume of internal pockets and cavities present in the mutant protein relative to the WT protein (<xref ref-type="fig" rid="pone-0020854-g001">Figure 1B</xref>).</p>
+      </sec>
+      <sec id="s2d">
+        <title>Stability and cellular localization of the mutant ACE protein</title>
+        <p>In order to study ACE processing, we established a cellular model to analyze localization, trafficking and turnover of WT and mutant ACE. We generated stable cell lines expressing either WT ACE (ACE<sub>WT</sub>) or ACE Q1069R (ACE<sub>Q1069R</sub>) in a human embryonic kidney (HEK) cells. We performed immunoblot analysis to investigate ACE protein levels both cell lines using an anti-ACE antibody that recognizes the denatured form of the protein (anti-ACE 1D8). ACE protein levels were approximately 80% lower in ACE<sub>Q1068R</sub> cells compared to ACE<sub>WT</sub> cells (<xref ref-type="fig" rid="pone-0020854-g002">Figure 2A</xref>); the lower level of mutant ACE protein in ACE<sub>Q1068R</sub> cells could be attributed to lower protein expression, decreased protein stability, or both. To discriminate between these possibilities, we performed quantitative RT-PCR analysis on ACE<sub>WT</sub> and ACE<sub>Q1069R</sub> cells quantifying ACE mRNA levels and found no significant difference between mRNA levels (<xref ref-type="fig" rid="pone-0020854-g002">Figure 2B</xref>). Thus, the marked discrepancy between the mRNA and protein levels of wild type and mutant ACE-expressing cells suggested reduced protein stability for the mutant form. Next, we analyzed the half-life of ACE<sub>WT</sub> and ACE<sub>Q1069R</sub>. Cells were treated with cyclohexamide (CHX) to inhibit <italic>de novo</italic> protein synthesis and protein levels were monitored by immunoblot analysis. While the ACE<sub>WT</sub> protein showed essentially no decrease in protein levels over a 120 minutes time course, ACE<sub>Q1069R</sub> protein is more rapidly degraded and is not detected at 120 minutes, suggesting a decreased stability of the mutant protein (<xref ref-type="fig" rid="pone-0020854-g002">Figure 2C</xref>).</p>
+        <fig id="pone-0020854-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0020854.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Low ACE<sub>Q1069R</sub> protein levels in HEK cells is due to degradation by the ubiquitin proteasome system.</title>
+            <p><bold>A.</bold> Analysis of ACE protein levels by western blot in HEK cells stably expressing the WT form or the mutant (Q1069R). Empty vector is used as a negative control. GAPDH was used as a loading control. Quantification of 3 independent experiments is shown on the right. Error bars represent &#xB1;SD. P&lt;0.05. <bold>B.</bold> Relative quantitative analysis of ACE mRNA levels in HEK cells stably expressing WT or ACE<sub>Q1069R</sub>, normalized to &#x3B2;-actin. Error bar represents &#xB1;SD. <bold>C.</bold> Analysis of ACE protein stability by pulse-chase experiment in HEK cells. Cells were treated with CHX, for the indicated times. Protein levels were assessed by western blot analysis. Quantification of 3 independent experiments is shown. Error bars represent &#xB1;SD. P&lt;0.05. <bold>D.</bold> Western blot analysis of ACE<sub>Q1069R</sub> HEK cells. Cells in growth medium were treated for 2h with control medium or media with increasing dosages of ALLN. On the right, quantification of three independent experiments is shown. Error bars represent &#xB1;SD. P&lt;0.05.</p>
+          </caption>
+          <graphic xlink:href="pone.0020854.g002"/>
+        </fig>
+        <p>To test whether the degradation of ACE<sub>Q1069R</sub> protein occurs via the ubiquitin/proteasome system (UPS), we performed immunoblot analysis in the presence of increasing concentrations of the proteasome inhibitor ALLN. We observed a dose-dependent increase in the level of mutant ACE protein suggesting that the mutant form was degraded by the proteasome (<xref ref-type="fig" rid="pone-0020854-g002">Figure 2D</xref>). These results indicate that the lower level of ACE<sub>Q1069R</sub> is due to selective degradation of the mutant form by the UPS.</p>
+        <p>In order to investigate ACE's cell surface localization, we performed immunofluorescence analysis on both stable cell lines using an antibody that recognizes the native form of the protein (anti-ACE i2H5). Using non-permeabilizing conditions, we found a well-defined membrane pattern in ACE<sub>WT</sub> cells, while ACE<sub>Q1069R</sub> cells failed to show ACE protein on the cell surface (<xref ref-type="fig" rid="pone-0020854-g003">Figure 3A</xref>). These results were confirmed by flow cytometry (<xref ref-type="fig" rid="pone-0020854-g003">Figure 3B</xref>).</p>
+        <fig id="pone-0020854-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0020854.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>ACE<sub>Q1069R</sub> protein is sequestered intracellular and does not reach the plasma membrane.</title>
+            <p><bold>A.</bold> HEK cells plated on glass cover slips for 2 days then fixed and not permeabilized and immunostained for ACE (green). Immunofluorescence staining observed by confocal microscopy. Scale bars, 20 &#xB5;m. <bold>B.</bold> Analysis of ACE protein by flow cytometry in non-permeabilized ACE<sub>WT</sub> and ACE<sub>Q1069R</sub> stable cells. Quantification of 3 independent experiments is shown. Error bars represent &#xB1;SD. P&lt;0.05. <bold>C.</bold> Analysis of ACE protein by flow cytometry in non-permeabilized ACE<sub>WT</sub> and ACE<sub>Q1069R</sub> stable cells grown in the presence of ALLN or control media for 2h. Quantification of 3 independent experiments. Error bars represent &#xB1;SD. <bold>D.</bold> HEK cells plated on glass cover slips for 2 days then fixed and immunostained for ACE (green), ER (red) and nuclei are stained blue with DAPI). Immunofluorescence staining observed with confocal microscopy. Insets represent enlarged images in the boxed regions. Scale bars, 20 &#xB5;m. Quantification of the green signal overlapping with red signal was done using ImageJ software.</p>
+          </caption>
+          <graphic xlink:href="pone.0020854.g003"/>
+        </fig>
+        <p>To assess whether the absence of plasma membrane localization of the mutant protein was due to overall lower protein levels and/or impairment in protein trafficking, the ACE<sub>Q1069R</sub> stable cell line was treated with proteasome inhibitor and surface levels of ACE were analyzed by flow cytometry and epifluorescence microscopy. Although we detected an increase in ACE<sub>Q1069R</sub> protein level in the presence of ALLN we could not observe any increase in the level of the protein at the cell surface (<xref ref-type="fig" rid="pone-0020854-g003">Figure 3C</xref>), suggesting that impaired protein trafficking caused the absence of ACE<sub>Q1069R</sub> at the cell surface. Next, we analyzed the subcellular localization of ACE<sub>WT</sub> and ACE<sub>Q1069R</sub> protein in stable cell lines by epifluorescence microscopy. Immunofluorescence analysis using the organelle markers calnexin, for the ER, and giantin, for the Golgi, showed that approximately 80% of ACE<sub>Q1069R</sub> was found in the ER, while only 10% of the WT protein was found in the same compartment (<xref ref-type="fig" rid="pone-0020854-g003">Figure 3D</xref>). Furthermore, approximately 30% of WT and 10% of mutant protein were found in the Golgi, implying impaired ER to Golgi trafficking of ACE<sub>Q1069R</sub> (<xref ref-type="supplementary-material" rid="pone.0020854.s003">Figure S3</xref>). Taken together, these results suggest that mutant ACE is not able to reach the plasma membrane, accumulates in the ER and, as a consequence, is rapidly degraded by the proteasome. The sequestration of ACE<sub>Q1069R</sub> in the ER suggests that it might be misfolded.</p>
+        <p>Incubation of cells at 30&#xB0;C increases the interaction of misfolded proteins with molecular chaperones, facilitating their proper folding and trafficking. Thus, we analyzed the subcellular localization of ACE<sub>WT</sub> and ACE<sub>Q1069R</sub> by flow cytometry using the i2H5 antibody and cells (non-permeabilized) grown at 30&#xB0;C for 4 days in order to determine if ACE<sub>Q1069R</sub> is misfolded. The proportion of i2H5<sup>+</sup> cells in the population of ACE<sub>Q1069R</sub> cells grown at 30&#xB0;C increased 9-fold in contrast to cells grown at 37&#xB0;C (<xref ref-type="fig" rid="pone-0020854-g004">Figure 4A</xref>); WT ACE was not affected (<xref ref-type="fig" rid="pone-0020854-g004">Figure 4A</xref>). We confirmed these results by fluorescence microscopy with ACE<sub>Q1069R</sub> and ACE<sub>WT</sub> cells grown at 30&#xB0;C for 4 days. ACE<sub>Q1069R</sub> cells grown at 30&#xB0;C had more positively stained cells compared to cells grown at 37&#xB0;C (<xref ref-type="fig" rid="pone-0020854-g004">Figure 4B</xref>). We examined ACE protein levels at the two different temperatures in order to exclude the possibility that the rescue of mutant ACE localization to the plasma membrane at 30&#xB0;C was due to alteration in protein levels. Cells grown at 30&#xB0;C did not affect protein levels of either WT or mutant proteins as compared to 37&#xB0;C (<xref ref-type="supplementary-material" rid="pone.0020854.s004">Figure S4</xref>). Since growing cells at 30&#xB0;C can augment the amount of the mutant protein present at the plasma membrane and this effect is not increased in the presence of proteasome inhibitor, we suspected that protein trafficking from the ER to Golgi was rescued at 30&#xB0;C. To test this, HEK cells stably expressing ACE<sub>Q1069R</sub> or ACE<sub>WT</sub> were permeabilized and stained with anti-ACE i2H5 antibody and markers for calnexin and giantin; cells were then visualized by confocal microscopy (<xref ref-type="fig" rid="pone-0020854-g004">Figure 4C</xref> and <xref ref-type="supplementary-material" rid="pone.0020854.s005">Figure S5</xref>). Interestingly, there was an increase in co-localization of ACE<sub>Q1069R</sub> with the Golgi, suggesting an improvement in ACE protein trafficking from the ER to Golgi (<xref ref-type="fig" rid="pone-0020854-g004">Figure 4C</xref> and <xref ref-type="supplementary-material" rid="pone.0020854.s005">Figure S5</xref>) resulting in partially restored surface expression of the mutant protein. Our results suggest that the point mutation in ACE gene is responsible for protein misfolding and retention in the ER leading to its degradation by the UPS; moreover, this defect can be partially overcome by growing cells at 30&#xB0;C. To further confirm our findings we blocked protein trafficking through the secretory pathway using Brefeldin A (BFA) and tunicamycin. BFA interferes with protein transport from the ER to the Golgi apparatus, while retrograde transport from the Golgi to the ER stays unaffected, resulting in the partial redistribution of the Golgi resident protein to the ER. Furthermore, BFA also affects Golgi stacking, leading to dispersion of the Golgi; as a consequence, proteins are unable to reach the plasma membrane. Tunicamycin is an inhibitor of N-linked protein glycosylation affecting protein folding in the ER, which leads to an increase in ER protein retention time. If rescue at 30&#xB0;C is indeed due to facilitated trafficking through the secretory pathway, treatment of cells with these drugs should oppose the rescue effect. Indeed, treatment of ACE<sub>Q1069R</sub> cells with BFA and tunicamycin at 30&#xB0;C, resulted in 50% lower protein surface expression as observed by immunofluorescence (<xref ref-type="fig" rid="pone-0020854-g005">Figure 5A</xref>). Moreover, tunicamycin decreased ACE<sub>Q1069R</sub> colocalization with Golgi markers while BFA showed no colocalization and caused dispersion of the organelle (<xref ref-type="fig" rid="pone-0020854-g005">Figure 5B</xref>). Our results indicate that impaired trafficking through the secretory pathway causes reduced plasma membrane levels of ACE<sub>Q1069R</sub> protein.</p>
+        <fig id="pone-0020854-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0020854.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>ACE<sub>Q1069R</sub> in the plasma membrane at 30&#xB0;C due to an improvement of trafficking through the secretory pathway.</title>
+            <p><bold>A.</bold> Flow cytometry analysis of ACE protein levels at the plasma membrane in non-permeabilized cells. ACE<sub>Q1069R</sub> and ACE<sub>WT</sub> HEK cells grown at 37&#xB0;C or 30&#xB0;C for 4 days. Quantification of 3 independent experiments. Error bars represent &#xB1;SD. P&lt;0.05. <bold>B.</bold> Immunostain analysis by confocal microscopy of ACE<sub>Q1069R</sub> HEK cells grown in glass coverslips at 37&#xB0;C versus 30&#xB0;C for 4 days. Cell not permeabilized and fixed were stained with ACE in green, nuclei are stained blue with DAPI. Scale bars, 20 &#xB5;m. <bold>C.</bold> Same conditions and cells as in A. Cells were permeabilized and double stained for Golgi (red) and ACE (green). Nuclei are stained blue with DAPI. Insets represent enlarged images in the boxed regions. Scale bars, 20 &#xB5;m. Quantification of the green signal overlapping with red signal was done using ImageJ software.</p>
+          </caption>
+          <graphic xlink:href="pone.0020854.g004"/>
+        </fig>
+        <fig id="pone-0020854-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0020854.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>BFA and tunycamicin abolishes the 30&#xB0;C rescue of ACE<sub>Q1069R</sub> at the plasma membrane.</title>
+            <p><bold>A.</bold> Immunostaining analysis by confocal microscopy of ACE<sub>Q1069R</sub> HEK cells grown at 30&#xB0;C on glass coverslips in the presence of 10 &#xB5;g/ml Tunycamicin for 6h, 10 &#xB5;g/ml BFA for 6h or control media. Cells were not permeabilized and stained with ACE (green). Scale bars, 20 &#xB5;m. Quantification of number of cell which display ACE membrane signal. Quantification of 3 independent experiments. Error bars represent &#xB1;SD. <bold>B.</bold> Immunostain analysis by confocal microscopy of ACE<sub>Q1069R</sub> HEK cells grown in the same conditions as in A. Cells were fixed, permeabilized, stained for ACE (green) and Golgi (red). Nuclei are stained blue with DAPI. Insets represent enlarged images in the boxed regions. Scale bars, 20 &#xB5;m. Quantification of the green signal overlapping with red signal was done using ImageJ software. Quantification of 3 independent experiments. Erros bars represent &#xB1;SD.</p>
+          </caption>
+          <graphic xlink:href="pone.0020854.g005"/>
+        </fig>
+      </sec>
+      <sec id="s2e">
+        <title>Enzymatic Activity of ACE<sub>Q1069R</sub></title>
+        <p>ACE<sub>Q1069R</sub> is not able to reach its proper localization at the plasma membrane due to impaired trafficking (<xref ref-type="fig" rid="pone-0020854-g003">Figure 3A and D</xref>). We hypothesized that, once ACE<sub>Q1069R</sub> reaches the cell surface, the mutant protein will be secreted into the extracellular fluids and its activity should be restored; this hypothesis is further supported by the modeling of the 3-D structure of the ACE protein, which suggests that the ACE<sub>Q1069R</sub> point mutation should not affect the enzymatic activity of the protein (<xref ref-type="fig" rid="pone-0020854-g001">Figure 1B</xref>). To directly test our hypothesis, media from ACE<sub>Q1069R</sub> and ACE<sub>WT</sub> cells grown at 30&#xB0;C for 4 days were harvested and tested by western blot and for ACE activity (<xref ref-type="fig" rid="pone-0020854-g006">Figure 6A and B</xref>). Interestingly, in the ACE<sub>Q1069R</sub> cells ACE activity doubled when cells were grown at 30&#xB0;C (<xref ref-type="fig" rid="pone-0020854-g006">Figure 6B</xref>), indicating that higher ACE levels at the plasma membrane and in the media is coupled with increased enzymatic activity in the media. In summary, our results suggest that if the ACE<sub>Q1069R</sub> mutant protein reaches its proper localization in the cell, it will be secreted to the extracellular fluids where it can perform its normal function.</p>
+        <fig id="pone-0020854-g006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0020854.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>ACE<sub>Q1069R</sub> activity is normal in HEK cells at 30&#xB0;C.</title>
+            <p><bold>A.</bold> Western blot analyses of media from ACE<sub>WT</sub> and ACE<sub>Q1069R</sub> HEK cells grown at 37&#xB0;C and 30&#xB0;C. Equal amounts of total protein were loaded. Quantification of 3 independent experiments. Error bars represent &#xB1;SD. P&lt;0.05. <bold>B.</bold> ACE activity in the media from ACE<sub>Q1069R</sub> HEK cells grown at 37&#xB0;C and 30&#xB0;C. Activity was determined with a synthetic substrate (HHL) for 15 minutes incubation Activity was normalized by the amount of protein present in the media (quantification in A, using arbitrary units).</p>
+          </caption>
+          <graphic xlink:href="pone.0020854.g006"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>The correct expression, folding, trafficking and processing of proteins is essential for the overall cellular homeostasis and is emerging as a novel concept known as proteostasis <xref ref-type="bibr" rid="pone.0020854-Balch1">[19]</xref>. However, the precise and intricate ways through cells regulate proteostasis are not fully understood, complicating the development of therapeutic strategies for several human disorders. Importantly, a recent study highlighted the potential of proteostasis modulation for the treatment of human diseases, showing that guanabenz, a small molecule used in hypertension treatments, rescued cells from protein misfolding stress due to elevated chaperone availability leading to improved folding <xref ref-type="bibr" rid="pone.0020854-Tsaytler1">[20]</xref>.</p>
+      <p>We identified a novel mutation in the ACE gene responsible for autosomal RTD, a disorder that usually results in premature death, and characterized the molecular defects associated with the identified mutation.</p>
+      <p>A major challenge in the study of RTD was overcome by the development of an in vitro model which enabled us to demonstrate that a single amino acid substitution in the C-terminal domain of ACE causes the retention of the protein in the ER, degradation by the UPS, and altered trafficking, resulting in decreased presence on the plasma membrane. The trafficking of proteins from the ER is regulated by several critical and distinct mechanisms. First, quality control pathways ensure that only properly folded proteins are allowed to exit the ER <xref ref-type="bibr" rid="pone.0020854-Molinari1">[21]</xref>. Chaperone proteins within the ER participate in both protein folding and the retention of misfolded proteins within the ER <xref ref-type="bibr" rid="pone.0020854-Vembar1">[22]</xref>. The proteins that fail quality control are eliminated via the UPS system, in a process known as ERAD <xref ref-type="bibr" rid="pone.0020854-Meusser1">[23]</xref>. Thus, one possibility is that ACE<sub>Q1069R</sub> protein misfolds due to the substitution of a neutral amino acid by a positively charged residue, altering folding kinetics. Both protein modeling and the observation that mutated ACE is present in low levels in the cell and is degraded by the proteasome support this theory. Alternatively, since ACE is composed of two similar domains, it may form intermediate dimers that are transport-competent to leave the ER and travel to the Golgi. Analysis of the quaternary structure of several membrane and secreted proteins supports the idea that dimer or oligomer formation is an important event that affects the rate of transport of proteins from the ER to the Golgi <xref ref-type="bibr" rid="pone.0020854-Kreis1">[24]</xref>, <xref ref-type="bibr" rid="pone.0020854-Danielsen1">[25]</xref>.</p>
+      <p>Several disorders are caused the inability of a mutant protein to properly travel through the secretory pathway <xref ref-type="bibr" rid="pone.0020854-Schulein1">[26]</xref> including bilateral frontoparietal polymicrogyria and cystic fibrosis <xref ref-type="bibr" rid="pone.0020854-Jin1">[27]</xref>, <xref ref-type="bibr" rid="pone.0020854-Cheng1">[28]</xref>. In cystic fibrosis, the most common mutation in cystic fibrosis transmembrane conductance regulator (CFTR) leads to its retention in the ER and degradation by the UPS <xref ref-type="bibr" rid="pone.0020854-Welsh1">[29]</xref>; interfering with chaperone activity can prevent ER-sequestration, resulting in restored transport to the plasma membrane <xref ref-type="bibr" rid="pone.0020854-Brown1">[30]</xref>. Incubation of cells at low temperature can have similar biological effects in cells with mutant CFTR, where low temperature enables the proper folding and maturation of the protein <xref ref-type="bibr" rid="pone.0020854-Denning1">[31]</xref>. Similarly, localization of ACE at the plasma membrane was restored when we modulated the proteostasis network by growing cells at a lower temperature. Under these conditions the catalytic activity of the mutant protein was also restored suggesting that the mutation did not directly affect protein activity. When traffic through the secretory pathway was inhibited by BFA and tunicamycin, the mutant protein was unable to reach plasma membrane and no activity in the media was detected, confirming that the functional defect in mutant ACE activity was a consequence of aberrant protein trafficking rather than the loss of enzymatic activity.</p>
+      <p>Recently, it was shown that elevated levels of ACE expression is a risk factor in several cardiovascular and renal diseases and that overexpression of ACE is observed in breast, lung, and gastric cancer <xref ref-type="bibr" rid="pone.0020854-Obeid1">[32]</xref>, <xref ref-type="bibr" rid="pone.0020854-Ebert1">[33]</xref>, <xref ref-type="bibr" rid="pone.0020854-Rocken1">[34]</xref>; therefore, understanding the mechanism of ACE regulation is an important goal not only for the basic understanding of ACE biology, but also for clinical practice. Our work has several important consequences: first, it provides important insights into the functional structure of ACE; and secondly, it provides new information about the mechanism through which ACE mutations can lead to the severe cases of RTD.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s4">
+      <title>Materials and Methods</title>
+      <sec id="s4a">
+        <title>Constructs and Cell Lines</title>
+        <p>HEK cells were a king gift from Dr. Luis Moita. Cells were in DMM supplemented with 10% heat inactivated fetal bovine serum, penicillin, streptomycin and L-Glutamine.</p>
+        <p>ACE<sub>Q1069R</sub> was generated by site directed mutagenesis from the pCDNA3.1-Hygro-ACE<sub>WT</sub> (kindly provided by Dr. Sergei Danilov). Site directed mutagenesis was performed as recommended with the QuickChange XL Site Directed Mutagenesis Kit (Stratagene). The CAG codon (glutamine) was mutated to a CGG codon (arg) at position 1069 using the forward primer: <named-content content-type="gene">5&#x2032;-ggctgaagtaccggggcctctgccc-3&#x2032;</named-content> and the reverse primer: <named-content content-type="gene">5&#x2032;-gggcagaggccccggtacttcagcc-3&#x2032;</named-content>. The resulting construct was verified by sequencing.</p>
+      </sec>
+      <sec id="s4b">
+        <title>Immunoblot and Antibodies</title>
+        <p>Cells were washed with cold PBS, and lysed with NP-40 buffer in the presence of protease inhibitor cocktail (Roche). Lysates were cleared from debris by a 14K rpm centrifugation for 10 min at 4&#xB0;C; total protein was quantified by Bradford Assay Kit (Biorad). Equal amounts of total protein were subjected to SDS-PAGE using 10% Tris&#x2013;Glycine gel. Proteins on the SDS-PAGE were transferred to PVDF membranes (Biorad) and blocked in blocking buffer (5% milk in TBS with 0.1% Tween-20: TBS-T, pH 7.4) for 1h prior to the addition of the primary antibody overnight at 4&#xB0;C. Primary antibodies: anti-ACE 1&#x2236;1000 (1D8) and anti-GAPDH 1&#x2236;5000 dilution (Ambion). Blots were washed three times with TBS-T and incubated at room temperature for 1h in HRP labeled secondary antibodies (GE Healthcare, 1&#x2236;10000 dilution). After three washes with TBS-T, immunoblots were developed using ECL (Millipore). The films were scanned and quantified with ImageJ.</p>
+      </sec>
+      <sec id="s4c">
+        <title>Molecular dynamics simulations</title>
+        <p>All simulations were performed with the GROMACS package and the all atom GROMOS96 force field. Presence of pocket and cavities within the structure were analyzed by POCASA algorithm. The atomic coordinates of ACE C-terminal domain from testis (PDB code: 2OC2) were used as initial model for the simulations. All the simulations were started with the aminoacid side chain conformations extracted from the PDB database with a protonation state consistent with a neutral pH. Proteins were solvated in a water box of 110 &#xC5;<sup>3</sup> and a density of 1 g/cm3. The solvated models were energy minimized by conjugated gradient for 1000 steps to eliminate steric clashes between atoms. All the systems were equilibrated by simulated annealing with slow temperature decreasing from 2500 K to 300 K over 1000 cycles. Molecular dynamics simulations were then performed over 400 ps at 300 K and data collected every 1 ps.</p>
+      </sec>
+      <sec id="s4d">
+        <title>Flow cytometry analysis</title>
+        <p>HEK cells stably expressing ACE<sub>WT</sub> and ACE<sub>Q1069R</sub> were washed with ice cold PBS, detached with 1mM EDTA in PBS, resuspended in 0.5% BSA in PBS and stained with primary antibody (i2H5) for 20 min. After washing cells, cells were incubated with secondary antibody, alexa 488 anti-mouse, for 20 min. Acquisition was done on a FACS Calibur cytometer and analysis was performed with the FlowJo software.</p>
+      </sec>
+      <sec id="s4e">
+        <title>Immunocytochemistry and Fluorescence microscopy</title>
+        <p>Cells were plated in 12-well plates on a glass coverslip coated with poly-d-lysine (Sigma), grown at the corresponding temperatures (37&#xB0;C or 30&#xB0;C). We added Brefeldin A at 10 &#xB5;g/ml for 6h and tunicamycin at 10 &#xB5;g/ml for 6 h. Cells were fixed in 4%PFA for 10 min, permeabilized with 0.5% Triton-100 in TBS and blocked for 1h with 1.5% goat serum. Primary antibodies were: anti-ACE 2iH5, anti-Calnexin antibody (1&#x2236;100 dilution; Invitrogen), and giantin (1&#x2236;250 dilution, ABCAM). Alexa 488 and Alexa 568 conjugated secondary antibodies were used at a 1&#x2236;1000 dilution. Coverslips were mounted with Vectashield and visualized on a Zeiss LSM 510 META confocal microscope using a 63x/1.4 oil immersion objective. Sequential multi-track frames were acquired to avoid any potential crosstalk from the two fluorophores. Quantification of co-localization was performed in ImageJ (<ext-link ext-link-type="uri" xlink:href="http://rsbweb.nih.gov/ij/">http://rsbweb.nih.gov/ij/</ext-link>). For details see SI.</p>
+      </sec>
+      <sec id="s4f">
+        <title>Real time PCR</title>
+        <p>Total RNA was extracted using Trizol reagent according to the manufacturer (Invitrogen). cDNA was synthesized from 4 &#xB5;g total RNA using random primers and superscript II reverse transcriptase following the manufacturer instructions (Invitrogen). Real time PCR was performed using SYBR green master mix according to the manufacturer manual (Sigma Aldrich). All reactions were performed in triplicates. PCR primers were specific for ACE (<named-content content-type="gene">GGT GGT GTG GAA CGA GTA TG</named-content>, <named-content content-type="gene">TCG GGT AAA ACT GGA GGA TG</named-content>) and &#x3B2;-actin. Quantification was done in following the Pfaffl method.</p>
+      </sec>
+      <sec id="s4g">
+        <title><italic>In vivo</italic> Protein Stability Assay</title>
+        <p>HEK cells stably expressing ACE<sub>WT</sub> or ACE<sub>Q1069R</sub> were grown in the presence of 10uM Cyclohexamide (CHX) and either ethanol or 10uM ALLN (N-acetyl-L-leucyl-L-leucyl-L-norleucine) (both from Sigma), cells were harvest at each time point and lysates were analyzed by western blot. The films were scanned and quantified with ImageJ.</p>
+      </sec>
+      <sec id="s4h">
+        <title>Enzymatic Activity</title>
+        <p>Media in which stable cells were grown was collected (10ml per 10cm dish) and concentrated using a Vivaspin-15R column following manufacture instruction (Sartorius stedim). BCA was used to quantify total protein in 10X concentrated media. For ACE activity in the blood, a peripheral blood sample using standard procedures was extracted from patient and 5 healthy volunteers. Written informed consent was obtained from all of the participants according to the Declaration of Helsinki, and the study was approved by the ethics committee of the Hospital de Santa Maria, Lisbon, Portugal. ACE colorimetric enzymatic assay was performed according to the manufacturer (Buhlmann). Briefly, equal amount of total protein from the media were added to 300 &#xB5;l of incubation buffer and 200 &#xB5;l substrate (HHL) for 15 min at 37&#xB0;C. The product was quantified by measuring emission wavelength at 382nm.</p>
+      </sec>
+      <sec id="s4i">
+        <title>Sequencing</title>
+        <p>Genomic DNA of the patient, his parents and brother were extracted from a peripheral blood sample using standard procedures. Written informed consent was obtained from all of the participants according to the Declaration of Helsinki, and the study was approved by the ethics committee of the Hospital de Santa Maria, Lisbon, Portugal. The ACE gene was analyzed for mutations. Intronic primers that flank each of the 26 ACE exons were used (GenBank accession number NM_000789) for sequencing. PCRs were performed with 100 ng template of genomic DNA denatured for 5 min at 94<sup>o</sup>C followed by 30 cycles of amplification (45s at 95<sup>o</sup>C; 45s at specific annealing temperature; 45 s at 72&#xB0;C) followed by a 10 min extension of 72&#xB0;C. PCR products were tested on a 2% agarose gel. PCR products were sequenced on an automated sequencer ABI PRISMR 3100-Avant using a BigDye v3.1 sequence kit (Applied Biosystems) and analysis was done on both strands of the PCR amplified exons whenever a mutation was found.</p>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0020854.s001">
+        <label>Figure S1</label>
+        <caption>
+          <p>ACE activity in the plasma from the RTD patient and 5 controls healthy volunteers (marked 1 to 5) using a synthetic substrate (HHL) for15 minutes incubation.</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0020854.s001.tif" mimetype="image" mime-subtype="tiff">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0020854.s002">
+        <label>Figure S2</label>
+        <caption>
+          <p>Evolution of average RMSD of each aminoacid and overall hydrodynamic properties of ACE C-terminal domain wild type and Q1069R mutant during the moleculardynamics simulation. Parameters along the simulation were represented by black lines for ACE WT protein and by red lines for ACE Q1069Rmutant. Panels A: aminoacid average RMSD along the simulation. The upper scheme represents the relative position of the aminoacids belonging to the active site of the enzyme and involved in the coordination of the Zn2+atom and the location of the characterized Q1069R mutation; Panels A: hydrophobic solvent accessible surface; B: hydrophobic solvent accessible surface; C: hydrophilic solvent accessible surface; D: total solvent accessible surface; E: Rx hydrodynamic radius; F: Ry hydrodynamic radius and G: Rz hydrodynamic radius.</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0020854.s002.tif" mimetype="image" mime-subtype="tiff">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0020854.s003">
+        <label>Figure S3</label>
+        <caption>
+          <p>Immunostain analysis by confocal microscopy of ACE<sub>Q1069R</sub> and ACE<sub>WT</sub> cells grown at 37&#xB0;C on glass coverslips. Cell were fixed and permeabilized, then double stained for ACE (green) and Golgi (red). Nuclei are stained blue with DAPI. Inset represent enlarged images in the boxed regions. Scale bars, 20 &#xB5;m. Quantification of the green signal overlapping with red signal was done using ImageJ software. Quantification of 3 independent experiments. Error bars represent &#xB1;SD. P&lt;0.05.</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0020854.s003.tif" mimetype="image" mime-subtype="tiff">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0020854.s004">
+        <label>Figure S4</label>
+        <caption>
+          <p>Western blot analysis of ACE protein levels in ACE<sub>Q1069R</sub> and ACE<sub>WT</sub> cells. Cells were grown at 37&#xB0;C or 30&#xB0;C for 4 days. Quantification of 3 independent experiments. Error bars represent &#xB1;SD.</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0020854.s004.tif" mimetype="image" mime-subtype="tiff">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0020854.s005">
+        <label>Figure S5</label>
+        <caption>
+          <p>Immunostaining analysis by confocal microscopy of ACE<sub>Q1069R</sub> cells grown at 37&#xB0;C or 30&#xB0;C for 4 days on glass coverslips. Cell were fixed and permeabilized, then double stained for ACE (green) and ER (red). Nuclei are stained blue with DAPI. Inset represents enlarged images in the boxed regions. Scale bars, 20 &#xB5;m.</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0020854.s005.tif" mimetype="image" mime-subtype="tiff">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>Mohan Viswanathan and Ethan Ford for critical reading of the manuscript. Patr&#xED;cia Guerreiro, Ana Os&#xF3;rio Oliveira, Teresa Pais, Ant&#xF3;nio Temudo and Jos&#xE9; Rino for technical support. Federico Herrera and Hugo Miranda for support with the preparation of the figures.</p>
+    </ack>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding: </bold>TFO is supported by a Marie Curie International Reintegration Grant from the European Commission (Neurofold), and an EMBO Installation. This work was supported by FCT PTDC/SAU-GMG/099655/2008. RMO is supported by FCT (SFRH/BPD/41416/2007). ST is supported by FCT (SFRH/BPD/35767/2007). JEM was supported by FCT (SFRH/BPD/34759/2007). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0020854-Powers1">
+        <label>1</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Powers</surname><given-names>ET</given-names></name><name><surname>Morimoto</surname><given-names>RI</given-names></name><name><surname>Dillin</surname><given-names>A</given-names></name><name><surname>Kelly</surname><given-names>JW</given-names></name><name><surname>Balch</surname><given-names>WE</given-names></name></person-group>             <year>2009</year>             <article-title>Biological and chemical approaches to diseases of proteostasis deficiency.</article-title>             <source>Annu Rev Biochem</source>             <volume>78</volume>             <fpage>959</fpage>             <lpage>991</lpage>          <pub-id pub-id-type="pmid">19298183</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Lacoste1">
+        <label>2</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Lacoste</surname><given-names>M</given-names></name><name><surname>Cai</surname><given-names>Y</given-names></name><name><surname>Guicharnaud</surname><given-names>L</given-names></name><name><surname>Mounier</surname><given-names>F</given-names></name><name><surname>Dumez</surname><given-names>Y</given-names></name></person-group>             <year>2006</year>             <article-title>Renal tubular dysgenesis, a not uncommon autosomal recessive disorder leading to oligohydramnios: Role of the Renin-Angiotensin system.</article-title>             <source>J Am Soc Nephrol</source>             <volume>17</volume>             <fpage>2253</fpage>             <lpage>2263</lpage>          <pub-id pub-id-type="pmid">16790508</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Gribouval1">
+        <label>3</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Gribouval</surname><given-names>O</given-names></name><name><surname>Gonzales</surname><given-names>M</given-names></name><name><surname>Neuhaus</surname><given-names>T</given-names></name><name><surname>Aziza</surname><given-names>J</given-names></name><name><surname>Bieth</surname><given-names>E</given-names></name><etal/></person-group>             <year>2005</year>             <article-title>Mutations in genes in the renin-angiotensin system are associated with autosomal recessive renal tubular dysgenesis.</article-title>             <source>Nat Genet</source>             <volume>37</volume>             <fpage>964</fpage>             <lpage>968</lpage>          <pub-id pub-id-type="pmid">16116425</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Eriksson1">
+        <label>4</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Eriksson</surname><given-names>U</given-names></name><name><surname>Danilczyk</surname><given-names>U</given-names></name><name><surname>Penninger</surname><given-names>JM</given-names></name></person-group>             <year>2002</year>             <article-title>Just the beginning: novel functions for angiotensin-converting enzymes.</article-title>             <source>Curr Biol</source>             <volume>12</volume>             <fpage>R745</fpage>             <lpage>752</lpage>          <pub-id pub-id-type="pmid">12419208</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Riordan1">
+        <label>5</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Riordan</surname><given-names>JF</given-names></name></person-group>             <year>2003</year>             <article-title>Angiotensin-I-converting enzyme and its relatives.</article-title>             <source>Genome Biol</source>             <volume>4</volume>             <fpage>225</fpage>          <pub-id pub-id-type="pmid">12914653</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Gubler1">
+        <label>6</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Gubler</surname><given-names>MC</given-names></name><name><surname>Antignac</surname><given-names>C</given-names></name></person-group>             <year>2010</year>             <article-title>Renin-angiotensin system in kidney development: renal tubular dysgenesis.</article-title>             <source>Kidney Int</source>             <volume>77</volume>             <fpage>400</fpage>             <lpage>406</lpage>          <pub-id pub-id-type="pmid">19924102</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Hagaman1">
+        <label>7</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Hagaman</surname><given-names>JR</given-names></name><name><surname>Moyer</surname><given-names>JS</given-names></name><name><surname>Bachman</surname><given-names>ES</given-names></name><name><surname>Sibony</surname><given-names>M</given-names></name><name><surname>Magyar</surname><given-names>PL</given-names></name><etal/></person-group>             <year>1998</year>             <article-title>Angiotensin-converting enzyme and male fertility.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>95</volume>             <fpage>2552</fpage>             <lpage>2557</lpage>          <pub-id pub-id-type="pmid">9482924</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Ehlers1">
+        <label>8</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Ehlers</surname><given-names>MR</given-names></name><name><surname>Riordan</surname><given-names>JF</given-names></name></person-group>             <year>1989</year>             <article-title>Angiotensin-converting enzyme: new concepts concerning its biological role.</article-title>             <source>Biochemistry</source>             <volume>28</volume>             <fpage>5311</fpage>             <lpage>5318</lpage>          <pub-id pub-id-type="pmid">2476171</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Krege1">
+        <label>9</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Krege</surname><given-names>JH</given-names></name><name><surname>John</surname><given-names>SW</given-names></name><name><surname>Langenbach</surname><given-names>LL</given-names></name><name><surname>Hodgin</surname><given-names>JB</given-names></name><name><surname>Hagaman</surname><given-names>JR</given-names></name><etal/></person-group>             <year>1995</year>             <article-title>Male-female differences in fertility and blood pressure in ACE-deficient mice.</article-title>             <source>Nature</source>             <volume>375</volume>             <fpage>146</fpage>             <lpage>148</lpage>          <pub-id pub-id-type="pmid">7753170</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Wei1">
+        <label>10</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Wei</surname><given-names>L</given-names></name><name><surname>Alhenc-Gelas</surname><given-names>F</given-names></name><name><surname>Soubrier</surname><given-names>F</given-names></name><name><surname>Michaud</surname><given-names>A</given-names></name><name><surname>Corvol</surname><given-names>P</given-names></name><etal/></person-group>             <year>1991</year>             <article-title>Expression and characterization of recombinant human angiotensin I-converting enzyme. Evidence for a C-terminal transmembrane anchor and for a proteolytic processing of the secreted recombinant and plasma enzymes.</article-title>             <source>J Biol Chem</source>             <volume>266</volume>             <fpage>5540</fpage>             <lpage>5546</lpage>          <pub-id pub-id-type="pmid">1848554</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Ramchandran1">
+        <label>11</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Ramchandran</surname><given-names>R</given-names></name><name><surname>Kasturi</surname><given-names>S</given-names></name><name><surname>Douglas</surname><given-names>JG</given-names></name><name><surname>Sen</surname><given-names>I</given-names></name></person-group>             <year>1996</year>             <article-title>Metalloprotease-mediated cleavage secretion of pulmonary ACE by vascular endothelial and kidney epithelial cells.</article-title>             <source>Am J Physiol</source>             <volume>271</volume>             <fpage>H744</fpage>             <lpage>751</lpage>          <pub-id pub-id-type="pmid">8770118</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Soubrier1">
+        <label>12</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Soubrier</surname><given-names>F</given-names></name><name><surname>Alhenc-Gelas</surname><given-names>F</given-names></name><name><surname>Hubert</surname><given-names>C</given-names></name><name><surname>Allegrini</surname><given-names>J</given-names></name><name><surname>John</surname><given-names>M</given-names></name><etal/></person-group>             <year>1988</year>             <article-title>Two putative active centers in human angiotensin I-converting enzyme revealed by molecular cloning.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>85</volume>             <fpage>9386</fpage>             <lpage>9390</lpage>          <pub-id pub-id-type="pmid">2849100</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Jaspard1">
+        <label>13</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Jaspard</surname><given-names>E</given-names></name><name><surname>Wei</surname><given-names>L</given-names></name><name><surname>Alhenc-Gelas</surname><given-names>F</given-names></name></person-group>             <year>1993</year>             <article-title>Differences in the properties and enzymatic specificities of the two active sites of angiotensin I-converting enzyme (kininase II). Studies with bradykinin and other natural peptides.</article-title>             <source>J Biol Chem</source>             <volume>268</volume>             <fpage>9496</fpage>             <lpage>9503</lpage>          <pub-id pub-id-type="pmid">7683654</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Wei2">
+        <label>14</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Wei</surname><given-names>L</given-names></name><name><surname>Clauser</surname><given-names>E</given-names></name><name><surname>Alhenc-Gelas</surname><given-names>F</given-names></name><name><surname>Corvol</surname><given-names>P</given-names></name></person-group>             <year>1992</year>             <article-title>The two homologous domains of human angiotensin I-converting enzyme interact differently with competitive inhibitors.</article-title>             <source>J Biol Chem</source>             <volume>267</volume>             <fpage>13398</fpage>             <lpage>13405</lpage>          <pub-id pub-id-type="pmid">1320019</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Wei3">
+        <label>15</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Wei</surname><given-names>L</given-names></name><name><surname>Alhenc-Gelas</surname><given-names>F</given-names></name><name><surname>Corvol</surname><given-names>P</given-names></name><name><surname>Clauser</surname><given-names>E</given-names></name></person-group>             <year>1991</year>             <article-title>The two homologous domains of human angiotensin I-converting enzyme are both catalytically active.</article-title>             <source>J Biol Chem</source>             <volume>266</volume>             <fpage>9002</fpage>             <lpage>9008</lpage>          <pub-id pub-id-type="pmid">1851160</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Uematsu1">
+        <label>16</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Uematsu</surname><given-names>M</given-names></name><name><surname>Sakamoto</surname><given-names>O</given-names></name><name><surname>Ohura</surname><given-names>T</given-names></name><name><surname>Shimizu</surname><given-names>N</given-names></name><name><surname>Satomura</surname><given-names>K</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>A further case of renal tubular dysgenesis surviving the neonatal period.</article-title>             <source>Eur J Pediatr</source>             <volume>168</volume>             <fpage>207</fpage>             <lpage>209</lpage>          <pub-id pub-id-type="pmid">18478260</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Uematsu2">
+        <label>17</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Uematsu</surname><given-names>M</given-names></name><name><surname>Sakamoto</surname><given-names>O</given-names></name><name><surname>Nishio</surname><given-names>T</given-names></name><name><surname>Ohura</surname><given-names>T</given-names></name><name><surname>Matsuda</surname><given-names>T</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>A case surviving for over a year of renal tubular dysgenesis with compound heterozygous angiotensinogen gene mutations.</article-title>             <source>Am J Med Genet A</source>             <volume>140</volume>             <fpage>2355</fpage>             <lpage>2360</lpage>          <pub-id pub-id-type="pmid">17036344</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Danilov1">
+        <label>18</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Danilov</surname><given-names>SM</given-names></name><name><surname>Kalinin</surname><given-names>S</given-names></name><name><surname>Chen</surname><given-names>Z</given-names></name><name><surname>Vinokour</surname><given-names>EI</given-names></name><name><surname>Nesterovitch</surname><given-names>AB</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Angiotensin I-converting enzyme Gln1069Arg mutation impairs trafficking to the cell surface resulting in selective denaturation of the C-domain.</article-title>             <source>PLoS One</source>             <volume>5</volume>             <fpage>e10438</fpage>          <pub-id pub-id-type="pmid">20454656</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Balch1">
+        <label>19</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Balch</surname><given-names>WE</given-names></name><name><surname>Morimoto</surname><given-names>RI</given-names></name><name><surname>Dillin</surname><given-names>A</given-names></name><name><surname>Kelly</surname><given-names>JW</given-names></name></person-group>             <year>2008</year>             <article-title>Adapting proteostasis for disease intervention.</article-title>             <source>Science</source>             <volume>319</volume>             <fpage>916</fpage>             <lpage>919</lpage>          <pub-id pub-id-type="pmid">18276881</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Tsaytler1">
+        <label>20</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Tsaytler</surname><given-names>P</given-names></name><name><surname>Harding</surname><given-names>HP</given-names></name><name><surname>Ron</surname><given-names>D</given-names></name><name><surname>Bertolotti</surname><given-names>A</given-names></name></person-group>             <year>2011</year>             <article-title>Selective inhibition of a regulatory subunit of protein phosphatase 1 restores proteostasis.</article-title>             <source>Science</source>             <volume>332</volume>             <fpage>91</fpage>             <lpage>94</lpage>          <pub-id pub-id-type="pmid">21385720</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Molinari1">
+        <label>21</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Molinari</surname><given-names>M</given-names></name><name><surname>Helenius</surname><given-names>A</given-names></name></person-group>             <year>2000</year>             <article-title>Chaperone selection during glycoprotein translocation into the endoplasmic reticulum.</article-title>             <source>Science</source>             <volume>288</volume>             <fpage>331</fpage>             <lpage>333</lpage>          <pub-id pub-id-type="pmid">10764645</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Vembar1">
+        <label>22</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Vembar</surname><given-names>SS</given-names></name><name><surname>Brodsky</surname><given-names>JL</given-names></name></person-group>             <year>2008</year>             <article-title>One step at a time: endoplasmic reticulum-associated degradation.</article-title>             <source>Nat Rev Mol Cell Biol</source>             <volume>9</volume>             <fpage>944</fpage>             <lpage>957</lpage>          <pub-id pub-id-type="pmid">19002207</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Meusser1">
+        <label>23</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Meusser</surname><given-names>B</given-names></name><name><surname>Hirsch</surname><given-names>C</given-names></name><name><surname>Jarosch</surname><given-names>E</given-names></name><name><surname>Sommer</surname><given-names>T</given-names></name></person-group>             <year>2005</year>             <article-title>ERAD: the long road to destruction.</article-title>             <source>Nat Cell Biol</source>             <volume>7</volume>             <fpage>766</fpage>             <lpage>772</lpage>          <pub-id pub-id-type="pmid">16056268</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Kreis1">
+        <label>24</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Kreis</surname><given-names>TE</given-names></name><name><surname>Lodish</surname><given-names>HF</given-names></name></person-group>             <year>1986</year>             <article-title>Oligomerization is essential for transport of vesicular stomatitis viral glycoprotein to the cell surface.</article-title>             <source>Cell</source>             <volume>46</volume>             <fpage>929</fpage>             <lpage>937</lpage>          <pub-id pub-id-type="pmid">3019557</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Danielsen1">
+        <label>25</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Danielsen</surname><given-names>EM</given-names></name></person-group>             <year>1994</year>             <article-title>Dimeric assembly of enterocyte brush border enzymes.</article-title>             <source>Biochemistry</source>             <volume>33</volume>             <fpage>1599</fpage>             <lpage>1605</lpage>          <pub-id pub-id-type="pmid">7906143</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Schulein1">
+        <label>26</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Schulein</surname><given-names>R</given-names></name></person-group>             <year>2004</year>             <article-title>The early stages of the intracellular transport of membrane proteins: clinical and pharmacological implications.</article-title>             <source>Rev Physiol Biochem Pharmacol</source>             <volume>151</volume>             <fpage>45</fpage>             <lpage>91</lpage>          <pub-id pub-id-type="pmid">15103508</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Jin1">
+        <label>27</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Jin</surname><given-names>Z</given-names></name><name><surname>Tietjen</surname><given-names>I</given-names></name><name><surname>Bu</surname><given-names>L</given-names></name><name><surname>Liu-Yesucevitz</surname><given-names>L</given-names></name><name><surname>Gaur</surname><given-names>SK</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>Disease-associated mutations affect GPR5Srotein trafficking and cell surface expression.</article-title>             <source>Hum Mol Genet</source>             <volume>16</volume>             <fpage>1972</fpage>             <lpage>1985</lpage>          <pub-id pub-id-type="pmid">17576745</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Cheng1">
+        <label>28</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Cheng</surname><given-names>SH</given-names></name><name><surname>Gregory</surname><given-names>RJ</given-names></name><name><surname>Marshall</surname><given-names>J</given-names></name><name><surname>Paul</surname><given-names>S</given-names></name><name><surname>Souza</surname><given-names>DW</given-names></name><etal/></person-group>             <year>1990</year>             <article-title>Defective intracellular transport and processing of CFTR is the molecular basis of most cystic fibrosis.</article-title>             <source>Cell</source>             <volume>63</volume>             <fpage>827</fpage>             <lpage>834</lpage>          <pub-id pub-id-type="pmid">1699669</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Welsh1">
+        <label>29</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Welsh</surname><given-names>MJ</given-names></name><name><surname>Smith</surname><given-names>AE</given-names></name></person-group>             <year>1993</year>             <article-title>Molecular mechanisms of CFTR chloride channel dysfunction in cystic fibrosis.</article-title>             <source>Cell</source>             <volume>73</volume>             <fpage>1251</fpage>             <lpage>1254</lpage>          <pub-id pub-id-type="pmid">7686820</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Brown1">
+        <label>30</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Brown</surname><given-names>CR</given-names></name><name><surname>Hong-Brown</surname><given-names>LQ</given-names></name><name><surname>Biwersi</surname><given-names>J</given-names></name><name><surname>Verkman</surname><given-names>AS</given-names></name><name><surname>Welch</surname><given-names>WJ</given-names></name></person-group>             <year>1996</year>             <article-title>Chemical chaperones correct the mutant phenotype of the delta F508 cystic fibrosis transmembrane conductance regulator protein.</article-title>             <source>Cell Stress Chaperones</source>             <volume>1</volume>             <fpage>117</fpage>             <lpage>125</lpage>          <pub-id pub-id-type="pmid">9222597</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Denning1">
+        <label>31</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Denning</surname><given-names>GM</given-names></name><name><surname>Anderson</surname><given-names>MP</given-names></name><name><surname>Amara</surname><given-names>JF</given-names></name><name><surname>Marshall</surname><given-names>J</given-names></name><name><surname>Smith</surname><given-names>AE</given-names></name><etal/></person-group>             <year>1992</year>             <article-title>Processing of mutant cystic fibrosis transmembrane conductance regulator is temperature-sensitive.</article-title>             <source>Nature</source>             <volume>358</volume>             <fpage>761</fpage>             <lpage>764</lpage>          <pub-id pub-id-type="pmid">1380673</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Obeid1">
+        <label>32</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Obeid</surname><given-names>D</given-names></name><name><surname>Nguyen</surname><given-names>J</given-names></name><name><surname>Lesavre</surname><given-names>P</given-names></name><name><surname>Bauvois</surname><given-names>B</given-names></name></person-group>             <year>2007</year>             <article-title>Differential regulation of tumor necrosis factor-alpha-converting enzyme and angiotensin-converting enzyme by type I and II interferons in human normal and leukemic myeloid cells.</article-title>             <source>Oncogene</source>             <volume>26</volume>             <fpage>102</fpage>             <lpage>110</lpage>          <pub-id pub-id-type="pmid">16799629</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Ebert1">
+        <label>33</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Ebert</surname><given-names>MP</given-names></name><name><surname>Lendeckel</surname><given-names>U</given-names></name><name><surname>Westphal</surname><given-names>S</given-names></name><name><surname>Dierkes</surname><given-names>J</given-names></name><name><surname>Glas</surname><given-names>J</given-names></name><etal/></person-group>             <year>2005</year>             <article-title>The angiotensin I-converting enzyme gene insertion/deletion polymorphism is linked to early gastric cancer.</article-title>             <source>Cancer Epidemiol Biomarkers Prev</source>             <volume>14</volume>             <fpage>2987</fpage>             <lpage>2989</lpage>          <pub-id pub-id-type="pmid">16365022</pub-id></element-citation>
+      </ref>
+      <ref id="pone.0020854-Rocken1">
+        <label>34</label>
+        <element-citation publication-type="journal">             <person-group person-group-type="author"><name><surname>Rocken</surname><given-names>C</given-names></name><name><surname>Neumann</surname><given-names>K</given-names></name><name><surname>Carl-McGrath</surname><given-names>S</given-names></name><name><surname>Lage</surname><given-names>H</given-names></name><name><surname>Ebert</surname><given-names>MP</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>The gene polymorphism of the angiotensin I-converting enzyme correlates with tumor size and patient survival in colorectal cancer patients.</article-title>             <source>Neoplasia</source>             <volume>9</volume>             <fpage>716</fpage>             <lpage>722</lpage>          <pub-id pub-id-type="pmid">17898867</pub-id></element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

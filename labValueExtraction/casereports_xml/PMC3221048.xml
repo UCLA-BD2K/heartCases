@@ -1,0 +1,2338 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Neuroimage</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Neuroimage</journal-id>
+      <journal-title-group>
+        <journal-title>Neuroimage</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1053-8119</issn>
+      <issn pub-type="epub">1095-9572</issn>
+      <publisher>
+        <publisher-name>Academic Press</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">20056156</article-id>
+      <article-id pub-id-type="pmc">3221048</article-id>
+      <article-id pub-id-type="publisher-id">S1053-8119(09)01404-9</article-id>
+      <article-id pub-id-type="doi">10.1016/j.neuroimage.2009.12.115</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Optimized beamforming for simultaneous MEG and intracranial local field potential recordings in deep brain stimulation patients</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Litvak</surname>
+            <given-names>Vladimir</given-names>
+          </name>
+          <email>v.litvak@ion.ucl.ac.uk</email>
+          <xref rid="aff1" ref-type="aff">a</xref>
+          <xref rid="cor1" ref-type="corresp">&#x204E;</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Eusebio</surname>
+            <given-names>Alexandre</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Jha</surname>
+            <given-names>Ashwani</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Oostenveld</surname>
+            <given-names>Robert</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">b</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Barnes</surname>
+            <given-names>Gareth R.</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Penny</surname>
+            <given-names>William D.</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zrinzo</surname>
+            <given-names>Ludvic</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hariz</surname>
+            <given-names>Marwan I.</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Limousin</surname>
+            <given-names>Patricia</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Friston</surname>
+            <given-names>Karl J.</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Brown</surname>
+            <given-names>Peter</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">a</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><label>a</label>UCL Institute of Neurology, Queen Square, WC1N 3BG, London, UK</aff>
+      <aff id="aff2"><label>b</label>Donders Institute for Brain, Cognition and Behaviour, Radboud University, Nijmegen, The Netherlands</aff>
+      <author-notes>
+        <corresp id="cor1"><label>&#x204E;</label>Corresponding author. Wellcome Trust Centre for Neuroimaging, 12 Queen Square, London, WC1N 3BG, UK. Fax: +44 20 7813 1420. <email>v.litvak@ion.ucl.ac.uk</email></corresp>
+      </author-notes>
+      <pub-date pub-type="pmc-release">
+        <day>01</day>
+        <month>5</month>
+        <year>2010</year>
+      </pub-date>
+      <!-- PMC Release delay is 0 months and 0 days and was based on <pub-date
+						pub-type="ppub">.-->
+      <pub-date pub-type="ppub">
+        <day>01</day>
+        <month>5</month>
+        <year>2010</year>
+      </pub-date>
+      <volume>50</volume>
+      <issue>4-3</issue>
+      <fpage>1578</fpage>
+      <lpage>1588</lpage>
+      <history>
+        <date date-type="received">
+          <day>20</day>
+          <month>11</month>
+          <year>2009</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>23</day>
+          <month>12</month>
+          <year>2009</year>
+        </date>
+        <date date-type="accepted">
+          <day>24</day>
+          <month>12</month>
+          <year>2009</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2010 Elsevier Inc.</copyright-statement>
+        <copyright-year>2009</copyright-year>
+        <copyright-holder>Elsevier Inc.</copyright-holder>
+        <license xlink:href="https://creativecommons.org/licenses/by/3.0/">
+          <license-p>Open Access under <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</ext-link> license</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Insight into how brain structures interact is critical for understanding the principles of functional brain architectures and may lead to better diagnosis and therapy for neuropsychiatric disorders. We recorded, simultaneously, magnetoencephalographic (MEG) signals and subcortical local field potentials (LFP) in a Parkinson's disease (PD) patient with bilateral deep brain stimulation (DBS) electrodes in the subthalamic nucleus (STN). These recordings offer a unique opportunity to characterize interactions between the subcortical structures and the neocortex. However, high-amplitude artefacts appeared in the MEG. These artefacts originated from the percutaneous extension wire, rather than from the actual DBS electrode and were locked to the heart beat. In this work, we show that MEG beamforming is capable of suppressing these artefacts and quantify the optimal regularization required. We demonstrate how beamforming makes it possible to localize cortical regions whose activity is coherent with the STN-LFP, extract artefact-free virtual electrode time-series from regions of interest and localize cortical areas exhibiting specific task-related power changes. This furnishes results that are consistent with previously reported results using artefact-free MEG data. Our findings demonstrate that physiologically meaningful information can be extracted from heavily contaminated MEG signals and pave the way for further analysis of combined MEG-LFP recordings in DBS patients.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro">
+      <title>Introduction</title>
+      <p>Deep brain stimulation (DBS) is a method for treatment of some neurological and psychiatric disorders by electrical stimulation of subcortical brain structures through chronically implanted macro-electrodes. DBS has been especially effective for treating symptoms of Parkinson's disease (PD) and dystonia. It is also investigated in surgical treatment of Tourette syndrome, chronic pain, cluster headache, obsessive compulsive disorder, depression, epilepsy, and minimally conscious states (<xref rid="bib4" ref-type="bibr">Awan et al., 2009</xref>). The brain structures targeted by DBS include the subthalamic nucleus (STN), globus pallidus, anterior cingulate, various nuclei of the thalamus, nucleus accumbens, anterior capsule, ventral caudate, and the brainstem (<xref rid="bib4" ref-type="bibr">Awan et al., 2009</xref>). For a researcher, DBS offers a unique opportunity to record signals from structures that are not easily accessible with non-invasive electrophysiological methods (<xref rid="bib24" ref-type="bibr">Hammond et al., 2007</xref>). Such recordings are sometimes performed in the operating room during surgery to optimize electrode placement. They can also be performed outside the operating theatre, when the DBS electrodes are externalized via a percutaneous extension wire. In the latter case, it is possible to record local field potentials (LFP) from the four contacts of the DBS electrode (<xref rid="bib58" ref-type="bibr">Williams et al., 2003</xref>). The main advantage of working with patients with externalized electrodes is that it is possible to perform studies in laboratory settings, while patients are fully alert and without the stress of the operation, and, if required, under different pharmacological states.</p>
+      <p>There are many studies of the changes in the LFP associated with performance of various tasks, from self-initiated simple movements to complex cognitive experiments (<xref rid="bib31 bib21 bib12 bib57 bib46 bib3 bib27 bib10 bib30 bib2 bib44 bib58" ref-type="bibr">Lalo et al., 2008; Fogelson et al., 2006; Cassidy et al., 2002; Williams et al., 2002; Purzner et al., 2007; Androulidakis et al., 2007; Kempf et al., 2007; Brown et al., 2006; K&#xFC;hn et al., 2006; Amirnovin et al., 2004; Paradiso et al., 2004; Williams et al., 2003</xref>). Some of these studies also involved simultaneous acquisition of LFP and surface electroencephalography (EEG) (<xref rid="bib31 bib21 bib12 bib57" ref-type="bibr">Lalo et al., 2008; Fogelson et al., 2006; Cassidy et al., 2002; Williams et al., 2002</xref>). This multimodal approach makes it possible to investigate the interactions between deep brain structures targeted by DBS and other (usually cortical) sources, whose activity is expressed in the EEG. Initial investigations suggested that activity in deep areas may be coupled to the cortical activity in two frequency ranges, referred to as the beta and the gamma bands (<xref rid="bib31 bib21 bib12 bib57" ref-type="bibr">Lalo et al., 2008; Fogelson et al., 2006; Cassidy et al., 2002; Williams et al., 2002</xref>). The precise balance of coupled activities varies during task performance and depends on pharmacological state (<xref rid="bib31 bib21 bib12 bib57" ref-type="bibr">Lalo et al., 2008; Fogelson et al., 2006; Cassidy et al., 2002; Williams et al., 2002</xref>).</p>
+      <p>EEG has the advantages of being relatively inexpensive, mobile and prevalent in the clinical setting. However, it also suffers from two severe limitations when applied to DBS patients. Since DBS implantation patients usually have sutures and bandages, it is not possible to apply more than a few electrodes to the scalp, which precludes a complete picture of cortical activity. In addition, burr holes in the patient's skull change its conductivity properties and render standard EEG forward models used for source localization inapplicable (<xref rid="bib43 bib11" ref-type="bibr">Oostenveld and Oostendorp, 2002; B&#xE9;nar and Gotman, 2002</xref>). By contrast, magnetoencephalography (MEG) can be recorded with a large number of sensors placed in a helmet-shaped array around the head without direct skin contact. Since the skull is transparent to magnetic fields, MEG forward models are less affected by burr holes and are in general more precise than EEG forward models; as they do not involve difficult to measure conductivity parameters (<xref rid="bib53" ref-type="bibr">Van den Broek et al., 1998</xref>). In summary, simultaneous recording of MEG and intracranial LFP afford the potential to localize precisely cortical areas interacting with the deep brain structures targeted for stimulation. When such areas are far enough apart, MEG allows one to separate the activities from those areas and therefore study the behaviour of distributed brain networks in humans.</p>
+      <p>We have recently completed a series of simultaneous LFP-MEG recordings in PD patients with DBS electrodes in the STN. One major hurdle we faced when analyzing these data was the presence of high-amplitude artefacts in the MEG recording. In the present paper we report our findings concerning the origin and properties of these artefacts and describe a method to suppress them using MEG beamforming. We apply this method to data from a single patient and demonstrate several possible applications for subsequent data analysis.</p>
+      <p>This is the first report of combined subcortical LFP and MEG recording with the purpose of characterizing oscillatory activity in subcortico-cortical loops. In several previous studies (<xref rid="bib29 bib34 bib47" ref-type="bibr">Kringelbach et al., 2007, Makela et al., 2007, Ray et al., 2009</xref>) MEG was recorded in DBS patients with implanted stimulators to examine the effect of stimulation on cortical activity. This is an interesting scientific question (that we have not addressed), to which our methodology may be applicable.</p>
+      <p>In what follows, we test the hypothesis that beamforming is particularly suitable for suppressing artefacts that confound MEG recordings of DBS patients. This rests on the assumption that the metal artefacts cannot be explained by localized cortical sources and can, in principle, be suppressed by beamforming. Beamforming has been shown analytically to be superior to conventional dipole analysis for suppressing external interferences (<xref rid="bib8" ref-type="bibr">Brookes et al., 2008a</xref>). It has also been demonstrated (<xref rid="bib14" ref-type="bibr">Cheyne et al., 2007</xref>) that beamforming is capable of source localization in the presence of severe metal artefacts, in subjects with metallic orthodontic implants or fillings. This speaks to the utility of beamforming in suppressing artefact of this sort. Beamforming is based on a conventional forward model of electromagnetic responses and the sample covariance matrix in sensor space. It furnishes estimates of source activity based on the assumption that data are caused by temporally uncorrelated sources. Highly regularized solutions correspond to the assumption that all the data are caused by one source, while decreasing the regularization suppresses contributions from other putative sources (<xref rid="bib9" ref-type="bibr">Brookes et al., 2008b</xref>). We therefore tried to establish the nature of the artefact and confirm that it could be suppressed efficiently using beamforming. Artefact characterization was validated against the real patient analyses. Having established that the artefact could not confound beamformer estimation (due to its non source-like sensor topography) we optimized the degree of regularization. This was achieved by quantifying the variance in reconstructed source activity attributable to the artefact over different levels of regularization. This allowed us to identify a sufficient range of regularization for artefact suppression. To establish the face-validity of beamforming in this context, we examined reconstructed source activity looking for canonical time&#x2013;frequency correlates of movement-related activity. Finally, we addressed the predictive validity of these estimates using their reproducibility over independent estimates of time&#x2013;frequency responses.</p>
+    </sec>
+    <sec sec-type="methods" id="sec1">
+      <title>Methods</title>
+      <sec>
+        <title>Patient and surgery</title>
+        <p>Most data reported in this study were recorded from a patient (48-year-old left-handed male) with severe PD, who underwent implantation of DBS electrodes in the STN. The study was approved by the joint ethics committee of the National Hospital for Neurology and Neurosurgery and the UCL Institute of Neurology and the patient gave written informed consent prior to the study onset. The patient was operated on after overnight withdrawal of levodopa medication and after dopamine agonists had been reduced and terminated during the two weeks before surgery. The DBS electrode used was model 3389 (Medtronic Neurological Division, Minneapolis, MN) with four platinum-iridium cylindrical surfaces (1.27&#xA0;mm diameter and 1.5&#xA0;mm length) and a centre-to-centre separation of 2&#xA0;mm. Contact 0 was the lowermost and contact 3 was the uppermost. Fast acquisition T2 weighted axial and coronal stereotactic MRI scans using Leksell's Frame (Elekta, Sweden) were performed with contiguous slices of 2&#xA0;mm thickness to visualize the STN and especially its medial border (<xref rid="bib25" ref-type="bibr">Hariz et al., 2003</xref>). The anatomical target point within the centre of STN was selected in a plane at the level of the anterior border of the red nuclei on the axial image showing the largest diameter of the red nucleus (<xref rid="bib6" ref-type="bibr">Bejjani et al., 2000</xref>). Contact 0 of the DBS electrode was targeted to this point. The double oblique trajectory to the target was planned on coronal images to avoid the ventricles. Calculations of Cartesian coordinates of the target point were performed both manually on enlarged MRI film copies and on Framelink software (Medtronic, Minneapolis, MN). No microelectrode recordings were made.</p>
+        <p>Surgery started on the right side: after infiltration of local anaesthetic, a curvilinear incision following the hair line was fashioned and a burr hole placed in line with the planned trajectory (i.e., at the level of the coronal suture, some 4&#xA0;cm from the midline). A Stimloc electrode-anchoring device (Medtronic Neurological Division, Minneapolis) was applied to the skull with two mini screws and the dura and pia were coagulated and opened to allow introduction of the radio-frequency (RF) electrode. Impedance was measured to a point 5&#xA0;mm above the planned target. The RF electrode was withdrawn and the DBS electrode shaft was passed down the track and advanced in 2&#xA0;mm steps. Intra-operative LFP recording (<xref rid="bib13" ref-type="bibr">Chen et al., 2006</xref>) showed a substantial rise in beta activity 3&#xA0;mm above the planned target point. There was a marked introduction stun effect on rigidity and a mild effect on tremor but only a slight improvement in bradykinesia in the left hemibody. Monopolar stimulation with the electrode fixed at target produced improvement in symptoms, mostly in rigidity and tremor but also some in bradykinesia, mostly with contact zero but also in contacts 1 and 2. The electrode was fixed in position with the Stimloc device.</p>
+        <p>The procedure was repeated in the left hemisphere, beta activity rising in a more gradual fashion from 3&#xA0;mm above the target level. Again the electrode was fixed at the planned target and stimulation produced a clear effect on rigidity and less on bradykinesia. Stimulation also produced a sensation of tingling in the right hand. The right electrode was tunnelled to the left incision and both electrodes were connected to an accessory kit, the connectors being tunnelled to the left temporo-parietal area and externalized to the left frontal region.</p>
+        <p>The patient received immediate post-operative stereotactic MRI using fast spin-echo T2 weighted axial and coronal MRI scans with contiguous slices of 2&#xA0;mm thickness, with the Leksell frame still in situ, to confirm the location of the DBS electrodes. MRI showed good location of the electrodes in the exactly desired location. The patient was studied 3&#xA0;days post-operatively, in the interval between DBS electrode implantation and subsequent connection to a subcutaneous stimulator. He was on his regular dopaminergic medication.</p>
+        <p>A healthy volunteer (29&#xA0;years old, right-handed male) who consented to take part in the study performed the same task as the patient with and without percutaneous extension wires (see below) attached to his head with collodion glue.</p>
+      </sec>
+      <sec>
+        <title>Experimental paradigm</title>
+        <p>The experiments with the patient and with the healthy volunteer (subsequently both called &#x201C;subjects&#x201D;) followed the same paradigm. The experiment was divided into blocks. During rest blocks the subjects were instructed to remain still with their eyes open for 3&#xA0;min. During movement blocks the subjects performed either a &#x201C;simple&#x201D; movement&#x2014;simultaneous button press with index, middle and ring finger or a &#x201C;complex&#x201D; movement sequence&#x2014;index-ring-middle with either left or right hand (one kind of movement with the same hand within a block). Here, we only analyze the dominant (left) hand movements and the rest block for the patient and only the rest block for the healthy volunteer. The movements were self-initiated. The subjects were instructed to move when they felt the urge to move, but not to do it too frequently and take about 15&#xA0;s between the movements without counting silently. Feedback to the subjects was presented visually, using Matlab (The MathWorks, Inc., Natick, MA) and a custom script based on the Cogent toolbox (<ext-link ext-link-type="uri" xlink:href="http://www.vislab.ucl.ac.uk/cogent.php">http://www.vislab.ucl.ac.uk/cogent.php</ext-link>). This script monitored the movement times and displayed messages on the screen in front of the subjects when the inter-movement interval was shorter than 12&#xA0;s or the &#x201C;complex&#x201D; sequence was incomplete. When performing correctly the subjects did not get any feedback and the screen just showed a fixation cross. In case of incorrect performance, the script waited to collect another movement so that it ran until 8 correctly performed movements were collected or at most for a total of 7&#xA0;min. The subjects could usually complete a movement block in 3&#x2013;4&#xA0;min. Between blocks the subjects were allowed to move in the scanner and rest. A neurologist was present in the magnetically shielded room during the patient experiment to monitor the patient and performance of the task. We collected 18 blocks of data from the patient in the experiment reported here. The order of the conditions was randomized separately for blocks 1&#x2013;9 and blocks 10&#x2013;18; so that each half would contain one rest block and two movement blocks of each type. A single recording session lasted about 1.5&#x2013;2.5&#xA0;h, including preparation.</p>
+      </sec>
+      <sec>
+        <title>LFP-MEG recordings</title>
+        <p>The recordings were performed with a 275 channel MEG system (CTF/VSM MedTech, Vancouver, Canada). The data were sampled at 2400&#xA0;Hz and stored to disk. For subsequent off-line analysis the data was low-pass filtered at 100&#xA0;Hz and down-sampled to 300&#xA0;Hz. Simultaneous to the MEG signal, the LFP, electro-oculographic (EOG) and electromyographic (EMG) signals were recorded using the integrated EEG system and high-pass filtered in hardware above 1&#xA0;Hz to avoid saturation of the amplifiers due to DC offsets. Four intracranial LFP channels were recorded on each side referenced to a cephalic reference (right mastoid). LFP recording was converted off-line to a bipolar montage between adjacent contacts (3 bipolar channels per side) to limit the effects of volume conduction from distant sources. EMG was recorded from right and left first dorsal interosseous (FDI) muscles with reference at the muscle tendon. One of the EMG channels on the left hand, referenced in hardware to the right mastoid, showed a clear electrocardiographic (ECG) signal and was hence also used as ECG channel.</p>
+      </sec>
+      <sec>
+        <title>Data analysis</title>
+        <p>The data were analyzed using custom Matlab scripts based on SPM8 (<ext-link ext-link-type="uri" xlink:href="http://www.fil.ion.ucl.ac.uk/spm/">http://www.fil.ion.ucl.ac.uk/spm/</ext-link>) and Fieldtrip (<ext-link ext-link-type="uri" xlink:href="http://www.ru.nl/neuroimaging/fieldtrip/">http://www.ru.nl/neuroimaging/fieldtrip/</ext-link>) toolboxes (the beamforming algorithms we used are implemented in Fieldtrip and Fieldtrip is included in the SPM8 distribution). The key analysis routines used for the present paper are freely available in the Beamforming and MEEGTools toolboxes distributed with SPM8; i.e., the SPM8 installation is sufficient to reproduce our analysis.</p>
+      </sec>
+      <sec>
+        <title>MEG source analysis</title>
+        <p>Beamformer analysis was performed to (i) localize cortical sources that were coherent with STN-LFP, (ii) to compute artefact-free cortical signal using a virtual electrode approach and (iii) to localize cortical areas exhibiting movement-related power changes. The beamforming method is based on the linear projection of sensor data using a spatial filter computed from the lead field of the source of interest and either the data covariance (time domain) (<xref rid="bib54" ref-type="bibr">Van Veen et al., 1997</xref>) or cross-spectral density matrix (frequency domain) (<xref rid="bib22" ref-type="bibr">Gross et al., 2001</xref>).</p>
+        <p>Lead fields were computed using a single-shell head model (<xref rid="bib41" ref-type="bibr">Nolte 2003</xref>) based on an inner skull mesh derived by inverse-normalizing a canonical mesh to the subject's individual structural image (<xref rid="bib35" ref-type="bibr">Mattout et al., 2007</xref>). Coregistration between the MRI and MEG coordinate systems used 3 fiducial points: nasion, left and right pre-auricular points. Since the structural scan had been acquired in the clinical setting before the patient consented to take part in the study, these points were not marked with vitamin-E capsules as usually done. We, therefore, marked them by hand on head surfaces extracted from the structural image using Freesurfer (<ext-link ext-link-type="uri" xlink:href="http://surfer.nmr.mgh.harvard.edu/">http://surfer.nmr.mgh.harvard.edu/</ext-link>). Subsequently, we checked these points against the original structural image and made slight correction where necessary. In order to further reduce possible coregistration error, we followed the initial rigid registration of the fiducials by an additional step, where the nasion fiducials from the two coordinate systems were brought into exact correspondence on the antero-posterior axis and the averages of the preauricular points were brought into correspondence on the superior&#x2013;inferior axis. The rationale for this was that the marked nasion point was more reliable in the antero-posterior direction, as the nasion must lie on the surface of the nose, whereas the marking of pre-auricular points was more reliable in the superior&#x2013;inferior direction due to the presence of clear anatomical landmarks on the ear.</p>
+        <p>Source localization was performed using the Dynamic Imaging of Coherent Sources (DICS) beamforming method (<xref rid="bib22" ref-type="bibr">Gross et al., 2001</xref>). DICS is the optimal beamformer-based technique for localization of coherence. However, DICS filters computed for narrow frequency range are sub-optimal for extraction of virtual electrode time-series. For that we used the Linearly Constrained Minimum Variance (LCMV) beamformer (<xref rid="bib54" ref-type="bibr">Van Veen et al., 1997</xref>). Localization of power can proceed using either DICS or LCMV. We opted for DICS since it can be combined with spectral estimation over the frequency bands of interest, using the multitaper method (<xref rid="bib52" ref-type="bibr">Thomson 1982</xref>). This is optimal for averaging the spectral estimate over a frequency range (<xref rid="bib39" ref-type="bibr">Mitra and Pesaran, 1999</xref>). Beamformer images were computed on a grid defined in MNI space with spacing of 5&#xA0;mm and restricted to the points within the inner skull boundary. Values on the grid were then interpolated using linear interpolation to produce volumetric images with 2&#xA0;mm resolution for the purposes of statistical analysis in SPM and comparison with the structural image. The resulting images were further smoothed with an 8&#xA0;mm isotropic Gaussian kernel.</p>
+      </sec>
+      <sec>
+        <title>Heart-beat locked artefact</title>
+        <p>For the analysis of heart-beat locked artefact, the continuous data from a rest block were high-pass filtered above 1&#xA0;Hz using a 5th order zero phase Butterworth filter. QRS complexes were detected in the ECG channel using the algorithm implemented in FMRBIB plugin (<xref rid="bib40 bib16" ref-type="bibr">Niazy et al., 2005; Christov 2004</xref>). The MEG and ECG data were then epoched from 200&#xA0;ms before to 800&#xA0;ms after QRS onsets.</p>
+        <p>Source time-series were extracted using Linearly Constrained Minimum Variance (LCMV) beamformer (<xref rid="bib54" ref-type="bibr">Van Veen et al., 1997</xref>) with varying regularization (see <xref rid="sec2" ref-type="sec">Results</xref>). The regularization parameter was parameterized as percent of the mean of the diagonal of the channel covariance matrix. The location targeted by the beamformer was the hand area of the right primary motor cortex defined according to the literature (<xref rid="bib36" ref-type="bibr">Mayka et al., 2006</xref>) (MNI coordinates: 37, &#x2212;&#xA0;18, 53). The covariance matrices for beamforming were computed from all the trials together and the source orientation was selected as the one that maximised the variance of the data explained (<xref rid="bib50" ref-type="bibr">Sekihara et al., 2004</xref>).</p>
+      </sec>
+      <sec>
+        <title>LFP-MEG coherence</title>
+        <p>For the analysis of STN-cortical coherence the continuous resting recording was divided into arbitrary epochs with a duration of 3.41&#xA0;s (1024 samples). The data were high-pass filtered above 1&#xA0;Hz and the line noise artefacts at 50&#xA0;Hz and 100&#xA0;Hz were removed using notch filters (5th order zero phase Butterworth filters). Finally, trials with artefacts in the LFP recording were rejected by thresholding the peak-to-peak LFP amplitude at 100&#xA0;&#x3BC;V.</p>
+        <p>Sensor-level coherence was computed between one bipolar LFP channel and each MEG channel. For the present report, we chose the right STN channel showing the strongest coherence with MEG. More detailed analysis of topographical specificity of the coherence within the STN will be included in future publications. We used the multi-taper spectral estimation method (<xref rid="bib39" ref-type="bibr">Mitra and Pesaran, 1999</xref>) in the frequency range 5 to 45&#xA0;Hz with frequency resolution of 2.5&#xA0;Hz.</p>
+        <p>For source coherence analysis a single DICS image was computed from all the trials of the rest block. The global maximum of this image was defined as the location of the cortical source coherent with the STN. The orientation of this source was defined as the normalized imaginary part of the cross-spectral density vector between STN-LFP and the three orientations of MEG source, located at the grid point closest to the optimal location. Typically orientation is defined by the direction of maximum power (<xref rid="bib22" ref-type="bibr">Gross et al., 2001</xref>). We chose the imaginary part (i.e. non-zero lag) to specifically focus on physiological signals transmitted with delay between the STN and the cortex (<xref rid="bib42" ref-type="bibr">Nolte et al., 2004</xref>) and thereby gain additional immunity from the artefact.</p>
+        <p>To further examine the activity of the cortical area coherent with the STN we performed extraction of time-series using the virtual electrode approach with LCMV beamformer (<xref rid="bib54" ref-type="bibr">Van Veen et al., 1997</xref>) and 0.01% regularization. The covariance matrices for beamforming were computed based on the epoched data and the position and orientation of the source was as defined above.</p>
+        <p>A DICS beamformer image always has a global maximum even in cases of meaningless or erroneous localization. Therefore, we performed an additional simulation analysis to verify the internal consistency of our method. The idea was to generate a simulated coherence pattern that would be expected from the localized source and compare it with the original coherence pattern. The observed coherence pattern is determined by the location and orientation of the generating source as well as by the signal-to-noise ratios at different MEG channels or, in other words, by other cortical sources and artefacts. In our case, large metal artefacts might distort the observed coherence patterns, relative to what would be expected on the basis of source lead field alone. We, therefore, combined the simulated data with the original data to make the simulation as realistic as possible. STN-LFP data and the corresponding extracted source data were shifted by one trial with respect to the original data. The source data were then projected through the source lead field and added to the original (non-shifted data) to create simulated MEG data. We then computed the coherence between the shifted STN-LFP and the simulated MEG. Shifting eliminated the coherence between STN-LFP and the original MEG. Thus, the coherence between shifted STN-LFP and simulated MEG was solely due to the simulated component of the MEG. However, the artefacts and non-coherent brain source were the same as in the original data.</p>
+      </sec>
+      <sec>
+        <title>Movement-related power dynamics</title>
+        <p>For the analysis of movement-related activations the epochs from 10&#xA0;s before to 10&#xA0;s after the first registered button press were used. No pre-processing was done prior to beamformer analysis. We did not distinguish between complex and simple movements for the purposes of the present analysis.</p>
+        <p>Source time-series were extracted using the LCMV beamformer (<xref rid="bib54" ref-type="bibr">Van Veen et al., 1997</xref>) with 0.01% regularization. The source location was the hand area of the right primary motor cortex defined based on the literature (<xref rid="bib36" ref-type="bibr">Mayka et al., 2006</xref>) (MNI coordinates: 37, &#x2212;&#xA0;18, 53). The covariance matrices for beamforming were computed from all the trials together and the source orientation was the one that yielded maximal variance of the data (<xref rid="bib50" ref-type="bibr">Sekihara et al., 2004</xref>). The virtual electrode data were digitally filtered (1&#xA0;Hz high pass, 48&#x2013;52, 98&#x2013;102&#xA0;Hz notch filters, 5th order zero-phase Butterworth in all cases) and subjected to spectral analysis.</p>
+        <p>The major challenge in the analysis of patient data is that the duration of the experiment is severely limited by patient tolerance and clinical constraints; and in many cases the quality of some of the data is suboptimal. In our case, we collected 32 valid movement trials for each complexity/hand combination. This is a rather low number for event-related spectra computation. The situation would have been even worse if we had to exclude trials from analysis due to partial contamination by artefacts. We addressed this issue by combining two methods: spectral estimation using multitaper spectral analysis and use of robust averaging for computing power. Multitaper spectral analysis (<xref rid="bib52" ref-type="bibr">Thomson, 1982</xref>) is based on pre-multiplying the data with a series of tapers optimized for producing uncorrelated estimates of the spectrum in the given frequency band. This method makes it possible to sacrifice some of the frequency resolution in a well-controlled manner to gain higher signal to noise ratio by effectively multiplying the number of trials by the number of tapers used. We estimated the spectrum in overlapping windows of 400&#xA0;ms shifted by 50&#xA0;ms. The frequency resolution was set to the inverse of the time window (2.5&#xA0;Hz) for up to 25&#xA0;Hz, then 0.1 times the frequency for 25 to 50&#xA0;Hz and then to constant 5&#xA0;Hz. These settings resulted in a single taper being used for 2.5&#x2013;30&#xA0;Hz, 2 tapers for 32.5&#x2013;42.5&#xA0;Hz and 3 tapers for 45&#xA0;Hz and above. The resulting time&#x2013;frequency images had no discontinuities in frequency thanks to the continuous frequency resolution function.</p>
+        <p>These time&#x2013;frequency images were then averaged using robust averaging. This is a rather simple special case of the robust general linear model (<xref rid="bib56" ref-type="bibr">Wager et al., 2005</xref>). The idea is that for each time&#x2013;frequency pixel the distribution of values over trials is considered and the outliers are down-weighted when computing the average. This makes it possible to neutralize artefacts restricted to narrow time and frequency ranges without rejecting whole trials. Moreover, a clean average can be computed with no clean trials; given that the artefacts do not consistently overlap and only corrupt (different) parts of trials. The artefacts requiring the use of robust averaging in our case were not the metal artefacts, which were effectively suppressed by the beamformer but other artefacts such as jumps and spikes that sometimes appeared in the MEG channels. The units of average time frequency plots were converted to percentage change by normalizing to the baseline &#x2212;&#xA0;5 to &#x2212;&#xA0;3&#xA0;s before the button press.</p>
+        <p>For source localization of power, DICS power images computed for specific frequency ranges and time segments around the movement (see <xref rid="sec2" ref-type="sec">Results</xref> for details) were subtracted and the resulting difference images were subjected to single-sample <italic>t</italic>-test in SPM to find the significant effects. Beamforming was applied for each block separately which resulted in 8 images per-contrast.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="sec2">
+      <title>Results</title>
+      <sec>
+        <title>Metal artefact</title>
+        <p>Prior to performing experiments with patients we assessed the artefact induced in the MEG signal due to the presence of the DBS electrode by holding the electrode inside the MEG helmet and by recording auditory evoked fields in a healthy subject with DBS electrodes attached to the subject's head (data not shown). This did not reveal any effect of the DBS electrode on the MEG signals. However, in experiments with patients we observed high-amplitude deflections completely obscuring the physiological signal for some of the channels, particularly those close to the burr holes. Closer examination revealed that these artefacts originated from the percutaneous extension wire made of stainless steel (Lynn Otten, Medtronic, personal communication). The actual DBS electrode is made of titanium and is therefore not ferromagnetic and does not interfere with the MEG recording, as we initially observed. The stimulating end of the electrode is embedded in the STN during the first surgery. The other end (sticking out of the brain) is subsequently guided under the skin to the chest and connected to a subcutaneous stimulator during a second surgery. Between the two surgeries this part of the electrode should remain sterile and it is therefore wound up and placed under the scalp. In order to enable stimulation and recording during this period an additional wire is connected to the sterile electrode under the skin and its other end is externalized. This stainless steel percutaneous extension wire is later discarded.</p>
+        <p>We tested the percutaneous extension wire by moving it in the MEG helmet and recorded from a healthy volunteer with two extension wires attached to his scalp in positions typically seen in patients, using collodion glue. In both cases we observed severe artefacts in the MEG signals. <xref rid="fig1" ref-type="fig">Fig. 1</xref> illustrates the artefact properties. The most affected channels were at the front close to the burr holes. In this particular patient both the left and the right wire were externalized on the left side, which decreased the artefact on the right but increased it on the left, relative to the more common situation when each wire is externalized on its respective side. In the left channels, the artefact amplitude reached 100 pT&#x2014;orders of magnitude higher than typical physiological signal amplitude. The artefact deflections repeated with a periodicity of about 1&#xA0;s in both the DBS patient and the healthy volunteer with wires. By comparing the timing of the deflections with ECG peaks, we concluded that the artefact deflections were highly correlated (<xref rid="fig1" ref-type="fig">Fig. 1</xref>A). This was confirmed by averaging MEG around the times of ECG peaks. In the ensuing ECG-triggered average of the MEG signal (<xref rid="fig1" ref-type="fig">Fig. 1</xref>B) the strongest artefact deflections appear between 200 and 700&#xA0;ms after the QRS pulse in the ECG, the time corresponding to the ejection phase of the cardiac cycle. The changes in artefact topography during this period are characteristic of a rotating magnetic source rather than a change of amplitude of a single topography. This explains why singular value decomposition (SVD) of the cardiac event-related field (ERF, <xref rid="fig1" ref-type="fig">Fig. 1</xref>C) results in about 6 singular values above the highest value in SVD of a metal artefact free signal recorded from a healthy subject. In the case of the healthy subject with percutaneous extension wires attached to the scalp the artefact amplitude was similar to that of the patient and with a similarly complex topography, as seen from the SVD.</p>
+      </sec>
+      <sec>
+        <title>Suppression of the artefact using beamformer</title>
+        <p>In order to demonstrate that the artefact can be effectively suppressed using beamforming we used the virtual electrode approach to extract source time-series from the right M1 in the presence of artefact. We considered a situation more extreme than our typical analysis by epoching the data around the onsets of QRS complexes in the ECG. We then varied the regularization parameter of the LCMV beamformer (parameterized as percentage of the mean of the diagonal of the channel covariance matrix). By varying the regularization parameter it is possible to make the beamformer filter more spatially selective for lower regularization values or less spatially selective (and close to pseudo-inverse of the source lead field; i.e. ordinary dipole waveform estimation) for high regularization values (<xref rid="bib9" ref-type="bibr">Brookes et al., 2008b</xref>). From the rest block of the patient recording 188 trials were extracted. The average source waveform for the highest regularization value tested (1000%) was dominated by artefact and taken as the artefact template. Correlation with this template was then tested for single trials and averages for 8 regularization levels: 0%, 0.001%, 0.01%, 0.1%, 1%, 10%, 100% and 1000%. The results are presented in <xref rid="fig2" ref-type="fig">Fig. 2</xref>. Decreasing regularization resulted in substantial suppression of the artefact (after regularization of 1%) as evidenced by low <italic>r</italic><sup>2</sup> values for the correlation with artefact template (<xref rid="fig2" ref-type="fig">Fig. 2</xref>B) and absence of strong QRS locked deflections in single trials and in the average (<xref rid="fig2" ref-type="fig">Fig. 2</xref>A). Further decrease of regularization yielded further suppression of the artefact, but the improvement was relatively minor. Therefore, we concluded that regularization can be set in the range from 0% to about 1%, without compromising artefact suppression.</p>
+      </sec>
+      <sec>
+        <title>Localization of LFP-MEG coherence</title>
+        <p>Topographical mapping of LFP-MEG coherence revealed frequency-specific patterns consistent with physiological cortical generators. Despite heavy contamination of the MEG signal with metal artefacts as described above, these patterns were obtained with very little pre-processing of the data. <xref rid="fig3" ref-type="fig">Fig. 3</xref>A (top row) shows the coherence patterns for the right STN channel in the patient presented here. The highest coherence was between 15 and 35&#xA0;Hz. The coherence was clearly lateralized to the right. We applied DICS coherence beamformer for localization of the cortical area coherent with the STN. <xref rid="fig3" ref-type="fig">Fig. 3</xref>B shows the beamformer image thresholded for visualization purposes at mean plus 4 times the standard deviation (computed across voxels) and superimposed on the patient's structural image. The global maximum of the image was at MNI coordinates: 28, 4, 66. Virtual electrode time-series extracted from this source were coherent with the STN signal in the frequency range consistent with sensor-level coherence (<xref rid="fig3" ref-type="fig">Fig. 3</xref>C). To demonstrate that this source is a plausible candidate generator for the coherence pattern observed at the sensor level, we compared the observed coherence pattern with a simulated coherence pattern generated by projecting extracted source time-series via the lead-field and adding it to the original MEG data to have the same metal artefact and other confounds (see <xref rid="sec1" ref-type="sec">Methods</xref> and <xref rid="fig3" ref-type="fig">Fig. 3</xref>A, bottom row). The simulated coherence pattern was consistent with part of the original pattern. There were also features in the original pattern not explained by this dipole, indicating the existence of additional coherent sources.</p>
+      </sec>
+      <sec>
+        <title>Analysis of movement-related power</title>
+        <p>We used the virtual electrode approach to extract time-series from the hand area of the right M1. Sixty four self-initiated button presses were analyzed (both "complex" and "simple"). <xref rid="fig4" ref-type="fig">Fig. 4</xref> shows the average time&#x2013;frequency around a button press with the left hand. Event related desynchronisation (ERD) can be observed in the alpha and beta bands starting around 1&#xA0;s before the movement, followed by event related synchronization (ERS) from about 2&#xA0;s after the movement. At the time of the movement, high-gamma ERS can be observed from about &#x2212;&#xA0;0.5 to 1.5&#xA0;s relative to the button press. We used the DICS beamformer to localize areas exhibiting similar power dynamics. For the lower frequency range we subtracted the images of power in 5&#x2013;30&#xA0;Hz for &#x2212;&#xA0;1 to 1&#xA0;s from the images for the same frequency range for 2 to 4&#xA0;s relative to the button press. For the higher frequency range we subtracted images for 55 to 80&#xA0;Hz and &#x2212;&#xA0;4 to &#x2212;&#xA0;2&#xA0;s from images for the same frequency range and &#x2212;&#xA0;0.5 to 1.5&#xA0;s relative to the button press. Beamformer filters were computed separately for each block and the power differences were averaged across trials in the block. Eight images computed in this way were subjected to single-sample <italic>t</italic>-test with <italic>p</italic>&#xA0;&lt;&#xA0;0.05 family-wise error correction. The results are shown in <xref rid="fig5" ref-type="fig">Fig. 5</xref>A (lower frequency range) and 5B (higher frequency range). In both cases, the significant power changes localized to the hemisphere contralateral to the movement with peaks in the sensorimotor area.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Discussion</title>
+      <p>Our results confirm the hypothesis that beamforming is particularly suitable for suppressing artefacts that confound MEG recordings of DBS patients. We were able to optimize the degree of regularization and identify a sufficient range of regularization for artefact suppression. We then went on to establish the face-validity of beamforming in this context by showing that source activity reconstructed using data confounded by artefacts showed canonical time&#x2013;frequency correlates of movement-related activity. Furthermore, we were able to show the predictive validity of these estimates, in terms of their reproducibility over independent realizations of time&#x2013;frequency responses (different recording blocks).</p>
+      <p>The utility of beamforming rests on the fact that the artefacts cannot be explained by localized cortical sources. We have shown that the artefact in MEG recordings of DBS patients is generated by the percutaneous extension wires, which leads to a high-dimensional and complicated topographic expression. Beamforming is particularly robust to this sort of artefact (<xref rid="bib8" ref-type="bibr">Brookes et al., 2008a</xref>).</p>
+      <p>The actual DBS electrode is not ferromagnetic and is, therefore, MEG-compatible. The use of percutaneous extension wires distinguishes DBS patients and epilepsy patients with intracranial electrodes. In the case of epilepsy, an intracranial electrode is implanted for a short period and its external end does not have to be kept sterile, since it will be removed eventually. It is, therefore, externalized directly without an extension wire. Indeed, several research groups have reported simultaneous intracranial LFP and MEG recordings in epilepsy patients and these reports do not mention severe artefacts in the MEG, such as we observed (<xref rid="bib19 bib48" ref-type="bibr">Dalal et al., 2009; Santiuste et al., 2008</xref>). This means that the major technical problem presently hampering simultaneous LFP-MEG recordings in DBS patients could possibly be resolved by using percutaneous extension wires made of non-ferromagnetic material such as titanium. The manufacturers may be motivated to develop such wires in the future, if simultaneous LFP-MEG recordings are found useful for clinical purposes. Presently, however, it is not possible to replace the ferromagnetic wire with a different wire since the manufacturers would be unlikely to accept responsibility for the functioning of the system in a clinical setting.</p>
+      <p>Another possible source of artefact might be small metal particles originating from the screws that are left in the bone after drilling the burr hole. We have not found evidence that this is a major problem. One of the patients in our series suffered an absence attack following implantation of a DBS electrode on one side and, as a result, she was implanted unilaterally on the right although burr holes were drilled on both sides. In this patient there was little artefact on the left, although it is hard to assess how much of it would still be present with no wires at all. Evidence from epilepsy patients suggests that in any case such an artefact could at worst make the recordings slightly noisier but would not require special analysis techniques of the sort proposed here.</p>
+      <p>We also observed that the artefact is to a large extent time-locked to the heart beat. The spatial topography of the artefact is quite complex and has a 'rotating' pattern within the heartbeat cycle, quite similar to the ballistocardiogram artefact observed in simultaneous EEG-fMRI recordings. Therefore, the properties of the two kinds of artefacts might have similar underlying mechanisms. <xref rid="bib20" ref-type="bibr">Debener et al. (2008</xref>) proposed that the ballistocardiogram artefact is generated by both pulsation of the blood vessels and minor head movements that occur during the cardiac cycle. Both mechanisms might apply to our MEG artefact. One of the consequences of the rotating topography of the artefact is that it cannot be adequately represented by a small number of topographical components and is, therefore, difficult to remove using topography-based artefact correction methods such as principal component analysis (PCA) or independent component analysis (ICA). In the case of the ballistocardiogram, more sophisticated versions of these methods have been shown to be quite effective, but for MEG there is a further complication: the sensor positions in relation to the head are not fixed, particularly in patients who find it more difficult to keep still than healthy subjects. We have not attempted to use ICA on our data, but we have tried the topography-based method proposed by Berg and Scherg (<xref rid="bib7" ref-type="bibr">Berg and Scherg, 1994</xref>). The artefact could be corrected with a large number of PCA components (more than 10). However, the use of this method has substantial effects on the coherence topographies, probably due to linear mixing of coherent and non-coherent channels. Nevertheless, PCA-based or other de-noising might be useful as part of the analysis stream.</p>
+      <p>The Signal Space Separation (SSS) approach has been proposed by the developers of the Neuromag MEG system for artefact removal (<xref rid="bib51" ref-type="bibr">Taulu and Simola, 2006</xref>). This approach is based on separating sources within the brain from sources outside the brain based on their expected effect on the MEG sensors. A further extension of this approach, temporal SSS (tSSS), also includes an additional step of regressing out, in the time domain, the signals that can be explained by the artefact sources from the brain activity (<xref rid="bib37" ref-type="bibr">Medvedovsky et al., 2007</xref>). This approach has been reported as effective for de-noising evoked fields recorded from patients with chronically implanted DBS stimulator, even when stimulation was on (<xref rid="bib34" ref-type="bibr">Makela et al., 2007</xref>). We could not test this method as it is not implemented for the CTF system. The chronically implanted patients differ from our patients since they have a stimulator in their chest and do not have percutaneous extension wires. It is, therefore, difficult to say at this stage how effective SSS would be for simultaneous LFP-MEG recordings. The virtual electrode signals obtained with beamforming alone appear to be sufficiently artefact-free. However, the spatial resolution of source localization could possibly be improved by combination with SSS (<xref rid="bib55" ref-type="bibr">Vrba et al., 2009</xref>). Sensor-level de-noising could also make other kinds of analysis possible such as analysis of evoked fields.</p>
+      <p>Another possible approach for artefact removal is modelling the artefact with an explicit generative model and including this model in the analysis, such as in electromagnetic source reconstruction or dynamic causal modelling (<xref rid="bib28" ref-type="bibr">Kiebel et al., 2009</xref>). This approach is theoretically appealing, but would probably be difficult to implement due to the complex shape of the wires and multiple factors influencing their movement. The great advantage of the beamformer is its ability to suppress artefacts in an adaptive way without an explicit generative model.</p>
+      <p>The application of beamforming for metal artefact suppression in a clinical setting was first demonstrated by <xref rid="bib14" ref-type="bibr">Cheyne et al. (2007)</xref>. These authors used LCMV beamformer for localization of event-related fields in patients with dental implants for pre-operative functional mapping. They reported source localization accuracy comparable to what could be achieved in patients without metal implants. Our work affirms the results of Cheyne et al. and extends them in several ways. First, the metal artefact in DBS patients is even more severe than in subjects with dental implants; due to the wires being partially subcutaneous, much closer to the MEG sensors and affected by the heartbeat. The artefacts generated by dental implants have been attributed by Cheyne et al. to small vibrations and undetected motions of the jaw. In contrast, the artefacts locked to heartbeat in DBS patients affect the recording continuously to the extent that it needs to be demonstrated that brain signals can still be extracted from the data. Establishing this was one of the main objectives of this work. Secondly, Cheyne et al. performed source localization but have not shown that artefact-free virtual electrode signal can be extracted from the sources. This is very important for our work as (at least in the case of movement-related activity) the generators are quite well known and it is more important to look at the interplay between the cortex and STN during movement preparation and execution. This will be the focus of future publications. Thirdly, we extended the results of Cheyne et al. to beamforming in frequency domain, critically, to localizing sources coherent with the STN. This is a crucial aspect of simultaneous MEG-LFP recordings: the ability to localize coherent sources is one of the main advantages of using MEG rather than EEG and simultaneous rather than separate recordings.</p>
+      <p>Coherence between STN-LFP recorded as potential difference between adjacent STN contacts and MEG signals is a quite robust phenomenon and can be seen with practically no pre-processing of the data. The reason for this is the existence of consistent phase relations between the artefact-free STN-LFP signal and some physiological cortical signals and the absence of such consistent phase relations between the STN-LFP signal and the artefact. There are several reasons to believe that the coherence patterns we observed are not artefacts. The frequency range in which coherence was observed is consistent with that of previously reported LFP-EEG coherence (<xref rid="bib31 bib21 bib12 bib57" ref-type="bibr">Lalo et al., 2008; Fogelson et al., 2006; Cassidy et al., 2002; Williams et al., 2002</xref>). In the subject presented here, the coherence lateralized to the side of the corresponding STN. Furthermore the MEG channels most affected by the artefact are the frontal channels close to the wires. One would expect that presence of high amplitude noise not coherent with the STN would reduce LFP-MEG coherence and this indeed seems to be the case for these channels. However, lateralized patterns were observed at central MEG channels, which are less affected by the artefact.</p>
+      <p>Consistent phase relations between LFP and MEG signals revealed by coherence can be exploited by a number of analysis methods to localize the cortical sources coherent with the STN and to study their properties. One of these methods is the DICS beamformer that we use in the present paper (<xref rid="bib49" ref-type="bibr">Schnitzler and Gross, 2005</xref>). One can also use methods based on phase-alignment (<xref rid="bib23 bib32 bib33" ref-type="bibr">Guderian and D&#xFC;zel, 2005; Lehmann and Michel, 1990; L&#xFC;tkenh&#xF6;ner 1992</xref>) to selectively average the signals phase-locked to the STN-LFP and average out the artefact. Also methods based on linear prediction such as vector auto regressive (VAR) modelling effectively exploit this kind of consistent phase relation and can be applied to MEG-LFP data in the presence of artefacts. However, an important point to remember when applying these methods is that most of them are based on some kind of averaging. When the artefact exceeds the physiological signal of interest by several orders of magnitude, it is not always reduced sufficiently by averaging. Thus, in practice, methods based on phase consistency should be combined with at least coarse correction of the artefact based on its spatial topography; for instance, using SVD. DICS beamforming is appealing in this sense because it implicitly exploits both spatial topographies of different sources and the phase relations between them. To our knowledge, this is the first time the orientation of the DICS beamformer has been estimated using the imaginary coherence components.</p>
+      <p>We have demonstrated that LCMV and DICS beamformers can be used to effectively suppress the artefacts in combined LFP-MEG recordings, to localize cortical sources based on their coherence with the STN or on specific power dynamics in a task and to extract artefact-free source signals that can be further analyzed with any standard multivariate time-series analysis methods. For practical applications it is important to optimize the value of the regularization parameter. Excessive regularization can result in insufficient suppression of the artefact, whereas some regularization is necessary especially when looking at single trials or combining trials with slightly different head positions (<xref rid="bib9" ref-type="bibr">Brookes et al., 2008b</xref>). Also, when using source locations based on the literature, the actual sources of interest can be missed with no regularization due to inter-subject differences (<xref rid="bib5" ref-type="bibr">Barnes et al., 2004</xref>). Based on our results, there appears to be quite a wide range of regularization parameter values for which the artefact is effectively suppressed, making it possible to adapt the regularization based on the amount and quality of the data.</p>
+      <p>The power dynamics around movement found in the patient in the presence of artefact (<xref rid="fig4" ref-type="fig">Fig. 4</xref>) were consistent with the ERD/ERS pattern previously described in the literature based on EEG and MEG recordings in healthy subjects, electrocorticography (ECoG) recordings in epilepsy patients and STN-LFP recordings in patients with PD (<xref rid="bib45 bib27 bib3 bib38 bib17 bib18 bib1 bib26 bib15" ref-type="bibr">Pfurtscheller and Lopes Da Silva, 1999; Kempf et al., 2007; Androulidakis et al., 2007; Miller et al., 2007; Crone et al., 1998a;b; Alegre et al., 2005; Jurkiewicz et al., 2006, Cheyne et al., 2008</xref>). In terms of the spatial locations of the contrast peaks (<xref rid="fig5" ref-type="fig">Fig. 5</xref>) the beta ERD/ERS is bilateral as in the MEG study of <xref rid="bib26" ref-type="bibr">Jurkiewicz et al. (2006)</xref>, but not limited to the two symmetric hand areas; and the peak is actually in the mesial motor area. The high gamma peak is anterior to the location reported by <xref rid="bib15" ref-type="bibr">Cheyne et al. (2008)</xref>. This can be attributed partly to the conservativeness of family-wise correction. With lower statistical threshold beta ERD/ERS can be seen in the ipsilateral hand area as well. In addition, there were differences in details of the task. The subjects in <xref rid="bib26 bib15" ref-type="bibr">Jurkiewicz et al. (2006) and Cheyne et al. (2008)</xref> study performed brisk and frequent simple index finger movements, whereas our subjects performed infrequent movements where they completely controlled the timing. Half of the movement were complex sequences. Under these circumstances one might expect greater involvement of the Supplementary Motor Area (SMA), which would be consistent with the mesial activations we observed. Finally, an obvious explanation is the difference between healthy subjects studied previously and a patient with advanced PD, whose motor representations might have undergone extensive plastic changes as a direct result of the disease and following compensatory motor learning.</p>
+      <p>The beamformer method is flexible enough to effectively solve the artefact problem. It makes it possible to fully characterize task-related power and coherence dynamics in the presence of artefacts given some starting point. For instance, knowing at least one cortical area that is involved in a task, one can extract the source activity from this area, characterize the power dynamics and then scan the whole brain to find areas displaying similar dynamics and proceed iteratively. Similarly, one can start with some prior knowledge about the power dynamics of interest, find the brain areas displaying these dynamics, extract source activity from these areas and characterize the power dynamics in greater detail. Although we focused on PD patients with electrodes in the STN, our methods are applicable to any group of patients with intracranial electrodes and indeed to other group of subjects where artefacts are a problem (as an extension of approach of <xref rid="bib14" ref-type="bibr">Cheyne et al. (2007)</xref>). The ability to simultaneously record intracranial local field potentials and MEG should provide significant insight into cortico-cortical and subcortico-cortical interactions in neurological disease in the future.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="bib1">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alegre</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Alonso-Frech</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Rodr&#xED;guez-Oroz</surname>
+              <given-names>M.C.</given-names>
+            </name>
+            <name>
+              <surname>Guridi</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Zamarbide</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Valencia</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Manrique</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Obeso</surname>
+              <given-names>J.A.</given-names>
+            </name>
+            <name>
+              <surname>Artieda</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Movement-related changes in oscillatory activity in the human subthalamic nucleus: ipsilateral vs. contralateral movements</article-title>
+          <source>Eur. J. Neurosci.</source>
+          <volume>22</volume>
+          <year>2005</year>
+          <fpage>2315</fpage>
+          <lpage>2324</lpage>
+          <pub-id pub-id-type="pmid">16262669</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib2">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Amirnovin</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>Z.M.</given-names>
+            </name>
+            <name>
+              <surname>Cosgrove</surname>
+              <given-names>G.R.</given-names>
+            </name>
+            <name>
+              <surname>Eskandar</surname>
+              <given-names>E.N.</given-names>
+            </name>
+          </person-group>
+          <article-title>Visually guided movements suppress subthalamic oscillations in Parkinson's disease patients</article-title>
+          <source>J. Neurosci.</source>
+          <volume>24</volume>
+          <year>2004</year>
+          <fpage>11302</fpage>
+          <lpage>11306</lpage>
+          <pub-id pub-id-type="pmid">15601936</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib3">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Androulidakis</surname>
+              <given-names>A.G.</given-names>
+            </name>
+            <name>
+              <surname>K&#xFC;hn</surname>
+              <given-names>A.A.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>C.C.</given-names>
+            </name>
+            <name>
+              <surname>Blomstedt</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Kempf</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Kupsch</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Schneider</surname>
+              <given-names>G.H.</given-names>
+            </name>
+            <name>
+              <surname>Doyle</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Dowsey-Limousin</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Hariz</surname>
+              <given-names>M.I.</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dopaminergic therapy promotes lateralized motor activity in the subthalamic area in Parkinson's disease</article-title>
+          <source>Brain</source>
+          <volume>130</volume>
+          <year>2007</year>
+          <fpage>457</fpage>
+          <lpage>468</lpage>
+          <pub-id pub-id-type="pmid">17213215</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib4">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Awan</surname>
+              <given-names>N.R.</given-names>
+            </name>
+            <name>
+              <surname>Lozano</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Hamani</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Deep brain stimulation: current and future perspectives</article-title>
+          <source>Neurosurg. Focus</source>
+          <volume>27</volume>
+          <year>2009</year>
+          <fpage>E2</fpage>
+          <pub-id pub-id-type="pmid">19569890</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib5">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barnes</surname>
+              <given-names>G.R.</given-names>
+            </name>
+            <name>
+              <surname>Hillebrand</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Fawcett</surname>
+              <given-names>I.P.</given-names>
+            </name>
+            <name>
+              <surname>Singh</surname>
+              <given-names>K.D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Realistic spatial sampling for MEG beamformer images</article-title>
+          <source>Hum. Brain Map.</source>
+          <volume>23</volume>
+          <year>2004</year>
+          <fpage>120</fpage>
+          <lpage>127</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bib6">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bejjani</surname>
+              <given-names>B.P.</given-names>
+            </name>
+            <name>
+              <surname>Dormont</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Pidoux</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Yelnik</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Damier</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Arnulf</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Bonnet</surname>
+              <given-names>A.M.</given-names>
+            </name>
+            <name>
+              <surname>Marsault</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Agid</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Philippon</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Cornu</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Bilateral subthalamic stimulation for Parkinson's disease by using three-dimensional stereotactic magnetic resonance imaging and electrophysiological guidance</article-title>
+          <source>J. Neurosurg.</source>
+          <volume>92</volume>
+          <year>2000</year>
+          <fpage>615</fpage>
+          <lpage>625</lpage>
+          <pub-id pub-id-type="pmid">10761650</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib7">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Berg</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Scherg</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>A multiple source approach to the correction of eye artifacts</article-title>
+          <source>Electroencephalogr. Clin. Neurophysiol.</source>
+          <volume>90</volume>
+          <year>1994</year>
+          <fpage>229</fpage>
+          <lpage>241</lpage>
+          <pub-id pub-id-type="pmid">7511504</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib8">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brookes</surname>
+              <given-names>M.J.</given-names>
+            </name>
+            <name>
+              <surname>Stevenson</surname>
+              <given-names>C.M.</given-names>
+            </name>
+            <name>
+              <surname>Hadgipapas</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Barnes</surname>
+              <given-names>G.R.</given-names>
+            </name>
+            <name>
+              <surname>Mullinger</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Bagshaw</surname>
+              <given-names>A.P.</given-names>
+            </name>
+            <name>
+              <surname>Bowtell</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Morris</surname>
+              <given-names>P.G.</given-names>
+            </name>
+            <name>
+              <surname>Vrba</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <chapter-title>Beamformer Imaging and Interference Rejection</chapter-title>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Kakigi</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Yokosawa</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Kuriki</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <source>In Biomagnetism. Interdisciplinary research and exploration</source>
+          <year>2008</year>
+          <publisher-name>Hokkaido University Press</publisher-name>
+          <publisher-loc>Sapporo</publisher-loc>
+          <fpage>62</fpage>
+          <lpage>64</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bib9">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brookes</surname>
+              <given-names>M.J.</given-names>
+            </name>
+            <name>
+              <surname>Vrba</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Robinson</surname>
+              <given-names>S.E.</given-names>
+            </name>
+            <name>
+              <surname>Stevenson</surname>
+              <given-names>C.M.</given-names>
+            </name>
+            <name>
+              <surname>Peters</surname>
+              <given-names>A.M.</given-names>
+            </name>
+            <name>
+              <surname>Barnes</surname>
+              <given-names>G.R.</given-names>
+            </name>
+            <name>
+              <surname>Hillebrand</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Morris</surname>
+              <given-names>P.G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Optimising experimental design for MEG beamformer imaging</article-title>
+          <source>NeuroImage</source>
+          <volume>39</volume>
+          <year>2008</year>
+          <fpage>1788</fpage>
+          <lpage>1802</lpage>
+          <pub-id pub-id-type="pmid">18155612</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib10">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brown</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>C.C.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>K&#xFC;hn</surname>
+              <given-names>A.A.</given-names>
+            </name>
+            <name>
+              <surname>Doyle</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Yarrow</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Nuttin</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Aziz</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Involvement of human basal ganglia in offline feedback control of voluntary movement</article-title>
+          <source>Curr. Biol.</source>
+          <volume>16</volume>
+          <year>2006</year>
+          <fpage>2129</fpage>
+          <lpage>2134</lpage>
+          <pub-id pub-id-type="pmid">17084697</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib11">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>B&#xE9;nar</surname>
+              <given-names>C.G.</given-names>
+            </name>
+            <name>
+              <surname>Gotman</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Modeling of post-surgical brain and skull defects in the EEG inverse problem with the boundary element method</article-title>
+          <source>Clin. Neurophysiol.</source>
+          <volume>113</volume>
+          <year>2002</year>
+          <fpage>48</fpage>
+          <lpage>56</lpage>
+          <pub-id pub-id-type="pmid">11801424</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib12">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cassidy</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Mazzone</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Oliviero</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Insola</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Tonali</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Di Lazzaro</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Movement-related changes in synchronization in the human basal ganglia</article-title>
+          <source>Brain</source>
+          <volume>125</volume>
+          <year>2002</year>
+          <fpage>1235</fpage>
+          <lpage>1246</lpage>
+          <pub-id pub-id-type="pmid">12023312</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib13">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>C.C.</given-names>
+            </name>
+            <name>
+              <surname>Pogosyan</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Zrinzo</surname>
+              <given-names>L.U.</given-names>
+            </name>
+            <name>
+              <surname>Tisch</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Limousin</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Ashkan</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Yousry</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Hariz</surname>
+              <given-names>M.I.</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Intra-operative recordings of local field potentials can help localize the subthalamic nucleus in Parkinson's disease surgery</article-title>
+          <source>Exp. Neurol.</source>
+          <volume>198</volume>
+          <year>2006</year>
+          <fpage>214</fpage>
+          <lpage>221</lpage>
+          <pub-id pub-id-type="pmid">16403500</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib14">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cheyne</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Bostan</surname>
+              <given-names>A.C.</given-names>
+            </name>
+            <name>
+              <surname>Gaetz</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Pang</surname>
+              <given-names>E.W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Event-related beamforming: a robust method for presurgical functional mapping using MEG</article-title>
+          <source>Clin. Neurophysiol.</source>
+          <volume>118</volume>
+          <issue>8</issue>
+          <year>2007</year>
+          <fpage>1691</fpage>
+          <lpage>1704</lpage>
+          <pub-id pub-id-type="pmid">17587643</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib15">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cheyne</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Bells</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Ferrari</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Gaetz</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Bostan</surname>
+              <given-names>A.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Self-paced movements induce high-frequency gamma oscillations in primary motor cortex</article-title>
+          <source>NeuroImage</source>
+          <volume>42</volume>
+          <year>2008</year>
+          <fpage>332</fpage>
+          <lpage>342</lpage>
+          <pub-id pub-id-type="pmid">18511304</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib16">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Christov</surname>
+              <given-names>I.I.</given-names>
+            </name>
+          </person-group>
+          <article-title>Real time electrocardiogram QRS detection using combined adaptive threshold</article-title>
+          <source>Biomed. Eng. Online</source>
+          <volume>3</volume>
+          <year>2004</year>
+          <fpage>28</fpage>
+          <pub-id pub-id-type="pmid">15333132</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib17">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crone</surname>
+              <given-names>N.E.</given-names>
+            </name>
+            <name>
+              <surname>Miglioretti</surname>
+              <given-names>D.L.</given-names>
+            </name>
+            <name>
+              <surname>Gordon</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Sieracki</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>M.T.</given-names>
+            </name>
+            <name>
+              <surname>Uematsu</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Lesser</surname>
+              <given-names>R.P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional mapping of human sensorimotor cortex with electrocorticographic spectral analysis. I. Alpha and beta event-related desynchronization</article-title>
+          <source>Brain</source>
+          <volume>121</volume>
+          <year>1998</year>
+          <fpage>2271</fpage>
+          <lpage>2299</lpage>
+          <pub-id pub-id-type="pmid">9874480</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib18">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crone</surname>
+              <given-names>N.E.</given-names>
+            </name>
+            <name>
+              <surname>Miglioretti</surname>
+              <given-names>D.L.</given-names>
+            </name>
+            <name>
+              <surname>Gordon</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Lesser</surname>
+              <given-names>R.P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional mapping of human sensorimotor cortex with electrocorticographic spectral analysis. II. Event-related synchronization in the gamma band</article-title>
+          <source>Brain</source>
+          <volume>121</volume>
+          <year>1998</year>
+          <fpage>2301</fpage>
+          <lpage>2315</lpage>
+          <pub-id pub-id-type="pmid">9874481</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib19">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dalal</surname>
+              <given-names>S.S.</given-names>
+            </name>
+            <name>
+              <surname>Baillet</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Adam</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Ducorps</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Schwartz</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Jerbi</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Bertrand</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Garnero</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Martinerie</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Lachaux</surname>
+              <given-names>J.P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Simultaneous MEG and intracranial EEG recordings during attentive reading</article-title>
+          <source>NeuroImage</source>
+          <volume>45</volume>
+          <year>2009</year>
+          <fpage>1289</fpage>
+          <lpage>1304</lpage>
+          <pub-id pub-id-type="pmid">19349241</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib20">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Debener</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Mullinger</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Niazy</surname>
+              <given-names>R.K.</given-names>
+            </name>
+            <name>
+              <surname>Bowtell</surname>
+              <given-names>R.W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Properties of the ballistocardiogram artefact as revealed by EEG recordings at 1.5, 3 and 7 T static magnetic field strength</article-title>
+          <source>Int. J. Psychophysiol.</source>
+          <volume>67</volume>
+          <year>2008</year>
+          <fpage>189</fpage>
+          <lpage>199</lpage>
+          <pub-id pub-id-type="pmid">17683819</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib21">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fogelson</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Tijssen</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>van Bruggen</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Speelman</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Different functional loops between cerebral cortex and the subthalamic area in Parkinson's disease</article-title>
+          <source>Cereb. Cortex</source>
+          <volume>16</volume>
+          <year>2006</year>
+          <fpage>64</fpage>
+          <lpage>75</lpage>
+          <pub-id pub-id-type="pmid">15829734</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib22">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gross</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Kujala</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Hamalainen</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Timmermann</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Schnitzler</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Salmelin</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic imaging of coherent sources: studying neural interactions in the human brain</article-title>
+          <source>Proc. Natl. Acad. Sci.</source>
+          <volume>98</volume>
+          <year>2001</year>
+          <fpage>694</fpage>
+          <lpage>699</lpage>
+          <pub-id pub-id-type="pmid">11209067</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib23">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Guderian</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>D&#xFC;zel</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Induced theta oscillations mediate large-scale synchrony with mediotemporal areas during recollection in humans</article-title>
+          <source>Hippocampus</source>
+          <volume>15</volume>
+          <year>2005</year>
+          <fpage>901</fpage>
+          <lpage>912</lpage>
+          <pub-id pub-id-type="pmid">16161060</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib24">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hammond</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Bergman</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Pathological synchronization in Parkinson's disease: networks, models and treatments</article-title>
+          <source>Trends Neurosci.</source>
+          <volume>30</volume>
+          <year>2007</year>
+          <fpage>357</fpage>
+          <lpage>364</lpage>
+          <pub-id pub-id-type="pmid">17532060</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib25">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hariz</surname>
+              <given-names>M.I.</given-names>
+            </name>
+            <name>
+              <surname>Krack</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Melvill</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Jorgensen</surname>
+              <given-names>J.V.</given-names>
+            </name>
+            <name>
+              <surname>Hamel</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Hirabayashi</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Lenders</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Wesslen</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Tengvar</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Yousry</surname>
+              <given-names>T.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>A quick and universal method for stereotactic visualization of the subthalamic nucleus before and after implantation of deep brain stimulation electrodes</article-title>
+          <source>Stereotact. Funct. Neurosurg.</source>
+          <volume>80</volume>
+          <year>2003</year>
+          <fpage>96</fpage>
+          <lpage>101</lpage>
+          <pub-id pub-id-type="pmid">14745216</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib26">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jurkiewicz</surname>
+              <given-names>M.T.</given-names>
+            </name>
+            <name>
+              <surname>Gaetz</surname>
+              <given-names>W.C.</given-names>
+            </name>
+            <name>
+              <surname>Bostan</surname>
+              <given-names>A.C.</given-names>
+            </name>
+            <name>
+              <surname>Cheyne</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Post-movement beta rebound is generated in motor cortex: evidence from neuromagnetic recordings</article-title>
+          <source>NeuroImage</source>
+          <volume>32</volume>
+          <issue>3</issue>
+          <year>2006</year>
+          <fpage>1281</fpage>
+          <lpage>1289</lpage>
+          <pub-id pub-id-type="pmid">16863693</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib27">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kempf</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>K&#xFC;hn</surname>
+              <given-names>A.A.</given-names>
+            </name>
+            <name>
+              <surname>Kupsch</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Br&#xFC;cke</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Weise</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Schneider</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Premovement activities in the subthalamic area of patients with Parkinson's disease and their dependence on task</article-title>
+          <source>Eur. J. Neurosci.</source>
+          <volume>25</volume>
+          <year>2007</year>
+          <fpage>3137</fpage>
+          <lpage>3145</lpage>
+          <pub-id pub-id-type="pmid">17561827</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib28">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kiebel</surname>
+              <given-names>S.J.</given-names>
+            </name>
+            <name>
+              <surname>Garrido</surname>
+              <given-names>M.I.</given-names>
+            </name>
+            <name>
+              <surname>Moran</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic causal modeling for EEG and MEG</article-title>
+          <source>Hum. Brain Map.</source>
+          <volume>30</volume>
+          <year>2009</year>
+          <fpage>1866</fpage>
+          <lpage>1876</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bib29">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kringelbach</surname>
+              <given-names>M.L.</given-names>
+            </name>
+            <name>
+              <surname>Jenkinson</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Green</surname>
+              <given-names>A.L.</given-names>
+            </name>
+            <name>
+              <surname>Owen</surname>
+              <given-names>S.L.</given-names>
+            </name>
+            <name>
+              <surname>Hansen</surname>
+              <given-names>P.C.</given-names>
+            </name>
+            <name>
+              <surname>Cornelissen</surname>
+              <given-names>P.L.</given-names>
+            </name>
+            <name>
+              <surname>Holliday</surname>
+              <given-names>I.E.</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Aziz</surname>
+              <given-names>T.Z.</given-names>
+            </name>
+          </person-group>
+          <article-title>Deep brain stimulation for chronic pain investigated with magnetoencephalography</article-title>
+          <source>NeuroReport</source>
+          <volume>18</volume>
+          <issue>3</issue>
+          <year>2007</year>
+          <fpage>223</fpage>
+          <lpage>228</lpage>
+          <pub-id pub-id-type="pmid">17314661</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib30">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>K&#xFC;hn</surname>
+              <given-names>A.A.</given-names>
+            </name>
+            <name>
+              <surname>Doyle</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Pogosyan</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Yarrow</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Kupsch</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Schneider</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Hariz</surname>
+              <given-names>M.I.</given-names>
+            </name>
+            <name>
+              <surname>Trottenberg</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Modulation of beta oscillations in the subthalamic area during motor imagery in Parkinson's disease</article-title>
+          <source>Brain</source>
+          <volume>129</volume>
+          <year>2006</year>
+          <fpage>695</fpage>
+          <lpage>706</lpage>
+          <pub-id pub-id-type="pmid">16364953</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib31">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lalo</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Thobois</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Sharott</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Polo</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Mertens</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Pogosyan</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Patterns of bidirectional communication between cortex and basal ganglia during movement in patients with Parkinson disease</article-title>
+          <source>J. Neurosci.</source>
+          <volume>28</volume>
+          <year>2008</year>
+          <fpage>3008</fpage>
+          <lpage>3016</lpage>
+          <pub-id pub-id-type="pmid">18354004</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib32">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lehmann</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Michel</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Intracerebral dipole source localization for FFT power maps</article-title>
+          <source>Electroencephalogr. Clin. Neurophysiol.</source>
+          <volume>76</volume>
+          <year>1990</year>
+          <fpage>271</fpage>
+          <pub-id pub-id-type="pmid">1697259</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib33">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>L&#xFC;tkenh&#xF6;ner</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Frequency-domain localization of intracerebral dipolar sources</article-title>
+          <source>Electroencephalogr. Clin. Neurophysiol.</source>
+          <volume>82</volume>
+          <year>1992</year>
+          <fpage>112</fpage>
+          <lpage>118</lpage>
+          <pub-id pub-id-type="pmid">1370779</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib34">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Makela</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Taulu</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Pohjola</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Ahonen</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Pekkonen</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Effects of subthalamic nucleus stimulation on spontaneous sensorimotor MEG activity in a Parkinsonian patient</article-title>
+          <source>Int. Congr. Ser.</source>
+          <volume>1300</volume>
+          <year>2007</year>
+          <fpage>345</fpage>
+          <lpage>348</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bib35">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mattout</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Henson</surname>
+              <given-names>R.N.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Canonical source reconstruction for MEG</article-title>
+          <source>Comput. Intell. Neurosci.</source>
+          <year>2007</year>
+          <fpage>67613</fpage>
+          <pub-id pub-id-type="pmid">18350131</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib36">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mayka</surname>
+              <given-names>M.A.</given-names>
+            </name>
+            <name>
+              <surname>Corcos</surname>
+              <given-names>D.M.</given-names>
+            </name>
+            <name>
+              <surname>Leurgans</surname>
+              <given-names>S.E.</given-names>
+            </name>
+            <name>
+              <surname>Vaillancourt</surname>
+              <given-names>D.E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Three-dimensional locations and boundaries of motor and premotor cortices as defined by functional brain imaging: a meta-analysis</article-title>
+          <source>NeuroImage</source>
+          <volume>31</volume>
+          <year>2006</year>
+          <fpage>1453</fpage>
+          <lpage>1474</lpage>
+          <pub-id pub-id-type="pmid">16571375</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib37">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Medvedovsky</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Taulu</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Bikmullina</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Paetau</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Artifact and head movement compensation in MEG</article-title>
+          <source>Neurol. Neurophysiol. Neurosci.</source>
+          <year>2007</year>
+          <fpage>4</fpage>
+          <pub-id pub-id-type="pmid">18066426</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib38">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Miller</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Leuthardt</surname>
+              <given-names>E.C.</given-names>
+            </name>
+            <name>
+              <surname>Schalk</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Rao</surname>
+              <given-names>R.P.</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>N.R.</given-names>
+            </name>
+            <name>
+              <surname>Moran</surname>
+              <given-names>D.W.</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>J.W.</given-names>
+            </name>
+            <name>
+              <surname>Ojemann</surname>
+              <given-names>J.G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Spectral changes in cortical surface potentials during motor movement</article-title>
+          <source>J. Neurosci.</source>
+          <volume>27</volume>
+          <year>2007</year>
+          <fpage>2424</fpage>
+          <lpage>2432</lpage>
+          <pub-id pub-id-type="pmid">17329441</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib39">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mitra</surname>
+              <given-names>P.P.</given-names>
+            </name>
+            <name>
+              <surname>Pesaran</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Analysis of dynamic brain imaging data</article-title>
+          <source>Biophys. J.</source>
+          <volume>76</volume>
+          <year>1999</year>
+          <fpage>691</fpage>
+          <lpage>708</lpage>
+          <pub-id pub-id-type="pmid">9929474</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib40">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Niazy</surname>
+              <given-names>R.K.</given-names>
+            </name>
+            <name>
+              <surname>Beckmann</surname>
+              <given-names>C.F.</given-names>
+            </name>
+            <name>
+              <surname>Iannetti</surname>
+              <given-names>G.D.</given-names>
+            </name>
+            <name>
+              <surname>Brady</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>S.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Removal of FMRI environment artifacts from EEG data using optimal basis sets</article-title>
+          <source>NeuroImage</source>
+          <volume>28</volume>
+          <year>2005</year>
+          <fpage>720</fpage>
+          <lpage>737</lpage>
+          <pub-id pub-id-type="pmid">16150610</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib41">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nolte</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>The magnetic lead field theorem in the quasi-static approximation and its use for magnetoencephalography forward calculation in realistic volume conductors</article-title>
+          <source>Phys. Med. Biol.</source>
+          <volume>48</volume>
+          <year>2003</year>
+          <fpage>3637</fpage>
+          <lpage>3652</lpage>
+          <pub-id pub-id-type="pmid">14680264</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib42">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nolte</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Bai</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Wheaton</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Mari</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Vorbach</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Hallett</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Identifying true brain interaction from EEG data using the imaginary part of coherency</article-title>
+          <source>Clin. Neurophysiol.</source>
+          <volume>115</volume>
+          <year>2004</year>
+          <fpage>2292</fpage>
+          <lpage>2307</lpage>
+          <pub-id pub-id-type="pmid">15351371</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib43">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oostenveld</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Oostendorp</surname>
+              <given-names>T.F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Validating the boundary element method for forward and inverse EEG computations in the presence of a hole in the skull</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <volume>17</volume>
+          <year>2002</year>
+          <fpage>179</fpage>
+          <lpage>192</lpage>
+          <pub-id pub-id-type="pmid">12391571</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib44">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paradiso</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Cunic</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Saint-Cyr</surname>
+              <given-names>J.A.</given-names>
+            </name>
+            <name>
+              <surname>Hoque</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Lozano</surname>
+              <given-names>A.M.</given-names>
+            </name>
+            <name>
+              <surname>Lang</surname>
+              <given-names>A.E.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Involvement of human thalamus in the preparation of self-paced movement</article-title>
+          <source>Brain</source>
+          <volume>127</volume>
+          <year>2004</year>
+          <fpage>2717</fpage>
+          <lpage>2731</lpage>
+          <pub-id pub-id-type="pmid">15329354</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib45">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pfurtscheller</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Lopes Da Silva</surname>
+              <given-names>F.H.</given-names>
+            </name>
+          </person-group>
+          <article-title>Event-related EEG/MEG synchronization and desynchronization: basic principles</article-title>
+          <source>Clin. Neurophysiol.</source>
+          <volume>110</volume>
+          <year>1999</year>
+          <fpage>1842</fpage>
+          <lpage>1857</lpage>
+          <pub-id pub-id-type="pmid">10576479</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib46">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Purzner</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Paradiso</surname>
+              <given-names>G.O.</given-names>
+            </name>
+            <name>
+              <surname>Cunic</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Saint-Cyr</surname>
+              <given-names>J.A.</given-names>
+            </name>
+            <name>
+              <surname>Hoque</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Lozano</surname>
+              <given-names>A.M.</given-names>
+            </name>
+            <name>
+              <surname>Lang</surname>
+              <given-names>A.E.</given-names>
+            </name>
+            <name>
+              <surname>Moro</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Hodaie</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Mazzella</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Involvement of the basal ganglia and cerebellar motor pathways in the preparation of self-initiated and externally triggered movements in humans</article-title>
+          <source>J. Neurosci.</source>
+          <volume>27</volume>
+          <year>2007</year>
+          <fpage>6029</fpage>
+          <lpage>6036</lpage>
+          <pub-id pub-id-type="pmid">17537974</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib47">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ray</surname>
+              <given-names>N.J.</given-names>
+            </name>
+            <name>
+              <surname>Jenkinson</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Kringelbach</surname>
+              <given-names>M.L.</given-names>
+            </name>
+            <name>
+              <surname>Hansen</surname>
+              <given-names>P.C.</given-names>
+            </name>
+            <name>
+              <surname>Pereira</surname>
+              <given-names>E.A.</given-names>
+            </name>
+            <name>
+              <surname>Brittain</surname>
+              <given-names>J.S.</given-names>
+            </name>
+            <name>
+              <surname>Holland</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Holliday</surname>
+              <given-names>I.E.</given-names>
+            </name>
+            <name>
+              <surname>Owen</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Aziz</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Abnormal thalamocortical dynamics may be altered by deep brain stimulation: using magnetoencephalography to study phantom limb pain</article-title>
+          <source>J. Clin. Neurosci.</source>
+          <volume>16</volume>
+          <issue>1</issue>
+          <year>2009</year>
+          <fpage>32</fpage>
+          <lpage>36</lpage>
+          <pub-id pub-id-type="pmid">19019684</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib48">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Santiuste</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Nowak</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Russi</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Tarancon</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Oliver</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Ayats</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Scheler</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Graetz</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Simultaneous magnetoencephalography and intracranial EEG registration: technical and clinical aspects</article-title>
+          <source>J. Clin. Neurophysiol.</source>
+          <volume>25</volume>
+          <year>2008</year>
+          <fpage>331</fpage>
+          <lpage>339</lpage>
+          <pub-id pub-id-type="pmid">18997623</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib49">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schnitzler</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Gross</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Normal and pathological oscillatory communication in the brain</article-title>
+          <source>Neuroscience</source>
+          <volume>6</volume>
+          <year>2005</year>
+          <fpage>285</fpage>
+          <lpage>296</lpage>
+          <pub-id pub-id-type="pmid">15803160</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib50">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sekihara</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Nagarajan</surname>
+              <given-names>S.S.</given-names>
+            </name>
+            <name>
+              <surname>Poeppel</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Marantz</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Asymptotic SNR of scalar and vector minimum-variance beamformers for neuromagnetic source reconstruction</article-title>
+          <source>IEEE Trans. Biomed. Eng.</source>
+          <volume>51</volume>
+          <year>2004</year>
+          <fpage>1726</fpage>
+          <lpage>1734</lpage>
+          <pub-id pub-id-type="pmid">15490820</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib51">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Taulu</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Simola</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Spatiotemporal signal space separation method for rejecting nearby interference in MEG measurements</article-title>
+          <source>Phys. Med. Biol.</source>
+          <volume>51</volume>
+          <year>2006</year>
+          <fpage>1759</fpage>
+          <lpage>1768</lpage>
+          <pub-id pub-id-type="pmid">16552102</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib52">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thomson</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Spectrum estimation and harmonic analysis</article-title>
+          <source>Proc. IEEE</source>
+          <volume>70</volume>
+          <year>1982</year>
+          <fpage>1055</fpage>
+          <lpage>1096</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bib53">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Van den Broek</surname>
+              <given-names>S.P.</given-names>
+            </name>
+            <name>
+              <surname>Reinders</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Donderwinkel</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Peters</surname>
+              <given-names>M.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Volume conduction effects in EEG and MEG</article-title>
+          <source>Electroencephalogr. Clin. Neurophysiol.</source>
+          <volume>106</volume>
+          <year>1998</year>
+          <fpage>522</fpage>
+          <lpage>534</lpage>
+          <pub-id pub-id-type="pmid">9741752</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib54">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Van Veen</surname>
+              <given-names>B.D.</given-names>
+            </name>
+            <name>
+              <surname>van Drongelen</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Yuchtman</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Localization of brain electrical activity via linearly constrained minimum variance spatial filtering</article-title>
+          <source>IEEE Trans. Biomed. Eng.</source>
+          <volume>44</volume>
+          <year>1997</year>
+          <fpage>867</fpage>
+          <lpage>880</lpage>
+          <pub-id pub-id-type="pmid">9282479</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib55">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vrba</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Taulu</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Nenonen</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Ahonen</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Signal Space Separation Beamformer</article-title>
+          <source>Brain Topogr.</source>
+          <year>2009</year>
+          <comment>[electronic publication ahead of print]</comment>
+        </element-citation>
+      </ref>
+      <ref id="bib56">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wager</surname>
+              <given-names>T.D.</given-names>
+            </name>
+            <name>
+              <surname>Keller</surname>
+              <given-names>M.C.</given-names>
+            </name>
+            <name>
+              <surname>Lacey</surname>
+              <given-names>S.C.</given-names>
+            </name>
+            <name>
+              <surname>Jonides</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Increased sensitivity in neuroimaging analyses using robust regression</article-title>
+          <source>NeuroImage</source>
+          <volume>26</volume>
+          <year>2005</year>
+          <fpage>99</fpage>
+          <lpage>113</lpage>
+          <pub-id pub-id-type="pmid">15862210</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib57">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Williams</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Tijssen</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Van Bruggen</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Bosch</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Insola</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Di Lazzaro</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Mazzone</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Oliviero</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Quartarone</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Speelman</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dopamine-dependent changes in the functional connectivity between basal ganglia and cerebral cortex in humans</article-title>
+          <source>Brain</source>
+          <volume>125</volume>
+          <year>2002</year>
+          <fpage>1558</fpage>
+          <lpage>1569</lpage>
+          <pub-id pub-id-type="pmid">12077005</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib58">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Williams</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>K&#xFC;hn</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Kupsch</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Tijssen</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>van Bruggen</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Speelman</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Hotton</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Yarrow</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Behavioural cues are associated with modulations of synchronous oscillations in the human subthalamic nucleus</article-title>
+          <source>Brain</source>
+          <volume>126</volume>
+          <year>2003</year>
+          <fpage>1975</fpage>
+          <lpage>1985</lpage>
+          <pub-id pub-id-type="pmid">12847073</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <ack>
+      <title>Acknowledgments</title>
+      <p>We would like to thank David Bradbury, Janice Glensman, Zoe Chen and James Kilner for their assistance with conducting the experiments and Jan-Mathijs Schoffelen and Stefan Debener for helpful discussions.</p>
+      <p>This work was supported by <funding-source id="GS1">Marie Curie Intra-European fellowship</funding-source> (contract MEIF-CT-2006-038858) and <funding-source>British Technion Society Coleman-Cohen Fellowship</funding-source>.</p>
+    </ack>
+  </back>
+  <floats-group>
+    <fig id="fig1">
+      <label>Fig. 1</label>
+      <caption>
+        <p>Properties of the metal artefact seen in the MEG of DBS patients. (A) Raw data (high-pass filtered above 5&#xA0;Hz) from several MEG channels close to the burr hole showing artefact deflections following the peaks of the ECG. The artefact exceeds the typical physiological signal amplitude by several orders of magnitude. (B) QRS-locked average of the MEG (all channels shown together) and the ECG. Numbered arrows point at some of the prominent artefact peaks and the corresponding MEG scalp maps are shown above the trace. The topographies vary greatly between peaks and could not be explained by a single source. (C) Plot of the singular values for decomposition of the QRS-locked average shown in B (circles) shown with the singular values from the same analysis performed on healthy volunteer data with (squares) and without (triangles) percutaneous extension wires glued to the subject's head. The artefact in the healthy subject was similar in magnitude to that of the patient (circles). For both the patient and the healthy subject there were about 6 singular values exceeding the maximal value observed without wires. This reflects the complex spatial topography of the artefact also seen from the scalp maps in B.</p>
+      </caption>
+      <graphic xlink:href="gr1"/>
+    </fig>
+    <fig id="fig2">
+      <label>Fig. 2</label>
+      <caption>
+        <p>Beamforming suppresses the metal artefact. Virtual electrode of LCMV beamformer was placed at the right M1 (MNI coordinates: 37, &#x2212;&#xA0;18, 53) and source activity was computed for single trials defined around heart beats. Regularization parameter of the beamformer (defined as percentage of the mean of the diagonal of the channel covariance matrix) was varied systematically over the levels depicted. (A) Single trial source waveforms (grey) and the average across trials (white) for different levels of regularization. For very high regularization (when the beamformer has low spatial selectivity) the source data are heavily contaminated by the heartbeat-locked artefact. With decreasing the regularization the cardiac-locked activity is substantially diminished. (B) To quantify the artefact contamination we computed the <italic>r</italic><sup>2</sup> value for correlation between the average cardiac-locked source waveform for regularization of 1000% (white trace in the rightmost plot of A) and single trials and averages of the other plots. In the case of single trials the trial-specific <italic>r</italic><sup>2</sup> values were then averaged. This analysis also shows that decrease in artefact contamination is most dramatic between 1000% and 1% regularization and continues with further decreases in regularization.</p>
+      </caption>
+      <graphic xlink:href="gr2"/>
+    </fig>
+    <fig id="fig3">
+      <label>Fig. 3</label>
+      <caption>
+        <p>Analysis of the coherence between cortex and STN using beamforming. (A) Scalp topography of the coherence between the right STN bipolar channel showing the strongest coherence with the MEG and the MEG sensors for different frequency ranges. The top row shows the original coherence and the bottom row shows coherence patterns simulated assuming that the cortical source coherent with the STN was the single dipole shown in B. (B) DICS beamformer source reconstruction for the coherence pattern shown in the top row of A. Channel cross frequency matrix was computed for 15 to 35&#xA0;Hz range. The resulting beamformer image was thresholded at mean&#xA0;+&#xA0;4 times the standard deviation across voxels and overlaid on the subject's structural image. An equivalent current dipole was placed at the global maximum of the beamformer image (MNI coordinates: 28, 4, 66) and its orientation was defined as normalized imaginary part of the cross-spectral density between the STN signal and the 3 spatial orientations of the MEG. (C) Virtual electrode time-series were computed using LCMV beamformer for the dipole source shown in B. The coherence spectrum between these time-series and the STN signal is shown. The peak coherence was 0.28 at 25&#xA0;Hz, which is quite high for neural signals. The maximum and the width of the coherence peak are consistent with the scalp coherence pattern in A.</p>
+      </caption>
+      <graphic xlink:href="gr3"/>
+    </fig>
+    <fig id="fig4">
+      <label>Fig. 4</label>
+      <caption>
+        <p>Power changes around self-initiated left finger movements. Virtual electrode was placed at the right M1 (MNI coordinates: 37, &#x2212;&#xA0;18, 53) and time-series were extracted around the times when the subjects performed button presses with the fingers of his left hand. Time&#x2013;frequency decomposition of the time-series shows ERD/ERS sequence in the alpha and beta bands and ERS in the high gamma band, which are well known features of movement-related cortical power dynamics. The rectangles show the time and frequency ranges that were used for volumetric beamformer analysis shown in <xref rid="fig5" ref-type="fig">Fig. 5</xref>. The dotted line corresponds to the high gamma range (55&#x2013;80&#xA0;Hz) and the dashed line to alpha and beta range (5 to 30&#xA0;Hz). In the subtraction between two time windows the images corresponding to white rectangles entered with the positive sign and the images corresponding to black rectangles with the negative sign.</p>
+      </caption>
+      <graphic xlink:href="gr4"/>
+    </fig>
+    <fig id="fig5">
+      <label>Fig. 5</label>
+      <caption>
+        <p>Volumetric DICS beamformer source reconstruction of cortical areas undergoing movement-related power changes. The time and frequency ranges were as shown in <xref rid="fig4" ref-type="fig">Fig. 4</xref>. Single-sample <italic>t</italic>-test was performed on 8 difference images computed for each movement block. The <italic>t</italic>-statistic was thresholded at the level corresponding to <italic>p</italic>&#xA0;&lt;&#xA0;0.05 (family-wise error corrected). Mesial and contralateral motor and pre-motor areas were revealed. The peak power difference was at &#x2212;&#xA0;4, &#x2212;&#xA0;10, 62&#xA0;mm for the low frequency range and at 36, 16, 62&#xA0;mm for the high frequency range.</p>
+      </caption>
+      <graphic xlink:href="gr5"/>
+    </fig>
+  </floats-group>
+</article>
+</pmc-articleset>

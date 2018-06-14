@@ -1,0 +1,1428 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:ali="http://www.niso.org/schemas/ali/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Europace</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Europace</journal-id>
+      <journal-id journal-id-type="publisher-id">europace</journal-id>
+      <journal-id journal-id-type="hwp">europace</journal-id>
+      <journal-title-group>
+        <journal-title>Europace</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1099-5129</issn>
+      <issn pub-type="epub">1532-2092</issn>
+      <publisher>
+        <publisher-name>Oxford University Press</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">25362171</article-id>
+      <article-id pub-id-type="pmc">4217520</article-id>
+      <article-id pub-id-type="doi">10.1093/europace/euu257</article-id>
+      <article-id pub-id-type="publisher-id">euu257</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Articles</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Patient-specific modelling of cardiac electrophysiology in heart-failure patients</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Potse</surname>
+            <given-names>Mark</given-names>
+          </name>
+          <xref ref-type="aff" rid="af1">1</xref>
+          <xref ref-type="aff" rid="af2">2</xref>
+          <xref ref-type="corresp" rid="cor1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Krause</surname>
+            <given-names>Dorian</given-names>
+          </name>
+          <xref ref-type="aff" rid="af3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kroon</surname>
+            <given-names>Wilco</given-names>
+          </name>
+          <xref ref-type="aff" rid="af3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Murzilli</surname>
+            <given-names>Romina</given-names>
+          </name>
+          <xref ref-type="aff" rid="af4">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Muzzarelli</surname>
+            <given-names>Stefano</given-names>
+          </name>
+          <xref ref-type="aff" rid="af4">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Regoli</surname>
+            <given-names>Fran&#xE7;ois</given-names>
+          </name>
+          <xref ref-type="aff" rid="af4">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Caiani</surname>
+            <given-names>Enrico</given-names>
+          </name>
+          <xref ref-type="aff" rid="af5">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Prinzen</surname>
+            <given-names>Frits W.</given-names>
+          </name>
+          <xref ref-type="aff" rid="af1">1</xref>
+          <xref ref-type="aff" rid="af6">6</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Krause</surname>
+            <given-names>Rolf</given-names>
+          </name>
+          <xref ref-type="aff" rid="af1">1</xref>
+          <xref ref-type="aff" rid="af3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Auricchio</surname>
+            <given-names>Angelo</given-names>
+          </name>
+          <xref ref-type="aff" rid="af1">1</xref>
+          <xref ref-type="aff" rid="af4">4</xref>
+        </contrib>
+        <aff id="af1"><label>1</label><addr-line>Center for Computational Medicine in Cardiology, Faculty of Informatics</addr-line>, <institution>Universit&#xE0; della Svizzera italiana</institution>, <addr-line>Via Giuseppe Buffi 13, 6904 Lugano</addr-line>, <country>Switzerland</country></aff>
+        <aff id="af2"><label>2</label><institution>Inria Bordeaux Sud-Ouest</institution>, <addr-line>33405 Talence CEDEX</addr-line>, <country>France</country></aff>
+        <aff id="af3"><label>3</label><addr-line>Institute of Computational Science, Faculty of Informatics</addr-line>, <institution>Universit&#xE0; della Svizzera italiana</institution>, <addr-line>6904 Lugano</addr-line>, <country>Switzerland</country></aff>
+        <aff id="af4"><label>4</label><addr-line>Division of Cardiology</addr-line>, <institution>Fondazione Cardiocentro Ticino</institution>, <addr-line>6904 Lugano</addr-line>, <country>Switzerland</country></aff>
+        <aff id="af5"><label>5</label><addr-line>Department of Electronics, Information, and Bioengineering</addr-line>, <institution>Politecnico di Milano</institution>, <addr-line>20133 Milano</addr-line>, <country>Italy</country></aff>
+        <aff id="af6"><label>6</label><addr-line>Department of Physiology, Cardiovascular Research Institute Maastricht</addr-line>, <institution>Maastricht University</institution>, <addr-line>6229 ER Maastricht</addr-line>, <country>The Netherlands</country></aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="cor1"><label>*</label>Corresponding author. Tel: +41 32 511 6763. <italic>E-mail address</italic>: <email>mark@potse.nl</email></corresp>
+      </author-notes>
+      <pub-date pub-type="ppub">
+        <month>11</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <month>11</month>
+        <year>2014</year>
+      </pub-date>
+      <!-- PMC Release delay is 0 months and 0 days and was based on the
+							<pub-date pub-type="ppub"/>. -->
+      <volume>16</volume>
+      <issue>Suppl 4</issue>
+      <issue-title>TRM Forum on Computer Simulation and Experimental Assessment of Cardiac Function, 1-3 December, 2013</issue-title>
+      <fpage>iv56</fpage>
+      <lpage>iv61</lpage>
+      <history>
+        <date date-type="received">
+          <day>18</day>
+          <month>5</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>21</day>
+          <month>8</month>
+          <year>2014</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; The Author 2014. Published by Oxford University Press on behalf of the European Society of Cardiology.</copyright-statement>
+        <copyright-year>2014</copyright-year>
+        <license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</ext-link>), which permits non-commercial re-use, distribution, and reproduction in any medium, provided the original work is properly cited. For commercial re-use, please contact journals.permissions@oup.com</license-p>
+        </license>
+      </permissions>
+      <self-uri content-type="pdf" xlink:type="simple" xlink:href="euu257.pdf"/>
+      <abstract>
+        <sec>
+          <title>Aims</title>
+          <p>Left-ventricular (LV) conduction disturbances are common in heart-failure patients and a left bundle-branch block (LBBB) electrocardiogram (ECG) type is often seen. The precise cause of this pattern is uncertain and is probably variable between patients, ranging from proximal interruption of the left bundle branch to diffuse distal conduction disease in the working myocardium. Using realistic numerical simulation methods and patient-tailored model anatomies, we investigated different hypotheses to explain the observed activation order on the LV endocardium, electrogram morphologies, and ECG features in two patients with heart failure and LBBB ECG.</p>
+        </sec>
+        <sec>
+          <title>Methods and results</title>
+          <p>Ventricular electrical activity was simulated using reaction&#x2013;diffusion models with patient-specific anatomies. From the simulated action potentials, ECGs and cardiac electrograms were computed by solving the bidomain equation. Model parameters such as earliest activation sites, tissue conductivity, and densities of ionic currents were tuned to reproduce the measured signals. Electrocardiogram morphology and activation order could be matched simultaneously. Local electrograms matched well at some sites, but overall the measured waveforms had deeper S-waves than the simulated waveforms.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>Tuning a reaction&#x2013;diffusion model of the human heart to reproduce measured ECGs and electrograms is feasible and may provide insights in individual disease characteristics that cannot be obtained by other means.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>Heart failure</kwd>
+        <kwd>Left bundle-branch block</kwd>
+        <kwd>Conduction disorders</kwd>
+        <kwd>Computer models</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <boxed-text id="box1" position="float">
+      <caption>
+        <title>What's new?</title>
+      </caption>
+      <p>
+<list list-type="bullet"><list-item><p>Anatomically and physiologically detailed computational models were fitted to two heart-failure patients with ventricular conduction disturbances.</p></list-item><list-item><p>The models were tuned to reproduce the measured electrocardiogram and activation order on the left-ventricular (LV) endocardium.</p></list-item><list-item><p>Tuning results suggest the absence of antegrade or reentrant LV Purkinje activity, myocardial hypertrophy, reduced myocardial conductivity, and a partially preserved ventricular gradient.</p></list-item><list-item><p>To match the T-waves, we had to assume a much lower density of the delayed rectifier current than has been measured in isolated-cell experiments.</p></list-item></list></p>
+    </boxed-text>
+    <sec sec-type="intro" id="s1">
+      <title>Introduction</title>
+      <p>Ventricular conduction disturbances are frequently seen in heart-failure (HF) patients. About one-third of the patients with HF have a left bundle-branch block (LBBB) morphology of the QRS complex. Clinical trials have demonstrated that cardiac resynchronization therapy (CRT) reduces mortality and hospitalization for HF in patients with complete LBBB, while results in patients with right bundle-branch block or non-specific left-ventricular (LV) conduction delay are poor.<sup><xref rid="EUU257C1" ref-type="bibr">1</xref>,<xref rid="EUU257C2" ref-type="bibr">2</xref></sup> Endocardial mapping and simulation studies have suggested that many patients diagnosed with LBBB by conventional electrocardiogram (ECG) criteria are misdiagnosed, and that these patients may have a combination of ventricular hypertrophy, LV chamber dilation, scar, delayed LV activation, or other forms of electrical uncoupling in the working myocardium.<sup><xref rid="EUU257C3" ref-type="bibr">3</xref>&#x2013;<xref rid="EUU257C5" ref-type="bibr">5</xref></sup> The ability to distinguish between these possible factors may be important to predict the success of CRT.<sup><xref rid="EUU257C3" ref-type="bibr">3</xref>,<xref rid="EUU257C6" ref-type="bibr">6</xref></sup> The purpose of this study was to improve our understanding of the activation pattern in individual HF patients, the pathological mechanisms underlying this pattern, and their relation to ECG characteristics such as the notching in lead V6 which is typical for LBBB.</p>
+      <p>Using a computational model, the relation between hypothesized disease factors and the ECG can be investigated in a perfectly controlled environment. Modelling studies have already shown important insights in HF,<sup><xref rid="EUU257C7" ref-type="bibr">7</xref></sup> effects of CRT,<sup><xref rid="EUU257C8" ref-type="bibr">8</xref></sup> LV hypertrophy,<sup><xref rid="EUU257C5" ref-type="bibr">5</xref></sup> and in the problem of LBBB diagnosis. For example, it has recently been hypothesized that in complete LBBB, activation starts in the right ventricle (RV) and must proceed through the septum for 40&#x2013;50 ms before it reaches the LV endocardium.<sup><xref rid="EUU257C3" ref-type="bibr">3</xref></sup> It then takes another 50 ms to propagate to the endocardium of the posterolateral wall, and a further 50 ms to cross it. This results in a total QRS duration of 140&#x2013;150 ms,<sup><xref rid="EUU257C9" ref-type="bibr">9</xref></sup> far longer than the current criterion for LBBB.</p>
+      <p>The present state of computational modelling of the heart allows for highly realistic representation of the cardiac activation process, action potential waveforms, local electrograms, and the ECG.<sup><xref rid="EUU257C10" ref-type="bibr">10</xref></sup> However, such purely theoretical investigations still do not allow for insight in individual cases in all their complexity. Therefore, we set out to construct computational models that mimic individual patients as well as possible, so that the predicted signals could be directly compared with their measured equivalents. By repeated model tuning, the mechanisms that best explain the observed signals can then be identified, and to some extent such findings can be validated by other diagnostic methods and by predicting follow-up data.</p>
+    </sec>
+    <sec sec-type="methods" id="s2">
+      <title>Methods</title>
+      <sec id="s2a">
+        <title>Patient characteristics</title>
+        <p>Two patients with moderate-to-severe HF who were eligible for CRT implantation according to the criteria from the 2011 ESC clinical practice guidelines were included in the study. Both patients were on stable drug therapy (&gt;3 months) with maximally tolerated doses of angiotensin-converting enzyme inhibitors or angiotensin-1 receptor blockers, diuretics, aldosterone antagonists, and beta-blockers. Antiarrhythmic drugs, if any, were stopped before the procedure for at least five half-lives. The patients underwent a standard 12-lead ECG, a clinically indicated cardiac magnetic resonance (CMR) procedure, an electrophysiological study, and a coronary angiography procedure. The patients provided oral and written consent to each procedure, and the studies were performed according to institutional ethics guidelines.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Data collection</title>
+        <p>Standard 12-lead ECGs were recorded using a novel ECG machine (CS200 excellence, Schiller AG) with a sampling rate of 1000/s and an amplitude resolution of 1.0 &#xB5;V.</p>
+        <p>In addition to standard electrophysiological catheters deployed in the right atrium and ventricle, a reference catheter (REF-STAR, Biosense Webster, a Johnson &amp; Johnson company) was placed on the back of the patient. The electromechanical mapping system (NOGA XP, Biosense Webster) and the navigation and mapping method were described previously.<sup><xref rid="EUU257C11" ref-type="bibr">11</xref></sup> In brief, a conventional 7F deflectable-tip mapping catheter (NAVI-STAR, Biosense Webster) was deployed in the LV via a retrograde aortic approach from the femoral artery. Intracardiac unipolar and bipolar electrograms and spatial position of the catheter tip were recorded at &#x223C;200 equally distributed LV endocardial locations. The sequentially recorded intracardiac electrogram and position data were temporally aligned using the simultaneously recorded 12-lead body surface ECG. For the three-dimensional (3D) LV reconstruction during the acquisition process, the geometric filling threshold was set at 10 mm to reduce artificial interpolation.</p>
+        <p>Cardiac magnetic resonance data were acquired with a 3T Siemens Magnetom Skyra scanner with 36 channel coils. Following localizer acquisitions, cine ECG-triggered segmented steady-state free precession images were acquired in the two-, three-, and four-chamber orientations, as well as in a stack of contiguous short-axis slices covering the ventricles (slice thickness 8 mm, 20% inter-slice gap, 25 phases). After intravenous bolus injection of gadolinium (Gadobutrol, 0.2 mmol/kg body weight) ultra-fast gradient-echo &#x2018;VIBE&#x2019; images were obtained to describe thoracic anatomy and to detect the location of the precordial ECG electrodes on the chest. Axial, coronal, and sagittal images (slice thickness 2.5 mm, slice oversampling 15%) were used. Finally, a navigator-gated, ECG-triggered whole-heart &#x2018;FLASH&#x2019; angiography was acquired with a T1-weighted inversion-recovery echo-gradient sequence with a slice thickness of 0.9 mm, with inversion time (TI) adjusted using TI-scout images.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Construction of anatomical models</title>
+        <p>Patient-specific anatomical models were reconstructed using CMR data. The outline of the ventricular musculature was traced semi-automatically in the end-diastolic frame of the short-axis cine dataset. The base of the ventricles, outflow tracts, outline of the atrial cavities, aortic arch, and caval veins were traced manually in the FLASH dataset. The lungs and the torso surface were traced from the VIBE data. From the contours thus obtained surfaces were created using Blender (The Blender Foundation) as 3D editing software. A computational mesh was constructed and mesh nodes were labelled as myocardium, blood, connective tissue, lung, or skeletal muscle, depending on the surfaces in which they were enclosed. Fibre orientations were assigned to the ventricular nodes using a rule-based method.<sup><xref rid="EUU257C12" ref-type="bibr">12</xref></sup></p>
+        <p>Cardiac magnetic resonance images of the ventricles typically have a &#x2018;grey zone&#x2019; consisting of trabeculated myocardium between the wall and the intracavitary blood. We segmented this zone separately, and will refer to it as the &#x2018;non-compact myocardium&#x2019;.</p>
+        <p>A thin, rapidly conducting subendocardial layer was created in both ventricles to mimic the function of the Purkinje network,<sup><xref rid="EUU257C13" ref-type="bibr">13</xref>,<xref rid="EUU257C14" ref-type="bibr">14</xref></sup> since the Purkinje system cannot be imaged <italic>in vivo</italic>. Early activation sites similar to those published by Durrer <italic>et al</italic>.<sup><xref rid="EUU257C15" ref-type="bibr">15</xref></sup> mimicked the action of the upstream Purkinje fibres.</p>
+        <p>To allow comparison between measured and simulated activation times, the set of catheter locations from the electroanatomical mapping system was aligned to the LV endocardial surface obtained from CMR imaging. The data could be inspected in 3D as well as in a polar diagram of the LV.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Computer simulations</title>
+        <p>Simulations were performed using a ventricular model at 0.2 mm resolution and an inhomogeneous torso model at 1 mm resolution as in previous studies.<sup><xref rid="EUU257C5" ref-type="bibr">5</xref>,<xref rid="EUU257C10" ref-type="bibr">10</xref>,<xref rid="EUU257C16" ref-type="bibr">16</xref>,<xref rid="EUU257C17" ref-type="bibr">17</xref></sup> The heart model had anisotropic tissue with transmurally rotating fibre orientation. All individual heart anatomies included the roof of the RV. The torso model included intracavitary blood, lungs, and an anisotropic skeletal muscle layer. A list of conductivity values in the heart and torso was published previously.<sup><xref rid="EUU257C18" ref-type="bibr">18</xref></sup> Propagating electrical activity was simulated based on ionic transmembrane currents by a monodomain reaction&#x2013;diffusion equation.<sup><xref rid="EUU257C12" ref-type="bibr">12</xref></sup> Membrane ionic currents at each of the &#x223C;25 million points that represented the ventricular myocardium were computed with the Ten Tusscher-Noble-Noble-Panfilov (TNNP) membrane model for human ventricular myocytes.<sup><xref rid="EUU257C19" ref-type="bibr">19</xref></sup> This model distinguishes subendocardial, mid-myocardial, and subepicardial cell types. We added differences between LV and RV cells as published previously.<sup><xref rid="EUU257C20" ref-type="bibr">20</xref></sup></p>
+        <p>At 1 ms intervals, computed transmembrane currents were injected in the torso model and the bidomain equation was solved for the electric potential throughout the torso, from which the 12-lead ECG and local electrograms were extracted.<sup><xref rid="EUU257C18" ref-type="bibr">18</xref></sup> Wilson's central terminal was used as reference for electrograms and precordial ECG leads.</p>
+        <p>All simulations were performed using propag-5, a cardiac simulation package suitable for large-scale parallel computers.<sup><xref rid="EUU257C12" ref-type="bibr">12</xref>,<xref rid="EUU257C21" ref-type="bibr">21</xref></sup> The computations were performed on 2048 cores of a Cray XE 6 supercomputer and took about 20 min for a single heartbeat.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Tuning procedure</title>
+        <p>The initial model parameters were those that we previously used to reproduce a normal QRS complex.<sup><xref rid="EUU257C5" ref-type="bibr">5</xref></sup> In each subject, the first step of model tuning was the choice of an initial activation site in the RV free wall, near the observed LV breakthrough. This location was fine-tuned to optimize the match between the observed and the simulated LV endocardial activation order. If necessary, more sites were added towards the inferior side of the RV.</p>
+        <p>Next, tissue conductivities and cell surface-to-volume ratio were considered. Reduced myocardial coupling was simulated by reducing the &#x2018;intracellular&#x2019; component of the bidomain conductivities.<sup><xref rid="EUU257C22" ref-type="bibr">22</xref></sup> This is equivalent to the compound electrical conductivity of the cytoplasm and the gap junctions.<sup><xref rid="EUU257C23" ref-type="bibr">23</xref></sup> Longitudinal and transverse conductivity, i.e. the conductivity along and across the dominant myocyte orientation, were tuned individually, both for the bulk myocardium and for the rapid endocardial layer. The aim of this tuning process was to optimize the match for both the activation order and the ECG. Local electrogram morphology was not taken into account.</p>
+        <p>When tuning of the QRS complex was completed, repolarization parameters were adjusted to match the T-wave. Heterogeneity in the maximum conductivity of the slow delayed rectifier current (<italic>I</italic><sub>Ks</sub>) was introduced using a linear relation with the activation time in a previous simulation. The slope of this relation was used to tune the T-wave amplitude. The maximum conductivity of the inward rectifier current (<italic>I</italic><sub>K1</sub>) was reduced to make the peaks of the T-waves less sharp.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="s3">
+      <title>Results</title>
+      <p>Pathogenesis was assessed in both patients by coronary artery angiography, confirming the absence of significant coronary artery disease in Patient 1 and a two-vessel disease in Patient 2. During the mapping procedure, 181 contact points were acquired in the LV of Patient 1 and 97 in Patient 2. Left-ventricular ejection fraction, end-diastolic volume, and end-systolic volume were 39%, 138 mL, 84 mL in Patient 1 and 35%, 248 mL, 160 mL in Patient 2.</p>
+      <p>The final model parameters that were common in both patients were the following: (i) the fast endocardial layer in the LV was given the same conductivity as the bulk myocardium, to approximate the observed conduction velocity along the endocardium; (ii) the surface-to-volume ratio for the cell membrane was reduced to 60% of its original value to increase transmural conduction velocity; (iii) the non-compact myocardium was omitted to reduce R-wave amplitude in left precordial leads; (iv) the maximum conductivity of <italic>I</italic><sub>K1</sub> was reduced to 20% of its original value to flatten the T-waves; and (v) the conductivity of <italic>I</italic><sub>Ks</sub> was configured as a linear function of activation time to match T-wave amplitude.</p>
+      <sec id="s3a">
+        <title>Patient 1</title>
+        <p>Patient 1 was a 72-year-old woman with an idiopathic dilated cardiomyopathy diagnosed by CMR and coronary angiography. Her ECGs fulfilled conventional criteria for LBBB, which include a QRS duration &gt;120 ms, QS or rS morphology in lead V1, and a monophasic R-wave with no Q-waves in leads V6 and I. Moreover, a broad notched or slurred R-wave in leads I, aVL, V5, and V6 was noted, which is consistent with the ECG criteria of the American Heart Association, American College of Cardiology Foundation, and the Heart Rhythm Society.</p>
+        <p>The comparison between the measured and simulated data for this patient is shown in <italic>Figure&#xA0;<xref ref-type="fig" rid="EUU257F1">1</xref></italic>. The correlation coefficient between measured and simulated activation times was <italic>r</italic> = 0.91. Measured surface QRS duration (130 ms) was very close to the simulated QRS duration. Slurring in lead V4 was well reproduced. Notching was present in both the measured and simulated leads V5, but with different timing. Notching in V6 was not reproduced. Unipolar electrogram morphologies matched qualitatively at some sites, but large differences were also observed. Especially, the measured electrograms had deeper S-waves and sometimes much higher R-waves than the corresponding simulated electrograms (e.g. the lateral site in <italic>Figure&#xA0;<xref ref-type="fig" rid="EUU257F1">1</xref>D</italic>). Some measured electrograms had ST elevations suggestive of (catheter-induced) injury currents (all anterior sites in <italic>Figure&#xA0;<xref ref-type="fig" rid="EUU257F1">1</xref>D</italic>), which we did not attempt to reproduce with the model.
+<fig id="EUU257F1" position="float"><label>Figure&#xA0;1</label><caption><p>Comparison of measured and simulated data in Patient 1. (<italic>A</italic>) Simulated activation times on the endocardia of both ventricles; the colour scale is in millisecond. (<italic>B</italic>) Simulated against measured activation times on the LV endocardium; scales in millisecond. (<italic>C</italic>) Measured ECG (red) and simulated ECG (black). (<italic>D</italic>) Polar diagram of the LV endocardium showing measured activation times (circles with time in millisecond) and simulated activation times (coloured dots). Same colour scale as panel <italic>A</italic>. Measured (red) and simulated electrograms (black) from five indicated locations are shown.</p></caption><graphic xlink:href="euu25701"/></fig></p>
+        <p>The following model parameters were specific to this patient: (i) three early activation sites on the lateral RV free wall were used, together with a fast endocardial layer in the RV; (ii) the LV myocardium was made less anisotropic than normal; (iii) the depth of RV early activation sites was fine-tuned to obtain the right amplitude of the small R-waves in leads V2 and V3; and (iv) the skeletal muscle layer, which is normally strongly anisotropic in our models, was made isotropic, consistent with the observation that the patient was a non-athletic female. This intervention increased the amplitude of the precordial leads relative to the limb leads.</p>
+      </sec>
+      <sec id="s3b">
+        <title>Patient 2</title>
+        <p>Patient 2 was a 69-year-old man with a QRS duration of 190 ms with previous anterior myocardial infarction diagnosed by cardiac CMR and coronary angiography. With a QS complex in lead V1 and broad, notched, monophasic R-waves in leads I and V6, his ECG fulfilled conventional criteria for LBBB.</p>
+        <p>The comparison between the measured and simulated data for this patient is shown in <italic>Figure&#xA0;<xref ref-type="fig" rid="EUU257F2">2</xref></italic>. The correlation between measured and simulated activation times was <italic>r</italic> = 0.87. The measured LV breakthrough was in the anterior wall, far from the septum. Attempts were made to reproduce this in the model by increasing the tissue anisotropy ratio, but the simulated breakthrough was still closer to the septum. The simulated leads I and V6 were more notched than the measured signals, while in lead V5 the opposite was true. The large J-point elevations in V3 and V4 were only partially reproduced. The following model parameters were specific to this patient: (i) five early activation sites on the anterior and inferior RV free wall; and (ii) the transverse conductivity of the myocardium was reduced.
+<fig id="EUU257F2" position="float"><label>Figure&#xA0;2</label><caption><p>Comparison of measured and simulated data in Patient 2. See caption of <italic>Figure&#xA0;<xref ref-type="fig" rid="EUU257F1">1</xref></italic> for explanation.</p></caption><graphic xlink:href="euu25702"/></fig></p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="s4">
+      <title>Discussion</title>
+      <p>To increase the reliability of patient-specific predictions with electrophysiological and electromechanical models of the heart, several groups have worked on patient-tailored models.<sup><xref rid="EUU257C24" ref-type="bibr">24</xref>&#x2013;<xref rid="EUU257C29" ref-type="bibr">29</xref></sup> To the best of our knowledge though, the present study reports the first two HF cases in which a model was accurately tuned to the measured surface and intracardiac ECG. In both patients, the LV activation pattern could be reproduced by assuming a small number of early activation sites in the free wall of the RV in combination with a thin, rapidly conducting layer on the RV endocardium, and tuning of the surface-to-volume ratio of the cell membrane and the anisotropic bidomain conductivities of the tissue. We reduced the surface-to-volume ratio in both patients to represent a state of hypertrophy. This increases conduction velocity in the model without increasing the ECG amplitude.</p>
+      <p>In simulations of normal hearts (unpublished results), we use a rapidly conducting layer in both ventricles in combination with a small number of early activation sites. However, in both patients the fit was clearly improved by assuming that there was no rapidly conducting layer (Purkinje network) on the LV endocardium. This appears to contradict the assumption of Strauss <italic>et al</italic>.<sup><xref rid="EUU257C3" ref-type="bibr">3</xref></sup> that activation from the RV enters the LV Purkinje network in LBBB patients and the observation, by Strik <italic>et al</italic>.<sup><xref rid="EUU257C14" ref-type="bibr">14</xref></sup>, of entry in some form of rapidly conducting subendocardial layer in canine LV.</p>
+      <p>The original TNNP model, of which the parameters are tuned to reproduce the result of patch-clamp experiments, produces sharp T-wave peaks.<sup><xref rid="EUU257C17" ref-type="bibr">17</xref></sup> To produce realistic T-waves, we had to reduce the conductivity of <italic>I</italic><sub>K1</sub> to 20% of its original value.<sup><xref rid="EUU257C19" ref-type="bibr">19</xref></sup> There is experimental support for reduced <italic>I</italic><sub>K1</sub> in HF,<sup><xref rid="EUU257C30" ref-type="bibr">30</xref>&#x2013;<xref rid="EUU257C32" ref-type="bibr">32</xref></sup> but not of this magnitude. The magnitude of <italic>I</italic><sub>K1</sub> in the TNNP model corresponds with canine and human data.<sup><xref rid="EUU257C32" ref-type="bibr">32</xref></sup> It is, however, five times larger than in the (human atrial) Courtemanche model,<sup><xref rid="EUU257C33" ref-type="bibr">33</xref></sup> near the 5.6-fold difference reported by Koumi <italic>et al</italic>.<sup><xref rid="EUU257C34" ref-type="bibr">34</xref></sup> in human cells.</p>
+      <p>A positive correlation between activation time and <italic>I</italic><sub>Ks</sub> density, which results in a negative correlation between activation time and action potential duration, was found to be crucial to reproduce the T-waves in both patients. This suggests that a certain amount of ventricular gradient<sup><xref rid="EUU257C35" ref-type="bibr">35</xref>,<xref rid="EUU257C36" ref-type="bibr">36</xref></sup> is still present in these patients, although it does not suffice to produce T-waves with a sign that is concordant with the QRS complex as observed in normal subjects.</p>
+      <p>We have not yet been able to reproduce the deep S-waves seen in many measured endocardial electrograms. Such S-waves are caused by activation propagating away from the measurement electrode after local depolarization. Such propagation, both in endocardial-to-epicardial and circumferential direction, was certainly present in our simulations. A possible explanation for the discrepancy is the underestimation of wall thickness in our models, which results from the omission of the non-compact myocardium. A thicker wall, with faster propagation to arrive at the same QRS duration, would produce stronger S-waves on the endocardium. Including the non-compact myocardium with improved conductivity values may solve the problem.</p>
+    </sec>
+    <sec id="s5">
+      <title>Limitations</title>
+      <p>Although matching both ECG and endocardial electrograms restricts the solution much more than matching the ECG alone, an optimal match with our models is not guaranteed to be unique. In principle, it can never be excluded that a completely different set of parameters may lead to an equally close fit. In addition, shortcomings in the model may influence the solution. Our conclusions should therefore be seen in the first place as research hypotheses, which are to be investigated by targeted clinical or experimental research.</p>
+    </sec>
+    <sec id="s6">
+      <title>Conclusion</title>
+      <p>Our model-fitting results in two HF patients with LBBB ECG morphology suggest the absence of antegrade or reentrant LV Purkinje activity, hypertrophied myocytes, reduced myocardial conductivity, and a partially preserved ventricular gradient. In addition, these and previous results suggest that the density of <italic>I</italic><sub>K1</sub> in the <italic>in situ</italic> human heart is smaller than in isolated-cell experiments.</p>
+      <p>The method presented here may in the future become a new diagnostic method to determine the origin of ventricular conduction abnormalities that lead to LBBB patterns in the ECG and to improve patient selection for CRT.</p>
+      <p><bold>Conflict of interest:</bold> none declared.</p>
+      <sec id="s6a">
+        <title>Funding</title>
+        <p>This work was supported by a grant from <funding-source id="cs1" rid="cn1">the Swiss National Supercomputing Centre (CSCS)</funding-source> under project <award-id id="cn1" rid="cs1">ID 397</award-id>. The authors gratefully acknowledge financial support by <funding-source>the Theo Rossi di Montelera Foundation, the Mantegazza Foundation, and FIDINAM</funding-source>. This work was previously supported by the &#x2018;Iniziativa Ticino in Rete&#x2019; and the &#x2018;Swiss High Performance and Productivity Computing&#x2019; (HP2C) Initiative. Funding to pay the Open Access publication charges for this article was provided by &#x2026;</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="EUU257C1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rossi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Rossi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Piacenti</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Startari</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Panchetti</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Morales</surname>
+              <given-names>MA</given-names>
+            </name>
+          </person-group>
+          <article-title>The current role of cardiac resynchronization therapy in reducing mortality and hospitalization in heart failure patients: a meta-analysis from clinical trials</article-title>
+          <source>Heart Vessels</source>
+          <year>2008</year>
+          <volume>23</volume>
+          <fpage>217</fpage>
+          <lpage>23</lpage>
+          <pub-id pub-id-type="pmid">18649051</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kutyifa</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Solomon</surname>
+              <given-names>SD</given-names>
+            </name>
+            <name>
+              <surname>Bourgoun</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Shah</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Pouleur</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Knappe</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Effects of cardiac resynchronization therapy on left ventricular mass and wall thickness in mild heart failure patients in MADIT-CRT</article-title>
+          <source>Heart Rhythm</source>
+          <year>2013</year>
+          <volume>10</volume>
+          <fpage>354</fpage>
+          <lpage>60</lpage>
+          <pub-id pub-id-type="pmid">23174486</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C3">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Strauss</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name>
+              <surname>Selvester</surname>
+              <given-names>RH</given-names>
+            </name>
+            <name>
+              <surname>Wagner</surname>
+              <given-names>GS</given-names>
+            </name>
+          </person-group>
+          <article-title>Defining left bundle branch block in the era of cardiac resynchronization therapy</article-title>
+          <source>Am J Cardiol</source>
+          <year>2011</year>
+          <volume>107</volume>
+          <fpage>927</fpage>
+          <lpage>34</lpage>
+          <pub-id pub-id-type="pmid">21376930</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Auricchio</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Fantoni</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Regoli</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Carbucicchio</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Goette</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Geller</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Characterization of left ventricular activation in patients with heart failure and left bundle-branch block</article-title>
+          <source>Circulation</source>
+          <year>2004</year>
+          <volume>109</volume>
+          <fpage>1133</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">14993135</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bacharova</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Mateasik</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Krause</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Prinzen</surname>
+              <given-names>FW</given-names>
+            </name>
+            <name>
+              <surname>Auricchio</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Potse</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>The effect of reduced intercellular coupling on electrocardiographic signs of left ventricular hypertrophy</article-title>
+          <source>J Electrocardiol</source>
+          <year>2011</year>
+          <volume>44</volume>
+          <fpage>571</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">21757205</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zareba</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Klein</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Cygankiewicz</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Hall</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>McNitt</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Effectiveness of cardiac resynchronization therapy by QRS morphology in the multicenter automatic defibrillator implantation trial-cardiac resynchronization therapy (MADIT-CRT)</article-title>
+          <source>Circulation</source>
+          <year>2011</year>
+          <volume>123</volume>
+          <fpage>1061</fpage>
+          <lpage>72</lpage>
+          <pub-id pub-id-type="pmid">21357819</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Constantino</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Trayanova</surname>
+              <given-names>NA</given-names>
+            </name>
+          </person-group>
+          <article-title>A computational approach to understanding the cardiac electromechanical activation sequence in the normal and failing heart, with translation to the clinical practice of CRT</article-title>
+          <source>Prog Biophys Mol Biol</source>
+          <year>2012</year>
+          <volume>110</volume>
+          <fpage>372</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">22884712</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Gurev</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Constantino</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Trayanova</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Efficient preloading of the ventricles by a properly timed atrial contraction underlies stroke work improvement in the acute response to cardiac resynchronization therapy</article-title>
+          <source>Heart Rhythm</source>
+          <year>2013</year>
+          <volume>10</volume>
+          <fpage>1800</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">23928177</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grant</surname>
+              <given-names>RP</given-names>
+            </name>
+            <name>
+              <surname>Dodge</surname>
+              <given-names>HT</given-names>
+            </name>
+          </person-group>
+          <article-title>Mechanisms of QRS complex prolongation in man: left ventricular conduction disturbances</article-title>
+          <source>Am J Med</source>
+          <year>1956</year>
+          <volume>20</volume>
+          <fpage>834</fpage>
+          <lpage>52</lpage>
+          <pub-id pub-id-type="pmid">13326898</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Potse</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Mathematical modeling and simulation of ventricular activation sequences: implications for cardiac resynchronization therapy</article-title>
+          <source>J Cardiovasc Transl Res</source>
+          <year>2012</year>
+          <volume>5</volume>
+          <fpage>146</fpage>
+          <lpage>58</lpage>
+          <pub-id pub-id-type="pmid">22282106</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Perin</surname>
+              <given-names>EC</given-names>
+            </name>
+            <name>
+              <surname>Silva</surname>
+              <given-names>GV</given-names>
+            </name>
+            <name>
+              <surname>Sarmento-Leite</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Sousa</surname>
+              <given-names>ALS</given-names>
+            </name>
+            <name>
+              <surname>Howell</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Muthupillai</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Assessing myocardial viability and infarct transmurality with left ventricular electromechanical mapping in patients with stable coronary artery disease: validation by delayed-enhancement magnetic resonance imaging</article-title>
+          <source>Circulation</source>
+          <year>2002</year>
+          <volume>106</volume>
+          <fpage>957</fpage>
+          <lpage>61</lpage>
+          <pub-id pub-id-type="pmid">12186800</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Potse</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Dub&#xE9;</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Richer</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Vinet</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Gulrajani</surname>
+              <given-names>RM</given-names>
+            </name>
+          </person-group>
+          <article-title>A comparison of monodomain and bidomain reaction-diffusion models for action potential propagation in the human heart</article-title>
+          <source>IEEE Trans Biomed Eng</source>
+          <year>2006</year>
+          <volume>53</volume>
+          <fpage>2425</fpage>
+          <lpage>35</lpage>
+          <pub-id pub-id-type="pmid">17153199</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Myerburg</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Gelband</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Nilsson</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Castellanos</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Morales</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Bassett</surname>
+              <given-names>AL</given-names>
+            </name>
+          </person-group>
+          <article-title>The role of canine superficial ventricular muscle fibers in endocardial impulse distribution</article-title>
+          <source>Circ Res</source>
+          <year>1978</year>
+          <volume>42</volume>
+          <fpage>27</fpage>
+          <lpage>35</lpage>
+          <pub-id pub-id-type="pmid">338194</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Strik</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Rademakers</surname>
+              <given-names>LM</given-names>
+            </name>
+            <name>
+              <surname>van Deursen</surname>
+              <given-names>CJM</given-names>
+            </name>
+            <name>
+              <surname>van Hunnik</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kuiper</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Klersy</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Endocardial left ventricular pacing improves cardiac resynchronization therapy in chronic asynchronous infarction and heart failure models</article-title>
+          <source>Circ Arrhythm Electrophysiol</source>
+          <year>2012</year>
+          <volume>5</volume>
+          <fpage>191</fpage>
+          <lpage>200</lpage>
+          <pub-id pub-id-type="pmid">22062796</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Durrer</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>van Dam</surname>
+              <given-names>RT</given-names>
+            </name>
+            <name>
+              <surname>Freud</surname>
+              <given-names>GE</given-names>
+            </name>
+            <name>
+              <surname>Janse</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Meijler</surname>
+              <given-names>FL</given-names>
+            </name>
+            <name>
+              <surname>Arzbaecher</surname>
+              <given-names>RC</given-names>
+            </name>
+          </person-group>
+          <article-title>Total excitation of the isolated human heart</article-title>
+          <source>Circulation</source>
+          <year>1970</year>
+          <volume>41</volume>
+          <fpage>899</fpage>
+          <lpage>912</lpage>
+          <pub-id pub-id-type="pmid">5482907</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hoogendijk</surname>
+              <given-names>MG</given-names>
+            </name>
+            <name>
+              <surname>Potse</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Vinet</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>de Bakker</surname>
+              <given-names>JMT</given-names>
+            </name>
+            <name>
+              <surname>Coronel</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>ST-segment elevation by current-to-load mismatch: an experimental and computational study</article-title>
+          <source>Heart Rhythm</source>
+          <year>2011</year>
+          <volume>8</volume>
+          <fpage>111</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">20870038</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Potse</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Krause</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Bacharova</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Krause</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Prinzen</surname>
+              <given-names>FW</given-names>
+            </name>
+            <name>
+              <surname>Auricchio</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Similarities and differences between ECG signs of left bundle branch block and left-ventricular uncoupling</article-title>
+          <source>Europace</source>
+          <year>2012</year>
+          <volume>14</volume>
+          <issue>Suppl. 5</issue>
+          <fpage>v33</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">23104913</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Potse</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Dub&#xE9;</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Vinet</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Cardiac anisotropy in boundary-element models for the electrocardiogram</article-title>
+          <source>Med Biol Eng Comput</source>
+          <year>2009</year>
+          <volume>47</volume>
+          <fpage>719</fpage>
+          <lpage>29</lpage>
+          <pub-id pub-id-type="pmid">19306030</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C19">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>ten Tusscher</surname>
+              <given-names>KHWJ</given-names>
+            </name>
+            <name>
+              <surname>Noble</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Noble</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Panfilov</surname>
+              <given-names>AV</given-names>
+            </name>
+          </person-group>
+          <article-title>A model for human ventricular tissue</article-title>
+          <source>Am J Physiol Heart Circ Physiol</source>
+          <year>2004</year>
+          <volume>286</volume>
+          <fpage>H1573</fpage>
+          <lpage>89</lpage>
+          <pub-id pub-id-type="pmid">14656705</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Potse</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Vinet</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Opthof</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Coronel</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Validation of a simple model for the morphology of the T wave in unipolar electrograms</article-title>
+          <source>Am J Physiol Heart Circ Physiol</source>
+          <year>2009</year>
+          <volume>297</volume>
+          <fpage>H792</fpage>
+          <lpage>801</lpage>
+          <pub-id pub-id-type="pmid">19465555</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C21">
+        <label>21</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Krause</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Potse</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Dickopf</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Krause</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Auricchio</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Prinzen</surname>
+              <given-names>FW</given-names>
+            </name>
+          </person-group>
+          <article-title>Hybrid parallelization of a large-scale heart model</article-title>
+          <comment>In Keller R, Kramer D, Weiss JP (eds) Facing the Multicore-Challenge II, volume 7174 of Lecture Notes in Computer Science. Berlin: Springer, 2012</comment>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C22">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Henriquez</surname>
+              <given-names>CS</given-names>
+            </name>
+          </person-group>
+          <article-title>Simulating the electrical behavior of cardiac tissue using the bidomain model</article-title>
+          <source>CRC Crit Rev Biomed Eng</source>
+          <year>1993</year>
+          <volume>21</volume>
+          <fpage>1</fpage>
+          <lpage>77</lpage>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C23">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jongsma</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Wilders</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Gap junctions in cardiovascular disease</article-title>
+          <source>Circ Res</source>
+          <year>2000</year>
+          <volume>86</volume>
+          <fpage>1193</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">10864907</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C24">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gurev</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Constantino</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Arevalo</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Trayanova</surname>
+              <given-names>NA</given-names>
+            </name>
+          </person-group>
+          <article-title>Models of cardiac electromechanics based on individual hearts imaging data; image-based electromechanical models of the heart</article-title>
+          <source>Biomech Model Mechanobiol</source>
+          <year>2011</year>
+          <volume>10</volume>
+          <fpage>295</fpage>
+          <lpage>306</lpage>
+          <pub-id pub-id-type="pmid">20589408</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C25">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ashikaga</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Arevalo</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Vadakkumpadan</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Blake</surname>
+              <given-names>RC</given-names>
+              <suffix>III</suffix>
+            </name>
+            <name>
+              <surname>Bayer</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Nazarian</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Feasibility of image-based simulation to estimate ablation target in human ventricular arrhythmia</article-title>
+          <source>Heart Rhythm</source>
+          <year>2013</year>
+          <volume>10</volume>
+          <fpage>1109</fpage>
+          <lpage>16</lpage>
+          <pub-id pub-id-type="pmid">23608593</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C26">
+        <label>26</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Geerts</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Kerckhoffs</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bovendeerd</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Arts</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Goos</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Hartmanis</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>van Leeuwen</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Towards patient specific models of cardiac mechanics: a sensitivity study</article-title>
+          <source><italic>FIMH 2003 Conference Proceedings</italic>,</source>
+          <year>2003</year>
+          <publisher-loc>Berlin</publisher-loc>
+          <publisher-name>Springer-Verlag</publisher-name>
+          <comment>volume 2674 of Lecture Notes in Computer Science</comment>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C27">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Aguado-Sierra</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Krishnamurthy</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Villongco</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Chuang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Howard</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Gonzales</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Patient-specific modeling of dyssynchronous heart failure: a case study</article-title>
+          <source>Prog Biophys Mol Biol</source>
+          <year>2011</year>
+          <volume>107</volume>
+          <fpage>147</fpage>
+          <lpage>55</lpage>
+          <pub-id pub-id-type="pmid">21763714</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C28">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>MacLeod</surname>
+              <given-names>RS</given-names>
+            </name>
+            <name>
+              <surname>Stinstra</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name>
+              <surname>Lew</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Whitaker</surname>
+              <given-names>RT</given-names>
+            </name>
+            <name>
+              <surname>Swenson</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Cole</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Subject-specific, multiscale simulation of electrophysiology: a software pipeline for image-based models and application examples</article-title>
+          <source>Phil Trans R Soc A</source>
+          <year>2009</year>
+          <volume>367</volume>
+          <fpage>2293</fpage>
+          <lpage>310</lpage>
+          <pub-id pub-id-type="pmid">19414456</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C29">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Krueger</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Rhode</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Weber</surname>
+              <given-names>FM</given-names>
+            </name>
+            <name>
+              <surname>Keller</surname>
+              <given-names>DUJ</given-names>
+            </name>
+            <name>
+              <surname>Caulfield</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Seemann</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Patient-specific volumetric atrial models with electrophysiological components: a comparison of simulations and measurements</article-title>
+          <source>Biomed Tech</source>
+          <year>2010</year>
+          <volume>55</volume>
+          <issue>Suppl 1</issue>
+          <fpage>54</fpage>
+          <lpage>7</lpage>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C30">
+        <label>30</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Priebe</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Beuckelmann</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Simulation study of cellular electric properties in heart failure</article-title>
+          <source>Circ Res</source>
+          <year>1998</year>
+          <volume>82</volume>
+          <fpage>1206</fpage>
+          <lpage>23</lpage>
+          <pub-id pub-id-type="pmid">9633920</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C31">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>K&#xE4;&#xE4;b</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Nuss</surname>
+              <given-names>HB</given-names>
+            </name>
+            <name>
+              <surname>Chiamvimonvat</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>O'Rourke</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Pak</surname>
+              <given-names>PH</given-names>
+            </name>
+            <name>
+              <surname>Kass</surname>
+              <given-names>DA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Ionic mechanism of action potential prolongation in ventricular myocytes from dogs with pacing-induced heart failure</article-title>
+          <source>Circ Res</source>
+          <year>1996</year>
+          <volume>78</volume>
+          <fpage>262</fpage>
+          <lpage>73</lpage>
+          <pub-id pub-id-type="pmid">8575070</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C32">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Aiba</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hesketh</surname>
+              <given-names>GG</given-names>
+            </name>
+            <name>
+              <surname>Barth</surname>
+              <given-names>AS</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Daya</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Chakir</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Electrophysiological consequences of dyssynchronous heart failure and its restoration by resynchronization therapy</article-title>
+          <source>Circulation</source>
+          <year>2009</year>
+          <volume>119</volume>
+          <fpage>1220</fpage>
+          <lpage>30</lpage>
+          <pub-id pub-id-type="pmid">19237662</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C33">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Courtemanche</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ramirez</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Nattel</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Ionic mechanisms underlying human atrial action potential properties: insights from a mathematical model</article-title>
+          <source>Am J Physiol Heart Circ Physiol</source>
+          <year>1998</year>
+          <volume>275</volume>
+          <fpage>H301</fpage>
+          <lpage>21</lpage>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C34">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Koumi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Backer</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Arentzen</surname>
+              <given-names>CE</given-names>
+            </name>
+          </person-group>
+          <article-title>Characterization of inwardly rectifying K channel in human cardiac myocytes</article-title>
+          <source>Circulation</source>
+          <year>1995</year>
+          <volume>92</volume>
+          <fpage>164</fpage>
+          <lpage>74</lpage>
+          <pub-id pub-id-type="pmid">7600647</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C35">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Plonsey</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>A contemporary view of the ventricular gradient of Wilson</article-title>
+          <source>J Electrocardiol</source>
+          <year>1979</year>
+          <volume>12</volume>
+          <fpage>337</fpage>
+          <lpage>41</lpage>
+          <pub-id pub-id-type="pmid">512529</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="EUU257C36">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Conrath</surname>
+              <given-names>CE</given-names>
+            </name>
+            <name>
+              <surname>Opthof</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Ventricular repolarization: an overview of (patho)physiology, sympathetic effects and genetic aspects</article-title>
+          <source>Prog Biophys Mol Biol</source>
+          <year>2006</year>
+          <volume>92</volume>
+          <fpage>269</fpage>
+          <lpage>307</lpage>
+          <pub-id pub-id-type="pmid">16023179</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

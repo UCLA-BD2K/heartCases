@@ -1,0 +1,1007 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Urol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Urol</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Urology</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2490</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24927795</article-id>
+      <article-id pub-id-type="pmc">4074416</article-id>
+      <article-id pub-id-type="publisher-id">1471-2490-14-47</article-id>
+      <article-id pub-id-type="doi">10.1186/1471-2490-14-47</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Technical Advance</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Prediction of open urinary tract in laparoscopic partial nephrectomy by virtual resection plane visualization</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" id="A1">
+          <name>
+            <surname>Ueno</surname>
+            <given-names>Daiki</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>daikochi810903@yahoo.co.jp</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A2">
+          <name>
+            <surname>Makiyama</surname>
+            <given-names>Kazuhide</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>makiya@yokohama-cu.ac.jp</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A3">
+          <name>
+            <surname>Yamanaka</surname>
+            <given-names>Hiroyuki</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>hymnk@yokohama-cu.ac.jp</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A4">
+          <name>
+            <surname>Ijiri</surname>
+            <given-names>Takashi</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>takashi.ijiri@riken.jp</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A5">
+          <name>
+            <surname>Yokota</surname>
+            <given-names>Hideo</given-names>
+          </name>
+          <xref ref-type="aff" rid="I2">2</xref>
+          <email>hyokota@riken.jp</email>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" id="A6">
+          <name>
+            <surname>Kubota</surname>
+            <given-names>Yoshinobu</given-names>
+          </name>
+          <xref ref-type="aff" rid="I1">1</xref>
+          <email>kubotayo@med.yokohama-cu.ac.jp</email>
+        </contrib>
+      </contrib-group>
+      <aff id="I1"><label>1</label>Department of Urology, Yokohama City University School of Medicine, 3-9 Fukuura, Kanagawa-ku, Yokohama, Kanagawa 236-0004, Japan</aff>
+      <aff id="I2"><label>2</label>Image Processing Research Tea, RIKEN, Wako, Japan</aff>
+      <pub-date pub-type="collection">
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>13</day>
+        <month>6</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>14</volume>
+      <fpage>47</fpage>
+      <lpage>47</lpage>
+      <history>
+        <date date-type="received">
+          <day>5</day>
+          <month>1</month>
+          <year>2014</year>
+        </date>
+        <date date-type="accepted">
+          <day>19</day>
+          <month>5</month>
+          <year>2014</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2014 Ueno et al.; licensee BioMed Central Ltd.</copyright-statement>
+        <copyright-year>2014</copyright-year>
+        <copyright-holder>Ueno et al.; licensee BioMed Central Ltd.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/2.0">
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</ext-link>) applies to the data made available in this article, unless otherwise stated.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://www.biomedcentral.com/1471-2490/14/47"/>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>The purpose of this study is presenting a method to predict the presence of an open urinary tract and the position of the opening in laparoscopic partial nephrectomy from three dimensional (3D) computed tomography (CT) images by using novel image segmentation and visualization techniques.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>From CT images of patients who underwent laparoscopic partial nephrectomy, 3D regions of the kidney, urinary tract, and tumor were segmented. For each patient, multiple virtual resection planes of the kidney with different surgical margins (1&#xA0;mm to 5&#xA0;mm, every 1&#xA0;mm) were generated and the presence of an open urinary tract and the position of the opening were predicted from the images.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>We compared the predictions with actual operations in 5 cases by using recorded video of the operations and operative notes. In terms of the presence of an open urinary tract, agreement of the predictions and the intraoperative results was obtained in all patients. The expected positions of the openings were close to those in the actual operations.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>We have developed a method to virtually visualize the resection plane of laparoscopic partial nephrectomy. Image segmentation methods used in this study were precise and effective. The comparison indicated that our method accurately predicted the presence of an open urinary tract and the position of the opening and provided useful preoperative information.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>Laparoscopic surgery</kwd>
+        <kwd>Partial nephrectomy</kwd>
+        <kwd>Simulator</kwd>
+        <kwd>Urinary tract opening</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Background</title>
+      <p>Laparoscopic surgery has been preferred by many surgeons and patients because of shorter recovery time and less surgical invasion [<xref ref-type="bibr" rid="B1">1</xref>]. A partial nephrectomy shows treatment outcomes equal to those of a radical nephrectomy and preserves postoperative renal function [<xref ref-type="bibr" rid="B2">2</xref>-<xref ref-type="bibr" rid="B4">4</xref>]. Therefore, laparoscopic partial nephrectomy has become an increasingly common practice for small renal tumors.</p>
+      <p>To achieve a safe procedure, preoperative information is especially important for laparoscopic surgery. Organs and large vessels around the operated site are difficult to recognize only with the limited two dimensional (2D) view of the laparoscope. It is important to preoperatively understand the anatomical features of the patient.</p>
+      <p>We developed the three dimensional (3D) image processing software VoTracer to preoperatively obtain significant information from computed tomography (CT) or magnetic resonance imaging (MRI) images. VoTracer supports traditional volume rendering; the user can observe 3D images by modifying local transparency and changing the viewpoint [<xref ref-type="bibr" rid="B5">5</xref>]. It also supports various image segmentation methods, such as thresholding [<xref ref-type="bibr" rid="B6">6</xref>], region growing [<xref ref-type="bibr" rid="B7">7</xref>], graph cut [<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B9">9</xref>], and contour-based segmentation [<xref ref-type="bibr" rid="B10">10</xref>,<xref ref-type="bibr" rid="B11">11</xref>]; the user can quickly segment organ and tumor regions from 3D images with simple interaction.</p>
+      <p>One of the postoperative complications of partial nephrectomy is urine leakage. If the urinary tract is open during tumor resection, suturing the crack is required for the prevention of postoperative urine leakage. To formulate an operation strategy, it is useful to predict the margin of the urinary tract opening during the tumor resection.</p>
+      <p>In this study, we focused on laparoscopic partial nephrectomy and presented a method to predict the presence of an open urinary tract and the position of the opening using VoTracer. We also evaluated our method by comparing our predictions with actual operation results.</p>
+    </sec>
+    <sec sec-type="methods">
+      <title>Methods</title>
+      <sec>
+        <title>Patients and characteristics</title>
+        <p>This was a retrospective study including 5 patients who underwent laparoscopic partial nephrectomy at Yokohama City University Hospital by a single surgeon (K.M.) between April 2011 and January 2013. We created virtual resection plane images on another day by accessing medical archives and evaluated it. The study protocol was approved by the Yokohama City University Institutional Review Board. Written informed consent was obtained from all patients. Application of laparoscopic partial nephrectomy was limited to cases where the tumor size was 4&#xA0;cm or less and the operation could be performed safely. The surgical margin and the angle of cut in were determined by full observation of the tumor by intraoperative ultrasound. Tumor resection was performed by cold cut using scissors with kidney ischemia. Then partial nephrectomy is performed. After the retrograde injection of dilute indigo carmine, the continuous suturing of the opened collecting system and transected major vessel is performed by 2&#x2013;0 Vicryl on a SH needle with an intracorporeal knot-tying.</p>
+      </sec>
+      <sec>
+        <title>CT image segmentation and virtual-resection-plane</title>
+        <p>From the delay phase of enhanced CT images of each patient, we segmented three regions: kidney, urinary tract, and tumor. Different segmentation methods were applied for each region. We then generated a virtual resection plane of the kidney by using segmentation. The whole process was performed via VoTracer.</p>
+        <p>The graph cut image segmentation method [<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B9">9</xref>] was applied to segment the kidney region. We roughly specified inside and outside control points on several cross sections of the 3D CT images and the graph cut algorithm segmented the kidney region accurately (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>B). The region growing method [<xref ref-type="bibr" rid="B7">7</xref>] was used for the urinary tract. We specified several seeds in the urinary tract region and the method evolves a region from the seeds. We computed the evolution only in voxels of which CT values were larger than <italic>r</italic>, where <italic>r</italic> &#x2208;&#x2009;[350,&#x2009;420] was a parameter selected depending on the patient (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>C). The contour-based 3D image segmentation method [<xref ref-type="bibr" rid="B11">11</xref>] was employed for segmenting the tumor. We specified several contours on the tumor in the 3D images and the method optimized a segmentation boundary that passed through all contours and had a smooth shape (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>D). This method was useful for regions that did not have obvious high-contrast boundaries.</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p><bold>Segmentation of CT image.</bold> From an input 3D CT image <bold>(A)</bold>, we segmented the three regions by different methods. <bold>(B)</bold> The kidney region was segmented by the graph cut method [<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B9">9</xref>]. We specified several foreground (red) and background (blue) points on a cross section and the method computed the kidney region from the points. <bold>(C)</bold> The urinary tract region was segmented by region growing [<xref ref-type="bibr" rid="B7">7</xref>]. The method grew the urinary tract region from several seeds (red points). <bold>(D)</bold> The tumor region was segmented by the contour-based method [<xref ref-type="bibr" rid="B11">11</xref>]. The method computed the boundary surface from specified multiple contours.</p>
+          </caption>
+          <graphic xlink:href="1471-2490-14-47-1"/>
+        </fig>
+        <p>Given the image segmentation, we generated a virtual resection plane. We first generated polygon surface models of the kidney, urinary tract, and tumor regions by Marching cubes algorithm [<xref ref-type="bibr" rid="B12">12</xref>] (Figure&#xA0;<xref ref-type="fig" rid="F2">2</xref>). We then deformed the kidney model so that it had a certain margin from the tumor (Figure&#xA0;<xref ref-type="fig" rid="F2">2</xref>E-G). We also visualized the CT images on the kidney surface as in Figure&#xA0;<xref ref-type="fig" rid="F2">2</xref>D. The virtual resection planes visually provided information on the presence of an open urinary tract and the position of the opening in partial nephrectomy.</p>
+        <fig id="F2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p><bold>Virtual resection plane.</bold> We generated surface models of the urinary tract <bold>(A)</bold> and tumor <bold>(B)</bold> regions. We also generated multiple kidney regions that had 1&#xA0;mm <bold>(E)</bold>, 3&#xA0;mm <bold>(F)</bold>, and 5&#xA0;mm <bold>(G)</bold> margins from the tumor. We also generated transparent <bold>(C)</bold> and CT-image renderings <bold>(D)</bold> of the kidney model. The CT-image rendering <bold>(D)</bold> allowed observance of the CT value on the resection plane.</p>
+          </caption>
+          <graphic xlink:href="1471-2490-14-47-2"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Prediction and evaluation</title>
+        <p>A single evaluator (D.U.), who did not know the details of the operation, performed the segmentation of the 3D CT images of the 5 patients using VoTracer. A software developer (T.I.) supported the segmentation process. For each patient, the evaluator created virtual resection planes with 1&#xA0;mm to 5&#xA0;mm margins, every 1&#xA0;mm margin, and predicted whether and where the urinary tract was open during the actual operation (Figure&#xA0;<xref ref-type="fig" rid="F2">2</xref>).</p>
+        <p>We compared the predictions and intraoperative results. The presence of an open urinary tract during the actual operation was verified from recorded video of the operation and operative notes. In cases where there was an open urinary tract, the positions of the openings were compared with those in the virtual resection planes.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results">
+      <title>Results</title>
+      <p>Table&#xA0;<xref ref-type="table" rid="T1">1</xref> summarizes the backgrounds of the patients, prediction results, and surgical outcomes. Table&#xA0;<xref ref-type="table" rid="T1">1</xref> also shows the minimum margins of the openings the evaluator detected in the virtual resection planes and actual surgical margins measured from the operation samples at the bottom of the tumor.In terms of presence of an open urinary tract (i.e. minimum opening margin), the predictions and intraoperative results approximately coincided in all patients. However, in patient No. 2, the predicted opening margin was 1&#xA0;mm greater than the actual margin, and this may be explained by the size of the margin, which was likely to be larger at the site of urinary tract opening than at the bottom. The margin is generally the smallest at the bottom, and becomes larger at the periphery. We think this small difference was not critical for predicting the possible presence of an open urinary tract. The positions of the openings were similar to the predicted positions (Figure&#xA0;<xref ref-type="fig" rid="F3">3</xref>). In the two cases where the urinary tract was open, the patients were properly treated and no patient had postoperative complications. Surgical pathology reported clear cell renal cell carcinoma with negative margins in all cases.</p>
+      <table-wrap position="float" id="T1">
+        <label>Table 1</label>
+        <caption>
+          <p>Patient characteristics and summary of the result</p>
+        </caption>
+        <table frame="hsides" rules="groups" border="1">
+          <colgroup>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+            <col align="center"/>
+          </colgroup>
+          <thead valign="top">
+            <tr>
+              <th rowspan="2" align="center" valign="top">
+                <bold>No</bold>
+              </th>
+              <th rowspan="2" align="center" valign="top">
+                <bold>Sex</bold>
+              </th>
+              <th rowspan="2" align="center" valign="top">
+                <bold>Age</bold>
+              </th>
+              <th rowspan="2" align="center" valign="top">
+                <bold>Tumor size (mm)</bold>
+              </th>
+              <th colspan="4" align="center" valign="bottom">
+                <bold>Tumor location</bold>
+                <hr/>
+              </th>
+              <th rowspan="2" align="center" valign="top">
+                <bold>Prediction of urinary tract status</bold>
+              </th>
+              <th rowspan="2" align="center" valign="top">
+                <bold>Intraoperative urinary tract status</bold>
+              </th>
+              <th rowspan="2" align="center" valign="top">
+                <bold>Surgical margin (min)</bold>
+              </th>
+              <th rowspan="2" align="center" valign="top">
+                <bold>Ischemia time (min)</bold>
+              </th>
+              <th rowspan="2" align="center" valign="top">
+                <bold>Operating time (min)</bold>
+              </th>
+            </tr>
+            <tr>
+              <th align="center">
+                <bold>Right/Left</bold>
+              </th>
+              <th align="center">
+                <bold>Longitudinal location</bold>
+              </th>
+              <th align="center">
+                <bold>Arterior/Posterior</bold>
+              </th>
+              <th align="center">
+                <bold>Lateral/Medial</bold>
+              </th>
+            </tr>
+          </thead>
+          <tbody valign="top">
+            <tr>
+              <td align="center" valign="bottom">1<hr/></td>
+              <td align="center" valign="bottom">M<hr/></td>
+              <td align="center" valign="bottom">44<hr/></td>
+              <td align="center" valign="bottom">19<hr/></td>
+              <td align="center" valign="bottom">R<hr/></td>
+              <td align="center" valign="bottom">Upper pole<hr/></td>
+              <td align="center" valign="bottom">Anterior<hr/></td>
+              <td align="center" valign="bottom">Lateral<hr/></td>
+              <td align="center" valign="bottom">Not open with 5&#xA0;mm margin<hr/></td>
+              <td align="center" valign="bottom">Not open<hr/></td>
+              <td align="center" valign="bottom">3<hr/></td>
+              <td align="center" valign="bottom">19<hr/></td>
+              <td align="center" valign="bottom">185<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">2<hr/></td>
+              <td align="center" valign="bottom">F<hr/></td>
+              <td align="center" valign="bottom">77<hr/></td>
+              <td align="center" valign="bottom">26<hr/></td>
+              <td align="center" valign="bottom">L<hr/></td>
+              <td align="center" valign="bottom">Upper pole<hr/></td>
+              <td align="center" valign="bottom">Anterior<hr/></td>
+              <td align="center" valign="bottom">Medial<hr/></td>
+              <td align="center" valign="bottom">Open with 2&#xA0;mm margin<hr/></td>
+              <td align="center" valign="bottom">Open<hr/></td>
+              <td align="center" valign="bottom">1<hr/></td>
+              <td align="center" valign="bottom">20<hr/></td>
+              <td align="center" valign="bottom">179<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">3<hr/></td>
+              <td align="center" valign="bottom">M<hr/></td>
+              <td align="center" valign="bottom">72<hr/></td>
+              <td align="center" valign="bottom">35<hr/></td>
+              <td align="center" valign="bottom">R<hr/></td>
+              <td align="center" valign="bottom">Inferior pole<hr/></td>
+              <td align="center" valign="bottom">Posterior<hr/></td>
+              <td align="center" valign="bottom">Lateral<hr/></td>
+              <td align="center" valign="bottom">Open with 1&#xA0;mm margin<hr/></td>
+              <td align="center" valign="bottom">Open<hr/></td>
+              <td align="center" valign="bottom">1<hr/></td>
+              <td align="center" valign="bottom">28<hr/></td>
+              <td align="center" valign="bottom">206<hr/></td>
+            </tr>
+            <tr>
+              <td align="center" valign="bottom">4<hr/></td>
+              <td align="center" valign="bottom">M<hr/></td>
+              <td align="center" valign="bottom">65<hr/></td>
+              <td align="center" valign="bottom">19<hr/></td>
+              <td align="center" valign="bottom">R<hr/></td>
+              <td align="center" valign="bottom">Middle pole<hr/></td>
+              <td align="center" valign="bottom">Posterior<hr/></td>
+              <td align="center" valign="bottom">Medial<hr/></td>
+              <td align="center" valign="bottom">Not open with 5&#xA0;mm margin<hr/></td>
+              <td align="center" valign="bottom">Not open<hr/></td>
+              <td align="center" valign="bottom">1<hr/></td>
+              <td align="center" valign="bottom">13<hr/></td>
+              <td align="center" valign="bottom">156<hr/></td>
+            </tr>
+            <tr>
+              <td align="center">5</td>
+              <td align="center">M</td>
+              <td align="center">75</td>
+              <td align="center">25</td>
+              <td align="center">R</td>
+              <td align="center">Middle pole</td>
+              <td align="center">Posterior</td>
+              <td align="center">Medial</td>
+              <td align="center">Open with 4&#xA0;mm margin</td>
+              <td align="center">Not open</td>
+              <td align="center">1</td>
+              <td align="center">11</td>
+              <td align="center">158</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <p>In the columns, from left to right, we indicate patient information, tumor size, tumor location, prediction of urinary tract status, intraoperative urinary tract status, intraoperative surgical margin, ischemia time, and operating time.</p>
+        </table-wrap-foot>
+      </table-wrap>
+      <fig id="F3" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <p><bold>Side-by-side comparison.</bold> The right panel is a representative scene from a recorded video of an operation and the left panel shows a virtual resection plane similar to the viewpoint of the actual operation.</p>
+        </caption>
+        <graphic xlink:href="1471-2490-14-47-3"/>
+      </fig>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Discussion</title>
+      <p>In this study, we focused on open urinary tracts and developed a way to virtually visualize resection planes from CT images. Preoperatively understanding the 3D relationship of organs is particularly important for laparoscopic partial nephrectomy. In the past, surgeons had to infer the relationship of organs from CT slices; they performed 3D shape reconstructions in their heads. This required extensive experience and it was impossible to share ideas with others. In contrast, our method provides visualization that is close to the actual intraoperative view and allows surgeons to easily understand the 3D relationship of important organs. We believe that the preoperative information provided by our visualization method improves the safety of operations.</p>
+      <p>The major postoperative complications of laparoscopic partial nephrectomy are urine leakage, parenchymal bleeding and acute renal failure. Breda et al. reported that urine leakage of laparoscopic partial nephrectomy occurred in 1.4-2.0% of patients [<xref ref-type="bibr" rid="B13">13</xref>]. Thompson et al. reported that ischemia time is the most important factor in predicting renal function preservation [<xref ref-type="bibr" rid="B14">14</xref>]. To prevent complications, cracks should be securely sutured and ischemia time should be decreased, which can be accomplished by appropriate preoperative planning. For instance, the approach (trans-abdominal or trans-retroperitoneum), port position, and resection line should be selected depending on the tumor position and surrounding organs. Gill et al. reported on the novel technique of zero ischemia partial nephrectomy with preoperative planning using a visualized 3D view of the renal artery [<xref ref-type="bibr" rid="B15">15</xref>]. Our method virtually visualizes the intraoperative view from a different viewpoint. It may allow surgeons to visualize operation procedures in a different preoperative setting and enable them to select a better setting. Nephrometry scoring systems have been developed in an effort to standardize tumor assessment. R.E.N.A.L. Nephrometry Score (NS) has been proposed by Uzzo et al. [<xref ref-type="bibr" rid="B16">16</xref>]. Ficarra et al. introduced Preoperative Aspects and Dimensions Used for an Anatomical (PADUA) system. Our visualization technique contributes to more precise scoring of those nephrometry scores [<xref ref-type="bibr" rid="B17">17</xref>]. Our study focused on visualization of open urinary tracts, the first such study to have been reported.</p>
+      <p>Training for laparoscopic surgery is much more difficult than that for open surgery. Since laparoscopic surgery has a steep learning curve, it is important to provide sufficient training. Various laparoscopic surgery training systems have been developed. Some recent systems reproduces the entire procedure of laparoscopic radical nephrectomy [<xref ref-type="bibr" rid="B18">18</xref>,<xref ref-type="bibr" rid="B19">19</xref>]. However, to the best of our knowledge, no other system provides an actual operative view of the individual patient. In contrast, our method provides visualization similar to the actual laparoscopic operative view using individual patient data.</p>
+      <p>The image segmentation software VoTracer, which we developed for this study, is useful in creating simulation models. Our research group has published studies on a mission rehearsal type surgical simulator that uses patient-specific models [<xref ref-type="bibr" rid="B20">20</xref>-<xref ref-type="bibr" rid="B22">22</xref>]. In these studies, we reported that the patient-specific surgical simulator is useful for less-experienced doctors in practicing standard operations and for experts in developing new surgical procedures. However, one of the biggest obstacles of such a simulator is the process of creating simulation models from 3D images of patients. The image segmentation method presented in this study allowed us to segment each region (kidney, urinary tract, and tumor) in a few minutes. This drastically accelerates the model creation process. Combining the surgical simulator and the image segmentation method is an ongoing project that we hope to realize in the future.The major limitation of our current method is that the segmentation process requires user operation. The user has to set region growing parameters to correctly segment the urinary tract region. The user also has to specify contours to segment tumor regions based on his or her subjective knowledge (Figure&#xA0;<xref ref-type="fig" rid="F1">1</xref>D). Thus, segmentation results may vary depending on the user. Notice that this is retrospective study and the number of cases is also restricted. Larger population study is required in order to raise the accuracy of prediction. In the future, we would like to conduct a large-scale study and develop a segmentation method that minimizes user operation as much as possible. In this study, we used the delay phase of contrast enhanced CT in order to precisely segment the urinary tract. Due to CT imaging timing issues, we had several cases in which it was difficult to precisely segment the urinary tract. It is necessary to determine the best timing of CT imaging in order to stably segment urinary tract regions.</p>
+    </sec>
+    <sec sec-type="conclusions">
+      <title>Conclusions</title>
+      <p>In this study, we developed a method to predict the presence of an open urinary tract and the position of the opening in laparoscopic partial nephrectomy from 3D CT images. The results revealed that we could make accurate predictions in 5 cases. This was a retrospective study and the number of cases was small. A larger scale study is required in order to confirm the accuracy of the predictions.</p>
+    </sec>
+    <sec>
+      <title>Abbreviations</title>
+      <p>3D: Three dimensional; 2D: Two dimensional; CT: Computed tomography; MRI: Magnetic resonance imaging; NS: Nephrometry score.</p>
+    </sec>
+    <sec>
+      <title>Competing interests</title>
+      <p>The authors declare that they have no competing interests.</p>
+    </sec>
+    <sec>
+      <title>Authors&#x2019; contributions</title>
+      <p>DU made conception and desingn and drafted the manuscript. KM participated in the design of the study, and revised the manuscript. HY collected and assemble the data. TI and HY developed the software used in this study. YK conceived of the study, and helped to draft the manuscript. All authors read and approved the final manuscript.</p>
+    </sec>
+    <sec>
+      <title>Pre-publication history</title>
+      <p>The pre-publication history for this paper can be accessed here:</p>
+      <p>
+        <ext-link ext-link-type="uri" xlink:href="http://www.biomedcentral.com/1471-2490/14/47/prepub">http://www.biomedcentral.com/1471-2490/14/47/prepub</ext-link>
+      </p>
+    </sec>
+  </body>
+  <back>
+    <sec>
+      <title>Acknowledgements</title>
+      <p>This works was supported by Grant-in-Aid for Scientists (No.30550347) from Japan Society for the Promotion of Science. We thank Dr. N Nakaigawa (Yokohama City University) to assist us in the operations.</p>
+    </sec>
+    <ref-list>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Gaur</surname>
+            <given-names>DD</given-names>
+          </name>
+          <article-title>Laparoscopic operative retroperitoneoscopy: use of new device</article-title>
+          <source>J Urol</source>
+          <year>1992</year>
+          <volume>148</volume>
+          <fpage>1137</fpage>
+          <lpage>1139</lpage>
+          <pub-id pub-id-type="pmid">1404623</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lee</surname>
+            <given-names>CT</given-names>
+          </name>
+          <name>
+            <surname>Katz</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Shi</surname>
+            <given-names>W</given-names>
+          </name>
+          <name>
+            <surname>Thaler</surname>
+            <given-names>HT</given-names>
+          </name>
+          <name>
+            <surname>Reuter</surname>
+            <given-names>VE</given-names>
+          </name>
+          <name>
+            <surname>Russo</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Surgical management of renal tumors 4 cm. or less in a contemporary cohort</article-title>
+          <source>J Urol</source>
+          <year>2000</year>
+          <volume>163</volume>
+          <fpage>730</fpage>
+          <pub-id pub-id-type="doi">10.1016/S0022-5347(05)67793-2</pub-id>
+          <pub-id pub-id-type="pmid">10687966</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lau</surname>
+            <given-names>WK</given-names>
+          </name>
+          <name>
+            <surname>Blute</surname>
+            <given-names>ML</given-names>
+          </name>
+          <name>
+            <surname>Weaver</surname>
+            <given-names>AL</given-names>
+          </name>
+          <name>
+            <surname>Torres</surname>
+            <given-names>VE</given-names>
+          </name>
+          <name>
+            <surname>Zincke</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Matched comparison of radical nephrectomy vs nephron- sparing surgery in patients with unilateral renal cell carci- noma and a normal contralateral kidney</article-title>
+          <source>Mayo Clin Proc</source>
+          <year>2000</year>
+          <volume>75</volume>
+          <fpage>1236</fpage>
+          <pub-id pub-id-type="doi">10.4065/75.12.1236</pub-id>
+          <pub-id pub-id-type="pmid">11126830</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>McKiernan</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Simmons</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Katz</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Russo</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Natural history of chronic renal insufficiency after partial and radical nephrectomy</article-title>
+          <source>Urology</source>
+          <year>2002</year>
+          <volume>59</volume>
+          <fpage>816</fpage>
+          <pub-id pub-id-type="doi">10.1016/S0090-4295(02)01501-7</pub-id>
+          <pub-id pub-id-type="pmid">12031359</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kniss</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Kindlmann</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Hansen</surname>
+            <given-names>C</given-names>
+          </name>
+          <article-title>Multi-dimensional transfer functions for interactive volume rendering</article-title>
+          <source>IEEE Trans Vis Comput Graph</source>
+          <year>2002</year>
+          <volume>8</volume>
+          <issue>4</issue>
+          <fpage>270</fpage>
+          <lpage>285</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Otsu</surname>
+            <given-names>N</given-names>
+          </name>
+          <article-title>A threshold selection method from gray-level histograms</article-title>
+          <source>IEEE Trans Sys Man Cyber</source>
+          <year>1979</year>
+          <volume>9</volume>
+          <issue>1</issue>
+          <fpage>62</fpage>
+          <lpage>66</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Adams</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Bischof</surname>
+            <given-names>L</given-names>
+          </name>
+          <article-title>Seeded region growing</article-title>
+          <source>IEEE Trans PAMI</source>
+          <year>1994</year>
+          <volume>16</volume>
+          <issue>6</issue>
+          <fpage>641</fpage>
+          <lpage>647</lpage>
+          <pub-id pub-id-type="doi">10.1109/34.295913</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Boykov</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Veksler</surname>
+            <given-names>O</given-names>
+          </name>
+          <name>
+            <surname>Zabih</surname>
+            <given-names>R</given-names>
+          </name>
+          <article-title>Fast approximate energy minimization via graph cuts</article-title>
+          <source>IEEE Trans PAMI</source>
+          <year>2001</year>
+          <volume>23</volume>
+          <issue>11</issue>
+          <fpage>1222</fpage>
+          <lpage>1239</lpage>
+          <pub-id pub-id-type="doi">10.1109/34.969114</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Li</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Sun</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Tang</surname>
+            <given-names>CK</given-names>
+          </name>
+          <name>
+            <surname>Shum</surname>
+            <given-names>HY</given-names>
+          </name>
+          <article-title>Lazy snapping</article-title>
+          <source>ACM Trans Graph</source>
+          <year>2004</year>
+          <volume>23</volume>
+          <issue>3</issue>
+          <fpage>303</fpage>
+          <lpage>308</lpage>
+          <pub-id pub-id-type="doi">10.1145/1015706.1015719</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ijiri</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Yokota</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Contour-based interface for refining volume segmentation</article-title>
+          <source>Comput Graph Forum</source>
+          <year>2010</year>
+          <volume>29</volume>
+          <issue>7</issue>
+          <fpage>2153</fpage>
+          <lpage>2160</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1467-8659.2010.01803.x</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ijiri</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Yoshizawa</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Sato</surname>
+            <given-names>Y</given-names>
+          </name>
+          <name>
+            <surname>Ito</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Yokota</surname>
+            <given-names>H</given-names>
+          </name>
+          <article-title>Bilateral hermite radial basis functions for contour-based volume segmentation</article-title>
+          <source>Comput Graph Forum</source>
+          <year>2013</year>
+          <volume>32</volume>
+          <issue>2</issue>
+          <fpage>123</fpage>
+          <lpage>132</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Lorensen</surname>
+            <given-names>WE</given-names>
+          </name>
+          <name>
+            <surname>Cline</surname>
+            <given-names>HE</given-names>
+          </name>
+          <article-title>A high resolution 3D surface construction algorithm</article-title>
+          <source>Comput Graph</source>
+          <year>1987</year>
+          <volume>21</volume>
+          <issue>3</issue>
+          <fpage>163</fpage>
+          <lpage>169</lpage>
+        </mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Breda</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Finelli</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Janetschek</surname>
+            <given-names>G</given-names>
+          </name>
+          <article-title>Complication of laparoscopic surgery for renal masses: prevention, management, and comparison with the open experience</article-title>
+          <source>Eur Urol</source>
+          <year>2009</year>
+          <volume>55</volume>
+          <fpage>836</fpage>
+          <lpage>850</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.eururo.2009.01.018</pub-id>
+          <pub-id pub-id-type="pmid">19168276</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Thompson</surname>
+            <given-names>RH</given-names>
+          </name>
+          <name>
+            <surname>Lane</surname>
+            <given-names>BR</given-names>
+          </name>
+          <name>
+            <surname>Lohse</surname>
+            <given-names>CM</given-names>
+          </name>
+          <name>
+            <surname>Leibovich</surname>
+            <given-names>BC</given-names>
+          </name>
+          <name>
+            <surname>Fergany</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Frank</surname>
+            <given-names>I</given-names>
+          </name>
+          <name>
+            <surname>Gill</surname>
+            <given-names>IS</given-names>
+          </name>
+          <name>
+            <surname>Blute</surname>
+            <given-names>ML</given-names>
+          </name>
+          <name>
+            <surname>Campbell</surname>
+            <given-names>SC</given-names>
+          </name>
+          <article-title>Every minute counts when the renal hilum is clamped during partial nephrectomy</article-title>
+          <source>Eur Urol</source>
+          <year>2010</year>
+          <volume>58</volume>
+          <fpage>340</fpage>
+          <lpage>345</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.eururo.2010.05.047</pub-id>
+          <pub-id pub-id-type="pmid">20825756</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Gill</surname>
+            <given-names>IS</given-names>
+          </name>
+          <name>
+            <surname>Patil</surname>
+            <given-names>MB</given-names>
+          </name>
+          <name>
+            <surname>Desai</surname>
+            <given-names>MM</given-names>
+          </name>
+          <article-title>Zero ischemia anatomical partial nephrectomy:a novel approach</article-title>
+          <source>J Urol</source>
+          <year>2012</year>
+          <volume>187</volume>
+          <fpage>807</fpage>
+          <lpage>815</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.juro.2011.10.146</pub-id>
+          <pub-id pub-id-type="pmid">22248519</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Kutikov</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>Uzzo</surname>
+            <given-names>RG</given-names>
+          </name>
+          <article-title>The R.E.N.A.L. nephrometry score: a comprehensive standardized system for quantitating renal tumor size, location and depth</article-title>
+          <source>J Urol</source>
+          <year>2009</year>
+          <volume>182</volume>
+          <fpage>844</fpage>
+          <lpage>853</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.juro.2009.05.035</pub-id>
+          <pub-id pub-id-type="pmid">19616235</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Ficarra</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Novara</surname>
+            <given-names>G</given-names>
+          </name>
+          <name>
+            <surname>Secco</surname>
+            <given-names>S</given-names>
+          </name>
+          <name>
+            <surname>Macchi</surname>
+            <given-names>V</given-names>
+          </name>
+          <name>
+            <surname>Porzionato</surname>
+            <given-names>A</given-names>
+          </name>
+          <name>
+            <surname>De Caro</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Artivani</surname>
+            <given-names>W</given-names>
+          </name>
+          <article-title>Preoperative aspects and dimensions used for an anatomical (PADUA) classification of renal tumours in patients who are candidates for nephron-sparing surgery</article-title>
+          <source>Eur Urol</source>
+          <year>2009</year>
+          <volume>56</volume>
+          <fpage>786</fpage>
+          <lpage>793</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.eururo.2009.07.040</pub-id>
+          <pub-id pub-id-type="pmid">19665284</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Brewin</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Nedas</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Challacombe</surname>
+            <given-names>B</given-names>
+          </name>
+          <name>
+            <surname>Elhage</surname>
+            <given-names>O</given-names>
+          </name>
+          <name>
+            <surname>Keisu</surname>
+            <given-names>J</given-names>
+          </name>
+          <name>
+            <surname>Dasgupta</surname>
+            <given-names>P</given-names>
+          </name>
+          <article-title>Face content and construct validation of the first virtual reality laparoscopic nephrectomy <italic>simulator</italic></article-title>
+          <source>BJU Int</source>
+          <year>2010</year>
+          <volume>106</volume>
+          <fpage>850</fpage>
+          <lpage>854</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1464-410X.2009.09193.x</pub-id>
+          <pub-id pub-id-type="pmid">20128776</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Wijn</surname>
+            <given-names>RP</given-names>
+          </name>
+          <name>
+            <surname>Persoon</surname>
+            <given-names>MC</given-names>
+          </name>
+          <name>
+            <surname>Schout</surname>
+            <given-names>BM</given-names>
+          </name>
+          <name>
+            <surname>Martens</surname>
+            <given-names>EJ</given-names>
+          </name>
+          <name>
+            <surname>Scherpbier</surname>
+            <given-names>AJ</given-names>
+          </name>
+          <name>
+            <surname>Hendrikx</surname>
+            <given-names>AJ</given-names>
+          </name>
+          <article-title>Virtual reality laparoscopic nephrectomy simulator is lacking in construct validity</article-title>
+          <source>J Endourol</source>
+          <year>2010</year>
+          <volume>24</volume>
+          <fpage>117</fpage>
+          <lpage>122</lpage>
+          <pub-id pub-id-type="doi">10.1089/end.2009.0219</pub-id>
+          <pub-id pub-id-type="pmid">19954352</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Makiyama</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Sakata</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Yamanaka</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Tatenuma</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Sano</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Kubota</surname>
+            <given-names>Y</given-names>
+          </name>
+          <article-title>Laparoscopic nephroureterectomy in renal pelvic urothelial carcinoma with situs inversus totalis:preoperative training using a patient-specific simulator</article-title>
+          <source>Urol</source>
+          <year>2012</year>
+          <volume>80</volume>
+          <issue>6</issue>
+          <fpage>1375</fpage>
+          <lpage>1378</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.urology.2012.08.054</pub-id>
+          <pub-id pub-id-type="pmid">23206789</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Yamanaka</surname>
+            <given-names>H</given-names>
+          </name>
+          <name>
+            <surname>Makiyama</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Tatenuma</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Sakata</surname>
+            <given-names>R</given-names>
+          </name>
+          <name>
+            <surname>Sano</surname>
+            <given-names>F</given-names>
+          </name>
+          <name>
+            <surname>Kubota</surname>
+            <given-names>Y</given-names>
+          </name>
+          <article-title>Preparation for pyeloplasty for ureteropelvic junction obstruction using a patient-specific laparoscopic simulator:a case report</article-title>
+          <source>J Med Case Reports</source>
+          <year>2012</year>
+          <volume>6</volume>
+          <fpage>338</fpage>
+          <pub-id pub-id-type="doi">10.1186/1752-1947-6-338</pub-id>
+        </mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+          <name>
+            <surname>Makiyama</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Nagasaka</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Inuiya</surname>
+            <given-names>T</given-names>
+          </name>
+          <name>
+            <surname>Takanami</surname>
+            <given-names>K</given-names>
+          </name>
+          <name>
+            <surname>Ogata</surname>
+            <given-names>M</given-names>
+          </name>
+          <name>
+            <surname>Kubota</surname>
+            <given-names>Y</given-names>
+          </name>
+          <article-title>Development of a patient-specific simulator for laparoscopic renal surgery</article-title>
+          <source>Int J Urol</source>
+          <year>2012</year>
+          <volume>19</volume>
+          <fpage>829</fpage>
+          <lpage>835</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1442-2042.2012.03053.x</pub-id>
+          <pub-id pub-id-type="pmid">22640644</pub-id>
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

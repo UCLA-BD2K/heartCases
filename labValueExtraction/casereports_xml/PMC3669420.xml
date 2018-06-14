@@ -1,0 +1,937 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">23741387</article-id>
+      <article-id pub-id-type="pmc">3669420</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-13-02216</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0064761</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Evolutionary Biology</subject>
+            <subj-group>
+              <subject>Evolutionary Systematics</subject>
+              <subj-group>
+                <subject>Phylogenetics</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Forms of Evolution</subject>
+              <subj-group>
+                <subject>Divergent Evolution</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Comparative Genomics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genomics</subject>
+            <subj-group>
+              <subject>Comparative Genomics</subject>
+              <subject>Genome Sequencing</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Infectious Diseases</subject>
+            <subj-group>
+              <subject>Tropical Diseases (Non-Neglected)</subject>
+              <subj-group>
+                <subject>Flavivirus</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Vectors and Hosts</subject>
+              <subj-group>
+                <subject>Mosquitoes</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Neurology</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Comparative Genomic and Phylogenetic Analysis of the First Usutu Virus Isolate from a Human Patient Presenting with Neurological Symptoms</article-title>
+        <alt-title alt-title-type="running-head">Sequence of First Human USUV Isolate</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gaibani</surname>
+            <given-names>Paolo</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Cavrini</surname>
+            <given-names>Francesca</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gould</surname>
+            <given-names>Ernest A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rossini</surname>
+            <given-names>Giada</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pierro</surname>
+            <given-names>Anna</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Landini</surname>
+            <given-names>Maria Paola</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sambri</surname>
+            <given-names>Vittorio</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Operative Unit of Clinical Microbiology, Regional Reference Centre for Microbiological Emergencies (CRREM), St.Orsola-Malpighi University Hospital, Bologna, Italy</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>UMR190 Emergence des Pathologies Virales, Unit&#xE9; des Virus Emergents, Facult&#xE9; de M&#xE9;decine de Marseille, Marseille, France</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Unit of Microbiology, Central Laboratory &#x201C;Area Vasta Romagna&#x201D;, Pievesestina, Cesena, Italy</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Kapoor</surname>
+            <given-names>Amit</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Columbia University, United States of America</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>paolo.gaibani@unibo.it</email></corresp>
+        <fn fn-type="conflict">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: PG EAG. Performed the experiments: PG FC. Analyzed the data: PG EAG VS. Contributed reagents/materials/analysis tools: MPL VS. Wrote the paper: PG FC EAG GR AP MPL VS.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>31</day>
+        <month>5</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>5</issue>
+      <elocation-id>e64761</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>15</day>
+          <month>1</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>18</day>
+          <month>4</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Gaibani et al</copyright-holder>
+        <license>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Usutu virus (USUV) is a mosquito-borne flavivirus, belonging to the Japanese encephalitis antigenic complex, that circulates among mosquitoes and birds. We describe and analyze the complete genome sequence of the first USUV strain isolated from an immunocompromised patient with neuroinvasive disease. This USUV isolate showed an overall nucleotide identity of 99% and 96%, respectively, with the genomes of isolates from Europe and Africa. Comparison of the human USUV complete polyprotein sequence with bird-derived strains, showed two unique amino acid substitutions. In particular, one substitution (S595G) was situated in the DIII domain of the viral Envelope protein that is recognized by flavivirus neutralizing antibodies. An additional amino acid substitution (D3425E) was identified in the RNA-dependent RNA polymerase (RdRp) domain of the NS5 protein. This substitution is remarkable since E3425 is highly conserved among the other USUV isolates that were not associated with human infection. However, a similar substitution was observed in Japanese encephalitis and in West Nile viruses isolated from humans. Phylogenetic analysis of the human USUV strain revealed a close relationship with an Italian strain isolated in 2009. Analysis of synonymous nucleotide substitutions (SNSs) among the different USUV genomes showed a specific evolutionary divergence among different countries. In addition, 15 SNSs were identified as unique in the human isolate. We also identified four specific nucleotide substitutions in the 5&#x2032; and 3&#x2032; untranslated regions (UTRs) in the human isolate that were not present in the other USUV sequences. Our analyses provide the basis for further experimental studies aimed at defining the effective role of these mutations in the USUV genome, their potential role in the development of viral variants pathogenic for humans and their evolution and dispersal out of Africa.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work was partially supported by funds RFO 2010 from University of Bologna, Ricerca Finalizzata RF-2009-1539631 from the Italian Ministry of Health and &#x201C;LAB P3&#x201D; from Regione Emilia Romagna, to VS. Parts of this study were also supported under the Project &#x201C;PREDEMICS&#x201D; (7th Framework Programme - Grant Agreement no. 278433). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="10"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Usutu virus (USUV), an arthropod-borne flavivirus within the Japanese encephalitis virus antigenic complex, is closely related to several human and animal pathogenic members of this complex including West Nile virus (WNV), Murray Valley Encephalitis virus (MVEV) and Japanese encephalitis virus (JEV) <xref ref-type="bibr" rid="pone.0064761-Calisher1">[1]</xref>. USUV is maintained in a typical enzootic cycle between mosquitoes and birds <xref ref-type="bibr" rid="pone.0064761-Pfeffer1">[2]</xref>. It was originally identified in South African mosquito species in 1959 but during the past &gt;17 years, the virus has apparently dispersed out of Africa into Europe <xref ref-type="bibr" rid="pone.0064761-Nikolay1">[3]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Weissenbck2">[5]</xref>, presumably carried by migratory birds and their associated mosquitoes <xref ref-type="bibr" rid="pone.0064761-Chvala1">[6]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Bakonyi2">[12]</xref>. In particular, a recent study reported the first evidence of USUV introduction in Italy in 1996 <xref ref-type="bibr" rid="pone.0064761-Weissenbck2">[5]</xref>. Ten years later, an elevated rate of USUV circulation was reported in vectors and birds in Italy <xref ref-type="bibr" rid="pone.0064761-Savini1">[13]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Tamba1">[16]</xref>. Following its dispersal in parts of western and central Europe, many studies have investigated the epidemiology and pathogenicity of USUV for wild birds which appear to be the predominant vertebrate host species. USUV infection of birds is often characterized by encephalitis, myocardial degeneration, and necrosis of the liver and spleen <xref ref-type="bibr" rid="pone.0064761-Chvala1">[6]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Weissenbck3">[9]</xref>. USUV is not considered to be a significant human pathogen <xref ref-type="bibr" rid="pone.0064761-Vazquez1">[10]</xref>, <xref ref-type="bibr" rid="pone.0064761-Cavrini1">[17]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Pecorari1">[18]</xref>. The first reported cases of human USUV infection were observed in Africa in two patients presenting with fever, rash and jaundice <xref ref-type="bibr" rid="pone.0064761-Nikolay1">[3]</xref>. Subsequently, two USUV-positive cases of meningoencephalits were reported in immunecompromised patients in Italy <xref ref-type="bibr" rid="pone.0064761-Cavrini1">[17]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Gaibani1">[19]</xref>. Recently, USUV RNA was detected using real-time RT-PCR in cerebrospinal fluid specimens of three immunocompetent patients suffering from meningoencephalits <xref ref-type="bibr" rid="pone.0064761-Cavrini2">[20]</xref>. Even more recently, the first 5 cases of USUV specific-IgG positive sera in healthy blood donors, were reported confirming that USUV actively circulates amongst asymptomatic subjects in Europe <xref ref-type="bibr" rid="pone.0064761-Gaibani2">[21]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Allering1">[22]</xref>.</p>
+      <p>Similar to other flaviviruses, USUV is a spherical, small enveloped virus with a diameter 40&#x2013;60 nm. The genome is a single-stranded positive sense RNA of 11 Kb, with a 5&#x2032; cap structure <xref ref-type="bibr" rid="pone.0064761-Bakonyi1">[7]</xref>, that contains one large open reading frame (ORF) comprising nucleotides (nt) 97 to 10401, encoding a unique polyprotein of 3434 amino acids (aa). The USUV polyprotein is processed post-translationally by cellular and viral proteases into three structural proteins: capsid (97&#x2013;474), pre-membrane/membrane (475&#x2013;975) and envelope (976&#x2013;2475) and seven non-structural proteins, NS1 (2476&#x2013;3531), NS2a (3532&#x2013;4212), NS2b (4213&#x2013;4605), NS3 (4604&#x2013;6462), NS4a (6463&#x2013;6840), NS4b (6910&#x2013;7684) and NS5 (7684&#x2013;10398) <xref ref-type="bibr" rid="pone.0064761-Bakonyi1">[7]</xref>.</p>
+      <p>Previous molecular studies on USUV isolates from vectors and birds in Hungary (Budapest), Austria (Vienna and Meise H), Germany (Mannheim), and South Africa (SAAR-1776) revealed significant differences, both in the nt and aa sequences <xref ref-type="bibr" rid="pone.0064761-Bakonyi1">[7]</xref>, <xref ref-type="bibr" rid="pone.0064761-Becker1">[11]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Savini1">[13]</xref>.</p>
+      <p>The aim of this study was to sequence the complete genome of the first human-encephalitic USUV isolate <xref ref-type="bibr" rid="pone.0064761-Cavrini1">[17]</xref> and to analyse it comparatively with these non-human strains of USUV to see whether or not significant differences could be identified.</p>
+      <p>Conventionally, synonymous nucleotide substitutions (SNS), also called silent substitutions, are considered as selectively neutral or subject to minor constraints among the virus variants <xref ref-type="bibr" rid="pone.0064761-Cuevas1">[23]</xref>. However, during the recent past, several studies have demonstrated that nt substitutions in the 5&#x2032; and 3&#x2032; untranslated regions (UTRs) may have an impact on viral replication and infectivity by altering the secondary structure of the viral RNA <xref ref-type="bibr" rid="pone.0064761-Proutski1">[24]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Funk1">[26]</xref>. Studies have also focused on the effective role of synonymous nucleotide substitutions within the coding region of the viral RNA, demonstrating a notable impact on the viral phenotype by altering RNA folding or codon usage <xref ref-type="bibr" rid="pone.0064761-Allering1">[22]</xref>, <xref ref-type="bibr" rid="pone.0064761-Funk1">[26]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Sironen1">[29]</xref>. Current evidence suggests that the impact of these SNS is more apparent in viruses with compact genomes such as the ssRNA viruses, including the flaviviruses <xref ref-type="bibr" rid="pone.0064761-Cuevas1">[23]</xref>, <xref ref-type="bibr" rid="pone.0064761-DomingoCalap1">[31]</xref>. Based on these interpretations, we have investigated the presence of SNS among the different USUV isolates in the hope of understanding their likely role in the evolution of USUV and its pathogenicity.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s2">
+      <title>Materials and Methods</title>
+      <sec id="s2a">
+        <title>Virus Isolation</title>
+        <p>Usutu virus was isolated from the plasma of a patient who developed neuroinvasive disease following an orthotropic liver transplantation (OLT) <xref ref-type="bibr" rid="pone.0064761-Cavrini1">[17]</xref>. The plasma was positive when tested by WNV transcription-mediated amplification assay (TMA) <xref ref-type="bibr" rid="pone.0064761-Gaibani1">[19]</xref>. The TMA positive plasma was inoculated (100 &#xB5;l) onto confluent cell culture monolayers (African green monkey kidney, Vero E6) <xref ref-type="bibr" rid="pone.0064761-Gaibani2">[21]</xref> in a 24-well cell culture plate and centrifuged at 3,000 rpm for 12 hours. The infected cells were then washed to remove residual RNA, incubated at 37&#xB0;C in the presence of 5% CO<sub>2</sub> and observed daily until cytopathic effects (CPE) were detected on day 14 post-infection. Confirmation of the presence of USUV RNA was established using real-time RT-PCR, as previously described <xref ref-type="bibr" rid="pone.0064761-Cavrini2">[20]</xref>.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Genome Sequence and Analysis of the USUV Human Isolate</title>
+        <p>The viral RNA was extracted from 200 &#xB5;l of supernatant medium from Vero E6 infected cells using an automated nucleic acids extractor NucliSens EasyMag (Biomerieux, France) according to the manufacture&#x2019;s protocol. Degenerate primer pairs <xref ref-type="bibr" rid="pone.0064761-Bakonyi1">[7]</xref> were used to produce overlapping RT-PCR products covering the entire genome of USUV. RT-PCR assays were performed using the Superscript One Step RT-PCR with Platinum Taq Kit (Invitrogen, UK). Each 50 &#xB5;l reaction mixture contained 25 &#xB5;l of 2X Reaction Mix (containing 0,4 mM of each dNTP and 2,4 mM MgSO<sub>4</sub>), 25 pmol of the appropriate forward and reverse primers, 1 of enzyme mix and 5 &#xB5;l of template RNA. The amplification conditions were: 30 min at 55&#xB0;C, 2 min at 94&#xB0;C, 40 cycles of 15s at 94&#xB0;C, 30s at 57&#xB0;C, 1 min at 72&#xB0;C and finally 7 min at 72&#xB0;C. For each RT-PCR assay the agarose gel electrophoresis analysis revealed a single band of expected size. For each PCR product obtained, both strands of the amplicon were sequenced using RT-PCR and sequencing primers, previously described <xref ref-type="bibr" rid="pone.0064761-Bakonyi1">[7]</xref>. For each sequencing reaction the electropherogram was analysed by Chromas lite software V2.01 package (available at <ext-link ext-link-type="uri" xlink:href="http://www.technelysium.com.au">www.technelysium.com.au</ext-link>) and the nucleotide sequences were aligned and confirmed using BLAST software (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/blast">http://www.ncbi.nlm.nih.gov/blast</ext-link>). The human USUV complete genome sequence (designated Bologna/09) was deposited in GenBank with the following accession number: <bold>HM569263</bold>. Multiple alignment of the USUV complete genome sequences derived from the published isolates, was generated with ClustalW software (version 2, available at: <ext-link ext-link-type="uri" xlink:href="http://www.ebi.ac.uk/clustalw2">http://www.ebi.ac.uk/clustalw2</ext-link>). To evaluate the presence of single nucleotide polymorphisms, the human USUV genome was compared with genomic sequences of the following USUV isolates derived from birds and vectors: Austrian (Vienna 2001 [<bold>AY453411</bold>] and Meise H [<bold>JQ219843</bold>]), Hungarian (Budapest 2005 [<bold>EF206350</bold>]), Germany (Mannheim [<bold>HE599647</bold>]), Italian 2009 ([<bold>JF266698</bold>]), African (South Africa-1776 [<bold>AY453412</bold>]). Moreover, the genome of the Bologna/09 strain was compared with genomic sequences of flavivirus strains: WNV lineage 1 <bold>[JN858069]</bold>, WNV lineage 2 <bold>[JN858070]</bold>, JEV <bold>[NC001437]</bold>, DENV1 <bold>[AF309641]</bold>, DENV2 <bold>[FJ744705]</bold>, DENV3 <bold>[FJ74309641]</bold>, DENV4 <bold>[MI4931]</bold>, YFV <bold>[NC002031]</bold>, MVEV <bold>[MC000943]</bold>.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Phylogenetic Analysis</title>
+        <p>Phylogenetic analysis was performed by aligning the complete nucleotide sequences of the poly-protein coding regions of the Bologna/09 strain with the complete coding region of the USUV isolates available in GenBank (<bold>AY453411, JQ219843, EF206350, HE599647, JF266698, AY453412)</bold>. Phylogenetic trees were inferred using nucleotide alignment <xref ref-type="bibr" rid="pone.0064761-Tamura1">[32]</xref>. Neighbor joining (NJ) method <xref ref-type="bibr" rid="pone.0064761-Tuplin1">[30]</xref> was performed and implemented in MEGA software (v 4.1) <xref ref-type="bibr" rid="pone.0064761-Saitou1">[33]</xref>. The most parsimonious tree incorporated 1000 bootstrap replications.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Analysis of 5&#x2032; and 3&#x2032; Untranslated Regions (UTR)</title>
+        <p>For the analysis of the 5&#x2032; and 3&#x2032; UTR, the partial or complete sequences of the two distal regions from all the USUV genomes present in GenBank (Vienna, Meise H, Budapest, Manheim, Italian, South African and Bologna/09) were aligned using ClustalW software and corrected manually. To identify the presence of single nucleotide mutations between the different USUV isolates and the human isolate, the nucleotide sequence of the first 96 and the last 666 nucleotides of the different genomes, corresponding respectively to the 5&#x2032; and 3&#x2032; UTR, were used for the analysis. To compare the stability of the deduced secondary structure of the 5&#x2032; and 3&#x2032; terminal sequences among the different strains, the free energy (Kcal/ml) of each isolate was calculated by CLC program (CLC RNA Workbench, v4.1, Denmark).</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Genome Analysis</title>
+        <p>We determined the full-length nucleotide sequence of Bologna/09, andconducted an extensive comparative analysis of the human isolate with other USUV strains. Comparison of the complete genome nucleotide sequence with that of selected closely related mosquito-borne viruses, including WNV Lineage I and II, JEV, DENV 1-4, YFV, MVEV, revealed a percentage homology of less than 73% as shown in <xref ref-type="table" rid="pone-0064761-t001">Table 1</xref>. The Usutu viruses isolated in Europe displayed 98% to 100% identity within the different strains, including the Bologna/09 isolate among the different nucleotide coding regions (<xref ref-type="table" rid="pone-0064761-t001">Table 1</xref>). In contrast, the SAAR strain, isolated from South Africa showed lower nucleotide identity (between 95% and 98%) in the different coding regions. To evaluate the amino acid substitutions common to Bologna/09 and the other USUV isolates, the amino acid variation was assessed (<xref ref-type="fig" rid="pone-0064761-g001">Figure 1</xref>). A description of the triplet codons and deduced amino acid differences is shown in the supplementary <xref ref-type="supplementary-material" rid="pone.0064761.s001">Table S1</xref>. Interestingly, comparison of the amino acid sequences of Bologna/09 with the non-human USUV strains revealed two unique substitutions, one in the envelope and the other in the NS5 gene (<xref ref-type="fig" rid="pone-0064761-g001">Figure 1</xref>). To visualize the single amino acid substitutions among the different USUV genomes, a profile alignment with the different amino acid changes is shown in <xref ref-type="supplementary-material" rid="pone.0064761.s001">Table S1</xref>. In particular, the Bologna/09 strain showed a unique single amino acid substitution (S595G) in the DIII-Ir domain when compared with all other USUV isolates (as shown in <xref ref-type="fig" rid="pone-0064761-g002">Figure 2</xref>) and with the other flaviviruses belonging to the JEV serogroup. Interestingly, a similar amino acid was identified in several DENV-2 strains (<xref ref-type="fig" rid="pone-0064761-g002">Figure 2</xref>). The DIII-lr domain is highly variable among different flaviviruses <xref ref-type="bibr" rid="pone.0064761-Diamond1">[34]</xref>. Previous studies indicated that neutralizing, virus-type-specific antibodies recognize the DIII-Ir domain <xref ref-type="bibr" rid="pone.0064761-Snchez1">[35]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Beasley1">[36]</xref>.</p>
+        <fig id="pone-0064761-g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0064761.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>ORF of the USUV genome.</title>
+            <p>Single genes and relative amino acid sizes are shown along each region on the USUV genome. C, capsid gene; PreM, PreMembrane gene; Env, envelope gene; NS, no-structural genes. Comparison of amino-acid substitutions between human isolate (Bologna/09) and African (SAAR-1776 strain) and European (Vienna 2001, Meise H 2002, Budapest 2005, Italia 2009 and Germany 2011) USUV isolates. Blue square corresponding to the aa mutations unique for the Italian isolates (Bologna/09 and Italy 2009). Red circle showing the aa mutations of human isolate (Bologna/09).</p>
+          </caption>
+          <graphic xlink:href="pone.0064761.g001"/>
+        </fig>
+        <fig id="pone-0064761-g002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0064761.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Amino acid sequence alignment of the flavivirus domain III in the envelope region, corresponding to the residues 302&#x2013;337.</title>
+            <p>The conserved cysteine and BC loop are boxed with grey lines. The arrow indicates the S595G mutation of Bologna/09 and their corresponding amino acid in the USUV isolates and in the JEV viruses complex, boxed with a black line.</p>
+          </caption>
+          <graphic xlink:href="pone.0064761.g002"/>
+        </fig>
+        <table-wrap id="pone-0064761-t001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0064761.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Nucleotide identities of entire polyprotein coding region (structural and not structural protein) of Bologna/09 isolate in comparison to the different USUV strains and the most representative JEV serogroup complex viruses.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0064761-t001-1" xlink:href="pone.0064761.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="13" align="left" rowspan="1">Nucleotide identity (%) of USUV Bologna/09</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Strains</td>
+                  <td colspan="13" align="left" rowspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Entire ORF(%)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">C</td>
+                  <td align="left" rowspan="1" colspan="1">pr/M</td>
+                  <td align="left" rowspan="1" colspan="1">E</td>
+                  <td align="left" rowspan="1" colspan="1">NS1</td>
+                  <td align="left" rowspan="1" colspan="1">NS2a</td>
+                  <td align="left" rowspan="1" colspan="1">NS2b</td>
+                  <td align="left" rowspan="1" colspan="1">NS3</td>
+                  <td align="left" rowspan="1" colspan="1">NS4a</td>
+                  <td align="left" rowspan="1" colspan="1">2K</td>
+                  <td align="left" rowspan="1" colspan="1">NS4b</td>
+                  <td align="left" rowspan="1" colspan="1">NS5</td>
+                  <td align="left" rowspan="1" colspan="1">5&#x2032;-UTR</td>
+                  <td align="left" rowspan="1" colspan="1">3&#x2032;-UTR</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="15" align="left" rowspan="1">
+                    <bold>USUV Strains</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>SAAR-1776</bold>
+                    <bold>(AY453412)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">98</td>
+                  <td align="left" rowspan="1" colspan="1">97</td>
+                  <td align="left" rowspan="1" colspan="1">95</td>
+                  <td align="left" rowspan="1" colspan="1">96</td>
+                  <td align="left" rowspan="1" colspan="1">97</td>
+                  <td align="left" rowspan="1" colspan="1">96</td>
+                  <td align="left" rowspan="1" colspan="1">97</td>
+                  <td align="left" rowspan="1" colspan="1">96</td>
+                  <td align="left" rowspan="1" colspan="1">97</td>
+                  <td align="left" rowspan="1" colspan="1">96</td>
+                  <td align="left" rowspan="1" colspan="1">97</td>
+                  <td align="left" rowspan="1" colspan="1">96</td>
+                  <td align="left" rowspan="1" colspan="1">96</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>96</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Vienna 2001</bold>
+                    <bold>(AY453411)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">98</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">98</td>
+                  <td align="left" rowspan="1" colspan="1">96</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>99</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Budapest 2005</bold>
+                    <bold>(EF206350)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">98</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">98</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">98</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>99</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Italia 2009</bold>
+                    <bold>(JF266698)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">100</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">98</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">98</td>
+                  <td align="left" rowspan="1" colspan="1">99</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>99</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="15" align="left" rowspan="1">
+                    <bold>Flavivirus Strains</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>WNV Lineage 1</bold>
+                    <bold>(JN858069)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">63</td>
+                  <td align="left" rowspan="1" colspan="1">68</td>
+                  <td align="left" rowspan="1" colspan="1">69</td>
+                  <td align="left" rowspan="1" colspan="1">68</td>
+                  <td align="left" rowspan="1" colspan="1">64</td>
+                  <td align="left" rowspan="1" colspan="1">67</td>
+                  <td align="left" rowspan="1" colspan="1">71</td>
+                  <td align="left" rowspan="1" colspan="1">70</td>
+                  <td align="left" rowspan="1" colspan="1">76</td>
+                  <td align="left" rowspan="1" colspan="1">63</td>
+                  <td align="left" rowspan="1" colspan="1">73</td>
+                  <td align="left" rowspan="1" colspan="1">64</td>
+                  <td align="left" rowspan="1" colspan="1">64</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>69</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>WNV Lineage 2</bold>
+                    <bold>(JN858070)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">63</td>
+                  <td align="left" rowspan="1" colspan="1">68</td>
+                  <td align="left" rowspan="1" colspan="1">69</td>
+                  <td align="left" rowspan="1" colspan="1">68</td>
+                  <td align="left" rowspan="1" colspan="1">64</td>
+                  <td align="left" rowspan="1" colspan="1">66</td>
+                  <td align="left" rowspan="1" colspan="1">71</td>
+                  <td align="left" rowspan="1" colspan="1">69</td>
+                  <td align="left" rowspan="1" colspan="1">71</td>
+                  <td align="left" rowspan="1" colspan="1">62</td>
+                  <td align="left" rowspan="1" colspan="1">72</td>
+                  <td align="left" rowspan="1" colspan="1">61</td>
+                  <td align="left" rowspan="1" colspan="1">50</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>69</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>JEV</bold>
+                    <bold>(NC001437)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">73</td>
+                  <td align="left" rowspan="1" colspan="1">69</td>
+                  <td align="left" rowspan="1" colspan="1">70</td>
+                  <td align="left" rowspan="1" colspan="1">46</td>
+                  <td align="left" rowspan="1" colspan="1">69</td>
+                  <td align="left" rowspan="1" colspan="1">71</td>
+                  <td align="left" rowspan="1" colspan="1">74</td>
+                  <td align="left" rowspan="1" colspan="1">71</td>
+                  <td align="left" rowspan="1" colspan="1">78</td>
+                  <td align="left" rowspan="1" colspan="1">69</td>
+                  <td align="left" rowspan="1" colspan="1">74</td>
+                  <td align="left" rowspan="1" colspan="1">62</td>
+                  <td align="left" rowspan="1" colspan="1">75</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>72</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>DENV1</bold>
+                    <bold>(AF309641)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">53</td>
+                  <td align="left" rowspan="1" colspan="1">48</td>
+                  <td align="left" rowspan="1" colspan="1">55</td>
+                  <td align="left" rowspan="1" colspan="1">56</td>
+                  <td align="left" rowspan="1" colspan="1">42</td>
+                  <td align="left" rowspan="1" colspan="1">46</td>
+                  <td align="left" rowspan="1" colspan="1">60</td>
+                  <td align="left" rowspan="1" colspan="1">51</td>
+                  <td align="left" rowspan="1" colspan="1">50</td>
+                  <td align="left" rowspan="1" colspan="1">49</td>
+                  <td align="left" rowspan="1" colspan="1">64</td>
+                  <td align="left" rowspan="1" colspan="1">41</td>
+                  <td align="left" rowspan="1" colspan="1">58</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>56</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>DENV2</bold>
+                    <bold>(FJ744705)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">54</td>
+                  <td align="left" rowspan="1" colspan="1">48</td>
+                  <td align="left" rowspan="1" colspan="1">52</td>
+                  <td align="left" rowspan="1" colspan="1">44</td>
+                  <td align="left" rowspan="1" colspan="1">43</td>
+                  <td align="left" rowspan="1" colspan="1">51</td>
+                  <td align="left" rowspan="1" colspan="1">61</td>
+                  <td align="left" rowspan="1" colspan="1">49</td>
+                  <td align="left" rowspan="1" colspan="1">46</td>
+                  <td align="left" rowspan="1" colspan="1">46</td>
+                  <td align="left" rowspan="1" colspan="1">63</td>
+                  <td align="left" rowspan="1" colspan="1">47</td>
+                  <td align="left" rowspan="1" colspan="1">56</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>56</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>DENV3</bold>
+                    <bold>(FJ74309641)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">55</td>
+                  <td align="left" rowspan="1" colspan="1">47</td>
+                  <td align="left" rowspan="1" colspan="1">55</td>
+                  <td align="left" rowspan="1" colspan="1">43</td>
+                  <td align="left" rowspan="1" colspan="1">42</td>
+                  <td align="left" rowspan="1" colspan="1">47</td>
+                  <td align="left" rowspan="1" colspan="1">59</td>
+                  <td align="left" rowspan="1" colspan="1">51</td>
+                  <td align="left" rowspan="1" colspan="1">46</td>
+                  <td align="left" rowspan="1" colspan="1">51</td>
+                  <td align="left" rowspan="1" colspan="1">64</td>
+                  <td align="left" rowspan="1" colspan="1">60</td>
+                  <td align="left" rowspan="1" colspan="1">55</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>56</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>DENV4</bold>
+                    <bold>(M14931)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">54</td>
+                  <td align="left" rowspan="1" colspan="1">50</td>
+                  <td align="left" rowspan="1" colspan="1">55</td>
+                  <td align="left" rowspan="1" colspan="1">41</td>
+                  <td align="left" rowspan="1" colspan="1">45</td>
+                  <td align="left" rowspan="1" colspan="1">45</td>
+                  <td align="left" rowspan="1" colspan="1">61</td>
+                  <td align="left" rowspan="1" colspan="1">52</td>
+                  <td align="left" rowspan="1" colspan="1">49</td>
+                  <td align="left" rowspan="1" colspan="1">48</td>
+                  <td align="left" rowspan="1" colspan="1">63</td>
+                  <td align="left" rowspan="1" colspan="1">51</td>
+                  <td align="left" rowspan="1" colspan="1">60</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>56</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>YFV</bold>
+                    <bold>(NC002031)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">42</td>
+                  <td align="left" rowspan="1" colspan="1">48</td>
+                  <td align="left" rowspan="1" colspan="1">54</td>
+                  <td align="left" rowspan="1" colspan="1">42</td>
+                  <td align="left" rowspan="1" colspan="1">46</td>
+                  <td align="left" rowspan="1" colspan="1">45</td>
+                  <td align="left" rowspan="1" colspan="1">55</td>
+                  <td align="left" rowspan="1" colspan="1">52</td>
+                  <td align="left" rowspan="1" colspan="1">55</td>
+                  <td align="left" rowspan="1" colspan="1">44</td>
+                  <td align="left" rowspan="1" colspan="1">61</td>
+                  <td align="left" rowspan="1" colspan="1">43</td>
+                  <td align="left" rowspan="1" colspan="1">45</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>53</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>MVEV</bold>
+                    <bold>(MC000943)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">73</td>
+                  <td align="left" rowspan="1" colspan="1">75</td>
+                  <td align="left" rowspan="1" colspan="1">73</td>
+                  <td align="left" rowspan="1" colspan="1">71</td>
+                  <td align="left" rowspan="1" colspan="1">68</td>
+                  <td align="left" rowspan="1" colspan="1">72</td>
+                  <td align="left" rowspan="1" colspan="1">74</td>
+                  <td align="left" rowspan="1" colspan="1">72</td>
+                  <td align="left" rowspan="1" colspan="1">76</td>
+                  <td align="left" rowspan="1" colspan="1">67</td>
+                  <td align="left" rowspan="1" colspan="1">74</td>
+                  <td align="left" rowspan="1" colspan="1">66</td>
+                  <td align="left" rowspan="1" colspan="1">76</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>73</bold>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+        <p>In addition, the amino acid sequence of the NS5 protein obtained from Bologna/09 strain revealed a single amino acid substitution (D3425E) not present in any of the non-human USUV isolates (<xref ref-type="fig" rid="pone-0064761-g001">Figure 1</xref>), although a similar amino acid substitution was identified in all JEV, WNV (Lineage 1 and 2), MVEV and Kunjin strains that were analysed. Comparative analysis of the complete coding region of all the USUV strains revealed four amino acid substitutions common to all Italian isolates at positions G830E, V1602I, S2304N and I2645M. However, the human Bologna/09 isolate also had the two additional unique substitutions referred to above. These six amino acid substitutions are defined in <xref ref-type="fig" rid="pone-0064761-g001">Figure 1</xref>.</p>
+      </sec>
+      <sec id="s3b">
+        <title>Phylogenetic Analysis Based on the Complete Coding Region Sequences of the USUV Genome</title>
+        <p>A phylogenetic tree of the entire nucleotide coding region was constructed in order to investigate and compare the evolutionary relationships between Bologna/09 and the other USUV isolates. (<xref ref-type="fig" rid="pone-0064761-g003">Figure 3</xref>). The tree showed close relationships among the European isolates and confirmed the contrasting nucleotide and amino acid divergence of the SAAR isolate (<xref ref-type="fig" rid="pone-0064761-g003">Figure 3</xref>). A strain of JEV was used as the out-group.</p>
+        <fig id="pone-0064761-g003" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0064761.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Phylogenetic analysis of USUV strain isolated from human plasma (Bologna/09) and other USUV isolates.</title>
+            <p>The Phylogenetic tree inferred using the Neighbor-Joining method based on the complete nucleotide polyprotein gene coding region of different USUV strains. The evolutionary distances were computed using the Maximum Composite Likelihood method and are in the units of the number of base substitutions per site. The tree was rooted by using SAAR-1776 strain isolated in South Africa, as the outgroup virus. Significant bootstrap values (&gt;80%) are indicated.</p>
+          </caption>
+          <graphic xlink:href="pone.0064761.g003"/>
+        </fig>
+      </sec>
+      <sec id="s3c">
+        <title>Analysis of Synonymous Nucleotide Substitutions</title>
+        <p>Comparative analysis of the ORF of the USUV isolates revealed 41 Synonymous Nucleotide Substitutions (SNS) (<xref ref-type="fig" rid="pone-0064761-g004">Figure 4</xref>). Interestingly these SNS identified two clusters of genetic variants amongst the USUV isolates, viz., Italian and Austrian-Hungarian clusters. In particular, the Italian group showed 15 unique SNS distributed throughout the entire coding region (G564A, G1455A, T1503C, G1599A, C2085T, G2664A, A2853C, T2919C, T3201C, T 6909C, G7713A, C8478T, C8817T). Importantly, all SNS in the NS1 gene were unique to the Italian isolates (<xref ref-type="fig" rid="pone-0064761-g004">Figure 4</xref>). In contrast, the Austrian-Hungarian group showed only 4 unique SNS throughout the entire coding region (G438A, T606C, C8073T and T8994C). On the basis of these specific nucleotide substitutions, a phylogenetic analysis based on the <italic>Env</italic> region (between nucleotide positions 1180 to 1585) obtained from different USUV partial sequences available in GenBank was performed in order to confirm our previous results. The Maximum-likelihood algorithm confirmed the different clustering of Italian and Austrian-Hungarian groups (<xref ref-type="fig" rid="pone-0064761-g005">Figure 5</xref>). However, comparison of partial nucleotide sequences of the <italic>Env</italic> region obtained from the Italian strains isolated from mosquitoes and birds showed that the SNS at position G1599A was not present in all Italian strains. In detail, all strains isolated from the Piedmont region (West-Part of Italy) showed similar SNS to the Austrian-Hungarian strains, while in most of the Emilia-Romagna strains this specific SNS was not found. Based on these results, a Maximum-Parsimony phylogenetic analysis confirmed the clustering of the isolates collected from the West part of Italy to the Austrian-Hungarian strains, while the all the Emilia-Romagna isolates clustered with the Bologna/09 and the Italy 2009 isolates (East part of Italy) (<xref ref-type="fig" rid="pone-0064761-g005">Figure 5</xref>).</p>
+        <fig id="pone-0064761-g004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0064761.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Synonymous nucleotide substitutions (SNS) over the entire coding region of the seven USUV strains.</title>
+            <p>Black bars indicate the SNS unique for the human isolate (Bologna/09), while the grey bars indicate the SNS unique for the Italian isolates (Bologna/09 and Italy 2009). The asterisks indicate the unique SNS for the Austrian-Hungarian strains (Budapest 2005, Vienna 2001, Meise_H). The corresponding nucleotide position over the entire coding region is indicated above each bar.</p>
+          </caption>
+          <graphic xlink:href="pone.0064761.g004"/>
+        </fig>
+        <fig id="pone-0064761-g005" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0064761.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Maximum Parsimony phylogenetic analysis of polyprotein Env gene fragment sequences calculated for the Austrian isolates: Meise_H (JQ219843), Vienna 2001 (AY453411), usu502-03 (EF078297), usu281-03 (EF078294), usu623-04 (EF078300), usu618-04 (EF078299), usu499-03 (EF078296), usu338-04 (EF078298), usu450-03 (EF078295).</title>
+            <p><bold>Italian isolates from Piedmont region (West part of Italy): usu090-10 (JN257974), usu181-09 (JN257976), usu173-09 (JN257975).</bold> Italian isolates from Emilia-Romagna region (East part of Italy): USU-MO-b1/2010 (JF834683), USU-MO-b6/2010 (JF834661), USU-RE-m4/2010 (JF834673), USU-RE-m6/2010 (JF834671), USU-RE-m8/2010 (JF834675), USU-RE-m10/2010 (JF834677), USU-RA-m3/2010 (JF834667), USU-RA-m1/2010 (JF834665), USU-RA-b1/2010 (JF834669), USU-PR-m1/2010 (JF834663), Bologna/09 (HM569263), Italy 2009 (JF266698). German: Germany 2011 (HE599647), Hungarian: Budapest 2005 (EF206350) and South-African: SAAR-1776 (AY453412) isolates. Bootstrap values &gt;50% are displayed.</p>
+          </caption>
+          <graphic xlink:href="pone.0064761.g005"/>
+        </fig>
+        <p>Furthermore, 27 SNS were identified in the human isolate (Bologna/09) distributed throughout the entire coding region, 15 of which were unique for this virus (C432T, T492C, G1524A, C2022T, C2112T, T5253G, T6762C, T6843A, A7494G, C7528T, G7848A, A8397G, T8481C, C8793T, C10303T). Most of these were found in the Non-Structural proteins (10 out of 15 unique SNS) and also in the 2K, NS4b and NS5 proteins (<xref ref-type="fig" rid="pone-0064761-g004">Figure 4</xref>).</p>
+      </sec>
+      <sec id="s3d">
+        <title>Analysis of 5&#x2032; and 3&#x2032; UTR Regions</title>
+        <p>Comparative analysis of the nucleotide sequences of 5&#x2032; and 3&#x2032; untranslated regions (UTR) of Bologna/09 and of the USUV sequences available from GenBank showed several nt substitutions. Within the 96-nt long 5&#x2032; UTR, one nucleotide substitution was found in the Bologna/09 strain whereas all the other sequences, from mosquito and bird derived USUV isolates did not show this nt variation, as shown in <xref ref-type="fig" rid="pone-0064761-g006">Figure 6</xref>. This single nucleotide substitution was observed at nt position 8 (<xref ref-type="fig" rid="pone-0064761-g006">Figure 6</xref>). Two distinct nucleotide substitutions were observed at nt positions 10 (C) and 14 (T) in the Meise H and Germany strains. These two nt substitutions were not detected in the other strains (<xref ref-type="fig" rid="pone-0064761-g006">Figure 6</xref>). Computer simulation of the 5&#x2032;-UTR folding derived from Bologna/09 strain, produced a secondary structure model for the USUV genome. Analysis of the calculated secondary structures revealed similar folding patterns for the Bologna/09 (<xref ref-type="fig" rid="pone-0064761-g006">Figure 6D</xref>) Budapest (<xref ref-type="fig" rid="pone-0064761-g006">Figure 6</xref>/A) and Vienna (Figure 6DB) USUV strains (The Germany and Meise H isolates were presented in truncated forms). In contrast, the South-African (<xref ref-type="fig" rid="pone-0064761-g006">Figure 6C</xref>) USUV strain showed a different secondary structure. The predicted free energy of the Bologna/09, Budapest and Vienna USUV strains showed a &#x394;G of &#x2212;21.0, &#x2212;21,2 and 21,2 Kcal/mol, respectively, while the South-African strain showed a &#x394;G&#x200A;=&#x200A;&#x2212;22,3 Kcal/ml.</p>
+        <fig id="pone-0064761-g006" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0064761.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>Nucleotide sequence alignment of untranslated region (UTR) of 5&#x2032; termini of different USUV strains.</title>
+            <p>Proposed secondary structure of USUV strains isolated from Budapest (A), Vienna (B), South-Africa (C) and Italy from human (Bologna/09) (D), corresponding respectively to the GenBank accession numbers: <bold>EF206350</bold>, <bold>AY453411</bold>, <bold>AY453412</bold>, <bold>HM569263</bold>. The single nucleotide substitution of the human isolate contrasting with the other USUV strains of the 5&#x2032;- terminus is boxed with a black line. The single nucleotide substitutions of each strain in comparison to the different USUV isolates are underlined.</p>
+          </caption>
+          <graphic xlink:href="pone.0064761.g006"/>
+        </fig>
+        <p>In addition, analysis of the 3&#x2032;-UTR region showed three nucleotide substitutions among the different USUV isolates. In particular, specific nt substitutions for Bologna/09 were observed at positions 113, 641 and 650 (<xref ref-type="fig" rid="pone-0064761-g007">Figure 7</xref>). Among the different secondary structures present in the 3&#x2032; UTR, our attention was focused on the 3&#x2032; long stable hairpin (LSH) structure, as this has been described as a critical structure for virus viability <xref ref-type="bibr" rid="pone.0064761-Beasley1">[36]</xref>.</p>
+        <fig id="pone-0064761-g007" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0064761.g007</object-id>
+          <label>Figure 7</label>
+          <caption>
+            <title>Nucleotide sequence alignment of untranslated region (UTR) of conserved 3&#x2032; termini of USUV isolates.</title>
+            <p>Single nucleotide substitutions of each strain are underlined. The upper part of the figure, illustrates the predicted secondary structure of the 3&#x2032; terminal structure of Bologna/09 and the corresponding long stable hairpin (LSH) domain with the relative free energy of the structure estimated as &#x394;G (kcal/mol). The nucleotide substitutions from the 3&#x2032; terminus of human isolate to the different USUV strains are boxed, and their relative positions on the secondary structure are shown.</p>
+          </caption>
+          <graphic xlink:href="pone.0064761.g007"/>
+        </fig>
+        <p>The predicted secondary structure showed a similar folding of the 3&#x2032; LSH domain between the Bologna/09 isolate and the other USUV strains. In particular, domain III of the 3&#x2032; UTR showed a &#x394;G&#x200A;=&#x200A; &#x2212;38 Kcal/ml (<xref ref-type="fig" rid="pone-0064761-g007">Figure 7</xref>), while the Vienna strain (considered as the most representative isolate of the Austrian-Hungarian strains) showed a more stable predicted secondary structure (&#x394;G&#x200A;=&#x200A; &#x2212;39,6Kcal/ml). Based on these findings, our data suggest that the different folding free energy in the 3&#x2032; and 5&#x2032;- UTRs observed between the different USUV isolates could be an important factor in the evolution of Usutu virus.</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>Following the emergence of USUV encephalitis in birds in 2001 in Europe, <xref ref-type="bibr" rid="pone.0064761-Weissenbck1">[4]</xref>, <xref ref-type="bibr" rid="pone.0064761-Chvala1">[6]</xref>, <xref ref-type="bibr" rid="pone.0064761-Calzolari1">[8]</xref>, <xref ref-type="bibr" rid="pone.0064761-Weissenbck3">[9]</xref>, <xref ref-type="bibr" rid="pone.0064761-Becker1">[11]</xref>, <xref ref-type="bibr" rid="pone.0064761-Bakonyi2">[12]</xref> the subsequent identification of human encephalitis due to USUV in Italy, in 2009, <xref ref-type="bibr" rid="pone.0064761-Cavrini1">[17]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Pecorari1">[18]</xref> raised the possibility that this may represent the beginning of epidemic human USUV encephalitis in Europe <xref ref-type="bibr" rid="pone.0064761-Vazquez1">[10]</xref>. Until very recently, epizootiological and phylogenetic evidence has supported the assumption that USUV was introduced into Austria by infected introduced mosquitoes or birds, migrating to Europe from Africa where the virus was originally assumed to circulate relatively harmlessly amongst birds, infecting humans only rarely and without evidence of encephalitis in humans <xref ref-type="bibr" rid="pone.0064761-Nikolay1">[3]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Chvala1">[6]</xref>, <xref ref-type="bibr" rid="pone.0064761-Vazquez1">[10]</xref>. Recently, the evidence of USUV introduction into Europe at least since 1996, indicated that the Italian territory could be considered the epicenter of virus spread to the neighboring countries <xref ref-type="bibr" rid="pone.0064761-Weissenbck2">[5]</xref>. It was justifiably believed that following the introduction of USUV into Austria, it subsequently radiated from this epicenter, to neighboring countries <xref ref-type="bibr" rid="pone.0064761-Becker1">[11]</xref>. In addition to an epidemic of chikungunya fever which was introduced into northern Italy in 2007 by an infected human returning from India <xref ref-type="bibr" rid="pone.0064761-Proutski2">[37]</xref> two other arboviruses, bluetongue virus and Schmallenberg virus, have also emerged to cause epidemics in northern Europe in recent years <xref ref-type="bibr" rid="pone.0064761-Cavrini3">[38]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Beer1">[39]</xref>. Consequently, in view of our interest in emerging USUV, we determined the genomic sequence of Bologna/09 virus, the first known isolate of USUV to cause human encephalitis. European isolates derived from mosquitoes and birds were compared with the Bologna/09 strain. Our data revealed a close relationship between Bologna/09 and the European avian USUV strains, with a greater divergence from the African USUV isolate. Comparative sequence analysis of the Bologna/09 human encephalitic strain identified two significant amino acid substitutions, one in the DIII-Ir domain of the E protein (S595G) and the other in the non-structural (NS) NS5 protein (D3425E). Interestingly, a similar amino acid substitution in the RdRp domain of the NS5 region, was observed in flavivirus strains that are associated with meningoencephalitis in humans (JEV, WNV, MVEV and KUNV). Importantly, studies of the closely related flavivirus WNV have shown that substitutions in virtually equivalent positions in these two genes were associated with variation in the capacity of WNV to invade the central nervous system (CNS) of laboratory mice under experimental conditions <xref ref-type="bibr" rid="pone.0064761-Snchez1">[35]</xref>, <xref ref-type="bibr" rid="pone.0064761-Gould1">[40]</xref>, <xref ref-type="bibr" rid="pone.0064761-Chambers1">[41]</xref>. Domain DIII of the E protein of flaviviruses is the likely receptor-binding domain and the major determinant of virus cellular tropism, since this molecule binds to carbohydrate receptors on target cells [4244]. Specific amino acid substitutions within domain DIII have been implicated as mediators/moderators of virus infectivity, virulence, antigenicity and escape from neutralizing antibodies for WNV <xref ref-type="bibr" rid="pone.0064761-Gould1">[40]</xref>, <xref ref-type="bibr" rid="pone.0064761-Chu1">[45]</xref>. Intriguingly, similar amino acid substitutions in the E domain were found in DENV-2 isolates in Southern-Asia, that were associated with cases of human encephalitis, whether or not they were also associated with classical clinical manifestations of dengue infection <xref ref-type="bibr" rid="pone.0064761-Zhang1">[46]</xref>.</p>
+      <p>The flavivirus NS5 protein encodes the RNA dependent RNA polymerase which, together with other NS proteins and the underlying UTR skeletal backbone, is a critical component of the virus replication complex. Substitutions in the conserved domain of this polymerase, in the case of Bologna/09 (D3425E) are likely to impact, on viral replication efficiency via perturbation of the viral replication complex.</p>
+      <p>Based on our observations, we propose that the two unique substitutions identified in the Bologna/09 isolate may have played a role in the apparent altered tropism and neuroinvasive capacity of this virus for human neurological cells.</p>
+      <p>Furthermore, previous studies have drawn attention to the functional relevance of ORF secondary structures resulting from synonymous nucleotide substitutions in ssRNA viruses <xref ref-type="bibr" rid="pone.0064761-Cuevas1">[23]</xref>, <xref ref-type="bibr" rid="pone.0064761-Hamano1">[28]</xref>, <xref ref-type="bibr" rid="pone.0064761-Tuplin1">[30]</xref>. In particular, the study of Tuplin and co-workers conducted on the HCV genome, revealed that SNS in the ORF may play an important role in the folding of the RNA that impacts on essential viral processes, such as translation, replication and packaging <xref ref-type="bibr" rid="pone.0064761-Sironen1">[29]</xref>. Our analyses revealed SNS throughout the entire ORFs of the seven USUV strains and the pattern of these synonymous substitutions correlated with the geographic distribution of the USUV isolates. In particular, of the 41 SNS in the analyzed genomes of the seven USUV strains, 15 were unique for the Bologna 09 strain, another 15 were common to all Italian strains, and 4 were unique for the Austrian-Hungarian strains. Thus, the accumulation of SNS within the ORF of USUV reflects the phylogeographic separation of these viruses and appears to contribute significantly to the generation of genetic diversity and potentially, to the pathogenicity for different host species.</p>
+      <p>Extension of these observations further suggests the possibility that the SNS identified in the human Bologna/09 strain could correlate with specific changes in RNA secondary structure that result in thermo-dynamically more stable structures when compared with non-human isolates. Clearly, further biological and functional studies will be necessary to assess the significance of SNS in the determination of viral tropism, replication and pathogenicity.</p>
+      <p>The 5&#x2032; and 3&#x2032; un-translated regions (UTRs) of the USUV genome are composed of 96 and 667 bases, respectively <xref ref-type="bibr" rid="pone.0064761-Bakonyi1">[7]</xref>. Among the different flaviviruses, the 5&#x2032; and 3&#x2032;- UTRs form terminal stem-loop sequences that play an essential role in translation and replication of the viral genome <xref ref-type="bibr" rid="pone.0064761-Beasley1">[36]</xref>, <xref ref-type="bibr" rid="pone.0064761-Solomon1">[47]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Shi1">[48]</xref>. Previous studies with WNV have demonstrated that single nucleotide substitutions in the 3&#x2032;-UTR region can affect RNA processing and replication, as well as polyprotein synthesis and maturation during the replication cycle <xref ref-type="bibr" rid="pone.0064761-Thurner1">[49]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0064761-Davis1">[50]</xref>. Among the different functional regions within the 3&#x2032;- UTR, region III has been the most studied <xref ref-type="bibr" rid="pone.0064761-Blackwell1">[25]</xref>, <xref ref-type="bibr" rid="pone.0064761-Beasley1">[36]</xref> because it forms a long stable hairpin (LSH) that is conserved in all the flaviviruses studied thus far <xref ref-type="bibr" rid="pone.0064761-Beasley1">[36]</xref>, <xref ref-type="bibr" rid="pone.0064761-Shi1">[48]</xref>. It is important to note that in our study, specific nucleotide substitutions were identified in the LSH region of the 3&#x2032; - UTR of the strain Bologna/09 and that these substitutions were not identified amongst the other USUV strains for which complete genome sequence is presently available. The two nucleotide positions where the sequence was detected in the Bologna/09 strain genome (nt 641 and 650) were located in the 3&#x2032; region of the 3&#x2032; terminal structure. It needs to be emphasized that, with the exception of the Bologna/09 strain, this is a completely conserved sequence within the LSH in the different USUV genomes. Previous studies showed that the specific binding site for eukaryotic translation elongation factor (eEF1A) is located in the LSH domain within the 3&#x2032; - UTR and that nucleotide substitutions in this region decreased eEF1A binding in <italic>in vitro</italic> assays <xref ref-type="bibr" rid="pone.0064761-Blackwell1">[25]</xref>, <xref ref-type="bibr" rid="pone.0064761-Davis1">[50]</xref>. The eEF1A delivers the aminoacylated tRNAs and the GTP to the A site on the ribosome during protein synthesis <xref ref-type="bibr" rid="pone.0064761-Blackwell1">[25]</xref>, <xref ref-type="bibr" rid="pone.0064761-Davis1">[50]</xref>, thus mediating an important function of the viral replication process.</p>
+      <p>Blackwell and co-workers demonstrated that a single nucleotide substitution within this region was responsible for molecular re-orientation leading to increased interaction between EF1a and the 3&#x2032; SLH viral RNA in WNV and increased WNV replication <xref ref-type="bibr" rid="pone.0064761-Proutski1">[24]</xref>, <xref ref-type="bibr" rid="pone.0064761-Thurner1">[49]</xref>, <xref ref-type="bibr" rid="pone.0064761-Blackwell2">[51]</xref>.</p>
+      <p>Analysis of the RNA folding free energy both on the 5&#x2032; and 3&#x2032;-UTRs observed from different strains suggests divergent evolution of USUV. Furthermore, these data could indicate that the RNA folding free energy of the UTR regions could have arisen following host adaptation of USUV from birds to humans possibly under the selective influence of the different temperatures in humans and birds.</p>
+      <p>Perhaps the key message of this study is that the genomic sequence of the human Bologna/09 USUV isolate exhibits several specific differences when compared with the genomes of USUV isolates from mosquitoes or birds. We recognize that our results are based on the identification and isolation of a single human case of clinically neuroinvasive disease. However, in summary, we have identified two amino acid substitutions, one in the DIII domain of the E protein and one in the RdRp conserved domain of the NS5 protein, together with unique synonymous substitutions throughout the genome.</p>
+      <p>In conclusion, whilst more evidence will be required, the concept that a human neurovirulent strain of USUV with unique genetic characteristics has been identified in northern Italy requires serious further consideration in view of the potential public health implications.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0064761.s001">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>Comparison of the nucleotide and corresponding amino-acid substitutions between Bologna/09 (human isolate) and African (SAAR-1776 strain) and European (Vienna 2001, Meise H 2002, Budapest 2005, Italia 2009 and Germany 2011) USUV isolates.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+        <media xlink:href="pone.0064761.s001.doc" mimetype="application" mime-subtype="msword">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0064761-Calisher1">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Calisher</surname><given-names>CH</given-names></name>, <name><surname>Gould</surname><given-names>EA</given-names></name> (<year>2003</year>) <article-title>Taxonomy of the virus family Flaviviridae</article-title>. <source>Adv Virus Res</source><volume>59</volume>: <fpage>1</fpage>&#x2013;<lpage>19</lpage><pub-id pub-id-type="pmid">14696325</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Pfeffer1">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Pfeffer</surname><given-names>M</given-names></name>, <name><surname>Dobler</surname><given-names>G</given-names></name> (<year>2010</year>) <article-title>Emergence of zoonotic arboviruses by animal trade and migration</article-title>. <source>Parasit Vectors</source><volume>3</volume>: <fpage>35</fpage><pub-id pub-id-type="pmid">20377873</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Nikolay1">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Nikolay</surname><given-names>B</given-names></name>, <name><surname>Diallo</surname><given-names>M</given-names></name>, <name><surname>Boye</surname><given-names>CS</given-names></name>, <name><surname>Sall</surname><given-names>AA</given-names></name> (<year>2011</year>) <article-title>Usutu virus in Africa</article-title>. <source>Vector Borne Zoonotic Dis</source><volume>11</volume>: <fpage>1417</fpage>&#x2013;<lpage>1423</lpage><pub-id pub-id-type="pmid">21767160</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Weissenbck1">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Weissenb&#xF6;ck</surname><given-names>H</given-names></name>, <name><surname>Kolodziejek</surname><given-names>J</given-names></name>, <name><surname>Url</surname><given-names>A</given-names></name>, <name><surname>Lussy</surname><given-names>H</given-names></name>, <name><surname>Rebel-Bauder</surname><given-names>B</given-names></name>, <etal>et al</etal> (<year>2002</year>) <article-title>Emergence of Usutu virus, an African mosquito-borne flavivirus of the Japanese encephalitis virus group, central Europe</article-title>. <source>Emerg Infect Dis</source><volume>8</volume>: <fpage>652</fpage>&#x2013;<lpage>656</lpage><pub-id pub-id-type="pmid">12095429</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Weissenbck2">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Weissenb&#xF6;ck</surname><given-names>H</given-names></name>, <name><surname>Bakonyi</surname><given-names>T</given-names></name>, <name><surname>Rossi</surname><given-names>G</given-names></name>, <name><surname>Mani</surname><given-names>P</given-names></name>, <name><surname>Nowotny</surname><given-names>N</given-names></name> (<year>2013</year>) <article-title>Usutu virus, Italy, 2013</article-title>. <source>Emerg Infect Dis</source><volume>19</volume>: <fpage>274</fpage>&#x2013;<lpage>277</lpage><pub-id pub-id-type="pmid">23347844</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Chvala1">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Chvala</surname><given-names>S</given-names></name>, <name><surname>Kolodziejek</surname><given-names>J</given-names></name>, <name><surname>Nowotny</surname><given-names>N</given-names></name>, <name><surname>Weissenb&#xF6;ck</surname><given-names>H</given-names></name> (<year>2004</year>) <article-title>Pathology and viral distribution in fatal Usutu virus infections of birds from the 2001 and 2002 outbreaks in Austria</article-title>. <source>J Comp Pathol</source><volume>131</volume>: <fpage>176</fpage>&#x2013;<lpage>185</lpage><pub-id pub-id-type="pmid">15276857</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Bakonyi1">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>Bakonyi</surname><given-names>T</given-names></name>, <name><surname>Gould</surname><given-names>EA</given-names></name>, <name><surname>Kolodziejek</surname><given-names>J</given-names></name>, <name><surname>Weissenb&#xF6;ck</surname><given-names>H</given-names></name>, <name><surname>Nowotny</surname><given-names>N</given-names></name> (<year>2004</year>) <article-title>Complete genome analysis and molecular characterization of Usutu virus that emerged in Austria in 2001: comparison with the South African strain SAAR-1776 and other flaviviruses</article-title>. <source>Virology</source><volume>328</volume>: <fpage>301</fpage>&#x2013;<lpage>310</lpage><pub-id pub-id-type="pmid">15464850</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Calzolari1">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Calzolari</surname><given-names>M</given-names></name>, <name><surname>Gaibani</surname><given-names>P</given-names></name>, <name><surname>Bellini</surname><given-names>R</given-names></name>, <name><surname>Defilippo</surname><given-names>F</given-names></name>, <name><surname>Pierro</surname><given-names>A</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Mosquito, bird and human surveillance of west nile and usutu viruses in emilia-romagna region (Italy) in 2010</article-title>. <source>PLoS One</source><volume>7</volume>: <fpage>e38058</fpage><pub-id pub-id-type="pmid">22666446</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Weissenbck3">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Weissenb&#xF6;ck</surname><given-names>H</given-names></name>, <name><surname>Kolodziejek</surname><given-names>J</given-names></name>, <name><surname>Fragner</surname><given-names>K</given-names></name>, <name><surname>Kuhn</surname><given-names>R</given-names></name>, <name><surname>Pfeffer</surname><given-names>M</given-names></name> (<year>2003</year>) <article-title>Usutu virus activity in Austria, 2001&#x2013;2002</article-title>. <source>Microbes Infect</source><volume>5</volume>: <fpage>1132</fpage>&#x2013;<lpage>1136</lpage><pub-id pub-id-type="pmid">14554255</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Vazquez1">
+        <label>10</label>
+        <mixed-citation publication-type="other">Vazquez A, Jimenez-Clavero M, Franco L, Donoso-Mantke O, Sambri V, <etal>et al</etal>. (2011) Usutu virus: potential risk of human disease in Europe. EuroSurveill 16: pii: 19935.</mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Becker1">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Becker</surname><given-names>N</given-names></name>, <name><surname>J&#xF6;st</surname><given-names>H</given-names></name>, <name><surname>Ziegler</surname><given-names>U</given-names></name>, <name><surname>Eiden</surname><given-names>M</given-names></name>, <name><surname>H&#xF6;per</surname><given-names>D</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Epizootic emergence of Usutu virus in wild and captive birds in Germany</article-title>. <source>PLoS One</source><volume>7</volume>: <fpage>e32604</fpage><pub-id pub-id-type="pmid">22389712</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Bakonyi2">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Bakonyi</surname><given-names>T</given-names></name>, <name><surname>Erd&#xE9;lyi</surname><given-names>K</given-names></name>, <name><surname>Ursu</surname><given-names>K</given-names></name>, <name><surname>Ferenczi</surname><given-names>E</given-names></name>, <name><surname>Cs&#xF6;rgo</surname><given-names>T</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>Emergence of Usutu virus in Hungary</article-title>. <source>J Clin Microbiol</source><volume>45</volume>: <fpage>3870</fpage>&#x2013;<lpage>3874</lpage><pub-id pub-id-type="pmid">17913929</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Savini1">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Savini</surname><given-names>G</given-names></name>, <name><surname>Monaco</surname><given-names>F</given-names></name>, <name><surname>Terregino</surname><given-names>C</given-names></name>, <name><surname>Di Gennaro</surname><given-names>A</given-names></name>, <name><surname>Bano</surname><given-names>L</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Usutu virus in Italy: an emergence or a silent infection?</article-title><source>Vet Microbiol</source><volume>151</volume>: <fpage>264</fpage>&#x2013;<lpage>274</lpage><pub-id pub-id-type="pmid">21550731</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Manarolla1">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Manarolla</surname><given-names>G</given-names></name>, <name><surname>Bakonyi</surname><given-names>T</given-names></name>, <name><surname>Gallazzi</surname><given-names>D</given-names></name>, <name><surname>Crosta</surname><given-names>L</given-names></name>, <name><surname>Weissenb&#xF6;ck</surname><given-names>H</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Usutu virus in wild birds in northern Italy</article-title>. <source>Vet Microbio</source><volume>l141</volume>: <fpage>159</fpage>&#x2013;<lpage>163</lpage></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Lelli1">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Lelli</surname><given-names>R</given-names></name>, <name><surname>Savini</surname><given-names>G</given-names></name>, <name><surname>Teodori</surname><given-names>L</given-names></name>, <name><surname>Filipponi</surname><given-names>G</given-names></name>, <name><surname>Di Gennaro</surname><given-names>A</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>Serological evidence of USUTU virus occurrence in north-eastern Italy</article-title>. <source>Zoonoses Public Health</source><volume>55</volume>: <fpage>361</fpage>&#x2013;<lpage>367</lpage><pub-id pub-id-type="pmid">18667029</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Tamba1">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Tamba</surname><given-names>M</given-names></name>, <name><surname>Bonilauri</surname><given-names>P</given-names></name>, <name><surname>Bellini</surname><given-names>R</given-names></name>, <name><surname>Calzolari</surname><given-names>M</given-names></name>, <name><surname>Albieri</surname><given-names>A</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>Detection of Usutu virus within a West Nile virus surveillance program in Northern Italy</article-title>. <source>Vector Borne Zoonotic Dis</source><volume>11</volume>: <fpage>551</fpage>&#x2013;<lpage>557</lpage><pub-id pub-id-type="pmid">20849275</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Cavrini1">
+        <label>17</label>
+        <mixed-citation publication-type="other">Cavrini F, Gaibani P, Longo G, Pierro AM, Rossini G, <etal>et al</etal>. (2009) Usutu virus infection in a patient who underwent orthotropic liver transplantation, Italy, August-September 2009. Euro Surveill 14: pii: 19448.</mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Pecorari1">
+        <label>18</label>
+        <mixed-citation publication-type="other">Pecorari M, Longo G, Gennari W, Grottola A, Sabbatini A, <etal>et al</etal>. (2009) First human case of Usutu virus neuroinvasive infection, Italy, August-September 2009. Euro Surveill 14: pii: 19446.</mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Gaibani1">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Gaibani</surname><given-names>P</given-names></name>, <name><surname>Pierro</surname><given-names>AM</given-names></name>, <name><surname>Cavrini</surname><given-names>F</given-names></name>, <name><surname>Rossini</surname><given-names>G</given-names></name>, <name><surname>Landini</surname><given-names>MP</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>False-positive transcription-mediated amplification assay detection of West Nile virus in blood from a patient with viremia caused by an Usutu virus infection</article-title>. <source>J Clin Microbiol</source><volume>48</volume>: <fpage>3338</fpage>&#x2013;<lpage>3339</lpage><pub-id pub-id-type="pmid">20592138</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Cavrini2">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Cavrini</surname><given-names>F</given-names></name>, <name><surname>Della Pepa</surname><given-names>ME</given-names></name>, <name><surname>Gaibani</surname><given-names>P</given-names></name>, <name><surname>Pierro</surname><given-names>AM</given-names></name>, <name><surname>Rossini</surname><given-names>G</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>A rapid and specific real-time RT-PCR assay to identify Usutu virus in human plasma, serum, and cerebrospinal fluid</article-title>. <source>J Clin Virol</source><volume>50</volume>: <fpage>221</fpage>&#x2013;<lpage>223</lpage><pub-id pub-id-type="pmid">21156352</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Gaibani2">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Gaibani</surname><given-names>P</given-names></name>, <name><surname>Pierro</surname><given-names>A</given-names></name>, <name><surname>Alicino</surname><given-names>R</given-names></name>, <name><surname>Rossini</surname><given-names>G</given-names></name>, <name><surname>Cavrini</surname><given-names>F</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Detection of Usutu-virus-specific IgG in blood donors from northern Italy</article-title>. <source>Vector Borne Zoonotic Dis</source><volume>12</volume>: <fpage>12431</fpage>&#x2013;<lpage>12433</lpage></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Allering1">
+        <label>22</label>
+        <mixed-citation publication-type="other">Allering L, Jost H, Emmerich P, Gunther S, Lattwein E, <etal>et al</etal>. (2012) Detection of Usutu virus infection in a healthy blood donor from south-west Germany, 2012. Euro Surveill 17: pii: 20341.</mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Cuevas1">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Cuevas</surname><given-names>JM</given-names></name>, <name><surname>Domingo-Calap</surname><given-names>P</given-names></name>, <name><surname>Sanju&#xE1;n</surname><given-names>R</given-names></name> (<year>2012</year>) <article-title>The fitness effects of synonymous mutations in DNA and RNA viruses</article-title>. <source>Mol Biol Evol</source><volume>29</volume>: <fpage>17</fpage>&#x2013;<lpage>20</lpage><pub-id pub-id-type="pmid">21771719</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Proutski1">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Proutski</surname><given-names>V</given-names></name>, <name><surname>Gritsun</surname><given-names>TS</given-names></name>, <name><surname>Gould</surname><given-names>EA</given-names></name>, <name><surname>Holmes</surname><given-names>EC</given-names></name> (<year>1999</year>) <article-title>Biological consequences of deletions within the 3&#x2032;-untranslated region of flaviviruses may be due to rearrangements of RNA secondary structure</article-title>. <source>Virus Res</source><volume>64</volume>: <fpage>107</fpage>&#x2013;<lpage>123</lpage><pub-id pub-id-type="pmid">10518708</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Blackwell1">
+        <label>25</label>
+        <mixed-citation publication-type="journal"><name><surname>Blackwell</surname><given-names>JL</given-names></name>, <name><surname>Brinton</surname><given-names>MA</given-names></name> (<year>1997</year>) <article-title>Translation elongation factor-1 alpha interacts with the 3&#x2032; stem-loop region of West Nile virus genomic RNA</article-title>. <source>J Virol</source><volume>71</volume>: <fpage>6433</fpage>&#x2013;<lpage>6444</lpage><pub-id pub-id-type="pmid">9261361</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Funk1">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Funk</surname><given-names>A</given-names></name>, <name><surname>Truong</surname><given-names>K</given-names></name>, <name><surname>Nagasaki</surname><given-names>T</given-names></name>, <name><surname>Torres</surname><given-names>S</given-names></name>, <name><surname>Floden</surname><given-names>N</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>RNA structures required for production of subgenomic flavivirus RNA</article-title>. <source>J Virol</source><volume>84</volume>: <fpage>11407</fpage>&#x2013;<lpage>11417</lpage><pub-id pub-id-type="pmid">20719943</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Novella1">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Novella</surname><given-names>IS</given-names></name>, <name><surname>Z&#xE1;rate</surname><given-names>S</given-names></name>, <name><surname>Metzgar</surname><given-names>D</given-names></name>, <name><surname>Ebendick-Corpus</surname><given-names>BE</given-names></name> (<year>2004</year>) <article-title>Positive selection of synonymous mutations in vesicular stomatitis virus</article-title>. <source>J Mol Biol</source><volume>342</volume>: <fpage>1415</fpage>&#x2013;<lpage>1421</lpage><pub-id pub-id-type="pmid">15364570</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Hamano1">
+        <label>28</label>
+        <mixed-citation publication-type="journal"><name><surname>Hamano</surname><given-names>T</given-names></name>, <name><surname>Matsuo</surname><given-names>K</given-names></name>, <name><surname>Hibi</surname><given-names>Y</given-names></name>, <name><surname>Victoriano</surname><given-names>AF</given-names></name>, <name><surname>Takahashi</surname><given-names>N</given-names></name>, <etal>et al</etal> (<year>2007</year>) <article-title>A single-nucleotide synonymous mutation in the gag gene controlling human immunodeficiency virus type 1 virion production</article-title>. <source>J Virol</source><volume>81</volume>: <fpage>1528</fpage>&#x2013;<lpage>1533</lpage><pub-id pub-id-type="pmid">17121798</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Sironen1">
+        <label>29</label>
+        <mixed-citation publication-type="journal"><name><surname>Sironen</surname><given-names>T</given-names></name>, <name><surname>Kallio</surname><given-names>ER</given-names></name>, <name><surname>Vaheri</surname><given-names>A</given-names></name>, <name><surname>Lundkvist</surname><given-names>A</given-names></name>, <name><surname>Plyusnin</surname><given-names>A</given-names></name> (<year>2008</year>) <article-title>Quasispecies dynamics and fixation of a synonymous mutation in hantavirus transmission</article-title>. <source>J Gen Virol</source><volume>89</volume>: <fpage>1309</fpage>&#x2013;<lpage>1313</lpage><pub-id pub-id-type="pmid">18420810</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Tuplin1">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>Tuplin</surname><given-names>A</given-names></name>, <name><surname>Wood</surname><given-names>J</given-names></name>, <name><surname>Evans</surname><given-names>DJ</given-names></name>, <name><surname>Patel</surname><given-names>AH</given-names></name>, <name><surname>Simmonds</surname><given-names>P</given-names></name> (<year>2002</year>) <article-title>Thermodynamic and phylogenetic prediction of RNA secondary structures in the coding region of hepatitis C virus</article-title>. <source>RNA</source><volume>8</volume>: <fpage>824</fpage>&#x2013;<lpage>841</lpage><pub-id pub-id-type="pmid">12088154</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-DomingoCalap1">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>Domingo-Calap</surname><given-names>P</given-names></name>, <name><surname>Cuevas</surname><given-names>JM</given-names></name>, <name><surname>Sanju&#xE1;n</surname><given-names>R</given-names></name> (<year>2009</year>) <article-title>The fitness effects of random mutations in single-stranded DNA and RNA bacteriophages</article-title>. <source>PLoS Genet</source><volume>5</volume>: <fpage>e1000742</fpage><pub-id pub-id-type="pmid">19956760</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Tamura1">
+        <label>32</label>
+        <mixed-citation publication-type="journal"><name><surname>Tamura</surname><given-names>K</given-names></name>, <name><surname>Dudley</surname><given-names>J</given-names></name>, <name><surname>Nei</surname><given-names>M</given-names></name>, <name><surname>Kumar</surname><given-names>S</given-names></name> (<year>2007</year>) <article-title>MEGA4: Molecular Evolutionary Genetics Analysis (MEGA) software version 4.0</article-title>. <source>Mol Biol Evol</source><volume>24</volume>: <fpage>1596</fpage>&#x2013;<lpage>1569</lpage><pub-id pub-id-type="pmid">17488738</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Saitou1">
+        <label>33</label>
+        <mixed-citation publication-type="journal"><name><surname>Saitou</surname><given-names>N</given-names></name>, <name><surname>Nei</surname><given-names>M</given-names></name> (<year>1987</year>) <article-title>The neighbor-joining method: a new method for reconstructing phylogenetic trees</article-title>. <source>Mol Biol Evol</source><volume>4</volume>: <fpage>406</fpage>&#x2013;<lpage>425</lpage><pub-id pub-id-type="pmid">3447015</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Diamond1">
+        <label>34</label>
+        <mixed-citation publication-type="journal"><name><surname>Diamond</surname><given-names>MS</given-names></name>, <name><surname>Pierson</surname><given-names>TC</given-names></name>, <name><surname>Fremont</surname><given-names>DH</given-names></name> (<year>2008</year>) <article-title>The structural immunology of antibody protection against West Nile virus</article-title>. <source>Immunol Rev</source><volume>225</volume>: <fpage>212</fpage>&#x2013;<lpage>225</lpage><pub-id pub-id-type="pmid">18837784</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Snchez1">
+        <label>35</label>
+        <mixed-citation publication-type="journal"><name><surname>S&#xE1;nchez</surname><given-names>MD</given-names></name>, <name><surname>Pierson</surname><given-names>TC</given-names></name>, <name><surname>McAllister</surname><given-names>D</given-names></name>, <name><surname>Hanna</surname><given-names>SL</given-names></name>, <etal>et al</etal> (<year>2005</year>) <article-title>Characterization of neutralizing antibodies to West Nile virus</article-title>. <source>Virology</source><volume>336</volume>: <fpage>70</fpage>&#x2013;<lpage>82</lpage><pub-id pub-id-type="pmid">15866072</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Beasley1">
+        <label>36</label>
+        <mixed-citation publication-type="journal"><name><surname>Beasley</surname><given-names>DW</given-names></name>, <name><surname>Barrett</surname><given-names>AD</given-names></name> (<year>2002</year>) <article-title>Identification of neutralizing epitopes within structural domain III of the West Nile virus envelope protein</article-title>. <source>J Virol</source><volume>76</volume>: <fpage>13097</fpage>&#x2013;<lpage>13100</lpage><pub-id pub-id-type="pmid">12438639</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Proutski2">
+        <label>37</label>
+        <mixed-citation publication-type="journal"><name><surname>Proutski</surname><given-names>V</given-names></name>, <name><surname>Gould</surname><given-names>EA</given-names></name>, <name><surname>Holmes</surname><given-names>EC</given-names></name> (<year>1997</year>) <article-title>Secondary structure of the 3&#x2032; untranslated region of flaviviruses: similarities and differences</article-title>. <source>Nucleic Acids Res</source><volume>25</volume>: <fpage>1194</fpage>&#x2013;<lpage>2002</lpage><pub-id pub-id-type="pmid">9092629</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Cavrini3">
+        <label>38</label>
+        <mixed-citation publication-type="journal"><name><surname>Cavrini</surname><given-names>F</given-names></name>, <name><surname>Gaibani</surname><given-names>P</given-names></name>, <name><surname>Pierro</surname><given-names>AM</given-names></name>, <name><surname>Rossini</surname><given-names>G</given-names></name>, <name><surname>Landini</surname><given-names>MP</given-names></name>, <etal>et al</etal> (<year>2009</year>) <article-title>Chikungunya: an emerging and spreading arthropod-borne viral disease</article-title>. <source>J Infect Dev Ctries</source><volume>3</volume>: <fpage>744</fpage>&#x2013;<lpage>752</lpage><pub-id pub-id-type="pmid">20009275</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Beer1">
+        <label>39</label>
+        <mixed-citation publication-type="journal"><name><surname>Beer</surname><given-names>M</given-names></name>, <name><surname>Conraths</surname><given-names>FJ</given-names></name>, <name><surname>Van Der Poel</surname><given-names>WH</given-names></name> (<year>2013</year>) <article-title>&#x2018;Schmallenberg virus&#x2019; - a novel orthobunyavirus emerging in Europe</article-title>. <source>Epidemiol Infect</source><volume>141</volume>: <fpage>1</fpage>&#x2013;<lpage>8</lpage><pub-id pub-id-type="pmid">23046921</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Gould1">
+        <label>40</label>
+        <mixed-citation publication-type="journal"><name><surname>Gould</surname><given-names>EA</given-names></name>, <name><surname>Higgs</surname><given-names>S</given-names></name> (<year>2009</year>) <article-title>Impact of climate change and other factors on emerging arbovirus diseases</article-title>. <source>Trans R Soc Trop Med Hyg</source><volume>103</volume>: <fpage>109</fpage>&#x2013;<lpage>121</lpage><pub-id pub-id-type="pmid">18799177</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Chambers1">
+        <label>41</label>
+        <mixed-citation publication-type="journal"><name><surname>Chambers</surname><given-names>TJ</given-names></name>, <name><surname>Halevy</surname><given-names>M</given-names></name>, <name><surname>Nestorowicz</surname><given-names>A</given-names></name>, <name><surname>Rice</surname><given-names>CM</given-names></name>, <name><surname>Lustig</surname><given-names>S</given-names></name> (<year>1998</year>) <article-title>West Nile virus envelope proteins: nucleotide sequence analysis of strains differing in mouse neuroinvasiveness</article-title>. <source>J Gen Virol</source><volume>79</volume>: <fpage>2375</fpage>&#x2013;<lpage>2380</lpage><pub-id pub-id-type="pmid">9780042</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Botha1">
+        <label>42</label>
+        <mixed-citation publication-type="journal"><name><surname>Botha</surname><given-names>EM</given-names></name>, <name><surname>Markotter</surname><given-names>W</given-names></name>, <name><surname>Wolfaardt</surname><given-names>M</given-names></name>, <name><surname>Paweska</surname><given-names>JT</given-names></name>, <name><surname>Swanepoel</surname><given-names>R</given-names></name>, <etal>et al</etal> (<year>2008</year>) <article-title>Genetic determinants of virulence in pathogenic lineage 2 West Nile virus strains</article-title>. <source>Emerg Infect Dis</source><volume>14</volume>: <fpage>222</fpage>&#x2013;<lpage>230</lpage><pub-id pub-id-type="pmid">18258114</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-McMinn1">
+        <label>43</label>
+        <mixed-citation publication-type="journal"><name><surname>McMinn</surname><given-names>PC</given-names></name> (<year>1997</year>) <article-title>The molecular basis of virulence of the encephalitogenic flaviviruses</article-title>. <source>J Gen Virol</source><volume>78</volume>: <fpage>2711</fpage>&#x2013;<lpage>2722</lpage><pub-id pub-id-type="pmid">9367356</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Chin1">
+        <label>44</label>
+        <mixed-citation publication-type="journal"><name><surname>Chin</surname><given-names>JF</given-names></name>, <name><surname>Chu</surname><given-names>JJ</given-names></name>, <name><surname>Ng</surname><given-names>ML</given-names></name> (<year>2007</year>) <article-title>The envelope glycoprotein domain III of dengue virus serotypes 1 and 2 inhibit virus entry</article-title>. <source>Microbes Infect</source><volume>9</volume>: <fpage>1</fpage>&#x2013;<lpage>6</lpage><pub-id pub-id-type="pmid">17196419</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Chu1">
+        <label>45</label>
+        <mixed-citation publication-type="journal"><name><surname>Chu</surname><given-names>JJ</given-names></name>, <name><surname>Rajamanonmani</surname><given-names>R</given-names></name>, <name><surname>Li</surname><given-names>J</given-names></name>, <name><surname>Bhuvanakantham</surname><given-names>R</given-names></name>, <name><surname>Lescar</surname><given-names>J</given-names></name>, <etal>et al</etal> (<year>2005</year>) <article-title>Inhibition of West Nile virus entry by using a recombinant domain III from the envelope glycoprotein</article-title>. <source>J Gen Virol</source><volume>86</volume>: <fpage>405</fpage>&#x2013;<lpage>412</lpage><pub-id pub-id-type="pmid">15659760</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Zhang1">
+        <label>46</label>
+        <mixed-citation publication-type="journal"><name><surname>Zhang</surname><given-names>S</given-names></name>, <name><surname>Bovshik</surname><given-names>EI</given-names></name>, <name><surname>Maillard</surname><given-names>R</given-names></name>, <name><surname>Gromowski</surname><given-names>GD</given-names></name>, <name><surname>Volk</surname><given-names>DE</given-names></name>, <etal>et al</etal> (<year>2010</year>) <article-title>Role of BC loop residues in structure, function and antigenicity of the West Nile virus envelope protein receptor-binding domain III</article-title>. <source>Virology</source><volume>403</volume>: <fpage>85</fpage>&#x2013;<lpage>91</lpage><pub-id pub-id-type="pmid">20447672</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Solomon1">
+        <label>47</label>
+        <mixed-citation publication-type="journal"><name><surname>Solomon</surname><given-names>T</given-names></name>, <name><surname>Dung</surname><given-names>NM</given-names></name>, <name><surname>Vaughn</surname><given-names>DW</given-names></name>, <name><surname>Kneen</surname><given-names>R</given-names></name>, <name><surname>Thao</surname><given-names>LT</given-names></name>, <etal>et al</etal> (<year>2000</year>) <article-title>Neurological manifestations of dengue infection</article-title>. <source>Lancet</source><volume>355</volume>: <fpage>1053</fpage>&#x2013;<lpage>1059</lpage><pub-id pub-id-type="pmid">10744091</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Shi1">
+        <label>48</label>
+        <mixed-citation publication-type="journal"><name><surname>Shi</surname><given-names>PY</given-names></name>, <name><surname>Li</surname><given-names>W</given-names></name>, <name><surname>Brinton</surname><given-names>MA</given-names></name> (<year>1996</year>) <article-title>Cell proteins bind specifically to West Nile virus minus-strand 3&#x2032; stem-loop RNA</article-title>. <source>J Virol</source><volume>70</volume>: <fpage>6278</fpage>&#x2013;<lpage>6287</lpage><pub-id pub-id-type="pmid">8709255</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Thurner1">
+        <label>49</label>
+        <mixed-citation publication-type="journal"><name><surname>Thurner</surname><given-names>C</given-names></name>, <name><surname>Witwer</surname><given-names>C</given-names></name>, <name><surname>Hofacker</surname><given-names>IL</given-names></name>, <name><surname>Stadler</surname><given-names>PF</given-names></name> (<year>2004</year>) <article-title>Conserved RNA secondary structures in Flaviviridae genomes</article-title>. <source>J Gen Virol</source><volume>85</volume>: <fpage>1113</fpage>&#x2013;<lpage>1124</lpage><pub-id pub-id-type="pmid">15105528</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Davis1">
+        <label>50</label>
+        <mixed-citation publication-type="journal"><name><surname>Davis</surname><given-names>WG</given-names></name>, <name><surname>Blackwell</surname><given-names>JL</given-names></name>, <name><surname>Shi</surname><given-names>PY</given-names></name>, <name><surname>Brinton</surname><given-names>MA</given-names></name> (<year>2007</year>) <article-title>Interaction between the cellular protein eEF1A and the 3&#x2032;-terminal stem-loop of West Nile virus genomic RNA facilitates viral minus-strand RNA synthesis</article-title>. <source>J Virol</source><volume>81</volume>: <fpage>10172</fpage>&#x2013;<lpage>10187</lpage><pub-id pub-id-type="pmid">17626087</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0064761-Blackwell2">
+        <label>51</label>
+        <mixed-citation publication-type="journal"><name><surname>Blackwell</surname><given-names>JL</given-names></name>, <name><surname>Brinton</surname><given-names>MA</given-names></name> (<year>1995</year>) <article-title>BHK cell proteins that bind to the 3&#x2032; stem-loop structure of the West Nile virus genome RNA</article-title>. <source>J Virol</source><volume>69</volume>: <fpage>5650</fpage>&#x2013;<lpage>5658</lpage><pub-id pub-id-type="pmid">7637011</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

@@ -1,0 +1,1445 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:ali="http://www.niso.org/schemas/ali/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, CA USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">26214305</article-id>
+      <article-id pub-id-type="pmc">4516357</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0133742</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-15-02223</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Development of a Targeted Multi-Disorder High-Throughput Sequencing Assay for the Effective Identification of Disease-Causing Variants</article-title>
+        <alt-title alt-title-type="running-head">Targeted Multi-Disorder Sequencing Assay</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Delio</surname>
+            <given-names>Maria</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Patel</surname>
+            <given-names>Kunjan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Maslov</surname>
+            <given-names>Alex</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Marion</surname>
+            <given-names>Robert W.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff002">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>McDonald</surname>
+            <given-names>Thomas V.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff003">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Cadoff</surname>
+            <given-names>Evan M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff004">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Golden</surname>
+            <given-names>Aaron</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Greally</surname>
+            <given-names>John M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Vijg</surname>
+            <given-names>Jan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Morrow</surname>
+            <given-names>Bernice</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Montagna</surname>
+            <given-names>Cristina</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff004">
+            <sup>4</sup>
+          </xref>
+          <xref rid="cor001" ref-type="corresp">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff001">
+        <label>1</label>
+        <addr-line>Department of Genetics, Albert Einstein College of Medicine, Bronx, New York, United States of America</addr-line>
+      </aff>
+      <aff id="aff002">
+        <label>2</label>
+        <addr-line>Divisions of Developmental Medicine &amp; Genetics, Children's Hospital at Montefiore, Bronx, New York, United States of America</addr-line>
+      </aff>
+      <aff id="aff003">
+        <label>3</label>
+        <addr-line>Department of Medicine/Cardiology, Albert Einstein College of Medicine, Bronx, New York, United States of America</addr-line>
+      </aff>
+      <aff id="aff004">
+        <label>4</label>
+        <addr-line>Department of Pathology, Albert Einstein College of Medicine, Bronx, New York, United States of America</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Krahe</surname>
+            <given-names>Ralf</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>University of Texas MD Anderson Cancer Center, UNITED STATES</addr-line>
+      </aff>
+      <author-notes>
+        <fn fn-type="conflict" id="coi001">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con" id="contrib001">
+          <p>Conceived and designed the experiments: JMG JV BM CM AM. Performed the experiments: MD KP AM. Analyzed the data: MD KP AG. Contributed reagents/materials/analysis tools: RWM TVM EMC. Wrote the paper: MD KP RWM TVM JV BM CM.</p>
+        </fn>
+        <corresp id="cor001">* E-mail: <email>Cristina.Montagna@einstein.yu.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>27</day>
+        <month>7</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2015</year>
+      </pub-date>
+      <volume>10</volume>
+      <issue>7</issue>
+      <elocation-id>e0133742</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>27</day>
+          <month>1</month>
+          <year>2015</year>
+        </date>
+        <date date-type="accepted">
+          <day>30</day>
+          <month>6</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2015</copyright-year>
+        <copyright-holder>Delio et al</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited</license-p>
+        </license>
+      </permissions>
+      <self-uri content-type="pdf" xlink:type="simple" xlink:href="pone.0133742.pdf"/>
+      <abstract>
+        <sec id="sec001">
+          <title>Background</title>
+          <p>While next generation sequencing (NGS) is a useful tool for the identification of genetic variants to aid diagnosis and support therapy decision, high sequencing costs have limited its application within routine clinical care, especially in economically depressed areas. To investigate the utility of a multi-disease NGS based genetic test, we designed a custom sequencing assay targeting over thirty disease-associated areas including cardiac disorders, intellectual disabilities, hearing loss, collagenopathies, muscular dystrophy, Ashkenazi Jewish genetic disorders, and complex Mendelian disorders. We focused on these specific areas based on the interest of our collaborative clinical team, suggesting these diseases being the ones in need for the development of a sequencing-screening assay.</p>
+        </sec>
+        <sec id="sec002">
+          <title>Results</title>
+          <p>We targeted all coding, untranslated regions (UTR) and flanking intronic regions of 650 known disease-associated genes using the Roche-NimbleGen EZ SeqCapV3 capture system and sequenced on the Illumina HiSeq 2500 Rapid Run platform. Eight controls with known variants and one HapMap sample were first sequenced to assess the performance of the panel. Subsequently, as a proof of principle and to explore the possible utility of our test, we analyzed test disease subjects (n = 16). Eight had known Mendelian disorders and eight had complex pediatric diseases. In addition to assess whether copy number variation may be of utility as a companion assay relative to these specific disease areas, we used the Affymetrix Genome-Wide SNP Array 6.0 to analyze the same samples.</p>
+        </sec>
+        <sec id="sec003">
+          <title>Conclusion</title>
+          <p>We identified potentially disease-associated variants: 22 missense, 4 nonsense, 1 frameshift, and 1 splice variants (16 previously identified, 12 novel among dbSNP and 15 novel among NHLBI Exome Variant Server). We found multi-disease targeted high-throughput sequencing to be a cost efficient approach in detecting disease-associated variants to aid diagnosis.</p>
+        </sec>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work was supported by RSG-11-021-01-CNE from <ext-link ext-link-type="uri" xlink:href="http://www.cancer.org">http://www.cancer.org</ext-link>. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <fig-count count="4"/>
+        <table-count count="4"/>
+        <page-count count="18"/>
+      </counts>
+      <custom-meta-group>
+        <custom-meta id="data-availability">
+          <meta-name>Data Availability</meta-name>
+          <meta-value>All data files are available through the Sequence Read Archive (SRA) (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/sra">http://www.ncbi.nlm.nih.gov/sra</ext-link>) under the project ID: Einstein 650 gene panel.</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+    <notes>
+      <title>Data Availability</title>
+      <p>All data files are available through the Sequence Read Archive (SRA) (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/sra">http://www.ncbi.nlm.nih.gov/sra</ext-link>) under the project ID: Einstein 650 gene panel.</p>
+    </notes>
+  </front>
+  <body>
+    <sec sec-type="intro" id="sec004">
+      <title>Introduction</title>
+      <p>Genetically heterogeneous disorders are challenging to diagnose due to the presence of multiple genes underlying their pathogenic mechanism [<xref rid="pone.0133742.ref001" ref-type="bibr">1</xref>&#x2013;<xref rid="pone.0133742.ref003" ref-type="bibr">3</xref>]. High throughput next-generation sequencing (NGS) has the potential to improve clinical care by identifying genetic risk or actionable variants in a time-sensitive and cost-effective manner. In recent years, technological advances have made it possible to sequence entire exomes (whole exome sequencing, WES) or genomes (whole genome sequencing, WGS) with the final goal of better understanding the genetic underpinnings of a patient's disease. However, for diseases for which candidate genes are known, the use of a targeted approach has become a preferred method of choice in terms of clinical utility. This is because targeted sequencing reduces incidental findings, delivers higher sequence depth, allows more streamlined data analysis, and is lower in cost than WES and WGS due to pre-capture pooling and high multiplexing capabilities. However, the cost associated with genetic testing in clinical settings, even for targeted sequencing, is substantial when outsourced to commercial companies and becomes prohibitive for a low-income population, such as that of Bronx County, considering that the South Bronx where our hospital is located is the 2nd highest poverty ranked district throughout the US [<xref rid="pone.0133742.ref004" ref-type="bibr">4</xref>]. In addition patients with heterogeneous disorders, such as hypertrophic or dilated cardiomyopathies, that could be caused by alterations in more than 50 genes [<xref rid="pone.0133742.ref005" ref-type="bibr">5</xref>] may require, if carried on using commercial clinical tests, the use of 2&#x2013;3 different sequencing panels to accurately diagnose the specific myopathy with an associated cost for each panel ranging from $1,500 to $4,000 [<xref rid="pone.0133742.ref006" ref-type="bibr">6</xref>].</p>
+      <p>In addition to economic status being a limiting factor for these types of genetic tests aimed to improve health care, there are limited variant data available reflecting the mixed population of Caribbean and Dominican Hispanic populations that make up the majority of the population in the Bronx. In this type of setting, this poses a challenge both in diagnosis and treatment [<xref rid="pone.0133742.ref007" ref-type="bibr">7</xref>&#x2013;<xref rid="pone.0133742.ref009" ref-type="bibr">9</xref>].</p>
+      <p>To begin addressing these issues and to establish the potential clinical impact of a large target-sequencing panel, we developed a low-cost high-throughput multi-disease NGS assay for the analysis of patients seeking care in the Bronx. The assay targets 650 candidate genes associated with different disorders including rare pediatric Mendelian disorders, sensorineural hearing loss, abnormalities of cardiac rhythm, and cardiomyopathies. These disorders were chosen based on volume and clinical interest from our affiliated hospital in Bronx County (Montefiore Medical Center). The sequencing data were combined with Affymetrix Human Genome Wide SNP 6.0 Array data to identify potential pathogenic copy number variants (CNVs) in the same patients. We summarize the design process, bioinformatic pipeline and interpretation of results targeting a multi ethnic population from the Bronx presenting with various heterogeneous disorders. We provide the results of our analysis, highlight the difficulties we encountered throughout the process, and discuss our approach to overcome the main obstacles.</p>
+      <p>To our knowledge, this is the first report using targeted NGS to investigate multiple disorders in one comprehensive assay for the diagnosis of an underserved population. While the overall utility and success rate of NGS in challenging clinical settings require further analysis including the analysis of a larger patient cohort, we believe this study is fundamental as a starting point for implementing targeted NGS in our environment and other hospitals facing similar challenges.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="sec005">
+      <title>Materials and Methods</title>
+      <sec id="sec006">
+        <title>Subjects</title>
+        <p>This study was approved by the Albert Einstein College of Medicine Committee on Clinical Investigations (CCI#99&#x2013;201), a written informed consent for publication of this case report and any accompanying images was attained from each patient or guardian during patient enrollment. A copy of the written consent is available for review by the Editor of this journal. A total of 25 samples were included in this study. The DNA from eight patients with confirmed molecular aberrations (proof-of-principle cohort) were used to assess the performance of the custom panel and Affymetrix Genome-Wide SNP Array 6.0. Six samples had variants within genes included in our panel (<italic>BCOR</italic>, <italic>CFTR</italic>, <italic>TRPC6</italic>, <italic>G6PC</italic>, <italic>HEXA</italic>, <italic>GBA</italic>, <italic>CIB2</italic>) and two had CNVs (8p23.2 [2524538&#x2013;3288481] x 3; 18q22.3 [71791767&#x2013;71878869] x 3) that were previously detected through the use of a clinical microarray. In addition to patient samples, DNA from one HapMap lymphoblastiod cell line (NA12878) was obtained from Coriell Cell Repositories (Camden, NJ) and used to further test the sensitivity and specificity of our custom gene panel. Sample details and previously known variants can be viewed in <xref rid="pone.0133742.t001" ref-type="table">Table 1</xref>.</p>
+        <table-wrap id="pone.0133742.t001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0133742.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Proof of Principle Cohort: Samples with previously identified sequenced variants (samples 1&#x2013;5) and previously identified copy number changes (samples 6&#x2013;7).</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone.0133742.t001g" xlink:href="pone.0133742.t001"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th align="left" rowspan="1" colspan="1">Sample number</th>
+                  <th align="left" rowspan="1" colspan="1">ID</th>
+                  <th align="left" rowspan="1" colspan="1">Disorder</th>
+                  <th align="left" rowspan="1" colspan="1">Gene</th>
+                  <th align="left" rowspan="1" colspan="1">Validated mutation</th>
+                  <th align="left" rowspan="1" colspan="1">Zygosity</th>
+                  <th align="left" rowspan="1" colspan="1">Depth</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">TG322.001</td>
+                  <td align="left" rowspan="1" colspan="1">Microphthalmia, syndromic 2</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>BCOR</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">c.4540C&gt;T, p.R1480X</td>
+                  <td align="left" rowspan="1" colspan="1">Het</td>
+                  <td align="left" rowspan="1" colspan="1">1401</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">TG472.001</td>
+                  <td align="left" rowspan="1" colspan="1">Focal Segmental Glomerulosclerosis</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>TRPC6</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">c.2409+7dup</td>
+                  <td align="left" rowspan="1" colspan="1">Het</td>
+                  <td align="left" rowspan="1" colspan="1">786</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">TG478.001</td>
+                  <td align="left" rowspan="1" colspan="1">Cystic Fibrosis</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>CFTR</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">c.3120+1G&gt;A <italic>Positive carrier</italic></td>
+                  <td align="left" rowspan="1" colspan="1">Het</td>
+                  <td align="left" rowspan="1" colspan="1">642</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" align="left" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">AJ177</td>
+                  <td align="left" rowspan="1" colspan="1">Glycogen Storage Disease</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>G6PC</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">c.247C&gt;T, p.R83C</td>
+                  <td align="left" rowspan="1" colspan="1">Het</td>
+                  <td align="left" rowspan="1" colspan="1">1757</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">AJ177</td>
+                  <td align="left" rowspan="1" colspan="1">Tay-Sachs</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>HEXA</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">c.1274_1277dupTATC, p.Tyr427IlefsTer5</td>
+                  <td align="left" rowspan="1" colspan="1">N/A</td>
+                  <td align="left" rowspan="1" colspan="1">920</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">JS6.200</td>
+                  <td align="left" rowspan="1" colspan="1">Hearing loss</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>CIB2</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">c.556C&gt;T, p.Arg186Trp <italic>Positive carrier</italic></td>
+                  <td align="left" rowspan="1" colspan="1">Het</td>
+                  <td align="left" rowspan="1" colspan="1">1396</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">6<xref rid="t001fn001" ref-type="table-fn">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">TG17.001</td>
+                  <td align="left" rowspan="1" colspan="1">Multiple congenital anomalies</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>FBXO15TIMM21</italic> (interstitial)</td>
+                  <td align="left" rowspan="1" colspan="1">arr 18q22.3 (71791767&#x2013;71878869)x3</td>
+                  <td align="left" rowspan="1" colspan="1">N/A</td>
+                  <td align="left" rowspan="1" colspan="1">N/A</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">7<xref rid="t001fn001" ref-type="table-fn">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">TG33.001</td>
+                  <td align="left" rowspan="1" colspan="1">Multiple congenital anomalies</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>CSMD1</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">arr 8p23.2 (2524538&#x2013;3288481)x3</td>
+                  <td align="left" rowspan="1" colspan="1">N/A</td>
+                  <td align="left" rowspan="1" colspan="1">N/A</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="t001fn001">
+              <p>*Proof-of-principle samples 6 and 7 were included in the sequencing test cohort.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Whole blood was collected from sixteen patients that were used as the disease cohort: eight were patients seen at the Children&#x2019;s Hospital at Montefiore Medical Center, NY (four unrelated and two pairs of siblings) and were diagnosed with congenital malformations and/or unusual clinical findings; eight patients had a clinical diagnosis of known Mendelian disorders (cardiomyopathies and arrhythmias). Demographic and clinical information for all patients are listed in <xref rid="pone.0133742.t002" ref-type="table">Table 2</xref>.</p>
+        <table-wrap id="pone.0133742.t002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0133742.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Demographic, clinical features, and sequencing results of the sixteen patients in test cohort.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone.0133742.t002g" xlink:href="pone.0133742.t002"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th align="left" rowspan="1" colspan="1">Sample number</th>
+                  <th align="left" rowspan="1" colspan="1">ID</th>
+                  <th align="left" rowspan="1" colspan="1">Sex</th>
+                  <th align="left" rowspan="1" colspan="1">Ethnicity</th>
+                  <th align="left" rowspan="1" colspan="1">Clinical Information</th>
+                  <th align="left" rowspan="1" colspan="1">Genetic tests and results performed (clinically) before enrollment in study</th>
+                  <th colspan="2" align="center" rowspan="1">Results from Multi-Disease Target Panel</th>
+                </tr>
+                <tr>
+                  <th align="left" rowspan="1" colspan="1"/>
+                  <th align="left" rowspan="1" colspan="1"/>
+                  <th align="left" rowspan="1" colspan="1"/>
+                  <th align="left" rowspan="1" colspan="1"/>
+                  <th align="left" rowspan="1" colspan="1"/>
+                  <th align="left" rowspan="1" colspan="1"/>
+                  <th align="left" rowspan="1" colspan="1">Gene</th>
+                  <th align="left" rowspan="1" colspan="1">Protein Change</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>1</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TG17.001</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">M</td>
+                  <td align="left" rowspan="1" colspan="1">AA</td>
+                  <td align="left" rowspan="1" colspan="1">DD DF</td>
+                  <td align="left" rowspan="1" colspan="1">Chromosome microarray (18q22.3 interstitial duplication) Rett syndrome (<italic>MECP2</italic>)William syndrome, FISH for subtelomeric rearrangement Fragile X</td>
+                  <td align="left" rowspan="1" colspan="1">None to report</td>
+                  <td align="left" rowspan="1" colspan="1">None to report</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>2</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TG33.001</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">F</td>
+                  <td align="left" rowspan="1" colspan="1">N/A</td>
+                  <td align="left" rowspan="1" colspan="1">MCA DD Chronic lung disease Osteopathia Striata with cranial sclerosis</td>
+                  <td align="left" rowspan="1" colspan="1">Chromosome microarray (8p23.2 duplication maternally inherited) Xq11.2 deletion, X-inactivation 63:37) FISH for subtelomeric rearrangements FISH for VCFS, CHARGE (<italic>CHD7</italic>)</td>
+                  <td align="left" rowspan="1" colspan="1">PAX6 <italic>ZNF674 CFTR</italic></td>
+                  <td align="left" rowspan="1" colspan="1">p.S213* (rs201251689) p.I341T no ExAC p.N1224K (rs371475225)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>3</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TG90.001 (Twins of TG90.002)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">M</td>
+                  <td align="left" rowspan="1" colspan="1">Cau/His</td>
+                  <td align="left" rowspan="1" colspan="1">MCA FSGS Ticks and possible Tourette Syndrome Speech delay Fine motor delay Marfan Syndrome-like features</td>
+                  <td align="left" rowspan="1" colspan="1">Cystic Fibrosis (<italic>CFTR</italic>)</td>
+                  <td align="left" rowspan="1" colspan="1">FBN1</td>
+                  <td align="left" rowspan="1" colspan="1">p.G1334D</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>4</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TG90.002 (Twins of TG90.001)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">M</td>
+                  <td align="left" rowspan="1" colspan="1">Cau/His</td>
+                  <td align="left" rowspan="1" colspan="1">MCA FSGS Ticks and possible Tourette Syndrome Speech delay Fine motor delay Marfan Syndrome-like features</td>
+                  <td align="left" rowspan="1" colspan="1">Cystic Fibrosis (<italic>CFTR</italic>)</td>
+                  <td align="left" rowspan="1" colspan="1">FBN1</td>
+                  <td align="left" rowspan="1" colspan="1">p.G1334D</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>5</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TG251.001</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">F</td>
+                  <td align="left" rowspan="1" colspan="1">Cau</td>
+                  <td align="left" rowspan="1" colspan="1">DD DFID Epilepsy Williams-Beuren Syndrome-like characteristics Moderate anxiety</td>
+                  <td align="left" rowspan="1" colspan="1">Chromosome microarray</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>NLGN4X GBP1</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">p.Y463fs p.R106G (rs143163513)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>6</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TG274.001</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">M</td>
+                  <td align="left" rowspan="1" colspan="1">His</td>
+                  <td align="left" rowspan="1" colspan="1">VSD SD Bilateral cleft lip and cleft palate Duplicated renal collecting system</td>
+                  <td align="left" rowspan="1" colspan="1">Chromosomes and chromosome microarray</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>BBS1 NPHS2 CFTR SEMA3E</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">p.Y121C p.L104F p.G576A (rs18000098) p.G190G</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>7</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TG290.001</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">F</td>
+                  <td align="left" rowspan="1" colspan="1">Cau/Isr</td>
+                  <td align="left" rowspan="1" colspan="1">DD Noonan Syndrome-like characteristics Clinodactyly Brachydactyly Left inguinal hernias, Epicanthal folds Suborbital fullness</td>
+                  <td align="left" rowspan="1" colspan="1">Hearing loss (<italic>GJB2</italic>, <italic>GJB6</italic>, <italic>LOXHD1</italic>, <italic>CX26</italic>, <italic>CX30</italic>) Noonan Spectrum Panel (<italic>PTPN11</italic>, <italic>RAF1</italic>, <italic>SOS1</italic>, <italic>KRAS</italic>, <italic>HRAS</italic>, <italic>BRAF</italic>, <italic>MEK1</italic>, <italic>MEK2</italic>, <italic>NRAS</italic>, <italic>SHOC2</italic>, <italic>CBL</italic>, <italic>SPRED1</italic>) Chromosomes and chromosome microarray</td>
+                  <td align="left" rowspan="1" colspan="1">SPRED1 NLGN4X</td>
+                  <td align="left" rowspan="1" colspan="1">p.N10K (rs201692618) p.R101*</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>8</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TG292.001</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">M</td>
+                  <td align="left" rowspan="1" colspan="1">AA</td>
+                  <td align="left" rowspan="1" colspan="1">PDD Tall stature Mild dysmorphism Macrocephaly Hypertelorism Flat nasal bridge</td>
+                  <td align="left" rowspan="1" colspan="1">Fragile X Chromosome microarray</td>
+                  <td align="left" rowspan="1" colspan="1">NXF5</td>
+                  <td align="left" rowspan="1" colspan="1">p.R320* (rs140252282)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>9</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TG471.001 (sister of TG471.002)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">F</td>
+                  <td align="left" rowspan="1" colspan="1">His</td>
+                  <td align="left" rowspan="1" colspan="1">DCM</td>
+                  <td align="left" rowspan="1" colspan="1">None</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>SCN5A LDB3 AKAP9 TMEM43</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">p.R340Q (rs191009474) p.V118M (rs35507268) p.T3469M p.R220C</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>10</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TG471.002 (sister of TG471.001)</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">F</td>
+                  <td align="left" rowspan="1" colspan="1">His</td>
+                  <td align="left" rowspan="1" colspan="1">DCM</td>
+                  <td align="left" rowspan="1" colspan="1">None</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>SCN5A VCL AKAP9 LDB3</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">p.A672T (rs199473140) p.F212S p.T3469M p.V118M (rs35507268)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>11</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>CMB1</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">F</td>
+                  <td align="left" rowspan="1" colspan="1">His</td>
+                  <td align="left" rowspan="1" colspan="1">Brugada Syndrome LQTS</td>
+                  <td align="left" rowspan="1" colspan="1">None</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>LDB3</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">p.D232N (rs121908338)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>12</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>RB1</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">F</td>
+                  <td align="left" rowspan="1" colspan="1">Ben</td>
+                  <td align="left" rowspan="1" colspan="1">CPVT</td>
+                  <td align="left" rowspan="1" colspan="1">None</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>CASQ2</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">p.R67* c.532+1G&gt;A</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>13</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>AJ1</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">F</td>
+                  <td align="left" rowspan="1" colspan="1">Cau</td>
+                  <td align="left" rowspan="1" colspan="1">SPOH</td>
+                  <td align="left" rowspan="1" colspan="1">None</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>None to report</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>None to report</italic>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>14</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>JFM1</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">F</td>
+                  <td align="left" rowspan="1" colspan="1">AA</td>
+                  <td align="left" rowspan="1" colspan="1">HCM</td>
+                  <td align="left" rowspan="1" colspan="1">None</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>PCSK9</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">p.R469W (rs141502002)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>15</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>SS1</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">F</td>
+                  <td align="left" rowspan="1" colspan="1">AA</td>
+                  <td align="left" rowspan="1" colspan="1">DCM with conduction disease</td>
+                  <td align="left" rowspan="1" colspan="1">None</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>SCN2A</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">p.I1583T (rs367566833)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>16</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>MS1</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">M</td>
+                  <td align="left" rowspan="1" colspan="1">Mex</td>
+                  <td align="left" rowspan="1" colspan="1">Brugada Syndrome</td>
+                  <td align="left" rowspan="1" colspan="1">None</td>
+                  <td align="left" rowspan="1" colspan="1">None to report</td>
+                  <td align="left" rowspan="1" colspan="1">None to report</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="t002fn001">
+              <p>Legend: Ethnicitiy: AA = African American, Cau = Caucasian, His = Hispanic, Isr = Israeli, Ben = Bengali, Mex = Mexican, N/A = Not Available; Clinical Information: DD = Developmental Delay, DF = Dyspmorphic Features, MCA = Multiple Congenital Anomalies, FSGS = Focal segmental glomerulosclerosis, ID = Intellectual Disability, VSD = Ventricular Septal Defect, SD = Speech Delay, PDD = Pervasive Developmental Delay, DCM = Dilated Cardiomyopathy, LQTS = Long QT Syndrome, CPVT = Catecholaminergic Polymorphic Ventricular Tachycardia, SPOH = Severe Postural Orthostatic Hypertension, HCM = Hypertrophic Cardiomyopathy.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Two samples (TG478.001 and SS1) had been previously analyzed using whole exome sequencing (WES) and were included as an additional quality control (<xref rid="pone.0133742.s002" ref-type="supplementary-material">S1 Table</xref>).</p>
+      </sec>
+      <sec id="sec007">
+        <title>Sample preparation</title>
+        <p>DNA from all samples was isolated in the Molecular Cytogenetics Core at the Albert Einstein College of Medicine, NY according to standard protocols using the Puregene Genomic DNA Purification kit (Gentra, Minneapolis, MN). The quantity of the DNA was assessed by spectrofluorometer quantification using Quant-iT PicoGreen dsDNA Assay Kit, according to standard protocols (Quant-iT PicoGreen dsDNA Reagent and Kits, Molecular Probes, 2008. Invitrogen). Additionally, all samples were run on a 1% Agarose-TBE Blend gel to visualize any impurities.</p>
+      </sec>
+      <sec id="sec008">
+        <title>Capture design</title>
+        <p>We designed a hybridization-based, multi-disease gene panel using Roche-NimbleGen's SeqCap EZ Choice Library capture system, which uses Sequence Search and Alignment by Hashing Algorithm (SSAHA) to select unique probes (Roche/NimbleGen, Madison, WI). In this custom design we targeted all exons, including 50 bp of the flanking intronic sequence and 1 kb areas upstream and downstream of each gene. Disease areas of interest were largely based from the outcome of an extensive investigative process involving all clinicians at our associated teaching hospital that were interested in genomic sequencing and who felt that their patients would benefit from NGS but were unable to afford it. Gene selection was based our discussions with collaborators Montefiore's clinicians, and the genes potentially related to their patients cohort selected based on current scientific knowledge. We also included genes that harbored previously reported variants for the samples chosen as a proof of principle validation. The custom panel captured 4.98 Mb of genomic sequence comprising 11,496 exons spanning 650 genes (complete gene list and associated syndromes are provided in <xref rid="pone.0133742.s003" ref-type="supplementary-material">S2</xref> and <xref rid="pone.0133742.s004" ref-type="supplementary-material">S3</xref> Tables). The percent breakdown of genes related to each disease and abnormality is summarized in <xref rid="pone.0133742.g001" ref-type="fig">Fig 1</xref>.</p>
+        <fig id="pone.0133742.g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0133742.g001</object-id>
+          <label>Fig 1</label>
+          <caption>
+            <title>Custom panel design.</title>
+            <p>The pie chart illustrates the percent of genes included in the custom design categorized based on specific diseases/abnormalities. Of note the Ashkenazi Jews variant disorders have been kept separate because they represent an ethnic division commonly associated with specific disease and genetic variants.</p>
+          </caption>
+          <graphic xlink:href="pone.0133742.g001"/>
+        </fig>
+      </sec>
+      <sec id="sec009">
+        <title>Target Capture Sequencing Method</title>
+        <p>Libraries were prepared using 5 &#x3BC;g of genomic DNA according to the Illumina TrueSeq sample preparation protocol as described at <ext-link ext-link-type="uri" xlink:href="http://support.illumina.com/content/dam/illumina-support/documents/myillumina/f5f619d3-2c4c-489b-80a3-e0414baa4e89/truseq_dna_sampleprep_guide_15026486_c.pdf">http://support.illumina.com/content/dam/illumina-support/documents/myillumina/f5f619d3-2c4c-489b-80a3-e0414baa4e89/truseq_dna_sampleprep_guide_15026486_c.pdf</ext-link> (Illumina, San Diego, CA). After appropriate quality controls, libraries were pooled and captured using the SeqCap EZ Choice Library (Roche/NimbleGen, Madison, WI) following the manufacturer&#x2019;s protocol, as detailed at the following <ext-link ext-link-type="uri" xlink:href="http://www.nimblegen.com/products/lit/06560881001_SeqCapEZLibraryLR_Guide_v2p0.pdf">http://www.nimblegen.com/products/lit/06560881001_SeqCapEZLibraryLR_Guide_v2p0.pdf</ext-link>. Captured libraries were multiplexed two-seven samples per lane and sequenced to generate 2x150 bp paired-end reads using the HiSeq2500 rapid run mode (Illumina, San Diego, CA).</p>
+      </sec>
+      <sec id="sec010">
+        <title>Whole Exome Sequencing</title>
+        <p>To establish sensitivity and specificity of our assay Whole Exome Sequencing (WES) libraries from samples SS1 and TG478.001 were prepared using 5 &#x3BC;g of genomic DNA according to the Illumina TrueSeq sample preparation protocol (Illumina, San Diego, CA). Each library was individually captured using SeqCap EZ Exome plus UTR Library (Roche/NimbleGen, Madison, WI) following the manufacturer's protocol. Captured libraries were sequenced individually to generate 2x150 bp paired-end reads using the Illumina HiSeq 2500.</p>
+      </sec>
+      <sec id="sec011">
+        <title>Copy Number Variation</title>
+        <p>All samples were submitted to Einstein's Genomics Core Facility to test for copy number variations (CNV). All samples were diluted to 10 ng/&#x3BC;L and analyzed by on Affymetrix Genome-Wide Human SNP Array 6.0 arrays following the manufacturer&#x2019;s protocol (Affymetrix, Inc.).</p>
+      </sec>
+      <sec id="sec012">
+        <title>Bioinformatic pipeline</title>
+        <p>A comprehensive flowchart illustrating the pipeline used from sample QC through validation is shown in <xref rid="pone.0133742.g002" ref-type="fig">Fig 2</xref>. Samples were submitted through Einstein's Wiki-Based Automated Sequence Processor (WASP) system software [<xref rid="pone.0133742.ref010" ref-type="bibr">10</xref>] where sequencing reads were aligned and mapped to the human reference genome (GRCh37, UCSC hg19) using the Burrows-Wheeler Aligner (BWA) [<xref rid="pone.0133742.ref011" ref-type="bibr">11</xref>,<xref rid="pone.0133742.ref012" ref-type="bibr">12</xref>] algorithm, with removal of PCR duplicates using Picard [<xref rid="pone.0133742.ref013" ref-type="bibr">13</xref>]. Local re-alignment, base quality recalibration and variant calling were performed using the Genome Analysis Toolkit (GATK) version 2.0 [<xref rid="pone.0133742.ref014" ref-type="bibr">14</xref>] (Broad Institute, Cambridge, MA) applying the following quality parameters: sequencing depth &#x2265;15X, base quality score &#x2265;17, and mapping quality of &#x2265;20. Variants that did not meet these quality standards were removed. We also removed sequence reads exceeding 10 bp from either exonic boundary, as we did not consider variants in this region interpretable due to lack of functional information.</p>
+        <fig id="pone.0133742.g002" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0133742.g002</object-id>
+          <label>Fig 2</label>
+          <caption>
+            <title>Project pipeline.</title>
+            <p>Sample quality is conducted in the laboratory (blue box), subsequent library prep and sequencing is conducted in the Epigenomics Shared Facility (pink box). The sequence reads automatically progress into the WASP pipeline for quality control parameters, alignment to reference sequence through BWA and duplicate removal through Picard is performed (yellow boxes). Local Realignment, base quality recalibration, variant discovery and annotation take place via GATK or VarScan2 (somatic) (green boxes). Clinically relevant variants are prioritized through Alamut and visualized through IGV (orange boxes). Validation is then performed by Sanger sequencing and results are visualized through Sequencher 4.0.1 (purple box).</p>
+          </caption>
+          <graphic xlink:href="pone.0133742.g002"/>
+        </fig>
+        <p>Basic functional information (gene ID, genomic region, <italic>etc</italic>.) of the detected variants was achieved using ANNOVAR [<xref rid="pone.0133742.ref015" ref-type="bibr">15</xref>]. The gene set recommended by the ACMG for incidental findings was manually analyzed (<xref rid="pone.0133742.g003" ref-type="fig">Fig 3</xref>). We prioritized the remaining variants by excluding those with a minor allele frequency (MAF) &gt;1% based on population allele frequency (dbSNP, 1000 Genomes Project, Exome Aggregation Consortium-ExAC and NHLBI Exome Project) [<xref rid="pone.0133742.ref009" ref-type="bibr">9</xref>,<xref rid="pone.0133742.ref016" ref-type="bibr">16</xref>,<xref rid="pone.0133742.ref017" ref-type="bibr">17</xref>] to assess only rare, potentially pathogenic variants. In addition, all synonymous variants regardless of MAF were removed from the analysis unless additional protein-coding variants were identified in the same gene (this filtering method was used to consider possible compound heterozygotes and recessive modes of inheritance). <italic>In silico</italic> prediction tools based on multiple factors such as Grantham score, conservation between species and functionality of domain harboring the variant were taken into consideration to estimate the impact of each variant at the protein level. Remaining variants including missense, nonsense, frameshift, indel and splice site junction (+10 bp) variants were manually investigated through Alamut v2.2 software (Interactive Biosoftware, San Diego, CA) to aid in variant interpretation and pathogenicity predictions. All variants of interest were visually inspected using the Integrative Genomics Viewer [<xref rid="pone.0133742.ref018" ref-type="bibr">18</xref>] (IGV) to assess the quality of variant calls and sequencing uniformity.</p>
+        <fig id="pone.0133742.g003" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0133742.g003</object-id>
+          <label>Fig 3</label>
+          <caption>
+            <title>Variant Calling Pipeline.</title>
+            <p>The vcf file created through the project quality control pipeline is filtered for frequency using 1000Genome, dbSNP, ExAC, and NHLBI Exome Project. All variants with a MAF &lt;1% are then prioritized by gene function and genomic region. Variants associated with the patient's phenotype mapping to exons are further prioritized based on functional annotation. If protein-changing variants are identified in a gene of interest, further analysis of non-protein changing variants, UTRs, and intronic regions are analyzed to consider the possibility of compound heterozygous variants. Variants are visualized and reviewed though IGV and <italic>In silico</italic> prediction tools, and taken into consideration to estimate the possible impact of each variant at the protein level. Variants are also manually investigated through Alamut v2.2 software (Interactive Biosoftware, San Diego, CA) to aid in variant interpretation and pathogenicity predictions. Of note, we follow the ACMG guidelines for incidental findings (grey boxes).</p>
+          </caption>
+          <graphic xlink:href="pone.0133742.g003"/>
+        </fig>
+      </sec>
+      <sec id="sec013">
+        <title>Copy-number variation detection</title>
+        <p>Affymetrix Genome-Wide Human SNP Array 6.0 CN.CHP files that passed the recommended values for quality contrast (QC&gt;0.4) and mapping (MAPD&lt;0.3; Median Absolute Pairwise Difference) were analyzed and visually inspected through Affymetrix Chromosome Analysis Suite Software (ChAS). Copy number variants (CNVs) were called if they exceeded 200 kb, with at least 50 probes covering the region. Results have been reported based on the International System for Human Cytogenetic Nomenclature, ISCN 2013 (i.e. x 3 indicates a duplication at that particular locus).</p>
+      </sec>
+      <sec id="sec014">
+        <title>Validation</title>
+        <p>All variants of interest (see <xref rid="pone.0133742.s005" ref-type="supplementary-material">S4 Table</xref>) were PCR-amplified, purified and validated by Sanger sequencing (Genomics Core, Albert Einstein College of Medicine, NY). Primers were designed through Primer3 [<xref rid="pone.0133742.ref019" ref-type="bibr">19</xref>]. Results were visualized through Sequencher v4.0.1 software (Gene Codes, Ann Arbor, MI). Quantitative PCR was performed to validate any CNVs of interest. We designed primers amplifying 75-150bp spanning the CNV of interest. Control DNA (Human control genomic DNA, Promega) was used as a reference in all reactions. Test samples and controls were amplified using the Fast SYBR Green Master Mix on the Spot One Real Time PCR system (Life Technologies). Ct values of the samples were analyzed using the comparative Ct method also known as the 2&#x2013;[delta][delta]Ct method, where [delta][delta]Ct = [delta]Ct,sample&#x2014;[delta]Ct,control.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="sec015">
+      <title>Results</title>
+      <sec id="sec016">
+        <title>Performance of the custom multi disease panel</title>
+        <sec id="sec017">
+          <title>Sequencing Statistics</title>
+          <p>We observed, per sample average, a mean depth of 540x, ranging from minimal 260x to maximal 1230x (Tables <xref rid="pone.0133742.t003" ref-type="table">3</xref> and <xref rid="pone.0133742.s006" ref-type="supplementary-material">S5</xref>). Coverage varied per sample across the same target, which is a known issue previously reported in custom targeted-capture assays [<xref rid="pone.0133742.ref005" ref-type="bibr">5</xref>,<xref rid="pone.0133742.ref020" ref-type="bibr">20</xref>]. On average, 81% of all targeted bases were covered by at least 20 reads (minimum 73% to a maximum of 91%) and 80% aligned to the reference sequence (70%- 87%), which was similar between proof-of-principle and test samples. Studies suggest that high GC content or repetitive elements could be responsible for poorly covered regions [<xref rid="pone.0133742.ref020" ref-type="bibr">20</xref>,<xref rid="pone.0133742.ref021" ref-type="bibr">21</xref>]. Therefore GC% for each exon was calculated through Einstein's Computation Core from our target file and compared the mean depth of each exon for each sample. Strong correlation between GC-content and poorly covered regions was not identified. Studies suggest that probe optimization, library automation, and minor changes to the library preparation protocol can increase uniformity and reduce sample-to-sample variability [<xref rid="pone.0133742.ref022" ref-type="bibr">22</xref>].</p>
+          <table-wrap id="pone.0133742.t003" orientation="portrait" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0133742.t003</object-id>
+            <label>Table 3</label>
+            <caption>
+              <title>Summary of sequencing coverage and detected variants for test cohort.</title>
+            </caption>
+            <alternatives>
+              <graphic id="pone.0133742.t003g" xlink:href="pone.0133742.t003"/>
+              <table frame="hsides" rules="groups">
+                <colgroup span="1">
+                  <col align="left" valign="middle" span="1"/>
+                  <col align="left" valign="middle" span="1"/>
+                  <col align="left" valign="middle" span="1"/>
+                  <col align="left" valign="middle" span="1"/>
+                  <col align="left" valign="middle" span="1"/>
+                  <col align="left" valign="middle" span="1"/>
+                  <col align="left" valign="middle" span="1"/>
+                  <col align="left" valign="middle" span="1"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th align="left" rowspan="1" colspan="1">Samples</th>
+                    <th align="left" rowspan="1" colspan="1">Total Reads</th>
+                    <th align="left" rowspan="1" colspan="1">Avg. Depth (X)</th>
+                    <th align="left" rowspan="1" colspan="1">% Bases at &#x2265; 20X coverage</th>
+                    <th align="left" rowspan="1" colspan="1">Total no. of SNVs</th>
+                    <th align="left" rowspan="1" colspan="1">Total no. of SNVs at &#x2264; 1% MAF</th>
+                    <th align="left" rowspan="1" colspan="1">Total no. of Indels</th>
+                    <th align="left" rowspan="1" colspan="1">Total no. of Indels at &#x2264; 1% MAF</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>TG17.001<xref rid="t003fn001" ref-type="table-fn">*</xref></bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">48581252</td>
+                    <td align="left" rowspan="1" colspan="1">496</td>
+                    <td align="left" rowspan="1" colspan="1">81</td>
+                    <td align="left" rowspan="1" colspan="1">4306</td>
+                    <td align="left" rowspan="1" colspan="1">402</td>
+                    <td align="left" rowspan="1" colspan="1">790</td>
+                    <td align="left" rowspan="1" colspan="1">458</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>TG90.001<xref rid="t003fn001" ref-type="table-fn">*</xref></bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">46810778</td>
+                    <td align="left" rowspan="1" colspan="1">498</td>
+                    <td align="left" rowspan="1" colspan="1">79</td>
+                    <td align="left" rowspan="1" colspan="1">3593</td>
+                    <td align="left" rowspan="1" colspan="1">186</td>
+                    <td align="left" rowspan="1" colspan="1">674</td>
+                    <td align="left" rowspan="1" colspan="1">313</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>TG90.002<xref rid="t003fn001" ref-type="table-fn">*</xref></bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">61418574</td>
+                    <td align="left" rowspan="1" colspan="1">582</td>
+                    <td align="left" rowspan="1" colspan="1">80</td>
+                    <td align="left" rowspan="1" colspan="1">3616</td>
+                    <td align="left" rowspan="1" colspan="1">186</td>
+                    <td align="left" rowspan="1" colspan="1">652</td>
+                    <td align="left" rowspan="1" colspan="1">312</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>TG251.001<xref rid="t003fn001" ref-type="table-fn">*</xref></bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">41042110</td>
+                    <td align="left" rowspan="1" colspan="1">448</td>
+                    <td align="left" rowspan="1" colspan="1">77</td>
+                    <td align="left" rowspan="1" colspan="1">3517</td>
+                    <td align="left" rowspan="1" colspan="1">131</td>
+                    <td align="left" rowspan="1" colspan="1">662</td>
+                    <td align="left" rowspan="1" colspan="1">321</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>TG274.001</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">53239778</td>
+                    <td align="left" rowspan="1" colspan="1">546</td>
+                    <td align="left" rowspan="1" colspan="1">88</td>
+                    <td align="left" rowspan="1" colspan="1">3662</td>
+                    <td align="left" rowspan="1" colspan="1">205</td>
+                    <td align="left" rowspan="1" colspan="1">685</td>
+                    <td align="left" rowspan="1" colspan="1">367</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>TG290.001</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">47030442</td>
+                    <td align="left" rowspan="1" colspan="1">514</td>
+                    <td align="left" rowspan="1" colspan="1">88</td>
+                    <td align="left" rowspan="1" colspan="1">3670</td>
+                    <td align="left" rowspan="1" colspan="1">189</td>
+                    <td align="left" rowspan="1" colspan="1">685</td>
+                    <td align="left" rowspan="1" colspan="1">375</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>TG292.001</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">47609338</td>
+                    <td align="left" rowspan="1" colspan="1">491</td>
+                    <td align="left" rowspan="1" colspan="1">88</td>
+                    <td align="left" rowspan="1" colspan="1">4481</td>
+                    <td align="left" rowspan="1" colspan="1">751</td>
+                    <td align="left" rowspan="1" colspan="1">776</td>
+                    <td align="left" rowspan="1" colspan="1">386</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>TG471.001</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">44839312</td>
+                    <td align="left" rowspan="1" colspan="1">416</td>
+                    <td align="left" rowspan="1" colspan="1">89</td>
+                    <td align="left" rowspan="1" colspan="1">3630</td>
+                    <td align="left" rowspan="1" colspan="1">245</td>
+                    <td align="left" rowspan="1" colspan="1">646</td>
+                    <td align="left" rowspan="1" colspan="1">310</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>CMB1</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">37422180</td>
+                    <td align="left" rowspan="1" colspan="1">263</td>
+                    <td align="left" rowspan="1" colspan="1">86</td>
+                    <td align="left" rowspan="1" colspan="1">3905</td>
+                    <td align="left" rowspan="1" colspan="1">223</td>
+                    <td align="left" rowspan="1" colspan="1">691</td>
+                    <td align="left" rowspan="1" colspan="1">348</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>AJ1<xref rid="t003fn001" ref-type="table-fn">*</xref></bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">68089872</td>
+                    <td align="left" rowspan="1" colspan="1">627</td>
+                    <td align="left" rowspan="1" colspan="1">78</td>
+                    <td align="left" rowspan="1" colspan="1">3323</td>
+                    <td align="left" rowspan="1" colspan="1">150</td>
+                    <td align="left" rowspan="1" colspan="1">643</td>
+                    <td align="left" rowspan="1" colspan="1">304</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>RB1<xref rid="t003fn001" ref-type="table-fn">*</xref></bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">39783474</td>
+                    <td align="left" rowspan="1" colspan="1">298</td>
+                    <td align="left" rowspan="1" colspan="1">73</td>
+                    <td align="left" rowspan="1" colspan="1">3354</td>
+                    <td align="left" rowspan="1" colspan="1">135</td>
+                    <td align="left" rowspan="1" colspan="1">648</td>
+                    <td align="left" rowspan="1" colspan="1">304</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>JFM1<xref rid="t003fn001" ref-type="table-fn">*</xref></bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">40765488</td>
+                    <td align="left" rowspan="1" colspan="1">446</td>
+                    <td align="left" rowspan="1" colspan="1">75</td>
+                    <td align="left" rowspan="1" colspan="1">4075</td>
+                    <td align="left" rowspan="1" colspan="1">328</td>
+                    <td align="left" rowspan="1" colspan="1">784</td>
+                    <td align="left" rowspan="1" colspan="1">371</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>SS1<xref rid="t003fn001" ref-type="table-fn">*</xref></bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">60697664</td>
+                    <td align="left" rowspan="1" colspan="1">533</td>
+                    <td align="left" rowspan="1" colspan="1">77</td>
+                    <td align="left" rowspan="1" colspan="1">4093</td>
+                    <td align="left" rowspan="1" colspan="1">363</td>
+                    <td align="left" rowspan="1" colspan="1">758</td>
+                    <td align="left" rowspan="1" colspan="1">371</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>MS1<xref rid="t003fn001" ref-type="table-fn">*</xref></bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">53780084</td>
+                    <td align="left" rowspan="1" colspan="1">327</td>
+                    <td align="left" rowspan="1" colspan="1">73</td>
+                    <td align="left" rowspan="1" colspan="1">3298</td>
+                    <td align="left" rowspan="1" colspan="1">140</td>
+                    <td align="left" rowspan="1" colspan="1">626</td>
+                    <td align="left" rowspan="1" colspan="1">284</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>TG33.001<xref rid="t003fn001" ref-type="table-fn">*</xref></bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">42699994</td>
+                    <td align="left" rowspan="1" colspan="1">417</td>
+                    <td align="left" rowspan="1" colspan="1">75</td>
+                    <td align="left" rowspan="1" colspan="1">3310</td>
+                    <td align="left" rowspan="1" colspan="1">154</td>
+                    <td align="left" rowspan="1" colspan="1">667</td>
+                    <td align="left" rowspan="1" colspan="1">312</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>TG471.002</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">127605702</td>
+                    <td align="left" rowspan="1" colspan="1">1217</td>
+                    <td align="left" rowspan="1" colspan="1">91</td>
+                    <td align="left" rowspan="1" colspan="1">3787</td>
+                    <td align="left" rowspan="1" colspan="1">255</td>
+                    <td align="left" rowspan="1" colspan="1">696</td>
+                    <td align="left" rowspan="1" colspan="1">322</td>
+                  </tr>
+                  <tr>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>Average:</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1"/>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>460</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>80</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>3722</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>252</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>693</bold>
+                    </td>
+                    <td align="left" rowspan="1" colspan="1">
+                      <bold>342</bold>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </alternatives>
+            <table-wrap-foot>
+              <fn id="t003fn001">
+                <p>* indicates samples that were multiplexed together.</p>
+              </fn>
+              <fn id="t003fn002">
+                <p>TG471.002 was added to another lane for logistic reasons.</p>
+              </fn>
+            </table-wrap-foot>
+          </table-wrap>
+        </sec>
+        <sec id="sec018">
+          <title>Evaluating panel performance using samples with known variants</title>
+          <p>Performance of the panel was evaluated by Roche-NimbleGen and carried-out through comparison of variants detected in HapMap sample NA12878 against those identified in NA12878 analyzed independently as part of the 1,000 Genomes Project data set [<xref rid="pone.0133742.ref017" ref-type="bibr">17</xref>]. Within the regions targeted by our panel, a total of 1946 true positive SNPs were detected, yielding 97.60% sensitivity. SNP classification revealed 15 misclassified genotypes out of the 1946 detected variants, yielding 99.20% specificity.</p>
+          <p>Additionally, of all the samples used in this study, five had known variants previously identified as part of a clinical follow-up and were used as a proof of principle (<xref rid="pone.0133742.t001" ref-type="table">Table 1</xref>, samples 1&#x2013;5). The known variants ranged from missense, nonsense, frameshift, and indels. All six variants were detected in their correct allelic state.</p>
+        </sec>
+        <sec id="sec019">
+          <title>Identification and prioritization of disease-causing variants</title>
+          <p>Through the pre-pool custom capture and multiplexing approach, we were able to detect an average of 3,726 SNVs and 693 indels per sample. A custom variant filtering strategy (minor allelic frequency &lt;1%, functional information, in silico pathogenicity predictions; see <xref rid="sec005" ref-type="sec">methods</xref> and <xref rid="pone.0133742.g003" ref-type="fig">Fig 3</xref>) was applied to identify rare, possibly pathogenic variants in each of the samples. This strategy produced an average of 252 candidate SNVs and 342 candidate indels per sample (<xref rid="pone.0133742.t003" ref-type="table">Table 3</xref>). We subsequently prioritized these variants by assessing gene function in concordance with the observed phenotype. This ultimately resulted in a curated list of a total of 22 missense, 4 nonsense, 1 frameshift, and 1 splice variants (16 previously identified, 12 novel among dbSNP and 15 novel among NHLBI Exome Variant Server) relevant to the phenotype for all sixteen samples.</p>
+        </sec>
+      </sec>
+      <sec id="sec020">
+        <title>Variant Identification for samples with complex pediatric diseases</title>
+        <p>The cohort analyzed in this study includes patients with various pediatric disorders. Some are considered Mendelian disorders that have genetic heterogeneous origins, while others are complex disorders with less well known etiologies [<xref rid="pone.0133742.ref023" ref-type="bibr">23</xref>]. Variance between gene-environment and gene-gene interactions can be responsible for complex inheritance and lack of penetrance causing discordant phenotypes observed in relatives within the same family, making treatment, diagnosis and risk recurrence particularly difficult to assess [<xref rid="pone.0133742.ref023" ref-type="bibr">23</xref>,<xref rid="pone.0133742.ref024" ref-type="bibr">24</xref>].</p>
+        <p>Eight patients presented with multiple congenital anomalies, mental illness and craniofacial disorders. All variants and patient clinical features are summarized in <xref rid="pone.0133742.t002" ref-type="table">Table 2</xref>. These variants should be ultimately tested for altered gene functions and for effects on the protein to validate that they are pathogenic and to establish their contribution to altered gene function. Below, we highlight two cases from this cohort in which we identified variants with potential diagnostic value.</p>
+        <sec id="sec021">
+          <title>CASES 1 and 2</title>
+          <p>Two fourteen-year-old male siblings (twins) TG90.001 and TG90.002, were initially referred to the Montefiore Pediatric Genetics clinic for evaluation of multiple congenital anomalies. At age four, both boys were diagnosed with focal segmental glomerulosclerosis (FSGS) by renal biopsy and were also noted to have tics, which were felt by their neurologist to be due to a <italic>forme fruste</italic> of Tourette syndrome. Developmentally, motor and cognitive milestones were slightly delayed, and both had dolichostenomelia with arm spans significantly greater than height. In addition, each had a high arched palate, joint laxity, pectus excavatum, mild scoliosis, and pes planus (flat feet). All of these physical findings suggested a diagnosis of Marfan syndrome (MS) (OMIM#154700). However, since the urologic, renal and developmental problems affecting the siblings are not typically seen in MS, and cardiac evaluations were normal, it was unclear which testing should be performed. At the time of this evaluation, <italic>Fibrillin 1</italic> (<italic>FBN1)</italic> testing was not clinically available. Testing through our panel revealed that both patients carried one previously-reported missense variant in the coding region of the <italic>FBN1</italic> gene (c.G4001A; p.G1334D; rs191989961), which produces a guanine-aspartate change and it is predicted as probably-pathogenic by our <italic>in silico</italic> analysis. This variant was previously reported in one other subject by the Laboratory for Molecular Medicine (Cambridge, MA) and deemed likely pathogenic based on their systematic approach for variant classification, which considers disease association from existing data, mechanism of gene function, and the use of several bioinformatic tools to predict the possible impact of the variant on the gene [<xref rid="pone.0133742.ref025" ref-type="bibr">25</xref>]. MS is inherited in an autosomal dominant manner and since variants in <italic>FBN1</italic> are also commonly associated with MS, we believe our findings may help explaining the boys&#x2019; MS-like features. There were no variants identified in the FSGS-associated genes present in our panel, suggesting that additional testing is needed in these patients to determine the underlying molecular cause for their renal and urologic phenotype. Of note, if testing for these patients were to be performed clinically by Sanger sequencing or using a disease-specific gene panel, the costs associated would have been greater given that two separate testing for each phenotype would have been required.</p>
+        </sec>
+        <sec id="sec022">
+          <title>Patients with Mendelian cardiomyopathies and arrhythmias</title>
+          <p>The cardiac cohort included patients with heritable and potentially lethal disorders of cardiac rhythm followed in the Montefiore-Einstein Center for CardioGenetics. This group was comprised of individuals with cardiomyopathies and channelopathies, including hypertrophic cardiomyopathy (HCM, OMIM#192600, 1 patient), dilated cardiomyopathy (DCM; OMIM#115200; 3 patients, two siblings, one unrelated), Brugada syndrome (BS; OMIM#601144, 2 unrelated patients), long QT syndrome (LQTS; OMIM#192500, same patient with Brugada syndrome), and catecholaminergic polymorphic ventricular tachycardia (CPVT; OMIM#604772, 1 patient). In the eight patients tested (2 related; 6 unrelated), we identified 15 rare variants mapping to 9 of the 154 cardiac specific genes included in our panel (<xref rid="pone.0133742.t002" ref-type="table">Table 2</xref>). We were able to provide an accurate diagnosis for one patient to be discussed below.</p>
+        </sec>
+        <sec id="sec023">
+          <title>CASE 3</title>
+          <p>A 29-year-old woman, RB1, was referred to the Montefiore Center for CardioGenetics for evaluation. She had experienced episodes of palpitations and syncope related to exercise since 11 years of age. Due to intermittent prolongation of her QT interval on electrocardiography (ECG), she was given a provisional diagnosis of either Long QT syndrome (LQTS) or CPVT. These disorders have some overlapping features and both, if left untreated, may result in sudden death. However, because the treatment for various forms of LQTS and CPVT differ, determining the exact genetic variants is extremely helpful in managing patients. In addition, identifying the genetic variant can be life-saving for first degree relatives. Commercial testing is available for this specific phenotype but requires two separate sequencing panels (one for LQTS and one for CPVT) to differentiate the diagnosis. Because of lack of insurance and high cost, commercial testing was never performed. Based on the custom multi-disease gene panel that we designed, this patient was identified to be a compound heterozygote for variants in the <italic>calsequestrin 2</italic> (<italic>CASQ2)</italic> gene, identifying one novel stop variant (c.C199T, p.Gln67*) and one novel splice site variant (c.532+1G&gt;A). Sanger sequencing confirmed the variants and in addition detected the presence of the p.Gln67* variant in the patient's child. The splice site variant was absent in the child, indicating that the mother's variants were <italic>in trans</italic>. Variants in <italic>CASQ2</italic> account for 5&#x2013;7% of all cases of CPVT, suggesting the most likely mode of inheritance to be autosomal recessive. Although the c.532+1G&gt;A variant has not yet been demonstrated to alter mRNA splicing, we are conducting further functional work to determine how this variant affects splicing.</p>
+        </sec>
+        <sec id="sec024">
+          <title>CASES 4 and 5</title>
+          <p>The DNA from two sisters, TG471.001, TG471.002, presented to the Center for CardioGenetics with overlapping phenotypes of Dilated Cardiomyopathy (DCM), were sequenced and all cardiac related genes were analyzed. Several variants associated with cardiac disorders were detected, but only the <italic>LDB3</italic> gene is directly associated with DCM (<italic>LIM domain-binding 3</italic> gene <italic>LDB3;</italic> Cardiomyopathy, Dilated, 1C; OMIM#601493) and both sisters harbored the same missense variant (c.G352A, p.V118M; rs35507268). However, this exact <italic>LDB3</italic> variant was also observed in the unaffected mother and upon further investigation categorized as likely benign by dbSNP, ClinVar, and HGMD. The other variants identified in the sisters were also identified in the unaffected family members, suggesting a lack of a clear pathogenic effect (see <xref rid="pone.0133742.g004" ref-type="fig">Fig 4</xref> for mutational pedigree). Based upon this analysis, the true disease causing variants remain to be identified. We recommend whole exome sequencing be performed on this family in order to identify additional variants potentially associated with DCM. CNV analysis performed on the sisters did not identify variations suggestive of a potentially pathogenic nature.</p>
+          <fig id="pone.0133742.g004" orientation="portrait" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0133742.g004</object-id>
+            <label>Fig 4</label>
+            <caption>
+              <title>Mutational pedigree of TG471.001 and TG472.002, sisters with DCM.</title>
+              <p>Affected sisters are indicated in black. Associated variants are provided under each family member.</p>
+            </caption>
+            <graphic xlink:href="pone.0133742.g004"/>
+          </fig>
+        </sec>
+      </sec>
+      <sec id="sec025">
+        <title>Copy number variation results</title>
+        <p>In the 18 samples analyzed, a total of 152 copy number deletions and 351 copy number amplifications were detected. All copy number changes highlighted below may have potential diagnostic value and were validated through qPCR (<xref rid="pone.0133742.s001" ref-type="supplementary-material">S1 Fig</xref> and <xref rid="pone.0133742.s005" ref-type="supplementary-material">S4</xref> Table).</p>
+        <sec id="sec026">
+          <title>CASE 6</title>
+          <p>Patient SS1, presenting with a dilated cardiomyopathy (DCM) with conduction defects (OMIM#115200) harbored a 3.74 kb deletion that resulted in the heterozygous loss of the <italic>alpha-T-catenin</italic> gene (<italic>CTNNA3</italic>). This gene maps to chromosome 10q21.3, a region linked to autosomal dominant familial DCM [<xref rid="pone.0133742.ref026" ref-type="bibr">26</xref>]. The most common form of myocardial disease, DCM is associated with a high incidence of ventricular arrhythmias, severe congestive heart failure and an increased risk of sudden death [<xref rid="pone.0133742.ref027" ref-type="bibr">27</xref>]. <italic>CTNNA3</italic> is highly expressed at intercalated discs of cardiomyocytes and peritubular myoid cells of the testis, indicating a specific function for this gene in particular muscle tissues [<xref rid="pone.0133742.ref026" ref-type="bibr">26</xref>]. Several reports link variants in the <italic>CTNNA3</italic> gene with another form of cardiomyopathy, specifically, arrhythmogenic right ventricular dysplasia [<xref rid="pone.0133742.ref028" ref-type="bibr">28</xref>] (ARVC; OMIM#107970). Li <italic>et al</italic>. examined the role of <italic>CTNNA3</italic> in the hearts of mice and found that CTNNA3 acts as a molecular integrator of adherens junctional and desmosomal components at the area composita resulting in early onset of DCM [<xref rid="pone.0133742.ref027" ref-type="bibr">27</xref>]. This CNV is not common and to our knowledge has never been reported based on a literature search or inquiry of CNV databases [<xref rid="pone.0133742.ref029" ref-type="bibr">29</xref>]. We propose the deletion may be causative of the patient's phenotype.</p>
+          <p>Patients TG90.001 and TG90.002 (CASES 1 and 2 above), both harbored two duplications mapping to regions 2q21.1 and 6q27, resulting in an allelic gain to eleven and four genes, respectively. Two genes, <italic>tubulin</italic>, <italic>alpha 3d</italic> (<italic>TUBA3D</italic>) located in the 2q21 region and <italic>kinesin family member 25</italic> (<italic>KIF25</italic>) located in the 6q27 region are involved in microtubule formation. The copy number gain observed at 2q21 was maternally inherited, while the gain seen at 6q27 was paternally inherited. We suspect based on segregation analysis that these duplications, in addition to the potentially pathogenic variant identified in the <italic>FBN1</italic> gene (previously discussed) could be responsible for the skeletal and muscular abnormalities observed in the twins, however in order to confirm this functional studies would need to be performed.</p>
+        </sec>
+      </sec>
+      <sec id="sec027">
+        <title>Cost considerations</title>
+        <p>When directly comparing the costs of target-capture sequencing to WES, the former is about one fourth lower than that of WES (<xref rid="pone.0133742.t004" ref-type="table">Table 4</xref>). The large target size of WES prohibits high multiplexing capabilities, commonly sequenced with only three samples per lane. This experimental setting results in an average depth of ~50X, while the reduced capture size for of our target panel (4.98Mb) permits extensive pre-capture pooling and increased multiplexing capabilities dramatically lowering the costs. A panel of ~5Mb, and 150bp paired-end sequencing, allows the multiplexing of 16 samples per lane generating an average predicated depth of ~150X, which is still much higher than that usually generated by WES. When directly comparing WES and target capture design using the exact same approach (Roche Nimblegen SeqCap EZ capture, and sequencing using the Illumina HiSeq 2500) the reduced costs are largely driven by increased multiplexing capabilities and the lower costs of the target capture pool (<xref rid="pone.0133742.t004" ref-type="table">Table 4</xref>). Costs associated to library preparation as well as hands on time remain the same.</p>
+        <table-wrap id="pone.0133742.t004" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0133742.t004</object-id>
+          <label>Table 4</label>
+          <caption>
+            <title>Cost comparison of target sequencing panel Einstein_v1 versus Whole Exome Sequencing.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone.0133742.t004g" xlink:href="pone.0133742.t004"/>
+            <table frame="hsides" rules="groups">
+              <colgroup span="1">
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+                <col align="left" valign="middle" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th align="left" rowspan="1" colspan="1"/>
+                  <th align="left" rowspan="1" colspan="1">Einstein _v1</th>
+                  <th align="left" rowspan="1" colspan="1">Whole Exome Sequencing</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Capture method</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Roche Nimblegen SeqCap EZ</td>
+                  <td align="left" rowspan="1" colspan="1">Roche Nimblegen SeqCap EZ Exome v3.0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Targeted Region</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">4.98Mb</td>
+                  <td align="left" rowspan="1" colspan="1">64 Mb</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Number of Probes</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">26,046</td>
+                  <td align="left" rowspan="1" colspan="1">&gt;2,100,000</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Probe Type</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Biotinylated DNA bait</td>
+                  <td align="left" rowspan="1" colspan="1">Biotinylated DNA bait</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Genomic DNA input required</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">1ug</td>
+                  <td align="left" rowspan="1" colspan="1">1 ug</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Number of variants <xref rid="t004fn001" ref-type="table-fn">*</xref></bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">4,093 SNVs/758 InDel</td>
+                  <td align="left" rowspan="1" colspan="1">6,350SNVs/2064 InDel</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Number of variants MAF &lt;1%</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">734 SNVs</td>
+                  <td align="left" rowspan="1" colspan="1">1,190 SNVs</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Capture kit, cost per sample</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">$37.5</td>
+                  <td align="left" rowspan="1" colspan="1">$600</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Price sequencing per sample <xref rid="t004fn002" ref-type="table-fn">**</xref></bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">$87.5 (16 samples/lane)</td>
+                  <td align="left" rowspan="1" colspan="1">$466 (3 samples/lane)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Cost of library prep</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">$200</td>
+                  <td align="left" rowspan="1" colspan="1">$200</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>Estimated cost</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>$281.25</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>$1,266</bold>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="t004fn001">
+              <p>* The number of SNVs/InDels identified was based on samples used in the current analysis (n = 2 for WES and matching target sequencing).</p>
+            </fn>
+            <fn id="t004fn002">
+              <p>** Based on estimated $1,400/lane 150 bp pair end sequencing on Illumina 2500.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>In addition despite the increasing efficacy of pipelines and automated analytical plug-ins being continuously developed, lists of filtered rare variants generated by the adopted pipelines still require manual inspection by trained personnel. When comparing the number of variants identified (vcf files comparison) by the target capture panel (Einstein_v1) vs. WES on the same samples, the target capture approach generates ~40% less (when running the same analytical pipeline). The number of variants that require manual inspection considerably affect the time and the costs required analysis. We estimated, based on our experience, that 8 minutes are required to perform a general analysis of one variant. These include visual inspection using IGV, database, and literature screening to determine whether the variant has been previously reported).</p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions" id="sec028">
+      <title>Discussion</title>
+      <p>This study highlights the challenges and benefits of developing a multi-disease sequencing assay that could be implemented as a diagnostic tool to assist clinical care in an underserved minority population such as the one that exists in the Bronx. Patients seeking care in depressed areas are often unable to get access to genetic testing offered by commercial laboratories due to high costs of the testing. We selected a cohort of patients to test a target-capture approach, followed by high-throughput sequencing, of exons, exon-intron boundaries and 5&#x2019; untranslated regions of 650 known and candidate disease-causing genes related to the cohort of patients selected for this study. The target disease areas included a variety of heterogeneous disorders ranging from known Mendelian-inherited conditions to complex pediatric disorders based on discussions with clinicians from our neighboring hospital. Genome-wide Affymetrix 6.0 SNP/CNV microarrays were performed on the DNA obtained from the same patients to complement target sequencing and assess DNA copy number variations larger than 200 kb. By using both targeted-sequencing and chromosome microarray, our study suggests that an approach based on a large custom sequencing panel combined with CNV analysis is useful as an aid in clinical care. Our target sequencing results exhibited high sensitivity and specificity in terms of accurately identifying previously reported variants proving suitable for testing of the case patients. We could identify a likely disease-associated variant in four patients. These were patients 90.001 and 90.002 with a heterozygous variant in <italic>FBN1</italic> and copy number gains in <italic>TUBA3D</italic> and <italic>KIF25</italic>, patient RB1 with nonsense and splice-site variants in CASQ2, and patient <italic>SS1</italic> with a copy number deletion in <italic>CTTNA3</italic>. In addition based on the sequencing results of our assay we could perform target Sanger Sequencing analysis on some of the patients&#x2019; family members pinpointing to a possible pathogenic variant in the offspring.</p>
+      <p>Lack of obvious disease causing variants in the other samples could be due to their absence in our gene panel, an over all limitation in this type of studies, and therefore requiring a more comprehensive analysis [<xref rid="pone.0133742.ref005" ref-type="bibr">5</xref>]. It is also known that the positive success rates, especially those targeting channelopathies and cardiomyopathies, range from 20&#x2013;75% [<xref rid="pone.0133742.ref030" ref-type="bibr">30</xref>], indicating that not all genes linked to these disorders have been discovered. Alternatively, variant classification curated by several public variant databases and pathogenicity prediction tools may suggest being benign [<xref rid="pone.0133742.ref025" ref-type="bibr">25</xref>]. However, a position should be interrogated sufficiently and possibly followed up by functional studies in order to rule-out potential false-negative and false-positive results and clarify its true pathogenicity [<xref rid="pone.0133742.ref025" ref-type="bibr">25</xref>,<xref rid="pone.0133742.ref031" ref-type="bibr">31</xref>]. We identified several variants that were detected in both dbSNP and NHLBI but were classified as benign and/or likely pathogenic suggesting the need for more extensive functional work and advancement in pathogenicity prediction tools to better understand the penetrance of previously identified disease-causing variants, especially in a less frequently sequenced minority population. These findings suggest that efforts to make available sequencing tools for an ethnically diverse minority population are an essential step towards a better understanding of variants of unknown significance. Despite the efforts of large sequencing consortiums the number of variants that don&#x2019;t have an associated MAF and the ones being predicted with contradictory outcomes (tolerated vs. damaging) by various predictor tools is still extremely large. This makes the identification of disease related variants very challenging.</p>
+      <p>We suggest that custom panels similar to the ones we describe can serve as cost-effective tools that can provide valuable insight to a patient's disease and possible molecular diagnosis. In addition sharing clinical cases and their associated predicted pathogenic variants trough the literature and the dedicated databases is essential to build knowledge in this quickly evolving field. A custom design covering a large number of candidate genes seems to be advantageous for low volume sequencing facilities since this will avoid delays in sample processing due to the need to reach certain multiplexing requirement necessary to contain costs.</p>
+      <p>Until a large number of sequences of patients from a mixed population, such as the Bronx, is generated and made publicly available, similar to that of the 1000Genomes and NHLBI ESP Projects, it will be challenging to understand the penetrance of previously reported variants among minority and mixed populations. This is likely to be achieved if cost-effective comprehensive panels are made available in clinical settings. Furthermore, sequencing of large cohorts can assist in the discovery of newly pathogenic variants unique to these ethnicities.</p>
+    </sec>
+    <sec sec-type="conclusions" id="sec029">
+      <title>Conclusion</title>
+      <p>To the best of our knowledge, this study is the first to analyze multiple-diseases and syndromes in a single targeted-sequencing assay. With the approach, we report and discuss the identification of variants in five of the patients from a cohort of individuals selected from the Bronx County in New York. A high throughput, multiplexed target sequencing approach based on a multi-disease design is more cost-efficient than a single, or small panel, candidate gene approach. Therefore clinical centers and hospitals serving low-income neighborhoods may consider a similar approach. A multi-disease design also has the capability to improve detection rates in complex and heterogeneous disorders, ultimately leading to more accurate diagnoses, improved treatment options, and better genetic counseling possibilities. Currently, a multi-disease sequencing panel is available only in research settings. We believe that our study demonstrates the clinical potential that a multiple disease-sequencing panel could provide if implemented in the clinic as a molecular diagnostic tool for the characterization and diagnosis of heterogeneous disorders.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="sec030">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0133742.s001">
+        <label>S1 Fig</label>
+        <caption>
+          <title>CNVs validation using qPCR.</title>
+          <p>From top to bottom: CTNNA3 validation in sample SS1; KIF25 validation in samples TG90&#x2019; and TUBA3D validation in samples TG90.</p>
+          <p>(TIF)</p>
+        </caption>
+        <media xlink:href="pone.0133742.s001.tif">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0133742.s002">
+        <label>S1 Table</label>
+        <caption>
+          <title>Picard stats for WES controls.</title>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0133742.s002.xlsx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0133742.s003">
+        <label>S2 Table</label>
+        <caption>
+          <title>Complete gene list and associated syndromes.</title>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0133742.s003.xlsx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0133742.s004">
+        <label>S3 Table</label>
+        <caption>
+          <title>Regions excluded from panel and reason.</title>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0133742.s004.xlsx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0133742.s005">
+        <label>S4 Table</label>
+        <caption>
+          <title>List of variants used for Sanger sequencing validation and results.</title>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0133742.s005.xlsx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0133742.s006">
+        <label>S5 Table</label>
+        <caption>
+          <title>Mean depth as function of GC content.</title>
+          <p>(XLSX)</p>
+        </caption>
+        <media xlink:href="pone.0133742.s006.xlsx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>The authors would like to thank all the patients and family members for participating in this study as well as the clinicians who referred patients to this study or provided control samples. We appreciate the technical assistance provided by several core facilities at Albert Einstein College of Medicine: Dr. Jidong Shan and Ms. Debbie Lewis in the Molecular Cytogenetics Core for help with DNA isolation; David Reynolds in the Genomics Shared Facility for help with Affymetrix SNP 6.0 genotyping arrays; Dr. Shahina Maqbool and the personnel of the Epigenomics Shared Facility for library preparation and Illumina sequencing; Mr. Brent Calder and Dr. Jinlu Cai in the Computational Core for sequence alignment and annotation. We also thank Roche-NimbleGen for their technical support. Lastly, we are grateful of the support that Albert Einstein College of Medicine has provided to this project, in particular to Dean Spiegel for his continuous interest and feedback.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0133742.ref001">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Simpson</surname><given-names>DA</given-names></name>, <name><surname>Clark</surname><given-names>GR</given-names></name>, <name><surname>Alexander</surname><given-names>S</given-names></name>, <name><surname>Silvestri</surname><given-names>G</given-names></name>, <name><surname>Willoughby</surname><given-names>CE</given-names></name> (<year>2011</year>) <article-title>Molecular diagnosis for heterogeneous genetic diseases with targeted high-throughput DNA sequencing applied to retinitis pigmentosa</article-title>. <source>J Med Genet</source>
+<volume>48</volume>: <fpage>145</fpage>&#x2013;<lpage>151</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/jmg.2010.083568">10.1136/jmg.2010.083568</ext-link></comment>
+<pub-id pub-id-type="pmid">21147909</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref002">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Kenna</surname><given-names>KP</given-names></name>, <name><surname>McLaughlin</surname><given-names>RL</given-names></name>, <name><surname>Byrne</surname><given-names>S</given-names></name>, <name><surname>Elamin</surname><given-names>M</given-names></name>, <name><surname>Heverin</surname><given-names>M</given-names></name>, <name><surname>Kenny</surname><given-names>EM</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>Delineating the genetic heterogeneity of ALS using targeted high-throughput sequencing</article-title>. <source>J Med Genet</source>
+<volume>50</volume>: <fpage>776</fpage>&#x2013;<lpage>783</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/jmedgenet-2013-101795">10.1136/jmedgenet-2013-101795</ext-link></comment>
+<pub-id pub-id-type="pmid">23881933</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref003">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Neveling</surname><given-names>K</given-names></name>, <name><surname>Feenstra</surname><given-names>I</given-names></name>, <name><surname>Gilissen</surname><given-names>C</given-names></name>, <name><surname>Hoefsloot</surname><given-names>LH</given-names></name>, <name><surname>Kamsteeg</surname><given-names>EJ</given-names></name>, <name><surname>Mensenkamp</surname><given-names>AR</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>A post-hoc comparison of the utility of sanger sequencing and exome sequencing for the diagnosis of heterogeneous diseases</article-title>. <source>Hum Mutat</source>
+<volume>34</volume>: <fpage>1721</fpage>&#x2013;<lpage>1726</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/humu.22450">10.1002/humu.22450</ext-link></comment>
+<pub-id pub-id-type="pmid">24123792</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref004">
+        <label>4</label>
+        <mixed-citation publication-type="book"><name><surname>Gabe</surname><given-names>T</given-names></name> (<year>2013</year>) <chapter-title>Poverty in the United States: 2012</chapter-title>
+<publisher-name>Federation of American Scientists</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref005">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Mook</surname><given-names>OR</given-names></name>, <name><surname>Haagmans</surname><given-names>MA</given-names></name>, <name><surname>Soucy</surname><given-names>JF</given-names></name>, <name><surname>van de Meerakker</surname><given-names>JB</given-names></name>, <name><surname>Baas</surname><given-names>F</given-names></name>, <name><surname>Jakobs</surname><given-names>ME</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>Targeted sequence capture and GS-FLX Titanium sequencing of 23 hypertrophic and dilated cardiomyopathy genes: implementation into diagnostics</article-title>. <source>J Med Genet</source>
+<volume>50</volume>: <fpage>614</fpage>&#x2013;<lpage>626</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/jmedgenet-2012-101231">10.1136/jmedgenet-2012-101231</ext-link></comment>
+<pub-id pub-id-type="pmid">23785128</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref006">
+        <label>6</label>
+        <mixed-citation publication-type="other">School HM Partners HealthCare Center for Personalized Genetic Medicine (PCPGM). Prices &amp; CPT Codes.</mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref007">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>Auton</surname><given-names>A</given-names></name>, <name><surname>McVean</surname><given-names>G</given-names></name> (<year>2012</year>) <article-title>Estimating recombination rates from genetic variation in humans</article-title>. <source>Methods Mol Biol</source>
+<volume>856</volume>: <fpage>217</fpage>&#x2013;<lpage>237</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/978-1-61779-585-5_9">10.1007/978-1-61779-585-5_9</ext-link></comment>
+<pub-id pub-id-type="pmid">22399461</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref008">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Kidd</surname><given-names>JM</given-names></name>, <name><surname>Gravel</surname><given-names>S</given-names></name>, <name><surname>Byrnes</surname><given-names>J</given-names></name>, <name><surname>Moreno-Estrada</surname><given-names>A</given-names></name>, <name><surname>Musharoff</surname><given-names>S</given-names></name>, <name><surname>Bryc</surname><given-names>K</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Population genetic inference from personal genome data: impact of ancestry and admixture on human genomic variation</article-title>. <source>Am J Hum Genet</source>
+<volume>91</volume>: <fpage>660</fpage>&#x2013;<lpage>671</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ajhg.2012.08.025">10.1016/j.ajhg.2012.08.025</ext-link></comment>
+<pub-id pub-id-type="pmid">23040495</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref009">
+        <label>9</label>
+        <mixed-citation publication-type="other">(2014) Exome Variant Server, NHLBI GO Exome Sequencing Project (ESP). Seattle, WA.</mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref010">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>McLellan</surname><given-names>AS</given-names></name>, <name><surname>Dubin</surname><given-names>RA</given-names></name>, <name><surname>Jing</surname><given-names>Q</given-names></name>, <name><surname>Broin</surname><given-names>PO</given-names></name>, <name><surname>Moskowitz</surname><given-names>D</given-names></name>, <name><surname>Suzuki</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>The Wasp System: an open source environment for managing and analyzing genomic data</article-title>. <source>Genomics</source>
+<volume>100</volume>: <fpage>345</fpage>&#x2013;<lpage>351</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ygeno.2012.08.005">10.1016/j.ygeno.2012.08.005</ext-link></comment>
+<pub-id pub-id-type="pmid">22944616</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref011">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Li</surname><given-names>H</given-names></name>, <name><surname>Durbin</surname><given-names>R</given-names></name> (<year>2010</year>) <article-title>Fast and accurate long-read alignment with Burrows-Wheeler transform</article-title>. <source>Bioinformatics</source>
+<volume>26</volume>: <fpage>589</fpage>&#x2013;<lpage>595</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bioinformatics/btp698">10.1093/bioinformatics/btp698</ext-link></comment>
+<pub-id pub-id-type="pmid">20080505</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref012">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Li</surname><given-names>H</given-names></name>, <name><surname>Durbin</surname><given-names>R</given-names></name> (<year>2009</year>) <article-title>Fast and accurate short read alignment with Burrows-Wheeler transform</article-title>. <source>Bioinformatics</source>
+<volume>25</volume>: <fpage>1754</fpage>&#x2013;<lpage>1760</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bioinformatics/btp324">10.1093/bioinformatics/btp324</ext-link></comment>
+<pub-id pub-id-type="pmid">19451168</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref013">
+        <label>13</label>
+        <mixed-citation publication-type="other">(2014) Picard.</mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref014">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>McKenna</surname><given-names>A</given-names></name>, <name><surname>Hanna</surname><given-names>M</given-names></name>, <name><surname>Banks</surname><given-names>E</given-names></name>, <name><surname>Sivachenko</surname><given-names>A</given-names></name>, <name><surname>Cibulskis</surname><given-names>K</given-names></name>, <name><surname>Kernytsky</surname><given-names>A</given-names></name>. <etal>et al</etal> (<year>2010</year>) <article-title>The Genome Analysis Toolkit: A MapReduce framework for analyzing next-generation DNA sequencing data</article-title>. <source>Genome Research</source>
+<volume>20</volume>: <fpage>1297</fpage>&#x2013;<lpage>1303</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1101/gr.107524.110">10.1101/gr.107524.110</ext-link></comment>
+<pub-id pub-id-type="pmid">20644199</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref015">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Wang</surname><given-names>K</given-names></name>, <name><surname>Li</surname><given-names>M</given-names></name>, <name><surname>Hakonarson</surname><given-names>H</given-names></name> (<year>2010</year>) <article-title>ANNOVAR: functional annotation of genetic variants from high-throughput sequencing data</article-title>. <source>Nucleic Acids Res</source>
+<volume>38</volume>: <fpage>e164</fpage>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/gkq603">10.1093/nar/gkq603</ext-link></comment>
+<pub-id pub-id-type="pmid">20601685</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref016">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Sherry</surname><given-names>ST</given-names></name>, <name><surname>Ward</surname><given-names>MH</given-names></name>, <name><surname>Kholodov</surname><given-names>M</given-names></name>, <name><surname>Baker</surname><given-names>J</given-names></name>, <name><surname>Phan</surname><given-names>L</given-names></name>, <name><surname>Smigielski</surname><given-names>EM</given-names></name>, <etal>et al</etal> (<year>2001</year>) <article-title>dbSNP: the NCBI database of genetic variation</article-title>. <source>Nucleic Acids Res</source>
+<volume>29</volume>: <fpage>308</fpage>&#x2013;<lpage>311</lpage>. <pub-id pub-id-type="pmid">11125122</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref017">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><collab>Genomes Project C</collab>, <name><surname>Abecasis</surname><given-names>GR</given-names></name>, <name><surname>Auton</surname><given-names>A</given-names></name>, <name><surname>Brooks</surname><given-names>LD</given-names></name>, <name><surname>DePristo</surname><given-names>MA</given-names></name>, <name><surname>Durbin</surname><given-names>RM</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>An integrated map of genetic variation from 1,092 human genomes</article-title>. <source>Nature</source>
+<volume>491</volume>: <fpage>56</fpage>&#x2013;<lpage>65</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature11632">10.1038/nature11632</ext-link></comment>
+<pub-id pub-id-type="pmid">23128226</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref018">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Thorvaldsdottir</surname><given-names>H</given-names></name>, <name><surname>Robinson</surname><given-names>JT</given-names></name>, <name><surname>Mesirov</surname><given-names>JP</given-names></name> (<year>2013</year>) <article-title>Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration</article-title>. <source>Brief Bioinform</source>
+<volume>14</volume>: <fpage>178</fpage>&#x2013;<lpage>192</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/bib/bbs017">10.1093/bib/bbs017</ext-link></comment>
+<pub-id pub-id-type="pmid">22517427</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref019">
+        <label>19</label>
+        <mixed-citation publication-type="other">Rozen S, Skaletsky H (1998) Primer3.</mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref020">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Trujillano</surname><given-names>D</given-names></name>, <name><surname>Ramos</surname><given-names>MD</given-names></name>, <name><surname>Gonzalez</surname><given-names>J</given-names></name>, <name><surname>Tornador</surname><given-names>C</given-names></name>, <name><surname>Sotillo</surname><given-names>F</given-names></name>, <name><surname>Escaramis</surname><given-names>G</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>Next generation diagnostics of cystic fibrosis and CFTR-related disorders by targeted multiplex high-coverage resequencing of CFTR</article-title>. <source>J Med Genet</source>
+<volume>50</volume>: <fpage>455</fpage>&#x2013;<lpage>462</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/jmedgenet-2013-101602">10.1136/jmedgenet-2013-101602</ext-link></comment>
+<pub-id pub-id-type="pmid">23687349</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref021">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Wong</surname><given-names>SQ</given-names></name>, <name><surname>Li</surname><given-names>J</given-names></name>, <name><surname>Salemi</surname><given-names>R</given-names></name>, <name><surname>Sheppard</surname><given-names>KE</given-names></name>, <name><surname>Do</surname><given-names>H</given-names></name>, <name><surname>Tothill</surname><given-names>RW</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>Targeted-capture massively-parallel sequencing enables robust detection of clinically informative mutations from formalin-fixed tumours</article-title>. <source>Sci Rep</source>
+<volume>3</volume>: <fpage>3494</fpage>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/srep03494">10.1038/srep03494</ext-link></comment>
+<pub-id pub-id-type="pmid">24336498</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref022">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Fisher</surname><given-names>S</given-names></name>, <name><surname>Barry</surname><given-names>A</given-names></name>, <name><surname>Abreu</surname><given-names>J</given-names></name>, <name><surname>Minie</surname><given-names>B</given-names></name>, <name><surname>Nolan</surname><given-names>J</given-names></name>, <name><surname>Delorey</surname><given-names>TM</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>A scalable, fully automated process for construction of sequence-ready human exome targeted capture libraries</article-title>. <source>Genome Biol</source>
+<volume>12</volume>: <fpage>R1</fpage>
+<comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/gb-2011-12-1-r1">10.1186/gb-2011-12-1-r1</ext-link></comment>
+<pub-id pub-id-type="pmid">21205303</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref023">
+        <label>23</label>
+        <mixed-citation publication-type="book"><name><surname>Willard</surname><given-names>NM</given-names></name> (<year>2007</year>) <chapter-title>Thompson &amp; Thompson Genetics in Medicine</chapter-title>, <edition>7th Edition</edition>: <publisher-name>Saunders</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref024">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Hunter</surname><given-names>DJ</given-names></name> (<year>2005</year>) <article-title>Gene-environment interactions in human diseases</article-title>. <source>Nat Rev Genet</source>
+<volume>6</volume>: <fpage>287</fpage>&#x2013;<lpage>298</lpage>. <pub-id pub-id-type="pmid">15803198</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref025">
+        <label>25</label>
+        <mixed-citation publication-type="journal"><name><surname>Duzkale</surname><given-names>H</given-names></name>, <name><surname>Shen</surname><given-names>J</given-names></name>, <name><surname>McLaughlin</surname><given-names>H</given-names></name>, <name><surname>Alfares</surname><given-names>A</given-names></name>, <name><surname>Kelly</surname><given-names>MA</given-names></name>, <name><surname>Pugh</surname><given-names>TJ</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>A systematic approach to assessing the clinical significance of genetic variants</article-title>. <source>Clin Genet</source>
+<volume>84</volume>: <fpage>453</fpage>&#x2013;<lpage>463</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/cge.12257">10.1111/cge.12257</ext-link></comment>
+<pub-id pub-id-type="pmid">24033266</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref026">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Janssens</surname><given-names>B</given-names></name>, <name><surname>Mohapatra</surname><given-names>B</given-names></name>, <name><surname>Vatta</surname><given-names>M</given-names></name>, <name><surname>Goossens</surname><given-names>S</given-names></name>, <name><surname>Vanpoucke</surname><given-names>G</given-names></name>, <name><surname>Kools</surname><given-names>P</given-names></name>, <etal>et al</etal> (<year>2003</year>) <article-title>Assessment of the CTNNA3 gene encoding human alpha T-catenin regarding its involvement in dilated cardiomyopathy</article-title>. <source>Hum Genet</source>
+<volume>112</volume>: <fpage>227</fpage>&#x2013;<lpage>236</lpage>. <pub-id pub-id-type="pmid">12596047</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref027">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Li</surname><given-names>J</given-names></name>, <name><surname>Goossens</surname><given-names>S</given-names></name>, <name><surname>van Hengel</surname><given-names>J</given-names></name>, <name><surname>Gao</surname><given-names>E</given-names></name>, <name><surname>Cheng</surname><given-names>L</given-names></name>, <name><surname>Tyberghein</surname><given-names>K</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Loss of alphaT-catenin alters the hybrid adhering junctions in the heart and leads to dilated cardiomyopathy and ventricular arrhythmia following acute ischemia</article-title>. <source>J Cell Sci</source>
+<volume>125</volume>: <fpage>1058</fpage>&#x2013;<lpage>1067</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1242/jcs.098640">10.1242/jcs.098640</ext-link></comment>
+<pub-id pub-id-type="pmid">22421363</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref028">
+        <label>28</label>
+        <mixed-citation publication-type="journal"><name><surname>van Hengel</surname><given-names>J</given-names></name>, <name><surname>Calore</surname><given-names>M</given-names></name>, <name><surname>Bauce</surname><given-names>B</given-names></name>, <name><surname>Dazzo</surname><given-names>E</given-names></name>, <name><surname>Mazzotti</surname><given-names>E</given-names></name>, <name><surname>De Bortoli</surname><given-names>M</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>Mutations in the area composita protein alphaT-catenin are associated with arrhythmogenic right ventricular cardiomyopathy</article-title>. <source>Eur Heart J</source>
+<volume>34</volume>: <fpage>201</fpage>&#x2013;<lpage>210</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/eurheartj/ehs373">10.1093/eurheartj/ehs373</ext-link></comment>
+<pub-id pub-id-type="pmid">23136403</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref029">
+        <label>29</label>
+        <mixed-citation publication-type="other">(2012) The International Standards for Cytogenomic Arrays Consortium. pp. "The data in this manuscript were obtained from the ISCA Consortium database (<ext-link ext-link-type="uri" xlink:href="http://www.iscaconsortium.org">http://www.iscaconsortium.org</ext-link>), which generates this information using NCBI's database of genomic structual variation (dbVar, <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/dbvar/">http://www.ncbi.nlm.nih.gov/dbvar/</ext-link>), study nstd37. Samples and associated phenotype data were provided by ISCA Consortium member laboratories.".</mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref030">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>Ackerman</surname><given-names>MJ</given-names></name>, <name><surname>Priori</surname><given-names>SG</given-names></name>, <name><surname>Willems</surname><given-names>S</given-names></name>, <name><surname>Berul</surname><given-names>C</given-names></name>, <name><surname>Brugada</surname><given-names>R</given-names></name>, <name><surname>Calkins</surname><given-names>H</given-names></name>, <etal>et al</etal> (<year>2011</year>) <article-title>HRS/EHRA expert consensus statement on the state of genetic testing for the channelopathies and cardiomyopathies this document was developed as a partnership between the Heart Rhythm Society (HRS) and the European Heart Rhythm Association (EHRA)</article-title>. <source>Heart Rhythm</source>
+<volume>8</volume>: <fpage>1308</fpage>&#x2013;<lpage>1339</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.hrthm.2011.05.020">10.1016/j.hrthm.2011.05.020</ext-link></comment>
+<pub-id pub-id-type="pmid">21787999</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0133742.ref031">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>Andreasen</surname><given-names>C</given-names></name>, <name><surname>Nielsen</surname><given-names>JB</given-names></name>, <name><surname>Refsgaard</surname><given-names>L</given-names></name>, <name><surname>Holst</surname><given-names>AG</given-names></name>, <name><surname>Christensen</surname><given-names>AH</given-names></name>, <name><surname>Andreasen</surname><given-names>L</given-names></name>, <etal>et al</etal> (<year>2013</year>) <article-title>New population-based exome data are questioning the pathogenicity of previously cardiomyopathy-associated genetic variants</article-title>. <source>Eur J Hum Genet</source>
+<volume>21</volume>: <fpage>918</fpage>&#x2013;<lpage>928</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/ejhg.2012.283">10.1038/ejhg.2012.283</ext-link></comment>
+<pub-id pub-id-type="pmid">23299917</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+</pmc-articleset>

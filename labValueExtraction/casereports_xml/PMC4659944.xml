@@ -1,0 +1,856 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Nat Commun</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Nat Commun</journal-id>
+      <journal-title-group>
+        <journal-title>Nature Communications</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2041-1723</issn>
+      <publisher>
+        <publisher-name>Nature Pub. Group</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">26525107</article-id>
+      <article-id pub-id-type="pmc">4659944</article-id>
+      <article-id pub-id-type="pii">ncomms9777</article-id>
+      <article-id pub-id-type="doi">10.1038/ncomms9777</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>The paracaspase MALT1 cleaves HOIL1 reducing linear ubiquitination by LUBAC to dampen lymphocyte NF-&#x3BA;B signalling</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Klein</surname>
+            <given-names>Theo</given-names>
+          </name>
+          <xref ref-type="aff" rid="a1">1</xref>
+          <xref ref-type="aff" rid="a2">2</xref>
+          <xref ref-type="aff" rid="a3">3</xref>
+          <xref ref-type="author-notes" rid="n1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Fung</surname>
+            <given-names>Shan-Yu</given-names>
+          </name>
+          <xref ref-type="aff" rid="a4">4</xref>
+          <xref ref-type="aff" rid="a5">5</xref>
+          <xref ref-type="author-notes" rid="n1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Renner</surname>
+            <given-names>Florian</given-names>
+          </name>
+          <xref ref-type="aff" rid="a6">6</xref>
+          <xref ref-type="author-notes" rid="n1">*</xref>
+          <xref ref-type="author-notes" rid="n3">&#x2021;</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Blank</surname>
+            <given-names>Michael A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="a7">7</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dufour</surname>
+            <given-names>Antoine</given-names>
+          </name>
+          <xref ref-type="aff" rid="a1">1</xref>
+          <xref ref-type="aff" rid="a2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kang</surname>
+            <given-names>Sohyeong</given-names>
+          </name>
+          <xref ref-type="aff" rid="a5">5</xref>
+          <xref ref-type="aff" rid="a8">8</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bolger-Munro</surname>
+            <given-names>Madison</given-names>
+          </name>
+          <xref ref-type="aff" rid="a9">9</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Scurll</surname>
+            <given-names>Joshua M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="a10">10</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Priatel</surname>
+            <given-names>John J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="a5">5</xref>
+          <xref ref-type="aff" rid="a8">8</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Schweigler</surname>
+            <given-names>Patrick</given-names>
+          </name>
+          <xref ref-type="aff" rid="a6">6</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Melkko</surname>
+            <given-names>Samu</given-names>
+          </name>
+          <xref ref-type="aff" rid="a6">6</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gold</surname>
+            <given-names>Michael R.</given-names>
+          </name>
+          <xref ref-type="aff" rid="a9">9</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Viner</surname>
+            <given-names>Rosa I.</given-names>
+          </name>
+          <xref ref-type="aff" rid="a7">7</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>R&#xE9;gnier</surname>
+            <given-names>Catherine H.</given-names>
+          </name>
+          <xref ref-type="corresp" rid="c1">a</xref>
+          <xref ref-type="aff" rid="a6">6</xref>
+          <xref ref-type="author-notes" rid="n2">&#x2020;</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Turvey</surname>
+            <given-names>Stuart E.</given-names>
+          </name>
+          <xref ref-type="corresp" rid="c2">b</xref>
+          <xref ref-type="aff" rid="a4">4</xref>
+          <xref ref-type="aff" rid="a5">5</xref>
+          <xref ref-type="author-notes" rid="n2">&#x2020;</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Overall</surname>
+            <given-names>Christopher M.</given-names>
+          </name>
+          <xref ref-type="corresp" rid="c3">c</xref>
+          <xref ref-type="aff" rid="a1">1</xref>
+          <xref ref-type="aff" rid="a2">2</xref>
+          <xref ref-type="aff" rid="a3">3</xref>
+          <xref ref-type="author-notes" rid="n2">&#x2020;</xref>
+        </contrib>
+        <aff id="a1"><label>1</label><institution>Department of Biochemistry and Molecular Biology, University of British Columbia</institution>, Vancouver, British Columbia, <country>Canada</country> V6T 1Z3</aff>
+        <aff id="a2"><label>2</label><institution>Department of Oral Biological and Medical Science, University of British Columbia</institution>, Vancouver, British Columbia, <country>Canada</country> V6T 1Z3</aff>
+        <aff id="a3"><label>3</label><institution>Center for Blood Research, University of British Columbia</institution>, Vancouver, British Columbia, <country>Canada</country> V6T 1Z3</aff>
+        <aff id="a4"><label>4</label><institution>Department of Pediatrics, University of British Columbia</institution>, Vancouver, British Columbia, <country>Canada</country> V6T 1Z3</aff>
+        <aff id="a5"><label>5</label><institution>Child &amp; Family Research Institute, BC Children's Hospital</institution>, Vancouver, British Columbia, <country>Canada</country> V6T 1Z3</aff>
+        <aff id="a6"><label>6</label><institution>Novartis Institutes for BioMedical Research, Novartis Campus</institution>, Basel, CH-4056, <country>Switzerland</country></aff>
+        <aff id="a7"><label>7</label><institution>Thermo Fisher Scientific</institution>, 355 River Oaks Parkway, San Jose, 95134 California, <country>USA</country></aff>
+        <aff id="a8"><label>8</label><institution>Department of Pathology and Laboratory Medicine, University of British Columbia</institution>, Vancouver, British Columbia, <country>Canada</country> V5Z 4H4</aff>
+        <aff id="a9"><label>9</label><institution>Department of Microbiology and Immunology, University of British Columbia</institution>, Vancouver, British Columbia, <country>Canada</country> V6T 1Z3</aff>
+        <aff id="a10"><label>10</label><institution>Department of Mathematics, University of British Columbia</institution>, Vancouver, British Columbia, <country>Canada</country> V6T 1Z3</aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="c1">
+          <label>a</label>
+          <email>catherine.regnier@novartis.com</email>
+        </corresp>
+        <corresp id="c2">
+          <label>b</label>
+          <email>sturvey@cfri.ca</email>
+        </corresp>
+        <corresp id="c3">
+          <label>c</label>
+          <email>chris.overall@ubc.ca</email>
+        </corresp>
+        <fn id="n1">
+          <label>*</label>
+          <p>These authors contributed equally to this work.</p>
+        </fn>
+        <fn id="n2">
+          <label>&#x2020;</label>
+          <p>These authors jointly supervised this work.</p>
+        </fn>
+        <fn id="n3">
+          <label>&#x2021;</label>
+          <p>Present address: Janssen Research &amp; Development, Turnhoutseweg 30, 2340 Beerse, Belgium.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>03</day>
+        <month>11</month>
+        <year>2015</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2015</year>
+      </pub-date>
+      <volume>6</volume>
+      <elocation-id>8777</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>27</day>
+          <month>07</month>
+          <year>2015</year>
+        </date>
+        <date date-type="accepted">
+          <day>02</day>
+          <month>10</month>
+          <year>2015</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright &#xA9; 2015, Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.</copyright-statement>
+        <copyright-year>2015</copyright-year>
+        <copyright-holder>Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.</copyright-holder>
+        <license xmlns:xlink="http://www.w3.org/1999/xlink" license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <!--author-paid-->
+          <license-p>This work is licensed under a Creative Commons Attribution 4.0 International License. The images or other third party material in this article are included in the article's Creative Commons license, unless indicated otherwise in the credit line; if the material is not included under the Creative Commons license, users will need to obtain permission from the license holder to reproduce the material. To view a copy of this license, visit <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link></license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Antigen receptor signalling activates the canonical NF-&#x3BA;B pathway via the CARD11/BCL10/MALT1 (CBM) signalosome involving key, yet ill-defined roles for linear ubiquitination. The paracaspase MALT1 cleaves and removes negative checkpoint proteins, amplifying lymphocyte responses in NF-&#x3BA;B activation and in B-cell lymphoma subtypes. To identify new human MALT1 substrates, we compare B cells from the only known living <italic>MALT1</italic><sup><italic>mut/mut</italic></sup> patient with healthy <italic>MALT1</italic><sup>+/<italic>mut</italic></sup> family members using 10-plex Tandem Mass Tag TAILS N-terminal peptide proteomics. We identify HOIL1 of the linear ubiquitin chain assembly complex as a novel MALT1 substrate. We show linear ubiquitination at B-cell receptor microclusters and signalosomes. Late in the NF-&#x3BA;B activation cycle HOIL1 cleavage transiently reduces linear ubiquitination, including of NEMO and RIP1, dampening NF-&#x3BA;B activation and preventing reactivation. By regulating linear ubiquitination, MALT1 is both a positive and negative pleiotropic regulator of the human canonical NF-&#x3BA;B pathway&#x2014;first promoting activation via the CBM&#x2014;then triggering HOIL1-dependent negative-feedback termination, preventing reactivation.</p>
+      </abstract>
+      <abstract abstract-type="web-summary">
+        <p>
+<inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="i1" xlink:href="ncomms9777-i1.jpg"/>MALT1 mediates NF&#x3BA;B activation. Here the authors perform proteomic analysis of human immunodeficient mutant MALT1 B cells revealing that MALT1 cleaves the HOIL1 subunit of the linear ubiquitin chain assembly complex to dampen late NF&#x3BA;B activation and to invoke negative feedback of NF&#x3BA;B activation.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <p>Linear ubiquitin chains, assembled by peptide bond linkage of the ubiquitin Met1 &#x3B1;-amine to the C-terminal glycine of a proximal ubiquitin, are a recently recognized topographic form of polyubiquitination. This modification is highly associated with anti-inflammatory responses<xref ref-type="bibr" rid="b1">1</xref>, nuclear factor-kappa B (NF-&#x3BA;B) activation and protection from tumour necrosis factor receptor superfamily-mediated apoptosis<xref ref-type="bibr" rid="b2">2</xref>. Linear ubiquitination E3 ligase activity uniquely resides in heme-oxidized IRP2 ubiquitin ligase (HOIL1)-interacting protein (HOIP). Full HOIP activity requires HOIL1 (refs <xref ref-type="bibr" rid="b3">3</xref>, <xref ref-type="bibr" rid="b4">4</xref>) and Shank-associated RH domain interactor (SHARPIN)<xref ref-type="bibr" rid="b5">5</xref><xref ref-type="bibr" rid="b6">6</xref> to activate and stabilize HOIP to form the linear ubiquitin chain assembly complex (LUBAC)<xref ref-type="bibr" rid="b7">7</xref><xref ref-type="bibr" rid="b8">8</xref>. The linear chain deubiquitinase OTULIN also reversibly associates with HOIP<xref ref-type="bibr" rid="b9">9</xref><xref ref-type="bibr" rid="b10">10</xref>. Tumour necrosis factor-, CD40L- and IL-1&#x3B2;-induced canonical NF-&#x3BA;B activation requires specific, high-affinity binding of NF-&#x3BA;B essential modulator (NEMO) to proteins modified by linear ubiquitin at cell membrane-anchored receptor signalosomes<xref ref-type="bibr" rid="b1">1</xref><xref ref-type="bibr" rid="b11">11</xref><xref ref-type="bibr" rid="b12">12</xref><xref ref-type="bibr" rid="b13">13</xref>. Although the importance of LUBAC for NF-&#x3BA;B signalling is highlighted by germline and somatic mutations in LUBAC genes resulting in primary immunodeficiency diseases or in lymphomagenesis driven by NF-&#x3BA;B (refs <xref ref-type="bibr" rid="b14">14</xref>, <xref ref-type="bibr" rid="b15">15</xref>, <xref ref-type="bibr" rid="b16">16</xref>), HOIP catalytic activity can be dispensable for B-cell receptor signalling<xref ref-type="bibr" rid="b17">17</xref>. Thus, regulation of LUBAC assembly, activity and inactivation remains ill defined.</p>
+    <p>As a central regulator of innate and adaptive immunity, the NF-&#x3BA;B pathway integrates signals converging from a range of cell surface and intracellular pattern recognition receptors, leading to rapid nuclear translocation of the transcription factor NF-&#x3BA;B (ref. <xref ref-type="bibr" rid="b18">18</xref>). A key convergence point in the NF-&#x3BA;B pathway is the CARD11/BCL10/MALT1 (CBM) signalosome, which consists of the caspase recruitment domain-containing protein 11 (CARD11), B-cell lymphoma/leukaemia 10 (BCL10) and a cysteine protease, mucosa-associated lymphoid tissue lymphoma translocation protein 1 (MALT1)&#x2014;the only human paracaspase<xref ref-type="bibr" rid="b19">19</xref>. The CBM signalosome rapidly transduces receptor engagement to the canonical I&#x3BA;B kinase (IKK) complex, consisting of IKK&#x3B1;, IKK&#x3B2; and IKK&#x3B3;/NEMO subunits. Linear ubiquitination of NEMO is required for phosphorylation of I&#x3BA;B&#x3B1; by the IKK complex<xref ref-type="bibr" rid="b11">11</xref>. Phospho-I&#x3BA;B&#x3B1; is then rapidly Lys48-polyubiquitinated, initiating proteasomal degradation and allowing free NF-&#x3BA;B to translocate to the nucleus. Here it transcribes a tightly controlled program of proinflammatory genes and negative regulators of apoptosis (<xref ref-type="fig" rid="f1">Fig. 1a</xref>). The importance of the CBM in immunity is revealed by the profound disruption in T- and B-cell receptor signalling in human and mouse genetic deficiencies for all the CBM components<xref ref-type="bibr" rid="b19">19</xref><xref ref-type="bibr" rid="b20">20</xref><xref ref-type="bibr" rid="b21">21</xref><xref ref-type="bibr" rid="b22">22</xref><xref ref-type="bibr" rid="b23">23</xref><xref ref-type="bibr" rid="b24">24</xref><xref ref-type="bibr" rid="b25">25</xref>.</p>
+    <p>In addition to mediating essential protein scaffolding functions required for transducing NF-&#x3BA;B signalling, MALT1 indirectly enhances NF-&#x3BA;B signalling and cell responses by cleaving and inactivating a limited repertoire of proteins that downregulate the canonical NF-&#x3BA;B pathway including the NF-&#x3BA;B subunit RelB<xref ref-type="bibr" rid="b26">26</xref> and two deubiquitinases, A20 (ref. <xref ref-type="bibr" rid="b27">27</xref>) and cylindromatosis protein (CYLD), which also cleaves linear ubiquitin<xref ref-type="bibr" rid="b28">28</xref>. In T-cell receptor responses MALT1 autoproteolytic cleavage promotes NF-&#x3BA;B signalling<xref ref-type="bibr" rid="b29">29</xref>, whereas cleavage of BCL10 regulates T-cell adhesion<xref ref-type="bibr" rid="b30">30</xref>. The cleavage of two messenger RNA-binding proteins, the RNAse Regnase-1 (ref. <xref ref-type="bibr" rid="b31">31</xref>) and Roquin<xref ref-type="bibr" rid="b32">32</xref>, stabilizes T-cell receptor-induced messenger RNAs. Although B-cell regulation by MALT1 is less understood, the functionality of the CBM executed by MALT1 proteolysis is evident in lymphomas<xref ref-type="bibr" rid="b33">33</xref><xref ref-type="bibr" rid="b34">34</xref>. Activated B-cell-type diffuse large B-cell lymphoma carrying activating oncogenic mutations in CARD11 or in the CD79a/b components of the B-cell receptor are associated with constitutive CBM preassembly and cleavage of MALT1 substrates, and chronic active B-cell receptor signalling<xref ref-type="bibr" rid="b35">35</xref>. MALT1 overexpression following gene amplification in splenic marginal zone lymphomas<xref ref-type="bibr" rid="b36">36</xref> or as a fusion protein with cellular inhibitor of apoptosis-2 (cIAP2) in extranodal marginal zone B-cell lymphomas<xref ref-type="bibr" rid="b35">35</xref> further highlights MALT1 as an important drug target for lymphoma<xref ref-type="bibr" rid="b37">37</xref>.</p>
+    <p>Recently, we described the only known living patient in the world with a genetic MALT1 deficiency<xref ref-type="bibr" rid="b38">38</xref>. This now 17-year-old girl presented with combined immunodeficiency associated with immune dysregulation caused by a homozygous loss-of-function mutation in <italic>MALT1</italic>. Heterozygous family members are healthy with no immunological disorders. The MALT1 mutation Trp580Ser breaks a key stabilizing contact of the MALT1 immunoglobulin and catalytic domains, resulting in lower levels of a less active and less stable MALT1-Trp580Ser mutant protein causing failure to activate NF-&#x3BA;B in the patient's T cells<xref ref-type="bibr" rid="b38">38</xref>. Paradoxically, the patient displays constitutive autoinflammatory responses, particularly affecting her skin and gastrointestinal tract; indeed, she experienced clinical benefit using anti-inflammatory corticosteroids<xref ref-type="bibr" rid="b38">38</xref>, highlighting the gaps in our understanding of the role of MALT1 in human immunity. Access to human cells deficient in MALT1 provides a unique opportunity to identify new MALT1 substrates in an intact human system without experimental over- or under-expression. Using 10-plex Tandem Mass Tags (TMTs), we identify HOIL1 as a MALT1 substrate directly linking MALT1 paracaspase activity for the downregulation of linear ubiquitination and eventual cessation of NF-&#x3BA;B signalling in a negative-feedback mechanism.</p>
+    <sec disp-level="1">
+      <title>Results</title>
+      <sec disp-level="2">
+        <title>TAILS identification of HOIL1 as a new MALT1 substrate</title>
+        <p>The search for MALT1 substrates has so far proven intractable by proteomics, in part due to fastidious MALT1 activation mechanisms requiring CBM assembly, and in part from a limited, yet key substrate repertoire that requires high-sensitivity proteomic approaches. MALT1 genetically deficient cells provided a unique opportunity to identify new substrates in an intact human system without experimental over- or under-expression. Immortalized B cells from the patient (<italic>MALT1</italic><sup><italic>mut/mut</italic></sup>; <xref ref-type="fig" rid="f1">Fig. 1b</xref>) had less MALT1 than from her heterozygous (<italic>MALT1</italic><sup>+/<italic>mut</italic></sup>) brother and mother, both before and after stimulation by phorbol 12-myristate 13-acetate (PMA)/ionomycin, a strong inducer of NF-&#x3BA;B (<italic>N</italic>=11; <xref ref-type="fig" rid="f1">Fig. 1c</xref>). MALT1-Trp580Ser in <italic>MALT1</italic><sup><italic>mut/mut</italic></sup> B cells was associated with impaired NF-&#x3BA;B activation as evidenced by delayed and reduced proteasome degradation of I&#x3BA;B&#x3B1; and a &gt;50% loss of activated phospho (p)-p65 (<italic>N</italic>=12 <xref ref-type="fig" rid="f1">Fig. 1d</xref>; <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 1</xref>). Consistent with the genetic pattern of homozygous disease inheritance, MALT1-Trp580Ser in the heterozygous cells did not behave as a dominant-negative protein in NF-&#x3BA;B activation.</p>
+        <p>To identify new MALT1 substrates, we used terminal amine isotopic labelling of substrates (TAILS), a highly sensitive proteomics approach that enriches and identifies protease substrates simultaneously with their cleavage sites by tandem mass spectrometry (MS/MS)<xref ref-type="bibr" rid="b39">39</xref><xref ref-type="bibr" rid="b40">40</xref>. Isobaric 10-plex TMT labelling blocked protein natural and cleaved neo-N-terminal &#x3B1;-amines in lysate protein of resting and PMA/ionomycin-activated B cells. Following trypsin digestion, we simultaneously compared the TAILS-enriched B-cell N-terminomes from the patient (<italic>n</italic>=3) with her mother (<italic>n</italic>=1) and brother (<italic>n</italic>=1) as controls, without or with PMA/ionomycin stimulation for 2 and 4&#x2009;h (<xref ref-type="fig" rid="f2">Fig. 2a</xref>) to increase cleaved substrate accumulation for detection. Enabled by the 10-plex TMT-labelling strategy, this was performed in a single mass spectrometric analysis to reduce experimental variability. We also quantified protein changes in the B-cell proteome by shotgun proteomics (that is, preTAILS analysis). We identified 7,498 unique acetylated or TMT-labelled N-terminal peptides (peptide false discovery rate (FDR)&#x2264;1%) in 3,772 proteins (protein FDR&#x2264;1%). Even before removing decoy peptides and false identifications (<italic>n</italic>=29), the data set had &#x2264;1 reverse hit per 1,000 peptide spectrum matches (<xref ref-type="fig" rid="f2">Fig. 2b</xref>).</p>
+        <p>To identify high-confidence MALT1 substrates, we analysed TMT-labelled cleaved neo-N-termini by high-accuracy TMT reporter ion ratios using synchronous precursor selection (SPS)-MS/MS/MS (<xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 2</xref>) to reduce peak interferences<xref ref-type="bibr" rid="b41">41</xref>. Substrate winnowing (<xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 3</xref>) identified a MALT1-cleavage site at <sup>165</sup>Arg&#x2193;Gly<sup>166</sup> in HOIL1. The neo-N-terminal peptide <sup>166</sup>GPLEPGPPKPGVPQEPGR<sup>182</sup> identifying the C-terminal HOIL1-cleavage product was reproducibly identified in multiple peptide spectrum matches (<italic>n</italic>=10) in every experiment (<xref ref-type="fig" rid="f2">Fig. 2c</xref>). Importantly, it was markedly increased after PMA/ionomycin stimulation and was always present in lower amounts in the <italic>MALT</italic><sup><italic>mut/mut</italic></sup> cells compared with the <italic>MALT1</italic><sup>+/<italic>mut</italic></sup> cells from both the brother and the mother (<xref ref-type="fig" rid="f2">Fig. 2d,e</xref>; <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 4a</xref>). Finally, this cleavage site complies with the consensus site LXP/SR&#x2193;G of the known MALT1 substrates (<xref ref-type="fig" rid="f2">Fig. 2f</xref>). The abundance of the HOIL1 natural N terminus (<italic>n</italic>=5) from the TAILS data and a tryptic peptide lying immediately N terminal to the cleavage site from the preTAILS shotgun data (<italic>n</italic>=3; <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 4b,c</xref>) was constant in all samples confirming that the increase in HOIL1 neo-N-terminal peptide was not merely due to differences in protein abundance after stimulation (<xref ref-type="fig" rid="f2">Fig. 2e</xref>). Hence, with high-confidence TAILS identified HOIL1 as a new MALT1 substrate with <sup>162</sup>LQPR&#x2193;G<sup>166</sup> as the cleavage site.</p>
+        <p>Previously described substrates of MALT1 were not identified. This may be explained by cell type specificity of certain protease-substrate interactions as we analyzed B cells, whereas Roquin and Regnase-1 are described in literature as substrates in T cell-specific processes, and LIMA1 and NF-&#x3BA;B-induced kinase (NIK) are lymphoma-enriched substrates. An alternative explanation is that several known substrates yield neo-N-termini unfavourable to mass spectrometry&#x2014;either they are too small (BCL10: TVSR) or too large (for example, A20: GEAYEPLAWNPEESTGGPHSAPPTAPSPFLFSETTAMKCR; RelB: GAASLSTVTLGPVAPPATPPPWGCPLGR; and CYLD:GVGDKGSSSHNKPKATGSTSDPGNR). Furthermore, posttranslational modifications such as phosphorylation in the neo-N-terminal peptide region may cause mass shifts that render the peptides elusive to identification.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>MALT1 cleaves HOIL1 <italic>in vitro</italic> and in cells</title>
+        <p><italic>In vitro</italic> assays in kosmotropic salts<xref ref-type="bibr" rid="b42">42</xref><xref ref-type="bibr" rid="b43">43</xref> confirmed HOIL1 as a MALT1 substrate (<xref ref-type="fig" rid="f3">Fig. 3a</xref>). A concentration-dependent single cleavage of C-terminal FLAG-tagged HOIL1 (57&#x2009;kDa) yielded products of the molecular weight predicted by TAILS&#x2014;a C-terminal 39-kDa (C-HOIL1) domain and an N-terminal 18-kDa domain (N-HOIL1). To validate cleavage in a cellular context, we established a CBM transfection system in which an active CBM signalosome was assembled in HEK293FT cells in the absence of receptor stimulation by coexpressing MALT1 with BCL10 and the active oncogenic Leu244Pro mutant of CARD11. Cleavage of known substrates A20, CYLD, BCL10 and RelB (<xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 5a&#x2013;d</xref>) co-transfected with the CBM confirmed MALT1-dependent CBM activity. Complete HOIL1 cleavage by the CBM was shown by coexpressing HOIL1 (<xref ref-type="fig" rid="f3">Fig. 3b</xref>). Cleavage was not due to excess levels of MALT1 as HOIL1 was also cleaved by endogenous MALT1 in HEK293FT cells, where endogenous BCL10 was sufficient to form an active CBM with transfected CARD11-Leu244Pro (<xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 5e</xref>). HOIL1 cleavage was dependent on MALT1 paracaspase activity&#x2014;it was not cleaved by the catalytic inactive MALT1-Cys464Ala mutant (<xref ref-type="fig" rid="f3">Fig. 3b</xref>, left). A second Arg-Gly bond in HOIL1 (<sup>180</sup>EPGR-G<sup>184</sup>) lacking the nonprime consensus sequence was not cleaved. Cleavage only occurred at <sup>165</sup>Arg&#x2193;Gly<sup>166</sup>, as a charge conserving HOIL1-Arg165Lys mutant was noncleavable (<xref ref-type="fig" rid="f3">Fig. 3b</xref>, right). The very minor amount of C-HOIL1 generated from mutant HOIL1-Arg165Lys is consistent with weak cleavage at a Lys&#x2193;Gly site in LIMA1 (ref. <xref ref-type="bibr" rid="b44">44</xref>; <xref ref-type="fig" rid="f2">Fig. 2f</xref>). Thus, HOIL1 cleavage is site specific with no redundant cleavage by other proteases.</p>
+        <p>The t(11;18)(q21;q21) chromosomal translocation is the most common translocation found in B-cell lymphomas arising from mucosa-associated lymphoid tissue. This translocation creates the fusion protein cIAP2-MALT1 (<xref ref-type="fig" rid="f3">Fig. 3c</xref>), which exhibits MALT1 proteolytic activity without requiring CBM assembly<xref ref-type="bibr" rid="b35">35</xref>. Constitutively, active cIAP2-MALT1 fusion protein leads to the cleavage of NIK<xref ref-type="bibr" rid="b45">45</xref> and LIMA1 (ref. <xref ref-type="bibr" rid="b44">44</xref>), and acts as an oncogenic driver. Transfected cIAP2-MALT1 cleaved HOIL1 in the absence of CARD11. No cleavage resulted with catalytically inactive cIAP2-MALT1-Cys464Ala mutant or noncleavable HOIL1-Arg165Lys (<xref ref-type="fig" rid="f3">Fig. 3c</xref>), revealing that cIAP2-MALT1-mediated HOIL1 cleavage occurs without the need for CBM assembly.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Reduced HOIL1 cleavage in <italic>MALT1</italic>
+<sup>
+<italic>mut/mut</italic>
+</sup> B and T cells</title>
+        <p>The immunological relevance of HOIL1 cleavage by MALT1 was shown in several ways. First, we demonstrated that endogenous MALT1 of the CBM, together with HOIL1 of the LUBAC complex, co-localized at the cell membrane following B-cell receptor engagement by anti-IgG in immortalized B cells from a normal donor compared with the patient cells. After 2-h stimulation, HOIL1 was redistributed to the cell membrane, particularly at B-cell:B-cell contacts as discrete caps (<xref ref-type="fig" rid="f3">Fig. 3d</xref>; <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 6</xref>).</p>
+        <p>We next verified cleavage of endogenous HOIL1 by endogenous MALT1 after stimulation of B cells from a healthy donor and in the same <italic>MALT1</italic><sup>+/<italic>mut</italic></sup> and <italic>MALT1</italic><sup><italic>mut/mut</italic></sup> B-cell lysates analysed proteomically in multiple replicates (<italic>N</italic>=34; <xref ref-type="fig" rid="f3">Fig. 3e</xref>). Cleavage was markedly reduced in the <italic>MALT1</italic><sup><italic>mut/mut</italic></sup> B cells, with commensurate increases in both of the two molecular weight forms of intact HOIL1 (refs <xref ref-type="bibr" rid="b7">7</xref>, <xref ref-type="bibr" rid="b8">8</xref>). Similarly, cleavage was reduced by the MALT1-selective inhibitor Z-Val-Arg-Pro-DL-Arg-fluoromethylketone (z-VRPR-fmk)<xref ref-type="bibr" rid="b30">30</xref> (<xref ref-type="fig" rid="f3">Fig. 3e</xref>) and by the small-molecule paracaspase inhibitor, mepazine<xref ref-type="bibr" rid="b46">46</xref> (<xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 7a</xref>).</p>
+        <p>We observed HOIL1 cleavage in fresh PBMCs from a healthy donor and the heterozygous mother (<italic>N</italic>=9; <xref ref-type="fig" rid="f3">Fig. 3f</xref>). In contrast, HOIL1 cleavage was undetectable in <italic>MALT1</italic><sup><italic>mut/mut</italic></sup> PBMCs. Skin biopsies from the patient revealed dense chronic lymphocytic infiltrates in the upper dermis surrounding vessels, with focal extension of the inflammatory infiltrates into the basal layer of the overlying epidermis (<xref ref-type="fig" rid="f3">Fig. 3g</xref>). Immunohistochemistry identified these as CD3<sup>+</sup> T cells prompting examination of MALT1 activity in T cells. HOIL1 was cleaved after PMA/ionomycin stimulation in primary CD4<sup>+</sup> and CD8<sup>+</sup> T cells from a healthy donor and the <italic>MALT1</italic><sup>+/<italic>mut</italic></sup> brother, but not from the patient (<italic>N</italic>=6; <xref ref-type="fig" rid="f3">Fig. 3h</xref>). Thus, cleavage was not an effect of Epstein&#x2013;Barr virus immortalization and occurred with endogenous levels of protease and substrate in normal B and T cells.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>MALT1 cleavage of HOIL1 disassembles LUBAC</title>
+        <p>LUBAC is a complex of HOIL1, HOIP and SHARPIN formed by interaction between the ubiquitin-like, ubiquitin-associated and Npl4 zinc-finger domains of the three LUBAC proteins (<xref ref-type="fig" rid="f4">Fig. 4a</xref>). Neither HOIP nor SHARPIN was cleaved by MALT1 in the cellular context (<xref ref-type="fig" rid="f4">Fig. 4b</xref>). Thus, HOIL1 is the only LUBAC subunit that is a MALT1 substrate.</p>
+        <p>To mechanistically dissect the effect of MALT1 cleavage of HOIL1 on LUBAC assembly, we coexpressed V5-tagged HOIP and V5-tagged SHARPIN together with FLAG-tagged N-HOIL1 and FLAG-tagged C-HOIL1 cleavage-product analogues (<xref ref-type="fig" rid="f4">Fig. 4a</xref>). Expressing N-HOIL1 with C-HOIL1 represents a non-physiological extreme of complete HOIL1 cleavage, but provides mechanistic insights into the role of HOIL1 in regulating LUBAC assembly and linear ubiquitination. <xref ref-type="fig" rid="f4">Figure 4c</xref> reveals that the N-terminal cleavage product of HOIL1 retains binding interactions with HOIP: V5-tagged HOIP was pulled down by anti-FLAG immunoprecipitation of FLAG-N-HOIL1 (lane 2) to a similar amount as found with full-length FLAG-HOIL1 (lane 1), but not by immunoprecipitation of FLAG-tagged C-HOIL1 (lane 3). N-HOIL1 alone associated with HOIP&#x2014;as did N-HOIL1 when expressed with C-HOIL1 as an analogue of HOIL1 cleavage (lane 4). Thus, C-HOIL1 neither binds nor modulates binding of N-HOIL1 to HOIP.</p>
+        <p>We consistently found that HOIP levels were markedly reduced in the absence of HOIL1 (<italic>N=</italic>5; <xref ref-type="fig" rid="f4">Fig. 4c,d</xref>, orange arrowheads)) compared with cells expressing full-length HOIL1 or N-HOIL1 (<xref ref-type="fig" rid="f4">Fig. 4d</xref>). This was not due to unequal transfection efficiency, but shows that N-HOIL1, like full-length HOIL1, stabilizes HOIP. Consistent with this model, HOIP was also reduced when C-HOIL1 alone was expressed with HOIP (<italic>N</italic>=6), suggesting that C-HOIL1 disengages from HOIP on cleavage and does not contribute to HOIP stabilization. However, due to the lower levels of HOIP in the absence of either HOIL1 or N-HOIL1, this is not an equivalent experimental set-up. Therefore, we transfected increasing amounts of HOIP. As shown in <xref ref-type="fig" rid="f4">Fig. 4d</xref> using anti-V5 pulldowns for V5-tagged HOIP, no C-HOIL1 was detected by anti-FLAG immunoblotting, even when HOIP was expressed at equivalent levels using 5 &#xD7; the transfected amount of HOIP vector. Thus, C-HOIL1 disengages from LUBAC after MALT1 cleavage.</p>
+        <p>As HOIP is not cleaved by MALT1 (<xref ref-type="fig" rid="f4">Fig. 4b</xref>), we further explored the mechanism of HOIP destabilization in the absence of HOIL1. MG132, a proteasome inhibitor, revealed the presence of polyubiquitinated forms of HOIP when expressed alone (<xref ref-type="fig" rid="f4">Fig. 4e</xref>, lane 1). In contrast, with full-length HOIL1 (<xref ref-type="fig" rid="f4">Fig. 4e</xref>, lane 2), no high-molecular-weight conjugated forms were present. Thus, HOIL1 stabilizes HOIP and protects against proteasome-mediated turnover of HOIP, extending the previous analyses of the stabilizing influence of HOIL1 on HOIP<xref ref-type="bibr" rid="b7">7</xref><xref ref-type="bibr" rid="b47">47</xref>. Indeed, in <italic>MALT1</italic><sup><italic>+/mut</italic></sup> B lymphocytes, endogenous HOIP levels showed a gradual and persistent decline up to 24&#x2009;h after PMA/ionomycin stimulation. This is consistent with the disassembly of LUBAC executed by MALT1 cleavage of HOIL1 with the gradual disengagement of HOIL1 cleavage fragments. In contrast, endogenous HOIP was unaltered over 24&#x2009;h in the <italic>MALT1</italic><sup><italic>mut/mut</italic></sup> B cells having reduced HOIL1 cleavage (<xref ref-type="fig" rid="f4">Fig. 4f</xref>). Thus, LUBAC is under dynamic control by MALT1-mediated cleavage of HOIL1. After cleavage, C-HOIL1 releases from LUBAC, whereas N-HOIL1 can maintain its interaction with HOIP.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>HOIL1 cleavage decreases linear ubiquitination by LUBAC</title>
+        <p>LUBAC polymerizes linear ubiquitin chains on immune protein targets. To directly assess the effects of HOIL1 cleavage on linear ubiquitination, we coexpressed HOIP and SHARPIN with either HOIL1 or the N-HOIL1 and C-HOIL1 cleavage analogues in the absence of MALT1. Immunoblotting for linear ubiquitin chains revealed that coexpression of all three intact LUBAC subunits was necessary to efficiently generate high-molecular-weight linear ubiquitin conjugates (<xref ref-type="fig" rid="f5">Fig. 5a</xref>, lane 2), which were virtually abolished by the combination of N-HOIL1 and C-HOIL1 as an analogue of fully cleaved HOIL1 (<xref ref-type="fig" rid="f5">Fig. 5a</xref>). The small amount of linear ubiquitin conjugates is consistent with the less efficient function of LUBAC observed when HOIP is expressed with SHARPIN alone<xref ref-type="bibr" rid="b1">1</xref><xref ref-type="bibr" rid="b5">5</xref>. The NZF domain in the C terminus of HOIL1 binds linear polyubiquitin<xref ref-type="bibr" rid="b8">8</xref> and therefore positions the nascent linear ubiquitin chains proximal to the HOIP E3 ligase. With cleavage the NZF domain in C-HOIL1 is detached from LUBAC reducing LUBAC efficiency. Notably, Lys48-polyubiquitination of proteins was unaffected by the stable HOIL1 cleavage fragments, emphasizing the selectivity in downregulation of linear ubiquitination only (<xref ref-type="fig" rid="f5">Fig. 5a</xref>).</p>
+        <p>To study the end point of HOIL1 cleavage-induced changes in linear ubiquitination on NF-&#x3BA;B signalling, we quantified NF-&#x3BA;B signalling in the presence and absence of linear ubiquitination using a NF-&#x3BA;B promoter luciferase reporter assay. We found that intact LUBAC with the associated linear ubiquitination of cellular proteins stimulated NF-&#x3BA;B transcriptional activity (<xref ref-type="fig" rid="f5">Fig. 5b</xref>). In contrast, when N-HOIL1 and C-HOIL1 were equally coexpressed as the analogue of fully cleaved HOIL1, along with HOIP and SHARPIN, NF-&#x3BA;B promoter activation was lost, coincident with the reduction in linear ubiquitination (<xref ref-type="fig" rid="f5">Fig. 5a</xref>). Thus, intact HOIL1 is required for efficient LUBAC-dependent linear ubiquitination that is needed for NF-&#x3BA;B promoter activation. Upon HOIL1 cleavage LUBAC is disassembled. This leads to a cessation of linear ubiquitination that results in downregulation of NF-&#x3BA;B activation.</p>
+        <p>We next expressed both LUBAC and active CBM to determine the effect of MALT1-mediated cleavage of HOIL1 on LUBAC. Consistent with our previous transfection results, we found that when both the CBM and LUBAC were present, total linear ubiquitination was markedly reduced by HOIL1 cleavage (<xref ref-type="fig" rid="f5">Fig. 5c</xref>, lanes 3 and 5). In contrast, LUBAC activity was maintained when cells were transfected with catalytically inactive MALT1-Cys464Ala (<xref ref-type="fig" rid="f5">Fig. 5c</xref>, lanes 4 and 7). Similarly, when the cells were transfected with noncleavable HOIL1-Arg165Lys, linear ubiquitin levels were maintained in the presence or absence of active CBM (<xref ref-type="fig" rid="f5">Fig. 5c</xref>, lanes 8 and 9). Thus, although HOIP is the linear ubiquitination E3 ligase, we found that the CBM reduces HOIP/HOIL1-dependent linear ubiquitination and NF-&#x3BA;B promoter activation that is executed by MALT1 cleavage of HOIL1.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>MALT1 activity reduces linear ubiquitination in B cells</title>
+        <p>To translate these results to lymphocytes, we investigated the impact of HOIL1 cleavage by MALT1 on LUBAC function in B cells. We used agarose beads coupled with tandem ubiquitin binding entities (TUBEs) to enrich for the entire pool of ubiquitinated proteins. Immunoblotting for linear ubiquitin chains in the TUBE-enriched fraction revealed multiple linear ubiquitinated proteins before stimulation in both <italic>MALT1</italic><sup>+/<italic>mut</italic></sup> and <italic>MALT1</italic><sup><italic>mut/mut</italic></sup> B cells (<xref ref-type="fig" rid="f6">Fig. 6a</xref>, 0&#x2009;h). Between 30 and 120&#x2009;min after PMA/ionomycin stimulation in <italic>MALT1</italic><sup><italic>+/mut</italic></sup> B lymphocytes, there was reduced linear ubiquitination of cellular proteins, which was associated with cleavage of endogenous HOIL1. In the <italic>MALT1</italic><sup><italic>mut/mut</italic></sup> B cells, both a less pronounced and a delayed reduction in total linear ubiquitination occurred concurrent with greatly reduced cleavage of HOIL1 (<italic>N</italic>=4; <xref ref-type="fig" rid="f6">Fig. 6a</xref>). Importantly, MALT1 inhibition by z-VRPR-fmk reduced HOIL1 cleavage and strikingly maintained total linear ubiquitination levels for up to 4&#x2009;h in <italic>MALT1</italic><sup><italic>+/mut</italic></sup> B cells (<italic>N</italic>=6; <xref ref-type="fig" rid="f6">Fig. 6b</xref>) and <italic>MALT1</italic><sup><italic>+/mut</italic></sup> and <italic>MALT1</italic><sup><italic>mut/mut</italic></sup> B cells (<italic>N</italic>=6; <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 7b</xref>). Protein levels of OTULIN, the linear polyubiquitin deubiquitinase, were unaltered on PMA/ionomycin stimulation (<xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 7c</xref>), reinforcing the direct linkage between MALT1 cleavage of HOIL1 and reduced linear ubiquitination.</p>
+        <p>RIP1 is a substrate of LUBAC and showed a rapid (&lt;15&#x2009;min) loss in ubiquitinated forms after stimulation that was then followed by partial recovery in <italic>MALT1</italic><sup>+/<italic>mut</italic></sup> cells (<xref ref-type="fig" rid="f6">Fig. 6b</xref>). This pattern matched the markedly reduced levels of multiple linear ubiquitinated protein conjugates detected by immunoblotting with anti-linear ubiquitin antibody (<xref ref-type="fig" rid="f6">Fig. 6b</xref>). Importantly, MALT1 inhibition abrogated both the general protein and the RIP-specific ubiquitination response to PMA/ionomycin stimulation demonstrating that MALT1 cleavage of HOIL1 reduces linear ubiquitination of both total proteins and the LUBAC target, RIP1.</p>
+        <p>Intriguingly, the initial triggering of NF-&#x3BA;B signalling did not require MALT1 paracaspase activity, as shown by the similar initial reduction in I&#x3BA;B&#x3B1; and induction of p-p65 both with and without inhibitor in both <italic>MALT1</italic><sup>+/<italic>mut</italic></sup> and <italic>MALT1</italic><sup><italic>mut</italic>/<italic>mut</italic></sup> B cells (<italic>N=</italic>6; <xref ref-type="fig" rid="f6">Fig. 6b</xref>; <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 7b</xref>). This suggests that the scaffolding role of MALT1 is more important than its proteolytic activity for the initiation of NF-&#x3BA;B signalling. In contrast, cleavage of HOIL1 by MALT1 decreases linear ubiquitination of multiple proteins at later time points. Because RIP1 and NEMO promote NF-&#x3BA;B activation in a manner that depends on their linear ubiquitination, we posited that MALT1-dependent cleavage of HOIL1 may limit continued NF-&#x3BA;B activation. Following an initial 15-min stimulation with PMA/ionomycin, we re-stimulated again at 2&#x2009;h, a time point when linear ubiquitination was greatly diminished. We then followed cell responses until 4&#x2009;h (<xref ref-type="fig" rid="f6">Fig. 6c</xref>). Notably, the p-p65 levels did not increase after the second stimulus indicative of no further NF-&#x3BA;B induction (<xref ref-type="fig" rid="f6">Fig. 6c</xref>). Although only correlative, these data are consistent with the relative balance in levels of intact and MALT1-cleaved HOIL1 modulating the degree of linear ubiquitination and hence degree of NF-&#x3BA;B activation. Notably, when no linear ubiquitinated protein was present, cells were rendered refractory to reactivation.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Stimulation of primary lymphocytes reduces linear ubiquitin</title>
+        <p>To confirm that the loss of linear ubiquitination after cleavage of HOIL1 is physiologically relevant, we analysed primary human lymphocytes. First, we obtained B-cell-rich cell homogenates from resected paediatric human tonsils. Cells were stimulated first with anti-IgG/IgM and CD40 ligand, and then with PMA/ionomycin. HOIL1 cleavage (<xref ref-type="fig" rid="f7">Fig. 7a</xref>) was associated with a clear decrease in linear ubiquitination 20&#x2013;30&#x2009;min after PMA/ionomycin stimulation in multiple human samples (<italic>N=</italic>4; <xref ref-type="fig" rid="f7">Fig. 7a,b</xref>). Moreover, the abundance of several distinct ubiquitinated forms of NEMO was also decreased coinciding with the loss of total linear ubiquitination (<xref ref-type="fig" rid="f7">Fig. 7b</xref>).</p>
+        <p>Since obtaining sufficient numbers of blood-derived primary B cells for TUBE experiments from the patient was not ethically possible, we further validated the effect of HOIL1 cleavage on linear ubiquitination by returning to T cells, which skin biopsy had shown were dominant in the upper dermis (<xref ref-type="fig" rid="f3">Fig. 3g</xref>). On PMA/ionomycin stimulation of Jurkat T cells, HOIL1 levels were reduced; and the role of MALT1 cleavage was confirmed by the reduced generation of N-HOIL1 with the MALT1 inhibitors z-VRPR-fmk and Mepazine (<xref ref-type="fig" rid="f7">Fig. 7c</xref>).</p>
+        <p>To show that cleavage of HOIL1 by MALT1 in T cells is a downstream consequence of lymphocyte antigen receptor/co-stimulatory receptor engagement, we incubated primary CD4<sup>+</sup> T cells from healthy donors (<italic>N</italic>=3) with anti-CD3/anti-CD28 functionalized beads. T-cell receptor/CD28 engagement stimulated HOIL1 cleavage (<xref ref-type="fig" rid="f7">Fig. 7d</xref>), but to a lesser extent than the pharmacological PMA/ionomycin stimulation. Thus, HOIL1 cleavage is a consequence of B- and T-cell stimulation with PMA/ionomycin and of T-cell receptor engagement.</p>
+        <p>Next, primary CD4<sup>+</sup> T cells from the heterozygous brother were stimulated with PMA/ionomycin. As with B cells, we observed a time-dependent decrease in linear ubiquitination (<xref ref-type="fig" rid="f7">Fig. 7e</xref>) and specifically of NEMO (<xref ref-type="fig" rid="f7">Fig. 7f</xref>). In contrast, total Lys48-polyubiquitination remained constant on stimulation, confirming the specificity of the reduction to linear ubiquitination (<xref ref-type="fig" rid="f7">Fig. 7e</xref>). The loss of linear ubiquitin conjugates, and specifically of NEMO ubiquitination, was blocked by MALT1 inhibition (<xref ref-type="fig" rid="f7">Fig. 7f</xref>), emphasizing that this effect in human T cells was dependent on MALT1 paracaspase activity and cleavage of HOIL1.</p>
+        <p>To widen the physiological relevance of our findings, we showed that HOIL1 cleavage occurred 30&#x2009;min after PMA/ionomycin stimulation of primary murine lymph node CD3<sup>+</sup> T cells, but not in knockout mouse cells lacking MALT1 or in cells from catalytic inactive MALT1-Cys/Ala knock-in mice (<xref ref-type="fig" rid="f8">Fig. 8a</xref>). Therefore, HOIL1 cleavage is not human specific, emphasizing the broader relevance of HOIL1 as a substrate. In wild-type murine CD3<sup>+</sup> T cells, HOIL1 cleavage occurred 30&#x2009;min after stimulation. At this later time, and as shown by the cessation of the sudden increase in p-I&#x3BA;B&#x3B1; and p-p65, the initial NF-&#x3BA;B activation at 10&#x2009;min had ended. We next compared the scaffolding versus paracaspase activities of murine MALT1 in NF-&#x3BA;B activation in PMA/ionomycin-stimulated primary murine lymph node CD3<sup>+</sup> T cells. Ten minutes after PMA/ionomycin stimulation, both the wild-type and catalytic inactive MALT1-C/A knock-in murine T cells showed similar levels of induced p-p65 and p-I&#x3BA;B&#x3B1; that was coupled with reduced I&#x3BA;B&#x3B1;. In contrast, in the absence of MALT1 in <italic>Malt1</italic><sup>&#x2212;/&#x2212;</sup> mice, NF-&#x3BA;B was not activated, whereas phosphorylation of ERK1/2 was indistinguishable and confirmed cellular activation (<xref ref-type="fig" rid="f8">Fig. 8a</xref>). Thus, the murine <italic>Malt1</italic> knockout and knock-in studies in T cells confirm the human B-cell MALT1 inhibitor data showing that MALT1 paracaspase activity was dispensable for NF-&#x3BA;B activation.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>B-cell activation by antigen-presenting cells reduces LUBAC</title>
+        <p><italic>In vivo</italic>, B cells are often activated by antigen-presenting cells (APCs) that capture antigens to display on their surface<xref ref-type="bibr" rid="b48">48</xref>. The binding of B-cell receptors to mobile membrane-bound antigens leads to forming B-cell receptor microclusters that nucleate signalosome formation and activate downstream signalling pathways<xref ref-type="bibr" rid="b49">49</xref>. Because linear ubiquitin chains act as scaffolds to recruit and organize signalling proteins<xref ref-type="bibr" rid="b50">50</xref>, we asked whether they accumulate at the B cell:APC contact site (that is, immune synapse), and specifically at B-cell receptor microclusters. Primary murine splenic B cells were added to Cos7 APCs that express on their surface a transmembrane form of an anti-Ig&#x3BA; light-chain antibody (that is, surrogate antigen) that binds to all B-cell receptors<xref ref-type="bibr" rid="b51">51</xref>. B cells do not attach to Cos7 cells not expressing this surrogate antigen. At 10&#x2009;min after adding B cells to anti-Ig&#x3BA;-expressing Cos7 APCs, puncta of linear ubiquitin staining were observed at the B cell:APC contact site by spinning disc confocal microscopy (<xref ref-type="fig" rid="f8">Fig. 8b</xref>). The punctate linear ubiquitin staining also co-localized with B-cell receptor microclusters, which were visualized as puncta of the surrogate antigen (<xref ref-type="fig" rid="f8">Fig. 8c</xref>). Although the linear ubiquitin puncta co-localized with B-cell receptor microclusters, only a subset of B-cell receptor microclusters was associated with linear ubiquitin. <italic>z</italic>-Sections through the centre of the B cell showed that linear ubiquitin conjugates were found primarily at the B cell:APC contact site, often at sites where antigens were concentrated at B-cell receptor microclusters.</p>
+        <p>Time courses showed that the accumulation of linear ubiquitin-conjugated proteins at the B cell:APC contact site was significantly lower (<italic>P</italic>&lt;0.0001) at 15 and 30&#x2009;min after adding the B cells to the APCs than at the 10-min time point (<xref ref-type="fig" rid="f8">Fig. 8d</xref>). Thus, the time course for the decrease in linear ubiquitination in primary murine B cells stimulated through the B-cell receptor matched those for primary human B and T cells (<xref ref-type="fig" rid="f7">Fig.7</xref>). Notably, we found that MALT1 paracaspase activity was important for the time-dependent decrease in linear ubiquitination-modified proteins. Pretreating the B cells with the z-VRPR-fmk inhibitor significantly delayed the loss of total linear ubiquitination at the B cell:APC contact site at the 15 and 30&#x2009;min time points (<italic>P</italic>&lt;0.0001; <xref ref-type="fig" rid="f8">Fig. 8d</xref>).</p>
+      </sec>
+    </sec>
+    <sec disp-level="1">
+      <title>Discussion</title>
+      <p>Our discovery of a new MALT1 substrate, which was enabled by a unique patient with genetic MALT1 deficiency, has defined a new biological role for MALT1. We report a previously unrecognized yet direct proteolytic connection between the CBM signalosome and LUBAC (<xref ref-type="fig" rid="f8">Fig. 8e</xref>). By transiently reducing linear ubiquitination at the lymphocyte antigen receptor microcluster, MALT1 displays temporally separated actions in NF-&#x3BA;B signalling&#x2014;initially as a feedforward inducer and then ultimately as a negative-feedback inhibitor. To date, MALT1 proteolytic activity has only been proposed to indirectly increase NF-&#x3BA;B activation by cleavage and removal of negative regulators of the canonical NF-&#x3BA;B pathway. However, we show that MALT1 also results in a single specific cleavage in HOIL1, disrupting LUBAC by release of C-HOIL1, to downregulate linear ubiquitination at the B-cell receptor microcluster signalosome. The NZF domain in C-HOIL1 binds LUBAC to linear ubiquitin chains and so is key for LUBAC E3 ligase efficiency. Therefore, HOIL1 cleavage impairs linear polyubiquitin formation and is associated with reduced LUBAC-mediated NF-&#x3BA;B activation. Loss of MALT1 proteolytic activity in the patient lymphocytes and, with failure to cleave HOIL1, led to an increase in linear ubiquitination levels. This eventually rendered the patient with unrestricted B-cell activation leading to chronic inflammatory responses.</p>
+      <p>We also observed that triggering of NF-&#x3BA;B signalling did not require MALT1 paracaspase activity. A similar initial reduction in I&#x3BA;B&#x3B1; and induction of p-p65 occurred both with and without a MALT1 inhibitor in activation of human B cells and of murine T cells from wild-type and MALT1-Cys/Ala protease-inactive knock-in mice. This adds a new layer to our understanding of the molecular links in CBM complex and LUBAC crosstalk with NF-&#x3BA;B signalling. Moreover, our results showing first positive and then negative regulation of NF-&#x3BA;B activation by MALT1 indicate that therapeutic intervention with MALT1 inhibitors for autoimmunity or lymphoid neoplasia needs to be considered carefully.</p>
+      <p>The HOIL1 cleavage site is proximal to Gln185, one of two germline mutation sites in <italic>HOIL1</italic>-<italic>mutant</italic> immunodeficient patients<xref ref-type="bibr" rid="b52">52</xref> that have clinical overlap with features of the <italic>MALT1</italic><sup><italic>mut/mut</italic></sup> patient<xref ref-type="bibr" rid="b38">38</xref>. Although Nakamura <italic>et al.</italic><xref ref-type="bibr" rid="b53">53</xref> reported HOIL1 cleavage, they did not identify the responsible protease or the physiological consequences. In primary B and T lymphocytes, we found reductions in both total protein linear ubiquitination and levels of the specific target proteins, NEMO and RIP1, on HOIL1 cleavage. This loss of proteins modified by linear ubiquitin was blocked by inhibition of MALT1; thereby directly linking reduced linear ubiquitination with MALT1 paracaspase activity. In view of the indirect amplification of NF-&#x3BA;B by the previously described MALT1-cleavage substrates<xref ref-type="bibr" rid="b27">27</xref><xref ref-type="bibr" rid="b28">28</xref><xref ref-type="bibr" rid="b29">29</xref><xref ref-type="bibr" rid="b30">30</xref><xref ref-type="bibr" rid="b31">31</xref><xref ref-type="bibr" rid="b32">32</xref>, it was surprising that MALT1 inhibition did not alter p-p65 and I&#x3BA;B&#x3B1; levels on initiation of the NF-&#x3BA;B pathway. This is in agreement with very recent reports also showing the key role of MALT1 scaffolding in NF-&#x3BA;B induction<xref ref-type="bibr" rid="b54">54</xref><xref ref-type="bibr" rid="b55">55</xref><xref ref-type="bibr" rid="b56">56</xref>. Indeed, initiation of NF-&#x3BA;B signalling in <italic>MALT1</italic><sup><italic>mut/mut</italic></sup> B cells was dampened compared with healthy <italic>MALT1</italic><sup>+/<italic>mut</italic></sup> family members due to disruption of MALT1 scaffolding caused by low levels of unstable mutant MALT1-Trp580Ser protein.</p>
+      <p>The possible involvement of LUBAC-mediated linear ubiquitination in B-cell receptor signalling was only recently postulated<xref ref-type="bibr" rid="b16">16</xref><xref ref-type="bibr" rid="b57">57</xref>. As direct induction of linear ubiquitination has not been previously observed in B-cell receptor signalling and in view of the rearrangement of linear ubiquitin scaffolds to the cell membrane-anchored receptor signalosome that we observed, we posit that ubiquitin scaffolds are essential both proximal and distal to the CBM complex at early time points after B-cell receptor engagement. Indeed, we showed co-localization of CBM and LUBAC at the cell membrane followed by loss of linear ubiquitinated proteins after B-cell receptor engagement. Hence, the cleavage of HOIL1 by MALT1 with the subsequent removal from the signalosome may be another, yet quite different switch by which B cells regulate NF-&#x3BA;B signalling after B-cell receptor activation. This negative-feedback mechanism may serve to avoid undesired processes associated with unrestricted B-cell activation such as in autoimmunity. Indeed, the reduced ability of the <italic>MALT1</italic><sup><italic>mut/mut</italic></sup> patient to cleave HOIL1 and disassemble LUBAC may explain her excessive chronic inflammatory responses that are a challenging clinical aspect of human MALT1 deficiency<xref ref-type="bibr" rid="b19">19</xref><xref ref-type="bibr" rid="b35">35</xref>. Through this enhanced understanding of critical interactions between MALT1 and LUBAC, we now have a mechanistic explanation for the patient's seemingly contradictory clinical phenotype&#x2014;which encompassed both susceptibility to infection and exaggerated inflammation due to persistent canonical NF-&#x3BA;B signalling. Whereas the failure to activate NF-&#x3BA;B quickly and appropriately during microbial challenge resulted in increased susceptibility to infections, the reduced ability to cleave HOIL1 and reduce linear ubiquitination is consistent with unrelenting NF-&#x3BA;B signalling leading to a destructive chronic inflammation of her skin and gastrointestinal tract that was only partially controllable with systemic corticosteroid therapy.</p>
+      <p>The diagnosis and molecular characterization of rare human primary immunodeficiency diseases plays a critical role in expanding our understanding of the human immune system and in the development of new treatments that have applications beyond immunodeficiency diseases. We used TAILS to directly study the complex consequences of a genetic MALT1 deficiency in humans. This contrasts the usual situation where inferences are drawn by necessity from animal models. HOIL1 is a component of the LUBAC complex, which catalyses linear ubiquitination of several important components and regulators of the canonical NF-&#x3BA;B machinery, including RIP1 and NEMO. By identifying HOIL1 as a novel MALT1 substrate, we bring functional insight to CBM/LUBAC crosstalk. From accumulating data and our present results, we suggest that MALT1 has three temporally separated roles in canonical NF-&#x3BA;B signalling&#x2014;for the initial triggering of NF-&#x3BA;B, MALT1 protease activity is not required for IKK activation and NF-&#x3BA;B signalling. Rather, MALT1 scaffolding links the CBM signalosome to the B-cell receptor microcluster, which we show is co-localized with linear ubiquitin complexes. In the next time step, MALT1-dependent direct cleavage removes negative regulators such as RelB, CYLD and A20, and thereby optimizing NF-&#x3BA;B activation and cellular responses. At later stages, MALT1 proteolysis invokes an overall negative-feedback mechanism by decreasing LUBAC function, thereby reducing linear ubiquitination that contributes to rendering lymphocytes refractory to undesired ongoing and secondary NF-&#x3BA;B activation (<xref ref-type="fig" rid="f8">Fig. 8e</xref>). Thereby, MALT1 is a pleiotropic controller of canonical NF-&#x3BA;B activation.</p>
+    </sec>
+    <sec disp-level="1">
+      <title>Methods</title>
+      <sec disp-level="2">
+        <title>Human blood donors and ethics approvals</title>
+        <p>The University of British Columbia/Children's and Women's Health Centre of British Columbia Research Ethics Board approved the research protocols for studies on human samples and research was conducted in accordance with the Declaration of Helsinki. Five members of the family, including the affected child, her parents and two unaffected siblings, as well as seven healthy volunteers were enrolled. Tonsil samples were deidentified. Written informed consent and assent from minors for participation in this study were obtained.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Primary hematopoietic cell culture</title>
+        <p>Human PBMCs were isolated from fresh donor blood samples by Ficoll-Plaque (GE Healthcare Life Sciences) density centrifugation as described earlier<xref ref-type="bibr" rid="b58">58</xref>. Fresh PBMCs (2 &#xD7; 10<sup>6</sup> cells) were cultured overnight in complete RPMI 1640 medium supplemented with 10% fetal bovine serum, 2&#x2009;mM <sc>L</sc>-glutamine (all from HyClone Fisher Scientific) and 1&#x2009;mM sodium pyruvate (Invitrogen). Cells were stimulated with 50&#x2009;ngml<sup>&#x2212;1</sup> PMA and 1&#x2009;&#x3BC;M ionomycin, with or without 1-h pretreatment with the MALT1 inhibitor z-VRPR-fmk (75&#x2009;&#x3BC;M, Enzo Life Sciences).</p>
+      </sec>
+      <sec disp-level="2">
+        <title>T-cell isolation</title>
+        <p>Activated primary CD4<sup>+</sup> and CD8<sup>+</sup> T lymphocytes were expanded by the following procedure: fresh PBMCs were stained with fluorescent-conjugated anti-CD4 (RPA-T4) and anti-CD8 (HIT8a) antibodies (both from BD Biosciences) and sorted using a BD FACSAria flow cytometer (BD Biosciences). Purified CD4<sup>+</sup> and CD8<sup>+</sup> T cells (2 &#xD7; 10<sup>5</sup> cells) were stimulated with phytohaemagglutinin (1&#x2009;&#x3BC;g, Sigma-Aldrich), IL-2 (100&#x2009;U, Novartis) and allogeneic feeder PBMCs (1 &#xD7; 10<sup>6</sup> cells, irradiated with 5,000&#x2009;rad, 50:50 mixture from two donors) and JY Epstein&#x2013;Barr virus (EBV)-immortalized lymphoblastoid B cells (2 &#xD7; 10<sup>5</sup> cells, irradiated with 7,500&#x2009;rad) in 1&#x2009;ml complete RPMI medium supplemented with 2% blood-type AB human serum, 100&#x2009;U&#x2009;ml<sup>&#x2212;1</sup> penicillin, 100&#x2009;&#x3BC;g&#x2009;ml<sup>&#x2212;1</sup> streptomycin, non-essential amino acids and 5&#x2009;&#x3BC;M &#x3B2;-mercaptoethanol (all from Life Technologies). The activated CD4<sup>+</sup> and CD8<sup>+</sup> T cells were cultured for up to 2 weeks and were provided with fresh RPMI medium supplemented with IL-2 (100&#x2009;U&#x2009;ml<sup>&#x2212;1</sup>) every 2&#x2013;3 days. Expanded T cells (1 &#xD7; 10<sup>6</sup> cells) were then cultured overnight with RPMI 1640 medium before PMA/ionomycin stimulation (2&#x2009;h), with or without 1-h pre-treatment with z-VRPR-fmk.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>T-cell isolation from murine lymph nodes</title>
+        <p>To prepare primary murine CD3<sup>+</sup> T cells from 10-week-old male C57Bl/6 (<italic>n</italic>=2), <italic>Malt1</italic><sup>&#x2212;/&#x2212;</sup> (<italic>n</italic>=2) and <italic>Malt1</italic>-C/A (<italic>n</italic>=2) mice<xref ref-type="bibr" rid="b56">56</xref>, lymph nodes were isolated and pooled before homogenization using 70-&#x3BC;m cell strainers. Subsequently, erythrocytes were lysed in 0.15&#x2009;M NH<sub>4</sub>Cl, 10&#x2009;mM KHCO<sub>3</sub>, 1&#x2009;mM EDTA and Pan T cells were purified by MACS negative depletion (mouse Pan T-cell Isolation Kit II, Miltenyi Biotec). The purity of the isolated CD3<sup>+</sup> T cells was confirmed to be &gt;95% by flow cytometry and the T cells were cultured in serum-free RPMI 1640 medium until stimulation. Procedures involving animals were carried out on Experimental Animal Licenses approved by the Novartis Animal Ethics Board and the Regional Governmental Authorities of Switzerland.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>B-cell immortalization</title>
+        <p>Immortalized B cells were established by standard EBV transformation<xref ref-type="bibr" rid="b59">59</xref>. In brief, EBV infections were performed by culturing fresh PBMCs from the donors with the supernatant from a viral replication-permissive marmoset cell line B95&#x2013;8 (VR-1492, ATCC)<xref ref-type="bibr" rid="b60">60</xref>. After 24-h incubation, cells were infected again with EBV and cultured until sufficient B-cell blasts were present. These were then cultured in complete RPMI 1640 medium (HyClone, Fisher Scientific) for two passages before any experiments. All experiments on EBV-immortalized B cells were performed within 20 passages to avoid potential alteration of the cell phenotype. For immunoblotting analyses, EBV-immortalized B cells (2 &#xD7; 10<sup>6</sup> or 4 &#xD7; 10<sup>6</sup> cells) were stimulated with PMA/ionomycin for up to 4&#x2009;h, with or without 1-h pretreatment with z-VRPR-fmk. For the restimulation experiments, <italic>MALT1</italic><sup>+/<italic>mut</italic></sup> cells (2 &#xD7; 10<sup>6</sup>) were stimulated with PMA/ionomycin for 15&#x2009;min, and then washed and rested for 2&#x2009;h before the second PMA/ionomycin stimulation over time (<italic>N=</italic>6). All B- and T-cell cultures were mycoplasma negative.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Preparation of tonsil cell isolates</title>
+        <p>The University of British Columbia and the Children's and Women's Health Centre of British Columbia Clinical Review Board (#H06-03256) approved the collection of tonsils from elective surgeries performed at British Columbia Children's Hospital. Subsequently, single-cell suspensions were generated by pressing tissue through filter screens, subjected to Ficoll-Paque (GE Healthcare) density gradient centrifugation and isolated mononuclear cells cryopreserved at &#x2212;80&#x2009;&#xB0;C.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Statistical analysis</title>
+        <p>A Bonferroni post-test after two-way analysis of variance was performed for statistical analysis of the difference between response in heterozygous mother and homozygous patient (<italic>N</italic>=3). The data met the assumptions of the test including the dependent variable (that is, protein expression) being continuous, the two independent variables each consisted of five time points, and the time points were independent. There was an estimate of variation within each group of data displayed by the s.d. error bars. The F-test statistic established that variance was similar between the groups that are being statistically compared. Statistical analysis of the effect of MALT1 inhibitor z-VRPR-fmk on linear ubiquitination at the B-cell receptor microclusters was performed by Mann&#x2013;Whitney <italic>U</italic>&#x2013;test, since data were not normally distributed and therefore no assumptions about variance were made.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Confocal immunofluorescence</title>
+        <p>Immortalized B cells (12.5 &#xD7; 10<sup>6</sup> cells per millilitre) in RPMI medium plus 10% cosmic calf serum were used unstimulated or stimulated in suspension for 2&#x2009;h with 10&#x2009;&#x3BC;g&#x2009;ml<sup>&#x2212;1</sup> anti-IgG (Jackson Immunoresearch Laboratories; 109-005-044) and allowed to settle for 1&#x2009;h onto coverslips coated with anti-IgG and anti-IgM (Jackson Immunoresearch Laboratories; 109-005-003 and 109-005-043, respectively). After fixation with 4% paraformaldehyde, the cells were permeabilized with 0.5% Triton X-100 in PBS for 5&#x2009;min and then blocked with 3% bovine serum albumin in PBS for 30&#x2009;min. Primary antibodies (1:100) were added for 1&#x2009;h and visualized with Alexa 488- or Alexa 647-labelled goat anti-mouse IgG or goat anti-rabbit IgG. Monoclonal anti-human HOIL1 (clone E-2) and anti-human MALT1 (clone EP603Y) antibodies were from Santa Cruz Biotechnology and Abcam, respectively. Coverslips were treated with ProLong Gold antifade reagent containing 4,6-diamidino-2-phenylindole (Molecular Probes). Images were captured using a Nikon C2+ confocal microscope.</p>
+      </sec>
+      <sec disp-level="2">
+        <title><italic>In vitro</italic> HOIL1 cleavage assays</title>
+        <p>Recombinant full-length human MALT1 protein was expressed and purified<xref ref-type="bibr" rid="b43">43</xref>. C-terminal Myc-FLAG-tagged full-length human HOIL1 was obtained from Origene. HOIL1 (0.05&#x2009;&#x3BC;g&#x2009;&#x3BC;l<sup>&#x2212;1</sup>) was incubated with different concentrations of MALT1 in assay buffer (200&#x2009;mM Tris-HCl, 0.8&#x2009;M Na-citrate, 0.1&#x2009;mM EGTA, 0.05% CHAPS, 1&#x2009;mM DTT, pH 7.4)<xref ref-type="bibr" rid="b43">43</xref> for 2&#x2009;h at 37&#x2009;&#xB0;C. Cleavage of HOIL1 was analysed by 4&#x2013;12% Bis-Tris SDS&#x2013;polyacrylamide gel electrophoresis (PAGE) gradient gels (Life Technologies) and confirmed by immunoblotting using antibodies to N-HOIL1 (anti-N-terminal HOIL1; HPA024185; Sigma) and C-HOIL1 (anti-FLAG, clone M2, Sigma) cleavage products, respectively.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Immunoblotting analysis of lymphocytes</title>
+        <p>The primary antibodies for immunoblotting and immunofluorescence confocal microscopy analyses were directed against: phospho-NF-&#x3BA;B p65 (Ser536; #3031), NF-&#x3BA;B p65 (#4764), I&#x3BA;B&#x3B1; (#9242), phospho-I&#x3BA;B&#x3B1; (ser32; 14D1), phospho-p65 (ser536; 93H1), phospho-ERK1/2 (Thr202/Tyr204; #9101) and &#x3B2;-actin (#3700 or #8457) all from Cell Signaling Technology; monoclonal antibodies to HOIL1 (clone E-2) and MALT1 (H-300) were from Santa Cruz Biotechnology, anti-N-terminal HOIL1 was from Sigma-Aldrich (HPA024185), and to the MALT1 N-terminal peptide was from Abcam (clone EP603Y). Anti-RIP1 antibody was from Cell Signaling Technologies (#4926). Anti-Otulin antibody was from Abcam (anti-FAM105B, ab151117). The secondary antibodies conjugated with infrared dye (IRDye 800 CW and 680 LT, 1:20,000) were from LI-COR Biosciences.</p>
+        <p>Immunoblotting analysis of PBMCs, T cells and immortalized B cells was as follows. Briefly, whole-cell lysates were prepared in modified RIPA lysis buffer (50&#x2009;mM Tris-HCl, 150&#x2009;mM NaCl, 2&#x2009;mM EGTA and EDTA, and 1% TrionX-100, pH 7.5) with Halt protease and phosphatase inhibitors (Thermo Scientific). The lysed cells were incubated at 4&#x2009;&#xB0;C for 10&#x2009;min followed by sonication. Proteins were separated by SDS&#x2013;PAGE (10%), and then transferred onto a polyvinylidene difluoride membrane (Immobilon-FL, EMD Millipore) and incubated with primary antibodies for 18&#x2009;h at 4&#x2009;&#xB0;C, and then secondary antibodies for 1&#x2009;h at room temperature. Imaging was performed on a LI-COR Odyssey infrared imager (LI-COR Bioscience) and bands were quantified by densitometry using ImagJ freeware (NIH). Scanned images of immunoblots were cropped in the final figures for clarity and conciseness. Full images of all blots are shown in <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 8</xref>.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>CBM complex and LUBAC cDNA cell transfections and analyses</title>
+        <p>HEK293FT cells (mycoplasma free) were grown in DMEM supplemented with 10% fetal calf serum, 2&#x2009;mM <sc>L</sc>-glutamine, 100&#x2009;U&#x2009;ml<sup>&#x2212;1</sup> penicillin and 100&#x2009;&#x3BC;g&#x2009;ml<sup>&#x2212;1</sup> streptomycin (all from Amimed) and were transiently transfected using Roti-Fect (Carl Roth). The expression vectors for BCL10 and an active oncogenic mutant of CARD11 (Leu244Pro) have been described before<xref ref-type="bibr" rid="b43">43</xref>. The plasmids pDEST40-SHARPIN-V5-His, pDEST40-HOIP-V5-His and pDEST40-HOIL1-V5-His were from Invitrogen/Life Technologies. The expression vector for noncleavable HOIL1 pDEST40-HOIL1-Arg165Lys was made using QuikChange site-directed mutagenesis (Agilent Technologies). The vectors for wild type and catalytic inactive MALT1, pCMV-SPORT-Flag-His-S-MALT1 and pCMV-SPORT-Flag-His-S-MALT1 (Cys464Ala), respectively, and the N-terminally FLAG-tagged HOIL1 and its cleavage product analogues, N-HOIL1 (1-165) and C-HOIL1 (166-510), were made by standard procedures. pcDNA3.1-cIAP2-MALT1-Myc-His<sub>6</sub> and pcDNA3.1-cIAP2-MALT1 (Cys464Ala)-Myc-His<sub>6</sub> vectors were a kind gift of Dr Rudi Beyaert (University of Ghent, Belgium).</p>
+        <p>For cell lysis, cells were collected by centrifugation, washed in 1 &#xD7; PBS and the cell pellets lysed in NP-40 lysis buffer (50&#x2009;mM Tris-HCl, pH 7.5, 150&#x2009;mM NaCl, 1.0% NP-40) supplemented with complete protease inhibitor cocktail and phosSTOP phosphatase inhibitor cocktail (Roche Life Science) and clarified by centrifugation. To preserve ubiquitin chains the cells were lysed by directly adding 1 &#xD7; SDS reducing sample buffer to the washed cell pellets. After boiling, nuclear DNA was sheared by ultrasonication and proteins were separated on 4&#x2013;12% Bis-Tris SDS&#x2013;PAGE gradient gels (Life Technologies). Proteins were detected by immunoblotting using the following antibodies: anti-CYLD (E-10) and anti-BCL10 (H-197) from Santa Cruz Biotechnology; anti-MALT1 (MCA2801, clone 50) and anti-V5 (SV5-Pk1) from Serotec/AbD; anti-&#x3B2;-tubulin (AA2), anti-linear ubiquitin (MABS199), anti-K48-linked ubiquitin (Apu2) and anti-V5 (AB9732) from Merck-Millipore; anti-&#x3B2;-tubulin (tub2.1), anti-HOIL1 (HPA024185) and anti-Flag (M2) from Sigma-Aldrich; anti-RelB (C1E4), anti-CYLD (D1A10) and anti-CARD11 (1D12) from Cell Signaling Technology; anti-turboGFP (2H8) was from Origene; anti-HOIP (ab46322) from Abcam; and anti-linear ubiquitin (Lub9) from BioSensors. Horseradish peroxidase-coupled donkey anti-rabbit and sheep anti-mouse secondary antibodies were from GE Healthcare. Scanned images of immunoblots were cropped in the final figures for clarity and conciseness. Full images of all blots are shown in <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 8</xref>.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>NF-&#x3BA;B promoter luciferase assays</title>
+        <p>HEK293FT cells were transfected with plasmid DNAs encoding for NF-&#x3BA;B promoter-driven firefly luciferase (&#x3BA;B<sub>6</sub>-Luc), a <italic>Renilla</italic> luciferase under the control of a constitutively active SV40 promoter, and combinations of the individual LUBAC components. At 36&#x2013;48&#x2009;h later, the cells were lysed in 100-&#x3BC;l passive lysis buffer (Promega) and the bioluminescence of the samples was measured using the Dual-Luciferase Reporter Assay System (Promega) and a Berthold TriStar luminometer. The relative luciferase activities were calculated after normalization of firefly luciferase activities to the activities of <italic>Renilla</italic> luciferase.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Linear ubiquitin assays</title>
+        <p>For polyubiquitinated protein isolation, we used agarose-coupled TUBE2 (LifeSensors). Immortalized B cells (4 &#xD7; 10<sup>6</sup>) and primary lymphocytes (1 &#xD7; 10<sup>7</sup>) were seeded and rested at least 1&#x2009;h, and treated with PMA/ionomycin with or without z-VRPR-fmk for various times and then lysed in modified RIPA buffer supplemented with Halt protease and phosphatase inhibitor cocktail (Thermo Scientific), and deubiquitinase inhibitors (5&#x2009;mM <italic>O</italic>-phenanthroline and 50&#x2009;&#x3BC;M PR619, LifeSensors). Cell lysates (550&#x2009;&#x3BC;g) were mixed with 10&#x2009;&#x3BC;l of pre-washed agarose-TUBE2 and incubated for 18&#x2009;h at 4&#x2009;&#xB0;C. Agarose-TUBE2 was collected, washed and denatured in SDS&#x2013;PAGE loading buffer. Samples were centrifuged and the supernatants were immunoblotted for total linear ubiquitin (LUB9 antibody, LifeSensors), NEMO (Santa Cruz Biotechnology; FL-419), RIP1 (Cell Signaling Technology; #4926) and K48-linked-polyubiquitin (Boston Biochem; #A-101). Scanned images of immunoblots were cropped in the final figures for clarity and conciseness. Full images of all blots are shown in <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 8</xref>.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Immunoprecipitation</title>
+        <p>For co-immunoprecipitation experiments, transfected cells were lysed in 50&#x2009;mM Tris-HCl, pH 7.5, 150&#x2009;mM NaCl and 0.5% NP-40 supplemented with complete protease inhibitor cocktail and phosSTOP phosphatase inhibitor cocktail (Roche Life Science). Cell lysates were incubated overnight with 1&#x2009;&#x3BC;g precipitating antibody and 30&#x2009;&#x3BC;l Protein G Sepharose (GE Healthcare). After three washing steps in the NP-40 lysis buffer, protein was eluted by boiling for 5&#x2009;min in SDS sample buffer. Nonspecific binding controls showed that the tagged proteins did not bind beads alone or beads coupled with another antibody, for example, anti-FLAG antibody on beads controlled for V5-taged protein and vice versa.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>B-cell and antigen-presenting cell interactions</title>
+        <p>Experiments were performed as described in Freeman <italic>et al.</italic><xref ref-type="bibr" rid="b51">51</xref> The APCs were generated by transiently transfecting Cos7 cells using Lipofectamine 2000 (Invitrogen) with a plasmid encoding the surrogate Ag, which was a single-chain Fv containing the variable regions from the 187.1 rat anti-Ig&#x3BA; monoclonal antibody fused to the hinge and membrane-proximal domains of rat IgG1 and the transmembrane and cytoplasmic domains of H-2K (ref. <xref ref-type="bibr" rid="b61">61</xref>). After 24&#x2009;h, transfected Cos7 APCs were detached using enzyme free dissociation buffer (0.5&#x2009;mM EDTA, 100&#x2009;mM, NaCl, 1&#x2009;mM glucose, pH 7.4) and 1.5 &#xD7; 10<sup>4</sup> cells were plated on 18-mm glass coverslips that had been coated with 5&#x2009;&#x3BC;g&#x2009;ml<sup>&#x2212;1</sup> fibronectin. The APCs were cultured for 12&#x2009;h in DMEM plus 10% FBS supplemented with 1% <sc>L</sc>-glutamine, 1% Na pyruvate and 0.05% penicillin/streptomycin to allow cells to spread and flatten.</p>
+        <p>Murine splenic B cells were isolated from C57BL/6J mice (9-week 4-day male, and 19-week 4-day male) (animal protocols were approved by the University of British Columbia Animal Care Committee) using a B-cell isolation kit (Stemcell Technologies) to deplete non-B cells. B cells (2 &#xD7; 10<sup>6</sup>) were resuspended in 0.4&#x2009;ml modified HEPES-buffered saline (25&#x2009;mM sodium HEPES, pH 7.2, 125&#x2009;mM NaCl, 5&#x2009;mM KCl, 1&#x2009;mM CaCl<sub>2</sub>, 1&#x2009;mM Na<sub>2</sub>HPO<sub>4</sub>, 0.5&#x2009;mM MgSO<sub>4</sub>, 1&#x2009;mg&#x2009;ml<sup>&#x2212;1</sup> glucose, 2&#x2009;mM glutamine, 1&#x2009;mM sodium pyruvate, 50&#x2009;&#x3BC;M 2-mercaptoethanol) supplemented with 2% FBS and then incubated with 75&#x2009;&#x3BC;M z-VRPR-fmk or an equivalent volume of H<sub>2</sub>O for 30&#x2009;min at 37&#x2009;&#xB0;C. The B cells (1 &#xD7; 10<sup>6</sup> per coverslip) were then added to the Cos7 APCs and allowed to attach for 10&#x2013;30&#x2009;min at 37&#x2009;&#xB0;C before fixing the cells with 4% paraformaldehyde.</p>
+        <p>Before staining, the cells were permeabilized with 0.1% Triton X-100 and then blocked with 2% BSA, 10% goat serum and 25&#x2009;&#x3BC;g&#x2009;ml<sup>&#x2212;1</sup> of the 2.4G2 monoclonal antibody, which blocks Fc receptors on the B cells. The cells were then stained with AlexaFluor 568-conjugated goat anti-rat IgG (H+L chain-reactive; Life Technologies, catalogue number A11077) to visualize the anti-Ig&#x3BA; surrogate Ag, and with a mouse IgG1 anti-linear polyubiquitin (LUB9) monoclonal antibody (LifeSensors, catalogue # AB130, the same antibody used to probe the TUBEs assays)), the same antibody was used to probe the TUBE assay blots, followed by staining with an AlexaFluor 647-conjugated goat anti-mouse IgG1 (&#x3B3;1 H chain-specific; Life Technologies, catalogue number A21240) secondary antibody and AlexaFluor 488 Phalloidin (Life Technologies catalogue # A12379) to visualize F-actin. Naive primary B cells, which express IgM and IgD, but not IgG, were not stained to any significant extent by the goat anti-mouse IgG1 secondary antibody in the absence of primary antibody. Coverslips were mounted using ProLong Diamond Antifade Mountant (Life Technologies, catalogue #P36961).</p>
+        <p>Cells were imaged using spinning disk confocal microscope system (3i&#x2014;Intelligent Imaging Innovations) with a Zeiss Axiovert 200M microscope with a &#xD7; 100 numerical aperture 1.45 oil Pan-Fluor objective and QuantEM 512SC Photometrics camera. All images were acquired using identical settings and analysed using FIJI and MATLAB software. Optical <italic>z</italic>-slices were imaged through the cell at 0.2-&#x3BC;m intervals. To produce the side view in <xref ref-type="fig" rid="f8">Fig. 8b</xref>. FIJI software was used to reslice the <italic>z</italic>-stacks at 0.2-&#x3BC;m intervals. A centre slice was picked for images. MATLAB software was used to analyse images for fluorescence intensity. Fluorescence signals for linear ubiquitin and antigen (single-chain anti-Ig&#x3BA;) were measured at the contact site between the B cell and the Cos7 APCs. For cells where the contact site between B cell and the APC was not in one focal plane could not be analysed and were excluded.</p>
+        <p>To compute fluorescence intensities, each image was first filtered using Laplacian of Gaussian (LoG) filters at a range of scales (scale=square of Gaussian s.d.). Specifically, the Gaussian s.d.'s used were every value in the range from 0.08 to 0.48&#x2009;&#x3BC;m at intervals of 0.04&#x2009;&#x3BC;m. To threshold the image for noise, the median absolute deviation of pixel values was computed and used to estimate (multiplying by 1.4826) the s.d. For each filtered image, the threshold was set at six noise s.d.'s above the mean pixel intensity. Finally, a mask generated by retaining all pixels present at any scale after thresholding LoG filtered images was applied to the original image and all pixel values within the mask were summed to yield the total fluorescence intensity. This value was normalized to the total surrogate antigen fluorescence intensity for the same cell.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>N-terminal 10-plex TMT TAILS and shotgun proteomics</title>
+        <p>The B-cell N-terminome and proteome from the patient (<italic>n</italic>=3), brother (<italic>n</italic>=1) and mother (<italic>n</italic>=1), with and without PMA/ionomycin stimulation for 2 and 4&#x2009;h, were analysed by TAILS and shotgun proteomics (<italic>N</italic>=2)<xref ref-type="bibr" rid="b39">39</xref><xref ref-type="bibr" rid="b40">40</xref>. B-cell lysate protein was prepared by snap-freezing cells in hypotonic lysis buffer (10&#x2009;mM HEPES, pH 7.5 supplemented with protease inhibitor cocktail, Roche). After removal of cell debris by centrifugation, 200&#x2009;&#x3BC;g per condition was precipitated by chloroform&#x2013;methanol and dissolved in 100&#x2009;&#x3BC;l labelling buffer (2&#x2009;M guanidine hydrochloride and 200&#x2009;mM HEPES, pH 8.0). Proteins were reduced with TCEP (10&#x2009;mM, 30&#x2009;min) and cysteine residues alkylated with iodoacetamide (25&#x2009;mM, 30&#x2009;min in the dark). For TMT labelling of proteins, 10-plex TMT labels (0.8&#x2009;mg each, Pierce) were dissolved in a volume of dimethylsulphoxide equal to the total reaction mixture at that point and added 1:1 to the proteome samples for 1&#x2009;h in the dark. Unreacted TMT label was quenched with ethanolamine (50&#x2009;mM, 1&#x2009;h) and all 10 TMT-labelled samples were combined. The samples were cleaned up by precipitation with ice-cold acetone/methanol (9:1) for 2&#x2009;h and precipitates resuspended in 50&#x2009;mM HEPES buffer, pH 8.0 and then digested with trypsin (Trypsin Gold, Promega) at 37&#x2009;&#xB0;C for 16&#x2009;h.</p>
+        <p>After trypsinization, 1% of the sample was desalted on a C<sub>18</sub> StageTip and analysed for shotgun proteomics by liquid chromatography (LC) MS/MS. The rest of the sample was enriched for N-terminal peptides as follows. Tryptic peptides displayed unblocked N-terminal &#x3B1;-amines enabling their removal by coupling to a hyperbranched polyglycerol polyaldehyde-derivatized polymer (HPG-ALD; Flintbox Innovation Network: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://flintbox.com/public/project/1948/">http://flintbox.com/public/project/1948/</ext-link>) by reductive amination (10&#x2009;mg polymer and 20&#x2009;mM sodium cyanoborohydride, pH 6.5) at 37&#x2009;&#xB0;C for 16&#x2009;h. After quenching unreacted aldehydes with ethanolamine (100&#x2009;mM, 20&#x2009;mM fresh sodium cyanoborohydride) for 1&#x2009;h, the TMT, acetyl- and pyroglutamate-blocked N-terminal peptides were separated from the polymer by ultrafiltration using a 10-kDa molecular weight cut-off (MWCO) spin filter (Amicon). The filtrate containing the N terminome (TAILS sample) was desalted on a C<sub>18</sub> StageTip and analysed by LC-MS/MS and LC-MS/MS/MS.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Mass spectrometry</title>
+        <p>Dried TAILS and preTAILS shotgun samples were resuspended in 5% acetonitrile and 0.1% TFA. An Easy-nLC 1000 (Thermo Fisher Scientific, San Jose, CA) was employed to perform reverse-phase nano-high-performance liquid chromatography peptide separation and introduction into an Orbitrap Fusion Tribrid mass spectrometer (Thermo Fisher Scientific) using 0.1% formic acid in water as mobile phase A and 0.1% formic acid in acetonitrile as mobile phase B. Approximately 1&#x2009;&#x3BC;g of sample in 2&#x2009;&#x3BC;l of solution was loaded onto a 2&#x2009;cm Acclaim PepMap100 trap column to perform online desalting followed by transfer to an EASY-Spray PepMap 50&#x2009;cm &#xD7; 75&#x2009;&#x3BC;m C<sub>18</sub> Column (Thermo Fisher Scientific, Bellefonte, PA) for analytical separation. Peptides were eluted using a gradient of 5&#x2013;25% mobile phase B over 180&#x2009;min followed by 25&#x2013;40% B over an additional 30&#x2009;min at a constant flow rate of 300&#x2009;nl&#x2009;min<sup>&#x2212;1</sup>. The column was regenerated at 95% B for 10&#x2009;min.</p>
+        <p>All samples were analysed in duplicate as technical replicates. Mass spectrometry data were collected using top speed mode and a maximum cycle time of 3&#x2009;s. An Orbitrap full MS scan was acquired from 350 to 1,600&#x2009;<italic>m</italic>/<italic>z</italic> using a resolution of 120,000 full width at half maximum at 200&#x2009;<italic>m</italic>/<italic>z</italic> and an ion target of 2 &#xD7; 10<sup>5</sup>. The most abundant monoisotopically resolved precursors within a charge range of +2 to +9 were selected using a 2&#x2009;<sc>AMU</sc> quadrupole isolation width for MS/MS product by higher-energy collisional dissociation (HCD) at 40% normalized collision energy followed by detection in the Orbitrap at a resolution of 60,000 with an ion target of 10<sup>5</sup>. A fixed first mass of 110&#x2009;<italic>m</italic>/<italic>z</italic> was used for MS/MS scans.</p>
+        <p>SPS<xref ref-type="bibr" rid="b62">62</xref> mode acquisition was executed using an Orbitrap full MS scan from 350 to 1,600&#x2009;<italic>m</italic>/<italic>z</italic> with a resolution of 120,000 full width at half maximum in top speed mode with a 3&#x2009;s maximum cycle time as follows. The most abundant monoisotopically resolved precursors with charges from +2 to +9 were selected by quadrupole isolation at 2&#x2009;<sc>AMU</sc> for MS/MS collision-induced dissociation (CID) fragmented in the linear ion trap at 30% normalized collision energy. Up to 10 of the most intense products from the MS/MS spectra were selected, coisolated and fragmented together in the HCD cell at 55% normalized collision energy with subsequent detection in the Orbitrap at 60,000 resolution with a scan range of 100&#x2013;500&#x2009;<italic>m</italic>/<italic>z</italic> and an ion target of 10<sup>5</sup>. A variation of this method employing charge-dependent MS/MS fragmentation using either CID or electron-transfer dissociation (ETD) in the ion trap was also performed.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Proteomics data analysis</title>
+        <p>All data analysis was conducted using Thermo Scientific Proteome Discoverer 2.0 and the integrated Byonic v1.4 search node. Ion trap spectra were searched with mass tolerances of 10&#x2009;p.p.m. for the precursor ion and 15&#x2009;p.p.m. (Orbitrap) or 0.6&#x2009;Da (ion trap) for fragment ions. Quantification was performed using the MS/MS spectra for the Orbitrap MS/MS HCD method and the MS/MS/MS spectra for the SPS method. Technical replicates were searched together. After initial assessment of labelling efficiency, carbamidomethylation (+57.021&#x2009;Da) of cysteine and TMT isobaric labelling (+229.162&#x2009;Da) of lysine were set as static modifications, whereas TMT labelling of the protein N termini, acetylation of protein N termini (+42.011), formation of pyroglutamate from glutamine on peptide N termini (&#x2212;17.027), deamidation of asparagine and glutamine (+0.984&#x2009;Da) and methionine oxidation (+15.996&#x2009;Da) were considered dynamic modifications. Because of the TMT labelling of lysine residues, which trypsin does not recognize, data were searched using semi-specific ArgC search parameters with up to two missed cleavages. Spectra were searched against the complete Swiss-Prot human database (release 2013_08) at a 1% protein level FDR. Resulting peptide lists were filtered for peptides identified with a probability &gt;0.99.</p>
+        <p>Working peptide lists for baseline ratio determination in the TAILS experiments were filtered for peptides containing N-terminal TMT, acetyl or pyroglutamate. Reporter ion ratios were calculated as heterozygous control (<italic>MALT1</italic><sup><italic>+/mut</italic></sup> brother or mother)/average homozygous patient (<italic>MALT1</italic><sup><italic>mut/mut</italic></sup>; <italic>n</italic>=3) per experiment and per condition, yielding eight separate distribution lists. Significant outlier cutoff values were determined after log(2) transformation by boxplot-and-whiskers analysis using the BoxPlotR tool<xref ref-type="bibr" rid="b63">63</xref>. Venn diagrams were created using the BioVenn web application<xref ref-type="bibr" rid="b64">64</xref>.</p>
+      </sec>
+      <sec disp-level="2">
+        <title>Substrate winnowing</title>
+        <p>Candidate MALT1 substrates were selected by a new substrate winnowing strategy (<xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 3</xref>) and by the following criteria. A substrate was identified only if the neo-N-terminal peptide was internal, that is, not starting at a recognized protein start or processing site, and was N-terminally blocked by a TMT label. Moreover, the neo-N-terminal peptides must be significantly more abundant in samples from the heterozygous controls compared with the MALT1-deficient patient and with the peptide-spectrum match (PSM) ratio higher than the 75th percentile+1.5 &#xD7; interquartile range; the neo-N-terminal peptide must have increased abundance in PMA/ionomycin-stimulated samples compared with the vehicle control for the same subject; where the protein natural N terminus was also identified the neo-N-terminal peptide to natural N-terminal peptide ratio was high to ensure that cleavage was not merely increased concomitantly with increased total protein after stimulation of between cells; the neo-N-termini were reproducibly identified in two or more TAILS samples and by &#x2265;3 spectra; finally, the cleavage site needed to conform to the strict MALT1-cleavage site specificity of an arginine at P1 and was cleaved in biochemical <italic>in vitro</italic> cleavage assays.</p>
+      </sec>
+    </sec>
+    <sec disp-level="1">
+      <title>Additional information</title>
+      <p><bold>How to cite this article:</bold> Klein, T. <italic>et al.</italic> The paracaspase MALT1 cleaves HOIL1 reducing linear ubiquitination by LUBAC to dampen lymphocyte NF-&#x3BA;B signalling. <italic>Nat. Commun.</italic> 6:8777 doi: 10.1038/ncomms9777 (2015).</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="S1">
+      <title>Supplementary Material</title>
+      <supplementary-material id="d33e18" content-type="local-data">
+        <caption>
+          <title>Supplementary Information</title>
+          <p>Supplementary Figures 1-8</p>
+        </caption>
+        <media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncomms9777-s1.pdf"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>cIAP2-MALT1 expression vectors were a gift of Dr Rudi Beyaert (University of Ghent, Belgium). We thank Kate L. Del Bel, Department of Pediatrics, University of British Columbia, for technical assistance and Lara Hartjes (Novartis, Basel, Switzerland) for assistance with some transfection experiments and cleavage assays. Access to imaging facilities was generously provided by Dr E. Conway, Center for Blood Research and the UBC Life Sciences Institute Imaging Facility. This work was supported by Canadian Institutes of Health Research grants (MOP-37937 to C.M.O., MOP-133691 to SET, and MOP-68865 to MRG) and by the British Columbia Proteomics Network (C.M.O.). S.-Y.F. is the recipient of a Child &amp; Family Research Institute Postdoctoral Fellowship; F.R. is recipient of a Presidential Postdoctoral Fellowship from the Novartis Institutes of BioMedical Research; S.E.T. holds the Aubrey J. Tingle Professorship in Pediatric Immunology and is a clinical scholar of the Michael Smith Foundation for Health Research; and C.M.O. is a Canada Research Chair in Proteinase Proteomics and Systems Biology.</p>
+    </ack>
+    <ref-list>
+      <ref id="b1">
+        <mixed-citation publication-type="journal"><name><surname>Gerlach</surname><given-names>B.</given-names></name>
+<italic>et al.</italic>
+<article-title>Linear ubiquitination prevents inflammation and regulates immune signalling</article-title>. <source>Nature</source>
+<volume>471</volume>, <fpage>591</fpage> (<year>2011</year>).<pub-id pub-id-type="pmid">21455173</pub-id></mixed-citation>
+      </ref>
+      <ref id="b2">
+        <mixed-citation publication-type="journal"><name><surname>Haas</surname><given-names>T. L.</given-names></name>
+<italic>et al.</italic>
+<article-title>Recruitment of the linear ubiquitin chain assembly complex stabilizes the TNF-R1 signaling complex and is required for TNF-mediated gene induction</article-title>. <source>Mol. Cell</source>
+<volume>36</volume>, <fpage>831</fpage> (<year>2009</year>).<pub-id pub-id-type="pmid">20005846</pub-id></mixed-citation>
+      </ref>
+      <ref id="b3">
+        <mixed-citation publication-type="journal"><name><surname>Tokunaga</surname><given-names>C.</given-names></name>, <name><surname>Tatematsu</surname><given-names>K.</given-names></name>, <name><surname>Kuroda</surname><given-names>S.</given-names></name>, <name><surname>Nakagawa</surname><given-names>N.</given-names></name> &amp; <name><surname>Kikkawa</surname><given-names>U.</given-names></name>
+<article-title>Molecular cloning and characterization of RBCK2, a splicing variant of a RBCC family protein, RBCK1</article-title>. <source>FEBS Lett.</source>
+<volume>435</volume>, <fpage>11</fpage> (<year>1998</year>).<pub-id pub-id-type="pmid">9755849</pub-id></mixed-citation>
+      </ref>
+      <ref id="b4">
+        <mixed-citation publication-type="journal"><name><surname>Tatematsu</surname><given-names>K.</given-names></name>
+<italic>et al.</italic>
+<article-title>Transcriptional activity of RBCK1 protein (RBCC protein interacting with PKC 1): requirement of RING-finger and B-Box motifs and regulation by protein kinases</article-title>. <source>Biochem. Biophys. Res. Commun.</source>
+<volume>247</volume>, <fpage>392</fpage> (<year>1998</year>).<pub-id pub-id-type="pmid">9642138</pub-id></mixed-citation>
+      </ref>
+      <ref id="b5">
+        <mixed-citation publication-type="journal"><name><surname>Ikeda</surname><given-names>F.</given-names></name>
+<italic>et al.</italic>
+<article-title>SHARPIN forms a linear ubiquitin ligase complex regulating NF-kappaB activity and apoptosis</article-title>. <source>Nature</source>
+<volume>471</volume>, <fpage>637</fpage> (<year>2011</year>).<pub-id pub-id-type="pmid">21455181</pub-id></mixed-citation>
+      </ref>
+      <ref id="b6">
+        <mixed-citation publication-type="journal"><name><surname>Tokunaga</surname><given-names>F.</given-names></name>
+<italic>et al.</italic>
+<article-title>SHARPIN is a component of the NF-kappaB-activating linear ubiquitin chain assembly complex</article-title>. <source>Nature</source>
+<volume>471</volume>, <fpage>633</fpage> (<year>2011</year>).<pub-id pub-id-type="pmid">21455180</pub-id></mixed-citation>
+      </ref>
+      <ref id="b7">
+        <mixed-citation publication-type="journal"><name><surname>Kirisako</surname><given-names>T.</given-names></name>
+<italic>et al.</italic>
+<article-title>A ubiquitin ligase complex assembles linear polyubiquitin chains</article-title>. <source>EMBO J.</source>
+<volume>25</volume>, <fpage>4877</fpage> (<year>2006</year>).<pub-id pub-id-type="pmid">17006537</pub-id></mixed-citation>
+      </ref>
+      <ref id="b8">
+        <mixed-citation publication-type="journal"><name><surname>Sato</surname><given-names>Y.</given-names></name>
+<italic>et al.</italic>
+<article-title>Specific recognition of linear ubiquitin chains by the Npl4 zinc finger (NZF) domain of the HOIL-1L subunit of the linear ubiquitin chain assembly complex</article-title>. <source>Proc. Natl Acad. Sci. USA</source>
+<volume>108</volume>, <fpage>20520</fpage> (<year>2011</year>).<pub-id pub-id-type="pmid">22139374</pub-id></mixed-citation>
+      </ref>
+      <ref id="b9">
+        <mixed-citation publication-type="journal"><name><surname>Elliott</surname><given-names>P. R.</given-names></name>
+<italic>et al.</italic>
+<article-title>Molecular basis and regulation of OTULIN-LUBAC interaction</article-title>. <source>Mol. Cell</source>
+<volume>54</volume>, <fpage>335</fpage> (<year>2014</year>).<pub-id pub-id-type="pmid">24726323</pub-id></mixed-citation>
+      </ref>
+      <ref id="b10">
+        <mixed-citation publication-type="journal"><name><surname>Schaeffer</surname><given-names>V.</given-names></name>
+<italic>et al.</italic>
+<article-title>Binding of OTULIN to the PUB domain of HOIP controls NF-kappaB signaling</article-title>. <source>Mol. Cell</source>
+<volume>54</volume>, <fpage>349</fpage> (<year>2014</year>).<pub-id pub-id-type="pmid">24726327</pub-id></mixed-citation>
+      </ref>
+      <ref id="b11">
+        <mixed-citation publication-type="journal"><name><surname>Tokunaga</surname><given-names>F.</given-names></name>
+<italic>et al.</italic>
+<article-title>Involvement of linear polyubiquitylation of NEMO in NF-kappaB activation</article-title>. <source>Nat. Cell Biol.</source>
+<volume>11</volume>, <fpage>123</fpage> (<year>2009</year>).<pub-id pub-id-type="pmid">19136968</pub-id></mixed-citation>
+      </ref>
+      <ref id="b12">
+        <mixed-citation publication-type="journal"><name><surname>Fujita</surname><given-names>H.</given-names></name>
+<italic>et al.</italic>
+<article-title>Mechanism underlying IkappaB kinase activation mediated by the linear ubiquitin chain assembly complex</article-title>. <source>Mol. Cell Biol.</source>
+<volume>34</volume>, <fpage>1322</fpage> (<year>2014</year>).<pub-id pub-id-type="pmid">24469399</pub-id></mixed-citation>
+      </ref>
+      <ref id="b13">
+        <mixed-citation publication-type="journal"><name><surname>Rahighi</surname><given-names>S.</given-names></name>
+<italic>et al.</italic>
+<article-title>Specific recognition of linear ubiquitin chains by NEMO is important for NF-kappaB activation</article-title>. <source>Cell</source>
+<volume>136</volume>, <fpage>1098</fpage> (<year>2009</year>).<pub-id pub-id-type="pmid">19303852</pub-id></mixed-citation>
+      </ref>
+      <ref id="b14">
+        <mixed-citation publication-type="journal"><name><surname>McDonald</surname><given-names>D. R.</given-names></name>, <name><surname>Janssen</surname><given-names>R.</given-names></name> &amp; <name><surname>Geha</surname><given-names>R.</given-names></name>
+<article-title>Lessons learned from molecular defects in nuclear factor kappaB dependent signaling</article-title>. <source>Microbes. Infect.</source>
+<volume>8</volume>, <fpage>1151</fpage> (<year>2006</year>).<pub-id pub-id-type="pmid">16517203</pub-id></mixed-citation>
+      </ref>
+      <ref id="b15">
+        <mixed-citation publication-type="journal"><name><surname>Ben Neriah</surname><given-names>Y.</given-names></name> &amp; <name><surname>Karin</surname><given-names>M.</given-names></name>
+<article-title>Inflammation meets cancer, with NF-kappaB as the matchmaker</article-title>. <source>Nat. Immunol.</source>
+<volume>12</volume>, <fpage>715</fpage> (<year>2011</year>).<pub-id pub-id-type="pmid">21772280</pub-id></mixed-citation>
+      </ref>
+      <ref id="b16">
+        <mixed-citation publication-type="journal"><name><surname>Yang</surname><given-names>Y.</given-names></name>
+<italic>et al.</italic>
+<article-title>Essential role of the linear ubiquitin chain assembly complex in lymphoma revealed by rare germline polymorphisms</article-title>. <source>Cancer Discov.</source>
+<volume>4</volume>, <fpage>480</fpage> (<year>2014</year>).<pub-id pub-id-type="pmid">24491438</pub-id></mixed-citation>
+      </ref>
+      <ref id="b17">
+        <mixed-citation publication-type="journal"><name><surname>Sasaki</surname><given-names>Y.</given-names></name>
+<italic>et al.</italic>
+<article-title>Defective immune responses in mice lacking LUBAC-mediated linear ubiquitination in B cells</article-title>. <source>EMBO J.</source>
+<volume>32</volume>, <fpage>2463</fpage> (<year>2013</year>).<pub-id pub-id-type="pmid">23942237</pub-id></mixed-citation>
+      </ref>
+      <ref id="b18">
+        <mixed-citation publication-type="journal"><name><surname>Hayden</surname><given-names>M. S.</given-names></name> &amp; <name><surname>Ghosh</surname><given-names>S.</given-names></name>
+<article-title>NF-kappaB in immunobiology</article-title>. <source>Cell Res.</source>
+<volume>21</volume>, <fpage>223</fpage> (<year>2011</year>).<pub-id pub-id-type="pmid">21243012</pub-id></mixed-citation>
+      </ref>
+      <ref id="b19">
+        <mixed-citation publication-type="journal"><name><surname>Turvey</surname><given-names>S. E.</given-names></name>
+<italic>et al.</italic>
+<article-title>The CARD11-BCL10-MALT1 (CBM) signalosome complex: Stepping into the limelight of human primary immunodeficiency</article-title>. <source>J. Allergy Clin. Immunol.</source>
+<volume>134</volume>, <fpage>276</fpage> (<year>2014</year>).<pub-id pub-id-type="pmid">25087226</pub-id></mixed-citation>
+      </ref>
+      <ref id="b20">
+        <mixed-citation publication-type="journal"><name><surname>Ruefli-Brasse</surname><given-names>A. A.</given-names></name>, <name><surname>French</surname><given-names>D. M.</given-names></name> &amp; <name><surname>Dixit</surname><given-names>V. M.</given-names></name>
+<article-title>Regulation of NF-kappaB-dependent lymphocyte activation and development by paracaspase</article-title>. <source>Science</source>
+<volume>302</volume>, <fpage>1581</fpage> (<year>2003</year>).<pub-id pub-id-type="pmid">14576442</pub-id></mixed-citation>
+      </ref>
+      <ref id="b21">
+        <mixed-citation publication-type="journal"><name><surname>Ruland</surname><given-names>J.</given-names></name>, <name><surname>Duncan</surname><given-names>G. S.</given-names></name>, <name><surname>Wakeham</surname><given-names>A.</given-names></name> &amp; <name><surname>Mak</surname><given-names>T. W.</given-names></name>
+<article-title>Differential requirement for Malt1 in T and B cell antigen receptor signaling,"</article-title>. <source>Immunity</source>
+<volume>19</volume>, <fpage>749</fpage> (<year>2003</year>).<pub-id pub-id-type="pmid">14614861</pub-id></mixed-citation>
+      </ref>
+      <ref id="b22">
+        <mixed-citation publication-type="journal"><name><surname>Ruland</surname><given-names>J.</given-names></name>
+<italic>et al.</italic>
+<article-title>Bcl10 is a positive regulator of antigen receptor-induced activation of NF-kappaB and neural tube closure</article-title>. <source>Cell</source>
+<volume>104</volume>, <fpage>33</fpage> (<year>2001</year>).<pub-id pub-id-type="pmid">11163238</pub-id></mixed-citation>
+      </ref>
+      <ref id="b23">
+        <mixed-citation publication-type="journal"><name><surname>Hara</surname><given-names>H.</given-names></name>
+<italic>et al.</italic>
+<article-title>The MAGUK family protein CARD11 is essential for lymphocyte activation</article-title>. <source>Immunity</source>
+<volume>18</volume>, <fpage>763</fpage> (<year>2003</year>).<pub-id pub-id-type="pmid">12818158</pub-id></mixed-citation>
+      </ref>
+      <ref id="b24">
+        <mixed-citation publication-type="journal"><name><surname>Torres</surname><given-names>J. M.</given-names></name>
+<italic>et al.</italic>
+<article-title>Inherited BCL10 deficiency impairs hematopoietic and nonhematopoietic immunity</article-title>. <source>J. Clin. Invest.</source>
+<volume>124</volume>, <fpage>5239</fpage>&#x2013;<lpage>5248</lpage> (<year>2014</year>).<pub-id pub-id-type="pmid">25365219</pub-id></mixed-citation>
+      </ref>
+      <ref id="b25">
+        <mixed-citation publication-type="journal"><name><surname>Egawa</surname><given-names>T.</given-names></name>
+<italic>et al.</italic>
+<article-title>Requirement for CARMA1 in antigen receptor-induced NF-kappa B activation and lymphocyte proliferation</article-title>. <source>Curr. Biol.</source>
+<volume>13</volume>, <fpage>1252</fpage> (<year>2003</year>).<pub-id pub-id-type="pmid">12867038</pub-id></mixed-citation>
+      </ref>
+      <ref id="b26">
+        <mixed-citation publication-type="journal"><name><surname>Hailfinger</surname><given-names>S.</given-names></name>
+<italic>et al.</italic>
+<article-title>Malt1-dependent RelB cleavage promotes canonical NF-kappaB activation in lymphocytes and lymphoma cell lines</article-title>. <source>Proc. Natl Acad. Sci. USA</source>
+<volume>108</volume>, <fpage>14596</fpage> (<year>2011</year>).<pub-id pub-id-type="pmid">21873235</pub-id></mixed-citation>
+      </ref>
+      <ref id="b27">
+        <mixed-citation publication-type="journal"><name><surname>Coornaert</surname><given-names>B.</given-names></name>
+<italic>et al.</italic>
+<article-title>T cell antigen receptor stimulation induces MALT1 paracaspase-mediated cleavage of the NF-kappaB inhibitor A20</article-title>. <source>Nat. Immunol.</source>
+<volume>9</volume>, <fpage>263</fpage> (<year>2008</year>).<pub-id pub-id-type="pmid">18223652</pub-id></mixed-citation>
+      </ref>
+      <ref id="b28">
+        <mixed-citation publication-type="journal"><name><surname>Staal</surname><given-names>J.</given-names></name>
+<italic>et al.</italic>
+<article-title>T-cell receptor-induced JNK activation requires proteolytic inactivation of CYLD by MALT1</article-title>. <source>EMBO J.</source>
+<volume>30</volume>, <fpage>1742</fpage> (<year>2011</year>).<pub-id pub-id-type="pmid">21448133</pub-id></mixed-citation>
+      </ref>
+      <ref id="b29">
+        <mixed-citation publication-type="journal"><name><surname>Baens</surname><given-names>M.</given-names></name>
+<italic>et al.</italic>
+<article-title>MALT1 auto-proteolysis is essential for NF-kappaB-dependent gene transcription in activated lymphocytes</article-title>. <source>PLoS ONE</source>
+<volume>9</volume>, <fpage>e103774</fpage> (<year>2014</year>).<pub-id pub-id-type="pmid">25105596</pub-id></mixed-citation>
+      </ref>
+      <ref id="b30">
+        <mixed-citation publication-type="journal"><name><surname>Rebeaud</surname><given-names>F.</given-names></name>
+<italic>et al.</italic>
+<article-title>The proteolytic activity of the paracaspase MALT1 is key in T cell activation</article-title>. <source>Nat. Immunol.</source>
+<volume>9</volume>, <fpage>272</fpage> (<year>2008</year>).<pub-id pub-id-type="pmid">18264101</pub-id></mixed-citation>
+      </ref>
+      <ref id="b31">
+        <mixed-citation publication-type="journal"><name><surname>Uehata</surname><given-names>T.</given-names></name>
+<italic>et al.</italic>
+<article-title>Malt1-induced cleavage of regnase-1 in CD4(+) helper T cells regulates immune activation</article-title>. <source>Cell</source>
+<volume>153</volume>, <fpage>1036</fpage> (<year>2013</year>).<pub-id pub-id-type="pmid">23706741</pub-id></mixed-citation>
+      </ref>
+      <ref id="b32">
+        <mixed-citation publication-type="journal"><name><surname>Jeltsch</surname><given-names>K. M.</given-names></name>
+<italic>et al.</italic>
+<article-title>Cleavage of roquin and regnase-1 by the paracaspase MALT1 releases their cooperatively repressed targets to promote TH17 differentiation</article-title>. <source>Nat. Immunol.</source>
+<volume>15</volume>, <fpage>1079</fpage> (<year>2014</year>).<pub-id pub-id-type="pmid">25282160</pub-id></mixed-citation>
+      </ref>
+      <ref id="b33">
+        <mixed-citation publication-type="journal"><name><surname>Du</surname><given-names>M. Q.</given-names></name>
+<article-title>MALT lymphoma: many roads lead to nuclear factor-kappab activation</article-title>. <source>Histopathology</source>
+<volume>58</volume>, <fpage>26</fpage> (<year>2011</year>).<pub-id pub-id-type="pmid">21261681</pub-id></mixed-citation>
+      </ref>
+      <ref id="b34">
+        <mixed-citation publication-type="journal"><name><surname>Lim</surname><given-names>K. H.</given-names></name>, <name><surname>Yang</surname><given-names>Y.</given-names></name> &amp; <name><surname>Staudt</surname><given-names>L. M.</given-names></name>
+<article-title>Pathogenetic importance and therapeutic implications of NF-kappaB in lymphoid malignancies</article-title>. <source>Immunol. Rev.</source>
+<volume>246</volume>, <fpage>359</fpage> (<year>2012</year>).<pub-id pub-id-type="pmid">22435566</pub-id></mixed-citation>
+      </ref>
+      <ref id="b35">
+        <mixed-citation publication-type="journal"><name><surname>Rosebeck</surname><given-names>S.</given-names></name>, <name><surname>Rehman</surname><given-names>A. O.</given-names></name>, <name><surname>Lucas</surname><given-names>P. C.</given-names></name> &amp; <name><surname>McAllister-Lucas</surname><given-names>L. M.</given-names></name>
+<article-title>From MALT lymphoma to the CBM signalosome: three decades of discovery</article-title>. <source>Cell Cycle</source>
+<volume>10</volume>, <fpage>2485</fpage> (<year>2011</year>).<pub-id pub-id-type="pmid">21750409</pub-id></mixed-citation>
+      </ref>
+      <ref id="b36">
+        <mixed-citation publication-type="journal"><name><surname>Sanchez-Izquierdo</surname><given-names>D.</given-names></name>
+<italic>et al.</italic>
+<article-title>MALT1 is deregulated by both chromosomal translocation and amplification in B-cell non-Hodgkin lymphoma</article-title>. <source>Blood</source>
+<volume>101</volume>, <fpage>4539</fpage> (<year>2003</year>).<pub-id pub-id-type="pmid">12560219</pub-id></mixed-citation>
+      </ref>
+      <ref id="b37">
+        <mixed-citation publication-type="journal"><name><surname>Hailfinger</surname><given-names>S.</given-names></name>, <name><surname>Lenz</surname><given-names>G.</given-names></name> &amp; <name><surname>Thome</surname><given-names>M.</given-names></name>
+<article-title>Targeting B-cell lymphomas with inhibitors of the MALT1 paracaspase</article-title>. <source>Curr. Opin. Chem. Biol.</source>
+<volume>23C</volume>, <fpage>47</fpage> (<year>2014</year>).<pub-id pub-id-type="pmid">25285878</pub-id></mixed-citation>
+      </ref>
+      <ref id="b38">
+        <mixed-citation publication-type="journal"><name><surname>McKinnon</surname><given-names>M. L.</given-names></name>
+<italic>et al.</italic>
+<article-title>Combined immunodeficiency associated with homozygous MALT1 mutations</article-title>. <source>J. Allergy Clin. Immunol.</source>
+<volume>133</volume>, <fpage>1458</fpage>&#x2013;<lpage>1462</lpage> (<year>2014</year>).<pub-id pub-id-type="pmid">24332264</pub-id></mixed-citation>
+      </ref>
+      <ref id="b39">
+        <mixed-citation publication-type="journal"><name><surname>Kleifeld</surname><given-names>O.</given-names></name>
+<italic>et al.</italic>
+<article-title>Isotopic labeling of terminal amines in complex samples identifies protein N-termini and protease cleavage products</article-title>. <source>Nat. Biotechnol.</source>
+<volume>28</volume>, <fpage>281</fpage> (<year>2010</year>).<pub-id pub-id-type="pmid">20208520</pub-id></mixed-citation>
+      </ref>
+      <ref id="b40">
+        <mixed-citation publication-type="journal"><name><surname>Kleifeld</surname><given-names>O.</given-names></name>
+<italic>et al.</italic>
+<article-title>Identifying and quantifying proteolytic events and the natural N terminome by terminal amine isotopic labeling of substrates</article-title>. <source>Nat. Protoc.</source>
+<volume>6</volume>, <fpage>1578</fpage> (<year>2011</year>).<pub-id pub-id-type="pmid">21959240</pub-id></mixed-citation>
+      </ref>
+      <ref id="b41">
+        <mixed-citation publication-type="journal"><name><surname>Ting</surname><given-names>L.</given-names></name>, <name><surname>Rad</surname><given-names>R.</given-names></name>, <name><surname>Gygi</surname><given-names>S. P.</given-names></name> &amp; <name><surname>Haas</surname><given-names>W.</given-names></name>
+<article-title>MS3 eliminates ratio distortion in isobaric multiplexed quantitative proteomics</article-title>. <source>Nat. Methods</source>
+<volume>8</volume>, <fpage>937</fpage> (<year>2011</year>).<pub-id pub-id-type="pmid">21963607</pub-id></mixed-citation>
+      </ref>
+      <ref id="b42">
+        <mixed-citation publication-type="journal"><name><surname>Hachmann</surname><given-names>J.</given-names></name>
+<italic>et al.</italic>
+<article-title>Mechanism and specificity of the human paracaspase MALT1</article-title>. <source>Biochem. J.</source>
+<volume>443</volume>, <fpage>287</fpage> (<year>2012</year>).<pub-id pub-id-type="pmid">22309193</pub-id></mixed-citation>
+      </ref>
+      <ref id="b43">
+        <mixed-citation publication-type="journal"><name><surname>Wiesmann</surname><given-names>C.</given-names></name>
+<italic>et al.</italic>
+<article-title>Structural determinants of MALT1 protease activity</article-title>. <source>J. Mol. Biol.</source>
+<volume>419</volume>, <fpage>4</fpage> (<year>2012</year>).<pub-id pub-id-type="pmid">22366302</pub-id></mixed-citation>
+      </ref>
+      <ref id="b44">
+        <mixed-citation publication-type="journal"><name><surname>Nie</surname><given-names>Z.</given-names></name>
+<italic>et al.</italic>
+<article-title>Conversion of the LIMA1 tumour suppressor into an oncogenic LMO-like protein by API2-MALT1 in MALT lymphoma</article-title>. <source>Nat. Commun.</source>
+<volume>6</volume>, <fpage>5908</fpage> (<year>2015</year>).<pub-id pub-id-type="pmid">25569716</pub-id></mixed-citation>
+      </ref>
+      <ref id="b45">
+        <mixed-citation publication-type="journal"><name><surname>Rosebeck</surname><given-names>S.</given-names></name>
+<italic>et al.</italic>
+<article-title>Cleavage of NIK by the API2-MALT1 fusion oncoprotein leads to noncanonical NF-kappaB activation</article-title>. <source>Science</source>
+<volume>331</volume>, <fpage>468</fpage> (<year>2011</year>).<pub-id pub-id-type="pmid">21273489</pub-id></mixed-citation>
+      </ref>
+      <ref id="b46">
+        <mixed-citation publication-type="journal"><name><surname>Nagel</surname><given-names>D.</given-names></name>
+<italic>et al.</italic>
+<article-title>Pharmacologic inhibition of MALT1 protease by phenothiazines as a therapeutic approach for the treatment of aggressive ABC-DLBCL</article-title>. <source>Cancer Cell</source>
+<volume>22</volume>, <fpage>825</fpage> (<year>2012</year>).<pub-id pub-id-type="pmid">23238017</pub-id></mixed-citation>
+      </ref>
+      <ref id="b47">
+        <mixed-citation publication-type="journal"><name><surname>Stieglitz</surname><given-names>B.</given-names></name>, <name><surname>Morris-Davies</surname><given-names>A. C.</given-names></name>, <name><surname>Koliopoulos</surname><given-names>M. G.</given-names></name>, <name><surname>Christodoulou</surname><given-names>E.</given-names></name> &amp; <name><surname>Rittinger</surname><given-names>K.</given-names></name>
+<article-title>LUBAC synthesizes linear ubiquitin chains via a thioester intermediate</article-title>. <source>EMBO Rep.</source>
+<volume>13</volume>, <fpage>840</fpage> (<year>2012</year>).<pub-id pub-id-type="pmid">22791023</pub-id></mixed-citation>
+      </ref>
+      <ref id="b48">
+        <mixed-citation publication-type="journal"><name><surname>Batista</surname><given-names>F. D.</given-names></name> &amp; <name><surname>Harwood</surname><given-names>N. E.</given-names></name>
+<article-title>The who, how and where of antigen presentation to B cells</article-title>. <source>Nat. Rev. Immunol.</source>
+<volume>9</volume>, <fpage>15</fpage> (<year>2009</year>).<pub-id pub-id-type="pmid">19079135</pub-id></mixed-citation>
+      </ref>
+      <ref id="b49">
+        <mixed-citation publication-type="journal"><name><surname>Treanor</surname><given-names>B.</given-names></name>, <name><surname>Harwood</surname><given-names>N. E.</given-names></name> &amp; <name><surname>Batista</surname><given-names>F. D.</given-names></name>
+<article-title>Microsignalosomes: spatially resolved receptor signalling</article-title>. <source>Biochem. Soc. Trans.</source>
+<volume>37</volume>, <fpage>1014</fpage> (<year>2009</year>).<pub-id pub-id-type="pmid">19754442</pub-id></mixed-citation>
+      </ref>
+      <ref id="b50">
+        <mixed-citation publication-type="journal"><name><surname>Rieser</surname><given-names>E.</given-names></name>, <name><surname>Cordier</surname><given-names>S. M.</given-names></name> &amp; <name><surname>Walczak</surname><given-names>H.</given-names></name>
+<article-title>Linear ubiquitination: a newly discovered regulator of cell signalling</article-title>. <source>Trends Biochem. Sci.</source>
+<volume>38</volume>, <fpage>94</fpage> (<year>2013</year>).<pub-id pub-id-type="pmid">23333406</pub-id></mixed-citation>
+      </ref>
+      <ref id="b51">
+        <mixed-citation publication-type="journal"><name><surname>Freeman</surname><given-names>S. A.</given-names></name>
+<italic>et al.</italic>
+<article-title>Toll-like receptor ligands sensitize B-cell receptor signalling by reducing actin-dependent spatial confinement of the receptor</article-title>. <source>Nat. Commun.</source>
+<volume>6</volume>, <fpage>6168</fpage> (<year>2015</year>).<pub-id pub-id-type="pmid">25644899</pub-id></mixed-citation>
+      </ref>
+      <ref id="b52">
+        <mixed-citation publication-type="journal"><name><surname>Boisson</surname><given-names>B.</given-names></name>
+<italic>et al.</italic>
+<article-title>Immunodeficiency, autoinflammation and amylopectinosis in humans with inherited HOIL-1 and LUBAC deficiency</article-title>. <source>Nat. Immunol.</source>
+<volume>13</volume>, <fpage>1178</fpage> (<year>2012</year>).<pub-id pub-id-type="pmid">23104095</pub-id></mixed-citation>
+      </ref>
+      <ref id="b53">
+        <mixed-citation publication-type="journal"><name><surname>Nakamura</surname><given-names>M.</given-names></name>, <name><surname>Tokunaga</surname><given-names>F.</given-names></name>, <name><surname>Sakata</surname><given-names>S.</given-names></name> &amp; <name><surname>Iwai</surname><given-names>K.</given-names></name>
+<article-title>Mutual regulation of conventional protein kinase C and a ubiquitin ligase complex</article-title>. <source>Biochem. Biophys. Res. Commun.</source>
+<volume>351</volume>, <fpage>340</fpage> (<year>2006</year>).<pub-id pub-id-type="pmid">17069764</pub-id></mixed-citation>
+      </ref>
+      <ref id="b54">
+        <mixed-citation publication-type="journal"><name><surname>Jaworski</surname><given-names>M.</given-names></name>
+<italic>et al.</italic>
+<article-title>Malt1 protease inactivation efficiently dampens immune responses but causes spontaneous autoimmunity</article-title>. <source>EMBO J.</source>
+<volume>33</volume>, <fpage>2765</fpage>&#x2013;<lpage>2781</lpage> (<year>2014</year>).<pub-id pub-id-type="pmid">25319413</pub-id></mixed-citation>
+      </ref>
+      <ref id="b55">
+        <mixed-citation publication-type="journal"><name><surname>Gewies</surname><given-names>A.</given-names></name>
+<italic>et al.</italic>
+<article-title>Uncoupling malt1 threshold function from paracaspase activity results in destructive autoimmune inflammation</article-title>. <source>Cell Rep.</source>
+<volume>9</volume>, <fpage>1292</fpage> (<year>2014</year>).<pub-id pub-id-type="pmid">25456129</pub-id></mixed-citation>
+      </ref>
+      <ref id="b56">
+        <mixed-citation publication-type="journal"><name><surname>Bornancin</surname><given-names>F.</given-names></name>
+<italic>et al.</italic>
+<article-title>Deficiency of MALT1 paracaspase activity results in unbalanced regulatory and effector T and B cell responses leading to multiorgan inflammation</article-title>. <source>J. Immunol.</source>
+<volume>194</volume>, <fpage>3723</fpage> (<year>2015</year>).<pub-id pub-id-type="pmid">25762782</pub-id></mixed-citation>
+      </ref>
+      <ref id="b57">
+        <mixed-citation publication-type="journal"><name><surname>Dubois</surname><given-names>S. M.</given-names></name>
+<italic>et al.</italic>
+<article-title>A catalytic-independent role for the LUBAC in NF-kappaB activation upon antigen receptor engagement and in lymphoma cells</article-title>. <source>Blood</source>
+<volume>123</volume>, <fpage>2199</fpage> (<year>2014</year>).<pub-id pub-id-type="pmid">24497531</pub-id></mixed-citation>
+      </ref>
+      <ref id="b58">
+        <mixed-citation publication-type="journal"><name><surname>Hirschfeld</surname><given-names>A. F.</given-names></name>
+<italic>et al.</italic>
+<article-title>Prevalence of Toll-like receptor signalling defects in apparently healthy children who developed invasive pneumococcal infection</article-title>. <source>Clin. Immunol.</source>
+<volume>122</volume>, <fpage>271</fpage> (<year>2007</year>).<pub-id pub-id-type="pmid">17157070</pub-id></mixed-citation>
+      </ref>
+      <ref id="b59">
+        <mixed-citation publication-type="journal"><name><surname>Chung</surname><given-names>B. K.</given-names></name>
+<italic>et al.</italic>
+<article-title>Innate immune control of EBV-infected B cells by invariant natural killer T cells</article-title>. <source>Blood</source>
+<volume>122</volume>, <fpage>2600</fpage> (<year>2013</year>).<pub-id pub-id-type="pmid">23974196</pub-id></mixed-citation>
+      </ref>
+      <ref id="b60">
+        <mixed-citation publication-type="journal"><name><surname>Miller</surname><given-names>G.</given-names></name> &amp; <name><surname>Lipman</surname><given-names>M.</given-names></name>
+<article-title>Release of infectious Epstein-Barr virus by transformed marmoset leukocytes</article-title>. <source>Proc. Natl Acad. Sci. USA</source>
+<volume>70</volume>, <fpage>190</fpage> (<year>1973</year>).<pub-id pub-id-type="pmid">4346033</pub-id></mixed-citation>
+      </ref>
+      <ref id="b61">
+        <mixed-citation publication-type="journal"><name><surname>Ait-Azzouzene</surname><given-names>D.</given-names></name>
+<italic>et al.</italic>
+<article-title>An immunoglobulin C kappa-reactive single chain antibody fusion protein induces tolerance through receptor editing in a normal polyclonal immune system</article-title>. <source>J. Exp. Med.</source>
+<volume>201</volume>, <fpage>817</fpage> (<year>2005</year>).<pub-id pub-id-type="pmid">15738053</pub-id></mixed-citation>
+      </ref>
+      <ref id="b62">
+        <mixed-citation publication-type="journal"><name><surname>McAlister</surname><given-names>G. C.</given-names></name>
+<italic>et al.</italic>
+<article-title>MultiNotch MS3 enables accurate, sensitive, and multiplexed detection of differential expression across cancer cell line proteomes</article-title>. <source>Anal. Chem.</source>
+<volume>86</volume>, <fpage>7150</fpage> (<year>2014</year>).<pub-id pub-id-type="pmid">24927332</pub-id></mixed-citation>
+      </ref>
+      <ref id="b63">
+        <mixed-citation publication-type="journal"><name><surname>Spitzer</surname><given-names>M.</given-names></name>, <name><surname>Wildenhain</surname><given-names>J.</given-names></name>, <name><surname>Rappsilber</surname><given-names>J.</given-names></name> &amp; <name><surname>Tyers</surname><given-names>M.</given-names></name>
+<article-title>BoxPlotR: a web tool for generation of box plots</article-title>. <source>Nat. Methods</source>
+<volume>11</volume>, <fpage>121</fpage> (<year>2014</year>).<pub-id pub-id-type="pmid">24481215</pub-id></mixed-citation>
+      </ref>
+      <ref id="b64">
+        <mixed-citation publication-type="journal"><name><surname>Hulsen</surname><given-names>T.</given-names></name>, <name><surname>de Vlieg</surname><given-names>J.</given-names></name> &amp; <name><surname>Alkema</surname><given-names>W.</given-names></name>
+<article-title>BioVenn - a web application for the comparison and visualization of biological lists using area-proportional Venn diagrams</article-title>. <source>BMC Genomics</source>
+<volume>9</volume>, <fpage>488</fpage> (<year>2008</year>).<pub-id pub-id-type="pmid">18925949</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+    <fn-group>
+      <fn>
+        <p><bold>Author contributions</bold> T.K. performed TAILS analyses of B-cell lysates and analysed the proteomics data, performed data interpretation and substrate winnowing, wrote the manuscript, prepared all final figures, performed the experiments in <xref ref-type="fig" rid="f3">Figs 3d</xref> and <xref ref-type="fig" rid="f7">7a,b</xref>, was involved in project discussions and data analysis, and assisted with manuscript editing. S.-Y.F. performed B-cell culture for TAILS and lymphocyte stimulation experiments, and analysis (SDS&#x2013;PAGE, Western blot, immunoprecipitation and TUBE analyses) for HOIL1 cleavage, linear ubiquitination and NF-&#x3BA;B signalling in B cells, T cells and PBMCs; performed data analysis, figure preparation, project discussion and assisted with manuscript editing. F.R. performed all experiments using transfected HEK293T cells (CBM substrate cleavage assays, reporter gene assays and immunoprecipitations), HOIL1 cleavage assays in primary murine T cells and Jurkat cells, western blots for <italic>in-vitro</italic> cleavage assays, performed data analysis and figure preparation, and was involved in project discussion and contributed to manuscript editing. M.A.B. and R.I.V. contributed to experimental design, provided access to an Orbitrap Fusion Tribrid mass spectrometer and performed mass spectrometry and 10-plex TMT data analysis. A.D. performed confocal microscopy experiments on B cells, analysed the data and prepared <xref ref-type="fig" rid="f3">Fig. 3d</xref>. J.J.P. performed EBV B-cell preparation, patient and normal human subject T-cell isolation and expansion, and assisted in experimental design and data interpretation. M.B.M. stimulated murine B cells by APC and performed spinning disc confocal microscopy, analysed the data and prepared <xref ref-type="fig" rid="f8">Fig. 8b-d</xref>. J.M.S. wrote the computer script for analysis of spinning disc confocal microscopy data analysis. S.K. maintained and expanded primary T cells from the patient, brother and normal donors. P.S. established and performed the <italic>in vitro</italic> cleavage assay of recombinant human HOIL1 by recombinant human MALT1. S.M. supervised the biochemical MALT1-cleavage assays. M.R.G. assisted in lymphocyte data interpretation and experimental design of APC murine B-cell stimulation, supervised M.B.-M., provided crucial advice and editing of the manuscript. C.H.R. supervised F.R. contributed to experimental design of CBM and LUBAC assays, data interpretation, project discussion and management, and edited the manuscript. S.E.T. contributed in clinical management and identification of <italic>MALT1</italic>-deficient patient and family members, experimental design and data interpretation, project management and discussion, and manuscript writing and editing, and provided support for the study. C.M.O. conceived the study, designed the research strategy, was responsible for project management, experimental design, data interpretation, assisted in figure preparation, wrote and edited the manuscript, and provided support for the project.</p>
+      </fn>
+    </fn-group>
+  </back>
+  <floats-group>
+    <fig id="f1">
+      <label>Figure 1</label>
+      <caption>
+        <title>Defective NF-&#x3BA;B activation in <italic>MALT1</italic><sup><italic>mut/mut</italic></sup> B cells.</title>
+        <p>(<bold>a</bold>) Simplified diagram showing the central role of the CARD11/BCL10/MALT1 (CBM) complex in B- and T-cell receptor controlled canonical NF-&#x3BA;B signalling pathway. (<bold>b</bold>) Family pedigree of the <italic>MALT1</italic> genetic mutation. (<bold>c</bold>) Immunoblots of MALT1 before and after stimulation with PMA/ionomycin for 2 and 4&#x2009;h in immortalized B cells from the MALT1-(Trp580Ser) homozygous daughter (<italic>mut</italic>/<italic>mut</italic>), the heterozygous brother (+/<italic>mut</italic> B) and mother (+/<italic>mut</italic> M), <italic>N</italic>=11. &#x3B2;-Actin, loading control. (<bold>d</bold>) NF-&#x3BA;B activation deficiency in B cells of patient (<italic>mut</italic>/<italic>mut</italic>) and mother (+/<italic>mut</italic> M) after PMA/ionomycin stimulation was shown by I&#x3BA;B&#x3B1; degradation (left) and phosphorylation of the p65 subunit of NF-&#x3BA;B (p-p65; right), mean&#xB1;s.d. Bonferroni post-test after two-way analysis of variance: *<italic>P</italic>&lt;0.05; **<italic>P</italic>&lt;0.01; ***<italic>P</italic>&lt;0.001; number of quantified experiments (<italic>N</italic>=3), total numbers of times this was observed (<italic>N</italic>=12).</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncomms9777-f1"/>
+    </fig>
+    <fig id="f2">
+      <label>Figure 2</label>
+      <caption>
+        <title>N-terminal TAILS proteomics investigation of patient and control B cells reveal HOIL1 as a MALT1 substrate.</title>
+        <p>(<bold>a</bold>) 10-plex TMT labelling scheme for TAILS and preTAILS shotgun proteomics analyses of immortalized B-cell lysates from the <italic>MALT1</italic> mutant patient (<italic>mut</italic>/<italic>mut</italic>) and heterozygous brother (+/<italic>mut</italic> B) and mother (+/<italic>mut</italic> M) controls after 2 and 4&#x2009;h stimulation with PMA/ionomycin (PMA/Iono) or solvent (control; <italic>N=2</italic>). Peptides were identified by MS/MS (FDR&#x2264;1.0%) and quantified by SPS-MS/MS/MS. (<bold>b</bold>) All unique peptides (including cyclization of glutamine and carry-over of unblocked peptides), unique proteins and unique N-terminal peptides (<italic>N</italic>-acetylated and N-TMT labelled) identified by Byonic in the TAILS and shotgun proteomics analyses at an FDR of 1% at the protein level. Individual peptides were subsequently filtered at a probability &gt;0.99. (<bold>c</bold>) MS/MS spectrum of <sup>166</sup>GPLEPGPPKPGVPQEPGR<sup>182</sup>, the neo-N-terminal peptide of the carboxy-cleavage product of HOIL1 identified by TAILS. * Represents TMT-labelled residues. (<bold>d</bold>) Absolute intensity values of the 10-plex isobaric reporters from the spectrum in <bold>c</bold> of control (black) and 2&#x2009;h PMA/ionomycin-stimulated (red) samples. (<bold>e</bold>) MALT1-cleavage site in HOIL1 identified by TAILS from the high reporter ratio of the neo-N-terminal peptide (red) comparing +/<italic>mut</italic> to <italic>mut</italic>/<italic>mut</italic> samples both before (black bars) and after PMA/ionomycin stimulation (red bars; <italic>n</italic>=10). The natural protein N-terminal peptide of HOIL1 was identified by TAILS (red; <italic>n</italic>=3), whereas the nonprime side peptide of the cleavage site was identified by shotgun proteomics (blue; <italic>n</italic>=4). The figure is representative of independent experiments yielding similar results. * Represents TMT-labelled amino acid; Ac, N-terminal acetylation. (<bold>f</bold>) Sequence alignment of the MALT1-cleavage site in HOIL1 with all known MALT1 substrates; m, murine; h, human. Amino acids in all sequences that are identical (yellow), similar (green) and identical in some (blue) are shown.</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncomms9777-f2"/>
+    </fig>
+    <fig id="f3">
+      <label>Figure 3</label>
+      <caption>
+        <title>Validation of HOIL1 as a MALT1 substrate <italic>in vitro</italic> and in cells.</title>
+        <p>(<bold>a</bold>) Concentration-dependent <italic>in vitro</italic> cleavage of recombinant human HOIL1 by recombinant human MALT1. Cleavage products were identified using anti-C-terminal FLAG and anti-HOIL1 N-terminal antibodies, <italic>N</italic>=2. (<bold>b</bold>) Immunoblot for HOIL1 cleavage after co-transfection of HOIL1 with CBM proteins: oncogenic mutant CARD11-(Leu244Pro)(L/P), BCL10 and MALT1-(FLAG-His<sub>6</sub>), or catalytically inactive mutant MALT1-(Cys464Ala)(C/A) in HEK293FT cells (left panel), and effect of substitution by charge conserving cleavage site mutation HOIL1-(R165K) (right panel). (<bold>c</bold>) &#x3B1;V5 immunoblot for HOIL1-V5 and cleavage site mutated HOIL1-(Arg165Lys)(R/K)-V5 cleavage by lymphoma fusion protein cIAP2-MALT1-(WT) or the catalytically inactive cIAP2-MALT1-(Cys464Ala)(C/A) in HEK293FT cells. (<bold>d</bold>) Cell&#x2013;cell contact aligned merged confocal microscopy image slices through the middle of B cells from a normal donor (+/+ N) and the patient (<italic>mut</italic>/<italic>mut</italic>) with and without pretreatment with soluble &#x3B1;-IgG prior to immobilization on &#x3B1;-IgG/IgM coated coverslips and staining. Monoclonal antibody-labelled HOIL1 (green) and MALT1 (red) are shown, yellow arrows indicate co-localization. Blue channel, 4,6-diamidino-2-phenylindole (DAPI) nuclear staining. Scale bar, 10&#x2009;&#x3BC;m. Individual laser channels for three fields are in <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 6</xref>. (<bold>e</bold>) &#x3B1;-HOIL1 immunoblot for cleavage of endogenous HOIL1 in immortalized B cells from a normal donor (+/+ N) and brother (+/<italic>mut</italic> B) after PMA/ionomycin stimulation with and without preincubation with MALT1 inhibitor z-VRPR-fmk. <italic>N</italic>=34. (<bold>f</bold>) &#x3B1;&#x2212;HOIL1 immunoblot for HOIL1 cleavage in PMA/ionomycin-stimulated primary peripheral blood mononuclear cells (PBMCs) from the mother (+/<italic>mut</italic> M), a normal donor (+/+N) and the patient (<italic>mut</italic>/<italic>mut</italic>) with and without preincubation with MALT1 inhibitor z-VRPR-fmk. <italic>N</italic>=9. (<bold>g</bold>) Patient (<italic>MALT1</italic><sup><italic>mut/mut</italic></sup>) skin haematoxylin and eosin staining of lymphocytic (LC) infiltrates (white arrows) in the upper dermis (D) surrounding vessels, and the basal layer of the overlying epidermis (E). Immunohistochemistry identified the lymphocytes as CD3<sup>+</sup> T cells. (<bold>h</bold>) &#x3B1;-HOIL1 immunoblot of HOIL1 cleavage in PMA/ionomycin-stimulated primary CD4<sup>+</sup> and CD8<sup>+</sup> T cells from the mother (+/<italic>mut</italic> M), a normal donor (+/+ N) and the patient (<italic>mut</italic>/<italic>mut</italic>), <italic>N</italic>=6. * Represents consistently observed nonspecific band. Tubulin, &#x3B2;-actin: loading controls.</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncomms9777-f3"/>
+    </fig>
+    <fig id="f4">
+      <label>Figure 4</label>
+      <caption>
+        <title>MALT1 remodels LUBAC, releasing C-HOIL1 and reducing HOIP protein level.</title>
+        <p>(<bold>a</bold>) Diagram of LUBAC subunits in relation to the MALT1-cleavage site in HOIL1 that generates N-HOIL1 and C-HOIL1. (<bold>b</bold>) Immunoblots for HOIP and SHARPIN showed MALT1 does not cleave these proteins when active CBM is coexpressed in HEK293 cells. (<bold>c</bold>,<bold>d</bold>) Assembly of LUBAC in HEK293FT cells by co-transfection of HOIL1-FLAG, SHARPIN-V5, HOIP-V5 and five times (5 &#xD7; ) HOIP-V5 vector. Anti-FLAG (for HOIL1, N-HOIL1 and C-HOIL1) or anti-V5 (for HOIP) immunoprecipitation (IP) and immunoblotting (IB) for HOIL1, N-HOIL1 and C-HOIL1 using anti-FLAG or HOIP using anti-V5 in the immunoprecipitates showed HOIP interaction with HOIL1 and N-HOIL1 but not with C-HOIL1. (<bold>e</bold>) &#x3B1;-V5 IP of lysates of proteasome inhibitor (MG132) treated HEK293FT cells transfected with HOIP-V5, SHARPIN-V5 with or without co-transfection of HOIL1, and subsequent &#x3B1;-HOIP immunoblotting. <italic>N</italic>=3. (<bold>f</bold>) HOIP protein level in B cells from the brother (+/<italic>mut</italic> B) and patient (<italic>mut</italic>/<italic>mut</italic>) on PMA/Ionomycin stimulation over time. &#x3B2;-Actin, loading control, <italic>N</italic>=2. Orange arrowheads indicate decreased HOIP levels.</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncomms9777-f4"/>
+    </fig>
+    <fig id="f5">
+      <label>Figure 5</label>
+      <caption>
+        <title>Cleavage of HOIL1 by MALT1 abrogates linear ubiquitination by LUBAC.</title>
+        <p>(<bold>a</bold>) Anti-linear ubiquitin immunoblot to monitor generation of ubiquitinated conjugates on expression of HOIP-V5 and SHARPIN-V5 with full-length HOIL1-V5 or cleavage fragment analogues N- and C-HOIL1-V5 in HEK293FT cells. Total Lys48-polyubiquitination was monitored for reference. Tubulin, loading control, <italic>N</italic>=3. (<bold>b</bold>) Renilla luciferase NF-&#x3BA;B reporter gene assay in the same condition as <bold>a</bold> for transcriptional activity. <italic>N</italic>=2, <italic>n</italic>=3. Data represent mean&#xB1;s.d. (<bold>c</bold>) Assembly of the LUBAC with CBM complexes by co-transfection of FLAG-tagged oncogenic active mutant CARD11-L/P, BCL10 and MALT1. Anti-linear ubiquitin immunoblotting was performed to monitor generation of high-molecular-weight conjugates in HEK293FT cells transfected with normal LUBAC or LUBAC with noncleavable HOIL1-(R165K), co-transfected with normal CBM or CBM with catalytically inactive MALT1-(C464A). Tubulin, loading control, <italic>N</italic>=2. MW, molecular weight.</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncomms9777-f5"/>
+    </fig>
+    <fig id="f6">
+      <label>Figure 6</label>
+      <caption>
+        <title>MALT1 proteolysis of HOIL1 in human immortalized B cells reduces linear ubiquitination.</title>
+        <p>(<bold>a</bold>) Immunoblot (lower gel) for linear ubiquitin conjugates in TUBE-enriched total ubiquitinated protein fraction from B cells from the brother (+/<italic>mut</italic> B) and patient (<italic>mut</italic>/<italic>mut</italic>) after stimulation. Generation of C-HOIL1 by MALT1 was shown by &#x3B1;-HOIL1 immunoblot for reference (Pre-TUBE, upper gel). <italic>N</italic>=4. &#x3B2;-Actin, loading control. (<bold>b</bold>) Immunoblot for linear ubiquitin on the TUBE-enriched ubiquitinated protein fraction in B cells from the brother (+/<italic>mut</italic> B) after PMA/ionomycin stimulation, with and without preincubation with MALT1 inhibitor z-VRPR-fmk. <italic>N</italic>=2. Immunoblotting for RIP1 a known substrate of LUBAC, was performed on the same samples. The number of ubiquitin moieties attached to each RIP1-polyubiquitinated species detected was calculated from their apparent molecular weights, and is indicated. NF-&#x3BA;B signalling was monitored by immunoblotting for I&#x3BA;B&#x3B1; and phospho-p65 (p-p65), <italic>N</italic>=6. &#x3B2;-Actin, loading control. (<bold>c</bold>) After initial stimulation by PMA/ionomycin for 15&#x2009;min followed by cell washing, +/<italic>mut</italic> B cells were again stimulated after washing at 120&#x2009;min, designated 2<sup>nd</sup> pulse 0&#x2009;min. Cells were collected at the indicated times and lysates were probed for phospho-p65 and I&#x3BA;B&#x3B1; levels, <italic>N</italic>=6. &#x3B2;-Actin, loading control on the same blot as I&#x3BA;B&#x3B1;.</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncomms9777-f6"/>
+    </fig>
+    <fig id="f7">
+      <label>Figure 7</label>
+      <caption>
+        <title>Cleavage of HOIL1 by MALT1 leads to decreased linear ubiquitination in primary lymphocytes.</title>
+        <p>(<bold>a</bold>) Immunoblotting for total linear ubiquitination and HOIL1 cleavage in the TUBE-enriched fraction from &#x3B1;-IgG/M-CD40L primed tonsil B-cell homogenates from a normal (+/+N) subject on PMA/ionomycin stimulation. * Represents nonspecific band. &#x3B2;-Actin, loading control. (<bold>b</bold>) TUBE pulldown and subsequent immunoblotting for linear ubiquitin conjugates and the known LUBAC target NEMO in tonsil B-cell homogenates from normal (+/+N) subjects on stimulation with PMA/ionomycin. Cells were primed with &#x3B1;-IgG/M and CD40L. NEMO-polyubiquitin conjugates were calculated as marked. <italic>N</italic>=7 for <bold>a</bold> and <bold>b</bold>. (<bold>c</bold>) &#x3B1;-N-HOIL1 immunoblot for PMA/ionomycin-induced cleavage of HOIL1 in Jurkat T cells with and without MALT1 inhibitors z-VRPR-fmk (20&#x2009;&#x3BC;M) and Mepazine (20&#x2009;&#x3BC;M). * Represents nonspecific bands. (<bold>d</bold>) &#x3B1;-HOIL1 immunoblot for HOIL1 cleavage on stimulation of expanded primary CD4<sup>+</sup> T cells from the brother (+/<italic>mut</italic> B) with PMA/ionomycin and with &#x3B1;-CD3/&#x3B1;-CD28 coated beads (<italic>N</italic>=3). The polyclonal antibody detects both the C-terminal and the N-terminal cleavage products. * Represents consistently observed nonspecific band. &#x3B2;-Actin, loading control. (<bold>e</bold>) Immunoblots for total linear ubiquitination after TUBE pulldown in expanded primary CD4<sup>+</sup> T cells from the brother (+/<italic>mut</italic> B) on stimulation with PMA/ionomycin. K48-linked ubiquitination was included for reference. &#x3B2;-Actin, loading control. (<bold>f</bold>) Immunoblots for total linear ubiquitin conjugates and NEMO in PMA/ionomycin-stimulated expanded primary CD4<sup>+</sup> T cells from the brother (+/<italic>mut</italic> B), with and without pretreatment with MALT1 inhibitor z-VRPR-fmk (<italic>N</italic>=3). NEMO-polyubiquitin conjugates were calculated as marked.</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncomms9777-f7"/>
+    </fig>
+    <fig id="f8">
+      <label>Figure 8</label>
+      <caption>
+        <title>MALT1 cleavage of HOIL1 decreases linear ubiquitination in mouse lymphocytes.</title>
+        <p>(<bold>a</bold>) Immunoblots for N-HOIL1, p-ERK1/2 and NF-&#x3BA;B signalling proteins (p-I&#x3BA;B&#x3B1;, I&#x3BA;B&#x3B1; and p-p65) in stimulated murine primary lymph node CD3<sup>+</sup> T cells derived from wild-type mice, the littermate <italic>Malt1</italic><sup>&#x2212;/&#x2212;</sup> and the <italic>Malt1-C/A</italic> catalytic inactive mutant knock-in to <italic>Malt1</italic><sup>&#x2212;/&#x2212;</sup>, <italic>N</italic>=2. Tubulin, loading control. * Represents nonspecific band as observed in Jurkat T cells; ** Represents residual signal from p-ERK1/2 blot; *** Represents nonspecific bands and residual p-ERK1/2 signal. (<bold>b</bold>) Murine splenic B cells treated with vehicle (control) or 75&#x2009;&#x3BC;M MALT1 inhibitor (z-VRPR-fmk) for 30&#x2009;min were exposed to APCs for the indicated times. <italic>z</italic>-Slices through the centre of B cells stained for F-actin (red) and linear polyubiquitin (M1-Ub, green) are shown. Scale bar, 5&#x2009;&#x3BC;m. (<bold>c</bold>) Representative spinning disk confocal <italic>xy</italic> slices at the contact site of three individual primary murine splenic B cells that were added to APCs for 10&#x2009;min before staining for the anti-Ig&#x3BA; surrogate antigen (red) and M1-linear polyubiquitin (green). White lines show the B-cell periphery at the contact site, as visualized by F-actin staining. Yellow arrowheads show sites of linear ubiquitin and antigen microcluster co-localization. Scale bar, 5&#x2009;&#x3BC;m. (<bold>d</bold>) Normalized linear ubiquitin fluorescence intensity in the <italic>xy</italic> plane at the B cell:APC contact site was quantified from images similar to those in <bold>c</bold> and normalized for the amount of antigen staining at each contact surface. Each dot represents a single B cell. Blue line depicts the median value of <italic>n</italic>=91&#x2013;120 B cells from two independent experiments (<italic>N</italic>=2). Box shows interquartile range. ****<italic>P</italic>&lt;0.0001 using the Mann&#x2013;Whitney <italic>U</italic>-test. (<bold>e</bold>) Scheme depicting normal initiation of NF-&#x3BA;B signalling by B-cell receptor (BCR) microclusters (green arrows) via MALT1 scaffolding in the CBM and the canonical I&#x3BA;B kinase (IKK) complex, consisting of NEMO/IKK&#x3B3; with IKK&#x3B1; and IKK&#x3B2; subunits. In the signal amplification stage, MALT1 cleavage removes negative regulators and thereby optimizes NF-&#x3BA;B activation. The late-stage negative-feedback loop is executed by MALT1 paracaspase activity cleaving HOIL1 in LUBAC (red arrows) to transiently reduce linear ubiquitination of targets including NEMO/IKK&#x3B3;, hence reducing NF-&#x3BA;B signalling at late time points and is associated with preventing further ongoing NF-&#x3BA;B stimulation.</p>
+      </caption>
+      <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncomms9777-f8"/>
+    </fig>
+  </floats-group>
+</article>
+</pmc-articleset>

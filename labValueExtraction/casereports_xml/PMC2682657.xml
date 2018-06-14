@@ -1,0 +1,1497 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title>PLoS ONE</journal-title>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">19479033</article-id>
+      <article-id pub-id-type="pmc">2682657</article-id>
+      <article-id pub-id-type="publisher-id">08-PONE-RA-07868R1</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0005688</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Mathematics/Statistics</subject>
+          <subject>Cardiovascular Disorders/Cardiovascular Imaging</subject>
+          <subject>Cardiovascular Disorders/Congenital Heart Disease</subject>
+          <subject>Radiology and Medical Imaging/Magnetic Resonance Imaging</subject>
+          <subject>Computer Science/Natural and Synthetic Vision</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Noninvasive Cardiac Flow Assessment Using High Speed Magnetic Resonance Fluid Motion Tracking</article-title>
+        <alt-title alt-title-type="running-head">High Speed MRI Flow Tracking</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wong</surname>
+            <given-names>Kelvin Kian Loong</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kelso</surname>
+            <given-names>Richard Malcolm</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Worthley</surname>
+            <given-names>Stephen Grant</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sanders</surname>
+            <given-names>Prashanthan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mazumdar</surname>
+            <given-names>Jagannath</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Abbott</surname>
+            <given-names>Derek</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Centre for Biomedical Engineering and School of Electrical &amp; Electronic Engineering, University of Adelaide, Adelaide, South Australia</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>School of Mechanical Engineering, University of Adelaide, Adelaide, South Australia</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>School of Medicine, University of Adelaide, Adelaide, South Australia</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Yi</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">Cornell University, United States of America</aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email>kelvin.wong@adelaide.edu.au</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: KKLW. Performed the experiments: KKLW. Analyzed the data: KKLW RMK DA. Contributed reagents/materials/analysis tools: KKLW SGW PS DA. Wrote the paper: KKLW. Supervised the work: JM DA.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2009</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>25</day>
+        <month>5</month>
+        <year>2009</year>
+      </pub-date>
+      <volume>4</volume>
+      <issue>5</issue>
+      <elocation-id>e5688</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>19</day>
+          <month>12</month>
+          <year>2008</year>
+        </date>
+        <date date-type="accepted">
+          <day>22</day>
+          <month>4</month>
+          <year>2009</year>
+        </date>
+      </history>
+      <copyright-statement>Wong et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</copyright-statement>
+      <copyright-year>2009</copyright-year>
+      <abstract>
+        <p>Cardiovascular diseases can be diagnosed by assessing abnormal flow behavior in the heart. We introduce, for the first time, a magnetic resonance imaging-based diagnostic that produces sectional flow maps of cardiac chambers, and presents cardiac analysis based on the flow information. Using steady-state free precession magnetic resonance images of blood, we demonstrate intensity contrast between asynchronous and synchronous proton spins. Turbulent blood flow in cardiac chambers contains asynchronous blood proton spins whose concentration affects the signal intensities that are registered onto the magnetic resonance images. Application of intensity flow tracking based on their non-uniform signal concentrations provides a flow field map of the blood motion. We verify this theory in a patient with an atrial septal defect whose chamber blood flow vortices vary in speed of rotation before and after septal occlusion. Based on the measurement of cardiac flow vorticity in our implementation, we establish a relationship between atrial vorticity and septal defect. The developed system has the potential to be used as a prognostic and investigative tool for assessment of cardiac abnormalities, and can be exploited in parallel to examining myocardial defects using steady-state free precession magnetic resonance images of the heart.</p>
+      </abstract>
+      <counts>
+        <page-count count="15"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Congenital cardiovascular defects can contribute to heart failures, and various screening methods for cardiovascular diseases exist in the medical community. Some of the common imaging modalities for detecting heart defects are electrocardiography, echocardiography, and chest radiography. In this paper, we examine the use of cardiac magnetic resonance imaging (MRI) to examine such heart abnormalities.</p>
+      <p>Cardiac examination and management of patients remain the key priorities in treatment of heart defects. However, the need for a concise insight into a given defect is desired for diagnosis. For example, cardiac examination can be based on assessment of myocardial viability from magnetic resonance images <xref ref-type="bibr" rid="pone.0005688-Lauerma1">[1]</xref>, <xref ref-type="bibr" rid="pone.0005688-Edelman1">[2]</xref>, <xref ref-type="bibr" rid="pone.0005688-Shan1">[3]</xref> or electrocardiograms for assessing abnormal electrical activity within the heart in the treatment of cardiac arrhythmia <xref ref-type="bibr" rid="pone.0005688-Malik1">[4]</xref>, <xref ref-type="bibr" rid="pone.0005688-Podrid1">[5]</xref>. A good cardiac diagnostic system will have the ability to provide information about the heart that can be utilized for effective analysis depending on the nature of the diagnosis. The high rate of mortality due to cardiovascular diseases in developed countries gives rise to a growing requirement in the market for diagnostic tools and therapeutic devices for the treatment of cardiovascular diseases. Appropriate and timely intervention by cardiologists can reduce mortality from heart diseases. Selection of medical treatment and methods of intervention, particularly in borderline cases, is important and appropriate diagnostic tools will augment medical expertise in terms of disease or cardiovascular defect classification.</p>
+      <p>We propose that it will be of clinical interest to apply flow analysis within heart in order to examine cardiovascular heart diseases. It is widely appreciated that flow characteristics in the left atrium is important in activities of the heart. Blood shearing in turbulent flow induces platelet activation and contributes to thrombus formation <xref ref-type="bibr" rid="pone.0005688-Chen1">[6]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0005688-Stein1">[8]</xref>. In other cases, blood clots are formed in the setting of blood stagnation and pooling within a non-contractile atrium of a heart with a condition such as atrial fibrillation. Consequently, a high incidence of left atrial thrombus results in higher risk of stroke in such patients <xref ref-type="bibr" rid="pone.0005688-Eggers1">[9]</xref>. Therefore, irregular blood flow can lead to blood clots and stroke, so cardiac patients may require lifelong therapies. This motivates the need for cardiac flow measurement and visualization systems in practice. Flow visualization within the human heart augments the percipience and experience of cardiologists and can assist in the understanding of the genesis and progression of cardiac abnormalities. Quantitative prediction or diagnosis of cardiac failures is of importance for clinical application. Medical organizations will be able to assess the degree of cardiac abnormality in the heart and arteries so that appropriate medical action can be taken.</p>
+      <p>Current methodologies, based on nuclear signals and pertaining to phase sensitive flow, enable velocity fields to be encoded within cine MR images, which are then post-processed during cardiac flow field mapping <xref ref-type="bibr" rid="pone.0005688-Hartiala1">[10]</xref>, <xref ref-type="bibr" rid="pone.0005688-Stahlberg1">[11]</xref>. The concept of contrasting the phases of imaged nuclei spins, during MRI measurement intervals, gives this system its commonly accepted terminology - phase contrast magnetic resonance imaging (PCMRI). It is essentially a technology that enables flow visualization in cardiac structures by means of subtraction of flow-sensitized data from reference volumes during the processing stage <xref ref-type="bibr" rid="pone.0005688-Gatehouse1">[12]</xref>. However, because of inherent limitations, such as undesirable measurement duration and sub-optimal temporal resolution, time-resolved three dimensional data acquisition has been mainly limited to the study of cardiac operations in research environments and not so much for diagnostic applications. Other complications exist at the present time, for example, respiration artifacts should be minimized as much as possible, while achieving a tolerable total scan time for patients <xref ref-type="bibr" rid="pone.0005688-Mark1">[13]</xref>.</p>
+      <p>Although phase contrast MRI scanning can perform flow visualization in the human heart, it has not been designed for analysis and characterization of blood flow in cardiac structures. Therefore, there is a need for a dedicated protocol in the shift of processing time and resources during MR imaging to the post-processing stage for the assessment of cardiac blood flow effectively without compromising the accuracy of flow information retrieval to an unrealistic extent. Such technology development can facilitate the prognosis or diagnosis of cardiac abnormalities.</p>
+      <p>Blood flow visualization can reveal vital information in the cardiac chambers and arteries. Interesting phenomena such as vortices in the heart's ventricular chambers and aorta have been studied previously <xref ref-type="bibr" rid="pone.0005688-Brandt1">[14]</xref>&#x2013;<xref ref-type="bibr" rid="pone.0005688-Kilner1">[16]</xref>, and how they affect heart valve operation <xref ref-type="bibr" rid="pone.0005688-Bellhouse1">[17]</xref> can thereby be examined and quantified. The quantification of flow characteristics within the heart and arteries provides vital information to cardiologists, who are interested in a range of problems from the hemodynamics of blood to biological phenomena in the heart. The scales and coherence of the vortex structures can be examined, and their existence can ultimately be linked to the operation of a number of cardiac structures influencing flow in the heart.</p>
+      <p>Cardiac flow analysis systems have the potential to be used as diagnostic devices for the assessment of heart disease and practical tools for physiological analysis <xref ref-type="bibr" rid="pone.0005688-Kilner2">[18]</xref>. There are potential applications for identifying risks after heart valve implant as well as determining the degree of atrial and ventricular septal defects. Septal defects (SD) may be detected in the adult by physical examination, electrocardiogram, chest radiograph, echocardiogram, or MRI <xref ref-type="bibr" rid="pone.0005688-Webb1">[19]</xref>. Functional medical imaging is able to provide an alternative method for measurement and quantification of the blood flow rotation (defined as vorticity) in the heart of a patient diagnosed with SD. Rate of blood rotation is related to pressure within the heart chamber, and can be used to assess the degree of septal defect before and after septal occluder insertion. Such a method is particularly useful for evaluating the risk inflicted on the patients diagnosed with such cardiovascular diseases before and after surgical operation, and therefore has high clinical benefit for medical doctors parallel to examining the physical defect of the septum. Our approach is to measure flow and quantify its characteristics using typical steady-state free precession magnetic resonance images, making it attractive for future clinical practice.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <p>Medical examiners and/or radiologists usually confirm the existence of septal defects by observation of a left to right shunt of blood through the septum using cine magnetic resonance images and also from the broken definition of the cardiac wall between two chambers <xref ref-type="bibr" rid="pone.0005688-Durongpisitkul1">[20]</xref>. Both indications of abnormality can be detected based on the intensity of the image signals captured on steady state free precession (SSFP) MRI scans. A variant of SSFP is true fast imaging in steady state free precession (True FISP) MRI <xref ref-type="bibr" rid="pone.0005688-Plein1">[21]</xref>, which is a protocol capable of imaging cross-sections of cardiac structures with unsurpassed soft tissue contrast. It is one of the most popular medical imaging modalities for the registration of physiological properties of the heart and arteries. This MRI protocol combines both longitudinal and transverse magnetization. It is characterized by complex T<sub>1</sub>/T<sub>2</sub>-contrast configurations and refocuses all gradients over a repetition interval, thereby achieving fast-imaging with a high signal. Magnetic resonance imaging based on the SSFP protocol has been suggested for the scans.</p>
+      <sec id="s2a">
+        <title>Investigation of Sample Case Study Subject</title>
+        <p>We propose using magnetic resonance fluid motion tracking for examination of angular velocity in the right atrial flow. The tracking of blood flow within the chamber can be used to assess the severity of the cardiac abnormality in patients with atrial septal defects. MR image slices from the contiguous scans, in short axis views, through the ASD are presented (<xref ref-type="fig" rid="pone-0005688-g001">Fig. 1</xref>). Analyzes of atrial flow are carried out during the diastolic phases of the heart. The in-plane resolution of the scans is determined by the pixel spacing (at 1.33 mm/pixel and 1.67 mm/pixel for pre- and post-ASO images) and its through-plane resolution is based on a slice interval of 6 mm (for both images). The planes were chosen to be approximately normal to the mean flow direction.</p>
+        <fig id="pone-0005688-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0005688.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Imaging of heart based on short axis scan configuration.</title>
+            <p>Steady-state free precession magnetic resonance image scans of the cardiac chambers were performed based on the short axis view at slice intervals of 6 mm, and labeled as Slices 1, 2 and 3 starting from the top to apex of the heart. Velocity and vorticity maps can be determined from the MR motion flow field for every slice and time frame.</p>
+          </caption>
+          <graphic xlink:href="pone.0005688.g001"/>
+        </fig>
+        <p>A review of the right atrium from these scans has been performed. The selected MR images that correspond to the sectioning of the atria are labeled as slices numbering from 1 to 3, starting from top of the heart down to its apex through an axis oblique to the direction from head to foot, for examination and flow analyzes. The study for examination of vorticity in post-ASO condition applies the same order of sequence for the patient as during the pre-ASO scan. Vorticity maps of the segmented atrium based on a selection of 4 out of 25 phases of cardiac cycle for time frames <italic>n<sub>t</sub></italic>&#x200A;=&#x200A;10 to 13 are presented. From preliminary observations, we can deduce that there is a difference in strength of the vortical flow (Supplementary Videos 1 and 2), which is highlighted in more detail in the subsequent results.</p>
+        <p>Vector field mapping of the flow in the sectional planes is presented for pre- and post-ASO (<xref ref-type="fig" rid="pone-0005688-g002">Fig. 2</xref>) based on the selected cardiac phases. Streamline tracing is performed for post-ASO flow fields (<xref ref-type="fig" rid="pone-0005688-g003">Fig. 3</xref>). This visual tool allows perception of the location and strength of the vortices in the right atrium. We highlight the poor tracking of blood made by the implemented technique, which is mainly due to the poor quality of tracking features present in the image. This demonstrates a limitation of MR fluid motion tracking as compared with phase contrast MR velocimetry. Nevertheless, the motion tracking technique makes it possible to show both quickly and conveniently that a more consistent vortical structure is present for the post-ASO case.</p>
+        <fig id="pone-0005688-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0005688.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>MR fluid motion flow fields of right atrium.</title>
+            <p>The motion field of blood can be produced rapidly by using MR fluid motion tracking to give an estimation of the direction and magnitude of flow. The method can give a quick insight into the fluid flow behavior, and the swirling of blood based on cardiac phases at frames <italic>n<sub>t</sub></italic>&#x200A;=&#x200A;[10, 11, 12, 13] can be observed more clearly after atrial septal occlusion. The swirling traced within the chamber region of interest shows the existence of vortices.</p>
+          </caption>
+          <graphic xlink:href="pone.0005688.g002"/>
+        </fig>
+        <fig id="pone-0005688-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0005688.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Slices 1 to 3 based on time frame 12 of post-atrial septal occlusion (ASO) scans.</title>
+            <p>Color streamlines demonstrating blood swirl within segmented right atrium for post-ASO at three scan slices of heart is displayed here. Their vortices are presented for three consecutive slices. The reconstruction of these planar information can give a three dimensional perspective of the helix in the right atrium.</p>
+          </caption>
+          <graphic xlink:href="pone.0005688.g003"/>
+        </fig>
+        <p>From <xref ref-type="fig" rid="pone-0005688-g002">Figure 2</xref>, we can visually deduce that the vortical features in the post-ASO atrium are more concentrated and coherent than those in the pre-ASO. Furthermore, the size and magnitude of the vorticity concentrations given in vorticity maps indicate the strength of blood rotation during one cardiac cycle <xref ref-type="bibr" rid="pone.0005688-Fyrenius1">[15]</xref>. Comparison of the pre- and post-surgical intervention based on the right atrial flow patterns and vorticity maps can provide an indication of the cardiac abnormality as well as the recovery conditions after atrial septal occlusion.</p>
+        <p>We show the mapping of vorticity component normal to the measurement planes, i.e. in the principal direction of the most significant planar flow rotation (<xref ref-type="fig" rid="pone-0005688-g004">Figs. 4</xref> and <xref ref-type="fig" rid="pone-0005688-g005">5</xref>). From these results, we observe that the septal occlusion produces two significant effects. The first one is that it leads to an increase in strength of a single dominant counter-clockwise vortex within the cardiac chamber. Secondly, it reduces the concentration of clockwise vortical regions at the same time. For the post-occlusion condition, a strong negative vorticity region exists adjacent to the chamber wall that has less curvature relative to the septum that is associated with flow of positive vorticity. This is due to the quick motion of blood parallel to the endocardium of a relatively motionless and flat chamber wall. Consistent with this effect, there is a broader distribution of absolute vorticity in the right atrium for the same patient and at the same cardiac phase after septal occlusion. This deduction can be supported using statistical properties of the vorticity distributions. We note the atrial enlargement pre-occlusion, which may in part explain the reduction on the strength of the vorticity concentrations before occlusion. Another possible cause of the differences between the pre-and post-occlusion cases is the presence of left-to-right shunting of blood that disrupts the normal dominant vortex to introduce vortices of a smaller scale (<xref ref-type="supplementary-material" rid="pone.0005688.s001">Movie S1</xref>).</p>
+        <fig id="pone-0005688-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0005688.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Vorticity visualization of right atrial flow pre- and post-ASO.</title>
+            <p>Vorticity contour maps are superimposed onto cardiac MR images and presented. The vorticity representation by the flow map in color codes can be referenced against scales (in metric units of per second) on the right hand side. The range of the vorticity given by <italic>&#x3C9;</italic><sub>Min</sub> to <italic>&#x3C9;</italic><sub>Max</sub> is stated below each result set with the subscripts 1 and 2 representing pre- and post-ASO conditions respectively.</p>
+          </caption>
+          <graphic xlink:href="pone.0005688.g004"/>
+        </fig>
+        <fig id="pone-0005688-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0005688.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Histograms of vorticity maps for right atrial flow pre- and post-ASO.</title>
+            <p>The histogram represents the distribution of vorticity values in a map. Statistical parameters used include means <italic>&#x3C9;</italic><sub>1</sub>, <italic>&#x3C9;</italic><sub>2</sub> and standard deviations <italic>&#x3C3;</italic><sub>1</sub>, <italic>&#x3C3;</italic><sub>2</sub> obtained from the histograms of the vorticity maps, with the subscripts 1 and 2 representing pre- and post-ASO conditions respectively. The mean is a gauge of the average angular velocity throughout the flow, and the standard deviation measures the variability of vorticity measures.</p>
+          </caption>
+          <graphic xlink:href="pone.0005688.g005"/>
+        </fig>
+        <p>The statistical properties of vorticity maps for flow maps for pre- and post-ASD pertaining to cardiac phases based on frames of 10 to 13 (out of 25 time frames) are presented in histograms for comparison. The averaging of these properties is performed and illustrated using histograms as well.</p>
+        <p>For case study of one patient with ASD, the vorticity mean and variance of the right atrial flow map for post-ASD closure are consistently higher for the selected phases than those for pre-ASD closure (<xref ref-type="fig" rid="pone-0005688-g006">Fig. 6</xref>). These statistical parameters can be used reliably to gauge the relative strength of vortices in the atrium pertaining to the pre- and post-ASO conditions. The results in this study show that we are able to use flow imaging and the statistics of vorticity maps at selected time frames of a cardiac cycle to find a difference in flow patterns before and after surgical intervention.</p>
+        <fig id="pone-0005688-g006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0005688.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>Time-variation of vorticity properties for pre- and post-ASO flow maps.</title>
+            <p>The results show that there is a difference in pre- and post-ASD vorticity maps statistically. Parameters such as mean <italic>&#x3C9;&#x305;</italic> as well as standard deviations <italic>&#x3C3;</italic> are based on histograms of the vorticity maps pertaining to time frames <italic>n<sub>t</sub></italic>&#x200A;=&#x200A;10 to 13 out of 25 frames in a cardiac cycle. Both averaging of means &lt;<italic>&#x3C9;&#x305;</italic>&gt; and of standard deviations &lt;<italic>&#x3C3;</italic>&gt; are shown to be higher for post-ASO vorticity flow maps.</p>
+          </caption>
+          <graphic xlink:href="pone.0005688.g006"/>
+        </fig>
+      </sec>
+      <sec id="s2b">
+        <title>Summary of Investigation</title>
+        <p>We carried out the same experiments on the twenty-six patients. Temporal averaging of the ensemble vorticity means based on four or more selected time frames (when the vortices are the strongest) is performed. The results are summarized in <xref ref-type="fig" rid="pone-0005688-g007">Figure 7</xref>.</p>
+        <fig id="pone-0005688-g007" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0005688.g007</object-id>
+          <label>Figure 7</label>
+          <caption>
+            <title>Summary of ASD investigation.</title>
+            <p>The histograms depicting the vorticity comparison for pre- versus post-atrial septal occlusion show that there is a distinct difference between the temporal average of the vorticity means based on a set of selected time frames. Twenty-six patients are used in the framework presented in this study. This investigation may be able to show that the application of vorticity statistics is useful in characterizing abnormal flows in a heart chamber with septal defect.</p>
+          </caption>
+          <graphic xlink:href="pone.0005688.g007"/>
+        </fig>
+        <p>The higher strength of the vortices in the right atrium after an effective septal occlusion can demonstrate that the original vortical flow has indeed been disturbed in the event of left-to-right shunting of blood into the right atrial blood pool.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>At this stage, the developed system in our study meets a currently unmet requirement of the medical imaging service industry by providing a non-invasive and fast method for analyzing blood flow that can be used for a number of purposes such as an investigative or prognostic tool for patients at risk of abnormalities of the heart. It can also measure blood flow through artificial cardiac devices <italic>in vivo</italic> at a magnetic strength of not more than 3 Tesla <xref ref-type="bibr" rid="pone.0005688-Martin1">[22]</xref>.</p>
+      <p>The exploitation of intensity-based mapping from magnetic resonance imaging data to perform cardiac flow tracking is novel, as there is currently no way to computationally predict flow velocities from these images without encoding of velocity information. The technique lies in the use of commonly used equipment, the MRI machine based on the SSFP MR imaging technique <xref ref-type="bibr" rid="pone.0005688-Plein1">[21]</xref>, to generate a series of images in spatial as well as temporal dimensions, and post-processing them to measure MR fluid flow in real time. Certainly, individual components of the system (e.g. use of the optical flow algorithm on magnetic resonance images) are not new, but the unique combination of these techniques, and the adaptation of multi-resolution motion tracking used in our study is the key novelty.</p>
+      <p>Other alternative solutions lie in the use of phase contrast MR imaging, coupled with well-established flow field visualization methods to analyze fluid flow. However, velocity-encoding based on phase shifts in nuclear signals usually take longer scan duration than typical MR imaging. As there are few investigations to computationally measure blood flow using SSFP MRI, the system arising from our study will provide a solution to a currently unmet need. Such a strategy can transfer most of the processing time, by reducing the scan sequence, to the flow prediction and visualization post-processing stages. In addition to this approach, we are able to characterize vortices in heart chambers and establish a relationship between atrial vorticity and a septal defect. As such, there is clear potential of the developed system in its utility as a prognostic and/or investigative tool for assessment of cardiac abnormalities parallel to examining MR images. Of course, this framework can be translated for studying other cardiac abnormality as well but it is beyond the scope of this work to consider further future applications.</p>
+      <p>Measurement of vorticity based on the MR fluid motion field is performed. By characterizing flow using these parameters, and statistically presenting them for every phase of the flow, we are able to extract more information from the flow model <xref ref-type="bibr" rid="pone.0005688-Wong1">[32]</xref>. Flow quantification needs to be carried out so that it can have research value and clinical usage. However, no detailed and quantifiable flow analysis has ever been documented from cardiac blood flow field for diagnostic usage. Even though it may be interpretive to analyze the flow quantitatively using planar measurements, it will be inaccurate because the actual flow is three dimensional. However, we have demonstrated that examination and measurement in two dimensional planes is sufficient in characterizing cardiac abnormalities. Transthoracic and transesophoegal echocardiography are now regarded as the standard for ASD assessment, but a reliable set of cclinical trials can be the focus of a future study to demonstrate substantial value in using cardiac MRI flow analysis.</p>
+      <p>MRI measurements of blood flow in a heart chamber have been described as an illustration. The developed framework may be extended to assess flow in the other heart chambers or cardiovascular structures. It can conveniently predict flow information with superior processing speed to improve our understanding of blood motion within the heart, which may have implications in the study of blood circulation efficiency. This is extremely useful when MRI scanning is limited by the absence of a velocity-encoding protocol. The implemented study is neither to show with high accuracy the existence of vortices or flow structures in the cardiac chambers nor to verify what has already been established in earlier studies. Rather, it aims to highlight feasibility of the framework for visualizing the flow as well as measuring or comparing vorticities, and with high system versatility to be executed on future batch of case subjects.</p>
+      <p>Extension of magnetic resonance imaging to the study of flow phenomena is not new, and can be applied to problems of direct relevance to multi-phase flow analysis. The state-of-the-art in magnetic resonance flow imaging studies is discussed previously <xref ref-type="bibr" rid="pone.0005688-Gladden1">[23]</xref>, <xref ref-type="bibr" rid="pone.0005688-Gladden2">[24]</xref> and the framework can be applied to investigate cardiac blood motion as well. Emerging technologies such as magnetic resonance global coherent free precession <xref ref-type="bibr" rid="pone.0005688-Rehwald1">[25]</xref> can provide a new platform for the usage of MR fluid motion tracking, which generates a potential scheme for cardiac flow tracking now and in the future. Such MRI protocols can be applied to blood spin labeling techniques for acquisition of multiple temporal slices of gray-scale intensity blood flow or cine-angiograms without a contrast agent and use of ionizing radiation <xref ref-type="bibr" rid="pone.0005688-Alsop1">[26]</xref>. The movement of blood can be tracked as a result of processing such information using fluid motion estimation. Sample global coherent free precession images provide information about vascular function and morphology just as SSFP MR images do. Moreover, it provides a more definite contrast of spin labeled dynamic blood into the non-spin labeled region because of the tagging of blood protons every few milliseconds as they travel through an arbitrary region in space.</p>
+      <p>Some scan sets can be ineffective for fluid motion tracking. There are a variety of reasons for the inability to develop flow fields from them, such as low image resolution, presence of ghosting artifacts due to respiration during scanning, and absence of vortices that are large enough to be quantified.</p>
+      <p>It is difficult to achieve high accuracy velocity mapping with low scan duration at the same time. The method that is proposed trades imaging speed with accurate flow field scanning, but still achieves a reliable flow analysis for the cardiac abnormalities. This ultimately leads to flow evaluation for septal defect patients using the available SSFP magnetic resonance images without performing the additional and time-consuming velocity-encoding MRI.</p>
+    </sec>
+    <sec sec-type="methods" id="s4">
+      <title>Methods</title>
+      <p>This section is based on the description of the engineering methodology and investigation procedures that are carried out. Clinical scans were performed on twenty-six patients diagnosed with atrial septal defect for pre- and post-occlusion conditions. However, to maintain our focus of the importance of biomedical engineering development in this work, only one patient was selected for demonstration of the technical concepts.</p>
+      <sec id="s4a">
+        <title>Ethics Statement</title>
+        <p>Human studies were approved by the Royal Adelaide Hospital Committee and by the Institutional Review Board. MR imaging was conducted in accordance with guidelines defined by the Wakefield Hospital to achieve safe and reliable scanning. The experiment was approved specifically by the ethics committee. Written consent was obtained from each case subject after the imaging procedures had been conveyed.</p>
+      </sec>
+      <sec id="s4b">
+        <title>Magnetic Resonance Fluid Motion Tracking</title>
+        <p>There are important and challenging issues in developing a system for diagnosis of cardiac defects based on flow information that is measured. The multidisciplinary approach adopted here highlights a unique combination of machine vision and concepts from particle image velocimetry, image segmentation, and computer visualization. Since the optical flow algorithms are implemented in our approach, we termed this motion-based flow estimation method as a fluid motion estimation scheme; and because MRI is used, we shall classify the technique as a class of magnetic resonance image velocimetry (MRIV).</p>
+        <p>The application of machine vision algorithms to post-process medical images offers the potential for velocity measurement to become a commonly accessible and technically viable technology. The determination of flow velocities may be based on the intensity shifts of the pixels using the optical flow algorithm. The assessment of flow is accurate provided that a good time resolution is present. However, the number of phases per cardiac cycle will be dependent on the capabilities and specifications of the particular medical imaging device used.</p>
+        <p>Our proposed technique is specific for characterizing blood flow movement in cardiac structures. The global estimation of flow velocity vector field over the whole image provides useful information on non-laminar flow quantification within the pathologies. The cardio dynamics information that is based on flow analysis and visualization of blood offers potential for the detection and quantification of heart valve failure, septal defects as well as myocardial malfunctioning.</p>
+        <sec id="s4b1">
+          <title>Asynchronous precession of proton in magnetic resonating blood</title>
+          <p>We now examine the theory governing the concept of void signal registration due to turbulence within fluid where atomic nuclei have been aligned either parallel or anti-parallel to a powerful and uniform magnetic field. As high energy nuclei relax and realign, they emit energy with certain properties that are recorded to provide information about the medium. Image contrast is created by weighting the energy signal during realignment of the nuclear spins with the magnetic field. A signal image is then generated as a result of this quantum mechanical activity.</p>
+          <p>As the fluid is transported, the same signal from nuclei that is retained within the fluid follows the displacement. In a turbulent flow, the diffusion of magnetic moments occurs <xref ref-type="bibr" rid="pone.0005688-Kuethe1">[27]</xref>. Protons in the hydrogen nuclei of molecules can be given a phase spin so the de-phasing (asynchronous precession) of spin due to turbulence in flow (<xref ref-type="fig" rid="pone-0005688-g008">Fig. 8</xref>) gives a low MR signal during imaging <xref ref-type="bibr" rid="pone.0005688-Globits1">[28]</xref>. Low MR signals are represented as higher pixel intensities in the MR image (<xref ref-type="supplementary-material" rid="pone.0005688.s002">Movie S2</xref>). The proton spins de-phase in the transverse plane when the RF pulse is terminated. Other than the cause of uncontrolled diffusion of magnetic moments in turbulent fluid, this de-phasing can also be due to intrinsic non-homogeneities of the magnetic field as a result of magnetic susceptibility changes at tissue interfaces.</p>
+          <fig id="pone-0005688-g008" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0005688.g008</object-id>
+            <label>Figure 8</label>
+            <caption>
+              <title>Nature of precessing blood proton spins.</title>
+              <p>Hydrogen-based molecules in blood maintain coherent spin phases in static fluid (as shown in subfigure A), but are distributed chaotically in turbulent fluid and this disrupts the alignment of proton spins from their order (as illustrated by subfigure B). Due to the incoherent or random precession of spins, the net magnetization is weak and gives a low MR signal intensity. Therefore regions of blood at different levels of turbulence appear with contrasting pixel intensities in the cardiac MR image. The groups of incoherently precessing proton spins move along with the global blood flow within the cardiac chamber, and presence of intensity flow, which coincide with the blood flow, can be observed from time-dependent sequences of MR images.</p>
+            </caption>
+            <graphic xlink:href="pone.0005688.g008"/>
+          </fig>
+          <p>Therefore, there is a reduction in the signal registration on the image. Effective diffusivity of spin protons at this point is represented by a reduction in signal intensity in the image <xref ref-type="bibr" rid="pone.0005688-Kuethe1">[27]</xref>. Because the diffusivity follows the movement of the fluid in a channel, there exists an intensity of change in the direction of flow. The intensity contrast of the diffusion in the image thus becomes greater as the higher speed of the fluid flow increases the disorder in the fluid.</p>
+          <p>It is also important to emphasize that in the heart chambers, the nuclear spins may move perpendicularly in and out of the imaging plane. Therefore, spins that receive the original excitation may, in turbulent flow, not experience magnetic resonance gradient refocusing. Likewise, spins that do not receive the original excitation may in fact move into the imaging plane after the RF excitation pulse, and since they were not quantum mechanically stimulated to begin with, no MR-signal may be returned. Extrapolating this concept further, some signal loss due to fast flowing jets are likely due to spins moving too quickly to be excited and refocused, creating signal voids.</p>
+          <p>Due to the inhomogeneous presence of asynchronous proton spins, nuclear signals emitted from dynamic fluid displays on MR images as variation patterns of intensity depicting the blood flow movement. It may be worthwhile mentioning that poor temporal and spatial resolution imaging may blur the observation of blood movement between consecutive images. At some phases of scans, the presence of low-turbulent regions may also weaken the intensity contrast variation in blood images, so that visual tracking of blood motion declines in accuracy.</p>
+        </sec>
+        <sec id="s4b2">
+          <title>Tracking of MR signals</title>
+          <p>The optical flow technique <xref ref-type="bibr" rid="pone.0005688-Horn1">[29]</xref> extended to perform multi-resolution motion prediction <xref ref-type="bibr" rid="pone.0005688-Barron1">[30]</xref>, <xref ref-type="bibr" rid="pone.0005688-Bouguet1">[31]</xref> from MR signals is useful for evaluating blood flow properties in heart chambers. Therefore, optical flow evaluation of MR images is able to provide flow field measurement. The global estimation of flow velocity vector fields across the whole image provides useful information on vorticity which defines the vortices within regions of a relevant pathology. This type of approach has been used in imaging and computer vision previously for motion analysis of rigid structures, but we modify and apply it to compute fluid motion based on temporal signals from MR images. The MRI based fluid motion estimation framework is termed as MR fluid motion tracking <xref ref-type="bibr" rid="pone.0005688-Wong1">[32]</xref>.</p>
+          <p>The implementation of the multi-resolution Lucas Kanade optical flow technique <xref ref-type="bibr" rid="pone.0005688-Barron1">[30]</xref>, <xref ref-type="bibr" rid="pone.0005688-Bouguet1">[31]</xref> on the MR image grid, based on sectional scan of a heart, allows non-laminar flow velocity field, on a two dimensional velocity grid, to be measured. The global estimation of flow velocity vector fields within the region of interest provides useful information on non-laminar flow quantification within the heart chamber. Such estimation of blood behavior can provide information on myocardial ischemia and infarction. The technique can also be introduced for evaluating blood flow from MR images of heart chambers or arterial flow channels. The study of vorticity, shear and normal strain distributions, computed from the velocity field, can be used to provide insights into the behavior of the flow. The global estimation of vorticity fields also provides useful information such as formation and evolution of vortices within heart chambers. A useful feature of our developed system is the computation and presentation of these properties temporally in two dimensions. These can also be presented for multiple slices of scan simultaneously.</p>
+          <p>It may be worthwhile mentioning the parameters that will affect tracking performance. Presence of asynchronous spins within a scan image contributes to track features within a region of interest. Therefore, significant degrees of spin coherence possessed by a group of protons, low resolution and poor signal-to-noise ratio of imaging will reduce the number of track features and causes inaccurate tracking <xref ref-type="bibr" rid="pone.0005688-Wong1">[32]</xref>.</p>
+        </sec>
+        <sec id="s4b3">
+          <title>Multi-resolution Motion Estimation Algorithm</title>
+          <p>In a multi-resolution, optical flow scheme, the pyramidal optical flow method incorporating a multi-scale approach has been applied to support multi-scale fluid motion and to improve accuracy and robustness <xref ref-type="bibr" rid="pone.0005688-Bouguet1">[31]</xref>. A top-down estimation of the flow using an image pyramid is performed, with the apex representing the MR image at a coarse scale. The calculation of the optical flow field at every image level is based on the optical flow constraint <xref ref-type="bibr" rid="pone.0005688-Horn1">[29]</xref>.</p>
+          <p>Computational results from this level are passed to the next level and this is continued and based on the estimated flow at the preceding scale until the original scale is reached. We refer to the diagram in <xref ref-type="fig" rid="pone-0005688-g009">Figure 9</xref> to illustrate the computational aspect of pyramidal optical flow. The accuracy of motion estimation critically depends on the magnitude of image motion. In fact, depending on the spatial image frequency, very large motions even may cause aliasing. For a fixed global velocity, spatial frequencies moving more than half of their period per frame may cause temporal aliasing <xref ref-type="bibr" rid="pone.0005688-Ruhnau1">[33]</xref>.</p>
+          <fig id="pone-0005688-g009" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0005688.g009</object-id>
+            <label>Figure 9</label>
+            <caption>
+              <title>Multi-resolution motion estimation using pyramid implementation.</title>
+              <p>Diagrammatic view of the Gaussian pyramid with optical flow applied onto every image level (0 to <italic>L</italic>) is presented in subfigure A. Each level in the pyramid is a sub-sampled version of the level below. In the first step, the optical flow between the top level images is computed. We project the computed coarse-level flow field onto the next finer pyramid level and continue this at each level of the pyramid until the finest pyramid level has been reached. The system block diagram in subfigure B gives an illustration of the algorithmic operation of this pyramidal implementation.</p>
+            </caption>
+            <graphic xlink:href="pone.0005688.g009"/>
+          </fig>
+          <p>Aliasing can lead to significant errors in velocity and vortex strength assessment, which affects the accuracy of the method in determining vortex strength. We sought to devise a way of removing outliers in the flow vector field. Optical flow vectors that pertain to very large pixel displacements relative to that of the pixels in its adjacent region are isolated using the median test <xref ref-type="bibr" rid="pone.0005688-Raffel1">[34]</xref>. We perform clustering of optical flow vectors with magnitudes above a user defined threshold. The flow vectors within a cluster are classified as outliers provided that two conditions are fulfilled: (1) the difference between the vector magnitude and the median magnitude in the flow field exceeds a threshold that can be arbitrarily set; and (2) the number of vector items within the group that is encapsulated by a sampling window size that met the first condition do not fall below a specific value.</p>
+          <p>Voids due to the removal of these outliers must be filled in with new vectors for the flow to be continuous. We devised a simple approach of growing vectors using a flow field synthesizing approach. This technique is analogous to the occlusion fill-in algorithm used in texture synthesis by non-parametric sampling except that the sampled elements are flow vectors instead of texels (texture elements). We can also apply reduction in resolution to the flow field. The averaging of vectors within interrogation windows results in a lower resolution of flow field but also can help in smoothing of flow data by averaging the high magnitude vectors of these outliers and smaller vectors in its neighborhood regions.</p>
+        </sec>
+      </sec>
+      <sec id="s4c">
+        <title>Visualization of Blood Vortices within the Heart</title>
+        <p>Vorticity <italic>&#x3C9;</italic> (in units of ms<sup>&#x2212;1</sup>) is defined as the curl of velocity <italic>v</italic> whereby <italic>&#x3C9;</italic>&#x200A;=&#x200A;&#x2207;&#xD7;<italic>v</italic> and is a representation of the orientation and angular velocity of local rotation <xref ref-type="bibr" rid="pone.0005688-Raffel1">[34]</xref>, <xref ref-type="bibr" rid="pone.0005688-Potter1">[35]</xref>. The display of a two dimensional vorticity map of a single vortex based on its velocity field can be used to indicate the vortex core and its rotation. By analyzing the vorticity field of a vortex, the strength and length scale of the vortex can be characterized.</p>
+        <p>A definition of vorticity is provided by examining the magnitude of rotation of fluid about a specific examined point <xref ref-type="bibr" rid="pone.0005688-Raffel1">[34]</xref>. The measurement of a three dimensional vortex structure is dependent on the angle of the measurement plane. When vortices are skewed with respect to the measurement plane, the results are affected by the skew angle <xref ref-type="bibr" rid="pone.0005688-Brandt1">[14]</xref>. However, presentation of resolved vector components of spiralling flows or skewed vortical flow in a three dimensional space is visually complicated and will make the analysis of vorticity difficult. We see in this study that visual examination of vortices in cardiac MR images of the human chamber using two dimensional slices of the scan is sufficient. We compare magnitude and occupancy of a single vortex on a specific slice and phase of the cardiac cycle for a patient who has been scanned pre- and post-septal occlusion.</p>
+        <p>This section describes the flow characteristics of the vortices within the right atrium pre- and post-atrial septal occlusion (ASO). We base our analysis on quantitative data pertaining to vorticity calculations and support the flow scenario with superimposed qualitative data such as velocity vector plots and streamlines. The purpose of our analysis is to reach a conclusion that a difference in the vorticity after surgical intervention is visible, and we use our implemented technique to support this claim. The characteristics for the vorticity map can be presented in histograms as an indication of vorticity magnitudes represented by color pixels in the flow grid. Swirl within segmented right atrium for pre- and post-ASO at three scan slices of heart are presented (<xref ref-type="fig" rid="pone-0005688-g002">Fig. 2</xref>,<xref ref-type="fig" rid="pone-0005688-g003">3</xref>,<xref ref-type="fig" rid="pone-0005688-g004">4</xref> and <xref ref-type="fig" rid="pone-0005688-g005">5</xref>) and comparison of vorticity for both conditions is carried out and shown (<xref ref-type="fig" rid="pone-0005688-g006">Fig. 6</xref>).</p>
+        <p>In this study, we focus on two sets of investigations, one on the right atrium of an atrial septal defect (ASD) subject before treatment, and the other set on that of the same patient after surgical atrial septal occlusion (ASO). The flow information from these two situations can be used to explain the behavior of vortices that develop in the right atrium of a heart with a septal defect before and after ASO.</p>
+      </sec>
+      <sec id="s4d">
+        <title>Investigation Procedures</title>
+        <sec id="s4d1">
+          <title>Sample Case Study Subject</title>
+          <p>The case subject is a male patient, aged 18 years at the time of this study. The subject had an ASD and was assessed using cardiac MR imaging. Implantation of the septal occluder device in the patient was performed 79 days later and another scan was carried out 210 days after the ASD occlusion. Cardiac MR imaging is performed on the patient using a Siemens Sonata, 1.5 Tesla, model&#x2013;syngo MR 2004A scanner with Numaris&#x2013;4, Series No: 21609 software. Steady-state free precession cine-MR imaging was performed using contiguous slices in short axis views through the ASD. All images were acquired with retrospective gating and 25 phases (from time frames <italic>n<sub>t</sub></italic>&#x200A;=&#x200A;1 to 25) for each slice are obtained.</p>
+          <p>SSFP magnetic resonance imaging is used to scan the patient before and after atrial septal occlusion. Acquisition parameters include: TR&#x200A;=&#x200A;47.1 ms, TE&#x200A;=&#x200A;1.6 ms, FOV&#x200A;=&#x200A;298&#xD7;340 mm at matrix of 134&#xD7;256 pixels for pre-septal occlusion scans and TR&#x200A;=&#x200A;40.3 ms, TE&#x200A;=&#x200A;1.2 ms, FOV&#x200A;=&#x200A;260&#xD7;320 mm at matrix of 156&#xD7;192 pixels for post-atrial septal occlusion scans.</p>
+        </sec>
+        <sec id="s4d2">
+          <title>Engineering Methodology for Flow Analysis</title>
+          <p>Cardiac MR image slices of the patient that correspond to diastolic phases of the heart are selected. We observe the vortices that are generated pre- and post-septal occlusion at the selected phases. The right atrium was enlarged due to a left to right shunt, and the changes in the signal intensity of blood using MRI are more easily detected than in the other chambers. Note that we have chosen the right atrial flow for analysis, since this is the chamber into which we can observe the effect of blood shunting from the left atrium. A region of interest with width of 120 pixels and height of 150 pixels is truncated from the selected slice showing the sectioning of the right and left atria, where the septal defect is most apparent. This is to be displayed for qualitative examination.</p>
+          <p>Statistical histograms are produced by counting the number of frames with the specified range of vorticity values and then consolidating them to create a frequency versus vorticity value plot. The frequency of the image frames can be normalized to become the area <italic>A</italic>(%), which gives the percentage of the entire flow region.</p>
+          <p>We implement a vorticity visualization system dedicated to the examination of flow behavior in the heart chambers. We examine the system flow stages from imaging of patient with atrial septal defect to the visualization of cardiac flow field and statistical analysis of the vortical flow in atrium of the imaged heart (<xref ref-type="fig" rid="pone-0005688-g010">Fig. 10</xref>). Flow visualization is performed at the post-processing stage whereby vector plot is computed based on image intensity motion vectors for every pixel. The segmentation is required for isolating the region within the chamber for observation (<xref ref-type="supplementary-material" rid="pone.0005688.s003">Movie S3</xref>) and also for selecting only the relevant vorticity values in the atrium to be used statistically for analysis.</p>
+          <fig id="pone-0005688-g010" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0005688.g010</object-id>
+            <label>Figure 10</label>
+            <caption>
+              <title>Cardiac vorticity visualization system for ASD investigation.</title>
+              <p>This system is specially constructed to review vorticity characteristics in patients with atrial septal defect (ASD) and relies on computational post-processing of MR images. The vorticity visualization system flow shows data processed by blocks depicting the MR imaging which provides data for generation of flow field flows. Flow visualization is achieved by field display using vector plot with the superposition of MR intensity images. Statistical analysis is supported by histograms of the vorticity maps.</p>
+            </caption>
+            <graphic xlink:href="pone.0005688.g010"/>
+          </fig>
+        </sec>
+      </sec>
+      <sec id="s4e">
+        <title>Validation of technique</title>
+        <p>It is necessary to establish a form of measure for reliability of a system to accurately develop vorticity maps of flow field imaged by MR fluid motion tracking technique. The reliability of a flow field prediction can be defined as ratio of the true variance to total measured variance of vorticity maps <xref ref-type="bibr" rid="pone.0005688-Bohrnstedt1">[36]</xref>. In this respect, based on an arbitrary time frame of the cardiac cycle, a vorticity map from the flow field by phase contrast MRI velocimetry is assumed as the true data. The map produced from flow field developed by MR fluid motion tracking (hereby termed the predicted map) has inherent noise and is a combination of the true and error data.</p>
+        <sec id="s4e1">
+          <title>Vorticity Field Differencing System</title>
+          <p>Using <xref ref-type="fig" rid="pone-0005688-g011">Figure 11</xref>, we demonstrate the systematic implementation of vorticity field differencing based on four stages. The first stage starts with scanning of a normal heart with steady-state free precession MR imaging and on a separate occasion, the same scanning using phase contrast MR imaging. During this pre-processing stage, blood motion information is encoded within images in a different manner. The cardiac MR images contain temporal positions of magnetic resonating blood, whereas the phase contrast images have local blood velocities encoded within them. In the visualization processing stage, both field grids are further processed to give their respective vorticity field, which are then differenced pixel by pixel.</p>
+          <fig id="pone-0005688-g011" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0005688.g011</object-id>
+            <label>Figure 11</label>
+            <caption>
+              <title>Reliability test system for MR fluid motion tracking based on vorticity differencing.</title>
+              <p>This system is specially constructed to calibrate the performance of MR fluid motion tracking against the well-established phase contrast MR image velocimetry system. Pixel by pixel subtraction followed by scaling is performed to produce the vorticity field difference (or error) map.</p>
+            </caption>
+            <graphic xlink:href="pone.0005688.g011"/>
+          </fig>
+        </sec>
+        <sec id="s4e2">
+          <title>Phase Contrast MRI Scan Procedure</title>
+          <p>For this study, velocity-encoded MR imaging was performed using a Siemens Sonata, 1.5 Tesla, model&#x2014;syngo MR 2004A scanner with Numaris&#x2014;4, Series No: 21609 software. Cine-MR imaging was conducted using one slice in short axis views through the atria. All images were acquired with retrospective gating and 25 phases.</p>
+        </sec>
+        <sec id="s4e3">
+          <title>Parameters for Data Analysis</title>
+          <p>The histogram of a vorticity map with vorticity values in the range [0, <italic>L</italic>&#x2212;1] is a discrete function <italic>h</italic>(<italic>r<sub>k</sub></italic>)&#x200A;=&#x200A;<italic>n<sub>k</sub></italic>, where <italic>r<sub>k</sub></italic> is the <italic>k</italic><sup>th</sup> vorticity value and <italic>n<sub>k</sub></italic> is the number of pixels in the flow map having vorticity value <italic>r<sub>k</sub></italic>. Statistical quantification of the blood vorticity map in the right atrium is performed by translating all the scalar values into histogram format. The size of right atrium is different for every phase. Normalization is performed by standardizing the total count of pixels within a segmented region of interest to create an equal integral area under the frequency plot of the flow map. The total counts correspond to the number of pixels representing the atrium per slice.</p>
+          <p>The velocity fields of the cardiac flows are calibrated by using the MRI scan properties as indicated in <xref ref-type="table" rid="pone-0005688-t001">Table 1</xref>. From <xref ref-type="table" rid="pone-0005688-t002">Table 2</xref>, the width of flow image is 120 pixels, and we have set the velocity interrogation window to a 3 by 3 pixels frame. We observe vorticity flow maps pertaining to time frames <italic>n<sub>t</sub></italic>&#x200A;=&#x200A;[17, 18, 19, 20] out of a maximum of 25 frames in a cardiac cycle for a vorticity sampling window size of (19&#xD7;19) pixels.</p>
+          <table-wrap id="pone-0005688-t001" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0005688.t001</object-id>
+            <label>Table 1</label>
+            <caption>
+              <title>MR imaging properties.</title>
+            </caption>
+            <graphic id="pone-0005688-t001-1" xlink:href="pone.0005688.t001"/>
+            <table frame="hsides" rules="groups" alternate-form-of="pone-0005688-t001-1">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Symbol</td>
+                  <td align="left" rowspan="1" colspan="1">Quantity</td>
+                  <td align="left" rowspan="1" colspan="1">SSFP MRI Scan</td>
+                  <td align="left" rowspan="1" colspan="1">Phase Contrast MRI Scan</td>
+                  <td align="left" rowspan="1" colspan="1">Units</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>p</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Pixel spacing</td>
+                  <td align="left" rowspan="1" colspan="1">1.67</td>
+                  <td align="left" rowspan="1" colspan="1">1.54</td>
+                  <td align="left" rowspan="1" colspan="1">mm/pixel</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>t<sub>s</sub></italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Trigger time interval</td>
+                  <td align="left" rowspan="1" colspan="1">35.72</td>
+                  <td align="left" rowspan="1" colspan="1">29.43</td>
+                  <td align="left" rowspan="1" colspan="1">ms</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>s</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Slice thickness</td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">mm</td>
+                </tr>
+              </tbody>
+            </table>
+            <table-wrap-foot>
+              <fn id="nt101">
+                <label/>
+                <p>The properties of SSFP MRI and the phase contrast MRI scans are used to calibrate flow maps, and present the velocity fields in metric units.</p>
+              </fn>
+            </table-wrap-foot>
+          </table-wrap>
+          <table-wrap id="pone-0005688-t002" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0005688.t002</object-id>
+            <label>Table 2</label>
+            <caption>
+              <title>Vorticity measurement properties.</title>
+            </caption>
+            <graphic id="pone-0005688-t002-2" xlink:href="pone.0005688.t002"/>
+            <table frame="hsides" rules="groups" alternate-form-of="pone-0005688-t002-2">
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Symbol</td>
+                  <td align="left" rowspan="1" colspan="1">Quantity</td>
+                  <td align="left" rowspan="1" colspan="1">Value</td>
+                  <td align="left" rowspan="1" colspan="1">Units</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>X</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Image width</td>
+                  <td align="left" rowspan="1" colspan="1">120</td>
+                  <td align="left" rowspan="1" colspan="1">pixel</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Y</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Image height</td>
+                  <td align="left" rowspan="1" colspan="1">150</td>
+                  <td align="left" rowspan="1" colspan="1">pixel</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>W<sub>v</sub></italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Resolution of velocity grid</td>
+                  <td align="left" rowspan="1" colspan="1">3&#xD7;3</td>
+                  <td align="left" rowspan="1" colspan="1">pixel</td>
+                </tr>
+              </tbody>
+            </table>
+            <table-wrap-foot>
+              <fn id="nt102">
+                <label/>
+                <p>The vorticity flow maps can be determined from the velocity fields of cardiac flows. Properties of these velocity field image parameters are used to calibrate the vorticity maps as well as indicating the sampling vorticity mask size in metric units.</p>
+              </fn>
+            </table-wrap-foot>
+          </table-wrap>
+        </sec>
+        <sec id="s4e4">
+          <title>Calibration of Vorticity Sampling Window</title>
+          <p>In this study that uses a normal atrium, we assume the true-score variance <italic>&#x3C3;</italic><sub>TRUE</sub><sup>2</sup> to be the equivalent of the vorticity variance based on a true map measured by phase contrast MRI. We note that the error variance with the expression <italic>&#x3C3;</italic><sub>ERROR</sub><sup>2</sup> is the variance of an error map, which is produced by differencing the predicted and true vorticity maps. The components of this error can come from existence of other smaller vortices along with the dominant single vortex in the right atrium that escape detection by the fluid motion estimation due to inferior quality of tracking features. The reliability of flow field prediction using MR fluid motion tracking defined as <italic>&#x3C1;</italic> is the ratio of true vorticity variance <italic>&#x3C3;</italic><sub>TRUE</sub><sup>2</sup> to total measured variance given by <italic>&#x3C3;</italic><sub>TRUE</sub><sup>2</sup>+<italic>&#x3C3;</italic><sub>ERROR</sub><sup>2</sup>. Ideally, if the system can generate flow fields that correspond close enough to those that are measured by a gold standard imaging modality such as phase contrast MRI, the error tends to approximate zero and reliability becomes one.</p>
+          <p>We vary the vorticity sampling window parameter from (3&#xD7;3) to (33&#xD7;33) pixels with increments of (2&#xD7;2) pixels at each interval to chart the reliability of flow measurement using MR fluid motion tracking versus phase contrast MR imaging technique. We observe vorticity flow maps pertaining to time frames <italic>t</italic>&#x200A;=&#x200A;[17,18,19,20] for a series of sampling window sizes in <xref ref-type="fig" rid="pone-0005688-g011">Figure 11</xref>.</p>
+          <p>Implementing an appropriate sampling window size for vorticity measurement can improve the visualization of the vorticity maps to be as close as possible to the map that is based on phase contrast MRI flow. Generating the variation of its reliability with respect to the sampling window size can give us an indication of the ideal sampling window size value. Based on the results (<xref ref-type="fig" rid="pone-0005688-g012">Fig. 12</xref>), we choose a sampling window size of (19&#xD7;19) pixels for our vorticity field generation.</p>
+          <fig id="pone-0005688-g012" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0005688.g012</object-id>
+            <label>Figure 12</label>
+            <caption>
+              <title>Reliability study using predicted and true variance.</title>
+              <p>Reliability for the predicted MR fluid motion field data, <italic>&#x3C1;</italic> with respect to the phase contrast MRI data (taken as the true data) is computed. The variation of vorticity sampling window size can affect the reliability of computational measurement of the vorticity.</p>
+            </caption>
+            <graphic xlink:href="pone.0005688.g012"/>
+          </fig>
+        </sec>
+        <sec id="s4e5">
+          <title>Comparison of Imaging Modalities</title>
+          <p>Motion prediction based on MRI generates flow field of the blood pool that can have limitations in terms of accuracy if the signals emitted by the blood vary poorly in contrast spatially. Therefore, the motion estimation algorithm needs to be robust and reliable enough to enable good prediction of the blood motion globally. The velocity-flow data also needs to be processed a second time to provide differential flow measures such as vorticity. It may be worthwhile to highlight that phase contrast MRI can produce much more accurate flow information, however; scanning time is significantly higher than standard MRI. Although the tracking system trades off accuracy with processing time, it can deliver a good prediction of flow structures within the heart (<xref ref-type="fig" rid="pone-0005688-g013">Fig. 13</xref>).</p>
+          <fig id="pone-0005688-g013" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0005688.g013</object-id>
+            <label>Figure 13</label>
+            <caption>
+              <title>Vorticity differencing based on MR fluid motion and phase contrast magnetic resonance image fields.</title>
+              <p>Predicted flow fields generated by MR fluid motion tracking are verified against the measured ones based on phase contrast magnetic resonance image velocimetry. The former technique post-processes temporal MR signals to compute flow, while the latter velocimetry system processes the signal during scan and encodes the velocity information in images. The set of results presented here illustrates the difference between blood flow fields in the human right atrium, of which one is predicted and the other is accurately measured. Therefore, their vorticity map differences can be taken as the deviation of MR fluid motion field from the true flow field. We demonstrate flow field differencing using time frames, <italic>n<sub>t</sub></italic>&#x200A;=&#x200A;[17, 18, 19, 20] out of 25 frames in a cardiac cycle.</p>
+            </caption>
+            <graphic xlink:href="pone.0005688.g013"/>
+          </fig>
+          <p>The measurement of a three dimensional vortex structure is dependent on the angle of the measurement plane. When vortices are skewed with respect to the measurement plane, the results are affected by the skew angle. However, presentation of resolved vector components of spiraling flows or skewed vortical flow in a three dimensional space is visually complicated, and this causes the analysis of vorticity to be difficult.</p>
+          <p>Considering that the SSFP and phase contrast magnetic resonance imaging are performed on two separate occasions with slight dissimilarities in the planar imaging configuration, perfect alignment of the right atria regions is difficult. Therefore a near zero error map of the vorticity maps resulting from the flow images of MR fluid motion tracking and velocity-encoded MRI is hard to achieve. Based on this discrepancy, we have to take into account of additional error contributed by the imperfect comparison scheme. These issues explain the large error margin exhibited by MR fluid motion tracking. But the qualitative observation of the velocity flow field as well as vorticity differencing results may still provide useful information for cardiac flow assessment.</p>
+          <p>We also note the low resolution of images (120&#xD7;150) pixels or (184.8&#xD7;231.0) mm<sup>2</sup> that are used here in this experiment. If higher signal-to-noise ratio imaging with superior resolution is implemented, the tracking of the magnetic resonating fluid will generate flow fields that are more accurate. In any case, the aim is to identify the location and strength of vortices can be achieved by MR fluid motion tracking. Although the flow may differ strictly in terms of vector comparison that is applied throughout the vector plot area, the general fluid paths are qualitatively observed to be similar, and the large-scale vortices can still be analyzed using an appropriate vorticity mapping.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material content-type="local-data" id="pone.0005688.s001">
+        <label>Movie S1</label>
+        <caption>
+          <p>Use of SSFP magnetic resonance imaging to detect atrial septal defect (ASD). Note the multiple vortices in the right atrial flow within the heart before atrial septal occlusion (ASO).</p>
+          <p>(0.33 MB MOV)</p>
+        </caption>
+        <media xlink:href="pone.0005688.s001.mov" mimetype="video" mime-subtype="quicktime">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0005688.s002">
+        <label>Movie S2</label>
+        <caption>
+          <p>This is the SSFP magnetic resonance imaging of the atrium after atrial septal occlusion (ASO). We observe a faster blood rotation based on the intensity contrast exhibited by asynchronous blood proton spins for a series of time frames. There is a dominant vortex in the right atrium.</p>
+          <p>(0.34 MB MOV)</p>
+        </caption>
+        <media xlink:href="pone.0005688.s002.mov" mimetype="video" mime-subtype="quicktime">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="pone.0005688.s003">
+        <label>Movie S3</label>
+        <caption>
+          <p>Segmentation using semi-automatic active contouring based on the Kass Snake algorithm is carried out. Region of interest is defined after atrial contouring. The flow analysis is based on blood within the isolated chamber.</p>
+          <p>(0.16 MB MOV)</p>
+        </caption>
+        <media xlink:href="pone.0005688.s003.mov" mimetype="video" mime-subtype="quicktime">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0005688-Lauerma1">
+        <label>1</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lauerma</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Niemi</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>H&#xE4;nninen</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Janatuinen</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Voipio-Pulkki</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2000</year>
+          <article-title>Multimodality MR imaging assessment of myocardial viability: combination of first-pass and late contrast enhancement to wall Motion dynamics and comparison with FDG PET-initial experience.</article-title>
+          <source>Radiology</source>
+          <volume>217</volume>
+          <fpage>729</fpage>
+          <lpage>736</lpage>
+          <pub-id pub-id-type="pmid">11110935</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Edelman1">
+        <label>2</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Edelman</surname>
+              <given-names>RR</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Contrast-enhanced MR imaging of the heart: Overview of the literature.</article-title>
+          <source>Radiology</source>
+          <volume>232</volume>
+          <fpage>653</fpage>
+          <lpage>668</lpage>
+          <pub-id pub-id-type="pmid">15284429</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Shan1">
+        <label>3</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shan</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Constantine</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Sivananthan</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Flamm</surname>
+              <given-names>SD</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Role of cardiac magnetic resonance imaging in the assessment of myocardial viability.</article-title>
+          <source>Circulation</source>
+          <volume>109</volume>
+          <fpage>1328</fpage>
+          <lpage>1334</lpage>
+          <pub-id pub-id-type="pmid">15037539</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Malik1">
+        <label>4</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Malik</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Camm</surname>
+              <given-names>AJ</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>in Dynamic Electrocardiography, Blackwell publishing</article-title>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Podrid1">
+        <label>5</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Podrid</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Kowey</surname>
+              <given-names>PR</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>in Cardiac Arrhythmia: Mechanisms, Diagnosis and Management, 2nd Edition, Lippincott Williams and Wilkins Publication</article-title>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Chen1">
+        <label>6</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>M-C</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Yip</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Chang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Fang</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2003</year>
+          <article-title>Left atrial platelet activity with rheumatic mitral stenosis: Correlation study of severity and platelet P-Selectin expression by flow cytometry.</article-title>
+          <source>Chest</source>
+          <volume>124</volume>
+          <fpage>1663</fpage>
+          <lpage>1669</lpage>
+          <pub-id pub-id-type="pmid">14605032</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Smith1">
+        <label>7</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Smith</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Blick</surname>
+              <given-names>EF</given-names>
+            </name>
+            <name>
+              <surname>Coalson</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>PD</given-names>
+            </name>
+          </person-group>
+          <year>1972</year>
+          <article-title>Thrombus production by turbulence.</article-title>
+          <source>J Appl Physiol</source>
+          <volume>32</volume>
+          <fpage>261</fpage>
+          <lpage>264</lpage>
+          <pub-id pub-id-type="pmid">5007881</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Stein1">
+        <label>8</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stein</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Sabbah</surname>
+              <given-names>HN</given-names>
+            </name>
+          </person-group>
+          <year>1974</year>
+          <article-title>Measured turbulence and its effect on thrombus formation.</article-title>
+          <source>Circ Res</source>
+          <volume>35</volume>
+          <fpage>608</fpage>
+          <lpage>614</lpage>
+          <pub-id pub-id-type="pmid">4278187</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Eggers1">
+        <label>9</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Eggers</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Rolfs</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Benecke</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>Monitoring the effectiveness of anticoagulative therapy in left atrial spontaneous echo contrast by cerebral microemboli detection.</article-title>
+          <source>Stroke</source>
+          <volume>30</volume>
+          <fpage>1974</fpage>
+          <lpage>1981</lpage>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Hartiala1">
+        <label>10</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hartiala</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Mostbeck</surname>
+              <given-names>GH</given-names>
+            </name>
+            <name>
+              <surname>Foster</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Fujita</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Dulce</surname>
+              <given-names>MC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>1993</year>
+          <article-title>Velocity-encoded cine MRI in the evaluation of left ventricular diastolic function: measurement of mitral valve and pulmonary vein flow velocities and flow volume across the mitral valve.</article-title>
+          <source>Am Heart J</source>
+          <volume>125</volume>
+          <fpage>1054</fpage>
+          <lpage>1066</lpage>
+          <pub-id pub-id-type="pmid">8465728</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Stahlberg1">
+        <label>11</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stahlberg</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Sondergaard</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Thomsen</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>MR flow quantification with cardiovascular applications: a short review.</article-title>
+          <source>Acta Paediatr</source>
+          <issue>Suppl. 410</issue>
+          <fpage>49</fpage>
+          <lpage>56</lpage>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Gatehouse1">
+        <label>12</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gatehouse</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Keegan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Crowe</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Masood</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Mohiaddin</surname>
+              <given-names>RH</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2005</year>
+          <article-title>Applications of phase-contrast flow and velocity imaging in cardiovascular MRI.</article-title>
+          <source>Eur Radiol</source>
+          <volume>15</volume>
+          <fpage>2172</fpage>
+          <lpage>2184</lpage>
+          <pub-id pub-id-type="pmid">16003509</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Mark1">
+        <label>13</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mark</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Harloff</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Bley</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Zaitsev</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Jung</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>Time-resolved 3D MR velocity mapping at 3T: Improved navigator-gated assessment of vascular anatomy and blood flow.</article-title>
+          <source>J Magn Reson Imaging</source>
+          <volume>25</volume>
+          <fpage>824</fpage>
+          <lpage>831</lpage>
+          <pub-id pub-id-type="pmid">17345635</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Brandt1">
+        <label>14</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brandt</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ebbers</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Wigstr&#xF6;m</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>Engvall</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Karlsson</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Automatic detection of vortical flow patterns from three-dimensional phase contrast MRI.</article-title>
+          <source>Proc Intl Soc Mag Reson Med</source>
+          <volume>9</volume>
+          <fpage>1838</fpage>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Fyrenius1">
+        <label>15</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fyrenius</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Wigstr&#xF6;m</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Ebbers</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Karlsson</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Engvall</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2001</year>
+          <article-title>Three dimensional flow in the human left atrium.</article-title>
+          <source>Heart</source>
+          <volume>86</volume>
+          <fpage>448</fpage>
+          <lpage>455</lpage>
+          <pub-id pub-id-type="pmid">11559688</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Kilner1">
+        <label>16</label>
+        <citation citation-type="other">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kilner</surname>
+              <given-names>PJ</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>Morphodynamics of flow through the heart,</article-title>
+          <comment>PhD thesis, Univ. London</comment>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Bellhouse1">
+        <label>17</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bellhouse</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Bellhouse</surname>
+              <given-names>FH</given-names>
+            </name>
+          </person-group>
+          <year>1969</year>
+          <article-title>Fluid mechanics of the mitral valve.</article-title>
+          <source>Nat Med</source>
+          <volume>224</volume>
+          <fpage>615</fpage>
+          <lpage>616</lpage>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Kilner2">
+        <label>18</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kilner</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Wilkes</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Mohiaddin</surname>
+              <given-names>RH</given-names>
+            </name>
+            <name>
+              <surname>Firmin</surname>
+              <given-names>DN</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2000</year>
+          <article-title>Asymmetric redirection of flow through the heart.</article-title>
+          <source>Nat Med</source>
+          <volume>404</volume>
+          <fpage>759</fpage>
+          <lpage>761</lpage>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Webb1">
+        <label>19</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Webb</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Gatzoulis</surname>
+              <given-names>MA</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Atrial septal defects in the adult-recent progess and overview.</article-title>
+          <source>Circulation</source>
+          <volume>114</volume>
+          <fpage>1645</fpage>
+          <lpage>1653</lpage>
+          <pub-id pub-id-type="pmid">17030704</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Durongpisitkul1">
+        <label>20</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Durongpisitkul</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>NL</given-names>
+            </name>
+            <name>
+              <surname>Soongswang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Laohaprasitiporn</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Nanal</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Predictors of successful transcatheter closure of atrial septal defect by cardiac magnetic resonance imaging.</article-title>
+          <source>Pediatr Cardiol</source>
+          <volume>25(2)</volume>
+          <fpage>124</fpage>
+          <lpage>130</lpage>
+          <pub-id pub-id-type="pmid">14668961</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Plein1">
+        <label>21</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Plein</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Bloomer</surname>
+              <given-names>TN</given-names>
+            </name>
+            <name>
+              <surname>Ridgway</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>TR</given-names>
+            </name>
+            <name>
+              <surname>Bainbridge</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2001</year>
+          <article-title>Steady-state free precession magnetic resonance imaging of the heart: Comparison with segmented k-space gradient-echo imaging.</article-title>
+          <source>J Magn Reson Imaging</source>
+          <volume>14(3)</volume>
+          <fpage>230</fpage>
+          <lpage>236</lpage>
+          <pub-id pub-id-type="pmid">11536399</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Martin1">
+        <label>22</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Martin</surname>
+              <given-names>ET</given-names>
+            </name>
+            <name>
+              <surname>Sandler</surname>
+              <given-names>DA</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>MRI in patients with cardiac devices.</article-title>
+          <source>Curr Cardiol Rep</source>
+          <volume>9(1)</volume>
+          <fpage>63</fpage>
+          <lpage>71</lpage>
+          <pub-id pub-id-type="pmid">17362687</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Gladden1">
+        <label>23</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gladden</surname>
+              <given-names>LF</given-names>
+            </name>
+          </person-group>
+          <year>1994</year>
+          <article-title>Nuclear magnetic resonance in chemical engineering: principles and applications.</article-title>
+          <source>Chem Eng Sci</source>
+          <volume>49(20)</volume>
+          <fpage>3339</fpage>
+          <lpage>3408</lpage>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Gladden2">
+        <label>24</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gladden</surname>
+              <given-names>LF</given-names>
+            </name>
+            <name>
+              <surname>Alexander</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>1996</year>
+          <article-title>Applications of nuclear magnetic resonance imaging in process engineering.</article-title>
+          <source>Meas Sci Technol</source>
+          <volume>7</volume>
+          <fpage>423</fpage>
+          <lpage>435</lpage>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Rehwald1">
+        <label>25</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rehwald</surname>
+              <given-names>WG</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>E-L</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Judd</surname>
+              <given-names>RM</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Noninvasive cineangiography by magnetic resonance global coherent free precession.</article-title>
+          <source>Nat Med</source>
+          <volume>10</volume>
+          <fpage>545</fpage>
+          <lpage>549</lpage>
+          <pub-id pub-id-type="pmid">15064758</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Alsop1">
+        <label>26</label>
+        <citation citation-type="other">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alsop</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Arterial spin labeling with pulsed radio frequency sequences.</article-title>
+          <comment>United States Patent Application US 2007/0132452 A1</comment>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Kuethe1">
+        <label>27</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kuethe</surname>
+              <given-names>DO</given-names>
+            </name>
+          </person-group>
+          <year>1989</year>
+          <article-title>Measuring distributions of diffusivity in turbulent fluids with magnetic-resonance imaging.</article-title>
+          <source>Phys Rev A</source>
+          <volume>40</volume>
+          <fpage>4542</fpage>
+          <lpage>4551</lpage>
+          <pub-id pub-id-type="pmid">9902697</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Globits1">
+        <label>28</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Globits</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Higgins</surname>
+              <given-names>CB</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>Assessment of valvular heart disease by magnetic resonance imaging.</article-title>
+          <source>Am Heart J</source>
+          <volume>129(2)</volume>
+          <fpage>369</fpage>
+          <lpage>81</lpage>
+          <pub-id pub-id-type="pmid">7832111</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Horn1">
+        <label>29</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Horn</surname>
+              <given-names>BKP</given-names>
+            </name>
+            <name>
+              <surname>Schunck</surname>
+              <given-names>BG</given-names>
+            </name>
+          </person-group>
+          <year>1981</year>
+          <article-title>Determining optical flow.</article-title>
+          <source>Artif Intell</source>
+          <volume>17</volume>
+          <fpage>185</fpage>
+          <lpage>203</lpage>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Barron1">
+        <label>30</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barron</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Fleet</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Beauchemin</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>1994</year>
+          <article-title>Performance of optical flow techniques.</article-title>
+          <source>Int J Comput Vision</source>
+          <volume>12(1)</volume>
+          <fpage>43</fpage>
+          <lpage>77</lpage>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Bouguet1">
+        <label>31</label>
+        <citation citation-type="other">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bouguet</surname>
+              <given-names>JY</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Pyramidal implementation of the Lucas Kanade feature tracker.</article-title>
+          <comment>tech. rep., OpenCV documentation, Microprocessor Research Labs, Intel Corp</comment>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Wong1">
+        <label>32</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wong</surname>
+              <given-names>KKL</given-names>
+            </name>
+            <name>
+              <surname>Kelso</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Worthley</surname>
+              <given-names>SG</given-names>
+            </name>
+            <name>
+              <surname>Sanders</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Mazumdar</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Theory and Validation of Magnetic Resonance Fluid Motion Estimation Using Intensity Flow Data.</article-title>
+          <source>PLoS ONE</source>
+          <volume>4(3)</volume>
+          <fpage>e4747</fpage>
+          <pub-id pub-id-type="pmid">19270756</pub-id>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Ruhnau1">
+        <label>33</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ruhnau</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Kohlberger</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Nobach</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Schnorr</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Variational optical flow estimation for particle image velocimetry.</article-title>
+          <source>Exp fluids</source>
+          <volume>38(1)</volume>
+          <fpage>21</fpage>
+          <lpage>32</lpage>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Raffel1">
+        <label>34</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Raffel</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Willert</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kompenhans</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>in Particle Image Velocimetry, Springer-Verlag, Berlin Heidelberg, Germany</article-title>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Potter1">
+        <label>35</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Potter</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Wiggert</surname>
+              <given-names>DC</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>in Mechanics of Fluids, Second Edition, Prentice-Hall International, Inc</article-title>
+        </citation>
+      </ref>
+      <ref id="pone.0005688-Bohrnstedt1">
+        <label>36</label>
+        <citation citation-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bohrnstedt</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <year>1983</year>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Rossi</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Wright</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <source>Measurement, Handbook of Survey Research</source>
+          <publisher-loc>New York</publisher-loc>
+          <publisher-name>Academic Press</publisher-name>
+        </citation>
+      </ref>
+    </ref-list>
+    <fn-group>
+      <fn fn-type="conflict">
+        <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding: </bold>The authors have no support or funding to report.</p>
+      </fn>
+    </fn-group>
+  </back>
+</article>
+</pmc-articleset>
